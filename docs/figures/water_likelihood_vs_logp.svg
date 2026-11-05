@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 534" width="760" height="534" font-family="system-ui, -apple-system, Segoe UI, sans-serif" role="img" aria-label="Cold-water likelihood versus logP for study-set compounds">
 <rect width="760" height="534" fill="#fcfcfb"/>
 <text x="64" y="24" font-size="15" font-weight="600" fill="#0b0b0b">Cold water infusion: predicted likelihood vs logP</text>
-<text x="64" y="40" font-size="12" fill="#52514e">Primary model prep-model:f4c4c5ef8a. Dots: study-set compounds (n = 2530); line: median; band: 5–95% range incl. descriptor error.</text>
+<text x="64" y="40" font-size="12" fill="#52514e">Primary model prep-model:f4c4c5ef8a. Dots: study-set compounds (n = 2515); line: median; band: 5–95% range incl. descriptor error.</text>
 <text x="64" y="54" font-size="12" fill="#52514e">Model estimate, not a measurement.</text>
 <line x1="64" x2="736" y1="370.0" y2="370.0" stroke="#e6e5e0" stroke-width="1"/>
 <text x="56" y="374.0" font-size="11" fill="#52514e" text-anchor="end">0</text>
@@ -2533,40 +2533,25 @@
 <circle cx="128.3" cy="70.4" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
 <circle cx="170.2" cy="71.3" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
 <circle cx="170.2" cy="71.3" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="190.9" cy="72.3" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="206.5" cy="73.7" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="212.4" cy="74.6" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="206.5" cy="73.7" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="64.0" cy="70.0" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="214.3" cy="74.8" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="64.0" cy="70.0" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="72.2" cy="70.1" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="133.8" cy="70.4" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="223.9" cy="76.5" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="238.5" cy="79.8" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="221.5" cy="76.0" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="64.0" cy="70.0" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="64.0" cy="70.1" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
-<circle cx="386.5" cy="274.3" r="2.2" fill="#2a78d6" fill-opacity="0.35"/>
 <polyline fill="none" stroke="#2a78d6" stroke-width="2" points="64.0,70.1 69.2,70.1 74.3,70.1 79.5,70.1 84.7,70.1 89.8,70.1 95.0,70.1 100.2,70.1 105.4,70.2 110.5,70.2 115.7,70.3 120.9,70.3 126.0,70.4 131.2,70.4 136.4,70.5 141.5,70.6 146.7,70.7 151.9,70.7 157.0,70.9 162.2,71.0 167.4,71.2 172.6,71.4 177.7,71.6 182.9,71.8 188.1,72.2 193.2,72.5 198.4,72.9 203.6,73.4 208.7,74.0 213.9,74.8 219.1,75.6 224.2,76.5 229.4,77.5 234.6,78.8 239.8,80.2 244.9,81.7 250.1,83.3 255.3,85.0 260.4,87.4 265.6,90.0 270.8,93.1 275.9,96.2 281.1,100.3 286.3,105.0 291.4,109.7 296.6,115.0 301.8,121.4 307.0,127.1 312.1,134.0 317.3,140.7 322.5,148.8 327.6,156.9 332.8,167.1 338.0,176.2 343.1,185.4 348.3,195.7 353.5,207.2 358.6,217.0 363.8,228.9 369.0,238.3 374.2,249.5 379.3,261.5 384.5,270.8 389.7,280.3 394.8,288.0 400.0,296.6 405.2,303.3 410.3,309.9 415.5,316.4 420.7,322.6 425.8,327.5 431.0,332.7 436.2,336.9 441.4,340.9 446.5,344.0 451.7,347.5 456.9,350.7 462.0,353.0 467.2,355.3 472.4,357.4 477.5,359.2 482.7,360.5 487.9,361.8 493.0,362.9 498.2,363.9 503.4,364.8 508.6,365.6 513.7,366.3 518.9,366.9 524.1,367.4 529.2,367.7 534.4,368.1 539.6,368.3 544.7,368.6 549.9,368.8 555.1,368.9 560.2,369.1 565.4,369.2 570.6,369.3 575.8,369.4 580.9,369.5 586.1,369.6 591.3,369.6 596.4,369.7 601.6,369.7 606.8,369.8 611.9,369.8 617.1,369.9 622.3,369.9 627.4,369.9 632.6,369.9 637.8,369.9 643.0,369.9 648.1,369.9 653.3,369.9 658.5,369.9 663.6,370.0 668.8,370.0 674.0,370.0 679.1,370.0 684.3,370.0 689.5,370.0 694.6,370.0 699.8,370.0 705.0,370.0 710.2,370.0 715.3,370.0 720.5,370.0 725.7,370.0 730.8,370.0 736.0,370.0"/>
 <text x="68" y="183.6" font-size="11" fill="#52514e">below the curve: 31 compounds with MW &gt; 1000 (size penalty, heuristic)</text>
 <circle cx="394.6" cy="287.5" r="5" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2"/>
 <text x="404.6" y="279.5" font-size="11" fill="#0b0b0b">artemisinin, Crippen logP 2.40 → 0.27</text>
 <circle cx="420.7" cy="322.6" r="5" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2"/>
 <text x="430.7" y="338.6" font-size="11" fill="#0b0b0b">experimental logP 2.9 → 0.16</text>
-<rect x="65.0" y="459.2" width="23.8" height="14.8" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -4 to -3.5: 54 compounds</title></rect>
+<rect x="65.0" y="460.6" width="23.8" height="13.4" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -4 to -3.5: 49 compounds</title></rect>
 <rect x="90.8" y="467.4" width="23.8" height="6.6" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -3.5 to -3: 24 compounds</title></rect>
-<rect x="116.7" y="466.9" width="23.8" height="7.1" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -3 to -2.5: 26 compounds</title></rect>
+<rect x="116.7" y="467.2" width="23.8" height="6.8" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -3 to -2.5: 25 compounds</title></rect>
 <rect x="142.5" y="461.4" width="23.8" height="12.6" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -2.5 to -2: 46 compounds</title></rect>
-<rect x="168.4" y="459.8" width="23.8" height="14.2" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -2 to -1.5: 52 compounds</title></rect>
-<rect x="194.2" y="449.9" width="23.8" height="24.1" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -1.5 to -1: 88 compounds</title></rect>
-<rect x="220.1" y="455.1" width="23.8" height="18.9" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -1 to -0.5: 69 compounds</title></rect>
+<rect x="168.4" y="460.1" width="23.8" height="13.9" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -2 to -1.5: 51 compounds</title></rect>
+<rect x="194.2" y="451.0" width="23.8" height="23.0" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -1.5 to -1: 84 compounds</title></rect>
+<rect x="220.1" y="456.0" width="23.8" height="18.0" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -1 to -0.5: 66 compounds</title></rect>
 <rect x="245.9" y="451.0" width="23.8" height="23.0" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP -0.5 to 0: 84 compounds</title></rect>
 <rect x="271.8" y="447.2" width="23.8" height="26.8" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 0 to 0.5: 98 compounds</title></rect>
 <rect x="297.6" y="437.1" width="23.8" height="36.9" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 0.5 to 1: 135 compounds</title></rect>
 <rect x="323.5" y="421.5" width="23.8" height="52.5" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 1 to 1.5: 192 compounds</title></rect>
 <rect x="349.3" y="423.4" width="23.8" height="50.6" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 1.5 to 2: 185 compounds</title></rect>
-<rect x="375.2" y="411.7" width="23.8" height="62.3" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 2 to 2.5: 228 compounds</title></rect>
+<rect x="375.2" y="411.9" width="23.8" height="62.1" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 2 to 2.5: 227 compounds</title></rect>
 <rect x="401.0" y="404.0" width="23.8" height="70.0" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 2.5 to 3: 256 compounds</title></rect>
 <rect x="426.8" y="414.7" width="23.8" height="59.3" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 3 to 3.5: 217 compounds</title></rect>
 <rect x="452.7" y="430.5" width="23.8" height="43.5" rx="2" fill="#2a78d6" fill-opacity="0.55"><title>logP 3.5 to 4: 159 compounds</title></rect>

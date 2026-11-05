@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.4/hypotheses.json",
+  "$id": "lost-in-preparation/contract/1.5/hypotheses.json",
   "title": "hypotheses.json",
   "type": "array",
   "items": {
@@ -48,6 +48,17 @@
       },
       "profileGap": {
         "$ref": "#/$defs/Interval"
+      },
+      "gapRanking": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/GapRanking"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
       },
       "neverTestedFaithfully": {
         "title": "Nevertestedfaithfully",
@@ -130,6 +141,61 @@
         "ref"
       ],
       "title": "EvidenceItem",
+      "type": "object"
+    },
+    "GapRanking": {
+      "additionalProperties": false,
+      "properties": {
+        "rule": {
+          "description": "the ranking rule, e.g. rank by the 5th percentile of the gap over coupled draws",
+          "title": "Rule",
+          "type": "string"
+        },
+        "gapP5": {
+          "description": "profile gap exceeded in 95% of draws (the ranking key)",
+          "title": "Gapp5",
+          "type": "number"
+        },
+        "gapThreshold": {
+          "title": "Gapthreshold",
+          "type": "number"
+        },
+        "pGapAboveThreshold": {
+          "title": "Pgapabovethreshold",
+          "type": "number"
+        },
+        "compoundsUsed": {
+          "title": "Compoundsused",
+          "type": "integer"
+        },
+        "compoundsExcludedWide": {
+          "description": "compounds left out: 5th–95th range wider than the rule's limit",
+          "title": "Compoundsexcludedwide",
+          "type": "integer"
+        },
+        "rankByMedianGap": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "comparison only; not used for ranking",
+          "title": "Rankbymediangap"
+        }
+      },
+      "required": [
+        "rule",
+        "gapP5",
+        "gapThreshold",
+        "pGapAboveThreshold",
+        "compoundsUsed",
+        "compoundsExcludedWide"
+      ],
+      "title": "GapRanking",
       "type": "object"
     },
     "Interval": {

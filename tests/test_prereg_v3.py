@@ -78,3 +78,27 @@ def test_v3_output_follows_registration():
         assert not d.pmcid.isin(excluded).any()
         assert ((d.prep1 != d.prep2)).all()
         assert d[~d.abstain].agree.notna().all() and d[d.abstain].agree.isna().all()
+
+
+# --- number parsing for FUTURE registered checks (v3 keeps its registered parser) -------------------
+
+from lip.m4.values import parse_cell  # noqa: E402
+
+
+@pytest.mark.parametrize("cell,value", [
+    ("1,234.5", 1234.5), ("12,345.67", 12345.67), ("1,234,567", 1234567.0), ("1.234,5", 1234.5), ("1 234.5", 1234.5),
+    ("1 234,5", 1234.5), ("10,5", 10.5), ("0,25", 0.25), ("1.234", 1.234), ("12.3 ± 0.4", 12.3), ("45.2a", 45.2),
+    ("2.1e-3", 0.0021), ("2.1 × 10−3", 0.0021), ("3.5 x 10^2", 350.0),
+    ("n.d.", 0.0), ("<LOQ", 0.0), ("–", 0.0),
+    ("1,234", None),            # ambiguous: thousands (English) or decimal comma -> missing, never guessed
+    ("1,23,4", None), ("", None), ("see text", None),
+])
+def test_future_parser_handles_thousands_separators(cell, value):
+    got = parse_cell(cell)
+    assert got == (pytest.approx(value) if value is not None else None)
+
+
+def test_v3_parser_is_unchanged():
+    assert P.value_of("1,234.5") == 1.0  # registered behaviour kept; v3 is not re-scored
+    import inspect
+    assert "from .values" not in inspect.getsource(P) and "parse_cell" not in inspect.getsource(P)

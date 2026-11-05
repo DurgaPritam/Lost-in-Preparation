@@ -2,6 +2,12 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
+## v1.5 — 2026-11-05
+
+| # | Change |
+|---|---|
+| P35 | Hypothesis ranking relies only on profile gaps that hold across the uncertainty range. `profileGap` is now `{value: median, low: 5th, high: 95th percentile}` of the gap over coupled Monte Carlo draws, with descriptor error included. New optional `gapRanking {rule, gapP5, gapThreshold, pGapAboveThreshold, compoundsUsed, compoundsExcludedWide, rankByMedianGap}`. `rank` orders hypotheses by `gapP5`, then `pGapAboveThreshold`. Compounds whose 5th–95th range is wider than the rule's limit are excluded, because they cannot drive a ranking. Requested by the project lead. Additive: no hypotheses file has been published yet. |
+
 ## v1.4 — 2026-11-05
 
 | # | Change |

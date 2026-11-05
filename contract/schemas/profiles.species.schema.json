@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.4/profiles.species.json",
+  "$id": "lost-in-preparation/contract/1.5/profiles.species.json",
   "title": "profiles.species.json",
   "type": "array",
   "items": {

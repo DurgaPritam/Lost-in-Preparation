@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.4/recipes.json",
+  "$id": "lost-in-preparation/contract/1.5/recipes.json",
   "title": "recipes.json",
   "type": "array",
   "items": {

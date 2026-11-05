@@ -37,10 +37,10 @@
   "xtbVersion": "6.7.1",
   "artemisinin": "borderline pass",
   "profiles": {
-    "species": 28,
+    "species": 27,
     "preparations": 13,
-    "profiles": 364,
-    "compoundEntries": 41483
+    "profiles": 351,
+    "compoundEntries": 41236
   },
-  "generatedAt": "2026-11-05T17:02:58+00:00"
+  "generatedAt": "2026-11-05T17:25:25+00:00"
 }

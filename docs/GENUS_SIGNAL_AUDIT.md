@@ -56,7 +56,7 @@ Every top-1 resolution whose evidence includes a classical-genus match was scree
 
 ### *Moricandia arvensis*
 
-Resolved from Pliny's WILD CABBAGE (20.36) only, via a Bostock & Riley footnote naming 'Brassica arvensis' (a synonym of Moricandia arvensis in GBIF). The same footnote reports Fée's view that Pliny merged the descriptions of two different plants. Not changed automatically; for the project lead's review.
+Resolved from Pliny's WILD CABBAGE (20.36) only, via a Bostock & Riley footnote naming 'Brassica arvensis' (a synonym of Moricandia arvensis in GBIF). The same footnote reports Fée's view that Pliny merged the descriptions of two different plants. DECISION (project lead, 2026-11-05): removed from the study set (config/study_set_exclusions.csv); the name resolution itself is unchanged.
 
 - Name entry: `pliny-nh:b20:c036:n0`; footnote `pliny-nh-bohn-v4:fn1487`.
 - Passages: see `data/interim/m2/flagged_for_review.json` (verbatim text of the chapter and its footnotes).

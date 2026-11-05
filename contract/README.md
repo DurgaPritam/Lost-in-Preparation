@@ -1,6 +1,6 @@
-# Data contract — v1.4
+# Data contract — v1.5
 
-Frozen since v1.0 (2026-11-05); v1.1–v1.4 are additive or layout-only changes (v1.4 deprecates two toxicity values but keeps them valid). The source of truth is [models.py](models.py); the JSON Schemas in [schemas/](schemas/) are generated from it with `python -m lip contract`. A test fails if a schema and the models drift apart. Any change from here on starts as a proposal in [CHANGELOG.md](CHANGELOG.md).
+Frozen since v1.0 (2026-11-05); v1.1–v1.5 are additive or layout-only changes (v1.4 deprecates two toxicity values but keeps them valid). The source of truth is [models.py](models.py); the JSON Schemas in [schemas/](schemas/) are generated from it with `python -m lip contract`. A test fails if a schema and the models drift apart. Any change from here on starts as a proposal in [CHANGELOG.md](CHANGELOG.md).
 
 The contract files live in `site-data/`; profiles are split per species (v1.3). The pipeline exports them, and the web frontend validates every file against these schemas. Mock data for design work uses exactly these shapes, with `"mock": true` on every record.
 

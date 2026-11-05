@@ -7,7 +7,8 @@ Per species (top-1 M2 candidate, in WFO):
   sources       how many of {Culpeper 1652, Pliny} attest the species
   compounds     distinct standardised compounds (M3); poor coverage flagged
 Attestations count only name entries whose resolution is undisputed with confidence >= 0.6 (v2: a
-disputed entry neither counts nor vetoes the species). Eligible: attestations >= 3, coverage not poor.
+disputed entry neither counts nor vetoes the species). Eligible: attestations >= 3, coverage not poor, and not removed by a recorded decision
+(config/study_set_exclusions.csv: who decided, when, why).
 Ranked by sources, then attestations, then compounds; the top `SIZE` are proposed.
 Toxicity columns (proposed species only): hand-curated entries from m3/toxicity.py, one reputable source
 each (EMA herbal documents or CC-licensed PMC articles) with a verbatim quote checked against the fetched
@@ -22,6 +23,7 @@ import pandas as pd
 from ..paths import INTERIM, ROOT
 
 OUT_CSV = INTERIM / "m3" / "study_set_proposal.csv"
+EXCLUSIONS = ROOT / "config" / "study_set_exclusions.csv"  # species removed by a recorded human decision
 OUT_MD = ROOT / "docs" / "STUDY_SET_PROPOSAL.md"
 SIZE = 40
 MIN_ATTEST, MIN_CONF = 3, 0.6
@@ -51,7 +53,9 @@ def build() -> pd.DataFrame:
     g["attestations"] = g.attestations.round(1)
     if "toxicConfusion" in top:
         g = g.merge(top.groupby("acceptedName").toxicConfusion.max().rename("toxicConfusion").reset_index(), on="acceptedName", how="left")
-    g["eligible"] = (g.attestations >= MIN_ATTEST) & (~g.poorCoverage)
+    excl = pd.read_csv(EXCLUSIONS) if EXCLUSIONS.exists() else pd.DataFrame(columns=["acceptedName", "reason"])
+    g["excludedByDecision"] = g.acceptedName.map(dict(zip(excl.acceptedName, excl.reason))).fillna("")
+    g["eligible"] = (g.attestations >= MIN_ATTEST) & (~g.poorCoverage) & (g.excludedByDecision == "")
     g = g.sort_values(["eligible", "sources", "attestations", "nCompounds"], ascending=[False, False, False, False])
     g["proposed"] = False
     g.loc[g[g.eligible].index[:SIZE], "proposed"] = True
@@ -83,6 +87,10 @@ def main() -> str:
         "mark decisions in the `approved` column of the CSV.",
         "",
         f"**{len(p)} species proposed** out of {int(g.eligible.sum())} eligible and {len(g)} resolved.",
+        "",
+        *([f"Removed by a recorded decision (`config/study_set_exclusions.csv`): "
+           + "; ".join(f"*{r.acceptedName}*: {r.excludedByDecision}" for r in g[g.excludedByDecision != ""].itertuples())]
+          if (g.excludedByDecision != "").any() else []),
         "",
         "Eligibility:",
         "- an attestation proxy of ≥ 3 recipe-scope passages, counted only from name entries resolved without dispute and with confidence ≥ 0.6;",

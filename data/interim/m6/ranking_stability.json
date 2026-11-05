@@ -1,0 +1,303 @@
+{
+  "label": "DEMONSTRATION on model profiles only: candidate pairs = every study-set species \u00d7 historical preparation \u00d7 modern extract. No modern-methods audit has been run, so these are NOT hypotheses.",
+  "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th\u201395th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
+  "widthMax": 0.8,
+  "tau": 0.2,
+  "minCompounds": 5,
+  "descriptorErrorSd": 0.8231,
+  "modelVersion": "prep-model:f4c4c5ef8a",
+  "candidates": 486,
+  "ranked": 484,
+  "notRanked": 2,
+  "compoundsExcludedWideShare": 0.1576,
+  "stability": {
+    "robust (5th percentile of gap)": {
+      "monteCarloReseed": {
+        "spearman": 0.9822,
+        "top20Overlap": 0.95
+      },
+      "compoundBootstrap": {
+        "spearmanMean": 0.9489,
+        "top20OverlapMean": 0.8875,
+        "replicates": 20
+      }
+    },
+    "median gap only (comparison)": {
+      "monteCarloReseed": {
+        "spearman": 0.9673,
+        "top20Overlap": 0.9
+      },
+      "compoundBootstrap": {
+        "spearmanMean": 0.9419,
+        "top20OverlapMean": 0.865,
+        "replicates": 20
+      }
+    }
+  },
+  "rankDisagreement": {
+    "spearmanRobustVsMedian": 0.9469,
+    "top20Shared": 18
+  },
+  "top": [
+    {
+      "acceptedName": "Chelidonium majus",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 1.0,
+      "rankMedianGap": 2.0,
+      "gapP5": 0.7119,
+      "gapP50": 0.7516,
+      "gapP95": 0.8148,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 69,
+      "compoundsExcludedWide": 0
+    },
+    {
+      "acceptedName": "Chelidonium majus",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 2.0,
+      "rankMedianGap": 3.0,
+      "gapP5": 0.7036,
+      "gapP50": 0.7468,
+      "gapP95": 0.8144,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 66,
+      "compoundsExcludedWide": 3
+    },
+    {
+      "acceptedName": "Papaver somniferum",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 3.0,
+      "rankMedianGap": 4.0,
+      "gapP5": 0.6994,
+      "gapP50": 0.7305,
+      "gapP95": 0.7866,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 107,
+      "compoundsExcludedWide": 1
+    },
+    {
+      "acceptedName": "Papaver somniferum",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 4.0,
+      "rankMedianGap": 5.0,
+      "gapP5": 0.6938,
+      "gapP50": 0.7269,
+      "gapP95": 0.781,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 104,
+      "compoundsExcludedWide": 4
+    },
+    {
+      "acceptedName": "Citrullus colocynthis",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 5.0,
+      "rankMedianGap": 6.0,
+      "gapP5": 0.6918,
+      "gapP50": 0.7235,
+      "gapP95": 0.7748,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 64,
+      "compoundsExcludedWide": 10
+    },
+    {
+      "acceptedName": "Hyoscyamus niger",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 6.0,
+      "rankMedianGap": 8.0,
+      "gapP5": 0.6656,
+      "gapP50": 0.6951,
+      "gapP95": 0.7425,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 75,
+      "compoundsExcludedWide": 3
+    },
+    {
+      "acceptedName": "Ranunculus ficaria",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 7.0,
+      "rankMedianGap": 9.0,
+      "gapP5": 0.6633,
+      "gapP50": 0.6912,
+      "gapP95": 0.7359,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 17,
+      "compoundsExcludedWide": 0
+    },
+    {
+      "acceptedName": "Hyoscyamus niger",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 8.0,
+      "rankMedianGap": 10.0,
+      "gapP5": 0.6583,
+      "gapP50": 0.6858,
+      "gapP95": 0.7351,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 61,
+      "compoundsExcludedWide": 17
+    },
+    {
+      "acceptedName": "Ranunculus ficaria",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 9.0,
+      "rankMedianGap": 11.0,
+      "gapP5": 0.6553,
+      "gapP50": 0.6858,
+      "gapP95": 0.7302,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 15,
+      "compoundsExcludedWide": 2
+    },
+    {
+      "acceptedName": "Citrullus colocynthis",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 10.0,
+      "rankMedianGap": 12.0,
+      "gapP5": 0.6431,
+      "gapP50": 0.6758,
+      "gapP95": 0.7231,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 65,
+      "compoundsExcludedWide": 9
+    },
+    {
+      "acceptedName": "Filipendula ulmaria",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 11.0,
+      "rankMedianGap": 13.0,
+      "gapP5": 0.6362,
+      "gapP50": 0.6586,
+      "gapP95": 0.6994,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 25,
+      "compoundsExcludedWide": 0
+    },
+    {
+      "acceptedName": "Filipendula ulmaria",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 12.0,
+      "rankMedianGap": 14.0,
+      "gapP5": 0.6253,
+      "gapP50": 0.6486,
+      "gapP95": 0.686,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 22,
+      "compoundsExcludedWide": 3
+    },
+    {
+      "acceptedName": "Raphanus sativus",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 13.0,
+      "rankMedianGap": 16.0,
+      "gapP5": 0.5835,
+      "gapP50": 0.6033,
+      "gapP95": 0.6323,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 240,
+      "compoundsExcludedWide": 8
+    },
+    {
+      "acceptedName": "Raphanus sativus",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 14.0,
+      "rankMedianGap": 18.0,
+      "gapP5": 0.568,
+      "gapP50": 0.5908,
+      "gapP95": 0.6183,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 218,
+      "compoundsExcludedWide": 30
+    },
+    {
+      "acceptedName": "Euphorbia antiquorum",
+      "faithful": "infused oil",
+      "modern": "modern 70% ethanol extract",
+      "rank": 15.0,
+      "rankMedianGap": 15.0,
+      "gapP5": 0.552,
+      "gapP50": 0.6403,
+      "gapP95": 0.7465,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 42,
+      "compoundsExcludedWide": 1
+    },
+    {
+      "acceptedName": "Centaurium erythraea",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 16.0,
+      "rankMedianGap": 20.0,
+      "gapP5": 0.55,
+      "gapP50": 0.5763,
+      "gapP95": 0.6077,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 36,
+      "compoundsExcludedWide": 0
+    },
+    {
+      "acceptedName": "Pastinaca sativa",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 17.0,
+      "rankMedianGap": 19.0,
+      "gapP5": 0.5495,
+      "gapP50": 0.5832,
+      "gapP95": 0.6634,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 23,
+      "compoundsExcludedWide": 0
+    },
+    {
+      "acceptedName": "Pastinaca sativa",
+      "faithful": "distilled water",
+      "modern": "modern methanol extract",
+      "rank": 18.0,
+      "rankMedianGap": 22.0,
+      "gapP5": 0.5465,
+      "gapP50": 0.5655,
+      "gapP95": 0.6056,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 23,
+      "compoundsExcludedWide": 0
+    },
+    {
+      "acceptedName": "Centaurium erythraea",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 19.0,
+      "rankMedianGap": 23.0,
+      "gapP5": 0.5302,
+      "gapP50": 0.5541,
+      "gapP95": 0.5913,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 29,
+      "compoundsExcludedWide": 7
+    },
+    {
+      "acceptedName": "Symphytum officinale",
+      "faithful": "infused oil",
+      "modern": "modern 70% ethanol extract",
+      "rank": 20.0,
+      "rankMedianGap": 1.0,
+      "gapP5": 0.4888,
+      "gapP50": 0.7503,
+      "gapP95": 0.9223,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 21,
+      "compoundsExcludedWide": 16
+    }
+  ]
+}

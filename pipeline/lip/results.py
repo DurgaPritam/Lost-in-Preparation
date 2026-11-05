@@ -48,11 +48,12 @@ def validation_status(m: C.Metrics) -> list[str]:
         ("Preparation model vs published reports — exploratory set", "*provisional, exploratory* — 9 rows selected after model build", "`data/reference/prep_literature_v1.csv`"),
         ("Preparation model vs published reports — pre-registered v1 (mostly essential oils)", "*provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code", "`data/reference/prep_literature_prereg_v1.csv`"),
         ("Preparation model vs published reports — pre-registered v2 (water preparations)", "*provisional* — rule pre-registered (docs/PREREGISTRATION_v2.md), AI-written rule and code; low-row quota not met", "`data/reference/prep_literature_prereg_v2.csv`"),
-        ("Preparation model vs published reports — pre-registered v3 (paired, within plant)", "*provisional* — rule pre-registered (docs/PREREGISTRATION_v3.md, one amendment before collection), AI-written rule and code", "`data/reference/prep_literature_prereg_v3_pairs.csv`"),
+        ("Preparation model vs published reports — pre-registered v3 (paired, within plant)", "*provisional, inconclusive* — too few articles (n in RESULTS); rule pre-registered (docs/PREREGISTRATION_v3.md, one amendment before collection), AI-written rule and code", "`data/reference/prep_literature_prereg_v3_pairs.csv`"),
         ("Genus-signal audit (name resolution)", "*provisional* — AI-reviewed false friends with dictionary quotes, awaiting human review", "`docs/GENUS_SIGNAL_AUDIT.md`"),
         (f"Study-set toxicity entries ({_n_proposed()} species)", "*provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review", "`data/reference/toxicity_curated.csv`"),
         (f"Study set ({_n_proposed()} species)", "pending — human approval", "`docs/STUDY_SET_PROPOSAL.md`"),
-        ("Modern-methods audit, mismatch ranking (M5–M6)", "not started", "—"),
+        ("**Modern-methods audit (M5): the planned headline result**", "not started — waits for study-set approval", "—"),
+        ("Hypothesis ranking (M6)", "rule implemented and stability-tested on model-only candidate pairs (not hypotheses)", "`data/interim/m6/ranking_stability.json`"),
     ]
     out = ["## Validation status", "", "| Result | Status | Evidence |", "|---|---|---|"]
     out += [f"| {a} | {b} | {c} |" for a, b, c in rows]
@@ -172,21 +173,30 @@ def v3_section() -> list[str]:
           f"{pc.get('noClearDifference', 0)} excluded as no clear difference (|ln DR| < ln 1.25); {pc.get('noStructure', 0)} without a structure; "
           f"{v3['scored']} scored; {v3['abstained']} where the model abstained (|predicted ln DR| < ln 1.25)."]
     if pr.get("meanPerArticleAgreement") is not None:
-        L += [f"- **Primary: mean per-article agreement {pr['meanPerArticleAgreement']:.0%} (95% cluster-bootstrap CI {ci[0]:.0%}–{ci[1]:.0%}; "
-              f"{v3['articlesScored']} articles). Registered verdict: {pr['verdict']}.**",
+        L += [f"- **Result: INCONCLUSIVE (n = {v3['articlesScored']} articles).** Mean per-article agreement {pr['meanPerArticleAgreement']:.0%} "
+              f"(95% cluster-bootstrap CI {ci[0]:.0%}–{ci[1]:.0%}). The registered verdict is \"{pr['verdict']}\"; with so few articles the "
+              "check can neither support nor reject the model.",
               f"- Pooled over pairs (descriptive; pairs within an article are not independent): {v3['pooledPairAgreement']['agree']}/"
               f"{v3['pooledPairAgreement']['scored']} ({v3['pooledPairAgreement']['rate']:.0%})."]
         L += ["", "| Contrast | Scored pairs | Agree | Rate | Articles |", "|---|---|---|---|---|"]
         L += [f"| {c} | {x['scored']} | {x['agree']} | {x['rate']:.0%} | {x['articles']} |" for c, x in v3["byContrast"].items()]
         L += ["", "| Article | Per-article agreement |", "|---|---|"] + [f"| {k} | {v:.0%} |" for k, v in v3["perArticle"].items()]
-    scr = [w for v in v3["screening"].values() for _, w in v["screened"]]
-    reasons = {}
-    for w in scr:
-        k = "eligible" if w.startswith("eligible") else w
-        reasons[k] = reasons.get(k, 0) + 1
-    L += ["", f"Screening ({len(scr)} articles over {len(v3['screening'])} plants): " + "; ".join(f"{k} {v}" for k, v in sorted(reasons.items(), key=lambda kv: -kv[1])) + ".",
-          "**The registered caps allowed up to 3 articles per plant, but few articles report two preparations of the same material in one "
-          "machine-readable table, so v3 is small and its CI is wide.** The rule was not relaxed."]
+    sf = screening_finding()
+    L += ["", "##### Screening finding: the literature rarely compares preparations of the same material", "",
+          f"The v3 rule screened {sf['screened']} search results ({sf['unique']} distinct articles) across {sf['plants']} plants. Only "
+          f"**{sf['eligible']}** directly compared two preparations of the same plant material in a usable table. That is {sf['eligible']} of the "
+          f"{sf['tablesExamined']} articles whose tables were examined ({sf['eligible'] / max(sf['tablesExamined'], 1):.0%}); "
+          "the others failed the licence or title check first:", "",
+          "| Screening outcome | Articles |", "|---|---|"] + [f"| {k} | {v} |" for k, v in sorted(sf["reasons"].items(), key=lambda kv: -kv[1])] + [
+          "", "Within this sample, this is evidence that modern studies rarely test or report preparation effects in a comparable form. "
+              "That is the gap the modern-methods audit (Phase 5) is designed to measure. The rule set a cap of 3 articles per plant, which "
+              "was never reached, and the rule was not relaxed.",
+          "", "**Limits of the screen.**",
+          "- It used only the first page of two PMC searches per plant.",
+          "- It required a Creative Commons licence and the plant's name in the title.",
+          "- It read only HTML tables: comparisons reported in text, figures, images or supplementary files count as \"no eligible table\".",
+          "",
+          "So the screen shows that usable comparisons are scarce. It does not show that none exist."]
     a = v3.get("postHocAudit") or {}
     if a:
         share = a.get("largestArticleShareOfScoredPairs")
@@ -331,6 +341,31 @@ def water_section() -> list[str]:
             f"- The recorded artemisinin result and every threshold are unchanged. Separately, {art_txt}; see the artemisinin section above."]
 
 
+def ranking_section() -> list[str]:
+    r = _j("data/interim/m6/ranking_stability.json")
+    if not r:
+        return []
+    rob, med = r["stability"]["robust (5th percentile of gap)"], r["stability"]["median gap only (comparison)"]
+    top = r["top"][:5]
+    return ["", "### Hypothesis ranking rule (M6): stability test (demonstration, not hypotheses)", "",
+            f"Source: `data/interim/m6/ranking_stability.json`. Rule: {r['rule']}. {r['label']}", "",
+            f"- Candidate pairs: {r['candidates']}; ranked: {r['ranked']}; not ranked (too few compounds with a usable range): {r['notRanked']}. "
+            f"Compound entries excluded as too wide to drive a rank: {r['compoundsExcludedWideShare']:.0%}.", "",
+            "| Ranking | MC reseed: Spearman | MC reseed: top-20 overlap | Compound bootstrap: mean Spearman | Compound bootstrap: mean top-20 overlap |",
+            "|---|---|---|---|---|",
+            f"| Robust (5th percentile of gap) | {rob['monteCarloReseed']['spearman']} | {rob['monteCarloReseed']['top20Overlap']:.0%} | "
+            f"{rob['compoundBootstrap']['spearmanMean']} | {rob['compoundBootstrap']['top20OverlapMean']:.0%} |",
+            f"| Median gap only (comparison) | {med['monteCarloReseed']['spearman']} | {med['monteCarloReseed']['top20Overlap']:.0%} | "
+            f"{med['compoundBootstrap']['spearmanMean']} | {med['compoundBootstrap']['top20OverlapMean']:.0%} |",
+            "", f"The two rankings broadly agree (Spearman {r['rankDisagreement']['spearmanRobustVsMedian']}; "
+                f"{r['rankDisagreement']['top20Shared']} of the top 20 shared). The robust rule is slightly more stable under both perturbations "
+                f"({rob['compoundBootstrap']['replicates']} compound-bootstrap replicates).",
+            "", "**Caveat.** The top of this demonstration list is "
+                + ("dominated by distilled-water vs solvent-extract pairs" if sum(t["faithful"] == "distilled water" for t in top) >= 4 else "mixed")
+                + ". That contrast is driven by the volatility heuristic, so it says more about that heuristic than about real candidates. "
+                "Real hypotheses need the Phase 5 audit, which supplies the modern preparations actually tested."]
+
+
 def toxicity_section() -> list[str]:
     import pandas as pd
     p = ROOT / "data" / "reference" / "toxicity_curated.csv"
@@ -346,6 +381,55 @@ def toxicity_section() -> list[str]:
             "", "`no_toxicity_reported` and `unknown` are **not evidence of safety**. The Wikipedia *List of poisonous plants* is no longer used for this column (only for M2's toxic-confusion screen)."]
 
 
+def screening_finding() -> dict | None:
+    v3 = _j("data/interim/m4/literature_prereg_v3.json")
+    if not v3:
+        return None
+    ev = [(pid, w) for v in v3["screening"].values() for pid, w in v["screened"]]
+    reasons: dict[str, int] = {}
+    for _, w in ev:
+        k = "eligible (usable paired table)" if w.startswith("eligible") else w.replace("ineligible: ", "")
+        reasons[k] = reasons.get(k, 0) + 1
+    return {"screened": len(ev), "unique": len({p for p, _ in ev}), "plants": len(v3["screening"]),
+            "eligible": sum(1 for _, w in ev if w.startswith("eligible")), "reasons": reasons,
+            "tablesExamined": sum(1 for _, w in ev if w.startswith("eligible") or w == "ineligible: no eligible table")}
+
+
+def positioning() -> list[str]:
+    import pandas as pd
+    v1 = pd.read_csv(ROOT / "data" / "reference" / "prep_literature_prereg_v1.csv")
+    eo = v1[v1.modelPreparation == "distilled water"]
+    v2 = _j("data/interim/m4/literature_prereg_v2.json")
+    v3 = _j("data/interim/m4/literature_prereg_v3.json") or {}
+    prof = pd.read_parquet(INTERIM / "m4" / "profiles_long.parquet")
+    width = (prof.high - prof.low).groupby(prof.preparation).median()
+    aq = ["cold water infusion", "hot water infusion (tea)", "decoction in water"]
+    sf = screening_finding()
+    L = ["## What the results support", "",
+         "**Planned headline: the modern-methods audit (Phase 5).** For each study-set species, it will check how modern studies "
+         "prepared the plant (solvent, temperature and filtration, each recorded separately) against how the historical recipes made it, "
+         "and flag remedies that were never tested the way they were made. It has not started; it waits for the project lead's approval of the study set.", "",
+         "**The preparation model is a transparent hypothesis generator, not a validated predictor.** Every factor and assumption is "
+         "inspectable, and every estimate carries a range. Its support differs by preparation:",
+         f"- **Essential-oil compounds: best supported.** In the pre-registered v1 check, {int(eo.agree.sum())}/{len(eo)} essential-oil "
+         "rows agree with the model. These rows test presence only; no essential-oil row reported a compound as absent.",
+         f"- **Aqueous preparations (infusions, decoctions, juices): unvalidated.** The pre-registered v2 check found "
+         f"{v2['found']['low']} `absent/low` rows against a quota of {v2['quota']['low']} (agreement "
+         f"{v2['primary']['low']['agree']}/{v2['primary']['low']['n']}). The paired v3 check is **inconclusive** "
+         f"({v3.get('articlesScored', 0)} articles). Single-row checks also measure detection, not the extraction fraction the model predicts (METHODS §9).",
+         "- **Wide ranges.** With descriptor error included, the median width of the 5th–95th range across study-set compounds is "
+         + ", ".join(f"{width[k]:.2f} for {k}" for k in aq if k in width) + " on a 0–1 scale.",
+         "- **Ranking.** Hypotheses will be ranked only on profile gaps that hold across those ranges (METHODS §11). Compounds whose "
+         "range spans most of the scale cannot drive a rank."]
+    if sf:
+        L += ["", f"**A finding from the screening itself.** Of {sf['screened']} article screenings ({sf['unique']} distinct articles) across "
+                  f"{sf['plants']} plants, only **{sf['eligible']}** directly compared two preparations of the same plant material in a usable "
+                  f"table: {sf['eligible']} of the {sf['tablesExamined']} articles whose tables were examined after the licence and title checks. "
+                  "Within this sample, this is evidence that the literature rarely reports preparation effects in a form that can be "
+                  "compared (details under the v3 results)."]
+    return L
+
+
 def build() -> str:
     m = C.Metrics.model_validate_json((SITE_DATA / "metrics.json").read_text())
     ing, m2s, m3s, m4s = (_j(p) for p in ("data/interim/ingest_report.json", "data/interim/m2/name_resolution_summary.json",
@@ -356,6 +440,7 @@ def build() -> str:
     art = _j("data/interim/m4/artemisinin_check.json")
     L = ["# Results", "", f"Generated by `python -m lip results` on {datetime.now(timezone.utc).date()} from pipeline outputs; "
          "do not edit numbers by hand. Lost in Preparation produces **hypotheses worth re-testing**, never claims that a remedy works or is safe.", ""]
+    L += positioning() + [""]
     L += validation_status(m) + [""]
     L += by_source(m) + [""]
 
@@ -410,7 +495,7 @@ def build() -> str:
     L += ["", f"Default descriptor: **{val['default']}** (lower MAE). Caveat: Crippen's parameters were fitted to public logP data that may overlap this set; xTB is unfitted. 95% CIs are paired bootstrap (B = 2000).",
           ""]
     L += artemisinin_section(art, m4s)
-    L += literature_sections() + water_section() + toxicity_section()
+    L += literature_sections() + water_section() + ranking_section() + toxicity_section()
     L += ["", f"Profiles: {m4s['profiles']['species']} species × {m4s['profiles']['preparations']} preparations "
           f"({m4s['profiles']['profiles']} profiles, {m4s['profiles']['compoundEntries']:,} compound estimates) in `site-data/profiles/` (one file per species, `index.json`; full file in `data/release/profiles_full.json.gz`; model `{m4s['modelVersion']}`). "
           "These are model estimates of what a preparation would carry, not measurements."]
@@ -427,7 +512,7 @@ def build() -> str:
             L.append(f"- {name}: {_m(mm)}")
         L.append("")
     OUT.write_text("\n".join(L) + "\n")
-    _update_readme(validation_status(m) + [""] + by_source(m))
+    _update_readme(positioning() + [""] + validation_status(m) + [""] + by_source(m))
     return OUT.read_text()
 
 

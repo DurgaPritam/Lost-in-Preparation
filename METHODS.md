@@ -212,7 +212,11 @@ Neither case is evidence about the extraction fraction. The paired v3 design add
   - **Data:** tables in CC-licensed PMC articles that measure two or more preparations of the same plant material.
   - **Outcome:** the sign of the double ratio (X/Y in P1) ÷ (X/Y in P2), which the model predicts from extraction fractions alone.
   - **Analysis:** mean per-article agreement, with a cluster-bootstrap CI over articles.
-- **Complete chemical names (v3 onwards).** Compound names in future registered checks must match as complete chemical names (`pipeline/lip/m4/chemnames.py`). This rejects class measures ("total phenol content"), aglycones followed by a glycoside or locant ("apigenin 7-O-glucoside"), and derivative or class words. Table labels must equal one known name. v1 and v2 keep the matcher they were registered with and are not re-scored.
+- **v3 result and the screening finding.** v3 is reported as **inconclusive**: too few articles qualified to support or reject the model. The screening is reported as a finding in its own right. Across all 40 plants, very few articles directly compared two preparations of the same material in a usable table; the counts and the breakdown of exclusion reasons are in RESULTS.md. Within that sample, this is evidence that modern studies rarely test or report preparation effects in a comparable form, which is the gap Phase 5 is designed to measure. The screen's limits:
+  - the first result page of two PMC queries per plant;
+  - a Creative Commons licence and the plant's name in the title were required;
+  - only HTML tables were read.
+- **Complete chemical names (v3 onwards).** Compound names in future registered checks must match as complete chemical names (`pipeline/lip/m4/chemnames.py`). Table numbers in future registered checks use `pipeline/lip/m4/values.py`, which reads thousands separators (`1,234.5`, `1.234,5`, `1 234.5`) and returns *missing* for the ambiguous `1,234`. v3 keeps its registered parser and is not re-scored. This rejects class measures ("total phenol content"), aglycones followed by a glycoside or locant ("apigenin 7-O-glucoside"), and derivative or class words. Table labels must equal one known name. v1 and v2 keep the matcher they were registered with and are not re-scored.
 
 **Water-window diagnostic (no model change).** `lip m4 water-calibration` plots the cold-water median and its 5–95% range against logP, for a logP grid and for every study-set compound. The output is [docs/figures/water_likelihood_vs_logp.svg](docs/figures/water_likelihood_vs_logp.svg) and `data/interim/m4/water_calibration.json`. For a filtered, cold, aqueous preparation, every factor except the solvent window is 1, so the prediction is a one-variable logistic in Crippen logP. The model has no solubility, melting-point, dose or contact-time term.
 
@@ -238,9 +242,24 @@ Until the human gold sets exist, three references made by an AI (Claude Code) le
 
 The annotation tool's independent mode never shows any of these. **Review** mode, for adjudication only, shows human labels beside the silver labels.
 
-## 11. Limitations
+## 11. Hypothesis ranking (M6)
 
-- **Extraction is not detection** (§9). The model predicts extracted fractions, but validation rows record detection or amounts, which also depend on plant content and detection limits. LOTUS has no abundance data, so single-row agreement rates measure a mixture of the two. Only paired, within-plant comparisons (v3) cancel the content term.
+A hypothesis compares a species' **faithful** preparation (as the recipe made it) with the **modern** preparation a study used (from the Phase 5 audit). Its profile gap is 1 − cosine similarity of the two predicted compound profiles, with equal weights because LOTUS has no abundance data. The ranking uses only gaps that hold across the uncertainty range (`pipeline/lip/m6/ranking.py`, contract v1.5 P35):
+
+1. **Coupled draws.** Each compound is simulated in both preparations. The descriptor-error draw (Normal, SD from the Crippen MAE) is shared between the two, because a compound's logP error is the same in both. Each draw gives one gap.
+2. **Wide compounds cannot drive a rank** (heuristic). A compound whose reported 5th–95th range is wider than 0.8 in either preparation is left out of both profiles. A candidate needs at least 5 usable compounds to be ranked.
+3. **Ranking key.** The gap's 5th percentile, which is the gap that holds in 95% of draws. Ties are broken by P(gap > 0.2), a heuristic threshold, then by the median gap.
+4. **Contract fields.** `profileGap` is stored as `{median, 5th, 95th}`, with the rule's inputs in `gapRanking`. The median-gap rank is kept for comparison only.
+
+**Stability test** (`python -m lip m6 rank-demo`). No audit data exist yet, so the rule is tested on model-only candidate pairs: every study-set species × historical preparation × modern extract. These are explicitly **not hypotheses**. Rank stability is measured two ways, for both the robust and the median-gap rankings:
+- reseeding the Monte Carlo;
+- a compound bootstrap that resamples each species' compound list.
+
+Each uses Spearman correlation and top-20 overlap. Results are in RESULTS.md.
+
+## 12. Limitations
+
+- **Extraction is not detection** (§9). The model predicts extracted fractions, but validation rows record detection or amounts, which also depend on plant content and detection limits. LOTUS has no abundance data, so single-row agreement rates measure a mixture of the two. Only paired, within-plant comparisons (v3) cancel the content term, and v3 was inconclusive because few studies report such comparisons.
 - **One descriptor.** The aqueous prediction is a logistic in Crippen logP. It has no solubility, melting-point, dose or contact-time term (§9, water-window diagnostic). Descriptor error (MAE against experiment) is now shown in every range but not removed.
 - **Heuristic factors.** Heat alerts, volatility, filtration carry-over, acidity and the size penalty are heuristics with assumed ranges. They are not fitted to data.
 - **References made by an AI.** Every validation reference so far was built or curated by an AI: the silver labels, the drafted name identifications, the literature tables, the toxicity entries and the genus audit. All are reported as provisional. None has been checked by a person yet.

@@ -16,6 +16,7 @@
   python -m lip m3 studyset              study-set proposal table for human approval
   python -m lip m4 validate-logp         RDKit vs GFN2-xTB logP against experiment (needs .tools/xtb-env)
   python -m lip m4 water-calibration     cold-water likelihood vs logP diagnostic (no model change)
+  python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
   python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
   python -m lip results                  RESULTS.md from pipeline outputs (validated vs provisional, labelled)
 """
@@ -137,6 +138,11 @@ def main(argv: list[str]) -> int:
         elif sub == "run":
             from .m4 import run
             print(json.dumps(run.main(), indent=2))
+    elif cmd == "m6":
+        sub = argv[1] if len(argv) > 1 else "rank-demo"
+        if sub == "rank-demo":
+            from .m6 import ranking
+            print(json.dumps({k: v for k, v in ranking.stability().items() if k != "top"}, indent=2))
     else:
         print(__doc__)
         return 1

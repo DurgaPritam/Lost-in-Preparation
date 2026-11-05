@@ -14,7 +14,7 @@ def test_schemas_match_models():
 
 
 def test_contract_version_frozen():
-    assert C.CONTRACT_VERSION == "1.4"
+    assert C.CONTRACT_VERSION == "1.5"
 
 
 def test_recipe_defaults_are_unknown():

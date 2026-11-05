@@ -477,16 +477,5 @@
   "toxicityFlag": "unknown",
   "toxicityNote": "No reputable open source on toxicity located in this session (genus-level Stachys reviews cover other species only). Not evidence of safety. (AI-drafted, unverified)",
   "toxicityEvidence": null
- },
- {
-  "mock": false,
-  "speciesId": "wfo-0000369713",
-  "acceptedName": "Moricandia arvensis",
-  "file": "profiles/wfo-0000369713.json",
-  "preparations": 13,
-  "compounds": 19,
-  "toxicityFlag": "unknown",
-  "toxicityNote": "No reputable open source on toxicity located in this session (papers found address anti-genotoxicity or cancer-cell cytotoxicity only). Not evidence of safety. (AI-drafted, unverified)",
-  "toxicityEvidence": null
  }
 ]

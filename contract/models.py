@@ -19,7 +19,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-CONTRACT_VERSION = "1.4"
+CONTRACT_VERSION = "1.5"
 UNKNOWN = "unknown"
 
 
@@ -417,6 +417,16 @@ class EvidenceItem(_Model):
     note: str | None = None
 
 
+class GapRanking(_Model):  # v1.5 (P35)
+    rule: str = Field(description="the ranking rule, e.g. rank by the 5th percentile of the gap over coupled draws")
+    gapP5: float = Field(description="profile gap exceeded in 95% of draws (the ranking key)")
+    gapThreshold: float
+    pGapAboveThreshold: float
+    compoundsUsed: int
+    compoundsExcludedWide: int = Field(description="compounds left out: 5th–95th range wider than the rule's limit")
+    rankByMedianGap: int | None = Field(None, description="comparison only; not used for ranking")
+
+
 class Hypothesis(_Record):
     rank: int
     speciesId: str
@@ -425,7 +435,8 @@ class Hypothesis(_Record):
     faithfulPreparation: str = Field(description="preparationKey")
     faithfulPreparationText: str
     attestationCount: int
-    profileGap: Interval  # P22: 1 - weighted cosine similarity, in [0,1]
+    profileGap: Interval  # P22: 1 - cosine similarity, in [0,1]; v1.5 (P35): value = median, low/high = 5th/95th of coupled draws
+    gapRanking: GapRanking | None = None  # v1.5 (P35): the robust ranking rule's inputs
     neverTestedFaithfully: bool
     toxicityFlag: ToxicityFlag  # P18
     toxicityNote: str | None = None

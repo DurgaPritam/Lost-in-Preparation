@@ -133,7 +133,8 @@ def estimate(c: Compound, prep: Prep, cfg: dict, seed_offset: int = 0, sd: float
 
 
 def simulate(c: Compound, prep: Prep, cfg: dict, seed_offset: int = 0,
-             k_fixed: float | None = None, h_sd: float = 0.0) -> dict:
+             k_fixed: float | None = None, h_sd: float = 0.0, noise_seed: int | None = None,
+             return_draws: bool = False):
     """Primary model with the defaults. `k_fixed` / `h_sd` exist only for the secondary
     `water-partition-slope` variant pre-registered in docs/PREREGISTRATION_v2.md (fixed window
     slope; Normal descriptor noise drawn from a separate stream so the primary draws are unchanged)."""
@@ -144,7 +145,8 @@ def simulate(c: Compound, prep: Prep, cfg: dict, seed_offset: int = 0,
         k = np.full(n, float(k_fixed))
     h = np.full(n, c.h)
     if h_sd > 0:
-        h = h + np.random.default_rng(cfg["mc"]["seed"] + seed_offset + 10_000_019).normal(0.0, h_sd, n)
+        ns = noise_seed if noise_seed is not None else cfg["mc"]["seed"] + seed_offset + 10_000_019
+        h = h + np.random.default_rng(ns).normal(0.0, h_sd, n)  # noise_seed: couple one compound's error across preparations
 
     # solvent (+ acidity), mixtures take the best-extracting component
     if prep.process == "distillation":
@@ -196,9 +198,10 @@ def simulate(c: Compound, prep: Prep, cfg: dict, seed_offset: int = 0,
         filt_factor = np.where(f_solvent > 0, f_carried / f_solvent, 1.0)
         acid_factor = np.where(f_noacid > 0, f_solvent / f_noacid, 1.0)
     q = np.percentile(total, [5, 50, 95])
-    return {
+    out = {
         "likelihood": round(float(q[1]), 4), "low": round(float(q[0]), 4), "high": round(float(q[2]), 4),
         "drivers": {"solvent": round(float(np.median(f_noacid)), 4), "heat": round(float(np.median(heat_factor)), 4),
                     "filtration": round(float(np.median(filt_factor)), 4), "acidity": round(float(np.median(acid_factor)), 4)},
         "heuristicFlags": sorted(set(c.heatFlags + (["volatile"] if c.volatile else []) + (["basic_nitrogen"] if c.basicN else []))),
     }
+    return (out, total) if return_draws else out
