@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.1/sources.json",
+  "title": "sources.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "workId": {
+        "description": "Groups volumes/editions of one work (P25)",
+        "title": "Workid",
+        "type": "string"
+      },
+      "title": {
+        "title": "Title",
+        "type": "string"
+      },
+      "author": {
+        "title": "Author",
+        "type": "string"
+      },
+      "translator": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Translator"
+      },
+      "originalYear": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Year of composition/first publication; may be approximate (P24)",
+        "title": "Originalyear"
+      },
+      "originalYearApprox": {
+        "default": false,
+        "title": "Originalyearapprox",
+        "type": "boolean"
+      },
+      "editionYear": {
+        "description": "Year of the edition actually digitised (P24)",
+        "title": "Editionyear",
+        "type": "integer"
+      },
+      "language": {
+        "title": "Language",
+        "type": "string"
+      },
+      "edition": {
+        "title": "Edition",
+        "type": "string"
+      },
+      "licence": {
+        "title": "Licence",
+        "type": "string"
+      },
+      "licenceVerified": {
+        "title": "Licenceverified",
+        "type": "boolean"
+      },
+      "licenceNote": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Licencenote"
+      },
+      "editorialNote": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Later editorial additions etc. (P26)",
+        "title": "Editorialnote"
+      },
+      "url": {
+        "title": "Url",
+        "type": "string"
+      },
+      "files": {
+        "default": [],
+        "items": {
+          "$ref": "#/$defs/SourceFile"
+        },
+        "title": "Files",
+        "type": "array"
+      }
+    },
+    "required": [
+      "id",
+      "workId",
+      "title",
+      "author",
+      "editionYear",
+      "language",
+      "edition",
+      "licence",
+      "licenceVerified",
+      "url"
+    ],
+    "title": "Source",
+    "type": "object"
+  },
+  "$defs": {
+    "SourceFile": {
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "sha256"
+      ],
+      "title": "SourceFile",
+      "type": "object"
+    }
+  }
+}

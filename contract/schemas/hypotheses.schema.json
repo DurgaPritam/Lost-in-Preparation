@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.1/hypotheses.json",
+  "title": "hypotheses.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "rank": {
+        "title": "Rank",
+        "type": "integer"
+      },
+      "speciesId": {
+        "title": "Speciesid",
+        "type": "string"
+      },
+      "indication": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/MeshTerm"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "indicationAsWritten": {
+        "title": "Indicationaswritten",
+        "type": "string"
+      },
+      "faithfulPreparation": {
+        "description": "preparationKey",
+        "title": "Faithfulpreparation",
+        "type": "string"
+      },
+      "faithfulPreparationText": {
+        "title": "Faithfulpreparationtext",
+        "type": "string"
+      },
+      "attestationCount": {
+        "title": "Attestationcount",
+        "type": "integer"
+      },
+      "profileGap": {
+        "$ref": "#/$defs/Interval"
+      },
+      "neverTestedFaithfully": {
+        "title": "Nevertestedfaithfully",
+        "type": "boolean"
+      },
+      "toxicityFlag": {
+        "$ref": "#/$defs/ToxicityFlag"
+      },
+      "toxicityNote": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Toxicitynote"
+      },
+      "caveats": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Caveats",
+        "type": "array"
+      },
+      "evidenceTrail": {
+        "items": {
+          "$ref": "#/$defs/EvidenceItem"
+        },
+        "title": "Evidencetrail",
+        "type": "array"
+      }
+    },
+    "required": [
+      "rank",
+      "speciesId",
+      "indication",
+      "indicationAsWritten",
+      "faithfulPreparation",
+      "faithfulPreparationText",
+      "attestationCount",
+      "profileGap",
+      "neverTestedFaithfully",
+      "toxicityFlag",
+      "caveats",
+      "evidenceTrail"
+    ],
+    "title": "Hypothesis",
+    "type": "object"
+  },
+  "$defs": {
+    "EvidenceItem": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "ref": {
+          "title": "Ref",
+          "type": "string"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "kind",
+        "ref"
+      ],
+      "title": "EvidenceItem",
+      "type": "object"
+    },
+    "Interval": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "low": {
+          "title": "Low",
+          "type": "number"
+        },
+        "high": {
+          "title": "High",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "low",
+        "high"
+      ],
+      "title": "Interval",
+      "type": "object"
+    },
+    "MeshTerm": {
+      "additionalProperties": false,
+      "properties": {
+        "meshId": {
+          "title": "Meshid",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "meshId",
+        "label"
+      ],
+      "title": "MeshTerm",
+      "type": "object"
+    },
+    "ToxicityFlag": {
+      "enum": [
+        "known_toxic",
+        "none_known",
+        "unknown"
+      ],
+      "title": "ToxicityFlag",
+      "type": "string"
+    }
+  }
+}

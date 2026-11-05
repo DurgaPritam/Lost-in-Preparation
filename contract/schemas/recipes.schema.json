@@ -1,0 +1,576 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.1/recipes.json",
+  "title": "recipes.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "sourceId": {
+        "title": "Sourceid",
+        "type": "string"
+      },
+      "passage": {
+        "$ref": "#/$defs/PassageRef"
+      },
+      "recipeType": {
+        "$ref": "#/$defs/RecipeType",
+        "default": "unknown"
+      },
+      "ingredients": {
+        "default": [],
+        "items": {
+          "$ref": "#/$defs/Ingredient"
+        },
+        "title": "Ingredients",
+        "type": "array"
+      },
+      "plantNameAsWritten": {
+        "default": "unknown",
+        "title": "Plantnameaswritten",
+        "type": "string"
+      },
+      "part": {
+        "$ref": "#/$defs/Part",
+        "default": "unknown"
+      },
+      "freshOrDried": {
+        "$ref": "#/$defs/FreshOrDried",
+        "default": "unknown"
+      },
+      "solvent": {
+        "items": {
+          "$ref": "#/$defs/Solvent"
+        },
+        "minItems": 1,
+        "title": "Solvent",
+        "type": "array"
+      },
+      "heat": {
+        "$ref": "#/$defs/Heat",
+        "default": "unknown"
+      },
+      "heatText": {
+        "default": "unknown",
+        "title": "Heattext",
+        "type": "string"
+      },
+      "durationText": {
+        "default": "unknown",
+        "title": "Durationtext",
+        "type": "string"
+      },
+      "filtered": {
+        "$ref": "#/$defs/Filtered",
+        "default": "unknown"
+      },
+      "process": {
+        "$ref": "#/$defs/Process",
+        "default": "unknown"
+      },
+      "form": {
+        "$ref": "#/$defs/Form",
+        "default": "unknown"
+      },
+      "indicationAsWritten": {
+        "default": "unknown",
+        "title": "Indicationaswritten",
+        "type": "string"
+      },
+      "indicationNormalized": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/MeshTerm"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "fieldConfidence": {
+        "additionalProperties": {
+          "type": "number"
+        },
+        "description": "Model self-reported 0-1 confidence per field; uncalibrated",
+        "title": "Fieldconfidence",
+        "type": "object"
+      },
+      "evidence": {
+        "additionalProperties": {
+          "items": {
+            "$ref": "#/$defs/Quote"
+          },
+          "type": "array"
+        },
+        "description": "Verbatim quotes supporting each non-unknown field; key 'recipe' = whole recipe span (P28)",
+        "title": "Evidence",
+        "type": "object"
+      },
+      "attributionCaveat": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Attributioncaveat"
+      },
+      "excludedFromHeadline": {
+        "default": false,
+        "description": "True for compound recipes (P27 decision)",
+        "title": "Excludedfromheadline",
+        "type": "boolean"
+      },
+      "provenance": {
+        "$ref": "#/$defs/Provenance"
+      }
+    },
+    "required": [
+      "id",
+      "sourceId",
+      "passage",
+      "provenance"
+    ],
+    "title": "Recipe",
+    "type": "object"
+  },
+  "$defs": {
+    "Filtered": {
+      "enum": [
+        "yes",
+        "no",
+        "not_applicable",
+        "unknown"
+      ],
+      "title": "Filtered",
+      "type": "string"
+    },
+    "Form": {
+      "enum": [
+        "drink",
+        "poultice",
+        "ointment",
+        "plaster",
+        "gargle",
+        "inhalation",
+        "other",
+        "unknown"
+      ],
+      "title": "Form",
+      "type": "string"
+    },
+    "FreshOrDried": {
+      "enum": [
+        "fresh",
+        "dried",
+        "unknown"
+      ],
+      "title": "FreshOrDried",
+      "type": "string"
+    },
+    "Heat": {
+      "enum": [
+        "cold",
+        "warm",
+        "boiled",
+        "unknown"
+      ],
+      "title": "Heat",
+      "type": "string"
+    },
+    "Ingredient": {
+      "additionalProperties": false,
+      "properties": {
+        "plantNameAsWritten": {
+          "title": "Plantnameaswritten",
+          "type": "string"
+        },
+        "part": {
+          "$ref": "#/$defs/Part",
+          "default": "unknown"
+        },
+        "role": {
+          "$ref": "#/$defs/IngredientRole",
+          "default": "unknown"
+        },
+        "kind": {
+          "$ref": "#/$defs/IngredientKind",
+          "default": "unknown"
+        },
+        "evidence": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Quote"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "plantNameAsWritten"
+      ],
+      "title": "Ingredient",
+      "type": "object"
+    },
+    "IngredientKind": {
+      "enum": [
+        "plant",
+        "animal",
+        "mineral",
+        "other",
+        "unknown"
+      ],
+      "title": "IngredientKind",
+      "type": "string"
+    },
+    "IngredientRole": {
+      "enum": [
+        "principal",
+        "co_ingredient",
+        "unknown"
+      ],
+      "title": "IngredientRole",
+      "type": "string"
+    },
+    "MeshTerm": {
+      "additionalProperties": false,
+      "properties": {
+        "meshId": {
+          "title": "Meshid",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "meshId",
+        "label"
+      ],
+      "title": "MeshTerm",
+      "type": "object"
+    },
+    "Part": {
+      "enum": [
+        "leaf",
+        "root",
+        "rhizome",
+        "seed",
+        "fruit",
+        "flower",
+        "bark",
+        "stem",
+        "aerial_parts",
+        "whole_plant",
+        "resin",
+        "juice",
+        "other",
+        "unknown"
+      ],
+      "title": "Part",
+      "type": "string"
+    },
+    "PassageLocation": {
+      "additionalProperties": false,
+      "properties": {
+        "part": {
+          "title": "Part",
+          "type": "string"
+        },
+        "book": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Book"
+        },
+        "chapter": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chapter"
+        },
+        "entry": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Entry"
+        },
+        "subsection": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Subsection"
+        },
+        "lineStart": {
+          "title": "Linestart",
+          "type": "integer"
+        },
+        "lineEnd": {
+          "title": "Lineend",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "part",
+        "lineStart",
+        "lineEnd"
+      ],
+      "title": "PassageLocation",
+      "type": "object"
+    },
+    "PassageRef": {
+      "additionalProperties": false,
+      "properties": {
+        "passageId": {
+          "title": "Passageid",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/$defs/PassageLocation"
+        },
+        "translation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translation"
+        },
+        "translationSource": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Translationsource"
+        }
+      },
+      "required": [
+        "passageId",
+        "text",
+        "location"
+      ],
+      "title": "PassageRef",
+      "type": "object"
+    },
+    "Process": {
+      "enum": [
+        "infusion",
+        "decoction",
+        "maceration",
+        "distillation",
+        "expression",
+        "powder",
+        "other",
+        "unknown"
+      ],
+      "title": "Process",
+      "type": "string"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "$ref": "#/$defs/ProvenanceMethod"
+        },
+        "provider": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider"
+        },
+        "model": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model"
+        },
+        "modelVersion": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. Ollama model digest",
+          "title": "Modelversion"
+        },
+        "decoding": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "temperature, seed, context length, quantisation, effort...",
+          "title": "Decoding"
+        },
+        "promptVersion": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Promptversion"
+        },
+        "annotator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Annotator"
+        },
+        "createdAt": {
+          "title": "Createdat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "method",
+        "createdAt"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "ProvenanceMethod": {
+      "enum": [
+        "llm",
+        "human",
+        "adjudicated"
+      ],
+      "title": "ProvenanceMethod",
+      "type": "string"
+    },
+    "Quote": {
+      "additionalProperties": false,
+      "description": "A verbatim span of the passage's cleaned text (P28). Offsets index into passage.text.\n\ninHeading=True: the quote comes from the entry heading (plant names only); start=end=-1.",
+      "properties": {
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        },
+        "start": {
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "title": "End",
+          "type": "integer"
+        },
+        "inHeading": {
+          "default": false,
+          "title": "Inheading",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "quote",
+        "start",
+        "end"
+      ],
+      "title": "Quote",
+      "type": "object"
+    },
+    "RecipeType": {
+      "enum": [
+        "single_plant",
+        "compound",
+        "unknown"
+      ],
+      "title": "RecipeType",
+      "type": "string"
+    },
+    "Solvent": {
+      "enum": [
+        "water",
+        "wine",
+        "vinegar",
+        "oil",
+        "honey",
+        "none",
+        "other",
+        "unknown"
+      ],
+      "title": "Solvent",
+      "type": "string"
+    }
+  }
+}

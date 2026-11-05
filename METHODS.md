@@ -1,0 +1,95 @@
+# Methods
+
+This document describes how every dataset in this repository is produced. All counts quoted here come from files the pipeline writes; each section names its file.
+
+## 1. Sources and ingestion
+
+| Source | Copy | Profile |
+|---|---|---|
+| Culpeper, *The English Physitian* (London: Peter Cole, 1652) | EEBO-TCP A35365, TEI P5, CC0 | `tei` — **primary herbal source** |
+| Culpeper, *The Complete Herbal* (London: Thomas Kelly, 1850) | Project Gutenberg #49513 | `culpeper` — dispensatory, directions; herbal kept for comparison |
+| Pliny, *Natural History*, tr. Bostock & Riley (Bohn, 1856), vols 4–5 | Project Gutenberg #61113, #60688 | `pliny` — books XX–XXVII are in scope |
+
+Licences and evidence: [docs/DATA_LICENCES.md](docs/DATA_LICENCES.md). Raw files are downloaded by `lip fetch`, which records the URL, SHA-256 and retrieval time in `data/raw/manifest.json`. Ingest refuses to run if a checksum differs.
+
+**Passages.** Each source is split into passages with stable IDs and locations: book, chapter and paragraph for Pliny; entry and subsection for Culpeper. The output is `data/interim/passages.parquet`, and the counts are in `data/interim/ingest_report.json`.
+
+- **Gutenberg texts.** Blocks are runs of non-blank lines. Every non-blank line belongs to exactly one passage, and the tests check this. Cleaning is limited to three steps: line unwrapping, removal of italic markers, and removal of footnote anchors (the anchors are kept as links). Spelling, hyphenation and punctuation are never changed, and the original text is stored next to the cleaned text. Pliny's footnotes are Bostock & Riley's 19th-century commentary. They are stored as separate passages linked to the paragraphs that cite them, and are never treated as Pliny's text.
+- **TEI text (1652).** Passages are TEI block elements. The renderer applies four rules:
+  1. Line-end word breaks (`<g ref="char:EOLhyphen"/>`) are joined.
+  2. **Illegible letters stay visible** as `⟦?⟧`, with one `?` per missing letter (`⟦foreign⟧` for omitted foreign text). These markers are never removed downstream.
+  3. Printed marginal notes are moved out of the running text into their own passages, linked to their paragraph.
+  4. Page breaks set the page number.
+
+  Part headings are normalised: "Vertues and Vse", "The Vertues" and "♄ Discription" become `vertues and use` and `description`. A test checks that every text node in the TEI body lands in exactly one passage.
+
+## 2. 1850 ↔ 1652 crosswalk (heuristic)
+
+The 1850 edition claims to add "upwards of one hundred additional herbs". Each 1850 herbal heading is matched to a 1652 heading to find them:
+
+- **Normalisation:** early-modern spelling is mapped (vv→w, v→u, j→i, y→i, ph→f), doubled letters and word-final *e* are removed, and every alternative name in a heading is compared.
+- **Assignment:** one-to-one, greedy by score.
+- **Status:**
+  - `in_1652` for a score of 0.90 or more;
+  - `probable_1652` for 0.75–0.90;
+  - otherwise `later_addition_candidate`.
+
+The flag applies to **1850 herbal entries only**. The 1850 dispensatory and directions come from other works and have no 1652 counterpart by construction. Every pairing, with its score and nearest alternative, is in `data/interim/culpeper_1850_1652_crosswalk.csv` for review. Reviewer decisions go in `config/crosswalk_overrides.csv` and always override the heuristic.
+
+Limitation: an 1850 herb that appears in 1652 under a completely different name is flagged as a candidate, not confirmed.
+
+## 3. Recipe extraction (M1)
+
+**Prompt.** One versioned prompt ([prompts/m1_extract/v1/](prompts/m1_extract/v1/)) holds the system text, the [annotation guidelines](prompts/m1_extract/v1/guidelines.md) and four Culpeper worked examples. The output is constrained to a strict JSON schema ([response.schema.json](prompts/m1_extract/v1/response.schema.json)). Human annotators and the model follow the same guidelines.
+
+**Verbatim-quote rule.** Every recipe span, free-text value and non-`unknown` enum value must be supported by a verbatim quote from the passage. Plant names may instead come from the entry heading, and are then flagged `inHeading`. Matching ignores only typography: curly vs straight quotes, dash variants and whitespace. If a quote fails, the model sees the errors and retries, up to 2 times. A recipe that still fails is **rejected and logged**; it is never repaired by code.
+
+**Providers.** The provider is set in [config/pipeline.toml](config/pipeline.toml), and both get identical prompts, schema and checks.
+
+| Provider | Model | Decoding |
+|---|---|---|
+| `ollama` (default, local) | `qwen2.5:7b-instruct` (Q4_K_M, 4.7 GB), suited to a 16 GB RAM laptop. Alternatives are listed in the config. | temperature 0, seed 0, context 16,384 tokens |
+| `anthropic` (optional) | `claude-opus-5-5` | effort `high`, server-side refusal fallback |
+
+**Provenance and caching.** The provider, model, the exact model digest read from Ollama, the decoding settings and the prompt version are recorded on every extracted recipe and in `metrics.json`. Responses are cached on disk under a key that covers all of these, so re-runs are reproducible.
+
+**Scope.** Only single-plant recipes enter the core analysis and the headline numbers. Compound recipes are stored with `excludedFromHeadline: true`.
+
+## 4. Gold-set sample (v2)
+
+The file is `data/gold/sample_v2.json` (seed `20261106`). It holds 50 passages drawn without replacement, stratified by source:
+
+| Stratum | n | Frame |
+|---|---|---|
+| `culpeper1652_virtues` | 20 | 1652 herbal, body paragraphs in "Vertues and use" sections |
+| `culpeper1850_dispensatory` | 10 | 1850 Family Dispensatory, body paragraphs |
+| `pliny` | 20 | Pliny books XX–XXVII, body paragraphs |
+
+Frame rules:
+- Recipe-scope body passages only.
+- The four few-shot passages are excluded, since they are in the prompt.
+- Passages that contain any illegible-gap marker are excluded. Recipe spans aren't known before annotation, so excluding every passage with a gap is a conservative superset of "a gap inside recipe text".
+
+Frame sizes and the number of passages excluded for gaps are recorded in the sample file (`frameSize`, `excludedForGap`).
+
+## 5. Annotation and evaluation
+
+**Annotation.** [annotation/index.html](annotation/index.html) is a static tool that needs no server and never shows model output. Two annotators work independently and save `data/gold/annotations/<name>.json`. An adjudicator then compares the two files in **Adjudicate** mode and saves `gold.json`.
+
+**Evaluation** (`lip m1 eval` writes `site-data/metrics.json`):
+- **Alignment:** recipes in a passage are paired by the character overlap (IoU) of their recipe spans, with ties broken by the number of agreeing fields.
+- **Per-field P/R/F1:**
+  - TP: both values known and equal.
+  - FP + FN: both known but different.
+  - FP: predicted known, gold unknown. FN: predicted unknown, gold known.
+  - `solvent` and `ingredients` are scored as sets; free-text fields match at token-F1 ≥ 0.5.
+- **Recipe detection P/R/F1:** paired vs unpaired recipes.
+- **Intervals:** 95% bootstrap CIs over passages (B = 2000), stratified for the overall figures, reported per stratum and overall.
+- **Agreement:** Cohen's kappa between annotators per categorical field, with `unknown` as a category. If both annotators use a single category, kappa is reported as not computed.
+- **Missing inputs:** a metric whose inputs don't exist is written as `not_computed` with the reason. No placeholder numbers are written.
+
+**Error analysis:** `lip m1 errors` writes [docs/extraction_errors.md](docs/extraction_errors.md).
+
+## 6. Name resolution and compounds (M2, M3)
+
+See §6 of this document once Phase 3 results are written.

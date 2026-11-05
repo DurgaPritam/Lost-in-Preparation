@@ -1,0 +1,275 @@
+{
+  "type": "object",
+  "properties": {
+    "recipes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "recipeQuote": {
+            "type": "string"
+          },
+          "recipeType": {
+            "type": "string",
+            "enum": [
+              "single_plant",
+              "compound",
+              "unknown"
+            ]
+          },
+          "ingredients": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "plantNameAsWritten": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "string",
+                  "enum": [
+                    "leaf",
+                    "root",
+                    "rhizome",
+                    "seed",
+                    "fruit",
+                    "flower",
+                    "bark",
+                    "stem",
+                    "aerial_parts",
+                    "whole_plant",
+                    "resin",
+                    "juice",
+                    "other",
+                    "unknown"
+                  ]
+                },
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "principal",
+                    "co_ingredient",
+                    "unknown"
+                  ]
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "plant",
+                    "animal",
+                    "mineral",
+                    "other",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "plantNameAsWritten",
+                "part",
+                "role",
+                "kind"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "plantNameAsWritten": {
+            "type": "string"
+          },
+          "part": {
+            "type": "string",
+            "enum": [
+              "leaf",
+              "root",
+              "rhizome",
+              "seed",
+              "fruit",
+              "flower",
+              "bark",
+              "stem",
+              "aerial_parts",
+              "whole_plant",
+              "resin",
+              "juice",
+              "other",
+              "unknown"
+            ]
+          },
+          "freshOrDried": {
+            "type": "string",
+            "enum": [
+              "fresh",
+              "dried",
+              "unknown"
+            ]
+          },
+          "solvent": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "water",
+                "wine",
+                "vinegar",
+                "oil",
+                "honey",
+                "none",
+                "other",
+                "unknown"
+              ]
+            }
+          },
+          "heat": {
+            "type": "string",
+            "enum": [
+              "cold",
+              "warm",
+              "boiled",
+              "unknown"
+            ]
+          },
+          "heatText": {
+            "type": "string"
+          },
+          "durationText": {
+            "type": "string"
+          },
+          "filtered": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "not_applicable",
+              "unknown"
+            ]
+          },
+          "process": {
+            "type": "string",
+            "enum": [
+              "infusion",
+              "decoction",
+              "maceration",
+              "distillation",
+              "expression",
+              "powder",
+              "other",
+              "unknown"
+            ]
+          },
+          "form": {
+            "type": "string",
+            "enum": [
+              "drink",
+              "poultice",
+              "ointment",
+              "plaster",
+              "gargle",
+              "inhalation",
+              "other",
+              "unknown"
+            ]
+          },
+          "indicationAsWritten": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "type": "string",
+                  "enum": [
+                    "recipeType",
+                    "part",
+                    "freshOrDried",
+                    "heat",
+                    "filtered",
+                    "process",
+                    "form",
+                    "solvent"
+                  ]
+                },
+                "quote": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "field",
+                "quote"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "quotesFromHeading": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "plantNameAsWritten",
+                "ingredients"
+              ]
+            }
+          },
+          "fieldConfidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "type": "string",
+                  "enum": [
+                    "recipeType",
+                    "part",
+                    "freshOrDried",
+                    "heat",
+                    "filtered",
+                    "process",
+                    "form",
+                    "solvent",
+                    "plantNameAsWritten",
+                    "heatText",
+                    "durationText",
+                    "indicationAsWritten",
+                    "ingredients"
+                  ]
+                },
+                "confidence": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "field",
+                "confidence"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "recipeQuote",
+          "recipeType",
+          "ingredients",
+          "plantNameAsWritten",
+          "part",
+          "freshOrDried",
+          "solvent",
+          "heat",
+          "heatText",
+          "durationText",
+          "filtered",
+          "process",
+          "form",
+          "indicationAsWritten",
+          "evidence",
+          "quotesFromHeading",
+          "fieldConfidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "recipes"
+  ],
+  "additionalProperties": false
+}

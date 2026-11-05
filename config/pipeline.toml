@@ -1,0 +1,23 @@
+# Pipeline settings. The values used are recorded in every output (provenance) and in metrics.json.
+
+[m1]
+provider = "ollama"          # "ollama" (local, default) | "anthropic"
+
+[m1.ollama]
+# Default for a 16 GB RAM laptop: Qwen2.5 7B Instruct, Q4_K_M, 4.7 GB, 32K context, Ollama ID 845dbda0ea48.
+# Alternatives (Ollama library, checked 2026-11-05):
+#   qwen3:8b      5.2 GB, 40K ctx, ID 500a1f067a9f  (thinking model: set think = false)
+#   llama3.1:8b   4.9 GB, 128K ctx, ID 46e0c10c039e
+#   gemma3:12b    8.2 GB, 128K ctx, ID b92b218582c5 (fits in 16 GB, slower)
+# The exact digest of the installed model is read from Ollama at run time.
+model = "qwen2.5:7b-instruct"
+host = "http://localhost:11434"
+temperature = 0.0
+seed = 0
+num_ctx = 16384              # the system prompt is ~6k tokens; Ollama's default context would truncate it
+num_predict = 4096
+
+[m1.anthropic]
+model = "claude-opus-5-5"
+effort = "high"
+fallbacks = true

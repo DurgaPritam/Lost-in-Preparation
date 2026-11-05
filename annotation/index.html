@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipe Annotation</title>
+<style>
+  :root { --bg:#fbfaf7; --panel:#ffffff; --ink:#1d1b18; --muted:#6b665d; --line:#e3ded4; --accent:#2f5d50; --warn:#9a3b1f; --mark:#f4e3a1; --mark2:#cfe3dc; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16150f; --panel:#1f1d17; --ink:#ece8de; --muted:#a39d90; --line:#37332a; --accent:#7fbfa9; --warn:#e48a6b; --mark:#5b4f1d; --mark2:#24443a; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.5 system-ui, -apple-system, Segoe UI, sans-serif; background:var(--bg); color:var(--ink); }
+  header { display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding:10px 16px; border-bottom:1px solid var(--line); background:var(--panel); position:sticky; top:0; z-index:5; }
+  header h1 { font-size:15px; margin:0 12px 0 0; }
+  input, select, textarea, button { font:inherit; color:inherit; background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:4px 8px; }
+  button { cursor:pointer; background:var(--panel); }
+  button.primary { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+  button.danger { color:var(--warn); }
+  main { display:grid; grid-template-columns: 260px 1fr; min-height: calc(100vh - 54px); }
+  nav { border-right:1px solid var(--line); overflow:auto; max-height:calc(100vh - 54px); position:sticky; top:54px; }
+  nav .item { padding:6px 12px; border-bottom:1px solid var(--line); cursor:pointer; font-size:12.5px; }
+  nav .item.active { background:var(--mark2); }
+  nav .item .s { color:var(--muted); font-size:11px; }
+  nav .done::before { content:"✓ "; color:var(--accent); font-weight:700; }
+  section#work { padding:16px 20px; overflow:auto; }
+  .ctx { color:var(--muted); font-size:12.5px; margin-bottom:6px; }
+  .heading { font-weight:600; margin-bottom:6px; }
+  #ptext { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px 14px; font-family: Georgia, serif; font-size:15.5px; line-height:1.65; white-space:pre-wrap; }
+  #preview { font-family: Georgia, serif; font-size:13.5px; color:var(--muted); margin-top:6px; white-space:pre-wrap; }
+  mark { background:var(--mark); color:inherit; }
+  .selbar { position:sticky; top:54px; z-index:4; background:var(--panel); border:1px solid var(--accent); border-radius:8px; padding:8px; margin:10px 0; display:none; gap:6px; flex-wrap:wrap; align-items:center; }
+  .selbar.show { display:flex; }
+  .selbar .q { flex-basis:100%; font-family:Georgia,serif; font-size:13px; color:var(--muted); }
+  .recipe { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:10px 12px; margin:12px 0; }
+  .recipe.current { border-color:var(--accent); box-shadow:0 0 0 1px var(--accent) inset; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:8px 12px; margin-top:8px; }
+  .grid label { display:flex; flex-direction:column; font-size:12px; color:var(--muted); gap:2px; }
+  .txt { font-family:Georgia, serif; font-size:13px; color:var(--ink); background:var(--bg); border:1px dashed var(--line); border-radius:6px; padding:3px 6px; min-height:26px; }
+  .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:6px; }
+  .warn { color:var(--warn); font-size:12.5px; }
+  .ev { font-size:12px; color:var(--muted); }
+  .cmp { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
+  .cmp pre { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px; font-size:11.5px; white-space:pre-wrap; max-height:360px; overflow:auto; }
+  #guide { display:none; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px; white-space:pre-wrap; font-size:12.5px; max-height:60vh; overflow:auto; margin-bottom:12px; }
+  @media (max-width: 760px) { main { grid-template-columns: 1fr; } nav { position:static; max-height:200px; } .cmp { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Recipe annotation</h1>
+  <label>Annotator <input id="who" placeholder="your name" size="12"></label>
+  <label>Mode <select id="mode"><option value="annotate">Annotate</option><option value="adjudicate">Adjudicate</option></select></label>
+  <span id="adjfiles" style="display:none"><label>A <input type="file" id="fileA" accept=".json" aria-label="Annotator A file"></label> <label>B <input type="file" id="fileB" accept=".json" aria-label="Annotator B file"></label></span>
+  <span id="progress" class="ctx"></span>
+  <button id="toggleGuide">Guidelines</button>
+  <button id="importBtn">Import</button><input type="file" id="importFile" accept=".json" aria-label="Import annotation file" hidden>
+  <button id="exportBtn" class="primary">Export JSON</button>
+</header>
+<main>
+  <nav id="list"></nav>
+  <section id="work">
+    <div id="guide"></div>
+    <div id="pane"></div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script>
+"use strict";
+const D = window.LIP, E = D.enums, P = D.sample.passages;
+const TEXT_FIELDS = ["plantNameAsWritten", "heatText", "durationText", "indicationAsWritten"];
+const CAT_FIELDS = ["recipeType", "part", "freshOrDried", "heat", "filtered", "process", "form"];
+const $ = (s, el = document) => el.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => { const n = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === "on") for (const [ev, f] of Object.entries(v)) n.addEventListener(ev, f); else if (k === "class") n.className = v; else n.setAttribute(k, v); } for (const c of kids) n.append(c); return n; };
+
+let state = { annotator: "", mode: "annotate", passages: {} };
+let A = null, B = null, cur = 0, curRecipe = 0, sel = null;
+
+const key = () => `lip-annot-v1:${state.mode}:${state.annotator || "_"}`;
+function save() { try { localStorage.setItem(key(), JSON.stringify(state)); } catch (e) {} renderList(); }
+function load() { try { const s = JSON.parse(localStorage.getItem(key()) || "null"); if (s) state = s; } catch (e) {} }
+function pstate(pid) { return state.passages[pid] || (state.passages[pid] = { done: false, recipes: [], notes: "" }); }
+function blankRecipe() { const r = { recipeSpan: null, ingredients: [], solvent: ["unknown"], evidence: {}, notes: "" }; for (const f of CAT_FIELDS) r[f] = "unknown"; for (const f of TEXT_FIELDS) r[f] = "unknown"; return r; }
+
+// ---- selection inside the passage text (single text node) or the heading
+document.addEventListener("selectionchange", () => {
+  const s = document.getSelection(), bar = $("#selbar"); if (!bar) return;
+  sel = null;
+  if (s && s.rangeCount && !s.isCollapsed) {
+    const r = s.getRangeAt(0), pt = $("#ptext"), hd = $("#heading");
+    const within = n => n && (n === r.commonAncestorContainer || n.contains(r.commonAncestorContainer));
+    if (within(pt) && r.startContainer === pt.firstChild && r.endContainer === pt.firstChild) {
+      const text = pt.firstChild.textContent; let a = r.startOffset, b = r.endOffset;
+      while (a < b && /\s/.test(text[a])) a++; while (b > a && /\s/.test(text[b - 1])) b--;
+      if (b > a) sel = { quote: text.slice(a, b), start: a, end: b, inHeading: false };
+    } else if (within(hd)) {
+      const q = s.toString().trim(); if (q) sel = { quote: q, start: -1, end: -1, inHeading: true };
+    }
+  }
+  bar.classList.toggle("show", !!sel);
+  if (sel) $(".q", bar).textContent = (sel.inHeading ? "[heading] " : "") + "“" + sel.quote + "”";
+});
+
+function useSelection(target) {
+  const ps = pstate(P[cur].passageId); if (!sel) return;
+  if (!ps.recipes.length) ps.recipes.push(blankRecipe());
+  const r = ps.recipes[curRecipe] || ps.recipes[0];
+  if (target === "recipe") { if (sel.inHeading) return alert("The recipe span must come from the passage."); r.recipeSpan = { quote: sel.quote, start: sel.start, end: sel.end }; }
+  else if (target === "ingredient") r.ingredients.push({ plantNameAsWritten: sel.quote, part: "unknown", role: r.ingredients.length ? "co_ingredient" : "principal", kind: "plant", inHeading: sel.inHeading });
+  else if (TEXT_FIELDS.includes(target)) { if (sel.inHeading && target !== "plantNameAsWritten") return alert("Only plant names may come from the heading."); r[target] = sel.quote; r.evidence[target] = [sel]; }
+  else { if (sel.inHeading) return alert("Evidence must come from the passage."); (r.evidence[target] = r.evidence[target] || []).push(sel); }
+  document.getSelection().removeAllRanges(); save(); renderPassage();
+}
+
+// ---- rendering
+function renderList() {
+  const nav = $("#list"); nav.innerHTML = "";
+  let n = 0;
+  P.forEach((p, i) => {
+    const ps = state.passages[p.passageId]; if (ps && ps.done) n++;
+    nav.append(el("div", { class: "item" + (i === cur ? " active" : "") + (ps && ps.done ? " done" : ""), on: { click: () => { cur = i; curRecipe = 0; renderPassage(); renderList(); } } },
+      `${i + 1}. ${p.heading || p.passageId.split(":").slice(-2).join(":")}`, el("div", { class: "s" }, `${p.stratum} · ${p.passageId.split(":").pop()}`)));
+  });
+  $("#progress").textContent = `${n}/${P.length} done`;
+}
+
+function sel_(name, value, onchange) {
+  const s = el("select", { on: { change: e => onchange(e.target.value) } });
+  for (const v of E[name]) { const o = el("option", { value: v }, v); if (v === value) o.selected = true; s.append(o); }
+  return s;
+}
+
+function warnings(r) {
+  const w = [];
+  if (!r.recipeSpan) w.push("no recipe span (select the recipe text, then “Recipe span”)");
+  if (r.recipeType === "single_plant" && r.ingredients.length !== 1) w.push("single_plant needs exactly one ingredient");
+  for (const f of CAT_FIELDS) if (f !== "recipeType" && r[f] !== "unknown" && !(r.evidence[f] || []).length) w.push(`${f}: add an evidence quote`);
+  if (r.recipeType === "compound" && r.ingredients.length < 2 && !(r.evidence.recipeType || []).length) w.push("compound with <2 ingredients: add an evidence quote for recipeType");
+  if (!r.solvent.includes("unknown") && !(r.evidence.solvent || []).length) w.push("solvent: add an evidence quote");
+  return w;
+}
+
+function recipeCard(r, i, ps) {
+  const card = el("div", { class: "recipe" + (i === curRecipe ? " current" : ""), on: { click: () => { if (curRecipe !== i) { curRecipe = i; renderPassage(); } } } });
+  card.append(el("div", { class: "row" }, el("strong", {}, `Recipe ${i + 1}`),
+    el("button", { class: "danger", on: { click: e => { e.stopPropagation(); ps.recipes.splice(i, 1); curRecipe = 0; save(); renderPassage(); } } }, "delete")));
+  card.append(el("div", { class: "ev" }, "Recipe span: " + (r.recipeSpan ? "“" + r.recipeSpan.quote.slice(0, 160) + (r.recipeSpan.quote.length > 160 ? "…" : "") + "”" : "—")));
+  const g = el("div", { class: "grid" });
+  for (const f of CAT_FIELDS) g.append(el("label", {}, f, sel_(f, r[f], v => { r[f] = v; save(); renderPassage(); })));
+  const sv = el("div", { class: "row" });
+  for (const v of E.solvent) {
+    const cb = el("input", { type: "checkbox" }); cb.checked = r.solvent.includes(v);
+    cb.addEventListener("change", () => { let s = r.solvent.filter(x => x !== v); if (cb.checked) s.push(v); if (v !== "unknown") s = s.filter(x => x !== "unknown"); else if (cb.checked) s = ["unknown"]; r.solvent = s.length ? s : ["unknown"]; save(); renderPassage(); });
+    sv.append(el("label", {}, cb, " " + v));
+  }
+  g.append(el("label", {}, "solvent (list)", sv));
+  for (const f of TEXT_FIELDS) g.append(el("label", {}, f, el("div", { class: "txt" }, r[f]),
+    el("button", { on: { click: e => { e.stopPropagation(); r[f] = "unknown"; delete r.evidence[f]; save(); renderPassage(); } } }, "set unknown")));
+  card.append(g);
+  const ing = el("div", {}, el("div", { class: "ctx" }, "Ingredients (select a name, then “Ingredient”)"));
+  r.ingredients.forEach((x, j) => ing.append(el("div", { class: "row" }, el("span", { class: "txt" }, (x.inHeading ? "[heading] " : "") + x.plantNameAsWritten),
+    sel_("part", x.part, v => { x.part = v; save(); }), sel_("role", x.role, v => { x.role = v; save(); }), sel_("kind", x.kind, v => { x.kind = v; save(); }),
+    el("button", { class: "danger", on: { click: () => { r.ingredients.splice(j, 1); save(); renderPassage(); } } }, "×"))));
+  card.append(ing);
+  const evs = Object.entries(r.evidence).filter(([k]) => !TEXT_FIELDS.includes(k));
+  if (evs.length) card.append(el("div", { class: "ev" }, "Evidence: " + evs.map(([k, qs]) => `${k}: ` + qs.map(q => "“" + q.quote + "”").join(", ")).join(" · "),
+    " ", el("button", { on: { click: () => { for (const [k] of evs) delete r.evidence[k]; save(); renderPassage(); } } }, "clear evidence")));
+  const notes = el("textarea", { rows: "1", placeholder: "notes", style: "width:100%;margin-top:6px" }); notes.value = r.notes || "";
+  notes.addEventListener("input", () => { r.notes = notes.value; save(); });
+  card.append(notes);
+  const w = warnings(r); if (w.length) card.append(el("div", { class: "warn" }, "⚠ " + w.join(" · ")));
+  return card;
+}
+
+function highlighted(text, recipes) {
+  const div = el("div", { id: "preview" });
+  const r = recipes[curRecipe];
+  if (!r || !r.recipeSpan) { div.textContent = "(current recipe has no span yet)"; return div; }
+  const { start, end } = r.recipeSpan;
+  div.append(text.slice(Math.max(0, start - 80), start), el("mark", {}, text.slice(start, end)), text.slice(end, end + 80));
+  return div;
+}
+
+function compareView(p) {
+  const fmt = f => { const ps = f && f.passages && f.passages[p.passageId]; if (!ps) return "(not annotated)"; return JSON.stringify(ps.recipes.map(r => { const o = { span: r.recipeSpan && r.recipeSpan.quote }; for (const k of [...CAT_FIELDS, "solvent", ...TEXT_FIELDS]) if (JSON.stringify(r[k]) !== '"unknown"' && JSON.stringify(r[k]) !== '["unknown"]') o[k] = r[k]; o.ingredients = r.ingredients.map(x => x.plantNameAsWritten); return o; }), null, 1) + (ps.notes ? "\nnotes: " + ps.notes : ""); };
+  const ps = pstate(p.passageId);
+  const copy = f => () => { const src = f && f.passages && f.passages[p.passageId]; if (!src) return; if (ps.recipes.length && !confirm("Replace the gold recipes for this passage?")) return; ps.recipes = JSON.parse(JSON.stringify(src.recipes)); save(); renderPassage(); };
+  return el("div", { class: "cmp" },
+    el("div", {}, el("div", { class: "row" }, el("strong", {}, "Annotator A" + (A ? ` (${A.annotator})` : "")), el("button", { on: { click: copy(A) } }, "start gold from A")), el("pre", {}, A ? fmt(A) : "load file A")),
+    el("div", {}, el("div", { class: "row" }, el("strong", {}, "Annotator B" + (B ? ` (${B.annotator})` : "")), el("button", { on: { click: copy(B) } }, "start gold from B")), el("pre", {}, B ? fmt(B) : "load file B")));
+}
+
+function renderPassage() {
+  const p = P[cur], ps = pstate(p.passageId), pane = $("#pane"); pane.innerHTML = "";
+  pane.append(el("div", { class: "ctx" }, `${p.passageId} · ${p.stratum} · ${p.sourceId} · part ${p.part}` + (p.book ? ` · book ${p.book} ch. ${p.chapter}` : "") + (p.subsection ? ` · ${p.subsection}` : "")));
+  pane.append(el("div", { class: "heading", id: "heading" }, p.heading || "(no heading)"));
+  const pt = el("div", { id: "ptext" }); pt.textContent = p.text; pane.append(pt);
+  pane.append(highlighted(p.text, ps.recipes));
+  const bar = el("div", { class: "selbar", id: "selbar" }, el("div", { class: "q" }));
+  for (const [label, t] of [["Recipe span", "recipe"], ["Plant name", "plantNameAsWritten"], ["Indication", "indicationAsWritten"], ["Heat text", "heatText"], ["Duration", "durationText"], ["Ingredient", "ingredient"]])
+    bar.append(el("button", { on: { mousedown: e => e.preventDefault(), click: () => useSelection(t) } }, label));
+  const evSel = el("select", {}); for (const f of [...CAT_FIELDS, "solvent"]) evSel.append(el("option", { value: f }, f));
+  bar.append(el("span", { class: "ctx" }, "evidence for"), evSel, el("button", { on: { mousedown: e => e.preventDefault(), click: () => useSelection(evSel.value) } }, "Add"));
+  pane.append(bar);
+  if (state.mode === "adjudicate") pane.append(compareView(p));
+  ps.recipes.forEach((r, i) => pane.append(recipeCard(r, i, ps)));
+  const done = el("input", { type: "checkbox" }); done.checked = ps.done;
+  done.addEventListener("change", () => { const w = ps.recipes.flatMap(warnings); if (done.checked && w.length && !confirm("This passage has warnings:\n- " + w.join("\n- ") + "\nMark done anyway?")) { done.checked = false; return; } ps.done = done.checked; save(); });
+  const notes = el("textarea", { rows: "2", placeholder: "passage notes (guideline gaps, uncertainty)", style: "width:100%" }); notes.value = ps.notes || "";
+  notes.addEventListener("input", () => { ps.notes = notes.value; save(); });
+  pane.append(el("div", { class: "row" },
+    el("button", { on: { click: () => { ps.recipes.push(blankRecipe()); curRecipe = ps.recipes.length - 1; save(); renderPassage(); } } }, "+ recipe"),
+    el("label", {}, done, ps.recipes.length ? " done" : " done — no recipe in this passage"),
+    el("button", { on: { click: () => { cur = Math.max(0, cur - 1); curRecipe = 0; renderPassage(); renderList(); } } }, "← prev"),
+    el("button", { on: { click: () => { cur = Math.min(P.length - 1, cur + 1); curRecipe = 0; renderPassage(); renderList(); } } }, "next →")));
+  pane.append(notes);
+}
+
+// ---- header actions
+function exportJSON() {
+  if (!state.annotator) return alert("Enter your name first.");
+  const out = { annotator: state.mode === "adjudicate" ? "adjudicated:" + state.annotator : state.annotator, mode: state.mode, sampleVersion: D.sample.version,
+    guidelinesVersion: D.guidelinesVersion, savedAt: new Date().toISOString(), passages: state.passages };
+  const a = el("a", { href: URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: "application/json" })),
+    download: state.mode === "adjudicate" ? "gold.json" : `${state.annotator.replace(/\W+/g, "_")}.json` });
+  document.body.append(a); a.click(); a.remove();
+}
+const readFile = f => new Promise(res => { const r = new FileReader(); r.onload = () => res(JSON.parse(r.result)); r.readAsText(f); });
+
+function switchTo(annotator, mode) {
+  state = { annotator, mode, passages: {} };
+  load(); state.annotator = annotator; state.mode = mode;
+  $("#adjfiles").style.display = mode === "adjudicate" ? "" : "none";
+  try { localStorage.setItem("lip-annot-v1:last", JSON.stringify({ annotator, mode })); } catch (e) {}
+  renderList(); renderPassage();
+}
+$("#who").addEventListener("change", e => switchTo(e.target.value.trim(), state.mode));
+$("#mode").addEventListener("change", e => switchTo(state.annotator, e.target.value));
+$("#fileA").addEventListener("change", async e => { A = await readFile(e.target.files[0]); renderPassage(); });
+$("#fileB").addEventListener("change", async e => { B = await readFile(e.target.files[0]); renderPassage(); });
+$("#exportBtn").addEventListener("click", exportJSON);
+$("#importBtn").addEventListener("click", () => $("#importFile").click());
+$("#importFile").addEventListener("change", async e => { const d = await readFile(e.target.files[0]); if (d.sampleVersion !== D.sample.version) return alert("This file is for a different sample version."); state.passages = d.passages; save(); renderPassage(); });
+$("#toggleGuide").addEventListener("click", () => { const g = $("#guide"); g.style.display = g.style.display === "block" ? "none" : "block"; });
+$("#guide").textContent = D.guidelines;
+
+let last = { annotator: "", mode: "annotate" };
+try { last = JSON.parse(localStorage.getItem("lip-annot-v1:last") || "null") || last; } catch (e) {}
+$("#who").value = last.annotator; $("#mode").value = last.mode;
+switchTo(last.annotator, last.mode);
+</script>
+</body>
+</html>

@@ -1,0 +1,1801 @@
+{
+  "contractVersion": "1.1",
+  "generatedAt": "2026-11-05T07:00:56+00:00",
+  "pipelineVersion": "0.1.0",
+  "mock": false,
+  "extraction": {
+    "run": null,
+    "overall": {
+      "recipeType": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "part": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "freshOrDried": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "heat": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "filtered": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "process": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "form": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "solvent": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "plantNameAsWritten": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "heatText": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "durationText": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "indicationAsWritten": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "ingredients": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      }
+    },
+    "bySource": {
+      "culpeper1652_virtues": {
+        "recipeType": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "part": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "freshOrDried": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "heat": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "filtered": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "process": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "form": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "solvent": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "plantNameAsWritten": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "heatText": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "durationText": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "indicationAsWritten": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "ingredients": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        }
+      },
+      "culpeper1850_dispensatory": {
+        "recipeType": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "part": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "freshOrDried": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "heat": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "filtered": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "process": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "form": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "solvent": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "plantNameAsWritten": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "heatText": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "durationText": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "indicationAsWritten": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "ingredients": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        }
+      },
+      "pliny": {
+        "recipeType": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "part": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "freshOrDried": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "heat": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "filtered": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "process": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "form": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "solvent": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "plantNameAsWritten": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "heatText": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "durationText": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "indicationAsWritten": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        },
+        "ingredients": {
+          "precision": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "recall": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          },
+          "f1": {
+            "status": "not_computed",
+            "value": null,
+            "low": null,
+            "high": null,
+            "n": null,
+            "sourceFile": null,
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          }
+        }
+      }
+    },
+    "recipeDetection": {
+      "overall": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "culpeper1652_virtues": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "culpeper1850_dispensatory": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      },
+      "pliny": {
+        "precision": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "recall": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        },
+        "f1": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+        }
+      }
+    },
+    "spanRejectionRate": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "awaiting LLM run on the sample"
+    }
+  },
+  "interAnnotatorAgreement": {
+    "recipeType": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    },
+    "part": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    },
+    "freshOrDried": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    },
+    "heat": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    },
+    "filtered": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    },
+    "process": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    },
+    "form": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    },
+    "solvent": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    },
+    "passageHasRecipe": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+    }
+  },
+  "nameResolution": {
+    "top1": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "computed in Phase 3 (M2)"
+    },
+    "top3": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "computed in Phase 3 (M2)"
+    },
+    "disputedShare": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "computed in Phase 3 (M2)"
+    }
+  },
+  "logPError": {
+    "rdkit": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "computed in Phase 4 (M4)"
+    },
+    "xtb": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "n": null,
+      "sourceFile": null,
+      "note": "computed in Phase 4 (M4)"
+    }
+  },
+  "headlineMatchRate": {
+    "status": "not_computed",
+    "value": null,
+    "low": null,
+    "high": null,
+    "n": null,
+    "sourceFile": null,
+    "note": "computed in Phase 6 (M5/M6)"
+  },
+  "artemisininCheck": {
+    "status": "not_computed",
+    "result": null,
+    "explanation": "computed in Phase 4 (M4)",
+    "sourceFile": null
+  }
+}

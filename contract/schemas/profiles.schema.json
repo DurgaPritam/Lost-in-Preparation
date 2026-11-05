@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.1/profiles.json",
+  "title": "profiles.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "speciesId": {
+        "title": "Speciesid",
+        "type": "string"
+      },
+      "preparationKey": {
+        "description": "part|freshOrDried|solvent(+joined)|heat|filtered (P4)",
+        "title": "Preparationkey",
+        "type": "string"
+      },
+      "compounds": {
+        "items": {
+          "$ref": "#/$defs/CompoundLikelihood"
+        },
+        "title": "Compounds",
+        "type": "array"
+      },
+      "coverageNote": {
+        "title": "Coveragenote",
+        "type": "string"
+      }
+    },
+    "required": [
+      "speciesId",
+      "preparationKey",
+      "compounds",
+      "coverageNote"
+    ],
+    "title": "Profile",
+    "type": "object"
+  },
+  "$defs": {
+    "CompoundLikelihood": {
+      "additionalProperties": false,
+      "properties": {
+        "compoundId": {
+          "description": "InChIKey (P14)",
+          "title": "Compoundid",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "class": {
+          "title": "Class",
+          "type": "string"
+        },
+        "smiles": {
+          "title": "Smiles",
+          "type": "string"
+        },
+        "sourceDb": {
+          "title": "Sourcedb",
+          "type": "string"
+        },
+        "sourceRecordId": {
+          "title": "Sourcerecordid",
+          "type": "string"
+        },
+        "likelihood": {
+          "title": "Likelihood",
+          "type": "number"
+        },
+        "low": {
+          "title": "Low",
+          "type": "number"
+        },
+        "high": {
+          "title": "High",
+          "type": "number"
+        },
+        "drivers": {
+          "$ref": "#/$defs/Drivers"
+        },
+        "heuristic": {
+          "$ref": "#/$defs/HeuristicFlags",
+          "default": {
+            "heat": true,
+            "acidity": true,
+            "filtration": true
+          }
+        },
+        "heuristicFlags": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Heuristicflags",
+          "type": "array"
+        }
+      },
+      "required": [
+        "compoundId",
+        "name",
+        "class",
+        "smiles",
+        "sourceDb",
+        "sourceRecordId",
+        "likelihood",
+        "low",
+        "high",
+        "drivers"
+      ],
+      "title": "CompoundLikelihood",
+      "type": "object"
+    },
+    "Drivers": {
+      "additionalProperties": false,
+      "properties": {
+        "solvent": {
+          "title": "Solvent",
+          "type": "number"
+        },
+        "heat": {
+          "title": "Heat",
+          "type": "number"
+        },
+        "filtration": {
+          "title": "Filtration",
+          "type": "number"
+        },
+        "acidity": {
+          "title": "Acidity",
+          "type": "number"
+        }
+      },
+      "required": [
+        "solvent",
+        "heat",
+        "filtration",
+        "acidity"
+      ],
+      "title": "Drivers",
+      "type": "object"
+    },
+    "HeuristicFlags": {
+      "additionalProperties": false,
+      "properties": {
+        "heat": {
+          "default": true,
+          "title": "Heat",
+          "type": "boolean"
+        },
+        "acidity": {
+          "default": true,
+          "title": "Acidity",
+          "type": "boolean"
+        },
+        "filtration": {
+          "default": true,
+          "title": "Filtration",
+          "type": "boolean"
+        }
+      },
+      "title": "HeuristicFlags",
+      "type": "object"
+    }
+  }
+}

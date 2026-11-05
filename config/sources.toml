@@ -1,0 +1,84 @@
+# Source registry.
+# Only sources whose licence status is CONFIRMED in docs/DATA_LICENCES.md are listed here.
+# Every field below was read from the catalogue record, TEI header or the book's own title page
+# on 2026-11-05; nothing is inferred.
+
+[[source]]
+id = "culpeper-1652"
+work_id = "culpeper-english-physitian"
+original_year = 1652
+original_year_approx = false
+licence_verified = true
+licence_note = "EEBO-TCP Phase I text; TEI header availability statement: CC0 1.0 Universal."
+editorial_note = "Diplomatic transcription (TCP, keyed 2005-12) of the Huntington Library copy. Primary source for Culpeper's herbal. Illegible letters are kept as visible markers."
+profile = "tei"
+title = "The English Physitian, or An Astrologo-Physical Discourse of the Vulgar Herbs of this Nation"
+author = "Nicholas Culpeper"
+edition_year = 1652
+language = "en"
+edition = "London: Peter Cole, 1652 (Wing C7501; ESTC R24897). EEBO-TCP A35365, TEI P5."
+licence = "CC0 1.0 Universal (EEBO-TCP Phase I; TEI header, checked 2026-11-05)."
+url = "https://github.com/textcreationpartnership/A35365"
+download_url = "https://raw.githubusercontent.com/textcreationpartnership/A35365/master/A35365.xml"
+raw_path = "data/raw/tcp/A35365.xml"
+
+[[source]]
+id = "culpeper-1850"
+work_id = "culpeper-complete-herbal"
+original_year = 1653
+original_year_approx = false
+licence_verified = true
+licence_note = "US status only; worldwide status not independently verified."
+editorial_note = "1850 Kelly 'New Edition': adds 'upwards of one hundred additional herbs' and 'fifty choice receipts'; some entries are by later editors and cannot be attributed to Culpeper 1652/1653 without collation."
+profile = "culpeper"
+title = "The Complete Herbal (incl. The English Physician Enlarged, Family Dispensatory, Last Legacies)"
+author = "Nicholas Culpeper"
+edition_year = 1850                     # title-page date (MDCCCL) of the edition digitised; first published 1652/1653
+language = "en"
+edition = "A New Edition, London: Thomas Kelly, 1850 (Project Gutenberg eBook #49513). Includes 'upwards of one hundred additional herbs' and later editorial additions; not the 1653 text."
+licence = "Public domain in the USA (Project Gutenberg rights statement, checked 2026-11-05). Status outside the USA not independently verified."
+url = "https://www.gutenberg.org/ebooks/49513"
+download_url = "https://www.gutenberg.org/ebooks/49513.txt.utf-8"
+raw_path = "data/raw/gutenberg/pg49513.txt"
+
+[[source]]
+id = "pliny-nh-bohn-v4"
+work_id = "pliny-natural-history"
+translator = "John Bostock; H. T. Riley"
+original_year = 77
+original_year_approx = true
+licence_verified = true
+licence_note = "US status only; worldwide status not independently verified."
+editorial_note = "English translation; footnotes are Bostock & Riley's 19th-century commentary, not Pliny."
+profile = "pliny"
+title = "The Natural History of Pliny, Volume 4 (of 6): Books XVIII–XXIII"
+author = "Pliny the Elder"
+edition_year = 1856                     # title-page date (MDCCCLVI); original composed c. 77 CE
+language = "en"
+edition = "Bohn's Classical Library, London: Henry G. Bohn, 1856 (Project Gutenberg eBook #61113). English translation with editorial footnotes."
+licence = "Public domain in the USA (Project Gutenberg rights statement, checked 2026-11-05). Status outside the USA not independently verified."
+url = "https://www.gutenberg.org/ebooks/61113"
+download_url = "https://www.gutenberg.org/ebooks/61113.txt.utf-8"
+raw_path = "data/raw/gutenberg/pg61113.txt"
+scope_books = [20, 21, 22, 23]
+
+[[source]]
+id = "pliny-nh-bohn-v5"
+work_id = "pliny-natural-history"
+translator = "John Bostock; H. T. Riley"
+original_year = 77
+original_year_approx = true
+licence_verified = true
+licence_note = "US status only; worldwide status not independently verified. Printer imprint suggests a later reprint of the 1856 edition (unverified)."
+editorial_note = "English translation; footnotes are Bostock & Riley's 19th-century commentary, not Pliny."
+profile = "pliny"
+title = "The Natural History of Pliny, Volume 5 (of 6): Books XXIV–XXXI"
+author = "Pliny the Elder"
+edition_year = 1856                     # title-page date (MDCCCLVI); printer imprint (J. Billing, Guildford) suggests a later reprint — unverified
+language = "en"
+edition = "Bohn's Classical Library, London: Henry G. Bohn, title page 1856 (Project Gutenberg eBook #60688). English translation with editorial footnotes."
+licence = "Public domain in the USA (Project Gutenberg rights statement, checked 2026-11-05). Status outside the USA not independently verified."
+url = "https://www.gutenberg.org/ebooks/60688"
+download_url = "https://www.gutenberg.org/ebooks/60688.txt.utf-8"
+raw_path = "data/raw/gutenberg/pg60688.txt"
+scope_books = [24, 25, 26, 27]

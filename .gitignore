@@ -1,0 +1,16 @@
+# environments & caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+node_modules/
+.next/
+
+# raw source downloads: re-created by `python -m lip fetch` (checksums pinned in data/raw/manifest.json)
+data/raw/**/*.txt
+data/raw/**/*.xml
+
+# large regenerable intermediates (`python -m lip ingest`)
+data/interim/*.parquet
+data/interim/m1/raw/

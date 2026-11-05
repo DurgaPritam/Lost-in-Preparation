@@ -1,0 +1,330 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.1/metrics.json",
+  "title": "Metrics",
+  "$defs": {
+    "CheckResult": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/MetricStatus"
+        },
+        "result": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Result"
+        },
+        "explanation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Explanation"
+        },
+        "sourceFile": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sourcefile"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "CheckResult",
+      "type": "object"
+    },
+    "ExtractionMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "run": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ExtractionRun"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "the LLM run the metrics describe; null until a run exists"
+        },
+        "overall": {
+          "additionalProperties": {
+            "$ref": "#/$defs/PRF"
+          },
+          "description": "per field, all strata",
+          "title": "Overall",
+          "type": "object"
+        },
+        "bySource": {
+          "additionalProperties": {
+            "additionalProperties": {
+              "$ref": "#/$defs/PRF"
+            },
+            "type": "object"
+          },
+          "description": "stratum -> field -> PRF",
+          "title": "Bysource",
+          "type": "object"
+        },
+        "recipeDetection": {
+          "additionalProperties": {
+            "$ref": "#/$defs/PRF"
+          },
+          "description": "stratum or 'overall' -> PRF",
+          "title": "Recipedetection",
+          "type": "object"
+        },
+        "spanRejectionRate": {
+          "$ref": "#/$defs/Metric"
+        }
+      },
+      "required": [
+        "overall",
+        "bySource",
+        "recipeDetection",
+        "spanRejectionRate"
+      ],
+      "title": "ExtractionMetrics",
+      "type": "object"
+    },
+    "ExtractionRun": {
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "title": "Provider",
+          "type": "string"
+        },
+        "model": {
+          "title": "Model",
+          "type": "string"
+        },
+        "modelVersion": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Modelversion"
+        },
+        "decoding": {
+          "additionalProperties": true,
+          "default": {},
+          "title": "Decoding",
+          "type": "object"
+        },
+        "promptVersion": {
+          "title": "Promptversion",
+          "type": "string"
+        }
+      },
+      "required": [
+        "provider",
+        "model",
+        "promptVersion"
+      ],
+      "title": "ExtractionRun",
+      "type": "object"
+    },
+    "Metric": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/MetricStatus"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "low": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Low"
+        },
+        "high": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "High"
+        },
+        "n": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "N"
+        },
+        "sourceFile": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sourcefile"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "Metric",
+      "type": "object"
+    },
+    "MetricStatus": {
+      "enum": [
+        "computed",
+        "not_computed"
+      ],
+      "title": "MetricStatus",
+      "type": "string"
+    },
+    "PRF": {
+      "additionalProperties": false,
+      "properties": {
+        "precision": {
+          "$ref": "#/$defs/Metric"
+        },
+        "recall": {
+          "$ref": "#/$defs/Metric"
+        },
+        "f1": {
+          "$ref": "#/$defs/Metric"
+        }
+      },
+      "required": [
+        "precision",
+        "recall",
+        "f1"
+      ],
+      "title": "PRF",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contractVersion": {
+      "default": "1.1",
+      "title": "Contractversion",
+      "type": "string"
+    },
+    "generatedAt": {
+      "title": "Generatedat",
+      "type": "string"
+    },
+    "pipelineVersion": {
+      "title": "Pipelineversion",
+      "type": "string"
+    },
+    "mock": {
+      "default": false,
+      "title": "Mock",
+      "type": "boolean"
+    },
+    "extraction": {
+      "$ref": "#/$defs/ExtractionMetrics"
+    },
+    "interAnnotatorAgreement": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Metric"
+      },
+      "description": "field -> Cohen's kappa",
+      "title": "Interannotatoragreement",
+      "type": "object"
+    },
+    "nameResolution": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Metric"
+      },
+      "title": "Nameresolution",
+      "type": "object"
+    },
+    "logPError": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Metric"
+      },
+      "title": "Logperror",
+      "type": "object"
+    },
+    "headlineMatchRate": {
+      "$ref": "#/$defs/Metric"
+    },
+    "artemisininCheck": {
+      "$ref": "#/$defs/CheckResult"
+    }
+  },
+  "required": [
+    "generatedAt",
+    "pipelineVersion",
+    "extraction",
+    "interAnnotatorAgreement",
+    "nameResolution",
+    "logPError",
+    "headlineMatchRate",
+    "artemisininCheck"
+  ],
+  "type": "object"
+}

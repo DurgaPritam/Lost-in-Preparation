@@ -1,0 +1,176 @@
+{
+  "generatedAt": "2026-11-05T06:57:57+00:00",
+  "pipelineVersion": "0.1.0",
+  "contractVersion": "1.1",
+  "sources": {
+    "culpeper-1652": {
+      "passages_total": 4114,
+      "by_part": {
+        "front_matter": 478,
+        "herbal": 3171,
+        "directions": 178,
+        "index": 287
+      },
+      "by_type": {
+        "front_matter": 442,
+        "heading": 1250,
+        "body": 1472,
+        "marginal_note": 686,
+        "index": 264
+      },
+      "entries": {
+        "directions": 24,
+        "front_matter": 2,
+        "herbal": 282,
+        "index": 1
+      },
+      "recipe_scope_passages": 1472,
+      "recipe_scope_words": 124188,
+      "body_words": 124188,
+      "footnotes": 0,
+      "footnote_refs": 686,
+      "footnote_refs_unresolved": [],
+      "footnotes_uncited": 0,
+      "cleaning_ops": {
+        "tei_render": 4114,
+        "unwrap": 4114,
+        "eol_join": 1206,
+        "gap_marker": 229,
+        "note_extracted": 305
+      },
+      "passages_with_gap_marker": 208,
+      "gap_markers": 301
+    },
+    "culpeper-1850": {
+      "passages_total": 5855,
+      "by_part": {
+        "front_matter": 111,
+        "herbal": 1680,
+        "directions": 219,
+        "dispensatory": 3191,
+        "last_legacies": 117,
+        "index": 28,
+        "disease_list": 165,
+        "transcriber_notes": 344
+      },
+      "by_type": {
+        "editorial": 344,
+        "illustration": 5,
+        "front_matter": 56,
+        "heading": 513,
+        "body": 4750,
+        "index": 187
+      },
+      "entries": {
+        "directions": 25,
+        "disease_list": 1,
+        "dispensatory": 86,
+        "front_matter": 51,
+        "herbal": 328,
+        "index": 5,
+        "last_legacies": 14,
+        "transcriber_notes": 0
+      },
+      "recipe_scope_passages": 4750,
+      "recipe_scope_words": 241278,
+      "body_words": 241278,
+      "footnotes": 0,
+      "footnote_refs": 0,
+      "footnote_refs_unresolved": [],
+      "footnotes_uncited": 0,
+      "cleaning_ops": {
+        "unwrap": 4778,
+        "italics": 3860
+      },
+      "passages_with_gap_marker": 0,
+      "gap_markers": 0,
+      "crosswalk_1652": {
+        "later_addition_candidate": 50,
+        "in_1652": 266,
+        "probable_1652": 12
+      }
+    },
+    "pliny-nh-bohn-v4": {
+      "passages_total": 5499,
+      "by_part": {
+        "front_matter": 560,
+        "body": 1648,
+        "footnotes": 3285,
+        "back_matter": 6
+      },
+      "by_type": {
+        "editorial": 7,
+        "front_matter": 18,
+        "contents": 541,
+        "heading": 540,
+        "body": 1090,
+        "book_apparatus": 19,
+        "footnote": 3284
+      },
+      "entries": {
+        "book_18": 90,
+        "book_19": 62,
+        "book_20": 100,
+        "book_21": 109,
+        "book_22": 82,
+        "book_23": 83
+      },
+      "recipe_scope_passages": 721,
+      "recipe_scope_words": 89760,
+      "body_words": 155580,
+      "footnotes": 3284,
+      "footnote_refs": 3289,
+      "footnote_refs_unresolved": [],
+      "footnotes_uncited": 0,
+      "cleaning_ops": {
+        "italics": 253,
+        "unwrap": 5051,
+        "footnote_anchor": 4278
+      },
+      "passages_with_gap_marker": 0,
+      "gap_markers": 0
+    },
+    "pliny-nh-bohn-v5": {
+      "passages_total": 5917,
+      "by_part": {
+        "front_matter": 698,
+        "body": 1950,
+        "footnotes": 3264,
+        "back_matter": 5
+      },
+      "by_type": {
+        "editorial": 6,
+        "front_matter": 15,
+        "contents": 682,
+        "heading": 681,
+        "body": 1240,
+        "book_apparatus": 30,
+        "footnote": 3263
+      },
+      "entries": {
+        "book_24": 120,
+        "book_25": 110,
+        "book_26": 93,
+        "book_27": 120,
+        "book_28": 81,
+        "book_29": 39,
+        "book_30": 53,
+        "book_31": 47
+      },
+      "recipe_scope_passages": 714,
+      "recipe_scope_words": 76237,
+      "body_words": 160765,
+      "footnotes": 3263,
+      "footnote_refs": 3268,
+      "footnote_refs_unresolved": [],
+      "footnotes_uncited": 0,
+      "cleaning_ops": {
+        "italics": 425,
+        "unwrap": 5311,
+        "footnote_anchor": 4344
+      },
+      "passages_with_gap_marker": 0,
+      "gap_markers": 0
+    }
+  }
+}

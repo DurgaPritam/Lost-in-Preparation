@@ -1,0 +1,479 @@
+"""Shared data contract — v1.1 (frozen; v1.1 adds provider provenance, see CHANGELOG).
+
+One pydantic model per site-data/ file. JSON Schemas in contract/schemas/ are generated from
+these models (`python -m lip contract`); never edit the schemas by hand.
+
+Includes accepted proposals P1–P29 (see contract/CHANGELOG.md). Changes after the freeze must
+be proposed in CHANGELOG.md first.
+
+Conventions
+- `unknown` is a value, never an error. Free-text fields use the literal string "unknown".
+- Every record has `mock: bool` (default false). Mock data must set it to true.
+- Heuristic-derived values are flagged as heuristic (rule 5).
+- Solvent, heat and filtration are separate fields everywhere (rule 4).
+"""
+from __future__ import annotations
+
+from enum import Enum
+from typing import Any
+
+from pydantic import BaseModel, ConfigDict, Field
+
+CONTRACT_VERSION = "1.1"
+UNKNOWN = "unknown"
+
+
+class _Model(BaseModel):
+    model_config = ConfigDict(extra="forbid", use_enum_values=True)
+
+
+class _Record(_Model):
+    mock: bool = False
+
+
+# --- shared enumerations ------------------------------------------------------------------
+
+class Solvent(str, Enum):  # historical vehicles (P8 list, P9 none)
+    water = "water"
+    wine = "wine"
+    vinegar = "vinegar"
+    oil = "oil"
+    honey = "honey"
+    none = "none"
+    other = "other"
+    unknown = "unknown"
+
+
+class ModernSolvent(str, Enum):  # P2
+    methanol = "methanol"
+    ethanol = "ethanol"
+    hydroethanolic = "hydroethanolic"
+    hexane = "hexane"
+    chloroform = "chloroform"
+    ethyl_acetate = "ethyl_acetate"
+    dichloromethane = "dichloromethane"
+    acetone = "acetone"
+    co2 = "co2"
+    water = "water"
+    other = "other"
+    unknown = "unknown"
+
+
+class Heat(str, Enum):  # `cold` = no applied heat / ambient (P13)
+    cold = "cold"
+    warm = "warm"
+    boiled = "boiled"
+    unknown = "unknown"
+
+
+class Filtered(str, Enum):  # P12
+    yes = "yes"
+    no = "no"
+    not_applicable = "not_applicable"
+    unknown = "unknown"
+
+
+class Process(str, Enum):  # P10
+    infusion = "infusion"
+    decoction = "decoction"
+    maceration = "maceration"
+    distillation = "distillation"
+    expression = "expression"
+    powder = "powder"
+    other = "other"
+    unknown = "unknown"
+
+
+class Part(str, Enum):  # P11
+    leaf = "leaf"
+    root = "root"
+    rhizome = "rhizome"
+    seed = "seed"
+    fruit = "fruit"
+    flower = "flower"
+    bark = "bark"
+    stem = "stem"
+    aerial_parts = "aerial_parts"
+    whole_plant = "whole_plant"
+    resin = "resin"
+    juice = "juice"
+    other = "other"
+    unknown = "unknown"
+
+
+class FreshOrDried(str, Enum):  # P11
+    fresh = "fresh"
+    dried = "dried"
+    unknown = "unknown"
+
+
+class Form(str, Enum):  # P11
+    drink = "drink"
+    poultice = "poultice"
+    ointment = "ointment"
+    plaster = "plaster"
+    gargle = "gargle"
+    inhalation = "inhalation"
+    other = "other"
+    unknown = "unknown"
+
+
+class RecipeType(str, Enum):  # P27
+    single_plant = "single_plant"
+    compound = "compound"
+    unknown = "unknown"
+
+
+class IngredientRole(str, Enum):  # P27
+    principal = "principal"
+    co_ingredient = "co_ingredient"
+    unknown = "unknown"
+
+
+class IngredientKind(str, Enum):  # P27 detail (decides single_plant vs compound)
+    plant = "plant"
+    animal = "animal"
+    mineral = "mineral"
+    other = "other"
+    unknown = "unknown"
+
+
+class MatchCode(str, Enum):  # P5
+    match = "match"
+    mismatch = "mismatch"
+    unknown = "unknown"
+
+
+class ToxicityFlag(str, Enum):  # P18
+    known_toxic = "known_toxic"
+    none_known = "none_known"
+    unknown = "unknown"
+
+
+class SpeciesBasis(str, Enum):  # commentary_19c: candidate only, never ground truth (P29)
+    scholarly = "scholarly"
+    database = "database"
+    model = "model"
+    commentary_19c = "commentary_19c"
+
+
+class MetricStatus(str, Enum):  # P7
+    computed = "computed"
+    not_computed = "not_computed"
+
+
+class ProvenanceMethod(str, Enum):  # P21
+    llm = "llm"
+    human = "human"
+    adjudicated = "adjudicated"
+
+
+# --- sources.json -------------------------------------------------------------------------
+
+class SourceFile(_Model):
+    url: str
+    sha256: str
+
+
+class Source(_Record):
+    id: str
+    workId: str = Field(description="Groups volumes/editions of one work (P25)")
+    title: str
+    author: str
+    translator: str | None = None  # P20
+    originalYear: int | None = Field(None, description="Year of composition/first publication; may be approximate (P24)")
+    originalYearApprox: bool = False
+    editionYear: int = Field(description="Year of the edition actually digitised (P24)")
+    language: str
+    edition: str
+    licence: str
+    licenceVerified: bool  # P20
+    licenceNote: str | None = None
+    editorialNote: str | None = Field(None, description="Later editorial additions etc. (P26)")
+    url: str
+    files: list[SourceFile] = []  # P25
+
+
+# --- recipes.json -------------------------------------------------------------------------
+
+class Quote(_Model):
+    """A verbatim span of the passage's cleaned text (P28). Offsets index into passage.text.
+
+    inHeading=True: the quote comes from the entry heading (plant names only); start=end=-1.
+    """
+    quote: str
+    start: int
+    end: int
+    inHeading: bool = False
+
+
+class PassageLocation(_Model):
+    part: str
+    book: int | None = None
+    chapter: str | None = None
+    entry: str | None = None
+    subsection: str | None = None
+    lineStart: int
+    lineEnd: int
+
+
+class PassageRef(_Model):
+    passageId: str
+    text: str
+    location: PassageLocation
+    translation: str | None = None  # P19
+    translationSource: str | None = None
+
+
+class Ingredient(_Model):  # P27
+    plantNameAsWritten: str
+    part: Part = Part.unknown
+    role: IngredientRole = IngredientRole.unknown
+    kind: IngredientKind = IngredientKind.unknown
+    evidence: list[Quote] = []
+
+
+class Provenance(_Model):  # P21; provider fields added in v1.1 (P30)
+    method: ProvenanceMethod
+    provider: str | None = None  # ollama | anthropic
+    model: str | None = None
+    modelVersion: str | None = Field(None, description="e.g. Ollama model digest")
+    decoding: dict[str, Any] | None = Field(None, description="temperature, seed, context length, quantisation, effort...")
+    promptVersion: str | None = None
+    annotator: str | None = None
+    createdAt: str
+
+
+class Recipe(_Record):
+    id: str
+    sourceId: str
+    passage: PassageRef
+    recipeType: RecipeType = RecipeType.unknown
+    ingredients: list[Ingredient] = []
+    plantNameAsWritten: str = UNKNOWN  # principal plant
+    part: Part = Part.unknown
+    freshOrDried: FreshOrDried = FreshOrDried.unknown
+    solvent: list[Solvent] = Field(default_factory=lambda: [Solvent.unknown], min_length=1)  # P8
+    heat: Heat = Heat.unknown
+    heatText: str = UNKNOWN  # P13
+    durationText: str = UNKNOWN
+    filtered: Filtered = Filtered.unknown
+    process: Process = Process.unknown  # P10
+    form: Form = Form.unknown
+    indicationAsWritten: str = UNKNOWN
+    indicationNormalized: "MeshTerm | None" = None  # P17; not produced by M1
+    fieldConfidence: dict[str, float] = Field(
+        default_factory=dict, description="Model self-reported 0-1 confidence per field; uncalibrated")
+    evidence: dict[str, list[Quote]] = Field(
+        default_factory=dict, description="Verbatim quotes supporting each non-unknown field; key 'recipe' = whole recipe span (P28)")
+    attributionCaveat: str | None = None  # P26
+    excludedFromHeadline: bool = Field(False, description="True for compound recipes (P27 decision)")
+    provenance: Provenance
+
+
+# --- species.json -------------------------------------------------------------------------
+
+class SpeciesCandidate(_Record):
+    id: str  # P3
+    recipeId: str
+    speciesId: str | None = Field(None, description="= wfoId; null if unresolved (P3)")
+    nameAsWritten: str
+    acceptedName: str | None = None
+    wfoId: str | None = None
+    confidence: float
+    basis: SpeciesBasis
+    basisRef: str | None = Field(None, description="e.g. footnote passage id for commentary_19c")
+    disputed: bool
+    toxicityFlag: ToxicityFlag = ToxicityFlag.unknown  # P18
+    toxicityNote: str | None = None
+
+
+# --- profiles.json ------------------------------------------------------------------------
+
+class Drivers(_Model):  # P6 per-factor multipliers, kept separate (rule 4)
+    solvent: float
+    heat: float
+    filtration: float
+    acidity: float
+
+
+class HeuristicFlags(_Model):  # rule 5
+    heat: bool = True
+    acidity: bool = True
+    filtration: bool = True
+
+
+class CompoundLikelihood(_Model):
+    compoundId: str = Field(description="InChIKey (P14)")
+    name: str
+    compoundClass: str = Field(alias="class")
+    smiles: str
+    sourceDb: str
+    sourceRecordId: str
+    likelihood: float
+    low: float
+    high: float
+    drivers: Drivers
+    heuristic: HeuristicFlags = HeuristicFlags()
+    heuristicFlags: list[str] = []
+
+    model_config = ConfigDict(extra="forbid", populate_by_name=True)
+
+
+class Profile(_Record):
+    speciesId: str
+    preparationKey: str = Field(description="part|freshOrDried|solvent(+joined)|heat|filtered (P4)")
+    compounds: list[CompoundLikelihood]
+    coverageNote: str
+
+
+# --- audit.json ---------------------------------------------------------------------------
+
+class MeshTerm(_Model):  # P17
+    meshId: str
+    label: str
+
+
+class StudyMatch(_Model):  # P5
+    solvent: MatchCode
+    heat: MatchCode
+    filtration: MatchCode
+    part: MatchCode
+    freshOrDried: MatchCode
+    overall: MatchCode
+
+
+class Study(_Model):
+    pmid: str
+    doi: str | None = None
+    title: str
+    year: int | None = None
+    solvent: ModernSolvent  # P2
+    solventText: str
+    ethanolFraction: float | None = None
+    heat: Heat
+    part: Part
+    freshOrDried: FreshOrDried
+    filtered: Filtered  # P1
+    match: StudyMatch
+    unknownFields: list[str]
+    evidenceSource: str = Field(description="abstract | pmc_fulltext (P15)")
+    methodsSnippet: str | None = None
+
+
+class Rate(_Model):  # P16
+    value: float | None
+    nKnown: int
+    nUnknown: int
+
+
+class AuditRecord(_Record):
+    speciesId: str
+    indication: MeshTerm | None
+    indicationAsWritten: str
+    historicalPreparation: str = Field(description="preparationKey")
+    historicalRecipeIds: list[str]
+    studies: list[Study]
+    matchRate: Rate
+
+
+# --- hypotheses.json ----------------------------------------------------------------------
+
+class Interval(_Model):
+    value: float
+    low: float
+    high: float
+
+
+class EvidenceItem(_Model):
+    kind: str  # recipe | study | profile | species
+    ref: str
+    note: str | None = None
+
+
+class Hypothesis(_Record):
+    rank: int
+    speciesId: str
+    indication: MeshTerm | None
+    indicationAsWritten: str
+    faithfulPreparation: str = Field(description="preparationKey")
+    faithfulPreparationText: str
+    attestationCount: int
+    profileGap: Interval  # P22: 1 - weighted cosine similarity, in [0,1]
+    neverTestedFaithfully: bool
+    toxicityFlag: ToxicityFlag  # P18
+    toxicityNote: str | None = None
+    caveats: list[str]
+    evidenceTrail: list[EvidenceItem]
+
+
+# --- metrics.json -------------------------------------------------------------------------
+
+class Metric(_Model):  # P7
+    status: MetricStatus
+    value: float | None = None
+    low: float | None = None
+    high: float | None = None
+    n: int | None = None
+    sourceFile: str | None = None
+    note: str | None = None
+
+
+def not_computed(note: str) -> Metric:
+    return Metric(status=MetricStatus.not_computed, note=note)
+
+
+class PRF(_Model):
+    precision: Metric
+    recall: Metric
+    f1: Metric
+
+
+class ExtractionRun(_Model):  # v1.1 (P30)
+    provider: str
+    model: str
+    modelVersion: str | None = None
+    decoding: dict[str, Any] = {}
+    promptVersion: str
+
+
+class ExtractionMetrics(_Model):
+    run: ExtractionRun | None = Field(None, description="the LLM run the metrics describe; null until a run exists")
+    overall: dict[str, PRF] = Field(description="per field, all strata")
+    bySource: dict[str, dict[str, PRF]] = Field(description="stratum -> field -> PRF")
+    recipeDetection: dict[str, PRF] = Field(description="stratum or 'overall' -> PRF")
+    spanRejectionRate: Metric
+
+
+class CheckResult(_Model):
+    status: MetricStatus
+    result: str | None = None  # pass | fail
+    explanation: str | None = None
+    sourceFile: str | None = None
+
+
+class Metrics(_Model):
+    contractVersion: str = CONTRACT_VERSION
+    generatedAt: str
+    pipelineVersion: str
+    mock: bool = False
+    extraction: ExtractionMetrics
+    interAnnotatorAgreement: dict[str, Metric] = Field(description="field -> Cohen's kappa")
+    nameResolution: dict[str, Metric]  # top1, top3, disputedShare
+    logPError: dict[str, Metric]  # rdkit, xtb
+    headlineMatchRate: Metric
+    artemisininCheck: CheckResult
+
+
+Recipe.model_rebuild()
+
+FILE_MODELS = {
+    "sources.json": Source,
+    "recipes.json": Recipe,
+    "species.json": SpeciesCandidate,
+    "profiles.json": Profile,
+    "audit.json": AuditRecord,
+    "hypotheses.json": Hypothesis,
+    "metrics.json": Metrics,
+}
+ARRAY_FILES = {k for k in FILE_MODELS if k != "metrics.json"}

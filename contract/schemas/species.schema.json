@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.1/species.json",
+  "title": "species.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "recipeId": {
+        "title": "Recipeid",
+        "type": "string"
+      },
+      "speciesId": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "= wfoId; null if unresolved (P3)",
+        "title": "Speciesid"
+      },
+      "nameAsWritten": {
+        "title": "Nameaswritten",
+        "type": "string"
+      },
+      "acceptedName": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Acceptedname"
+      },
+      "wfoId": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Wfoid"
+      },
+      "confidence": {
+        "title": "Confidence",
+        "type": "number"
+      },
+      "basis": {
+        "$ref": "#/$defs/SpeciesBasis"
+      },
+      "basisRef": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "e.g. footnote passage id for commentary_19c",
+        "title": "Basisref"
+      },
+      "disputed": {
+        "title": "Disputed",
+        "type": "boolean"
+      },
+      "toxicityFlag": {
+        "$ref": "#/$defs/ToxicityFlag",
+        "default": "unknown"
+      },
+      "toxicityNote": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Toxicitynote"
+      }
+    },
+    "required": [
+      "id",
+      "recipeId",
+      "nameAsWritten",
+      "confidence",
+      "basis",
+      "disputed"
+    ],
+    "title": "SpeciesCandidate",
+    "type": "object"
+  },
+  "$defs": {
+    "SpeciesBasis": {
+      "enum": [
+        "scholarly",
+        "database",
+        "model",
+        "commentary_19c"
+      ],
+      "title": "SpeciesBasis",
+      "type": "string"
+    },
+    "ToxicityFlag": {
+      "enum": [
+        "known_toxic",
+        "none_known",
+        "unknown"
+      ],
+      "title": "ToxicityFlag",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "passageId": "culpeper-1850:herbal:amara-dulcis:006",
+    "why": "Full single-plant preparation: wine vehicle, warm infusion, duration, strained, drink.",
+    "output": {
+      "recipes": [
+        {
+          "recipeQuote": "take a pound of the wood and leaves together, bruise the wood (which you may easily do, for it is not so hard as oak) then put it in a pot, and put to it three pints of white wine, put on the pot-lid and shut it close; and let it infuse hot over a gentle fire twelve hours, then strain it out, so have you a most excellent drink to open obstructions of the liver and spleen, to help difficulty of breath, bruises and falls, and congealed blood in any part of the body, it helps the yellow jaundice, the dropsy, and black jaundice, and to cleanse women newly brought to bed",
+          "recipeType": "single_plant",
+          "ingredients": [
+            {"plantNameAsWritten": "AMARA DULCIS", "part": "other", "role": "principal", "kind": "plant"}
+          ],
+          "plantNameAsWritten": "AMARA DULCIS",
+          "part": "other",
+          "freshOrDried": "unknown",
+          "solvent": ["wine"],
+          "heat": "warm",
+          "heatText": "infuse hot over a gentle fire",
+          "durationText": "twelve hours",
+          "filtered": "yes",
+          "process": "infusion",
+          "form": "drink",
+          "indicationAsWritten": "to open obstructions of the liver and spleen, to help difficulty of breath, bruises and falls, and congealed blood in any part of the body, it helps the yellow jaundice, the dropsy, and black jaundice, and to cleanse women newly brought to bed",
+          "evidence": [
+            {"field": "part", "quote": "the wood and leaves together"},
+            {"field": "solvent", "quote": "three pints of white wine"},
+            {"field": "heat", "quote": "let it infuse hot over a gentle fire"},
+            {"field": "filtered", "quote": "then strain it out"},
+            {"field": "process", "quote": "let it infuse hot"},
+            {"field": "form", "quote": "a most excellent drink"}
+          ],
+          "quotesFromHeading": ["plantNameAsWritten", "ingredients"],
+          "fieldConfidence": [
+            {"field": "part", "confidence": 0.8},
+            {"field": "solvent", "confidence": 0.95},
+            {"field": "heat", "confidence": 0.85},
+            {"field": "filtered", "confidence": 0.95},
+            {"field": "process", "confidence": 0.9},
+            {"field": "form", "confidence": 0.95}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "passageId": "culpeper-1850:herbal:one-blade~2:004",
+    "why": "Two recipes: a single-plant powder in a mixed vehicle, then a compound balm. 'fresh and green' describes wounds, not the plant.",
+    "output": {
+      "recipes": [
+        {
+          "recipeQuote": "Half a dram, or a dram at most, in powder of the roots hereof taken in wine and vinegar, of each equal parts, and the party laid presently to sweat thereupon, is held to be a sovereign remedy for those that are infected with the plague, and have a sore upon them",
+          "recipeType": "single_plant",
+          "ingredients": [
+            {"plantNameAsWritten": "ONE BLADE", "part": "root", "role": "principal", "kind": "plant"}
+          ],
+          "plantNameAsWritten": "ONE BLADE",
+          "part": "root",
+          "freshOrDried": "unknown",
+          "solvent": ["wine", "vinegar"],
+          "heat": "cold",
+          "heatText": "unknown",
+          "durationText": "unknown",
+          "filtered": "no",
+          "process": "powder",
+          "form": "drink",
+          "indicationAsWritten": "those that are infected with the plague, and have a sore upon them",
+          "evidence": [
+            {"field": "part", "quote": "powder of the roots hereof"},
+            {"field": "solvent", "quote": "taken in wine and vinegar"},
+            {"field": "heat", "quote": "in powder of the roots"},
+            {"field": "filtered", "quote": "in powder of the roots hereof taken in wine and vinegar"},
+            {"field": "process", "quote": "in powder"},
+            {"field": "form", "quote": "taken in wine and vinegar"}
+          ],
+          "quotesFromHeading": ["plantNameAsWritten", "ingredients"],
+          "fieldConfidence": [
+            {"field": "part", "confidence": 0.95},
+            {"field": "solvent", "confidence": 0.95},
+            {"field": "heat", "confidence": 0.6},
+            {"field": "filtered", "confidence": 0.7},
+            {"field": "process", "confidence": 0.95},
+            {"field": "form", "confidence": 0.9}
+          ]
+        },
+        {
+          "recipeQuote": "It is a singularly good wound herb, and is thereupon used with other the like effects in many compound balms for curing of wounds, be they fresh and green, or old and malignant, and especially if the sinews be burnt",
+          "recipeType": "compound",
+          "ingredients": [
+            {"plantNameAsWritten": "ONE BLADE", "part": "unknown", "role": "principal", "kind": "plant"}
+          ],
+          "plantNameAsWritten": "ONE BLADE",
+          "part": "unknown",
+          "freshOrDried": "unknown",
+          "solvent": ["unknown"],
+          "heat": "unknown",
+          "heatText": "unknown",
+          "durationText": "unknown",
+          "filtered": "not_applicable",
+          "process": "unknown",
+          "form": "ointment",
+          "indicationAsWritten": "curing of wounds, be they fresh and green, or old and malignant, and especially if the sinews be burnt",
+          "evidence": [
+            {"field": "recipeType", "quote": "used with other the like effects in many compound balms"},
+            {"field": "filtered", "quote": "compound balms"},
+            {"field": "form", "quote": "compound balms"}
+          ],
+          "quotesFromHeading": ["plantNameAsWritten", "ingredients"],
+          "fieldConfidence": [
+            {"field": "recipeType", "confidence": 0.9},
+            {"field": "filtered", "confidence": 0.8},
+            {"field": "form", "confidence": 0.8}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "passageId": "culpeper-1850:dispensatory:s010-flowers:002",
+    "why": "Dispensatory list entry: an unprepared use, then one recipe per form (clyster, drink).",
+    "output": {
+      "recipes": [
+        {
+          "recipeQuote": "Chamomel flowers, heat and assuage swellings, inflammation of the bowels, dissolve wind",
+          "recipeType": "single_plant",
+          "ingredients": [
+            {"plantNameAsWritten": "Chamomel", "part": "flower", "role": "principal", "kind": "plant"}
+          ],
+          "plantNameAsWritten": "Chamomel",
+          "part": "flower",
+          "freshOrDried": "unknown",
+          "solvent": ["unknown"],
+          "heat": "unknown",
+          "heatText": "unknown",
+          "durationText": "unknown",
+          "filtered": "unknown",
+          "process": "unknown",
+          "form": "unknown",
+          "indicationAsWritten": "assuage swellings, inflammation of the bowels, dissolve wind",
+          "evidence": [
+            {"field": "part", "quote": "Chamomel flowers"}
+          ],
+          "quotesFromHeading": [],
+          "fieldConfidence": [
+            {"field": "part", "confidence": 0.95}
+          ]
+        },
+        {
+          "recipeQuote": "Chamomel flowers, heat and assuage swellings, inflammation of the bowels, dissolve wind, are profitably given in clysters or drink, to such as are troubled with the cholic, or stone",
+          "recipeType": "single_plant",
+          "ingredients": [
+            {"plantNameAsWritten": "Chamomel", "part": "flower", "role": "principal", "kind": "plant"}
+          ],
+          "plantNameAsWritten": "Chamomel",
+          "part": "flower",
+          "freshOrDried": "unknown",
+          "solvent": ["unknown"],
+          "heat": "unknown",
+          "heatText": "unknown",
+          "durationText": "unknown",
+          "filtered": "unknown",
+          "process": "unknown",
+          "form": "other",
+          "indicationAsWritten": "such as are troubled with the cholic, or stone",
+          "evidence": [
+            {"field": "part", "quote": "Chamomel flowers"},
+            {"field": "form", "quote": "given in clysters"}
+          ],
+          "quotesFromHeading": [],
+          "fieldConfidence": [
+            {"field": "part", "confidence": 0.95},
+            {"field": "form", "confidence": 0.9}
+          ]
+        },
+        {
+          "recipeQuote": "Chamomel flowers, heat and assuage swellings, inflammation of the bowels, dissolve wind, are profitably given in clysters or drink, to such as are troubled with the cholic, or stone",
+          "recipeType": "single_plant",
+          "ingredients": [
+            {"plantNameAsWritten": "Chamomel", "part": "flower", "role": "principal", "kind": "plant"}
+          ],
+          "plantNameAsWritten": "Chamomel",
+          "part": "flower",
+          "freshOrDried": "unknown",
+          "solvent": ["unknown"],
+          "heat": "unknown",
+          "heatText": "unknown",
+          "durationText": "unknown",
+          "filtered": "unknown",
+          "process": "unknown",
+          "form": "drink",
+          "indicationAsWritten": "such as are troubled with the cholic, or stone",
+          "evidence": [
+            {"field": "part", "quote": "Chamomel flowers"},
+            {"field": "form", "quote": "or drink"}
+          ],
+          "quotesFromHeading": [],
+          "fieldConfidence": [
+            {"field": "part", "confidence": 0.95},
+            {"field": "form", "confidence": 0.9}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "passageId": "culpeper-1850:herbal:one-blade~2:002",
+    "why": "Habitat only: no recipe.",
+    "output": {"recipes": []}
+  }
+]

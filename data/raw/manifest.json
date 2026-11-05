@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "source_id": "culpeper-1652",
+      "url": "https://raw.githubusercontent.com/textcreationpartnership/A35365/master/A35365.xml",
+      "catalogue_url": "https://github.com/textcreationpartnership/A35365",
+      "path": "data/raw/tcp/A35365.xml",
+      "sha256": "bff4bd8569c5417e1fead6cc4c06b6e0be5b27eaf93295481feccaf524ee9acb",
+      "bytes": 1142738,
+      "retrieved_at": "2026-11-05T06:50:03+00:00"
+    },
+    {
+      "source_id": "culpeper-1850",
+      "url": "https://www.gutenberg.org/ebooks/49513.txt.utf-8",
+      "catalogue_url": "https://www.gutenberg.org/ebooks/49513",
+      "path": "data/raw/gutenberg/pg49513.txt",
+      "sha256": "d9bacb3247d798fcd2a8ce3b7c76222407fc0ac1c8d4242e9e8163508c10e968",
+      "bytes": 1531341,
+      "retrieved_at": "2026-11-05T06:05:46+00:00"
+    },
+    {
+      "source_id": "pliny-nh-bohn-v4",
+      "url": "https://www.gutenberg.org/ebooks/61113.txt.utf-8",
+      "catalogue_url": "https://www.gutenberg.org/ebooks/61113",
+      "path": "data/raw/gutenberg/pg61113.txt",
+      "sha256": "906911a5f481511dacb976d89834c007bb647650ff512e26329a0d16ef10fa01",
+      "bytes": 1370553,
+      "retrieved_at": "2026-11-05T06:05:50+00:00"
+    },
+    {
+      "source_id": "pliny-nh-bohn-v5",
+      "url": "https://www.gutenberg.org/ebooks/60688.txt.utf-8",
+      "catalogue_url": "https://www.gutenberg.org/ebooks/60688",
+      "path": "data/raw/gutenberg/pg60688.txt",
+      "sha256": "9a10db859bd78833fc86159a7063c059fc3c29fa819bfd21e4e1b24ecd987728",
+      "bytes": 1368531,
+      "retrieved_at": "2026-11-05T06:05:54+00:00"
+    }
+  ]
+}

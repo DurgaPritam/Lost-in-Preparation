@@ -1,0 +1,98 @@
+[
+  {
+    "mock": false,
+    "id": "culpeper-1652",
+    "workId": "culpeper-english-physitian",
+    "title": "The English Physitian, or An Astrologo-Physical Discourse of the Vulgar Herbs of this Nation",
+    "author": "Nicholas Culpeper",
+    "translator": null,
+    "originalYear": 1652,
+    "originalYearApprox": false,
+    "editionYear": 1652,
+    "language": "en",
+    "edition": "London: Peter Cole, 1652 (Wing C7501; ESTC R24897). EEBO-TCP A35365, TEI P5.",
+    "licence": "CC0 1.0 Universal (EEBO-TCP Phase I; TEI header, checked 2026-11-05).",
+    "licenceVerified": true,
+    "licenceNote": "EEBO-TCP Phase I text; TEI header availability statement: CC0 1.0 Universal.",
+    "editorialNote": "Diplomatic transcription (TCP, keyed 2005-12) of the Huntington Library copy. Primary source for Culpeper's herbal. Illegible letters are kept as visible markers.",
+    "url": "https://github.com/textcreationpartnership/A35365",
+    "files": [
+      {
+        "url": "https://raw.githubusercontent.com/textcreationpartnership/A35365/master/A35365.xml",
+        "sha256": "bff4bd8569c5417e1fead6cc4c06b6e0be5b27eaf93295481feccaf524ee9acb"
+      }
+    ]
+  },
+  {
+    "mock": false,
+    "id": "culpeper-1850",
+    "workId": "culpeper-complete-herbal",
+    "title": "The Complete Herbal (incl. The English Physician Enlarged, Family Dispensatory, Last Legacies)",
+    "author": "Nicholas Culpeper",
+    "translator": null,
+    "originalYear": 1653,
+    "originalYearApprox": false,
+    "editionYear": 1850,
+    "language": "en",
+    "edition": "A New Edition, London: Thomas Kelly, 1850 (Project Gutenberg eBook #49513). Includes 'upwards of one hundred additional herbs' and later editorial additions; not the 1653 text.",
+    "licence": "Public domain in the USA (Project Gutenberg rights statement, checked 2026-11-05). Status outside the USA not independently verified.",
+    "licenceVerified": true,
+    "licenceNote": "US status only; worldwide status not independently verified.",
+    "editorialNote": "1850 Kelly 'New Edition': adds 'upwards of one hundred additional herbs' and 'fifty choice receipts'; some entries are by later editors and cannot be attributed to Culpeper 1652/1653 without collation.",
+    "url": "https://www.gutenberg.org/ebooks/49513",
+    "files": [
+      {
+        "url": "https://www.gutenberg.org/ebooks/49513.txt.utf-8",
+        "sha256": "d9bacb3247d798fcd2a8ce3b7c76222407fc0ac1c8d4242e9e8163508c10e968"
+      }
+    ]
+  },
+  {
+    "mock": false,
+    "id": "pliny-nh-bohn-v4",
+    "workId": "pliny-natural-history",
+    "title": "The Natural History of Pliny, Volume 4 (of 6): Books XVIII–XXIII",
+    "author": "Pliny the Elder",
+    "translator": "John Bostock; H. T. Riley",
+    "originalYear": 77,
+    "originalYearApprox": true,
+    "editionYear": 1856,
+    "language": "en",
+    "edition": "Bohn's Classical Library, London: Henry G. Bohn, 1856 (Project Gutenberg eBook #61113). English translation with editorial footnotes.",
+    "licence": "Public domain in the USA (Project Gutenberg rights statement, checked 2026-11-05). Status outside the USA not independently verified.",
+    "licenceVerified": true,
+    "licenceNote": "US status only; worldwide status not independently verified.",
+    "editorialNote": "English translation; footnotes are Bostock & Riley's 19th-century commentary, not Pliny.",
+    "url": "https://www.gutenberg.org/ebooks/61113",
+    "files": [
+      {
+        "url": "https://www.gutenberg.org/ebooks/61113.txt.utf-8",
+        "sha256": "906911a5f481511dacb976d89834c007bb647650ff512e26329a0d16ef10fa01"
+      }
+    ]
+  },
+  {
+    "mock": false,
+    "id": "pliny-nh-bohn-v5",
+    "workId": "pliny-natural-history",
+    "title": "The Natural History of Pliny, Volume 5 (of 6): Books XXIV–XXXI",
+    "author": "Pliny the Elder",
+    "translator": "John Bostock; H. T. Riley",
+    "originalYear": 77,
+    "originalYearApprox": true,
+    "editionYear": 1856,
+    "language": "en",
+    "edition": "Bohn's Classical Library, London: Henry G. Bohn, title page 1856 (Project Gutenberg eBook #60688). English translation with editorial footnotes.",
+    "licence": "Public domain in the USA (Project Gutenberg rights statement, checked 2026-11-05). Status outside the USA not independently verified.",
+    "licenceVerified": true,
+    "licenceNote": "US status only; worldwide status not independently verified. Printer imprint suggests a later reprint of the 1856 edition (unverified).",
+    "editorialNote": "English translation; footnotes are Bostock & Riley's 19th-century commentary, not Pliny.",
+    "url": "https://www.gutenberg.org/ebooks/60688",
+    "files": [
+      {
+        "url": "https://www.gutenberg.org/ebooks/60688.txt.utf-8",
+        "sha256": "9a10db859bd78833fc86159a7063c059fc3c29fa819bfd21e4e1b24ecd987728"
+      }
+    ]
+  }
+]

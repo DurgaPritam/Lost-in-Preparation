@@ -1,0 +1,20 @@
+[project]
+name = "lost-in-preparation"
+version = "0.1.0"
+description = "Historical herbal recipes -> predicted compound profiles -> audit of modern preparations"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=15",
+    "pydantic>=2.6",
+    "anthropic>=2.5",
+    "lxml>=5",
+    "rdkit>=2024.3",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["pipeline", "."]
+testpaths = ["tests"]
