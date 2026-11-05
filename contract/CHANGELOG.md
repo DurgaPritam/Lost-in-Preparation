@@ -2,6 +2,13 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
+## v1.2 — 2026-11-05
+
+| # | Change |
+|---|---|
+| P31 | `metrics.provisional`: a map of `ProvisionalSection {basis, label, extraction, metrics}`. It holds results measured against AI-made references (`silver_ai_reference`, `ai_drafted_unverified`, `ai_curated_literature_reference`). These are **never** written to the gold fields (`extraction`, `interAnnotatorAgreement`, `nameResolution`). |
+| P32 | `profiles.process` (optional) and `preparationLabel`. Distillation and other processes cannot be expressed by `preparationKey` alone. |
+
 ## v1.1 — 2026-11-05
 
 | # | Change |

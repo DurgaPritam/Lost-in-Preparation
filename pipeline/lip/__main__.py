@@ -5,13 +5,18 @@
   python -m lip contract                 regenerate contract/schemas/*.schema.json
   python -m lip m1 sample                draw the gold sample + build annotation/data.js
   python -m lip m1 extract --scope sample|all [--provider ollama|anthropic] [--limit N] [--yes]
-  python -m lip m1 eval                  metrics vs gold + kappa -> site-data/metrics.json
+  python -m lip m1 eval [--reference gold|silver]   metrics vs gold (+kappa), or vs the AI silver set (provisional)
+  python -m lip m1 silver                build/validate the AI silver reference set (provisional, not gold)
   python -m lip m1 errors                docs/extraction_errors.md from the error tally
   python -m lip m2 resolve [--limit N]   name inventory -> species candidates (GBIF + WFO)
   python -m lip m2 evalset               30-name scholarly identification template
-  python -m lip m2 eval                  top-1 / top-3 accuracy vs the filled template
+  python -m lip m2 drafts                AI-drafted, source-quoted identifications (unverified) for the template
+  python -m lip m2 eval                  top-1 / top-3 vs human identifications (+ provisional vs AI drafts)
   python -m lip m3 compounds             LOTUS (Wikidata) compounds per species, RDKit-standardised
   python -m lip m3 studyset              study-set proposal table for human approval
+  python -m lip m4 validate-logp         RDKit vs GFN2-xTB logP against experiment (needs .tools/xtb-env)
+  python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
+  python -m lip results                  RESULTS.md from pipeline outputs (validated vs provisional, labelled)
 """
 from __future__ import annotations
 
@@ -30,11 +35,13 @@ def _has_credentials() -> bool:
 
 def m1(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(prog="lip m1")
-    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors"])
+    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver"])
     ap.add_argument("--scope", choices=["sample", "all"], default="sample")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--provider", choices=["ollama", "anthropic"], help="overrides config/pipeline.toml")
     ap.add_argument("--yes", action="store_true", help="confirm a full-corpus (paid) run")
+    ap.add_argument("--reference", choices=["gold", "silver"], default="gold",
+                    help="eval: 'silver' scores against the AI reference set (provisional; written to metrics.provisional only)")
     a = ap.parse_args(argv)
 
     if a.cmd == "sample":
@@ -70,8 +77,11 @@ def m1(argv: list[str]) -> int:
         print(json.dumps(summary, indent=2, default=str))
     elif a.cmd == "eval":
         from .m1 import evaluate
-        m = evaluate.evaluate()
+        m = evaluate.evaluate(a.reference)
         print(m.model_dump_json(indent=2)[:4000])
+    elif a.cmd == "silver":
+        from .m1 import silver
+        print(json.dumps(silver.build(), indent=2))
     elif a.cmd == "errors":
         from .m1 import evaluate
         print(evaluate.write_error_doc())
@@ -101,6 +111,10 @@ def main(argv: list[str]) -> int:
             print(m2eval.write_template())
         elif sub == "eval":
             print(json.dumps(m2eval.evaluate(), indent=2, default=str))
+        elif sub == "drafts":
+            from .m2 import drafts
+            d = drafts.build(m2eval.EVAL_PATH)
+            print(f"drafted {int((d.draftAcceptedName != '').sum())} of {len(d)} names (basis ai_drafted_unverified)")
     elif cmd == "m3":
         from .m3 import compounds, study_set
         sub = argv[1] if len(argv) > 1 else "compounds"
@@ -108,6 +122,17 @@ def main(argv: list[str]) -> int:
             print(json.dumps(compounds.main(), indent=2))
         elif sub == "studyset":
             print(study_set.main())
+    elif cmd == "results":
+        from . import results
+        print(results.build())
+    elif cmd == "m4":
+        sub = argv[1] if len(argv) > 1 else "run"
+        if sub == "validate-logp":
+            from .m4 import validate_logp
+            print(json.dumps(validate_logp.run(), indent=2))
+        elif sub == "run":
+            from .m4 import run
+            print(json.dumps(run.main(), indent=2))
     else:
         print(__doc__)
         return 1

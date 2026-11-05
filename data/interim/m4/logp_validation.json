@@ -1,0 +1,84 @@
+{
+  "reference": "SangsterLogP (Zenodo 19387552, CC BY 4.0), neutral subset",
+  "selection": {
+    "seed": 20261105,
+    "perQuintile": 30,
+    "selected": 150,
+    "xtbOk": 150,
+    "xtbFailed": {}
+  },
+  "rdkit_all": {
+    "mae": {
+      "value": 0.6567,
+      "ci": [
+        0.5751,
+        0.7418
+      ]
+    },
+    "rmse": {
+      "value": 0.8374,
+      "ci": [
+        0.7429,
+        0.9326
+      ]
+    },
+    "spearman": {
+      "value": 0.8324,
+      "ci": [
+        0.7625,
+        0.8851
+      ]
+    },
+    "n": 150
+  },
+  "rdkit_paired": {
+    "mae": {
+      "value": 0.6567,
+      "ci": [
+        0.5751,
+        0.7418
+      ]
+    },
+    "rmse": {
+      "value": 0.8374,
+      "ci": [
+        0.7429,
+        0.9326
+      ]
+    },
+    "spearman": {
+      "value": 0.8324,
+      "ci": [
+        0.7625,
+        0.8851
+      ]
+    },
+    "n": 150
+  },
+  "xtb_paired": {
+    "mae": {
+      "value": 1.5052,
+      "ci": [
+        1.3172,
+        1.71
+      ]
+    },
+    "rmse": {
+      "value": 1.9244,
+      "ci": [
+        1.6627,
+        2.1821
+      ]
+    },
+    "spearman": {
+      "value": 0.688,
+      "ci": [
+        0.5961,
+        0.7616
+      ]
+    },
+    "n": 150
+  },
+  "xtbVersion": "6.7.1",
+  "default": "rdkit"
+}

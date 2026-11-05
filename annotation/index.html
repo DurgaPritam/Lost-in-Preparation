@@ -39,6 +39,7 @@
   .warn { color:var(--warn); font-size:12.5px; }
   .ev { font-size:12px; color:var(--muted); }
   .cmp { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
+  .banner { background:var(--mark); border:1px solid var(--warn); border-radius:8px; padding:8px 12px; margin-bottom:10px; font-size:13px; }
   .cmp pre { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px; font-size:11.5px; white-space:pre-wrap; max-height:360px; overflow:auto; }
   #guide { display:none; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px; white-space:pre-wrap; font-size:12.5px; max-height:60vh; overflow:auto; margin-bottom:12px; }
   @media (max-width: 760px) { main { grid-template-columns: 1fr; } nav { position:static; max-height:200px; } .cmp { grid-template-columns:1fr; } }
@@ -48,8 +49,9 @@
 <header>
   <h1>Recipe annotation</h1>
   <label>Annotator <input id="who" placeholder="your name" size="12"></label>
-  <label>Mode <select id="mode"><option value="annotate">Annotate</option><option value="adjudicate">Adjudicate</option></select></label>
+  <label>Mode <select id="mode"><option value="annotate">Annotate</option><option value="adjudicate">Adjudicate</option><option value="review">Review: human vs AI reference</option></select></label>
   <span id="adjfiles" style="display:none"><label>A <input type="file" id="fileA" accept=".json" aria-label="Annotator A file"></label> <label>B <input type="file" id="fileB" accept=".json" aria-label="Annotator B file"></label></span>
+  <span id="reviewfiles" style="display:none"><label>Human <input type="file" id="fileH" accept=".json" aria-label="Human annotation file"></label> <label>AI reference <input type="file" id="fileS" accept=".json" aria-label="AI reference (silver) file"></label></span>
   <span id="progress" class="ctx"></span>
   <button id="toggleGuide">Guidelines</button>
   <button id="importBtn">Import</button><input type="file" id="importFile" accept=".json" aria-label="Import annotation file" hidden>
@@ -179,13 +181,13 @@ function highlighted(text, recipes) {
   return div;
 }
 
-function compareView(p) {
+function compareView(p, review = false) {
   const fmt = f => { const ps = f && f.passages && f.passages[p.passageId]; if (!ps) return "(not annotated)"; return JSON.stringify(ps.recipes.map(r => { const o = { span: r.recipeSpan && r.recipeSpan.quote }; for (const k of [...CAT_FIELDS, "solvent", ...TEXT_FIELDS]) if (JSON.stringify(r[k]) !== '"unknown"' && JSON.stringify(r[k]) !== '["unknown"]') o[k] = r[k]; o.ingredients = r.ingredients.map(x => x.plantNameAsWritten); return o; }), null, 1) + (ps.notes ? "\nnotes: " + ps.notes : ""); };
   const ps = pstate(p.passageId);
   const copy = f => () => { const src = f && f.passages && f.passages[p.passageId]; if (!src) return; if (ps.recipes.length && !confirm("Replace the gold recipes for this passage?")) return; ps.recipes = JSON.parse(JSON.stringify(src.recipes)); save(); renderPassage(); };
   return el("div", { class: "cmp" },
-    el("div", {}, el("div", { class: "row" }, el("strong", {}, "Annotator A" + (A ? ` (${A.annotator})` : "")), el("button", { on: { click: copy(A) } }, "start gold from A")), el("pre", {}, A ? fmt(A) : "load file A")),
-    el("div", {}, el("div", { class: "row" }, el("strong", {}, "Annotator B" + (B ? ` (${B.annotator})` : "")), el("button", { on: { click: copy(B) } }, "start gold from B")), el("pre", {}, B ? fmt(B) : "load file B")));
+    el("div", {}, el("div", { class: "row" }, el("strong", {}, (review ? "Human" : "Annotator A") + (A ? ` (${A.annotator})` : "")), el("button", { on: { click: copy(A) } }, "start gold from A")), el("pre", {}, A ? fmt(A) : "load file A")),
+    el("div", {}, el("div", { class: "row" }, el("strong", {}, (review ? "AI reference (provisional)" : "Annotator B") + (B ? ` (${B.annotator})` : "")), el("button", { on: { click: copy(B) } }, "start gold from B")), el("pre", {}, B ? fmt(B) : "load file B")));
 }
 
 function renderPassage() {
@@ -201,6 +203,11 @@ function renderPassage() {
   bar.append(el("span", { class: "ctx" }, "evidence for"), evSel, el("button", { on: { mousedown: e => e.preventDefault(), click: () => useSelection(evSel.value) } }, "Add"));
   pane.append(bar);
   if (state.mode === "adjudicate") pane.append(compareView(p));
+  if (state.mode === "review") {
+    pane.append(el("div", { class: "banner" }, "REVIEW MODE — for adjudication only, after the independent human annotation is finished. " +
+      "The right-hand column is an AI reference (basis: silver_ai_reference). It is provisional and NOT human-validated. Never use this mode for first-pass annotation."));
+    pane.append(compareView(p, true));
+  }
   ps.recipes.forEach((r, i) => pane.append(recipeCard(r, i, ps)));
   const done = el("input", { type: "checkbox" }); done.checked = ps.done;
   done.addEventListener("change", () => { const w = ps.recipes.flatMap(warnings); if (done.checked && w.length && !confirm("This passage has warnings:\n- " + w.join("\n- ") + "\nMark done anyway?")) { done.checked = false; return; } ps.done = done.checked; save(); });
@@ -217,10 +224,11 @@ function renderPassage() {
 // ---- header actions
 function exportJSON() {
   if (!state.annotator) return alert("Enter your name first.");
-  const out = { annotator: state.mode === "adjudicate" ? "adjudicated:" + state.annotator : state.annotator, mode: state.mode, sampleVersion: D.sample.version,
+  const out = { annotator: state.mode === "annotate" ? state.annotator : (state.mode === "review" ? "reviewed:" : "adjudicated:") + state.annotator, mode: state.mode, sampleVersion: D.sample.version,
+    adjudicationAids: state.mode === "review" ? ["silver_ai_reference"] : [],
     guidelinesVersion: D.guidelinesVersion, savedAt: new Date().toISOString(), passages: state.passages };
   const a = el("a", { href: URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: "application/json" })),
-    download: state.mode === "adjudicate" ? "gold.json" : `${state.annotator.replace(/\W+/g, "_")}.json` });
+    download: state.mode === "annotate" ? `${state.annotator.replace(/\W+/g, "_")}.json` : "gold.json" });
   document.body.append(a); a.click(); a.remove();
 }
 const readFile = f => new Promise(res => { const r = new FileReader(); r.onload = () => res(JSON.parse(r.result)); r.readAsText(f); });
@@ -229,6 +237,7 @@ function switchTo(annotator, mode) {
   state = { annotator, mode, passages: {} };
   load(); state.annotator = annotator; state.mode = mode;
   $("#adjfiles").style.display = mode === "adjudicate" ? "" : "none";
+  $("#reviewfiles").style.display = mode === "review" ? "" : "none";
   try { localStorage.setItem("lip-annot-v1:last", JSON.stringify({ annotator, mode })); } catch (e) {}
   renderList(); renderPassage();
 }
@@ -236,6 +245,12 @@ $("#who").addEventListener("change", e => switchTo(e.target.value.trim(), state.
 $("#mode").addEventListener("change", e => switchTo(state.annotator, e.target.value));
 $("#fileA").addEventListener("change", async e => { A = await readFile(e.target.files[0]); renderPassage(); });
 $("#fileB").addEventListener("change", async e => { B = await readFile(e.target.files[0]); renderPassage(); });
+$("#fileH").addEventListener("change", async e => { A = await readFile(e.target.files[0]); renderPassage(); });
+$("#fileS").addEventListener("change", async e => {
+  const s = await readFile(e.target.files[0]);
+  if (s.basis !== "silver_ai_reference") return alert("This is not the AI reference file (basis silver_ai_reference).");
+  B = s; renderPassage();
+});
 $("#exportBtn").addEventListener("click", exportJSON);
 $("#importBtn").addEventListener("click", () => $("#importFile").click());
 $("#importFile").addEventListener("change", async e => { const d = await readFile(e.target.files[0]); if (d.sampleVersion !== D.sample.version) return alert("This file is for a different sample version."); state.passages = d.passages; save(); renderPassage(); });

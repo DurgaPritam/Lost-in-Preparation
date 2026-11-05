@@ -136,3 +136,50 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
 - **Attestation proxy:** recipe-scope passages per resolved name. A Pliny chapter's paragraphs are split across the plants it names.
 - **Ranking:** by number of sources, then attestations, then compounds.
 - **Not yet done:** toxicity has not been assessed.
+
+## 9. Preparation model (M4)
+
+For each compound and preparation the model estimates the **likelihood that the compound reaches the preparation**. It combines four separate, inspectable factors, and propagates uncertainty by Monte Carlo over every assumption in [config/prep_model.toml](config/prep_model.toml): 400 draws, fixed seed. Each estimate reports the median, the 5th–95th percentile range and the median of each factor (`drivers`: solvent, heat, filtration, acidity). These are model estimates, not chemical measurements.
+
+**Solvent.** The descriptor is a compound's lipophilicity *h* (logP). Each vehicle has a logistic window:
+- **Aqueous vehicles** (water, vinegar, honey, other aqueous liquids) have an upper bound.
+- **Nonpolar vehicles** (oil, hexane) have a lower bound.
+- **Alcohols** (methanol, ethanol, 70% ethanol) have both.
+
+The window edges and the steepness are sampled from stated ranges. **Wine** is treated as a water–ethanol mixture: its upper edge shifts by ethanol fraction (10–14%) × a per-unit shift. That's an assumption. A mixed vehicle takes its best-extracting component. Juice is treated as aqueous cell sap. A powder taken whole carries everything. Very large molecules (MW > 1000) get a size penalty, which is a heuristic.
+
+**Descriptor choice.** The descriptor is validated before use. RDKit Crippen logP and GFN2-xTB are compared against experimental logP for 150 neutral compounds from SangsterLogP, chosen with a fixed seed and stratified by quintile.
+- **xTB protocol:** a single ETKDG conformer (seed fixed), gas-phase optimisation, then ALPB single points in water, hexadecane, ethanol and wet octanol. Results are cached by InChIKey. The installed xtb 6.7.1 supports these ALPB solvents (checked); its GBSA model lacks hexadecane, octanol and ethanol.
+- **Choice:** the method with the lower MAE becomes the default.
+- **Caveat:** Crippen was fitted to public logP data, which may overlap the reference set.
+
+**Acidity** (heuristic). A SMARTS rule finds basic nitrogen. In vinegar such compounds get a logD shift of 1–3 log units, which raises aqueous extraction. The `acidity` driver reports the effect.
+
+**Heat** (heuristic). SMARTS alerts flag heat-sensitive groups: endoperoxides and peroxides, labile esters, glucosinolates and cyanogenic glycosides. A volatility rule (MW < 250, HBD ≤ 1, TPSA < 40) marks steam-volatile compounds. Each alert has a degradation or loss range for warm and for boiled preparations; cold preparations lose nothing.
+- **Distillation:** carries volatile compounds only.
+- **Exploratory:** xTB Wiberg bond orders are recorded for flagged O–O bonds.
+
+**Filtration.** An unfiltered preparation carries a fraction (5–30%) of the undissolved material as suspension. Poultices and ointments (material applied whole) carry 30–80%. When filtration is unknown, each draw is filtered or not with equal probability.
+
+**Known-case test.** Artemisinin must:
+- trigger the heat flag;
+- predict a median below 0.30 for cold water;
+- predict a median above 0.60 for low-temperature nonpolar extraction.
+
+The thresholds were set in the config before running.
+
+**Literature check.** This one is *provisional* (§10). There are 9 rows across 5 plants, reporting what teas, essential oils and alcoholic extracts contain. Thresholds were pre-registered: "present" requires a median ≥ 0.40 and "low" requires < 0.30.
+
+**Outputs:** `site-data/profiles.json` (30 study-set species × 13 preparations, contract v1.2) and `data/interim/m4/profiles_long.parquet`.
+
+## 10. Provisional references (AI-made; never presented as validation)
+
+Until the human gold sets exist, three references made by an AI (Claude Code) let the pipeline be developed and checked. Each is stored separately, marked with a `basis`, and written only to `metrics.provisional`. None ever enters a gold field.
+
+| Reference | basis | What it is | Limits |
+|---|---|---|---|
+| `data/silver/silver_v1.json` | `silver_ai_reference` | Recipe labels for the 50 sample passages, written by the AI directly from the guidelines (`data/silver/silver_v1_spec.py`). Every quote is checked verbatim by `lip m1 silver`. | Same author as the guidelines and few-shot examples, so agreement may be inflated by shared conventions. |
+| `data/gold/name_identifications.csv`, `draft*` columns | `ai_drafted_unverified` | Candidate identifications drafted only from sources fetched in the run: Lewis & Short (PerseusDL TEI) and English Wikipedia. Each has a quoted line, checked against the fetched text on every run. Bostock & Riley are excluded. `verified_by` is empty. | Not scholarly verification; L&S and Wikipedia may share older sources with the system's inputs. |
+| `data/reference/prep_literature_v1.csv` | `ai_curated_literature_reference` | 9 statements from 5 open-access PMC articles, each quote checked against the fetched article. | The rows were chosen by the same AI that built the model, after the model existed; n is small. |
+
+The annotation tool's independent mode never shows any of these. **Review** mode, for adjudication only, shows human labels beside the silver labels.

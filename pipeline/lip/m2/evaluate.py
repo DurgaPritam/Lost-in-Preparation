@@ -84,6 +84,7 @@ def evaluate() -> dict:
                         note="share of resolved names whose top candidate is flagged disputed (descriptive)")
     out = {"disputedShare": disputed}
     gold = pd.read_csv(EVAL_PATH, dtype=str).fillna("") if EVAL_PATH.exists() else pd.DataFrame(columns=COLUMNS)
+    # GOLD = human-filled columns only; the draft* columns are never read here
     gold = gold[(gold.scholarlyAcceptedName.str.strip() != "") & (gold.citation.str.strip() != "")]
     if gold.empty:
         note = f"awaiting scholarly identifications in {EVAL_PATH.relative_to(ROOT)} (name + citation per row)"
@@ -102,4 +103,39 @@ def evaluate() -> dict:
             out[key] = C.Metric(status="computed", value=round(k / n, 4), low=round(lo, 4), high=round(hi, 4), n=n,
                                 sourceFile=str(EVAL_PATH.relative_to(ROOT)), note="Wilson 95% CI")
     metrics_store.update(nameResolution=out)
-    return {k: v.model_dump() for k, v in out.items()}
+    prov = _draft_agreement(cand)
+    return {**{k: v.model_dump() for k, v in out.items()},
+            "provisional_vs_ai_drafts": {k: v.model_dump() for k, v in prov.items()}}
+
+
+DRAFT_LABEL = "M2 vs AI-drafted identifications, provisional; not human-verified"
+
+
+def _score(cand: pd.DataFrame, rows: pd.DataFrame, name_col: str, id_col: str) -> tuple[int, int, int]:
+    hits1 = hits3 = 0
+    for g in rows.itertuples():
+        c = cand[(cand.nameId == g.nameId) & (cand["rank"] > 0)].sort_values("rank")
+        ok = [(_binomial(r.acceptedName) == _binomial(getattr(g, name_col)))
+              or (bool(getattr(g, id_col)) and r.wfoId == getattr(g, id_col)) for r in c.itertuples()]
+        hits1 += bool(ok[:1] and ok[0])
+        hits3 += any(ok[:3])
+    return hits1, hits3, len(rows)
+
+
+def _draft_agreement(cand: pd.DataFrame) -> dict:
+    """Agreement with AI-drafted identifications -> metrics.provisional['nameResolutionVsDraft'] only."""
+    out = {}
+    d = pd.read_csv(EVAL_PATH, dtype=str).fillna("") if EVAL_PATH.exists() else pd.DataFrame()
+    if "draftAcceptedName" in d:
+        d = d[d.draftAcceptedName.str.strip() != ""]
+    if len(d) == 0 or "draftAcceptedName" not in d:
+        out["top1"] = out["top3"] = C.not_computed("no AI-drafted identifications (run `python -m lip m2 drafts`)")
+    else:
+        h1, h3, n = _score(cand, d, "draftAcceptedName", "draftWfoId")
+        for key, k in (("top1", h1), ("top3", h3)):
+            lo, hi = wilson(k, n)
+            out[key] = C.Metric(status="computed", value=round(k / n, 4), low=round(lo, 4), high=round(hi, 4), n=n,
+                                sourceFile=str(EVAL_PATH.relative_to(ROOT)), note=f"{DRAFT_LABEL}; Wilson 95% CI")
+    metrics_store.update_provisional("nameResolutionVsDraft", C.ProvisionalSection(
+        basis="ai_drafted_unverified", label=DRAFT_LABEL, metrics=out))
+    return out

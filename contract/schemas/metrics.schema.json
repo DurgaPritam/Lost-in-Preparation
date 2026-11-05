@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.1/metrics.json",
+  "$id": "lost-in-preparation/contract/1.2/metrics.json",
   "title": "Metrics",
   "$defs": {
     "CheckResult": {
@@ -262,12 +262,51 @@
       ],
       "title": "PRF",
       "type": "object"
+    },
+    "ProvisionalSection": {
+      "additionalProperties": false,
+      "properties": {
+        "basis": {
+          "description": "silver_ai_reference | ai_drafted_unverified | ai_curated_literature_reference",
+          "title": "Basis",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "extraction": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ExtractionMetrics"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "metrics": {
+          "additionalProperties": {
+            "$ref": "#/$defs/Metric"
+          },
+          "default": {},
+          "title": "Metrics",
+          "type": "object"
+        }
+      },
+      "required": [
+        "basis",
+        "label"
+      ],
+      "title": "ProvisionalSection",
+      "type": "object"
     }
   },
   "additionalProperties": false,
   "properties": {
     "contractVersion": {
-      "default": "1.1",
+      "default": "1.2",
       "title": "Contractversion",
       "type": "string"
     },
@@ -314,6 +353,14 @@
     },
     "artemisininCheck": {
       "$ref": "#/$defs/CheckResult"
+    },
+    "provisional": {
+      "additionalProperties": {
+        "$ref": "#/$defs/ProvisionalSection"
+      },
+      "description": "v1.2: PROVISIONAL results against AI-made references; never gold",
+      "title": "Provisional",
+      "type": "object"
     }
   },
   "required": [

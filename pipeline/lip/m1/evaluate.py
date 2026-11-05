@@ -1,7 +1,7 @@
 """M1 evaluation: per-field precision/recall/F1 vs the adjudicated gold set, Cohen's kappa between
 the two annotators, bootstrap 95% CIs, and an error tally. Writes site-data/metrics.json.
 
-Scoring (documented in docs/extraction_eval.md)
+Scoring (documented in METHODS.md §5)
 - Recipes are aligned within a passage, greedily by character IoU of their recipe spans
   (ties broken by the number of agreeing categorical fields). Without spans: mean token-F1 of plant
   name and indication, threshold 0.5.
@@ -292,20 +292,30 @@ def _annotator_files():
     return sorted(p for p in ANN_DIR.glob("*.json") if p.name != "gold.json") if ANN_DIR.exists() else []
 
 
-def evaluate() -> C.Metrics:
+SILVER_PATH = ROOT / "data" / "silver" / "silver_v1.json"
+SILVER_LABEL = "model vs AI reference agreement, provisional; not human-validated"
+
+
+def evaluate(reference: str = "gold") -> C.Metrics:
+    """reference="gold": human adjudicated gold -> gold fields of metrics.json.
+    reference="silver": AI reference set -> metrics.provisional["extractionVsSilver"] ONLY."""
+    silver = reference == "silver"
+    ref_path = SILVER_PATH if silver else GOLD_PATH
+    detail_path = DETAIL_PATH.with_name("eval_detail_silver.json") if silver else DETAIL_PATH
+    tally_path = TALLY_PATH.with_name("error_tally_silver.json") if silver else TALLY_PATH
     sample = json.loads(SAMPLE_PATH.read_text())
     strata = {p["passageId"]: p["stratum"] for p in sample["passages"]}
-    gold = load_annotation_file(GOLD_PATH) if GOLD_PATH.exists() else None
+    gold = load_annotation_file(ref_path) if ref_path.exists() else None
     pred = load_predictions()
     detail: dict = {"generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds")}
 
     # extraction P/R/F1
     reasons = []
     if gold is None:
-        reasons.append(f"awaiting adjudicated gold set ({_rel(GOLD_PATH)})")
+        reasons.append(f"awaiting {'silver reference set' if silver else 'adjudicated gold set'} ({_rel(ref_path)})")
     if pred is None:
         reasons.append(f"awaiting LLM predictions on the sample ({_rel(PRED_PATH)}); run `python -m lip m1 extract --scope sample`")
-    source_file = _rel(DETAIL_PATH)
+    source_file = _rel(detail_path)
     if reasons:
         note = "; ".join(reasons)
         overall = {f: _not_computed_prf(note) for f in SCORED_FIELDS}
@@ -324,8 +334,8 @@ def evaluate() -> C.Metrics:
         detection = {"overall": prf_with_ci(per_passage, strata, "_recipe", keys, True, source_file)}
         detection.update({s: prf_with_ci(per_passage, strata, "_recipe", [k for k in keys if strata[k] == s], False, source_file)
                           for s in ALLOCATION})
-        TALLY_PATH.parent.mkdir(parents=True, exist_ok=True)
-        TALLY_PATH.write_text(json.dumps(all_errors, ensure_ascii=False, indent=1))
+        tally_path.parent.mkdir(parents=True, exist_ok=True)
+        tally_path.write_text(json.dumps(all_errors, ensure_ascii=False, indent=1))
 
     # span rejection rate
     run_info = None
@@ -340,7 +350,21 @@ def evaluate() -> C.Metrics:
     else:
         rej = C.not_computed("awaiting LLM run on the sample")
 
-    # kappa
+    if silver:
+        detail["basis"], detail["label"] = "silver_ai_reference", SILVER_LABEL
+        detail_path.parent.mkdir(parents=True, exist_ok=True)
+        detail_path.write_text(json.dumps(detail, ensure_ascii=False, indent=1, default=str))
+        ext = C.ExtractionMetrics(run=run_info, overall=overall, bySource=by_source, recipeDetection=detection,
+                                  spanRejectionRate=rej)
+        store_path = metrics_store.PATH
+        metrics_store.PATH = SITE_DATA / "metrics.json"
+        try:
+            return metrics_store.update_provisional("extractionVsSilver", C.ProvisionalSection(
+                basis="silver_ai_reference", label=SILVER_LABEL, extraction=ext))
+        finally:
+            metrics_store.PATH = store_path
+
+    # kappa (gold only)
     files = _annotator_files()
     if len(files) == 2:
         a, b = (load_annotation_file(p) for p in files)

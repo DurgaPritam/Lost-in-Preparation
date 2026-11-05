@@ -1,0 +1,14 @@
+{
+  "descriptor": "rdkit",
+  "literatureAgreement": "9/9",
+  "modelVersion": "prep-model:f4c4c5ef8a",
+  "xtbVersion": "6.7.1",
+  "artemisinin": "pass",
+  "profiles": {
+    "species": 30,
+    "preparations": 13,
+    "profiles": 390,
+    "compoundEntries": 34398
+  },
+  "generatedAt": "2026-11-05T09:13:44+00:00"
+}

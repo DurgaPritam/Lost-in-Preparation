@@ -1,4 +1,4 @@
-"""Shared data contract — v1.1 (frozen; v1.1 adds provider provenance, see CHANGELOG).
+"""Shared data contract — v1.2 (frozen; v1.1 and v1.2 are additive, see CHANGELOG).
 
 One pydantic model per site-data/ file. JSON Schemas in contract/schemas/ are generated from
 these models (`python -m lip contract`); never edit the schemas by hand.
@@ -19,7 +19,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-CONTRACT_VERSION = "1.1"
+CONTRACT_VERSION = "1.2"
 UNKNOWN = "unknown"
 
 
@@ -323,6 +323,8 @@ class CompoundLikelihood(_Model):
 class Profile(_Record):
     speciesId: str
     preparationKey: str = Field(description="part|freshOrDried|solvent(+joined)|heat|filtered (P4)")
+    process: Process | None = Field(None, description="v1.2 (P32): process, e.g. distillation, which the key cannot express")
+    preparationLabel: str | None = None
     compounds: list[CompoundLikelihood]
     coverageNote: str
 
@@ -452,6 +454,13 @@ class CheckResult(_Model):
     sourceFile: str | None = None
 
 
+class ProvisionalSection(_Model):  # v1.2 (P31): never human-validated
+    basis: str = Field(description="silver_ai_reference | ai_drafted_unverified | ai_curated_literature_reference")
+    label: str
+    extraction: ExtractionMetrics | None = None
+    metrics: dict[str, Metric] = {}
+
+
 class Metrics(_Model):
     contractVersion: str = CONTRACT_VERSION
     generatedAt: str
@@ -463,6 +472,8 @@ class Metrics(_Model):
     logPError: dict[str, Metric]  # rdkit, xtb
     headlineMatchRate: Metric
     artemisininCheck: CheckResult
+    provisional: dict[str, ProvisionalSection] = Field(
+        default_factory=dict, description="v1.2: PROVISIONAL results against AI-made references; never gold")
 
 
 Recipe.model_rebuild()

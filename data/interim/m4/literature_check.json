@@ -1,0 +1,182 @@
+{
+  "basis": "ai_curated_literature_reference",
+  "label": "preparation model vs AI-curated literature table, provisional; not human-curated",
+  "n": 9,
+  "agree": 9,
+  "rows": [
+    {
+      "plant": "Matricaria chamomilla",
+      "compound": "alpha-bisabolol",
+      "preparation": "distilled water",
+      "reported": "present",
+      "predicted": 0.7277,
+      "low": 0.5236,
+      "high": 0.9273,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.7277,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [
+        "volatile"
+      ],
+      "pmcid": "PMC2995283"
+    },
+    {
+      "plant": "Matricaria chamomilla",
+      "compound": "apigenin 7-glucoside",
+      "preparation": "hot water infusion (tea)",
+      "reported": "present",
+      "predicted": 0.9275,
+      "low": 0.8058,
+      "high": 0.9817,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.9275,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [],
+      "pmcid": "PMC2995283"
+    },
+    {
+      "plant": "Matricaria chamomilla",
+      "compound": "apigenin",
+      "preparation": "hot water infusion (tea)",
+      "reported": "low",
+      "predicted": 0.2339,
+      "low": 0.07,
+      "high": 0.4491,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.2339,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [],
+      "pmcid": "PMC2995283"
+    },
+    {
+      "plant": "Mentha × piperita",
+      "compound": "menthol",
+      "preparation": "distilled water",
+      "reported": "present",
+      "predicted": 0.7028,
+      "low": 0.5231,
+      "high": 0.9165,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.7028,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [
+        "volatile"
+      ],
+      "pmcid": "PMC13074686"
+    },
+    {
+      "plant": "Mentha × piperita",
+      "compound": "rosmarinic acid",
+      "preparation": "hot water infusion (tea)",
+      "reported": "present",
+      "predicted": 0.4873,
+      "low": 0.2646,
+      "high": 0.7391,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.4873,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [],
+      "pmcid": "PMC13074686"
+    },
+    {
+      "plant": "Satureja montana",
+      "compound": "thymol",
+      "preparation": "distilled water",
+      "reported": "present",
+      "predicted": 0.7163,
+      "low": 0.5342,
+      "high": 0.9264,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.7163,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [
+        "volatile"
+      ],
+      "pmcid": "PMC7587570"
+    },
+    {
+      "plant": "Satureja montana",
+      "compound": "rosmarinic acid",
+      "preparation": "modern 70% ethanol extract",
+      "reported": "present",
+      "predicted": 0.9857,
+      "low": 0.9348,
+      "high": 0.9987,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.9857,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [],
+      "pmcid": "PMC7587570"
+    },
+    {
+      "plant": "Thymus vulgaris",
+      "compound": "thymol",
+      "preparation": "distilled water",
+      "reported": "present",
+      "predicted": 0.7235,
+      "low": 0.524,
+      "high": 0.9142,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.7235,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [
+        "volatile"
+      ],
+      "pmcid": "PMC10217939"
+    },
+    {
+      "plant": "Salvia rosmarinus",
+      "compound": "carnosic acid",
+      "preparation": "distilled water",
+      "reported": "low",
+      "predicted": 0.0109,
+      "low": 0.0011,
+      "high": 0.0193,
+      "agree": true,
+      "drivers": {
+        "solvent": 0.0109,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "flags": [],
+      "pmcid": "PMC11944828"
+    }
+  ],
+  "thresholds": {
+    "present_min": 0.4,
+    "absent_max": 0.3
+  }
+}

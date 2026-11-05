@@ -17,3 +17,7 @@ data/interim/m1/raw/
 
 # external API response cache (re-created on demand; large)
 data/cache/
+
+# local toolchain (xtb via micromamba) and large third-party downloads (re-fetched with checksums)
+.tools/
+data/raw/logp/*.xlsx

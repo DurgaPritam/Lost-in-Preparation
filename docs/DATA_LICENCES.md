@@ -40,6 +40,11 @@ EEBO-TCP availability statement (A35365), verbatim:
 | Wikidata (hosts LOTUS natural-product occurrences) | Compounds per taxon, structures, LOTUS references | CC0 | **used** (M3) |
 | Kew POWO API | — | — | refused automated access (HTTP 403); not used |
 | COCONUT 2.0 | Additional compound coverage | Curated dataset released under CC0 (official about page); contributing sources carry their own licences, so check them | licence permits use; **not integrated yet** (bulk dump required) |
-| PubMed / PMC OA | Modern preparation methods | Abstracts for mining; per-article licence for full text | later phase |
+| PubMed / PMC OA | Modern preparation methods; quoted lines for the literature check | Article pages fetched individually; quotes are short. PMC13074686, PMC7587570, PMC10217939 and PMC11944828 state CC BY; PMC2995283 is in PMC open access, licence not stated on the page | used for 9 quoted statements; audit is a later phase |
+| PubChem PUG REST | Structures (SMILES, InChIKey) for the literature-check compounds | NCBI public data | **used** (M4) |
+| SangsterLogP (Zenodo 19387552) | Experimental logP reference for validating the solvent descriptor | **CC BY 4.0** (Zenodo record, checked 2026-11-05); SHA-256 `a5f998a6…` | **used** (M4) |
+| Lewis & Short, *A Latin Dictionary* (1879), PerseusDL lexica TEI | Drafted Pliny name identifications (provisional) | **CC BY-SA 4.0** (repository licence) | **used** (provisional drafts) |
+| English Wikipedia (article wikitext) | Drafted Culpeper name identifications (provisional) | CC BY-SA 4.0 | **used** (provisional drafts) |
+| xtb 6.7.1 (Grimme group, conda-forge) | GFN2-xTB solvation free energies | LGPL-3.0 (software) | **used** (M4), installed locally in `.tools/` |
 
 Every API response is cached with its request and retrieval time under `data/cache/`. Requests identify the project in the User-Agent, as Wikimedia's policy requires.

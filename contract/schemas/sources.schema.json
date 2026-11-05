@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.1/sources.json",
+  "$id": "lost-in-preparation/contract/1.2/sources.json",
   "title": "sources.json",
   "type": "array",
   "items": {

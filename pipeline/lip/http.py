@@ -78,3 +78,29 @@ def get_json(service: str, url: str, params: dict | None = None, data: dict | No
 def pmap(fn, items, workers: int = 6):
     with ThreadPoolExecutor(max_workers=workers) as ex:
         return list(ex.map(fn, items))
+
+
+def get_text(service: str, url: str, retries: int = 3) -> tuple[str, str, str]:
+    """GET a text resource with the same on-disk cache. Returns (text, sha256, retrievedAt)."""
+    cp = _path(service, url)
+    if cp.exists():
+        d = json.loads(cp.read_text())
+        return d["text"], d["sha256"], d["retrievedAt"]
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    last = None
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=300, context=SSL_CONTEXT) as r:
+                raw = r.read()
+            break
+        except (urllib.error.URLError, TimeoutError) as e:
+            last = e
+            time.sleep(2 * (attempt + 1))
+    else:
+        raise HTTPError(f"{service} unreachable: {last}")
+    text = raw.decode("utf-8")
+    meta = {"request": url, "retrievedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "sha256": hashlib.sha256(raw).hexdigest(), "text": text}
+    cp.parent.mkdir(parents=True, exist_ok=True)
+    cp.write_text(json.dumps(meta, ensure_ascii=False))
+    return text, meta["sha256"], meta["retrievedAt"]

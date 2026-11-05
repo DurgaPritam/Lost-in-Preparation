@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.1/profiles.json",
+  "$id": "lost-in-preparation/contract/1.2/profiles.json",
   "title": "profiles.json",
   "type": "array",
   "items": {
@@ -19,6 +19,30 @@
         "description": "part|freshOrDried|solvent(+joined)|heat|filtered (P4)",
         "title": "Preparationkey",
         "type": "string"
+      },
+      "process": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Process"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "v1.2 (P32): process, e.g. distillation, which the key cannot express"
+      },
+      "preparationLabel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Preparationlabel"
       },
       "compounds": {
         "items": {
@@ -167,6 +191,20 @@
       },
       "title": "HeuristicFlags",
       "type": "object"
+    },
+    "Process": {
+      "enum": [
+        "infusion",
+        "decoction",
+        "maceration",
+        "distillation",
+        "expression",
+        "powder",
+        "other",
+        "unknown"
+      ],
+      "title": "Process",
+      "type": "string"
     }
   }
 }

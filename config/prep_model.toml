@@ -1,0 +1,71 @@
+# Preparation model (M4) parameters. Every value is an ASSUMPTION with an uncertainty range [low, high];
+# the Monte Carlo samples each range uniformly. Changing a value changes the model version (hash recorded).
+# Factors are kept separate: solvent, heat, filtration, acidity. Heuristic factors are labelled as such.
+
+[mc]
+draws = 400
+seed = 20261105
+steepness = [1.0, 2.0]            # k in the logistic solvent windows (per log unit)
+
+[descriptor]
+default = "auto"                  # "auto" = whichever of rdkit / xtb has the lower MAE in the logP validation
+
+# Solvent windows: extracted fraction f = upper(h) * lower(h), with h the compound's lipophilicity (logP).
+#   upper(h) = sigmoid(k * (upper - h))   (compound too lipophilic to dissolve)
+#   lower(h) = sigmoid(k * (h - lower))   (compound too polar to dissolve); omitted when lower is absent
+[solvent.water]
+upper = [1.0, 2.5]
+[solvent.wine]                    # ASSUMPTION: water–ethanol mixture, ethanol volume fraction phi; window shifted by phi * ethanol_shift
+ethanol_fraction = [0.10, 0.14]
+ethanol_shift = [2.0, 3.5]
+upper = [1.0, 2.5]
+[solvent.vinegar]                 # aqueous; acidity handled by the acidity factor
+upper = [1.0, 2.5]
+[solvent.honey]                   # ASSUMPTION: aqueous (honey or honey-water) treated as water
+upper = [1.0, 2.5]
+[solvent.other]                   # ASSUMPTION: milk, ale, broth, posset-drink treated as aqueous
+upper = [1.0, 2.5]
+[solvent.oil]                     # nonpolar vehicle (olive oil); proxy for hexadecane
+lower = [0.5, 2.5]
+[solvent.hexane]                  # modern nonpolar extraction; also the "low-temperature nonpolar" case
+lower = [0.5, 2.5]
+[solvent.methanol]
+lower = [-3.0, -1.5]
+upper = [5.0, 7.0]
+[solvent.ethanol]
+lower = [-2.5, -0.5]
+upper = [5.0, 7.0]
+[solvent.hydroethanolic]          # ~70% ethanol
+lower = [-3.0, -1.0]
+upper = [4.0, 6.0]
+
+[acidity]                         # HEURISTIC: vinegar protonates basic nitrogen -> lower effective lipophilicity (logD shift)
+logd_shift = [1.0, 3.0]
+
+[heat]                            # HEURISTIC: degradation fraction per alert and heat level
+"heat:endoperoxide" = { warm = [0.2, 0.6], boiled = [0.6, 0.95] }
+"heat:peroxide" = { warm = [0.2, 0.6], boiled = [0.6, 0.95] }
+"heat:labile_ester" = { warm = [0.02, 0.15], boiled = [0.1, 0.4] }
+"heat:glucosinolate" = { warm = [0.05, 0.3], boiled = [0.2, 0.6] }
+"heat:cyanogenic_glycoside" = { warm = [0.05, 0.3], boiled = [0.2, 0.6] }
+volatile = { warm = [0.05, 0.3], boiled = [0.3, 0.8] }   # loss from an open vessel
+
+[distillation]                    # HEURISTIC: steam distillation carries volatile compounds only
+volatile_carried = [0.5, 0.95]
+nonvolatile_carried = [0.0, 0.02]
+
+[filtration]                      # suspended plant material carried by unfiltered preparations
+unfiltered_suspended = [0.05, 0.30]
+applied_whole_suspended = [0.30, 0.80]   # poultices / ointments: material in contact but not dissolved
+
+[size]                            # HEURISTIC: very large molecules extract slowly
+mw_penalty_above = 1000.0
+mw_penalty = [0.5, 0.9]
+
+[artemisinin_check]               # pre-registered pass criteria (set before running)
+cold_water_max = 0.30             # median likelihood must be below this
+nonpolar_cold_min = 0.60          # median likelihood must be above this
+
+[literature_check]               # pre-registered agreement rule for the literature reference table (set before computing)
+present_min = 0.40               # reported major / high / present  -> predicted median must be >= this
+absent_max = 0.30                # reported low / not carried        -> predicted median must be <  this

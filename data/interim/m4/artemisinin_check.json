@@ -1,0 +1,96 @@
+{
+  "result": "pass",
+  "checks": {
+    "heat flag fires": true,
+    "cold water median < 0.3": true,
+    "low-temperature nonpolar median > 0.6": true
+  },
+  "predictions": {
+    "cold water infusion": {
+      "likelihood": 0.2749,
+      "low": 0.1101,
+      "high": 0.5141,
+      "drivers": {
+        "solvent": 0.2749,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "heuristicFlags": [
+        "heat:endoperoxide"
+      ]
+    },
+    "decoction in water": {
+      "likelihood": 0.0536,
+      "low": 0.0138,
+      "high": 0.1542,
+      "drivers": {
+        "solvent": 0.2749,
+        "heat": 0.2293,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "heuristicFlags": [
+        "heat:endoperoxide"
+      ]
+    },
+    "low-temperature nonpolar extract (hexane)": {
+      "likelihood": 0.7937,
+      "low": 0.494,
+      "high": 0.9453,
+      "drivers": {
+        "solvent": 0.7937,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "heuristicFlags": [
+        "heat:endoperoxide"
+      ]
+    },
+    "modern methanol extract": {
+      "likelihood": 0.9934,
+      "low": 0.9586,
+      "high": 0.9996,
+      "drivers": {
+        "solvent": 0.9934,
+        "heat": 1.0,
+        "filtration": 1.0,
+        "acidity": 1.0
+      },
+      "heuristicFlags": [
+        "heat:endoperoxide"
+      ]
+    }
+  },
+  "descriptor": "rdkit",
+  "lipophilicity": 2.395,
+  "flags": {
+    "logP": 2.395,
+    "tpsa": 53.99,
+    "mw": 282.34,
+    "hbd": 0,
+    "hba": 5,
+    "heavyAtoms": 20,
+    "basicN": false,
+    "heatFlags": [
+      "heat:endoperoxide"
+    ],
+    "volatile": false,
+    "class": "terpenoid-like"
+  },
+  "xtb": {
+    "logP_xtb": 1.449,
+    "logK": {
+      "hexadecane": -2.814,
+      "ethanol": 3.948,
+      "woctanol": 1.449
+    },
+    "wiberg_OO": [
+      0.162,
+      0.944
+    ],
+    "status": "ok"
+  },
+  "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.11\u20130.51]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.49\u20130.95]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O\u2013O bond: 0.944."
+}

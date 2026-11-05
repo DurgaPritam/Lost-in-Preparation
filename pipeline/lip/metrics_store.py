@@ -53,3 +53,11 @@ def update(**sections) -> C.Metrics:
 def write_json(path, obj) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, indent=2, ensure_ascii=False, default=str) + "\n")
+
+
+def update_provisional(key: str, section) -> C.Metrics:
+    """Write one provisional section (silver / AI-drafted / AI-curated reference). Never touches gold fields."""
+    m = load()
+    prov = {k: v.model_dump(by_alias=True) for k, v in m.provisional.items()}
+    prov[key] = section.model_dump(by_alias=True)
+    return update(provisional={k: C.ProvisionalSection.model_validate(v) for k, v in prov.items()})

@@ -1,6 +1,6 @@
 {
   "contractVersion": "1.1",
-  "generatedAt": "2026-11-05T08:12:25+00:00",
+  "generatedAt": "2026-11-05T09:13:44+00:00",
   "pipelineVersion": "0.1.0",
   "mock": false,
   "extraction": {
@@ -1765,22 +1765,49 @@
   },
   "logPError": {
     "rdkit": {
-      "status": "not_computed",
-      "value": null,
-      "low": null,
-      "high": null,
-      "n": null,
-      "sourceFile": null,
-      "note": "computed in Phase 4 (M4)"
+      "status": "computed",
+      "value": 0.6567,
+      "low": 0.5751,
+      "high": 0.7418,
+      "n": 150,
+      "sourceFile": "data/interim/m4/logp_validation.json",
+      "note": "MAE vs experimental logP (SangsterLogP neutral subset); RMSE 0.8374, Spearman 0.8324 [0.7625, 0.8851]"
+    },
+    "rdkitSpearman": {
+      "status": "computed",
+      "value": 0.8324,
+      "low": 0.7625,
+      "high": 0.8851,
+      "n": 150,
+      "sourceFile": "data/interim/m4/logp_validation.json",
+      "note": "Spearman rho vs experimental logP"
     },
     "xtb": {
-      "status": "not_computed",
+      "status": "computed",
+      "value": 1.5052,
+      "low": 1.3172,
+      "high": 1.71,
+      "n": 150,
+      "sourceFile": "data/interim/m4/logp_validation.json",
+      "note": "MAE vs experimental logP (SangsterLogP neutral subset); RMSE 1.9244, Spearman 0.688 [0.5961, 0.7616]"
+    },
+    "xtbSpearman": {
+      "status": "computed",
+      "value": 0.688,
+      "low": 0.5961,
+      "high": 0.7616,
+      "n": 150,
+      "sourceFile": "data/interim/m4/logp_validation.json",
+      "note": "Spearman rho vs experimental logP"
+    },
+    "defaultDescriptor": {
+      "status": "computed",
       "value": null,
       "low": null,
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "computed in Phase 4 (M4)"
+      "note": "default = rdkit (lower MAE on paired set)"
     }
   },
   "headlineMatchRate": {
@@ -1793,9 +1820,1705 @@
     "note": "computed in Phase 6 (M5/M6)"
   },
   "artemisininCheck": {
-    "status": "not_computed",
-    "result": null,
-    "explanation": "computed in Phase 4 (M4)",
-    "sourceFile": null
+    "status": "computed",
+    "result": "pass",
+    "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.11–0.51]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.49–0.95]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O–O bond: 0.944.",
+    "sourceFile": "data/interim/m4/artemisinin_check.json"
+  },
+  "provisional": {
+    "extractionVsSilver": {
+      "basis": "silver_ai_reference",
+      "label": "model vs AI reference agreement, provisional; not human-validated",
+      "extraction": {
+        "run": null,
+        "overall": {
+          "recipeType": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "part": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "freshOrDried": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "heat": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "filtered": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "process": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "form": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "solvent": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "plantNameAsWritten": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "heatText": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "durationText": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "indicationAsWritten": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "ingredients": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          }
+        },
+        "bySource": {
+          "culpeper1652_virtues": {
+            "recipeType": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "part": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "freshOrDried": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "heat": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "filtered": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "process": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "form": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "solvent": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "plantNameAsWritten": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "heatText": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "durationText": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "indicationAsWritten": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "ingredients": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            }
+          },
+          "culpeper1850_dispensatory": {
+            "recipeType": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "part": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "freshOrDried": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "heat": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "filtered": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "process": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "form": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "solvent": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "plantNameAsWritten": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "heatText": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "durationText": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "indicationAsWritten": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "ingredients": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            }
+          },
+          "pliny": {
+            "recipeType": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "part": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "freshOrDried": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "heat": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "filtered": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "process": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "form": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "solvent": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "plantNameAsWritten": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "heatText": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "durationText": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "indicationAsWritten": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            },
+            "ingredients": {
+              "precision": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "recall": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              },
+              "f1": {
+                "status": "not_computed",
+                "value": null,
+                "low": null,
+                "high": null,
+                "n": null,
+                "sourceFile": null,
+                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              }
+            }
+          }
+        },
+        "recipeDetection": {
+          "overall": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "culpeper1652_virtues": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "culpeper1850_dispensatory": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          },
+          "pliny": {
+            "precision": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "recall": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            },
+            "f1": {
+              "status": "not_computed",
+              "value": null,
+              "low": null,
+              "high": null,
+              "n": null,
+              "sourceFile": null,
+              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            }
+          }
+        },
+        "spanRejectionRate": {
+          "status": "not_computed",
+          "value": null,
+          "low": null,
+          "high": null,
+          "n": null,
+          "sourceFile": null,
+          "note": "awaiting LLM run on the sample"
+        }
+      },
+      "metrics": {}
+    },
+    "nameResolutionVsDraft": {
+      "basis": "ai_drafted_unverified",
+      "label": "M2 vs AI-drafted identifications, provisional; not human-verified",
+      "extraction": null,
+      "metrics": {
+        "top1": {
+          "status": "computed",
+          "value": 0.5,
+          "low": 0.2993,
+          "high": 0.7007,
+          "n": 20,
+          "sourceFile": "data/gold/name_identifications.csv",
+          "note": "M2 vs AI-drafted identifications, provisional; not human-verified; Wilson 95% CI"
+        },
+        "top3": {
+          "status": "computed",
+          "value": 0.5,
+          "low": 0.2993,
+          "high": 0.7007,
+          "n": 20,
+          "sourceFile": "data/gold/name_identifications.csv",
+          "note": "M2 vs AI-drafted identifications, provisional; not human-verified; Wilson 95% CI"
+        }
+      }
+    },
+    "prepModelVsLiterature": {
+      "basis": "ai_curated_literature_reference",
+      "label": "preparation model vs AI-curated literature table, provisional; not human-curated",
+      "extraction": null,
+      "metrics": {
+        "agreement": {
+          "status": "computed",
+          "value": 1.0,
+          "low": 0.7008,
+          "high": 1.0,
+          "n": 9,
+          "sourceFile": "data/interim/m4/literature_check.json",
+          "note": "preparation model vs AI-curated literature table, provisional; not human-curated; 9/9 rows agree under pre-registered thresholds; Wilson 95% CI; table chosen by the same AI that built the model"
+        }
+      }
+    }
   }
 }
