@@ -157,6 +157,18 @@ For each eligible table, each comparable column pair (P1, P2) with different mod
 
 The collector (`pipeline/lip/m4/prereg_v3.py`) is written after this registration and committed with the results. Before the run it is tested only on synthetic tables and on articles about *Hibiscus sabdariffa*, a plant not in the list.
 
+## Amendment 1 (2026-11-05, before collection)
+
+Committed **before** any article for a listed plant was opened for v3. Testing the collector on synthetic tables and on *Hibiscus sabdariffa* (not in the list) showed three defects in the table rule as first written:
+
+1. **Word boundaries.** `ethanol\w*` also matched inside "methanol", so every methanol column mapped to two preparations and was dropped. Both alcohol patterns now require a word start: `\bethanol\w*`, `\bmethanol\w*`.
+2. **Aqueous alcohol.** A label naming an alcohol together with "aqueous", "water" or "H2O" (e.g. "70% aqueous ethanol", "MeOH:H2O 80:20") is an aqueous-alcohol extract. The aqueous term is ignored for such a label, so it maps to the alcohol preparation instead of to two preparations.
+3. **Same-material condition.** Solvent strengths and generic words made columns of the same material look different (e.g. "Infusion" vs "Methanol extract", or "(mg/g)" vs "(%)"). The condition now also removes:
+   - solvent strengths (`n%`, `n:n`, `(v/v)`);
+   - generic words and units: extract, sample, mean, SD, SE, RSD, area, relative, content, concentration, amount, mg, g, kg, µg, ug, ng, mL, L, DW, FW, dry, fresh weight, weight, ppm, ppb, per, of, in, the.
+
+Nothing else changes: plants, queries, eligibility, outcome, thresholds and analysis are as registered above.
+
 ## Deviations
 
 None so far.
