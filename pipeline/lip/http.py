@@ -6,6 +6,7 @@ and retrieval time, so results are reproducible and services are not queried twi
 from __future__ import annotations
 
 import hashlib
+import http.client
 import json
 import ssl
 import threading
@@ -63,8 +64,8 @@ def get_json(service: str, url: str, params: dict | None = None, data: dict | No
                     delay *= 2
                     continue
                 raise HTTPError(f"{service} HTTP {e.code} for {full[:200]}") from e
-            except (urllib.error.URLError, TimeoutError) as e:
-                if attempt < retries:
+            except (urllib.error.URLError, TimeoutError, http.client.HTTPException, ConnectionError, json.JSONDecodeError) as e:
+                if attempt < retries:  # dropped connections and truncated responses are retried
                     time.sleep(delay)
                     delay *= 2
                     continue
@@ -93,7 +94,7 @@ def get_text(service: str, url: str, retries: int = 3) -> tuple[str, str, str]:
             with urllib.request.urlopen(req, timeout=300, context=SSL_CONTEXT) as r:
                 raw = r.read()
             break
-        except (urllib.error.URLError, TimeoutError) as e:
+        except (urllib.error.URLError, TimeoutError, http.client.HTTPException, ConnectionError) as e:
             last = e
             time.sleep(2 * (attempt + 1))
     else:

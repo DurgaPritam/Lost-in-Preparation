@@ -10,7 +10,7 @@ from contract import models as C
 
 from .. import metrics_store
 from ..paths import INTERIM, ROOT, SITE_DATA
-from . import chem, literature, xtb
+from . import chem, literature, prereg_literature, xtb
 from . import model as M
 
 OUT = INTERIM / "m4"
@@ -38,8 +38,11 @@ def known_case(cfg: dict, descriptor: str) -> dict:
     d = chem.describe(a["smiles"])
     h, used = lipophilicity(a["smiles"], a["inchikey"], descriptor)
     c = M.Compound(a["inchikey"], h, d["basicN"], d["heatFlags"], d["volatile"], d["mw"])
-    res = {lab: M.simulate(c, M.BY_LABEL[lab], cfg) for lab in
-           ("cold water infusion", "decoction in water", "low-temperature nonpolar extract (hexane)", "modern methanol extract")}
+    preps = [M.BY_LABEL[l] for l in ("cold water infusion", "decoction in water", "low-temperature nonpolar extract (hexane)",
+                                     "modern methanol extract")]
+    # sensitivity: cold water without straining (soaked and wrung out), to show the suspension assumption's effect
+    preps.insert(1, M.Prep("unknown|unknown|water|cold|no", "cold water, unfiltered (soaked and wrung out)", ("water",), "cold", "no", "infusion"))
+    res = {p.label: M.simulate(c, p, cfg) for p in preps}
     thr = cfg["artemisinin_check"]
     checks = {
         "heat flag fires": "heat:endoperoxide" in d["heatFlags"],
@@ -47,6 +50,8 @@ def known_case(cfg: dict, descriptor: str) -> dict:
         f"low-temperature nonpolar median > {thr['nonpolar_cold_min']}":
             res["low-temperature nonpolar extract (hexane)"]["likelihood"] > thr["nonpolar_cold_min"],
     }
+    cw, nc = res["cold water infusion"], res["low-temperature nonpolar extract (hexane)"]
+    borderline = (cw["high"] >= thr["cold_water_max"]) or (nc["low"] <= thr["nonpolar_cold_min"])
     x = xtb.compute(a["inchikey"], a["smiles"])
     expl = (f"Descriptor {used} (logP {h:.2f}). Endoperoxide heat flag: {checks['heat flag fires']}. "
             f"Cold water {res['cold water infusion']['likelihood']:.2f} [{res['cold water infusion']['low']:.2f}–{res['cold water infusion']['high']:.2f}]; "
@@ -55,7 +60,15 @@ def known_case(cfg: dict, descriptor: str) -> dict:
             f"[{res['low-temperature nonpolar extract (hexane)']['low']:.2f}–{res['low-temperature nonpolar extract (hexane)']['high']:.2f}]. "
             f"Pre-registered thresholds: cold water < {thr['cold_water_max']}, nonpolar > {thr['nonpolar_cold_min']}. "
             f"Exploratory xTB Wiberg bond order of the O–O bond: {max(x.get('wiberg_OO') or [float('nan')]):.3f}.")
-    out = {"result": "pass" if all(checks.values()) else "fail", "checks": checks, "predictions": res, "descriptor": used,
+    result = ("borderline pass" if borderline else "pass") if all(checks.values()) else "fail"
+    drivers = {lab: r["drivers"] for lab, r in res.items()}
+    expl += (" BORDERLINE: the 5th–95th percentile range crosses a threshold (cold water "
+             f"{cw['low']:.2f}–{cw['high']:.2f} vs < {thr['cold_water_max']}; nonpolar {nc['low']:.2f}–{nc['high']:.2f} vs > {thr['nonpolar_cold_min']})."
+             if borderline else "")
+    expl += (" Cold water is filtered (filtration factor 1.00): its value comes from the solvent factor alone. "
+             f"Without straining, the suspension assumption raises it to {res['cold water, unfiltered (soaked and wrung out)']['likelihood']:.2f} "
+             f"(filtration factor {res['cold water, unfiltered (soaked and wrung out)']['drivers']['filtration']:.2f}).")
+    out = {"result": result, "drivers": drivers, "checks": checks, "predictions": res, "descriptor": used,
            "lipophilicity": h, "flags": d, "xtb": {k: x.get(k) for k in ("logP_xtb", "logK", "wiberg_OO", "status")},
            "explanation": expl}
     (OUT / "artemisinin_check.json").write_text(json.dumps(out, indent=2, default=str))
@@ -98,9 +111,29 @@ def profiles(cfg: dict, descriptor: str) -> dict:
             records.append(C.Profile(speciesId=sp.wfoId, preparationKey=prep.key.split("#")[0], process=prep.process,
                                      preparationLabel=prep.label, compounds=entries,
                                      coverageNote=f"{note}; model estimates, not measurements"))
-    SITE_DATA.mkdir(parents=True, exist_ok=True)
-    (SITE_DATA / "profiles.json").write_text(json.dumps([p.model_dump(by_alias=True) for p in records], ensure_ascii=False,
-                                                        separators=(",", ":")) + "\n")
+    # v1.3 layout: one file per species + index (the site loads them on demand); full file in the data release
+    import gzip
+    pdir = SITE_DATA / "profiles"
+    pdir.mkdir(parents=True, exist_ok=True)
+    for old in pdir.glob("*.json"):
+        old.unlink()
+    (SITE_DATA / "profiles.json").unlink(missing_ok=True)
+    tox = dict(zip(prop.acceptedName, zip(prop.get("toxicity", ["unknown"] * len(prop)), prop.get("toxicityNote", [None] * len(prop)))))
+    index = []
+    for sp in prop.itertuples():
+        recs = [p for p in records if p.speciesId == sp.wfoId]
+        f = pdir / f"{sp.wfoId}.json"
+        f.write_text(json.dumps([p.model_dump(by_alias=True) for p in recs], ensure_ascii=False, separators=(",", ":")) + "\n")
+        flag, note = tox.get(sp.acceptedName, ("unknown", None))
+        index.append(C.ProfileIndexEntry(speciesId=sp.wfoId, acceptedName=sp.acceptedName, file=f"profiles/{f.name}",
+                                         preparations=len(recs), compounds=len(recs[0].compounds) if recs else 0,
+                                         toxicityFlag=flag if isinstance(flag, str) else "unknown",
+                                         toxicityNote=note if isinstance(note, str) else None).model_dump())
+    (pdir / "index.json").write_text(json.dumps(index, indent=1, ensure_ascii=False) + "\n")
+    rel = ROOT / "data" / "release"
+    rel.mkdir(parents=True, exist_ok=True)
+    with gzip.open(rel / "profiles_full.json.gz", "wt", encoding="utf-8") as fh:
+        json.dump([p.model_dump(by_alias=True) for p in records], fh, ensure_ascii=False, separators=(",", ":"))
     pd.DataFrame(rows).to_parquet(OUT / "profiles_long.parquet", index=False)
     return {"species": int(prop.acceptedName.nunique()), "preparations": len(M.GRID), "profiles": len(records),
             "compoundEntries": len(rows)}
@@ -126,16 +159,30 @@ def main() -> dict:
         logPError=lp,
         artemisininCheck=C.CheckResult(status="computed", result=case["result"], explanation=case["explanation"],
                                        sourceFile="data/interim/m4/artemisinin_check.json"))
+    metrics_store.drop_provisional("prepModelVsLiterature")  # superseded by _exploratory / _preregistered
     lit = literature.evaluate(cfg)
     from ..m2.evaluate import wilson
     lo, hi = wilson(lit["agree"], lit["n"])
-    metrics_store.update_provisional("prepModelVsLiterature", C.ProvisionalSection(
+    metrics_store.update_provisional("prepModelVsLiterature_exploratory", C.ProvisionalSection(
         basis=literature.BASIS, label=literature.LABEL,
         metrics={"agreement": C.Metric(status="computed", value=round(lit["agree"] / lit["n"], 4), low=round(lo, 4),
                                        high=round(hi, 4), n=lit["n"], sourceFile="data/interim/m4/literature_check.json",
                                        note=f"{literature.LABEL}; {lit['agree']}/{lit['n']} rows agree under pre-registered "
                                             f"thresholds; Wilson 95% CI; table chosen by the same AI that built the model")}))
-    summary = {"descriptor": descriptor, "literatureAgreement": f"{lit['agree']}/{lit['n']}", "modelVersion": M.config_version(cfg), "xtbVersion": xtb.version(),
+    pre = prereg_literature.evaluate(cfg)
+    if pre["rowsFound"]:
+        plo, phi = wilson(pre["agree"], pre["rowsFound"])
+        pm = C.Metric(status="computed", value=round(pre["agree"] / pre["rowsFound"], 4), low=round(plo, 4), high=round(phi, 4),
+                      n=pre["rowsFound"], sourceFile="data/interim/m4/literature_prereg.json",
+                      note=(f"PRE-REGISTERED (docs/PREREGISTRATION.md, commit 35b7c0d); {pre['agree']}/{pre['rowsFound']} rows agree; "
+                            f"target was 30, rule not relaxed; by preparation: {pre['byPreparation']}; Wilson 95% CI"))
+    else:
+        pm = C.not_computed("no rows met the pre-registered rule")
+    metrics_store.update_provisional("prepModelVsLiterature_preregistered", C.ProvisionalSection(
+        basis=literature.BASIS, label="PRE-REGISTERED literature check, provisional; AI-written rule and code, not human-curated",
+        metrics={"agreement": pm}))
+    summary = {"descriptor": descriptor, "literatureAgreementExploratory": f"{lit['agree']}/{lit['n']}",
+               "literatureAgreementPreregistered": f"{pre['agree']}/{pre['rowsFound']}", "modelVersion": M.config_version(cfg), "xtbVersion": xtb.version(),
                "artemisinin": case["result"], "profiles": prof, "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     (OUT / "m4_summary.json").write_text(json.dumps(summary, indent=2))
     return summary

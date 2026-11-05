@@ -1,4 +1,8 @@
-"""Literature check for the preparation model (PROVISIONAL).
+"""Literature check for the preparation model — EXPLORATORY set (selected after model build).
+
+These 9 rows were chosen by the same AI that built the model, after the model existed. They are kept
+as an exploratory check only; the confirmatory check follows the selection rule pre-registered in
+docs/PREREGISTRATION.md (see prereg_literature.py) and is reported separately, never pooled.
 
 basis = "ai_curated_literature_reference": a small hand-built table of what published papers report
 in teas / aqueous extracts vs essential oils vs alcoholic extracts, built by an AI (Claude Code) from
@@ -25,7 +29,8 @@ from . import model as M
 OUT = INTERIM / "m4"
 REF_CSV = ROOT / "data" / "reference" / "prep_literature_v1.csv"
 BASIS = "ai_curated_literature_reference"
-LABEL = "preparation model vs AI-curated literature table, provisional; not human-curated"
+LABEL = ("EXPLORATORY (rows selected after model build): preparation model vs AI-curated literature table, "
+         "provisional; not human-curated")
 PMC = "https://pmc.ncbi.nlm.nih.gov/articles/{}/"
 PUBCHEM = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{}/property/IsomericSMILES,InChIKey/JSON"
 

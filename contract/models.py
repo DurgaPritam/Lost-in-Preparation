@@ -1,4 +1,4 @@
-"""Shared data contract — v1.2 (frozen; v1.1 and v1.2 are additive, see CHANGELOG).
+"""Shared data contract — v1.3 (frozen; v1.1–v1.3 are additive or layout-only, see CHANGELOG).
 
 One pydantic model per site-data/ file. JSON Schemas in contract/schemas/ are generated from
 these models (`python -m lip contract`); never edit the schemas by hand.
@@ -19,7 +19,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-CONTRACT_VERSION = "1.2"
+CONTRACT_VERSION = "1.3"
 UNKNOWN = "unknown"
 
 
@@ -329,6 +329,16 @@ class Profile(_Record):
     coverageNote: str
 
 
+class ProfileIndexEntry(_Record):  # v1.3 (P33): site-data/profiles/index.json
+    speciesId: str
+    acceptedName: str
+    file: str = Field(description="path relative to site-data/, e.g. profiles/wfo-0000134589.json")
+    preparations: int
+    compounds: int
+    toxicityFlag: ToxicityFlag = ToxicityFlag.unknown
+    toxicityNote: str | None = None
+
+
 # --- audit.json ---------------------------------------------------------------------------
 
 class MeshTerm(_Model):  # P17
@@ -482,7 +492,8 @@ FILE_MODELS = {
     "sources.json": Source,
     "recipes.json": Recipe,
     "species.json": SpeciesCandidate,
-    "profiles.json": Profile,
+    "profiles.index.json": ProfileIndexEntry,      # site-data/profiles/index.json
+    "profiles.species.json": Profile,              # site-data/profiles/<speciesId>.json (array of Profile)
     "audit.json": AuditRecord,
     "hypotheses.json": Hypothesis,
     "metrics.json": Metrics,

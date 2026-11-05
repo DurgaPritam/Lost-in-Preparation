@@ -7,6 +7,10 @@ Sources used:
   - Lewis & Short, A Latin Dictionary (1879), TEI XML from the PerseusDL lexica repository
     (CC BY-SA 4.0): lat.ls.perseus-eng1.xml
   - English Wikipedia article wikitext (CC BY-SA 4.0), fetched with action=raw
+NOT INDEPENDENT MODERN SCHOLARSHIP: Lewis & Short (1879) is a 19th-century dictionary whose plant
+identifications partly rest on the same older commentators (e.g. Fée, Sprengel) that informed the
+system's Bostock & Riley footnotes, and Wikipedia is a tertiary, editable source. The drafts therefore
+stay `ai_drafted_unverified` until a person checks them against modern scholarly identifications.
 Drafts are written to separate `draft*` columns of data/gold/name_identifications.csv. The human
 columns (scholarlyAcceptedName, citation, annotator) and `verified_by` stay empty for a person.
 `lip m2 eval` reports draft agreement only as PROVISIONAL (metrics.provisional), never as gold.
@@ -21,6 +25,8 @@ from ..http import get_text
 from .services import wfo_resolve
 
 BASIS = "ai_drafted_unverified"
+CAVEAT = ("Lewis & Short (1879) and Wikipedia are not independent modern scholarly sources (L&S may share older commentators "
+          "with the system's inputs; Wikipedia is tertiary); this draft stays unverified until checked by a person.")
 LS_URL = "https://raw.githubusercontent.com/PerseusDL/lexica/master/CTS_XML_TEI/perseus/pdllex/lat/ls/lat.ls.perseus-eng1.xml"
 WP_RAW = "https://en.wikipedia.org/w/index.php?title={t}&action=raw"
 WP_PAGE = "https://en.wikipedia.org/wiki/{t}"
@@ -91,7 +97,7 @@ def build(eval_path) -> pd.DataFrame:
         raise ValueError(f"no draft decision for: {sorted(missing)}")
     ls, ls_sha = _ls_entries()
     cols = {c: [] for c in ("draftSourceName", "draftAcceptedName", "draftWfoId", "draftSource", "draftSourceUrl",
-                            "draftSourceSection", "draftQuote", "draftSourceSha256", "draftNote", "draftBasis", "verified_by")}
+                            "draftSourceSection", "draftQuote", "draftSourceSha256", "draftNote", "draftCaveat", "draftBasis", "verified_by")}
     for r in df.itertuples():
         _, src, loc, quote, binom, note = by_name[r.nameAsWritten]
         url = section = sha = ""
@@ -110,7 +116,7 @@ def build(eval_path) -> pd.DataFrame:
         for k, v in (("draftSourceName", binom or ""), ("draftAcceptedName", (acc or {}).get("acceptedName", "")),
                      ("draftWfoId", (acc or {}).get("wfoId", "")), ("draftSource", srcname), ("draftSourceUrl", url),
                      ("draftSourceSection", section), ("draftQuote", quote or ""), ("draftSourceSha256", sha),
-                     ("draftNote", note), ("draftBasis", BASIS), ("verified_by", "")):
+                     ("draftNote", note), ("draftCaveat", CAVEAT if src else ""), ("draftBasis", BASIS), ("verified_by", "")):
             cols[k].append(v)
     for k, v in cols.items():
         df[k] = v

@@ -101,15 +101,19 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
 | Evidence | Basis | Weight |
 |---|---|---|
 | The name as written is a scientific binomial (GBIF backbone, strict) | `database` | 2.0 |
-| The GBIF backbone species has an **exact** English vernacular match (plurals and possessives folded) | `database` | 1.0 per query, split by *support* (independent vernacular records). Multiplied by a regional prior from GBIF occurrences in Great Britain (Culpeper) or Europe (Pliny), and by 0.3 for Pliny names. |
-| A binomial named in a linked Bostock & Riley footnote | `commentary_19c` | strong 2.0 / weak 1.0, divided by its order in the footnote; ×0.5 if the footnote hedges ("probably", "supposed", "some…", "doubt") |
+| The GBIF backbone species has an **exact** English vernacular match (plurals and possessives folded) | `database` | 1.0 per query, split by *support* (independent vernacular records). Multiplied by a regional prior from GBIF occurrences in Great Britain (Culpeper) or Europe (Pliny), milder in v2 (0.5 + 0.5 × relative log-occurrences) so cultivated and traded plants stay plausible, and by 0.3 for Pliny names. |
+| A binomial named in a linked Bostock & Riley footnote | `commentary_19c` | strong 2.0 / weak 1.0, divided by its order in the footnote; ×0.5 if the footnote hedges ("probably", "supposed", "queries whether", "inclined to", "impossible to speak positively"…) |
+| **Classical genus** (v2): a word of the name, or a Latinised/transliterated variant (-on→-um, -os→-us, -e→-a, doubled consonants collapsed, Latin endings added), is an accepted plant genus (GBIF, synonyms followed) | `database` | candidates in that genus ×3 (keeps the ranking within the genus); if none, the genus's most-recorded species in the region is added (2.0, genus-level, disputed). Pliny: every word; Culpeper: Latin-looking words only, never English words |
+| **Binomial from name tokens** (v2): genus + another Latin-looking word of the name matches a species ("Dodder … Epithimum" → *Cuscuta epithymum*) | `database` | 3.0 |
 
 - **Confidence:** scores are normalised per name, and each species is mapped to its **accepted WFO name and WFO ID**, following synonymy.
 - **Disputed:** a name is flagged when any of these holds:
   - top confidence < 0.6;
   - the deciding footnote hedges;
   - the top two candidates are within 0.15;
-  - the total evidence is < 0.5.
+  - the total evidence is < 0.5;
+  - the name resolves only to genus level;
+  - **toxic confusion**: candidates with confidence ≥ 0.15 differ in known toxicity. Toxicity is screened against Wikipedia's *List of poisonous plants* (CC BY-SA 4.0, revision recorded). Absence from the list is recorded as `unknown`, never as safe. The list is incomplete: it omits, for example, *Papaver somniferum* and *Symphytum officinale*. It also lists some genera wholesale, such as *Allium* spp., mainly for animal toxicity.
 - **Not used:** POWO refused automated access, so it isn't used. No LLM (`model` basis) and no scholarly lists are used as candidates; scholarly identifications are reserved for evaluation.
 
 **Evaluation.** `data/gold/name_identifications.csv` holds 30 names (15 Culpeper, 15 Pliny, seed `20261107`). A person fills in the scholarly accepted name and a citation for each row; rows without a citation are not scored. `lip m2 eval` reports top-1 and top-3 accuracy with Wilson 95% intervals, plus the share of names flagged disputed (written to `metrics.json`).
@@ -161,14 +165,20 @@ The window edges and the steepness are sampled from stated ranges. **Wine** is t
 
 **Filtration.** An unfiltered preparation carries a fraction (5–30%) of the undissolved material as suspension. Poultices and ointments (material applied whole) carry 30–80%. When filtration is unknown, each draw is filtered or not with equal probability.
 
+**Training overlap.** Crippen's training molecules (Wildman & Crippen 1999) are not distributed with RDKit, so exact overlap with the test set can't be determined. As a proxy, metrics are recomputed on compounds whose every cited measurement source was first published in 2000 or later (Crossref years). Those values cannot have entered the 1999 training set through those sources. The result is reported next to the main comparison.
+
 **Known-case test.** Artemisinin must:
 - trigger the heat flag;
 - predict a median below 0.30 for cold water;
 - predict a median above 0.60 for low-temperature nonpolar extraction.
 
-The thresholds were set in the config before running.
+The thresholds were set in the config before running. A pass whose 5th–95th percentile range crosses a threshold is reported as a **borderline pass**. The per-factor drivers are reported for every preparation, together with an unfiltered cold-water variant, to show the suspension assumption's effect.
 
-**Literature check.** This one is *provisional* (§10). There are 9 rows across 5 plants, reporting what teas, essential oils and alcoholic extracts contain. Thresholds were pre-registered: "present" requires a median ≥ 0.40 and "low" requires < 0.30.
+**Literature checks** (*provisional*, §10). They are never pooled.
+- **Exploratory:** 9 rows across 5 plants, selected after the model was built.
+- **Pre-registered:** the rule in [docs/PREREGISTRATION.md](docs/PREREGISTRATION.md) was committed before any rows were collected: 6 plants, fixed PMC queries, a mechanical sentence rule, and a target of about 30 rows.
+
+Both use the same thresholds: "present" requires a median ≥ 0.40 and "low" requires < 0.30.
 
 **Outputs:** `site-data/profiles.json` (30 study-set species × 13 preparations, contract v1.2) and `data/interim/m4/profiles_long.parquet`.
 
@@ -179,7 +189,8 @@ Until the human gold sets exist, three references made by an AI (Claude Code) le
 | Reference | basis | What it is | Limits |
 |---|---|---|---|
 | `data/silver/silver_v1.json` | `silver_ai_reference` | Recipe labels for the 50 sample passages, written by the AI directly from the guidelines (`data/silver/silver_v1_spec.py`). Every quote is checked verbatim by `lip m1 silver`. | Same author as the guidelines and few-shot examples, so agreement may be inflated by shared conventions. |
-| `data/gold/name_identifications.csv`, `draft*` columns | `ai_drafted_unverified` | Candidate identifications drafted only from sources fetched in the run: Lewis & Short (PerseusDL TEI) and English Wikipedia. Each has a quoted line, checked against the fetched text on every run. Bostock & Riley are excluded. `verified_by` is empty. | Not scholarly verification; L&S and Wikipedia may share older sources with the system's inputs. |
-| `data/reference/prep_literature_v1.csv` | `ai_curated_literature_reference` | 9 statements from 5 open-access PMC articles, each quote checked against the fetched article. | The rows were chosen by the same AI that built the model, after the model existed; n is small. |
+| `data/gold/name_identifications.csv`, `draft*` columns | `ai_drafted_unverified` | Candidate identifications drafted only from sources fetched in the run: Lewis & Short (PerseusDL TEI) and English Wikipedia. Each has a quoted line, checked against the fetched text on every run. Bostock & Riley are excluded. `verified_by` is empty. | **Lewis & Short and Wikipedia are not independent modern scholarly sources.** L&S (1879) may rest on the same older commentators as the system's inputs, and Wikipedia is tertiary. The drafts stay unverified. |
+| `data/reference/prep_literature_v1.csv` | `ai_curated_literature_reference` | **Exploratory:** 9 statements from 5 open-access PMC articles, each quote checked against the fetched article. | Selected after the model was built, by the same AI; n is small. |
+| `data/reference/prep_literature_prereg_v1.csv` | `ai_curated_literature_reference` | **Pre-registered:** rows selected by the committed rule (docs/PREREGISTRATION.md). | The rule and code were written by an AI. The mechanical rule mostly yields essential-oil rows, which makes it a weak test of aqueous and alcoholic preparations. |
 
 The annotation tool's independent mode never shows any of these. **Review** mode, for adjudication only, shows human labels beside the silver labels.

@@ -66,6 +66,14 @@ def gbif_match(name: str) -> dict | None:
 ENGLISH = {"eng", "en", None, ""}
 
 
+def gbif_match_loose(name: str) -> dict | None:
+    """Non-strict (fuzzy) GBIF match, plants only, species rank or below."""
+    r = get_json("gbif", f"{GBIF}/species/match", {"name": ascii_latin(name), "kingdom": "Plantae"})
+    if r.get("matchType") not in ("EXACT", "FUZZY") or r.get("kingdom") != "Plantae" or r.get("rank") not in SPECIES_RANKS:
+        return None
+    return r
+
+
 def gbif_vernacular_names(key: int) -> list[dict]:
     out, offset = [], 0
     while True:
@@ -145,3 +153,63 @@ def gbif_occurrences(species_key: int, region: str) -> int:
         return int(get_json("gbif", f"{GBIF}/occurrence/search", params).get("count", 0))
     except HTTPError:
         return 0
+
+
+# --- classical-genus signal ------------------------------------------------------------------
+
+def latin_variants(token: str) -> list[str]:
+    """Latinised / transliterated forms of a historical name token (HEURISTIC):
+    Greek -on/-ion -> -um/-ium, -os -> -us, -e -> -a, doubled consonants collapsed, Latin endings
+    added to bare stems ('Cummin' -> 'Cuminum')."""
+    t = ascii_latin(token).lower()
+    out = [t]
+    for a, b in (("ion", "ium"), ("on", "um"), ("os", "us"), ("e", "a"), ("es", "is")):
+        if t.endswith(a):
+            out.append(t[: -len(a)] + b)
+    collapsed = re.sub(r"([bcdfgklmnprst])\1", r"\1", t)
+    out.append(collapsed)
+    if re.search(r"[^aeiou]$", collapsed):
+        out += [collapsed + "um", collapsed + "us", collapsed + "a"]
+    seen, res = set(), []
+    for v in out:
+        if v not in seen and len(v) >= 4:
+            seen.add(v)
+            res.append(v.capitalize())
+    return res
+
+
+def gbif_genus(token: str) -> dict | None:
+    """Accepted plant genus matching a token or one of its Latin variants (EXACT, or FUZZY with
+    near-identical spelling). Synonym genera are followed to the accepted genus."""
+    from difflib import SequenceMatcher
+    for v in latin_variants(token):
+        r = get_json("gbif", f"{GBIF}/species/match", {"name": v, "rank": "GENUS", "kingdom": "Plantae"})
+        if r.get("rank") != "GENUS" or r.get("kingdom") != "Plantae":
+            continue
+        name = r.get("canonicalName") or ""
+        mt, status = r.get("matchType"), r.get("status")
+        if mt == "FUZZY" and SequenceMatcher(None, v.lower(), name.lower()).ratio() < 0.85:
+            continue
+        if mt not in ("EXACT", "FUZZY") or status == "DOUBTFUL":
+            continue
+        if status == "SYNONYM" and r.get("acceptedUsageKey"):
+            u = gbif_usage(r["acceptedUsageKey"])
+            acc = u.get("genus") or (u.get("canonicalName") or "").split(" ")[0]
+            key = u.get("genusKey") or u.get("key")
+        else:
+            acc, key = name, r.get("usageKey")
+        if acc:
+            return {"token": token, "variant": v, "genus": acc, "genusKey": key, "matchType": mt, "via": name}
+    return None
+
+
+def gbif_top_species_in_genus(genus_key: int, region: str, n: int = 2) -> list[str]:
+    """Most-recorded species of a genus in a region (GBIF occurrence facet)."""
+    params = {"genusKey": genus_key, "limit": 0, "facet": "speciesKey", "facetLimit": n}
+    params["country" if len(region) == 2 else "continent"] = region
+    try:
+        r = get_json("gbif", f"{GBIF}/occurrence/search", params)
+    except HTTPError:
+        return []
+    keys = [int(c["name"]) for f in r.get("facets", []) for c in f.get("counts", [])]
+    return [s for s in (_species_of(gbif_usage(k)) for k in keys) if s]

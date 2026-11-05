@@ -6,15 +6,25 @@ Evidence (each adds weight to a GBIF-backbone species; weights are heuristic and
                   possessives folded): each query contributes 1.0, split by `support` (the number
                   of independent vernacular-name records matching); ×0.3 for Pliny names, whose
                   English renderings of Greek/Latin names are unreliable
-                  Regional prior: vernacular weights are multiplied by 0.1 + 0.9 × log10(1+n) / max over
+                  Regional prior (v2: milder, so cultivated and traded plants stay plausible): vernacular
+                  weights are multiplied by 0.5 + 0.5 × log10(1+n) / max over
                   the query's candidates, n = GBIF occurrences in Great Britain (Culpeper, "the vulgar
                   herbs of this nation") or in Europe (Pliny)
   commentary_19c  binomial named in a Bostock & Riley footnote linked to the name:
                   strong link 2.0 / weak 1.0, divided by (order in footnote); ×0.5 if hedged
+  database        CLASSICAL GENUS (v2): a word of the name, or a Latinised/transliterated variant of it
+                  ('Mandragora', 'Cummin'->Cuminum, 'Aron'->Arum), is an accepted plant genus (GBIF): candidates
+                  in that genus get ×3 (ranking within the genus kept); if none exists, the genus's most-recorded
+                  species in the region is added (2.0, genus-level, disputed). Pliny: every word is eligible;
+                  Culpeper (an English herbal): only Latin-looking words, never English words
+  database        BINOMIAL FROM NAME TOKENS (v2): genus + another word of the name matches a species
+                  ('Dodder ... Epithimum' -> Cuscuta epithymum): 3.0
 Scores per species are normalised to sum to 1 -> `confidence`. Each species is then mapped to its
 accepted WFO name and id. `disputed` = top confidence < 0.6, or the deciding footnote hedges
 ("probably", "supposed", "some", "doubt"…), or the top two are within 0.15, or the total evidence
-weight for the name is below 0.5 (weak evidence even if unopposed).
+weight for the name is below 0.5 (weak evidence even if unopposed), or the name is resolved only to genus level,
+or the TOXIC-CONFUSION check fires: candidates with confidence >= 0.15 differ in known toxicity (one listed
+as poisonous, one not) — see m2/toxicity.py.
 No scholarly identifications are used as candidates (they are reserved for evaluation), and no
 LLM ("model" basis) is used in this version.
 """
@@ -34,7 +44,24 @@ from . import services as S
 
 OUT = INTERIM / "m2"
 HEDGE = re.compile(r"\b(probabl[ey]|perhaps|suppos|uncertain|doubt|not known|unknown|conjectur|some (?:have|think|say|suppose)|"
-                   r"others|it is thought|identity|identif(?:y|ied) it|it is not|may be|possibly|apparently)\w*", re.I)
+                   r"others|it is thought|identity|identif(?:y|ied) it|it is not|may be|may not be|possibly|apparently|quer(?:y|ies)|"
+                   r"inclined|impossible|cannot be|questionable|whether|difficult to)\w*", re.I)
+STOP = set("wild garden common great greater lesser less small water black white sweet mountain tree herb herbs sea golden "
+           "ladies lady english french roman greek red yellow blue green called other others kind kinds sort the and known "
+           "otherwise plant plants true bastard field marsh wood stinking prickly double single female male broad narrow "
+           "leaved flowered cultivated thistle grass root apples poppy leek those also some various".split())
+
+
+LATINISH = re.compile(r"(um|us|a|is|on|os|es|ion|ia|ium|ae|ys|ix|ex)$", re.I)
+
+
+def latin_tokens(ws: list[str]) -> list[str]:
+    return [w for w in ws if len(w) >= 6 and LATINISH.search(w)]
+
+
+def name_tokens(e) -> list[str]:
+    words = {w for q in [e.nameAsWritten, *e.queries] for w in re.findall(r"[A-Za-zÆæŒœ]{4,}", q)}
+    return sorted(w for w in words if w.lower() not in STOP)
 BINOMIAL = re.compile(r"(?:\b(?:the|a|an|of|or|and)\s+)([A-Z][a-zæœëïé]+)\s+([a-zæœëïé]{3,})\b")
 NOT_EPITHET = {"says", "has", "is", "was", "and", "the", "which", "this", "that", "with", "from", "seems", "thinks",
                "remarks", "states", "observes", "were", "are", "had", "also", "being", "says", "tells", "gives",
@@ -75,8 +102,18 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
                        for x in vern.get(q, []) if acc_map[id(x)][1]})
     occ = dict(zip(occ_keys, pmap(lambda kr: S.gbif_occurrences(*kr), occ_keys, workers)))
 
+    # -- classical-genus signal: fetch ---------------------------------------------------------
+    # Pliny names are Latin/Greek transliterations: every word is eligible. Culpeper is an English herbal:
+    # only Latin-looking words (Chamepitys, Filipendula, Angelica) are eligible, never English words
+    # such as 'Agrimony', 'Bugloss' or 'tongue'.
+    toks = {e.nameId: (name_tokens(e) if e.source == "pliny" else [w for w in name_tokens(e) if LATINISH.search(w)])
+            for e in inv.itertuples()}
+    all_toks = sorted({w for ws in toks.values() for w in ws})
+    genus_of = dict(zip(all_toks, pmap(S.gbif_genus, all_toks, workers)))
+
     # -- scoring ----------------------------------------------------------------------------
     rows = []
+    base = {}
     for e in inv.itertuples():
         score: dict[str, float] = defaultdict(float)
         ev: dict[str, list] = defaultdict(list)
@@ -95,7 +132,7 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
             top_log = max(logs.values(), default=0) or 1.0
             for x in hits:
                 sp, _ = acc_map[id(x)]
-                prior = 0.1 + 0.9 * logs[id(x)] / top_log
+                prior = 0.5 + 0.5 * logs[id(x)] / top_log
                 w = x["support"] / total_support * factor * prior
                 score[sp] += w
                 ev[sp].append({"basis": "database", "how": f"GBIF exact English vernacular (support {x['support']}, "
@@ -115,6 +152,58 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
                 hedged_top[sp] |= hedge
                 ev[sp].append({"basis": "commentary_19c", "how": f"{f['strength']} footnote link" + (", hedged" if hedge else ""),
                                "footnote": f["id"], "binomial": b, "weight": round(w, 3)})
+        base[e.nameId] = (score, ev, hedged_top)
+
+    # -- genus boost, genus fallback, binomials from tokens (fetch then apply) --------------------
+    combos, fallback_req = set(), set()
+    for e in inv.itertuples():
+        score = base[e.nameId][0]
+        genera = {g["genus"] for w in toks[e.nameId] if (g := genus_of.get(w))}
+        top_genera = {sp.split()[0] for sp, _ in sorted(score.items(), key=lambda kv: -kv[1])[:1]}
+        for g in genera | top_genera:
+            for w in latin_tokens(toks[e.nameId]):
+                if w.lower() != g.lower():
+                    for v in S.latin_variants(w)[:2]:
+                        combos.add(f"{g} {v.lower()}")
+        for w in toks[e.nameId]:
+            gm = genus_of.get(w)
+            if gm and not any(sp.split()[0] == gm["genus"] for sp in score):
+                fallback_req.add((gm["genusKey"], region_of[e.source]))
+    combos = sorted(combos)
+    loose = dict(zip(combos, pmap(S.gbif_match_loose, combos, workers)))
+    fb = dict(zip(sorted(fallback_req), pmap(lambda kr: S.gbif_top_species_in_genus(*kr), sorted(fallback_req), workers)))
+    genus_level: dict[str, bool] = {}
+    for e in inv.itertuples():
+        score, ev, hedged_top = base[e.nameId]
+        genus_level[e.nameId] = False
+        top_genera = {sp.split()[0] for sp, _ in sorted(score.items(), key=lambda kv: -kv[1])[:1]}
+        genera = {}
+        for w in toks[e.nameId]:
+            if (gm := genus_of.get(w)):
+                genera[gm["genus"]] = gm
+        for c in [k for k in loose if loose[k] and k.split()[0] in (set(genera) | top_genera)]:
+            r = loose[c]
+            g, v = c.split(" ", 1)
+            if not any(w for w in latin_tokens(toks[e.nameId]) if v in [x.lower() for x in S.latin_variants(w)[:2]]):
+                continue
+            sp = S._species_of(r)
+            if sp and sp.split()[0] == g and r.get("rank") in S.SPECIES_RANKS:
+                score[sp] += 3.0
+                ev[sp].append({"basis": "database", "how": f"binomial rebuilt from name tokens ({c} -> {sp}, {r.get('matchType')})",
+                               "weight": 3.0})
+        for g, gm in genera.items():
+            inside = [sp for sp in score if sp.split()[0] == g]
+            if inside:
+                for sp in inside:  # ×3 keeps the ranking within the genus
+                    add = score[sp] * 2
+                    score[sp] += add
+                    ev[sp].append({"basis": "database", "how": f"classical genus match ('{gm['token']}' -> {g}), ×3", "weight": round(add, 3)})
+            else:
+                for sp in fb.get((gm["genusKey"], region_of[e.source]), [])[:1]:
+                    score[sp] += 2.0
+                    ev[sp].append({"basis": "database", "how": f"classical genus match ('{gm['token']}' -> {g}); species = most "
+                                   f"recorded in region (heuristic, genus-level)", "weight": 2.0})
+                    genus_level[e.nameId] = True
         total = sum(score.values())
         ranked = sorted(score.items(), key=lambda kv: -kv[1])[:3]
         for rank, (sp, s) in enumerate(ranked, 1):
@@ -127,6 +216,8 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
             rows.append({"nameId": e.nameId, "source": e.source, "nameAsWritten": e.nameAsWritten, "rank": rank,
                          "gbifSpecies": sp, "confidence": round(conf, 4), "evidenceTotal": round(total, 3), "basis": basis, "basisRef": ref,
                          "hedged": hedged_top[sp], "evidence": json.dumps(ev[sp], ensure_ascii=False)})
+        if ranked and genus_level[e.nameId]:
+            rows[-len(ranked)]["genusLevelOnly"] = True
         if not ranked:
             rows.append({"nameId": e.nameId, "source": e.source, "nameAsWritten": e.nameAsWritten, "rank": 0,
                          "gbifSpecies": None, "confidence": None, "basis": None, "basisRef": None, "hedged": False,
@@ -140,16 +231,27 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
     cand["wfoId"] = cand.gbifSpecies.map(lambda s: (wfo.get(s) or {}).get("wfoId") if s else None)
     cand["family"] = cand.gbifSpecies.map(lambda s: (wfo.get(s) or {}).get("family") if s else None)
     cand["inWFO"] = cand.wfoId.notna()
+    from . import toxicity
+    tox = [toxicity.flag(a if isinstance(a, str) else g) for a, g in zip(cand.acceptedName, cand.gbifSpecies)]
+    cand["toxicity"] = [x[0] for x in tox]
+    cand["toxicityNote"] = [x[1] for x in tox]
+    if "genusLevelOnly" not in cand:
+        cand["genusLevelOnly"] = False
+    cand["genusLevelOnly"] = cand.genusLevelOnly.fillna(False).astype(bool)
 
     # -- disputed -------------------------------------------------------------------------------
-    disputed = {}
+    disputed, toxic_confusion = {}, {}
     for nid, g in cand[cand["rank"] > 0].groupby("nameId"):
         g = g.sort_values("rank")
         top = g.iloc[0]
         close = len(g) > 1 and (top.confidence - g.iloc[1].confidence) < 0.15
+        live = g[g.confidence >= 0.15]
+        toxic_conf = bool((live.toxicity == "known_toxic").any() and (live.toxicity != "known_toxic").any())
+        toxic_confusion[nid] = toxic_conf
         disputed[nid] = bool(top.confidence < 0.6 or (top.basis == "commentary_19c" and top.hedged) or close
-                             or top.evidenceTotal < 0.5)
+                             or top.evidenceTotal < 0.5 or g.genusLevelOnly.any() or toxic_conf)
     cand["disputed"] = cand.nameId.map(disputed).fillna(False).astype(bool)
+    cand["toxicConfusion"] = cand.nameId.map(toxic_confusion).fillna(False).astype(bool)
     return cand
 
 

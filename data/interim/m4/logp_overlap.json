@@ -1,0 +1,105 @@
+{
+  "crippenReference": "Wildman & Crippen, J. Chem. Inf. Comput. Sci. 39, 868-873 (1999), per RDKit Crippen docstring",
+  "trainingSetAvailable": false,
+  "compounds": 150,
+  "withAllSourceYearsKnown": 110,
+  "post1999": 67,
+  "pre2000": 43,
+  "unknownYear": 40,
+  "rdkit_post1999": {
+    "mae": {
+      "value": 0.8235,
+      "ci": [
+        0.6991,
+        0.9503
+      ]
+    },
+    "rmse": {
+      "value": 0.9819,
+      "ci": [
+        0.8465,
+        1.1072
+      ]
+    },
+    "spearman": {
+      "value": 0.686,
+      "ci": [
+        0.5032,
+        0.8071
+      ]
+    },
+    "n": 67
+  },
+  "xtb_post1999": {
+    "mae": {
+      "value": 1.4825,
+      "ci": [
+        1.2492,
+        1.7271
+      ]
+    },
+    "rmse": {
+      "value": 1.8002,
+      "ci": [
+        1.538,
+        2.0477
+      ]
+    },
+    "spearman": {
+      "value": 0.6437,
+      "ci": [
+        0.4792,
+        0.7602
+      ]
+    },
+    "n": 67
+  },
+  "rdkit_pre2000": {
+    "mae": {
+      "value": 0.5304,
+      "ci": [
+        0.3978,
+        0.672
+      ]
+    },
+    "rmse": {
+      "value": 0.705,
+      "ci": [
+        0.5114,
+        0.8866
+      ]
+    },
+    "spearman": {
+      "value": 0.9325,
+      "ci": [
+        0.8501,
+        0.9672
+      ]
+    },
+    "n": 43
+  },
+  "xtb_pre2000": {
+    "mae": {
+      "value": 1.9277,
+      "ci": [
+        1.496,
+        2.4357
+      ]
+    },
+    "rmse": {
+      "value": 2.4834,
+      "ci": [
+        1.8915,
+        3.0755
+      ]
+    },
+    "spearman": {
+      "value": 0.6665,
+      "ci": [
+        0.4622,
+        0.8083
+      ]
+    },
+    "n": 43
+  }
+}

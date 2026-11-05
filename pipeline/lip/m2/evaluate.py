@@ -139,3 +139,39 @@ def _draft_agreement(cand: pd.DataFrame) -> dict:
     metrics_store.update_provisional("nameResolutionVsDraft", C.ProvisionalSection(
         basis="ai_drafted_unverified", label=DRAFT_LABEL, metrics=out))
     return out
+
+
+BEFORE = INTERIM / "m2" / "before" / "name_candidates.parquet"
+WATCH = ["MANDRAGORA", "CUMMIN", "WILD CUMMIN", "Dodder", "ARON", "SCORDOTIS", "BECHION", "HORMINUM", "Wormwood", "Agrimony"]
+
+
+def before_after() -> dict:
+    """Compare M2 v1 (data/interim/m2/before/) with the current run, per source; drafts are provisional."""
+    import json as _json
+    b, a = pd.read_parquet(BEFORE), pd.read_parquet(CAND_PATH)
+    d = pd.read_csv(EVAL_PATH, dtype=str).fillna("")
+    d = d[d.draftAcceptedName.str.strip() != ""]
+    out = {"bySource": {}, "names": {}, "note": "draftTop1 = agreement with AI-drafted identifications (provisional, not gold)"}
+    for src in ("culpeper-1652", "pliny"):
+        x = {}
+        for tag, c in (("before", b), ("after", a)):
+            t = c[(c["rank"] == 1) & (c.source == src)]
+            dd = d[d.source == src]
+            h1, _, n = _score(c, dd, "draftAcceptedName", "draftWfoId")
+            x[tag] = {"resolved": int(t[t.acceptedName.notna()].nameId.nunique()), "disputed": int(t[t.disputed].nameId.nunique()),
+                      "draftTop1": f"{h1}/{n}"}
+        out["bySource"][src] = {k: [x["before"][k], x["after"][k]] for k in ("resolved", "disputed", "draftTop1")}
+    for nm in WATCH:
+        row = {}
+        for tag, c in (("before", b), ("after", a)):
+            t = c[(c["rank"] == 1) & c.nameAsWritten.str.upper().str.startswith(nm.upper())]
+            if len(t):
+                r = t.iloc[0]
+                extra = " (genus-level)" if bool(r.get("genusLevelOnly", False)) else ""
+                tox = f"; toxic-confusion" if bool(r.get("toxicConfusion", False)) else ""
+                row[tag] = f"{r.acceptedName} ({r.confidence:.2f}{', disputed' if r.disputed else ''}{extra}{tox})"
+            else:
+                row[tag] = "—"
+        out["names"][nm] = row
+    (INTERIM / "m2" / "before_after.json").write_text(_json.dumps(out, indent=2, ensure_ascii=False))
+    return out

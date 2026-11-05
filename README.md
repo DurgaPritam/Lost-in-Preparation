@@ -32,13 +32,14 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 |---|---|---|
 | Text ingestion and segmentation (passage coverage, IDs, chapter counts vs printed contents) | **validated** — automated tests against the source files | `tests/` |
 | logP descriptor: RDKit vs GFN2-xTB vs experiment | **validated** — experimental reference (SangsterLogP, CC BY 4.0) | `data/interim/m4/logp_validation.json` |
-| Artemisinin known-case test | **pass** against pre-registered criteria | `data/interim/m4/artemisinin_check.json` |
+| Artemisinin known-case test | **borderline pass** against pre-registered criteria (5th–95th range crosses the cold-water threshold) | `data/interim/m4/artemisinin_check.json` |
 | M1 extraction accuracy vs human gold set | pending — human annotation not yet done | `data/gold/annotations/` |
 | Inter-annotator agreement (Cohen's kappa) | pending — needs two human annotators | `data/gold/annotations/` |
 | M1 extraction vs AI reference (silver) | *provisional* — AI reference, not human-validated (not yet run: no local model run) | `data/silver/silver_v1.json` |
 | M2 name resolution vs scholarly identifications | pending — needs human-verified identifications | `data/gold/name_identifications.csv` |
 | M2 name resolution vs AI-drafted identifications | *provisional* — AI-drafted from quoted sources, unverified | `data/gold/name_identifications.csv` (draft* columns) |
-| Preparation model vs published reports (teas / oils / extracts) | *provisional* — AI-curated table from open-access papers, not human-curated | `data/reference/prep_literature_v1.csv` |
+| Preparation model vs published reports — exploratory set | *provisional, exploratory* — 9 rows selected after model build | `data/reference/prep_literature_v1.csv` |
+| Preparation model vs published reports — pre-registered set | *provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code | `data/reference/prep_literature_prereg_v1.csv` |
 | Study set (30 species) | pending — human approval | `docs/STUDY_SET_PROPOSAL.md` |
 | Modern-methods audit, mismatch ranking (M5–M6) | not started | — |
 

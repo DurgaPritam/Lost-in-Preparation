@@ -1,0 +1,21 @@
+{
+  "culpeper-1652": {
+    "names": 281,
+    "resolved": 219,
+    "resolvedInWFO": 215,
+    "disputed": 41,
+    "topBasis": {
+      "database": 219
+    }
+  },
+  "pliny": {
+    "names": 846,
+    "resolved": 409,
+    "resolvedInWFO": 397,
+    "disputed": 252,
+    "topBasis": {
+      "commentary_19c": 297,
+      "database": 112
+    }
+  }
+}

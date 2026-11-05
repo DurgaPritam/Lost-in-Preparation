@@ -2,6 +2,12 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
+## v1.3 — 2026-11-05
+
+| # | Change |
+|---|---|
+| P33 | Profiles are split: `site-data/profiles/index.json` (`ProfileIndexEntry {speciesId, acceptedName, file, preparations, compounds, toxicityFlag, toxicityNote}`) plus one `site-data/profiles/<speciesId>.json` per species (an array of `Profile`, unchanged shape). The site loads the index first and species files on demand. The full combined file is in the data release (`data/release/profiles_full.json.gz`). `site-data/profiles.json` is retired. |
+
 ## v1.2 — 2026-11-05
 
 | # | Change |

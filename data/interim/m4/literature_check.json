@@ -1,6 +1,6 @@
 {
   "basis": "ai_curated_literature_reference",
-  "label": "preparation model vs AI-curated literature table, provisional; not human-curated",
+  "label": "EXPLORATORY (rows selected after model build): preparation model vs AI-curated literature table, provisional; not human-curated",
   "n": 9,
   "agree": 9,
   "rows": [

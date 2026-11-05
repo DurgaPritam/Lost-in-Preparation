@@ -1,16 +1,16 @@
 {
-  "species": 493,
-  "queriedNames": 532,
-  "wikidataRows": 34992,
-  "distinctWikidataCompounds": 13203,
-  "standardised": 13184,
+  "species": 633,
+  "queriedNames": 685,
+  "wikidataRows": 36876,
+  "distinctWikidataCompounds": 14181,
+  "standardised": 14164,
   "standardisationFailures": {
-    "no_smiles": 19
+    "no_smiles": 17
   },
-  "inchikeyConnectivityMismatches": 13,
-  "distinctStandardisedInchikeys": 13162,
-  "speciesWithAnyCompound": 388,
-  "speciesPoorCoverage": 205,
+  "inchikeyConnectivityMismatches": 16,
+  "distinctStandardisedInchikeys": 14140,
+  "speciesWithAnyCompound": 456,
+  "speciesPoorCoverage": 288,
   "poorCoverageThreshold": 10,
-  "medianCompoundsPerSpecies": 16.0
+  "medianCompoundsPerSpecies": 13.0
 }

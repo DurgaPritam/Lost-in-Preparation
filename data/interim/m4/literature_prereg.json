@@ -1,0 +1,358 @@
+{
+  "registration": "docs/PREREGISTRATION.md (commit 35b7c0d)",
+  "modelVersion": "prep-model:f4c4c5ef8a",
+  "rowsFound": 19,
+  "agree": 19,
+  "byPreparation": {
+    "distilled water": {
+      "sum": 18,
+      "count": 18
+    },
+    "hot water infusion (tea)": {
+      "sum": 1,
+      "count": 1
+    }
+  },
+  "byLabel": {
+    "present": {
+      "sum": 19,
+      "count": 19
+    }
+  },
+  "screening": {
+    "Matricaria chamomilla": {
+      "query": "chamomile Matricaria chamomilla composition",
+      "results": [
+        "PMC8508714",
+        "PMC13388513",
+        "PMC11510547",
+        "PMC13581436",
+        "PMC5296231",
+        "PMC7926423",
+        "PMC11311743",
+        "PMC8303368",
+        "PMC9025311",
+        "PMC7070460"
+      ],
+      "screened": [
+        [
+          "PMC8508714",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13388513",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11510547",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13581436",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5296231",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7926423",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11311743",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8303368",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9025311",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7070460",
+          "eligible: 0 rows"
+        ]
+      ]
+    },
+    "Mentha × piperita": {
+      "query": "peppermint Mentha piperita composition",
+      "results": [
+        "PMC13290042",
+        "PMC8303368",
+        "PMC6116079",
+        "PMC7321412",
+        "PMC8068125",
+        "PMC10941488",
+        "PMC13377183",
+        "PMC10817515",
+        "PMC12524642",
+        "PMC4262447"
+      ],
+      "screened": [
+        [
+          "PMC13290042",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC8303368",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6116079",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7321412",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8068125",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10941488",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13377183",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10817515",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12524642",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4262447",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Thymus vulgaris": {
+      "query": "thyme Thymus vulgaris composition",
+      "results": [
+        "PMC6843575",
+        "PMC4391421",
+        "PMC13666603",
+        "PMC10207748",
+        "PMC12064743",
+        "PMC11405399",
+        "PMC7179171",
+        "PMC6168512",
+        "PMC11084565",
+        "PMC8398316"
+      ],
+      "screened": [
+        [
+          "PMC6843575",
+          "eligible: 3 rows"
+        ],
+        [
+          "PMC4391421",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13666603",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10207748",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12064743",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11405399",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7179171",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6168512",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11084565",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8398316",
+          "eligible: 2 rows"
+        ]
+      ]
+    },
+    "Salvia rosmarinus": {
+      "query": "rosemary Salvia rosmarinus composition",
+      "results": [
+        "PMC9099978",
+        "PMC13258217",
+        "PMC12263608",
+        "PMC11644807",
+        "PMC10536996",
+        "PMC12383122",
+        "PMC13128909",
+        "PMC12787868",
+        "PMC7284349",
+        "PMC13655632"
+      ],
+      "screened": [
+        [
+          "PMC9099978",
+          "eligible: 3 rows"
+        ],
+        [
+          "PMC13258217",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12263608",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11644807",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10536996",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12383122",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13128909",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12787868",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7284349",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13655632",
+          "eligible: 0 rows"
+        ]
+      ]
+    },
+    "Salvia officinalis": {
+      "query": "sage Salvia officinalis composition",
+      "results": [
+        "PMC13357552",
+        "PMC8540233",
+        "PMC10707927",
+        "PMC13154648",
+        "PMC12693678",
+        "PMC5622382",
+        "PMC8038432",
+        "PMC10180401",
+        "PMC12251519",
+        "PMC8510068"
+      ],
+      "screened": [
+        [
+          "PMC13357552",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8540233",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10707927",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC13154648",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12693678",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5622382",
+          "eligible: 3 rows"
+        ],
+        [
+          "PMC8038432",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10180401",
+          "eligible: 1 rows"
+        ]
+      ]
+    },
+    "Melissa officinalis": {
+      "query": "lemon balm Melissa officinalis composition",
+      "results": [
+        "PMC10550769",
+        "PMC11510126",
+        "PMC5871149",
+        "PMC12610505",
+        "PMC13209360",
+        "PMC10819686",
+        "PMC12309076",
+        "PMC8268150",
+        "PMC11441069",
+        "PMC6652130"
+      ],
+      "screened": [
+        [
+          "PMC10550769",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11510126",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5871149",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12610505",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13209360",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10819686",
+          "eligible: 3 rows"
+        ],
+        [
+          "PMC12309076",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC8268150",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11441069",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6652130",
+          "eligible: 0 rows"
+        ]
+      ]
+    }
+  }
+}

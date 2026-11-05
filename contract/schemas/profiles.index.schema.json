@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.3/profiles.index.json",
+  "title": "profiles.index.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "speciesId": {
+        "title": "Speciesid",
+        "type": "string"
+      },
+      "acceptedName": {
+        "title": "Acceptedname",
+        "type": "string"
+      },
+      "file": {
+        "description": "path relative to site-data/, e.g. profiles/wfo-0000134589.json",
+        "title": "File",
+        "type": "string"
+      },
+      "preparations": {
+        "title": "Preparations",
+        "type": "integer"
+      },
+      "compounds": {
+        "title": "Compounds",
+        "type": "integer"
+      },
+      "toxicityFlag": {
+        "$ref": "#/$defs/ToxicityFlag",
+        "default": "unknown"
+      },
+      "toxicityNote": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Toxicitynote"
+      }
+    },
+    "required": [
+      "speciesId",
+      "acceptedName",
+      "file",
+      "preparations",
+      "compounds"
+    ],
+    "title": "ProfileIndexEntry",
+    "type": "object"
+  },
+  "$defs": {
+    "ToxicityFlag": {
+      "enum": [
+        "known_toxic",
+        "none_known",
+        "unknown"
+      ],
+      "title": "ToxicityFlag",
+      "type": "string"
+    }
+  }
+}

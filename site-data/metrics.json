@@ -1,6 +1,6 @@
 {
   "contractVersion": "1.1",
-  "generatedAt": "2026-11-05T09:13:44+00:00",
+  "generatedAt": "2026-11-05T15:06:34+00:00",
   "pipelineVersion": "0.1.0",
   "mock": false,
   "extraction": {
@@ -1737,10 +1737,10 @@
   "nameResolution": {
     "disputedShare": {
       "status": "computed",
-      "value": 0.4624,
+      "value": 0.5778,
       "low": null,
       "high": null,
-      "n": 612,
+      "n": 810,
       "sourceFile": "data/interim/m2/name_candidates.parquet",
       "note": "share of resolved names whose top candidate is flagged disputed (descriptive)"
     },
@@ -1821,8 +1821,8 @@
   },
   "artemisininCheck": {
     "status": "computed",
-    "result": "pass",
-    "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.11–0.51]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.49–0.95]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O–O bond: 0.944.",
+    "result": "borderline pass",
+    "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.11–0.51]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.49–0.95]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O–O bond: 0.944. BORDERLINE: the 5th–95th percentile range crosses a threshold (cold water 0.11–0.51 vs < 0.3; nonpolar 0.49–0.95 vs > 0.6). Cold water is filtered (filtration factor 1.00): its value comes from the solvent factor alone. Without straining, the suspension assumption raises it to 0.41 (filtration factor 1.42).",
     "sourceFile": "data/interim/m4/artemisinin_check.json"
   },
   "provisional": {
@@ -3486,27 +3486,27 @@
       "metrics": {
         "top1": {
           "status": "computed",
-          "value": 0.5,
-          "low": 0.2993,
-          "high": 0.7007,
+          "value": 0.55,
+          "low": 0.3421,
+          "high": 0.7418,
           "n": 20,
           "sourceFile": "data/gold/name_identifications.csv",
           "note": "M2 vs AI-drafted identifications, provisional; not human-verified; Wilson 95% CI"
         },
         "top3": {
           "status": "computed",
-          "value": 0.5,
-          "low": 0.2993,
-          "high": 0.7007,
+          "value": 0.6,
+          "low": 0.3866,
+          "high": 0.7812,
           "n": 20,
           "sourceFile": "data/gold/name_identifications.csv",
           "note": "M2 vs AI-drafted identifications, provisional; not human-verified; Wilson 95% CI"
         }
       }
     },
-    "prepModelVsLiterature": {
+    "prepModelVsLiterature_exploratory": {
       "basis": "ai_curated_literature_reference",
-      "label": "preparation model vs AI-curated literature table, provisional; not human-curated",
+      "label": "EXPLORATORY (rows selected after model build): preparation model vs AI-curated literature table, provisional; not human-curated",
       "extraction": null,
       "metrics": {
         "agreement": {
@@ -3516,7 +3516,23 @@
           "high": 1.0,
           "n": 9,
           "sourceFile": "data/interim/m4/literature_check.json",
-          "note": "preparation model vs AI-curated literature table, provisional; not human-curated; 9/9 rows agree under pre-registered thresholds; Wilson 95% CI; table chosen by the same AI that built the model"
+          "note": "EXPLORATORY (rows selected after model build): preparation model vs AI-curated literature table, provisional; not human-curated; 9/9 rows agree under pre-registered thresholds; Wilson 95% CI; table chosen by the same AI that built the model"
+        }
+      }
+    },
+    "prepModelVsLiterature_preregistered": {
+      "basis": "ai_curated_literature_reference",
+      "label": "PRE-REGISTERED literature check, provisional; AI-written rule and code, not human-curated",
+      "extraction": null,
+      "metrics": {
+        "agreement": {
+          "status": "computed",
+          "value": 1.0,
+          "low": 0.8318,
+          "high": 1.0,
+          "n": 19,
+          "sourceFile": "data/interim/m4/literature_prereg.json",
+          "note": "PRE-REGISTERED (docs/PREREGISTRATION.md, commit 35b7c0d); 19/19 rows agree; target was 30, rule not relaxed; by preparation: {'distilled water': {'sum': 18, 'count': 18}, 'hot water infusion (tea)': {'sum': 1, 'count': 1}}; Wilson 95% CI"
         }
       }
     }

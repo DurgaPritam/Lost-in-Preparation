@@ -6,9 +6,12 @@ Per species (top-1 M2 candidate, in WFO):
                 the number of plants named in the chapter). Not a count of extracted recipes.
   sources       how many of {Culpeper 1652, Pliny} attest the species
   compounds     distinct standardised compounds (M3); poor coverage flagged
-Eligible: not disputed, resolution confidence >= 0.6, attestations >= 3, coverage not poor.
+Attestations count only name entries whose resolution is undisputed with confidence >= 0.6 (v2: a
+disputed entry neither counts nor vetoes the species). Eligible: attestations >= 3, coverage not poor.
 Ranked by sources, then attestations, then compounds; the top `SIZE` are proposed.
-Nothing here is a claim about efficacy or safety; toxicity is not yet assessed.
+Toxicity column: known-toxicity screen from Wikipedia's "List of poisonous plants" (CC BY-SA 4.0,
+revision recorded) via m2/toxicity.py; "unknown" means not listed, which is NOT evidence of safety.
+Nothing here is a claim about efficacy or safety.
 """
 from __future__ import annotations
 
@@ -28,6 +31,8 @@ def build() -> pd.DataFrame:
     cov = pd.read_csv(INTERIM / "m3" / "coverage.csv")
     top = cand[(cand["rank"] == 1) & cand.inWFO].merge(inv[["nameId", "passages", "namesInEntry"]], on="nameId")
     top["attest"] = top.passages / top.namesInEntry.clip(lower=1)
+    # only undisputed, confident name resolutions count as attestations (disputed names neither count nor veto)
+    top = top[(~top.disputed) & (top.confidence >= MIN_CONF)]
     g = top.groupby("acceptedName").agg(
         wfoId=("wfoId", "first"), family=("family", "first"),
         attestations=("attest", "sum"),
@@ -42,12 +47,23 @@ def build() -> pd.DataFrame:
     g["nReferences"] = g.nReferences.fillna(0).astype(int)
     g["poorCoverage"] = g.poorCoverage.fillna(True).astype(bool)
     g["attestations"] = g.attestations.round(1)
-    g["eligible"] = (~g.anyDisputed) & (g.minConfidence >= MIN_CONF) & (g.attestations >= MIN_ATTEST) & (~g.poorCoverage)
+    from ..m2 import toxicity
+    tx = [toxicity.flag(n) for n in g.acceptedName]
+    g["toxicity"] = [x[0] for x in tx]
+    g["toxicityNote"] = [x[1] for x in tx]
+    if "toxicConfusion" in top:
+        g = g.merge(top.groupby("acceptedName").toxicConfusion.max().rename("toxicConfusion").reset_index(), on="acceptedName", how="left")
+    g["eligible"] = (g.attestations >= MIN_ATTEST) & (~g.poorCoverage)
     g = g.sort_values(["eligible", "sources", "attestations", "nCompounds"], ascending=[False, False, False, False])
     g["proposed"] = False
     g.loc[g[g.eligible].index[:SIZE], "proposed"] = True
     g["approved"] = ""  # filled by a person
     return g
+
+
+def _rev() -> str:
+    from ..m2 import toxicity
+    return str(toxicity.load()["revid"])
 
 
 def main() -> str:
@@ -64,18 +80,24 @@ def main() -> str:
         f"**{len(p)} species proposed** out of {int(g.eligible.sum())} eligible and {len(g)} resolved.",
         "",
         "Eligibility:",
-        "- resolution not disputed, with confidence ≥ 0.6;",
-        "- an attestation proxy of ≥ 3 recipe-scope passages;",
+        "- an attestation proxy of ≥ 3 recipe-scope passages, counted only from name entries resolved without dispute and with confidence ≥ 0.6;",
         "- compound coverage that is not poor.",
         "",
         "Species are ranked by the number of sources attesting them, then attestations, then compounds.",
-        "**Attestations are a passage-count proxy, not extracted recipes.** Toxicity is **not yet assessed**, and some proposed plants may be toxic.",
+        "**Attestations are a passage-count proxy, not extracted recipes.**",
         "",
-        "| # | Species (WFO) | Family | Names as written | Sources | Attest. | Compounds | Refs | Min conf. |",
-        "|---|---|---|---|---|---|---|---|---|",
+        f"**Toxicity** is a screen against Wikipedia's *List of poisonous plants* (CC BY-SA 4.0, revision {_rev()}), whose own editors flag it as needing expert review. "
+        "`known_toxic` = the species or genus is listed (genus-level listings such as *Allium* spp. flag every species in the genus); "
+        "`not listed` = absent from that list, which is **not evidence of safety**: the list omits, for example, *Papaver somniferum* "
+        "(opium poppy) and *Symphytum officinale* (comfrey, hepatotoxic pyrrolizidine alkaloids), both in this proposal. "
+        "Toxic plants stay in the proposal, because a lab may still re-test them under appropriate safety controls; the flag is for the lab's risk assessment.",
+        "",
+        "| # | Species (WFO) | Family | Names as written | Sources | Attest. | Compounds | Refs | Min conf. | Toxicity |",
+        "|---|---|---|---|---|---|---|---|---|---|",
     ]
     for i, r in enumerate(p.itertuples(), 1):
         lines.append(f"| {i} | *{r.acceptedName}* ({r.wfoId}) | {r.family or ''} | {r.namesAsWritten} | {r.sourceList} | "
-                     f"{r.attestations:g} | {r.nCompounds} | {r.nReferences} | {r.minConfidence:.2f} |")
+                     f"{r.attestations:g} | {r.nCompounds} | {r.nReferences} | {r.minConfidence:.2f} | "
+                     f"{'**known_toxic**' if r.toxicity == 'known_toxic' else 'not listed'} |")
     OUT_MD.write_text("\n".join(lines) + "\n")
     return OUT_MD.read_text()

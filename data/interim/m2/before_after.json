@@ -1,0 +1,75 @@
+{
+  "bySource": {
+    "culpeper-1652": {
+      "resolved": [
+        215,
+        219
+      ],
+      "disputed": [
+        41,
+        59
+      ],
+      "draftTop1": [
+        "9/12",
+        "9/12"
+      ]
+    },
+    "pliny": {
+      "resolved": [
+        397,
+        591
+      ],
+      "disputed": [
+        252,
+        423
+      ],
+      "draftTop1": [
+        "1/8",
+        "2/8"
+      ]
+    }
+  },
+  "names": {
+    "MANDRAGORA": {
+      "before": "Atropa bella-donna (1.00)",
+      "after": "Mandragora officinarum (0.40, disputed (genus-level); toxic-confusion)"
+    },
+    "CUMMIN": {
+      "before": "Delphinium consolida (1.00)",
+      "after": "Cuminum cyminum (0.67, disputed (genus-level); toxic-confusion)"
+    },
+    "WILD CUMMIN": {
+      "before": "Delphinium consolida (1.00)",
+      "after": "Cuminum cyminum (0.67, disputed (genus-level); toxic-confusion)"
+    },
+    "Dodder": {
+      "before": "Cuscuta reflexa (1.00)",
+      "after": "Cuscuta epithymum (0.92)"
+    },
+    "ARON": {
+      "before": "Colocasia esculenta (0.60)",
+      "after": "Dracunculus vulgaris (0.67, disputed; toxic-confusion)"
+    },
+    "SCORDOTIS": {
+      "before": "Nepeta scordotis (1.00)",
+      "after": "Teucrium scordium (0.66)"
+    },
+    "BECHION": {
+      "before": "Verbascum lychnitis (1.00)",
+      "after": "Arctium minus (0.50, disputed (genus-level))"
+    },
+    "HORMINUM": {
+      "before": "—",
+      "after": "Horminum pyrenaicum (1.00, disputed (genus-level))"
+    },
+    "Wormwood": {
+      "before": "Artemisia absinthium (0.83)",
+      "after": "Artemisia absinthium (0.76)"
+    },
+    "Agrimony": {
+      "before": "Agrimonia eupatoria (0.94)",
+      "after": "Agrimonia eupatoria (0.75)"
+    }
+  },
+  "note": "draftTop1 = agreement with AI-drafted identifications (provisional, not gold)"
+}

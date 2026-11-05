@@ -6,7 +6,7 @@
  "sampleVersion": "v2",
  "guidelinesVersion": "v1",
  "caveat": "Not human validation. The same AI also wrote the guidelines and the extractor's few-shot examples, so agreement with this set may be inflated by shared conventions.",
- "createdAt": "2026-11-05T09:17:55+00:00",
+ "createdAt": "2026-11-05T15:07:01+00:00",
  "passages": {
   "culpeper-1652:herbal:ash-tree:004": {
    "done": true,

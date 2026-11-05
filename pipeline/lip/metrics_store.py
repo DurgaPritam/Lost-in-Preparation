@@ -61,3 +61,10 @@ def update_provisional(key: str, section) -> C.Metrics:
     prov = {k: v.model_dump(by_alias=True) for k, v in m.provisional.items()}
     prov[key] = section.model_dump(by_alias=True)
     return update(provisional={k: C.ProvisionalSection.model_validate(v) for k, v in prov.items()})
+
+
+def drop_provisional(key: str) -> None:
+    m = load()
+    if key in m.provisional:
+        prov = {k: v for k, v in m.provisional.items() if k != key}
+        update(provisional=prov)

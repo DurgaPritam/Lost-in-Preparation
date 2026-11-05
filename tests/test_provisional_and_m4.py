@@ -137,15 +137,36 @@ def test_ranges_bracket_median_and_are_reproducible(cfg):
 
 def test_artemisinin_known_case_recorded():
     m = C.Metrics.model_validate_json(open("site-data/metrics.json").read())
-    assert m.artemisininCheck.status == "computed" and m.artemisininCheck.result == "pass"
+    assert m.artemisininCheck.status == "computed" and m.artemisininCheck.result in ("pass", "borderline pass")
     case = json.load(open("data/interim/m4/artemisinin_check.json"))
     assert all(case["checks"].values())
+    cw = case["predictions"]["cold water infusion"]
+    assert case["result"] == ("borderline pass" if cw["high"] >= 0.30 else "pass")
+    assert cw["drivers"]["filtration"] == 1.0  # filtered: no suspension contribution
+    assert case["predictions"]["cold water, unfiltered (soaked and wrung out)"]["drivers"]["filtration"] > 1.0
     assert case["predictions"]["decoction in water"]["likelihood"] < case["predictions"]["cold water infusion"]["likelihood"]
 
 
-def test_profiles_match_contract():
-    data = json.load(open("site-data/profiles.json"))
-    p = C.Profile.model_validate(data[0])
-    assert p.compounds and all(0 <= x.low <= x.likelihood <= x.high <= 1 for x in p.compounds)
-    assert "model estimates" in p.coverageNote
-    assert np.isclose(len(data) % 13, 0)
+def test_profiles_split_per_species_with_index():
+    import gzip
+    from pathlib import Path
+    idx = json.load(open("site-data/profiles/index.json"))
+    assert idx and not Path("site-data/profiles.json").exists()
+    total = 0
+    for e in idx:
+        C.ProfileIndexEntry.model_validate(e)
+        data = json.load(open(Path("site-data") / e["file"]))
+        assert len(data) == e["preparations"] == 13
+        p = C.Profile.model_validate(data[0])
+        assert p.speciesId == e["speciesId"] and all(0 <= x.low <= x.likelihood <= x.high <= 1 for x in p.compounds)
+        total += len(data)
+    full = json.load(gzip.open("data/release/profiles_full.json.gz", "rt"))
+    assert len(full) == total
+
+
+def test_toxicity_screen_is_cited_and_conservative():
+    from lip.m2 import toxicity
+    assert toxicity.flag("Atropa belladonna")[0] == "known_toxic"
+    flag, note = toxicity.flag("Mentha spicata")
+    assert flag == "unknown" and "not evidence of safety" in note  # never "none_known"
+    assert toxicity.load()["revid"]

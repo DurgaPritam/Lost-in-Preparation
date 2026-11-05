@@ -40,11 +40,38 @@ EEBO-TCP availability statement (A35365), verbatim:
 | Wikidata (hosts LOTUS natural-product occurrences) | Compounds per taxon, structures, LOTUS references | CC0 | **used** (M3) |
 | Kew POWO API | — | — | refused automated access (HTTP 403); not used |
 | COCONUT 2.0 | Additional compound coverage | Curated dataset released under CC0 (official about page); contributing sources carry their own licences, so check them | licence permits use; **not integrated yet** (bulk dump required) |
-| PubMed / PMC OA | Modern preparation methods; quoted lines for the literature check | Article pages fetched individually; quotes are short. PMC13074686, PMC7587570, PMC10217939 and PMC11944828 state CC BY; PMC2995283 is in PMC open access, licence not stated on the page | used for 9 quoted statements; audit is a later phase |
+| PubMed / PMC OA | Modern preparation methods; short quoted lines for the literature checks | Per-article licence, listed in the table below | used for quoted statements; audit is a later phase |
 | PubChem PUG REST | Structures (SMILES, InChIKey) for the literature-check compounds | NCBI public data | **used** (M4) |
-| SangsterLogP (Zenodo 19387552) | Experimental logP reference for validating the solvent descriptor | **CC BY 4.0** (Zenodo record, checked 2026-11-05); SHA-256 `a5f998a6…` | **used** (M4) |
+| SangsterLogP dataset (Zenodo 19387552) | Experimental logP reference for validating the solvent descriptor | **CC BY 4.0** (Zenodo record, checked 2026-11-05); SHA-256 `a5f998a6…`. Attribution: see below | **used** (M4) |
+| Wikipedia, *List of poisonous plants* (rev 1383132551) | Known-toxicity screen (M2 toxic-confusion check, study-set toxicity column) | CC BY-SA 4.0; the page is tagged by its editors as needing expert review | **used** (screen only; not a safety rating) |
+| Crossref REST API | Publication years of logP sources (training-overlap proxy) | Crossref metadata: CC0 | **used** (M4) |
 | Lewis & Short, *A Latin Dictionary* (1879), PerseusDL lexica TEI | Drafted Pliny name identifications (provisional) | **CC BY-SA 4.0** (repository licence) | **used** (provisional drafts) |
 | English Wikipedia (article wikitext) | Drafted Culpeper name identifications (provisional) | CC BY-SA 4.0 | **used** (provisional drafts) |
 | xtb 6.7.1 (Grimme group, conda-forge) | GFN2-xTB solvation free energies | LGPL-3.0 (software) | **used** (M4), installed locally in `.tools/` |
 
 Every API response is cached with its request and retrieval time under `data/cache/`. Requests identify the project in the User-Agent, as Wikimedia's policy requires.
+
+## Attribution
+
+**SangsterLogP:** Cirino, T., Sangster, J., Charochkina, L., & Tetko, I. (2026). *SangsterLogP dataset* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19387552. Licensed under CC BY 4.0. We use a 150-compound neutral subset (seed and selection rule in METHODS.md §9) and redistribute only derived values in `data/interim/m4/logp_validation.csv`; the original workbook is downloaded at run time and checksum-verified.
+
+## PMC articles quoted
+
+Only short quotations (one sentence each) are stored, with the PMCID, the URL and a SHA-256 of the fetched page. The licence is as stated on each article page (checked 2026-11-05).
+
+| PMCID | Used in | Licence stated on the page |
+|---|---|---|
+| PMC2995283 | exploratory literature table | **none stated** on the page (in PMC); quoted under fair-use limits only |
+| PMC13074686 | exploratory | CC BY 4.0 |
+| PMC7587570 | exploratory | CC BY 4.0 |
+| PMC10217939 | exploratory | CC BY 4.0 |
+| PMC11944828 | exploratory | CC BY 4.0 |
+| PMC13290042 | pre-registered check | **CC BY-NC-ND 4.0** (short attributed quote only; not redistributed) |
+| PMC6843575 | pre-registered | CC BY 4.0 |
+| PMC9099978 | pre-registered | CC BY 4.0 |
+| PMC10707927 | pre-registered | CC BY 4.0 |
+| PMC10819686 | pre-registered | CC BY 4.0 |
+| PMC5622382 | pre-registered | CC BY 4.0 |
+| PMC8398316 | pre-registered | CC BY 4.0 |
+| PMC12309076 | pre-registered | **CC BY-NC-ND 4.0** (short attributed quote only; not redistributed) |
+| PMC10180401 | pre-registered | CC BY 4.0 |

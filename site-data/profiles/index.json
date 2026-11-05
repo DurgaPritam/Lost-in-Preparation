@@ -1,0 +1,302 @@
+[
+ {
+  "mock": false,
+  "speciesId": "wfo-0000134589",
+  "acceptedName": "Artemisia absinthium",
+  "file": "profiles/wfo-0000134589.json",
+  "preparations": 13,
+  "compounds": 153,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0001006654",
+  "acceptedName": "Agrimonia eupatoria",
+  "file": "profiles/wfo-0001006654.json",
+  "preparations": 13,
+  "compounds": 21,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000788844",
+  "acceptedName": "Crocus sativus",
+  "file": "profiles/wfo-0000788844.json",
+  "preparations": 13,
+  "compounds": 151,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000432219",
+  "acceptedName": "Symphytum officinale",
+  "file": "profiles/wfo-0000432219.json",
+  "preparations": 13,
+  "compounds": 37,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000224116",
+  "acceptedName": "Lavandula angustifolia",
+  "file": "profiles/wfo-0000224116.json",
+  "preparations": 13,
+  "compounds": 107,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000933181",
+  "acceptedName": "Ajuga chamaepitys",
+  "file": "profiles/wfo-0000933181.json",
+  "preparations": 13,
+  "compounds": 46,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000460581",
+  "acceptedName": "Ranunculus ficaria",
+  "file": "profiles/wfo-0000460581.json",
+  "preparations": 13,
+  "compounds": 17,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000212813",
+  "acceptedName": "Glycyrrhiza glabra",
+  "file": "profiles/wfo-0000212813.json",
+  "preparations": 13,
+  "compounds": 461,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000240053",
+  "acceptedName": "Melissa officinalis",
+  "file": "profiles/wfo-0000240053.json",
+  "preparations": 13,
+  "compounds": 139,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000217205",
+  "acceptedName": "Hyssopus officinalis",
+  "file": "profiles/wfo-0000217205.json",
+  "preparations": 13,
+  "compounds": 80,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000391752",
+  "acceptedName": "Pastinaca sativa",
+  "file": "profiles/wfo-0000391752.json",
+  "preparations": 13,
+  "compounds": 23,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000968296",
+  "acceptedName": "Galium aparine",
+  "file": "profiles/wfo-0000968296.json",
+  "preparations": 13,
+  "compounds": 19,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000593916",
+  "acceptedName": "Centaurium erythraea",
+  "file": "profiles/wfo-0000593916.json",
+  "preparations": 13,
+  "compounds": 36,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000600655",
+  "acceptedName": "Chelidonium majus",
+  "file": "profiles/wfo-0000600655.json",
+  "preparations": 13,
+  "compounds": 69,
+  "toxicityFlag": "known_toxic",
+  "toxicityNote": "species listed in Wikipedia 'List of poisonous plants', rev 1383132551"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0001021850",
+  "acceptedName": "Hyoscyamus niger",
+  "file": "profiles/wfo-0001021850.json",
+  "preparations": 13,
+  "compounds": 78,
+  "toxicityFlag": "known_toxic",
+  "toxicityNote": "species listed in Wikipedia 'List of poisonous plants', rev 1383132551"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000402430",
+  "acceptedName": "Raphanus sativus",
+  "file": "profiles/wfo-0000402430.json",
+  "preparations": 13,
+  "compounds": 248,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000360365",
+  "acceptedName": "Laser trilobum",
+  "file": "profiles/wfo-0000360365.json",
+  "preparations": 13,
+  "compounds": 22,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000302258",
+  "acceptedName": "Salvia sclarea",
+  "file": "profiles/wfo-0000302258.json",
+  "preparations": 13,
+  "compounds": 136,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000960724",
+  "acceptedName": "Euphorbia antiquorum",
+  "file": "profiles/wfo-0000960724.json",
+  "preparations": 13,
+  "compounds": 43,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000480963",
+  "acceptedName": "Papaver somniferum",
+  "file": "profiles/wfo-0000480963.json",
+  "preparations": 13,
+  "compounds": 108,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000725866",
+  "acceptedName": "Humulus lupulus",
+  "file": "profiles/wfo-0000725866.json",
+  "preparations": 13,
+  "compounds": 484,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000755919",
+  "acceptedName": "Allium cepa",
+  "file": "profiles/wfo-0000755919.json",
+  "preparations": 13,
+  "compounds": 319,
+  "toxicityFlag": "known_toxic",
+  "toxicityNote": "genus Allium listed in Wikipedia 'List of poisonous plants', rev 1383132551 (genus-level listing)"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000621274",
+  "acceptedName": "Coriandrum sativum",
+  "file": "profiles/wfo-0000621274.json",
+  "preparations": 13,
+  "compounds": 157,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000588460",
+  "acceptedName": "Carum carvi",
+  "file": "profiles/wfo-0000588460.json",
+  "preparations": 13,
+  "compounds": 77,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000607845",
+  "acceptedName": "Citrullus colocynthis",
+  "file": "profiles/wfo-0000607845.json",
+  "preparations": 13,
+  "compounds": 74,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000623618",
+  "acceptedName": "Cotinus coggygria",
+  "file": "profiles/wfo-0000623618.json",
+  "preparations": 13,
+  "compounds": 44,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000389997",
+  "acceptedName": "Dioscorea communis",
+  "file": "profiles/wfo-0000389997.json",
+  "preparations": 13,
+  "compounds": 42,
+  "toxicityFlag": "known_toxic",
+  "toxicityNote": "species listed in Wikipedia 'List of poisonous plants', rev 1383132551"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000983427",
+  "acceptedName": "Filipendula ulmaria",
+  "file": "profiles/wfo-0000983427.json",
+  "preparations": 13,
+  "compounds": 25,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000329771",
+  "acceptedName": "Betonica officinalis",
+  "file": "profiles/wfo-0000329771.json",
+  "preparations": 13,
+  "compounds": 22,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ },
+ {
+  "mock": false,
+  "speciesId": "wfo-0000369713",
+  "acceptedName": "Moricandia arvensis",
+  "file": "profiles/wfo-0000369713.json",
+  "preparations": 13,
+  "compounds": 19,
+  "toxicityFlag": "unknown",
+  "toxicityNote": "not listed in Wikipedia 'List of poisonous plants', rev 1383132551; absence is not evidence of safety"
+ }
+]
