@@ -3,7 +3,7 @@
     "names": 281,
     "resolved": 223,
     "resolvedInWFO": 219,
-    "disputed": 59,
+    "disputed": 61,
     "topBasis": {
       "database": 223
     }
@@ -12,7 +12,7 @@
     "names": 846,
     "resolved": 608,
     "resolvedInWFO": 591,
-    "disputed": 423,
+    "disputed": 439,
     "topBasis": {
       "database": 499,
       "commentary_19c": 109

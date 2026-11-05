@@ -104,6 +104,34 @@ class Compound:
     meta: dict = field(default_factory=dict)
 
 
+LOGP_VALIDATION = ROOT / "data" / "interim" / "m4" / "logp_validation.json"
+
+
+def descriptor_sd(descriptor: str = "rdkit") -> dict:
+    """Descriptor error used for UNCERTAINTY REPORTING (not scoring): the SD of a Normal error whose mean
+    absolute deviation equals the descriptor's MAE against experimental logP (sigma = MAE * sqrt(pi/2))."""
+    v = json.loads(LOGP_VALIDATION.read_text())
+    block = {"rdkit": "rdkit_all", "xtb": "xtb_paired"}[descriptor]
+    mae = float(v[block]["mae"]["value"])
+    return {"descriptor": descriptor, "mae": mae, "sd": round(mae * (np.pi / 2) ** 0.5, 4), "source": f"{LOGP_VALIDATION.name} {block}.mae"}
+
+
+def estimate(c: Compound, prep: Prep, cfg: dict, seed_offset: int = 0, sd: float | None = None) -> dict:
+    """The reported estimate. Median and drivers are the primary model's (`simulate`, unchanged), so every
+    score that uses the median is unaffected. The 5th–95th range additionally includes descriptor error:
+    it comes from the same draws with Normal(0, sd) added to logP, widened if needed to contain the median.
+    `rangeModelOnly` keeps the range without descriptor error."""
+    s = simulate(c, prep, cfg, seed_offset)
+    if not sd:
+        return s
+    n = simulate(c, prep, cfg, seed_offset, h_sd=sd)
+    out = dict(s)
+    out["rangeModelOnly"] = [s["low"], s["high"]]
+    out["low"] = round(min(n["low"], s["likelihood"]), 4)
+    out["high"] = round(max(n["high"], s["likelihood"]), 4)
+    return out
+
+
 def simulate(c: Compound, prep: Prep, cfg: dict, seed_offset: int = 0,
              k_fixed: float | None = None, h_sd: float = 0.0) -> dict:
     """Primary model with the defaults. `k_fixed` / `h_sd` exist only for the secondary

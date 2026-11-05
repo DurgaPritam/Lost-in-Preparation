@@ -318,7 +318,7 @@ def evaluate(cfg: dict) -> dict:
         d = chem.describe(smi)
         c = M.Compound(key, d["logP"], d["basicN"], d["heatFlags"], d["volatile"], d["mw"])
         prep = M.BY_LABEL[r.modelPreparation]
-        s = M.simulate(c, prep, cfg, seed_offset=300 + j)
+        s = M.estimate(c, prep, cfg, seed_offset=300 + j, sd=M.descriptor_sd()["sd"])
         v = M.simulate(c, prep, cfg, seed_offset=300 + j, k_fixed=VARIANT["k_fixed"], h_sd=VARIANT["h_sd"])
         rows.append({**{k2: v2 for k2, v2 in r._asdict().items() if k2 != "Index"}, "pubchemCid": cid, "inchikey": key, "smiles": smi,
                      "logP": d["logP"], "predicted": s["likelihood"], "low": s["low"], "high": s["high"],

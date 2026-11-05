@@ -24,7 +24,8 @@ accepted WFO name and id. `disputed` = top confidence < 0.6, or the deciding foo
 ("probably", "supposed", "some", "doubt"…), or the top two are within 0.15, or the total evidence
 weight for the name is below 0.5 (weak evidence even if unopposed), or the name is resolved only to genus level,
 or the TOXIC-CONFUSION check fires: candidates with confidence >= 0.15 differ in known toxicity (one listed
-as poisonous, one not) — see m2/toxicity.py.
+as poisonous, one not) — see m2/toxicity.py — or the GENUS-SIGNAL AUDIT lists the name as a false friend
+(classical word with a different meaning, English spelling match, or chapter title; m2/genus_audit.py).
 No scholarly identifications are used as candidates (they are reserved for evaluation), and no
 LLM ("model" basis) is used in this version.
 """
@@ -252,6 +253,12 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
                              or top.evidenceTotal < 0.5 or g.genusLevelOnly.any() or toxic_conf)
     cand["disputed"] = cand.nameId.map(disputed).fillna(False).astype(bool)
     cand["toxicConfusion"] = cand.nameId.map(toxic_confusion).fillna(False).astype(bool)
+    # genus-signal audit (docs/GENUS_SIGNAL_AUDIT.md): false friends are disputed, never deleted
+    from . import genus_audit
+    cand["disputedBeforeGenusAudit"] = cand.disputed
+    ff = genus_audit.finding_of()
+    cand["genusSignalAudit"] = cand.nameId.map(ff).fillna("")
+    cand.loc[cand.nameId.isin(ff), "disputed"] = True
     return cand
 
 
@@ -280,4 +287,9 @@ def main(limit: int | None = None) -> dict:
     cand.to_parquet(OUT / "name_candidates.parquet", index=False)
     s = summary(inv, cand)
     (OUT / "name_resolution_summary.json").write_text(json.dumps(s, indent=2))
+    from . import genus_audit
+    res = genus_audit.build(cand)
+    top = cand[cand["rank"] == 1]
+    genus_audit.write_md(res, dict(zip(top.nameId, top.disputedBeforeGenusAudit)))
+    genus_audit.flagged_passages()
     return s

@@ -139,7 +139,7 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
   - coverage that is not poor.
 - **Attestation proxy:** recipe-scope passages per resolved name. A Pliny chapter's paragraphs are split across the plants it names.
 - **Ranking:** by number of sources, then attestations, then compounds.
-- **Toxicity** (hand-curated, *provisional*): each of the 30 proposed species has one entry in `data/reference/toxicity_curated.csv` (built by `pipeline/lip/m3/toxicity.py`).
+- **Toxicity** (hand-curated, *provisional*): each proposed species has one entry in `data/reference/toxicity_curated.csv` (built by `pipeline/lip/m3/toxicity.py`).
   - **Source:** one reputable source opened in the run: an EMA herbal document (monograph, public summary or public statement) or a peer-reviewed PMC article with a Creative Commons licence.
   - **Quote:** one sentence, re-checked against the fetched source on every run. PDF text is extracted with pypdf and whitespace-normalised.
   - **Category:** says what the source reports, not a safety rating: `toxic_reported`, `concern_reported`, `no_toxicity_reported`, `data_lacking`, or `unknown` (no source located).
@@ -194,7 +194,7 @@ All three use the same thresholds: "present" requires a median ≥ 0.40 and "low
 
 It does not replace the primary model. Adopting it would need a new registration and new rows.
 
-**Outputs:** `site-data/profiles/` (one file per species plus `index.json`; 30 study-set species × 13 preparations; index contract v1.4 with cited toxicity evidence) and `data/interim/m4/profiles_long.parquet`.
+**Outputs:** `site-data/profiles/` (one file per species plus `index.json`; study-set species × 13 preparations; index contract v1.4 with cited toxicity evidence) and `data/interim/m4/profiles_long.parquet`.
 
 ## 10. Provisional references (AI-made; never presented as validation)
 

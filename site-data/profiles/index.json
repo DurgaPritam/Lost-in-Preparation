@@ -217,24 +217,6 @@
  },
  {
   "mock": false,
-  "speciesId": "wfo-0000593916",
-  "acceptedName": "Centaurium erythraea",
-  "file": "profiles/wfo-0000593916.json",
-  "preparations": 13,
-  "compounds": 36,
-  "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates centaury medicines in stomach ulcers; no side effects had been reported at its assessment. (AI-drafted, unverified)",
-  "toxicityEvidence": {
-   "source": "EMA/HMPC, EU herbal medicine summary for the public (centaury)",
-   "url": "https://www.ema.europa.eu/en/documents/herbal-summary/centaury-summary-public_en.pdf",
-   "quote": "Centaury medicines should not be taken by people with ulcers in the stomach.",
-   "licence": "EMA: 'Reproduction is authorised provided the source is acknowledged.'",
-   "basis": "ai_drafted_unverified",
-   "verifiedBy": ""
-  }
- },
- {
-  "mock": false,
   "speciesId": "wfo-0000600655",
   "acceptedName": "Chelidonium majus",
   "file": "profiles/wfo-0000600655.json",
@@ -289,14 +271,21 @@
  },
  {
   "mock": false,
-  "speciesId": "wfo-0000360365",
-  "acceptedName": "Laser trilobum",
-  "file": "profiles/wfo-0000360365.json",
+  "speciesId": "wfo-0000593916",
+  "acceptedName": "Centaurium erythraea",
+  "file": "profiles/wfo-0000593916.json",
   "preparations": 13,
-  "compounds": 22,
-  "toxicityFlag": "unknown",
-  "toxicityNote": "No reputable open source on toxicity located in this session (PMC searches for Laser trilobum and Siler trilobum). Not evidence of safety. (AI-drafted, unverified)",
-  "toxicityEvidence": null
+  "compounds": 36,
+  "toxicityFlag": "concern_reported",
+  "toxicityNote": "EMA contraindicates centaury medicines in stomach ulcers; no side effects had been reported at its assessment. (AI-drafted, unverified)",
+  "toxicityEvidence": {
+   "source": "EMA/HMPC, EU herbal medicine summary for the public (centaury)",
+   "url": "https://www.ema.europa.eu/en/documents/herbal-summary/centaury-summary-public_en.pdf",
+   "quote": "Centaury medicines should not be taken by people with ulcers in the stomach.",
+   "licence": "EMA: 'Reproduction is authorised provided the source is acknowledged.'",
+   "basis": "ai_drafted_unverified",
+   "verifiedBy": ""
+  }
  },
  {
   "mock": false,
@@ -437,24 +426,6 @@
    "source": "Case report, PMC (open access)",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12522648/",
    "quote": "Citrullus colocynthis , a plant traditionally used for its purgative properties, is known for its severe toxicity when consumed in excessive amounts.",
-   "licence": "CC BY-NC-ND 4.0",
-   "basis": "ai_drafted_unverified",
-   "verifiedBy": ""
-  }
- },
- {
-  "mock": false,
-  "speciesId": "wfo-0000623618",
-  "acceptedName": "Cotinus coggygria",
-  "file": "profiles/wfo-0000623618.json",
-  "preparations": 13,
-  "compounds": 44,
-  "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Review: a methanol extract was genotoxic in Drosophila germ cells. A laboratory finding, not poisoning. (AI-drafted, unverified)",
-  "toxicityEvidence": {
-   "source": "Review, PMC (open access)",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4890191/",
-   "quote": "The SLRL test revealed the genotoxic effect of the 5% methanol extract on the eukaryotic model system Drosophila melanogaster in premeiotic germinative cell lines, i.e. spermatozoids, as well as spermatocytes, while spermatids proved to be more resistant to the genotoxic effects of the extract ( Matić et al., 2011b ).",
    "licence": "CC BY-NC-ND 4.0",
    "basis": "ai_drafted_unverified",
    "verifiedBy": ""

@@ -1,0 +1,39 @@
+{
+  "Moricandia arvensis": {
+    "nameId": "pliny-nh:b20:c036:n0",
+    "nameAsWritten": "WILD CABBAGE",
+    "note": "Resolved from Pliny's WILD CABBAGE (20.36) only, via a Bostock & Riley footnote naming 'Brassica arvensis' (a synonym of Moricandia arvensis in GBIF). The same footnote reports Fée's view that Pliny merged the descriptions of two different plants. Not changed automatically; for the project lead's review.",
+    "passages": [
+      {
+        "passageId": "pliny-nh:b20:c036:000",
+        "type": "heading",
+        "text": "CHAP. 36.—THE WILD CABBAGE: THIRTY-SEVEN REMEDIES."
+      },
+      {
+        "passageId": "pliny-nh:b20:c036:001",
+        "type": "body",
+        "text": "Cato extols infinitely more highly the properties of wild or erratic cabbage; so much so, indeed, as to affirm that the very powder of it, dried and collected in a scent-box, has the property, on merely smelling at it, of removing maladies of the nostrils and the bad smells resulting therefrom. Some persons call this wild cabbage “petræa:” it has an extreme antipathy to wine, so much so, indeed, that the vine invariably avoids it, and if it cannot make its escape, will be sure to die. This vegetable has leaves of uniform shape, small, rounded, and smooth: bearing a strong resemblance to the cultivated cabbage, it is whiter, and has a more downy leaf."
+      },
+      {
+        "passageId": "pliny-nh:b20:c036:002",
+        "type": "body",
+        "text": "According to Chrysippus, this plant is a remedy for flatulency, melancholy, and recent wounds, if applied with honey, and not taken off before the end of six days: beaten up in water, it is good also for scrofula and fistula. Other writers, again, say that it is an effectual cure for spreading sores on the body, known as “nomæ;” that it has the property, also, of removing excrescences, and of reducing the scars of wounds and sores; that if chewed raw with honey, it is a cure for ulcers of the mouth and tonsils; and that a decoction of it used as a gargle with honey, is productive of the same effect. They say, too, that, mixed in strong vinegar with alum, in the proportion of three parts to two of alum, and then applied as a liniment, it is a cure for itch scabs and leprous sores of long standing. Epicharmus informs us, that for the bite of a mad dog, it is quite sufficient to apply it topically to the part affected, but that if used with silphium and strong vinegar, it is better still: he says, too, that it will kill a dog, if given to it with flesh to eat."
+      },
+      {
+        "passageId": "pliny-nh:b20:c036:003",
+        "type": "body",
+        "text": "The seed of this plant, parched, is remedial in cases of poisoning, by the stings of serpents, eating fungi, and drinking bulls’ blood. The leaves of it, either boiled and taken in the food or else eaten raw, or applied with a liniment of sulphur and nitre, are good for affections of the spleen, as well as hard tumours of the mamillæ. In swelling of the uvula, if the parts affected are only touched with the ashes of the root, a cure will be the result; and applied topically with honey, they are equally beneficial for reducing swellings of the parotid glands, and curing the stings of serpents. We will add only one more proof of the virtues of the cabbage, and that a truly marvellous one—in all vessels in which water is boiled, the incrustations which adhere with such tenacity that it is otherwise impossible to detach them, will fall off immediately if a cabbage is boiled therein."
+      }
+    ],
+    "footnotes": [
+      {
+        "passageId": "pliny-nh-bohn-v4:fn1487",
+        "text": "Fée is of opinion that Pliny has here confused the description of two different plants; and that, intending to describe the Brassica arvensis of modern botany, he has superadded a description of the “Crambe agria,” mentioned by Dioscorides, which appears to be identical with the Crambe maritima, or Brassica marina, the “sea-cabbage” of the ancients (see c. 38.), the Convolvulus soldanella of modern botany."
+      },
+      {
+        "passageId": "pliny-nh-bohn-v4:fn1488",
+        "text": "Or “rock-cabbage,” a name given more properly to the Convolvulus soldanella."
+      }
+    ]
+  }
+}

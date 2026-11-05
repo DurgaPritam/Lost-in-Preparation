@@ -42,7 +42,8 @@ def known_case(cfg: dict, descriptor: str) -> dict:
                                      "modern methanol extract")]
     # sensitivity: cold water without straining (soaked and wrung out), to show the suspension assumption's effect
     preps.insert(1, M.Prep("unknown|unknown|water|cold|no", "cold water, unfiltered (soaked and wrung out)", ("water",), "cold", "no", "infusion"))
-    res = {p.label: M.simulate(c, p, cfg) for p in preps}
+    sd = M.descriptor_sd(used)["sd"]
+    res = {p.label: M.estimate(c, p, cfg, sd=sd) for p in preps}
     thr = cfg["artemisinin_check"]
     checks = {
         "heat flag fires": "heat:endoperoxide" in d["heatFlags"],
@@ -76,6 +77,7 @@ def known_case(cfg: dict, descriptor: str) -> dict:
 
 
 def profiles(cfg: dict, descriptor: str) -> dict:
+    SD = {d: M.descriptor_sd(d)["sd"] for d in ("rdkit", "xtb")}
     prop = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
     prop = prop[prop.proposed]
     occ = pd.read_parquet(INTERIM / "m3" / "occurrences.parquet")
@@ -97,7 +99,7 @@ def profiles(cfg: dict, descriptor: str) -> dict:
         for j, prep in enumerate(M.GRID):
             entries = []
             for r, cr, d, c, used in cpds:
-                s = M.simulate(c, prep, cfg, seed_offset=j)
+                s = M.estimate(c, prep, cfg, seed_offset=j, sd=SD[used])
                 entries.append(C.CompoundLikelihood(
                     compoundId=r.inchikey, name=cr.label if isinstance(cr.label, str) else r.inchikey, compoundClass=f"{d['class']} (heuristic)",
                     smiles=cr.smiles, sourceDb="LOTUS via Wikidata", sourceRecordId=(list(r.wikidataIds) or [""])[0],
@@ -110,7 +112,8 @@ def profiles(cfg: dict, descriptor: str) -> dict:
             note = cov.loc[sp.acceptedName].coverageNote if sp.acceptedName in cov.index else "no coverage record"
             records.append(C.Profile(speciesId=sp.wfoId, preparationKey=prep.key.split("#")[0], process=prep.process,
                                      preparationLabel=prep.label, compounds=entries,
-                                     coverageNote=f"{note}; model estimates, not measurements"))
+                                     coverageNote=f"{note}; model estimates, not measurements; 5–95% range includes descriptor error "
+                                                  f"(Normal SD {SD['rdkit']} logP units from the Crippen MAE)"))
     # v1.3 layout: one file per species + index (the site loads them on demand); full file in the data release
     import gzip
     pdir = SITE_DATA / "profiles"
@@ -216,7 +219,7 @@ def main() -> dict:
     metrics_store.update_provisional("prepModelVsLiterature_preregistered_v2", C.ProvisionalSection(
         basis=prereg_v2.BASIS, label=prereg_v2.LABEL, metrics=v2m))
     calib = water_calibration.run()
-    summary = {"descriptor": descriptor, "literatureAgreementExploratory": f"{lit['agree']}/{lit['n']}",
+    summary = {"descriptor": descriptor, "rangeDescriptorError": M.descriptor_sd(descriptor), "literatureAgreementExploratory": f"{lit['agree']}/{lit['n']}",
                "literatureAgreementPreregistered": f"{pre['agree']}/{pre['rowsFound']}",
                "literatureAgreementPreregisteredV2": f"{v2['primary']['overall']['agree']}/{v2['primary']['overall']['n']}",
                "waterCalibration": calib["crossings"], "modelVersion": M.config_version(cfg), "xtbVersion": xtb.version(),

@@ -40,8 +40,8 @@
   "predictions": {
     "cold water infusion": {
       "likelihood": 0.2749,
-      "low": 0.1101,
-      "high": 0.5141,
+      "low": 0.0303,
+      "high": 0.7788,
       "drivers": {
         "solvent": 0.2749,
         "heat": 1.0,
@@ -50,12 +50,16 @@
       },
       "heuristicFlags": [
         "heat:endoperoxide"
+      ],
+      "rangeModelOnly": [
+        0.1101,
+        0.5141
       ]
     },
     "cold water, unfiltered (soaked and wrung out)": {
       "likelihood": 0.4107,
-      "low": 0.2228,
-      "high": 0.6032,
+      "low": 0.1635,
+      "high": 0.8218,
       "drivers": {
         "solvent": 0.2749,
         "heat": 1.0,
@@ -64,12 +68,16 @@
       },
       "heuristicFlags": [
         "heat:endoperoxide"
+      ],
+      "rangeModelOnly": [
+        0.2228,
+        0.6032
       ]
     },
     "decoction in water": {
       "likelihood": 0.0536,
-      "low": 0.0138,
-      "high": 0.1542,
+      "low": 0.0046,
+      "high": 0.212,
       "drivers": {
         "solvent": 0.2749,
         "heat": 0.2293,
@@ -78,12 +86,16 @@
       },
       "heuristicFlags": [
         "heat:endoperoxide"
+      ],
+      "rangeModelOnly": [
+        0.0138,
+        0.1542
       ]
     },
     "low-temperature nonpolar extract (hexane)": {
       "likelihood": 0.7937,
-      "low": 0.494,
-      "high": 0.9453,
+      "low": 0.2312,
+      "high": 0.9817,
       "drivers": {
         "solvent": 0.7937,
         "heat": 1.0,
@@ -92,12 +104,16 @@
       },
       "heuristicFlags": [
         "heat:endoperoxide"
+      ],
+      "rangeModelOnly": [
+        0.494,
+        0.9453
       ]
     },
     "modern methanol extract": {
       "likelihood": 0.9934,
-      "low": 0.9586,
-      "high": 0.9996,
+      "low": 0.9162,
+      "high": 0.9993,
       "drivers": {
         "solvent": 0.9934,
         "heat": 1.0,
@@ -106,6 +122,10 @@
       },
       "heuristicFlags": [
         "heat:endoperoxide"
+      ],
+      "rangeModelOnly": [
+        0.9586,
+        0.9996
       ]
     }
   },
@@ -138,5 +158,5 @@
     ],
     "status": "ok"
   },
-  "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.11\u20130.51]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.49\u20130.95]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O\u2013O bond: 0.944. BORDERLINE: the 5th\u201395th percentile range crosses a threshold (cold water 0.11\u20130.51 vs < 0.3; nonpolar 0.49\u20130.95 vs > 0.6). Cold water is filtered (filtration factor 1.00): its value comes from the solvent factor alone. Without straining, the suspension assumption raises it to 0.41 (filtration factor 1.42)."
+  "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.03\u20130.78]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.23\u20130.98]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O\u2013O bond: 0.944. BORDERLINE: the 5th\u201395th percentile range crosses a threshold (cold water 0.03\u20130.78 vs < 0.3; nonpolar 0.23\u20130.98 vs > 0.6). Cold water is filtered (filtration factor 1.00): its value comes from the solvent factor alone. Without straining, the suspension assumption raises it to 0.41 (filtration factor 1.42)."
 }

@@ -30,8 +30,8 @@
       "preparation": "hot water infusion (tea)",
       "reported": "present",
       "predicted": 0.9275,
-      "low": 0.8058,
-      "high": 0.9817,
+      "low": 0.5604,
+      "high": 0.9891,
       "agree": true,
       "drivers": {
         "solvent": 0.9275,
@@ -48,8 +48,8 @@
       "preparation": "hot water infusion (tea)",
       "reported": "low",
       "predicted": 0.2339,
-      "low": 0.07,
-      "high": 0.4491,
+      "low": 0.024,
+      "high": 0.7343,
       "agree": true,
       "drivers": {
         "solvent": 0.2339,
@@ -86,8 +86,8 @@
       "preparation": "hot water infusion (tea)",
       "reported": "present",
       "predicted": 0.4873,
-      "low": 0.2646,
-      "high": 0.7391,
+      "low": 0.0859,
+      "high": 0.9213,
       "agree": true,
       "drivers": {
         "solvent": 0.4873,
@@ -124,8 +124,8 @@
       "preparation": "modern 70% ethanol extract",
       "reported": "present",
       "predicted": 0.9857,
-      "low": 0.9348,
-      "high": 0.9987,
+      "low": 0.8973,
+      "high": 0.9981,
       "agree": true,
       "drivers": {
         "solvent": 0.9857,

@@ -1,5 +1,11 @@
 {
   "descriptor": "rdkit",
+  "rangeDescriptorError": {
+    "descriptor": "rdkit",
+    "mae": 0.6567,
+    "sd": 0.8231,
+    "source": "logp_validation.json rdkit_all.mae"
+  },
   "literatureAgreementExploratory": "9/9",
   "literatureAgreementPreregistered": "19/19",
   "literatureAgreementPreregisteredV2": "13/17",
@@ -12,10 +18,10 @@
   "xtbVersion": "6.7.1",
   "artemisinin": "borderline pass",
   "profiles": {
-    "species": 30,
+    "species": 28,
     "preparations": 13,
-    "profiles": 390,
-    "compoundEntries": 42341
+    "profiles": 364,
+    "compoundEntries": 41483
   },
-  "generatedAt": "2026-11-05T16:02:14+00:00"
+  "generatedAt": "2026-11-05T16:44:56+00:00"
 }

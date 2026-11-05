@@ -154,7 +154,7 @@ def evaluate(cfg: dict) -> dict:
         smi = p.get("IsomericSMILES") or p.get("SMILES")
         d = chem.describe(smi)
         c = M.Compound(p["InChIKey"], d["logP"], d["basicN"], d["heatFlags"], d["volatile"], d["mw"])
-        s = M.simulate(c, M.BY_LABEL[r.modelPreparation], cfg, seed_offset=200 + j)
+        s = M.estimate(c, M.BY_LABEL[r.modelPreparation], cfg, seed_offset=200 + j, sd=M.descriptor_sd()["sd"])
         agree = s["likelihood"] >= thr["present_min"] if r.reported == "present" else s["likelihood"] < thr["absent_max"]
         out_rows.append({**r._asdict(), "pubchemCid": p["CID"], "inchikey": p["InChIKey"], "smiles": smi,
                          "predicted": s["likelihood"], "low": s["low"], "high": s["high"], "agree": bool(agree),

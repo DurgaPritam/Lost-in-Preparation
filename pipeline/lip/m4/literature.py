@@ -139,7 +139,7 @@ def evaluate(cfg: dict) -> dict:
     for i, r in enumerate(df.itertuples()):
         d = chem.describe(r.smiles)
         c = M.Compound(r.inchikey, d["logP"], d["basicN"], d["heatFlags"], d["volatile"], d["mw"])
-        s = M.simulate(c, M.BY_LABEL[r.modelPreparation], cfg, seed_offset=100 + i)
+        s = M.estimate(c, M.BY_LABEL[r.modelPreparation], cfg, seed_offset=100 + i, sd=M.descriptor_sd()["sd"])
         agree = s["likelihood"] >= thr["present_min"] if r.reported == "present" else s["likelihood"] < thr["absent_max"]
         res.append({"plant": r.plant, "compound": r.compound, "preparation": r.modelPreparation, "reported": r.reported,
                     "predicted": s["likelihood"], "low": s["low"], "high": s["high"], "agree": bool(agree),

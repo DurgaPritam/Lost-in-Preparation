@@ -21,7 +21,7 @@ def _proposed() -> list[str]:
 
 def test_toxicity_entries_cover_study_set_and_are_unverified():
     t = toxicity.table()
-    assert sorted(t.acceptedName) == sorted(_proposed()) and len(t) == 30
+    assert sorted(t.acceptedName) == sorted(_proposed())
     assert set(t.basis) == {"ai_drafted_unverified"} and (t.verified_by == "").all()
     assert set(t.toxicity) <= set(toxicity.CATEGORIES)
     assert not t.toxicity.isin(["none_known", "known_toxic", "safe"]).any()
@@ -114,3 +114,84 @@ def test_results_report_per_source_with_pliny_lower_confidence():
     src = json.load(open("site-data/sources.json"))
     assert all("LOWER CONFIDENCE" in s["editorialNote"] for s in src if s["id"].startswith("pliny"))
     assert not any("LOWER CONFIDENCE" in (s["editorialNote"] or "") for s in src if s["id"].startswith("culpeper"))
+
+
+# --- complete-chemical-name matcher (v3 onwards) ---------------------------------------------------
+
+from lip.m4.chemnames import Matcher  # noqa: E402
+
+NAMES = {"phenol": "phenol", "apigenin": "apigenin", "apigenin 7-glucoside": "apigenin 7-glucoside", "quercetin": "quercetin",
+         "rosmarinic acid": "rosmarinic acid", "α-pinene": "alpha-pinene", "naringenin": "naringenin", "gallic acid": "gallic acid"}
+
+
+@pytest.mark.parametrize("text,expected", [
+    ("the total phenol content was high", []),                         # v2 misread: class measure, not phenol
+    ("phenol was detected", []),                                       # class noun never counts
+    ("Apigenin 7-O-glucoside represented 7.6%", ["apigenin 7-glucoside"]),  # v2 misread: spaced glycoside spelling
+    ("apigenin 7-O-rutinoside was found", []),                         # aglycone + locant = a different compound
+    ("free apigenin was low", ["apigenin"]),
+    ("quercetin 3-O-rutinoside and quercetin were found", ["quercetin"]),
+    ("quercetin glycosides dominated", []),
+    ("8-prenylnaringenin was detected", []),
+    ("α-pinene (12%) was the major compound", ["alpha-pinene"]),
+    ("total quercetin was 3 mg", []),
+    ("rosmarinic acid derivatives were found", []),
+    ("results in gallic acid equivalents (GAE)", []),
+])
+def test_complete_name_rule(text, expected):
+    assert Matcher(NAMES).hits(text) == expected
+
+
+@pytest.mark.parametrize("label,expected", [
+    ("Rosmarinic acid", "rosmarinic acid"), ("Rosmarinic acid (RA)", "rosmarinic acid"),
+    ("12 Apigenin-7-O-glucoside", "apigenin 7-glucoside"), ("α-Pinene *", "alpha-pinene"),
+    ("Quercetin derivative", None), ("Total phenols", None), ("Phenol", None), ("Rosmarinic acid hexoside", None),
+])
+def test_exact_table_label(label, expected):
+    assert Matcher(NAMES).exact_label(label) == expected
+
+
+def test_v1_v2_collectors_unchanged_by_new_matcher():
+    import inspect
+    from lip.m4 import prereg_literature, prereg_v2
+    assert "chemnames" not in inspect.getsource(prereg_literature) and "chemnames" not in inspect.getsource(prereg_v2)
+
+
+# --- descriptor error in ranges (reporting only) ----------------------------------------------------
+
+def test_descriptor_error_widens_range_not_median():
+    cfg = M.load_config()
+    sd = M.descriptor_sd("rdkit")
+    v = json.load(open("data/interim/m4/logp_validation.json"))
+    assert sd["mae"] == v["rdkit_all"]["mae"]["value"] and abs(sd["sd"] - sd["mae"] * 1.2533) < 1e-3
+    c = M.Compound("x", 2.395, False, ["heat:endoperoxide"], False, 282.3)
+    for lab in ("cold water infusion", "decoction in water", "infused oil"):
+        a, b = M.simulate(c, M.BY_LABEL[lab], cfg), M.estimate(c, M.BY_LABEL[lab], cfg, sd=sd["sd"])
+        assert a["likelihood"] == b["likelihood"] and a["drivers"] == b["drivers"]
+        assert b["low"] <= b["likelihood"] <= b["high"] and b["rangeModelOnly"] == [a["low"], a["high"]]
+
+
+def test_registered_scores_unaffected_by_range_change():
+    s = json.load(open("data/interim/m4/m4_summary.json"))
+    assert (s["literatureAgreementExploratory"], s["literatureAgreementPreregistered"], s["literatureAgreementPreregisteredV2"]) == \
+        ("9/9", "19/19", "13/17")
+    for f in ("data/reference/prep_literature_prereg_v1.csv", "data/reference/prep_literature_prereg_v2.csv"):
+        d = pd.read_csv(f)
+        assert ((d.low <= d.predicted) & (d.predicted <= d.high)).all()
+
+
+# --- genus-signal audit -------------------------------------------------------------------------------
+
+def test_genus_audit_marks_false_friends_disputed():
+    from lip.m2 import genus_audit
+    c = pd.read_parquet("data/interim/m2/name_candidates.parquet")
+    top = c[c["rank"] == 1].set_index("nameId")
+    for nid in genus_audit.ids():
+        assert top.loc[nid, "disputed"] and top.loc[nid, "genusSignalAudit"]
+    assert top.loc["pliny-nh:b22:c049:n0", "acceptedName"] == "Laser trilobum"
+    newly = top[top.disputed & ~top.disputedBeforeGenusAudit]
+    assert set(newly.index) <= genus_audit.ids()  # the audit is the only thing that changed
+    ss = pd.read_csv("data/interim/m3/study_set_proposal.csv")
+    assert not ss[ss.proposed].acceptedName.isin(["Laser trilobum", "Cotinus coggygria"]).any()
+    assert "Moricandia arvensis" in json.load(open("data/interim/m2/flagged_for_review.json"))
+    assert "Laser" in open("docs/GENUS_SIGNAL_AUDIT.md").read()

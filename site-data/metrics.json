@@ -1,6 +1,6 @@
 {
   "contractVersion": "1.1",
-  "generatedAt": "2026-11-05T16:02:14+00:00",
+  "generatedAt": "2026-11-05T16:46:41+00:00",
   "pipelineVersion": "0.1.0",
   "mock": false,
   "extraction": {
@@ -1737,7 +1737,7 @@
   "nameResolution": {
     "disputedShare": {
       "status": "computed",
-      "value": 0.5778,
+      "value": 0.6,
       "low": null,
       "high": null,
       "n": 810,
@@ -1822,7 +1822,7 @@
   "artemisininCheck": {
     "status": "computed",
     "result": "borderline pass",
-    "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.11–0.51]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.49–0.95]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O–O bond: 0.944. BORDERLINE: the 5th–95th percentile range crosses a threshold (cold water 0.11–0.51 vs < 0.3; nonpolar 0.49–0.95 vs > 0.6). Cold water is filtered (filtration factor 1.00): its value comes from the solvent factor alone. Without straining, the suspension assumption raises it to 0.41 (filtration factor 1.42).",
+    "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.03–0.78]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.23–0.98]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O–O bond: 0.944. BORDERLINE: the 5th–95th percentile range crosses a threshold (cold water 0.03–0.78 vs < 0.3; nonpolar 0.23–0.98 vs > 0.6). Cold water is filtered (filtration factor 1.00): its value comes from the solvent factor alone. Without straining, the suspension assumption raises it to 0.41 (filtration factor 1.42).",
     "sourceFile": "data/interim/m4/artemisinin_check.json"
   },
   "provisional": {

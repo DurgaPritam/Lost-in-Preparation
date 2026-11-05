@@ -44,7 +44,7 @@ def _exp_logp_artemisinin() -> dict:
 
 def _sim(h: float, cfg: dict, **kw) -> dict:
     c = M.Compound("grid", float(h), False, [], False, 300.0)
-    return M.simulate(c, M.BY_LABEL[PREP], cfg, **kw)
+    return M.estimate(c, M.BY_LABEL[PREP], cfg, sd=M.descriptor_sd()["sd"], **kw)
 
 
 def _cross(xs, ys, level):
@@ -116,7 +116,7 @@ def _svg(out: dict, cw: pd.DataFrame, thr: dict) -> str:
          f'<rect width="{W}" height="{H}" fill="{surf}"/>',
          f'<text x="{L}" y="24" font-size="15" font-weight="600" fill="{ink}">Cold water infusion: predicted likelihood vs logP</text>',
          f'<text x="{L}" y="40" font-size="12" fill="{ink2}">Primary model {out["modelVersion"]}. Dots: study-set compounds '
-         f'(n = {out["studySetCompounds"]["n"]}); line: median; band: 5–95% Monte Carlo range.</text>',
+         f'(n = {out["studySetCompounds"]["n"]}); line: median; band: 5–95% range incl. descriptor error.</text>',
          f'<text x="{L}" y="54" font-size="12" fill="{ink2}">Model estimate, not a measurement.</text>']
     for y in (0, 0.25, 0.5, 0.75, 1.0):
         s.append(f'<line x1="{L}" x2="{W - R}" y1="{sy(y):.1f}" y2="{sy(y):.1f}" stroke="{grid}" stroke-width="1"/>')

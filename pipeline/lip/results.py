@@ -28,6 +28,12 @@ def _m(x: C.Metric | None, fmt="{:.3f}") -> str:
     return f"{fmt.format(x.value)}{ci}" + (f", n = {x.n}" if x.n else "")
 
 
+def _n_proposed() -> int:
+    import pandas as pd
+    ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
+    return int(ss.proposed.sum())
+
+
 def validation_status(m: C.Metrics) -> list[str]:
     gold_ext = m.extraction.overall.get("part")
     rows = [
@@ -42,8 +48,8 @@ def validation_status(m: C.Metrics) -> list[str]:
         ("Preparation model vs published reports — exploratory set", "*provisional, exploratory* — 9 rows selected after model build", "`data/reference/prep_literature_v1.csv`"),
         ("Preparation model vs published reports — pre-registered v1 (mostly essential oils)", "*provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code", "`data/reference/prep_literature_prereg_v1.csv`"),
         ("Preparation model vs published reports — pre-registered v2 (water preparations)", "*provisional* — rule pre-registered (docs/PREREGISTRATION_v2.md), AI-written rule and code; low-row quota not met", "`data/reference/prep_literature_prereg_v2.csv`"),
-        ("Study-set toxicity entries (30 species)", "*provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review", "`data/reference/toxicity_curated.csv`"),
-        ("Study set (30 species)", "pending — human approval", "`docs/STUDY_SET_PROPOSAL.md`"),
+        (f"Study-set toxicity entries ({_n_proposed()} species)", "*provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review", "`data/reference/toxicity_curated.csv`"),
+        (f"Study set ({_n_proposed()} species)", "pending — human approval", "`docs/STUDY_SET_PROPOSAL.md`"),
         ("Modern-methods audit, mismatch ranking (M5–M6)", "not started", "—"),
     ]
     out = ["## Validation status", "", "| Result | Status | Evidence |", "|---|---|---|"]
