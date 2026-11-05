@@ -35,9 +35,11 @@ EEBO-TCP availability statement (A35365), verbatim:
 
 | Service | Use | Licence / terms | Status |
 |---|---|---|---|
-| World Flora Online (WFO) Plant List, name-matching API | Accepted names, WFO IDs | CC BY 4.0, attribution required | see Phase 3 notes |
+| World Flora Online (WFO) Plant List, name-matching API | Accepted names, WFO IDs, synonymy | Taxonomic backbone: **CC0** (WFO FAQ, checked 2026-11-05). We cite WFO and the classification version, which is recorded in each cached response. | **used** (M2) |
+| GBIF Backbone Taxonomy and species/occurrence APIs | Vernacular → species candidates, scientific-name matching, regional occurrence counts | Backbone: **CC BY 4.0**, doi:10.15468/39omei (GBIF dataset API, checked 2026-11-05); occurrence data carry per-dataset licences, but only counts are used | **used** (M2) |
+| Wikidata (hosts LOTUS natural-product occurrences) | Compounds per taxon, structures, LOTUS references | CC0 | **used** (M3) |
 | Kew POWO API | — | — | refused automated access (HTTP 403); not used |
-| GBIF species API | Vernacular → scientific name candidates | GBIF data licences per dataset (CC0 / CC BY) | see Phase 3 notes |
-| Wikidata (hosts LOTUS natural-product occurrences) | Compounds per taxon, with references | CC0 | see Phase 3 notes |
-| COCONUT | Additional compound coverage | to be confirmed | see Phase 3 notes |
-| PubMed / PMC OA | Modern preparation methods | abstracts for mining; per-article licence for full text | later phase |
+| COCONUT 2.0 | Additional compound coverage | Curated dataset released under CC0 (official about page); contributing sources carry their own licences, so check them | licence permits use; **not integrated yet** (bulk dump required) |
+| PubMed / PMC OA | Modern preparation methods | Abstracts for mining; per-article licence for full text | later phase |
+
+Every API response is cached with its request and retrieval time under `data/cache/`. Requests identify the project in the User-Agent, as Wikimedia's policy requires.

@@ -90,6 +90,49 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
 
 **Error analysis:** `lip m1 errors` writes [docs/extraction_errors.md](docs/extraction_errors.md).
 
-## 6. Name resolution and compounds (M2, M3)
+## 6. Name resolution (M2)
 
-See §6 of this document once Phase 3 results are written.
+**Name inventory** (`data/interim/m2/name_inventory.parquet`). M1 recipes don't exist yet, so names are taken from entry headings:
+- **Culpeper 1652:** one name per herb. The queries are the alternatives in the heading, plus the crosswalked 1850 heading, which gives a modern spelling.
+- **Pliny books XX–XXVII:** one name per plant in a chapter title. Count words ("TWENTY-SIX REMEDIES") and non-plant titles are dropped. Each name is linked to the Bostock & Riley footnotes anchored right after a word of the name ("strong"). In single-name chapters only, it can also be linked to footnotes on the heading and first paragraph ("weak").
+
+**Candidates** (`data/interim/m2/name_candidates.parquet`, up to 3 per name). This is a heuristic with every weight stated in `pipeline/lip/m2/resolve.py`.
+
+| Evidence | Basis | Weight |
+|---|---|---|
+| The name as written is a scientific binomial (GBIF backbone, strict) | `database` | 2.0 |
+| The GBIF backbone species has an **exact** English vernacular match (plurals and possessives folded) | `database` | 1.0 per query, split by *support* (independent vernacular records). Multiplied by a regional prior from GBIF occurrences in Great Britain (Culpeper) or Europe (Pliny), and by 0.3 for Pliny names. |
+| A binomial named in a linked Bostock & Riley footnote | `commentary_19c` | strong 2.0 / weak 1.0, divided by its order in the footnote; ×0.5 if the footnote hedges ("probably", "supposed", "some…", "doubt") |
+
+- **Confidence:** scores are normalised per name, and each species is mapped to its **accepted WFO name and WFO ID**, following synonymy.
+- **Disputed:** a name is flagged when any of these holds:
+  - top confidence < 0.6;
+  - the deciding footnote hedges;
+  - the top two candidates are within 0.15;
+  - the total evidence is < 0.5.
+- **Not used:** POWO refused automated access, so it isn't used. No LLM (`model` basis) and no scholarly lists are used as candidates; scholarly identifications are reserved for evaluation.
+
+**Evaluation.** `data/gold/name_identifications.csv` holds 30 names (15 Culpeper, 15 Pliny, seed `20261107`). A person fills in the scholarly accepted name and a citation for each row; rows without a citation are not scored. `lip m2 eval` reports top-1 and top-3 accuracy with Wilson 95% intervals, plus the share of names flagged disputed (written to `metrics.json`).
+
+## 7. Compounds (M3)
+
+**Source.** Compounds come from LOTUS natural-product occurrences on **Wikidata** (CC0): compounds with *found in taxon* (P703) for the accepted WFO name or the GBIF name it came from. Each occurrence keeps its LOTUS reference (*stated in*, P248). LOTUS is organism-level, so **plant part is `unknown`**. COCONUT's curated dump is CC0, but it is not integrated yet (see the licence register).
+
+**Standardisation.** Structures are processed with RDKit in four steps: parse the isomeric SMILES (falling back to canonical), Cleanup, take the largest organic fragment, then neutralise. No tautomer canonicalisation is applied. Compounds are de-duplicated by the InChIKey of the standardised structure. A mismatch with the InChIKey stored in Wikidata is flagged.
+
+**Outputs** (`data/interim/m3/`):
+- `compounds.parquet` and `occurrences.parquet`;
+- `coverage.csv`: compounds and references per species, with species below `poor_coverage_below` (default 10, a heuristic) flagged;
+- `compounds_summary.json`.
+
+## 8. Study-set proposal
+
+`lip m3 studyset` writes [docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md) and a CSV with an `approved` column for human decisions.
+
+- **Eligibility:** all of the following:
+  - resolution not disputed, with confidence ≥ 0.6;
+  - an attestation proxy of ≥ 3;
+  - coverage that is not poor.
+- **Attestation proxy:** recipe-scope passages per resolved name. A Pliny chapter's paragraphs are split across the plants it names.
+- **Ranking:** by number of sources, then attestations, then compounds.
+- **Not yet done:** toxicity has not been assessed.

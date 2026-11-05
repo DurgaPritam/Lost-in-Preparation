@@ -7,6 +7,11 @@
   python -m lip m1 extract --scope sample|all [--provider ollama|anthropic] [--limit N] [--yes]
   python -m lip m1 eval                  metrics vs gold + kappa -> site-data/metrics.json
   python -m lip m1 errors                docs/extraction_errors.md from the error tally
+  python -m lip m2 resolve [--limit N]   name inventory -> species candidates (GBIF + WFO)
+  python -m lip m2 evalset               30-name scholarly identification template
+  python -m lip m2 eval                  top-1 / top-3 accuracy vs the filled template
+  python -m lip m3 compounds             LOTUS (Wikidata) compounds per species, RDKit-standardised
+  python -m lip m3 studyset              study-set proposal table for human approval
 """
 from __future__ import annotations
 
@@ -86,6 +91,23 @@ def main(argv: list[str]) -> int:
         print("\n".join(contract_gen.write()))
     elif cmd == "m1":
         return m1(argv[1:])
+    elif cmd == "m2":
+        from .m2 import evaluate as m2eval, resolve
+        sub = argv[1] if len(argv) > 1 else "resolve"
+        if sub == "resolve":
+            lim = int(argv[argv.index("--limit") + 1]) if "--limit" in argv else None
+            print(json.dumps(resolve.main(lim), indent=2))
+        elif sub == "evalset":
+            print(m2eval.write_template())
+        elif sub == "eval":
+            print(json.dumps(m2eval.evaluate(), indent=2, default=str))
+    elif cmd == "m3":
+        from .m3 import compounds, study_set
+        sub = argv[1] if len(argv) > 1 else "compounds"
+        if sub == "compounds":
+            print(json.dumps(compounds.main(), indent=2))
+        elif sub == "studyset":
+            print(study_set.main())
     else:
         print(__doc__)
         return 1

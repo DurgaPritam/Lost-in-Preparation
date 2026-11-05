@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 
 from contract import models as C
 
-from .. import PIPELINE_VERSION
+from .. import PIPELINE_VERSION, metrics_store
 from ..paths import INTERIM, ROOT, SITE_DATA
 from .sample import ALLOCATION, SAMPLE_PATH
 from .schema import CATEGORICAL_FIELDS, SET_FIELDS, TEXT_FIELDS
@@ -350,21 +350,17 @@ def evaluate() -> C.Metrics:
         iaa = {f: C.not_computed(f"needs exactly 2 annotator files in {_rel(ANN_DIR)}/ (found {len(files)})")
                for f in KAPPA_FIELDS + ["passageHasRecipe"]}
 
-    later = lambda phase: C.not_computed(f"computed in {phase}")  # noqa: E731
-    m = C.Metrics(
-        generatedAt=datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        pipelineVersion=PIPELINE_VERSION,
-        extraction=C.ExtractionMetrics(run=run_info, overall=overall, bySource=by_source, recipeDetection=detection, spanRejectionRate=rej),
-        interAnnotatorAgreement=iaa,
-        nameResolution={"top1": later("Phase 3 (M2)"), "top3": later("Phase 3 (M2)"), "disputedShare": later("Phase 3 (M2)")},
-        logPError={"rdkit": later("Phase 4 (M4)"), "xtb": later("Phase 4 (M4)")},
-        headlineMatchRate=later("Phase 6 (M5/M6)"),
-        artemisininCheck=C.CheckResult(status="not_computed", explanation="computed in Phase 4 (M4)"),
-    )
     DETAIL_PATH.parent.mkdir(parents=True, exist_ok=True)
     DETAIL_PATH.write_text(json.dumps(detail, ensure_ascii=False, indent=1, default=str))
-    SITE_DATA.mkdir(parents=True, exist_ok=True)
-    (SITE_DATA / "metrics.json").write_text(m.model_dump_json(indent=2, by_alias=True) + "\n")
+    store_path = metrics_store.PATH
+    metrics_store.PATH = SITE_DATA / "metrics.json"  # honour the (patchable) module-level SITE_DATA
+    try:
+        m = metrics_store.update(
+            extraction=C.ExtractionMetrics(run=run_info, overall=overall, bySource=by_source,
+                                           recipeDetection=detection, spanRejectionRate=rej),
+            interAnnotatorAgreement=iaa)
+    finally:
+        metrics_store.PATH = store_path
     return m
 
 

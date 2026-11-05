@@ -14,8 +14,9 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 |---|---|---|
 | Ingest | Culpeper 1652 (EEBO-TCP), Culpeper 1850 and Pliny (Bostock & Riley) → stable, located passages; 1850↔1652 crosswalk | done |
 | M1 Recipes | Structured recipes extracted by an LLM, every field backed by a verbatim quote; local (Ollama) or Claude provider | built; awaiting gold set |
-| M2 Names | Historical name → accepted species (WFO), up to 3 candidates with confidence | in progress |
-| M3 Compounds | Known compounds per species (LOTUS via Wikidata), standardised with RDKit | in progress |
+| M2 Names | Historical name → accepted species (WFO), up to 3 candidates with confidence and basis; disputed flags | done; awaiting 30-name scholarly check |
+| M3 Compounds | Known compounds per species (LOTUS via Wikidata), RDKit-standardised, de-duplicated by InChIKey; coverage per species | done |
+| Study set | 30 proposed species for re-testing, for human approval ([docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md)) | awaiting approval |
 | M4–M6 | Preparation model, modern-methods audit, mismatch ranking | planned |
 
 **Scope:** only **single-plant recipes** enter the core analysis (M4–M6) and the headline numbers. Compound recipes, with two or more ingredients besides the vehicle, are extracted and stored in `recipes.json` with `excludedFromHeadline: true`. They are left out because a mixture's chemistry can't be attributed to one plant.

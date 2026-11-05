@@ -21,3 +21,6 @@ num_predict = 4096
 model = "claude-opus-5-5"
 effort = "high"
 fallbacks = true
+
+[m3]
+poor_coverage_below = 10   # heuristic: species with fewer distinct compounds are flagged as poor coverage

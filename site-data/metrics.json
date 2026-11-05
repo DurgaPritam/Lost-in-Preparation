@@ -1,6 +1,6 @@
 {
   "contractVersion": "1.1",
-  "generatedAt": "2026-11-05T07:00:56+00:00",
+  "generatedAt": "2026-11-05T08:12:25+00:00",
   "pipelineVersion": "0.1.0",
   "mock": false,
   "extraction": {
@@ -1735,6 +1735,15 @@
     }
   },
   "nameResolution": {
+    "disputedShare": {
+      "status": "computed",
+      "value": 0.4624,
+      "low": null,
+      "high": null,
+      "n": 612,
+      "sourceFile": "data/interim/m2/name_candidates.parquet",
+      "note": "share of resolved names whose top candidate is flagged disputed (descriptive)"
+    },
     "top1": {
       "status": "not_computed",
       "value": null,
@@ -1742,7 +1751,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "computed in Phase 3 (M2)"
+      "note": "awaiting scholarly identifications in data/gold/name_identifications.csv (name + citation per row)"
     },
     "top3": {
       "status": "not_computed",
@@ -1751,16 +1760,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "computed in Phase 3 (M2)"
-    },
-    "disputedShare": {
-      "status": "not_computed",
-      "value": null,
-      "low": null,
-      "high": null,
-      "n": null,
-      "sourceFile": null,
-      "note": "computed in Phase 3 (M2)"
+      "note": "awaiting scholarly identifications in data/gold/name_identifications.csv (name + citation per row)"
     }
   },
   "logPError": {

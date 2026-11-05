@@ -14,3 +14,6 @@ data/raw/**/*.xml
 # large regenerable intermediates (`python -m lip ingest`)
 data/interim/*.parquet
 data/interim/m1/raw/
+
+# external API response cache (re-created on demand; large)
+data/cache/
