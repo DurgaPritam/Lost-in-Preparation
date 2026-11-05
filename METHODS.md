@@ -113,6 +113,12 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
   - the top two candidates are within 0.15;
   - the total evidence is < 0.5;
   - the name resolves only to genus level;
+  - **genus-signal false friend**: the classical-genus audit ([docs/GENUS_SIGNAL_AUDIT.md](docs/GENUS_SIGNAL_AUDIT.md), `pipeline/lip/m2/genus_audit.py`) lists the name. The audit screens every top-1 resolution that used the classical-genus signal, and checks each word against its Lewis & Short entry. It records three kinds of case:
+    - a classical word with a different meaning (Pliny's *laser* is the juice of silphium, not the genus *Laser*);
+    - an English word that spell-matches a genus (Culpeper's 'Cotton Thistle' → *Cotinus*);
+    - chapter titles that are not plant names.
+
+    Findings are AI-reviewed (`ai_drafted_unverified`), each with the dictionary sentence, and they mark the resolution disputed without deleting it.
   - **toxic confusion**: candidates with confidence ≥ 0.15 differ in known toxicity. For this screen only, toxicity is checked against Wikipedia's *List of poisonous plants* (CC BY-SA 4.0, revision recorded). The study-set column uses the curated entries in §8 instead. Absence from the list is recorded as `unknown`, never as safe. The list is incomplete: it omits, for example, *Papaver somniferum* and *Symphytum officinale*. It also lists some genera wholesale, such as *Allium* spp., mainly for animal toxicity.
 - **Not used:** POWO refused automated access, so it isn't used. No LLM (`model` basis) and no scholarly lists are used as candidates; scholarly identifications are reserved for evaluation.
 
@@ -162,6 +168,11 @@ The window edges and the steepness are sampled from stated ranges. **Wine** is t
 - **Choice:** the method with the lower MAE becomes the default.
 - **Caveat:** Crippen was fitted to public logP data, which may overlap the reference set.
 
+**Descriptor error in the reported ranges** (uncertainty reporting, not scoring). Every reported 5th–95th range (profiles, known case, literature tables) comes from the same Monte Carlo draws with Normal descriptor noise added to logP. The noise SD is chosen so that its mean absolute error equals the Crippen MAE against experiment: σ = MAE·√(π/2). Both values are read from `data/interim/m4/logp_validation.json`.
+- The median and the drivers are the primary model's, unchanged. So every score that uses the median is unaffected: the exploratory set, v1 and v2 keep their results exactly, and a test checks this.
+- The range without descriptor error is kept as `rangeModelOnly`.
+- The model version hash is unchanged, because `config/prep_model.toml` is unchanged.
+
 **Acidity** (heuristic). A SMARTS rule finds basic nitrogen. In vinegar such compounds get a logD shift of 1–3 log units, which raises aqueous extraction. The `acidity` driver reports the effect.
 
 **Heat** (heuristic). SMARTS alerts flag heat-sensitive groups: endoperoxides and peroxides, labile esters, glucosinolates and cyanogenic glycosides. A volatility rule (MW < 250, HBD ≤ 1, TPSA < 40) marks steam-volatile compounds. Each alert has a degradation or loss range for warm and for boiled preparations; cold preparations lose nothing.
@@ -184,7 +195,24 @@ The thresholds were set in the config before running. A pass whose 5th–95th pe
 - **Pre-registered v1:** the rule in [docs/PREREGISTRATION.md](docs/PREREGISTRATION.md) was committed before any rows were collected: 6 plants, fixed PMC queries, a mechanical sentence rule, and a target of about 30 rows. It mostly found essential-oil rows.
 - **Pre-registered v2 (water preparations):** the rule in [docs/PREREGISTRATION_v2.md](docs/PREREGISTRATION_v2.md) was committed and pushed before any v2 row was collected. It covers infusions, decoctions, juices and cold-water preparations of the 30 study-set species plus 6 well-studied tea plants. It sets separate quotas of 15 `present` and 15 `low` rows, and a second PMC query per plant that targets absence reports. Shortfalls are reported, not filled by relaxing the rule. A post-hoc row audit by the AI is reported beside the registered result, never instead of it.
 
-All three use the same thresholds: "present" requires a median ≥ 0.40 and "low" requires < 0.30. Agreement is reported separately for `present` and `low` rows.
+The single-row checks (exploratory, v1, v2) use the same thresholds: "present" requires a median ≥ 0.40 and "low" requires < 0.30. Agreement is reported separately for `present` and `low` rows.
+
+**Extraction is not detection.** The model predicts the *fraction* of a compound that a preparation carries. A published report records whether the compound was *detected* or how much was measured. That depends on three things:
+- the plant's content of the compound;
+- the fraction extracted;
+- the method's detection limit.
+
+LOTUS records which compounds occur in a plant, not how much, so the model cannot predict detection. Single-row checks (exploratory, v1, v2) therefore test a mixture of two questions. Two failure modes follow:
+- A highly extractable compound that the plant barely contains can be "not detected" in a tea, even though the model is right that water would carry it.
+- A poorly extracted compound that the plant contains in large amounts can still be detected, even when only a small fraction reaches the cup. Artemisinin in sweet wormwood tea is the example: the model predicts that a minority fraction reaches the tea, and the paper reports measurable artemisinin (value in RESULTS.md).
+
+Neither case is evidence about the extraction fraction. The paired v3 design addresses this. It compares two compounds across two preparations of the same material in the same table, so plant content and detection limits cancel in the double ratio.
+
+- **Pre-registered v3 (paired, within plant):** the rule in [docs/PREREGISTRATION_v3.md](docs/PREREGISTRATION_v3.md) was committed before collection, with one amendment, also committed before collection.
+  - **Data:** tables in CC-licensed PMC articles that measure two or more preparations of the same plant material.
+  - **Outcome:** the sign of the double ratio (X/Y in P1) ÷ (X/Y in P2), which the model predicts from extraction fractions alone.
+  - **Analysis:** mean per-article agreement, with a cluster-bootstrap CI over articles.
+- **Complete chemical names (v3 onwards).** Compound names in future registered checks must match as complete chemical names (`pipeline/lip/m4/chemnames.py`). This rejects class measures ("total phenol content"), aglycones followed by a glycoside or locant ("apigenin 7-O-glucoside"), and derivative or class words. Table labels must equal one known name. v1 and v2 keep the matcher they were registered with and are not re-scored.
 
 **Water-window diagnostic (no model change).** `lip m4 water-calibration` plots the cold-water median and its 5–95% range against logP, for a logP grid and for every study-set compound. The output is [docs/figures/water_likelihood_vs_logp.svg](docs/figures/water_likelihood_vs_logp.svg) and `data/interim/m4/water_calibration.json`. For a filtered, cold, aqueous preparation, every factor except the solvent window is 1, so the prediction is a one-variable logistic in Crippen logP. The model has no solubility, melting-point, dose or contact-time term.
 
@@ -209,3 +237,13 @@ Until the human gold sets exist, three references made by an AI (Claude Code) le
 | `data/reference/prep_literature_prereg_v2.csv` | `ai_curated_literature_reference` | **Pre-registered v2:** aqueous-preparation rows selected by the committed rule (docs/PREREGISTRATION_v2.md), with each article's stated licence. | The rule and code were written by an AI. The sentence rule cannot tell "the preparation does not carry it" from "the plant has little of it". Some rows are mechanical misreadings; these are listed in the post-hoc audit (`ai_post_hoc_audit_unverified`). |
 
 The annotation tool's independent mode never shows any of these. **Review** mode, for adjudication only, shows human labels beside the silver labels.
+
+## 11. Limitations
+
+- **Extraction is not detection** (§9). The model predicts extracted fractions, but validation rows record detection or amounts, which also depend on plant content and detection limits. LOTUS has no abundance data, so single-row agreement rates measure a mixture of the two. Only paired, within-plant comparisons (v3) cancel the content term.
+- **One descriptor.** The aqueous prediction is a logistic in Crippen logP. It has no solubility, melting-point, dose or contact-time term (§9, water-window diagnostic). Descriptor error (MAE against experiment) is now shown in every range but not removed.
+- **Heuristic factors.** Heat alerts, volatility, filtration carry-over, acidity and the size penalty are heuristics with assumed ranges. They are not fitted to data.
+- **References made by an AI.** Every validation reference so far was built or curated by an AI: the silver labels, the drafted name identifications, the literature tables, the toxicity entries and the genus audit. All are reported as provisional. None has been checked by a person yet.
+- **Names.** Classical names often have several or uncertain identities. Disputed resolutions are kept with their candidates but are excluded from attestation counts. The genus-signal audit reviewed the undisputed resolutions that used that signal; other false friends may remain among the disputed ones.
+- **Pliny is lower confidence** than Culpeper. It is a 19th-century English translation with classical plant names, and resolves with far more disputes (per-source table in RESULTS.md).
+- **Coverage.** LOTUS records occurrences per organism, not per plant part, so the part named in a recipe cannot be matched to the part analysed.

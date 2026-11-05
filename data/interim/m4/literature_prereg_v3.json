@@ -1,0 +1,3406 @@
+{
+  "registration": "docs/PREREGISTRATION_v3.md (commit 7bc28ab; Amendment 1 in 99e120e)",
+  "label": "PRE-REGISTERED v3 (paired, within plant) literature check, provisional; AI-written rule and code, not human-curated",
+  "basis": "ai_curated_literature_reference",
+  "modelVersion": "prep-model:f4c4c5ef8a",
+  "rule": {
+    "tie": "ln 1.25",
+    "floor": 0.0001,
+    "maxArticlesPerPlant": 3
+  },
+  "tables": 6,
+  "pairCounts": {
+    "pairsConsidered": 48,
+    "skippedUninformative": 20,
+    "noClearDifference": 8,
+    "noStructure": 0
+  },
+  "articles": 6,
+  "articlesScored": 5,
+  "pairs": 20,
+  "scored": 15,
+  "abstained": 5,
+  "primary": {
+    "meanPerArticleAgreement": 0.62,
+    "ci95": [
+      0.22,
+      1.0
+    ],
+    "bootstrap": {
+      "B": 2000,
+      "seed": 20261106
+    },
+    "verdict": "not distinguishable from chance"
+  },
+  "pooledPairAgreement": {
+    "agree": 5,
+    "scored": 15,
+    "rate": 0.3333
+  },
+  "perArticle": {
+    "PMC11717056": 0.1,
+    "PMC5578075": 1.0,
+    "PMC8746171": 1.0,
+    "PMC9000270": 0.0,
+    "PMC9504179": 1.0
+  },
+  "byContrast": {
+    "alcohol vs distillation": {
+      "agree": 0,
+      "scored": 1,
+      "articles": 1,
+      "rate": 0.0
+    },
+    "aqueous vs alcohol": {
+      "agree": 5,
+      "scored": 14,
+      "articles": 4,
+      "rate": 0.3571
+    }
+  },
+  "plants": 5,
+  "postHocAudit": {
+    "basis": "ai_post_hoc_audit_unverified",
+    "label": "POST-HOC note by the AI (not registered; not human-verified)",
+    "notes": [
+      {
+        "pmcid": "PMC9504179",
+        "pairs": 1,
+        "note": "material is Alnus glutinosa cones, a second species in the same table, not the target plant (still a valid within-material comparison of extraction, but not of Filipendula ulmaria)"
+      }
+    ],
+    "largestArticleShareOfScoredPairs": 0.6667
+  },
+  "screening": {
+    "Artemisia absinthium": {
+      "results": [
+        "PMC10304051",
+        "PMC8953551",
+        "PMC13209449",
+        "PMC9571683",
+        "PMC6749517",
+        "PMC10834404",
+        "PMC9467740",
+        "PMC12278426",
+        "PMC10418608",
+        "PMC10671751",
+        "PMC7024177",
+        "PMC7345338",
+        "PMC4569837",
+        "PMC7570121",
+        "PMC4996182"
+      ],
+      "lotusLabels": 153,
+      "screened": [
+        [
+          "PMC10304051",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8953551",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13209449",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9571683",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6749517",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10834404",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9467740",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12278426",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10418608",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10671751",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7024177",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7345338",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC4569837",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7570121",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC4996182",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Agrimonia eupatoria": {
+      "results": [
+        "PMC8603700",
+        "PMC11819889",
+        "PMC9921178",
+        "PMC8705483",
+        "PMC6332114",
+        "PMC9502318",
+        "PMC5405390",
+        "PMC12715982",
+        "PMC9966964",
+        "PMC9501009",
+        "PMC11674006",
+        "PMC12628086",
+        "PMC12291865"
+      ],
+      "lotusLabels": 21,
+      "screened": [
+        [
+          "PMC8603700",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11819889",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC9921178",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8705483",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6332114",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9502318",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC5405390",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12715982",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9966964",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC9501009",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11674006",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12628086",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12291865",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Crocus sativus": {
+      "results": [
+        "PMC10144431",
+        "PMC9822159",
+        "PMC8860555",
+        "PMC8746171",
+        "PMC8296646",
+        "PMC6257777",
+        "PMC10740065",
+        "PMC8702342",
+        "PMC10458886",
+        "PMC9137568",
+        "PMC6721159",
+        "PMC10967911",
+        "PMC11945028",
+        "PMC12326435",
+        "PMC11243156",
+        "PMC8181092"
+      ],
+      "lotusLabels": 150,
+      "screened": [
+        [
+          "PMC10144431",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9822159",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8860555",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8746171",
+          "eligible: 1 tables, 1 pairs"
+        ],
+        [
+          "PMC8296646",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6257777",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10740065",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8702342",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10458886",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9137568",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6721159",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10967911",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11945028",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12326435",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11243156",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8181092",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Symphytum officinale": {
+      "results": [
+        "PMC7070662",
+        "PMC12838359",
+        "PMC13079377",
+        "PMC13606896",
+        "PMC10020234",
+        "PMC8471851",
+        "PMC10970371",
+        "PMC7998174",
+        "PMC2862927",
+        "PMC13306179",
+        "PMC1831764",
+        "PMC3143080",
+        "PMC6631335",
+        "PMC5983973",
+        "PMC10221907"
+      ],
+      "lotusLabels": 34,
+      "screened": [
+        [
+          "PMC7070662",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12838359",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13079377",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13606896",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10020234",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8471851",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10970371",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7998174",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC2862927",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13306179",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC1831764",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3143080",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6631335",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5983973",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10221907",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Lavandula angustifolia": {
+      "results": [
+        "PMC9821988",
+        "PMC9505037",
+        "PMC6615620",
+        "PMC9027103",
+        "PMC10586085",
+        "PMC11385625",
+        "PMC12217849",
+        "PMC6523715",
+        "PMC6767086",
+        "PMC12844421",
+        "PMC10095729",
+        "PMC7730011",
+        "PMC10574385",
+        "PMC8619938",
+        "PMC11677410",
+        "PMC5818898"
+      ],
+      "lotusLabels": 107,
+      "screened": [
+        [
+          "PMC9821988",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9505037",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6615620",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9027103",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC10586085",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11385625",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12217849",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6523715",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6767086",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12844421",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10095729",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7730011",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10574385",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8619938",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11677410",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5818898",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Ajuga chamaepitys": {
+      "results": [
+        "PMC12344866",
+        "PMC9607272",
+        "PMC11568135",
+        "PMC12898832",
+        "PMC13468636",
+        "PMC11085171",
+        "PMC5937106",
+        "PMC10942012",
+        "PMC9357710",
+        "PMC6515068",
+        "PMC8138454",
+        "PMC8001904",
+        "PMC2949813"
+      ],
+      "lotusLabels": 46,
+      "screened": [
+        [
+          "PMC12344866",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9607272",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11568135",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12898832",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13468636",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11085171",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC5937106",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10942012",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9357710",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6515068",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8138454",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8001904",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC2949813",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Ranunculus ficaria": {
+      "results": [
+        "PMC6921003",
+        "PMC9227133",
+        "PMC6331871",
+        "PMC8659087",
+        "PMC11969645",
+        "PMC6963662",
+        "PMC6331852",
+        "PMC8869735",
+        "PMC9961314",
+        "PMC9695302",
+        "PMC1906747",
+        "PMC8834290",
+        "PMC9294246"
+      ],
+      "lotusLabels": 16,
+      "screened": [
+        [
+          "PMC6921003",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9227133",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6331871",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8659087",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11969645",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6963662",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6331852",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8869735",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9961314",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9695302",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC1906747",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8834290",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9294246",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Glycyrrhiza glabra": {
+      "results": [
+        "PMC9692378",
+        "PMC5930497",
+        "PMC9218236",
+        "PMC11357027",
+        "PMC9448619",
+        "PMC6533940",
+        "PMC8328722",
+        "PMC7122586",
+        "PMC13216306",
+        "PMC11940230",
+        "PMC6631708",
+        "PMC7175350",
+        "PMC9573149",
+        "PMC11677410",
+        "PMC4964310",
+        "PMC8683220"
+      ],
+      "lotusLabels": 452,
+      "screened": [
+        [
+          "PMC9692378",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC5930497",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9218236",
+          "eligible: 1 tables, 2 pairs"
+        ],
+        [
+          "PMC11357027",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9448619",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6533940",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8328722",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7122586",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13216306",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11940230",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6631708",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7175350",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9573149",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11677410",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4964310",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8683220",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Melissa officinalis": {
+      "results": [
+        "PMC11283336",
+        "PMC8998931",
+        "PMC8073307",
+        "PMC10819686",
+        "PMC5622205",
+        "PMC12415070",
+        "PMC6653806",
+        "PMC10000423",
+        "PMC8229312",
+        "PMC8472344",
+        "PMC5871149",
+        "PMC12639085",
+        "PMC10178074",
+        "PMC12639746",
+        "PMC3115325"
+      ],
+      "lotusLabels": 138,
+      "screened": [
+        [
+          "PMC11283336",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8998931",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8073307",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC10819686",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC5622205",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12415070",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6653806",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10000423",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8229312",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8472344",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5871149",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12639085",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10178074",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12639746",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC3115325",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Hyssopus officinalis": {
+      "results": [
+        "PMC8067569",
+        "PMC11207324",
+        "PMC8776447",
+        "PMC9696917",
+        "PMC3845980",
+        "PMC11313759",
+        "PMC11207635",
+        "PMC9742021",
+        "PMC7762358",
+        "PMC10607442",
+        "PMC5052413",
+        "PMC11484080",
+        "PMC5428111",
+        "PMC8708003",
+        "PMC10179739",
+        "PMC2992139",
+        "PMC12844281"
+      ],
+      "lotusLabels": 80,
+      "screened": [
+        [
+          "PMC8067569",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11207324",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8776447",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9696917",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC3845980",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11313759",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11207635",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9742021",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7762358",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10607442",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5052413",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11484080",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5428111",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8708003",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10179739",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC2992139",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12844281",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Pastinaca sativa": {
+      "results": [
+        "PMC12298367",
+        "PMC13150342",
+        "PMC11507334",
+        "PMC10221907",
+        "PMC11355232",
+        "PMC4137549",
+        "PMC9569932",
+        "PMC13361426",
+        "PMC11547917",
+        "PMC8303230",
+        "PMC8010426",
+        "PMC1831764",
+        "PMC12000892"
+      ],
+      "lotusLabels": 23,
+      "screened": [
+        [
+          "PMC12298367",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13150342",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11507334",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10221907",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11355232",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4137549",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9569932",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13361426",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11547917",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8303230",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8010426",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC1831764",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12000892",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Galium aparine": {
+      "results": [
+        "PMC10056973",
+        "PMC6963662",
+        "PMC10707836",
+        "PMC13118831",
+        "PMC13694211",
+        "PMC7464609",
+        "PMC12029887",
+        "PMC13516820",
+        "PMC10820234",
+        "PMC11204821",
+        "PMC1831764",
+        "PMC3143080",
+        "PMC9570926",
+        "PMC11672921",
+        "PMC8146166"
+      ],
+      "lotusLabels": 18,
+      "screened": [
+        [
+          "PMC10056973",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6963662",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10707836",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13118831",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13694211",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7464609",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12029887",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13516820",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10820234",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11204821",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC1831764",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3143080",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9570926",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11672921",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8146166",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Centaurium erythraea": {
+      "results": [
+        "PMC6832739",
+        "PMC12639085",
+        "PMC12655704",
+        "PMC6268060",
+        "PMC9668103",
+        "PMC12540964",
+        "PMC7786062",
+        "PMC6963686",
+        "PMC2322956",
+        "PMC11650409",
+        "PMC7823438",
+        "PMC13607128",
+        "PMC5338142"
+      ],
+      "lotusLabels": 36,
+      "screened": [
+        [
+          "PMC6832739",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12639085",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12655704",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6268060",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9668103",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12540964",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7786062",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6963686",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC2322956",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11650409",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7823438",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13607128",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5338142",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Chelidonium majus": {
+      "results": [
+        "PMC11002451",
+        "PMC5912214",
+        "PMC12563533",
+        "PMC11055330",
+        "PMC8467419",
+        "PMC12430483",
+        "PMC10934343",
+        "PMC12785323",
+        "PMC12156109",
+        "PMC4737735",
+        "PMC4804397",
+        "PMC11395905",
+        "PMC6724175",
+        "PMC13165265"
+      ],
+      "lotusLabels": 69,
+      "screened": [
+        [
+          "PMC11002451",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5912214",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12563533",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11055330",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8467419",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12430483",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10934343",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12785323",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12156109",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4737735",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC4804397",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11395905",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6724175",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13165265",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Hyoscyamus niger": {
+      "results": [
+        "PMC8251320",
+        "PMC10144431",
+        "PMC12398075",
+        "PMC10301465",
+        "PMC4224707",
+        "PMC8067791",
+        "PMC7831775",
+        "PMC6420976",
+        "PMC11327834",
+        "PMC9163510",
+        "PMC11858532",
+        "PMC5871264",
+        "PMC7059029",
+        "PMC5378958",
+        "PMC6145130",
+        "PMC9695302"
+      ],
+      "lotusLabels": 78,
+      "screened": [
+        [
+          "PMC8251320",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10144431",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12398075",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10301465",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4224707",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8067791",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7831775",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6420976",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11327834",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9163510",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11858532",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5871264",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7059029",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5378958",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6145130",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9695302",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Raphanus sativus": {
+      "results": [
+        "PMC13477239",
+        "PMC11171837",
+        "PMC4202426",
+        "PMC13216295",
+        "PMC9821477",
+        "PMC10637841",
+        "PMC12653370",
+        "PMC13334044",
+        "PMC6893016",
+        "PMC8068147",
+        "PMC13332216",
+        "PMC7249085",
+        "PMC6263192",
+        "PMC12473229",
+        "PMC10893179",
+        "PMC11096940",
+        "PMC11840586",
+        "PMC6155892",
+        "PMC12696057"
+      ],
+      "lotusLabels": 221,
+      "screened": [
+        [
+          "PMC13477239",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11171837",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC4202426",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13216295",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9821477",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10637841",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12653370",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13334044",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6893016",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8068147",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13332216",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7249085",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6263192",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12473229",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10893179",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11096940",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11840586",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6155892",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12696057",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Salvia sclarea": {
+      "results": [
+        "PMC11597310",
+        "PMC6321363",
+        "PMC10708212",
+        "PMC13203183",
+        "PMC12397425",
+        "PMC10223974",
+        "PMC10740915",
+        "PMC13075098",
+        "PMC10223537",
+        "PMC13165463",
+        "PMC11901606",
+        "PMC10346681",
+        "PMC12381299",
+        "PMC6721217",
+        "PMC13653116"
+      ],
+      "lotusLabels": 133,
+      "screened": [
+        [
+          "PMC11597310",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6321363",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10708212",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13203183",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12397425",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10223974",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10740915",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13075098",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10223537",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13165463",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11901606",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10346681",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12381299",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6721217",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13653116",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Euphorbia antiquorum": {
+      "results": [
+        "PMC13425043",
+        "PMC6723572",
+        "PMC13508148",
+        "PMC13210672",
+        "PMC8087071",
+        "PMC11772315",
+        "PMC11943701",
+        "PMC4665026",
+        "PMC10343448",
+        "PMC9583255",
+        "PMC7504773",
+        "PMC7910824",
+        "PMC9000693",
+        "PMC4566784",
+        "PMC10730939",
+        "PMC6033956",
+        "PMC11360483"
+      ],
+      "lotusLabels": 43,
+      "screened": [
+        [
+          "PMC13425043",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6723572",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13508148",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13210672",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8087071",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11772315",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11943701",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4665026",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10343448",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9583255",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7504773",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7910824",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9000693",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4566784",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10730939",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6033956",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11360483",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Papaver somniferum": {
+      "results": [
+        "PMC9943628",
+        "PMC6930461",
+        "PMC9228061",
+        "PMC10154933",
+        "PMC11522673",
+        "PMC8307897",
+        "PMC10094636",
+        "PMC13044282",
+        "PMC5498505",
+        "PMC9420235",
+        "PMC3143080",
+        "PMC10095881",
+        "PMC10410162",
+        "PMC8883056",
+        "PMC9551254",
+        "PMC9163510",
+        "PMC11944511"
+      ],
+      "lotusLabels": 106,
+      "screened": [
+        [
+          "PMC9943628",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6930461",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9228061",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10154933",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11522673",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8307897",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10094636",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13044282",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5498505",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9420235",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3143080",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10095881",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10410162",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8883056",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9551254",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9163510",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11944511",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Humulus lupulus": {
+      "results": [
+        "PMC10459968",
+        "PMC12735775",
+        "PMC12210321",
+        "PMC11675283",
+        "PMC10531422",
+        "PMC12348251",
+        "PMC6081516",
+        "PMC10893079",
+        "PMC3698037",
+        "PMC13074777",
+        "PMC6627407",
+        "PMC13075050",
+        "PMC9782902",
+        "PMC9105605",
+        "PMC12255276",
+        "PMC11085452",
+        "PMC13304896",
+        "PMC11281705"
+      ],
+      "lotusLabels": 464,
+      "screened": [
+        [
+          "PMC10459968",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12735775",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12210321",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11675283",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10531422",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12348251",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6081516",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10893079",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC3698037",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13074777",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6627407",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13075050",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9782902",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9105605",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12255276",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11085452",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13304896",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11281705",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Allium cepa": {
+      "results": [
+        "PMC13119410",
+        "PMC12344724",
+        "PMC5755145",
+        "PMC8789449",
+        "PMC5622205",
+        "PMC9781893",
+        "PMC13613072",
+        "PMC6337254",
+        "PMC7020437",
+        "PMC11870763",
+        "PMC12388284",
+        "PMC6155300",
+        "PMC7014759",
+        "PMC11217825",
+        "PMC12238280"
+      ],
+      "lotusLabels": 309,
+      "screened": [
+        [
+          "PMC13119410",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12344724",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5755145",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8789449",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5622205",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9781893",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13613072",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6337254",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7020437",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11870763",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12388284",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6155300",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7014759",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11217825",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12238280",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Coriandrum sativum": {
+      "results": [
+        "PMC8747064",
+        "PMC6276458",
+        "PMC4028854",
+        "PMC10220854",
+        "PMC10844193",
+        "PMC9695286",
+        "PMC12946750",
+        "PMC9314633",
+        "PMC10385770",
+        "PMC10181203",
+        "PMC3895561",
+        "PMC5099860",
+        "PMC13664577",
+        "PMC10384636",
+        "PMC11078881",
+        "PMC7509570",
+        "PMC9501052"
+      ],
+      "lotusLabels": 157,
+      "screened": [
+        [
+          "PMC8747064",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6276458",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC4028854",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10220854",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10844193",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9695286",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12946750",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9314633",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10385770",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10181203",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3895561",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5099860",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13664577",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10384636",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11078881",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7509570",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9501052",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Carum carvi": {
+      "results": [
+        "PMC12715987",
+        "PMC10045241",
+        "PMC13250129",
+        "PMC7278751",
+        "PMC9570728",
+        "PMC13476923",
+        "PMC10684886",
+        "PMC4096002",
+        "PMC8814089",
+        "PMC12743532",
+        "PMC6328425",
+        "PMC11747432",
+        "PMC7455972",
+        "PMC12693992",
+        "PMC10740862",
+        "PMC3844184",
+        "PMC10346681"
+      ],
+      "lotusLabels": 77,
+      "screened": [
+        [
+          "PMC12715987",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC10045241",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13250129",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7278751",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9570728",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13476923",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10684886",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4096002",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8814089",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12743532",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6328425",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11747432",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7455972",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12693992",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10740862",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3844184",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10346681",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Citrullus colocynthis": {
+      "results": [
+        "PMC10608828",
+        "PMC10153711",
+        "PMC13565336",
+        "PMC3609396",
+        "PMC9960351",
+        "PMC10963867",
+        "PMC10488440",
+        "PMC7565491",
+        "PMC9548430",
+        "PMC11870763",
+        "PMC8821906",
+        "PMC5797783",
+        "PMC7870401",
+        "PMC12972304",
+        "PMC9481366",
+        "PMC5831234"
+      ],
+      "lotusLabels": 71,
+      "screened": [
+        [
+          "PMC10608828",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10153711",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13565336",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC3609396",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9960351",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10963867",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10488440",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7565491",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9548430",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11870763",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8821906",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5797783",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7870401",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12972304",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9481366",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5831234",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Dioscorea communis": {
+      "results": [
+        "PMC8949886",
+        "PMC8730822",
+        "PMC6843349",
+        "PMC8206464",
+        "PMC11054966",
+        "PMC11087437",
+        "PMC10620733",
+        "PMC12655856",
+        "PMC7575531",
+        "PMC9147247",
+        "PMC11590556",
+        "PMC8138454",
+        "PMC9760313",
+        "PMC9695302",
+        "PMC10782642",
+        "PMC11901878",
+        "PMC7990790",
+        "PMC12294494"
+      ],
+      "lotusLabels": 38,
+      "screened": [
+        [
+          "PMC8949886",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8730822",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6843349",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8206464",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11054966",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11087437",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10620733",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12655856",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7575531",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9147247",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11590556",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8138454",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9760313",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9695302",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10782642",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11901878",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7990790",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12294494",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Filipendula ulmaria": {
+      "results": [
+        "PMC6155584",
+        "PMC9676638",
+        "PMC8038090",
+        "PMC13404949",
+        "PMC9504179",
+        "PMC11504252",
+        "PMC12787829",
+        "PMC8653665",
+        "PMC13209557",
+        "PMC8398729",
+        "PMC8433760",
+        "PMC13024509",
+        "PMC8603700"
+      ],
+      "lotusLabels": 25,
+      "screened": [
+        [
+          "PMC6155584",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9676638",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8038090",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13404949",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9504179",
+          "eligible: 1 tables, 1 pairs"
+        ],
+        [
+          "PMC11504252",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC12787829",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8653665",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13209557",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8398729",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8433760",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13024509",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8603700",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Betonica officinalis": {
+      "results": [
+        "PMC12811819",
+        "PMC5964621",
+        "PMC11597018",
+        "PMC6321363",
+        "PMC7601302",
+        "PMC10684886",
+        "PMC11102979",
+        "PMC12121518",
+        "PMC6921003",
+        "PMC10708212",
+        "PMC10669438",
+        "PMC8709469",
+        "PMC11855714",
+        "PMC9317270"
+      ],
+      "lotusLabels": 19,
+      "screened": [
+        [
+          "PMC12811819",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5964621",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11597018",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6321363",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7601302",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10684886",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11102979",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12121518",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6921003",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10708212",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10669438",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8709469",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11855714",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9317270",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Moricandia arvensis": {
+      "results": [
+        "PMC6278432",
+        "PMC11507334",
+        "PMC8730822",
+        "PMC7663331",
+        "PMC8206464",
+        "PMC11054966",
+        "PMC5963653",
+        "PMC10004251",
+        "PMC5164913",
+        "PMC12669724",
+        "PMC11944458",
+        "PMC5797783",
+        "PMC12369213",
+        "PMC8138454",
+        "PMC6051267"
+      ],
+      "lotusLabels": 17,
+      "screened": [
+        [
+          "PMC6278432",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11507334",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8730822",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7663331",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8206464",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11054966",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5963653",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10004251",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5164913",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12669724",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11944458",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5797783",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12369213",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8138454",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6051267",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Artemisia annua": {
+      "results": [
+        "PMC3828274",
+        "PMC8189797",
+        "PMC8301839",
+        "PMC10304051",
+        "PMC9571683",
+        "PMC12299836",
+        "PMC10532408",
+        "PMC11819670",
+        "PMC12713434",
+        "PMC12811819",
+        "PMC3992861",
+        "PMC7404215",
+        "PMC10222324",
+        "PMC8618776",
+        "PMC11888663"
+      ],
+      "lotusLabels": 549,
+      "screened": [
+        [
+          "PMC3828274",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8189797",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8301839",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10304051",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9571683",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12299836",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10532408",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11819670",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12713434",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12811819",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3992861",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7404215",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10222324",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8618776",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11888663",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Matricaria chamomilla": {
+      "results": [
+        "PMC9032859",
+        "PMC8245379",
+        "PMC13323515",
+        "PMC6830229",
+        "PMC13363751",
+        "PMC6479860",
+        "PMC4292179",
+        "PMC11510547",
+        "PMC7070460",
+        "PMC7760056",
+        "PMC13075090",
+        "PMC9737587",
+        "PMC11898972",
+        "PMC13696899",
+        "PMC11311743",
+        "PMC8303368"
+      ],
+      "lotusLabels": 229,
+      "screened": [
+        [
+          "PMC9032859",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC8245379",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13323515",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6830229",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13363751",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6479860",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC4292179",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11510547",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7070460",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7760056",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13075090",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9737587",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11898972",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13696899",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11311743",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8303368",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Mentha × piperita": {
+      "results": [
+        "PMC11431611",
+        "PMC9292459",
+        "PMC5723952",
+        "PMC13074686",
+        "PMC10649426",
+        "PMC12953208",
+        "PMC12249933",
+        "PMC5632461",
+        "PMC11020615",
+        "PMC11016424",
+        "PMC8303368",
+        "PMC9003077",
+        "PMC11677410",
+        "PMC3316159",
+        "PMC9922135",
+        "PMC10764227"
+      ],
+      "lotusLabels": 135,
+      "screened": [
+        [
+          "PMC11431611",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9292459",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC5723952",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13074686",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC10649426",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12953208",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12249933",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC5632461",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11020615",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11016424",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8303368",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9003077",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11677410",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3316159",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9922135",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10764227",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Thymus vulgaris": {
+      "results": [
+        "PMC9021880",
+        "PMC2553340",
+        "PMC9784812",
+        "PMC9601415",
+        "PMC10799646",
+        "PMC10144431",
+        "PMC5618528",
+        "PMC11405399",
+        "PMC7783233",
+        "PMC12278426",
+        "PMC10563746",
+        "PMC10810472",
+        "PMC13053509",
+        "PMC8619938",
+        "PMC5871273",
+        "PMC10207748",
+        "PMC10821218"
+      ],
+      "lotusLabels": 155,
+      "screened": [
+        [
+          "PMC9021880",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC2553340",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9784812",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9601415",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10799646",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10144431",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5618528",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11405399",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7783233",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12278426",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10563746",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10810472",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13053509",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8619938",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5871273",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10207748",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10821218",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Salvia officinalis": {
+      "results": [
+        "PMC6321363",
+        "PMC11431611",
+        "PMC8303624",
+        "PMC10856435",
+        "PMC9220411",
+        "PMC12885525",
+        "PMC6099398",
+        "PMC10144431",
+        "PMC10000423",
+        "PMC11676072",
+        "PMC6930492",
+        "PMC11913356",
+        "PMC10707927",
+        "PMC8540233",
+        "PMC10346681"
+      ],
+      "lotusLabels": 436,
+      "screened": [
+        [
+          "PMC6321363",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11431611",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8303624",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10856435",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9220411",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12885525",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6099398",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10144431",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10000423",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11676072",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6930492",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11913356",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10707927",
+          "excluded: used in an earlier check"
+        ],
+        [
+          "PMC8540233",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10346681",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Salvia rosmarinus": {
+      "results": [
+        "PMC10856435",
+        "PMC12787868",
+        "PMC10536996",
+        "PMC7556042",
+        "PMC8954779",
+        "PMC9603841",
+        "PMC13655632",
+        "PMC13203183",
+        "PMC12783746",
+        "PMC11953444",
+        "PMC13274111",
+        "PMC11913356",
+        "PMC11901988",
+        "PMC12595065"
+      ],
+      "lotusLabels": 299,
+      "screened": [
+        [
+          "PMC10856435",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12787868",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10536996",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7556042",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8954779",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9603841",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13655632",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13203183",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12783746",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11953444",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13274111",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11913356",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11901988",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12595065",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Foeniculum vulgare": {
+      "results": [
+        "PMC12111592",
+        "PMC4137549",
+        "PMC13420826",
+        "PMC9863134",
+        "PMC12278353",
+        "PMC11667025",
+        "PMC11682140",
+        "PMC12655285",
+        "PMC11945710",
+        "PMC4202632",
+        "PMC3414240",
+        "PMC4065985",
+        "PMC8392248",
+        "PMC11314138"
+      ],
+      "lotusLabels": 372,
+      "screened": [
+        [
+          "PMC12111592",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC4137549",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13420826",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9863134",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12278353",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11667025",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11682140",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12655285",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11945710",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4202632",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3414240",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC4065985",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8392248",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11314138",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Origanum vulgare": {
+      "results": [
+        "PMC7918425",
+        "PMC9021880",
+        "PMC6222868",
+        "PMC9610729",
+        "PMC8457725",
+        "PMC7166275",
+        "PMC12389479",
+        "PMC9413242",
+        "PMC5723952",
+        "PMC9921178",
+        "PMC11858988",
+        "PMC13180845",
+        "PMC13074852",
+        "PMC8038783"
+      ],
+      "lotusLabels": 179,
+      "screened": [
+        [
+          "PMC7918425",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9021880",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6222868",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9610729",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8457725",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7166275",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12389479",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9413242",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5723952",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9921178",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11858988",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13180845",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13074852",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8038783",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Hypericum perforatum": {
+      "results": [
+        "PMC12073223",
+        "PMC6272045",
+        "PMC13467255",
+        "PMC12905129",
+        "PMC9088799",
+        "PMC11643802",
+        "PMC11820847",
+        "PMC11861409",
+        "PMC10819596",
+        "PMC5431008",
+        "PMC6585710",
+        "PMC10005045",
+        "PMC10537336"
+      ],
+      "lotusLabels": 234,
+      "screened": [
+        [
+          "PMC12073223",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6272045",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13467255",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12905129",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9088799",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11643802",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11820847",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11861409",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10819596",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC5431008",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6585710",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10005045",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC10537336",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Calendula officinalis": {
+      "results": [
+        "PMC10608748",
+        "PMC5578075",
+        "PMC8472344",
+        "PMC12656484",
+        "PMC4763529",
+        "PMC11314138",
+        "PMC11717056",
+        "PMC9736270",
+        "PMC11002451",
+        "PMC10142266",
+        "PMC11677410",
+        "PMC1831764",
+        "PMC10609265",
+        "PMC9140170"
+      ],
+      "lotusLabels": 174,
+      "screened": [
+        [
+          "PMC10608748",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC5578075",
+          "eligible: 1 tables, 5 pairs"
+        ],
+        [
+          "PMC8472344",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12656484",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC4763529",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11314138",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11717056",
+          "eligible: 1 tables, 10 pairs"
+        ],
+        [
+          "PMC9736270",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11002451",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10142266",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11677410",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC1831764",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10609265",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9140170",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Achillea millefolium": {
+      "results": [
+        "PMC5686861",
+        "PMC8955464",
+        "PMC13250260",
+        "PMC7221777",
+        "PMC8472344",
+        "PMC10790267",
+        "PMC12974295",
+        "PMC10295287",
+        "PMC12073966",
+        "PMC12639085",
+        "PMC9737587",
+        "PMC13210741",
+        "PMC8303368",
+        "PMC1831764",
+        "PMC4674217"
+      ],
+      "lotusLabels": 256,
+      "screened": [
+        [
+          "PMC5686861",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8955464",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13250260",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC7221777",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8472344",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10790267",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12974295",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10295287",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12073966",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12639085",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9737587",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC13210741",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC8303368",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC1831764",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4674217",
+          "ineligible: no eligible table"
+        ]
+      ]
+    },
+    "Mentha spicata": {
+      "results": [
+        "PMC9019422",
+        "PMC9000270",
+        "PMC10000423",
+        "PMC5723952",
+        "PMC6274304",
+        "PMC12953208",
+        "PMC6332415",
+        "PMC11673699",
+        "PMC10336496",
+        "PMC5964621",
+        "PMC11612241",
+        "PMC12608810",
+        "PMC11173668",
+        "PMC9742961",
+        "PMC6031216",
+        "PMC7689164"
+      ],
+      "lotusLabels": 192,
+      "screened": [
+        [
+          "PMC9019422",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9000270",
+          "eligible: 1 tables, 1 pairs"
+        ],
+        [
+          "PMC10000423",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC5723952",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6274304",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12953208",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6332415",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11673699",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10336496",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5964621",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11612241",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC12608810",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC11173668",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC9742961",
+          "ineligible: no eligible table"
+        ],
+        [
+          "PMC6031216",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7689164",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    }
+  }
+}

@@ -41,6 +41,8 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 | Preparation model vs published reports — exploratory set | *provisional, exploratory* — 9 rows selected after model build | `data/reference/prep_literature_v1.csv` |
 | Preparation model vs published reports — pre-registered v1 (mostly essential oils) | *provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code | `data/reference/prep_literature_prereg_v1.csv` |
 | Preparation model vs published reports — pre-registered v2 (water preparations) | *provisional* — rule pre-registered (docs/PREREGISTRATION_v2.md), AI-written rule and code; low-row quota not met | `data/reference/prep_literature_prereg_v2.csv` |
+| Preparation model vs published reports — pre-registered v3 (paired, within plant) | *provisional* — rule pre-registered (docs/PREREGISTRATION_v3.md, one amendment before collection), AI-written rule and code | `data/reference/prep_literature_prereg_v3_pairs.csv` |
+| Genus-signal audit (name resolution) | *provisional* — AI-reviewed false friends with dictionary quotes, awaiting human review | `docs/GENUS_SIGNAL_AUDIT.md` |
 | Study-set toxicity entries (28 species) | *provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review | `data/reference/toxicity_curated.csv` |
 | Study set (28 species) | pending — human approval | `docs/STUDY_SET_PROPOSAL.md` |
 | Modern-methods audit, mismatch ranking (M5–M6) | not started | — |
@@ -67,6 +69,10 @@ Sources: `data/interim/ingest_report.json`, `data/gold/sample_v2.json`, `site-da
 | Median LOTUS compounds per attested study-set species | 77.5 | 60 | 75.5 |
 | Preparation-model literature checks (v1, v2) | not applicable (modern studies of the plant, not of a source) | not applicable (modern studies of the plant, not of a source) | see Preparation model section |
 <!-- VALIDATION_STATUS:END -->
+
+## Limitations
+
+The model predicts the **fraction** of a compound that a preparation extracts. Published studies record whether a compound was **detected**, which also depends on how much the plant contains and on the detection limit. LOTUS has no abundance data, so single-row literature checks cannot separate the two. The paired v3 check compares compounds within one plant and study to cancel plant content. Pliny-derived results are lower confidence than Culpeper's. Every reference used so far was made by an AI and awaits human review. See [METHODS.md §11](METHODS.md#11-limitations).
 
 ## Repository
 

@@ -9,6 +9,25 @@
   "literatureAgreementExploratory": "9/9",
   "literatureAgreementPreregistered": "19/19",
   "literatureAgreementPreregisteredV2": "13/17",
+  "literaturePairedV3": {
+    "articles": 6,
+    "articlesScored": 5,
+    "pairs": 20,
+    "scored": 15,
+    "abstained": 5,
+    "primary": {
+      "meanPerArticleAgreement": 0.62,
+      "ci95": [
+        0.22,
+        1.0
+      ],
+      "bootstrap": {
+        "B": 2000,
+        "seed": 20261106
+      },
+      "verdict": "not distinguishable from chance"
+    }
+  },
   "waterCalibration": {
     "median_eq_present_min": 2.004,
     "median_eq_absent_max": 2.297,
@@ -23,5 +42,5 @@
     "profiles": 364,
     "compoundEntries": 41483
   },
-  "generatedAt": "2026-11-05T16:44:56+00:00"
+  "generatedAt": "2026-11-05T17:02:58+00:00"
 }

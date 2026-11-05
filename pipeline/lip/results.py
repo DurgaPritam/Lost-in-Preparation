@@ -48,6 +48,8 @@ def validation_status(m: C.Metrics) -> list[str]:
         ("Preparation model vs published reports — exploratory set", "*provisional, exploratory* — 9 rows selected after model build", "`data/reference/prep_literature_v1.csv`"),
         ("Preparation model vs published reports — pre-registered v1 (mostly essential oils)", "*provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code", "`data/reference/prep_literature_prereg_v1.csv`"),
         ("Preparation model vs published reports — pre-registered v2 (water preparations)", "*provisional* — rule pre-registered (docs/PREREGISTRATION_v2.md), AI-written rule and code; low-row quota not met", "`data/reference/prep_literature_prereg_v2.csv`"),
+        ("Preparation model vs published reports — pre-registered v3 (paired, within plant)", "*provisional* — rule pre-registered (docs/PREREGISTRATION_v3.md, one amendment before collection), AI-written rule and code", "`data/reference/prep_literature_prereg_v3_pairs.csv`"),
+        ("Genus-signal audit (name resolution)", "*provisional* — AI-reviewed false friends with dictionary quotes, awaiting human review", "`docs/GENUS_SIGNAL_AUDIT.md`"),
         (f"Study-set toxicity entries ({_n_proposed()} species)", "*provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review", "`data/reference/toxicity_curated.csv`"),
         (f"Study set ({_n_proposed()} species)", "pending — human approval", "`docs/STUDY_SET_PROPOSAL.md`"),
         ("Modern-methods audit, mismatch ranking (M5–M6)", "not started", "—"),
@@ -152,6 +154,49 @@ def _rate(b: dict | None) -> str:
     return f"{b['agree']}/{b['n']} ({b['rate']:.0%}; 95% CI {b['ci'][0]:.0%}–{b['ci'][1]:.0%})"
 
 
+def v3_section() -> list[str]:
+    v3 = _j("data/interim/m4/literature_prereg_v3.json")
+    if not v3:
+        return []
+    L = ["", "#### Pre-registered v3: paired, within-plant comparison", "",
+         "Each scored pair is two compounds X, Y measured in two preparations P1, P2 of the same plant material in one table. The outcome is "
+         "the sign of ln[(X/Y in P1) / (X/Y in P2)], which cancels plant content, preparation yield and units, and so tests the extraction "
+         "fractions the model predicts, not detection. Source: `data/interim/m4/literature_prereg_v3.json`, "
+         "`data/reference/prep_literature_prereg_v3_pairs.csv`.", ""]
+    if not v3.get("articles"):
+        return L + ["No article met the registered rule; nothing was scored."]
+    pr, pc = v3["primary"], v3.get("pairCounts", {})
+    ci = pr.get("ci95") or [None, None]
+    L += [f"- Articles with an eligible table: {v3['articles']} ({v3['plants']} plants, {v3['tables']} tables); articles with at least one scored pair: {v3['articlesScored']}.",
+          f"- Compound pairs: {pc.get('pairsConsidered', 0)} considered; {pc.get('skippedUninformative', 0)} uninformative (zero in both columns); "
+          f"{pc.get('noClearDifference', 0)} excluded as no clear difference (|ln DR| < ln 1.25); {pc.get('noStructure', 0)} without a structure; "
+          f"{v3['scored']} scored; {v3['abstained']} where the model abstained (|predicted ln DR| < ln 1.25)."]
+    if pr.get("meanPerArticleAgreement") is not None:
+        L += [f"- **Primary: mean per-article agreement {pr['meanPerArticleAgreement']:.0%} (95% cluster-bootstrap CI {ci[0]:.0%}–{ci[1]:.0%}; "
+              f"{v3['articlesScored']} articles). Registered verdict: {pr['verdict']}.**",
+              f"- Pooled over pairs (descriptive; pairs within an article are not independent): {v3['pooledPairAgreement']['agree']}/"
+              f"{v3['pooledPairAgreement']['scored']} ({v3['pooledPairAgreement']['rate']:.0%})."]
+        L += ["", "| Contrast | Scored pairs | Agree | Rate | Articles |", "|---|---|---|---|---|"]
+        L += [f"| {c} | {x['scored']} | {x['agree']} | {x['rate']:.0%} | {x['articles']} |" for c, x in v3["byContrast"].items()]
+        L += ["", "| Article | Per-article agreement |", "|---|---|"] + [f"| {k} | {v:.0%} |" for k, v in v3["perArticle"].items()]
+    scr = [w for v in v3["screening"].values() for _, w in v["screened"]]
+    reasons = {}
+    for w in scr:
+        k = "eligible" if w.startswith("eligible") else w
+        reasons[k] = reasons.get(k, 0) + 1
+    L += ["", f"Screening ({len(scr)} articles over {len(v3['screening'])} plants): " + "; ".join(f"{k} {v}" for k, v in sorted(reasons.items(), key=lambda kv: -kv[1])) + ".",
+          "**The registered caps allowed up to 3 articles per plant, but few articles report two preparations of the same material in one "
+          "machine-readable table, so v3 is small and its CI is wide.** The rule was not relaxed."]
+    a = v3.get("postHocAudit") or {}
+    if a:
+        share = a.get("largestArticleShareOfScoredPairs")
+        L += ["", f"**Post-hoc notes (not registered; `{a['basis']}`).**"]
+        L += [f"- {n['pmcid']} ({n['pairs']} pair(s)): {n['note']}." for n in a["notes"]]
+        if share is not None:
+            L += [f"- The largest article supplies {share:.0%} of the scored pairs, which is why pooled pair agreement and the registered per-article mean differ."]
+    return L
+
+
 def literature_sections() -> list[str]:
     from .m2.evaluate import wilson
     ex, v1, v2 = (_j(p) for p in ("data/interim/m4/literature_check.json", "data/interim/m4/literature_prereg.json",
@@ -193,10 +238,60 @@ def literature_sections() -> list[str]:
         L += [f"- *{m['plant']}*, {m['compound']} ({m['pmcid']}): {m['reason']}." for m in a["misread"]]
         L += [f"", f"On the remaining rows: overall {_rate(a['validRowsPrimary']['overall'])}; `present` {_rate(a['validRowsPrimary']['present'])}; "
                    f"`absent/low` {_rate(a['validRowsPrimary']['low'])}. The registered result above stays the headline."]
+    L += v3_section()
     sv = v2["secondaryVariant"]
     L += ["", f"**Secondary variant `{sv['name']}`** (pre-registered; slope k = ln 10, descriptor noise SD {sv['h_sd']}; evaluated on v2 rows only): "
               f"overall {_rate(sv['overall'])}; `present` {_rate(sv['present'])}; `absent/low` {_rate(sv['low'])}. "
               "On these rows it gives no evidence for or against replacing the primary model, which stays the default."]
+    return L
+
+
+def artemisinin_section(art: dict, m4s: dict) -> list[str]:
+    import pandas as pd
+    de = m4s.get("rangeDescriptorError", {})
+    L = ["### Artemisinin known case: a borderline result", "",
+         f"Against the criteria fixed before the model was run, artemisinin is a **{art['result']}**. "
+         "The criteria were: the heat flag fires, the cold-water median is below 0.30, and the low-temperature nonpolar median is above 0.60. "
+         "All three hold for the medians. The result is *borderline*, not a clean pass, because the 5th–95th ranges cross the thresholds.",
+         f"Since this version the ranges also include descriptor error (Normal SD {de.get('sd', 'unknown')} logP units, from the Crippen "
+         f"MAE {de.get('mae', 'unknown')}), which widens them further. The medians are unchanged. "
+         "Source: `data/interim/m4/artemisinin_check.json`.", "",
+         "| Preparation | Median | 5th–95th (incl. descriptor error) | 5th–95th (model only) | Solvent | Heat | Filtration | Acidity |",
+         "|---|---|---|---|---|---|---|---|"]
+    for lab, r in art["predictions"].items():
+        d, mo = r["drivers"], r.get("rangeModelOnly") or [r["low"], r["high"]]
+        L.append(f"| {lab} | {r['likelihood']:.2f} | {r['low']:.2f}–{r['high']:.2f} | {mo[0]:.2f}–{mo[1]:.2f} | {d['solvent']:.2f} | "
+                 f"{d['heat']:.2f} | {d['filtration']:.2f} | {d['acidity']:.2f} |")
+    L += ["", "Drivers are the median per-factor multipliers. The cold-water infusion is filtered (filtration 1.00), so its value comes from "
+              "the solvent factor alone; the unfiltered variant shows how much the suspension assumption would add."]
+    v2 = pd.read_csv(ROOT / "data" / "reference" / "prep_literature_prereg_v2.csv")
+    a = v2[v2.compound.str.lower() == "artemisinin"]
+    if len(a):
+        r = a.iloc[0]
+        q = r.quote if len(r.quote) <= 420 else r.quote[:417].rsplit(" ", 1)[0] + " …"
+        L += ["", "**Sweet wormwood tea: a disagreement explained by extraction vs detection.** The pre-registered v2 check found "
+                  f"a report of artemisinin **{r.reported}** in *{r.plant}* ({r.modelPreparation}; {r.pmcid}, {r.licence}):", "",
+              f"> {q}", "",
+              f"The model's median for this preparation is **{r.predicted:.2f}** ({r.low:.2f}–{r.high:.2f}), below the 0.40 `present` "
+              "threshold, so the row scores as a **disagreement**.",
+              "",
+              "The model and the paper answer different questions:",
+              "- The model estimates the **fraction** of the plant's artemisinin that a hot-water infusion carries: a minority fraction, "
+              "because artemisinin is fairly lipophilic and its endoperoxide is heat-sensitive.",
+              "- The paper reports that artemisinin is **detected** in the tea at measurable concentrations. That depends on the fraction, "
+              "but also on how much artemisinin the leaves contain and on the assay's detection limit.",
+              "",
+              "A minority fraction of a high-content plant can still give a clearly measurable tea. LOTUS has no abundance data, so the model "
+              "cannot predict detection, and this row is not evidence that the predicted fraction is wrong (METHODS §9, 'Extraction is not "
+              "detection'). It is also not evidence that the fraction is right. A test of the fraction needs a paired comparison within one "
+              "plant and study, which is what v3 does."]
+    v3p = ROOT / "data" / "reference" / "prep_literature_prereg_v3_pairs.csv"
+    if v3p.exists():
+        p3 = pd.read_csv(v3p)
+        x = p3[(p3.compoundX.str.lower() == "artemisinin") | (p3.compoundY.str.lower() == "artemisinin")] if len(p3) else p3
+        L += ["", (f"v3 contains {len(x)} paired comparisons involving artemisinin "
+                   f"({int((x.agree == True).sum())} agree, {int((x.agree == False).sum())} disagree, {int(x.abstain.sum())} abstained)."  # noqa: E712
+                   if len(x) else "v3 found no table with paired artemisinin measurements, so the paired test does not reach artemisinin.")]
     return L
 
 
@@ -233,7 +328,7 @@ def water_section() -> list[str]:
             "- **Proposal (not adopted).** Fix the window slope at ln 10 (the slope of a two-phase partition equilibrium) and model descriptor "
             "error explicitly. This was pre-registered as the secondary variant and evaluated only on v2 rows (above). A solubility/dose "
             "term would need per-compound melting points or solubilities and plant-content ranges that the repo does not have; it is not proposed yet.",
-            f"- The recorded artemisinin result and every threshold are unchanged. Separately, {art_txt}."]
+            f"- The recorded artemisinin result and every threshold are unchanged. Separately, {art_txt}; see the artemisinin section above."]
 
 
 def toxicity_section() -> list[str]:
@@ -313,13 +408,8 @@ def build() -> str:
               "", "RDKit's error is larger on post-1999 data, which is consistent with (but does not prove) a training-overlap advantage on older data; "
               "RDKit still outperforms xTB on the post-1999 subset. xTB logP = log K(wet octanol / water) from ALPB `woctanol` and `water`."]
     L += ["", f"Default descriptor: **{val['default']}** (lower MAE). Caveat: Crippen's parameters were fitted to public logP data that may overlap this set; xTB is unfitted. 95% CIs are paired bootstrap (B = 2000).",
-          "", f"**Artemisinin known case: {art['result'].upper()}.** " + art["explanation"], "",
-          "| Preparation | Predicted likelihood (5th–95th pct) | Solvent | Heat | Filtration | Acidity |", "|---|---|---|---|---|---|"]
-    for lab, r in art["predictions"].items():
-        d = r["drivers"]
-        L.append(f"| {lab} | {r['likelihood']:.2f} ({r['low']:.2f}–{r['high']:.2f}) | {d['solvent']:.2f} | {d['heat']:.2f} | {d['filtration']:.2f} | {d['acidity']:.2f} |")
-    L += ["", "Drivers are the median per-factor multipliers. The cold-water infusion is filtered (filtration 1.00), so its value comes from the solvent factor alone; "
-          "the unfiltered variant shows how much the suspension assumption would add."]
+          ""]
+    L += artemisinin_section(art, m4s)
     L += literature_sections() + water_section() + toxicity_section()
     L += ["", f"Profiles: {m4s['profiles']['species']} species × {m4s['profiles']['preparations']} preparations "
           f"({m4s['profiles']['profiles']} profiles, {m4s['profiles']['compoundEntries']:,} compound estimates) in `site-data/profiles/` (one file per species, `index.json`; full file in `data/release/profiles_full.json.gz`; model `{m4s['modelVersion']}`). "

@@ -46,7 +46,7 @@ EEBO-TCP availability statement (A35365), verbatim:
 | Wikipedia, *List of poisonous plants* (rev 1383132551) | Known-toxicity screen for M2's toxic-confusion check only (no longer used for the study-set column) | CC BY-SA 4.0; the page is tagged by its editors as needing expert review | **used** (screen only; not a safety rating) |
 | European Medicines Agency (HMPC herbal monographs, public summaries, public statements) | Study-set toxicity entries (one quoted sentence per species) | Each PDF states: "Reproduction is authorised provided the source is acknowledged." (checked in every fetched document) | **used** (attributed short quotes) |
 | Crossref REST API | Publication years of logP sources (training-overlap proxy) | Crossref metadata: CC0 | **used** (M4) |
-| Lewis & Short, *A Latin Dictionary* (1879), PerseusDL lexica TEI | Drafted Pliny name identifications (provisional) | **CC BY-SA 4.0** (repository licence) | **used** (provisional drafts) |
+| Lewis & Short, *A Latin Dictionary* (1879), PerseusDL lexica TEI | Drafted Pliny name identifications and the genus-signal audit (short quoted definitions; provisional) | **CC BY-SA 4.0** (repository licence) | **used** (provisional drafts) |
 | English Wikipedia (article wikitext) | Drafted Culpeper name identifications (provisional) | CC BY-SA 4.0 | **used** (provisional drafts) |
 | xtb 6.7.1 (Grimme group, conda-forge) | GFN2-xTB solvation free energies | LGPL-3.0 (software) | **used** (M4), installed locally in `.tools/` |
 
@@ -110,3 +110,9 @@ Only short quotations (one sentence each) from openly licensed articles are stor
 | PMC12522648 | study-set toxicity (*Citrullus colocynthis*) | CC BY-NC-ND 4.0 |
 | PMC4890191 | study-set toxicity (*Cotinus coggygria*) | CC BY-NC-ND 4.0 |
 | PMC8949886 | study-set toxicity (*Dioscorea communis*) | CC BY 4.0 |
+| PMC11717056 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY 4.0 |
+| PMC5578075 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY 4.0 |
+| PMC8746171 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY 4.0 |
+| PMC9000270 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY 4.0 |
+| PMC9218236 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY-NC-ND 4.0 |
+| PMC9504179 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY 4.0 |

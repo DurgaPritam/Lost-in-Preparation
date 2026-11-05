@@ -10,7 +10,7 @@ from contract import models as C
 
 from .. import metrics_store
 from ..paths import INTERIM, ROOT, SITE_DATA
-from . import chem, literature, prereg_literature, prereg_v2, water_calibration, xtb
+from . import chem, literature, prereg_literature, prereg_v2, prereg_v3, water_calibration, xtb
 from . import model as M
 
 OUT = INTERIM / "m4"
@@ -218,10 +218,29 @@ def main() -> dict:
             v2m[key] = C.not_computed(f"no {block} rows met the v2 rule")
     metrics_store.update_provisional("prepModelVsLiterature_preregistered_v2", C.ProvisionalSection(
         basis=prereg_v2.BASIS, label=prereg_v2.LABEL, metrics=v2m))
+    v3 = prereg_v3.evaluate(cfg)
+    v3m = {}
+    pr = v3.get("primary") or {}
+    if pr.get("meanPerArticleAgreement") is not None:
+        v3m["meanPerArticleAgreement"] = C.Metric(
+            status="computed", value=pr["meanPerArticleAgreement"], low=pr["ci95"][0], high=pr["ci95"][1], n=v3["articlesScored"],
+            sourceFile="data/interim/m4/literature_prereg_v3.json",
+            note=f"PRE-REGISTERED v3 ({prereg_v3.REGISTRATION}); paired within-plant sign of the double ratio; mean of per-article "
+                 f"agreement over {v3['articlesScored']} articles ({v3['scored']} scored pairs, {v3['abstained']} abstained); "
+                 f"cluster bootstrap 95% CI; verdict: {pr['verdict']}")
+        pp = v3["pooledPairAgreement"]
+        v3m["pooledPairAgreement"] = C.Metric(status="computed", value=pp["rate"], n=pp["scored"],
+                                              sourceFile="data/interim/m4/literature_prereg_v3.json",
+                                              note=f"descriptive; {pp['agree']}/{pp['scored']} scored pairs agree; pairs within an article are not independent")
+    else:
+        v3m["meanPerArticleAgreement"] = C.not_computed("no article met the v3 rule")
+    metrics_store.update_provisional("prepModelVsLiterature_preregistered_v3", C.ProvisionalSection(
+        basis=prereg_v3.BASIS, label=prereg_v3.LABEL, metrics=v3m))
     calib = water_calibration.run()
     summary = {"descriptor": descriptor, "rangeDescriptorError": M.descriptor_sd(descriptor), "literatureAgreementExploratory": f"{lit['agree']}/{lit['n']}",
                "literatureAgreementPreregistered": f"{pre['agree']}/{pre['rowsFound']}",
                "literatureAgreementPreregisteredV2": f"{v2['primary']['overall']['agree']}/{v2['primary']['overall']['n']}",
+               "literaturePairedV3": {k: v3.get(k) for k in ("articles", "articlesScored", "pairs", "scored", "abstained", "primary")},
                "waterCalibration": calib["crossings"], "modelVersion": M.config_version(cfg), "xtbVersion": xtb.version(),
                "artemisinin": case["result"], "profiles": prof, "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     (OUT / "m4_summary.json").write_text(json.dumps(summary, indent=2))

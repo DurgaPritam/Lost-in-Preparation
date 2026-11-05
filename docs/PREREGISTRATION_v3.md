@@ -171,4 +171,13 @@ Nothing else changes: plants, queries, eligibility, outcome, thresholds and anal
 
 ## Deviations
 
-None so far.
+None. The run used the frozen model and the registered rule, as amended before collection (Amendment 1). Results are in [RESULTS.md](../RESULTS.md), generated from `data/interim/m4/literature_prereg_v3.json`.
+
+**Implementation clarifications.** None of these changes a rule.
+- Model medians use `seed_offset` equal to the preparation's index in the grid, as for the published profiles.
+- When one LOTUS label names several Wikidata items, the item with the lowest QID is used, as in v2.
+- "First number in the cell" is applied literally: a thousands separator such as `1,234.5` is not handled and reads as 1.
+
+**Post-hoc notes** (not registered; basis `ai_post_hoc_audit_unverified`). Reported beside the registered result, never instead of it.
+- One scored pair (PMC9504179) comes from columns for a second species in the same table (*Alnus glutinosa*), not the target plant.
+- One article supplies most of the scored pairs, so pooled pair agreement differs from the registered per-article mean.

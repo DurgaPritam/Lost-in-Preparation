@@ -1,6 +1,6 @@
 {
   "contractVersion": "1.1",
-  "generatedAt": "2026-11-05T16:46:41+00:00",
+  "generatedAt": "2026-11-05T17:02:58+00:00",
   "pipelineVersion": "0.1.0",
   "mock": false,
   "extraction": {
@@ -3585,6 +3585,31 @@
           "n": 2,
           "sourceFile": "data/interim/m4/literature_prereg_v2.json",
           "note": "PRE-REGISTERED v2 (docs/PREREGISTRATION_v2.md (commit 9c36f68)); low: 0/2 rows agree; quota 15 present + 15 low, found 15 + 2, rule not relaxed; Wilson 95% CI"
+        }
+      }
+    },
+    "prepModelVsLiterature_preregistered_v3": {
+      "basis": "ai_curated_literature_reference",
+      "label": "PRE-REGISTERED v3 (paired, within plant) literature check, provisional; AI-written rule and code, not human-curated",
+      "extraction": null,
+      "metrics": {
+        "meanPerArticleAgreement": {
+          "status": "computed",
+          "value": 0.62,
+          "low": 0.22,
+          "high": 1.0,
+          "n": 5,
+          "sourceFile": "data/interim/m4/literature_prereg_v3.json",
+          "note": "PRE-REGISTERED v3 (docs/PREREGISTRATION_v3.md (commit 7bc28ab; Amendment 1 in 99e120e)); paired within-plant sign of the double ratio; mean of per-article agreement over 5 articles (15 scored pairs, 5 abstained); cluster bootstrap 95% CI; verdict: not distinguishable from chance"
+        },
+        "pooledPairAgreement": {
+          "status": "computed",
+          "value": 0.3333,
+          "low": null,
+          "high": null,
+          "n": 15,
+          "sourceFile": "data/interim/m4/literature_prereg_v3.json",
+          "note": "descriptive; 5/15 scored pairs agree; pairs within an article are not independent"
         }
       }
     }
