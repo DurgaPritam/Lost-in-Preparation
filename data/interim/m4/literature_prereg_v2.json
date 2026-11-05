@@ -1,0 +1,3869 @@
+{
+  "registration": "docs/PREREGISTRATION_v2.md (commit 9c36f68)",
+  "label": "PRE-REGISTERED v2 (aqueous preparations) literature check, provisional; AI-written rule and code, not human-curated",
+  "basis": "ai_curated_literature_reference",
+  "modelVersion": "prep-model:f4c4c5ef8a",
+  "thresholds": {
+    "present_min": 0.4,
+    "absent_max": 0.3
+  },
+  "quota": {
+    "present": 15,
+    "low": 15
+  },
+  "found": {
+    "present": 15,
+    "low": 2
+  },
+  "primary": {
+    "overall": {
+      "agree": 13,
+      "n": 17,
+      "rate": 0.7647,
+      "ci": [
+        0.5274,
+        0.9045
+      ]
+    },
+    "present": {
+      "agree": 13,
+      "n": 15,
+      "rate": 0.8667,
+      "ci": [
+        0.6212,
+        0.9626
+      ]
+    },
+    "low": {
+      "agree": 0,
+      "n": 2,
+      "rate": 0.0,
+      "ci": [
+        0.0,
+        0.6576
+      ]
+    },
+    "byPreparation": {
+      "decoction in water": {
+        "agree": 2,
+        "n": 3
+      },
+      "fresh juice": {
+        "agree": 2,
+        "n": 2
+      },
+      "hot water infusion (tea)": {
+        "agree": 9,
+        "n": 12
+      }
+    }
+  },
+  "secondaryVariant": {
+    "name": "water-partition-slope",
+    "k_fixed": 2.302585092994046,
+    "h_sd": 0.8374,
+    "evaluatedOn": "v2 rows only",
+    "overall": {
+      "agree": 13,
+      "n": 17,
+      "rate": 0.7647,
+      "ci": [
+        0.5274,
+        0.9045
+      ]
+    },
+    "present": {
+      "agree": 13,
+      "n": 15,
+      "rate": 0.8667,
+      "ci": [
+        0.6212,
+        0.9626
+      ]
+    },
+    "low": {
+      "agree": 0,
+      "n": 2,
+      "rate": 0.0,
+      "ci": [
+        0.0,
+        0.6576
+      ]
+    },
+    "byPreparation": {
+      "decoction in water": {
+        "agree": 2,
+        "n": 3
+      },
+      "fresh juice": {
+        "agree": 2,
+        "n": 2
+      },
+      "hot water infusion (tea)": {
+        "agree": 9,
+        "n": 12
+      }
+    }
+  },
+  "postHocAudit": {
+    "basis": "ai_post_hoc_audit_unverified",
+    "label": "POST-HOC row audit by the AI (not registered; not human-verified)",
+    "counts": {
+      "valid": 13,
+      "misread": 4
+    },
+    "misread": [
+      {
+        "plant": "Agrimonia eupatoria",
+        "compound": "apigenin",
+        "pmcid": "PMC11819889",
+        "reason": "sentence reports apigenin 7-O-glucoside; the v1 synonym list lacks the spaced spelling, so the aglycone matched"
+      },
+      {
+        "plant": "Glycyrrhiza glabra",
+        "compound": "phenol",
+        "pmcid": "PMC5603879",
+        "reason": "'total phenol content' of rose-petal teas; not a compound report and not about licorice"
+      },
+      {
+        "plant": "Raphanus sativus",
+        "compound": "sucrose",
+        "pmcid": "PMC11171837",
+        "reason": "sucrose added in a kombucha recipe; not a constituent extracted from the plant"
+      },
+      {
+        "plant": "Carum carvi",
+        "compound": "rutin",
+        "pmcid": "PMC12715987",
+        "reason": "sentence is about chamomile aqueous extracts, cited inside a caraway article"
+      }
+    ],
+    "validRowsPrimary": {
+      "overall": {
+        "agree": 10,
+        "n": 13,
+        "rate": 0.7692,
+        "ci": [
+          0.4974,
+          0.9182
+        ]
+      },
+      "present": {
+        "agree": 10,
+        "n": 11,
+        "rate": 0.9091,
+        "ci": [
+          0.6226,
+          0.9838
+        ]
+      },
+      "low": {
+        "agree": 0,
+        "n": 2,
+        "rate": 0.0,
+        "ci": [
+          0.0,
+          0.6576
+        ]
+      },
+      "byPreparation": {
+        "decoction in water": {
+          "agree": 2,
+          "n": 2
+        },
+        "fresh juice": {
+          "agree": 2,
+          "n": 2
+        },
+        "hot water infusion (tea)": {
+          "agree": 6,
+          "n": 9
+        }
+      }
+    },
+    "validRowsVariant": {
+      "overall": {
+        "agree": 10,
+        "n": 13,
+        "rate": 0.7692,
+        "ci": [
+          0.4974,
+          0.9182
+        ]
+      },
+      "present": {
+        "agree": 10,
+        "n": 11,
+        "rate": 0.9091,
+        "ci": [
+          0.6226,
+          0.9838
+        ]
+      },
+      "low": {
+        "agree": 0,
+        "n": 2,
+        "rate": 0.0,
+        "ci": [
+          0.0,
+          0.6576
+        ]
+      },
+      "byPreparation": {
+        "decoction in water": {
+          "agree": 2,
+          "n": 2
+        },
+        "fresh juice": {
+          "agree": 2,
+          "n": 2
+        },
+        "hot water infusion (tea)": {
+          "agree": 6,
+          "n": 9
+        }
+      }
+    }
+  },
+  "screening": {
+    "Artemisia absinthium": {
+      "queries": [
+        "Artemisia absinthium (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Artemisia absinthium (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC10834404",
+        "PMC6749517",
+        "PMC10304051",
+        "PMC12158117",
+        "PMC10045255",
+        "PMC12299115",
+        "PMC12610821",
+        "PMC8469600",
+        "PMC6720735",
+        "PMC13709687",
+        "PMC7024177",
+        "PMC7345338",
+        "PMC8953551",
+        "PMC5922303",
+        "PMC9413674",
+        "PMC10671751",
+        "PMC7230466",
+        "PMC7570121",
+        "PMC9571683"
+      ],
+      "lotusLabels": 153,
+      "screened": [
+        [
+          "PMC10834404",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6749517",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10304051",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12158117",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10045255",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12299115",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12610821",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8469600",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6720735",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13709687",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7024177",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7345338",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC8953551",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5922303",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9413674",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10671751",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7230466",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7570121",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9571683",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Agrimonia eupatoria": {
+      "queries": [
+        "Agrimonia eupatoria (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Agrimonia eupatoria (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC11819889",
+        "PMC6332114",
+        "PMC8705483",
+        "PMC9966964",
+        "PMC12715982",
+        "PMC9654828",
+        "PMC12735750",
+        "PMC13363414",
+        "PMC12785535",
+        "PMC5937015",
+        "PMC8603700",
+        "PMC11674006",
+        "PMC9087068",
+        "PMC5405390",
+        "PMC6273028",
+        "PMC9502318",
+        "PMC9143967"
+      ],
+      "lotusLabels": 21,
+      "screened": [
+        [
+          "PMC11819889",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC6332114",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8705483",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9966964",
+          "eligible: 2 rows"
+        ]
+      ]
+    },
+    "Crocus sativus": {
+      "queries": [
+        "Crocus sativus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Crocus sativus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC8746171",
+        "PMC10363081",
+        "PMC3813218",
+        "PMC11945028",
+        "PMC3425182",
+        "PMC3772802",
+        "PMC8181092",
+        "PMC4923465",
+        "PMC7943274",
+        "PMC6257777",
+        "PMC10144431",
+        "PMC8860555",
+        "PMC6696252",
+        "PMC9822159",
+        "PMC6300793",
+        "PMC101384",
+        "PMC10252962",
+        "PMC6482475",
+        "PMC7746242"
+      ],
+      "lotusLabels": 150,
+      "screened": [
+        [
+          "PMC8746171",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10363081",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC3813218",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC11945028",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC3425182",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3772802",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8181092",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC4923465",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7943274",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6257777",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10144431",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8860555",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6696252",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC9822159",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6300793",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC101384",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10252962",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6482475",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC7746242",
+          "ineligible: no analytical-chemistry term"
+        ]
+      ]
+    },
+    "Symphytum officinale": {
+      "queries": [
+        "Symphytum officinale (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Symphytum officinale (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC7070662",
+        "PMC9297162",
+        "PMC11178571",
+        "PMC9148405",
+        "PMC7221777",
+        "PMC6363250",
+        "PMC9966102",
+        "PMC11238631",
+        "PMC3851815",
+        "PMC7010083",
+        "PMC5580953",
+        "PMC1831764",
+        "PMC13079377",
+        "PMC2361893",
+        "PMC7998174",
+        "PMC10970371",
+        "PMC8471851",
+        "PMC3143080",
+        "PMC13306179"
+      ],
+      "lotusLabels": 33,
+      "screened": [
+        [
+          "PMC7070662",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9297162",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC11178571",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9148405",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7221777",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6363250",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC9966102",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11238631",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3851815",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7010083",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5580953",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC1831764",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13079377",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC2361893",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC7998174",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10970371",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8471851",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC3143080",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13306179",
+          "eligible: 2 rows"
+        ]
+      ]
+    },
+    "Lavandula angustifolia": {
+      "queries": [
+        "Lavandula angustifolia (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Lavandula angustifolia (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC10586085",
+        "PMC6382167",
+        "PMC8303575",
+        "PMC5332903",
+        "PMC8619938",
+        "PMC11385625",
+        "PMC12487077",
+        "PMC11590660",
+        "PMC8143373",
+        "PMC8392121",
+        "PMC9821988",
+        "PMC9027103",
+        "PMC10574385",
+        "PMC12217849",
+        "PMC6615620",
+        "PMC13290050",
+        "PMC6257708",
+        "PMC11256343",
+        "PMC5560344"
+      ],
+      "lotusLabels": 107,
+      "screened": [
+        [
+          "PMC10586085",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6382167",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8303575",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5332903",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8619938",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11385625",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12487077",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11590660",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC8143373",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8392121",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9821988",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9027103",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC10574385",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12217849",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6615620",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13290050",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC6257708",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11256343",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5560344",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Ajuga chamaepitys": {
+      "queries": [
+        "Ajuga chamaepitys (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Ajuga chamaepitys (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC11085171",
+        "PMC6515068",
+        "PMC11568135",
+        "PMC5937106",
+        "PMC5840282",
+        "PMC11750921",
+        "PMC12250342",
+        "PMC11274650",
+        "PMC9303584",
+        "PMC7601952",
+        "PMC8138454",
+        "PMC12344866",
+        "PMC12899098",
+        "PMC13468636",
+        "PMC9607272",
+        "PMC12898832",
+        "PMC10942012"
+      ],
+      "lotusLabels": 46,
+      "screened": [
+        [
+          "PMC11085171",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6515068",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11568135",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5937106",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5840282",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11750921",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12250342",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11274650",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9303584",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7601952",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8138454",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12344866",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12899098",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13468636",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9607272",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12898832",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10942012",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Ranunculus ficaria": {
+      "queries": [
+        "Ranunculus ficaria (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Ranunculus ficaria (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC8834290",
+        "PMC6963662",
+        "PMC11903575",
+        "PMC4675496",
+        "PMC4342611",
+        "PMC1859986",
+        "PMC6364442",
+        "PMC8501720",
+        "PMC9227133",
+        "PMC10936038",
+        "PMC3998745",
+        "PMC10344124"
+      ],
+      "lotusLabels": 16,
+      "screened": [
+        [
+          "PMC8834290",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6963662",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11903575",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4675496",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4342611",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC1859986",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6364442",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8501720",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9227133",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10936038",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3998745",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10344124",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Glycyrrhiza glabra": {
+      "queries": [
+        "Glycyrrhiza glabra (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Glycyrrhiza glabra (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC10133594",
+        "PMC7122586",
+        "PMC5937553",
+        "PMC9218236",
+        "PMC12610661",
+        "PMC4391967",
+        "PMC12620321",
+        "PMC3886544",
+        "PMC7765465",
+        "PMC5603879",
+        "PMC8308790",
+        "PMC9448619",
+        "PMC9692378",
+        "PMC11357027",
+        "PMC10029886",
+        "PMC3897011",
+        "PMC6533940",
+        "PMC11940230",
+        "PMC4571243",
+        "PMC5748454"
+      ],
+      "lotusLabels": 450,
+      "screened": [
+        [
+          "PMC10133594",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7122586",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5937553",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9218236",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12610661",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4391967",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12620321",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3886544",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7765465",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC5603879",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC8308790",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC9448619",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9692378",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11357027",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10029886",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC3897011",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6533940",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11940230",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4571243",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5748454",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Melissa officinalis": {
+      "queries": [
+        "Melissa officinalis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Melissa officinalis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC8073307",
+        "PMC13209621",
+        "PMC5079149",
+        "PMC13514711",
+        "PMC12736304",
+        "PMC10719243",
+        "PMC9420213",
+        "PMC7448011",
+        "PMC10381560",
+        "PMC4464394",
+        "PMC12639085",
+        "PMC5871149",
+        "PMC10819686",
+        "PMC8998931",
+        "PMC10000423",
+        "PMC11283336",
+        "PMC3703115",
+        "PMC3115325",
+        "PMC4576163"
+      ],
+      "lotusLabels": 138,
+      "screened": [
+        [
+          "PMC8073307",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC13209621",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5079149",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13514711",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12736304",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10719243",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9420213",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7448011",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10381560",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4464394",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12639085",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5871149",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10819686",
+          "excluded: exploratory or v1 set"
+        ],
+        [
+          "PMC8998931",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10000423",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11283336",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3703115",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3115325",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC4576163",
+          "ineligible: no analytical-chemistry term"
+        ]
+      ]
+    },
+    "Hyssopus officinalis": {
+      "queries": [
+        "Hyssopus officinalis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Hyssopus officinalis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC9742021",
+        "PMC7762358",
+        "PMC9011010",
+        "PMC6918150",
+        "PMC11207635",
+        "PMC11013859",
+        "PMC8347075",
+        "PMC4032471",
+        "PMC13363395",
+        "PMC9601415",
+        "PMC9696917",
+        "PMC8776447",
+        "PMC11207324",
+        "PMC7020334",
+        "PMC3845980",
+        "PMC7256281",
+        "PMC9642917",
+        "PMC11825080"
+      ],
+      "lotusLabels": 80,
+      "screened": [
+        [
+          "PMC9742021",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC7762358",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9011010",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6918150",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11207635",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11013859",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8347075",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4032471",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13363395",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9601415",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9696917",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8776447",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11207324",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7020334",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC3845980",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7256281",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC9642917",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11825080",
+          "eligible: 0 rows"
+        ]
+      ]
+    },
+    "Pastinaca sativa": {
+      "queries": [
+        "Pastinaca sativa (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Pastinaca sativa (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC7070583",
+        "PMC10295423",
+        "PMC8303230",
+        "PMC8070520",
+        "PMC8540170",
+        "PMC11316762",
+        "PMC4137549",
+        "PMC7028039",
+        "PMC7009854",
+        "PMC7009620",
+        "PMC8010426",
+        "PMC12298367",
+        "PMC13150342",
+        "PMC13568229",
+        "PMC12612073",
+        "PMC7248852",
+        "PMC11355232",
+        "PMC12472832",
+        "PMC10221907"
+      ],
+      "lotusLabels": 23,
+      "screened": [
+        [
+          "PMC7070583",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10295423",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8303230",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8070520",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8540170",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11316762",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4137549",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7028039",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7009854",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7009620",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8010426",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC12298367",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13150342",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13568229",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12612073",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC7248852",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11355232",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12472832",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10221907",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Galium aparine": {
+      "queries": [
+        "Galium aparine (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Galium aparine (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC6963662",
+        "PMC7464609",
+        "PMC10707836",
+        "PMC12029887",
+        "PMC10820234",
+        "PMC11672921",
+        "PMC11204821",
+        "PMC6480365",
+        "PMC13591116",
+        "PMC7911030",
+        "PMC13552565",
+        "PMC10934713",
+        "PMC10056973",
+        "PMC13694211",
+        "PMC10291498",
+        "PMC13667112",
+        "PMC13118831",
+        "PMC1831764"
+      ],
+      "lotusLabels": 18,
+      "screened": [
+        [
+          "PMC6963662",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7464609",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10707836",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12029887",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10820234",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11672921",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11204821",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6480365",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13591116",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7911030",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13552565",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC10934713",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC10056973",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13694211",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10291498",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13667112",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13118831",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC1831764",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Centaurium erythraea": {
+      "queries": [
+        "Centaurium erythraea (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Centaurium erythraea (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC7823438",
+        "PMC8298154",
+        "PMC12294314",
+        "PMC4665485",
+        "PMC6165143",
+        "PMC9419333",
+        "PMC9370734",
+        "PMC6801303",
+        "PMC10857127",
+        "PMC12378322",
+        "PMC6832739",
+        "PMC12639085",
+        "PMC6268060",
+        "PMC10194893",
+        "PMC12655704",
+        "PMC7786062",
+        "PMC12540964",
+        "PMC6963686",
+        "PMC9866427"
+      ],
+      "lotusLabels": 36,
+      "screened": [
+        [
+          "PMC7823438",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC8298154",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12294314",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4665485",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6165143",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9419333",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9370734",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6801303",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10857127",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12378322",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6832739",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12639085",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6268060",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10194893",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC12655704",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7786062",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12540964",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC6963686",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9866427",
+          "ineligible: no analytical-chemistry term"
+        ]
+      ]
+    },
+    "Chelidonium majus": {
+      "queries": [
+        "Chelidonium majus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Chelidonium majus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC11055330",
+        "PMC6464174",
+        "PMC6642187",
+        "PMC8746069",
+        "PMC8068163",
+        "PMC3591406",
+        "PMC4131470",
+        "PMC6139012",
+        "PMC4662829",
+        "PMC8746401",
+        "PMC11002451",
+        "PMC13118405",
+        "PMC12563533",
+        "PMC13122437",
+        "PMC12430483",
+        "PMC4804397",
+        "PMC6724175",
+        "PMC8250801",
+        "PMC5912214"
+      ],
+      "lotusLabels": 69,
+      "screened": [
+        [
+          "PMC11055330",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6464174",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6642187",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8746069",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8068163",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3591406",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC4131470",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6139012",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4662829",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8746401",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11002451",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13118405",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC12563533",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13122437",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12430483",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4804397",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6724175",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8250801",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5912214",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Hyoscyamus niger": {
+      "queries": [
+        "Hyoscyamus niger (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Hyoscyamus niger (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC10301465",
+        "PMC9961018",
+        "PMC6748424",
+        "PMC6546908",
+        "PMC3989150",
+        "PMC8833975",
+        "PMC13466245",
+        "PMC9013366",
+        "PMC13190978",
+        "PMC5668216",
+        "PMC8251320",
+        "PMC12398075",
+        "PMC6218400",
+        "PMC11493190",
+        "PMC485983",
+        "PMC4224707",
+        "PMC9478010",
+        "PMC8224515",
+        "PMC7899348"
+      ],
+      "lotusLabels": 77,
+      "screened": [
+        [
+          "PMC10301465",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9961018",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6748424",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6546908",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3989150",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8833975",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13466245",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9013366",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13190978",
+          "fetch failed: HTTPError"
+        ],
+        [
+          "PMC5668216",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8251320",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12398075",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6218400",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11493190",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC485983",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC4224707",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9478010",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8224515",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7899348",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Raphanus sativus": {
+      "queries": [
+        "Raphanus sativus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Raphanus sativus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC11171837",
+        "PMC3190960",
+        "PMC7353243",
+        "PMC9489735",
+        "PMC9705491",
+        "PMC12418034",
+        "PMC12641771",
+        "PMC6813128",
+        "PMC3405960",
+        "PMC12653370",
+        "PMC8651685",
+        "PMC7697618",
+        "PMC4202426",
+        "PMC7491738",
+        "PMC3471002",
+        "PMC8618093",
+        "PMC10421947",
+        "PMC4795736",
+        "PMC6412475"
+      ],
+      "lotusLabels": 220,
+      "screened": [
+        [
+          "PMC11171837",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC3190960",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC7353243",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC9489735",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9705491",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12418034",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12641771",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6813128",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC3405960",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12653370",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8651685",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7697618",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC4202426",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7491738",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3471002",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8618093",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC10421947",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC4795736",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6412475",
+          "eligible: 0 rows"
+        ]
+      ]
+    },
+    "Laser trilobum": {
+      "queries": [
+        "Laser trilobum (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Laser trilobum (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC6769964",
+        "PMC11293126",
+        "PMC5486105",
+        "PMC7762042",
+        "PMC7554841",
+        "PMC4961989",
+        "PMC2771938",
+        "PMC11589588",
+        "PMC10420942",
+        "PMC6720059",
+        "PMC3257104",
+        "PMC3112450"
+      ],
+      "lotusLabels": 22,
+      "screened": [
+        [
+          "PMC6769964",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11293126",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5486105",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7762042",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7554841",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4961989",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC2771938",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11589588",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10420942",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6720059",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3257104",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3112450",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Salvia sclarea": {
+      "queries": [
+        "Salvia sclarea (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Salvia sclarea (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC13165463",
+        "PMC12381299",
+        "PMC13259035",
+        "PMC8877361",
+        "PMC11988581",
+        "PMC9457740",
+        "PMC8912324",
+        "PMC8911904",
+        "PMC11901606",
+        "PMC13075098",
+        "PMC6321363",
+        "PMC11597310",
+        "PMC13609310",
+        "PMC6721217",
+        "PMC12480542",
+        "PMC13653116",
+        "PMC10740457"
+      ],
+      "lotusLabels": 133,
+      "screened": [
+        [
+          "PMC13165463",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12381299",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13259035",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8877361",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11988581",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9457740",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8912324",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8911904",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11901606",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13075098",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6321363",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11597310",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13609310",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6721217",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12480542",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13653116",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10740457",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Euphorbia antiquorum": {
+      "queries": [
+        "Euphorbia antiquorum (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Euphorbia antiquorum (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC6723572",
+        "PMC10343448",
+        "PMC11772315",
+        "PMC11821031",
+        "PMC11943701",
+        "PMC13210672",
+        "PMC10709644",
+        "PMC3037948",
+        "PMC13425043",
+        "PMC13625436",
+        "PMC12168294",
+        "PMC4665026",
+        "PMC7504773",
+        "PMC6033956",
+        "PMC5137365",
+        "PMC3249903",
+        "PMC8087071"
+      ],
+      "lotusLabels": 43,
+      "screened": [
+        [
+          "PMC6723572",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10343448",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11772315",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11821031",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11943701",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13210672",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10709644",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3037948",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13425043",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13625436",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12168294",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4665026",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7504773",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6033956",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5137365",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3249903",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8087071",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Papaver somniferum": {
+      "queries": [
+        "Papaver somniferum (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Papaver somniferum (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC11522673",
+        "PMC9228061",
+        "PMC5498505",
+        "PMC8307897",
+        "PMC5095398",
+        "PMC9330423",
+        "PMC7009406",
+        "PMC10410162",
+        "PMC6120201",
+        "PMC12447544",
+        "PMC8511716",
+        "PMC9943628",
+        "PMC6070170",
+        "PMC10154933",
+        "PMC6930461",
+        "PMC9974928",
+        "PMC9071912",
+        "PMC3349164",
+        "PMC5157672"
+      ],
+      "lotusLabels": 105,
+      "screened": [
+        [
+          "PMC11522673",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9228061",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5498505",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8307897",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5095398",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9330423",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7009406",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10410162",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6120201",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12447544",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8511716",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9943628",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6070170",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC10154933",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6930461",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9974928",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9071912",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3349164",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5157672",
+          "ineligible: no analytical-chemistry term"
+        ]
+      ]
+    },
+    "Humulus lupulus": {
+      "queries": [
+        "Humulus lupulus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Humulus lupulus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC2667274",
+        "PMC11281705",
+        "PMC10531422",
+        "PMC6081516",
+        "PMC1764547",
+        "PMC10187572",
+        "PMC6981390",
+        "PMC10459968",
+        "PMC4280114",
+        "PMC10893079",
+        "PMC11772520",
+        "PMC12110776",
+        "PMC6272297",
+        "PMC3794639",
+        "PMC12941662",
+        "PMC6627407",
+        "PMC1852439",
+        "PMC12210321"
+      ],
+      "lotusLabels": 463,
+      "screened": [
+        [
+          "PMC2667274",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11281705",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10531422",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6081516",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC1764547",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10187572",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6981390",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10459968",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4280114",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10893079",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11772520",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12110776",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC6272297",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC3794639",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12941662",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6627407",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC1852439",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12210321",
+          "eligible: 0 rows"
+        ]
+      ]
+    },
+    "Allium cepa": {
+      "queries": [
+        "Allium cepa (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Allium cepa (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC10782719",
+        "PMC8124543",
+        "PMC7142876",
+        "PMC13346529",
+        "PMC8388710",
+        "PMC12830699",
+        "PMC10719243",
+        "PMC4425148",
+        "PMC12373914",
+        "PMC12388284",
+        "PMC7014759",
+        "PMC8789449",
+        "PMC7919894",
+        "PMC3208171",
+        "PMC8723811",
+        "PMC6337254",
+        "PMC6416036",
+        "PMC9307653"
+      ],
+      "lotusLabels": 309,
+      "screened": [
+        [
+          "PMC10782719",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8124543",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC7142876",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13346529",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8388710",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12830699",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10719243",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4425148",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12373914",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12388284",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC7014759",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8789449",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7919894",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC3208171",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8723811",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6337254",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6416036",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9307653",
+          "eligible: 1 rows"
+        ]
+      ]
+    },
+    "Coriandrum sativum": {
+      "queries": [
+        "Coriandrum sativum (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Coriandrum sativum (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC9013364",
+        "PMC4028854",
+        "PMC9729621",
+        "PMC10384636",
+        "PMC12655154",
+        "PMC13633974",
+        "PMC8231812",
+        "PMC9532476",
+        "PMC10844193",
+        "PMC8400534",
+        "PMC12820311",
+        "PMC8747064",
+        "PMC3895561",
+        "PMC12946750",
+        "PMC4961904",
+        "PMC3070620",
+        "PMC9314633",
+        "PMC6276458",
+        "PMC12126560"
+      ],
+      "lotusLabels": 157,
+      "screened": [
+        [
+          "PMC9013364",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC4028854",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9729621",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10384636",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12655154",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13633974",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8231812",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9532476",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10844193",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8400534",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12820311",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC8747064",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC3895561",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12946750",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4961904",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3070620",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9314633",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC6276458",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12126560",
+          "ineligible: no analytical-chemistry term"
+        ]
+      ]
+    },
+    "Carum carvi": {
+      "queries": [
+        "Carum carvi (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Carum carvi (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC12715987",
+        "PMC8231812",
+        "PMC8814089",
+        "PMC7278751",
+        "PMC4137549",
+        "PMC13677258",
+        "PMC11671646",
+        "PMC7999257",
+        "PMC8814255",
+        "PMC10684886",
+        "PMC4310175",
+        "PMC13250129",
+        "PMC3210012",
+        "PMC7874545",
+        "PMC4876298",
+        "PMC10045241",
+        "PMC6328425",
+        "PMC6556360"
+      ],
+      "lotusLabels": 77,
+      "screened": [
+        [
+          "PMC12715987",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC8231812",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8814089",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7278751",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4137549",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13677258",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11671646",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7999257",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8814255",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10684886",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4310175",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13250129",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC3210012",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7874545",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC4876298",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10045241",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6328425",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC6556360",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Citrullus colocynthis": {
+      "queries": [
+        "Citrullus colocynthis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Citrullus colocynthis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC3609396",
+        "PMC7870401",
+        "PMC6831693",
+        "PMC7464609",
+        "PMC9101831",
+        "PMC9268169",
+        "PMC7387951",
+        "PMC11820313",
+        "PMC8389334",
+        "PMC2879607",
+        "PMC13245258",
+        "PMC9985790",
+        "PMC3956620",
+        "PMC9548430",
+        "PMC8879795",
+        "PMC6563254",
+        "PMC10258271",
+        "PMC10488440",
+        "PMC7051219"
+      ],
+      "lotusLabels": 71,
+      "screened": [
+        [
+          "PMC3609396",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7870401",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6831693",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7464609",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9101831",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9268169",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7387951",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11820313",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8389334",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC2879607",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13245258",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9985790",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3956620",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9548430",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8879795",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC6563254",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10258271",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10488440",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7051219",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Cotinus coggygria": {
+      "queries": [
+        "Cotinus coggygria (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Cotinus coggygria (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC13165090",
+        "PMC12430147",
+        "PMC8707839",
+        "PMC11944516",
+        "PMC10181090",
+        "PMC11769289",
+        "PMC11944460",
+        "PMC6099987",
+        "PMC12590105",
+        "PMC13164895",
+        "PMC4890191",
+        "PMC4628721",
+        "PMC3115326",
+        "PMC9825219",
+        "PMC8235186",
+        "PMC6273237",
+        "PMC8092975",
+        "PMC3524418",
+        "PMC11124858",
+        "PMC9659074"
+      ],
+      "lotusLabels": 42,
+      "screened": [
+        [
+          "PMC13165090",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12430147",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8707839",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11944516",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10181090",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11769289",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11944460",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6099987",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12590105",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13164895",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4890191",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4628721",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3115326",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9825219",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8235186",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6273237",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8092975",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3524418",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11124858",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9659074",
+          "eligible: 0 rows"
+        ]
+      ]
+    },
+    "Dioscorea communis": {
+      "queries": [
+        "Dioscorea communis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Dioscorea communis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC8949886",
+        "PMC9147247",
+        "PMC9026138",
+        "PMC12472744",
+        "PMC7028039",
+        "PMC5297730",
+        "PMC5014472",
+        "PMC9525488",
+        "PMC13416491",
+        "PMC6712541",
+        "PMC12024764",
+        "PMC8138454",
+        "PMC11124858",
+        "PMC11053949",
+        "PMC11590556",
+        "PMC10782642",
+        "PMC13306963",
+        "PMC13625436",
+        "PMC7990790"
+      ],
+      "lotusLabels": 38,
+      "screened": [
+        [
+          "PMC8949886",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9147247",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9026138",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12472744",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7028039",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5297730",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5014472",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9525488",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13416491",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6712541",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12024764",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8138454",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11124858",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11053949",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11590556",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10782642",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13306963",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13625436",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7990790",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Filipendula ulmaria": {
+      "queries": [
+        "Filipendula ulmaria (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Filipendula ulmaria (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC11504252",
+        "PMC10140895",
+        "PMC10146082",
+        "PMC9862637",
+        "PMC11085259",
+        "PMC13664561",
+        "PMC10818259",
+        "PMC12787829",
+        "PMC12348009",
+        "PMC8028050",
+        "PMC6155584",
+        "PMC9676638",
+        "PMC13404949",
+        "PMC10932411",
+        "PMC9861472",
+        "PMC10536773",
+        "PMC8433760",
+        "PMC8038090",
+        "PMC8620613",
+        "PMC7598702"
+      ],
+      "lotusLabels": 25,
+      "screened": [
+        [
+          "PMC11504252",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC10140895",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10146082",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9862637",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11085259",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13664561",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10818259",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12787829",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12348009",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8028050",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6155584",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9676638",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13404949",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10932411",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC9861472",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10536773",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC8433760",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC8038090",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8620613",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7598702",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Betonica officinalis": {
+      "queries": [
+        "Betonica officinalis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Betonica officinalis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC11125167",
+        "PMC10669438",
+        "PMC12811819",
+        "PMC13468080",
+        "PMC11102979",
+        "PMC13707522",
+        "PMC9601415",
+        "PMC12114707",
+        "PMC10684886",
+        "PMC3878028",
+        "PMC11597018",
+        "PMC3002800",
+        "PMC8138454",
+        "PMC7601302",
+        "PMC6321363",
+        "PMC7248853",
+        "PMC6364442",
+        "PMC8330883",
+        "PMC5964621",
+        "PMC8709469"
+      ],
+      "lotusLabels": 19,
+      "screened": [
+        [
+          "PMC11125167",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10669438",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12811819",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13468080",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11102979",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13707522",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9601415",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12114707",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10684886",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3878028",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11597018",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3002800",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8138454",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7601302",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6321363",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7248853",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6364442",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8330883",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC5964621",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8709469",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Moricandia arvensis": {
+      "queries": [
+        "Moricandia arvensis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Moricandia arvensis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC8834290",
+        "PMC9961018",
+        "PMC12151221",
+        "PMC13334044",
+        "PMC11354652",
+        "PMC9612249",
+        "PMC7180059",
+        "PMC11183227",
+        "PMC6259627",
+        "PMC5488430",
+        "PMC8266105",
+        "PMC8138454",
+        "PMC6278432",
+        "PMC12369213",
+        "PMC4784411",
+        "PMC11124858",
+        "PMC11507334",
+        "PMC7663331",
+        "PMC10199607",
+        "PMC7980561"
+      ],
+      "lotusLabels": 17,
+      "screened": [
+        [
+          "PMC8834290",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9961018",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12151221",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13334044",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11354652",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9612249",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7180059",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11183227",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6259627",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5488430",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8266105",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC8138454",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6278432",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12369213",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC4784411",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11124858",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11507334",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7663331",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10199607",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7980561",
+          "ineligible: title does not name the plant"
+        ]
+      ]
+    },
+    "Artemisia annua": {
+      "queries": [
+        "Artemisia annua (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Artemisia annua (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC3828274",
+        "PMC3558976",
+        "PMC11085156",
+        "PMC12299836",
+        "PMC5547396",
+        "PMC8301839",
+        "PMC4163138",
+        "PMC13478214",
+        "PMC12407398",
+        "PMC8189797",
+        "PMC6990969",
+        "PMC13380289",
+        "PMC9937997",
+        "PMC7855472",
+        "PMC13471599",
+        "PMC9870253",
+        "PMC13119536",
+        "PMC3098208",
+        "PMC13515305"
+      ],
+      "lotusLabels": 548,
+      "screened": [
+        [
+          "PMC3828274",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC3558976",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11085156",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12299836",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5547396",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8301839",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4163138",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13478214",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC12407398",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8189797",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6990969",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13380289",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC9937997",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC7855472",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13471599",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC9870253",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13119536",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC3098208",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC13515305",
+          "eligible: 0 rows"
+        ]
+      ]
+    },
+    "Matricaria chamomilla": {
+      "queries": [
+        "Matricaria chamomilla (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Matricaria chamomilla (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC9032859",
+        "PMC7729440",
+        "PMC6479860",
+        "PMC13323515",
+        "PMC10731808",
+        "PMC9822300",
+        "PMC9736673",
+        "PMC8508714",
+        "PMC10215379",
+        "PMC10193545",
+        "PMC7760056",
+        "PMC6049101",
+        "PMC13696899",
+        "PMC6830229",
+        "PMC11898972",
+        "PMC13363751",
+        "PMC2811788",
+        "PMC11311743",
+        "PMC4410481"
+      ],
+      "lotusLabels": 229,
+      "screened": [
+        [
+          "PMC9032859",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC7729440",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6479860",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13323515",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10731808",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9822300",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9736673",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8508714",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10215379",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10193545",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7760056",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6049101",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13696899",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC6830229",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11898972",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC13363751",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC2811788",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11311743",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC4410481",
+          "ineligible: no analytical-chemistry term"
+        ]
+      ]
+    },
+    "Mentha × piperita": {
+      "queries": [
+        "Mentha piperita (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Mentha piperita (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC8068125",
+        "PMC7321412",
+        "PMC9858046",
+        "PMC12736304",
+        "PMC11597729",
+        "PMC9505364",
+        "PMC10420823",
+        "PMC10056224",
+        "PMC6170267",
+        "PMC11988581",
+        "PMC9779088",
+        "PMC10764227",
+        "PMC3316159",
+        "PMC12249933",
+        "PMC12639085",
+        "PMC11431611",
+        "PMC6724175",
+        "PMC13074686",
+        "PMC13290042",
+        "PMC8675976"
+      ],
+      "lotusLabels": 135,
+      "screened": [
+        [
+          "PMC8068125",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC7321412",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9858046",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12736304",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11597729",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9505364",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10420823",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10056224",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6170267",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11988581",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC9779088",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10764227",
+          "ineligible: no analytical-chemistry term"
+        ],
+        [
+          "PMC3316159",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12249933",
+          "eligible: 1 rows"
+        ],
+        [
+          "PMC12639085",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11431611",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6724175",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13074686",
+          "excluded: exploratory or v1 set"
+        ],
+        [
+          "PMC13290042",
+          "excluded: exploratory or v1 set"
+        ],
+        [
+          "PMC8675976",
+          "ineligible: no CC licence"
+        ]
+      ]
+    },
+    "Thymus vulgaris": {
+      "queries": [
+        "Thymus vulgaris (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Thymus vulgaris (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC6274497",
+        "PMC9728295",
+        "PMC10207748",
+        "PMC11084565",
+        "PMC10780048",
+        "PMC6168512",
+        "PMC10180401",
+        "PMC8116798",
+        "PMC8588168",
+        "PMC9864824",
+        "PMC11405399",
+        "PMC5871273",
+        "PMC10799646",
+        "PMC12250716",
+        "PMC10625517",
+        "PMC5618528",
+        "PMC3609397",
+        "PMC2553340",
+        "PMC11255337"
+      ],
+      "lotusLabels": 155,
+      "screened": [
+        [
+          "PMC6274497",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC9728295",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10207748",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11084565",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10780048",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6168512",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10180401",
+          "excluded: exploratory or v1 set"
+        ],
+        [
+          "PMC8116798",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC8588168",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9864824",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC11405399",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC5871273",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10799646",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12250716",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10625517",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC5618528",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC3609397",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC2553340",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11255337",
+          "ineligible: no analytical-chemistry term"
+        ]
+      ]
+    },
+    "Salvia officinalis": {
+      "queries": [
+        "Salvia officinalis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Salvia officinalis (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC10856435",
+        "PMC10180401",
+        "PMC13468080",
+        "PMC12693678",
+        "PMC13357552",
+        "PMC3202029",
+        "PMC12736304",
+        "PMC11765258",
+        "PMC7763040",
+        "PMC8199030",
+        "PMC6321363",
+        "PMC3155476",
+        "PMC10000423",
+        "PMC12639085",
+        "PMC6930492",
+        "PMC9122491"
+      ],
+      "lotusLabels": 435,
+      "screened": [
+        [
+          "PMC10856435",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10180401",
+          "excluded: exploratory or v1 set"
+        ],
+        [
+          "PMC13468080",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC12693678",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13357552",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC3202029",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC12736304",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC11765258",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7763040",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC8199030",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC6321363",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC3155476",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC10000423",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12639085",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6930492",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9122491",
+          "eligible: 0 rows"
+        ]
+      ]
+    },
+    "Salvia rosmarinus": {
+      "queries": [
+        "Salvia rosmarinus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice) (\"not detected\" OR \"below the limit\")",
+        "Salvia rosmarinus (infusion OR decoction OR tea OR \"aqueous extract\" OR juice)"
+      ],
+      "results": [
+        "PMC10856435",
+        "PMC12787868",
+        "PMC7356759",
+        "PMC7587196",
+        "PMC11901988",
+        "PMC7870401",
+        "PMC13274111",
+        "PMC6274497",
+        "PMC7248711",
+        "PMC10051605",
+        "PMC8954779",
+        "PMC13655632",
+        "PMC10536996",
+        "PMC13664948",
+        "PMC12263608",
+        "PMC11767790",
+        "PMC12783746",
+        "PMC9603841"
+      ],
+      "lotusLabels": 299,
+      "screened": [
+        [
+          "PMC10856435",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12787868",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7356759",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC7587196",
+          "eligible: 2 rows"
+        ],
+        [
+          "PMC11901988",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7870401",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC13274111",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC6274497",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC7248711",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC10051605",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC8954779",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13655632",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC10536996",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC13664948",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC12263608",
+          "ineligible: no CC licence"
+        ],
+        [
+          "PMC11767790",
+          "ineligible: title does not name the plant"
+        ],
+        [
+          "PMC12783746",
+          "eligible: 0 rows"
+        ],
+        [
+          "PMC9603841",
+          "eligible: 0 rows"
+        ]
+      ]
+    }
+  }
+}

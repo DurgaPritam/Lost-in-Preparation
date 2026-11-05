@@ -105,3 +105,44 @@ def get_text(service: str, url: str, retries: int = 3) -> tuple[str, str, str]:
     cp.parent.mkdir(parents=True, exist_ok=True)
     cp.write_text(json.dumps(meta, ensure_ascii=False))
     return text, meta["sha256"], meta["retrievedAt"]
+
+
+def get_pdf_text(service: str, url: str, retries: int = 5) -> tuple[str, str, str]:
+    """GET a PDF (cached as raw bytes) and return (extracted text, sha256 of the PDF, retrievedAt).
+
+    Text is extracted with pypdf; whitespace is left as extracted (callers normalise before
+    matching quotes). Backs off on HTTP 429 (rate limiting).
+    """
+    cp = _path(service, url)
+    pdf = cp.with_suffix(".pdf")
+    if cp.exists() and pdf.exists():
+        meta = json.loads(cp.read_text())
+        raw = pdf.read_bytes()
+    else:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        last = None
+        for attempt in range(retries + 1):
+            try:
+                with urllib.request.urlopen(req, timeout=300, context=SSL_CONTEXT) as r:
+                    raw = r.read()
+                break
+            except urllib.error.HTTPError as e:
+                last = e
+                time.sleep((20 if e.code == 429 else 2) * (attempt + 1))
+            except (urllib.error.URLError, TimeoutError, http.client.HTTPException, ConnectionError) as e:
+                last = e
+                time.sleep(2 * (attempt + 1))
+        else:
+            raise HTTPError(f"{service} unreachable: {last}")
+        if not raw.startswith(b"%PDF"):
+            raise HTTPError(f"{service}: not a PDF: {url}")
+        meta = {"request": url, "retrievedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                "sha256": hashlib.sha256(raw).hexdigest()}
+        cp.parent.mkdir(parents=True, exist_ok=True)
+        pdf.write_bytes(raw)
+        cp.write_text(json.dumps(meta))
+    import io
+
+    from pypdf import PdfReader
+    text = "\n".join((p.extract_text() or "") for p in PdfReader(io.BytesIO(raw)).pages)
+    return text, meta["sha256"], meta["retrievedAt"]

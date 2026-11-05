@@ -40,7 +40,9 @@ def validation_status(m: C.Metrics) -> list[str]:
         ("M2 name resolution vs scholarly identifications", "pending — needs human-verified identifications" if m.nameResolution["top1"].status != "computed" else "**human-validated**", "`data/gold/name_identifications.csv`"),
         ("M2 name resolution vs AI-drafted identifications", "*provisional* — AI-drafted from quoted sources, unverified", "`data/gold/name_identifications.csv` (draft* columns)"),
         ("Preparation model vs published reports — exploratory set", "*provisional, exploratory* — 9 rows selected after model build", "`data/reference/prep_literature_v1.csv`"),
-        ("Preparation model vs published reports — pre-registered set", "*provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code", "`data/reference/prep_literature_prereg_v1.csv`"),
+        ("Preparation model vs published reports — pre-registered v1 (mostly essential oils)", "*provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code", "`data/reference/prep_literature_prereg_v1.csv`"),
+        ("Preparation model vs published reports — pre-registered v2 (water preparations)", "*provisional* — rule pre-registered (docs/PREREGISTRATION_v2.md), AI-written rule and code; low-row quota not met", "`data/reference/prep_literature_prereg_v2.csv`"),
+        ("Study-set toxicity entries (30 species)", "*provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review", "`data/reference/toxicity_curated.csv`"),
         ("Study set (30 species)", "pending — human approval", "`docs/STUDY_SET_PROPOSAL.md`"),
         ("Modern-methods audit, mismatch ranking (M5–M6)", "not started", "—"),
     ]
@@ -48,6 +50,199 @@ def validation_status(m: C.Metrics) -> list[str]:
     out += [f"| {a} | {b} | {c} |" for a, b, c in rows]
     out += ["", "**validated** = checked against an independent, non-AI reference. *provisional* = compared with a reference made by an AI; useful for development, never presented as validation. pending = waiting on human work."]
     return out
+
+
+PLINY_CAVEAT = ("**Pliny results are lower confidence.** Pliny is read through a 19th-century English translation (Bostock & Riley) "
+                "of a 1st-century Latin text; its plant names are classical, often ambiguous, and resolve with far more disputes than "
+                "Culpeper's (see the disputed share below). Treat every Pliny-derived number as less certain than its Culpeper counterpart.")
+GROUPS = (("Culpeper", ("culpeper",)), ("Pliny (lower confidence)", ("pliny",)))
+
+
+def _grp(src: str) -> str | None:
+    for name, prefixes in GROUPS:
+        if src.startswith(prefixes):
+            return name
+    return None
+
+
+def _frac(k: int, n: int, ci: bool = False) -> str:
+    if not n:
+        return "n = 0"
+    if not ci:
+        return f"{k}/{n} ({k / n:.0%})"
+    from .m2.evaluate import wilson
+    lo, hi = wilson(k, n)
+    return f"{k}/{n} ({k / n:.0%}; 95% CI {lo:.0%}–{hi:.0%})"
+
+
+def by_source(m: C.Metrics) -> list[str]:
+    """Headline metrics per source (Culpeper, Pliny) and overall, each read from a pipeline output."""
+    import pandas as pd
+    ing = _j("data/interim/ingest_report.json")
+    m2s = _j("data/interim/m2/name_resolution_summary.json") or {}
+    m2b = (_j("data/interim/m2/before_after.json") or {}).get("bySource", {})
+    sample = _j("data/gold/sample_v2.json") or {"passages": []}
+    names = [g for g, _ in GROUPS]
+    cols = {g: {} for g in names + ["Overall"]}
+
+    def add(metric, per_group: dict, overall):
+        for g in names:
+            cols[g][metric] = per_group.get(g, "—")
+        cols["Overall"][metric] = overall
+
+    rs = {g: sum(v["recipe_scope_passages"] for k, v in ing["sources"].items() if _grp(k) == g) for g in names}
+    add("Recipe-scope passages (corpus)", {g: f"{v:,}" for g, v in rs.items()}, f"{sum(rs.values()):,}")
+    gs = {g: sum(1 for p in sample["passages"] if _grp(p["stratum"]) == g) for g in names}
+    add("Gold-sample passages (stratified)", {g: str(v) for g, v in gs.items()}, str(sum(gs.values())))
+    gold = m.extraction.overall.get("part")
+    add("M1 extraction F1 vs human gold", {g: "pending (no human annotation yet)" for g in names},
+        _m(gold.f1) if gold and gold.f1.status == "computed" else "pending (no human annotation yet)")
+    sil = m.provisional.get("extractionVsSilver")
+    sil_ok = sil is not None and sil.extraction is not None and "part" in sil.extraction.overall and sil.extraction.overall["part"].f1.status == "computed"
+    add("M1 extraction vs AI reference (*provisional*)", {g: "not computed (no local model run)" if not sil_ok else "see provisional section" for g in names},
+        "not computed (no local model run)" if not sil_ok else _m(sil.extraction.overall["part"].f1))
+    keys = ("names", "resolved", "resolvedInWFO", "disputed")
+    agg = {g: dict.fromkeys(keys, 0) for g in names}
+    for src, v in m2s.items():
+        g = _grp(src)
+        if g:
+            for k in keys:
+                agg[g][k] += v[k]
+    tot = {k: sum(a[k] for a in agg.values()) for k in keys}
+    add("M2 names resolved to a WFO species", {g: _frac(a["resolvedInWFO"], a["names"]) for g, a in agg.items()},
+        _frac(tot["resolvedInWFO"], tot["names"]))
+    add("M2 resolved names flagged disputed (descriptive)", {g: _frac(a["disputed"], a["resolved"], ci=True) for g, a in agg.items()},
+        _frac(tot["disputed"], tot["resolved"], ci=True))
+    dt = {}
+    for src, v in m2b.items():
+        g = _grp(src)
+        if g:
+            k, n = (int(x) for x in v["draftTop1"][1].split("/"))
+            dt[g] = (dt.get(g, (0, 0))[0] + k, dt.get(g, (0, 0))[1] + n)
+    add("M2 top-1 vs AI-drafted identifications (*provisional*)", {g: _frac(*dt[g], ci=True) for g in dt},
+        _frac(sum(x[0] for x in dt.values()), sum(x[1] for x in dt.values()), ci=True))
+    add("M2 top-1 vs human-verified identifications", {g: "pending" for g in names}, _m(m.nameResolution["top1"]) if m.nameResolution["top1"].status == "computed" else "pending")
+    ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
+    ss = ss[ss.proposed]
+    att = {g: ss[ss.sourceList.str.contains(pref[0])] for g, pref in GROUPS}
+    add("Study-set species attested (of the proposed set)", {g: f"{len(d)} of {len(ss)}" for g, d in att.items()},
+        f"{len(ss)} ({int(ss.sourceList.str.contains(',').sum())} attested by both)")
+    add("Median LOTUS compounds per attested study-set species", {g: f"{d.nCompounds.median():g}" for g, d in att.items()}, f"{ss.nCompounds.median():g}")
+    add("Preparation-model literature checks (v1, v2)", {g: "not applicable (modern studies of the plant, not of a source)" for g in names},
+        "see Preparation model section")
+    metrics = list(cols["Overall"])
+    out = ["## Headline metrics by source", "", PLINY_CAVEAT, "",
+           "Sources: `data/interim/ingest_report.json`, `data/gold/sample_v2.json`, `site-data/metrics.json`, `data/interim/m2/name_resolution_summary.json`, "
+           "`data/interim/m2/before_after.json`, `data/interim/m3/study_set_proposal.csv`. Culpeper = the 1652 and 1850 editions; "
+           "name resolution (M2) covers the 1652 edition only.", "",
+           "| Metric | " + " | ".join(cols) + " |", "|---|" + "---|" * len(cols)]
+    out += [f"| {mt} | " + " | ".join(cols[g][mt] for g in cols) + " |" for mt in metrics]
+    return out
+
+
+def _rate(b: dict | None) -> str:
+    if not b or not b.get("n"):
+        return "n = 0 (not computed)"
+    return f"{b['agree']}/{b['n']} ({b['rate']:.0%}; 95% CI {b['ci'][0]:.0%}–{b['ci'][1]:.0%})"
+
+
+def literature_sections() -> list[str]:
+    from .m2.evaluate import wilson
+    ex, v1, v2 = (_j(p) for p in ("data/interim/m4/literature_check.json", "data/interim/m4/literature_prereg.json",
+                                   "data/interim/m4/literature_prereg_v2.json"))
+    L = ["", "### Literature checks (*provisional*; never pooled)", "",
+         "Agreement rule: `present` → predicted median ≥ 0.40; `low` → < 0.30 (thresholds fixed before any check). Basis `ai_curated_literature_reference`.", ""]
+
+    def v1b(lab):
+        b = (v1.get("byLabel") or {}).get(lab)
+        if not b or not b["count"]:
+            return None
+        lo, hi = wilson(int(b["sum"]), int(b["count"]))
+        return {"agree": int(b["sum"]), "n": int(b["count"]), "rate": b["sum"] / b["count"], "ci": [lo, hi]}
+    lo, hi = wilson(v1["agree"], v1["rowsFound"]) if v1["rowsFound"] else (0, 0)
+    v1o = {"agree": v1["agree"], "n": v1["rowsFound"], "rate": v1["agree"] / v1["rowsFound"] if v1["rowsFound"] else 0, "ci": [lo, hi]}
+    elo, ehi = wilson(ex["agree"], ex["n"])
+    exo = {"agree": ex["agree"], "n": ex["n"], "rate": ex["agree"] / ex["n"], "ci": [elo, ehi]}
+    exl = {lab: [r for r in ex["rows"] if (r["reported"] == "present") == (lab == "present")] for lab in ("present", "low")}
+
+    def exb(lab):
+        rows = exl[lab]
+        if not rows:
+            return None
+        k = sum(r["agree"] for r in rows)
+        a, b = wilson(k, len(rows))
+        return {"agree": k, "n": len(rows), "rate": k / len(rows), "ci": [a, b]}
+    pv = v2["primary"]
+    L += ["| Check | Rows | Overall agreement | `present` rows | `absent/low` rows |", "|---|---|---|---|---|",
+          f"| Exploratory (selected after model build) | {ex['n']} | {_rate(exo)} | {_rate(exb('present'))} | {_rate(exb('low'))} |",
+          f"| Pre-registered v1 (target 30; mostly essential oils) | {v1['rowsFound']} | {_rate(v1o)} | {_rate(v1b('present'))} | {_rate(v1b('low'))} |",
+          f"| **Pre-registered v2, water preparations** (quota 15 + 15) | {pv['overall']['n']} | {_rate(pv['overall'])} | {_rate(pv['present'])} | {_rate(pv['low'])} |",
+          "", f"v2 found {v2['found']['present']} `present` and {v2['found']['low']} `low` rows against quotas of {v2['quota']['present']} and "
+              f"{v2['quota']['low']}; the rule was not relaxed. v2 rows by preparation (primary model): "
+          + ", ".join(f"{p} {x['agree']}/{x['n']}" for p, x in pv["byPreparation"].items()) + ". Source: `data/interim/m4/literature_prereg_v2.json`."]
+    a = v2.get("postHocAudit") or {}
+    if a:
+        L += ["", f"**Post-hoc row audit (not registered; AI reading, unverified, `{a['basis']}`).** Of {pv['overall']['n']} rows, "
+                  f"{a['counts'].get('misread', 0)} are mechanical misreadings:"]
+        L += [f"- *{m['plant']}*, {m['compound']} ({m['pmcid']}): {m['reason']}." for m in a["misread"]]
+        L += [f"", f"On the remaining rows: overall {_rate(a['validRowsPrimary']['overall'])}; `present` {_rate(a['validRowsPrimary']['present'])}; "
+                   f"`absent/low` {_rate(a['validRowsPrimary']['low'])}. The registered result above stays the headline."]
+    sv = v2["secondaryVariant"]
+    L += ["", f"**Secondary variant `{sv['name']}`** (pre-registered; slope k = ln 10, descriptor noise SD {sv['h_sd']}; evaluated on v2 rows only): "
+              f"overall {_rate(sv['overall'])}; `present` {_rate(sv['present'])}; `absent/low` {_rate(sv['low'])}. "
+              "On these rows it gives no evidence for or against replacing the primary model, which stays the default."]
+    return L
+
+
+def water_section() -> list[str]:
+    w = _j("data/interim/m4/water_calibration.json")
+    if not w:
+        return []
+    import pandas as pd
+    a, ss, c = w["artemisinin"], w["studySetCompounds"], w["crossings"]
+    rmse = (_j("data/interim/m4/logp_validation.json") or {}).get("rdkit_all", {}).get("rmse", {}).get("value", "unknown")
+    v2 = pd.read_csv(ROOT / "data" / "reference" / "prep_literature_prereg_v2.csv")
+    art_rows = v2[v2.compound.str.lower() == "artemisinin"]
+    art_txt = ("; ".join(f"the v2 rows include a published report of artemisinin {r.reported} in *{r.plant}* ({r.modelPreparation}, {r.pmcid}), "
+                         f"which the primary model scores {r.predicted:.2f} ({'agrees' if r.agree else 'disagrees'})" for r in art_rows.itertuples())
+               if len(art_rows) else "no v2 row concerns artemisinin")
+    ae = a["primaryAtExperimental"]
+    return ["", "### Why cold water gives artemisinin 0.27 (diagnostic; no model change)", "",
+            "Source: `data/interim/m4/water_calibration.json`; figure: [docs/figures/water_likelihood_vs_logp.svg](docs/figures/water_likelihood_vs_logp.svg).", "",
+            f"- A filtered, cold, aqueous preparation has heat = filtration = acidity = 1, so the prediction is the water window alone: "
+            f"`{w['waterWindow']['form']}`, with upper ~ U{tuple(w['waterWindow']['upper'])} and k ~ U{tuple(w['waterWindow']['k'])}. "
+            f"For the study-set compounds it is a one-variable function of logP: Spearman ρ = {ss['spearmanLogPvsLikelihood']} "
+            f"(n = {ss['n']}; {ss['n'] - ss['likelihoodEqualsSolventFactor']} compounds sit below the curve because of the MW > 1000 size penalty).",
+            f"- The median crosses 0.40 at logP {c['median_eq_present_min']}, 0.30 at logP {c['median_eq_absent_max']} and 0.10 at logP {c['median_eq_0.10']}. "
+            f"The 'undecided' band 0.30–0.40 is only {c['median_eq_absent_max'] - c['median_eq_present_min']:.2f} logP units wide, "
+            f"narrower than the descriptor's RMSE against experiment ({rmse}), and the median study-set compound has logP {ss['logPQuantiles']['0.5']}, "
+            "on the steepest part of the curve.",
+            f"- Artemisinin's Crippen logP is {a['crippenLogP']}, and sigmoid(k_med · (upper_med − logP)) = {a['analytic']['atCrippen']} reproduces the "
+            f"Monte Carlo median of {a['primaryAtCrippen']['likelihood']}. At the experimental logP {a['experimentalLogP']['value']} "
+            f"({a['experimentalLogP']['source']}) the same model gives {ae['likelihood']} ({ae['low']}–{ae['high']}). "
+            "Part of the 0.27 is descriptor error; the rest is the window's position and shallow slope.",
+            "- **Low water solubility is not in the model.** It sees only logP, with no solubility, melting-point (crystal-lattice), dose or "
+            "contact-time term, so it cannot represent 'poorly soluble in absolute terms'. A low amount in a large volume of water may still "
+            "dissolve completely. PubChem's artemisinin record lists no experimental solubility, so no solubility value is used here.",
+            "- **Proposal (not adopted).** Fix the window slope at ln 10 (the slope of a two-phase partition equilibrium) and model descriptor "
+            "error explicitly. This was pre-registered as the secondary variant and evaluated only on v2 rows (above). A solubility/dose "
+            "term would need per-compound melting points or solubilities and plant-content ranges that the repo does not have; it is not proposed yet.",
+            f"- The recorded artemisinin result and every threshold are unchanged. Separately, {art_txt}."]
+
+
+def toxicity_section() -> list[str]:
+    import pandas as pd
+    p = ROOT / "data" / "reference" / "toxicity_curated.csv"
+    if not p.exists():
+        return []
+    t = pd.read_csv(p, dtype=str).fillna("")
+    counts = t.toxicity.value_counts()
+    return ["", "### Study-set toxicity (*provisional*: AI-drafted, unverified)", "",
+            f"Source: `data/reference/toxicity_curated.csv` ({len(t)} species, basis `{t.basis.iloc[0]}`, `verified_by` empty for "
+            f"{int((t.verified_by == '').sum())}). Each entry cites one EMA herbal document or CC-licensed PMC article and quotes one "
+            "sentence, re-checked against the fetched source every run. Categories describe what the source says; none is a safety rating.", "",
+            "| Category | Species |", "|---|---|"] + [f"| `{k}` | {v} |" for k, v in counts.items()] + [
+            "", "`no_toxicity_reported` and `unknown` are **not evidence of safety**. The Wikipedia *List of poisonous plants* is no longer used for this column (only for M2's toxic-confusion screen)."]
 
 
 def build() -> str:
@@ -61,6 +256,7 @@ def build() -> str:
     L = ["# Results", "", f"Generated by `python -m lip results` on {datetime.now(timezone.utc).date()} from pipeline outputs; "
          "do not edit numbers by hand. Lost in Preparation produces **hypotheses worth re-testing**, never claims that a remedy works or is safe.", ""]
     L += validation_status(m) + [""]
+    L += by_source(m) + [""]
 
     L += ["## Corpus", "", "Source: `data/interim/ingest_report.json`", "", "| Source | Passages | Recipe-scope passages | Recipe-scope words |", "|---|---|---|---|"]
     for sid, s in ing["sources"].items():
@@ -118,8 +314,9 @@ def build() -> str:
         L.append(f"| {lab} | {r['likelihood']:.2f} ({r['low']:.2f}–{r['high']:.2f}) | {d['solvent']:.2f} | {d['heat']:.2f} | {d['filtration']:.2f} | {d['acidity']:.2f} |")
     L += ["", "Drivers are the median per-factor multipliers. The cold-water infusion is filtered (filtration 1.00), so its value comes from the solvent factor alone; "
           "the unfiltered variant shows how much the suspension assumption would add."]
-    L += ["", f"Profiles: {m4s['profiles']['species']} species × {m4s['profiles']['preparations']} preparations = "
-          f"{m4s['profiles']['compoundEntries']:,} compound estimates in `site-data/profiles/` (one file per species, `index.json`; full file in `data/release/profiles_full.json.gz`; model `{m4s['modelVersion']}`). "
+    L += literature_sections() + water_section() + toxicity_section()
+    L += ["", f"Profiles: {m4s['profiles']['species']} species × {m4s['profiles']['preparations']} preparations "
+          f"({m4s['profiles']['profiles']} profiles, {m4s['profiles']['compoundEntries']:,} compound estimates) in `site-data/profiles/` (one file per species, `index.json`; full file in `data/release/profiles_full.json.gz`; model `{m4s['modelVersion']}`). "
           "These are model estimates of what a preparation would carry, not measurements."]
 
     L += ["", "## Provisional results (AI-made references — not human-validated)", "",
@@ -134,7 +331,7 @@ def build() -> str:
             L.append(f"- {name}: {_m(mm)}")
         L.append("")
     OUT.write_text("\n".join(L) + "\n")
-    _update_readme(validation_status(m))
+    _update_readme(validation_status(m) + [""] + by_source(m))
     return OUT.read_text()
 
 

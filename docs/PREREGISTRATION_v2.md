@@ -177,4 +177,12 @@ Two changes; everything else is identical (same seeds, same factors, same thresh
 
 ## Deviations
 
-None so far.
+None. The run used the frozen model, the registered queries, rule, caps, quotas and thresholds. Results are in [RESULTS.md](../RESULTS.md), generated from `data/interim/m4/literature_prereg_v2.json`.
+
+**Implementation clarifications.** None of these changes a rule.
+- The LOTUS labels for the 30 study-set species are taken from the M3 output, which is produced by the same `found in taxon` query. For the 6 well-studied plants, the query is run on every Latin name listed for the plant.
+- When one LOTUS label names several Wikidata items, the item with the lowest QID is used.
+- "A shorter aglycone name inside a longer matched name does not count" is applied generally: any compound match whose span lies inside a longer compound match is dropped.
+- Each article's stated licence is recorded in the row output.
+
+**Post-hoc, not registered.** After the run, the AI read every collected row and labelled the mechanical misreadings. Examples are a compound name taken from "total phenol content", and a sentence about a different plant cited inside the target plant's article. This audit is reported beside the registered result, never instead of it, with basis `ai_post_hoc_audit_unverified`.

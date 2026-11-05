@@ -14,11 +14,11 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 
 | Stage | What it does | Status |
 |---|---|---|
-| Ingest | Culpeper 1652 (EEBO-TCP), Culpeper 1850 and Pliny (Bostock & Riley) → stable, located passages; 1850↔1652 crosswalk | done |
+| Ingest | Culpeper 1652 (EEBO-TCP), Culpeper 1850 and Pliny (Bostock & Riley; **lower confidence**: a 19th-century translation with often-disputed plant names) → stable, located passages; 1850↔1652 crosswalk | done |
 | M1 Recipes | Structured recipes extracted by an LLM, every field backed by a verbatim quote; local (Ollama) or Claude provider | built; awaiting gold set |
 | M2 Names | Historical name → accepted species (WFO), up to 3 candidates with confidence and basis; disputed flags | done; awaiting 30-name scholarly check |
 | M3 Compounds | Known compounds per species (LOTUS via Wikidata), RDKit-standardised, de-duplicated by InChIKey; coverage per species | done |
-| Study set | 30 proposed species for re-testing, for human approval ([docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md)) | awaiting approval |
+| Study set | 30 proposed species for re-testing, for human approval ([docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md)), each with a cited toxicity entry (AI-drafted, awaiting review) | awaiting approval |
 | M4 Preparation | Likelihood that each compound reaches each preparation; solvent, heat, filtration and acidity as separate factors with Monte Carlo ranges; RDKit vs GFN2-xTB validated against experiment; artemisinin known case | done |
 | M5–M6 | Modern-methods audit, mismatch ranking | planned |
 
@@ -39,11 +39,33 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 | M2 name resolution vs scholarly identifications | pending — needs human-verified identifications | `data/gold/name_identifications.csv` |
 | M2 name resolution vs AI-drafted identifications | *provisional* — AI-drafted from quoted sources, unverified | `data/gold/name_identifications.csv` (draft* columns) |
 | Preparation model vs published reports — exploratory set | *provisional, exploratory* — 9 rows selected after model build | `data/reference/prep_literature_v1.csv` |
-| Preparation model vs published reports — pre-registered set | *provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code | `data/reference/prep_literature_prereg_v1.csv` |
+| Preparation model vs published reports — pre-registered v1 (mostly essential oils) | *provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code | `data/reference/prep_literature_prereg_v1.csv` |
+| Preparation model vs published reports — pre-registered v2 (water preparations) | *provisional* — rule pre-registered (docs/PREREGISTRATION_v2.md), AI-written rule and code; low-row quota not met | `data/reference/prep_literature_prereg_v2.csv` |
+| Study-set toxicity entries (30 species) | *provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review | `data/reference/toxicity_curated.csv` |
 | Study set (30 species) | pending — human approval | `docs/STUDY_SET_PROPOSAL.md` |
 | Modern-methods audit, mismatch ranking (M5–M6) | not started | — |
 
 **validated** = checked against an independent, non-AI reference. *provisional* = compared with a reference made by an AI; useful for development, never presented as validation. pending = waiting on human work.
+
+## Headline metrics by source
+
+**Pliny results are lower confidence.** Pliny is read through a 19th-century English translation (Bostock & Riley) of a 1st-century Latin text; its plant names are classical, often ambiguous, and resolve with far more disputes than Culpeper's (see the disputed share below). Treat every Pliny-derived number as less certain than its Culpeper counterpart.
+
+Sources: `data/interim/ingest_report.json`, `data/gold/sample_v2.json`, `site-data/metrics.json`, `data/interim/m2/name_resolution_summary.json`, `data/interim/m2/before_after.json`, `data/interim/m3/study_set_proposal.csv`. Culpeper = the 1652 and 1850 editions; name resolution (M2) covers the 1652 edition only.
+
+| Metric | Culpeper | Pliny (lower confidence) | Overall |
+|---|---|---|---|
+| Recipe-scope passages (corpus) | 6,222 | 1,435 | 7,657 |
+| Gold-sample passages (stratified) | 30 | 20 | 50 |
+| M1 extraction F1 vs human gold | pending (no human annotation yet) | pending (no human annotation yet) | pending (no human annotation yet) |
+| M1 extraction vs AI reference (*provisional*) | not computed (no local model run) | not computed (no local model run) | not computed (no local model run) |
+| M2 names resolved to a WFO species | 219/281 (78%) | 591/846 (70%) | 810/1127 (72%) |
+| M2 resolved names flagged disputed (descriptive) | 59/223 (26%; 95% CI 21%–33%) | 423/608 (70%; 95% CI 66%–73%) | 482/831 (58%; 95% CI 55%–61%) |
+| M2 top-1 vs AI-drafted identifications (*provisional*) | 9/12 (75%; 95% CI 47%–91%) | 2/8 (25%; 95% CI 7%–59%) | 11/20 (55%; 95% CI 34%–74%) |
+| M2 top-1 vs human-verified identifications | pending | pending | pending |
+| Study-set species attested (of the proposed set) | 21 of 30 | 21 of 30 | 30 (12 attested by both) |
+| Median LOTUS compounds per attested study-set species | 77 | 46 | 71.5 |
+| Preparation-model literature checks (v1, v2) | not applicable (modern studies of the plant, not of a source) | not applicable (modern studies of the plant, not of a source) | see Preparation model section |
 <!-- VALIDATION_STATUS:END -->
 
 ## Repository

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.3/species.json",
+  "$id": "lost-in-preparation/contract/1.4/species.json",
   "title": "species.json",
   "type": "array",
   "items": {
@@ -125,9 +125,13 @@
     },
     "ToxicityFlag": {
       "enum": [
+        "toxic_reported",
+        "concern_reported",
+        "no_toxicity_reported",
+        "data_lacking",
+        "unknown",
         "known_toxic",
-        "none_known",
-        "unknown"
+        "none_known"
       ],
       "title": "ToxicityFlag",
       "type": "string"

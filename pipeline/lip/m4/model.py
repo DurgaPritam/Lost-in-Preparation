@@ -104,11 +104,19 @@ class Compound:
     meta: dict = field(default_factory=dict)
 
 
-def simulate(c: Compound, prep: Prep, cfg: dict, seed_offset: int = 0) -> dict:
+def simulate(c: Compound, prep: Prep, cfg: dict, seed_offset: int = 0,
+             k_fixed: float | None = None, h_sd: float = 0.0) -> dict:
+    """Primary model with the defaults. `k_fixed` / `h_sd` exist only for the secondary
+    `water-partition-slope` variant pre-registered in docs/PREREGISTRATION_v2.md (fixed window
+    slope; Normal descriptor noise drawn from a separate stream so the primary draws are unchanged)."""
     n = int(cfg["mc"]["draws"])
     rng = np.random.default_rng(cfg["mc"]["seed"] + seed_offset)
     k = _u(rng, cfg["mc"]["steepness"], n)
+    if k_fixed is not None:
+        k = np.full(n, float(k_fixed))
     h = np.full(n, c.h)
+    if h_sd > 0:
+        h = h + np.random.default_rng(cfg["mc"]["seed"] + seed_offset + 10_000_019).normal(0.0, h_sd, n)
 
     # solvent (+ acidity), mixtures take the best-extracting component
     if prep.process == "distillation":

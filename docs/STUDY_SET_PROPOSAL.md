@@ -11,37 +11,37 @@ Eligibility:
 Species are ranked by the number of sources attesting them, then attestations, then compounds.
 **Attestations are a passage-count proxy, not extracted recipes.**
 
-**Toxicity** is a screen against Wikipedia's *List of poisonous plants* (CC BY-SA 4.0, revision 1383132551), whose own editors flag it as needing expert review. `known_toxic` = the species or genus is listed (genus-level listings such as *Allium* spp. flag every species in the genus); `not listed` = absent from that list, which is **not evidence of safety**: the list omits, for example, *Papaver somniferum* (opium poppy) and *Symphytum officinale* (comfrey, hepatotoxic pyrrolizidine alkaloids), both in this proposal. Toxic plants stay in the proposal, because a lab may still re-test them under appropriate safety controls; the flag is for the lab's risk assessment.
+**Toxicity** entries are hand-curated per species and **AI-drafted, unverified** (`ai_drafted_unverified`; `verified_by` empty, for review). Each cites one reputable source opened in the pipeline run (EMA herbal documents, or a CC-licensed PMC article) and quotes one sentence of it, re-checked against the fetched source every run; full entries in `data/reference/toxicity_curated.csv`. Categories describe what the source says, not a safety rating: `toxic_reported`, `concern_reported` (a specific risk, contraindication or warning), `no_toxicity_reported` and `unknown` (no source located) are **never evidence of safety**, and `data_lacking` means the source says the data are missing. Toxic plants stay in the proposal, because a lab may still re-test them under appropriate safety controls; the flag is for the lab's risk assessment.
 
-| # | Species (WFO) | Family | Names as written | Sources | Attest. | Compounds | Refs | Min conf. | Toxicity |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | *Artemisia absinthium* (wfo-0000134589) | Asteraceae | ABSINTHIUM OR WORMWOOD; Wormwood | culpeper-1652, pliny | 12 | 153 | 47 | 0.76 | not listed |
-| 2 | *Agrimonia eupatoria* (wfo-0001006654) | Rosaceae | Agrimony; EUPATORIA | culpeper-1652, pliny | 6 | 21 | 6 | 0.75 | not listed |
-| 3 | *Crocus sativus* (wfo-0000788844) | Iridaceae | SAFFRON; Saffron | culpeper-1652, pliny | 5 | 151 | 60 | 0.75 | not listed |
-| 4 | *Symphytum officinale* (wfo-0000432219) | Boraginaceae | ALUM, ALSO CALLED SYMPHYTON PETRÆON; Comfry; Sopewort, or Bruisewort | culpeper-1652, pliny | 5 | 37 | 21 | 0.70 | not listed |
-| 5 | *Lavandula angustifolia* (wfo-0000224116) | Lamiaceae | Lavender; TIPHYON | culpeper-1652, pliny | 4.5 | 107 | 11 | 0.88 | not listed |
-| 6 | *Ajuga chamaepitys* (wfo-0000933181) | Lamiaceae | CHAMÆPITYS; Ground Pine, or Chamepitys | culpeper-1652, pliny | 4 | 46 | 7 | 0.98 | not listed |
-| 7 | *Ranunculus ficaria* (wfo-0000460581) | Ranunculaceae | CHELIDONIA; The Iesser Celondine, usually known by the Name of Pilewort | culpeper-1652, pliny | 4 | 17 | 4 | 1.00 | not listed |
-| 8 | *Glycyrrhiza glabra* (wfo-0000212813) | Fabaceae | GLYCYRRHIZA OR ADIPSOS; Liquoris | culpeper-1652, pliny | 3 | 461 | 131 | 1.00 | not listed |
-| 9 | *Melissa officinalis* (wfo-0000240053) | Lamiaceae | Balm; NEP | culpeper-1652, pliny | 3 | 139 | 25 | 1.00 | not listed |
-| 10 | *Hyssopus officinalis* (wfo-0000217205) | Lamiaceae | HYSSOP; Hysop | culpeper-1652, pliny | 3 | 80 | 11 | 0.64 | not listed |
-| 11 | *Pastinaca sativa* (wfo-0000391752) | Apiaceae | ELAPHOBOSCON; Parsnip | culpeper-1652, pliny | 3 | 23 | 18 | 0.86 | not listed |
-| 12 | *Galium aparine* (wfo-0000968296) | Rubiaceae | Cleavers, or Goosgrass; PHILANTHROPOS | culpeper-1652, pliny | 3 | 19 | 8 | 0.84 | not listed |
-| 13 | *Centaurium erythraea* (wfo-0000593916) | Gentianaceae | CENTAURION LEPTON, OR LIBADION, KNOWN ALSO AS FEL TERRÆ; CENTAURION OR CHIRONION; CENTAURIS TRIORCHIS; ONLY CENTURION THAT HAS BEEN THUS HONOURED | pliny | 8 | 36 | 19 | 0.98 | not listed |
-| 14 | *Chelidonium majus* (wfo-0000600655) | Papaveraceae | Celandine | culpeper-1652 | 7 | 69 | 51 | 0.92 | **known_toxic** |
-| 15 | *Hyoscyamus niger* (wfo-0001021850) | Solanaceae | Henbane | culpeper-1652 | 6 | 78 | 18 | 0.86 | **known_toxic** |
-| 16 | *Raphanus sativus* (wfo-0000402430) | Brassicaceae | CULTIVATED RADISH | pliny | 5 | 248 | 61 | 1.00 | not listed |
-| 17 | *Laser trilobum* (wfo-0000360365) | Apiaceae | LASER | pliny | 5 | 22 | 10 | 1.00 | not listed |
-| 18 | *Salvia sclarea* (wfo-0000302258) | Lamiaceae | Clary | culpeper-1652 | 4 | 136 | 23 | 1.00 | not listed |
-| 19 | *Euphorbia antiquorum* (wfo-0000960724) | Euphorbiaceae | ACHÆMENIS OR HIPPOPHOBAS | pliny | 4 | 43 | 21 | 1.00 | not listed |
-| 20 | *Papaver somniferum* (wfo-0000480963) | Papaveraceae | BLACK POPPY; WHITE POPPY | pliny | 3.3 | 108 | 118 | 1.00 | not listed |
-| 21 | *Humulus lupulus* (wfo-0000725866) | Cannabaceae | Hops | culpeper-1652 | 3 | 484 | 128 | 0.96 | not listed |
-| 22 | *Allium cepa* (wfo-0000755919) | Amaryllidaceae | Onions | culpeper-1652 | 3 | 319 | 107 | 0.90 | **known_toxic** |
-| 23 | *Coriandrum sativum* (wfo-0000621274) | Apiaceae | CORIANDER | pliny | 3 | 157 | 29 | 1.00 | not listed |
-| 24 | *Carum carvi* (wfo-0000588460) | Apiaceae | Caraway | culpeper-1652 | 3 | 77 | 13 | 1.00 | not listed |
-| 25 | *Citrullus colocynthis* (wfo-0000607845) | Cucurbitaceae | COLOCYNTHIS | pliny | 3 | 74 | 18 | 1.00 | not listed |
-| 26 | *Cotinus coggygria* (wfo-0000623618) | Anacardiaceae | Down, or CottonThistle; The Woolley, or Cotton Thistle | culpeper-1652 | 3 | 44 | 10 | 0.82 | not listed |
-| 27 | *Dioscorea communis* (wfo-0000389997) | Dioscoreaceae | ASTAPHISAGRIA, OTHERWISE CALLED STAPHIS OR TAMINIA | pliny | 3 | 42 | 19 | 1.00 | **known_toxic** |
-| 28 | *Filipendula ulmaria* (wfo-0000983427) | Rosaceae | Queen of the Meadows, Meadow-sweet, or Mead-sweet | culpeper-1652 | 3 | 25 | 8 | 0.85 | not listed |
-| 29 | *Betonica officinalis* (wfo-0000329771) | Lamiaceae | Wood-Betony | culpeper-1652 | 3 | 22 | 8 | 0.60 | not listed |
-| 30 | *Moricandia arvensis* (wfo-0000369713) | Brassicaceae | WILD CABBAGE | pliny | 3 | 19 | 3 | 0.61 | not listed |
+| # | Species (WFO) | Family | Names as written | Sources | Attest. | Compounds | Refs | Min conf. | Toxicity (AI-drafted, unverified) | Toxicity source |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | *Artemisia absinthium* (wfo-0000134589) | Asteraceae | ABSINTHIUM OR WORMWOOD; Wormwood | culpeper-1652, pliny | 12 | 153 | 47 | 0.76 | concern_reported | [EMA/HMPC, EU herbal medicine summary for the public (wormwood herb)](https://www.ema.europa.eu/en/documents/herbal-summary/wormwood-herb-summary-public_en.pdf) |
+| 2 | *Agrimonia eupatoria* (wfo-0001006654) | Rosaceae | Agrimony; EUPATORIA | culpeper-1652, pliny | 6 | 21 | 6 | 0.75 | no_toxicity_reported | [EMA/HMPC, EU herbal medicine summary for the public (agrimony)](https://www.ema.europa.eu/en/documents/herbal-summary/agrimony-summary-public_en.pdf) |
+| 3 | *Crocus sativus* (wfo-0000788844) | Iridaceae | SAFFRON; Saffron | culpeper-1652, pliny | 5 | 151 | 60 | 0.75 | **toxic_reported** | [Review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12729493/) |
+| 4 | *Symphytum officinale* (wfo-0000432219) | Boraginaceae | ALUM, ALSO CALLED SYMPHYTON PETRÆON; Comfry; Sopewort, or Bruisewort | culpeper-1652, pliny | 5 | 37 | 21 | 0.70 | **toxic_reported** | [EMA/HMPC, EU herbal medicine summary for the public (comfrey root)](https://www.ema.europa.eu/en/documents/herbal-summary/comfrey-root-summary-public_en.pdf) |
+| 5 | *Lavandula angustifolia* (wfo-0000224116) | Lamiaceae | Lavender; TIPHYON | culpeper-1652, pliny | 4.5 | 107 | 11 | 0.88 | data_lacking | [EMA/HMPC, EU herbal monograph (Lavandula angustifolia, flos)](https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-lavandula-angustifolia-p-mill-flos_en.pdf) |
+| 6 | *Ajuga chamaepitys* (wfo-0000933181) | Lamiaceae | CHAMÆPITYS; Ground Pine, or Chamepitys | culpeper-1652, pliny | 4 | 46 | 7 | 0.98 | no_toxicity_reported | [Primary study, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11085171/) |
+| 7 | *Ranunculus ficaria* (wfo-0000460581) | Ranunculaceae | CHELIDONIA; The Iesser Celondine, usually known by the Name of Pilewort | culpeper-1652, pliny | 4 | 17 | 4 | 1.00 | **toxic_reported** | [Case report, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4342611/) |
+| 8 | *Glycyrrhiza glabra* (wfo-0000212813) | Fabaceae | GLYCYRRHIZA OR ADIPSOS; Liquoris | culpeper-1652, pliny | 3 | 461 | 131 | 1.00 | **toxic_reported** | [EMA/HMPC, EU herbal monograph (Glycyrrhiza spp., radix, revision 1)](https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-glycyrrhiza-glabra-l-glycyrrhiza-inflata-bat-glycyrrhiza-uralensis-fisch-radix-revision-1_en.pdf) |
+| 9 | *Melissa officinalis* (wfo-0000240053) | Lamiaceae | Balm; NEP | culpeper-1652, pliny | 3 | 139 | 25 | 1.00 | no_toxicity_reported | [EMA/HMPC, EU herbal medicine summary for the public (melissa leaf)](https://www.ema.europa.eu/en/documents/herbal-summary/melissa-leaf-summary-public_en.pdf) |
+| 10 | *Hyssopus officinalis* (wfo-0000217205) | Lamiaceae | HYSSOP; Hysop | culpeper-1652, pliny | 3 | 80 | 11 | 0.64 | **toxic_reported** | [Review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7956842/) |
+| 11 | *Pastinaca sativa* (wfo-0000391752) | Apiaceae | ELAPHOBOSCON; Parsnip | culpeper-1652, pliny | 3 | 23 | 18 | 0.86 | concern_reported | [Review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8010426/) |
+| 12 | *Galium aparine* (wfo-0000968296) | Rubiaceae | Cleavers, or Goosgrass; PHILANTHROPOS | culpeper-1652, pliny | 3 | 19 | 8 | 0.84 | no_toxicity_reported | [Primary study, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11267910/) |
+| 13 | *Centaurium erythraea* (wfo-0000593916) | Gentianaceae | CENTAURION LEPTON, OR LIBADION, KNOWN ALSO AS FEL TERRÆ; CENTAURION OR CHIRONION; CENTAURIS TRIORCHIS; ONLY CENTURION THAT HAS BEEN THUS HONOURED | pliny | 8 | 36 | 19 | 0.98 | concern_reported | [EMA/HMPC, EU herbal medicine summary for the public (centaury)](https://www.ema.europa.eu/en/documents/herbal-summary/centaury-summary-public_en.pdf) |
+| 14 | *Chelidonium majus* (wfo-0000600655) | Papaveraceae | Celandine | culpeper-1652 | 7 | 69 | 51 | 0.92 | **toxic_reported** | [EMA/HMPC, public statement (Chelidonium majus L., herba)](https://www.ema.europa.eu/en/documents/public-statement/final-public-statement-chelidonium-majus-l-herba_en.pdf) |
+| 15 | *Hyoscyamus niger* (wfo-0001021850) | Solanaceae | Henbane | culpeper-1652 | 6 | 78 | 18 | 0.86 | **toxic_reported** | [Review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4224707/) |
+| 16 | *Raphanus sativus* (wfo-0000402430) | Brassicaceae | CULTIVATED RADISH | pliny | 5 | 248 | 61 | 1.00 | concern_reported | [Systematic review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11012840/) |
+| 17 | *Laser trilobum* (wfo-0000360365) | Apiaceae | LASER | pliny | 5 | 22 | 10 | 1.00 | unknown | none located |
+| 18 | *Salvia sclarea* (wfo-0000302258) | Lamiaceae | Clary | culpeper-1652 | 4 | 136 | 23 | 1.00 | no_toxicity_reported | [Primary study, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13075098/) |
+| 19 | *Euphorbia antiquorum* (wfo-0000960724) | Euphorbiaceae | ACHÆMENIS OR HIPPOPHOBAS | pliny | 4 | 43 | 21 | 1.00 | no_toxicity_reported | [Primary study, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4665026/) |
+| 20 | *Papaver somniferum* (wfo-0000480963) | Papaveraceae | BLACK POPPY; WHITE POPPY | pliny | 3.3 | 108 | 118 | 1.00 | **toxic_reported** | [Review and case study, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6513924/) |
+| 21 | *Humulus lupulus* (wfo-0000725866) | Cannabaceae | Hops | culpeper-1652 | 3 | 484 | 128 | 0.96 | no_toxicity_reported | [EMA/HMPC, EU herbal medicine summary for the public (hop strobile)](https://www.ema.europa.eu/en/documents/herbal-summary/hop-strobile-summary-public_en.pdf) |
+| 22 | *Allium cepa* (wfo-0000755919) | Amaryllidaceae | Onions | culpeper-1652 | 3 | 319 | 107 | 0.90 | **toxic_reported** | [Veterinary review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9495094/) |
+| 23 | *Coriandrum sativum* (wfo-0000621274) | Apiaceae | CORIANDER | pliny | 3 | 157 | 29 | 1.00 | data_lacking | [Review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9314633/) |
+| 24 | *Carum carvi* (wfo-0000588460) | Apiaceae | Caraway | culpeper-1652 | 3 | 77 | 13 | 1.00 | concern_reported | [EMA/HMPC, EU herbal medicine summary for the public (caraway fruit)](https://www.ema.europa.eu/en/documents/herbal-summary/caraway-fruit-summary-public_en.pdf) |
+| 25 | *Citrullus colocynthis* (wfo-0000607845) | Cucurbitaceae | COLOCYNTHIS | pliny | 3 | 74 | 18 | 1.00 | **toxic_reported** | [Case report, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12522648/) |
+| 26 | *Cotinus coggygria* (wfo-0000623618) | Anacardiaceae | Down, or CottonThistle; The Woolley, or Cotton Thistle | culpeper-1652 | 3 | 44 | 10 | 0.82 | **toxic_reported** | [Review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4890191/) |
+| 27 | *Dioscorea communis* (wfo-0000389997) | Dioscoreaceae | ASTAPHISAGRIA, OTHERWISE CALLED STAPHIS OR TAMINIA | pliny | 3 | 42 | 19 | 1.00 | concern_reported | [Review, PMC (open access)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8949886/) |
+| 28 | *Filipendula ulmaria* (wfo-0000983427) | Rosaceae | Queen of the Meadows, Meadow-sweet, or Mead-sweet | culpeper-1652 | 3 | 25 | 8 | 0.85 | concern_reported | [EMA/HMPC, EU herbal monograph (Filipendula ulmaria, herba)](https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-filipendula-ulmaria-l-maxim-herba-first-version_en.pdf) |
+| 29 | *Betonica officinalis* (wfo-0000329771) | Lamiaceae | Wood-Betony | culpeper-1652 | 3 | 22 | 8 | 0.60 | unknown | none located |
+| 30 | *Moricandia arvensis* (wfo-0000369713) | Brassicaceae | WILD CABBAGE | pliny | 3 | 19 | 3 | 0.61 | unknown | none located |

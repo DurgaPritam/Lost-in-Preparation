@@ -2,6 +2,12 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
+## v1.4 — 2026-11-05
+
+| # | Change |
+|---|---|
+| P34 | `toxicityFlag` values now describe what one cited source says: `toxic_reported`, `concern_reported`, `no_toxicity_reported`, `data_lacking`, `unknown`. `known_toxic` and `none_known` are deprecated and kept only for compatibility. The pipeline no longer emits them, and never emits `none_known`, because absence of a report is not evidence of safety. `ProfileIndexEntry` gains optional `toxicityEvidence {source, url, quote, licence, basis, verifiedBy}`. Entries are AI-drafted from EMA herbal documents or CC-licensed PMC articles (`basis = ai_drafted_unverified`, `verifiedBy` empty until a person reviews them). Requested by the project lead, to replace the Wikipedia-list screen in the study-set column. |
+
 ## v1.3 — 2026-11-05
 
 | # | Change |

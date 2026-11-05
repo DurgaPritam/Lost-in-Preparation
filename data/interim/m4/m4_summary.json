@@ -2,6 +2,12 @@
   "descriptor": "rdkit",
   "literatureAgreementExploratory": "9/9",
   "literatureAgreementPreregistered": "19/19",
+  "literatureAgreementPreregisteredV2": "13/17",
+  "waterCalibration": {
+    "median_eq_present_min": 2.004,
+    "median_eq_absent_max": 2.297,
+    "median_eq_0.10": 3.278
+  },
   "modelVersion": "prep-model:f4c4c5ef8a",
   "xtbVersion": "6.7.1",
   "artemisinin": "borderline pass",
@@ -11,5 +17,5 @@
     "profiles": 390,
     "compoundEntries": 42341
   },
-  "generatedAt": "2026-11-05T15:06:34+00:00"
+  "generatedAt": "2026-11-05T16:02:14+00:00"
 }

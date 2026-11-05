@@ -15,6 +15,7 @@
   python -m lip m3 compounds             LOTUS (Wikidata) compounds per species, RDKit-standardised
   python -m lip m3 studyset              study-set proposal table for human approval
   python -m lip m4 validate-logp         RDKit vs GFN2-xTB logP against experiment (needs .tools/xtb-env)
+  python -m lip m4 water-calibration     cold-water likelihood vs logP diagnostic (no model change)
   python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
   python -m lip results                  RESULTS.md from pipeline outputs (validated vs provisional, labelled)
 """
@@ -130,6 +131,9 @@ def main(argv: list[str]) -> int:
         if sub == "validate-logp":
             from .m4 import validate_logp
             print(json.dumps(validate_logp.run(), indent=2))
+        elif sub == "water-calibration":
+            from .m4 import water_calibration
+            print(json.dumps(water_calibration.run(), indent=2))
         elif sub == "run":
             from .m4 import run
             print(json.dumps(run.main(), indent=2))

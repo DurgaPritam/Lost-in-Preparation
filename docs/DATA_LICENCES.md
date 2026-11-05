@@ -43,7 +43,8 @@ EEBO-TCP availability statement (A35365), verbatim:
 | PubMed / PMC OA | Modern preparation methods; short quoted lines for the literature checks | Per-article licence, listed in the table below | used for quoted statements; audit is a later phase |
 | PubChem PUG REST | Structures (SMILES, InChIKey) for the literature-check compounds | NCBI public data | **used** (M4) |
 | SangsterLogP dataset (Zenodo 19387552) | Experimental logP reference for validating the solvent descriptor | **CC BY 4.0** (Zenodo record, checked 2026-11-05); SHA-256 `a5f998a6…`. Attribution: see below | **used** (M4) |
-| Wikipedia, *List of poisonous plants* (rev 1383132551) | Known-toxicity screen (M2 toxic-confusion check, study-set toxicity column) | CC BY-SA 4.0; the page is tagged by its editors as needing expert review | **used** (screen only; not a safety rating) |
+| Wikipedia, *List of poisonous plants* (rev 1383132551) | Known-toxicity screen for M2's toxic-confusion check only (no longer used for the study-set column) | CC BY-SA 4.0; the page is tagged by its editors as needing expert review | **used** (screen only; not a safety rating) |
+| European Medicines Agency (HMPC herbal monographs, public summaries, public statements) | Study-set toxicity entries (one quoted sentence per species) | Each PDF states: "Reproduction is authorised provided the source is acknowledged." (checked in every fetched document) | **used** (attributed short quotes) |
 | Crossref REST API | Publication years of logP sources (training-overlap proxy) | Crossref metadata: CC0 | **used** (M4) |
 | Lewis & Short, *A Latin Dictionary* (1879), PerseusDL lexica TEI | Drafted Pliny name identifications (provisional) | **CC BY-SA 4.0** (repository licence) | **used** (provisional drafts) |
 | English Wikipedia (article wikitext) | Drafted Culpeper name identifications (provisional) | CC BY-SA 4.0 | **used** (provisional drafts) |
@@ -57,11 +58,13 @@ Every API response is cached with its request and retrieval time under `data/cac
 
 ## PMC articles quoted
 
-Only short quotations (one sentence each) are stored, with the PMCID, the URL and a SHA-256 of the fetched page. The licence is as stated on each article page (checked 2026-11-05).
+Articles licensed CC BY-NC or CC BY-NC-ND are used only for one short attributed sentence each, in a non-commercial research project, and are not redistributed.
+
+Only short quotations (one sentence each) from openly licensed articles are stored; an article with no stated licence is paraphrased and cited instead, never quoted. Each row keeps the PMCID, the URL and a SHA-256 of the fetched page. The licence is as stated on each article page (checked 2026-11-05).
 
 | PMCID | Used in | Licence stated on the page |
 |---|---|---|
-| PMC2995283 | exploratory literature table | **none stated** on the page (in PMC); quoted under fair-use limits only |
+| PMC2995283 | exploratory literature table | **none stated** on the page (in PMC). **Not quoted:** the 3 rows carry our own paraphrase plus a full citation (Srivastava, Shankar & Gupta 2010, *Mol Med Rep* 3(6):895–901, doi:10.3892/mmr.2010.377), checked against the article by short anchor terms |
 | PMC13074686 | exploratory | CC BY 4.0 |
 | PMC7587570 | exploratory | CC BY 4.0 |
 | PMC10217939 | exploratory | CC BY 4.0 |
@@ -75,3 +78,35 @@ Only short quotations (one sentence each) are stored, with the PMCID, the URL an
 | PMC8398316 | pre-registered | CC BY 4.0 |
 | PMC12309076 | pre-registered | **CC BY-NC-ND 4.0** (short attributed quote only; not redistributed) |
 | PMC10180401 | pre-registered | CC BY 4.0 |
+| PMC11171837 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC11504252 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC11819889 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC11988581 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC12715987 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC13306179 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC13468080 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC13471599 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC5603879 | pre-registered v2 (water preparations) | CC BY 3.0 |
+| PMC6696252 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC7587196 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC8073307 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC8124543 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC9027103 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC9032859 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC9966964 | pre-registered v2 (water preparations) | CC BY 4.0 |
+| PMC12729493 | study-set toxicity (*Crocus sativus*) | CC BY 4.0 |
+| PMC11085171 | study-set toxicity (*Ajuga chamaepitys*) | CC BY 4.0 |
+| PMC4342611 | study-set toxicity (*Ranunculus ficaria*) | CC BY-NC 4.0 |
+| PMC7956842 | study-set toxicity (*Hyssopus officinalis*) | CC BY 4.0 |
+| PMC8010426 | study-set toxicity (*Pastinaca sativa*) | CC BY-NC 4.0 |
+| PMC11267910 | study-set toxicity (*Galium aparine*) | CC BY 4.0 |
+| PMC4224707 | study-set toxicity (*Hyoscyamus niger*) | CC BY 3.0 |
+| PMC11012840 | study-set toxicity (*Raphanus sativus*) | CC BY 4.0 |
+| PMC13075098 | study-set toxicity (*Salvia sclarea*) | CC BY 4.0 |
+| PMC4665026 | study-set toxicity (*Euphorbia antiquorum*) | CC BY-NC 3.0 |
+| PMC6513924 | study-set toxicity (*Papaver somniferum*) | CC BY-NC 4.0 |
+| PMC9495094 | study-set toxicity (*Allium cepa*) | CC BY 4.0 |
+| PMC9314633 | study-set toxicity (*Coriandrum sativum*) | CC BY 4.0 |
+| PMC12522648 | study-set toxicity (*Citrullus colocynthis*) | CC BY-NC-ND 4.0 |
+| PMC4890191 | study-set toxicity (*Cotinus coggygria*) | CC BY-NC-ND 4.0 |
+| PMC8949886 | study-set toxicity (*Dioscorea communis*) | CC BY 4.0 |

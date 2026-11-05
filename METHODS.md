@@ -113,7 +113,7 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
   - the top two candidates are within 0.15;
   - the total evidence is < 0.5;
   - the name resolves only to genus level;
-  - **toxic confusion**: candidates with confidence ≥ 0.15 differ in known toxicity. Toxicity is screened against Wikipedia's *List of poisonous plants* (CC BY-SA 4.0, revision recorded). Absence from the list is recorded as `unknown`, never as safe. The list is incomplete: it omits, for example, *Papaver somniferum* and *Symphytum officinale*. It also lists some genera wholesale, such as *Allium* spp., mainly for animal toxicity.
+  - **toxic confusion**: candidates with confidence ≥ 0.15 differ in known toxicity. For this screen only, toxicity is checked against Wikipedia's *List of poisonous plants* (CC BY-SA 4.0, revision recorded). The study-set column uses the curated entries in §8 instead. Absence from the list is recorded as `unknown`, never as safe. The list is incomplete: it omits, for example, *Papaver somniferum* and *Symphytum officinale*. It also lists some genera wholesale, such as *Allium* spp., mainly for animal toxicity.
 - **Not used:** POWO refused automated access, so it isn't used. No LLM (`model` basis) and no scholarly lists are used as candidates; scholarly identifications are reserved for evaluation.
 
 **Evaluation.** `data/gold/name_identifications.csv` holds 30 names (15 Culpeper, 15 Pliny, seed `20261107`). A person fills in the scholarly accepted name and a citation for each row; rows without a citation are not scored. `lip m2 eval` reports top-1 and top-3 accuracy with Wilson 95% intervals, plus the share of names flagged disputed (written to `metrics.json`).
@@ -139,7 +139,12 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
   - coverage that is not poor.
 - **Attestation proxy:** recipe-scope passages per resolved name. A Pliny chapter's paragraphs are split across the plants it names.
 - **Ranking:** by number of sources, then attestations, then compounds.
-- **Not yet done:** toxicity has not been assessed.
+- **Toxicity** (hand-curated, *provisional*): each of the 30 proposed species has one entry in `data/reference/toxicity_curated.csv` (built by `pipeline/lip/m3/toxicity.py`).
+  - **Source:** one reputable source opened in the run: an EMA herbal document (monograph, public summary or public statement) or a peer-reviewed PMC article with a Creative Commons licence.
+  - **Quote:** one sentence, re-checked against the fetched source on every run. PDF text is extracted with pypdf and whitespace-normalised.
+  - **Category:** says what the source reports, not a safety rating: `toxic_reported`, `concern_reported`, `no_toxicity_reported`, `data_lacking`, or `unknown` (no source located).
+  - **Status:** every entry is `ai_drafted_unverified`, with `verified_by` empty for human review. `no_toxicity_reported` and `unknown` are never evidence of safety.
+  - **Retention:** toxic species stay in the proposal; the flag is for a lab's risk assessment.
 
 ## 9. Preparation model (M4)
 
@@ -176,11 +181,20 @@ The thresholds were set in the config before running. A pass whose 5th–95th pe
 
 **Literature checks** (*provisional*, §10). They are never pooled.
 - **Exploratory:** 9 rows across 5 plants, selected after the model was built.
-- **Pre-registered:** the rule in [docs/PREREGISTRATION.md](docs/PREREGISTRATION.md) was committed before any rows were collected: 6 plants, fixed PMC queries, a mechanical sentence rule, and a target of about 30 rows.
+- **Pre-registered v1:** the rule in [docs/PREREGISTRATION.md](docs/PREREGISTRATION.md) was committed before any rows were collected: 6 plants, fixed PMC queries, a mechanical sentence rule, and a target of about 30 rows. It mostly found essential-oil rows.
+- **Pre-registered v2 (water preparations):** the rule in [docs/PREREGISTRATION_v2.md](docs/PREREGISTRATION_v2.md) was committed and pushed before any v2 row was collected. It covers infusions, decoctions, juices and cold-water preparations of the 30 study-set species plus 6 well-studied tea plants. It sets separate quotas of 15 `present` and 15 `low` rows, and a second PMC query per plant that targets absence reports. Shortfalls are reported, not filled by relaxing the rule. A post-hoc row audit by the AI is reported beside the registered result, never instead of it.
 
-Both use the same thresholds: "present" requires a median ≥ 0.40 and "low" requires < 0.30.
+All three use the same thresholds: "present" requires a median ≥ 0.40 and "low" requires < 0.30. Agreement is reported separately for `present` and `low` rows.
 
-**Outputs:** `site-data/profiles.json` (30 study-set species × 13 preparations, contract v1.2) and `data/interim/m4/profiles_long.parquet`.
+**Water-window diagnostic (no model change).** `lip m4 water-calibration` plots the cold-water median and its 5–95% range against logP, for a logP grid and for every study-set compound. The output is [docs/figures/water_likelihood_vs_logp.svg](docs/figures/water_likelihood_vs_logp.svg) and `data/interim/m4/water_calibration.json`. For a filtered, cold, aqueous preparation, every factor except the solvent window is 1, so the prediction is a one-variable logistic in Crippen logP. The model has no solubility, melting-point, dose or contact-time term.
+
+**Secondary variant `water-partition-slope`** (pre-registered in v2, evaluated on v2 rows only):
+- the window slope is fixed at ln 10, the slope of a two-phase partition equilibrium;
+- the logP descriptor gets explicit Normal noise with SD equal to its validation RMSE.
+
+It does not replace the primary model. Adopting it would need a new registration and new rows.
+
+**Outputs:** `site-data/profiles/` (one file per species plus `index.json`; 30 study-set species × 13 preparations; index contract v1.4 with cited toxicity evidence) and `data/interim/m4/profiles_long.parquet`.
 
 ## 10. Provisional references (AI-made; never presented as validation)
 
@@ -190,7 +204,8 @@ Until the human gold sets exist, three references made by an AI (Claude Code) le
 |---|---|---|---|
 | `data/silver/silver_v1.json` | `silver_ai_reference` | Recipe labels for the 50 sample passages, written by the AI directly from the guidelines (`data/silver/silver_v1_spec.py`). Every quote is checked verbatim by `lip m1 silver`. | Same author as the guidelines and few-shot examples, so agreement may be inflated by shared conventions. |
 | `data/gold/name_identifications.csv`, `draft*` columns | `ai_drafted_unverified` | Candidate identifications drafted only from sources fetched in the run: Lewis & Short (PerseusDL TEI) and English Wikipedia. Each has a quoted line, checked against the fetched text on every run. Bostock & Riley are excluded. `verified_by` is empty. | **Lewis & Short and Wikipedia are not independent modern scholarly sources.** L&S (1879) may rest on the same older commentators as the system's inputs, and Wikipedia is tertiary. The drafts stay unverified. |
-| `data/reference/prep_literature_v1.csv` | `ai_curated_literature_reference` | **Exploratory:** 9 statements from 5 open-access PMC articles, each quote checked against the fetched article. | Selected after the model was built, by the same AI; n is small. |
+| `data/reference/prep_literature_v1.csv` | `ai_curated_literature_reference` | **Exploratory:** 9 statements from 5 PMC articles. Each quote from an openly licensed article is checked against the fetched article. The one article with no stated licence (PMC2995283) is paraphrased and cited, not quoted, and checked by short anchor terms. | Selected after the model was built, by the same AI; n is small. |
 | `data/reference/prep_literature_prereg_v1.csv` | `ai_curated_literature_reference` | **Pre-registered:** rows selected by the committed rule (docs/PREREGISTRATION.md). | The rule and code were written by an AI. The mechanical rule mostly yields essential-oil rows, which makes it a weak test of aqueous and alcoholic preparations. |
+| `data/reference/prep_literature_prereg_v2.csv` | `ai_curated_literature_reference` | **Pre-registered v2:** aqueous-preparation rows selected by the committed rule (docs/PREREGISTRATION_v2.md), with each article's stated licence. | The rule and code were written by an AI. The sentence rule cannot tell "the preparation does not carry it" from "the plant has little of it". Some rows are mechanical misreadings; these are listed in the post-hoc audit (`ai_post_hoc_audit_unverified`). |
 
 The annotation tool's independent mode never shows any of these. **Review** mode, for adjudication only, shows human labels beside the silver labels.

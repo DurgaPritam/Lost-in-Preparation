@@ -19,7 +19,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-CONTRACT_VERSION = "1.3"
+CONTRACT_VERSION = "1.4"
 UNKNOWN = "unknown"
 
 
@@ -144,10 +144,23 @@ class MatchCode(str, Enum):  # P5
     unknown = "unknown"
 
 
-class ToxicityFlag(str, Enum):  # P18
-    known_toxic = "known_toxic"
-    none_known = "none_known"
-    unknown = "unknown"
+class ToxicityFlag(str, Enum):  # P18; v1.4 (P34): values describe what the cited SOURCE says
+    toxic_reported = "toxic_reported"            # poisoning, toxic effects or toxic constituents reported
+    concern_reported = "concern_reported"        # a specific risk, contraindication or warning
+    no_toxicity_reported = "no_toxicity_reported"  # NOT evidence of safety
+    data_lacking = "data_lacking"                # the source says safety / toxicity data are missing
+    unknown = "unknown"                          # no source located; NOT evidence of safety
+    known_toxic = "known_toxic"                  # deprecated in v1.4 (screen-list value); kept for compatibility
+    none_known = "none_known"                    # deprecated in v1.4; never emitted (absence is not safety)
+
+
+class ToxicityEvidence(_Model):  # v1.4 (P34)
+    source: str
+    url: str
+    quote: str = Field(description="one verbatim sentence, re-checked against the fetched source")
+    licence: str
+    basis: str = Field(description="e.g. ai_drafted_unverified")
+    verifiedBy: str = ""
 
 
 class SpeciesBasis(str, Enum):  # commentary_19c: candidate only, never ground truth (P29)
@@ -337,6 +350,7 @@ class ProfileIndexEntry(_Record):  # v1.3 (P33): site-data/profiles/index.json
     compounds: int
     toxicityFlag: ToxicityFlag = ToxicityFlag.unknown
     toxicityNote: str | None = None
+    toxicityEvidence: ToxicityEvidence | None = None  # v1.4 (P34)
 
 
 # --- audit.json ---------------------------------------------------------------------------

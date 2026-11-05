@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.3/profiles.index.json",
+  "$id": "lost-in-preparation/contract/1.4/profiles.index.json",
   "title": "profiles.index.json",
   "type": "array",
   "items": {
@@ -47,6 +47,17 @@
         ],
         "default": null,
         "title": "Toxicitynote"
+      },
+      "toxicityEvidence": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/ToxicityEvidence"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
       }
     },
     "required": [
@@ -60,11 +71,56 @@
     "type": "object"
   },
   "$defs": {
+    "ToxicityEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "quote": {
+          "description": "one verbatim sentence, re-checked against the fetched source",
+          "title": "Quote",
+          "type": "string"
+        },
+        "licence": {
+          "title": "Licence",
+          "type": "string"
+        },
+        "basis": {
+          "description": "e.g. ai_drafted_unverified",
+          "title": "Basis",
+          "type": "string"
+        },
+        "verifiedBy": {
+          "default": "",
+          "title": "Verifiedby",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "url",
+        "quote",
+        "licence",
+        "basis"
+      ],
+      "title": "ToxicityEvidence",
+      "type": "object"
+    },
     "ToxicityFlag": {
       "enum": [
+        "toxic_reported",
+        "concern_reported",
+        "no_toxicity_reported",
+        "data_lacking",
+        "unknown",
         "known_toxic",
-        "none_known",
-        "unknown"
+        "none_known"
       ],
       "title": "ToxicityFlag",
       "type": "string"

@@ -9,8 +9,10 @@ Per species (top-1 M2 candidate, in WFO):
 Attestations count only name entries whose resolution is undisputed with confidence >= 0.6 (v2: a
 disputed entry neither counts nor vetoes the species). Eligible: attestations >= 3, coverage not poor.
 Ranked by sources, then attestations, then compounds; the top `SIZE` are proposed.
-Toxicity column: known-toxicity screen from Wikipedia's "List of poisonous plants" (CC BY-SA 4.0,
-revision recorded) via m2/toxicity.py; "unknown" means not listed, which is NOT evidence of safety.
+Toxicity columns (proposed species only): hand-curated entries from m3/toxicity.py, one reputable source
+each (EMA herbal documents or CC-licensed PMC articles) with a verbatim quote checked against the fetched
+source; basis ai_drafted_unverified, verified_by empty. "unknown" / "no_toxicity_reported" are NOT
+evidence of safety. (The Wikipedia list is still used only for M2's toxic-confusion screen.)
 Nothing here is a claim about efficacy or safety.
 """
 from __future__ import annotations
@@ -47,23 +49,26 @@ def build() -> pd.DataFrame:
     g["nReferences"] = g.nReferences.fillna(0).astype(int)
     g["poorCoverage"] = g.poorCoverage.fillna(True).astype(bool)
     g["attestations"] = g.attestations.round(1)
-    from ..m2 import toxicity
-    tx = [toxicity.flag(n) for n in g.acceptedName]
-    g["toxicity"] = [x[0] for x in tx]
-    g["toxicityNote"] = [x[1] for x in tx]
     if "toxicConfusion" in top:
         g = g.merge(top.groupby("acceptedName").toxicConfusion.max().rename("toxicConfusion").reset_index(), on="acceptedName", how="left")
     g["eligible"] = (g.attestations >= MIN_ATTEST) & (~g.poorCoverage)
     g = g.sort_values(["eligible", "sources", "attestations", "nCompounds"], ascending=[False, False, False, False])
     g["proposed"] = False
     g.loc[g[g.eligible].index[:SIZE], "proposed"] = True
+    from . import toxicity
+    tx = toxicity.build(list(g[g.proposed].acceptedName)).set_index("acceptedName")
+    for col, src in (("toxicity", "toxicity"), ("toxicityNote", "summary"), ("toxicitySource", "sourceName"),
+                     ("toxicityUrl", "sourceUrl"), ("toxicityQuote", "quote"), ("toxicityBasis", "basis"),
+                     ("toxicityVerifiedBy", "verified_by")):
+        g[col] = g.acceptedName.map(tx[src]).fillna("")
+    g.loc[~g.proposed, "toxicity"] = "not_curated"
     g["approved"] = ""  # filled by a person
     return g
 
 
-def _rev() -> str:
-    from ..m2 import toxicity
-    return str(toxicity.load()["revid"])
+def toxicity_path() -> str:
+    from .toxicity import OUT
+    return str(OUT.relative_to(ROOT))
 
 
 def main() -> str:
@@ -86,18 +91,20 @@ def main() -> str:
         "Species are ranked by the number of sources attesting them, then attestations, then compounds.",
         "**Attestations are a passage-count proxy, not extracted recipes.**",
         "",
-        f"**Toxicity** is a screen against Wikipedia's *List of poisonous plants* (CC BY-SA 4.0, revision {_rev()}), whose own editors flag it as needing expert review. "
-        "`known_toxic` = the species or genus is listed (genus-level listings such as *Allium* spp. flag every species in the genus); "
-        "`not listed` = absent from that list, which is **not evidence of safety**: the list omits, for example, *Papaver somniferum* "
-        "(opium poppy) and *Symphytum officinale* (comfrey, hepatotoxic pyrrolizidine alkaloids), both in this proposal. "
+        "**Toxicity** entries are hand-curated per species and **AI-drafted, unverified** (`ai_drafted_unverified`; `verified_by` empty, for review). "
+        "Each cites one reputable source opened in the pipeline run (EMA herbal documents, or a CC-licensed PMC article) and quotes one sentence of it, "
+        f"re-checked against the fetched source every run; full entries in `{toxicity_path()}`. Categories describe what the source says, not a safety rating: "
+        "`toxic_reported`, `concern_reported` (a specific risk, contraindication or warning), `no_toxicity_reported` and `unknown` (no source located) "
+        "are **never evidence of safety**, and `data_lacking` means the source says the data are missing. "
         "Toxic plants stay in the proposal, because a lab may still re-test them under appropriate safety controls; the flag is for the lab's risk assessment.",
         "",
-        "| # | Species (WFO) | Family | Names as written | Sources | Attest. | Compounds | Refs | Min conf. | Toxicity |",
-        "|---|---|---|---|---|---|---|---|---|---|",
+        "| # | Species (WFO) | Family | Names as written | Sources | Attest. | Compounds | Refs | Min conf. | Toxicity (AI-drafted, unverified) | Toxicity source |",
+        "|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for i, r in enumerate(p.itertuples(), 1):
         lines.append(f"| {i} | *{r.acceptedName}* ({r.wfoId}) | {r.family or ''} | {r.namesAsWritten} | {r.sourceList} | "
                      f"{r.attestations:g} | {r.nCompounds} | {r.nReferences} | {r.minConfidence:.2f} | "
-                     f"{'**known_toxic**' if r.toxicity == 'known_toxic' else 'not listed'} |")
+                     f"{'**' + r.toxicity + '**' if r.toxicity == 'toxic_reported' else r.toxicity} | "
+                     f"{f'[{r.toxicitySource}]({r.toxicityUrl})' if r.toxicityUrl else 'none located'} |")
     OUT_MD.write_text("\n".join(lines) + "\n")
     return OUT_MD.read_text()

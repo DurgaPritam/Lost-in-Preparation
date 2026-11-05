@@ -10,7 +10,7 @@ from contract import models as C
 
 from .. import metrics_store
 from ..paths import INTERIM, ROOT, SITE_DATA
-from . import chem, literature, prereg_literature, xtb
+from . import chem, literature, prereg_literature, prereg_v2, water_calibration, xtb
 from . import model as M
 
 OUT = INTERIM / "m4"
@@ -118,17 +118,22 @@ def profiles(cfg: dict, descriptor: str) -> dict:
     for old in pdir.glob("*.json"):
         old.unlink()
     (SITE_DATA / "profiles.json").unlink(missing_ok=True)
-    tox = dict(zip(prop.acceptedName, zip(prop.get("toxicity", ["unknown"] * len(prop)), prop.get("toxicityNote", [None] * len(prop)))))
+    from ..m3 import toxicity as tox_mod
+    tox = {r.acceptedName: r for r in tox_mod.table().itertuples()}  # curated, ai_drafted_unverified (contract v1.4, P34)
     index = []
     for sp in prop.itertuples():
         recs = [p for p in records if p.speciesId == sp.wfoId]
         f = pdir / f"{sp.wfoId}.json"
         f.write_text(json.dumps([p.model_dump(by_alias=True) for p in recs], ensure_ascii=False, separators=(",", ":")) + "\n")
-        flag, note = tox.get(sp.acceptedName, ("unknown", None))
+        t = tox.get(sp.acceptedName)
+        ev = (C.ToxicityEvidence(source=t.sourceName, url=t.sourceUrl, quote=t.quote, licence=t.licence, basis=t.basis,
+                                 verifiedBy=t.verified_by) if t is not None and t.sourceUrl else None)
         index.append(C.ProfileIndexEntry(speciesId=sp.wfoId, acceptedName=sp.acceptedName, file=f"profiles/{f.name}",
                                          preparations=len(recs), compounds=len(recs[0].compounds) if recs else 0,
-                                         toxicityFlag=flag if isinstance(flag, str) else "unknown",
-                                         toxicityNote=note if isinstance(note, str) else None).model_dump())
+                                         toxicityFlag=t.toxicity if t is not None else "unknown",
+                                         toxicityNote=(t.summary + " (AI-drafted, unverified)") if t is not None else
+                                         "not curated; NOT evidence of safety",
+                                         toxicityEvidence=ev).model_dump())
     (pdir / "index.json").write_text(json.dumps(index, indent=1, ensure_ascii=False) + "\n")
     rel = ROOT / "data" / "release"
     rel.mkdir(parents=True, exist_ok=True)
@@ -137,6 +142,22 @@ def profiles(cfg: dict, descriptor: str) -> dict:
     pd.DataFrame(rows).to_parquet(OUT / "profiles_long.parquet", index=False)
     return {"species": int(prop.acceptedName.nunique()), "preparations": len(M.GRID), "profiles": len(records),
             "compoundEntries": len(rows)}
+
+
+def _by_label(pre: dict) -> dict:
+    """v1 agreement split into `present` and `low` rows (same file, same thresholds)."""
+    from ..m2.evaluate import wilson
+    out = {}
+    for key, lab in (("agreementPresent", "present"), ("agreementLow", "low")):
+        b = (pre.get("byLabel") or {}).get(lab)
+        if b and b["count"]:
+            lo, hi = wilson(int(b["sum"]), int(b["count"]))
+            out[key] = C.Metric(status="computed", value=round(b["sum"] / b["count"], 4), low=round(lo, 4), high=round(hi, 4),
+                                n=int(b["count"]), sourceFile="data/interim/m4/literature_prereg.json",
+                                note=f"PRE-REGISTERED v1, {lab} rows: {int(b['sum'])}/{int(b['count'])} agree; Wilson 95% CI")
+        else:
+            out[key] = C.not_computed(f"v1 rule found no {lab} rows")
+    return out
 
 
 def main() -> dict:
@@ -180,9 +201,25 @@ def main() -> dict:
         pm = C.not_computed("no rows met the pre-registered rule")
     metrics_store.update_provisional("prepModelVsLiterature_preregistered", C.ProvisionalSection(
         basis=literature.BASIS, label="PRE-REGISTERED literature check, provisional; AI-written rule and code, not human-curated",
-        metrics={"agreement": pm}))
+        metrics={"agreement": pm, **_by_label(pre)}))
+    v2 = prereg_v2.evaluate(cfg)
+    v2m = {}
+    for key, block in (("agreement", "overall"), ("agreementPresent", "present"), ("agreementLow", "low")):
+        b = v2["primary"].get(block) or {}
+        if b.get("n"):
+            v2m[key] = C.Metric(status="computed", value=b["rate"], low=b["ci"][0], high=b["ci"][1], n=b["n"],
+                                sourceFile="data/interim/m4/literature_prereg_v2.json",
+                                note=f"PRE-REGISTERED v2 ({prereg_v2.REGISTRATION}); {block}: {b['agree']}/{b['n']} rows agree; "
+                                     f"quota 15 present + 15 low, found {v2['found']['present']} + {v2['found']['low']}, rule not relaxed; Wilson 95% CI")
+        else:
+            v2m[key] = C.not_computed(f"no {block} rows met the v2 rule")
+    metrics_store.update_provisional("prepModelVsLiterature_preregistered_v2", C.ProvisionalSection(
+        basis=prereg_v2.BASIS, label=prereg_v2.LABEL, metrics=v2m))
+    calib = water_calibration.run()
     summary = {"descriptor": descriptor, "literatureAgreementExploratory": f"{lit['agree']}/{lit['n']}",
-               "literatureAgreementPreregistered": f"{pre['agree']}/{pre['rowsFound']}", "modelVersion": M.config_version(cfg), "xtbVersion": xtb.version(),
+               "literatureAgreementPreregistered": f"{pre['agree']}/{pre['rowsFound']}",
+               "literatureAgreementPreregisteredV2": f"{v2['primary']['overall']['agree']}/{v2['primary']['overall']['n']}",
+               "waterCalibration": calib["crossings"], "modelVersion": M.config_version(cfg), "xtbVersion": xtb.version(),
                "artemisinin": case["result"], "profiles": prof, "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     (OUT / "m4_summary.json").write_text(json.dumps(summary, indent=2))
     return summary
