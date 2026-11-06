@@ -1,0 +1,2881 @@
+{
+ "batch": 20,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "pliny-nh:b20:c076:003": {
+   "recipes": []
+  },
+  "pliny-nh:b20:c076:004": {
+   "recipes": []
+  },
+  "pliny-nh:b20:c008:002": {
+   "recipes": [
+    {
+     "recipeQuote": "The pulp of this fruit, taken with wormwood and salt, is a remedy for toothache",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "COLOCYNTHIS",
+       "part": "fruit",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "salt",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "COLOCYNTHIS",
+     "part": "fruit",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "toothache",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The pulp of this fruit"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the juice of it, warmed with vinegar, has the effect of strengthening loose teeth",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "COLOCYNTHIS",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "COLOCYNTHIS",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "warm",
+     "heatText": "warmed with vinegar",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "strengthening loose teeth",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the juice of it"
+      },
+      {
+       "field": "solvent",
+       "quote": "warmed with vinegar"
+      },
+      {
+       "field": "heat",
+       "quote": "warmed with vinegar"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Rubbed in with oil, it removes pains of the spine, loins, and hips",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "COLOCYNTHIS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "COLOCYNTHIS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "pains of the spine, loins, and hips",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Rubbed in with oil"
+      },
+      {
+       "field": "form",
+       "quote": "Rubbed in with oil"
+      },
+      {
+       "field": "filtered",
+       "quote": "Rubbed in with oil"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the seeds of it, in even numbers, attached to the body in a linen cloth, will cure, it is said, the fevers to which the Greeks have given the name of “periodic.”",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "COLOCYNTHIS",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "COLOCYNTHIS",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "the fevers to which the Greeks have given the name of “periodic.”",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seeds of it"
+      },
+      {
+       "field": "solvent",
+       "quote": "attached to the body in a linen cloth"
+      },
+      {
+       "field": "form",
+       "quote": "attached to the body in a linen cloth"
+      },
+      {
+       "field": "filtered",
+       "quote": "attached to the body in a linen cloth"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice, too, of the cultivated gourd shred in pieces, applied warm, is good for ear-ache",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "cultivated gourd",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "cultivated gourd",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "warm",
+     "heatText": "applied warm",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "ear-ache",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice, too, of the cultivated gourd"
+      },
+      {
+       "field": "heat",
+       "quote": "applied warm"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "and the flesh of the inside, used without the seed, for corns on the feet and the suppurations known to the Greeks as “apostemata.”",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "cultivated gourd",
+       "part": "fruit",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "cultivated gourd",
+     "part": "fruit",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "corns on the feet and the suppurations known to the Greeks as “apostemata.”",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the flesh of the inside, used without the seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "When the pulp and seeds are boiled together, the decoction is good for strengthening loose teeth, and for preventing toothache",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "strengthening loose teeth, and for preventing toothache",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the pulp and seeds"
+      },
+      {
+       "field": "heat",
+       "quote": "the pulp and seeds are boiled together"
+      },
+      {
+       "field": "process",
+       "quote": "the decoction is good"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "wine, too, boiled with this plant, is curative of defluxions of the eyes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "defluxions of the eyes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "wine, too, boiled with this plant"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled with this plant"
+      },
+      {
+       "field": "process",
+       "quote": "wine, too, boiled with this plant"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The leaves of it, bruised with fresh cypress-leaves, or the leaves alone, boiled in a vessel of potters’ clay and beaten up with goose-grease, and then applied to the part affected, are an excellent cure for wounds",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "cypress-leaves",
+       "part": "leaf",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "an excellent cure for wounds",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves of it"
+      },
+      {
+       "field": "process",
+       "quote": "bruised with fresh cypress-leaves"
+      },
+      {
+       "field": "form",
+       "quote": "applied to the part affected"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied to the part affected"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The leaves of it, bruised with fresh cypress-leaves, or the leaves alone, boiled in a vessel of potters’ clay and beaten up with goose-grease, and then applied to the part affected, are an excellent cure for wounds",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "an excellent cure for wounds",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the leaves alone"
+      },
+      {
+       "field": "solvent",
+       "quote": "beaten up with goose-grease"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled in a vessel of potters’ clay"
+      },
+      {
+       "field": "process",
+       "quote": "boiled in a vessel of potters’ clay and beaten up with goose-grease"
+      },
+      {
+       "field": "form",
+       "quote": "applied to the part affected"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied to the part affected"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fresh shavings of the rind are used as a cooling application for gout, and burning pains in the head, in infants more particularly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "other",
+     "freshOrDried": "fresh",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "gout, and burning pains in the head, in infants more particularly",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "shavings of the rind"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "Fresh shavings of the rind"
+      },
+      {
+       "field": "heat",
+       "quote": "Fresh shavings of the rind"
+      },
+      {
+       "field": "form",
+       "quote": "a cooling application"
+      },
+      {
+       "field": "filtered",
+       "quote": "a cooling application"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "they are good, too, for erysipelas, whether it is the shavings of the rind or the seeds of the plant that are applied to the part affected",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "erysipelas",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the shavings of the rind"
+      },
+      {
+       "field": "form",
+       "quote": "applied to the part affected"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied to the part affected"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "they are good, too, for erysipelas, whether it is the shavings of the rind or the seeds of the plant that are applied to the part affected",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "erysipelas",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seeds of the plant"
+      },
+      {
+       "field": "form",
+       "quote": "applied to the part affected"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied to the part affected"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of the scrapings, employed as a liniment with rose-oil and vinegar, moderates the burning heats of fevers",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil",
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "moderates the burning heats of fevers",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of the scrapings"
+      },
+      {
+       "field": "solvent",
+       "quote": "with rose-oil"
+      },
+      {
+       "field": "solvent",
+       "quote": "rose-oil and vinegar"
+      },
+      {
+       "field": "form",
+       "quote": "employed as a liniment"
+      },
+      {
+       "field": "filtered",
+       "quote": "employed as a liniment"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the ashes of the dried fruit applied to burns are efficacious in a most remarkable degree",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "fruit",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "fruit",
+     "freshOrDried": "dried",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "burns",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the dried fruit"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "the dried fruit"
+      },
+      {
+       "field": "process",
+       "quote": "the ashes of the dried fruit"
+      },
+      {
+       "field": "form",
+       "quote": "applied to burns"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c008:003": {
+   "recipes": [
+    {
+     "recipeQuote": "Chrysippus, the physician, condemned the use of the gourd as a food: it is generally agreed, however, that it is extremely good for the stomach, and for ulcerations of the intestines and of the bladder.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "gourd",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "gourd",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "extremely good for the stomach, and for ulcerations of the intestines and of the bladder",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "the use of the gourd as a food"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c013:001": {
+   "recipes": [
+    {
+     "recipeQuote": "The cultivated radish, too, in addition to what we have already said of it, purges the stomach, attenuates the phlegm, acts as a diuretic, and detaches the bilious secretions.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "cultivated radish",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "cultivated radish",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "purges the stomach, attenuates the phlegm, acts as a diuretic, and detaches the bilious secretions",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "A decoction of the rind of radishes in wine, taken in the morning in doses of three cyathi, has the effect of breaking and expelling calculi of the bladder.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "breaking and expelling calculi of the bladder",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the rind of radishes"
+      },
+      {
+       "field": "solvent",
+       "quote": "the rind of radishes in wine"
+      },
+      {
+       "field": "heat",
+       "quote": "A decoction of the rind"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction of the rind"
+      },
+      {
+       "field": "form",
+       "quote": "taken in the morning in doses of three cyathi"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A decoction, too, of this rind in vinegar and water, is employed as a liniment for the stings of serpents.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar",
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "decoction",
+     "form": "ointment",
+     "indicationAsWritten": "the stings of serpents",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "this rind"
+      },
+      {
+       "field": "solvent",
+       "quote": "in vinegar and water"
+      },
+      {
+       "field": "heat",
+       "quote": "A decoction, too, of this rind"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction, too, of this rind"
+      },
+      {
+       "field": "form",
+       "quote": "employed as a liniment"
+      },
+      {
+       "field": "filtered",
+       "quote": "employed as a liniment"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken fasting in the morning with honey, radishes are good for a cough.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "a cough",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "with honey, radishes"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Parched radish-seed, as well as radishes themselves, chewed, is useful for pains in the sides",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radish-seed",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radish-seed",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "warm",
+     "heatText": "Parched",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "pains in the sides",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Parched radish-seed"
+      },
+      {
+       "field": "heat",
+       "quote": "Parched radish-seed"
+      },
+      {
+       "field": "form",
+       "quote": "radishes themselves, chewed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Parched radish-seed, as well as radishes themselves, chewed, is useful for pains in the sides",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "pains in the sides",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "radishes themselves, chewed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A decoction of the leaves, taken in drink, or else the juice of the plant taken in doses of two cyathi, is an excellent remedy for phthiriasis",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "phthiriasis",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "A decoction of the leaves"
+      },
+      {
+       "field": "heat",
+       "quote": "A decoction of the leaves"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction of the leaves"
+      },
+      {
+       "field": "form",
+       "quote": "taken in drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A decoction of the leaves, taken in drink, or else the juice of the plant taken in doses of two cyathi, is an excellent remedy for phthiriasis",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "phthiriasis",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the juice of the plant"
+      },
+      {
+       "field": "form",
+       "quote": "the juice of the plant taken in doses of two cyathi"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Pounded radishes, too, are employed as a liniment for inflammations under the skin",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "ointment",
+     "indicationAsWritten": "inflammations under the skin",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "Pounded radishes"
+      },
+      {
+       "field": "form",
+       "quote": "employed as a liniment"
+      },
+      {
+       "field": "filtered",
+       "quote": "employed as a liniment"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "and the rind, mixed with honey, for bruises of recent date",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "bruises of recent date",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the rind, mixed with honey"
+      },
+      {
+       "field": "solvent",
+       "quote": "mixed with honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Lethargic persons are recommended to eat them as hot as possible",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "warm",
+     "heatText": "as hot as possible",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "Lethargic persons",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "eat them as hot as possible"
+      },
+      {
+       "field": "form",
+       "quote": "to eat them as hot as possible"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the seed, parched and then pounded with honey, will give relief to asthmatic patients",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "warm",
+     "heatText": "parched",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "asthmatic patients",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seed, parched"
+      },
+      {
+       "field": "solvent",
+       "quote": "pounded with honey"
+      },
+      {
+       "field": "heat",
+       "quote": "the seed, parched"
+      },
+      {
+       "field": "process",
+       "quote": "parched and then pounded with honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c013:002": {
+   "recipes": [
+    {
+     "recipeQuote": "Radishes, too, are useful as a remedy for poisons, and are employed to counteract the effects of the sting of the cerastes and the scorpion",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "a remedy for poisons, and are employed to counteract the effects of the sting of the cerastes and the scorpion",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "after having rubbed the hands with radishes or radish-seed, we may handle those reptiles with impunity",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "we may handle those reptiles with impunity",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "rubbed the hands with radishes"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "after having rubbed the hands with radishes or radish-seed, we may handle those reptiles with impunity",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radish-seed",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radish-seed",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "we may handle those reptiles with impunity",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "radish-seed"
+      },
+      {
+       "field": "form",
+       "quote": "rubbed the hands with radishes or radish-seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Radishes are useful, too, in cases of poisoning by fungi or henbane; and according to Nicander, they are salutary against the effects of bullock’s blood, when drunk.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "poisoning by fungi or henbane; and according to Nicander, they are salutary against the effects of bullock’s blood, when drunk",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The two physicians of the name of Apollodorus, prescribe radishes to be given in cases of poisoning by mistletoe; but whereas Apollodorus of Citium recommends radish-seed pounded in water, Apollodorus of Tarentum speaks of the juice",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radish-seed",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radish-seed",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "poisoning by mistletoe",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "radish-seed pounded in water"
+      },
+      {
+       "field": "solvent",
+       "quote": "pounded in water"
+      },
+      {
+       "field": "heat",
+       "quote": "radish-seed pounded in water"
+      },
+      {
+       "field": "process",
+       "quote": "radish-seed pounded in water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The two physicians of the name of Apollodorus, prescribe radishes to be given in cases of poisoning by mistletoe; but whereas Apollodorus of Citium recommends radish-seed pounded in water, Apollodorus of Tarentum speaks of the juice",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "poisoning by mistletoe",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "speaks of the juice"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Radishes diminish the volume of the spleen, and are beneficial for maladies of the liver and pains in the loins",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "diminish the volume of the spleen, and are beneficial for maladies of the liver and pains in the loins",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "taken, too, with vinegar or mustard, they are good for dropsy and lethargy, as well as epilepsy and melancholy",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "dropsy and lethargy, as well as epilepsy and melancholy",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "taken, too, with vinegar"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "taken, too, with vinegar or mustard, they are good for dropsy and lethargy, as well as epilepsy and melancholy",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "mustard",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "dropsy and lethargy, as well as epilepsy and melancholy",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Praxagoras recommends that radishes should be given for the iliac passion, and Plistonicus for the cœliac disease.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the iliac passion, and Plistonicus for the cœliac disease",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "pliny-nh:b20:c013:004": {
+   "recipes": [
+    {
+     "recipeQuote": "Radishes have the effect, too, of restoring the skin, when scarred, to its proper colour",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "restoring the skin, when scarred, to its proper colour",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "the seed, steeped in water, and applied topically, arrests the progress of ulcers known as phagedænic",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "infusion",
+     "form": "unknown",
+     "indicationAsWritten": "arrests the progress of ulcers known as phagedænic",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seed, steeped in water"
+      },
+      {
+       "field": "solvent",
+       "quote": "steeped in water"
+      },
+      {
+       "field": "process",
+       "quote": "steeped in water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Democritus regards them, taken with the food, as an aphrodisiac",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "an aphrodisiac",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "taken with the food"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The leaves, but only those of the long radish, are said to have the effect of improving the eye-sight.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "long radish",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "long radish",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "improving the eye-sight",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves, but only those of the long radish"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c013:005": {
+   "recipes": [
+    {
+     "recipeQuote": "When radishes, employed as a remedy, act too powerfully, it is recommended that hyssop should be given immediately",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "hyssop",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "hyssop",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "When radishes, employed as a remedy, act too powerfully",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "For dulness of hearing, too, radish-juice is injected into the ear.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radish",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radish",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "dulness of hearing",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "radish-juice"
+      },
+      {
+       "field": "form",
+       "quote": "injected into the ear"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "To promote vomiting, it is extremely beneficial to eat radishes fasting.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "To promote vomiting",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "to eat radishes fasting"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c076:001": {
+   "recipes": [
+    {
+     "recipeQuote": "the calyx of the white poppy is pounded, and is taken in wine as a soporific",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "white poppy",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "white poppy",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "no",
+     "process": "powder",
+     "form": "drink",
+     "indicationAsWritten": "a soporific",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the calyx of the white poppy"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in wine"
+      },
+      {
+       "field": "process",
+       "quote": "is pounded"
+      },
+      {
+       "field": "form",
+       "quote": "taken in wine"
+      },
+      {
+       "field": "filtered",
+       "quote": "is pounded, and is taken in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the seed of it is a cure, also, for elephantiasis",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "white poppy",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "white poppy",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "elephantiasis",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seed of it"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The black poppy acts as a soporific, by the juice which exudes from incisions made in the stalk",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "black poppy",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "black poppy",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "acts as a soporific",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the juice which exudes"
+      },
+      {
+       "field": "process",
+       "quote": "incisions made in the stalk"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Lozenges are also made of ground poppy-seed, which are taken in milk as a soporific.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "poppy",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "poppy",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "other",
+     "indicationAsWritten": "a soporific",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "ground poppy-seed"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in milk"
+      },
+      {
+       "field": "process",
+       "quote": "ground poppy-seed"
+      },
+      {
+       "field": "form",
+       "quote": "Lozenges are also made"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The seed is employed, too, with rose-oil for head-ache",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "poppy",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "poppy",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "head-ache",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seed is employed"
+      },
+      {
+       "field": "solvent",
+       "quote": "with rose-oil"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "in combination with that oil, is injected into the ears for ear-ache",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "poppy",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "poppy",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "ear-ache",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seed is employed"
+      },
+      {
+       "field": "solvent",
+       "quote": "in combination with that oil"
+      },
+      {
+       "field": "form",
+       "quote": "injected into the ears"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Mixed with woman’s milk, this seed is used as a liniment for gout: the leaves, too, are employed in a similar manner",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "poppy",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "poppy",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "gout",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "this seed"
+      },
+      {
+       "field": "solvent",
+       "quote": "Mixed with woman’s milk"
+      },
+      {
+       "field": "form",
+       "quote": "used as a liniment"
+      },
+      {
+       "field": "filtered",
+       "quote": "used as a liniment"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Mixed with woman’s milk, this seed is used as a liniment for gout: the leaves, too, are employed in a similar manner",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "poppy",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "poppy",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "gout",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the leaves, too"
+      },
+      {
+       "field": "solvent",
+       "quote": "Mixed with woman’s milk"
+      },
+      {
+       "field": "form",
+       "quote": "used as a liniment"
+      },
+      {
+       "field": "filtered",
+       "quote": "used as a liniment"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken in vinegar, the seed is prescribed as a cure for erysipelas and wounds.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "poppy",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "poppy",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "erysipelas and wounds",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seed is prescribed"
+      },
+      {
+       "field": "solvent",
+       "quote": "Taken in vinegar"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c076:002": {
+   "recipes": [
+    {
+     "recipeQuote": "the black poppy, however, is very generally prescribed, in wine, for cœliac affections",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "black poppy",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "black poppy",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "cœliac affections",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "prescribed, in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "This head is often boiled, and the decoction of it taken to promote sleep",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wild poppy",
+       "part": "fruit",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wild poppy",
+     "part": "fruit",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "to promote sleep",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "This head is often boiled"
+      },
+      {
+       "field": "heat",
+       "quote": "This head is often boiled"
+      },
+      {
+       "field": "process",
+       "quote": "the decoction of it"
+      },
+      {
+       "field": "form",
+       "quote": "the decoction of it taken"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "This head is often boiled, and the decoction of it taken to promote sleep, the face being fomented also with the water",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wild poppy",
+       "part": "fruit",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wild poppy",
+     "part": "fruit",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "other",
+     "indicationAsWritten": "to promote sleep",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "This head is often boiled"
+      },
+      {
+       "field": "solvent",
+       "quote": "fomented also with the water"
+      },
+      {
+       "field": "heat",
+       "quote": "This head is often boiled"
+      },
+      {
+       "field": "process",
+       "quote": "the decoction of it"
+      },
+      {
+       "field": "form",
+       "quote": "the face being fomented also with the water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
