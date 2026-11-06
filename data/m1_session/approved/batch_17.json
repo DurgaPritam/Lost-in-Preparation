@@ -1,0 +1,1666 @@
+{
+ "batch": 17,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:onions:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:ground-pine-or-chamepitys:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:ground-pine-or-chamepitys:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:ground-pine-or-chamepitys:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:onions:002": {
+   "recipes": [
+    {
+     "recipeQuote": "then, being bruised and applied to a plague sore, it is very probable it will do the like",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "a plague sore",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "process",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "form",
+       "quote": "being bruised and applied to a plague sore"
+      },
+      {
+       "field": "filtered",
+       "quote": "being bruised and applied"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Onions are flatulent, or windy; yet they do somewhat provoke appetite, increase thirst, ease the belly and bowels, provoke women’s courses",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "provoke appetite, increase thirst, ease the belly and bowels, provoke women’s courses",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "help the biting of a mad dog, and of other venomous creatures, to be used with honey and rue",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "rue",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the biting of a mad dog, and of other venomous creatures",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "used with honey and rue"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "increase sperm, especially the seed of them",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "increase sperm",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "especially the seed of them"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "They also kill worms in children if they drink the water fasting wherein they have been steeped all night.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "all night",
+     "filtered": "unknown",
+     "process": "infusion",
+     "form": "drink",
+     "indicationAsWritten": "kill worms in children",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "drink the water fasting wherein they have been steeped"
+      },
+      {
+       "field": "process",
+       "quote": "steeped all night"
+      },
+      {
+       "field": "form",
+       "quote": "if they drink the water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Being roasted under the embers, and eaten with honey or sugar and oil, they much conduce to help an inveterate cough, and expectorate the cough phlegm.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "warm",
+     "heatText": "roasted under the embers",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "help an inveterate cough, and expectorate the cough phlegm",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "eaten with honey"
+      },
+      {
+       "field": "heat",
+       "quote": "Being roasted under the embers"
+      },
+      {
+       "field": "process",
+       "quote": "Being roasted under the embers"
+      },
+      {
+       "field": "form",
+       "quote": "eaten with honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Being roasted under the embers, and eaten with honey or sugar and oil, they much conduce to help an inveterate cough, and expectorate the cough phlegm.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "sugar",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "warm",
+     "heatText": "roasted under the embers",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "help an inveterate cough, and expectorate the cough phlegm",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "sugar and oil"
+      },
+      {
+       "field": "heat",
+       "quote": "Being roasted under the embers"
+      },
+      {
+       "field": "process",
+       "quote": "Being roasted under the embers"
+      },
+      {
+       "field": "form",
+       "quote": "eaten with honey or sugar and oil"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice being snuffed up into the nostrils, purges the head, and helps the lethargy",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "inhalation",
+     "indicationAsWritten": "purges the head, and helps the lethargy",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice being snuffed up"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice being snuffed up"
+      },
+      {
+       "field": "form",
+       "quote": "snuffed up into the nostrils"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It hath been held by divers country people a great preservative against infection, to eat Onions fasting with bread and salt",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "bread",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      },
+      {
+       "plantNameAsWritten": "salt",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "a great preservative against infection",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "to eat Onions fasting"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "to make a great Onion hollow, filling the place with good treacle, and after to roast it well under the embers, which, after taking away the outermost skin thereof, being beaten together, is a sovereign salve for either plague or sore, or any other putrefied ulcer",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onion",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "treacle",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "Onion",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "warm",
+     "heatText": "roast it well under the embers",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "ointment",
+     "indicationAsWritten": "plague or sore, or any other putrefied ulcer",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "roast it well under the embers"
+      },
+      {
+       "field": "process",
+       "quote": "being beaten together"
+      },
+      {
+       "field": "form",
+       "quote": "a sovereign salve"
+      },
+      {
+       "field": "filtered",
+       "quote": "a sovereign salve"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of Onions is good for either scalding or burning by fire, water, or gunpowder, and used with vinegar, takes away all blemishes, spots and marks in the skin: and dropped in the ears, eases the pains and noise of them.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "either scalding or burning by fire, water, or gunpowder",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of Onions"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice of Onions"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of Onions is good for either scalding or burning by fire, water, or gunpowder, and used with vinegar, takes away all blemishes, spots and marks in the skin: and dropped in the ears, eases the pains and noise of them.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "takes away all blemishes, spots and marks in the skin",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of Onions"
+      },
+      {
+       "field": "solvent",
+       "quote": "used with vinegar"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice of Onions"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of Onions is good for either scalding or burning by fire, water, or gunpowder, and used with vinegar, takes away all blemishes, spots and marks in the skin: and dropped in the ears, eases the pains and noise of them.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "eases the pains and noise of them",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of Onions"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice of Onions"
+      },
+      {
+       "field": "form",
+       "quote": "dropped in the ears"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Applied also with figs beaten together, helps to ripen and break imposthumes, and other sores.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "figs",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "to ripen and break imposthumes, and other sores",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "with figs beaten together"
+      },
+      {
+       "field": "process",
+       "quote": "with figs beaten together"
+      },
+      {
+       "field": "form",
+       "quote": "Applied also with figs beaten together"
+      },
+      {
+       "field": "filtered",
+       "quote": "Applied also with figs beaten together"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:onions:003": {
+   "recipes": [
+    {
+     "recipeQuote": "They are a remedy against a surfeit of mushrooms, being baked under the embers and taken",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Leeks",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Leeks",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "warm",
+     "heatText": "baked under the embers",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "a surfeit of mushrooms",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "being baked under the embers"
+      },
+      {
+       "field": "process",
+       "quote": "being baked under the embers"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "being boiled and applied very warm, help the piles",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Leeks",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Leeks",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "applied very warm",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "the piles",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "being boiled and applied very warm"
+      },
+      {
+       "field": "form",
+       "quote": "being boiled and applied"
+      },
+      {
+       "field": "filtered",
+       "quote": "being boiled and applied"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:ground-pine-or-chamepitys:004": {
+   "recipes": [
+    {
+     "recipeQuote": "The decoction of Ground Pine drank, doth wonderfully prevail against the stranguary, or any inward pains arising from the diseases of the reins and urine, and is especially good for all obstructions of the liver and spleen, and gently opens the body",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "the stranguary, or any inward pains arising from the diseases of the reins and urine, and is especially good for all obstructions of the liver and spleen, and gently opens the body",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "The decoction of Ground Pine"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction of Ground Pine"
+      },
+      {
+       "field": "form",
+       "quote": "The decoction of Ground Pine drank"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "gently opens the body; for which purpose they were wont in former times to make pills with the powder thereof, and the pulp of figs",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "figs",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "other",
+     "indicationAsWritten": "gently opens the body",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "pills with the powder thereof"
+      },
+      {
+       "field": "form",
+       "quote": "to make pills"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It marvellously helps all the diseases of the mother, inwardly or outwardly applied, procuring women’s courses, and expelling the dead child and after-birth",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "all the diseases of the mother, inwardly or outwardly applied, procuring women’s courses, and expelling the dead child and after-birth",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The decoction of the herb in wine taken inwardly, or applied outwardly, or both, for some time together, is also effectual in all pains and diseases of the joints, as gouts, cramps, palsies, sciatica, and aches",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "all pains and diseases of the joints, as gouts, cramps, palsies, sciatica, and aches",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "the herb in wine"
+      },
+      {
+       "field": "heat",
+       "quote": "The decoction of the herb"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction of the herb"
+      },
+      {
+       "field": "form",
+       "quote": "taken inwardly"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The decoction of the herb in wine taken inwardly, or applied outwardly, or both, for some time together, is also effectual in all pains and diseases of the joints, as gouts, cramps, palsies, sciatica, and aches",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "all pains and diseases of the joints, as gouts, cramps, palsies, sciatica, and aches",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "the herb in wine"
+      },
+      {
+       "field": "heat",
+       "quote": "The decoction of the herb"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction of the herb"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "is also effectual in all pains and diseases of the joints, as gouts, cramps, palsies, sciatica, and aches; for which purpose the pills made with powder of Ground Pine, and of Hermodactyls with Venice Turpentine are very effectual",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Hermodactyls",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Venice Turpentine",
+       "part": "resin",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "other",
+     "indicationAsWritten": "all pains and diseases of the joints, as gouts, cramps, palsies, sciatica, and aches",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "powder of Ground Pine"
+      },
+      {
+       "field": "form",
+       "quote": "the pills made with powder"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The pills also, continued for some time, are special good for those that have the dropsy, jaundice, and for griping pains of the joints, belly, or inward parts.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Hermodactyls",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Venice Turpentine",
+       "part": "resin",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "other",
+     "indicationAsWritten": "those that have the dropsy, jaundice, and for griping pains of the joints, belly, or inward parts",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "powder of Ground Pine"
+      },
+      {
+       "field": "form",
+       "quote": "The pills also"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It helps also all diseases of the brain, proceeding of cold and phlegmatic humours and distillations, as also for the falling sickness. It is a special remedy for the poison of the aconites, and other poisonous herbs, as also against the stinging of any venomous creature. It is a good remedy for a cold cough, especially in the beginning.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "all diseases of the brain, proceeding of cold and phlegmatic humours and distillations, as also for the falling sickness. It is a special remedy for the poison of the aconites, and other poisonous herbs, as also against the stinging of any venomous creature. It is a good remedy for a cold cough",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "For all the purposes aforesaid, the herb being tunned up in new drink and drank, is almost as effectual",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "all the purposes aforesaid",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "tunned up in new drink"
+      },
+      {
+       "field": "form",
+       "quote": "in new drink and drank"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The distilled water of the herb hath the same effects, but more weakly.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "unknown",
+     "indicationAsWritten": "hath the same effects",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The distilled water of the herb"
+      },
+      {
+       "field": "heat",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "process",
+       "quote": "The distilled water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The conserve of the flowers doth the like, which Matthiolus much commends against the palsy.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "flower",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "flower",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "doth the like, which Matthiolus much commends against the palsy",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The conserve of the flowers"
+      },
+      {
+       "field": "process",
+       "quote": "The conserve of the flowers"
+      },
+      {
+       "field": "form",
+       "quote": "The conserve of the flowers"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The green herb, or the decoction thereof, being applied, dissolves the hardness of women’s breasts, and all other hard swellings in any other part of the body.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "fresh",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "dissolves the hardness of women’s breasts, and all other hard swellings in any other part of the body",
+     "evidence": [
+      {
+       "field": "freshOrDried",
+       "quote": "The green herb"
+      },
+      {
+       "field": "heat",
+       "quote": "The green herb, or the decoction thereof, being applied"
+      },
+      {
+       "field": "form",
+       "quote": "The green herb, or the decoction thereof, being applied"
+      },
+      {
+       "field": "filtered",
+       "quote": "The green herb, or the decoction thereof, being applied"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The green herb, or the decoction thereof, being applied, dissolves the hardness of women’s breasts, and all other hard swellings in any other part of the body.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "dissolves the hardness of women’s breasts, and all other hard swellings in any other part of the body",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "the decoction thereof"
+      },
+      {
+       "field": "process",
+       "quote": "the decoction thereof, being applied"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The green herb also applied, or the juice thereof with some honey, not only cleanses putrid, stinking, foul, and malignant ulcers and sores of all sorts, but heals and solders up the lips of green wounds in any part also.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "unknown",
+     "freshOrDried": "fresh",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "cleanses putrid, stinking, foul, and malignant ulcers and sores of all sorts, but heals and solders up the lips of green wounds in any part also",
+     "evidence": [
+      {
+       "field": "freshOrDried",
+       "quote": "The green herb also applied"
+      },
+      {
+       "field": "heat",
+       "quote": "The green herb also applied"
+      },
+      {
+       "field": "form",
+       "quote": "The green herb also applied"
+      },
+      {
+       "field": "filtered",
+       "quote": "The green herb also applied"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The green herb also applied, or the juice thereof with some honey, not only cleanses putrid, stinking, foul, and malignant ulcers and sores of all sorts, but heals and solders up the lips of green wounds in any part also.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Ground Pine",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Ground Pine",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "cleanses putrid, stinking, foul, and malignant ulcers and sores of all sorts, but heals and solders up the lips of green wounds in any part also",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the juice thereof"
+      },
+      {
+       "field": "solvent",
+       "quote": "the juice thereof with some honey"
+      },
+      {
+       "field": "heat",
+       "quote": "the juice thereof with some honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
