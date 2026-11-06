@@ -2,6 +2,12 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
+## v1.5.1 — 2026-11-06 (documentation only)
+
+| # | Change |
+|---|---|
+| P36 | `provenance.provider` may be `groq`. For a hosted model, `modelVersion` is `<model id>@created=<unix time from GET /models>`, and `decoding.selectedOn` is the date the model was chosen. The schema is unchanged: `provider` was already a free string. |
+
 ## v1.5 — 2026-11-05
 
 | # | Change |

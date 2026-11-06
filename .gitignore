@@ -13,7 +13,7 @@ data/raw/**/*.xml
 
 # large regenerable intermediates (`python -m lip ingest`)
 data/interim/*.parquet
-data/interim/m1/raw/
+# (M1 response caches are COMMITTED: data/interim/m1/raw/ and data/interim/m1/groq_responses/ - hosted models can change or be retired)
 
 # external API response cache (re-created on demand; large)
 data/cache/
@@ -21,3 +21,8 @@ data/cache/
 # local toolchain (xtb via micromamba) and large third-party downloads (re-fetched with checksums)
 .tools/
 data/raw/logp/*.xlsx
+
+# secrets: API keys live only in the environment or a local .env file
+.env
+.env.*
+!.env.example

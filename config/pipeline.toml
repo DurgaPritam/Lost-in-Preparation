@@ -1,10 +1,27 @@
 # Pipeline settings. The values used are recorded in every output (provenance) and in metrics.json.
 
 [m1]
-provider = "ollama"          # "ollama" (local, default) | "anthropic"
+provider = "groq"            # "groq" (hosted, default) | "ollama" (local; not the default) | "anthropic"
+
+[m1.groq]
+# Hosted open-weight model via Groq's OpenAI-compatible API. Key: GROQ_API_KEY (environment or .env), never stored.
+# model = "" -> chosen at the first keyed run from the live GET /models list: the first candidate present and active.
+# The choice, the list snapshot and the date are written to data/interim/m1/groq_model_selection.json.
+# Candidates (Groq docs, checked 2026-11-06): strict JSON-schema structured outputs are supported on openai/gpt-oss-120b,
+# openai/gpt-oss-20b, qwen/qwen3.8-27b and meta-models/muse-spark-open. gpt-oss models are "production";
+# qwen3.8-27b is "preview" (may be discontinued at short notice).
+model = ""
+candidates = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b"]
+temperature = 0.0
+seed = 0
+max_completion_tokens = 4096
+reasoning_effort = "low"     # gpt-oss only: keeps tokens small under free-tier tokens-per-minute limits
+min_interval_s = 2.0         # minimum gap between requests
+max_wait_s = 300             # stop (not hang) if a 429 asks to wait longer, e.g. a daily token limit
 
 [m1.ollama]
-# Default for a 16 GB RAM laptop: Qwen2.5 7B Instruct, Q4_K_M, 4.7 GB, 32K context, Ollama ID 845dbda0ea48.
+# NOT the default. Tried 2026-11-06 on the 16 GB development machine: it froze the machine and was uninstalled.
+# Kept for machines with more memory. Qwen2.5 7B Instruct, Q4_K_M, 4.7 GB, 32K context, Ollama ID 845dbda0ea48.
 # Alternatives (Ollama library, checked 2026-11-05):
 #   qwen3:8b      5.2 GB, 40K ctx, ID 500a1f067a9f  (thinking model: set think = false)
 #   llama3.1:8b   4.9 GB, 128K ctx, ID 46e0c10c039e

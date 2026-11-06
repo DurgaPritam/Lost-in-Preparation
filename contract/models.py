@@ -248,7 +248,7 @@ class Ingredient(_Model):  # P27
 
 class Provenance(_Model):  # P21; provider fields added in v1.1 (P30)
     method: ProvenanceMethod
-    provider: str | None = None  # ollama | anthropic
+    provider: str | None = None  # groq | ollama | anthropic
     model: str | None = None
     modelVersion: str | None = Field(None, description="e.g. Ollama model digest")
     decoding: dict[str, Any] | None = Field(None, description="temperature, seed, context length, quantisation, effort...")

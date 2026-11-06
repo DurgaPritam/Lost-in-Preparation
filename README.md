@@ -17,7 +17,7 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 | Stage | What it does | Status |
 |---|---|---|
 | Ingest | Culpeper 1652 (EEBO-TCP), Culpeper 1850 and Pliny (Bostock & Riley; **lower confidence**: a 19th-century translation with often-disputed plant names) → stable, located passages; 1850↔1652 crosswalk | done |
-| M1 Recipes | Structured recipes extracted by an LLM, every field backed by a verbatim quote; local (Ollama) or Claude provider | built; awaiting gold set |
+| M1 Recipes | Structured recipes extracted by an LLM, every field backed by a verbatim quote; Groq-hosted open-weight model by default (Ollama or Claude optional) | built; awaiting gold set |
 | M2 Names | Historical name → accepted species (WFO), up to 3 candidates with confidence and basis; disputed flags | done; awaiting 30-name scholarly check |
 | M3 Compounds | Known compounds per species (LOTUS via Wikidata), RDKit-standardised, de-duplicated by InChIKey; coverage per species | done |
 | Study set | Proposed species for re-testing (count in the validation table below), for human approval ([docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md)), each with a cited toxicity entry (AI-drafted, awaiting review) | awaiting approval |
@@ -116,7 +116,7 @@ export PYTHONPATH=pipeline:.
 .venv/bin/python -m pytest
 ```
 
-**Local extraction** (no API costs): install [Ollama](https://ollama.com), run `ollama pull qwen2.5:7b-instruct`, then `python -m lip m1 extract --scope sample`. To use Claude instead, set `provider = "anthropic"` in `config/pipeline.toml` and export `ANTHROPIC_API_KEY`.
+**Extraction** (default provider: Groq). Put `GROQ_API_KEY=...` in your environment or in a local `.env` file (see `.env.example`; `.env` is git-ignored), then run `python -m lip m1 extract --scope sample`. Every response is cached and committed, so the published results reproduce **without a key**: with no key set, the pipeline serves only cached responses. Ollama (local) and Claude are optional providers in `config/pipeline.toml`.
 
 ## Data and licences
 

@@ -44,14 +44,30 @@ Limitation: an 1850 herb that appears in 1652 under a completely different name 
 
 **Verbatim-quote rule.** Every recipe span, free-text value and non-`unknown` enum value must be supported by a verbatim quote from the passage. Plant names may instead come from the entry heading, and are then flagged `inHeading`. Matching ignores only typography: curly vs straight quotes, dash variants and whitespace. If a quote fails, the model sees the errors and retries, up to 2 times. A recipe that still fails is **rejected and logged**; it is never repaired by code.
 
-**Providers.** The provider is set in [config/pipeline.toml](config/pipeline.toml), and both get identical prompts, schema and checks.
+**Providers.** The provider is set in [config/pipeline.toml](config/pipeline.toml). All providers get identical prompts, schema and checks.
 
 | Provider | Model | Decoding |
 |---|---|---|
-| `ollama` (default, local) | `qwen2.5:7b-instruct` (Q4_K_M, 4.7 GB), suited to a 16 GB RAM laptop. Alternatives are listed in the config. | temperature 0, seed 0, context 16,384 tokens |
+| `groq` (default, hosted) | An open-weight instruction model served by Groq, chosen at the first keyed run from the live `GET /models` list: the first configured candidate that supports strict JSON-schema output (`openai/gpt-oss-120b`, then `openai/gpt-oss-20b`, then `qwen/qwen3.8-27b`). The choice, the list snapshot and the date are in `data/interim/m1/groq_model_selection.json`. | temperature 0, seed 0, strict JSON-schema structured outputs, low reasoning effort (gpt-oss), at most 4,096 completion tokens |
+| `ollama` (optional, local) | `qwen2.5:7b-instruct` (Q4_K_M, 4.7 GB). Not the default: on the 16 GB development machine it froze the system, so it was uninstalled. | temperature 0, seed 0, context 16,384 tokens |
 | `anthropic` (optional) | `claude-opus-5-5` | effort `high`, server-side refusal fallback |
 
-**Provenance and caching.** The provider, model, the exact model digest read from Ollama, the decoding settings and the prompt version are recorded on every extracted recipe and in `metrics.json`. Responses are cached on disk under a key that covers all of these, so re-runs are reproducible.
+**Groq access.** The API key is read only from `GROQ_API_KEY` (the environment or a git-ignored `.env`). It is sent only in the request header and never written to code, config, logs, error messages, caches or outputs; a test scans tracked files for key-like strings. Free-tier limits are respected:
+- a minimum gap between requests;
+- pacing from Groq's `x-ratelimit-*` headers;
+- exponential backoff on HTTP 429, honouring `retry-after`;
+- a clean stop when a wait would exceed five minutes, such as a daily limit, so a later run resumes from the cache.
+
+**Provenance and caching.** Every extracted recipe and `metrics.json` record:
+- the provider and the exact model ID;
+- the model version: for Ollama the digest, for Groq `<id>@created=<unix time>` from the model list;
+- the selection date, the decoding settings and the prompt version.
+
+Every response is cached under a key covering all of these. For Groq there are two cache levels:
+- each raw API response, keyed by a hash of the request body, in `data/interim/m1/groq_responses/`;
+- each finished passage result, in `data/interim/m1/raw/`.
+
+So no request is ever sent twice. **Both caches are committed to the repository**, because hosted models can change, be updated in place or be retired, and a hosted run cannot otherwise be repeated. With no key set, the pipeline serves only cached responses, so the published results reproduce exactly without one.
 
 **Scope.** Only single-plant recipes enter the core analysis and the headline numbers. Compound recipes are stored with `excludedFromHeadline: true`.
 

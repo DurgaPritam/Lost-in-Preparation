@@ -4,7 +4,7 @@
   python -m lip ingest                   Phase 1: passages.parquet + site-data/sources.json
   python -m lip contract                 regenerate contract/schemas/*.schema.json
   python -m lip m1 sample                draw the gold sample + build annotation/data.js
-  python -m lip m1 extract --scope sample|all [--provider ollama|anthropic] [--limit N] [--yes]
+  python -m lip m1 extract --scope sample|all [--provider groq|ollama|anthropic] [--limit N] [--yes]
   python -m lip m1 eval [--reference gold|silver]   metrics vs gold (+kappa), or vs the AI silver set (provisional)
   python -m lip m1 silver                build/validate the AI silver reference set (provisional, not gold)
   python -m lip m1 errors                docs/extraction_errors.md from the error tally
@@ -41,7 +41,7 @@ def m1(argv: list[str]) -> int:
     ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver"])
     ap.add_argument("--scope", choices=["sample", "all"], default="sample")
     ap.add_argument("--limit", type=int)
-    ap.add_argument("--provider", choices=["ollama", "anthropic"], help="overrides config/pipeline.toml")
+    ap.add_argument("--provider", choices=["groq", "ollama", "anthropic"], help="overrides config/pipeline.toml")
     ap.add_argument("--yes", action="store_true", help="confirm a full-corpus (paid) run")
     ap.add_argument("--reference", choices=["gold", "silver"], default="gold",
                     help="eval: 'silver' scores against the AI reference set (provisional; written to metrics.provisional only)")
@@ -65,7 +65,7 @@ def m1(argv: list[str]) -> int:
             df = load_passages().set_index("passage_id").loc[ids].reset_index()
         else:
             if not a.yes:
-                print("A full-corpus run processes every recipe-scope passage (paid with the anthropic provider; "
+                print("A full-corpus run processes every recipe-scope passage (rate-limited with groq, paid with anthropic; "
                       "hours with a local model). Re-run with --yes to confirm.", file=sys.stderr)
                 return 2
             allp = load_passages()
