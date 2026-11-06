@@ -1,0 +1,1448 @@
+{
+ "batch": 12,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:wood-betony:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wood-betony:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wood-betony:005": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:carraway:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:carraway:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:carraway:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:carraway:004": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wood-betony:004": {
+   "recipes": [
+    {
+     "recipeQuote": "that it preserves the liver and bodies of men from the danger of epidemical diseases, and from witchcraft also",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "preserves the liver and bodies of men from the danger of epidemical diseases, and from witchcraft also",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "it helps those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs, using it familiarly either green or dry; either the herb, or root, or the flowers, in broth",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "the flowers, in broth"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it helps those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs, using it familiarly either green or dry; either the herb, or root, or the flowers, in broth, drink, or meat",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "in broth, drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it helps those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs, using it familiarly either green or dry; either the herb, or root, or the flowers, in broth, drink, or meat",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "drink, or meat"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it helps those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs, using it familiarly either green or dry; either the herb, or root, or the flowers, in broth, drink, or meat, or made into conserve, syrup, water, electuary, or powder",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "made into conserve, syrup"
+      },
+      {
+       "field": "form",
+       "quote": "made into conserve, syrup"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it helps those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs, using it familiarly either green or dry; either the herb, or root, or the flowers, in broth, drink, or meat, or made into conserve, syrup, water, electuary, or powder",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "syrup, water, electuary"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it helps those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs, using it familiarly either green or dry; either the herb, or root, or the flowers, in broth, drink, or meat, or made into conserve, syrup, water, electuary, or powder",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "those that loath and cannot digest their meat, those that have weak stomachs and sour belchings, or continual rising in their stomachs",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "electuary, or powder"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "taken any of the aforesaid ways, it helps the jaundice, falling sickness, the palsy, convulsions, or shrinking of the sinews, the gout and those that are inclined to dropsy, those that have continual pains in their heads, although it turn to phrensy.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the jaundice, falling sickness, the palsy, convulsions, or shrinking of the sinews, the gout and those that are inclined to dropsy, those that have continual pains in their heads, although it turn to phrensy",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The powder mixed with pure honey is no less available for all sorts of coughs or colds, wheesing, or shortness of breath, distillations of thin rheum upon the lungs, which causes consumptions.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "all sorts of coughs or colds, wheesing, or shortness of breath, distillations of thin rheum upon the lungs, which causes consumptions",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "mixed with pure honey"
+      },
+      {
+       "field": "process",
+       "quote": "The powder mixed with pure honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The decoction made with Mead, and a little Pennyroyal, is good for those that are troubled with putrid agues, whether quotidian, tertian, or quartan, and to draw down and evacuate the blood and humours, that by falling into the eyes, do hinder the sight",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Pennyroyal",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "putrid agues, whether quotidian, tertian, or quartan, and to draw down and evacuate the blood and humours, that by falling into the eyes, do hinder the sight",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "made with Mead"
+      },
+      {
+       "field": "heat",
+       "quote": "The decoction made with Mead"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction made with Mead"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the decoction thereof made in wine and taken, kills the worms in the belly, opens obstructions both of the spleen and liver; cures stitches, and pains in the back and sides, the torments and griping pains in the bowels, and the wind cholic",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "kills the worms in the belly, opens obstructions both of the spleen and liver; cures stitches, and pains in the back and sides, the torments and griping pains in the bowels, and the wind cholic",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "made in wine"
+      },
+      {
+       "field": "heat",
+       "quote": "the decoction thereof made in wine and taken"
+      },
+      {
+       "field": "process",
+       "quote": "the decoction thereof made in wine and taken"
+      },
+      {
+       "field": "form",
+       "quote": "the decoction thereof made in wine and taken"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "and mixed with honey purges the belly, helps to bring down women’s courses, and is of special use for those that are troubled with the falling down of the mother, and pains thereof, and causes an easy and speedy delivery of women in child-birth",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine",
+      "honey"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "purges the belly, helps to bring down women’s courses, and is of special use for those that are troubled with the falling down of the mother, and pains thereof, and causes an easy and speedy delivery of women in child-birth",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "made in wine"
+      },
+      {
+       "field": "solvent",
+       "quote": "mixed with honey"
+      },
+      {
+       "field": "heat",
+       "quote": "the decoction thereof made in wine and taken"
+      },
+      {
+       "field": "process",
+       "quote": "the decoction thereof made in wine and taken"
+      },
+      {
+       "field": "form",
+       "quote": "the decoction thereof made in wine and taken"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It helps also to break and expel the stone, either in the bladder or kidneys.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to break and expel the stone, either in the bladder or kidneys",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The decoction with wine gargled in the mouth, eases the tooth-ache.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "gargle",
+     "indicationAsWritten": "eases the tooth-ache",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The decoction with wine"
+      },
+      {
+       "field": "heat",
+       "quote": "The decoction with wine"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction with wine"
+      },
+      {
+       "field": "form",
+       "quote": "gargled in the mouth"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is commended against the stinging and biting of venomous serpents, or mad dogs, being used inwardly and applied outwardly to the place.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the stinging and biting of venomous serpents, or mad dogs",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "A dram of the powder of Betony taken with a little honey in some vinegar, does wonderfully refresh those that are over wearied by travelling.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey",
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "no",
+     "process": "powder",
+     "form": "drink",
+     "indicationAsWritten": "refresh those that are over wearied by travelling",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "taken with a little honey in some vinegar"
+      },
+      {
+       "field": "process",
+       "quote": "A dram of the powder of Betony"
+      },
+      {
+       "field": "form",
+       "quote": "taken with a little honey in some vinegar"
+      },
+      {
+       "field": "filtered",
+       "quote": "A dram of the powder of Betony taken with a little honey in some vinegar"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It stays bleeding at the mouth or nose, and helps those that void or spit blood, and those that are bursten or have a rupture, and is good for such as are bruised by any fall or otherwise.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "bleeding at the mouth or nose, and helps those that void or spit blood, and those that are bursten or have a rupture, and is good for such as are bruised by any fall or otherwise",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The green herb bruised, or the juice applied to any inward hurt, or outward green wound in the head or body, will quickly heal and close it up; as also any vein or sinews that are cut, and will draw forth any broken bone or splinter, thorn or other things got into the flesh",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "fresh",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "any inward hurt, or outward green wound in the head or body, will quickly heal and close it up; as also any vein or sinews that are cut, and will draw forth any broken bone or splinter, thorn or other things got into the flesh",
+     "evidence": [
+      {
+       "field": "freshOrDried",
+       "quote": "The green herb bruised"
+      },
+      {
+       "field": "heat",
+       "quote": "The green herb bruised"
+      },
+      {
+       "field": "process",
+       "quote": "The green herb bruised"
+      },
+      {
+       "field": "form",
+       "quote": "The green herb bruised"
+      },
+      {
+       "field": "filtered",
+       "quote": "The green herb bruised"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The green herb bruised, or the juice applied to any inward hurt, or outward green wound in the head or body, will quickly heal and close it up; as also any vein or sinews that are cut, and will draw forth any broken bone or splinter, thorn or other things got into the flesh",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "any inward hurt, or outward green wound in the head or body, will quickly heal and close it up; as also any vein or sinews that are cut, and will draw forth any broken bone or splinter, thorn or other things got into the flesh",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the juice applied"
+      },
+      {
+       "field": "heat",
+       "quote": "the juice applied"
+      },
+      {
+       "field": "form",
+       "quote": "the juice applied"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is no less profitable for old sores or filthy ulcers, yea, tho’ they be fistulous and hollow.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "old sores or filthy ulcers, yea, tho’ they be fistulous and hollow",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "It is no less profitable for old sores or filthy ulcers, yea, tho’ they be fistulous and hollow. But some do advise to put a little salt for this purpose",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "salt",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "old sores or filthy ulcers, yea, tho’ they be fistulous and hollow",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "being applied with a little hog’s lard, it helps a plague sore, and other boils and pushes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "a plague sore, and other boils and pushes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "applied with a little hog’s lard"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The fumes of the decoction while it is warm, received by a funnel into the ears, eases the pains of them, destroys the worms and cures the running sores in them.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "while it is warm",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "decoction",
+     "form": "inhalation",
+     "indicationAsWritten": "eases the pains of them, destroys the worms and cures the running sores in them",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "The fumes of the decoction"
+      },
+      {
+       "field": "process",
+       "quote": "The fumes of the decoction"
+      },
+      {
+       "field": "form",
+       "quote": "The fumes of the decoction while it is warm, received by a funnel"
+      },
+      {
+       "field": "filtered",
+       "quote": "The fumes of the decoction"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice dropped into them does the same.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Betony",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Betony",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "does the same",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice dropped into them"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice dropped into them"
+      },
+      {
+       "field": "form",
+       "quote": "The juice dropped into them"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:carraway:005": {
+   "recipes": [
+    {
+     "recipeQuote": "Carraway seed has a moderate sharp quality, whereby it breaks wind and provokes urine",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Carraway",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Carraway",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "breaks wind and provokes urine",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Carraway seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Carraway seed has a moderate sharp quality, whereby it breaks wind and provokes urine, which also the herb doth",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Carraway",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Carraway",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "breaks wind and provokes urine",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The root is better food than the parsnip; it is pleasant and comfortable to the stomach, and helps digestion.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Carraway",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Carraway",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "pleasant and comfortable to the stomach, and helps digestion",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The root is better food"
+      },
+      {
+       "field": "form",
+       "quote": "The root is better food than the parsnip"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The seed is conducing to all cold griefs of the head and stomach, bowels, or mother, as also the wind in them, and helps to sharpen the eye-sight.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Carraway",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Carraway",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "all cold griefs of the head and stomach, bowels, or mother, as also the wind in them, and helps to sharpen the eye-sight",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seed is conducing"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The powder of the seed put into a poultice, takes away black and blue spots of blows and bruises.",
+     "recipeType": "unknown",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Carraway",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Carraway",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "powder",
+     "form": "poultice",
+     "indicationAsWritten": "black and blue spots of blows and bruises",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The powder of the seed"
+      },
+      {
+       "field": "heat",
+       "quote": "The powder of the seed"
+      },
+      {
+       "field": "process",
+       "quote": "The powder of the seed"
+      },
+      {
+       "field": "form",
+       "quote": "put into a poultice"
+      },
+      {
+       "field": "filtered",
+       "quote": "put into a poultice"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The herb itself, or with some of the seed bruised and fried, laid hot in a bag or double cloth, to the lower parts of the belly, eases the pains of the wind cholic.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Carraway",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Carraway",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "warm",
+     "heatText": "fried, laid hot",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "eases the pains of the wind cholic",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "bruised and fried, laid hot"
+      },
+      {
+       "field": "process",
+       "quote": "bruised and fried"
+      },
+      {
+       "field": "form",
+       "quote": "laid hot in a bag or double cloth"
+      },
+      {
+       "field": "filtered",
+       "quote": "laid hot in a bag or double cloth"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:carraway:006": {
+   "recipes": [
+    {
+     "recipeQuote": "The roots of Carraway eaten as men do parsnips, strengthen the stomach of ancient people exceedingly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Carraway",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Carraway",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "strengthen the stomach of ancient people exceedingly",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The roots of Carraway"
+      },
+      {
+       "field": "form",
+       "quote": "eaten as men do parsnips"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
