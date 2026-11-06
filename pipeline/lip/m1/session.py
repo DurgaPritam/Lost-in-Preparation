@@ -49,7 +49,25 @@ class _SessionProvider:
 
 
 def batches(scope: str) -> list[dict]:
-    return [json.loads(p.read_text()) for p in sorted((SESSION_DIR / scope).glob("batch_*.json"))]
+    """The scope's batch files. For 'approved', passages already extracted in the sample are taken from the sample
+    batches (same extractor, same prompt, one extraction per passage) and appended as batch "sample:NN"."""
+    bs = [json.loads(p.read_text()) for p in sorted((SESSION_DIR / scope).glob("batch_*.json"))]
+    if scope == "approved":
+        want = set(passages_for("approved"))
+        for b in batches("sample"):
+            keep = {pid: out for pid, out in b["passages"].items() if pid in want}
+            if keep:
+                bs.append({**b, "batch": f"sample:{b['batch']:02d}", "passages": keep})
+    return bs
+
+
+def to_write(scope: str) -> list[str]:
+    """Passages still to be written for a scope (approved: those not already extracted in the sample)."""
+    ids = passages_for(scope)
+    if scope == "approved":
+        done = {pid for b in batches("sample") for pid in b["passages"]}
+        ids = [p for p in ids if p not in done]
+    return ids
 
 
 def ingest(scope: str) -> dict:
@@ -96,11 +114,53 @@ def ingest(scope: str) -> dict:
     return summary
 
 
+def approved_passages() -> "pd.DataFrame":
+    """Recipe-scope passages of the Phase 5 species (lip.m5.literature.species_list: the approved headline set plus
+    approved species pending re-review that are still eligible; held and fallback-added species are NOT included).
+
+    A species' passages come from the name entries that count towards its attestations in the study set
+    (m3/study_set.py): rank-1 candidate in WFO, undisputed, confidence >= 0.6, not removed in
+    config/name_entry_exclusions.csv. For each such entry:
+      Culpeper 1652  recipe-scope passages of the entry, plus the recipe-scope passages of the Culpeper 1850 entry
+                     crosswalked to it (data/interim/culpeper_1850_1652_crosswalk.csv, column crosswalk_1652)
+      Pliny          recipe-scope passages of the chapter (shared by every name in a multi-name chapter)
+    minus config/passage_exclusions.csv for that species. A passage linked to two species is listed once per species
+    but extracted once (passages_for de-duplicates)."""
+    import pandas as pd
+    from ..m3.study_set import MIN_CONF, NAME_EXCLUSIONS, PASSAGE_EXCLUSIONS
+    from ..m5.literature import species_list
+    sp = set(species_list().acceptedName)
+    cand = pd.read_parquet(INTERIM / "m2" / "name_candidates.parquet")
+    top = cand[(cand["rank"] == 1) & cand.inWFO & ~cand.disputed & (cand.confidence >= MIN_CONF) & cand.acceptedName.isin(sp)]
+    nx = pd.read_csv(NAME_EXCLUSIONS)
+    drop = set(zip(nx.nameId, nx.species))
+    top = top[[(n, a) not in drop for n, a in zip(top.nameId, top.acceptedName)]]
+    df = load_passages()
+    rs = df[df.recipe_scope.astype(bool)]
+    rows = []
+    for t in top.itertuples():
+        if t.nameId.startswith("culpeper-1652:"):
+            slug = t.nameId.split(":", 1)[1]
+            m = ((rs.source_id == "culpeper-1652") & (rs.entry_slug == slug)) | ((rs.source_id == "culpeper-1850") & (rs.crosswalk_1652 == slug))
+        else:
+            book, key = t.nameId.split(":")[1:3]
+            m = rs.source_id.str.startswith("pliny") & (rs.book == int(book[1:])) & (rs.entry_slug == key)
+        rows += [{"passageId": p, "species": t.acceptedName, "nameId": t.nameId} for p in rs[m].passage_id]
+    out = pd.DataFrame(rows, columns=["passageId", "species", "nameId"]).drop_duplicates(["passageId", "species"])
+    px = pd.read_csv(PASSAGE_EXCLUSIONS)
+    out = out[[(p, s) not in set(zip(px.passageId, px.species)) for p, s in zip(out.passageId, out.species)]]
+    order = {p: i for i, p in enumerate(df.passage_id)}
+    return out.sort_values("passageId", key=lambda s: s.map(order)).reset_index(drop=True)
+
+
 def passages_for(scope: str) -> list[str]:
-    """The passage IDs a scope covers: 'sample' = the 50-passage gold sample."""
+    """The passage IDs a scope covers: 'sample' = the 50-passage gold sample; 'approved' = recipe-scope passages of
+    the Phase 5 species (approved_passages), in corpus order, de-duplicated."""
     if scope == "sample":
         from .sample import SAMPLE_PATH
         return [p["passageId"] for p in json.loads(SAMPLE_PATH.read_text())["passages"]]
+    if scope == "approved":
+        return list(dict.fromkeys(approved_passages().passageId))
     raise ValueError(scope)
 
 
@@ -111,7 +171,7 @@ def show(scope: str, start: int, n: int) -> str:
     titles = dict(source_titles())
     df = load_passages().set_index("passage_id")
     out = []
-    for pid in passages_for(scope)[start:start + n]:
+    for pid in to_write(scope)[start:start + n]:
         row = df.loc[pid]
         r = type("Row", (), {"passage_id": pid, **row.to_dict()})()
         out.append(f"### {pid}\n" + render_user(r, titles.get(row["source_id"], "")))
