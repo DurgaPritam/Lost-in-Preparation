@@ -1,0 +1,42 @@
+[
+  {
+    "source": "culpeper_1652",
+    "plants": 11,
+    "studies": 22,
+    "vehicle": {
+      "matches": 1,
+      "differs": 18,
+      "not_stated": 3
+    },
+    "heat": {
+      "matches": 4,
+      "differs": 11,
+      "not_stated": 7
+    },
+    "filtration": {
+      "matches": 9,
+      "differs": 2,
+      "not_stated": 11
+    }
+  },
+  {
+    "source": "pliny_nh",
+    "plants": 11,
+    "studies": 33,
+    "vehicle": {
+      "matches": 0,
+      "differs": 30,
+      "not_stated": 3
+    },
+    "heat": {
+      "matches": 3,
+      "differs": 22,
+      "not_stated": 8
+    },
+    "filtration": {
+      "matches": 11,
+      "differs": 0,
+      "not_stated": 22
+    }
+  }
+]

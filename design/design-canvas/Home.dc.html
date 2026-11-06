@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 22px">
+
+  <header style="border-bottom: 1px solid #D8CDB9">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px">
+      <span style="font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">Lost in Preparation</span>
+      <span style="font-size: 13px; color: #685E51">EthnoHack 2026 · Traditional Knowledge Mining</span>
+    </div>
+  </header>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 24px 16px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+    <nav aria-label="Primary" style="flex: 1 1 200px">
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px">
+        <li style="flex: 1 1 150px"><a href="Home.dc.html" aria-current="page" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; background: #EDE6D7; color: #1E1A15; font-weight: 600; text-decoration: none">Home</a></li>
+        <li style="flex: 1 1 150px"><a href="Recipes.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Recipe explorer</a></li>
+        <li style="flex: 1 1 150px"><a href="Compare.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Compare</a></li>
+        <li style="flex: 1 1 150px"><a href="Audit.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Audit</a></li>
+        <li style="flex: 1 1 150px"><a href="Hypotheses.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Hypotheses</a></li>
+        <li style="flex: 1 1 150px"><a href="Methods.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Methods &amp; validation</a></li>
+        <li style="flex: 1 1 150px"><a href="Data.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Data &amp; licences</a></li>
+      </ul>
+    </nav>
+
+    <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 38px; line-height: 46px; font-weight: 500; text-wrap: balance">Historical recipes, re-read for how they were prepared</h1>
+        <p style="margin: 0; max-width: 68ch; font-size: 17px; line-height: 26px; color: #554C40">What does this tool claim, and how far should I trust it?</p>
+      </div>
+
+      <section aria-labelledby="story" style="display: flex; flex-direction: column; gap: 16px">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 12px; line-height: 16px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Why preparation matters · motivation, not proof</span>
+          <h2 id="story" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">One plant, two preparations</h2>
+        </div>
+        <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px">
+          <li style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #685E51">1 / 3</span>
+            <h3 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">The plant was right</h3>
+            <p style="margin: 0; color: #554C40">In the 4th century CE, Ge Hong’s <i>Handbook of Prescriptions for Emergencies</i> listed qinghao (<i>Artemisia annua</i>) for intermittent fevers.</p>
+          </li>
+          <li style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #685E51">2 / 3</span>
+            <h3 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">The preparation was wrong</h3>
+            <p style="margin: 0; color: #554C40">When Tu Youyou’s team screened qinghao in the late 1960s and 1970s, their extracts gave inconsistent results. Their standard hot extraction appeared to destroy the activity.</p>
+          </li>
+          <li style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #685E51">3 / 3</span>
+            <h3 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">Reading the recipe again</h3>
+            <p style="margin: 0; color: #554C40">Ge Hong described soaking the herb in water and wringing out the juice, with no heating. A low-temperature ether extraction recovered the activity and led to the isolation of artemisinin.</p>
+          </li>
+        </ol>
+        <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #D8CDB9; padding-top: 12px">
+          <p style="margin: 0; max-width: 68ch">This is one celebrated case. It shows that preparation can decide what a recipe delivers. It does not show that other historical recipes hide overlooked preparations. Testing that, recipe by recipe, with its uncertainty shown, is what this tool is for.</p>
+          <p style="margin: 0; font-size: 12px; line-height: 16px; color: #685E51">Account based on Tu Y. (2011), “The discovery of artemisinin (qinghaosu) and gifts from Chinese medicine”, <i>Nature Medicine</i> 17, 1217–1220.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="start" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="start" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Start here</h2>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px">
+          <li style="display: flex"><a href="Recipes.dc.html" style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #FCFAF5; border: 1px solid #8F826D; border-radius: 4px; color: #1E1A15; text-decoration: none"><span style="font-size: 20px; line-height: 28px; font-weight: 600">Recipe explorer →</span><span style="color: #554C40">Read what Culpeper and Pliny prescribed, with every extracted field marked in the original passage.</span></a></li>
+          <li style="display: flex"><a href="Compare.dc.html" style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #FCFAF5; border: 1px solid #8F826D; border-radius: 4px; color: #1E1A15; text-decoration: none"><span style="font-size: 20px; line-height: 28px; font-weight: 600">Compare preparations →</span><span style="color: #554C40">Put a historical preparation beside a modern study’s, compound by compound, with ranges.</span></a></li>
+          <li style="display: flex"><a href="Hypotheses.dc.html" style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #FCFAF5; border: 1px solid #8F826D; border-radius: 4px; color: #1E1A15; text-decoration: none"><span style="font-size: 20px; line-height: 28px; font-weight: 600">Hypotheses →</span><span style="color: #554C40">The preparation–compound pairs the evidence suggests are worth re-testing, and why.</span></a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="trust" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="trust" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Before you read any number</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 16px">
+          <div style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <span style="font-size: 12px; line-height: 16px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Name resolutions · mock counts</span>
+            <h3 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">What has been checked</h3>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px">
+              <li style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #554C40; font-size: 13px; font-weight: 500">● Validated</span><span style="font-family: 'IBM Plex Mono', monospace">111</span></li>
+              <li style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 13px; font-weight: 500">◐ Provisional</span><span style="font-family: 'IBM Plex Mono', monospace">222</span></li>
+              <li style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750; font-size: 13px; font-weight: 500">◌ Pending</span><span style="font-family: 'IBM Plex Mono', monospace">333</span></li>
+            </ul>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <span style="font-size: 12px; line-height: 16px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Source confidence</span>
+            <h3 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Sources are not equally reliable</h3>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px">
+              <span style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 2px 10px; border-radius: 4px; border: 1px solid #8A4513; background: #F3E2CC; color: #8A4513; font-size: 13px"><i style="font-family: 'EB Garamond', Georgia, serif; font-size: 15px">Culpeper 1652</i> ▮▮ Higher</span>
+              <span style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 2px 10px; border-radius: 4px; border: 1px dashed #8A4513; background: #F3E2CC; color: #8A4513; font-size: 13px"><i style="font-family: 'EB Garamond', Georgia, serif; font-size: 15px">Pliny, NH</i> ▮▯ Lower · 70% of resolved names disputed</span>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+          <h3 style="margin: 0; font-size: 15px; font-weight: 600">Extraction is not detection</h3>
+          <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 12px">
+            <li style="display: flex; flex-direction: column; gap: 4px; padding: 12px; border: 1px dashed #8F826D; border-radius: 4px"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Step 1 · outside the model</span><span style="font-weight: 500">Plant content</span><span style="font-size: 13px; line-height: 18px; color: #554C40">How much of the compound the material held. Not modelled.</span></li>
+            <li style="display: flex; flex-direction: column; gap: 4px; padding: 12px; border: 1px solid #1E1A15; border-radius: 4px; background: #FFFFFF"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Step 2 · modelled</span><span style="font-weight: 500">Extraction</span><span style="font-size: 13px; line-height: 18px; color: #554C40">Whether the preparation would carry it into the liquid. This is what we estimate.</span></li>
+            <li style="display: flex; flex-direction: column; gap: 4px; padding: 12px; border: 1px dashed #8F826D; border-radius: 4px"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Step 3 · outside the model</span><span style="font-weight: 500">Lab detection</span><span style="font-size: 13px; line-height: 18px; color: #554C40">Whether an assay would find it. Not predicted.</span></li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer style="border-top: 1px solid #D8CDB9">
+    <p style="max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 13px; line-height: 18px; color: #685E51">A research tool that generates hypotheses for re-testing. It makes no medical claims and gives no guidance on preparing or taking any plant.</p>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2000}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

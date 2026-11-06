@@ -1,0 +1,1135 @@
+[
+  {
+    "taxon": "Artemisia absinthium",
+    "toxicity": {
+      "category": "concern",
+      "sources": [
+        {
+          "label": "[MOCK] Review C"
+        }
+      ],
+      "note": "Concern recorded for one constituent at high intake."
+    },
+    "preparations": [
+      {
+        "id": "p-wine",
+        "label": "Wine, cold, 3 days, strained",
+        "preparation": {
+          "family": "historical",
+          "vehicle": "wine",
+          "filtered": true,
+          "heat": "cold",
+          "duration": "3 days"
+        },
+        "origin": {
+          "kind": "recipe",
+          "recipeId": "cul-wormwood-wine",
+          "source": "culpeper_1652"
+        },
+        "estimates": [
+          {
+            "compound": "Absinthin",
+            "compoundClass": "Sesquiterpene lactones",
+            "likelihood": {
+              "low": 0.33,
+              "high": 0.55,
+              "point": 0.44
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Dilute ethanol carries mid-polarity compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": "weak",
+                "heuristic": true,
+                "note": "Wine is mildly acidic; little effect assumed here."
+              }
+            ]
+          },
+          {
+            "compound": "Artabsin",
+            "compoundClass": "Sesquiterpene lactones",
+            "likelihood": {
+              "low": 0.22,
+              "high": 0.55,
+              "point": 0.33
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Dilute ethanol carries mid-polarity compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": "weak",
+                "heuristic": true,
+                "note": "Wine is mildly acidic; little effect assumed here."
+              }
+            ]
+          },
+          {
+            "compound": "Thujone (α/β)",
+            "compoundClass": "Monoterpenes (volatile oil)",
+            "likelihood": {
+              "low": 0.55,
+              "high": 0.77,
+              "point": 0.66
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Dilute ethanol carries mid-polarity compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": false
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Sabinene",
+            "compoundClass": "Monoterpenes (volatile oil)",
+            "likelihood": {
+              "low": 0.33,
+              "high": 0.66,
+              "point": 0.5
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Dilute ethanol carries mid-polarity compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": false
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Quercetin glycosides",
+            "compoundClass": "Flavonoids",
+            "likelihood": {
+              "low": 0.33,
+              "high": 0.66,
+              "point": 0.44
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Dilute ethanol carries mid-polarity compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": "weak",
+                "heuristic": true,
+                "note": "Wine is mildly acidic; little effect assumed here."
+              }
+            ]
+          },
+          {
+            "compound": "Artemetin",
+            "compoundClass": "Flavonoids",
+            "likelihood": {
+              "low": null,
+              "high": null
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Dilute ethanol carries mid-polarity compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "unknown",
+                "strength": null,
+                "heuristic": true,
+                "note": "Acidity of this vehicle not modelled."
+              }
+            ]
+          },
+          {
+            "compound": "Chlorogenic acid",
+            "compoundClass": "Phenolic acids",
+            "likelihood": {
+              "low": 0.22,
+              "high": 0.44,
+              "point": 0.33
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Dilute ethanol carries mid-polarity compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": "weak",
+                "heuristic": true,
+                "note": "Wine is mildly acidic; little effect assumed here."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p-methanol",
+        "label": "Methanol extract, reflux, filtered",
+        "preparation": {
+          "family": "modern",
+          "vehicle": "methanol_extract",
+          "filtered": true,
+          "heat": "reflux",
+          "duration": "[MOCK] 2 h"
+        },
+        "origin": {
+          "kind": "study",
+          "citation": "[MOCK] Study A (placeholder citation)"
+        },
+        "estimates": [
+          {
+            "compound": "Absinthin",
+            "compoundClass": "Sesquiterpene lactones",
+            "likelihood": {
+              "low": 0.66,
+              "high": 0.88,
+              "point": 0.77
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Artabsin",
+            "compoundClass": "Sesquiterpene lactones",
+            "likelihood": {
+              "low": 0.44,
+              "high": 0.77,
+              "point": 0.55
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Thujone (α/β)",
+            "compoundClass": "Monoterpenes (volatile oil)",
+            "likelihood": {
+              "low": 0.11,
+              "high": 0.33,
+              "point": 0.22
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "lowers",
+                "strength": "strong",
+                "heuristic": true,
+                "note": "Prolonged heat: volatile and heat-labile compounds treated as reduced."
+              },
+              {
+                "id": "filtration",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": false
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Sabinene",
+            "compoundClass": "Monoterpenes (volatile oil)",
+            "likelihood": {
+              "low": 0.11,
+              "high": 0.44,
+              "point": 0.22
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "lowers",
+                "strength": "strong",
+                "heuristic": true,
+                "note": "Prolonged heat: volatile and heat-labile compounds treated as reduced."
+              },
+              {
+                "id": "filtration",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": false
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Quercetin glycosides",
+            "compoundClass": "Flavonoids",
+            "likelihood": {
+              "low": 0.55,
+              "high": 0.88,
+              "point": 0.66
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Artemetin",
+            "compoundClass": "Flavonoids",
+            "likelihood": {
+              "low": 0.44,
+              "high": 0.77,
+              "point": 0.55
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Chlorogenic acid",
+            "compoundClass": "Phenolic acids",
+            "likelihood": {
+              "low": 0.44,
+              "high": 0.77,
+              "point": 0.66
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p-decoction",
+        "label": "Aqueous decoction, boiled, filtered",
+        "preparation": {
+          "family": "modern",
+          "vehicle": "aqueous_extract",
+          "filtered": true,
+          "heat": "boiled",
+          "duration": "[MOCK] 30 min"
+        },
+        "origin": {
+          "kind": "study",
+          "citation": "[MOCK] Study B (placeholder citation)"
+        },
+        "estimates": [
+          {
+            "compound": "Absinthin",
+            "compoundClass": "Sesquiterpene lactones",
+            "likelihood": {
+              "low": 0.11,
+              "high": 0.33,
+              "point": 0.22
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Artabsin",
+            "compoundClass": "Sesquiterpene lactones",
+            "likelihood": {
+              "low": 0.11,
+              "high": 0.33
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Thujone (α/β)",
+            "compoundClass": "Monoterpenes (volatile oil)",
+            "likelihood": {
+              "low": 0.11,
+              "high": 0.22,
+              "point": 0.11
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "lowers",
+                "strength": "strong",
+                "heuristic": true,
+                "note": "Prolonged heat: volatile and heat-labile compounds treated as reduced."
+              },
+              {
+                "id": "filtration",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": false
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Sabinene",
+            "compoundClass": "Monoterpenes (volatile oil)",
+            "likelihood": {
+              "low": null,
+              "high": null
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "lowers",
+                "strength": "strong",
+                "heuristic": true,
+                "note": "Prolonged heat: volatile and heat-labile compounds treated as reduced."
+              },
+              {
+                "id": "filtration",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": false
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Quercetin glycosides",
+            "compoundClass": "Flavonoids",
+            "likelihood": {
+              "low": 0.33,
+              "high": 0.55,
+              "point": 0.44
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Artemetin",
+            "compoundClass": "Flavonoids",
+            "likelihood": {
+              "low": 0.11,
+              "high": 0.33
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Chlorogenic acid",
+            "compoundClass": "Phenolic acids",
+            "likelihood": {
+              "low": 0.55,
+              "high": 0.77,
+              "point": 0.66
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "taxon": "Salvia officinalis",
+    "toxicity": {
+      "category": "no_toxicity_reported",
+      "sources": [
+        {
+          "label": "[MOCK] Database D"
+        }
+      ]
+    },
+    "preparations": [
+      {
+        "id": "s-cold",
+        "label": "Cold infusion, 1 night, strained",
+        "preparation": {
+          "family": "historical",
+          "vehicle": "cold_infusion",
+          "filtered": true,
+          "heat": "cold",
+          "duration": "≈1 night"
+        },
+        "origin": {
+          "kind": "recipe",
+          "recipeId": "cul-sage-cold",
+          "source": "culpeper_1652"
+        },
+        "estimates": [
+          {
+            "compound": "Rosmarinic acid",
+            "compoundClass": "Phenolic acids",
+            "likelihood": {
+              "low": 0.44,
+              "high": 0.66,
+              "point": 0.55
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Carnosic acid",
+            "compoundClass": "Diterpenes",
+            "likelihood": {
+              "low": 0.11,
+              "high": 0.22,
+              "point": 0.11
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Thujone (α/β)",
+            "compoundClass": "Monoterpenes (volatile oil)",
+            "likelihood": {
+              "low": 0.22,
+              "high": 0.55,
+              "point": 0.33
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "lowers",
+                "strength": "moderate",
+                "heuristic": false,
+                "note": "Water carries little of the less polar compounds."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "No heating: volatile compounds treated as retained."
+              },
+              {
+                "id": "filtration",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": false
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s-ethanol",
+        "label": "Ethanol extract, warm, filtered",
+        "preparation": {
+          "family": "modern",
+          "vehicle": "ethanol_extract",
+          "filtered": true,
+          "heat": "warm",
+          "duration": "[MOCK] 24 h"
+        },
+        "origin": {
+          "kind": "study",
+          "citation": "[MOCK] Study C (placeholder citation)"
+        },
+        "estimates": [
+          {
+            "compound": "Rosmarinic acid",
+            "compoundClass": "Phenolic acids",
+            "likelihood": {
+              "low": 0.55,
+              "high": 0.77,
+              "point": 0.66
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Carnosic acid",
+            "compoundClass": "Diterpenes",
+            "likelihood": {
+              "low": 0.55,
+              "high": 0.88,
+              "point": 0.77
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "raises",
+                "strength": "moderate",
+                "heuristic": true,
+                "note": "Heat treated as raising extraction of stable compounds."
+              },
+              {
+                "id": "filtration",
+                "effect": "lowers",
+                "strength": "weak",
+                "heuristic": false,
+                "note": "Particulate-bound material removed."
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          },
+          {
+            "compound": "Thujone (α/β)",
+            "compoundClass": "Monoterpenes (volatile oil)",
+            "likelihood": {
+              "low": 0.22,
+              "high": 0.44,
+              "point": 0.33
+            },
+            "drivers": [
+              {
+                "id": "solvent",
+                "effect": "raises",
+                "strength": "strong",
+                "heuristic": false,
+                "note": "Methanol carries a wide polarity range."
+              },
+              {
+                "id": "heat",
+                "effect": "lowers",
+                "strength": "strong",
+                "heuristic": true,
+                "note": "Prolonged heat: volatile and heat-labile compounds treated as reduced."
+              },
+              {
+                "id": "filtration",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": false
+              },
+              {
+                "id": "acidity",
+                "effect": "neutral",
+                "strength": null,
+                "heuristic": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

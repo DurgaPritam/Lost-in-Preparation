@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Audit</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="position: relative; background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 22px">
+
+  <header style="border-bottom: 1px solid #D8CDB9">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px">
+      <span style="font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">Lost in Preparation</span>
+      <span style="font-size: 13px; color: #685E51">EthnoHack 2026 · Traditional Knowledge Mining</span>
+    </div>
+  </header>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 24px 16px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+    <nav aria-label="Primary" style="flex: 1 1 200px">
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px">
+        <sc-for list="{{nav}}" as="n" hint-placeholder-count="7"><li style="flex: 1 1 150px"><a href="{{n.href}}" aria-current="{{n.current}}" style="{{n.style}}">{{n.label}}</a></li></sc-for>
+      </ul>
+    </nav>
+
+    <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 38px; line-height: 46px; font-weight: 500">Audit</h1>
+        <p style="margin: 0; max-width: 68ch; font-size: 17px; line-height: 26px; color: #554C40">Did modern studies test the preparation the sources described?</p>
+      </div>
+
+      <section aria-labelledby="by-source" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="by-source" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">By source</h2>
+        <p style="margin: 0; max-width: 68ch; color: #554C40">For plants each source prescribes: how often modern studies used the same solvent, heat and filtration. “Not stated” means the paper does not say.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 16px">
+          <sc-for list="{{summary}}" as="b" hint-placeholder-count="2">
+            <section style="display: flex; flex-direction: column; gap: 16px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px">
+                <span style="{{b.srcStyle}}"><i style="font-family: 'EB Garamond', Georgia, serif; font-size: 15px">{{b.src}}</i> {{b.pips}}</span>
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #554C40">{{b.plants}} plants · {{b.studies}} studies</span>
+              </div>
+              <sc-for list="{{b.rows}}" as="r" hint-placeholder-count="3">
+                <div style="display: flex; flex-direction: column; gap: 4px">
+                  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; font-size: 13px">
+                    <span style="font-weight: 500">{{r.label}}</span>
+                    <span style="font-family: 'IBM Plex Mono', monospace; color: #554C40"><span style="color: #1E1A15">= {{r.m}}</span> · ≠ {{r.d}} · <span style="color: #5C5750">? {{r.n}}</span></span>
+                  </div>
+                  <span role="img" aria-label="{{r.aria}}" style="display: flex; height: 12px; overflow: hidden; border: 1px solid #8F826D; border-radius: 2px">
+                    <span style="{{r.mStyle}}"></span><span style="{{r.dStyle}}"></span><span style="{{r.nStyle}}"></span>
+                  </span>
+                </div>
+              </sc-for>
+              <sc-if value="{{b.pliny}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; font-size: 12px; line-height: 16px; color: #685E51">Counts include every candidate species of disputed names, so plants may be counted more than once.</p></sc-if>
+            </section>
+          </sc-for>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: #554C40">
+          <span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 16px; height: 10px; border-radius: 2px; background: #1E1A15"></span>= Same as source</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 16px; height: 10px; border-radius: 2px; border: 1px solid #8F826D; background: #EDE6D7"></span>≠ Differs</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; color: #5C5750"><span aria-hidden="true" style="width: 16px; height: 10px; border-radius: 2px; border: 1px solid #B8B1A5; background-color: #E7E3DB; background-image: repeating-linear-gradient(135deg, #B8B1A5 0 1px, transparent 1px 6px)"></span>? Not stated</span>
+        </div>
+      </section>
+
+      <section aria-labelledby="studies" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="studies" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Studies</h2>
+        <fieldset style="margin: 0; padding: 0; border: 0; min-width: 0">
+          <legend style="margin-bottom: 8px; padding: 0; font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Plant</legend>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <sc-for list="{{chips}}" as="c" hint-placeholder-count="3"><label style="{{c.style}}"><input type="checkbox" checked="{{c.on}}" onChange="{{c.toggle}}" style="position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0">{{c.label}} <span style="{{c.countStyle}}">{{c.count}}</span></label></sc-for>
+          </div>
+        </fieldset>
+        <p aria-live="polite" style="margin: 0; font-size: 13px; color: #554C40">Showing <b style="font-family: 'IBM Plex Mono', monospace; color: #1E1A15">{{shownCount}}</b> of <span style="font-family: 'IBM Plex Mono', monospace">{{total}}</span> studies</p>
+
+        <div style="overflow-x: auto; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+          <table style="width: 100%; min-width: 1080px; border-collapse: collapse; font-size: 13px; line-height: 18px">
+            <caption style="padding: 8px 12px; text-align: left; color: #554C40">Modern study preparations compared with the historical preparation (mock)</caption>
+            <thead style="background: #EDE6D7">
+              <tr style="text-align: left">
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500; width: 220px">Study</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Plant</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Part</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Solvent</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Heat</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Duration</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Filtration</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Ratio</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">vs historical<span style="display: block; font-size: 12px; font-weight: 400; color: #685E51">vehicle · heat · filtration</span></th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Field evidence<span style="display: block; font-size: 12px; font-weight: 400; color: #685E51">weakest field</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <sc-for list="{{rows}}" as="s" hint-placeholder-count="6">
+                <tr style="border-bottom: 1px solid #D8CDB9; vertical-align: top">
+                  <td style="padding: 8px 12px">
+                    <button type="button" onClick="{{s.open}}" style="padding: 0; border: 0; background: none; color: #1E1A15; font: inherit; text-align: left; text-decoration: underline; text-underline-offset: 2px; cursor: pointer">{{s.title}}</button>
+                    <span style="display: flex; flex-wrap: wrap; gap: 4px 8px; margin-top: 2px; color: #554C40">
+                      <span style="{{s.yearStyle}}">{{s.year}}</span>
+                      <sc-if value="{{s.hasPmid}}" hint-placeholder-val="{{ true }}"><a href="{{s.pmidUrl}}" style="font-family: 'IBM Plex Mono', monospace; color: #1D4E7E">PMID {{s.pmid}}</a></sc-if>
+                      <sc-if value="{{s.noPmid}}" hint-placeholder-val="{{ false }}"><span style="color: #5C5750">? Not in PubMed</span></sc-if>
+                    </span>
+                  </td>
+                  <td style="padding: 8px 12px; font-style: italic">{{s.taxon}}</td>
+                  <sc-for list="{{s.cells}}" as="c" hint-placeholder-count="6"><td style="padding: 8px 12px"><span style="{{c.style}}">{{c.text}}</span></td></sc-for>
+                  <td style="padding: 8px 12px"><span style="display: flex; flex-direction: column; align-items: flex-start; gap: 4px"><sc-for list="{{s.match}}" as="m" hint-placeholder-count="3"><span style="{{m.style}}">{{m.text}}</span></sc-for></span></td>
+                  <td style="padding: 8px 12px"><span style="{{s.evStyle}}">{{s.evLabel}}</span></td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin: 0; font-size: 12px; line-height: 16px; color: #685E51">Mock data. PMIDs of the form 0000000n are placeholders.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer style="border-top: 1px solid #D8CDB9">
+    <p style="max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 13px; line-height: 18px; color: #685E51">A research tool that generates hypotheses for re-testing. It makes no medical claims and gives no guidance on preparing or taking any plant.</p>
+  </footer>
+
+  <sc-if value="{{drawerOpen}}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; inset: 0; z-index: 50; display: flex; justify-content: flex-end">
+      <div onClick="{{close}}" aria-hidden="true" style="position: absolute; inset: 0; background: rgba(30,26,21,0.40)"></div>
+      <div role="dialog" aria-modal="true" aria-labelledby="dtitle" style="position: relative; width: 100%; max-width: 480px; height: 100%; overflow-y: auto; display: flex; flex-direction: column; background: #FCFAF5; border-left: 1px solid #D8CDB9; box-shadow: 0 12px 40px rgba(30,26,21,0.18)">
+        <div style="display: flex; justify-content: space-between; gap: 12px; padding: 20px; border-bottom: 1px solid #D8CDB9">
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Study · {{d.taxon}}</span><h2 id="dtitle" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">{{d.title}}</h2></div>
+          <button type="button" aria-label="Close panel" onClick="{{close}}" style="flex-shrink: 0; width: 40px; height: 40px; border: 0; border-radius: 4px; background: transparent; font-size: 20px; cursor: pointer">×</button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px; padding: 20px">
+          <sc-if value="{{d.hasPmid}}" hint-placeholder-val="{{ true }}"><a href="{{d.pmidUrl}}" style="width: max-content; font-family: 'IBM Plex Mono', monospace; color: #1D4E7E">Open PMID {{d.pmid}} in PubMed</a></sc-if>
+          <sc-if value="{{d.noPmid}}" hint-placeholder-val="{{ false }}"><span style="color: #5C5750">? Not indexed in PubMed</span></sc-if>
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px; line-height: 18px">
+            <tbody>
+              <sc-for list="{{d.fields}}" as="f" hint-placeholder-count="6">
+                <tr style="border-bottom: 1px solid #D8CDB9"><th scope="row" style="padding: 8px 12px 8px 0; text-align: left; font-weight: 500">{{f.label}}</th><td style="padding: 8px 12px 8px 0"><span style="{{f.style}}">{{f.text}}</span></td><td style="padding: 8px 0"><span style="{{f.evStyle}}">{{f.evLabel}}</span></td></tr>
+              </sc-for>
+            </tbody>
+          </table>
+          <p style="margin: 0; font-size: 13px; color: #554C40">{{d.compared}}</p>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"openDrawer":{"editor":"boolean","default":false},"phone":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":2100}}'>
+const NAV = [['Home', 'Home.dc.html'], ['Recipe explorer', 'Recipes.dc.html'], ['Compare', 'Compare.dc.html'], ['Audit', 'Audit.dc.html'], ['Hypotheses', 'Hypotheses.dc.html'], ['Methods & validation', 'Methods.dc.html'], ['Data & licences', 'Data.dc.html']];
+const CURRENT = 'Audit';
+const S = (value, ev) => ({ value, ev: ev || 'provisional' });
+const STUDIES = [
+  { id: 's-a', pmid: '00000001', title: '[MOCK] Study A — methanol extract of aerial parts', year: 2011, taxon: 'Artemisia absinthium', part: S('aerial parts', 'validated'), solvent: S('methanol', 'validated'), heat: S('reflux'), duration: S('2 h'), filt: S('filtered', 'validated'), ratio: S('1:10 w/v'), n: 2, match: ['differs', 'differs', 'matches'] },
+  { id: 's-b', pmid: '00000002', title: '[MOCK] Study B — aqueous decoction of leaves', year: 2015, taxon: 'Artemisia absinthium', part: S('leaves', 'validated'), solvent: S('water', 'validated'), heat: S('boiled', 'validated'), duration: S('30 min'), filt: S('filtered'), ratio: S(null, 'validated'), n: 2, match: ['differs', 'differs', 'matches'] },
+  { id: 's-d', pmid: null, title: '[MOCK] Study D — hydroalcoholic maceration', year: null, taxon: 'Artemisia absinthium', part: S(null, 'pending'), solvent: S('ethanol 70%'), heat: S('cold'), duration: S('7 days'), filt: S(null, 'pending'), ratio: S(null, 'pending'), n: 1, match: ['differs', 'matches', 'not_stated'] },
+  { id: 's-c', pmid: '00000003', title: '[MOCK] Study C — ethanol extract of leaves', year: 2018, taxon: 'Salvia officinalis', part: S('leaves', 'validated'), solvent: S('ethanol 96%', 'validated'), heat: S('warm'), duration: S('24 h'), filt: S('filtered', 'validated'), ratio: S('1:20 w/v'), n: 1, match: ['differs', 'differs', 'matches'] },
+  { id: 's-e', pmid: '00000004', title: '[MOCK] Study E — cold aqueous infusion of leaves', year: 2020, taxon: 'Salvia officinalis', part: S('leaves', 'validated'), solvent: S('water', 'validated'), heat: S('cold', 'validated'), duration: S('12 h'), filt: S('filtered', 'validated'), ratio: S('1:10 w/v', 'validated'), n: 1, match: ['matches', 'matches', 'matches'] },
+  { id: 's-f', pmid: '00000005', title: '[MOCK] Study F — hydrodistilled essential oil', year: 2009, taxon: 'Mentha sp.', part: S('leaves'), solvent: S('steam (hydrodistillation)'), heat: S('boiled'), duration: S('3 h'), filt: S(null, 'pending'), ratio: S(null, 'pending'), n: 1, match: ['differs', 'differs', 'not_stated'] },
+];
+const SUMMARY = [
+  { src: 'Culpeper 1652', pips: '▮▮ Higher', pliny: false, plants: 11, studies: 22, rows: [['Solvent / vehicle', 1, 18, 3], ['Heat', 4, 11, 7], ['Filtration', 9, 2, 11]] },
+  { src: 'Pliny, NH', pips: '▮▯ Lower · 70% of resolved names disputed', pliny: true, plants: 11, studies: 33, rows: [['Solvent / vehicle', 0, 30, 3], ['Heat', 3, 22, 8], ['Filtration', 11, 0, 22]] },
+];
+const EVP = 'display: inline-flex; padding: 0 8px; border-radius: 9999px; font-size: 12px; font-weight: 500; white-space: nowrap; ';
+const EV = {
+  validated: [EVP + 'border: 1px solid #554C40; color: #1E1A15', '● Validated'],
+  provisional: [EVP + 'border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C', '◐ Provisional'],
+  pending: [EVP + 'border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750', '◌ Pending'],
+};
+const ORDER = ['validated', 'provisional', 'pending'];
+const UNK = 'display: inline-flex; padding: 0 6px; border: 1px dashed #B8B1A5; border-radius: 2px; background: #E7E3DB; color: #5C5750; white-space: nowrap';
+const MATCH = {
+  matches: ['display: inline-flex; padding: 0 6px; border: 1px solid #1E1A15; border-radius: 2px; white-space: nowrap', '= Same as source'],
+  differs: ['display: inline-flex; padding: 0 6px; border: 1px dashed #8F826D; border-radius: 2px; color: #554C40; white-space: nowrap', '≠ Differs'],
+  not_stated: ['display: inline-flex; color: #5C5750; white-space: nowrap', '? Not stated'],
+};
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { sel: [], open: null, touched: false }; }
+  renderVals() {
+    const st = this.state;
+    const nav = NAV.map(([label, href]) => ({ label, href, current: label === CURRENT ? 'page' : undefined,
+      style: 'display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; text-decoration: none; ' + (label === CURRENT ? 'background: #EDE6D7; color: #1E1A15; font-weight: 600' : 'color: #554C40') }));
+    const summary = SUMMARY.map((b) => ({ ...b,
+      srcStyle: 'display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 4px; border: 1px ' + (b.pliny ? 'dashed' : 'solid') + ' #8A4513; background: #F3E2CC; color: #8A4513; font-size: 13px',
+      rows: b.rows.map(([label, m, d, n]) => {
+        const t = m + d + n, w = (x) => (x / t) * 100 + '%';
+        return { label, m, d, n, aria: label + ': ' + m + ' same as source, ' + d + ' differ, ' + n + ' not stated, of ' + t,
+          mStyle: 'height: 100%; width: ' + w(m) + '; background: #1E1A15', dStyle: 'height: 100%; width: ' + w(d) + '; background: #EDE6D7',
+          nStyle: 'height: 100%; width: ' + w(n) + '; background-color: #E7E3DB; background-image: repeating-linear-gradient(135deg, #B8B1A5 0 1px, transparent 1px 6px)' };
+      }) }));
+    const taxa = [...new Set(STUDIES.map((s) => s.taxon))];
+    const chips = taxa.map((t) => {
+      const on = st.sel.includes(t);
+      return { label: t, on, count: STUDIES.filter((s) => s.taxon === t).length,
+        style: 'position: relative; display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border-radius: 9999px; font-size: 13px; font-style: italic; cursor: pointer; ' + (on ? 'border: 1px solid #1E1A15; background: #1E1A15; color: #F6F1E7' : 'border: 1px solid #8F826D; background: #FCFAF5; color: #1E1A15'),
+        countStyle: "font-family: 'IBM Plex Mono', monospace; font-style: normal; color: " + (on ? '#F6F1E7' : '#685E51'),
+        toggle: () => this.setState((s) => ({ sel: s.sel.includes(t) ? s.sel.filter((x) => x !== t) : [...s.sel, t] })) };
+    });
+    const shown = STUDIES.filter((s) => st.sel.length === 0 || st.sel.includes(s.taxon));
+    const cell = (f) => f.value == null ? { text: '? Not stated', style: UNK } : { text: f.value, style: '' };
+    const rows = shown.map((s) => {
+      const worst = ORDER[Math.max(...[s.part, s.solvent, s.heat, s.duration, s.filt, s.ratio].map((f) => ORDER.indexOf(f.ev)))];
+      return { ...s, year: s.year == null ? '? Year unknown' : String(s.year), yearStyle: s.year == null ? 'color: #5C5750' : '',
+        hasPmid: !!s.pmid, noPmid: !s.pmid, pmidUrl: s.pmid ? 'https://pubmed.ncbi.nlm.nih.gov/' + s.pmid + '/' : '#',
+        cells: [s.part, s.solvent, s.heat, s.duration, s.filt, s.ratio].map(cell),
+        match: s.match.map((m, i) => ({ style: MATCH[m][0], text: ['Vehicle', 'Heat', 'Filtration'][i] + ' ' + MATCH[m][1] })),
+        evStyle: EV[worst][0], evLabel: EV[worst][1],
+        open: () => this.setState({ open: s.id, touched: true }) };
+    });
+    const openId = st.open || (!st.touched && this.props.openDrawer ? 's-d' : null);
+    const o = STUDIES.find((s) => s.id === openId);
+    const d = o ? {
+      title: o.title, taxon: o.taxon, hasPmid: !!o.pmid, noPmid: !o.pmid, pmid: o.pmid, pmidUrl: o.pmid ? 'https://pubmed.ncbi.nlm.nih.gov/' + o.pmid + '/' : '#',
+      fields: [['Plant part', o.part], ['Solvent', o.solvent], ['Heat', o.heat], ['Duration', o.duration], ['Filtration', o.filt], ['Ratio', o.ratio]].map(([label, f]) => ({ label, ...cell(f), evStyle: EV[f.ev][0], evLabel: EV[f.ev][1] })),
+      compared: 'Compared against ' + o.n + ' historical recipe' + (o.n === 1 ? '' : 's') + '.',
+    } : { fields: [] };
+    return { nav, summary, chips, rows, shownCount: shown.length, total: STUDIES.length, drawerOpen: !!o, d, close: () => this.setState({ open: null, touched: true }) };
+  }
+}
+</script>
+</body>
+</html>

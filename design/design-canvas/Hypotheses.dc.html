@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hypotheses</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="position: relative; background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 22px">
+
+  <header style="border-bottom: 1px solid #D8CDB9">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px">
+      <span style="font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">Lost in Preparation</span>
+      <span style="font-size: 13px; color: #685E51">EthnoHack 2026 · Traditional Knowledge Mining</span>
+    </div>
+  </header>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 24px 16px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+    <nav aria-label="Primary" style="flex: 1 1 200px">
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px">
+        <sc-for list="{{nav}}" as="n" hint-placeholder-count="7"><li style="flex: 1 1 150px"><a href="{{n.href}}" aria-current="{{n.current}}" style="{{n.style}}">{{n.label}}</a></li></sc-for>
+      </ul>
+    </nav>
+
+    <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 38px; line-height: 46px; font-weight: 500">Hypotheses</h1>
+        <p style="margin: 0; max-width: 68ch; font-size: 17px; line-height: 26px; color: #554C40">Which preparation–compound pairs are worth re-testing, and why?</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; max-width: 68ch; color: #554C40">Ranked by the <b style="font-weight: 500; color: #1E1A15">conservative gap</b>: the historical range’s low end minus the modern range’s high end. A lead whose ranges overlap ranks last and is marked weak. Rank ranges show which positions the uncertainty allows.</p>
+        <p style="margin: 0; font-size: 13px; color: #554C40">ⓘ These are <b style="font-weight: 500; color: #1E1A15">predicted extraction</b> likelihoods, not lab detection.</p>
+      </div>
+
+      <h2 id="leads" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Ranked leads</h2>
+      <ol aria-labelledby="leads" style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px">
+        <sc-for list="{{items}}" as="h" hint-placeholder-count="4">
+          <li>
+            <article style="display: flex; flex-direction: column; gap: 14px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+              <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px">
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: 24px; line-height: 32px; font-weight: 500">#{{h.rank}}</span>
+                <span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">{{h.rankText}}</span>
+              </div>
+              <h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">{{h.compound}} <span style="font-weight: 400; color: #554C40">in</span> <i>{{h.taxon}}</i></h2>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+                <span style="{{h.evStyle}}">{{h.evLabel}}</span>
+                <span style="{{h.toxStyle}}">{{h.toxLabel}}</span>
+                <sc-if value="{{h.weak}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 8px; border: 1px dashed #554C40; border-radius: 2px; font-size: 13px; color: #554C40">Weak lead · ranges overlap</span></sc-if>
+              </div>
+              <p style="margin: 0; max-width: 68ch">{{h.sentence}}</p>
+              <sc-if value="{{h.toxic}}" hint-placeholder-val="{{ false }}"><div role="note" style="padding: 12px; border: 1px solid #8A1C24; border-radius: 4px; background: #F7E0E0; color: #8A1C24; font-size: 13px; line-height: 18px; max-width: 68ch">▲ Toxicity is reported for this plant. Shown as a historical record for laboratory analysis only — not a preparation to make or take.</div></sc-if>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px">
+                <sc-for list="{{h.sides}}" as="s" hint-placeholder-count="2">
+                  <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0">
+                    <span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">{{s.kicker}}</span>
+                    <span style="{{s.tagStyle}}"><span aria-hidden="true" style="{{s.markStyle}}"></span><span style="{{s.vehStyle}}">{{s.label}}</span></span>
+                    <span role="img" aria-label="{{s.aria}}" style="position: relative; display: block; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7">
+                      <span aria-hidden="true" style="position: absolute; left: 25%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span><span aria-hidden="true" style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span><span aria-hidden="true" style="position: absolute; left: 75%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span>
+                      <span aria-hidden="true" style="{{s.band}}"></span><span aria-hidden="true" style="{{s.point}}"></span>
+                    </span>
+                    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">{{s.range}} <span style="color: #685E51">{{s.pointText}}</span></span>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Attested in</span>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px 16px">
+                  <sc-for list="{{h.attest}}" as="a" hint-placeholder-count="2"><span style="display: inline-flex; align-items: center; gap: 8px"><span style="{{a.style}}"><i style="font-family: 'EB Garamond', Georgia, serif; font-size: 15px">{{a.src}}</i> {{a.pips}}</span><span style="{{a.countStyle}}">{{a.count}}</span></span></sc-for>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Caveats</span>
+                <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; font-size: 13px; line-height: 18px; color: #554C40"><sc-for list="{{h.caveats}}" as="c" hint-placeholder-count="3"><li>{{c}}</li></sc-for></ul>
+              </div>
+              <footer style="display: flex; gap: 8px; border-top: 1px solid #D8CDB9; padding-top: 12px">
+                <button type="button" onClick="{{h.open}}" style="min-height: 40px; padding: 0 16px; border-radius: 4px; border: 1px solid #8F826D; background: #FCFAF5; color: #1E1A15; font: inherit; font-weight: 500; cursor: pointer">Evidence trail</button>
+              </footer>
+            </article>
+          </li>
+        </sc-for>
+      </ol>
+      <p style="margin: 0; font-size: 12px; line-height: 16px; color: #685E51">Mock data: every number is a placeholder.</p>
+    </main>
+  </div>
+
+  <footer style="border-top: 1px solid #D8CDB9">
+    <p style="max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 13px; line-height: 18px; color: #685E51">A research tool that generates hypotheses for re-testing. It makes no medical claims and gives no guidance on preparing or taking any plant.</p>
+  </footer>
+
+  <sc-if value="{{drawerOpen}}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; inset: 0; z-index: 50; display: flex; justify-content: flex-end">
+      <div onClick="{{close}}" aria-hidden="true" style="position: absolute; inset: 0; background: rgba(30,26,21,0.40)"></div>
+      <div role="dialog" aria-modal="true" aria-labelledby="ttitle" style="position: relative; width: 100%; max-width: 480px; height: 100%; overflow-y: auto; display: flex; flex-direction: column; background: #FCFAF5; border-left: 1px solid #D8CDB9; box-shadow: 0 12px 40px rgba(30,26,21,0.18)">
+        <div style="display: flex; justify-content: space-between; gap: 12px; padding: 20px; border-bottom: 1px solid #D8CDB9">
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Evidence trail · rank {{t.rank}}</span><h2 id="ttitle" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">{{t.compound}} in <i>{{t.taxon}}</i></h2></div>
+          <button type="button" aria-label="Close panel" onClick="{{close}}" style="flex-shrink: 0; width: 40px; height: 40px; border: 0; border-radius: 4px; background: transparent; font-size: 20px; cursor: pointer">×</button>
+        </div>
+        <ol style="margin: 0; padding: 20px; list-style: none; display: flex; flex-direction: column">
+          <sc-for list="{{t.steps}}" as="s" hint-placeholder-count="6">
+            <li style="display: flex; flex-direction: column; gap: 6px; padding: 0 0 20px 16px; border-left: 1px solid #8F826D">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #685E51">{{s.n}} · {{s.stage}}</span>
+              <span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-weight: 600">{{s.title}}</span><span style="{{s.evStyle}}">{{s.evLabel}}</span></span>
+              <span style="font-size: 13px; line-height: 18px; color: #554C40">{{s.detail}}</span>
+              <sc-if value="{{s.heur}}" hint-placeholder-val="{{ false }}"><span title="A rule of thumb applied by the model, not a measurement." style="display: inline-flex; align-items: baseline; gap: 4px; font-size: 13px"><span aria-hidden="true" style="color: #554C40">◇</span><span style="font-size: 12px; color: #554C40; font-variant-caps: all-small-caps; letter-spacing: .06em">heuristic</span><span style="text-decoration: underline dashed #554C40; text-underline-offset: 4px">Heat sensitivity</span></span></sc-if>
+              <sc-if value="{{s.hasRef}}" hint-placeholder-val="{{ false }}"><a href="{{s.href}}" style="width: max-content; font-size: 13px; color: #1E1A15">{{s.ref}} →</a></sc-if>
+            </li>
+          </sc-for>
+        </ol>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"openTrail":{"editor":"boolean","default":false},"phone":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":2900}}'>
+const NAV = [['Home', 'Home.dc.html'], ['Recipe explorer', 'Recipes.dc.html'], ['Compare', 'Compare.dc.html'], ['Audit', 'Audit.dc.html'], ['Hypotheses', 'Hypotheses.dc.html'], ['Methods & validation', 'Methods.dc.html'], ['Data & licences', 'Data.dc.html']];
+const CURRENT = 'Hypotheses';
+const H = [
+  { id: 'h1', rank: 1, rr: '1–2', compound: 'Thujone (α/β)', taxon: 'Artemisia absinthium', ev: 'provisional', tox: 'concern',
+    faithful: ['Wine, cold, 3 days, strained', 'historical', .55, .77, .66], modern: ['Methanol extract, reflux', 'modern', .11, .33, .22],
+    attest: [['culpeper', 2], ['pliny', 0]],
+    caveats: ['Thujone content varies between chemotypes; this estimates extraction, not how much the plant held.', 'The strength of 17th-century wine is unknown; a range is modelled.', 'The heat effect is a heuristic, not a measurement.'],
+    trail: [['Source passages', '2 Culpeper recipes describe a cold wine steep, strained.', 'validated', 'Open recipe', 'Recipes.dc.html'], ['Name resolution', '“Wormwood” → Artemisia absinthium (one candidate).', 'validated'], ['Preparation extracted', 'Vehicle, heat, duration and straining extracted; quantity unstandardised.', 'provisional', 'Open recipe detail', 'RecipeDetail.dc.html'], ['Extraction estimate', 'Historical 0.55–0.77 vs modern 0.11–0.33. Ranges do not overlap.', 'provisional', 'Open Compare', 'Compare.dc.html'], ['Modern studies audited', 'No audited study used a cold wine preparation (0 of 3).', 'provisional', 'Open audit', 'Audit.dc.html'], ['Toxicity check', 'Concern recorded (thujone). Laboratory analysis only.', 'provisional']] },
+  { id: 'h2', rank: 2, rr: '1–3', compound: 'Menthol', taxon: 'Mentha sp.', ev: 'pending', tox: 'lacking',
+    faithful: ['Oil, sun-warmed, some days', 'historical', .44, .77, .55], modern: ['Hydrodistillation', 'modern', .11, .33, .22],
+    attest: [['culpeper', 0], ['pliny', 1]],
+    caveats: ['The name resolves to genus only; Mentha species differ in their volatile oils.', 'Attested once, in the lower-confidence source.', 'Duration is not stated in the source.'],
+    trail: [['Source passages', '1 Pliny recipe: laid in oil and set in the sun.', 'validated', 'Open recipe', 'Recipes.dc.html'], ['Name resolution', '“menta” → Mentha (genus only).', 'provisional'], ['Preparation extracted', 'Vehicle and warmth extracted; duration could not be normalised.', 'provisional'], ['Extraction estimate', 'Historical 0.44–0.77 vs modern 0.11–0.33.', 'pending'], ['Modern studies audited', '1 audited study, hydrodistillation; filtration not stated.', 'provisional', 'Open audit', 'Audit.dc.html'], ['Toxicity check', 'Toxicity data lacking.', 'provisional']] },
+  { id: 'h3', rank: 3, rr: '2–3', compound: 'Coniine', taxon: 'Conium maculatum', ev: 'provisional', tox: 'reported',
+    faithful: ['Oil infusion, leaves', 'historical', .44, .66, .55], modern: ['Aqueous extract', 'modern', .11, .33, .22],
+    attest: [['culpeper', 1], ['pliny', 0]],
+    caveats: ['Heat and duration not stated in the source.', 'Toxicity reported: relevant only to laboratory analysis of the historical record.'],
+    trail: [['Source passages', '1 Culpeper recipe: leaves bruised and infused in oil.', 'validated', 'Open recipe', 'Recipes.dc.html'], ['Name resolution', '“Hemlock” → Conium maculatum (one candidate).', 'validated'], ['Preparation extracted', 'Vehicle and part extracted; heat and duration not stated.', 'provisional'], ['Extraction estimate', 'Historical 0.44–0.66 vs modern 0.11–0.33.', 'provisional'], ['Modern studies audited', 'No audited study used an oil vehicle.', 'provisional', 'Open audit', 'Audit.dc.html'], ['Toxicity check', 'Toxicity reported. Shown for analysis only.', 'provisional']] },
+  { id: 'h4', rank: 4, rr: '4–4', compound: 'Absinthin', taxon: 'Artemisia absinthium', ev: 'provisional', tox: 'concern',
+    faithful: ['Vinegar, boiled to a third', 'historical', .11, .44, .22], modern: ['Aqueous decoction', 'modern', .11, .33, .22],
+    attest: [['culpeper', 0], ['pliny', 1]],
+    caveats: ['Ranges overlap: weak lead, listed for completeness.', 'From a disputed name (candidate 1 of 3).', 'Acidity effect is a heuristic.'],
+    trail: [['Source passages', '1 Pliny recipe: boiled in sharp vinegar to a third.', 'validated', 'Open recipe', 'RecipeDetail.dc.html'], ['Name resolution', '“absinthium” → 3 candidates (disputed); this lead uses candidate 1.', 'provisional'], ['Preparation extracted', 'Vehicle and heat extracted; duration could not be normalised.', 'provisional'], ['Extraction estimate', 'Historical 0.11–0.44 vs modern 0.11–0.33. Ranges overlap.', 'provisional'], ['Modern studies audited', '2 audited studies; neither used vinegar.', 'provisional', 'Open audit', 'Audit.dc.html'], ['Toxicity check', 'Concern recorded.', 'provisional']] },
+];
+const STAGES = ['Source', 'Name', 'Preparation', 'Model', 'Audit', 'Toxicity'];
+const PILL = 'display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; font-size: 13px; line-height: 18px; font-weight: 500; white-space: nowrap; ';
+const EV = {
+  validated: [PILL + 'border: 1px solid #554C40; color: #1E1A15', '● Validated'],
+  provisional: [PILL + 'border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C', '◐ Provisional'],
+  pending: [PILL + 'border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750', '◌ Pending'],
+};
+const TOX = {
+  reported: [PILL + 'border: 1px solid #A3262E; background: #A3262E; color: #FFFFFF', '▲ Toxicity reported'],
+  concern: [PILL + 'border: 1px solid #8A1C24; background: #F7E0E0; color: #8A1C24', 'ⓘ Toxicity concern'],
+  lacking: [PILL + 'border: 1px solid #B8B1A5; color: #5C5750; background-color: #E7E3DB; background-image: repeating-linear-gradient(135deg, #B8B1A5 0 1px, transparent 1px 6px)', 'Toxicity data lacking'],
+};
+const FAM = { historical: ['#8A4513', '#F3E2CC', '#C27A35', ''], modern: ['#1D4E7E', '#DCE7F2', '#23588C', 'border-radius: 50%; '] };
+const f2 = (n) => n.toFixed(2);
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { open: null, touched: false }; }
+  renderVals() {
+    const st = this.state;
+    const nav = NAV.map(([label, href]) => ({ label, href, current: label === CURRENT ? 'page' : undefined,
+      style: 'display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; text-decoration: none; ' + (label === CURRENT ? 'background: #EDE6D7; color: #1E1A15; font-weight: 600' : 'color: #554C40') }));
+    const side = (kicker, [label, fam, lo, hi, pt]) => {
+      const [fg, bg, solid, round] = FAM[fam];
+      return { kicker, label,
+        tagStyle: 'display: inline-flex; align-items: center; gap: 6px; width: max-content; max-width: 100%; padding: 2px 8px; border: 1px solid ' + fg + '; border-radius: 2px; background: ' + bg + '; color: ' + fg + '; font-size: 13px',
+        markStyle: 'flex-shrink: 0; width: 8px; height: 8px; ' + round + 'background: ' + fg,
+        vehStyle: fam === 'historical' ? "font-family: 'EB Garamond', Georgia, serif; font-size: 15px; font-style: italic" : '',
+        band: 'position: absolute; top: 0; bottom: 0; left: ' + lo * 100 + '%; width: ' + (hi - lo) * 100 + '%; background: ' + solid + '; border-radius: 2px',
+        point: 'position: absolute; top: -3px; height: 16px; width: 2px; left: calc(' + pt * 100 + '% - 1px); background: #1E1A15',
+        range: f2(lo) + '–' + f2(hi), pointText: '(point ' + f2(pt) + ')',
+        aria: label + ': predicted extraction between ' + f2(lo) + ' and ' + f2(hi) };
+    };
+    const items = H.map((h) => ({
+      rank: h.rank, rankRange: h.rr, rankText: h.rr.split('–')[0] === h.rr.split('–')[1] ? 'the uncertainty allows only this rank' : 'consistent with ranks ' + h.rr, compound: h.compound, taxon: h.taxon,
+      evStyle: EV[h.ev][0], evLabel: EV[h.ev][1], toxStyle: TOX[h.tox][0], toxLabel: TOX[h.tox][1], toxic: h.tox === 'reported',
+      weak: !(h.faithful[2] > h.modern[3]),
+      sentence: 'Re-test whether the source’s preparation (' + h.faithful[0].toLowerCase() + ') extracts more ' + h.compound.toLowerCase() + ' than the preparation modern studies used (' + h.modern[0].toLowerCase() + ').',
+      sides: [side('Faithful preparation', h.faithful), side('Modern studies used', h.modern)],
+      attest: h.attest.map(([s, n]) => ({ src: s === 'pliny' ? 'Pliny, NH' : 'Culpeper 1652', pips: s === 'pliny' ? '▮▯' : '▮▮',
+        style: 'display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 4px; border: 1px ' + (s === 'pliny' ? 'dashed' : 'solid') + ' #8A4513; background: #F3E2CC; color: #8A4513; font-size: 13px',
+        count: n + ' recipe' + (n === 1 ? '' : 's'), countStyle: "font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: " + (n === 0 ? '#685E51' : '#1E1A15') })),
+      caveats: h.caveats,
+      open: () => this.setState({ open: h.id, touched: true }),
+    }));
+    const openId = st.open || (!st.touched && this.props.openTrail ? 'h1' : null);
+    const o = H.find((h) => h.id === openId);
+    const t = o ? { rank: o.rank, compound: o.compound, taxon: o.taxon,
+      steps: o.trail.map(([title, detail, ev, ref, href], i) => ({ n: i + 1, stage: STAGES[i], title, detail, evStyle: EV[ev][0], evLabel: EV[ev][1], heur: i === 3, hasRef: !!ref, ref, href })) } : { steps: [] };
+    return { nav, items, drawerOpen: !!o, t, close: () => this.setState({ open: null, touched: true }) };
+  }
+}
+</script>
+</body>
+</html>

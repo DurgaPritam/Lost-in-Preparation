@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Base components</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+.serif{font-family:'EB Garamond',Georgia,serif}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.caps{font-variant-caps:all-small-caps;letter-spacing:.06em}
+.hatch{background-color:#E7E3DB;background-image:repeating-linear-gradient(135deg,#B8B1A5 0 1px,transparent 1px 6px)}
+button,input{font:inherit}
+button{cursor:pointer}
+</style>
+</helmet>
+<div style="width: 1440px; min-height: 1560px; box-sizing: border-box; padding: 64px 80px; background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column; gap: 32px">
+
+  <header style="display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid #D8CDB9; padding-bottom: 24px">
+    <span class="caps" style="font-size: 13px; color: #685E51">Base components</span>
+    <h1 class="serif" style="margin: 0; font-size: 44px; line-height: 52px; font-weight: 500">Quiet controls, journal tables</h1>
+  </header>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+    <section style="display: flex; flex-direction: column; gap: 20px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <span class="mono" style="font-size: 12px; color: #685E51">Button · primary / secondary / ghost / disabled</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+        <button type="button" style="height: 40px; padding: 0 16px; border-radius: 4px; border: 1px solid #1E1A15; background: #1E1A15; color: #F6F1E7; font-size: 15px; font-weight: 500">Open hypothesis</button>
+        <button type="button" style="height: 40px; padding: 0 16px; border-radius: 4px; border: 1px solid #8F826D; background: #FCFAF5; color: #1E1A15; font-size: 15px; font-weight: 500">Compare preparations</button>
+        <button type="button" style="height: 40px; padding: 0 16px; border-radius: 4px; border: 1px solid transparent; background: transparent; color: #1E1A15; font-size: 15px; font-weight: 500">Download CSV</button>
+        <button type="button" disabled style="height: 40px; padding: 0 16px; border-radius: 4px; border: 1px solid #D8CDB9; background: #EDE6D7; color: #685E51; font-size: 15px; font-weight: 500">Disabled</button>
+        <button type="button" style="height: 40px; padding: 0 16px; border-radius: 4px; border: 1px solid #8F826D; background: #FCFAF5; color: #1E1A15; font-size: 15px; font-weight: 500; outline: 2px solid #2F6DA6; outline-offset: 2px">Focus ring</button>
+      </div>
+      <span style="font-size: 13px; color: #554C40">Primary is inverted ink, not a brand colour, so it never competes with meaning colours.</span>
+
+      <span class="mono" style="font-size: 12px; color: #685E51">SearchField</span>
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <label for="s" style="font-size: 13px; font-weight: 500">Search plants, names and compounds</label>
+        <div style="position: relative; display: flex; align-items: center">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="position: absolute; left: 12px"><circle cx="7" cy="7" r="4.5" fill="none" stroke="#554C40" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="#554C40" stroke-width="1.5"/></svg>
+          <input id="s" type="search" value="absinth" style="width: 100%; height: 40px; box-sizing: border-box; padding: 0 40px; border: 1px solid #8F826D; border-radius: 4px; background: #FCFAF5; color: #1E1A15; font-size: 15px">
+        </div>
+        <span style="font-size: 12px; color: #685E51">Historical spellings are matched: try “wormwood” or “absinthium”.</span>
+      </div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 20px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <span class="mono" style="font-size: 12px; color: #685E51">FilterGroup · checkboxes as chips, counts always, Unknown always</span>
+      <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 8px">
+        <legend class="caps" style="font-size: 12px; color: #685E51; margin-bottom: 8px">Vehicle</legend>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <label style="display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border-radius: 9999px; border: 1px solid #1E1A15; background: #1E1A15; color: #F6F1E7; font-size: 13px"><input type="checkbox" checked style="position: absolute; opacity: 0; width: 1px; height: 1px">Wine <span class="mono">11</span></label>
+          <label style="display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border-radius: 9999px; border: 1px solid #8F826D; background: #FCFAF5; font-size: 13px"><input type="checkbox" style="position: absolute; opacity: 0; width: 1px; height: 1px">Vinegar <span class="mono" style="color: #685E51">22</span></label>
+          <label style="display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border-radius: 9999px; border: 1px solid #8F826D; background: #FCFAF5; font-size: 13px"><input type="checkbox" style="position: absolute; opacity: 0; width: 1px; height: 1px">Decoction <span class="mono" style="color: #685E51">33</span></label>
+          <label style="display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border-radius: 9999px; border: 1px dashed #8F826D; background: #FCFAF5; color: #5C5750; font-size: 13px"><input type="checkbox" style="position: absolute; opacity: 0; width: 1px; height: 1px">Unknown <span class="mono" style="color: #685E51">44</span></label>
+        </div>
+      </fieldset>
+      <p style="margin: 0; font-size: 13px; color: #554C40">Showing <b class="mono" style="color: #1E1A15">11</b> of <span class="mono">110</span> · 99 hidden by filters <a href="#" style="color: #1E1A15">Clear filters</a></p>
+
+      <span class="mono" style="font-size: 12px; color: #685E51">Tabs · weight + underline marks selection</span>
+      <div role="tablist" aria-label="Recipe set" style="display: flex; gap: 4px; border-bottom: 1px solid #D8CDB9">
+        <button type="button" role="tab" aria-selected="true" style="height: 40px; padding: 0 12px; margin-bottom: -1px; border: 0; border-bottom: 2px solid #1E1A15; background: transparent; color: #1E1A15; font-size: 15px; font-weight: 600">All <span class="mono" style="color: #685E51; font-weight: 400">(110)</span></button>
+        <button type="button" role="tab" aria-selected="false" style="height: 40px; padding: 0 12px; margin-bottom: -1px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #554C40; font-size: 15px">Culpeper <span class="mono" style="color: #685E51">(55)</span></button>
+        <button type="button" role="tab" aria-selected="false" style="height: 40px; padding: 0 12px; margin-bottom: -1px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #554C40; font-size: 15px">Pliny <span class="mono" style="color: #685E51">(55)</span></button>
+      </div>
+    </section>
+  </div>
+
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <span class="mono" style="font-size: 12px; color: #685E51">DataTable · hairlines, sticky sunken header, mono ranges right-aligned, Unknown sorts last</span>
+    <div style="border: 1px solid #D8CDB9; border-radius: 4px; background: #FCFAF5; overflow: hidden">
+      <div style="padding: 8px 12px; font-size: 13px; color: #554C40">Mock recipes with predicted extraction (range, 0–1)</div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: #EDE6D7; border-bottom: 1px solid #8F826D; font-size: 13px; font-weight: 500">
+        <span style="padding: 10px 12px">Name in source</span><span style="padding: 10px 12px">Preparation</span><span style="padding: 10px 12px; text-align: right">Predicted extraction ↓<span style="display: block; font-size: 12px; font-weight: 400; color: #685E51">range, 0–1</span></span><span style="padding: 10px 12px">Toxicity</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid #D8CDB9; align-items: center">
+        <span style="padding: 10px 12px"><span class="serif" style="font-size: 17px; font-style: italic">“Wormwood”</span> <i style="font-size: 13px; color: #554C40">Artemisia absinthium</i></span>
+        <span style="padding: 10px 12px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border: 1px solid #8A4513; border-radius: 2px; background: #F3E2CC; color: #8A4513; font-size: 13px"><span style="width: 8px; height: 8px; background: #8A4513"></span><span class="serif" style="font-size: 15px; font-style: italic">Wine</span><i style="font-size: 12px">· filtering not stated</i></span></span>
+        <span class="mono" style="padding: 10px 12px; text-align: right; font-size: 15px">0.55–0.66</span>
+        <span style="padding: 10px 12px"><span style="display: inline-flex; padding: 2px 10px; border-radius: 9999px; border: 1px solid #8A1C24; background: #F7E0E0; color: #8A1C24; font-size: 13px; font-weight: 500">Toxicity concern</span></span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid #D8CDB9; align-items: center">
+        <span style="padding: 10px 12px"><span class="serif" style="font-size: 17px; font-style: italic">“absinthium”</span> <span style="font-size: 13px; color: #554C40">3 candidates · disputed</span></span>
+        <span style="padding: 10px 12px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border: 1px solid #8A4513; border-radius: 2px; background: #F3E2CC; color: #8A4513; font-size: 13px"><span style="width: 8px; height: 8px; background: #8A4513"></span><span class="serif" style="font-size: 15px; font-style: italic">Decoction</span><span style="font-size: 12px">· filtered</span></span></span>
+        <span class="mono" style="padding: 10px 12px; text-align: right; font-size: 15px">0.11–0.88</span>
+        <span style="padding: 10px 12px"><span style="display: inline-flex; padding: 2px 10px; border-radius: 9999px; border: 1px solid #8F826D; color: #554C40; font-size: 13px; font-weight: 500">No toxicity reported</span></span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: center">
+        <span style="padding: 10px 12px"><span class="serif" style="font-size: 17px; font-style: italic">“menta”</span> <i style="font-size: 13px; color: #554C40">Mentha</i> <span style="font-size: 13px; color: #554C40">sp. · genus only</span></span>
+        <span style="padding: 10px 12px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border: 1px solid #8A4513; border-radius: 2px; background: #F3E2CC; color: #8A4513; font-size: 13px"><span style="width: 8px; height: 8px; background: #8A4513"></span><span class="serif" style="font-size: 15px; font-style: italic">Vinegar</span><span style="font-size: 12px">· unfiltered</span></span></span>
+        <span style="padding: 10px 12px; text-align: right"><span style="display: inline-flex; padding: 0 6px; border: 1px dashed #B8B1A5; border-radius: 2px; background: #E7E3DB; color: #5C5750; font-size: 13px">? Unknown</span></span>
+        <span style="padding: 10px 12px"><span class="hatch" style="display: inline-flex; padding: 2px 10px; border-radius: 9999px; border: 1px solid #B8B1A5; color: #5C5750; font-size: 13px; font-weight: 500">Toxicity data lacking</span></span>
+      </div>
+    </div>
+  </section>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start">
+    <section style="display: flex; flex-direction: column; gap: 12px">
+      <span class="mono" style="font-size: 12px; color: #685E51">Card · honesty meta row directly under the title</span>
+      <article style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+        <span class="caps" style="font-size: 12px; color: #685E51">Hypothesis · mock</span>
+        <h3 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Wine preparation may carry compound class A that methanol studies did not test</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <span style="padding: 0 8px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 12px; font-weight: 500">◐ Provisional</span>
+          <span style="padding: 0 8px; border-radius: 4px; border: 1px solid #8A4513; background: #F3E2CC; color: #8A4513; font-size: 12px"><span class="serif" style="font-size: 14px; font-style: italic">Culpeper 1652</span> ▮▮</span>
+          <span style="padding: 0 8px; border-radius: 9999px; border: 1px solid #8A1C24; background: #F7E0E0; color: #8A1C24; font-size: 12px; font-weight: 500">Toxicity concern</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 13px; color: #8A4513">■ <b style="font-weight: 500">Wine</b> <span style="color: #685E51">· Predicted extraction</span></span><span style="display: block; position: relative; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7"><span style="position: absolute; left: 55%; width: 11%; top: 0; bottom: 0; background: #C27A35"></span></span><span class="mono" style="font-size: 13px">0.55–0.66</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 13px; color: #1D4E7E">● <b style="font-weight: 500">Methanol extract</b> <span style="color: #685E51">· Predicted extraction</span></span><span style="display: block; position: relative; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7"><span style="position: absolute; left: 11%; width: 77%; top: 0; bottom: 0; background: #23588C"></span></span><span class="mono" style="font-size: 13px">0.11–0.88</span></div>
+        <span style="font-size: 13px; color: #554C40">ⓘ Predicted extraction, not lab detection.</span>
+        <footer style="display: flex; gap: 8px; border-top: 1px solid #D8CDB9; padding-top: 12px"><button type="button" style="height: 32px; padding: 0 12px; border-radius: 4px; border: 1px solid #8F826D; background: #FCFAF5; font-size: 13px; font-weight: 500">View reasoning</button></footer>
+      </article>
+      <article style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+        <span class="caps" style="font-size: 12px; color: #685E51">Recipe · mock</span>
+        <h3 class="serif" style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 500">Hemlock in oil</h3>
+        <div style="display: flex; gap: 8px"><span style="padding: 0 8px; border-radius: 9999px; background: #A3262E; color: #FFFFFF; font-size: 12px; font-weight: 500">▲ Toxicity reported</span></div>
+        <figure style="margin: 0; padding: 12px 0; border-top: 1px solid #D8CDB9; border-bottom: 1px solid #D8CDB9"><blockquote class="serif" style="margin: 0; font-size: 17px; line-height: 26px">[MOCK PASSAGE] Transcribed recipe text appears here.</blockquote><figcaption style="margin-top: 6px; font-size: 12px; color: #685E51">[MOCK] Culpeper 1652, entry placeholder</figcaption></figure>
+        <div role="note" style="padding: 12px; border: 1px solid #8A1C24; border-radius: 4px; background: #F7E0E0; color: #8A1C24; font-size: 13px; line-height: 18px">▲ Toxicity is reported for this plant. Shown as a historical record for analysis only — not a preparation to make or take.</div>
+        <span style="font-size: 12px; color: #685E51">No call to action on toxic-reported plants.</span>
+      </article>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 12px">
+      <span class="mono" style="font-size: 12px; color: #685E51">Drawer · 480px, modal, focus trapped, Esc closes</span>
+      <div style="display: flex; justify-content: flex-end; height: 520px; background: rgba(30,26,21,0.40); border-radius: 4px; overflow: hidden">
+        <div role="dialog" aria-label="Recipe detail" style="width: 420px; display: flex; flex-direction: column; background: #FCFAF5; box-shadow: 0 12px 40px rgba(30,26,21,0.18)">
+          <div style="display: flex; justify-content: space-between; gap: 12px; padding: 20px; border-bottom: 1px solid #D8CDB9">
+            <div style="display: flex; flex-direction: column; gap: 4px"><span class="caps" style="font-size: 12px; color: #685E51">Recipe · Pliny, NH · mock</span><span class="serif" style="font-size: 24px; line-height: 32px; font-weight: 500">“absinthium” in wine</span></div>
+            <button type="button" aria-label="Close panel" style="width: 40px; height: 40px; border: 0; background: transparent; border-radius: 4px"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="#1E1A15" stroke-width="1.5"/></svg></button>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 16px; padding: 20px">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px"><span style="padding: 0 8px; border-radius: 4px; border: 1px dashed #8A4513; background: #F3E2CC; color: #8A4513; font-size: 12px"><span class="serif" style="font-size: 14px; font-style: italic">Pliny, NH</span> ▮▯ Lower</span><span style="padding: 0 8px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 12px; font-weight: 500">◐ Provisional</span></div>
+            <span style="width: max-content; padding: 2px 8px; border: 1px dashed #554C40; border-radius: 2px; font-size: 13px; color: #554C40">Disputed — not settled · 3 candidates</span>
+            <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 13px; color: #8A4513">■ <b style="font-weight: 500">Wine</b> <span style="color: #685E51">· Predicted extraction</span></span><span style="display: block; position: relative; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7"><span style="position: absolute; left: 11%; width: 77%; top: 0; bottom: 0; background: #C27A35"></span></span><span class="mono" style="font-size: 13px">0.11–0.88 <span style="color: #685E51">(point 0.50)</span></span></div>
+            <span style="font-size: 13px; color: #554C40">ⓘ Predicted extraction, not lab detection.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 8px; padding: 32px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+      <span class="mono" style="font-size: 12px; color: #685E51">EmptyState</span>
+      <span style="font-size: 15px; font-weight: 600">No recipes match these filters</span>
+      <span style="font-size: 15px; color: #554C40">Filters hide 110 recipes. Unknown values are included unless you exclude them.</span>
+      <button type="button" style="width: max-content; height: 32px; padding: 0 12px; border-radius: 4px; border: 1px solid #8F826D; background: #FCFAF5; font-size: 13px; font-weight: 500">Clear filters</button>
+    </div>
+    <div role="status" style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+      <span class="mono" style="font-size: 12px; color: #685E51">LoadingState</span>
+      <span style="font-size: 13px; color: #554C40">Loading recipes…</span>
+      <span style="height: 12px; border-radius: 2px; background: #EDE6D7"></span><span style="height: 12px; border-radius: 2px; background: #EDE6D7"></span><span style="height: 12px; width: 70%; border-radius: 2px; background: #EDE6D7"></span>
+    </div>
+    <div role="alert" style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #FCFAF5; border: 2px solid #1E1A15; border-radius: 4px">
+      <span class="mono" style="font-size: 12px; color: #685E51">ErrorState · ink + cross, never toxicity red</span>
+      <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="#1E1A15" stroke-width="1.5"/><path d="M5.8 5.8l4.4 4.4M10.2 5.8l-4.4 4.4" stroke="#1E1A15" stroke-width="1.5"/></svg>Couldn’t load the audit table</span>
+      <span style="font-size: 15px">The data file didn’t respond. Nothing on this page has changed.</span>
+      <code class="mono" style="width: max-content; padding: 2px 8px; border-radius: 2px; background: #EDE6D7; color: #554C40; font-size: 12px">GET /data/audit.json · 503 (mock)</code>
+      <button type="button" style="width: max-content; height: 32px; padding: 0 12px; border-radius: 4px; border: 1px solid #8F826D; background: #FCFAF5; font-size: 13px; font-weight: 500">Try again</button>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1560}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

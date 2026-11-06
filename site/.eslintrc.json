@@ -1,0 +1,12 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "ignorePatterns": ["lib/data/generated/**", "out/**", ".next/**"],
+  "rules": {
+    "no-restricted-syntax": ["error",
+      { "selector": "JSXAttribute[name.name='className'] Literal[value=/\\[#|\\[[0-9.]+px\\]|\\b(?:bg|text|border)-(?:red|green|blue|gray|slate|zinc|neutral|stone|orange|amber|yellow|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-[0-9]{2,3}\\b/]",
+        "message": "Use design tokens only (DESIGN.md §10): no arbitrary colour/px values or Tailwind default palette classes." },
+      { "selector": "JSXAttribute[name.name='className'] TemplateElement[value.raw=/\\[#|\\[[0-9.]+px\\]/]",
+        "message": "Use design tokens only (DESIGN.md §10)." }
+    ]
+  }
+}

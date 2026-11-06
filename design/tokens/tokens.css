@@ -1,0 +1,131 @@
+/* Lost in Preparation — design tokens as CSS custom properties.
+   Mirrors tokens/tokens.json. Light is the default; dark applies with
+   [data-theme="dark"] or, if no explicit theme, prefers-color-scheme. */
+
+/* Fonts are vendored in assets/fonts/fonts.css (imported by src/styles.css). */
+
+:root {
+  color-scheme: light;
+  --c-paper: #F6F1E7;
+  --c-surface: #FCFAF5;
+  --c-sunken: #EDE6D7;
+  --c-raised: #FFFFFF;
+  --c-ink: #1E1A15;
+  --c-ink-muted: #554C40;
+  --c-ink-subtle: #685E51;
+  --c-border: #D8CDB9;
+  --c-border-strong: #8F826D;
+  --c-focus: #2F6DA6;
+  --c-overlay: rgba(30, 26, 21, 0.40);
+
+  --c-hist-fg: #8A4513;
+  --c-hist-bg: #F3E2CC;
+  --c-hist-solid: #C27A35;
+  --c-hist-on-solid: #1E1A15;
+
+  --c-mod-fg: #1D4E7E;
+  --c-mod-bg: #DCE7F2;
+  --c-mod-solid: #23588C;
+  --c-mod-on-solid: #FFFFFF;
+
+  --c-unk-fg: #5C5750;
+  --c-unk-bg: #E7E3DB;
+  --c-unk-line: #B8B1A5;
+
+  --c-prov-fg: #5A3F8C;
+  --c-prov-bg: #ECE5F5;
+
+  --c-tox-fg: #8A1C24;
+  --c-tox-bg: #F7E0E0;
+  --c-tox-solid: #A3262E;
+  --c-tox-on-solid: #FFFFFF;
+
+  --e-0: none;
+  --e-1: 0 1px 2px rgba(30, 26, 21, 0.08);
+  --e-2: 0 4px 16px rgba(30, 26, 21, 0.12);
+  --e-3: 0 12px 40px rgba(30, 26, 21, 0.18);
+
+  --f-serif: 'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --f-sans: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --d-fast: 120ms;
+  --d-base: 200ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --c-paper: #15120E;
+    --c-surface: #1D1914;
+    --c-sunken: #100E0B;
+    --c-raised: #26211B;
+    --c-ink: #EEE7DA;
+    --c-ink-muted: #BDB2A1;
+    --c-ink-subtle: #A4998A;
+    --c-border: #3A332A;
+    --c-border-strong: #7A6E5C;
+    --c-focus: #8FBCE6;
+    --c-overlay: rgba(0, 0, 0, 0.55);
+    --c-hist-fg: #E8A566;
+    --c-hist-bg: #3A2615;
+    --c-hist-solid: #E3A466;
+    --c-hist-on-solid: #15120E;
+    --c-mod-fg: #8FBCE6;
+    --c-mod-bg: #172B40;
+    --c-mod-solid: #4C86BF;
+    --c-mod-on-solid: #15120E;
+    --c-unk-fg: #B4AEA4;
+    --c-unk-bg: #2A2722;
+    --c-unk-line: #4A453D;
+    --c-prov-fg: #C6B2EC;
+    --c-prov-bg: #2C2340;
+    --c-tox-fg: #F2A7AA;
+    --c-tox-bg: #3E1A1C;
+    --c-tox-solid: #E57A80;
+    --c-tox-on-solid: #1A0B0C;
+    --e-1: 0 1px 2px rgba(0, 0, 0, 0.5);
+    --e-2: 0 4px 16px rgba(0, 0, 0, 0.6);
+    --e-3: 0 12px 40px rgba(0, 0, 0, 0.7);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --c-paper: #15120E;
+  --c-surface: #1D1914;
+  --c-sunken: #100E0B;
+  --c-raised: #26211B;
+  --c-ink: #EEE7DA;
+  --c-ink-muted: #BDB2A1;
+  --c-ink-subtle: #A4998A;
+  --c-border: #3A332A;
+  --c-border-strong: #7A6E5C;
+  --c-focus: #8FBCE6;
+  --c-overlay: rgba(0, 0, 0, 0.55);
+  --c-hist-fg: #E8A566;
+  --c-hist-bg: #3A2615;
+  --c-hist-solid: #E3A466;
+  --c-hist-on-solid: #15120E;
+  --c-mod-fg: #8FBCE6;
+  --c-mod-bg: #172B40;
+  --c-mod-solid: #4C86BF;
+  --c-mod-on-solid: #15120E;
+  --c-unk-fg: #B4AEA4;
+  --c-unk-bg: #2A2722;
+  --c-unk-line: #4A453D;
+  --c-prov-fg: #C6B2EC;
+  --c-prov-bg: #2C2340;
+  --c-tox-fg: #F2A7AA;
+  --c-tox-bg: #3E1A1C;
+  --c-tox-solid: #E57A80;
+  --c-tox-on-solid: #1A0B0C;
+  --e-1: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --e-2: 0 4px 16px rgba(0, 0, 0, 0.6);
+  --e-3: 0 12px 40px rgba(0, 0, 0, 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --d-fast: 0ms; --d-base: 0ms; }
+}

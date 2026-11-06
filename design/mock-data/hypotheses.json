@@ -1,0 +1,498 @@
+[
+  {
+    "id": "h-thujone-wine",
+    "rank": 1,
+    "rankRange": [
+      1,
+      2
+    ],
+    "taxon": "Artemisia absinthium",
+    "compound": "Thujone (α/β)",
+    "compoundClass": "Monoterpenes (volatile oil)",
+    "faithful": {
+      "label": "Wine, cold, 3 days, strained",
+      "preparation": {
+        "family": "historical",
+        "vehicle": "wine",
+        "filtered": true,
+        "heat": "cold",
+        "duration": "3 days"
+      }
+    },
+    "modern": {
+      "label": "Methanol extract, reflux",
+      "preparation": {
+        "family": "modern",
+        "vehicle": "methanol_extract",
+        "filtered": true,
+        "heat": "reflux",
+        "duration": "2 h"
+      }
+    },
+    "historicalLikelihood": {
+      "low": 0.55,
+      "high": 0.77,
+      "point": 0.66
+    },
+    "modernLikelihood": {
+      "low": 0.11,
+      "high": 0.33,
+      "point": 0.22
+    },
+    "attestation": [
+      {
+        "source": "culpeper_1652",
+        "recipes": 2
+      },
+      {
+        "source": "pliny_nh",
+        "recipes": 0
+      }
+    ],
+    "caveats": [
+      "Thujone content varies between chemotypes; this estimates extraction, not how much the plant held.",
+      "The strength of 17th-century wine is unknown; a range is modelled.",
+      "The heat effect is a heuristic, not a measurement."
+    ],
+    "toxicity": {
+      "category": "concern",
+      "sources": [
+        {
+          "label": "[MOCK] Review C"
+        }
+      ],
+      "note": "Concern recorded for one constituent at high intake."
+    },
+    "evidence": "provisional",
+    "trail": [
+      {
+        "id": "t1",
+        "stage": "source",
+        "title": "Source passages",
+        "detail": "2 Culpeper recipes describe a cold wine steep, strained.",
+        "evidence": "validated",
+        "refs": [
+          {
+            "label": "Open recipe",
+            "href": "/recipes"
+          }
+        ]
+      },
+      {
+        "id": "t2",
+        "stage": "name",
+        "title": "Name resolution",
+        "detail": "“Wormwood” → Artemisia absinthium (one candidate).",
+        "evidence": "validated"
+      },
+      {
+        "id": "t3",
+        "stage": "preparation",
+        "title": "Preparation extracted",
+        "detail": "Vehicle, heat, duration and straining extracted; quantity unstandardised.",
+        "evidence": "provisional"
+      },
+      {
+        "id": "t4",
+        "stage": "model",
+        "title": "Extraction estimate",
+        "detail": "Historical 0.55–0.77 vs modern 0.11–0.33. Ranges do not overlap.",
+        "evidence": "provisional",
+        "heuristics": [
+          "heat_sensitivity"
+        ]
+      },
+      {
+        "id": "t5",
+        "stage": "audit",
+        "title": "Modern studies audited",
+        "detail": "No audited study used a cold wine preparation (0 of 3).",
+        "evidence": "provisional",
+        "refs": [
+          {
+            "label": "Open audit",
+            "href": "/audit"
+          }
+        ]
+      },
+      {
+        "id": "t6",
+        "stage": "toxicity",
+        "title": "Toxicity check",
+        "detail": "Concern recorded (thujone). Laboratory analysis only.",
+        "evidence": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "h-menthol-oil",
+    "rank": 2,
+    "rankRange": [
+      1,
+      3
+    ],
+    "taxon": "Mentha sp.",
+    "compound": "Menthol",
+    "compoundClass": "Monoterpenes (volatile oil)",
+    "faithful": {
+      "label": "Oil, sun-warmed, some days",
+      "preparation": {
+        "family": "historical",
+        "vehicle": "oil",
+        "filtered": null,
+        "heat": "warm",
+        "duration": null
+      }
+    },
+    "modern": {
+      "label": "Hydrodistillation",
+      "preparation": {
+        "family": "modern",
+        "vehicle": "hydrodistillation",
+        "filtered": null,
+        "heat": "boiled",
+        "duration": "3 h"
+      }
+    },
+    "historicalLikelihood": {
+      "low": 0.44,
+      "high": 0.77,
+      "point": 0.55
+    },
+    "modernLikelihood": {
+      "low": 0.11,
+      "high": 0.33,
+      "point": 0.22
+    },
+    "attestation": [
+      {
+        "source": "culpeper_1652",
+        "recipes": 0
+      },
+      {
+        "source": "pliny_nh",
+        "recipes": 1
+      }
+    ],
+    "caveats": [
+      "The name resolves to genus only; Mentha species differ in their volatile oils.",
+      "Attested once, in the lower-confidence source.",
+      "Duration is not stated in the source."
+    ],
+    "toxicity": {
+      "category": "data_lacking",
+      "sources": []
+    },
+    "evidence": "pending",
+    "trail": [
+      {
+        "id": "t1",
+        "stage": "source",
+        "title": "Source passages",
+        "detail": "1 Pliny recipe: laid in oil and set in the sun.",
+        "evidence": "validated",
+        "refs": [
+          {
+            "label": "Open recipe",
+            "href": "/recipes"
+          }
+        ]
+      },
+      {
+        "id": "t2",
+        "stage": "name",
+        "title": "Name resolution",
+        "detail": "“menta” → Mentha (genus only).",
+        "evidence": "provisional"
+      },
+      {
+        "id": "t3",
+        "stage": "preparation",
+        "title": "Preparation extracted",
+        "detail": "Vehicle and warmth extracted; duration could not be normalised.",
+        "evidence": "provisional"
+      },
+      {
+        "id": "t4",
+        "stage": "model",
+        "title": "Extraction estimate",
+        "detail": "Historical 0.44–0.77 vs modern 0.11–0.33.",
+        "evidence": "pending",
+        "heuristics": [
+          "heat_sensitivity"
+        ]
+      },
+      {
+        "id": "t5",
+        "stage": "audit",
+        "title": "Modern studies audited",
+        "detail": "1 audited study, hydrodistillation; filtration not stated.",
+        "evidence": "provisional",
+        "refs": [
+          {
+            "label": "Open audit",
+            "href": "/audit"
+          }
+        ]
+      },
+      {
+        "id": "t6",
+        "stage": "toxicity",
+        "title": "Toxicity check",
+        "detail": "Toxicity data lacking.",
+        "evidence": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "h-coniine-oil",
+    "rank": 3,
+    "rankRange": [
+      2,
+      3
+    ],
+    "taxon": "Conium maculatum",
+    "compound": "Coniine",
+    "compoundClass": "Piperidine alkaloids",
+    "faithful": {
+      "label": "Oil infusion, leaves",
+      "preparation": {
+        "family": "historical",
+        "vehicle": "oil",
+        "filtered": null,
+        "heat": null,
+        "duration": null
+      }
+    },
+    "modern": {
+      "label": "Aqueous extract",
+      "preparation": {
+        "family": "modern",
+        "vehicle": "aqueous_extract",
+        "filtered": true,
+        "heat": "warm",
+        "duration": null
+      }
+    },
+    "historicalLikelihood": {
+      "low": 0.44,
+      "high": 0.66,
+      "point": 0.55
+    },
+    "modernLikelihood": {
+      "low": 0.11,
+      "high": 0.33,
+      "point": 0.22
+    },
+    "attestation": [
+      {
+        "source": "culpeper_1652",
+        "recipes": 1
+      },
+      {
+        "source": "pliny_nh",
+        "recipes": 0
+      }
+    ],
+    "caveats": [
+      "Heat and duration not stated in the source.",
+      "Toxicity reported: relevant only to laboratory analysis of the historical record."
+    ],
+    "toxicity": {
+      "category": "toxic_reported",
+      "sources": [
+        {
+          "label": "[MOCK] Toxicology reference A"
+        },
+        {
+          "label": "[MOCK] Poison-centre monograph B"
+        }
+      ]
+    },
+    "evidence": "provisional",
+    "trail": [
+      {
+        "id": "t1",
+        "stage": "source",
+        "title": "Source passages",
+        "detail": "1 Culpeper recipe: leaves bruised and infused in oil.",
+        "evidence": "validated",
+        "refs": [
+          {
+            "label": "Open recipe",
+            "href": "/recipes"
+          }
+        ]
+      },
+      {
+        "id": "t2",
+        "stage": "name",
+        "title": "Name resolution",
+        "detail": "“Hemlock” → Conium maculatum (one candidate).",
+        "evidence": "validated"
+      },
+      {
+        "id": "t3",
+        "stage": "preparation",
+        "title": "Preparation extracted",
+        "detail": "Vehicle and part extracted; heat and duration not stated.",
+        "evidence": "provisional"
+      },
+      {
+        "id": "t4",
+        "stage": "model",
+        "title": "Extraction estimate",
+        "detail": "Historical 0.44–0.66 vs modern 0.11–0.33.",
+        "evidence": "provisional",
+        "heuristics": [
+          "heat_sensitivity"
+        ]
+      },
+      {
+        "id": "t5",
+        "stage": "audit",
+        "title": "Modern studies audited",
+        "detail": "No audited study used an oil vehicle.",
+        "evidence": "provisional",
+        "refs": [
+          {
+            "label": "Open audit",
+            "href": "/audit"
+          }
+        ]
+      },
+      {
+        "id": "t6",
+        "stage": "toxicity",
+        "title": "Toxicity check",
+        "detail": "Toxicity reported. Shown for analysis only.",
+        "evidence": "provisional"
+      }
+    ]
+  },
+  {
+    "id": "h-absinthin-vinegar",
+    "rank": 4,
+    "rankRange": [
+      4,
+      4
+    ],
+    "taxon": "Artemisia absinthium",
+    "compound": "Absinthin",
+    "compoundClass": "Sesquiterpene lactones",
+    "faithful": {
+      "label": "Vinegar, boiled to a third",
+      "preparation": {
+        "family": "historical",
+        "vehicle": "vinegar",
+        "filtered": null,
+        "heat": "boiled",
+        "duration": null
+      }
+    },
+    "modern": {
+      "label": "Aqueous decoction",
+      "preparation": {
+        "family": "modern",
+        "vehicle": "aqueous_extract",
+        "filtered": true,
+        "heat": "boiled",
+        "duration": "30 min"
+      }
+    },
+    "historicalLikelihood": {
+      "low": 0.11,
+      "high": 0.44,
+      "point": 0.22
+    },
+    "modernLikelihood": {
+      "low": 0.11,
+      "high": 0.33,
+      "point": 0.22
+    },
+    "attestation": [
+      {
+        "source": "culpeper_1652",
+        "recipes": 0
+      },
+      {
+        "source": "pliny_nh",
+        "recipes": 1
+      }
+    ],
+    "caveats": [
+      "Ranges overlap: weak lead, listed for completeness.",
+      "From a disputed name (candidate 1 of 3).",
+      "Acidity effect is a heuristic."
+    ],
+    "toxicity": {
+      "category": "concern",
+      "sources": [
+        {
+          "label": "[MOCK] Review C"
+        }
+      ],
+      "note": "Concern recorded for one constituent at high intake."
+    },
+    "evidence": "provisional",
+    "trail": [
+      {
+        "id": "t1",
+        "stage": "source",
+        "title": "Source passages",
+        "detail": "1 Pliny recipe: boiled in sharp vinegar to a third.",
+        "evidence": "validated",
+        "refs": [
+          {
+            "label": "Open recipe",
+            "href": "/recipes"
+          }
+        ]
+      },
+      {
+        "id": "t2",
+        "stage": "name",
+        "title": "Name resolution",
+        "detail": "“absinthium” → 3 candidates (disputed); this lead uses candidate 1.",
+        "evidence": "provisional"
+      },
+      {
+        "id": "t3",
+        "stage": "preparation",
+        "title": "Preparation extracted",
+        "detail": "Vehicle and heat extracted; duration could not be normalised.",
+        "evidence": "provisional"
+      },
+      {
+        "id": "t4",
+        "stage": "model",
+        "title": "Extraction estimate",
+        "detail": "Historical 0.11–0.44 vs modern 0.11–0.33. Ranges overlap.",
+        "evidence": "provisional",
+        "heuristics": [
+          "heat_sensitivity"
+        ]
+      },
+      {
+        "id": "t5",
+        "stage": "audit",
+        "title": "Modern studies audited",
+        "detail": "2 audited studies; neither used vinegar.",
+        "evidence": "provisional",
+        "refs": [
+          {
+            "label": "Open audit",
+            "href": "/audit"
+          }
+        ]
+      },
+      {
+        "id": "t6",
+        "stage": "toxicity",
+        "title": "Toxicity check",
+        "detail": "Concern recorded.",
+        "evidence": "provisional"
+      }
+    ]
+  }
+]

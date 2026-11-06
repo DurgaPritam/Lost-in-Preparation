@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+public/data/
+lib/data/generated/
+test-results/
+playwright-report/
+.lighthouseci/
+screenshots/
+*.tsbuildinfo
+.vercel/

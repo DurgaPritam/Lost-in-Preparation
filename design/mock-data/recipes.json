@@ -1,0 +1,474 @@
+[
+  {
+    "id": "cul-wormwood-wine",
+    "source": "culpeper_1652",
+    "evidence": "validated",
+    "name": {
+      "historicalName": "Wormwood",
+      "source": "culpeper_1652",
+      "state": "resolved",
+      "candidates": [
+        {
+          "taxon": "Artemisia absinthium",
+          "authority": "L.",
+          "rank": "species",
+          "confidence": {
+            "low": 0.77,
+            "high": 0.99,
+            "point": 0.88
+          },
+          "evidence": "validated"
+        }
+      ]
+    },
+    "preparation": {
+      "family": "historical",
+      "vehicle": "wine",
+      "filtered": true,
+      "heat": "cold",
+      "duration": "3 days"
+    },
+    "passage": {
+      "text": "[MOCK] Take the tops of Wormwood, two handfuls, and steep them cold in a quart of white wine three days; then strain it through a linen cloth, and keep it close stopped in a glass.",
+      "edition": "[MOCK] Culpeper, The English Physitian (1652), transcription placeholder",
+      "locator": "entry “Wormwood”, placeholder locator",
+      "fields": [
+        {
+          "id": "part-16",
+          "kind": "part",
+          "start": 16,
+          "end": 20,
+          "value": "flowering tops",
+          "evidence": "validated"
+        },
+        {
+          "id": "plant-24",
+          "kind": "plant",
+          "start": 24,
+          "end": 32,
+          "value": "Wormwood",
+          "evidence": "validated"
+        },
+        {
+          "id": "quantity-34",
+          "kind": "quantity",
+          "start": 34,
+          "end": 46,
+          "value": "2 handfuls (unstandardised)",
+          "evidence": "provisional"
+        },
+        {
+          "id": "heat-63",
+          "kind": "heat",
+          "start": 63,
+          "end": 67,
+          "value": "cold",
+          "evidence": "provisional"
+        },
+        {
+          "id": "vehicle-82",
+          "kind": "vehicle",
+          "start": 82,
+          "end": 92,
+          "value": "wine",
+          "evidence": "validated"
+        },
+        {
+          "id": "duration-93",
+          "kind": "duration",
+          "start": 93,
+          "end": 103,
+          "value": "3 days",
+          "evidence": "validated"
+        },
+        {
+          "id": "filtration-110",
+          "kind": "filtration",
+          "start": 110,
+          "end": 127,
+          "value": "filtered (cloth)",
+          "evidence": "provisional"
+        }
+      ],
+      "illegible": [
+        {
+          "id": "ill-1",
+          "at": 130,
+          "estChars": 4,
+          "note": "Ink loss in the scanned copy; about 4 characters."
+        }
+      ]
+    },
+    "toxicity": {
+      "category": "concern",
+      "sources": [
+        {
+          "label": "[MOCK] Review C"
+        }
+      ],
+      "note": "Concern recorded for one constituent at high intake."
+    }
+  },
+  {
+    "id": "pli-absinthium-vinegar",
+    "source": "pliny_nh",
+    "evidence": "provisional",
+    "name": {
+      "historicalName": "absinthium",
+      "source": "pliny_nh",
+      "state": "disputed",
+      "candidates": [
+        {
+          "taxon": "Artemisia absinthium",
+          "authority": "L.",
+          "rank": "species",
+          "confidence": {
+            "low": 0.22,
+            "high": 0.66,
+            "point": 0.44
+          },
+          "evidence": "provisional"
+        },
+        {
+          "taxon": "Artemisia pontica",
+          "authority": "L.",
+          "rank": "species",
+          "confidence": {
+            "low": 0.11,
+            "high": 0.55,
+            "point": 0.33
+          },
+          "evidence": "provisional"
+        },
+        {
+          "taxon": "Artemisia",
+          "rank": "genus",
+          "confidence": {
+            "low": null,
+            "high": null
+          },
+          "evidence": "pending"
+        }
+      ]
+    },
+    "preparation": {
+      "family": "historical",
+      "vehicle": "vinegar",
+      "filtered": null,
+      "heat": "boiled",
+      "duration": null
+    },
+    "passage": {
+      "text": "[MOCK] The tops of absinthium are boiled in sharp vinegar until it comes to a third part; it is then pressed out, and the liquor kept in a sealed vessel.",
+      "edition": "[MOCK] Pliny the Elder, Naturalis Historia, translation placeholder",
+      "locator": "book and chapter placeholder",
+      "fields": [
+        {
+          "id": "part-11",
+          "kind": "part",
+          "start": 11,
+          "end": 15,
+          "value": "flowering tops",
+          "evidence": "provisional"
+        },
+        {
+          "id": "plant-19",
+          "kind": "plant",
+          "start": 19,
+          "end": 29,
+          "value": "absinthium (disputed)",
+          "evidence": "provisional"
+        },
+        {
+          "id": "heat-34",
+          "kind": "heat",
+          "start": 34,
+          "end": 40,
+          "value": "boiled",
+          "evidence": "provisional"
+        },
+        {
+          "id": "vehicle-44",
+          "kind": "vehicle",
+          "start": 44,
+          "end": 57,
+          "value": "vinegar",
+          "evidence": "provisional"
+        },
+        {
+          "id": "duration-58",
+          "kind": "duration",
+          "start": 58,
+          "end": 88,
+          "value": null,
+          "evidence": "pending"
+        },
+        {
+          "id": "filtration-101",
+          "kind": "filtration",
+          "start": 101,
+          "end": 112,
+          "value": "pressed; straining not stated",
+          "evidence": "provisional"
+        }
+      ],
+      "illegible": [
+        {
+          "id": "ill-2",
+          "at": 58,
+          "estChars": null,
+          "note": "Lacuna in the source text; length unknown."
+        }
+      ]
+    },
+    "toxicity": {
+      "category": "concern",
+      "sources": [
+        {
+          "label": "[MOCK] Review C"
+        }
+      ],
+      "note": "Concern recorded for one constituent at high intake."
+    }
+  },
+  {
+    "id": "pli-menta-oil",
+    "source": "pliny_nh",
+    "evidence": "pending",
+    "name": {
+      "historicalName": "menta",
+      "source": "pliny_nh",
+      "state": "genus_only",
+      "candidates": [
+        {
+          "taxon": "Mentha",
+          "rank": "genus",
+          "confidence": {
+            "low": 0.55,
+            "high": 0.88,
+            "point": 0.66
+          },
+          "evidence": "provisional"
+        }
+      ]
+    },
+    "preparation": {
+      "family": "historical",
+      "vehicle": "oil",
+      "filtered": null,
+      "heat": "warm",
+      "duration": null
+    },
+    "passage": {
+      "text": "[MOCK] Menta is laid in oil and set in the sun for some days.",
+      "edition": "[MOCK] Pliny the Elder, Naturalis Historia, translation placeholder",
+      "locator": "placeholder",
+      "fields": [
+        {
+          "id": "plant-7",
+          "kind": "plant",
+          "start": 7,
+          "end": 12,
+          "value": "menta (genus only)",
+          "evidence": "provisional"
+        },
+        {
+          "id": "vehicle-24",
+          "kind": "vehicle",
+          "start": 24,
+          "end": 27,
+          "value": "oil",
+          "evidence": "provisional"
+        },
+        {
+          "id": "heat-32",
+          "kind": "heat",
+          "start": 32,
+          "end": 46,
+          "value": "warm",
+          "evidence": "provisional"
+        },
+        {
+          "id": "duration-51",
+          "kind": "duration",
+          "start": 51,
+          "end": 60,
+          "value": null,
+          "evidence": "pending"
+        }
+      ],
+      "illegible": []
+    },
+    "toxicity": {
+      "category": "data_lacking",
+      "sources": []
+    }
+  },
+  {
+    "id": "cul-hemlock-oil",
+    "source": "culpeper_1652",
+    "evidence": "validated",
+    "name": {
+      "historicalName": "Hemlock",
+      "source": "culpeper_1652",
+      "state": "resolved",
+      "candidates": [
+        {
+          "taxon": "Conium maculatum",
+          "authority": "L.",
+          "rank": "species",
+          "confidence": {
+            "low": 0.66,
+            "high": 0.99,
+            "point": 0.88
+          },
+          "evidence": "validated"
+        }
+      ]
+    },
+    "preparation": {
+      "family": "historical",
+      "vehicle": "oil",
+      "filtered": null,
+      "heat": null,
+      "duration": null
+    },
+    "passage": {
+      "text": "[MOCK] Hemlock leaves bruised and infused in oil.",
+      "edition": "[MOCK] Culpeper, The English Physitian (1652), transcription placeholder",
+      "locator": "placeholder",
+      "fields": [
+        {
+          "id": "plant-7",
+          "kind": "plant",
+          "start": 7,
+          "end": 14,
+          "value": "Hemlock",
+          "evidence": "validated"
+        },
+        {
+          "id": "part-15",
+          "kind": "part",
+          "start": 15,
+          "end": 21,
+          "value": "leaf",
+          "evidence": "validated"
+        },
+        {
+          "id": "vehicle-45",
+          "kind": "vehicle",
+          "start": 45,
+          "end": 48,
+          "value": "oil",
+          "evidence": "validated"
+        }
+      ],
+      "illegible": []
+    },
+    "toxicity": {
+      "category": "toxic_reported",
+      "sources": [
+        {
+          "label": "[MOCK] Toxicology reference A"
+        },
+        {
+          "label": "[MOCK] Poison-centre monograph B"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cul-sage-cold",
+    "source": "culpeper_1652",
+    "evidence": "provisional",
+    "name": {
+      "historicalName": "Sage",
+      "source": "culpeper_1652",
+      "state": "resolved",
+      "candidates": [
+        {
+          "taxon": "Salvia officinalis",
+          "authority": "L.",
+          "rank": "species",
+          "confidence": {
+            "low": 0.66,
+            "high": 0.88,
+            "point": 0.77
+          },
+          "evidence": "provisional"
+        }
+      ]
+    },
+    "preparation": {
+      "family": "historical",
+      "vehicle": "cold_infusion",
+      "filtered": true,
+      "heat": "cold",
+      "duration": "≈1 night"
+    },
+    "passage": {
+      "text": "[MOCK] The leaves of Sage, a handful, infused in cold water a night, and strained.",
+      "edition": "[MOCK] Culpeper, The English Physitian (1652), transcription placeholder",
+      "locator": "placeholder",
+      "fields": [
+        {
+          "id": "part-11",
+          "kind": "part",
+          "start": 11,
+          "end": 17,
+          "value": "leaf",
+          "evidence": "validated"
+        },
+        {
+          "id": "plant-21",
+          "kind": "plant",
+          "start": 21,
+          "end": 25,
+          "value": "Sage",
+          "evidence": "validated"
+        },
+        {
+          "id": "quantity-27",
+          "kind": "quantity",
+          "start": 27,
+          "end": 36,
+          "value": "1 handful (unstandardised)",
+          "evidence": "provisional"
+        },
+        {
+          "id": "vehicle-49",
+          "kind": "vehicle",
+          "start": 49,
+          "end": 59,
+          "value": "cold infusion",
+          "evidence": "validated"
+        },
+        {
+          "id": "duration-60",
+          "kind": "duration",
+          "start": 60,
+          "end": 67,
+          "value": "≈1 night",
+          "evidence": "provisional"
+        },
+        {
+          "id": "filtration-73",
+          "kind": "filtration",
+          "start": 73,
+          "end": 81,
+          "value": "filtered",
+          "evidence": "validated"
+        }
+      ],
+      "illegible": []
+    },
+    "toxicity": {
+      "category": "no_toxicity_reported",
+      "sources": [
+        {
+          "label": "[MOCK] Database D"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Foundations</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+.serif{font-family:'EB Garamond',Georgia,serif}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.caps{font-variant-caps:all-small-caps;letter-spacing:.06em}
+.hatch{background-color:#E7E3DB;background-image:repeating-linear-gradient(135deg,#B8B1A5 0 1px,transparent 1px 6px)}
+.hatch-dk{background-color:#2A2722;background-image:repeating-linear-gradient(135deg,#4A453D 0 1px,transparent 1px 6px)}
+</style>
+</helmet>
+<div style="width: 1440px; min-height: 1720px; box-sizing: border-box; padding: 64px 80px; background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column; gap: 56px">
+
+  <header style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; border-bottom: 1px solid #D8CDB9; padding-bottom: 24px">
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span class="caps" style="font-size: 13px; color: #685E51">Design system · Phase 1 · Foundations</span>
+      <h1 class="serif" style="margin: 0; font-size: 52px; line-height: 58px; font-weight: 500">Lost in Preparation</h1>
+      <p style="margin: 0; font-size: 17px; line-height: 26px; color: #554C40; max-width: 760px">Warm paper and a serif for what the sources say; a clean sans for what the tool computes. Colour is semantic and always backed by shape or words.</p>
+    </div>
+    <span class="mono" style="font-size: 12px; color: #685E51">tokens/tokens.json · v1.0.0-phase1</span>
+  </header>
+
+  <section style="display: flex; flex-direction: column; gap: 20px">
+    <h2 class="serif" style="margin: 0; font-size: 30px; line-height: 38px; font-weight: 500">Colour: meaning families</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px">
+
+      <div style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+        <span class="caps" style="font-size: 13px; color: #685E51">Light</span>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; font-size: 12px; line-height: 16px">
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; border: 1px solid #D8CDB9; background: #F6F1E7"></span><span>paper</span><span class="mono" style="color: #685E51">#F6F1E7</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; border: 1px solid #D8CDB9; background: #FCFAF5"></span><span>surface</span><span class="mono" style="color: #685E51">#FCFAF5</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; border: 1px solid #D8CDB9; background: #EDE6D7"></span><span>sunken</span><span class="mono" style="color: #685E51">#EDE6D7</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #8F826D"></span><span>border-strong</span><span class="mono" style="color: #685E51">3.34:1 UI</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #1E1A15"></span><span>ink</span><span class="mono" style="color: #685E51">15.4:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #554C40"></span><span>ink-muted</span><span class="mono" style="color: #685E51">7.5:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #685E51"></span><span>ink-subtle</span><span class="mono" style="color: #685E51">5.6:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #2F6DA6"></span><span>focus</span><span class="mono" style="color: #685E51">4.8:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #C27A35"></span><span>hist-solid ■</span><span class="mono" style="color: #685E51">lighter · L .26</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #8A4513"></span><span>hist-fg</span><span class="mono" style="color: #685E51">6.3:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #23588C"></span><span>mod-solid ●</span><span class="mono" style="color: #685E51">darker · L .09</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #1D4E7E"></span><span>mod-fg</span><span class="mono" style="color: #685E51">7.6:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span class="hatch" style="height: 48px; border-radius: 4px; border: 1px solid #B8B1A5"></span><span>unknown</span><span class="mono" style="color: #685E51">#5C5750 · 6.4:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #5A3F8C"></span><span>prov-fg (AI ref.)</span><span class="mono" style="color: #685E51">7.4:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #A3262E"></span><span>tox-solid</span><span class="mono" style="color: #685E51">reserved</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #8A1C24"></span><span>tox-fg</span><span class="mono" style="color: #685E51">8.2:1</span></div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #1D1914; color: #EEE7DA; border: 1px solid #3A332A; border-radius: 6px">
+        <span class="caps" style="font-size: 13px; color: #A4998A">Dark</span>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; font-size: 12px; line-height: 16px">
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; border: 1px solid #3A332A; background: #15120E"></span><span>paper</span><span class="mono" style="color: #A4998A">#15120E</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; border: 1px solid #3A332A; background: #1D1914"></span><span>surface</span><span class="mono" style="color: #A4998A">#1D1914</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; border: 1px solid #3A332A; background: #100E0B"></span><span>sunken</span><span class="mono" style="color: #A4998A">#100E0B</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #7A6E5C"></span><span>border-strong</span><span class="mono" style="color: #A4998A">3.75:1 UI</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #EEE7DA"></span><span>ink</span><span class="mono" style="color: #A4998A">15.2:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #BDB2A1"></span><span>ink-muted</span><span class="mono" style="color: #A4998A">8.9:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #A4998A"></span><span>ink-subtle</span><span class="mono" style="color: #A4998A">6.7:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #8FBCE6"></span><span>focus</span><span class="mono" style="color: #A4998A">9.3:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #E3A466"></span><span>hist-solid ■</span><span class="mono" style="color: #A4998A">lighter · L .44</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #E8A566"></span><span>hist-fg</span><span class="mono" style="color: #A4998A">8.9:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #4C86BF"></span><span>mod-solid ●</span><span class="mono" style="color: #A4998A">darker · L .22</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #8FBCE6"></span><span>mod-fg</span><span class="mono" style="color: #A4998A">9.3:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span class="hatch-dk" style="height: 48px; border-radius: 4px; border: 1px solid #4A453D"></span><span>unknown</span><span class="mono" style="color: #A4998A">#B4AEA4 · 8.5:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #C6B2EC"></span><span>prov-fg (AI ref.)</span><span class="mono" style="color: #A4998A">9.8:1</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #E57A80"></span><span>tox-solid</span><span class="mono" style="color: #A4998A">reserved</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="height: 48px; border-radius: 4px; background: #F2A7AA"></span><span>tox-fg</span><span class="mono" style="color: #A4998A">9.7:1</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 20px 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; color: #8A4513; font-weight: 500"><span style="width: 10px; height: 10px; background: #C27A35"></span>Historical preparation</span>
+        <span style="height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7; position: relative; display: block"><span style="position: absolute; left: 33%; width: 33%; top: 0; bottom: 0; background: #C27A35; border-radius: 2px"></span></span>
+        <span style="font-size: 13px; color: #554C40">Warm, lighter fill, square mark, serif vehicle names.</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; color: #1D4E7E; font-weight: 500"><span style="width: 10px; height: 10px; border-radius: 50%; background: #23588C"></span>Modern study preparation</span>
+        <span style="height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7; position: relative; display: block"><span style="position: absolute; left: 22%; width: 22%; top: 0; bottom: 0; background: #23588C; border-radius: 2px"></span></span>
+        <span style="font-size: 13px; color: #554C40">Cool, darker fill, round mark, sans.</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; color: #5C5750; font-weight: 500"><span class="hatch" style="width: 16px; height: 10px; border: 1px solid #B8B1A5"></span>Unknown</span>
+        <span class="hatch" style="height: 12px; border: 1px solid #8F826D; border-radius: 2px; display: block"></span>
+        <span style="font-size: 13px; color: #554C40">Neutral hatch across the whole track. Never empty, never zero.</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <h2 class="serif" style="margin: 0; font-size: 30px; line-height: 38px; font-weight: 500">Type</h2>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">3xl 38/46 · EB Garamond 500</span><span class="serif" style="font-size: 38px; line-height: 46px; font-weight: 500">Recipe explorer</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">xl 24/32 · serif italic · names as written</span><span class="serif" style="font-size: 24px; line-height: 32px; font-style: italic">“absinthium”</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">md 17/26 · serif · historical passages, max 68ch</span><span class="serif" style="font-size: 17px; line-height: 26px; max-width: 560px">[MOCK PASSAGE] The transcribed recipe appears here, in the source’s own spelling, with its edition cited below.</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">lg 20/28 · Plex Sans 600</span><span style="font-size: 20px; line-height: 28px; font-weight: 600">Predicted extraction by vehicle</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">base 15/22 · Plex Sans · UI and data</span><span style="font-size: 15px; line-height: 22px">Filtered decoction compared with 2 modern study preparations</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">sm 13/18 · xs 12/16 small caps</span><span style="font-size: 13px; line-height: 18px; color: #554C40">Provisional · AI reference, not human-checked</span><span class="caps" style="font-size: 12px; color: #685E51">As written in source</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">sm · Plex Mono · ranges, tabular</span><span class="mono" style="font-size: 13px">0.33–0.66 <span style="color: #685E51">(point 0.50)</span></span></div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <h2 class="serif" style="margin: 0; font-size: 30px; line-height: 38px; font-weight: 500">Space</h2>
+        <div style="display: flex; align-items: flex-end; gap: 16px">
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 4px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">1·4</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 8px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">2·8</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 12px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">3·12</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 16px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">4·16</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 24px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">6·24</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 32px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">8·32</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 48px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">12·48</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 64px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">16·64</span></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="width: 80px; height: 16px; background: #554C40"></span><span class="mono" style="font-size: 12px; color: #685E51">20·80</span></div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <h2 class="serif" style="margin: 0; font-size: 30px; line-height: 38px; font-weight: 500">Radius</h2>
+        <div style="display: flex; gap: 16px">
+          <span class="mono" style="width: 112px; height: 56px; display: flex; align-items: center; justify-content: center; font-size: 12px; background: #FCFAF5; border: 1px solid #8F826D; border-radius: 2px">sm · 2</span>
+          <span class="mono" style="width: 112px; height: 56px; display: flex; align-items: center; justify-content: center; font-size: 12px; background: #FCFAF5; border: 1px solid #8F826D; border-radius: 4px">default · 4</span>
+          <span class="mono" style="width: 112px; height: 56px; display: flex; align-items: center; justify-content: center; font-size: 12px; background: #FCFAF5; border: 1px solid #8F826D; border-radius: 6px">md · 6</span>
+          <span class="mono" style="width: 112px; height: 56px; display: flex; align-items: center; justify-content: center; font-size: 12px; background: #FCFAF5; border: 1px solid #8F826D; border-radius: 9999px">full · badges</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <h2 class="serif" style="margin: 0; font-size: 30px; line-height: 38px; font-weight: 500">Elevation</h2>
+        <div style="display: flex; gap: 24px">
+          <div style="width: 112px; height: 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px"><span class="mono" style="font-size: 12px">0</span><span style="font-size: 12px; color: #685E51">cards, tables</span></div>
+          <div style="width: 112px; height: 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px; box-shadow: 0 1px 2px rgba(30,26,21,0.08)"><span class="mono" style="font-size: 12px">1</span><span style="font-size: 12px; color: #685E51">hover</span></div>
+          <div style="width: 112px; height: 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2px; background: #FFFFFF; border: 1px solid #D8CDB9; border-radius: 4px; box-shadow: 0 4px 16px rgba(30,26,21,0.12)"><span class="mono" style="font-size: 12px">2</span><span style="font-size: 12px; color: #685E51">tooltip</span></div>
+          <div style="width: 112px; height: 72px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px; box-shadow: 0 12px 40px rgba(30,26,21,0.18)"><span class="mono" style="font-size: 12px">3</span><span style="font-size: 12px; color: #685E51">drawer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid #D8CDB9; padding-top: 16px; font-size: 13px; color: #685E51">All contrast ratios measured (WCAG 2.x) and recorded in tokens.json. Nothing below 12px. Tailwind’s default palette is removed: only these tokens compile.</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1720}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

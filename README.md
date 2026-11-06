@@ -119,6 +119,8 @@ config/            sources, pipeline settings (LLM provider), crosswalk reviewer
 annotation/        static annotation & adjudication tool (open index.html in a browser)
 data/gold/         gold-set sample and annotations
 site-data/         exported files for the web explorer
+site/              the website (Next.js static export), built from the Claude Design handoff in design/
+design/            the Claude Design handoff (tokens, components, screens), unchanged
 docs/              data licences, extraction error analysis
 METHODS.md         how every dataset is produced
 ```
@@ -136,6 +138,22 @@ export PYTHONPATH=pipeline:.
 ```
 
 **Extraction.** The results use extractions written in a Claude Code session (`data/m1_session/`), validated with `python -m lip m1 session-ingest --scope sample` (or `--scope approved`). This step needs no API key or network. The API extractor (`python -m lip m1 extract`; Groq by default, Ollama and Claude optional in `config/pipeline.toml`) is kept. Its cached Groq responses are committed but excluded from evaluation. For Groq, put `GROQ_API_KEY=...` in your environment or a local `.env` file (see `.env.example`; `.env` is git-ignored).
+
+## Website
+
+`site/` is a Next.js (App Router, TypeScript strict) static export. It reads only `site-data/` at build time:
+- **Contract types:** the TypeScript types and Zod schemas are generated from the contract JSON Schemas.
+- **Validation:** every file is validated, and the build fails on any mismatch.
+- **Changes from the design:** listed in [site/CHANGES.md](site/CHANGES.md), together with the three additions (the Home reporting-gap section, the liquorice case study, and audit v1 and v2 side by side).
+
+```bash
+cd site && npm ci
+npm run build        # generate contract types, validate site-data, export to site/out/
+npm run serve        # http://localhost:4517
+npm run ci           # type-check, lint, Vitest, build, Playwright + axe (desktop and 390px), Lighthouse
+```
+
+CI runs the same gates in `.github/workflows/site.yml`. Deployment notes are in [site/DEPLOY.md](site/DEPLOY.md).
 
 ## Data and licences
 

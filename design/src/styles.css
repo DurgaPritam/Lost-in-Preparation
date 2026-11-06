@@ -1,0 +1,25 @@
+@import '../assets/fonts/fonts.css';
+@import '../tokens/tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: var(--c-paper); color: var(--c-ink); font-family: var(--f-sans); }
+  body { margin: 0; font-size: 15px; line-height: 22px; font-variant-numeric: tabular-nums; }
+  :focus-visible { outline: 2px solid var(--c-focus); outline-offset: 2px; }
+  /* A `hidden` attribute must win over display utilities (flex, grid…). */
+  [hidden] { display: none !important; }
+}
+
+@layer utilities {
+  /* "Unknown" fill: neutral hatch so it can never be read as zero or empty. */
+  .bg-hatch-unknown {
+    background-color: var(--c-unk-bg);
+    background-image: repeating-linear-gradient(135deg, var(--c-unk-line) 0 1px, transparent 1px 6px);
+  }
+  /* "Data lacking" for toxicity uses the same neutral hatch. */
+  .bg-hatch-lacking { @apply bg-hatch-unknown; }
+  .small-caps { font-variant-caps: all-small-caps; letter-spacing: 0.06em; }
+  .num { font-variant-numeric: tabular-nums; }
+}

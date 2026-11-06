@@ -1,0 +1,53 @@
+{
+  "name": "lost-in-preparation-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lost in Preparation website (EthnoHack 2026, Track 1). Static Next.js export; data from ../site-data only.",
+  "scripts": {
+    "gen:contract": "node scripts/gen-contract.mjs",
+    "prepare-data": "tsx scripts/prepare-data.ts",
+    "prebuild": "npm run gen:contract && npm run prepare-data",
+    "build": "next build",
+    "dev": "npm run prebuild && next dev",
+    "serve": "node scripts/serve.mjs out 4517",
+    "typecheck": "npm run gen:contract && tsc --noEmit",
+    "lint": "next lint --max-warnings 0",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "screenshots": "tsx scripts/screenshots.ts",
+    "ci": "npm run typecheck && npm run lint && npm test && npm run build && npm run e2e && npm run lighthouse"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "server-only": "^0.0.1",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@apidevtools/json-schema-ref-parser": "11.7.2",
+    "@axe-core/playwright": "4.10.0",
+    "@lhci/cli": "0.14.0",
+    "@playwright/test": "1.63.0",
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.35",
+    "json-schema-to-typescript": "15.0.2",
+    "json-schema-to-zod": "2.4.1",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.10",
+    "tsx": "4.19.1",
+    "typescript": "5.5.4",
+    "vitest": "2.1.2"
+  },
+  "overrides": {
+    "playwright-core": "1.63.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

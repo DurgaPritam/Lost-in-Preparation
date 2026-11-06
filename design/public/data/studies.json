@@ -1,0 +1,238 @@
+[
+  {
+    "id": "s-a",
+    "pmid": "00000001",
+    "title": "[MOCK] Study A — methanol extract of aerial parts",
+    "year": 2011,
+    "taxon": "Artemisia absinthium",
+    "plantPart": {
+      "value": "aerial parts",
+      "evidence": "validated"
+    },
+    "solvent": {
+      "value": "methanol",
+      "evidence": "validated"
+    },
+    "heat": {
+      "value": "reflux",
+      "evidence": "provisional"
+    },
+    "duration": {
+      "value": "2 h",
+      "evidence": "provisional"
+    },
+    "filtered": {
+      "value": true,
+      "evidence": "validated"
+    },
+    "ratio": {
+      "value": "1:10 w/v",
+      "evidence": "provisional"
+    },
+    "comparedRecipeIds": [
+      "cul-wormwood-wine",
+      "pli-absinthium-vinegar"
+    ],
+    "match": {
+      "vehicle": "differs",
+      "heat": "differs",
+      "filtration": "matches"
+    }
+  },
+  {
+    "id": "s-b",
+    "pmid": "00000002",
+    "title": "[MOCK] Study B — aqueous decoction of leaves",
+    "year": 2015,
+    "taxon": "Artemisia absinthium",
+    "plantPart": {
+      "value": "leaves",
+      "evidence": "validated"
+    },
+    "solvent": {
+      "value": "water",
+      "evidence": "validated"
+    },
+    "heat": {
+      "value": "boiled",
+      "evidence": "validated"
+    },
+    "duration": {
+      "value": "30 min",
+      "evidence": "provisional"
+    },
+    "filtered": {
+      "value": true,
+      "evidence": "provisional"
+    },
+    "ratio": {
+      "value": null,
+      "evidence": "validated"
+    },
+    "comparedRecipeIds": [
+      "cul-wormwood-wine",
+      "pli-absinthium-vinegar"
+    ],
+    "match": {
+      "vehicle": "differs",
+      "heat": "differs",
+      "filtration": "matches"
+    }
+  },
+  {
+    "id": "s-d",
+    "pmid": null,
+    "title": "[MOCK] Study D — hydroalcoholic maceration (not indexed in PubMed)",
+    "year": null,
+    "taxon": "Artemisia absinthium",
+    "plantPart": {
+      "value": null,
+      "evidence": "pending"
+    },
+    "solvent": {
+      "value": "ethanol 70%",
+      "evidence": "provisional"
+    },
+    "heat": {
+      "value": "cold",
+      "evidence": "provisional"
+    },
+    "duration": {
+      "value": "7 days",
+      "evidence": "provisional"
+    },
+    "filtered": {
+      "value": null,
+      "evidence": "pending"
+    },
+    "ratio": {
+      "value": null,
+      "evidence": "pending"
+    },
+    "comparedRecipeIds": [
+      "cul-wormwood-wine"
+    ],
+    "match": {
+      "vehicle": "differs",
+      "heat": "matches",
+      "filtration": "not_stated"
+    }
+  },
+  {
+    "id": "s-c",
+    "pmid": "00000003",
+    "title": "[MOCK] Study C — ethanol extract of leaves",
+    "year": 2018,
+    "taxon": "Salvia officinalis",
+    "plantPart": {
+      "value": "leaves",
+      "evidence": "validated"
+    },
+    "solvent": {
+      "value": "ethanol 96%",
+      "evidence": "validated"
+    },
+    "heat": {
+      "value": "warm",
+      "evidence": "provisional"
+    },
+    "duration": {
+      "value": "24 h",
+      "evidence": "provisional"
+    },
+    "filtered": {
+      "value": true,
+      "evidence": "validated"
+    },
+    "ratio": {
+      "value": "1:20 w/v",
+      "evidence": "provisional"
+    },
+    "comparedRecipeIds": [
+      "cul-sage-cold"
+    ],
+    "match": {
+      "vehicle": "differs",
+      "heat": "differs",
+      "filtration": "matches"
+    }
+  },
+  {
+    "id": "s-e",
+    "pmid": "00000004",
+    "title": "[MOCK] Study E — cold aqueous infusion of leaves",
+    "year": 2020,
+    "taxon": "Salvia officinalis",
+    "plantPart": {
+      "value": "leaves",
+      "evidence": "validated"
+    },
+    "solvent": {
+      "value": "water",
+      "evidence": "validated"
+    },
+    "heat": {
+      "value": "cold",
+      "evidence": "validated"
+    },
+    "duration": {
+      "value": "12 h",
+      "evidence": "provisional"
+    },
+    "filtered": {
+      "value": true,
+      "evidence": "validated"
+    },
+    "ratio": {
+      "value": "1:10 w/v",
+      "evidence": "validated"
+    },
+    "comparedRecipeIds": [
+      "cul-sage-cold"
+    ],
+    "match": {
+      "vehicle": "matches",
+      "heat": "matches",
+      "filtration": "matches"
+    }
+  },
+  {
+    "id": "s-f",
+    "pmid": "00000005",
+    "title": "[MOCK] Study F — hydrodistilled essential oil",
+    "year": 2009,
+    "taxon": "Mentha sp.",
+    "plantPart": {
+      "value": "leaves",
+      "evidence": "provisional"
+    },
+    "solvent": {
+      "value": "steam (hydrodistillation)",
+      "evidence": "provisional"
+    },
+    "heat": {
+      "value": "boiled",
+      "evidence": "provisional"
+    },
+    "duration": {
+      "value": "3 h",
+      "evidence": "provisional"
+    },
+    "filtered": {
+      "value": null,
+      "evidence": "pending"
+    },
+    "ratio": {
+      "value": null,
+      "evidence": "pending"
+    },
+    "comparedRecipeIds": [
+      "pli-menta-oil"
+    ],
+    "match": {
+      "vehicle": "differs",
+      "heat": "differs",
+      "filtration": "not_stated"
+    }
+  }
+]
