@@ -1,0 +1,774 @@
+{
+ "batch": 3,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1652:herbal:celandine:004": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:celandine:006": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:celandine:010": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:celandine:011": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:celandine:012": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:celandine:013": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:the-iesser-celondine-usually-known-by-the-name-of-pilewort:001": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:celandine:008": {
+   "recipes": [
+    {
+     "recipeQuote": "The herb or Roots boyled in white-Wine and drunk, a few Aniseeds being boyled therwith, openeth Obstructions of the Liver and Gall, helpeth the yellow Jaundice: and the often using it, helps the Dropsie, and the Itch, and those that have old Sores in their Legs, or other parts of the Body",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Aniseeds",
+       "part": "seed",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "openeth Obstructions of the Liver and Gall, helpeth the yellow Jaundice: and the often using it, helps the Dropsie, and the Itch, and those that have old Sores in their Legs, or other parts of the Body",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "boyled in white-Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boyled in white-Wine"
+      },
+      {
+       "field": "process",
+       "quote": "boyled in white-Wine and drunk"
+      },
+      {
+       "field": "form",
+       "quote": "boyled in white-Wine and drunk"
+      },
+      {
+       "field": "recipeType",
+       "quote": "a few Aniseeds being boyled therwith"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "recipeType",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce thereof taken fasting, is held to be of singular good use against the Pestilence",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "the Pestilence",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce thereof"
+      },
+      {
+       "field": "solvent",
+       "quote": "The Juyce thereof taken fasting"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce thereof taken fasting"
+      },
+      {
+       "field": "form",
+       "quote": "The Juyce thereof taken fasting"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The distilled Water, with a little Sugar, and a little good Triacle mixed therwith (the party upon the taking being laid down to sweat a little) hath the same effect",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Sugar",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      },
+      {
+       "plantNameAsWritten": "Triacle",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "unknown",
+     "indicationAsWritten": "hath the same effect",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The distilled Water"
+      },
+      {
+       "field": "heat",
+       "quote": "The distilled Water"
+      },
+      {
+       "field": "process",
+       "quote": "The distilled Water"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce dropped into the Eyes clenseth them from Films and cloudiness which darken the sight, but it is best to allay the sharpnes of the Juyce with a little Breast-milk",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "clenseth them from Films and cloudiness which darken the sight",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce dropped into the Eyes"
+      },
+      {
+       "field": "solvent",
+       "quote": "allay the sharpnes of the Juyce with a little Breast-milk"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce dropped into the Eyes"
+      },
+      {
+       "field": "form",
+       "quote": "The Juyce dropped into the Eyes"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is good in old filthy corroding creeping Ulcers whersoever, to stay their malignity of fretting and running, and to cause them to heal the more speedily",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "old filthy corroding creeping Ulcers whersoever, to stay their malignity of fretting and running, and to cause them to heal the more speedily",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The Juyce often applied to Tetters, Ring worms, or other such like spreading Cancers, will quickly heal them, and rubbed often upon Warts will take them away",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "Tetters, Ring worms, or other such like spreading Cancers, will quickly heal them, and rubbed often upon Warts will take them away",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce often applied"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce often applied"
+      },
+      {
+       "field": "form",
+       "quote": "The Juyce often applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Herb with the Roots bruised and heated with Oyl of Camomel, and applied to the Navel, taketh away the griping pain in the Belly and Bowels, and all the pains of the Mother: and applied to Womens Breasts stayeth the overmuch flowing of their Courses",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "warm",
+     "heatText": "heated",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "taketh away the griping pain in the Belly and Bowels, and all the pains of the Mother: and applied to Womens Breasts stayeth the overmuch flowing of their Courses",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Herb with the Roots"
+      },
+      {
+       "field": "solvent",
+       "quote": "heated with Oyl of Camomel"
+      },
+      {
+       "field": "heat",
+       "quote": "bruised and heated"
+      },
+      {
+       "field": "process",
+       "quote": "bruised and heated"
+      },
+      {
+       "field": "form",
+       "quote": "applied to the Navel"
+      },
+      {
+       "field": "filtered",
+       "quote": "bruised and heated with Oyl of Camomel, and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce Decoction of the Herb gargled between the Teeth that ake, easeth the pain",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "gargle",
+     "indicationAsWritten": "the Teeth that ake, easeth the pain",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "Decoction of the Herb"
+      },
+      {
+       "field": "process",
+       "quote": "Decoction of the Herb"
+      },
+      {
+       "field": "form",
+       "quote": "gargled between the Teeth"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the Pouder of the dryed Root, laid upon an aching hollow, or loos Tooth, wil caus it to fal out",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "root",
+     "freshOrDried": "dried",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "an aching hollow, or loos Tooth, wil caus it to fal out",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Pouder of the dryed Root"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "the dryed Root"
+      },
+      {
+       "field": "solvent",
+       "quote": "laid upon an aching hollow"
+      },
+      {
+       "field": "heat",
+       "quote": "the Pouder of the dryed Root"
+      },
+      {
+       "field": "process",
+       "quote": "the Pouder of the dryed Root"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce mixed with som Pouder of Brimstone, is not only good against the Itch, but taketh away al discolourings of the Skin whatsoever",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Brimstone",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the Itch, but taketh away al discolourings of the Skin whatsoever",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce mixed with som Pouder of Brimstone"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce mixed with som Pouder of Brimstone"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:celandine:009": {
+   "recipes": [
+    {
+     "recipeQuote": "then may you make it into an Oyl or Oyntment which you please to anoint your sore Eyes withal",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "sore Eyes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "make it into an Oyl or Oyntment"
+      },
+      {
+       "field": "form",
+       "quote": "anoint your sore Eyes"
+      },
+      {
+       "field": "filtered",
+       "quote": "make it into an Oyl or Oyntment"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:celandine:014": {
+   "recipes": [
+    {
+     "recipeQuote": "the Herb being gathered as I shewed before, and the Elements drawn apart from it by the art of the Alchyraist; and after they are drawn apart, rectified, the earthy quality still in rectifying them, added to the Terra damnata (as Alchymists call it) or Terra sacratissima (as som Phylosophers call it) the Elements so rectified are sufficient for the Cure of al Diseases",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Celandine",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Celandine",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "the Cure of al Diseases",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "the Elements drawn apart from it by the art of the Alchyraist"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
