@@ -19,7 +19,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-CONTRACT_VERSION = "1.5"
+CONTRACT_VERSION = "1.6"
 UNKNOWN = "unknown"
 
 
@@ -142,6 +142,7 @@ class MatchCode(str, Enum):  # P5
     match = "match"
     mismatch = "mismatch"
     unknown = "unknown"
+    no_analogue = "no_analogue"  # v1.6 (P37c): audit v2 only; the historical vehicle has no modern analogue (never unfaithful)
 
 
 class ToxicityFlag(str, Enum):  # P18; v1.4 (P34): values describe what the cited SOURCE says
@@ -257,6 +258,19 @@ class Provenance(_Model):  # P21; provider fields added in v1.1 (P30)
     createdAt: str
 
 
+class RecipeCorrection(_Model):  # v1.6 (P37a): a logged field correction (config/m1_corrections.csv)
+    field: str
+    from_: str = Field(alias="from", description="the extracted value (solvent lists joined with '+')")
+    to: str
+    reason: str
+    evidence: str
+    requestedBy: str
+    appliedBy: str
+    date: str
+
+    model_config = ConfigDict(extra="forbid", populate_by_name=True)
+
+
 class Recipe(_Record):
     id: str
     sourceId: str
@@ -282,6 +296,8 @@ class Recipe(_Record):
     attributionCaveat: str | None = None  # P26
     excludedFromHeadline: bool = Field(False, description="True for compound recipes (P27 decision)")
     provenance: Provenance
+    corrections: list[RecipeCorrection] = Field(
+        default_factory=list, description="v1.6 (P37a): logged corrections; the fields above stay as extracted")
 
 
 # --- species.json -------------------------------------------------------------------------
@@ -496,6 +512,52 @@ class ProvisionalSection(_Model):  # v1.2 (P31): never human-validated
     metrics: dict[str, Metric] = {}
 
 
+class AuditV2Section(_Model):  # v1.6 (P37c)
+    label: str
+    protocol: str
+    overallFidelity: Metric
+    overallNotFaithfulShare: Metric
+    perVariableFidelity: dict[str, Metric]
+    solventWineCutoffSensitivity: dict[str, Metric]
+    units: int
+    unknownUnits: int
+    noModernAnalogueUnits: int
+    eligibleStudies: int
+    pairsWithRecords: int
+    pairs: int
+
+
+class CaseStage(_Model):  # v1.6 (P37d)
+    faithful: str
+    modern: str
+    rank: int
+    rankedOf: int
+    gap: Interval
+
+
+class CaseEvidence(_Model):  # v1.6 (P37d)
+    passageId: str
+    sourceId: str
+    citation: str
+    text: str
+
+
+class CaseStudy(_Record):  # v1.6 (P37d): site-data/case_studies.json
+    id: str
+    title: str
+    speciesId: str
+    indication: MeshTerm
+    primaryRecipeId: str
+    recipeQuote: str
+    extractedAs: dict[str, str]
+    correctedTo: dict[str, str]
+    correctedRecipeIds: list[str]
+    evidence: list[CaseEvidence]
+    before: CaseStage
+    after: CaseStage
+    label: str
+
+
 class Metrics(_Model):
     contractVersion: str = CONTRACT_VERSION
     generatedAt: str
@@ -507,11 +569,16 @@ class Metrics(_Model):
     logPError: dict[str, Metric]  # rdkit, xtb
     headlineMatchRate: Metric
     artemisininCheck: CheckResult
+    reportingGap: dict[str, Metric] = Field(
+        default_factory=dict, description="v1.6 (P37b): descriptive reporting-gap shares (not hypothesis tests), Wilson 95% CI")
+    auditV2: "AuditV2Section | None" = Field(None, description="v1.6 (P37c): audit v2, pre-registered re-analysis after v1's design flaw")
     provisional: dict[str, ProvisionalSection] = Field(
         default_factory=dict, description="v1.2: PROVISIONAL results against AI-made references; never gold")
 
 
 Recipe.model_rebuild()
+
+Metrics.model_rebuild()
 
 FILE_MODELS = {
     "sources.json": Source,
@@ -520,6 +587,8 @@ FILE_MODELS = {
     "profiles.index.json": ProfileIndexEntry,      # site-data/profiles/index.json
     "profiles.species.json": Profile,              # site-data/profiles/<speciesId>.json (array of Profile)
     "audit.json": AuditRecord,
+    "audit_v2.json": AuditRecord,                  # v1.6 (P37c)
+    "case_studies.json": CaseStudy,                # v1.6 (P37d)
     "hypotheses.json": Hypothesis,
     "metrics.json": Metrics,
 }

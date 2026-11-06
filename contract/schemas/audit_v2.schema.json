@@ -1,0 +1,339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.6/audit_v2.json",
+  "title": "audit_v2.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "speciesId": {
+        "title": "Speciesid",
+        "type": "string"
+      },
+      "indication": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/MeshTerm"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "indicationAsWritten": {
+        "title": "Indicationaswritten",
+        "type": "string"
+      },
+      "historicalPreparation": {
+        "description": "preparationKey",
+        "title": "Historicalpreparation",
+        "type": "string"
+      },
+      "historicalRecipeIds": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Historicalrecipeids",
+        "type": "array"
+      },
+      "studies": {
+        "items": {
+          "$ref": "#/$defs/Study"
+        },
+        "title": "Studies",
+        "type": "array"
+      },
+      "matchRate": {
+        "$ref": "#/$defs/Rate"
+      }
+    },
+    "required": [
+      "speciesId",
+      "indication",
+      "indicationAsWritten",
+      "historicalPreparation",
+      "historicalRecipeIds",
+      "studies",
+      "matchRate"
+    ],
+    "title": "AuditRecord",
+    "type": "object"
+  },
+  "$defs": {
+    "Filtered": {
+      "enum": [
+        "yes",
+        "no",
+        "not_applicable",
+        "unknown"
+      ],
+      "title": "Filtered",
+      "type": "string"
+    },
+    "FreshOrDried": {
+      "enum": [
+        "fresh",
+        "dried",
+        "unknown"
+      ],
+      "title": "FreshOrDried",
+      "type": "string"
+    },
+    "Heat": {
+      "enum": [
+        "cold",
+        "warm",
+        "boiled",
+        "unknown"
+      ],
+      "title": "Heat",
+      "type": "string"
+    },
+    "MatchCode": {
+      "enum": [
+        "match",
+        "mismatch",
+        "unknown",
+        "no_analogue"
+      ],
+      "title": "MatchCode",
+      "type": "string"
+    },
+    "MeshTerm": {
+      "additionalProperties": false,
+      "properties": {
+        "meshId": {
+          "title": "Meshid",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "meshId",
+        "label"
+      ],
+      "title": "MeshTerm",
+      "type": "object"
+    },
+    "ModernSolvent": {
+      "enum": [
+        "methanol",
+        "ethanol",
+        "hydroethanolic",
+        "hexane",
+        "chloroform",
+        "ethyl_acetate",
+        "dichloromethane",
+        "acetone",
+        "co2",
+        "water",
+        "other",
+        "unknown"
+      ],
+      "title": "ModernSolvent",
+      "type": "string"
+    },
+    "Part": {
+      "enum": [
+        "leaf",
+        "root",
+        "rhizome",
+        "seed",
+        "fruit",
+        "flower",
+        "bark",
+        "stem",
+        "aerial_parts",
+        "whole_plant",
+        "resin",
+        "juice",
+        "other",
+        "unknown"
+      ],
+      "title": "Part",
+      "type": "string"
+    },
+    "Rate": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "nKnown": {
+          "title": "Nknown",
+          "type": "integer"
+        },
+        "nUnknown": {
+          "title": "Nunknown",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "nKnown",
+        "nUnknown"
+      ],
+      "title": "Rate",
+      "type": "object"
+    },
+    "Study": {
+      "additionalProperties": false,
+      "properties": {
+        "pmid": {
+          "title": "Pmid",
+          "type": "string"
+        },
+        "doi": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Doi"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Year"
+        },
+        "solvent": {
+          "$ref": "#/$defs/ModernSolvent"
+        },
+        "solventText": {
+          "title": "Solventtext",
+          "type": "string"
+        },
+        "ethanolFraction": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ethanolfraction"
+        },
+        "heat": {
+          "$ref": "#/$defs/Heat"
+        },
+        "part": {
+          "$ref": "#/$defs/Part"
+        },
+        "freshOrDried": {
+          "$ref": "#/$defs/FreshOrDried"
+        },
+        "filtered": {
+          "$ref": "#/$defs/Filtered"
+        },
+        "match": {
+          "$ref": "#/$defs/StudyMatch"
+        },
+        "unknownFields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unknownfields",
+          "type": "array"
+        },
+        "evidenceSource": {
+          "description": "abstract | pmc_fulltext (P15)",
+          "title": "Evidencesource",
+          "type": "string"
+        },
+        "methodsSnippet": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Methodssnippet"
+        }
+      },
+      "required": [
+        "pmid",
+        "title",
+        "solvent",
+        "solventText",
+        "heat",
+        "part",
+        "freshOrDried",
+        "filtered",
+        "match",
+        "unknownFields",
+        "evidenceSource"
+      ],
+      "title": "Study",
+      "type": "object"
+    },
+    "StudyMatch": {
+      "additionalProperties": false,
+      "properties": {
+        "solvent": {
+          "$ref": "#/$defs/MatchCode"
+        },
+        "heat": {
+          "$ref": "#/$defs/MatchCode"
+        },
+        "filtration": {
+          "$ref": "#/$defs/MatchCode"
+        },
+        "part": {
+          "$ref": "#/$defs/MatchCode"
+        },
+        "freshOrDried": {
+          "$ref": "#/$defs/MatchCode"
+        },
+        "overall": {
+          "$ref": "#/$defs/MatchCode"
+        }
+      },
+      "required": [
+        "solvent",
+        "heat",
+        "filtration",
+        "part",
+        "freshOrDried",
+        "overall"
+      ],
+      "title": "StudyMatch",
+      "type": "object"
+    }
+  }
+}

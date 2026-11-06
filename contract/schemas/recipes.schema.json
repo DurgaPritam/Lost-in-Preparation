@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.5/recipes.json",
+  "$id": "lost-in-preparation/contract/1.6/recipes.json",
   "title": "recipes.json",
   "type": "array",
   "items": {
@@ -136,6 +136,14 @@
       },
       "provenance": {
         "$ref": "#/$defs/Provenance"
+      },
+      "corrections": {
+        "description": "v1.6 (P37a): logged corrections; the fields above stay as extracted",
+        "items": {
+          "$ref": "#/$defs/RecipeCorrection"
+        },
+        "title": "Corrections",
+        "type": "array"
       }
     },
     "required": [
@@ -547,6 +555,56 @@
         "end"
       ],
       "title": "Quote",
+      "type": "object"
+    },
+    "RecipeCorrection": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "from": {
+          "description": "the extracted value (solvent lists joined with '+')",
+          "title": "From",
+          "type": "string"
+        },
+        "to": {
+          "title": "To",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "evidence": {
+          "title": "Evidence",
+          "type": "string"
+        },
+        "requestedBy": {
+          "title": "Requestedby",
+          "type": "string"
+        },
+        "appliedBy": {
+          "title": "Appliedby",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "from",
+        "to",
+        "reason",
+        "evidence",
+        "requestedBy",
+        "appliedBy",
+        "date"
+      ],
+      "title": "RecipeCorrection",
       "type": "object"
     },
     "RecipeType": {

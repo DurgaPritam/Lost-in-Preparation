@@ -2,15 +2,15 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
-## Proposed — P37 (2026-11-06, awaiting the project lead's approval; not implemented)
+## v1.6 — 2026-11-06 (additive)
 
-| # | Proposal |
+| # | Change |
 |---|---|
-| P37a | `Recipe.corrections`: an optional list of `{field, from, to, reason, evidence, requestedBy, appliedBy, date}` for logged field corrections (`config/m1_corrections.csv`), so the site can show the extracted value next to the corrected one. Additive. |
-| P37b | `metrics.reportingGap`: an optional `dict[str, Metric]` for the descriptive reporting-gap findings (the share of studies stating each preparation variable, and the v3 screening share). Additive. |
-| P37c | `metrics.auditV2`: an optional section with the audit v2 per-variable fidelity rates as `Metric`s, labelled as a pre-registered re-analysis, plus an optional `site-data/audit_v2.json` with the same shape as `audit.json`. Additive. |
-
-Until these are approved, the data stays in `data/interim/` and is reported in RESULTS.md (`docs/SITE_DATA_STATUS.md`).
+| P37a | `Recipe.corrections`: a list of `{field, from, to, reason, evidence, requestedBy, appliedBy, date}` for logged field corrections (`config/m1_corrections.csv`). The recipe's own fields stay as extracted. Approved by the project lead. |
+| P37b | `metrics.reportingGap`: `dict[str, Metric]` of descriptive reporting-gap shares (Wilson 95% CI), keyed `<set>:<coded from>:<variable>` and `v3:screening`. Approved. |
+| P37c | `metrics.auditV2` (`AuditV2Section`) with the audit v2 fidelity rates, and `site-data/audit_v2.json` with the same shape as `audit.json`. `MatchCode` gains `no_analogue` (v2 only: the historical vehicle has no modern analogue; never scored as unfaithful). In `audit_v2.json`, `matchRate` counts faithful among faithful + not-faithful studies; no-analogue studies are in neither count. Approved. |
+| P37d | `site-data/case_studies.json` (`CaseStudy`): a documented extraction correction, its corpus evidence and the Phase 6 rank and gap before and after. Added for the liquorice case-study page that the project lead requested; additive; flagged for approval. |
+| — | `metrics.nameResolution` gains keys `disputedShare:culpeper` and `disputedShare:pliny` (no schema change: the field is a dict), so the site's source-confidence markers are driven by data. |
 
 ## v1.5.1 — 2026-11-06 (documentation only)
 

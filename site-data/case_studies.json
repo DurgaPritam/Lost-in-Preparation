@@ -1,0 +1,78 @@
+[
+ {
+  "mock": false,
+  "id": "liquorice",
+  "title": "Liquorice “juice”",
+  "speciesId": "wfo-0000212813",
+  "indication": {
+   "meshId": "D008107",
+   "label": "Liver Diseases"
+  },
+  "primaryRecipeId": "pliny-nh:b22:c011:001#r01",
+  "recipeQuote": "The juice of it is also very good for the voice, for which purpose it is thickened and then placed beneath the tongue: it is good, too, for the chest and liver",
+  "extractedAs": {
+   "part": "juice",
+   "solvent": "unknown",
+   "heat": "unknown",
+   "process": "other",
+   "filtered": "unknown"
+  },
+  "correctedTo": {
+   "part": "root",
+   "solvent": "water",
+   "heat": "boiled",
+   "process": "decoction",
+   "filtered": "yes"
+  },
+  "correctedRecipeIds": [
+   "pliny-nh:b22:c011:001#r01",
+   "culpeper-1652:herbal:liquoris:006#r02",
+   "culpeper-1652:herbal:liquoris:006#r03",
+   "culpeper-1850:herbal:liquorice:003#r02",
+   "culpeper-1850:herbal:liquorice:003#r03"
+  ],
+  "evidence": [
+   {
+    "passageId": "pliny-nh-bohn-v4:fn2511",
+    "sourceId": "pliny-nh-bohn-v4",
+    "citation": "The Natural History of Pliny, Volume 4 (of 6): Books XVIII–XXIII",
+    "text": "The same preparation that is known to us as Spanish liquorice or Spanish juice."
+   },
+   {
+    "passageId": "culpeper-1850:dispensatory:s040-rob-or-sapa-and-juices:026",
+    "sourceId": "culpeper-1850",
+    "citation": "The Complete Herbal (incl. The English Physician Enlarged, Family Dispensatory, Last Legacies)",
+    "text": "Succus Glycyrrhizæ simplex. Or Juice of Liquorice simple."
+   },
+   {
+    "passageId": "culpeper-1850:dispensatory:s040-rob-or-sapa-and-juices:027",
+    "sourceId": "culpeper-1850",
+    "citation": "The Complete Herbal (incl. The English Physician Enlarged, Family Dispensatory, Last Legacies)",
+    "text": "College.] Infuse Liquorice Roots cleansed and gently bruised, three days in Spring Water, so much that it may over-top the roots the breadth of three fingers, then boil it a little, and press it hard out, and boil the liquor with a gentle fire to its due thickness."
+   }
+  ],
+  "before": {
+   "faithful": "fresh juice",
+   "modern": "modern methanol extract",
+   "rank": 1,
+   "rankedOf": 3,
+   "gap": {
+    "value": 0.2014,
+    "low": 0.1218,
+    "high": 0.327
+   }
+  },
+  "after": {
+   "faithful": "decoction in water",
+   "modern": "modern methanol extract",
+   "rank": 1,
+   "rankedOf": 3,
+   "gap": {
+    "value": 0.4234,
+    "low": 0.2939,
+    "high": 0.546
+   }
+  },
+  "label": "case study of an extraction correction; the hypothesis is worth re-testing, not a claim that liquorice works or is safe"
+ }
+]

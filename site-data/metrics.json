@@ -1,5 +1,5 @@
 {
- "contractVersion": "1.1",
+ "contractVersion": "1.6",
  "generatedAt": "2026-11-06T10:58:14+00:00",
  "pipelineVersion": "0.1.0",
  "mock": false,
@@ -1770,6 +1770,24 @@
    "n": null,
    "sourceFile": null,
    "note": "awaiting scholarly identifications in data/gold/name_identifications.csv (name + citation per row)"
+  },
+  "disputedShare:culpeper": {
+   "status": "computed",
+   "value": 0.2735,
+   "low": 0.2192,
+   "high": 0.3355,
+   "n": 223,
+   "sourceFile": "data/interim/m2/name_resolution_summary.json",
+   "note": "share of resolved names flagged disputed, culpeper (Culpeper = the 1652 herbal; the 1850 edition is resolved through its 1652 entry); descriptive"
+  },
+  "disputedShare:pliny": {
+   "status": "computed",
+   "value": 0.8421,
+   "low": 0.811,
+   "high": 0.8689,
+   "n": 608,
+   "sourceFile": "data/interim/m2/name_resolution_summary.json",
+   "note": "share of resolved names flagged disputed, pliny (Culpeper = the 1652 herbal; the 1850 edition is resolved through its 1652 entry); descriptive"
   }
  },
  "logPError": {
@@ -1826,13 +1844,506 @@
   "high": 0.0556,
   "n": 67,
   "sourceFile": "data/interim/m5/audit_summary.json",
-  "note": "audit v1 as pre-registered (docs/AUDIT_PROTOCOL_v1.md): share of (pair, study) units faithful to a historical preparation, among 67 with a known status (277 unknown); 95% CI bootstrap over pairs. v1's solvent rule makes non-water recipes unmatchable, so this mostly reflects the protocol; audit v2 and the reporting-gap headline are in RESULTS.md (not representable in contract v1.5, proposal P37)"
+  "note": "audit v1 as pre-registered (docs/AUDIT_PROTOCOL_v1.md): share of (pair, study) units faithful to a historical preparation, among 67 with a known status (277 unknown); 95% CI bootstrap over pairs. v1's solvent rule makes non-water recipes unmatchable, so this mostly reflects the protocol; audit v2 and the reporting-gap headline are in RESULTS.md (metrics.reportingGap and metrics.auditV2)"
  },
  "artemisininCheck": {
   "status": "computed",
   "result": "borderline pass",
   "explanation": "Descriptor rdkit (logP 2.40). Endoperoxide heat flag: True. Cold water 0.27 [0.03–0.78]; decoction 0.05 (heat factor 0.23); low-temperature hexane 0.79 [0.23–0.98]. Pre-registered thresholds: cold water < 0.3, nonpolar > 0.6. Exploratory xTB Wiberg bond order of the O–O bond: 0.944. BORDERLINE: the 5th–95th percentile range crosses a threshold (cold water 0.03–0.78 vs < 0.3; nonpolar 0.23–0.98 vs > 0.6). Cold water is filtered (filtration factor 1.00): its value comes from the solvent factor alone. Without straining, the suspension assumption raises it to 0.41 (filtration factor 1.42).",
   "sourceFile": "data/interim/m4/artemisinin_check.json"
+ },
+ "reportingGap": {
+  "prepared:all:solvent": {
+   "status": "computed",
+   "value": 0.8605,
+   "low": 0.7274,
+   "high": 0.9344,
+   "n": 43,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "37/43 studies (prepared, coded from all texts) state solvent; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending); eligibility partly selects on a stated solvent, so this share is inflated by construction"
+  },
+  "prepared:all:heat": {
+   "status": "computed",
+   "value": 0.2558,
+   "low": 0.1493,
+   "high": 0.4024,
+   "n": 43,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "11/43 studies (prepared, coded from all texts) state heat; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:all:part": {
+   "status": "computed",
+   "value": 0.4884,
+   "low": 0.3462,
+   "high": 0.6325,
+   "n": 43,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "21/43 studies (prepared, coded from all texts) state part; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:all:freshOrDried": {
+   "status": "computed",
+   "value": 0.1628,
+   "low": 0.0812,
+   "high": 0.2997,
+   "n": 43,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "7/43 studies (prepared, coded from all texts) state freshOrDried; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:all:filtration": {
+   "status": "computed",
+   "value": 0.1163,
+   "low": 0.0507,
+   "high": 0.2448,
+   "n": 43,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "5/43 studies (prepared, coded from all texts) state filtration; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:all:none": {
+   "status": "computed",
+   "value": 0.0465,
+   "low": 0.0128,
+   "high": 0.1546,
+   "n": 43,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "2/43 studies (prepared, coded from all texts) state none of the five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:all:all five": {
+   "status": "computed",
+   "value": 0.0,
+   "low": 0.0,
+   "high": 0.082,
+   "n": 43,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "0/43 studies (prepared, coded from all texts) state all five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:pmc_fulltext:solvent": {
+   "status": "computed",
+   "value": 0.9,
+   "low": 0.5958,
+   "high": 0.9821,
+   "n": 10,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "9/10 studies (prepared, coded from pmc_fulltext) state solvent; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending); eligibility partly selects on a stated solvent, so this share is inflated by construction"
+  },
+  "prepared:pmc_fulltext:heat": {
+   "status": "computed",
+   "value": 0.7,
+   "low": 0.3968,
+   "high": 0.8922,
+   "n": 10,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "7/10 studies (prepared, coded from pmc_fulltext) state heat; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:pmc_fulltext:part": {
+   "status": "computed",
+   "value": 0.3,
+   "low": 0.1078,
+   "high": 0.6032,
+   "n": 10,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "3/10 studies (prepared, coded from pmc_fulltext) state part; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:pmc_fulltext:freshOrDried": {
+   "status": "computed",
+   "value": 0.6,
+   "low": 0.3127,
+   "high": 0.8318,
+   "n": 10,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "6/10 studies (prepared, coded from pmc_fulltext) state freshOrDried; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:pmc_fulltext:filtration": {
+   "status": "computed",
+   "value": 0.5,
+   "low": 0.2366,
+   "high": 0.7634,
+   "n": 10,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "5/10 studies (prepared, coded from pmc_fulltext) state filtration; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:pmc_fulltext:none": {
+   "status": "computed",
+   "value": 0.0,
+   "low": 0.0,
+   "high": 0.2775,
+   "n": 10,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "0/10 studies (prepared, coded from pmc_fulltext) state none of the five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:pmc_fulltext:all five": {
+   "status": "computed",
+   "value": 0.0,
+   "low": 0.0,
+   "high": 0.2775,
+   "n": 10,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "0/10 studies (prepared, coded from pmc_fulltext) state all five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:abstract:solvent": {
+   "status": "computed",
+   "value": 0.8485,
+   "low": 0.6908,
+   "high": 0.9335,
+   "n": 33,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "28/33 studies (prepared, coded from abstract) state solvent; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending); eligibility partly selects on a stated solvent, so this share is inflated by construction"
+  },
+  "prepared:abstract:heat": {
+   "status": "computed",
+   "value": 0.1212,
+   "low": 0.0482,
+   "high": 0.2733,
+   "n": 33,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "4/33 studies (prepared, coded from abstract) state heat; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:abstract:part": {
+   "status": "computed",
+   "value": 0.5455,
+   "low": 0.3799,
+   "high": 0.7016,
+   "n": 33,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "18/33 studies (prepared, coded from abstract) state part; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:abstract:freshOrDried": {
+   "status": "computed",
+   "value": 0.0303,
+   "low": 0.0054,
+   "high": 0.1532,
+   "n": 33,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "1/33 studies (prepared, coded from abstract) state freshOrDried; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:abstract:filtration": {
+   "status": "computed",
+   "value": 0.0,
+   "low": 0.0,
+   "high": 0.1043,
+   "n": 33,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "0/33 studies (prepared, coded from abstract) state filtration; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:abstract:none": {
+   "status": "computed",
+   "value": 0.0606,
+   "low": 0.0168,
+   "high": 0.1961,
+   "n": 33,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "2/33 studies (prepared, coded from abstract) state none of the five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "prepared:abstract:all five": {
+   "status": "computed",
+   "value": 0.0,
+   "low": 0.0,
+   "high": 0.1043,
+   "n": 33,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "0/33 studies (prepared, coded from abstract) state all five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:all:solvent": {
+   "status": "computed",
+   "value": 0.3597,
+   "low": 0.3078,
+   "high": 0.4152,
+   "n": 303,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "109/303 studies (retrieved, coded from all texts) state solvent; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:all:heat": {
+   "status": "computed",
+   "value": 0.1221,
+   "low": 0.0899,
+   "high": 0.1638,
+   "n": 303,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "37/303 studies (retrieved, coded from all texts) state heat; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:all:part": {
+   "status": "computed",
+   "value": 0.3201,
+   "low": 0.2701,
+   "high": 0.3746,
+   "n": 303,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "97/303 studies (retrieved, coded from all texts) state part; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:all:freshOrDried": {
+   "status": "computed",
+   "value": 0.1221,
+   "low": 0.0899,
+   "high": 0.1638,
+   "n": 303,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "37/303 studies (retrieved, coded from all texts) state freshOrDried; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:all:filtration": {
+   "status": "computed",
+   "value": 0.099,
+   "low": 0.0702,
+   "high": 0.1378,
+   "n": 303,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "30/303 studies (retrieved, coded from all texts) state filtration; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:all:none": {
+   "status": "computed",
+   "value": 0.4323,
+   "low": 0.3778,
+   "high": 0.4886,
+   "n": 303,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "131/303 studies (retrieved, coded from all texts) state none of the five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:all:all five": {
+   "status": "computed",
+   "value": 0.0132,
+   "low": 0.0051,
+   "high": 0.0334,
+   "n": 303,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "4/303 studies (retrieved, coded from all texts) state all five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:pmc_fulltext:solvent": {
+   "status": "computed",
+   "value": 0.5484,
+   "low": 0.4253,
+   "high": 0.6658,
+   "n": 62,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "34/62 studies (retrieved, coded from pmc_fulltext) state solvent; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:pmc_fulltext:heat": {
+   "status": "computed",
+   "value": 0.4516,
+   "low": 0.3342,
+   "high": 0.5747,
+   "n": 62,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "28/62 studies (retrieved, coded from pmc_fulltext) state heat; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:pmc_fulltext:part": {
+   "status": "computed",
+   "value": 0.3548,
+   "low": 0.2474,
+   "high": 0.4792,
+   "n": 62,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "22/62 studies (retrieved, coded from pmc_fulltext) state part; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:pmc_fulltext:freshOrDried": {
+   "status": "computed",
+   "value": 0.4677,
+   "low": 0.3491,
+   "high": 0.5902,
+   "n": 62,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "29/62 studies (retrieved, coded from pmc_fulltext) state freshOrDried; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:pmc_fulltext:filtration": {
+   "status": "computed",
+   "value": 0.4355,
+   "low": 0.3194,
+   "high": 0.5591,
+   "n": 62,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "27/62 studies (retrieved, coded from pmc_fulltext) state filtration; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:pmc_fulltext:none": {
+   "status": "computed",
+   "value": 0.2258,
+   "low": 0.1396,
+   "high": 0.3441,
+   "n": 62,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "14/62 studies (retrieved, coded from pmc_fulltext) state none of the five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:pmc_fulltext:all five": {
+   "status": "computed",
+   "value": 0.0645,
+   "low": 0.0254,
+   "high": 0.1545,
+   "n": 62,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "4/62 studies (retrieved, coded from pmc_fulltext) state all five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:abstract:solvent": {
+   "status": "computed",
+   "value": 0.3112,
+   "low": 0.2561,
+   "high": 0.3722,
+   "n": 241,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "75/241 studies (retrieved, coded from abstract) state solvent; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:abstract:heat": {
+   "status": "computed",
+   "value": 0.0373,
+   "low": 0.0198,
+   "high": 0.0694,
+   "n": 241,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "9/241 studies (retrieved, coded from abstract) state heat; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:abstract:part": {
+   "status": "computed",
+   "value": 0.3112,
+   "low": 0.2561,
+   "high": 0.3722,
+   "n": 241,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "75/241 studies (retrieved, coded from abstract) state part; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:abstract:freshOrDried": {
+   "status": "computed",
+   "value": 0.0332,
+   "low": 0.0169,
+   "high": 0.0641,
+   "n": 241,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "8/241 studies (retrieved, coded from abstract) state freshOrDried; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:abstract:filtration": {
+   "status": "computed",
+   "value": 0.0124,
+   "low": 0.0042,
+   "high": 0.036,
+   "n": 241,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "3/241 studies (retrieved, coded from abstract) state filtration; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:abstract:none": {
+   "status": "computed",
+   "value": 0.4855,
+   "low": 0.4231,
+   "high": 0.5483,
+   "n": 241,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "117/241 studies (retrieved, coded from abstract) state none of the five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "retrieved:abstract:all five": {
+   "status": "computed",
+   "value": 0.0,
+   "low": 0.0,
+   "high": 0.0157,
+   "n": 241,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "0/241 studies (retrieved, coded from abstract) state all five variables; Wilson 95% CI; stated = coded by the rule-based extractor (heuristic, hand-check pending)"
+  },
+  "v3:screening": {
+   "status": "computed",
+   "value": 0.0233,
+   "low": 0.0107,
+   "high": 0.05,
+   "n": 257,
+   "sourceFile": "data/interim/m5/reporting_gap.json",
+   "note": "6 of 257 article screenings whose tables were examined (249 distinct articles) compared two preparations of the same plant material in a usable table; pre-registered v3 screening; Wilson 95% CI"
+  }
+ },
+ "auditV2": {
+  "label": "pre-registered re-analysis after v1's design flaw",
+  "protocol": "docs/AUDIT_PROTOCOL_v2.md",
+  "overallFidelity": {
+   "status": "computed",
+   "value": 0.0,
+   "low": 0.0,
+   "high": 0.0,
+   "n": 11,
+   "sourceFile": "data/interim/m5/v2/audit_summary.json",
+   "note": "share of (pair, eligible study) units faithful to a historical preparation; 11 known, 32 unknown, 4 with no modern analogue; bootstrap 95% CI over pairs"
+  },
+  "overallNotFaithfulShare": {
+   "status": "computed",
+   "value": 1.0,
+   "low": 1.0,
+   "high": 1.0,
+   "n": 11,
+   "sourceFile": "data/interim/m5/v2/audit_summary.json",
+   "note": "share not faithful, for comparison with v1"
+  },
+  "perVariableFidelity": {
+   "solvent": {
+    "status": "computed",
+    "value": 0.3333,
+    "low": 0.1111,
+    "high": 0.5556,
+    "n": 12,
+    "sourceFile": "data/interim/m5/v2/audit_summary.json",
+    "note": "solvent: share of units matching; 12 known, 31 unknown, 4 with no modern analogue; bootstrap 95% CI"
+   },
+   "heat": {
+    "status": "computed",
+    "value": 0.0,
+    "low": 0.0,
+    "high": 0.0,
+    "n": 2,
+    "sourceFile": "data/interim/m5/v2/audit_summary.json",
+    "note": "heat: share of units matching; 2 known, 45 unknown; bootstrap 95% CI"
+   },
+   "part": {
+    "status": "computed",
+    "value": 0.4444,
+    "low": 0.125,
+    "high": 0.7694,
+    "n": 9,
+    "sourceFile": "data/interim/m5/v2/audit_summary.json",
+    "note": "part: share of units matching; 9 known, 38 unknown; bootstrap 95% CI"
+   },
+   "freshOrDried": {
+    "status": "not_computed",
+    "value": null,
+    "low": null,
+    "high": null,
+    "n": 0,
+    "sourceFile": "data/interim/m5/v2/audit_summary.json",
+    "note": "freshOrDried: share of units matching; 0 known, 47 unknown; bootstrap 95% CI"
+   },
+   "filtration": {
+    "status": "computed",
+    "value": 0.75,
+    "low": 0.0,
+    "high": 1.0,
+    "n": 4,
+    "sourceFile": "data/interim/m5/v2/audit_summary.json",
+    "note": "filtration: share of units matching; 4 known, 43 unknown; bootstrap 95% CI"
+   }
+  },
+  "solventWineCutoffSensitivity": {
+   "0.15": {
+    "status": "computed",
+    "value": 0.3333,
+    "low": null,
+    "high": null,
+    "n": 12,
+    "sourceFile": "data/interim/m5/v2/audit_summary.json",
+    "note": "solvent match rate with the wine cut-off at 0.15 v/v ethanol"
+   },
+   "0.20": {
+    "status": "computed",
+    "value": 0.3333,
+    "low": null,
+    "high": null,
+    "n": 12,
+    "sourceFile": "data/interim/m5/v2/audit_summary.json",
+    "note": "solvent match rate with the wine cut-off at 0.20 v/v ethanol"
+   },
+   "0.25": {
+    "status": "computed",
+    "value": 0.3333,
+    "low": null,
+    "high": null,
+    "n": 12,
+    "sourceFile": "data/interim/m5/v2/audit_summary.json",
+    "note": "solvent match rate with the wine cut-off at 0.25 v/v ethanol"
+   }
+  },
+  "units": 47,
+  "unknownUnits": 32,
+  "noModernAnalogueUnits": 4,
+  "eligibleStudies": 43,
+  "pairsWithRecords": 46,
+  "pairs": 238
  },
  "provisional": {
   "extractionVsSilver": {

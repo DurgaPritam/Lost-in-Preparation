@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T11:51:10+00:00",
-  "contractVersion": "1.5",
+  "generatedAt": "2026-11-06T12:27:00+00:00",
+  "contractVersion": "1.6",
   "files": {
     "sources.json": {
       "records": 4,
@@ -24,6 +24,16 @@
     },
     "audit.json": {
       "records": 323,
+      "mock": 0,
+      "valid": true
+    },
+    "audit_v2.json": {
+      "records": 323,
+      "mock": 0,
+      "valid": true
+    },
+    "case_studies.json": {
+      "records": 1,
       "mock": 0,
       "valid": true
     },
@@ -55,7 +65,7 @@
   "profilesMovedOut": [
     "Dioscorea communis"
   ],
-  "correctionsNotInRecipes": [
+  "correctionsInRecipes": [
     "culpeper-1652:herbal:liquoris:006#r02",
     "culpeper-1652:herbal:liquoris:006#r03",
     "culpeper-1850:herbal:liquorice:003#r02",

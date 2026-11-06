@@ -1,8 +1,81 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.5/metrics.json",
+  "$id": "lost-in-preparation/contract/1.6/metrics.json",
   "title": "Metrics",
   "$defs": {
+    "AuditV2Section": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "protocol": {
+          "title": "Protocol",
+          "type": "string"
+        },
+        "overallFidelity": {
+          "$ref": "#/$defs/Metric"
+        },
+        "overallNotFaithfulShare": {
+          "$ref": "#/$defs/Metric"
+        },
+        "perVariableFidelity": {
+          "additionalProperties": {
+            "$ref": "#/$defs/Metric"
+          },
+          "title": "Pervariablefidelity",
+          "type": "object"
+        },
+        "solventWineCutoffSensitivity": {
+          "additionalProperties": {
+            "$ref": "#/$defs/Metric"
+          },
+          "title": "Solventwinecutoffsensitivity",
+          "type": "object"
+        },
+        "units": {
+          "title": "Units",
+          "type": "integer"
+        },
+        "unknownUnits": {
+          "title": "Unknownunits",
+          "type": "integer"
+        },
+        "noModernAnalogueUnits": {
+          "title": "Nomodernanalogueunits",
+          "type": "integer"
+        },
+        "eligibleStudies": {
+          "title": "Eligiblestudies",
+          "type": "integer"
+        },
+        "pairsWithRecords": {
+          "title": "Pairswithrecords",
+          "type": "integer"
+        },
+        "pairs": {
+          "title": "Pairs",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "label",
+        "protocol",
+        "overallFidelity",
+        "overallNotFaithfulShare",
+        "perVariableFidelity",
+        "solventWineCutoffSensitivity",
+        "units",
+        "unknownUnits",
+        "noModernAnalogueUnits",
+        "eligibleStudies",
+        "pairsWithRecords",
+        "pairs"
+      ],
+      "title": "AuditV2Section",
+      "type": "object"
+    },
     "CheckResult": {
       "additionalProperties": false,
       "properties": {
@@ -306,7 +379,7 @@
   "additionalProperties": false,
   "properties": {
     "contractVersion": {
-      "default": "1.5",
+      "default": "1.6",
       "title": "Contractversion",
       "type": "string"
     },
@@ -353,6 +426,26 @@
     },
     "artemisininCheck": {
       "$ref": "#/$defs/CheckResult"
+    },
+    "reportingGap": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Metric"
+      },
+      "description": "v1.6 (P37b): descriptive reporting-gap shares (not hypothesis tests), Wilson 95% CI",
+      "title": "Reportinggap",
+      "type": "object"
+    },
+    "auditV2": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AuditV2Section"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "v1.6 (P37c): audit v2, pre-registered re-analysis after v1's design flaw"
     },
     "provisional": {
       "additionalProperties": {

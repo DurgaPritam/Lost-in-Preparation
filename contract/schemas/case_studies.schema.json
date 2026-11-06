@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.6/case_studies.json",
+  "title": "case_studies.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "title": {
+        "title": "Title",
+        "type": "string"
+      },
+      "speciesId": {
+        "title": "Speciesid",
+        "type": "string"
+      },
+      "indication": {
+        "$ref": "#/$defs/MeshTerm"
+      },
+      "primaryRecipeId": {
+        "title": "Primaryrecipeid",
+        "type": "string"
+      },
+      "recipeQuote": {
+        "title": "Recipequote",
+        "type": "string"
+      },
+      "extractedAs": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "Extractedas",
+        "type": "object"
+      },
+      "correctedTo": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "Correctedto",
+        "type": "object"
+      },
+      "correctedRecipeIds": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Correctedrecipeids",
+        "type": "array"
+      },
+      "evidence": {
+        "items": {
+          "$ref": "#/$defs/CaseEvidence"
+        },
+        "title": "Evidence",
+        "type": "array"
+      },
+      "before": {
+        "$ref": "#/$defs/CaseStage"
+      },
+      "after": {
+        "$ref": "#/$defs/CaseStage"
+      },
+      "label": {
+        "title": "Label",
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "title",
+      "speciesId",
+      "indication",
+      "primaryRecipeId",
+      "recipeQuote",
+      "extractedAs",
+      "correctedTo",
+      "correctedRecipeIds",
+      "evidence",
+      "before",
+      "after",
+      "label"
+    ],
+    "title": "CaseStudy",
+    "type": "object"
+  },
+  "$defs": {
+    "CaseEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "passageId": {
+          "title": "Passageid",
+          "type": "string"
+        },
+        "sourceId": {
+          "title": "Sourceid",
+          "type": "string"
+        },
+        "citation": {
+          "title": "Citation",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "passageId",
+        "sourceId",
+        "citation",
+        "text"
+      ],
+      "title": "CaseEvidence",
+      "type": "object"
+    },
+    "CaseStage": {
+      "additionalProperties": false,
+      "properties": {
+        "faithful": {
+          "title": "Faithful",
+          "type": "string"
+        },
+        "modern": {
+          "title": "Modern",
+          "type": "string"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "rankedOf": {
+          "title": "Rankedof",
+          "type": "integer"
+        },
+        "gap": {
+          "$ref": "#/$defs/Interval"
+        }
+      },
+      "required": [
+        "faithful",
+        "modern",
+        "rank",
+        "rankedOf",
+        "gap"
+      ],
+      "title": "CaseStage",
+      "type": "object"
+    },
+    "Interval": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "low": {
+          "title": "Low",
+          "type": "number"
+        },
+        "high": {
+          "title": "High",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "low",
+        "high"
+      ],
+      "title": "Interval",
+      "type": "object"
+    },
+    "MeshTerm": {
+      "additionalProperties": false,
+      "properties": {
+        "meshId": {
+          "title": "Meshid",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "meshId",
+        "label"
+      ],
+      "title": "MeshTerm",
+      "type": "object"
+    }
+  }
+}
