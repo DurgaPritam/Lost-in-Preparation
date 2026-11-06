@@ -1,0 +1,875 @@
+{
+ "batch": 13,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:celandine:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:celandine:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:celandine:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:celandine:005": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:celandine:006": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:celandine:007": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:celandine:008": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:carraway:007": {
+   "recipes": [
+    {
+     "recipeQuote": "Carraway comfits, once only dipped in sugar, and half a spoonful of them eaten in the morning fasting, and as many after each meal, is a most admirable remedy, for those that are troubled with wind.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Carraway",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "sugar",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "Carraway",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "those that are troubled with wind",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "Carraway comfits, once only dipped in sugar"
+      },
+      {
+       "field": "form",
+       "quote": "half a spoonful of them eaten"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:celandine:004": {
+   "recipes": [
+    {
+     "recipeQuote": "then may you make into an oil or ointment, which you please, to anoint your sore eyes with",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "sore eyes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "make into an oil or ointment"
+      },
+      {
+       "field": "form",
+       "quote": "to anoint your sore eyes"
+      },
+      {
+       "field": "filtered",
+       "quote": "make into an oil or ointment"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The herb or root boiled in white Wine and drank, a few Anniseeds being boiled therewith, opens obstructions of the liver and gall, helps the yellow jaundice; and often using it, helps the dropsy and the itch, and those who have old sores in their legs, or other parts of the body.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Anniseeds",
+       "part": "seed",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "opens obstructions of the liver and gall, helps the yellow jaundice; and often using it, helps the dropsy and the itch, and those who have old sores in their legs, or other parts of the body",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "boiled in white Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled in white Wine"
+      },
+      {
+       "field": "process",
+       "quote": "boiled in white Wine and drank"
+      },
+      {
+       "field": "form",
+       "quote": "boiled in white Wine and drank"
+      },
+      {
+       "field": "recipeType",
+       "quote": "a few Anniseeds being boiled therewith"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "recipeType",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice thereof taken fasting, is held to be of singularly good use against the pestilence.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "the pestilence",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice thereof"
+      },
+      {
+       "field": "solvent",
+       "quote": "The juice thereof taken fasting"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice thereof taken fasting"
+      },
+      {
+       "field": "form",
+       "quote": "The juice thereof taken fasting"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The distilled water, with a little sugar and a little good treacle mixed therewith (the party upon the taking being laid down to sweat a little) has the same effect.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "sugar",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      },
+      {
+       "plantNameAsWritten": "treacle",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "unknown",
+     "indicationAsWritten": "has the same effect",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "heat",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "process",
+       "quote": "The distilled water"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice dropped into the eyes, cleanses them from films and cloudiness which darken the sight, but it is best to allay the sharpness of the juice with a little breast milk.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "cleanses them from films and cloudiness which darken the sight",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice dropped into the eyes"
+      },
+      {
+       "field": "solvent",
+       "quote": "allay the sharpness of the juice with a little breast milk"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice dropped into the eyes"
+      },
+      {
+       "field": "form",
+       "quote": "The juice dropped into the eyes"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is good in all old filthy corroding creeping ulcers wheresoever, to stay their malignity of fretting and running, and to cause them to heal more speedily",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "all old filthy corroding creeping ulcers wheresoever, to stay their malignity of fretting and running, and to cause them to heal more speedily",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The juice often applied to tetters, ring-worms, or other such like spreading cankers, will quickly heal them, and rubbed often upon warts, will take them away.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "tetters, ring-worms, or other such like spreading cankers, will quickly heal them, and rubbed often upon warts, will take them away",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice often applied"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice often applied"
+      },
+      {
+       "field": "form",
+       "quote": "The juice often applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The herb with the roots bruised and bathed with oil of camomile, and applied to the navel, takes away the griping pains of the belly and bowels, and all the pains of the mother; and applied to women’s breasts stays the overmuch flowing of the courses.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "takes away the griping pains of the belly and bowels, and all the pains of the mother; and applied to women’s breasts stays the overmuch flowing of the courses",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The herb with the roots"
+      },
+      {
+       "field": "solvent",
+       "quote": "bathed with oil of camomile"
+      },
+      {
+       "field": "process",
+       "quote": "bruised and bathed with oil of camomile"
+      },
+      {
+       "field": "form",
+       "quote": "applied to the navel"
+      },
+      {
+       "field": "filtered",
+       "quote": "bruised and bathed with oil of camomile, and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice or decoction of the herb gargled between the teeth that ach, eases the pain",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "gargle",
+     "indicationAsWritten": "the teeth that ach, eases the pain",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice or decoction"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice or decoction"
+      },
+      {
+       "field": "form",
+       "quote": "gargled between the teeth"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice or decoction of the herb gargled between the teeth that ach, eases the pain",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "gargle",
+     "indicationAsWritten": "the teeth that ach, eases the pain",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "decoction of the herb"
+      },
+      {
+       "field": "process",
+       "quote": "decoction of the herb"
+      },
+      {
+       "field": "form",
+       "quote": "gargled between the teeth"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the powder of the dried root laid upon any aching, hollow or loose tooth, will cause it to fall out",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "root",
+     "freshOrDried": "dried",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "any aching, hollow or loose tooth, will cause it to fall out",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the powder of the dried root"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "the dried root"
+      },
+      {
+       "field": "solvent",
+       "quote": "laid upon any aching"
+      },
+      {
+       "field": "heat",
+       "quote": "the powder of the dried root"
+      },
+      {
+       "field": "process",
+       "quote": "the powder of the dried root"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice mixed with some powder of brimstone is not only good against the itch, but takes away all discolourings of the skin whatsoever",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "brimstone",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the itch, but takes away all discolourings of the skin whatsoever",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice mixed with some powder of brimstone"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice mixed with some powder of brimstone"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:celandine:009": {
+   "recipes": [
+    {
+     "recipeQuote": "the herb, being gathered as I shewed before, and the elements draw apart from it by art of the alchymist, and after they are drawn apart rectified, the earthly quality, still in rectifying them, added to the Terra damnata (as Alchymists call it) or Terra Sacratisima (as some philosophers call it) the elements so rectified are sufficient for the cure of all diseases",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CELANDINE",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CELANDINE",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "the cure of all diseases",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "the elements draw apart from it by art of the alchymist"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
