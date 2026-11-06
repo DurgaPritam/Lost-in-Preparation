@@ -1,0 +1,677 @@
+{
+ "batch": 1,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1652:herbal:agrimony:002": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:agrimony:004": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:agrimony:006": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:agrimony:012": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:wood-betony:002": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:wood-betony:004": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:agrimony:008": {
+   "recipes": [
+    {
+     "recipeQuote": "It openeth and clenseth the Liver, helpeth the Jaundice, and is very beneficial to the Bowels, healing all inward Wounds, Bruises, Hurts, and other distempers",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "openeth and clenseth the Liver, helpeth the Jaundice, and is very beneficial to the Bowels, healing all inward Wounds, Bruises, Hurts, and other distempers",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The Decoction of the Herb made with Wine and drunk is good against the stinging and biting of Serpents, and helps them that have foul, troubled, or bloody waters, and makes them piss cleer spedily; It also helpeth the Chollick, clenseth the Breast, and rids away the Cough",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "the stinging and biting of Serpents, and helps them that have foul, troubled, or bloody waters, and makes them piss cleer spedily; It also helpeth the Chollick, clenseth the Breast, and rids away the Cough",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "made with Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "The Decoction of the Herb"
+      },
+      {
+       "field": "process",
+       "quote": "The Decoction of the Herb"
+      },
+      {
+       "field": "form",
+       "quote": "made with Wine and drunk"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A draught of the Decoction taken warm before the Fit, first removes, and in time rids away the Tertian or Quartan Agues",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "taken warm",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "the Tertian or Quartan Agues",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The Decoction of the Herb made with Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "A draught of the Decoction taken warm"
+      },
+      {
+       "field": "process",
+       "quote": "A draught of the Decoction"
+      },
+      {
+       "field": "form",
+       "quote": "A draught of the Decoction"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Leaves and Seed taken in Wine, Stayeth the Bloody Flu",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "Stayeth the Bloody Flu",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leaves and Seed"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in Wine"
+      },
+      {
+       "field": "form",
+       "quote": "taken in Wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "being stamped with old Swines grease, it helpeth old sores, Cancers, and inveterate Ulcers; and draweth forth Thorns, Splinters of Wood, Nails, or any other such thing gotten into the Flesh; it helpeth to strengthen the Members that be out of joynt",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "it helpeth old sores, Cancers, and inveterate Ulcers; and draweth forth Thorns, Splinters of Wood, Nails, or any other such thing gotten into the Flesh; it helpeth to strengthen the Members that be out of joynt",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "stamped with old Swines grease"
+      },
+      {
+       "field": "process",
+       "quote": "being stamped with old Swines grease"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "being bruised and applied, or the Juyce dropped in, it helpeth foul and imposthu⟦?⟧ned Ears",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "foul and imposthu⟦?⟧ned Ears",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "process",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "form",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "filtered",
+       "quote": "being bruised and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "being bruised and applied, or the Juyce dropped in, it helpeth foul and imposthu⟦?⟧ned Ears",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "foul and imposthu⟦?⟧ned Ears",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce dropped in"
+      },
+      {
+       "field": "heat",
+       "quote": "the Juyce dropped in"
+      },
+      {
+       "field": "form",
+       "quote": "the Juyce dropped in"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:agrimony:009": {
+   "recipes": [
+    {
+     "recipeQuote": "The distilled Water of the Herb is good to all the said purposes, either inward or outward, but a great deal weaker.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "unknown",
+     "indicationAsWritten": "good to all the said purposes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The distilled Water of the Herb"
+      },
+      {
+       "field": "heat",
+       "quote": "The distilled Water"
+      },
+      {
+       "field": "process",
+       "quote": "The distilled Water"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:agrimony:010": {
+   "recipes": [
+    {
+     "recipeQuote": "must needs be good for the Gout, either used ⟦?⟧outwardly in an Oyl or Oyntment",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "the Gout",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "in an Oyl or Oyntment"
+      },
+      {
+       "field": "form",
+       "quote": "in an Oyl or Oyntment"
+      },
+      {
+       "field": "filtered",
+       "quote": "in an Oyl or Oyntment"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "must needs be good for the Gout, either used ⟦?⟧outwardly in an Oyl or Oyntment, or inwardly in an Electuary or Syrup",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "the Gout",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "inwardly in an Electuary or Syrup"
+      },
+      {
+       "field": "form",
+       "quote": "inwardly in an Electuary"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "must needs be good for the Gout, either used ⟦?⟧outwardly in an Oyl or Oyntment, or inwardly in an Electuary or Syrup, or concreated Juyce",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "the Gout",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "concreated Juyce"
+      },
+      {
+       "field": "process",
+       "quote": "concreated Juyce"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:agrimony:011": {
+   "recipes": [
+    {
+     "recipeQuote": "It is a most admirable remedy for such whole Livers are annoyed either by heat or cold.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "such whole Livers are annoyed either by heat or cold",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    }
+   ]
+  }
+ }
+}
