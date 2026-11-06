@@ -1,6 +1,6 @@
 {
   "contractVersion": "1.1",
-  "generatedAt": "2026-11-06T04:41:39+00:00",
+  "generatedAt": "2026-11-06T04:58:58+00:00",
   "pipelineVersion": "0.1.0",
   "mock": false,
   "extraction": {
@@ -1737,10 +1737,10 @@
   "nameResolution": {
     "disputedShare": {
       "status": "computed",
-      "value": 0.6,
+      "value": 0.6884,
       "low": null,
       "high": null,
-      "n": 810,
+      "n": 812,
       "sourceFile": "data/interim/m2/name_candidates.parquet",
       "note": "share of resolved names whose top candidate is flagged disputed (descriptive)"
     },

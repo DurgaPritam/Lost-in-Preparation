@@ -113,6 +113,12 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
   - the top two candidates are within 0.15;
   - the total evidence is < 0.5;
   - the name resolves only to genus level;
+  - **footnote rule (v3)**: a Bostock & Riley footnote binomial is **not used as the identification** in three cases:
+    - its own sentence hedges it ("probably", "takes this to be", "thinks", "considers", "is right", "conjecture"…);
+    - its own sentence contradicts it ("a totally different plant", "confounded", "mistake"…);
+    - the footnote sets two or more named authorities against each other (e.g. Fée vs Sprengel).
+
+    Such a binomial stays a low-confidence candidate (weight ×0.2). The name is disputed, and the trigger phrase is logged in `footnoteTriggers`. The effect on approved species is in `data/interim/m2/footnote_rule_changes.json`, measured against a snapshot taken just before the rule. Approved species whose counted entries changed are pending the project lead's re-review and stay out of the headline set until then.
   - **genus-signal false friend**: the classical-genus audit ([docs/GENUS_SIGNAL_AUDIT.md](docs/GENUS_SIGNAL_AUDIT.md), `pipeline/lip/m2/genus_audit.py`) lists the name. The audit screens every top-1 resolution that used the classical-genus signal, and checks each word against its Lewis & Short entry. It records three kinds of case:
     - a classical word with a different meaning (Pliny's *laser* is the juice of silphium, not the genus *Laser*);
     - an English word that spell-matches a genus (Culpeper's 'Cotton Thistle' → *Cotinus*);
@@ -159,7 +165,7 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
   - vehicle and preparation-word counts (a heuristic proxy until M1 is run);
   - compounds and toxicity.
 
-  Decisions are recorded in `config/study_set_review_decisions.csv` (approve / unsure / reject). **Unsure counts as reject**: only approved species form the headline set (`headline` in the proposal CSV). A name entry the reviewer identified as a different plant is removed from that species in `config/name_entry_exclusions.csv`; it neither counts nor vetoes, and the affected rows are flagged for re-review. A species can also be removed outright (`config/study_set_exclusions.csv`). Each file records who decided, when and why.
+  Decisions are recorded in `config/study_set_review_decisions.csv` (approve / unsure / reject). **Unsure counts as reject**: only approved species form the headline set (`headline` in the proposal CSV). A name entry the reviewer identified as a different plant is removed from that species in `config/name_entry_exclusions.csv`, and a passage about a different plant inside a chapter (e.g. Culpeper's *Lavender Cotten*) in `config/passage_exclusions.csv`. Neither then counts towards attestation; removals never veto a species. A conditional approval ("approve if at least 3 attestations remain") is applied mechanically. A species can also be removed outright (`config/study_set_exclusions.csv`). Each file records who decided, when and why.
 
 ## 9. Preparation model (M4)
 

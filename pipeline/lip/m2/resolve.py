@@ -11,7 +11,11 @@ Evidence (each adds weight to a GBIF-backbone species; weights are heuristic and
                   the query's candidates, n = GBIF occurrences in Great Britain (Culpeper, "the vulgar
                   herbs of this nation") or in Europe (Pliny)
   commentary_19c  binomial named in a Bostock & Riley footnote linked to the name:
-                  strong link 2.0 / weak 1.0, divided by (order in footnote); ×0.5 if hedged
+                  strong link 2.0 / weak 1.0, divided by (order in footnote); ×0.5 if hedged.
+                  v3: if the binomial's own sentence hedges or contradicts it ("probably", "takes this to be",
+                  "thinks", "is right", "a totally different plant", …) or the footnote sets named authorities
+                  against each other, the binomial is NOT used as the identification: weight ×0.2 (a
+                  low-confidence candidate), the name is disputed, and the trigger is logged (footnoteTriggers)
   database        CLASSICAL GENUS (v2): a word of the name, or a Latinised/transliterated variant of it
                   ('Mandragora', 'Cummin'->Cuminum, 'Aron'->Arum), is an accepted plant genus (GBIF): candidates
                   in that genus get ×3 (ranking within the genus kept); if none exists, the genus's most-recorded
@@ -54,6 +58,34 @@ STOP = set("wild garden common great greater lesser less small water black white
 
 
 LATINISH = re.compile(r"(um|us|a|is|on|os|es|ion|ia|ium|ae|ys|ix|ex)$", re.I)
+
+# v3 footnote rule: a binomial is NOT used as the identification when its own sentence hedges or contradicts it,
+# or when the footnote sets named authorities against each other. It stays a low-confidence candidate
+# (weight x FOOTNOTE_TRIGGER_WEIGHT), the name is disputed, and the trigger phrase is logged.
+FN_HEDGE = re.compile(r"\bprobabl[ey]\b|\bperhaps\b|\bpossibly\b|\btakes? (?:this|it|them|these) (?:to be|for)\b|\bthinks?\b|"
+                      r"\bthought\b|\bsuppos\w*|\bconjectur\w*|\bis (?:probably )?right\b|\bconsiders?\b|\bis of opinion\b|"
+                      r"\bseems?\b|\bappears? to\b|\bdoubt\w*|\buncertain\w*|\bmay be\b|\binclined\b|\bquer(?:y|ies)\b", re.I)
+FN_CONTRA = re.compile(r"totally different|different plant|distinct plant|not the same|confound\w*|confus\w*|mistak\w*|"
+                       r"erroneous\w*|wrongly", re.I)
+AUTHORITIES = re.compile(r"\b(F[ée]e|Sprengel|Littr[ée]|Desfontaines|Brotier|Lobel|C(?:æ|ae)salpinus|Sibthorp|Dalechamps|"
+                         r"Hardouin|Bauhin|Matthiolus|Anguillara|Dodon(?:æ|ae)us|Clusius|Tournefort|Fraas|Billerbeck|Sillig|Schneider)\b")
+FOOTNOTE_TRIGGER_WEIGHT = 0.2
+
+
+def footnote_trigger(text: str, binomial: str, n_binomials: int) -> str | None:
+    """-> the trigger phrase that disqualifies `binomial` as an identification, or None."""
+    sents = re.split(r"(?<=[.;])\s+", text)
+    g, *rest = binomial.split()
+    pat = re.compile(re.escape(g[:5]) + r"\w*\s+" + (re.escape(rest[0][:4]) if rest else ""), re.I)
+    own = [x for x in sents if pat.search(x)] or [text]
+    for x in own:
+        m = FN_CONTRA.search(x) or FN_HEDGE.search(x)
+        if m:
+            return m.group(0)
+    auth = sorted({a.replace("Fee", "Fée").replace("Littre", "Littré") for a in AUTHORITIES.findall(text)})
+    if len(auth) >= 2 and n_binomials >= 2:
+        return "competing authorities: " + ", ".join(auth)
+    return None
 
 
 def latin_tokens(ws: list[str]) -> list[str]:
@@ -115,6 +147,7 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
     # -- scoring ----------------------------------------------------------------------------
     rows = []
     base = {}
+    triggers: dict[str, list] = {}
     for e in inv.itertuples():
         score: dict[str, float] = defaultdict(float)
         ev: dict[str, list] = defaultdict(list)
@@ -138,21 +171,29 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
                 score[sp] += w
                 ev[sp].append({"basis": "database", "how": f"GBIF exact English vernacular (support {x['support']}, "
                                f"regional prior {prior:.2f})", "query": q, "weight": round(w, 3)})
+        trig_log = []
         for f in e.footnotes:
             text = fn_text.get(f["id"], "")
             hedge = bool(HEDGE.search(text))
-            for j, b in enumerate(bin_by_fn.get(f["id"], [])):
+            bl = bin_by_fn.get(f["id"], [])
+            for j, b in enumerate(bl):
+                trig = footnote_trigger(text, b, len(bl))
                 r = match.get(b)
-                if not r:
-                    continue
-                sp, _ = acc_map[id(r)]
+                sp = acc_map[id(r)][0] if r else None
                 if not sp:
+                    if trig:  # an unmatched binomial still shows the footnote contests the name's identity
+                        trig_log.append({"footnote": f["id"], "binomial": b, "species": None, "trigger": trig})
                     continue
-                w = (2.0 if f["strength"] == "strong" else 1.0) / (j + 1) * (0.5 if hedge else 1.0)
+                w = (2.0 if f["strength"] == "strong" else 1.0) / (j + 1)
+                w *= FOOTNOTE_TRIGGER_WEIGHT if trig else (0.5 if hedge else 1.0)
                 score[sp] += w
-                hedged_top[sp] |= hedge
-                ev[sp].append({"basis": "commentary_19c", "how": f"{f['strength']} footnote link" + (", hedged" if hedge else ""),
+                hedged_top[sp] |= hedge or bool(trig)
+                if trig:
+                    trig_log.append({"footnote": f["id"], "binomial": b, "species": sp, "trigger": trig})
+                ev[sp].append({"basis": "commentary_19c", "how": f"{f['strength']} footnote link"
+                               + (f", not used as identification (trigger: '{trig}')" if trig else ", hedged" if hedge else ""),
                                "footnote": f["id"], "binomial": b, "weight": round(w, 3)})
+        triggers[e.nameId] = trig_log
         base[e.nameId] = (score, ev, hedged_top)
 
     # -- genus boost, genus fallback, binomials from tokens (fetch then apply) --------------------
@@ -250,8 +291,9 @@ def run(inv: pd.DataFrame, fn_text: pd.Series, workers: int = 6) -> pd.DataFrame
         toxic_conf = bool((live.toxicity == "known_toxic").any() and (live.toxicity != "known_toxic").any())
         toxic_confusion[nid] = toxic_conf
         disputed[nid] = bool(top.confidence < 0.6 or (top.basis == "commentary_19c" and top.hedged) or close
-                             or top.evidenceTotal < 0.5 or g.genusLevelOnly.any() or toxic_conf)
+                             or top.evidenceTotal < 0.5 or g.genusLevelOnly.any() or toxic_conf or bool(triggers.get(nid)))
     cand["disputed"] = cand.nameId.map(disputed).fillna(False).astype(bool)
+    cand["footnoteTriggers"] = cand.nameId.map(lambda n: json.dumps(triggers.get(n, []), ensure_ascii=False))
     cand["toxicConfusion"] = cand.nameId.map(toxic_confusion).fillna(False).astype(bool)
     # genus-signal audit (docs/GENUS_SIGNAL_AUDIT.md): false friends are disputed, never deleted
     from . import genus_audit

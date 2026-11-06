@@ -17,11 +17,11 @@
     "pliny": {
       "resolved": [
         397,
-        591
+        593
       ],
       "disputed": [
         252,
-        439
+        512
       ],
       "draftTop1": [
         "1/8",
@@ -32,15 +32,15 @@
   "names": {
     "MANDRAGORA": {
       "before": "Atropa bella-donna (1.00)",
-      "after": "Mandragora officinarum (0.40, disputed (genus-level); toxic-confusion)"
+      "after": "Mandragora officinarum (0.45, disputed (genus-level); toxic-confusion)"
     },
     "CUMMIN": {
       "before": "Delphinium consolida (1.00)",
-      "after": "Cuminum cyminum (0.67, disputed (genus-level); toxic-confusion)"
+      "after": "Cuminum cyminum (0.83, disputed (genus-level); toxic-confusion)"
     },
     "WILD CUMMIN": {
       "before": "Delphinium consolida (1.00)",
-      "after": "Cuminum cyminum (0.67, disputed (genus-level); toxic-confusion)"
+      "after": "Cuminum cyminum (0.83, disputed (genus-level); toxic-confusion)"
     },
     "Dodder": {
       "before": "Cuscuta reflexa (1.00)",

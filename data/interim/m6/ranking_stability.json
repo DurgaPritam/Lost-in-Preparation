@@ -6,37 +6,37 @@
   "minCompounds": 5,
   "descriptorErrorSd": 0.8231,
   "modelVersion": "prep-model:f4c4c5ef8a",
-  "candidates": 378,
-  "ranked": 376,
+  "candidates": 324,
+  "ranked": 322,
   "notRanked": 2,
-  "compoundsExcludedWideShare": 0.163,
+  "compoundsExcludedWideShare": 0.1635,
   "stability": {
     "robust (5th percentile of gap)": {
       "monteCarloReseed": {
-        "spearman": 0.9826,
+        "spearman": 0.9817,
         "top20Overlap": 1.0
       },
       "compoundBootstrap": {
-        "spearmanMean": 0.9334,
-        "top20OverlapMean": 0.91,
+        "spearmanMean": 0.9414,
+        "top20OverlapMean": 0.9225,
         "replicates": 20
       }
     },
     "median gap only (comparison)": {
       "monteCarloReseed": {
-        "spearman": 0.9725,
-        "top20Overlap": 1.0
+        "spearman": 0.9681,
+        "top20Overlap": 0.9
       },
       "compoundBootstrap": {
-        "spearmanMean": 0.9315,
+        "spearmanMean": 0.933,
         "top20OverlapMean": 0.8175,
         "replicates": 20
       }
     }
   },
   "rankDisagreement": {
-    "spearmanRobustVsMedian": 0.9459,
-    "top20Shared": 16
+    "spearmanRobustVsMedian": 0.9392,
+    "top20Shared": 14
   },
   "top": [
     {
@@ -222,37 +222,11 @@
       "compoundsExcludedWide": 30
     },
     {
-      "acceptedName": "Pastinaca sativa",
-      "faithful": "distilled water",
-      "modern": "modern 70% ethanol extract",
-      "rank": 15.0,
-      "rankMedianGap": 15.0,
-      "gapP5": 0.5495,
-      "gapP50": 0.5832,
-      "gapP95": 0.6634,
-      "pGapAboveTau": 1.0,
-      "compoundsUsed": 23,
-      "compoundsExcludedWide": 0
-    },
-    {
-      "acceptedName": "Pastinaca sativa",
-      "faithful": "distilled water",
-      "modern": "modern methanol extract",
-      "rank": 16.0,
-      "rankMedianGap": 16.0,
-      "gapP5": 0.5465,
-      "gapP50": 0.5655,
-      "gapP95": 0.6056,
-      "pGapAboveTau": 1.0,
-      "compoundsUsed": 23,
-      "compoundsExcludedWide": 0
-    },
-    {
       "acceptedName": "Crocus sativus",
       "faithful": "distilled water",
       "modern": "modern methanol extract",
-      "rank": 17.0,
-      "rankMedianGap": 24.0,
+      "rank": 15.0,
+      "rankMedianGap": 22.0,
       "gapP5": 0.4197,
       "gapP50": 0.4436,
       "gapP95": 0.4687,
@@ -264,8 +238,8 @@
       "acceptedName": "Artemisia absinthium",
       "faithful": "distilled water",
       "modern": "modern 70% ethanol extract",
-      "rank": 18.0,
-      "rankMedianGap": 29.0,
+      "rank": 16.0,
+      "rankMedianGap": 27.0,
       "gapP5": 0.4151,
       "gapP50": 0.4383,
       "gapP95": 0.4787,
@@ -277,8 +251,8 @@
       "acceptedName": "Glycyrrhiza glabra",
       "faithful": "distilled water",
       "modern": "modern methanol extract",
-      "rank": 19.0,
-      "rankMedianGap": 28.0,
+      "rank": 17.0,
+      "rankMedianGap": 26.0,
       "gapP5": 0.4081,
       "gapP50": 0.4313,
       "gapP95": 0.4515,
@@ -290,14 +264,40 @@
       "acceptedName": "Artemisia absinthium",
       "faithful": "distilled water",
       "modern": "modern methanol extract",
-      "rank": 20.0,
-      "rankMedianGap": 41.0,
+      "rank": 18.0,
+      "rankMedianGap": 36.0,
       "gapP5": 0.3961,
       "gapP50": 0.4142,
       "gapP95": 0.4382,
       "pGapAboveTau": 1.0,
       "compoundsUsed": 152,
       "compoundsExcludedWide": 1
+    },
+    {
+      "acceptedName": "Crocus sativus",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 19.0,
+      "rankMedianGap": 33.0,
+      "gapP5": 0.3873,
+      "gapP50": 0.4193,
+      "gapP95": 0.4485,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 132,
+      "compoundsExcludedWide": 19
+    },
+    {
+      "acceptedName": "Glycyrrhiza glabra",
+      "faithful": "distilled water",
+      "modern": "modern 70% ethanol extract",
+      "rank": 20.0,
+      "rankMedianGap": 48.0,
+      "gapP5": 0.3621,
+      "gapP50": 0.3917,
+      "gapP95": 0.418,
+      "pGapAboveTau": 1.0,
+      "compoundsUsed": 366,
+      "compoundsExcludedWide": 95
     }
   ]
 }

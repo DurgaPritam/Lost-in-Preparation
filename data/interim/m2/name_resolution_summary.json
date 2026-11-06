@@ -11,11 +11,11 @@
   "pliny": {
     "names": 846,
     "resolved": 608,
-    "resolvedInWFO": 591,
-    "disputed": 439,
+    "resolvedInWFO": 593,
+    "disputed": 512,
     "topBasis": {
-      "database": 499,
-      "commentary_19c": 109
+      "database": 513,
+      "commentary_19c": 95
     }
   }
 }

@@ -116,8 +116,23 @@ def build() -> pd.DataFrame:
     dec = pd.read_csv(DECISIONS).set_index("species") if DECISIONS.exists() else pd.DataFrame()
     nx = pd.read_csv(NAME_EXCLUSIONS) if NAME_EXCLUSIONS.exists() else pd.DataFrame(columns=["nameId", "species", "reviewerNote"])
     removed = {(r.nameId, r.species): r.reviewerNote for r in nx.itertuples()}
+    from .study_set import PASSAGE_EXCLUSIONS
+    px = pd.read_csv(PASSAGE_EXCLUSIONS) if PASSAGE_EXCLUSIONS.exists() else pd.DataFrame(columns=["passageId", "species"])
+    removed_p = set(zip(px.passageId, px.species))
     full = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
     extra = full[full.acceptedName.isin(set(dec.index) - set(ss.acceptedName))] if len(dec) else full.iloc[0:0]
+    gone = sorted(set(dec.index) - set(ss.acceptedName) - set(extra.acceptedName)) if len(dec) else []
+    if gone:  # reviewed species with no undisputed name entry left: rebuild a minimal row from the candidates
+        cov = pd.read_csv(INTERIM / "m3" / "coverage.csv").set_index("acceptedName")
+        mk = []
+        for n in gone:
+            r = top[top.acceptedName == n]
+            mk.append({"acceptedName": n, "wfoId": r.wfoId.iloc[0] if len(r) else "", "family": r.family.iloc[0] if len(r) else "",
+                       "sourceList": ", ".join(sorted(set(r.source))), "sources": r.source.nunique(), "attestations": 0.0,
+                       "nCompounds": int(cov.loc[n, "nCompounds"]) if n in cov.index else 0,
+                       "poorCoverage": bool(cov.loc[n, "poorCoverage"]) if n in cov.index else True,
+                       "proposed": False, "eligible": False, "pendingReReview": False, "headline": False})
+        extra = pd.concat([extra, pd.DataFrame(mk)])
     ss = pd.concat([ss, extra])  # reviewed species that are no longer proposed keep their row
     rows = []
     for sp in ss.itertuples():
@@ -144,7 +159,13 @@ def build() -> pd.DataFrame:
                 if len(d):
                     desc = _sentences_excerpt(" ".join(d.text_clean))
                     desc_src = f"{label}: {d.passage_id.iloc[0]}"
-        recipe_pids = list(dict.fromkeys(recipe_pids))  # several name entries can share one chapter
+        if not desc and len(ents):  # no counted entry left: describe from the first entry, labelled as such
+            e0 = ents.sort_values(["_culp", "confidence"], ascending=False).iloc[0]
+            d, label = _description(_passages(p, inv.loc[e0.nameId]), e0)
+            if len(d):
+                desc = _sentences_excerpt(" ".join(d.text_clean))
+                desc_src = f"{label} [entry no longer counts]: {d.passage_id.iloc[0]}"
+        recipe_pids = [x for x in dict.fromkeys(recipe_pids) if (x, sp.acceptedName) not in removed_p]  # dedupe; reviewer-removed passages out
         pids = {k: list(dict.fromkeys(v)) for k, v in pids.items()}
         rtext = p[p.passage_id.isin(recipe_pids)].text_clean.str.lower()
         vehicle = {k: int(rtext.str.contains(rx, regex=True).sum()) for k, rx in VEHICLES.items()}
@@ -194,7 +215,9 @@ def build() -> pd.DataFrame:
             "proposedNow": bool(sp.proposed), "eligibleNow": bool(sp.eligible),
             "decision": dec.loc[sp.acceptedName, "decision"] if sp.acceptedName in dec.index else "",
             "reason": dec.loc[sp.acceptedName, "reason"] if sp.acceptedName in dec.index else "",
-            "reReviewRequested": bool(n_rem) and (dec.loc[sp.acceptedName, "decision"] in ("unsure", "reject") if sp.acceptedName in dec.index else False),
+            "reReviewRequested": bool(getattr(sp, "pendingReReview", False) is True),
+            "resolverChanged": bool(getattr(sp, "pendingReReview", False) is True),
+            "headlineNow": bool(getattr(sp, "headline", False) is True),
         })
     df = pd.DataFrame(rows)
     df["_s"] = df.minCountedConfidence.fillna(0)
@@ -225,11 +248,35 @@ def _md(df: pd.DataFrame) -> None:
          ]
     dec = df[df.decision.fillna("") != ""]
     if len(dec):
-        head = df[df.decision == "approve"]
+        head = df[df.headlineNow]
         L += ["## Review decisions (project lead, `config/study_set_review_decisions.csv`)", "",
               f"**{(df.decision == 'approve').sum()} approve · {(df.decision == 'unsure').sum()} unsure · {(df.decision == 'reject').sum()} reject.** "
-              f"Unsure counts as reject, so **{len(head)} species form the headline set.**", ""]
-        rr = df[df.reReviewRequested]
+              "Unsure counts as reject.", ""]
+        import json as _json
+        rc = ROOT / "data" / "interim" / "m2" / "footnote_rule_changes.json"
+        if rc.exists():
+            o = _json.loads(rc.read_text())
+            L += ["**Resolver v3 footnote rule** (`data/interim/m2/footnote_rule_changes.json`). Footnote binomials that their own "
+                  "footnote hedges or contradicts, or that competing authorities dispute, are no longer used as identifications. "
+                  f"Of {len(o['species'])} approved species, {len(o['unchanged'])} are unchanged and stay approved; "
+                  f"{len(o['flagged'])} changed and are **pending re-review** (out of the headline set until then):", ""]
+            for sp in o["flagged"]:
+                v = o["species"][sp]
+                lost = "; ".join(f"{w['nameAsWritten']} (now disputed; trigger: {', '.join(dict.fromkeys(t['trigger'] for t in w['triggers'])) or 'other'})"
+                                 for w in v["lost"].values())
+                L.append(f"- *{sp}*: lost {lost}. Attestation proxy now {v['attestationAfter']}; "
+                         f"{'still eligible' if v['eligibleAfter'] else '**no longer eligible**'}.")
+            L += [""]
+        L += [f"**Headline set now: {int(df.headlineNow.sum())} species.**", ""]
+        inel = df[(df.decision == "approve") & ~df.headlineNow & ~df.resolverChanged]
+        if len(inel):
+            L += ["**Approved but not in the headline set** (the attestation proxy fell below 3 after the reviewer's fixes):", ""]
+            L += [f"- *{r.species}*: attestation proxy {r.attestationProxy}"
+                  + (" — the reviewer's condition (at least 3 attestations) is not met, so it is dropped" if "CONDITIONAL" in str(r.reason)
+                     else " — **needs a decision**: the approval was unconditional, but the eligibility rule requires at least 3")
+                  + "." for r in inel.itertuples()]
+            L += [""]
+        rr = df.iloc[0:0]
         if len(rr):
             L += ["**Re-review requested.** For these rows the reviewer removed a wrongly merged name entry (`config/name_entry_exclusions.csv`). "
                   "The rows below are recomputed without it; the decision stands until re-reviewed:", ""]

@@ -806,18 +806,18 @@
     "median_eq_0.10": 3.278
   },
   "studySetCompounds": {
-    "n": 2447,
-    "likelihoodEqualsSolventFactor": 2416,
-    "spearmanLogPvsLikelihood": -0.997,
-    "medianAtLeastPresentMin": 1018,
-    "medianBelowAbsentMax": 1311,
-    "between": 118,
+    "n": 2257,
+    "likelihoodEqualsSolventFactor": 2231,
+    "spearmanLogPvsLikelihood": -0.9973,
+    "medianAtLeastPresentMin": 949,
+    "medianBelowAbsentMax": 1206,
+    "between": 102,
     "logPQuantiles": {
-      "0.05": -2.296,
-      "0.25": 0.871,
-      "0.5": 2.44,
-      "0.75": 3.946,
-      "0.95": 7.106
+      "0.05": -2.307,
+      "0.25": 0.82,
+      "0.5": 2.432,
+      "0.75": 3.92,
+      "0.95": 6.115
     }
   },
   "artemisinin": {

@@ -11,11 +11,11 @@ Name resolution v2 boosts candidates in a modern genus whose name matches a word
 
 ## Screen
 
-Every top-1 resolution whose evidence includes a classical-genus match was screened: **417** resolutions (404 Pliny, 13 Culpeper). In 127 of them the word equals the genus name; in the rest it is a variant or spelling match. Each word was looked up in Lewis & Short (PerseusDL TEI, CC BY-SA 4.0): does not mention genus 198, no entry 118, mentions genus 101. A dictionary entry that does not name the genus is only a prompt for review, since many entries give no Linnaean name.
+Every top-1 resolution whose evidence includes a classical-genus match was screened: **430** resolutions (417 Pliny, 13 Culpeper). In 132 of them the word equals the genus name; in the rest it is a variant or spelling match. Each word was looked up in Lewis & Short (PerseusDL TEI, CC BY-SA 4.0): does not mention genus 208, no entry 119, mentions genus 103. A dictionary entry that does not name the genus is only a prompt for review, since many entries give no Linnaean name.
 
 ## Findings (32 resolutions)
 
-**18** were previously undisputed and are now marked `disputed` (reason `genus_signal_false_friend`). The other 14 were already disputed for other reasons; they are listed so the reason is on record. Nothing is deleted, so a reviewer can overturn a finding.
+**15** were previously undisputed and are now marked `disputed` (reason `genus_signal_false_friend`). The other 17 were already disputed for other reasons; they are listed so the reason is on record. Nothing is deleted, so a reviewer can overturn a finding.
 
 | Name as written | Source | Matched species | Finding | Reason | Lewis & Short | Was disputed |
 |---|---|---|---|---|---|---|
@@ -25,7 +25,6 @@ Every top-1 resolution whose evidence includes a classical-genus match was scree
 | APROXIS | pliny | *Muhlenbergia appressa* | `classical_meaning_differs` | classical aproxis is an unidentified plant; the match to Muhlenbergia is a spelling coincidence | *aproxis*: “a plant whose root, acc. to Pythagoras, takes fire at a distance” | **no → now disputed** |
 | BECHION, KNOWN ALSO AS SALVIA | pliny | *Salvia buchii* | `classical_meaning_differs` | Pliny says bechion is also called salvia; Lewis & Short identifies bechion as coltsfoot, so the boost to Salvia is unsupported | *bechion*: “a plant good for a cough, colt'sfoot: Tussilago farfara, Linn.” | **no → now disputed** |
 | CAPPARIS OR CAPER | pliny | *Cyperus flavidus* | `english_word_spelling_match` | the English word 'caper' was spelling-matched to Cyperus; classical capparis is the caper-bush | *capparis*: “the caper-bush” | **no → now disputed** |
-| CLEMATIS | pliny | *Clematis viticella* | `classical_meaning_differs` | classical clematis names various climbing plants, e.g. Vinca minor; not specifically the modern genus Clematis | *clematis*: “the name of various climbing plants, as Vinca minor, Linn., etc.” | **no → now disputed** |
 | COTYLEDON | pliny | *Cotyledon orbiculata* | `classical_meaning_differs` | classical cotyledon is navelwort (Linnaeus' Cotyledon umbilicus), not the modern genus Cotyledon (here C. orbiculata) | *cotyledon*: “a plant, navelwort: Cotyledon umbilicus, Linn.” | **no → now disputed** |
 | CYPRUS, AND THE OIL EXTRACTED FROM IT | pliny | *Cyperus cyprius* | `spelling_match` | 'Cyprus' was spelling-matched to Cyperus; in Lewis & Short, Cyprus is the island, and the plant meaning was not verified | *cyprus*: “an island in the Mediterranean Sea” | **no → now disputed** |
 | LASER | pliny | *Laser trilobum* | `classical_meaning_differs` | classical laser is the juice of silphium/laserpitium, not the modern genus Laser | *laser*: “the juice of the plant laserpitium, assafœtida” | **no → now disputed** |
@@ -33,12 +32,11 @@ Every top-1 resolution whose evidence includes a classical-genus match was scree
 | MOLY | pliny | *Allium nigrum* | `classical_meaning_differs` | classical moly is a legendary or unidentified plant; not specifically Allium | *moly*: “A plant with a white flower and a black root” | **no → now disputed** |
 | ONLY CENTURION THAT HAS BEEN THUS HONOURED | pliny | *Centaurium erythraea* | `not_a_plant_name` | chapter title ('centurion'), not a plant name | — | **no → now disputed** |
 | PERDICIUM, PARTHENIUM, URCEOLARIS, OR ASTERCUM | pliny | *Parthenium hysterophorus* | `classical_meaning_differs` | classical parthenium names several plants; the modern genus Parthenium is not among those Lewis & Short gives | *parthenium*: “the name of several plants” | **no → now disputed** |
-| PIPERITIS, OR SILIQUASTRUM | pliny | *Cercis siliquastrum* | `classical_meaning_differs` | classical siliquastrum is a pepperwort (also called piperitis), not the Judas tree Cercis siliquastrum | *siliquastrum*: “a plant, also called piperitis, pepperwort” | **no → now disputed** |
 | RHODODENDRON | pliny | *Rhododendron ponticum* | `classical_meaning_differs` | classical rhododendron is the oleander (rosebay), not the modern genus Rhododendron | *rhododendros*: “the rosebay, oleander” | **no → now disputed** |
 | SILPHIUM | pliny | *Silphium perfoliatum* | `classical_meaning_differs` | classical silphium is the plant also called laserpitium, not the modern genus Silphium | *silphium*: “a plant, called in pure Latin laserpitium” | **no → now disputed** |
-| STRAWBERRY, THE TAMNUS, AND THE BUTCHER’S BROOM | pliny | *Bromus catharticus* | `english_word_spelling_match` | the English word 'broom' (butcher's broom) was spelling-matched to Bromus (a grass) | — | **no → now disputed** |
 | AMOMUM | pliny | *Amomum unifolium* | `classical_meaning_differs` | Lewis & Short identifies classical amomum with a different plant (Linnaeus' Cissus vitiginea), not the modern genus Amomum | *amomum*: “an aromatic shrub, from which the Romans prepared a costly, fragrant balsam” | yes |
 | ASCLEPIAS | pliny | *Asclepias syriaca* | `classical_meaning_differs` | classical asclepias is the swallowwort (Linnaeus' Asclepias vincetoxicum), not the American milkweed Asclepias syriaca | *asclepias*: “the common swallowwort: Asclepias vincetoxicum, Linn.” | yes |
+| CLEMATIS | pliny | *Clematis viticella* | `classical_meaning_differs` | classical clematis names various climbing plants, e.g. Vinca minor; not specifically the modern genus Clematis | *clematis*: “the name of various climbing plants, as Vinca minor, Linn., etc.” | yes |
 | CNEORUM OR CASSIA | pliny | *Cassia fistula* | `classical_meaning_differs` | classical casia is a cinnamon-like bark, not the modern legume genus Cassia | *casia*: “A tree with an aromatic bark, similar to cinnamon” | yes |
 | COMBRETUM | pliny | *Combretum indicum* | `classical_meaning_differs` | classical combretum is a kind of rush, not the modern genus Combretum | *combretum*: “a kind of rush” | yes |
 | CULTIVATED CUNILA | pliny | *Cunila origanoides* | `classical_meaning_differs` | classical cunila is a kind of origanum, not the modern genus Cunila | *cunila*: “a plant, a species of origanum” | yes |
@@ -50,7 +48,9 @@ Every top-1 resolution whose evidence includes a classical-genus match was scree
 | LOTUS PLANT | pliny | *Lotus corniculatus* | `classical_meaning_differs` | classical lotos names several plants (water-lily, lotus-tree); not specifically the modern genus Lotus | *lotos*: “The name of several plants” | yes |
 | MOUNTAIN CUNILA | pliny | *Cunila origanoides* | `classical_meaning_differs` | classical cunila is a kind of origanum, not the modern genus Cunila | *cunila*: “a plant, a species of origanum” | yes |
 | MYRICA, OTHERWISE CALLED TAMARICA, OR TAMARIX | pliny | *Myrica gale* | `classical_meaning_differs` | classical myrice is the tamarisk, not the modern genus Myrica (bog myrtle) | *myrice*: “the tamarisk, a kind of shrub” | yes |
+| PIPERITIS, OR SILIQUASTRUM | pliny | *Cercis siliquastrum* | `classical_meaning_differs` | classical siliquastrum is a pepperwort (also called piperitis), not the Judas tree Cercis siliquastrum | *siliquastrum*: “a plant, also called piperitis, pepperwort” | yes |
 | SOFT CUNILA | pliny | *Cunila origanoides* | `classical_meaning_differs` | classical cunila is a kind of origanum, not the modern genus Cunila | *cunila*: “a plant, a species of origanum” | yes |
+| STRAWBERRY, THE TAMNUS, AND THE BUTCHER’S BROOM | pliny | *Bromus catharticus* | `english_word_spelling_match` | the English word 'broom' (butcher's broom) was spelling-matched to Bromus (a grass) | — | yes |
 
 ## Flagged for review (not changed automatically)
 

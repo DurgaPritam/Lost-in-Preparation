@@ -1,0 +1,506 @@
+{
+  "rule": "resolver v3 footnote rule (hedged / contradicted / competing-authority footnote binomials are not used as identifications; the name is disputed)",
+  "approvedBefore": [
+    "Pastinaca sativa",
+    "Artemisia absinthium",
+    "Galium aparine",
+    "Hyoscyamus niger",
+    "Ajuga chamaepitys",
+    "Filipendula ulmaria",
+    "Humulus lupulus",
+    "Papaver somniferum",
+    "Betonica officinalis",
+    "Hyssopus officinalis",
+    "Symphytum officinale",
+    "Agrimonia eupatoria",
+    "Crocus sativus",
+    "Lavandula angustifolia",
+    "Allium cepa",
+    "Chelidonium majus",
+    "Raphanus sativus",
+    "Salvia sclarea",
+    "Coriandrum sativum",
+    "Carum carvi",
+    "Citrullus colocynthis",
+    "Ranunculus ficaria",
+    "Glycyrrhiza glabra"
+  ],
+  "species": {
+    "Pastinaca sativa": {
+      "countedBefore": [
+        "culpeper-1652:parsnip",
+        "pliny-nh:b22:c037:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:parsnip"
+      ],
+      "lost": {
+        "pliny-nh:b22:c037:n0": {
+          "nameAsWritten": "ELAPHOBOSCON",
+          "nowTop1": "Pastinaca sativa",
+          "nowDisputed": true,
+          "nowConfidence": 0.857,
+          "triggers": [
+            {
+              "footnote": "pliny-nh-bohn-v4:fn2648",
+              "binomial": "Pastinaca sativa",
+              "species": "Pastinaca sativa",
+              "trigger": "competing authorities: Desfontaines, Fée, Sprengel"
+            },
+            {
+              "footnote": "pliny-nh-bohn-v4:fn2648",
+              "binomial": "Sium sisarum",
+              "species": "Sium sisarum",
+              "trigger": "competing authorities: Desfontaines, Fée, Sprengel"
+            }
+          ]
+        }
+      },
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 2.0,
+      "eligibleAfter": false,
+      "resolutionChanged": true,
+      "flagForReReview": true
+    },
+    "Artemisia absinthium": {
+      "countedBefore": [
+        "culpeper-1652:wormwood",
+        "pliny-nh:b27:c028:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:wormwood",
+        "pliny-nh:b27:c028:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 12.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Galium aparine": {
+      "countedBefore": [
+        "culpeper-1652:cleavers-or-goosgrass",
+        "pliny-nh:b24:c116:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:cleavers-or-goosgrass",
+        "pliny-nh:b24:c116:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Hyoscyamus niger": {
+      "countedBefore": [
+        "culpeper-1652:henbane"
+      ],
+      "countedAfter": [
+        "culpeper-1652:henbane"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 6.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Ajuga chamaepitys": {
+      "countedBefore": [
+        "culpeper-1652:ground-pine-or-chamepitys",
+        "pliny-nh:b24:c020:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:ground-pine-or-chamepitys",
+        "pliny-nh:b24:c020:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 4.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Filipendula ulmaria": {
+      "countedBefore": [
+        "culpeper-1652:queen-of-the-meadows-meadow-sweet-or-mead-sweet"
+      ],
+      "countedAfter": [
+        "culpeper-1652:queen-of-the-meadows-meadow-sweet-or-mead-sweet"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Humulus lupulus": {
+      "countedBefore": [
+        "culpeper-1652:hops"
+      ],
+      "countedAfter": [
+        "culpeper-1652:hops"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Papaver somniferum": {
+      "countedBefore": [
+        "pliny-nh:b20:c076:n0",
+        "pliny-nh:b20:c076:n1"
+      ],
+      "countedAfter": [
+        "pliny-nh:b20:c076:n0",
+        "pliny-nh:b20:c076:n1"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.3,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Betonica officinalis": {
+      "countedBefore": [
+        "culpeper-1652:wood-betony"
+      ],
+      "countedAfter": [
+        "culpeper-1652:wood-betony"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Hyssopus officinalis": {
+      "countedBefore": [
+        "culpeper-1652:hysop",
+        "pliny-nh:b25:c087:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:hysop"
+      ],
+      "lost": {
+        "pliny-nh:b25:c087:n0": {
+          "nameAsWritten": "HYSSOP",
+          "nowTop1": "Hyssopus officinalis",
+          "nowDisputed": true,
+          "nowConfidence": 0.774,
+          "triggers": [
+            {
+              "footnote": "pliny-nh-bohn-v5:fn835",
+              "binomial": "Teuerium pseudo",
+              "species": null,
+              "trigger": "competing authorities: Fée, Littré"
+            },
+            {
+              "footnote": "pliny-nh-bohn-v5:fn835",
+              "binomial": "Thymbra verticillata",
+              "species": "Thymbra spicata",
+              "trigger": "competing authorities: Fée, Littré"
+            },
+            {
+              "footnote": "pliny-nh-bohn-v5:fn835",
+              "binomial": "Thymbra spicata",
+              "species": "Thymbra spicata",
+              "trigger": "inclined"
+            },
+            {
+              "footnote": "pliny-nh-bohn-v5:fn835",
+              "binomial": "Garden hyssop",
+              "species": null,
+              "trigger": "inclined"
+            },
+            {
+              "footnote": "pliny-nh-bohn-v5:fn835",
+              "binomial": "Hyssopus officinalis",
+              "species": "Hyssopus officinalis",
+              "trigger": "inclined"
+            }
+          ]
+        }
+      },
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 2.0,
+      "eligibleAfter": false,
+      "resolutionChanged": true,
+      "flagForReReview": true
+    },
+    "Symphytum officinale": {
+      "countedBefore": [
+        "culpeper-1652:comfry"
+      ],
+      "countedAfter": [
+        "culpeper-1652:comfry"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 2.0,
+      "eligibleAfter": false,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Agrimonia eupatoria": {
+      "countedBefore": [
+        "culpeper-1652:agrimony",
+        "pliny-nh:b25:c029:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:agrimony"
+      ],
+      "lost": {
+        "pliny-nh:b25:c029:n0": {
+          "nameAsWritten": "EUPATORIA",
+          "nowTop1": "Agrimonia eupatoria",
+          "nowDisputed": true,
+          "nowConfidence": 0.9,
+          "triggers": [
+            {
+              "footnote": "pliny-nh-bohn-v5:fn637",
+              "binomial": "Desfontaines identify",
+              "species": null,
+              "trigger": "competing authorities: Desfontaines, Fée, Sprengel"
+            },
+            {
+              "footnote": "pliny-nh-bohn-v5:fn637",
+              "binomial": "Agrimonia eupatorium",
+              "species": "Agrimonia pilosa",
+              "trigger": "competing authorities: Desfontaines, Fée, Sprengel"
+            },
+            {
+              "footnote": "pliny-nh-bohn-v5:fn637",
+              "binomial": "Eupatorium cannabinum",
+              "species": "Eupatorium cannabinum",
+              "trigger": "competing authorities: Desfontaines, Fée, Sprengel"
+            }
+          ]
+        }
+      },
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 5.0,
+      "eligibleAfter": true,
+      "resolutionChanged": true,
+      "flagForReReview": true
+    },
+    "Crocus sativus": {
+      "countedBefore": [
+        "culpeper-1652:saffron",
+        "pliny-nh:b21:c017:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:saffron",
+        "pliny-nh:b21:c017:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 5.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Lavandula angustifolia": {
+      "countedBefore": [
+        "culpeper-1652:lavender"
+      ],
+      "countedAfter": [
+        "culpeper-1652:lavender"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": false,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Allium cepa": {
+      "countedBefore": [
+        "culpeper-1652:onions"
+      ],
+      "countedAfter": [
+        "culpeper-1652:onions"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Chelidonium majus": {
+      "countedBefore": [
+        "culpeper-1652:celandine"
+      ],
+      "countedAfter": [
+        "culpeper-1652:celandine"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 7.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Raphanus sativus": {
+      "countedBefore": [
+        "pliny-nh:b20:c013:n0"
+      ],
+      "countedAfter": [
+        "pliny-nh:b20:c013:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 5.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Salvia sclarea": {
+      "countedBefore": [
+        "culpeper-1652:clary"
+      ],
+      "countedAfter": [
+        "culpeper-1652:clary"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 4.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Coriandrum sativum": {
+      "countedBefore": [
+        "pliny-nh:b20:c082:n0"
+      ],
+      "countedAfter": [
+        "pliny-nh:b20:c082:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Carum carvi": {
+      "countedBefore": [
+        "culpeper-1652:caraway"
+      ],
+      "countedAfter": [
+        "culpeper-1652:caraway"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Citrullus colocynthis": {
+      "countedBefore": [
+        "pliny-nh:b20:c008:n0"
+      ],
+      "countedAfter": [
+        "pliny-nh:b20:c008:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Ranunculus ficaria": {
+      "countedBefore": [
+        "culpeper-1652:the-iesser-celondine-usually-known-by-the-name-of-pilewort",
+        "pliny-nh:b25:c050:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:the-iesser-celondine-usually-known-by-the-name-of-pilewort",
+        "pliny-nh:b25:c050:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 4.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    },
+    "Glycyrrhiza glabra": {
+      "countedBefore": [
+        "culpeper-1652:liquoris",
+        "pliny-nh:b22:c011:n0"
+      ],
+      "countedAfter": [
+        "culpeper-1652:liquoris",
+        "pliny-nh:b22:c011:n0"
+      ],
+      "lost": {},
+      "gained": [],
+      "confidenceShifts": {},
+      "attestationAfter": 3.0,
+      "eligibleAfter": true,
+      "resolutionChanged": false,
+      "flagForReReview": false
+    }
+  },
+  "flagged": [
+    "Pastinaca sativa",
+    "Hyssopus officinalis",
+    "Agrimonia eupatoria"
+  ],
+  "unchanged": [
+    "Artemisia absinthium",
+    "Galium aparine",
+    "Hyoscyamus niger",
+    "Ajuga chamaepitys",
+    "Filipendula ulmaria",
+    "Humulus lupulus",
+    "Papaver somniferum",
+    "Betonica officinalis",
+    "Symphytum officinale",
+    "Crocus sativus",
+    "Lavandula angustifolia",
+    "Allium cepa",
+    "Chelidonium majus",
+    "Raphanus sativus",
+    "Salvia sclarea",
+    "Coriandrum sativum",
+    "Carum carvi",
+    "Citrullus colocynthis",
+    "Ranunculus ficaria",
+    "Glycyrrhiza glabra"
+  ]
+}

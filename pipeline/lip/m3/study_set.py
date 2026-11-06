@@ -25,6 +25,7 @@ from ..paths import INTERIM, ROOT
 OUT_CSV = INTERIM / "m3" / "study_set_proposal.csv"
 EXCLUSIONS = ROOT / "config" / "study_set_exclusions.csv"  # species removed by a recorded human decision
 NAME_EXCLUSIONS = ROOT / "config" / "name_entry_exclusions.csv"  # name entries a reviewer removed from a species
+PASSAGE_EXCLUSIONS = ROOT / "config" / "passage_exclusions.csv"  # passages a reviewer removed from a species
 DECISIONS = ROOT / "config" / "study_set_review_decisions.csv"  # the project lead's review (approve / unsure / reject)
 OUT_MD = ROOT / "docs" / "STUDY_SET_PROPOSAL.md"
 SIZE = 40
@@ -40,7 +41,21 @@ def build() -> pd.DataFrame:
     # name entries a reviewer removed from a species (config/name_entry_exclusions.csv): neither count nor veto
     nx = pd.read_csv(NAME_EXCLUSIONS) if NAME_EXCLUSIONS.exists() else pd.DataFrame(columns=["nameId", "species"])
     drop = set(zip(nx.nameId, nx.species))
-    top = top[[(n, a) not in drop for n, a in zip(top.nameId, top.acceptedName)]]
+    top = top[[(n, a) not in drop for n, a in zip(top.nameId, top.acceptedName)]].copy()
+    # passages a reviewer removed from a species (config/passage_exclusions.csv): subtract them from the proxy
+    px = pd.read_csv(PASSAGE_EXCLUSIONS) if PASSAGE_EXCLUSIONS.exists() else pd.DataFrame(columns=["passageId", "species"])
+    if len(px):
+        pas = pd.read_parquet(INTERIM / "passages.parquet").set_index("passage_id")
+        for r in px.itertuples():
+            q = pas.loc[r.passageId]
+            if r.passageId.startswith("culpeper-1652:"):
+                nid, counts = f"culpeper-1652:{q.entry_slug}", q.subsection == "vertues and use"
+            else:
+                nid, counts = None, q.passage_type == "body"
+            m = (top.acceptedName == r.species) & ((top.nameId == nid) if nid else top.nameId.str.startswith(
+                "pliny-nh:" + ":".join(r.passageId.split(":")[1:3]) + ":"))
+            if counts:
+                top.loc[m, "attest"] = (top.loc[m, "attest"] - 1 / top.loc[m, "namesInEntry"].clip(lower=1)).clip(lower=0)
     # only undisputed, confident name resolutions count as attestations (disputed names neither count nor veto)
     top = top[(~top.disputed) & (top.confidence >= MIN_CONF)]
     g = top.groupby("acceptedName").agg(
@@ -77,9 +92,14 @@ def build() -> pd.DataFrame:
     dmap = dict(zip(d.species, d.decision))
     g["reviewDecision"] = g.acceptedName.map(dmap).fillna("")
     g["approved"] = g.reviewDecision.map({"approve": "yes", "unsure": "no", "reject": "no"}).fillna("")  # unsure counts as reject
-    g["headline"] = g.proposed & (g.approved == "yes")
+    cond = dict(zip(d.species, d.get("headline", pd.Series([""] * len(d))))) if len(d) else {}
+    g["conditionalApproval"] = g.acceptedName.map(cond).fillna("") == "conditional"
+    g.loc[g.conditionalApproval & ~g.eligible, "approved"] = "no"  # condition (at least 3 attestations) not met
+    from ..m2.rule_changes import flagged_species
+    g["pendingReReview"] = g.acceptedName.isin(flagged_species())  # resolution changed by the v3 footnote rule
+    g["headline"] = g.proposed & (g.approved == "yes") & ~g.pendingReReview
     fixed = set(nx.species)
-    g["reReviewRequested"] = g.acceptedName.isin(fixed) & g.reviewDecision.isin(["unsure", "reject"])
+    g["reReviewRequested"] = (g.acceptedName.isin(fixed) & g.reviewDecision.isin(["unsure", "reject"])) | g.pendingReReview
     return g
 
 
@@ -101,7 +121,10 @@ def main() -> str:
         "mark decisions in the `approved` column of the CSV.",
         "",
         f"**{len(p)} species proposed** out of {int(g.eligible.sum())} eligible and {len(g)} resolved. "
-        f"**Headline set: {int(g.headline.sum())} species approved** by the project lead (`config/study_set_review_decisions.csv`; unsure counts as reject).",
+        f"**Headline set: {int(g.headline.sum())} species** approved by the project lead and unchanged since review "
+        f"(`config/study_set_review_decisions.csv`; unsure counts as reject). "
+        + (f"Pending re-review after the v3 footnote rule changed their resolution: "
+           + ", ".join(f"*{x}*" for x in g[g.pendingReReview].acceptedName) + "." if g.pendingReReview.any() else ""),
         *([f"Name entries removed by the reviewer (`config/name_entry_exclusions.csv`): "
            + "; ".join(f"{r.nameAsWritten} from *{r.species}* ({r.reviewerNote})" for r in nx.itertuples())] if len(nx) else []),
         "",
