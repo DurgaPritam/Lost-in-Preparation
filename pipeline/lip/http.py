@@ -8,6 +8,7 @@ from __future__ import annotations
 import hashlib
 import http.client
 import json
+import os
 import ssl
 import threading
 import time
@@ -51,6 +52,12 @@ class HTTPError(RuntimeError):
     pass
 
 
+def _cache_only(service: str, key: str) -> None:
+    """LIP_CACHE_ONLY=1 (see lip/__init__.py): a cache miss fails at once, without retries or a network attempt."""
+    if os.environ.get("LIP_CACHE_ONLY", "").lower() in ("1", "true", "yes"):
+        raise HTTPError(f"LIP_CACHE_ONLY=1: {service} response not cached: {key[:200]}")
+
+
 def _path(service: str, key: str):
     return CACHE / service / f"{hashlib.sha256(key.encode()).hexdigest()[:32]}.json"
 
@@ -64,6 +71,7 @@ def get_json(service: str, url: str, params: dict | None = None, data: dict | No
     cp = _path(service, key)
     if cp.exists():
         return json.loads(cp.read_text())["response"]
+    _cache_only(service, key)
     sem = _locks.setdefault(service, threading.Semaphore(LIMITS.get(service, 2)))
     body = urllib.parse.urlencode(data).encode() if data else None
     hdrs = {"User-Agent": USER_AGENT, "Accept": "application/json", **(headers or {})}
@@ -109,6 +117,7 @@ def get_text(service: str, url: str, retries: int = 3) -> tuple[str, str, str]:
     if cp.exists():
         d = json.loads(cp.read_text())
         return d["text"], d["sha256"], d["retrievedAt"]
+    _cache_only(service, url)
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     last = None
     for attempt in range(retries + 1):
@@ -142,6 +151,7 @@ def get_pdf_text(service: str, url: str, retries: int = 5) -> tuple[str, str, st
         meta = json.loads(cp.read_text())
         raw = pdf.read_bytes()
     else:
+        _cache_only(service, url)
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         last = None
         for attempt in range(retries + 1):
