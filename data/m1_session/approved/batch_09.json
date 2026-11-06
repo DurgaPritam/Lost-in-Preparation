@@ -1,0 +1,247 @@
+{
+ "batch": 9,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1652:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:010": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:saffron:001": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:saffron:003": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:wormwood:002": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:wormwood:003": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:wormwood:006": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:wormwood:008": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:wormwood:009": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:saffron:005": {
+   "recipes": [
+    {
+     "recipeQuote": "you need not demand a reason why it strengthens the heart so exceedingly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Saffron",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Saffron",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "strengthens the heart so exceedingly",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "It quicken the Brain, for the Sun is exalted in V as well as he hath his House in SL it help Consumption of the Lungs, help difficulty of breathing: it is an excellent thing in Epidemical Diseases, as Pestilences, smal Pox, and Measles: It is a notable expulsive Medicine, and a notable Remedy for the yellow Jaundice",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Saffron",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Saffron",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "It quicken the Brain, for the Sun is exalted in V as well as he hath his House in SL it help Consumption of the Lungs, help difficulty of breathing: it is an excellent thing in Epidemical Diseases, as Pestilences, smal Pox, and Measles: It is a notable expulsive Medicine, and a notable Remedy for the yellow Jaundice",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "the Roots of all Crocus both white and yellow purge Flegm as Hermodactils do",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Crocus",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Crocus",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "purge Flegm",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Roots of all Crocus"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:wormwood:004": {
+   "recipes": [
+    {
+     "recipeQuote": "The Seed of this Wormwood is that which usually Women give their Children for the Worms",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Seriphium",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Seriphium",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "for the Worms",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Seed of this Wormwood"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Seeds of the common Wormwood are far more prevalent than the Seed of this, to expell Worms in Children, or People of ripe age",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "common Wormwood",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "common Wormwood",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to expell Worms in Children, or People of ripe age",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Seeds of the common Wormwood"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "If the Liver be weak and cannot make Blood enonough (I would have said [Sanguifie] if I had written only to Schollers) The Seriphian which is the weakest of Wormwoods is better than the best",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Seriphian",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Seriphian",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "If the Liver be weak and cannot make Blood enonough",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  }
+ }
+}
