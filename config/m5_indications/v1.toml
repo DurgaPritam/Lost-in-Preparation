@@ -1,0 +1,89 @@
+# M5 indication lexicon, version 1 (2026-11-06): historical indication wording -> MeSH descriptor.
+#
+# HEURISTIC. Used by pipeline/lip/m5/pairs.py to turn a recipe's verbatim indication (indicationAsWritten) into one
+# or more MeSH descriptors, which define the species–indication pairs of the Phase 5 audit and the PubMed queries.
+# - Keys are MeSH descriptor names. The MeSH unique ID of every key is looked up live in NCBI's MeSH database
+#   (E-utilities, db=mesh) and cached; a key not found exactly is dropped and reported, never guessed.
+# - Values are case-insensitive regular expressions over the historical wording. One indication can map to several
+#   descriptors (a list of conditions). Wording that matches nothing is left unmapped and counted, not forced.
+# - Historical terms do not equal modern diagnoses ("ague" is not a diagnosis of malaria; Culpeper's "cancers" are
+#   usually ulcers and are mapped to Skin Ulcer, not Neoplasms). The mapping only chooses which modern literature to
+#   audit; it never asserts that a remedy treats the modern condition.
+# Changes: never edit a published version; copy to v2.toml and record the change below.
+
+version = "v1"
+
+[descriptors]
+"Jaundice" = ['\bjaundice\b']
+"Cough" = ['\bcoughs?\b']
+"Helminthiasis" = ['\bworms?\b(?!\s+in the ears)']
+"Lice Infestations" = ['\blice\b', '\bphthiriasis\b']
+"Urinary Calculi" = ['\bstone\b', '\bgravel\b', '\bcalculi\b']
+"Diuresis" = ['\bdiuretic\b', '\bprovoke(?:s|th)? urin', '\bexpel(?:s|leth)? urin', '\bpiss\b', '\bprovoke urine\b']
+"Urination Disorders" = ['\bstrangu?a?ry\b', '\bheat of urine\b', '\bbloody water', '\btroubled,? or bloody water']
+"Menstruation Disturbances" = ['\bcourses\b', '\bterms\b', '\bcatamenia\b', '\bmenstru', '\bemmenagogue\b']
+"Leukorrhea" = ['\bwhites\b']
+"Edema" = ['\bdrops(?:y|ie|ies)\b', '\bdropsical\b']
+"Gout" = ['\bgouts?\b']
+"Sciatica" = ['\bsciatica\b']
+"Toothache" = ['\btooth-?ache\b', '\btoothach\b', '\bteeth that a?ke?\b', '\bteeth that ach\b', '\baching,? hollow\b', '\btooth\b']
+"Snake Bites" = ['\bserpents?\b', '\badders?\b', '\bvipers?\b', '\bcerastes\b', '\bamphisb']
+"Scorpion Stings" = ['\bscorpions?\b']
+"Bites and Stings" = ['\brats and mice\b', '\bmad dogs?\b', '\bwasp\b', '\bhornet\b', '\bsting-ray\b', '\bvenomous creatures?\b', '\bshrew-mouse\b', '\bsea-dragon\b']
+"Liver Diseases" = ['\blivers?\b']
+"Splenic Diseases" = ['\bspleen\b']
+"Eye Diseases" = ['\beyes?\b', '\beye-?sight\b', '\bsight\b', '\bpin and web\b']
+"Headache" = ['\bhead-?ache\b', '\bpains? in (?:the|their) heads?\b', '\bheadach\b']
+"Sleep Initiation and Maintenance Disorders" = ['\bsleep\b', '\bsoporific\b']
+"Colic" = ['\bcholl?ick?\b', '\bcolic\b', '\bgriping\b']
+"Flatulence" = ['\bwind\b', '\bflatulen', '\bwindy\b']
+"Diarrhea" = ['\bflux(?:es)? of the belly\b', '\blasks?\b', '\bfluxes\b', '\bc(?:œ|oe)liac\b']
+"Dysentery" = ['\bdysentery\b', '\bbloody[- ]flu']
+"Constipation" = ['\bloosen the belly\b', '\bopen(?:s|eth)? the belly\b', '\bpurg(?:es|eth) the belly\b', '\bopens the body\b', '\bpurgative\b']
+"Hemorrhoids" = ['\bpiles\b', '\bh(?:æ|ae|e)morrhoids\b']
+"Tuberculosis, Lymph Node" = ["\\bking[’']?s evil\\b", '\bkings evil\b', '\bscrofula\b']
+"Pruritus" = ['\bitch\b', '\bitchings?\b', '\bprurigo\b']
+"Tinea" = ['\bring-?worms?\b', '\btetters\b']
+"Skin Ulcer" = ['\bulcers?\b', '\bsores?\b', '\bcancers\b', '\bcankers\b', '\bcarcinomatous\b']
+"Wounds and Injuries" = ['\bwounds?\b', '\bsplinters\b', '\bthorns\b']
+"Contusions" = ['\bbruises?\b', '\bblack and blue\b']
+"Plague" = ['\bplague\b', '\bpestilence\b']
+"Poisoning" = ['\bpo[iy]son', '\bvenom\b', '\bsurfeit of mushrooms\b', '\bfungi\b', '\bhemlock\b', '\btaken henbane\b', '\bmistletoe\b', '\bviscus\b']
+"Fever" = ['\bfevers?\b', '\bagues?\b', '\bquartan\b', '\btertian\b', '\bquotidian\b', '\bfeavers\b']
+"Dyspepsia" = ['\bdigest', '\bcrudities\b', '\bstoma(?:ch|ck)s?\b', '\bqualmishness\b']
+"Nausea" = ['\bnausea\b']
+"Vomiting" = ['\bvomit']
+"Asthma" = ['\basthma', '\bwhee?[sz]ings?\b', '\bshortness of breath\b', '\bdifficulty of breathing\b']
+"Lung Diseases" = ['\blungs?\b', '\blungues\b', '\bphthisic\b', '\bconsumptions?\b']
+"Epilepsy" = ['\bfalling[- ]sickness\b', '\bepilepsy\b']
+"Paralysis" = ['\bpals(?:y|ies|ey)\b', '\bpalsie\b', '\bparalysis\b']
+"Hemorrhage" = ['\bbleeding', '\bh(?:æ|ae|e)morrhage\b', '\bspit(?:ting)? (?:of )?blood\b', '\bstanches the blood\b', '\bstayeth the bleeding\b']
+"Inflammation" = ['\binflamm?ations?\b']
+"Abscess" = ['\babscess', '\bimposthum', '\bimpostum', '\bgatherings\b', '\bboils\b', '\bboyls\b', '\bfelons\b', '\bcarbuncles\b', '\bapostemata\b', '\bsuppurations?\b']
+"Warts" = ['\bwarts\b']
+"Alopecia" = ['\balopec', '\bhair (?:falls|falling|from falling)', '\bhair grow\b', '\bloss of the hair\b']
+"Kidney Diseases" = ['\bkidneys?\b', '\breins\b']
+"Labor, Obstetric" = ['\bdelivery\b', '\bchild-?birth\b', '\bafter-?birth\b', '\bdead (?:child|f(?:œ|oe)?tus)\b']
+"Lactation" = ['\bincreasing the milk\b', '\bsuckling\b']
+"Aphrodisiacs" = ['\bvenery\b', '\baphrodisiac\b', '\bsperm\b']
+"Ear Diseases" = ['\bears?\b', '\bdeafness\b', '\bhearing\b', '\bear-?ache\b']
+"Hernia" = ['\bruptures?\b', '\bbursten\b', '\bhernia\b']
+"Low Back Pain" = ['\blumbago\b', '\bweak backs?\b', '\bpains? in the back\b']
+"Depression" = ['\bmelancholy\b']
+"Lethargy" = ['\blethargy\b', '\blethargic\b']
+"Sweating" = ['\bsudorific\b']
+"Hoarseness" = ['\bhoar[cs]eness\b']
+"Burns" = ['\bburns?\b', '\bburning by fire\b', '\bscalding\b']
+"Skin Diseases" = ['\bblemishes\b', '\bspots\b', '\bdiscolou?rings?\b', '\bmorphew\b', '\bbreakings?-?out\b']
+"Halitosis" = ['\bstinking br']
+"Pharyngeal Diseases" = ['\bthroat\b', '\bquinz?s?y\b']
+"Alcoholic Intoxication" = ['\bsurfe(?:i|)t by drinking\b']
+"Chilblains" = ['\bchilblains\b', '\bkibes\b']
+"Infections" = ['\binfection\b']
+"Abortifacient Agents" = ['\babortion\b']
+"Elephantiasis" = ['\belephantiasis\b']
+"Tooth Mobility" = ['\bloose teeth\b', '\bloose tooth\b', '\bloos tooth\b']
+"Motion Sickness" = ['\bsea sickness\b', '\bsea-sickness\b']
+
+# CHANGELOG
+# v1 (2026-11-06): first version.
