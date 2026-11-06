@@ -1,0 +1,1041 @@
+{
+ "batch": 4,
+ "scope": "sample",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "pliny-nh:b20:c003:001": {
+   "recipes": []
+  },
+  "pliny-nh:b20:c013:003": {
+   "recipes": [
+    {
+     "recipeQuote": "Radishes are good, too, for curing ulcerations of the intestines and suppurations of the thoracic organs, if eaten with honey",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "ulcerations of the intestines and suppurations of the thoracic organs",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "eaten with honey"
+      },
+      {
+       "field": "form",
+       "quote": "if eaten with honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "they should be boiled in earth and water; a decoction which, according to them, promotes the menstrual discharge",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "earth",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "promotes the menstrual discharge",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "boiled in earth and water"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled in earth and water"
+      },
+      {
+       "field": "process",
+       "quote": "a decoction"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken with vinegar or honey, radishes expel worms from the intestines",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar",
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "expel worms from the intestines",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Taken with vinegar or honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "a decoction of them boiled down to one-third, taken in wine, is good for intestinal hernia",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "boiled down to one-third",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "intestinal hernia",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "taken in wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled down to one-third"
+      },
+      {
+       "field": "process",
+       "quote": "a decoction of them"
+      },
+      {
+       "field": "form",
+       "quote": "taken in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Medius recommends them to be given boiled to persons troubled with spitting of blood, and to women who are suckling, for the purpose of increasing the milk",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "persons troubled with spitting of blood, and to women who are suckling, for the purpose of increasing the milk",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "given boiled"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Hippocrates recommends females whose hair falls off, to rub the head with radishes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "females whose hair falls off",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "to rub the head with radishes"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "for pains of the uterus, they should be applied to the navel",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radishes",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radishes",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "pains of the uterus",
+     "evidence": [
+      {
+       "field": "filtered",
+       "quote": "applied to the navel"
+      },
+      {
+       "field": "form",
+       "quote": "applied to the navel"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c099:002": {
+   "recipes": [
+    {
+     "recipeQuote": "This plant, gathered before it blossoms, and beaten up and subjected to pressure, produces a juice, which, applied to the head, makes the hair grow again when it has fallen off through alopecy",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "SCOLYMOS",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "SCOLYMOS",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "other",
+     "indicationAsWritten": "makes the hair grow again when it has fallen off through alopecy",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "produces a juice"
+      },
+      {
+       "field": "heat",
+       "quote": "beaten up and subjected to pressure"
+      },
+      {
+       "field": "process",
+       "quote": "subjected to pressure, produces a juice"
+      },
+      {
+       "field": "form",
+       "quote": "applied to the head"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It strengthens the stomach also, and if we are to believe what is said, has some influence upon the womb in promoting the conception of male offspring",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "SCOLYMOS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "SCOLYMOS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "strengthens the stomach also, and if we are to believe what is said, has some influence upon the womb in promoting the conception of male offspring",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The thin juice, like mastich, which exudes from these plants, imparts sweetness to the breath",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "SCOLYMOS",
+       "part": "resin",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "SCOLYMOS",
+     "part": "resin",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "imparts sweetness to the breath",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The thin juice, like mastich, which exudes from these plants"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b21:c018:001": {
+   "recipes": []
+  },
+  "pliny-nh:b21:c047:001": {
+   "recipes": []
+  },
+  "pliny-nh:b22:c056:001": {
+   "recipes": []
+  },
+  "pliny-nh:b22:c071:001": {
+   "recipes": [
+    {
+     "recipeQuote": "This plant acts as an emmenagogue and a diuretic: and it affords a remedy for wounds inflicted by the sting-ray",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "elelisphacos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "elelisphacos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "acts as an emmenagogue and a diuretic: and it affords a remedy for wounds inflicted by the sting-ray",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "It is taken in drink with wormwood for dysentery",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "elelisphacos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "elelisphacos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "dysentery",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "taken in drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "employed with wine it accelerates the catamenia when retarded",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "elelisphacos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "elelisphacos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "accelerates the catamenia when retarded",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "employed with wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "a decoction of it having the effect of arresting them when in excess",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "elelisphacos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "elelisphacos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "arresting them when in excess",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "a decoction of it"
+      },
+      {
+       "field": "process",
+       "quote": "a decoction of it"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the plant, applied by itself, stanches the blood of wounds",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "elelisphacos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "elelisphacos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "stanches the blood of wounds",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "applied by itself"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied by itself"
+      },
+      {
+       "field": "form",
+       "quote": "the plant, applied by itself"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is a cure, too, for the stings of serpents",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "elelisphacos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "elelisphacos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the stings of serpents",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "a decoction of it in wine allays prurigo of the testes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "elelisphacos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "elelisphacos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "allays prurigo of the testes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "a decoction of it in wine"
+      },
+      {
+       "field": "heat",
+       "quote": "a decoction of it in wine"
+      },
+      {
+       "field": "process",
+       "quote": "a decoction of it in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b23:c057:001": {
+   "recipes": [
+    {
+     "recipeQuote": "They have an astringent effect upon the stomach and bowels, provided they are taken in moderation",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "pomegranate",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "pomegranate",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "an astringent effect upon the stomach and bowels",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "pliny-nh:b23:c070:001": {
+   "recipes": [
+    {
+     "recipeQuote": "This juice is an antidote to the venom of serpents, is good for dysentery, disperses inflamed tumours and all kinds of gatherings, heals wounds, and allays both head-ache and ear-ache",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "mulberry-trees",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "mulberry-trees",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "an antidote to the venom of serpents, is good for dysentery, disperses inflamed tumours and all kinds of gatherings, heals wounds, and allays both head-ache and ear-ache",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "This juice"
+      },
+      {
+       "field": "process",
+       "quote": "if the outer bark is peeled off, they emit a great abundance of juice"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it is taken in drink for affections of the spleen",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "mulberry-trees",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "mulberry-trees",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "drink",
+     "indicationAsWritten": "affections of the spleen",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "This juice"
+      },
+      {
+       "field": "process",
+       "quote": "if the outer bark is peeled off, they emit a great abundance of juice"
+      },
+      {
+       "field": "form",
+       "quote": "taken in drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "is used as a liniment for the same purpose, as also for fits of shivering",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "mulberry-trees",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "mulberry-trees",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "ointment",
+     "indicationAsWritten": "fits of shivering",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "This juice"
+      },
+      {
+       "field": "process",
+       "quote": "if the outer bark is peeled off, they emit a great abundance of juice"
+      },
+      {
+       "field": "form",
+       "quote": "used as a liniment"
+      },
+      {
+       "field": "filtered",
+       "quote": "used as a liniment"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b24:c007:001": {
+   "recipes": [
+    {
+     "recipeQuote": "The round excrescences which grow on the robur * * * and mixed with bear’s grease, are remedial in cases of loss of the hair by alopecy",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "robur",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "robur",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "loss of the hair by alopecy",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The round excrescences"
+      },
+      {
+       "field": "solvent",
+       "quote": "mixed with bear’s grease"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
