@@ -14,6 +14,7 @@
   python -m lip m2 eval                  top-1 / top-3 vs human identifications (+ provisional vs AI drafts)
   python -m lip m3 compounds             LOTUS (Wikidata) compounds per species, RDKit-standardised
   python -m lip m3 studyset              study-set proposal table for human approval
+  python -m lip m3 review                study-set review sheet -> docs/STUDY_SET_REVIEW.csv / .md
   python -m lip m4 validate-logp         RDKit vs GFN2-xTB logP against experiment (needs .tools/xtb-env)
   python -m lip m4 water-calibration     cold-water likelihood vs logP diagnostic (no model change)
   python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
@@ -124,6 +125,10 @@ def main(argv: list[str]) -> int:
             print(json.dumps(compounds.main(), indent=2))
         elif sub == "studyset":
             print(study_set.main())
+        elif sub == "review":
+            from .m3 import review_sheet
+            d = review_sheet.build()
+            print(f"wrote {review_sheet.OUT_CSV.name} and {review_sheet.OUT_MD.name}: {len(d)} species")
     elif cmd == "results":
         from . import results
         print(results.build())
