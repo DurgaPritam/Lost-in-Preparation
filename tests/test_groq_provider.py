@@ -131,3 +131,26 @@ def test_no_key_like_string_in_tracked_files():
         except (UnicodeDecodeError, FileNotFoundError, IsADirectoryError):
             continue
         assert not P.KEY_PATTERN.search(text), f
+
+
+def test_schema_rejection_goes_to_validation_and_is_cached(env):
+    bad = {"error": {"message": "Generated JSON does not match the expected schema.", "failed_generation": '{"recipes": [1]}'}}
+    p, t, _ = _prov([(200, {}, json.dumps(MODELS)), (400, {}, json.dumps(bad))])
+    p.check()
+    c = p.complete("sys", [{"role": "user", "content": "x"}], SCHEMA)
+    assert c.text == '{"recipes": [1]}' and c.stop == "end"          # the extractor's validator rejects it and retries
+    c2 = p.complete("sys", [{"role": "user", "content": "x"}], SCHEMA)  # cached: not re-sent
+    assert c2.text == c.text and len(t.calls) == 2
+
+
+def test_completion_cap_fits_tpm_and_413_retry(env):
+    hdr = {"x-ratelimit-limit-tokens": "8000"}
+    too_big = {"error": {"message": "Request too large ... on tokens per minute (TPM): Limit 8000, Requested 8511, please reduce"}}
+    p, t, _ = _prov([(200, hdr, json.dumps(MODELS)), (413, hdr, json.dumps(too_big)), (200, hdr, json.dumps(OK))])
+    p.check()
+    p.complete("sys " * 3000, [{"role": "user", "content": "x"}], SCHEMA)
+    first, second = t.calls[1][2], t.calls[2][2]
+    assert first["max_completion_tokens"] < 4096                       # capped to fit 8000 TPM before sending
+    assert second["max_completion_tokens"] == first["max_completion_tokens"] - 511 - 150  # tightened after the 413
+    stored = json.loads(next((env / "responses").glob("*.json")).read_text())
+    assert stored["response"]["_maxCompletionTokensSent"] == second["max_completion_tokens"]

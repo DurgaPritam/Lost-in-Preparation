@@ -1,0 +1,46 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "7bedd5b2c7cd27e872841b40ed1995c6",
+ "retrievedAt": "2026-11-06T06:04:07+00:00",
+ "response": {
+  "id": "chatcmpl-14446204-cb6f-4218-a616-b6ed3de35b2d",
+  "object": "chat.completion",
+  "created": 1793945047,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"recipes\": []\n}",
+     "reasoning": "We need extract recipes. Several.\n\n1. Ointment: \"To every ounce of the Water, ad two drams of May Butter without Salt, and of Sugar and Wax of each as much also, let them boyl gently all together\". That's a preparation with water, May butter, sugar, wax. Principal plant? Water is distilled water (not plant). May butter likely from May? Might be plant? unclear. Probably ingredient is \"May Butter\" maybe plant? but we treat as ingredient. principal? unclear. Might be compound. Indication: wounds and thrusts. So recipe.\n\n2. Tents dipped in the Liquor that remaineth after it is cold, put into wounds... That's using the same water (liquor) as soak. Could be same preparation.\n\n3. Washing ulcers with water and laying on them a green leaf or two... leaf unspecified plant? maybe from same herb? Not clear.\n\n4. Water gargled warm in mouth for throat etc. That's water alone, warm. Indication: Quinsy, King's Evil. So recipe with water only.\n\nWe must quote spans. Provide separate recipes per distinct preparation. Ointment is one. Soak/tent is same liquor but applied as soak; maybe same preparation but different use? It's same liquor after cooling, used as soak. Could be same recipe but different form (ointment vs poultice). Probably separate.\n\nWe'll create three recipes:\n\nRecipe1: Ointment preparation. Quote from \"To every ounce of the Water, ad two drams of May Butter without Salt, and of Sugar and Wax of each as much also, let them boyl gently all together\". Indication: \"very much available against Wounds and Thrusts\". Also later \"approved Medicine\". We'll include that.\n\nFields: recipeType compound (multiple ingredients). ingredients: water (principal? but water is solvent not ingredient). May Butter (plant? unknown kind). Sugar (other). Wax (other). We'll set principal as water? but water is solvent. Probably principal plant is none, but we need plantNameAsWritten. The entry heading is Loos-Strife... not a plant name. No plant named. So principal plant unknown. But we need plantNameAsWritten field; if none, maybe unknown? But schema requires string. Could set empty? Probably unknown not allowed. Might set \"\"? Not sure. Might use \"unknown\". But guidelines: plantNameAsWritten is principal plant verbatim. If none, unknown? Not defined. Might set \"unknown\". We'll set plantNameAsWritten \"unknown\". part unknown.\n\nsolvent: water (since water used as base). heat: boiled (boyl gently). heatText \"boyl gently\". duration unknown. filtered: no (since ingredients remain). process: decoction? boiling mixture -> maybe \"boiling\" qualifies as decoction. We'll set process \"decoction\". form: ointment.\n\nRecipe2: Tents dipped in the Liquor that remaineth after it is cold, put into the Wounds... This uses the same liquor after cooling, applied to wounds with linen cloth. So preparation is same liquor (water with butter etc) but after cooling, used as soak. Form: poultice? maybe \"other\". We'll set form \"other\". solvent water. heat cold (since after it is cold). heatText \"cold\". filtered yes? liquor after boiling then cooled, likely filtered? Not mentioned. We'll set filtered unknown. process unknown. Indication: wounds healing.\n\nRecipe3: Water gargled warm in the Mouth... Quote \"This Water gargled warm in the Mouth\". Preparation: water warmed. Indication: cure Quinsy, King's Evil in the Throat. So recipe type single_plant? No plant. principal water not plant. Might be unknown. We'll still produce.\n\nGiven complexity, maybe better to output empty as no clear plant recipes. But guidelines include non-plant remedies? It says include uses that give no preparation details. But need plantNameAsWritten. If none, maybe can't. Might skip.\n\nI'll output empty."
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "queue_time": 0.376969023,
+   "prompt_tokens": 6332,
+   "prompt_time": 0.02619685,
+   "completion_tokens": 856,
+   "completion_time": 1.9138352730000001,
+   "total_tokens": 7188,
+   "total_time": 1.940032123,
+   "prompt_tokens_details": {
+    "cached_tokens": 5888
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 834
+   }
+  },
+  "usage_breakdown": null,
+  "system_fingerprint": "fp_c868cf1eaa",
+  "x_groq": {
+   "id": "req_01m6qqa288emebrxtakefdnke5",
+   "seed": 0
+  },
+  "service_tier": "on_demand",
+  "_maxCompletionTokensSent": 1024
+ }
+}

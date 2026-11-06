@@ -122,4 +122,4 @@ export PYTHONPATH=pipeline:.
 
 All texts are public domain or CC0; see [docs/DATA_LICENCES.md](docs/DATA_LICENCES.md). Method details are in [METHODS.md](METHODS.md).
 
-**AI disclosure:** recipe extraction uses an LLM (local open-weight model or Claude). The provider, model, model version and prompt version are recorded on every extracted record. Parts of this codebase were written with AI assistance.
+**AI disclosure:** recipe extraction uses an LLM. By default this is `openai/gpt-oss-120b`, an open-weight model hosted by Groq, chosen on 2026-11-06 from Groq's live model list (`data/interim/m1/groq_model_selection.json`). A local open-weight model (`qwen2.5:7b-instruct` via Ollama) was tried first, on the same day. It overloaded the 16 GB development machine and was removed before producing any results. Claude remains an optional provider. The provider, model, model version, selection date and prompt version are recorded on every extracted record, and every model response is cached in the repository. The prompts are in `prompts/m1_extract/`. Parts of this codebase were written with AI assistance.

@@ -1,0 +1,43 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "1b60b639e9b98aaf005434c789bf4937",
+ "retrievedAt": "2026-11-06T05:56:09+00:00",
+ "response": {
+  "id": "chatcmpl-12d6106a-ad70-4877-9290-f9fe66d60110",
+  "object": "chat.completion",
+  "created": 1793944569,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"recipes\": [\n    {\n      \"recipeQuote\": \"The wild Cicers are so much more powerful than the Garden kinds, by how much they exceed them in heat and driness; whereby they do more open Obstructions, break the Stone, and have al the properties of cutting, opening, digesting, and dissolving\",\n      \"recipeType\": \"unknown\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Cich-Peas, or Cicers\",\n          \"part\": \"unknown\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Cich-Peas, or Cicers\",\n      \"part\": \"unknown\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"unknown\"\n      ],\n      \"heat\": \"unknown\",\n      \"heatText\": \"unknown\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"unknown\",\n      \"process\": \"unknown\",\n      \"form\": \"unknown\",\n      \"indicationAsWritten\": \"open Obstructions, break the Stone, and have al the properties of cutting, opening, digesting, and dissolving\",\n      \"evidence\": [],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"recipeType\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"part\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"freshOrDried\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"solvent\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"heat\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"heatText\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"durationText\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"filtered\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"process\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"form\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"indicationAsWritten\",\n          \"confidence\": 0.95\n        },\n        {\n          \"field\": \"plantNameAsWritten\",\n          \"confidence\": 0.99\n        },\n        {\n          \"field\": \"ingredients\",\n          \"confidence\": 0.99\n        }\n      ]\n    }\n  ]\n}",
+     "reasoning": "We need to see if any recipe. It describes wild Cicers properties, no preparation, no indication? It mentions \"open Obstructions, break the Stone...\". That's an indication but no preparation. So include a recipe with unknown prep fields. Plant name from heading. ingredient principal. part unknown. solvent unknown etc. recipeQuote should be the span covering the statement? Probably whole sentence. Include indicationAsWritten as the span of indications. Let's extract.\n\nPassage: \"The wild Cicers are so much more powerful than the Garden kinds, by how much they exceed them in heat and driness; whereby they do more open Obstructions, break the Stone, and have al the properties ...\". Indication: \"open Obstructions, break the Stone, ... cutting, opening, digesting, and dissolving\". We'll take contiguous span covering indications: maybe \"open Obstructions, break the Stone, and have al the properties of cutting, opening, digesting, and dissolving\". Include that.\n\nAll other fields unknown. recipeType unknown? It's a single plant but no preparation, but guidelines: include uses with no preparation; their preparation fields unknown. recipeType? Probably unknown because no preparation. We'll set unknown.\n\nProvide evidence for fields we set: part unknown? need evidence for unknown? Not required. Only need evidence for enum values other than unknown. Since all enum are unknown, no evidence needed. fieldConfidence for each field.\n\nquotesFromHeading includes plantNameAsWritten and ingredients.\n\nReturn JSON."
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "queue_time": 0.164858412,
+   "prompt_tokens": 6083,
+   "prompt_time": 0.258102198,
+   "completion_tokens": 882,
+   "completion_time": 1.873829159,
+   "total_tokens": 6965,
+   "total_time": 2.131931357,
+   "completion_tokens_details": {
+    "reasoning_tokens": 304
+   }
+  },
+  "usage_breakdown": null,
+  "system_fingerprint": "fp_4a7bb72c24",
+  "x_groq": {
+   "id": "req_01m6qpvft9ea3vm94chp8dn9f5",
+   "seed": 0
+  },
+  "service_tier": "on_demand",
+  "_maxCompletionTokensSent": 3435
+ }
+}

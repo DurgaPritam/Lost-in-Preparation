@@ -1,0 +1,33 @@
+{
+ "passageId": "culpeper-1652:herbal:hedg-mustard:008",
+ "recipes": [],
+ "rejections": [
+  {
+   "recipe": null,
+   "errors": [
+    "stop=max_tokens"
+   ]
+  }
+ ],
+ "attempts": 1,
+ "stop": "max_tokens",
+ "usage": {
+  "input_tokens": 6234,
+  "output_tokens": 1024,
+  "reasoning_tokens": 330
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v1:8aadfda9ef"
+}

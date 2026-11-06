@@ -1,0 +1,42 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "b57de22d47e26145dbfcabb482c90be4",
+ "retrievedAt": "2026-11-06T05:53:49+00:00",
+ "response": {
+  "id": "chatcmpl-ec59532f-78d4-4b8a-b3a7-8dbc4835f9a0",
+  "object": "chat.completion",
+  "created": 1793944429,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"recipes\": [\n    {\n      \"recipeQuote\": \"The Garden Chervil being eaten, doth moderately warm the Stomach, and is a certain remedy (saith Tragus) to dissolve congealed or clotted Bloud in the Body, or that which is clotted by bruises, fals, &c.\",\n      \"recipeType\": \"single_plant\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Chervil\",\n          \"part\": \"unknown\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Chervil\",\n      \"part\": \"unknown\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"none\"\n      ],\n      \"heat\": \"unknown\",\n      \"heatText\": \"unknown\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"not_applicable\",\n      \"process\": \"other\",\n      \"form\": \"other\",\n      \"indicationAsWritten\": \"moderately warm the Stomach, and is a certain remedy (saith Tragus) to dissolve congealed or clotted Bloud in the Body, or that which is clotted by bruises, fals, &c.\",\n      \"evidence\": [\n        {\n          \"field\": \"solvent\",\n          \"quote\": \"being eaten\"\n        },\n        {\n          \"field\": \"form\",\n          \"quote\": \"being eaten\"\n        },\n        {\n          \"field\": \"filtered\",\n          \"quote\": \"being eaten\"\n        },\n        {\n          \"field\": \"process\",\n          \"quote\": \"being eaten\"\n        }\n      ],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"solvent\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"form\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"filtered\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"process\",\n          \"confidence\": 0.9\n        }\n      ]\n    },\n    {\n      \"recipeQuote\": \"The Juyce or distilled Water therof being drunk\",\n      \"recipeType\": \"single_plant\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Chervil\",\n          \"part\": \"unknown\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Chervil\",\n      \"part\": \"unknown\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"none\"\n      ],\n      \"heat\": \"unknown\",\n      \"heatText\": \"unknown\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"not_applicable\",\n      \"process\": \"other\",\n      \"form\": \"drink\",\n      \"indicationAsWritten\": \"good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides\",\n      \"evidence\": [\n        {\n          \"field\": \"solvent\",\n          \"quote\": \"being drunk\"\n        },\n        {\n          \"field\": \"form\",\n          \"quote\": \"being drunk\"\n        },\n        {\n          \"field\": \"filtered\",\n          \"quote\": \"being drunk\"\n        },\n        {\n          \"field\": \"process\",\n          \"quote\": \"being drunk\"\n        }\n      ],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"solvent\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"form\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"filtered\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"process\",\n          \"confidence\": 0.9\n        }\n      ]\n    },\n    {\n      \"recipeQuote\": \"the bruised Leavs laid to the place, being taken either in meat or drink\",\n      \"recipeType\": \"single_plant\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Chervil\",\n          \"part\": \"leaf\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Chervil\",\n      \"part\": \"leaf\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"none\"\n      ],\n      \"heat\": \"unknown\",\n      \"heatText\": \"unknown\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"not_applicable\",\n      \"process\": \"other\",\n      \"form\": \"other\",\n      \"indicationAsWritten\": \"good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides\",\n      \"evidence\": [\n        {\n          \"field\": \"part\",\n          \"quote\": \"Leavs\"\n        },\n        {\n          \"field\": \"solvent\",\n          \"quote\": \"being taken either in meat or drink\"\n        },\n        {\n          \"field\": \"form\",\n          \"quote\": \"being taken either in meat or drink\"\n        },\n        {\n          \"field\": \"filtered\",\n          \"quote\": \"being taken either in meat or drink\"\n        },\n        {\n          \"field\": \"process\",\n          \"quote\": \"being taken either in meat or drink\"\n        }\n      ],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"part\",\n          \"confidence\": 0.95\n        },\n        {\n          \"field\": \"solvent\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"form\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"filtered\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"process\",\n          \"confidence\": 0.9\n        }\n      ]\n    }\n  ]\n}",
+     "reasoning": "We need add evidence for process field. Process other needs a quote justifying. Use phrase \"being eaten\" etc. Provide evidence entry. Also need process maybe \"expression\" for juice? For recipe2 juice distilled water being drunk -> process expression? Could be \"distilled\". But we can keep other with evidence \"being drunk\". Provide evidence. Also need solvent maybe \"none\" requires quote? Not required. Add evidence for process. Also filtered maybe not_applicable okay. Provide evidence for process."
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "queue_time": 0.159571135,
+   "prompt_tokens": 7430,
+   "prompt_time": 0.295391146,
+   "completion_tokens": 1447,
+   "completion_time": 3.018854374,
+   "total_tokens": 8877,
+   "total_time": 3.31424552,
+   "completion_tokens_details": {
+    "reasoning_tokens": 102
+   }
+  },
+  "usage_breakdown": null,
+  "system_fingerprint": "fp_69334c0be3",
+  "x_groq": {
+   "id": "req_01m6qpq5dzeqertjawvnd9mhmn",
+   "seed": 0
+  },
+  "service_tier": "on_demand"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "5843c08b489ccce33dc521bdeb0fbfac",
+ "retrievedAt": "2026-11-06T06:03:13+00:00",
+ "response": {
+  "id": "chatcmpl-fe368cd6-96b2-4438-b131-d4dd0acc5b95",
+  "object": "chat.completion",
+  "created": 1793944993,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"recipes\": [\n    {\n      \"recipeQuote\": \"by the use of the Decoction therof for a little space, those have been recovered who had utterly lost their voice, and almost their Spirits also\",\n      \"recipeType\": \"single_plant\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Hedg-Mustard\",\n          \"part\": \"unknown\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Hedg-Mustard\",\n      \"part\": \"unknown\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"unknown\"\n      ],\n      \"heat\": \"boiled\",\n      \"heatText\": \"Decoction\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"unknown\",\n      \"process\": \"decoction\",\n      \"form\": \"unknown\",\n      \"indicationAsWritten\": \"Diseases of the Chest and Lungs, hoarceness ef voice\",\n      \"evidence\": [\n        {\n          \"field\": \"heat\",\n          \"quote\": \"Decoction\"\n        }\n      ],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"heat\",\n          \"confidence\": 0.9\n        }\n      ]\n    },\n    {\n      \"recipeQuote\": \"The Juyce threof made into a Syrup, or licking Medicine with Honey or Sugar is no less effectual for the same purpose\",\n      \"recipeType\": \"single_plant\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Hedg-Mustard\",\n          \"part\": \"unknown\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Hedg-Mustard\",\n      \"part\": \"unknown\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"honey\",\n        \"other\"\n      ],\n      \"heat\": \"unknown\",\n      \"heatText\": \"unknown\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"unknown\",\n      \"process\": \"other\",\n      \"form\": \"other\",\n      \"indicationAsWritten\": \"Diseases of the Chest and Lungs, hoarceness ef voice, all other Coughs, Weesings, and shortness of Breath\",\n      \"evidence\": [],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"solvent\",\n          \"confidence\": 0.7\n        }\n      ]\n    }]}",
+     "reasoning": "We need extract recipes. Several.\n\nFirst: decoction of herb (Hedg-Mustard) for chest etc. So recipe: decoction, solvent water? decoction implies water. Not explicit but decoction of it => water. We'll set solvent unknown? Probably water implied but need quote. No explicit \"water\". So solvent unknown.\n\nRecipeQuote: \"by the use of the Decoction therof for a little space, those have been recovered...\" include decoction phrase. Also indication.\n\nPart? whole plant? Not specified. Use of the herb generally. So part unknown.\n\nfreshOrDried unknown.\n\nheat: decoction => boiled. heatText \"Decoction\". Provide.\n\ndurationText unknown.\n\nfiltered? decoction likely strained? Not said. unknown.\n\nprocess decoction.\n\nform drink? decoction taken internal => drink. Not explicit but assume drink. Might be unknown. We'll set form unknown? Probably drink. Use evidence? No quote for drink. Might be unknown. We'll set form unknown.\n\nSecond: \"The Juyce threof made into a Syrup, or licking Medicine with Honey or Sugar\". Juice made into syrup, with honey or sugar. So preparation: juice expression then syrup with honey. solvent honey? honey as vehicle. process expression then other. heat? syrup maybe boiled? not said. unknown. form other (medicine). Indication same chest etc.\n\nThird: seed as remedy against poison etc. No preparation details. So ingredient seed, part seed, preparation unknown. Indication list.\n\nThus three recipes.\n\nWe must include quotes exactly. Need to capture spans.\n\nLet's craft JSON.\n\n"
+    },
+    "logprobs": null,
+    "finish_reason": "length"
+   }
+  ],
+  "usage": {
+   "queue_time": 0.283637925,
+   "prompt_tokens": 6234,
+   "prompt_time": 0.275848311,
+   "completion_tokens": 1024,
+   "completion_time": 2.168973867,
+   "total_tokens": 7258,
+   "total_time": 2.444822178,
+   "completion_tokens_details": {
+    "reasoning_tokens": 330
+   }
+  },
+  "usage_breakdown": null,
+  "system_fingerprint": "fp_5082008e34",
+  "x_groq": {
+   "id": "req_01m6qq8cv8eenafka5gnpnzqvp",
+   "seed": 0
+  },
+  "service_tier": "on_demand",
+  "_maxCompletionTokensSent": 1024
+ }
+}

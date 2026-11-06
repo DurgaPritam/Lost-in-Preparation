@@ -1,0 +1,138 @@
+{
+ "passageId": "culpeper-1652:herbal:cich-peas-or-cicers:007",
+ "recipes": [
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:cich-peas-or-cicers:007#r00",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:cich-peas-or-cicers:007",
+    "text": "The wild Cicers are so much more powerful than the Garden kinds, by how much they exceed them in heat and driness; whereby they do more open Obstructions, break the Stone, and have al the properties of cutting, opening, digesting, and dissolving, and this more speedily, and certainly than the former.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Cich-Peas, or Cicers.",
+     "subsection": "vertues and use",
+     "lineStart": 5644,
+     "lineEnd": 5650
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "unknown",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Cich-Peas, or Cicers",
+     "part": "unknown",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Cich-Peas, or Cicers",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Cich-Peas, or Cicers",
+   "part": "unknown",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "unknown"
+   ],
+   "heat": "unknown",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "unknown",
+   "process": "unknown",
+   "form": "unknown",
+   "indicationAsWritten": "open Obstructions, break the Stone, and have al the properties of cutting, opening, digesting, and dissolving",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "part": 0.9,
+    "freshOrDried": 0.9,
+    "solvent": 0.9,
+    "heat": 0.9,
+    "heatText": 0.9,
+    "durationText": 0.9,
+    "filtered": 0.9,
+    "process": 0.9,
+    "form": 0.9,
+    "indicationAsWritten": 0.95,
+    "plantNameAsWritten": 0.99,
+    "ingredients": 0.99
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "The wild Cicers are so much more powerful than the Garden kinds, by how much they exceed them in heat and driness; whereby they do more open Obstructions, break the Stone, and have al the properties of cutting, opening, digesting, and dissolving",
+      "start": 0,
+      "end": 245,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Cich-Peas, or Cicers",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "open Obstructions, break the Stone, and have al the properties of cutting, opening, digesting, and dissolving",
+      "start": 136,
+      "end": 245,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": true,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v1:8aadfda9ef",
+    "annotator": null,
+    "createdAt": "2026-11-06T05:56:09+00:00"
+   }
+  }
+ ],
+ "rejections": [],
+ "attempts": 1,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 6083,
+  "output_tokens": 882,
+  "reasoning_tokens": 304
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v1:8aadfda9ef"
+}

@@ -1,0 +1,59 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "created": 1754408224,
+  "ownedBy": "OpenAI",
+  "contextWindow": 131072,
+  "selectedOn": "2026-11-06",
+  "rule": "config model if set, else the first configured candidate present and active in GET /models",
+  "candidates": [
+    "openai/gpt-oss-120b",
+    "openai/gpt-oss-20b",
+    "qwen/qwen3.8-27b"
+  ],
+  "liveModels": [
+    [
+      "allam-2-7b",
+      1737672203
+    ],
+    [
+      "canopylabs/orpheus-arabic-saudi",
+      1765926439
+    ],
+    [
+      "canopylabs/orpheus-v1-english",
+      1766186316
+    ],
+    [
+      "meta-llama/llama-prompt-guard-2-22m",
+      1748632101
+    ],
+    [
+      "meta-llama/llama-prompt-guard-2-86m",
+      1748632165
+    ],
+    [
+      "openai/gpt-oss-120b",
+      1754408224
+    ],
+    [
+      "openai/gpt-oss-20b",
+      1754407957
+    ],
+    [
+      "openai/gpt-oss-safeguard-20b",
+      1761708789
+    ],
+    [
+      "qwen/qwen3.8-27b",
+      1786984846
+    ],
+    [
+      "whisper-large-v3",
+      1693721698
+    ],
+    [
+      "whisper-large-v3-turbo",
+      1728413088
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+ "passageId": "culpeper-1652:herbal:filipendula-or-dropwort:008",
+ "recipes": [],
+ "rejections": [
+  {
+   "recipe": null,
+   "errors": [
+    "schema: [{'type': 'missing', 'loc': ('recipes', 1, 'plantNameAsWritten'), 'msg': 'Field required', 'input': {'recipeQuote': 'a Decoction of them in white Wine, whereunto a little Honey is added: ... to open the passages of the Urine, and help the Strangury, and all other pains of the Bladder and Reins, helping mightily to expel the Stone in the Kidnies or Bladder, and the Gravel also', 'recipeType': 'single_plant', 'ingredients': [{'plantNameAsWritten': 'Filipendula', 'part': 'root', 'role': 'principal', 'kind': 'plant'}, {'plantNameAsWritten': 'Honey', 'part': 'unknown', 'role': 'co_ingredient', 'kind': 'other'}]}, 'url': 'https://errors.pydantic.dev/2.14/v/missing'}, {'type': 'missing', 'loc': ('recipes', 1, 'part'), 'msg': 'Field required', 'input': {'recipeQuote': 'a Decoction of them in white Wine, whereunto a little Honey is added: ... to open the passages of the Urine, and help the Strangury, and all other pains of the Bladder and Reins, helping mightily to expel the Stone in the Kidnies or Bladder, and the Gravel also', 'recipeType': 'single_plant', 'ingredients': [{'plantNameAsWritten': 'Filipendula', 'part': 'root', 'role': 'principal', 'kind': 'plant'}, {'plantNameAsWritten': 'Honey', 'part': 'unknown', 'role': 'co_ingredient', 'kind': 'other'}]}, 'url': 'https://errors.pydantic.dev/2.14/v/missing'}, {'type': 'missing', 'loc': ('recipes', 1, 'freshOrDried'), 'msg': 'Field required', 'input': {'recipeQuote': 'a Decoction of them in white Wine, whereunto a little Honey is added: ... to open the passages of the Urine, and help the Strangury, and all other pains of the Bladder and Reins, helping mightily to expel the Stone in the Kidnies or Bladder, and the Gravel also', 'recipeType': 'single_plant', 'ingredients': [{'plantNameAsWritten': 'Filipendula', 'part': 'root', 'role': 'principal', 'kind': 'plant'}, {'plantNameAsWritten': 'Honey', 'part': 'unknown', 'role': 'co_ingredient', 'kind': 'other'}]}, 'url': 'https://errors.pydantic.dev/2.14/v/missing'}]"
+   ]
+  }
+ ],
+ "attempts": 3,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v1:8aadfda9ef"
+}

@@ -1,0 +1,45 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "bcc1578801367a2d098a3cec11e98f30",
+ "retrievedAt": "2026-11-06T05:51:51+00:00",
+ "response": {
+  "id": "chatcmpl-9496eded-640e-4e35-8ea9-5860c7f81d06",
+  "object": "chat.completion",
+  "created": 1793944311,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"recipes\": [\n    {\n      \"recipeQuote\": \"Ash-tree Tops and Leaves are good against the biting of Serpents and Vipers\",\n      \"recipeType\": \"single_plant\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Ash-Tree\",\n          \"part\": \"other\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Ash-Tree\",\n      \"part\": \"other\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"unknown\"\n      ],\n      \"heat\": \"unknown\",\n      \"heatText\": \"unknown\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"unknown\",\n      \"process\": \"unknown\",\n      \"form\": \"unknown\",\n      \"indicationAsWritten\": \"good against the biting of Serpents and Vipers\",\n      \"evidence\": [\n        {\n          \"field\": \"part\",\n          \"quote\": \"Ash-tree Tops and Leaves\"\n        }\n      ],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"part\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"recipeType\",\n          \"confidence\": 0.95\n        },\n        {\n          \"field\": \"plantNameAsWritten\",\n          \"confidence\": 0.98\n        }\n      ]\n    }\n  ]\n}",
+     "reasoning": "We need extract recipes. Text mentions Ash-tree Tops and Leaves good against biting of Serpents and Vipers. That's a use with no preparation details. So one recipe: plant Ash-Tree, part tops and leaves (multiple parts). Part? \"Tops and Leaves\" => both aerial parts? Could be \"leaf\" and maybe \"other\". According to schema, part must be one value; if multiple parts, use \"other\". So part = other. recipeType single_plant. solvent unknown, heat unknown, etc. indicationAsWritten \"good against the biting of Serpents and Vipers\". Provide evidence for part field quote \"Ash-tree Tops and Leaves\". plant name from heading, so quotesFromHeading includes plantNameAsWritten and ingredients.\n\nProvide recipeQuote the whole sentence? Shortest contiguous covering preparation and indication: \"Ash-tree Tops and Leaves are good against the biting of Serpents and Vipers\". Include that.\n\nNow fill fields: freshOrDried unknown, solvent unknown, heat unknown, heatText unknown, durationText unknown, filtered unknown, process unknown, form unknown. evidence for part field. Also maybe evidence for indication? Not required but could include. Only need evidence for enum fields. part is enum, need evidence. Provide.\n\nfieldConfidence for each filled field.\n\nReturn JSON."
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "queue_time": 0.16490145,
+   "prompt_tokens": 6684,
+   "prompt_time": 0.008362255,
+   "completion_tokens": 601,
+   "completion_time": 1.402810497,
+   "total_tokens": 7285,
+   "total_time": 1.411172752,
+   "prompt_tokens_details": {
+    "cached_tokens": 6144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 268
+   }
+  },
+  "usage_breakdown": null,
+  "system_fingerprint": "fp_a655021f7d",
+  "x_groq": {
+   "id": "req_01m6qpkmfqegjb5wn00yrwaqc3",
+   "seed": 0
+  },
+  "service_tier": "on_demand"
+ }
+}

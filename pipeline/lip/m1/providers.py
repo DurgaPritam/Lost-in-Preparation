@@ -201,6 +201,10 @@ class GroqProvider:
       GET /models list; the choice, the list snapshot and the date are written to GROQ_SELECTION. The model
       version recorded in every output is "<id>@created=<unix time>"; the selection date is in `decoding`.
     - Decoding: temperature 0, seed 0, response_format json_schema strict (the same schema as every provider).
+    - Request size: Groq counts input + the full max_completion_tokens against tokens-per-minute (TPM), so each
+      request's completion cap is lowered to fit the TPM limit reported in x-ratelimit-limit-tokens (never below
+      MIN_COMPLETION); a 413 "Request too large" is retried once with the cap Groq's own numbers allow. The
+      configured maximum stays in the cache key and `decoding`; the cap actually sent is stored with each response.
     - Rate limits (free tier): a minimum interval between requests; pacing from x-ratelimit-remaining-tokens /
       x-ratelimit-reset-tokens; on 429, wait `retry-after` (or the reset header) with exponential backoff,
       and stop with a clear message if the wait is longer than `max_wait_s` (e.g. a daily limit).
@@ -223,6 +227,8 @@ class GroqProvider:
         self._selection: dict | None = None
         self._remaining_tokens: int | None = None
         self._reset_tokens_s: float | None = None
+        self._tpm_limit: int | None = None
+        self._last_cap: int | None = None
 
     def __repr__(self) -> str:  # never shows the key
         return f"GroqProvider(model={self.model!r})"
@@ -251,11 +257,18 @@ class GroqProvider:
             if wait > 0:
                 self._sleep(wait)
             if body is not None and self._remaining_tokens is not None and self._reset_tokens_s:
-                est = len(json.dumps(body)) // 4 + self.options["max_completion_tokens"] // 4
+                # Groq counts the input AND the full max_completion_tokens against tokens-per-minute
+                est = self._input_tokens(body) + int(body.get("max_completion_tokens", 0))
                 if self._remaining_tokens < est:
                     self._sleep(min(self._reset_tokens_s, self.max_wait_s))
             status, headers, text = self._transport(method, path, body)
             self._last = time.monotonic()
+            self._last_cap = (body or {}).get("max_completion_tokens")
+            if "x-ratelimit-limit-tokens" in headers:
+                try:
+                    self._tpm_limit = int(float(headers["x-ratelimit-limit-tokens"]))
+                except ValueError:
+                    pass
             if "x-ratelimit-remaining-tokens" in headers:
                 try:
                     self._remaining_tokens = int(float(headers["x-ratelimit-remaining-tokens"]))
@@ -274,10 +287,25 @@ class GroqProvider:
                     backoff = min(backoff * 2, 60.0)
                     continue
             msg = text[:400]
+            err = {}
             try:
-                msg = json.loads(text).get("error", {}).get("message", msg)
+                err = json.loads(text).get("error", {}) or {}
+                msg = err.get("message", msg)
             except (ValueError, AttributeError):
                 pass
+            m413 = re.search(r"Limit (\d+), Requested (\d+)", str(msg)) if status == 413 else None
+            if m413 and body is not None and attempt < self.max_retries:
+                over = int(m413.group(2)) - int(m413.group(1))
+                cap = int(body.get("max_completion_tokens", 0)) - over - 150
+                if cap >= self.MIN_COMPLETION:
+                    body = {**body, "max_completion_tokens": cap}
+                    continue
+                raise ProviderError(f"Groq: request too large for the tokens-per-minute limit even with {self.MIN_COMPLETION} "
+                                    "completion tokens (prompt too long for this tier).")
+            if status == 400 and "failed_generation" in err:
+                # the model's output broke the schema: hand it back to the extractor's normal validation / retry path
+                return {"_schemaError": _redact(str(msg))[:600], "choices": [{"message": {"content": err.get("failed_generation") or ""},
+                                                                         "finish_reason": "schema_error"}]}
             raise ProviderError(_redact(f"Groq HTTP {status} for {path}: {msg}"))
         raise ProviderError(f"Groq request to {path} failed after {self.max_retries + 1} attempts")
 
@@ -320,6 +348,23 @@ class GroqProvider:
             dec["reasoningEffort"] = self.reasoning_effort
         return RunInfo(self.name, sel["model"], f"{sel['model']}@created={sel['created']}", dec)
 
+    MIN_COMPLETION = 1024
+    TPM_MARGIN = 250
+
+    @staticmethod
+    def _input_tokens(body: dict) -> int:
+        """Conservative input-token estimate (~3.2 characters per token for this English/JSON mix)."""
+        return int(len(json.dumps(body.get("messages", []), ensure_ascii=False)) / 3.2) + 50
+
+    def _cap(self, body: dict) -> dict:
+        """Keep requests small: cap max_completion_tokens so input + cap fits under the tokens-per-minute limit."""
+        limit = self._tpm_limit
+        if not limit:
+            return body
+        room = limit - self._input_tokens(body) - self.TPM_MARGIN
+        cap = max(self.MIN_COMPLETION, min(int(body["max_completion_tokens"]), room))
+        return {**body, "max_completion_tokens": cap}
+
     def _reasoning(self) -> bool:
         return bool(self.reasoning_effort) and self.model.startswith("openai/gpt-oss")
 
@@ -336,7 +381,9 @@ class GroqProvider:
         if cp.exists():
             r = json.loads(cp.read_text())["response"]
         else:
-            r = self._request("POST", "/chat/completions", body)
+            sent = self._cap(body)  # the TPM limit is learned from check()'s GET /models headers; a 413 retry covers the rest
+            r = self._request("POST", "/chat/completions", sent)
+            r = {**r, "_maxCompletionTokensSent": self._last_cap}
             GROQ_RESPONSES.mkdir(parents=True, exist_ok=True)
             cp.write_text(json.dumps({"model": self.model, "requestSha256": key,
                                       "retrievedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -344,6 +391,8 @@ class GroqProvider:
         ch = (r.get("choices") or [{}])[0]
         text = (ch.get("message") or {}).get("content") or ""
         stop = {"length": "max_tokens", "content_filter": "refusal"}.get(ch.get("finish_reason"), "end")
+        if r.get("_schemaError") and not text.strip():
+            text = "{}"  # nothing generated: fails validation and triggers the extractor's retry with feedback
         u = r.get("usage") or {}
         usage = {"input_tokens": u.get("prompt_tokens", 0) or 0, "output_tokens": u.get("completion_tokens", 0) or 0}
         cached = (u.get("prompt_tokens_details") or {}).get("cached_tokens")
