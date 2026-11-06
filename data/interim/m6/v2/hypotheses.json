@@ -1,0 +1,154 @@
+[
+ {
+  "mock": false,
+  "rank": 1,
+  "speciesId": "wfo-0000212813",
+  "indication": {
+   "meshId": "D008107",
+   "label": "Liver Diseases"
+  },
+  "indicationAsWritten": "very good for the voice, for which purpose it is thickened and then placed beneath the tongue: it is good, too, for the chest and liver",
+  "faithfulPreparation": "root|unknown|water|boiled|yes",
+  "faithfulPreparationText": "decoction in water",
+  "attestationCount": 1,
+  "profileGap": {
+   "value": 0.4234,
+   "low": 0.2939,
+   "high": 0.546
+  },
+  "gapRanking": {
+   "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th–95th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
+   "gapP5": 0.2939,
+   "gapThreshold": 0.2,
+   "pGapAboveThreshold": 1.0,
+   "compoundsUsed": 405,
+   "compoundsExcludedWide": 56,
+   "rankByMedianGap": 1
+  },
+  "neverTestedFaithfully": true,
+  "toxicityFlag": "toxic_reported",
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (source: EMA/HMPC, EU herbal monograph (Glycyrrhiza spp., radix, revision 1); AI-drafted, unverified)",
+  "caveats": [
+   "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+   "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+   "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+   "modern preparation modelled with the M4 maceration preset: heat unstated in 1 of 1 study preparations",
+   "attested only by Pliny (lower confidence)",
+   "1 retrieved studies could not be coded as faithful or not (unknown fields)",
+   "faithful preparation uses a logged extraction correction (config/m1_corrections.csv)",
+   "audit protocol v2: pre-registered re-analysis after v1's design flaw"
+  ],
+  "evidenceTrail": [
+   {
+    "kind": "recipe",
+    "ref": "pliny-nh:b22:c011:001#r01",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:32738390",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:25779384",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:28165501",
+    "note": null
+   },
+   {
+    "kind": "profile",
+    "ref": "wfo-0000212813:decoction in water vs modern methanol extract",
+    "note": null
+   },
+   {
+    "kind": "species",
+    "ref": "wfo-0000212813",
+    "note": null
+   }
+  ]
+ },
+ {
+  "mock": false,
+  "rank": 2,
+  "speciesId": "wfo-0000212813",
+  "indication": {
+   "meshId": "D008171",
+   "label": "Lung Diseases"
+  },
+  "indicationAsWritten": "al the Diseases of the Breast & Lungs, the Reins and Bladder",
+  "faithfulPreparation": "root|unknown|water|boiled|yes",
+  "faithfulPreparationText": "decoction in water",
+  "attestationCount": 2,
+  "profileGap": {
+   "value": 0.3648,
+   "low": 0.2376,
+   "high": 0.514
+  },
+  "gapRanking": {
+   "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th–95th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
+   "gapP5": 0.2376,
+   "gapThreshold": 0.2,
+   "pGapAboveThreshold": 0.985,
+   "compoundsUsed": 360,
+   "compoundsExcludedWide": 101,
+   "rankByMedianGap": 2
+  },
+  "neverTestedFaithfully": true,
+  "toxicityFlag": "toxic_reported",
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (source: EMA/HMPC, EU herbal monograph (Glycyrrhiza spp., radix, revision 1); AI-drafted, unverified)",
+  "caveats": [
+   "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+   "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+   "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+   "1 retrieved studies could not be coded as faithful or not (unknown fields)",
+   "faithful preparation uses a logged extraction correction (config/m1_corrections.csv)",
+   "audit protocol v2: pre-registered re-analysis after v1's design flaw"
+  ],
+  "evidenceTrail": [
+   {
+    "kind": "recipe",
+    "ref": "culpeper-1652:herbal:liquoris:006#r02",
+    "note": null
+   },
+   {
+    "kind": "recipe",
+    "ref": "culpeper-1850:herbal:liquorice:003#r02",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:37630394",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:36238303",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:25779384",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:32230838",
+    "note": null
+   },
+   {
+    "kind": "profile",
+    "ref": "wfo-0000212813:decoction in water vs modern 70% ethanol extract",
+    "note": null
+   },
+   {
+    "kind": "species",
+    "ref": "wfo-0000212813",
+    "note": null
+   }
+  ]
+ }
+]

@@ -1,0 +1,5 @@
+species,decision,reason,decidedBy,date
+Symphytum officinale,reject,"Excluded: 2 attestations after the reviewer's removals (below the threshold of 3).",project lead,2026-11-06
+Agrimonia eupatoria,approve,"Approved after re-review following the footnote rule.",project lead,2026-11-06
+Pastinaca sativa,reject,"Excluded after re-review following the footnote rule (attestation proxy below 3).",project lead,2026-11-06
+Hyssopus officinalis,reject,"Excluded after re-review following the footnote rule (attestation proxy below 3).",project lead,2026-11-06

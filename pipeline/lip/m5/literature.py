@@ -136,9 +136,7 @@ def species_list() -> pd.DataFrame:
     proxy fell below the threshold, or whose conditional approval was not met, are held until the project lead
     decides."""
     ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
-    dec = pd.read_csv(INTERIM.parent.parent / "config" / "study_set_review_decisions.csv")
-    approved = set(dec[dec.decision == "approve"].species)
-    ss = ss[ss.acceptedName.isin(approved) & (ss.headline | (ss.pendingReReview & ss.eligible))].copy()
+    ss = ss[(ss.approved == "yes") & (ss.headline | (ss.pendingReReview & ss.eligible))].copy()
     return ss[["acceptedName", "wfoId", "headline", "pendingReReview", "eligible"]]
 
 
@@ -146,7 +144,7 @@ def held_species() -> pd.DataFrame:
     """Approved species NOT in the Phase 5 set, with the reason."""
     ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
     dec = pd.read_csv(INTERIM.parent.parent / "config" / "study_set_review_decisions.csv").set_index("species")
-    a = ss[ss.acceptedName.isin(dec[dec.decision == "approve"].index) & ~(ss.headline | (ss.pendingReReview & ss.eligible))]
+    a = ss[(ss.approved == "yes") & ~(ss.headline | (ss.pendingReReview & ss.eligible))]
     def why(r):
         if r.pendingReReview:
             return "pending re-review after the footnote rule; attestation proxy below 3"
@@ -154,7 +152,7 @@ def held_species() -> pd.DataFrame:
             return "conditional approval not met (attestation proxy below 3)"
         return "approved, but attestation proxy below 3 after the reviewer's removals: needs a decision"
     return pd.DataFrame([{"species": r.acceptedName, "wfoId": r.wfoId, "attestations": r.attestations, "reason": why(r)}
-                         for r in a.itertuples()])
+                         for r in a.itertuples()], columns=["species", "wfoId", "attestations", "reason"])
 
 
 def run(species: list[str] | None = None) -> dict:

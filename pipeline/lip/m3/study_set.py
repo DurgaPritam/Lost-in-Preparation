@@ -25,7 +25,8 @@ from ..paths import INTERIM, ROOT
 OUT_CSV = INTERIM / "m3" / "study_set_proposal.csv"
 EXCLUSIONS = ROOT / "config" / "study_set_exclusions.csv"  # species removed by a recorded human decision
 NAME_EXCLUSIONS = ROOT / "config" / "name_entry_exclusions.csv"  # name entries a reviewer removed from a species
-PASSAGE_EXCLUSIONS = ROOT / "config" / "passage_exclusions.csv"  # passages a reviewer removed from a species
+PASSAGE_EXCLUSIONS = ROOT / "config" / "passage_exclusions.csv"
+REREVIEW = ROOT / "config" / "study_set_rereview_decisions.csv"  # decisions after re-review (override the first review)  # passages a reviewer removed from a species
 DECISIONS = ROOT / "config" / "study_set_review_decisions.csv"  # the project lead's review (approve / unsure / reject)
 OUT_MD = ROOT / "docs" / "STUDY_SET_PROPOSAL.md"
 SIZE = 40
@@ -97,6 +98,13 @@ def build() -> pd.DataFrame:
     g.loc[g.conditionalApproval & ~g.eligible, "approved"] = "no"  # condition (at least 3 attestations) not met
     from ..m2.rule_changes import flagged_species
     g["pendingReReview"] = g.acceptedName.isin(flagged_species())  # resolution changed by the v3 footnote rule
+    # re-review decisions (config/study_set_rereview_decisions.csv) settle pending species and override the first review
+    rr = pd.read_csv(REREVIEW) if REREVIEW.exists() else pd.DataFrame(columns=["species", "decision"])
+    rmap = dict(zip(rr.species, rr.decision))
+    g["reReviewDecision"] = g.acceptedName.map(rmap).fillna("")
+    has_rr = g.reReviewDecision != ""
+    g.loc[has_rr, "approved"] = g.loc[has_rr, "reReviewDecision"].map({"approve": "yes", "unsure": "no", "reject": "no"})
+    g.loc[has_rr, "pendingReReview"] = False
     g["headline"] = g.proposed & (g.approved == "yes") & ~g.pendingReReview
     fixed = set(nx.species)
     g["reReviewRequested"] = (g.acceptedName.isin(fixed) & g.reviewDecision.isin(["unsure", "reject"])) | g.pendingReReview

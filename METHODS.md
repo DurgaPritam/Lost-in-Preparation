@@ -377,6 +377,21 @@ M5 compares how modern studies prepared each Phase 5 species with how the histor
 - **Modern preparation:** the most frequent modern solvent that M4 represents. When a study's heat is unstated, the M4 maceration preset is used and a caveat is recorded.
 - **Ranking:** the robust M6 rule (§11) ranks the candidates. Each is a hypothesis worth re-testing, with the curated toxicity entry (AI-drafted, unverified) and caveats.
 
+**Audit v2: pre-registered re-analysis after v1's design flaw** (`pipeline/lip/m5/audit_v2.py`, [docs/AUDIT_PROTOCOL_v2.md](docs/AUDIT_PROTOCOL_v2.md), committed before any v2 result). v1 is reported exactly as pre-registered. Its solvent rule makes every non-water recipe unmatchable, so its headline mostly reflects the protocol. v2 changes five things:
+- **Solvent equivalence classes:** water ↔ aqueous; wine ↔ hydroalcoholic with ≤ 20% v/v ethanol (sensitivity at 15% and 25%); vinegar ↔ acidified aqueous; none/fresh juice ↔ fresh pressed juice. Honey or oxymel, and other vehicles, count as "no modern analogue": reported separately, never scored as unfaithful.
+- **Eligibility, fixed in advance:** only studies that prepared the plant material. Reviews, case reports, surveys and pure-compound papers are excluded.
+- **Search:** the species-level literature from Phase 5 prep, filtered by MeSH descriptor or descendant (descendants from NLM's MeSH SPARQL endpoint).
+- **Lexicon:** v2 (`config/m5_lexicon/v2.toml`).
+- **Reporting:** per-variable fidelity rates, each with a 95% CI and n.
+
+Results for both versions are side by side in RESULTS.md.
+
+**Logged extraction corrections** (`config/m1_corrections.csv`, applied by `pipeline/lip/m1/corrections.py` as an overlay). The extraction outputs are never edited. Each correction records the old and new value, the reason, the evidence, who requested it and who applied it. A correction whose recorded old value no longer matches the extraction raises an error.
+- **Liquorice:** at the project lead's request, three liquorice "juice" recipes (Pliny, Culpeper 1652 and Culpeper 1850) were reclassified from juice to a boiled, concentrated water extract of the root. The evidence is in the corpus: the translator's footnote calling Pliny's juice "Spanish liquorice or Spanish juice", and Culpeper's Dispensatory recipe for Succus Glycyrrhizæ.
+- **Where they apply:** the corrections are used by the v2 pairs and by Phase 6 (v1 and v2). The v1 audit outputs are left as pre-registered.
+
+**Re-review decisions** (`config/study_set_rereview_decisions.csv`) override the first review for species pending re-review: Agrimonia eupatoria approved; Symphytum officinale (2 attestations), Pastinaca sativa and Hyssopus officinalis excluded.
+
 **Earlier LLM-based extractor (not used).** `pipeline/lip/m5/methods.py` with prompt `prompts/m5_methods/v1/` was built for Groq and tested with a fake client. It was never run, and the audit uses the rule-based extractor instead.
 
 ## 12. Limitations

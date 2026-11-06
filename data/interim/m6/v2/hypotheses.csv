@@ -1,0 +1,3 @@
+speciesId,acceptedName,faithful,modern,compounds,compoundsUsed,compoundsExcludedWide,gapMedianOfMedians,gapP5,gapP50,gapP95,pGapAboveTau,notRanked,pairKey,mesh,meshId,faithfulKey,faithfulRecipes,modernStudyPreps,modernHeatUnstated,studiesKnown,studiesUnknown,attestationCount,sources,rank,rankMedianGap
+wfo-0000212813,Glycyrrhiza glabra,decoction in water,modern methanol extract,461,405,56,0.4484,0.2939,0.4234,0.546,1.0,,wfo-0000212813|D008107,Liver Diseases,D008107,root|unknown|water|boiled|yes,1,1,1,2,1,1,pliny-nh-bohn-v4,1,1
+wfo-0000212813,Glycyrrhiza glabra,decoction in water,modern 70% ethanol extract,461,360,101,0.3942,0.2376,0.3648,0.514,0.985,,wfo-0000212813|D008171,Lung Diseases,D008171,root|unknown|water|boiled|yes,2,1,0,3,1,2,culpeper-1652;culpeper-1850,2,2

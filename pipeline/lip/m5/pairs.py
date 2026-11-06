@@ -89,7 +89,7 @@ def species_queries() -> dict[str, list[str]]:
     return dict(q)
 
 
-def build() -> dict:
+def build(out_path=None, corrections: bool = False) -> dict:
     from ..m1.session import approved_passages
     from ..m5.literature import species_list
     sp = species_list().set_index("acceptedName")
@@ -97,6 +97,9 @@ def build() -> dict:
     by_passage = a.groupby("passageId").species.apply(lambda s: sorted(set(s))).to_dict()
     queries = species_queries()
     recipes = json.loads((INTERIM / "m1" / "predictions_approved.json").read_text())
+    if corrections:
+        from ..m1.corrections import apply
+        recipes = apply(recipes)
     version, lex = indication_lexicon()
     mesh = {k: mesh_lookup(k) for k in lex}
     missing = sorted(k for k, v in mesh.items() if v is None)
@@ -133,6 +136,7 @@ def build() -> dict:
                          "attestationCount": len(p["recipes"])} for p in pairs.values()),
                        key=lambda p: (p["species"], p["indication"]["label"]))
     out = {"generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"), "indicationLexicon": version,
+           "m1CorrectionsApplied": sorted({r["id"] for r in recipes if "corrections" in r}),
            "attribution": "recipe name not more specific than an entry name of a species linked to the passage (HEURISTIC)",
            "meshLookup": {"source": "NCBI MeSH via E-utilities (esearch + esummary, db=mesh)", "notFound": missing},
            "counts": {"recipes": len(recipes), "attributedRecipes": len({x["recipeId"] for x in attributed}),
@@ -142,8 +146,9 @@ def build() -> dict:
                       "attributedWithoutMappedIndication": len(unmapped), "pairs": len(out_pairs),
                       "speciesWithPairs": len({p["species"] for p in out_pairs})},
            "pairs": out_pairs, "unattributed": unattributed, "unmappedIndications": unmapped}
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    path = out_path or OUT
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(out, ensure_ascii=False, indent=1))
     return out
 
 

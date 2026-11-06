@@ -420,9 +420,14 @@ def _audit_rows() -> list[tuple[str, str, str]]:
     hc = _j("data/interim/m5/handcheck_eval.json")
     rows = []
     if a:
-        rows.append(("**Modern-methods audit (M5): share of modern studies with no historical-preparation match**",
-                     f"computed, rule-based coding (`{a['extractor']}`), protocol fixed before retrieval: {_pct(a['headline'])}; "
-                     "*extractor accuracy pending the 40-study human hand-check*", "`data/interim/m5/audit_summary.json`"))
+        rows.append(("Modern-methods audit (M5) **v1**: share of modern studies with no historical-preparation match",
+                     f"computed as pre-registered (`{a['extractor']}`): {_pct(a['headline'])}. **Design flaw:** v1's solvent rule makes "
+                     "every non-water recipe unmatchable, so this mostly reflects the protocol", "`data/interim/m5/audit_summary.json`"))
+        a2 = _j("data/interim/m5/v2/audit_summary.json")
+        if a2:
+            rows.append(("**Modern-methods audit (M5) v2: pre-registered re-analysis after v1's design flaw** — overall fidelity (share faithful)",
+                         f"{_rt(a2['overallFidelity'])}; per-variable rates in RESULTS; *extractor accuracy pending the 40-study hand-check*",
+                         "`data/interim/m5/v2/audit_summary.json`"))
         rows.append(("M5 extractor accuracy vs human hand-check (40 studies)",
                      "pending — hand-check sheet not yet filled" if not hc else "computed (see RESULTS)", "`data/reference/m5_handcheck_v1.csv`"))
     else:
@@ -434,6 +439,65 @@ def _audit_rows() -> list[tuple[str, str, str]]:
         rows.append(("Hypothesis ranking (M6)", "rule implemented and stability-tested on model-only candidate pairs (not hypotheses)",
                      "`data/interim/m6/ranking_stability.json`"))
     return rows
+
+
+def _rt(x: dict | None) -> str:
+    if not x or x.get("status") != "computed":
+        return f"not computed (known {x.get('nKnown', 0) if x else 0})"
+    ci = f" (95% CI {x['low']:.0%}–{x['high']:.0%})" if x.get("low") is not None else ""
+    na = f", no modern analogue {x['nNoAnalogue']}" if x.get("nNoAnalogue") else ""
+    return f"{x['value']:.0%}{ci}; n known {x['nKnown']}, unknown {x['nUnknown']}{na}"
+
+
+def audit_v2_section() -> list[str]:
+    a1, a2 = _j("data/interim/m5/audit_summary.json"), _j("data/interim/m5/v2/audit_summary.json")
+    if not (a1 and a2):
+        return []
+    r = a2["retrieval"]
+    L = ["", "## Audit v1 and v2 side by side", "",
+         "**v2 is a pre-registered re-analysis after v1's design flaw** (`docs/AUDIT_PROTOCOL_v2.md`, committed before any v2 result). "
+         "v1 is reported exactly as pre-registered above. **v1's solvent rule makes every non-water recipe unmatchable** (only a "
+         "historical `[water]` preparation could match a modern solvent), so v1's headline mostly reflects the protocol, not the literature.", "",
+         f"v2 sources: `data/interim/m5/v2/audit_summary.json`; extractor `{a2['extractor']}`; logged M1 corrections applied: "
+         f"{len(a2['m1CorrectionsApplied'])} recipes (`config/m1_corrections.csv`). Retrieval: species-level literature filtered by MeSH "
+         f"descriptor or descendant; {r['pairsWithRecords']} of {r['pairs']} pairs with records; {r['recordsMatched']:,} records matched; "
+         f"excluded {', '.join(f'{k} {v}' for k, v in r['excluded'].items()) or 'none'}; eligible studies {r['eligibleStudies']:,} "
+         f"({', '.join(f'{k} {v}' for k, v in r['byEvidenceSource'].items())}). Unit status: "
+         + ", ".join(f"{k} {v:,}" for k, v in a2["units"]["overallStatus"].items()) + ".", "",
+         "| Measure | v1 (as pre-registered) | v2 (re-analysis) |", "|---|---|---|",
+         f"| Share of studies **not faithful** (overall) | {_pct(a1['headline'])} | "
+         + (f"{a2['overallNotFaithfulShare']:.0%}; n known {a2['overallFidelity']['nKnown']}" if a2['overallNotFaithfulShare'] is not None else "not computed") + " |",
+         f"| Overall fidelity (share faithful) | {1 - a1['headline']['value']:.0%}; nKnown {a1['headline']['nKnown']} | {_rt(a2['overallFidelity'])} |"]
+    v1f = a1["fieldMismatchRate"]
+    for v in ("solvent", "heat", "part", "freshOrDried", "filtration"):
+        x1 = v1f.get(v)
+        L.append(f"| {v} match rate | " + (f"{1 - x1['rate']:.0%} of {x1['known']} known comparisons" if x1 and x1["known"] else "no known comparisons")
+                 + f" | {_rt(a2['perVariableFidelity'][v])} |")
+    L += ["", "v1's per-field figures are per comparison (study preparation × historical preparation); v2's are per (pair, study) unit, as "
+          "pre-registered. v2 solvent match rate at other wine cut-offs (sensitivity): "
+          + "; ".join(f"≤ {k}: {_rt(v)}" for k, v in a2["solventWineCutoffSensitivity"].items()) + ".", "",
+          "| v2 breakdown | Overall fidelity |", "|---|---|"]
+    for g, x in a2["bySourceGroup"].items():
+        L.append(f"| Pairs attested {'only by Pliny (lower confidence)' if g == 'pliny_only' else 'by Culpeper'} | {_rt(x)} |")
+    for g, x in a2["byEvidenceSource"].items():
+        L.append(f"| Coded from {g} | {_rt(x)} |")
+    h1, h2 = _j("data/interim/m6/hypotheses_summary.json"), _j("data/interim/m6/v2/hypotheses_summary.json")
+    if h1 and h2:
+        names = {json.loads(f.read_text())["wfoId"]: json.loads(f.read_text())["species"] for f in (INTERIM / "m5" / "literature").glob("*.json")}
+        L += ["", "**Hypotheses worth re-testing, v1 and v2** (both with the logged corrections; `site-data/hypotheses.json` is v1, "
+              "`data/interim/m6/v2/hypotheses.json` is v2):", "", "| Audit | Rank | Species | Indication | Faithful vs modern preparation | Gap 5th / median / 95th |",
+              "|---|---|---|---|---|---|"]
+        for tag, path in (("v1", "data/interim/m6/hypotheses.csv"), ("v2", "data/interim/m6/v2/hypotheses.csv")):
+            import pandas as pd
+            pth = ROOT / path
+            if not pth.exists():
+                continue
+            d = pd.read_csv(pth).dropna(subset=["rank"]).sort_values("rank")
+            for x in d.head(15).itertuples():
+                L.append(f"| {tag} | {int(x.rank)} | *{x.acceptedName}* | {x.mesh} | {x.faithful} vs {x.modern} | {x.gapP5:.2f} / {x.gapP50:.2f} / {x.gapP95:.2f} |")
+        L += ["", f"v2 candidates {h2['candidates']}, ranked {h2['ranked']}; skipped: " + ", ".join(f"{k} {v}" for k, v in h2["skipped"].items()) + ". "
+              "Every row is a hypothesis worth re-testing, not a claim that a preparation works or is safe."]
+    return L
 
 
 def audit_section() -> list[str]:
@@ -464,7 +528,10 @@ def audit_section() -> list[str]:
     L += ["", "| Field | Mismatches / known comparisons |", "|---|---|"]
     for f, x in a["fieldMismatchRate"].items():
         L.append(f"| {f} | {x['mismatch']:,} / {x['known']:,} ({x['rate']:.0%}) |" if x else f"| {f} | — |")
-    L += ["", "**Reading the headline.** Most retrieved (pair, study) units stay `unknown`, mostly because abstracts do not say how the plant "
+    L += ["", "**v1's solvent rule makes every non-water recipe unmatchable**: only a historical `[water]` preparation could match a "
+          "modern solvent, so wine, vinegar, oil, honey and no-vehicle recipes could never count as faithful. v1's headline therefore "
+          "mostly reflects the protocol, not the literature. See *Audit v1 and v2 side by side* for the pre-registered re-analysis.",
+          "", "**Reading the headline.** Most retrieved (pair, study) units stay `unknown`, mostly because abstracts do not say how the plant "
           "was prepared, and many pairs have no PubMed hit at all for the protocol's query. Among units with a known status, the solvent rule "
           "dominates: historical vehicles other than water (wine, vinegar, oil, honey, none) have no modern equivalent, so they can never "
           "match. Under protocol v1, a retrieved study can be judged not faithful on a plant-part mismatch alone even if it never "
@@ -625,7 +692,7 @@ def build() -> str:
     L += ["", f"Default descriptor: **{val['default']}** (lower MAE). Caveat: Crippen's parameters were fitted to public logP data that may overlap this set; xTB is unfitted. 95% CIs are paired bootstrap (B = 2000).",
           ""]
     L += artemisinin_section(art, m4s)
-    L += literature_sections() + water_section() + ranking_section() + toxicity_section() + audit_section()
+    L += literature_sections() + water_section() + ranking_section() + toxicity_section() + audit_section() + audit_v2_section()
     L += ["", f"Profiles: {m4s['profiles']['species']} species × {m4s['profiles']['preparations']} preparations "
           f"({m4s['profiles']['profiles']} profiles, {m4s['profiles']['compoundEntries']:,} compound estimates) in `site-data/profiles/` (one file per species, `index.json`; full file in `data/release/profiles_full.json.gz`; model `{m4s['modelVersion']}`). "
           "These are model estimates of what a preparation would carry, not measurements."]

@@ -1,0 +1,48 @@
+pairKey,species,mesh,pmid,group,evidenceSource,overall,solvent,heat,part,freshOrDried,filtration,historicalClasses,solvent_w15,solvent_w25
+wfo-0001006654|D008107,Agrimonia eupatoria,Liver Diseases,22525864,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0001006654|D008107,Agrimonia eupatoria,Liver Diseases,16041735,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0001006654|D008107,Agrimonia eupatoria,Liver Diseases,29486131,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0001006654|D014947,Agrimonia eupatoria,Wounds and Injuries,36375535,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,no_analogue;unknown,unknown,unknown
+wfo-0000755919|D012871,Allium cepa,Skin Diseases,16690223,culpeper,abstract,not_faithful,mismatch,unknown,unknown,unknown,unknown,acidified_aqueous,mismatch,mismatch
+wfo-0000134589|D005334,Artemisia absinthium,Fever,38109312,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D006373,Artemisia absinthium,Helminthiasis,36587611,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D006373,Artemisia absinthium,Helminthiasis,20943323,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D006373,Artemisia absinthium,Helminthiasis,18325496,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D006373,Artemisia absinthium,Helminthiasis,19070963,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D006373,Artemisia absinthium,Helminthiasis,21618184,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D006373,Artemisia absinthium,Helminthiasis,42572844,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D006373,Artemisia absinthium,Helminthiasis,30118862,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D011041,Artemisia absinthium,Poisoning,37670294,culpeper,pmc_fulltext,unknown,unknown,unknown,unknown,unknown,unknown,acidified_aqueous;low_ethanol;unknown,unknown,unknown
+wfo-0000134589|D011041,Artemisia absinthium,Poisoning,7590079,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,acidified_aqueous;low_ethanol;unknown,unknown,unknown
+wfo-0000134589|D011041,Artemisia absinthium,Poisoning,23394445,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,acidified_aqueous;low_ethanol;unknown,unknown,unknown
+wfo-0000134589|D012871,Artemisia absinthium,Skin Diseases,38413393,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D012871,Artemisia absinthium,Skin Diseases,37194295,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D012871,Artemisia absinthium,Skin Diseases,32603837,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000134589|D012871,Artemisia absinthium,Skin Diseases,39348646,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000588460|D003085,Carum carvi,Colic,34275806,culpeper,abstract,not_faithful,unknown,mismatch,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000607845|D005334,Citrullus colocynthis,Fever,37046199,pliny_only,pmc_fulltext,no_analogue,no_analogue,unknown,mismatch,unknown,mismatch,no_analogue,no_analogue,no_analogue
+wfo-0000607845|D007674,Citrullus colocynthis,Kidney Diseases,29236674,pliny_only,abstract,no_analogue,no_analogue,unknown,match,unknown,unknown,no_analogue,no_analogue,no_analogue
+wfo-0000983427|D007249,Filipendula ulmaria,Inflammation,20017405,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,aqueous,unknown,unknown
+wfo-0000212813|D007674,Glycyrrhiza glabra,Kidney Diseases,32738390,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,aqueous;unknown,unknown,unknown
+wfo-0000212813|D008107,Glycyrrhiza glabra,Liver Diseases,32738390,pliny_only,abstract,not_faithful,unknown,unknown,mismatch,unknown,unknown,aqueous,unknown,unknown
+wfo-0000212813|D008107,Glycyrrhiza glabra,Liver Diseases,25779384,pliny_only,abstract,not_faithful,mismatch,unknown,match,unknown,unknown,aqueous,mismatch,mismatch
+wfo-0000212813|D008107,Glycyrrhiza glabra,Liver Diseases,28165501,pliny_only,pmc_fulltext,unknown,match,unknown,unknown,unknown,unknown,aqueous,match,match
+wfo-0000212813|D008171,Glycyrrhiza glabra,Lung Diseases,37630394,culpeper,pmc_fulltext,not_faithful,unknown,mismatch,match,unknown,match,aqueous,unknown,unknown
+wfo-0000212813|D008171,Glycyrrhiza glabra,Lung Diseases,36238303,culpeper,pmc_fulltext,unknown,match,unknown,unknown,unknown,match,aqueous,match,match
+wfo-0000212813|D008171,Glycyrrhiza glabra,Lung Diseases,25779384,culpeper,abstract,not_faithful,mismatch,unknown,match,unknown,unknown,aqueous,mismatch,mismatch
+wfo-0000212813|D008171,Glycyrrhiza glabra,Lung Diseases,32230838,culpeper,pmc_fulltext,not_faithful,mismatch,unknown,unknown,unknown,match,aqueous,mismatch,mismatch
+wfo-0000725866|D012871,Humulus lupulus,Skin Diseases,33801280,culpeper,pmc_fulltext,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0001021850|D005334,Hyoscyamus niger,Fever,19720117,culpeper,abstract,not_faithful,mismatch,unknown,mismatch,unknown,unknown,acidified_aqueous,mismatch,mismatch
+wfo-0000402430|D001249,Raphanus sativus,Asthma,38336182,pliny_only,abstract,no_analogue,no_analogue,unknown,mismatch,unknown,unknown,no_analogue,no_analogue,no_analogue
+wfo-0000402430|D003863,Raphanus sativus,Depression,28480425,pliny_only,pmc_fulltext,not_faithful,mismatch,unknown,unknown,unknown,unknown,acidified_aqueous,mismatch,mismatch
+wfo-0000402430|D008107,Raphanus sativus,Liver Diseases,17685094,pliny_only,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000402430|D008107,Raphanus sativus,Liver Diseases,25371570,pliny_only,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000402430|D011041,Raphanus sativus,Poisoning,17685094,pliny_only,abstract,unknown,unknown,unknown,unknown,unknown,unknown,aqueous;unknown,unknown,unknown
+wfo-0000402430|D011041,Raphanus sativus,Poisoning,25371570,pliny_only,abstract,unknown,match,unknown,unknown,unknown,unknown,aqueous;unknown,match,match
+wfo-0000402430|D014545,Raphanus sativus,Urinary Calculi,10624898,pliny_only,abstract,not_faithful,mismatch,unknown,mismatch,unknown,unknown,low_ethanol,mismatch,mismatch
+wfo-0000302258|D007249,Salvia sclarea,Inflammation,36178264,culpeper,abstract,not_faithful,mismatch,unknown,unknown,unknown,unknown,acidified_aqueous;no_analogue,mismatch,mismatch
+wfo-0000302258|D007674,Salvia sclarea,Kidney Diseases,39019617,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,no_analogue;unknown,unknown,unknown
+wfo-0000302258|D008599,Salvia sclarea,Menstruation Disturbances,22435409,culpeper,abstract,no_analogue,no_analogue,unknown,unknown,unknown,unknown,no_analogue,no_analogue,no_analogue
+wfo-0000302258|D012871,Salvia sclarea,Skin Diseases,27825341,culpeper,pmc_fulltext,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000302258|D012871,Salvia sclarea,Skin Diseases,27917678,culpeper,abstract,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
+wfo-0000302258|D014947,Salvia sclarea,Wounds and Injuries,39201676,culpeper,pmc_fulltext,unknown,match,unknown,unknown,unknown,unknown,aqueous,match,match

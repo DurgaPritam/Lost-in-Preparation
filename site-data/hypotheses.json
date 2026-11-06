@@ -8,21 +8,21 @@
    "label": "Liver Diseases"
   },
   "indicationAsWritten": "very good for the voice, for which purpose it is thickened and then placed beneath the tongue: it is good, too, for the chest and liver",
-  "faithfulPreparation": "juice|unknown|unknown|unknown|unknown",
-  "faithfulPreparationText": "fresh juice",
+  "faithfulPreparation": "root|unknown|water|boiled|yes",
+  "faithfulPreparationText": "decoction in water",
   "attestationCount": 1,
   "profileGap": {
-   "value": 0.2014,
-   "low": 0.1218,
-   "high": 0.327
+   "value": 0.4234,
+   "low": 0.2939,
+   "high": 0.546
   },
   "gapRanking": {
    "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th–95th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
-   "gapP5": 0.1218,
+   "gapP5": 0.2939,
    "gapThreshold": 0.2,
-   "pGapAboveThreshold": 0.5175,
-   "compoundsUsed": 411,
-   "compoundsExcludedWide": 50,
+   "pGapAboveThreshold": 1.0,
+   "compoundsUsed": 405,
+   "compoundsExcludedWide": 56,
    "rankByMedianGap": 1
   },
   "neverTestedFaithfully": true,
@@ -34,7 +34,8 @@
    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
    "modern preparation modelled with the M4 maceration preset: heat unstated in 1 of 1 study preparations",
    "attested only by Pliny (lower confidence)",
-   "13 retrieved studies could not be coded as faithful or not (unknown fields)"
+   "13 retrieved studies could not be coded as faithful or not (unknown fields)",
+   "faithful preparation uses a logged extraction correction (config/m1_corrections.csv)"
   ],
   "evidenceTrail": [
    {
@@ -94,7 +95,7 @@
    },
    {
     "kind": "profile",
-    "ref": "wfo-0000212813:fresh juice vs modern methanol extract",
+    "ref": "wfo-0000212813:decoction in water vs modern methanol extract",
     "note": null
    },
    {

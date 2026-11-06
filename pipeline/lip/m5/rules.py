@@ -47,6 +47,9 @@ class Lexicon:
     dried_excl_before: list[str]
     dried_excl_after: list[re.Pattern]
     filtered: list[tuple[str, list[re.Pattern]]]
+    cat_map: dict[str, str] = field(default_factory=dict)
+    survey: list[re.Pattern] = field(default_factory=list)
+    plant_prep: list[re.Pattern] = field(default_factory=list)
 
 
 def _c(ps):
@@ -61,8 +64,8 @@ def lexicon(path=LEX_PATH) -> Lexicon:
     return Lexicon(
         version=f"m5_rules/{d['version']}:{hashlib.sha256(raw).hexdigest()[:10]}",
         cues=_c(d["sentences"]["extraction_cues"]),
-        solvent=order("solvent", ["hydroethanolic", "methanol", "ethanol", "hexane", "chloroform", "ethyl_acetate", "dichloromethane",
-                                  "acetone", "co2", "water", "other"]),
+        solvent=order("solvent", d["solvent"].get("order", ["hydroethanolic", "methanol", "ethanol", "hexane", "chloroform",
+                                                             "ethyl_acetate", "dichloromethane", "acetone", "co2", "water", "other"])),
         excl_after=_c(d["solvent_exclude"]["after"]), excl_before=_c(d["solvent_exclude"]["before"]),
         before_window=d["solvent_exclude"]["before_window"],
         heat=order("heat", ["warm", "boiled", "cold"]),
@@ -73,6 +76,8 @@ def lexicon(path=LEX_PATH) -> Lexicon:
         dried=_c(d["fresh_or_dried"]["dried"]), fresh=_c(d["fresh_or_dried"]["fresh"]),
         dried_excl_before=d["fresh_or_dried"]["dried_exclude_before"], dried_excl_after=_c(d["fresh_or_dried"]["dried_exclude_after"]),
         filtered=order("filtered", ["yes", "no"]),
+        cat_map=d.get("solvent_category_map", {}),
+        survey=_c(d.get("eligibility", {}).get("survey", [])), plant_prep=_c(d.get("eligibility", {}).get("plant_preparation", [])),
     )
 
 
@@ -158,6 +163,7 @@ def _one(hits: list[Hit]) -> tuple[str, Hit | None, bool]:
 @dataclass
 class Prep:
     solvent: str = "unknown"
+    solventClass: str = "unknown"      # the lexicon's fine-grained solvent category (v2); equals `solvent` under v1
     solventText: str = "unknown"
     ethanolFraction: float | None = None
     heat: str = "unknown"
@@ -189,9 +195,9 @@ def extract(text: str, L: Lexicon | None = None) -> list[Prep]:
             by_cat.setdefault(h.category, []).append((h, (a, b)))
     preps: list[tuple[Prep, list[tuple[int, int]]]] = []
     for cat, hs in by_cat.items():
-        p = Prep(solvent=cat, solventText=hs[0][0].text)
+        p = Prep(solvent=L.cat_map.get(cat, cat), solventClass=cat, solventText=hs[0][0].text)
         p.evidence.append(_ev("solvent", hs[0][0]))
-        p.ethanolFraction = ethanol_fraction(cat, p.solventText)
+        p.ethanolFraction = ethanol_fraction(p.solvent, p.solventText)
         preps.append((p, sorted({s for _, s in hs})))
     if not preps:
         p = Prep(flags=["no solvent stated" if cue_sents else "no preparation described"])

@@ -1,0 +1,21 @@
+{
+  "protocol": "docs/AUDIT_PROTOCOL_v2.md \u00a77",
+  "auditVersion": "v2",
+  "m1CorrectionsApplied": [
+    "culpeper-1652:herbal:liquoris:006#r02",
+    "culpeper-1850:herbal:liquorice:003#r02",
+    "pliny-nh:b22:c011:001#r01"
+  ],
+  "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th\u201395th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
+  "generatedAt": "2026-11-06T11:32:24+00:00",
+  "pairs": 238,
+  "candidates": 2,
+  "ranked": 2,
+  "notRanked": 0,
+  "skipped": {
+    "no study with a known status": 230,
+    "no modern preparation the model represents": 2,
+    "no historical preparation the model represents": 4
+  },
+  "label": "hypotheses worth re-testing; ranks never claim efficacy or safety"
+}

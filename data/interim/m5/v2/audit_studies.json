@@ -1,0 +1,2262 @@
+{
+ "extractor": "m5_rules/v2:cee392297c",
+ "pairPmids": {
+  "wfo-0001006654|D000038": [],
+  "wfo-0001006654|D003085": [],
+  "wfo-0001006654|D003288": [],
+  "wfo-0001006654|D003371": [],
+  "wfo-0001006654|D004231": [
+   "3790308"
+  ],
+  "wfo-0001006654|D004403": [],
+  "wfo-0001006654|D004427": [],
+  "wfo-0001006654|D005334": [],
+  "wfo-0001006654|D006073": [],
+  "wfo-0001006654|D007565": [],
+  "wfo-0001006654|D008107": [
+   "29600757",
+   "22525864",
+   "16041735",
+   "29486131"
+  ],
+  "wfo-0001006654|D012883": [],
+  "wfo-0001006654|D012909": [],
+  "wfo-0001006654|D014555": [],
+  "wfo-0001006654|D014947": [
+   "36375535"
+  ],
+  "wfo-0000933181|D000019": [],
+  "wfo-0000933181|D001733": [],
+  "wfo-0000933181|D003085": [],
+  "wfo-0000933181|D003248": [],
+  "wfo-0000933181|D003371": [],
+  "wfo-0000933181|D004827": [],
+  "wfo-0000933181|D006073": [],
+  "wfo-0000933181|D007565": [],
+  "wfo-0000933181|D007674": [],
+  "wfo-0000933181|D007743": [],
+  "wfo-0000933181|D008107": [],
+  "wfo-0000933181|D017116": [],
+  "wfo-0000933181|D008599": [],
+  "wfo-0000933181|D010243": [],
+  "wfo-0000933181|D011041": [],
+  "wfo-0000933181|D012585": [],
+  "wfo-0000933181|D065008": [],
+  "wfo-0000933181|D012883": [],
+  "wfo-0000933181|D012909": [],
+  "wfo-0000933181|D013158": [],
+  "wfo-0000933181|D013546": [],
+  "wfo-0000933181|D014555": [],
+  "wfo-0000933181|D014947": [],
+  "wfo-0000755919|D001046": [
+   "35146572"
+  ],
+  "wfo-0000755919|D002056": [],
+  "wfo-0000755919|D003371": [],
+  "wfo-0000755919|D006373": [
+   "21120531"
+  ],
+  "wfo-0000755919|D053609": [],
+  "wfo-0000755919|D008599": [],
+  "wfo-0000755919|D010930": [],
+  "wfo-0000755919|D012871": [
+   "16690223",
+   "24964949"
+  ],
+  "wfo-0000755919|D012883": [],
+  "wfo-0000134589|D000435": [],
+  "wfo-0000134589|D001733": [],
+  "wfo-0000134589|D003085": [],
+  "wfo-0000134589|D003288": [],
+  "wfo-0000134589|D004231": [],
+  "wfo-0000134589|D004415": [],
+  "wfo-0000134589|D004427": [],
+  "wfo-0000134589|D005128": [],
+  "wfo-0000134589|D005334": [
+   "38109312"
+  ],
+  "wfo-0000134589|D005414": [],
+  "wfo-0000134589|D006209": [],
+  "wfo-0000134589|D006373": [
+   "11891089",
+   "36587611",
+   "20554118",
+   "32574178",
+   "20943323",
+   "10624877",
+   "18325496",
+   "19070963",
+   "21618184",
+   "42572844",
+   "30118862"
+  ],
+  "wfo-0000134589|D007565": [],
+  "wfo-0000134589|D008599": [],
+  "wfo-0000134589|D009041": [],
+  "wfo-0000134589|D010608": [],
+  "wfo-0000134589|D011041": [
+   "37670294",
+   "7590079",
+   "23394445"
+  ],
+  "wfo-0000134589|D011537": [],
+  "wfo-0000134589|D065008": [],
+  "wfo-0000134589|D012871": [
+   "38413393",
+   "37194295",
+   "32603837",
+   "39348646",
+   "27313817"
+  ],
+  "wfo-0000134589|D012883": [],
+  "wfo-0000134589|D007319": [],
+  "wfo-0000134589|D013158": [],
+  "wfo-0000134589|D014947": [],
+  "wfo-0000329771|D000038": [],
+  "wfo-0000329771|D001249": [],
+  "wfo-0000329771|D001733": [],
+  "wfo-0000329771|D003085": [],
+  "wfo-0000329771|D003248": [],
+  "wfo-0000329771|D003371": [],
+  "wfo-0000329771|D004415": [],
+  "wfo-0000329771|D004487": [],
+  "wfo-0000329771|D004827": [],
+  "wfo-0000329771|D005414": [],
+  "wfo-0000329771|D006073": [],
+  "wfo-0000329771|D006261": [],
+  "wfo-0000329771|D006373": [],
+  "wfo-0000329771|D006470": [],
+  "wfo-0000329771|D006547": [],
+  "wfo-0000329771|D007565": [],
+  "wfo-0000329771|D007674": [],
+  "wfo-0000329771|D007743": [],
+  "wfo-0000329771|D008107": [],
+  "wfo-0000329771|D017116": [],
+  "wfo-0000329771|D008171": [],
+  "wfo-0000329771|D008599": [],
+  "wfo-0000329771|D010243": [],
+  "wfo-0000329771|D010930": [],
+  "wfo-0000329771|D012883": [],
+  "wfo-0000329771|D012909": [],
+  "wfo-0000329771|D013158": [],
+  "wfo-0000329771|D014098": [],
+  "wfo-0000329771|D014545": [],
+  "wfo-0000329771|D014947": [],
+  "wfo-0000588460|D003085": [
+   "34275806"
+  ],
+  "wfo-0000588460|D004231": [],
+  "wfo-0000588460|D004415": [
+   "32525777"
+  ],
+  "wfo-0000588460|D005128": [
+   "27023323"
+  ],
+  "wfo-0000588460|D005414": [],
+  "wfo-0000600655|D003085": [],
+  "wfo-0000600655|D005128": [
+   "34884773",
+   "41774285"
+  ],
+  "wfo-0000600655|D006373": [],
+  "wfo-0000600655|D008599": [],
+  "wfo-0000600655|D010930": [],
+  "wfo-0000600655|D012883": [],
+  "wfo-0000600655|D014005": [],
+  "wfo-0000600655|D014086": [],
+  "wfo-0000600655|D014098": [],
+  "wfo-0000600655|D014860": [
+   "32120948",
+   "10902593"
+  ],
+  "wfo-0000607845|D003248": [
+   "41088384"
+  ],
+  "wfo-0000607845|D004415": [],
+  "wfo-0000607845|D005334": [
+   "37046199"
+  ],
+  "wfo-0000607845|D007565": [],
+  "wfo-0000607845|D007674": [
+   "30768427",
+   "29236674",
+   "41088384"
+  ],
+  "wfo-0000607845|D010243": [],
+  "wfo-0000607845|D014086": [],
+  "wfo-0000621274|D000038": [],
+  "wfo-0000621274|D005334": [],
+  "wfo-0000621274|D008599": [],
+  "wfo-0000621274|D012909": [],
+  "wfo-0000621274|D014947": [
+   "38864943"
+  ],
+  "wfo-0000788844|D001249": [
+   "25756352"
+  ],
+  "wfo-0000788844|D007565": [],
+  "wfo-0000788844|D008171": [
+   "39236778",
+   "37827264",
+   "25756352",
+   "33295229"
+  ],
+  "wfo-0000788844|D010930": [],
+  "wfo-0000983427|D003085": [],
+  "wfo-0000983427|D003248": [],
+  "wfo-0000983427|D003967": [],
+  "wfo-0000983427|D005128": [],
+  "wfo-0000983427|D005334": [],
+  "wfo-0000983427|D006470": [
+   "21952153",
+   "15526604"
+  ],
+  "wfo-0000983427|D007249": [
+   "20017405"
+  ],
+  "wfo-0000983427|D007973": [],
+  "wfo-0000983427|D008599": [],
+  "wfo-0000983427|D012883": [],
+  "wfo-0000983427|D014839": [],
+  "wfo-0000968296|D003967": [],
+  "wfo-0000968296|D004403": [],
+  "wfo-0000968296|D006261": [],
+  "wfo-0000968296|D006470": [],
+  "wfo-0000968296|D007565": [],
+  "wfo-0000968296|D008107": [
+   "36029804"
+  ],
+  "wfo-0000968296|D010608": [],
+  "wfo-0000968296|D011041": [
+   "36029804"
+  ],
+  "wfo-0000968296|D012883": [],
+  "wfo-0000968296|D012909": [],
+  "wfo-0000968296|D014947": [],
+  "wfo-0000212813|D004487": [],
+  "wfo-0000212813|D005128": [],
+  "wfo-0000212813|D006470": [
+   "21194248",
+   "20677211"
+  ],
+  "wfo-0000212813|D007674": [
+   "32738390",
+   "14630165"
+  ],
+  "wfo-0000212813|D008107": [
+   "10383482",
+   "32738390",
+   "25779384",
+   "27487733",
+   "28165501"
+  ],
+  "wfo-0000212813|D008171": [
+   "37630394",
+   "36238303",
+   "25779384",
+   "32230838",
+   "38220426",
+   "17516657",
+   "23088135",
+   "17327992"
+  ],
+  "wfo-0000212813|D010608": [
+   "31589096"
+  ],
+  "wfo-0000212813|D012883": [],
+  "wfo-0000212813|D014545": [],
+  "wfo-0000212813|D014947": [
+   "23088135"
+  ],
+  "wfo-0000725866|D003248": [],
+  "wfo-0000725866|D004231": [],
+  "wfo-0000725866|D006373": [],
+  "wfo-0000725866|D007674": [
+   "42234899"
+  ],
+  "wfo-0000725866|D008107": [
+   "27659607"
+  ],
+  "wfo-0000725866|D008599": [],
+  "wfo-0000725866|D011041": [],
+  "wfo-0000725866|D011537": [],
+  "wfo-0000725866|D012871": [
+   "33801280",
+   "18587269",
+   "25600644",
+   "7854777",
+   "19201179"
+  ],
+  "wfo-0000725866|D012883": [],
+  "wfo-0000725866|D013158": [],
+  "wfo-0000725866|D014005": [],
+  "wfo-0000725866|D014545": [],
+  "wfo-0001021850|D002647": [],
+  "wfo-0001021850|D004427": [],
+  "wfo-0001021850|D005128": [
+   "1757054",
+   "15637898"
+  ],
+  "wfo-0001021850|D005334": [
+   "19720117"
+  ],
+  "wfo-0001021850|D006073": [],
+  "wfo-0001021850|D006261": [],
+  "wfo-0001021850|D007249": [],
+  "wfo-0001021850|D007674": [],
+  "wfo-0001021850|D010373": [],
+  "wfo-0001021850|D012585": [],
+  "wfo-0001021850|D007319": [],
+  "wfo-0001021850|D014098": [],
+  "wfo-0000480963|D004427": [],
+  "wfo-0000480963|D004604": [],
+  "wfo-0000480963|D006073": [],
+  "wfo-0000480963|D006261": [],
+  "wfo-0000480963|D007319": [],
+  "wfo-0000480963|D014947": [],
+  "wfo-0000460581|D004427": [],
+  "wfo-0000460581|D005128": [],
+  "wfo-0000460581|D006484": [],
+  "wfo-0000460581|D010608": [],
+  "wfo-0000460581|D014388": [],
+  "wfo-0000402430|D000038": [],
+  "wfo-0000402430|D000505": [],
+  "wfo-0000402430|D001046": [],
+  "wfo-0000402430|D001249": [
+   "38336182"
+  ],
+  "wfo-0000402430|D003288": [],
+  "wfo-0000402430|D003371": [],
+  "wfo-0000402430|D003863": [
+   "28480425"
+  ],
+  "wfo-0000402430|D003967": [],
+  "wfo-0000402430|D004231": [],
+  "wfo-0000402430|D004415": [],
+  "wfo-0000402430|D004427": [],
+  "wfo-0000402430|D004487": [],
+  "wfo-0000402430|D004827": [],
+  "wfo-0000402430|D006373": [],
+  "wfo-0000402430|D006470": [],
+  "wfo-0000402430|D006547": [],
+  "wfo-0000402430|D007249": [],
+  "wfo-0000402430|D007774": [],
+  "wfo-0000402430|D053609": [],
+  "wfo-0000402430|D010373": [],
+  "wfo-0000402430|D008107": [
+   "17685094",
+   "19903381",
+   "25371570"
+  ],
+  "wfo-0000402430|D011041": [
+   "17685094",
+   "19903381",
+   "25371570"
+  ],
+  "wfo-0000402430|D065008": [],
+  "wfo-0000402430|D012883": [],
+  "wfo-0000402430|D012909": [],
+  "wfo-0000402430|D013158": [],
+  "wfo-0000402430|D014545": [
+   "10624898"
+  ],
+  "wfo-0000402430|D014839": [],
+  "wfo-0000302258|D000038": [],
+  "wfo-0000302258|D001046": [],
+  "wfo-0000302258|D007249": [
+   "36178264"
+  ],
+  "wfo-0000302258|D007674": [
+   "39019617"
+  ],
+  "wfo-0000302258|D007743": [],
+  "wfo-0000302258|D007973": [],
+  "wfo-0000302258|D017116": [],
+  "wfo-0000302258|D008599": [
+   "16884344",
+   "22435409"
+  ],
+  "wfo-0000302258|D012871": [
+   "27825341",
+   "27917678",
+   "20409537",
+   "23502334"
+  ],
+  "wfo-0000302258|D014947": [
+   "39201676"
+  ]
+ },
+ "studies": [
+  {
+   "pmid": "38336182",
+   "title": "Novel insights into the anti-asthmatic effect of Raphanus sativus L. (Raphani Semen): Targeting immune cells, inflammatory pathways and oxidative stress markers.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "methanol",
+     "solventClass": "methanol",
+     "modernClass": "methanol",
+     "solventText": "methanolic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 466,
+       "end": 476
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 492,
+       "end": 498
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "28480425",
+   "title": "BEHAVIORAL EVIDENCE OF ANTIDEPRESSANT-LIKE ACTIVITY OF RAPHANUS SATIVUS L. VAR. CAUDATUS IN MICE.",
+   "pmcid": "PMC5412219",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": null
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "ethanolic",
+     "ethanolFraction": null,
+     "heat": "boiled",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "ethanolic",
+       "start": 150,
+       "end": 159
+      },
+      {
+       "field": "heat",
+       "quote": "Soxhlet",
+       "start": 1110,
+       "end": 1117
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "air-dried",
+       "start": 945,
+       "end": 954
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "17685094",
+   "title": "Protective role of Raphanus sativus root extract on paracetamol-induced hepatotoxicity in albino rats.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "methanol",
+     "solventClass": "methanol",
+     "modernClass": "methanol",
+     "solventText": "methanol",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 108,
+       "end": 116
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 145,
+       "end": 149
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "25371570",
+   "title": "In vitro antioxidant and in vivo hepatoprotective activity of leave extract of Raphanus sativus in rats using CCL4 model.",
+   "pmcid": "PMC4202426",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "ethanol",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 277,
+       "end": 284
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 323,
+       "end": 329
+      }
+     ]
+    },
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extract",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1982,
+       "end": 1997
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 323,
+       "end": 329
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "10624898",
+   "title": "Antiurolithiatic activity of Raphanus sativus aqueous extract on rats.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extract",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "bark",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 46,
+       "end": 61
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 99,
+       "end": 103
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "36375535",
+   "title": "Essential oils of four wild plants inhibit the blood seeking behaviour of female Aedes aegytpi.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "other",
+     "solventClass": "other",
+     "modernClass": "other",
+     "solventText": "Essential oils",
+     "ethanolFraction": null,
+     "heat": "boiled",
+     "part": "aerial_parts",
+     "freshOrDried": "fresh",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 0,
+       "end": 14
+      },
+      {
+       "field": "heat",
+       "quote": null,
+       "start": 525,
+       "end": 543
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 567,
+       "end": 579
+      },
+      {
+       "field": "freshOrDried",
+       "quote": null,
+       "start": 549,
+       "end": 579
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "22525864",
+   "title": "Agrimonia eupatoria protects against chronic ethanol-induced liver injury in rats.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "water extract",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 156,
+       "end": 169
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "16041735",
+   "title": "Inhibition of hepatitis B virus by an aqueous extract of Agrimonia eupatoria L.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extract",
+     "ethanolFraction": null,
+     "heat": "warm",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "several plant parts named"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 38,
+       "end": 53
+      },
+      {
+       "field": "heat",
+       "quote": null,
+       "start": 384,
+       "end": 396
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "29486131",
+   "title": "Agrimonia eupatoria L. (Agrimony) Extract Alters Liver Health in Subjects with Elevated Alanine Transaminase Levels: A Controlled, Randomized, and Double-Blind Trial.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extract",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 363,
+       "end": 378
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "38413393",
+   "title": "Oviposition Deterrent Activity of Some Wild Plants for Adult Females of Chrysomya albiceps with Medical and Veterinary Importance.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "methanol",
+     "solventClass": "methanol",
+     "modernClass": "methanol",
+     "solventText": "methanol",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "several plant parts named"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1326,
+       "end": 1334
+      }
+     ]
+    },
+    {
+     "solvent": "acetone",
+     "solventClass": "acetone",
+     "modernClass": "acetone",
+     "solventText": "acetone",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "several plant parts named"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1336,
+       "end": 1343
+      }
+     ]
+    },
+    {
+     "solvent": "other",
+     "solventClass": "other",
+     "modernClass": "other",
+     "solventText": "petroleum ether",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "several plant parts named"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1348,
+       "end": 1363
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "37670294",
+   "title": "The aqueous extract of Artemisia Absinthium L. stimulates HO-1/MT-1/Cyp450 signaling pathway via oxidative stress regulation induced by aluminium oxide nanoparticles (α and γ) animal model.",
+   "pmcid": "PMC10478434",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extract",
+     "ethanolFraction": null,
+     "heat": "cold",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "filtered": "yes",
+     "flags": [
+      "several plant parts named"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "aqueous extract",
+       "start": 4,
+       "end": 19
+      },
+      {
+       "field": "heat",
+       "quote": "room temperature",
+       "start": 1466,
+       "end": 1482
+      },
+      {
+       "field": "freshOrDried",
+       "quote": " dried",
+       "start": 1025,
+       "end": 1031
+      },
+      {
+       "field": "filtered",
+       "quote": "filtered",
+       "start": 1692,
+       "end": 1700
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "36587611",
+   "title": "In vitro scolicidal effect of Calendula officinalis, Artemisia dracunculus, Artemisia absinthium, and Ferula assafoetida extracts against hydatid cyst protoscolices.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "hydroethanolic",
+     "solventClass": "hydroethanolic",
+     "modernClass": "hydroalcoholic_unstated",
+     "solventText": "hydroalcoholic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 431,
+       "end": 445
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "37194295",
+   "title": "Structure-based virtual screening of anti-breast cancer compounds from Artemisia absinthium-insights through molecular docking, pharmacokinetics, and molecular dynamic simulations.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "ethanol",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 469,
+       "end": 476
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 414,
+       "end": 418
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "20943323",
+   "title": "Effects of artemisinin and Artemisia extracts on Haemonchus contortus in gerbils (Meriones unguiculatus).",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extract",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "whole_plant",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1011,
+       "end": 1026
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 436,
+       "end": 448
+      }
+     ]
+    },
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "ethanolic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "whole_plant",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1031,
+       "end": 1040
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 436,
+       "end": 448
+      }
+     ]
+    },
+    {
+     "solvent": "other",
+     "solventClass": "other",
+     "modernClass": "other",
+     "solventText": "essential oil",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "whole_plant",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1057,
+       "end": 1070
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 436,
+       "end": 448
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "38109312",
+   "title": "Antipyretic activity of the hydro-alcoholic extract of Artemisia absinthium L. as a standalone and as an adjuvant with barley water against yeast-induced pyrexia in albino Wistar rats.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "hydroethanolic",
+     "solventClass": "hydroethanolic",
+     "modernClass": "hydroalcoholic_unstated",
+     "solventText": "hydro-alcoholic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "whole_plant",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 28,
+       "end": 43
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 500,
+       "end": 511
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "18325496",
+   "title": "Comparison of the effects of Artemisia vulgaris and Artemisia absinthium growing in western Anatolia against trichinellosis (Trichinella spiralis) in rats.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "methanol",
+     "solventClass": "methanol",
+     "modernClass": "methanol",
+     "solventText": "methanol",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "aerial_parts",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 695,
+       "end": 703
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 720,
+       "end": 732
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "32603837",
+   "title": "Cytotoxic potential of Artemisia absinthium extract loaded polymeric nanoparticles against breast cancer cells: Insight into the protein targets.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "unknown",
+     "solventClass": "unknown",
+     "modernClass": "unknown",
+     "solventText": "unknown",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "whole_plant",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "no solvent stated"
+     ],
+     "evidence": [
+      {
+       "field": "part",
+       "quote": null,
+       "start": 726,
+       "end": 737
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "19070963",
+   "title": "Anthelmintic activity of extracts of Artemisia absinthium against ovine nematodes.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extracts",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "aerial_parts",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 535,
+       "end": 551
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 600,
+       "end": 612
+      }
+     ]
+    },
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "ethanolic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "aerial_parts",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 568,
+       "end": 577
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 600,
+       "end": 612
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "21618184",
+   "title": "Antiparasitic efficiency of Artemisia absinthium on Toxocara cati in naturally infected cats.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "unknown",
+     "solventClass": "unknown",
+     "modernClass": "unknown",
+     "solventText": "unknown",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "no solvent stated"
+     ],
+     "evidence": []
+    }
+   ]
+  },
+  {
+   "pmid": "39348646",
+   "title": "Exploring the therapeutic potential of bioactive compounds derived from Artemisia absinthium against breast cancer cell line.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "unknown",
+     "solventClass": "unknown",
+     "modernClass": "unknown",
+     "solventText": "unknown",
+     "ethanolFraction": null,
+     "heat": "boiled",
+     "part": "aerial_parts",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "no solvent stated"
+     ],
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": null,
+       "start": 318,
+       "end": 325
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 299,
+       "end": 311
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "7590079",
+   "title": "Preventive and curative effects of Artemisia absinthium on acetaminophen and CCl4-induced hepatotoxicity.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "methanol",
+     "solventClass": "methanol",
+     "modernClass": "methanol",
+     "solventText": "methanolic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 128,
+       "end": 138
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "42572844",
+   "title": "Comparison of in vivo anthelmintic efficacy of Artemisia absinthium extract and albendazole in Awassi breed sheep with natural gastrointestinal nematode infection.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "ethanolic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 266,
+       "end": 275
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "23394445",
+   "title": "Reversal of carbon tetrachloride-induced hepatic injury by aqueous extract of Artemisia absinthium in Sprague-Dawley rats.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extract",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 59,
+       "end": 74
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "30118862",
+   "title": "Chicory (Cichorium intybus) and wormwood (Artemisia absinthium) extracts exhibit strong larvicidal activity against mosquito vectors of malaria, dengue fever, and filariasis.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "methanol",
+     "solventClass": "methanol",
+     "modernClass": "methanol",
+     "solventText": "methanol",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1241,
+       "end": 1249
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 1261,
+       "end": 1266
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "29236674",
+   "title": "Citrullus colocynthis Linn. Fruit extract ameliorates cisplatin-induced hepato-renal toxicity in rats.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "ethanolic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "fruit",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 313,
+       "end": 322
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 323,
+       "end": 328
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "37046199",
+   "title": "Investigation of Anti-inflammatory, Antipyretic and Analgesic Activities of Citrullus colocynthis in Albino Rats through in vivo and Pharmacoinformatics Studies.",
+   "pmcid": "PMC10964079",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "acetone",
+     "solventClass": "acetone",
+     "modernClass": "acetone",
+     "solventText": "acetone",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "fruit",
+     "freshOrDried": "unknown",
+     "filtered": "yes",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "acetone",
+       "start": 542,
+       "end": 549
+      },
+      {
+       "field": "part",
+       "quote": "fruit",
+       "start": 550,
+       "end": 555
+      },
+      {
+       "field": "filtered",
+       "quote": "filtered",
+       "start": 1304,
+       "end": 1312
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "20017405",
+   "title": "[Evaluation of anti-inflammatory activity of extracts from Siberian plants].",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "unknown",
+     "solventClass": "unknown",
+     "modernClass": "unknown",
+     "solventText": "unknown",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "no solvent stated"
+     ],
+     "evidence": []
+    }
+   ]
+  },
+  {
+   "pmid": "16690223",
+   "title": "In vitro antifungal activities of Allium cepa, Allium sativum and ketoconazole against some pathogenic yeasts and dermatophytes.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extracts",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 190,
+       "end": 206
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "36178264",
+   "title": "Sclareol attenuates angiotensin II-induced cardiac remodeling and inflammation via inhibiting MAPK signaling.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "infusion",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "several plant parts named"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 731,
+       "end": 739
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "27825341",
+   "title": "Essential oils: in vitro activity against Leishmania amazonensis, cytotoxicity and chemical composition.",
+   "pmcid": "PMC5101707",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "other",
+     "solventClass": "other",
+     "modernClass": "other",
+     "solventText": "Essential oils",
+     "ethanolFraction": null,
+     "heat": "warm",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "several plant parts named"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Essential oils",
+       "start": 0,
+       "end": 14
+      },
+      {
+       "field": "heat",
+       "quote": "37 °C",
+       "start": 4246,
+       "end": 4251
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "39019617",
+   "title": "Eco-friendly Nanoparticles Synthesized from Salvia sclarea Ethanol Extract Protect against STZ-induced Diabetic Nephropathy in Rats via Antioxidant, Anti-inflammatory, and Apoptosis Mechanisms.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "Ethanol",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "aerial_parts",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 59,
+       "end": 66
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 508,
+       "end": 520
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "39201676",
+   "title": "Burn Wound Healing Activity of Hydroxyethylcellulose Gels with Different Water Extracts Obtained from Various Medicinal Plants in Pseudomonas aeruginosa-Infected Rabbits.",
+   "pmcid": "PMC11354801",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "Water Extracts",
+     "ethanolFraction": null,
+     "heat": "cold",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Water Extracts",
+       "start": 73,
+       "end": 87
+      },
+      {
+       "field": "heat",
+       "quote": "room temperature",
+       "start": 4964,
+       "end": 4980
+      }
+     ]
+    },
+    {
+     "solvent": "other",
+     "solventClass": "other",
+     "modernClass": "other",
+     "solventText": "essential oil",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "essential oil",
+       "start": 4073,
+       "end": 4086
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "27917678",
+   "title": "Traditional Mediterranean plants: characterization and use of an essential oils mixture to treat Malassezia otitis externa in atopic dogs.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "other",
+     "solventClass": "other",
+     "modernClass": "other",
+     "solventText": "essential oils",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 65,
+       "end": 79
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "22435409",
+   "title": "Pain relief assessment by aromatic essential oil massage on outpatients with primary dysmenorrhea: a randomized, double-blind clinical trial.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "other",
+     "solventClass": "other",
+     "modernClass": "other",
+     "solventText": "essential oil",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 35,
+       "end": 48
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "34275806",
+   "title": "Antispasmodic activity and mechanism of action of polyherbal formulation DCD-684 on rabbit jejunum.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "decoctions",
+     "ethanolFraction": null,
+     "heat": "boiled",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 168,
+       "end": 178
+      },
+      {
+       "field": "heat",
+       "quote": null,
+       "start": 168,
+       "end": 178
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "19720117",
+   "title": "Study of anti-inflammatory, analgesic and antipyretic activities of seeds of Hyoscyamus niger and isolation of a new coumarinolignan.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "methanol",
+     "solventClass": "methanol",
+     "modernClass": "methanol",
+     "solventText": "methanolic",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 273,
+       "end": 283
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 295,
+       "end": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "37630394",
+   "title": "Glycyrrhiza glabra L. Extracts and Other Therapeutics against SARS-CoV-2 in Central Eurasia: Available but Overlooked.",
+   "pmcid": "PMC10458004",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "unknown",
+     "solventClass": "unknown",
+     "modernClass": "unknown",
+     "solventText": "unknown",
+     "ethanolFraction": null,
+     "heat": "warm",
+     "part": "root",
+     "freshOrDried": "dried",
+     "filtered": "yes",
+     "flags": [
+      "no solvent stated"
+     ],
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "65 °C",
+       "start": 3098,
+       "end": 3103
+      },
+      {
+       "field": "part",
+       "quote": "roots",
+       "start": 2425,
+       "end": 2430
+      },
+      {
+       "field": "freshOrDried",
+       "quote": " dried",
+       "start": 2030,
+       "end": 2036
+      },
+      {
+       "field": "filtered",
+       "quote": "filtering",
+       "start": 1247,
+       "end": 1256
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "36238303",
+   "title": "Prophylactic treatment of Glycyrrhiza glabra mitigates COVID-19 pathology through inhibition of pro-inflammatory cytokines in the hamster model and NETosis.",
+   "pmcid": "PMC9550929",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "aqueous extract",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "filtered": "yes",
+     "flags": [
+      "several plant parts named"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "aqueous extract",
+       "start": 1700,
+       "end": 1715
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "dry root",
+       "start": 1448,
+       "end": 1456
+      },
+      {
+       "field": "filtered",
+       "quote": "filtration",
+       "start": 1610,
+       "end": 1620
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "32738390",
+   "title": "Protective effects of Glycyrrhiza glabra supplementation against methotrexate-induced hepato-renal damage in rats: An experimental approach.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "unknown",
+     "solventClass": "unknown",
+     "modernClass": "unknown",
+     "solventText": "unknown",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "rhizome",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "no solvent stated"
+     ],
+     "evidence": [
+      {
+       "field": "part",
+       "quote": null,
+       "start": 480,
+       "end": 487
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "25779384",
+   "title": "Comparative Cytotoxicity of Glycyrrhiza glabra Roots from Different Geographical Origins Against Immortal Human Keratinocyte (HaCaT), Lung Adenocarcinoma (A549) and Liver Carcinoma (HepG2) Cells.",
+   "pmcid": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   },
+   "evidenceSource": "abstract",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "methanol",
+     "solventClass": "methanol",
+     "modernClass": "methanol",
+     "solventText": "methanol",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": null,
+       "start": 1044,
+       "end": 1052
+      },
+      {
+       "field": "part",
+       "quote": null,
+       "start": 1085,
+       "end": 1090
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "32230838",
+   "title": "Herbal Combinational Medication of Glycyrrhiza glabra, Agastache rugosa Containing Glycyrrhizic Acid, Tilianin Inhibits Neutrophilic Lung Inflammation by Affecting CXCL2, Interleukin-17/STAT3 Signal Pathways in a Murine Model of COPD.",
+   "pmcid": "PMC7231088",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "hydroethanolic",
+     "solventClass": "hydroethanolic",
+     "modernClass": "high_ethanol",
+     "solventText": "30% ethanol",
+     "ethanolFraction": 0.3,
+     "heat": "warm",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "filtered": "yes",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "30% ethanol",
+       "start": 716,
+       "end": 727
+      },
+      {
+       "field": "heat",
+       "quote": "70 °C",
+       "start": 649,
+       "end": 654
+      },
+      {
+       "field": "freshOrDried",
+       "quote": " dried",
+       "start": 882,
+       "end": 888
+      },
+      {
+       "field": "filtered",
+       "quote": "filtered",
+       "start": 745,
+       "end": 753
+      }
+     ]
+    },
+    {
+     "solvent": "chloroform",
+     "solventClass": "chloroform",
+     "modernClass": "chloroform",
+     "solventText": "chloroform",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "filtered": "yes",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "chloroform",
+       "start": 9895,
+       "end": 9905
+      },
+      {
+       "field": "freshOrDried",
+       "quote": " dried",
+       "start": 882,
+       "end": 888
+      },
+      {
+       "field": "filtered",
+       "quote": "filtered",
+       "start": 745,
+       "end": 753
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "28165501",
+   "title": "Therapeutic effects of Euphorbia Pekinensis and Glycyrrhiza glabra on Hepatocellular Carcinoma Ascites Partially Via Regulating the Frk-Arhgdib-Inpp5d-Avpr2-Aqp4 Signal Axis.",
+   "pmcid": "PMC5292954",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "water",
+     "solventClass": "water",
+     "modernClass": "aqueous",
+     "solventText": "decoction",
+     "ethanolFraction": null,
+     "heat": "unknown",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "filtered": "unknown",
+     "flags": [
+      "conflicting heat cues"
+     ],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "decoction",
+       "start": 14184,
+       "end": 14193
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pmid": "33801280",
+   "title": "The Effect of Herbal Medicinal Products on Psoriasis-Like Keratinocytes.",
+   "pmcid": "PMC8000521",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   },
+   "evidenceSource": "pmc_fulltext",
+   "extractor": "m5_rules/v2:cee392297c",
+   "preparations": [
+    {
+     "solvent": "ethanol",
+     "solventClass": "ethanol",
+     "modernClass": "ethanol",
+     "solventText": "Ethanol",
+     "ethanolFraction": null,
+     "heat": "warm",
+     "part": "resin",
+     "freshOrDried": "dried",
+     "filtered": "unknown",
+     "flags": [],
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Ethanol",
+       "start": 521,
+       "end": 528
+      },
+      {
+       "field": "heat",
+       "quote": "80 °C",
+       "start": 640,
+       "end": 645
+      },
+      {
+       "field": "part",
+       "quote": "resin",
+       "start": 388,
+       "end": 393
+      },
+      {
+       "field": "freshOrDried",
+       "quote": " dried",
+       "start": 179,
+       "end": 185
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

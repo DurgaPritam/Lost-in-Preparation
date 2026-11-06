@@ -406,7 +406,8 @@
       "oaLicences": {}
     }
   },
-  "held": [
+  "held": [],
+  "heldPreviously": [
     {
       "species": "Lavandula angustifolia",
       "wfoId": "wfo-0000224116",
@@ -431,5 +432,6 @@
       "attestations": 2.0,
       "reason": "pending re-review after the footnote rule; attestation proxy below 3"
     }
-  ]
+  ],
+  "heldNote": "2026-11-06 re-review (config/study_set_rereview_decisions.csv): Agrimonia eupatoria approved; Symphytum officinale, Pastinaca sativa and Hyssopus officinalis excluded. Lavandula angustifolia's conditional approval was not met. No approved species is held; records in literature_held/ are kept but unused."
 }

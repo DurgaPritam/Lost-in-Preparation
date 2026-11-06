@@ -76,12 +76,20 @@ def compounds_for(species: list[str]) -> dict[str, list[M.Compound]]:
     return out
 
 
-def run() -> dict:
-    pairs = json.loads((INTERIM / "m5" / "pairs.json").read_text())
-    units = pd.read_csv(INTERIM / "m5" / "audit_units.csv", dtype={"pmid": str})
-    studies = {s["pmid"]: s for s in json.loads((INTERIM / "m5" / "audit_studies.json").read_text())["studies"]}
-    pair_pmids = json.loads((INTERIM / "m5" / "audit_studies.json").read_text())["pairPmids"]
-    recipes = {r["id"]: r for r in json.loads((INTERIM / "m1" / "predictions_approved.json").read_text())}
+def run(version: str = "v1") -> dict:
+    """version v1: audit protocol v1 (outputs site-data/hypotheses.json); v2: protocol v2 (outputs data/interim/m6/v2/).
+    Both apply the logged M1 corrections (config/m1_corrections.csv)."""
+    from ..m1.corrections import apply
+    from ..m5.pairs import preparation_key
+    src = INTERIM / "m5" if version == "v1" else INTERIM / "m5" / "v2"
+    out_dir = OUT if version == "v1" else OUT / "v2"
+    pairs = json.loads((src / "pairs.json").read_text())
+    units = pd.read_csv(src / "audit_units.csv", dtype={"pmid": str})
+    if version == "v2":
+        units = units.rename(columns={"overall": "status"})
+    studies = {s["pmid"]: s for s in json.loads((src / "audit_studies.json").read_text())["studies"]}
+    pair_pmids = json.loads((src / "audit_studies.json").read_text())["pairPmids"]
+    recipes = {r["id"]: r for r in apply(json.loads((INTERIM / "m1" / "predictions_approved.json").read_text()))}
     tox = pd.read_csv(ROOT / "data" / "reference" / "toxicity_curated.csv").set_index("acceptedName")
     cfg = M.load_config()
     sd = M.descriptor_sd("rdkit")["sd"]
@@ -92,7 +100,7 @@ def run() -> dict:
     for p in pairs["pairs"]:
         key = f"{p['speciesId']}|{p['indication']['meshId']}"
         u = units[units.pairKey == key]
-        if not len(u) or (u.status != "unknown").sum() == 0:
+        if not len(u) or u.status.isin(["faithful", "not_faithful"]).sum() == 0:
             skipped["no study with a known status"] += 1
             continue
         if (u.status == "faithful").any():
@@ -106,7 +114,7 @@ def run() -> dict:
                 lab = hist_to_grid(recipes[rid])
                 if lab:
                     fc[lab] += 1
-                    fkey.setdefault(lab, hk)
+                    fkey.setdefault(lab, preparation_key(recipes[rid]))
         if not fc:
             skipped["no historical preparation the model represents"] += 1
             continue
@@ -131,7 +139,7 @@ def run() -> dict:
         s = R.score(R.Candidate(p["speciesId"], p["species"], faithful, modern), comps[p["species"]], draws)
         rows.append({**s, "pairKey": key, "mesh": p["indication"]["label"], "meshId": p["indication"]["meshId"],
                      "faithfulKey": fk, "faithfulRecipes": fn, "modernStudyPreps": mn, "modernHeatUnstated": mcav,
-                     "studiesKnown": int((u.status != "unknown").sum()), "studiesUnknown": int((u.status == "unknown").sum()),
+                     "studiesKnown": int(u.status.isin(["faithful", "not_faithful"]).sum()), "studiesUnknown": int((u.status == "unknown").sum()),
                      "attestationCount": p["attestationCount"], "sources": ";".join(p["sources"])})
         meta.append(p)
     df = R.rank(pd.DataFrame(rows)) if rows else pd.DataFrame(rows)
@@ -151,6 +159,10 @@ def run() -> dict:
             caveats.append("attested only by Pliny (lower confidence)")
         if r.studiesUnknown:
             caveats.append(f"{r.studiesUnknown} retrieved studies could not be coded as faithful or not (unknown fields)")
+        if any("corrections" in recipes[x] for x in p["recipes"]):
+            caveats.append("faithful preparation uses a logged extraction correction (config/m1_corrections.csv)")
+        if version == "v2":
+            caveats.append("audit protocol v2: pre-registered re-analysis after v1's design flaw")
         hyps.append(C.Hypothesis(
             rank=int(r.rank), speciesId=p["speciesId"], indication=C.MeshTerm(**p["indication"]),
             indicationAsWritten=p["indicationsAsWritten"][0], faithfulPreparation=r.faithfulKey,
@@ -164,15 +176,17 @@ def run() -> dict:
                            *(C.EvidenceItem(kind="study", ref=f"pmid:{x}") for x in units[units.pairKey == r.pairKey].pmid[:10]),
                            C.EvidenceItem(kind="profile", ref=f"{p['speciesId']}:{r.faithful} vs {r.modern}"),
                            C.EvidenceItem(kind="species", ref=p["speciesId"])]))
-    OUT.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     if len(df):
-        df.to_csv(OUT / "hypotheses.csv", index=False)
-    SITE_DATA.mkdir(parents=True, exist_ok=True)
-    (SITE_DATA / "hypotheses.json").write_text(json.dumps([h.model_dump(mode="json") for h in sorted(hyps, key=lambda h: h.rank)],
+        df.to_csv(out_dir / "hypotheses.csv", index=False)
+    target = SITE_DATA / "hypotheses.json" if version == "v1" else out_dir / "hypotheses.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(json.dumps([h.model_dump(mode="json") for h in sorted(hyps, key=lambda h: h.rank)],
                                                           ensure_ascii=False, indent=1))
-    summary = {"protocol": "docs/AUDIT_PROTOCOL_v1.md §7", "rule": R.RULE, "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    summary = {"protocol": f"docs/AUDIT_PROTOCOL_{version}.md §7", "auditVersion": version,
+               "m1CorrectionsApplied": sorted(r for r in recipes if "corrections" in recipes[r]), "rule": R.RULE, "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                "pairs": len(pairs["pairs"]), "candidates": len(rows), "ranked": len(hyps),
                "notRanked": int((df.notRanked != "").sum()) if len(df) else 0, "skipped": dict(skipped),
                "label": "hypotheses worth re-testing; ranks never claim efficacy or safety"}
-    (OUT / "hypotheses_summary.json").write_text(json.dumps(summary, indent=2))
+    (out_dir / "hypotheses_summary.json").write_text(json.dumps(summary, indent=2))
     return summary

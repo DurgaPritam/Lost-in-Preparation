@@ -1,0 +1,165 @@
+{
+  "label": "pre-registered re-analysis after v1's design flaw",
+  "protocol": "docs/AUDIT_PROTOCOL_v2.md",
+  "extractor": "m5_rules/v2:cee392297c",
+  "indicationLexicon": "m5_indications/v1:b88bcb0dc0",
+  "m1CorrectionsApplied": [
+    "culpeper-1652:herbal:liquoris:006#r02",
+    "culpeper-1850:herbal:liquorice:003#r02",
+    "pliny-nh:b22:c011:001#r01"
+  ],
+  "generatedAt": "2026-11-06T11:31:51+00:00",
+  "retrieval": {
+    "pairs": 238,
+    "source": "species-level literature (data/interim/m5/literature/), MeSH descriptor or descendant",
+    "pairsWithRecords": 46,
+    "recordsMatched": 91,
+    "recordsWithoutMeshInSpeciesLiterature": 1121,
+    "excluded": {
+      "no prepared plant material stated": 30,
+      "publication type": 16,
+      "no abstract and no open-access methods": 1,
+      "survey": 1
+    },
+    "eligibleStudies": 43,
+    "byEvidenceSource": {
+      "abstract": 33,
+      "pmc_fulltext": 10
+    }
+  },
+  "units": {
+    "n": 47,
+    "pairsWithUnits": 26,
+    "overallStatus": {
+      "unknown": 32,
+      "not_faithful": 11,
+      "no_analogue": 4
+    }
+  },
+  "overallFidelity": {
+    "status": "computed",
+    "value": 0.0,
+    "low": 0.0,
+    "high": 0.0,
+    "nKnown": 11,
+    "nUnknown": 32,
+    "nNoAnalogue": 4
+  },
+  "perVariableFidelity": {
+    "solvent": {
+      "status": "computed",
+      "value": 0.3333,
+      "low": 0.1111,
+      "high": 0.5556,
+      "nKnown": 12,
+      "nUnknown": 31,
+      "nNoAnalogue": 4
+    },
+    "heat": {
+      "status": "computed",
+      "value": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "nKnown": 2,
+      "nUnknown": 45,
+      "nNoAnalogue": 0
+    },
+    "part": {
+      "status": "computed",
+      "value": 0.4444,
+      "low": 0.125,
+      "high": 0.7694,
+      "nKnown": 9,
+      "nUnknown": 38,
+      "nNoAnalogue": 0
+    },
+    "freshOrDried": {
+      "status": "not_computed",
+      "value": null,
+      "low": null,
+      "high": null,
+      "nKnown": 0,
+      "nUnknown": 47,
+      "nNoAnalogue": 0
+    },
+    "filtration": {
+      "status": "computed",
+      "value": 0.75,
+      "low": 0.0,
+      "high": 1.0,
+      "nKnown": 4,
+      "nUnknown": 43,
+      "nNoAnalogue": 0
+    }
+  },
+  "solventWineCutoffSensitivity": {
+    "0.15": {
+      "status": "computed",
+      "value": 0.3333,
+      "low": null,
+      "high": null,
+      "nKnown": 12,
+      "nUnknown": 31,
+      "nNoAnalogue": 4
+    },
+    "0.20": {
+      "status": "computed",
+      "value": 0.3333,
+      "low": null,
+      "high": null,
+      "nKnown": 12,
+      "nUnknown": 31,
+      "nNoAnalogue": 4
+    },
+    "0.25": {
+      "status": "computed",
+      "value": 0.3333,
+      "low": null,
+      "high": null,
+      "nKnown": 12,
+      "nUnknown": 31,
+      "nNoAnalogue": 4
+    }
+  },
+  "bySourceGroup": {
+    "culpeper": {
+      "status": "computed",
+      "value": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "nKnown": 7,
+      "nUnknown": 27,
+      "nNoAnalogue": 1
+    },
+    "pliny_only": {
+      "status": "computed",
+      "value": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "nKnown": 4,
+      "nUnknown": 5,
+      "nNoAnalogue": 3
+    }
+  },
+  "byEvidenceSource": {
+    "pmc_fulltext": {
+      "status": "computed",
+      "value": 0.0,
+      "low": null,
+      "high": null,
+      "nKnown": 3,
+      "nUnknown": 6,
+      "nNoAnalogue": 1
+    },
+    "abstract": {
+      "status": "computed",
+      "value": 0.0,
+      "low": null,
+      "high": null,
+      "nKnown": 8,
+      "nUnknown": 26,
+      "nNoAnalogue": 3
+    }
+  },
+  "overallNotFaithfulShare": 1.0
+}
