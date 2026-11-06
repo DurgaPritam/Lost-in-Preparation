@@ -77,6 +77,9 @@ The view types are in [lib/types.ts](lib/types.ts). The selectors in `lib/data/s
 - **Scroll regions:** the wide correction tables on recipe pages and the case study are focusable regions with labels (axe `scrollable-region-focusable`).
 - **Target size:** PubMed links in the audit table get vertical padding.
 - **Heading order:** the standalone hypothesis page adds a visually hidden h2 ("Hypothesis"), because the card's title is the design Card's h3.
+- **Font fallbacks:** `styles/font-fallbacks.css` adds metric-matched fallback faces: local Times New Roman/Liberation Serif, Arial/Liberation Sans and Courier New/Liberation Mono. Their `size-adjust` and ascent/descent overrides were computed with fontTools from the vendored woff2 files.
+  - **Why:** on Linux the fallback fonts reflowed whole pages when EB Garamond and IBM Plex swapped in (CLS 0.16–0.24 in CI Lighthouse).
+  - **Token stacks:** each stack gains the fallback family right after the web font; the rest of the design's stack is unchanged. `tokens.css` itself is untouched; the override is in the new file, which is imported after it.
 - **Favicon:** `app/icon.svg` is the design's `mark-historical.svg`, with the embedded metadata stripped.
 
 ## Data and build

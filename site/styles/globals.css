@@ -1,6 +1,7 @@
 /* Copied from design/src/styles.css; only the import paths differ (fonts are served from /fonts). */
 @import './fonts.css';
 @import './tokens.css';
+@import './font-fallbacks.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

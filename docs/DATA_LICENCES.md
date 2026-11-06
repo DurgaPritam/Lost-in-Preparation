@@ -40,7 +40,7 @@ EEBO-TCP availability statement (A35365), verbatim:
 | Wikidata (hosts LOTUS natural-product occurrences) | Compounds per taxon, structures, LOTUS references | CC0 | **used** (M3) |
 | Kew POWO API | — | — | refused automated access (HTTP 403); not used |
 | COCONUT 2.0 | Additional compound coverage | Curated dataset released under CC0 (official about page); contributing sources carry their own licences, so check them | licence permits use; **not integrated yet** (bulk dump required) |
-| PubMed / PMC OA | Modern preparation methods; short quoted lines for the literature checks | Per-article licence, listed in the table below | used for quoted statements; audit is a later phase |
+| PubMed / PMC OA | Modern preparation methods (Phase 5 audit) and short quoted lines for the literature checks | Per-article licence, listed in the tables below. PubMed abstracts are publisher copyright in general, so only PMID, title, MeSH and a SHA-256 of the abstract are committed. | **used**: short attributed quotes only; abstract and article text stay in the git-ignored `data/cache/` |
 | PubChem PUG REST | Structures (SMILES, InChIKey) for the literature-check compounds | NCBI public data | **used** (M4) |
 | SangsterLogP dataset (Zenodo 19387552) | Experimental logP reference for validating the solvent descriptor | **CC BY 4.0** (Zenodo record, checked 2026-11-05); SHA-256 `a5f998a6…`. Attribution: see below | **used** (M4) |
 | Wikipedia, *List of poisonous plants* (rev 1383132551) | Known-toxicity screen for M2's toxic-confusion check only (no longer used for the study-set column) | CC BY-SA 4.0; the page is tagged by its editors as needing expert review | **used** (screen only; not a safety rating) |
@@ -116,3 +116,51 @@ Only short quotations (one sentence each) from openly licensed articles are stor
 | PMC9000270 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY 4.0 |
 | PMC9218236 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY-NC-ND 4.0 |
 | PMC9504179 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY 4.0 |
+
+## Audit methods snippets (Phase 5)
+
+The site's Audit drawer, and `site-data/audit.json`, show one methods snippet per coded study:
+- **Length:** 259 characters at most.
+- **Content:** the open-access methods sentence that the solvent was coded from.
+- **Attribution:** each snippet is shown with its PMID, and its PMCID is kept in `data/interim/m5/audit_studies.json`.
+- **Eligibility:** a snippet is kept only for PMC open-access articles. Studies coded from a PubMed abstract get no snippet.
+- **Abstract and article text:** never committed. They stay in the git-ignored `data/cache/m5_abstracts/` and `data/cache/m5_audit_text/`, and the committed records keep a SHA-256 of the text.
+
+Licences come from the `license` field of Europe PMC, which gives no licence version. There are 34 articles:
+
+| PMCID | PMID | Licence |
+|---|---|---|
+| PMC3472325 | 22958433 | CC BY |
+| PMC3523417 | 23248676 | **CC BY-NC-SA** |
+| PMC3559656 | 23382823 | CC BY |
+| PMC3804841 | 24175050 | CC BY |
+| PMC3851199 | 24283263 | CC BY |
+| PMC4075712 | 25050284 | CC BY |
+| PMC4075723 | 25050293 | CC BY |
+| PMC5101707 | 27825341 | CC BY |
+| PMC5111204 | 27846856 | CC BY |
+| PMC5292954 | 28165501 | CC BY |
+| PMC5412219 | 28480425 | **CC BY-NC-ND 4.0** (stated on the article page, checked 2026-11-06; Europe PMC gives no licence) |
+| PMC5454855 | 28468251 | CC BY |
+| PMC7690613 | 33105854 | CC BY |
+| PMC7813598 | 33505935 | **CC BY-NC** |
+| PMC8000521 | 33801280 | CC BY |
+| PMC8614688 | 34829526 | CC BY |
+| PMC8705906 | 34959999 | CC BY |
+| PMC9265937 | 35804727 | CC BY |
+| PMC9409487 | 36012505 | CC BY |
+| PMC9504179 | 36145820 | CC BY |
+| PMC9737327 | 36501112 | CC BY |
+| PMC10229614 | 37253812 | CC BY |
+| PMC10478434 | 37670294 | CC BY |
+| PMC10743429 | 38139137 | CC BY |
+| PMC10749724 | 38146392 | CC BY |
+| PMC10927832 | 38347254 | CC BY |
+| PMC10964079 | 37046199 | CC BY |
+| PMC10974632 | 38543055 | CC BY |
+| PMC11282636 | 39061083 | CC BY |
+| PMC11354801 | 39201676 | CC BY |
+| PMC11650409 | 39344827 | CC BY |
+| PMC12472807 | 41011216 | CC BY |
+| PMC12653370 | 41302134 | CC BY |
+| PMC12933199 | 41756116 | CC BY |
