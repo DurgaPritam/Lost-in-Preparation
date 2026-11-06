@@ -1,0 +1,389 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.7/engine.model.json",
+  "title": "EngineModel",
+  "$defs": {
+    "EngineDescriptorError": {
+      "additionalProperties": false,
+      "properties": {
+        "descriptor": {
+          "title": "Descriptor",
+          "type": "string"
+        },
+        "mae": {
+          "title": "Mae",
+          "type": "number"
+        },
+        "sd": {
+          "description": "Normal SD added to logP for the reported 5th–95th range (sigma = MAE * sqrt(pi/2))",
+          "title": "Sd",
+          "type": "number"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "descriptor",
+        "mae",
+        "sd",
+        "source"
+      ],
+      "title": "EngineDescriptorError",
+      "type": "object"
+    },
+    "EngineHeatRange": {
+      "additionalProperties": false,
+      "properties": {
+        "warm": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Warm",
+          "type": "array"
+        },
+        "boiled": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Boiled",
+          "type": "array"
+        }
+      },
+      "required": [
+        "warm",
+        "boiled"
+      ],
+      "title": "EngineHeatRange",
+      "type": "object"
+    },
+    "EngineParams": {
+      "additionalProperties": false,
+      "properties": {
+        "draws": {
+          "title": "Draws",
+          "type": "integer"
+        },
+        "seed": {
+          "title": "Seed",
+          "type": "integer"
+        },
+        "steepness": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Steepness",
+          "type": "array"
+        },
+        "solvents": {
+          "additionalProperties": {
+            "$ref": "#/$defs/EngineSolventWindow"
+          },
+          "title": "Solvents",
+          "type": "object"
+        },
+        "acidityLogdShift": {
+          "description": "HEURISTIC: logD shift for basic nitrogen in vinegar",
+          "items": {
+            "type": "number"
+          },
+          "title": "Aciditylogdshift",
+          "type": "array"
+        },
+        "heat": {
+          "additionalProperties": {
+            "$ref": "#/$defs/EngineHeatRange"
+          },
+          "description": "HEURISTIC: degradation fraction per alert (and volatile loss) per heat level",
+          "title": "Heat",
+          "type": "object"
+        },
+        "distillationVolatileCarried": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Distillationvolatilecarried",
+          "type": "array"
+        },
+        "distillationNonvolatileCarried": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Distillationnonvolatilecarried",
+          "type": "array"
+        },
+        "unfilteredSuspended": {
+          "description": "HEURISTIC: suspended material carried by an unfiltered preparation",
+          "items": {
+            "type": "number"
+          },
+          "title": "Unfilteredsuspended",
+          "type": "array"
+        },
+        "appliedWholeSuspended": {
+          "description": "HEURISTIC: material in contact when applied whole (not_applicable)",
+          "items": {
+            "type": "number"
+          },
+          "title": "Appliedwholesuspended",
+          "type": "array"
+        },
+        "mwPenaltyAbove": {
+          "title": "Mwpenaltyabove",
+          "type": "number"
+        },
+        "mwPenalty": {
+          "description": "HEURISTIC: size penalty above mwPenaltyAbove",
+          "items": {
+            "type": "number"
+          },
+          "title": "Mwpenalty",
+          "type": "array"
+        }
+      },
+      "required": [
+        "draws",
+        "seed",
+        "steepness",
+        "solvents",
+        "acidityLogdShift",
+        "heat",
+        "distillationVolatileCarried",
+        "distillationNonvolatileCarried",
+        "unfilteredSuspended",
+        "appliedWholeSuspended",
+        "mwPenaltyAbove",
+        "mwPenalty"
+      ],
+      "title": "EngineParams",
+      "type": "object"
+    },
+    "EnginePreparation": {
+      "additionalProperties": false,
+      "properties": {
+        "seedOffset": {
+          "description": "added to params.seed for this preparation's random stream",
+          "title": "Seedoffset",
+          "type": "integer"
+        },
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "solvents": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Solvents",
+          "type": "array"
+        },
+        "heat": {
+          "$ref": "#/$defs/Heat"
+        },
+        "filtered": {
+          "$ref": "#/$defs/Filtered"
+        },
+        "process": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Process"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "seedOffset",
+        "key",
+        "label",
+        "solvents",
+        "heat",
+        "filtered"
+      ],
+      "title": "EnginePreparation",
+      "type": "object"
+    },
+    "EngineSolventWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "upper": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "[low, high] of the upper logP edge (too lipophilic to dissolve)",
+          "title": "Upper"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "[low, high] of the lower logP edge (too polar to dissolve)",
+          "title": "Lower"
+        },
+        "ethanolFraction": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "wine only: ethanol volume fraction range",
+          "title": "Ethanolfraction"
+        },
+        "ethanolShift": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "wine only: window shift per unit ethanol fraction",
+          "title": "Ethanolshift"
+        }
+      },
+      "title": "EngineSolventWindow",
+      "type": "object"
+    },
+    "Filtered": {
+      "enum": [
+        "yes",
+        "no",
+        "not_applicable",
+        "unknown"
+      ],
+      "title": "Filtered",
+      "type": "string"
+    },
+    "Heat": {
+      "enum": [
+        "cold",
+        "warm",
+        "boiled",
+        "unknown"
+      ],
+      "title": "Heat",
+      "type": "string"
+    },
+    "Process": {
+      "enum": [
+        "infusion",
+        "decoction",
+        "maceration",
+        "distillation",
+        "expression",
+        "powder",
+        "other",
+        "unknown"
+      ],
+      "title": "Process",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "mock": {
+      "default": false,
+      "title": "Mock",
+      "type": "boolean"
+    },
+    "modelVersion": {
+      "description": "hash of config/prep_model.toml (prep-model:<sha256[:10]>)",
+      "title": "Modelversion",
+      "type": "string"
+    },
+    "rng": {
+      "description": "random-number generation, so a port can reproduce the draws exactly",
+      "title": "Rng",
+      "type": "string"
+    },
+    "noiseSeedOffset": {
+      "description": "descriptor-error stream: params.seed + seedOffset + noiseSeedOffset",
+      "title": "Noiseseedoffset",
+      "type": "integer"
+    },
+    "customSeedRule": {
+      "description": "seedOffset for a preparation outside the grid",
+      "title": "Customseedrule",
+      "type": "string"
+    },
+    "params": {
+      "$ref": "#/$defs/EngineParams"
+    },
+    "descriptorError": {
+      "items": {
+        "$ref": "#/$defs/EngineDescriptorError"
+      },
+      "title": "Descriptorerror",
+      "type": "array"
+    },
+    "preparations": {
+      "description": "the 13 pipeline preparations, in grid order",
+      "items": {
+        "$ref": "#/$defs/EnginePreparation"
+      },
+      "title": "Preparations",
+      "type": "array"
+    },
+    "heuristics": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Heuristics",
+      "type": "array"
+    },
+    "note": {
+      "title": "Note",
+      "type": "string"
+    }
+  },
+  "required": [
+    "modelVersion",
+    "rng",
+    "noiseSeedOffset",
+    "customSeedRule",
+    "params",
+    "descriptorError",
+    "preparations",
+    "heuristics",
+    "note"
+  ],
+  "type": "object"
+}

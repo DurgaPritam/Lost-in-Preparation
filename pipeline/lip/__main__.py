@@ -24,6 +24,7 @@
   python -m lip m6 hypotheses            Phase 6: rank never-faithfully-tested pairs (hypotheses worth re-testing)
   python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
   python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
+  python -m lip m4 engine-export         Preparation Lab inputs -> site-data/engine/ (self-checked against the profiles)
   python -m lip site                     write recipes/species, prune stale profiles, validate site-data/, docs/SITE_DATA_STATUS.md
   python -m lip results                  RESULTS.md from pipeline outputs (validated vs provisional, labelled)
 """
@@ -165,6 +166,9 @@ def main(argv: list[str]) -> int:
         elif sub == "run":
             from .m4 import run
             print(json.dumps(run.main(), indent=2))
+        elif sub == "engine-export":
+            from .m4 import engine_export
+            print(json.dumps(engine_export.run(), indent=2))
     elif cmd == "m5":
         sub = argv[1] if len(argv) > 1 else "audit"
         if sub == "literature":

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T12:27:00+00:00",
-  "contractVersion": "1.6",
+  "generatedAt": "2026-11-06T17:18:46+00:00",
+  "contractVersion": "1.7",
   "files": {
     "sources.json": {
       "records": 4,
@@ -52,7 +52,16 @@
       "records": 247,
       "valid": true
     },
-    "strayProfileFiles": []
+    "strayProfileFiles": [],
+    "engine/": {
+      "files": 21,
+      "species": 19,
+      "compounds": 2665,
+      "parityCases": 27,
+      "modelVersion": "prep-model:f4c4c5ef8a",
+      "valid": true
+    },
+    "strayEngineFiles": []
   },
   "speciesCounts": {
     "recipes": 631,

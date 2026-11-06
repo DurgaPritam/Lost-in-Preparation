@@ -45,6 +45,10 @@ export const loadAuditV2 = () => parse('audit_v2.json', G.auditV2.schema);
 export const loadHypotheses = () => parse('hypotheses.json', G.hypotheses.schema);
 export const loadMetrics = () => parse('metrics.json', G.metrics.schema);
 export const loadCaseStudies = () => parse('case_studies.json', G.caseStudies.schema);
+// v1.7 (P38): Preparation Lab engine inputs
+export const loadEngineModel = () => parse('engine/model.json', G.engineModel.schema);
+export const loadEngineSpecies = (speciesId: string) => parse(`engine/${speciesId}.json`, G.engineSpecies.schema);
+export const loadEngineParity = () => parse('engine/parity.json', G.engineParity.schema);
 
 /** Every contract file, for the pre-build validation script and the unit tests. */
 export function validateAll(): Record<string, number> {
@@ -54,5 +58,8 @@ export function validateAll(): Record<string, number> {
     'hypotheses.json': loadHypotheses().length, 'case_studies.json': loadCaseStudies().length, 'metrics.json': loadMetrics() ? 1 : 0,
   };
   for (const e of loadProfileIndex()) out[e.file] = loadProfile(e.file).length;
+  out['engine/model.json'] = loadEngineModel().preparations.length;
+  for (const e of loadProfileIndex()) out[`engine/${e.speciesId}.json`] = loadEngineSpecies(e.speciesId).compounds.length;
+  out['engine/parity.json'] = loadEngineParity().length;
   return out;
 }

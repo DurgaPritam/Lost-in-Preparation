@@ -1,0 +1,86 @@
+{
+  "machine": "Apple M4 (10 cores), darwin arm64, Node v24.7.0",
+  "species": "Humulus lupulus (484 compounds, the largest)",
+  "draws": 400,
+  "gridPreparation": "decoction in water",
+  "customPreparation": "vinegar + water, heat and filtration not stated (unknown branches)",
+  "budgetMs": 50,
+  "node": {
+    "cold": {
+      "median": 13.6,
+      "p95": 16.71,
+      "max": 16.71
+    },
+    "warm": {
+      "median": 14.16,
+      "p95": 24.89,
+      "max": 30.85
+    },
+    "custom": {
+      "median": 21.11,
+      "p95": 28.47,
+      "max": 31.46
+    },
+    "all13PreparationsMs": 181.9
+  },
+  "chromium": {
+    "bundleKiB": 24.7,
+    "1x": {
+      "cold": {
+        "median": 11.7,
+        "p95": 17
+      },
+      "warm": {
+        "median": 11.1,
+        "p95": 14.1
+      },
+      "custom": {
+        "median": 19.1,
+        "p95": 22.7
+      }
+    },
+    "2x": {
+      "cold": {
+        "median": 24.4,
+        "p95": 25.8
+      },
+      "warm": {
+        "median": 23,
+        "p95": 24
+      },
+      "custom": {
+        "median": 38.5,
+        "p95": 50.1
+      }
+    },
+    "4x": {
+      "cold": {
+        "median": 49.8,
+        "p95": 51.4
+      },
+      "warm": {
+        "median": 45.6,
+        "p95": 49.7
+      },
+      "custom": {
+        "median": 78.9,
+        "p95": 91.7
+      }
+    },
+    "6x": {
+      "cold": {
+        "median": 78.6,
+        "p95": 88.5
+      },
+      "warm": {
+        "median": 73.7,
+        "p95": 95.3
+      },
+      "custom": {
+        "median": 126.3,
+        "p95": 147.7
+      }
+    }
+  },
+  "generatedAt": "2026-11-06T17:19:49.759Z"
+}

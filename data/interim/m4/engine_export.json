@@ -1,0 +1,32 @@
+{
+  "modelVersion": "prep-model:f4c4c5ef8a",
+  "descriptor": "rdkit",
+  "species": 19,
+  "compounds": 2665,
+  "gridPreparations": 13,
+  "selfCheck": {
+    "estimatesChecked": 34645,
+    "mismatches": 0,
+    "note": "exported inputs reproduce site-data/profiles exactly through pipeline/lip/m4/model.py"
+  },
+  "parity": {
+    "species": [
+      "wfo-0000402430",
+      "wfo-0000134589",
+      "wfo-0000212813"
+    ],
+    "featuresCovered": [
+      "basicN",
+      "heat:cyanogenic_glycoside",
+      "heat:endoperoxide",
+      "heat:glucosinolate",
+      "heat:labile_ester",
+      "mw>1000",
+      "volatile"
+    ],
+    "customPreparations": 9,
+    "cases": 27,
+    "estimates": 7758
+  },
+  "generatedAt": "2026-11-06T17:02:32+00:00"
+}

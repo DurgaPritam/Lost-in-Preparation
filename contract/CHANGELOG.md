@@ -2,6 +2,16 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
+## v1.7 — 2026-11-06 (additive; P38 **proposed**, implemented at the project lead's request, awaiting approval)
+
+| # | Change |
+|---|---|
+| P38 | **Preparation Lab engine inputs** (`site-data/engine/`), so the browser can recompute the preparation model (M4) for any combination of solvent, heat, filtration and acidity, with the pipeline's exact Monte Carlo draws. Three files, all additive; nothing existing changes. |
+| | `engine/model.json` (`EngineModel`): the parameters and uncertainty ranges of `config/prep_model.toml` (`EngineParams`), the model version (config hash), the descriptor-error SDs (`EngineDescriptorError`), the 13 pipeline preparations with their `seedOffset` (grid index), the noise-stream offset (10,000,019), the random-number scheme (`rng`) and the seed rule for an off-grid combination (`customSeedRule`: 1000 + FNV-1a of `<solvents>\|<heat>\|<filtered>\|<process>` mod 10^6). |
+| | `engine/<speciesId>.json` (`EngineSpecies`): per compound, in the same order as `profiles/<speciesId>.json`: InChIKey, name, class (heuristic), descriptor used, lipophilicity, and the heuristic flags (basic nitrogen, heat alerts, volatile) and MW. These are the model's inputs; nothing new is computed. |
+| | `engine/parity.json` (`EngineParityCase`): Python estimates for 9 preparations outside the grid, for the 3 species that together cover every model branch (basic nitrogen, MW > 1000, volatiles, each heat alert). A build-time test fixture for the TypeScript port; not published to the browser. |
+| | Written by `python -m lip m4 engine-export`. It refuses to write unless the exported inputs reproduce all 34,645 published profile estimates exactly through `pipeline/lip/m4/model.py`. |
+
 ## v1.6 — 2026-11-06 (additive)
 
 | # | Change |

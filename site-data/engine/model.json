@@ -1,0 +1,377 @@
+{
+ "mock": false,
+ "modelVersion": "prep-model:f4c4c5ef8a",
+ "rng": "numpy.random.default_rng(seed) = PCG64 (XSL-RR 128/64) seeded through SeedSequence(seed), pool size 4. Uniform(lo, hi) = lo + (hi - lo) * next_double, next_double = (next_uint64 >> 11) * 2^-53. Descriptor noise: Generator.normal (ziggurat, numpy tables). Unknown heat: Generator.choice over [cold, warm, boiled] (integers via Lemire's method on next_uint32). Percentiles: numpy 'linear'; medians: numpy median.",
+ "noiseSeedOffset": 10000019,
+ "customSeedRule": "seedOffset = 1000 + (FNV-1a 32-bit hash of the UTF-8 string '<solvents sorted, joined by +>|<heat>|<filtered>|<process or empty>') mod 1000000",
+ "params": {
+  "draws": 400,
+  "seed": 20261105,
+  "steepness": [
+   1.0,
+   2.0
+  ],
+  "solvents": {
+   "water": {
+    "upper": [
+     1.0,
+     2.5
+    ],
+    "lower": null,
+    "ethanolFraction": null,
+    "ethanolShift": null
+   },
+   "wine": {
+    "upper": [
+     1.0,
+     2.5
+    ],
+    "lower": null,
+    "ethanolFraction": [
+     0.1,
+     0.14
+    ],
+    "ethanolShift": [
+     2.0,
+     3.5
+    ]
+   },
+   "vinegar": {
+    "upper": [
+     1.0,
+     2.5
+    ],
+    "lower": null,
+    "ethanolFraction": null,
+    "ethanolShift": null
+   },
+   "honey": {
+    "upper": [
+     1.0,
+     2.5
+    ],
+    "lower": null,
+    "ethanolFraction": null,
+    "ethanolShift": null
+   },
+   "other": {
+    "upper": [
+     1.0,
+     2.5
+    ],
+    "lower": null,
+    "ethanolFraction": null,
+    "ethanolShift": null
+   },
+   "oil": {
+    "upper": null,
+    "lower": [
+     0.5,
+     2.5
+    ],
+    "ethanolFraction": null,
+    "ethanolShift": null
+   },
+   "hexane": {
+    "upper": null,
+    "lower": [
+     0.5,
+     2.5
+    ],
+    "ethanolFraction": null,
+    "ethanolShift": null
+   },
+   "methanol": {
+    "upper": [
+     5.0,
+     7.0
+    ],
+    "lower": [
+     -3.0,
+     -1.5
+    ],
+    "ethanolFraction": null,
+    "ethanolShift": null
+   },
+   "ethanol": {
+    "upper": [
+     5.0,
+     7.0
+    ],
+    "lower": [
+     -2.5,
+     -0.5
+    ],
+    "ethanolFraction": null,
+    "ethanolShift": null
+   },
+   "hydroethanolic": {
+    "upper": [
+     4.0,
+     6.0
+    ],
+    "lower": [
+     -3.0,
+     -1.0
+    ],
+    "ethanolFraction": null,
+    "ethanolShift": null
+   }
+  },
+  "acidityLogdShift": [
+   1.0,
+   3.0
+  ],
+  "heat": {
+   "heat:endoperoxide": {
+    "warm": [
+     0.2,
+     0.6
+    ],
+    "boiled": [
+     0.6,
+     0.95
+    ]
+   },
+   "heat:peroxide": {
+    "warm": [
+     0.2,
+     0.6
+    ],
+    "boiled": [
+     0.6,
+     0.95
+    ]
+   },
+   "heat:labile_ester": {
+    "warm": [
+     0.02,
+     0.15
+    ],
+    "boiled": [
+     0.1,
+     0.4
+    ]
+   },
+   "heat:glucosinolate": {
+    "warm": [
+     0.05,
+     0.3
+    ],
+    "boiled": [
+     0.2,
+     0.6
+    ]
+   },
+   "heat:cyanogenic_glycoside": {
+    "warm": [
+     0.05,
+     0.3
+    ],
+    "boiled": [
+     0.2,
+     0.6
+    ]
+   },
+   "volatile": {
+    "warm": [
+     0.05,
+     0.3
+    ],
+    "boiled": [
+     0.3,
+     0.8
+    ]
+   }
+  },
+  "distillationVolatileCarried": [
+   0.5,
+   0.95
+  ],
+  "distillationNonvolatileCarried": [
+   0.0,
+   0.02
+  ],
+  "unfilteredSuspended": [
+   0.05,
+   0.3
+  ],
+  "appliedWholeSuspended": [
+   0.3,
+   0.8
+  ],
+  "mwPenaltyAbove": 1000.0,
+  "mwPenalty": [
+   0.5,
+   0.9
+  ]
+ },
+ "descriptorError": [
+  {
+   "descriptor": "rdkit",
+   "mae": 0.6567,
+   "sd": 0.8231,
+   "source": "logp_validation.json rdkit_all.mae"
+  },
+  {
+   "descriptor": "xtb",
+   "mae": 1.5052,
+   "sd": 1.8865,
+   "source": "logp_validation.json xtb_paired.mae"
+  }
+ ],
+ "preparations": [
+  {
+   "seedOffset": 0,
+   "key": "unknown|unknown|water|cold|yes",
+   "label": "cold water infusion",
+   "solvents": [
+    "water"
+   ],
+   "heat": "cold",
+   "filtered": "yes",
+   "process": "infusion"
+  },
+  {
+   "seedOffset": 1,
+   "key": "unknown|unknown|water|warm|yes",
+   "label": "hot water infusion (tea)",
+   "solvents": [
+    "water"
+   ],
+   "heat": "warm",
+   "filtered": "yes",
+   "process": "infusion"
+  },
+  {
+   "seedOffset": 2,
+   "key": "unknown|unknown|water|boiled|yes",
+   "label": "decoction in water",
+   "solvents": [
+    "water"
+   ],
+   "heat": "boiled",
+   "filtered": "yes",
+   "process": "decoction"
+  },
+  {
+   "seedOffset": 3,
+   "key": "unknown|unknown|wine|cold|yes",
+   "label": "steeped in wine",
+   "solvents": [
+    "wine"
+   ],
+   "heat": "cold",
+   "filtered": "yes",
+   "process": "maceration"
+  },
+  {
+   "seedOffset": 4,
+   "key": "unknown|unknown|wine|boiled|yes",
+   "label": "decoction in wine",
+   "solvents": [
+    "wine"
+   ],
+   "heat": "boiled",
+   "filtered": "yes",
+   "process": "decoction"
+  },
+  {
+   "seedOffset": 5,
+   "key": "unknown|unknown|vinegar|cold|yes",
+   "label": "steeped in vinegar",
+   "solvents": [
+    "vinegar"
+   ],
+   "heat": "cold",
+   "filtered": "yes",
+   "process": "maceration"
+  },
+  {
+   "seedOffset": 6,
+   "key": "unknown|unknown|oil|warm|yes",
+   "label": "infused oil",
+   "solvents": [
+    "oil"
+   ],
+   "heat": "warm",
+   "filtered": "yes",
+   "process": "maceration"
+  },
+  {
+   "seedOffset": 7,
+   "key": "unknown|unknown|none|cold|no",
+   "label": "fresh juice",
+   "solvents": [
+    "none"
+   ],
+   "heat": "cold",
+   "filtered": "no",
+   "process": "expression"
+  },
+  {
+   "seedOffset": 8,
+   "key": "unknown|unknown|none|cold|no#powder",
+   "label": "powder taken whole",
+   "solvents": [
+    "none"
+   ],
+   "heat": "cold",
+   "filtered": "no",
+   "process": "powder"
+  },
+  {
+   "seedOffset": 9,
+   "key": "unknown|unknown|water|boiled|unknown#distillation",
+   "label": "distilled water",
+   "solvents": [
+    "water"
+   ],
+   "heat": "boiled",
+   "filtered": "unknown",
+   "process": "distillation"
+  },
+  {
+   "seedOffset": 10,
+   "key": "unknown|unknown|methanol|cold|yes",
+   "label": "modern methanol extract",
+   "solvents": [
+    "methanol"
+   ],
+   "heat": "cold",
+   "filtered": "yes",
+   "process": "maceration"
+  },
+  {
+   "seedOffset": 11,
+   "key": "unknown|unknown|hydroethanolic|cold|yes",
+   "label": "modern 70% ethanol extract",
+   "solvents": [
+    "hydroethanolic"
+   ],
+   "heat": "cold",
+   "filtered": "yes",
+   "process": "maceration"
+  },
+  {
+   "seedOffset": 12,
+   "key": "unknown|unknown|hexane|cold|yes",
+   "label": "low-temperature nonpolar extract (hexane)",
+   "solvents": [
+    "hexane"
+   ],
+   "heat": "cold",
+   "filtered": "yes",
+   "process": "maceration"
+  }
+ ],
+ "heuristics": [
+  "acidity (basic nitrogen in vinegar)",
+  "heat alerts (SMARTS)",
+  "volatile loss on open heating",
+  "filtration carry-over (suspended material)",
+  "size penalty (MW > 1000)",
+  "compound class"
+ ],
+ "note": "Inputs to the preparation model (M4) for the in-browser engine. Model estimates of what a preparation would carry, not measurements; the 5th–95th range includes descriptor error."
+}

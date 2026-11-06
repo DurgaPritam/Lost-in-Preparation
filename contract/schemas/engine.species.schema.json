@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.7/engine.species.json",
+  "title": "EngineSpecies",
+  "$defs": {
+    "EngineCompound": {
+      "additionalProperties": false,
+      "properties": {
+        "compoundId": {
+          "description": "InChIKey",
+          "title": "Compoundid",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "compoundClass": {
+          "description": "coarse class (heuristic)",
+          "title": "Compoundclass",
+          "type": "string"
+        },
+        "descriptor": {
+          "description": "lipophilicity descriptor used: rdkit (Crippen logP) or xtb",
+          "title": "Descriptor",
+          "type": "string"
+        },
+        "lipophilicity": {
+          "title": "Lipophilicity",
+          "type": "number"
+        },
+        "basicN": {
+          "description": "HEURISTIC SMARTS flag: basic nitrogen",
+          "title": "Basicn",
+          "type": "boolean"
+        },
+        "heatFlags": {
+          "description": "HEURISTIC SMARTS heat alerts",
+          "items": {
+            "type": "string"
+          },
+          "title": "Heatflags",
+          "type": "array"
+        },
+        "volatile": {
+          "description": "HEURISTIC: MW < 250, HBD <= 1, TPSA < 40",
+          "title": "Volatile",
+          "type": "boolean"
+        },
+        "mw": {
+          "title": "Mw",
+          "type": "number"
+        }
+      },
+      "required": [
+        "compoundId",
+        "name",
+        "compoundClass",
+        "descriptor",
+        "lipophilicity",
+        "basicN",
+        "heatFlags",
+        "volatile",
+        "mw"
+      ],
+      "title": "EngineCompound",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "mock": {
+      "default": false,
+      "title": "Mock",
+      "type": "boolean"
+    },
+    "speciesId": {
+      "title": "Speciesid",
+      "type": "string"
+    },
+    "acceptedName": {
+      "title": "Acceptedname",
+      "type": "string"
+    },
+    "modelVersion": {
+      "title": "Modelversion",
+      "type": "string"
+    },
+    "compounds": {
+      "description": "same compounds, in the same order, as profiles/<speciesId>.json",
+      "items": {
+        "$ref": "#/$defs/EngineCompound"
+      },
+      "title": "Compounds",
+      "type": "array"
+    }
+  },
+  "required": [
+    "speciesId",
+    "acceptedName",
+    "modelVersion",
+    "compounds"
+  ],
+  "type": "object"
+}

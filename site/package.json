@@ -6,7 +6,7 @@
   "scripts": {
     "gen:contract": "node scripts/gen-contract.mjs",
     "prepare-data": "tsx scripts/prepare-data.ts",
-    "prebuild": "npm run gen:contract && npm run prepare-data",
+    "prebuild": "npm run gen:contract && npm run prepare-data && npm run engine:parity",
     "build": "next build",
     "dev": "npm run prebuild && next dev",
     "serve": "node scripts/serve.mjs out 4517",
@@ -16,7 +16,9 @@
     "e2e": "playwright test",
     "lighthouse": "node scripts/lighthouse.mjs",
     "screenshots": "tsx scripts/screenshots.ts",
-    "ci": "npm run typecheck && npm run lint && npm test && npm run build && npm run e2e && npm run lighthouse"
+    "ci": "npm run typecheck && npm run lint && npm test && npm run build && npm run e2e && npm run lighthouse",
+    "engine:parity": "tsx scripts/engine-parity.ts",
+    "engine:bench": "tsx scripts/engine-bench.ts"
   },
   "dependencies": {
     "next": "14.2.35",

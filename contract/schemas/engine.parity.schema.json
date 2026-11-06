@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.7/engine.parity.json",
+  "title": "engine.parity.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "speciesId": {
+        "title": "Speciesid",
+        "type": "string"
+      },
+      "preparation": {
+        "$ref": "#/$defs/EnginePreparation"
+      },
+      "expected": {
+        "description": "Python (pipeline/lip/m4/model.py) estimates, one per compound, in species order",
+        "items": {
+          "$ref": "#/$defs/EngineEstimate"
+        },
+        "title": "Expected",
+        "type": "array"
+      }
+    },
+    "required": [
+      "speciesId",
+      "preparation",
+      "expected"
+    ],
+    "title": "EngineParityCase",
+    "type": "object"
+  },
+  "$defs": {
+    "Drivers": {
+      "additionalProperties": false,
+      "properties": {
+        "solvent": {
+          "title": "Solvent",
+          "type": "number"
+        },
+        "heat": {
+          "title": "Heat",
+          "type": "number"
+        },
+        "filtration": {
+          "title": "Filtration",
+          "type": "number"
+        },
+        "acidity": {
+          "title": "Acidity",
+          "type": "number"
+        }
+      },
+      "required": [
+        "solvent",
+        "heat",
+        "filtration",
+        "acidity"
+      ],
+      "title": "Drivers",
+      "type": "object"
+    },
+    "EngineEstimate": {
+      "additionalProperties": false,
+      "properties": {
+        "compoundId": {
+          "title": "Compoundid",
+          "type": "string"
+        },
+        "likelihood": {
+          "title": "Likelihood",
+          "type": "number"
+        },
+        "low": {
+          "title": "Low",
+          "type": "number"
+        },
+        "high": {
+          "title": "High",
+          "type": "number"
+        },
+        "rangeModelOnly": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Rangemodelonly",
+          "type": "array"
+        },
+        "drivers": {
+          "$ref": "#/$defs/Drivers"
+        }
+      },
+      "required": [
+        "compoundId",
+        "likelihood",
+        "low",
+        "high",
+        "rangeModelOnly",
+        "drivers"
+      ],
+      "title": "EngineEstimate",
+      "type": "object"
+    },
+    "EnginePreparation": {
+      "additionalProperties": false,
+      "properties": {
+        "seedOffset": {
+          "description": "added to params.seed for this preparation's random stream",
+          "title": "Seedoffset",
+          "type": "integer"
+        },
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "solvents": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Solvents",
+          "type": "array"
+        },
+        "heat": {
+          "$ref": "#/$defs/Heat"
+        },
+        "filtered": {
+          "$ref": "#/$defs/Filtered"
+        },
+        "process": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Process"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "seedOffset",
+        "key",
+        "label",
+        "solvents",
+        "heat",
+        "filtered"
+      ],
+      "title": "EnginePreparation",
+      "type": "object"
+    },
+    "Filtered": {
+      "enum": [
+        "yes",
+        "no",
+        "not_applicable",
+        "unknown"
+      ],
+      "title": "Filtered",
+      "type": "string"
+    },
+    "Heat": {
+      "enum": [
+        "cold",
+        "warm",
+        "boiled",
+        "unknown"
+      ],
+      "title": "Heat",
+      "type": "string"
+    },
+    "Process": {
+      "enum": [
+        "infusion",
+        "decoction",
+        "maceration",
+        "distillation",
+        "expression",
+        "powder",
+        "other",
+        "unknown"
+      ],
+      "title": "Process",
+      "type": "string"
+    }
+  }
+}

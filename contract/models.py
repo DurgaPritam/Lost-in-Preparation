@@ -19,7 +19,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-CONTRACT_VERSION = "1.6"
+CONTRACT_VERSION = "1.7"
 UNKNOWN = "unknown"
 
 
@@ -369,6 +369,103 @@ class ProfileIndexEntry(_Record):  # v1.3 (P33): site-data/profiles/index.json
     toxicityEvidence: ToxicityEvidence | None = None  # v1.4 (P34)
 
 
+# --- engine/ (v1.7, P38: Preparation Lab, the in-browser M4 engine) -----------------------
+# Everything the browser needs to recompute M4 for any combination of solvent, heat, filtration and acidity:
+# the model parameters and uncertainty settings (engine/model.json), each species' per-compound model inputs
+# (engine/<speciesId>.json, loaded on demand), and Python reference results for combinations outside the
+# 13-preparation grid (engine/parity.json). All values are MODEL INPUTS or MODEL ESTIMATES, never measurements;
+# acidity, heat alerts, volatility, filtration carry-over and the size penalty are HEURISTICS (rule 5).
+
+class EngineSolventWindow(_Model):
+    upper: list[float] | None = Field(None, description="[low, high] of the upper logP edge (too lipophilic to dissolve)")
+    lower: list[float] | None = Field(None, description="[low, high] of the lower logP edge (too polar to dissolve)")
+    ethanolFraction: list[float] | None = Field(None, description="wine only: ethanol volume fraction range")
+    ethanolShift: list[float] | None = Field(None, description="wine only: window shift per unit ethanol fraction")
+
+
+class EngineHeatRange(_Model):
+    warm: list[float]
+    boiled: list[float]
+
+
+class EngineParams(_Model):
+    draws: int
+    seed: int
+    steepness: list[float]
+    solvents: dict[str, EngineSolventWindow]
+    acidityLogdShift: list[float] = Field(description="HEURISTIC: logD shift for basic nitrogen in vinegar")
+    heat: dict[str, EngineHeatRange] = Field(description="HEURISTIC: degradation fraction per alert (and volatile loss) per heat level")
+    distillationVolatileCarried: list[float]
+    distillationNonvolatileCarried: list[float]
+    unfilteredSuspended: list[float] = Field(description="HEURISTIC: suspended material carried by an unfiltered preparation")
+    appliedWholeSuspended: list[float] = Field(description="HEURISTIC: material in contact when applied whole (not_applicable)")
+    mwPenaltyAbove: float
+    mwPenalty: list[float] = Field(description="HEURISTIC: size penalty above mwPenaltyAbove")
+
+
+class EngineDescriptorError(_Model):
+    descriptor: str
+    mae: float
+    sd: float = Field(description="Normal SD added to logP for the reported 5th–95th range (sigma = MAE * sqrt(pi/2))")
+    source: str
+
+
+class EnginePreparation(_Model):
+    seedOffset: int = Field(description="added to params.seed for this preparation's random stream")
+    key: str
+    label: str
+    solvents: list[str]
+    heat: Heat
+    filtered: Filtered
+    process: Process | None = None
+
+
+class EngineModel(_Record):  # site-data/engine/model.json
+    modelVersion: str = Field(description="hash of config/prep_model.toml (prep-model:<sha256[:10]>)")
+    rng: str = Field(description="random-number generation, so a port can reproduce the draws exactly")
+    noiseSeedOffset: int = Field(description="descriptor-error stream: params.seed + seedOffset + noiseSeedOffset")
+    customSeedRule: str = Field(description="seedOffset for a preparation outside the grid")
+    params: EngineParams
+    descriptorError: list[EngineDescriptorError]
+    preparations: list[EnginePreparation] = Field(description="the 13 pipeline preparations, in grid order")
+    heuristics: list[str]
+    note: str
+
+
+class EngineCompound(_Model):
+    compoundId: str = Field(description="InChIKey")
+    name: str
+    compoundClass: str = Field(description="coarse class (heuristic)")
+    descriptor: str = Field(description="lipophilicity descriptor used: rdkit (Crippen logP) or xtb")
+    lipophilicity: float
+    basicN: bool = Field(description="HEURISTIC SMARTS flag: basic nitrogen")
+    heatFlags: list[str] = Field(description="HEURISTIC SMARTS heat alerts")
+    volatile: bool = Field(description="HEURISTIC: MW < 250, HBD <= 1, TPSA < 40")
+    mw: float
+
+
+class EngineSpecies(_Record):  # site-data/engine/<speciesId>.json
+    speciesId: str
+    acceptedName: str
+    modelVersion: str
+    compounds: list[EngineCompound] = Field(description="same compounds, in the same order, as profiles/<speciesId>.json")
+
+
+class EngineEstimate(_Model):
+    compoundId: str
+    likelihood: float
+    low: float
+    high: float
+    rangeModelOnly: list[float]
+    drivers: Drivers
+
+
+class EngineParityCase(_Record):  # site-data/engine/parity.json
+    speciesId: str
+    preparation: EnginePreparation
+    expected: list[EngineEstimate] = Field(description="Python (pipeline/lip/m4/model.py) estimates, one per compound, in species order")
+
+
 # --- audit.json ---------------------------------------------------------------------------
 
 class MeshTerm(_Model):  # P17
@@ -591,5 +688,8 @@ FILE_MODELS = {
     "case_studies.json": CaseStudy,                # v1.6 (P37d)
     "hypotheses.json": Hypothesis,
     "metrics.json": Metrics,
+    "engine.model.json": EngineModel,              # v1.7 (P38) site-data/engine/model.json
+    "engine.species.json": EngineSpecies,          # v1.7 (P38) site-data/engine/<speciesId>.json
+    "engine.parity.json": EngineParityCase,        # v1.7 (P38) site-data/engine/parity.json
 }
-ARRAY_FILES = {k for k in FILE_MODELS if k != "metrics.json"}
+ARRAY_FILES = {k for k in FILE_MODELS if k not in ("metrics.json", "engine.model.json", "engine.species.json")}
