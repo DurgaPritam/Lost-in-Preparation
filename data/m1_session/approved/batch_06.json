@@ -1,0 +1,1021 @@
+{
+ "batch": 6,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1652:herbal:henbane:007": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:henbane:011": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:henbane:012": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:henbane:013": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:henbane:014": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:hops:001": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:hops:002": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:hops:004": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:henbane:009": {
+   "recipes": [
+    {
+     "recipeQuote": "The Leavs of Henbane do cool all hot Inflamations in the Eyes or any other part of the Body",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "cool all hot Inflamations in the Eyes or any other part of the Body",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leavs of Henbane"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "are good to asswage all manner of Swellings of the Cods or Womens Breasts, or els where, if they be boyled in Wine, and either applied themselves or the Fomentation warm; it also asswageth the pain of the Gout, the Sciatica and all other pains in the Joynts which arise from an hot caus",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "decoction",
+     "form": "poultice",
+     "indicationAsWritten": "all manner of Swellings of the Cods or Womens Breasts, or els where, if they be boyled in Wine, and either applied themselves or the Fomentation warm; it also asswageth the pain of the Gout, the Sciatica and all other pains in the Joynts which arise from an hot caus",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leavs of Henbane"
+      },
+      {
+       "field": "solvent",
+       "quote": "boyled in Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boyled in Wine"
+      },
+      {
+       "field": "process",
+       "quote": "if they be boyled in Wine"
+      },
+      {
+       "field": "form",
+       "quote": "applied themselves"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied themselves"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "are good to asswage all manner of Swellings of the Cods or Womens Breasts, or els where, if they be boyled in Wine, and either applied themselves or the Fomentation warm; it also asswageth the pain of the Gout, the Sciatica and all other pains in the Joynts which arise from an hot caus",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "the Fomentation warm",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "other",
+     "indicationAsWritten": "all manner of Swellings of the Cods or Womens Breasts, or els where, if they be boyled in Wine, and either applied themselves or the Fomentation warm; it also asswageth the pain of the Gout, the Sciatica and all other pains in the Joynts which arise from an hot caus",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leavs of Henbane"
+      },
+      {
+       "field": "solvent",
+       "quote": "boyled in Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boyled in Wine"
+      },
+      {
+       "field": "process",
+       "quote": "if they be boyled in Wine"
+      },
+      {
+       "field": "form",
+       "quote": "the Fomentation warm"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "And applied with Vinegar to the Forehead and Temples, helpeth the Headach and want of sleep in hot Feavers",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "the Headach and want of sleep in hot Feavers",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leavs of Henbane"
+      },
+      {
+       "field": "solvent",
+       "quote": "applied with Vinegar"
+      },
+      {
+       "field": "form",
+       "quote": "applied with Vinegar to the Forehead and Temples"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied with Vinegar to the Forehead and Temples"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of the Herb or Seed, or the Oyl drawn from the Seed doth the like",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "doth the like",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of the Herb or Seed"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce of the Herb or Seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of the Herb or Seed, or the Oyl drawn from the Seed doth the like",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "doth the like",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Oyl drawn from the Seed"
+      },
+      {
+       "field": "process",
+       "quote": "the Oyl drawn from the Seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Oyl of the Seed is helpful for the Deafness, Nois, and Worms in the Ears, being dropped therein",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "the Deafness, Nois, and Worms in the Ears",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Oyl of the Seed"
+      },
+      {
+       "field": "process",
+       "quote": "The Oyl of the Seed"
+      },
+      {
+       "field": "form",
+       "quote": "being dropped therein"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the Juyce of the Herb, or Root doth also the same",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "doth also the same",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce of the Herb, or Root"
+      },
+      {
+       "field": "heat",
+       "quote": "the Juyce of the Herb, or Root"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Decoction of the Herb, or Seed, or both, killeth Lice in Man and Beast",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "killeth Lice in Man and Beast",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "The Decoction of the Herb"
+      },
+      {
+       "field": "process",
+       "quote": "The Decoction of the Herb"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The fume of the dried Herb Stalks and Seed burned, quickly healeth Swellings, Chilblains,, or Kibes in the Hands or Feet, by holding them in the fume thereof",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "other",
+     "freshOrDried": "dried",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "inhalation",
+     "indicationAsWritten": "Swellings, Chilblains,, or Kibes in the Hands or Feet",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the dried Herb Stalks and Seed"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "the dried Herb Stalks"
+      },
+      {
+       "field": "process",
+       "quote": "Stalks and Seed burned"
+      },
+      {
+       "field": "form",
+       "quote": "The fume of the dried Herb"
+      },
+      {
+       "field": "filtered",
+       "quote": "by holding them in the fume thereof"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Remedy to help those that have taken Henbane is to drink Goats Milk, Honyed Water or Pine Kernels, with Sweet Wine",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Pine Kernels",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Pine Kernels",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "help those that have taken Henbane",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Pine Kernels"
+      },
+      {
+       "field": "solvent",
+       "quote": "with Sweet Wine"
+      },
+      {
+       "field": "form",
+       "quote": "is to drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel Seed, Nettle Seed, the Seed of Cresses, Mustard, or Radish, as also Onions, or Garlick taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Fennel Seed",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Fennel Seed",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Fennel Seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel Seed, Nettle Seed, the Seed of Cresses, Mustard, or Radish, as also Onions, or Garlick taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Nettle Seed",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Nettle Seed",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Nettle Seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel Seed, Nettle Seed, the Seed of Cresses, Mustard, or Radish, as also Onions, or Garlick taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "the Seed of Cresses",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "the Seed of Cresses",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Seed of Cresses"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel Seed, Nettle Seed, the Seed of Cresses, Mustard, or Radish, as also Onions, or Garlick taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mustard",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mustard",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Fennel Seed, Nettle Seed, the Seed of Cresses, Mustard, or Radish, as also Onions, or Garlick taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radish",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radish",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Fennel Seed, Nettle Seed, the Seed of Cresses, Mustard, or Radish, as also Onions, or Garlick taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Onions, or Garlick taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "Onions, or Garlick taken in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel Seed, Nettle Seed, the Seed of Cresses, Mustard, or Radish, as also Onions, or Garlick taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Garlick",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Garlick",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Garlick taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "Garlick taken in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:henbane:010": {
+   "recipes": [
+    {
+     "recipeQuote": "outwardly, an Oyl, Oyntment, or Plaister of it, is most admirable for the Gout, to cool the Venerial heat of the Reins in the French Pox, to stop the Toothach being applied to the aching side, to allay all Inflamations, and to help the Diseases before premised",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "the Gout, to cool the Venerial heat of the Reins in the French Pox, to stop the Toothach being applied to the aching side, to allay all Inflamations, and to help the Diseases before premised",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "an Oyl, Oyntment"
+      },
+      {
+       "field": "form",
+       "quote": "an Oyl, Oyntment"
+      },
+      {
+       "field": "filtered",
+       "quote": "outwardly, an Oyl, Oyntment"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "outwardly, an Oyl, Oyntment, or Plaister of it, is most admirable for the Gout, to cool the Venerial heat of the Reins in the French Pox, to stop the Toothach being applied to the aching side, to allay all Inflamations, and to help the Diseases before premised",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "plaster",
+     "indicationAsWritten": "the Gout, to cool the Venerial heat of the Reins in the French Pox, to stop the Toothach being applied to the aching side, to allay all Inflamations, and to help the Diseases before premised",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "or Plaister of it"
+      },
+      {
+       "field": "filtered",
+       "quote": "or Plaister of it"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
