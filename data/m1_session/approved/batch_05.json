@@ -1,0 +1,715 @@
+{
+ "batch": 5,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1652:herbal:clary:010": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:cleavers-or-goosgrass:002": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:cleavers-or-goosgrass:004": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:cleavers-or-goosgrass:006": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:henbane:002": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:henbane:004": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:henbane:006": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:clary:011": {
+   "recipes": [
+    {
+     "recipeQuote": "We will grant that Clary strengthens the Back",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Clary",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Clary",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "strengthens the Back",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "culpeper-1652:herbal:cleavers-or-goosgrass:008": {
+   "recipes": [
+    {
+     "recipeQuote": "The Juyce of the Herb, and Seed together taken in Wine, helpeth those that are bitten with an Adder, by preserving the Heart from the Venom",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "those that are bitten with an Adder, by preserving the Heart from the Venom",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of the Herb, and Seed together"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in Wine"
+      },
+      {
+       "field": "form",
+       "quote": "taken in Wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is familiarly taken in Broth to keep them lean; and lank that are apt to grow fat",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "to keep them lean; and lank that are apt to grow fat",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "taken in Broth"
+      },
+      {
+       "field": "form",
+       "quote": "taken in Broth"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The distilled Water drunk twice a day helpeth the yellow Jaundice",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "drink",
+     "indicationAsWritten": "the yellow Jaundice",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The distilled Water"
+      },
+      {
+       "field": "heat",
+       "quote": "The distilled Water"
+      },
+      {
+       "field": "process",
+       "quote": "The distilled Water"
+      },
+      {
+       "field": "form",
+       "quote": "The distilled Water drunk"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the Decoction of the Herb in experience found to do the same, and stayeth Lasks and Bloody Fluxes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "to do the same, and stayeth Lasks and Bloody Fluxes",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "the Decoction of the Herb"
+      },
+      {
+       "field": "process",
+       "quote": "the Decoction of the Herb"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of the Leavs, or they a little bruisep and applied to any bleeding wound, stayeth the Bleeding",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "any bleeding wound, stayeth the Bleeding",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of the Leavs"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce of the Leavs"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of the Leavs, or they a little bruisep and applied to any bleeding wound, stayeth the Bleeding",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "any bleeding wound, stayeth the Bleeding",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of the Leavs, or they a little bruisep"
+      },
+      {
+       "field": "heat",
+       "quote": "a little bruisep and applied"
+      },
+      {
+       "field": "process",
+       "quote": "a little bruisep and applied"
+      },
+      {
+       "field": "form",
+       "quote": "a little bruisep and applied to any bleeding wound"
+      },
+      {
+       "field": "filtered",
+       "quote": "a little bruisep and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce is also very good to close up the Lips of green Wounds",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to close up the Lips of green Wounds",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce is also very good"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce is also very good"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the Pouder of the dried Herb strewed therupon doth the same, and likewise helpeth old Ulcers",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "doth the same, and likewise helpeth old Ulcers",
+     "evidence": [
+      {
+       "field": "freshOrDried",
+       "quote": "the dried Herb"
+      },
+      {
+       "field": "solvent",
+       "quote": "the Pouder of the dried Herb strewed therupon"
+      },
+      {
+       "field": "heat",
+       "quote": "the Pouder of the dried Herb"
+      },
+      {
+       "field": "process",
+       "quote": "the Pouder of the dried Herb"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Being boyled with Hogs Greas, it healeth al sorts of hard Swellings or Kernels in the Throat, being anointed therwith",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "ointment",
+     "indicationAsWritten": "al sorts of hard Swellings or Kernels in the Throat",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Being boyled with Hogs Greas"
+      },
+      {
+       "field": "heat",
+       "quote": "Being boyled with Hogs Greas"
+      },
+      {
+       "field": "process",
+       "quote": "Being boyled with Hogs Greas"
+      },
+      {
+       "field": "form",
+       "quote": "being anointed therwith"
+      },
+      {
+       "field": "filtered",
+       "quote": "being anointed therwith"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce dropped into the Ears taketh away the pains of them.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "taketh away the pains of them",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce dropped into the Ears"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce dropped into the Ears"
+      },
+      {
+       "field": "form",
+       "quote": "The Juyce dropped into the Ears"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:cleavers-or-goosgrass:009": {
+   "recipes": [
+    {
+     "recipeQuote": "It is a good remedy in the Spring, eaten (being first chopped smal and boyled well) in Water-gruel, to clens the Blood, and strengthen the Liver, thereby keeping the Body in health, and fitting it for that change of Season that is coming",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Cleavers",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Cleavers",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "to clens the Blood, and strengthen the Liver, thereby keeping the Body in health, and fitting it for that change of Season that is coming",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "in Water-gruel"
+      },
+      {
+       "field": "heat",
+       "quote": "being first chopped smal and boyled well"
+      },
+      {
+       "field": "form",
+       "quote": "eaten (being first chopped smal and boyled well)"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
