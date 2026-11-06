@@ -1,0 +1,1161 @@
+{
+ "batch": 21,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "pliny-nh:b20:c076:005": {
+   "recipes": []
+  },
+  "pliny-nh:b21:c017:001": {
+   "recipes": []
+  },
+  "pliny-nh:b21:c017:002": {
+   "recipes": []
+  },
+  "pliny-nh:b21:c017:003": {
+   "recipes": []
+  },
+  "pliny-nh:b21:c017:004": {
+   "recipes": []
+  },
+  "pliny-nh:b20:c082:001": {
+   "recipes": [
+    {
+     "recipeQuote": "Taken in drink and applied to the wound, it is a remedy for the sting of one kind of serpent, known as the amphisbæna",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "the sting of one kind of serpent, known as the amphisbæna",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "Taken in drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken in drink and applied to the wound, it is a remedy for the sting of one kind of serpent, known as the amphisbæna",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "the sting of one kind of serpent, known as the amphisbæna",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "applied to the wound"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied to the wound"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "pounded, it is healing also for other wounds, as well as for epinyctis and blisters",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "other wounds, as well as for epinyctis and blisters",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "pounded, it is healing"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Employed in the same state with honey or raisins, it disperses all tumours and gatherings",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "disperses all tumours and gatherings",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "with honey or raisins"
+      },
+      {
+       "field": "process",
+       "quote": "Employed in the same state"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Employed in the same state with honey or raisins, it disperses all tumours and gatherings",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "raisins",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "disperses all tumours and gatherings",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "Employed in the same state"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "and, beaten up in vinegar, it removes abscesses of an inflammatory nature",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "abscesses of an inflammatory nature",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "beaten up in vinegar"
+      },
+      {
+       "field": "process",
+       "quote": "beaten up in vinegar"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Some persons recommend three grains of it to be taken for tertian fevers, just before the fit comes on, or else in larger quantities, to be bruised and applied to the forehead",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "tertian fevers",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "three grains of it"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Some persons recommend three grains of it to be taken for tertian fevers, just before the fit comes on, or else in larger quantities, to be bruised and applied to the forehead",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "tertian fevers",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "to be bruised and applied"
+      },
+      {
+       "field": "process",
+       "quote": "to be bruised and applied"
+      },
+      {
+       "field": "form",
+       "quote": "bruised and applied to the forehead"
+      },
+      {
+       "field": "filtered",
+       "quote": "bruised and applied to the forehead"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c082:002": {
+   "recipes": [
+    {
+     "recipeQuote": "Combined with honey or raisins, it is an excellent remedy for spreading ulcers, as also for diseases of the testes, burns, carbuncles, and maladies of the ears",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "spreading ulcers, as also for diseases of the testes, burns, carbuncles, and maladies of the ears",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Combined with honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Combined with honey or raisins, it is an excellent remedy for spreading ulcers, as also for diseases of the testes, burns, carbuncles, and maladies of the ears",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "raisins",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "spreading ulcers, as also for diseases of the testes, burns, carbuncles, and maladies of the ears",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Applied with woman’s milk, it is good for defluxions of the eyes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "defluxions of the eyes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Applied with woman’s milk"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "for fluxes of the belly and intestines, the seed is taken with water in drink",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "fluxes of the belly and intestines",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seed is taken"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken with water in drink"
+      },
+      {
+       "field": "form",
+       "quote": "taken with water in drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it is also taken in drink for cholera, with rue",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "rue",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "cholera",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "taken in drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Coriander seed, used as a potion with pomegranate juice and oil, expels worms in the intestines.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Coriander",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "pomegranate",
+       "part": "juice",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Coriander",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "expels worms in the intestines",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Coriander seed"
+      },
+      {
+       "field": "solvent",
+       "quote": "pomegranate juice and oil"
+      },
+      {
+       "field": "form",
+       "quote": "used as a potion"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b20:c082:003": {
+   "recipes": [
+    {
+     "recipeQuote": "if a woman takes one grain of this seed, the menstrual discharge will be retarded one day",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "coriander",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "coriander",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the menstrual discharge will be retarded one day",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "one grain of this seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b22:c011:001": {
+   "recipes": [
+    {
+     "recipeQuote": "Sometimes, also, it is used pounded, and it is in this form that it is applied as a liniment for wounds and all affections of the throat",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "glycyrrhiza",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "glycyrrhiza",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "ointment",
+     "indicationAsWritten": "wounds and all affections of the throat",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the root of it is sweet, and this is the only part that is used"
+      },
+      {
+       "field": "process",
+       "quote": "it is used pounded"
+      },
+      {
+       "field": "form",
+       "quote": "applied as a liniment"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied as a liniment"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of it is also very good for the voice, for which purpose it is thickened and then placed beneath the tongue: it is good, too, for the chest and liver.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "glycyrrhiza",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "glycyrrhiza",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "very good for the voice, for which purpose it is thickened and then placed beneath the tongue: it is good, too, for the chest and liver",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of it"
+      },
+      {
+       "field": "process",
+       "quote": "it is thickened"
+      },
+      {
+       "field": "form",
+       "quote": "placed beneath the tongue"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b22:c011:002": {
+   "recipes": [
+    {
+     "recipeQuote": "this plant has the effect of allaying hunger and thirst: hence it is that some authors have given it the name of “adipsos,” and have prescribed it for dropsical patients, to allay thirst",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "adipsos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "adipsos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "allaying hunger and thirst: hence it is that some authors have given it the name of “adipsos,” and have prescribed it for dropsical patients, to allay thirst",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "It is for this reason, too, that it is chewed as a stomatic",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "adipsos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "adipsos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "a stomatic",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "it is chewed"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the powder of it is often sprinkled on ulcerous sores of the mouth and films on the eyes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "adipsos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "adipsos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "ulcerous sores of the mouth and films on the eyes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "the powder of it is often sprinkled"
+      },
+      {
+       "field": "heat",
+       "quote": "the powder of it"
+      },
+      {
+       "field": "process",
+       "quote": "the powder of it"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it heals, too, excrescences of the bladder, pains in the kidneys, condylomata, and ulcerous sores of the genitals",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "adipsos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "adipsos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "excrescences of the bladder, pains in the kidneys, condylomata, and ulcerous sores of the genitals",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Some persons have given it in potions for quartan fevers, the doses being two drachmæ, mixed with pepper in one hemina of water.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "adipsos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "pepper",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "adipsos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "quartan fevers",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "in one hemina of water"
+      },
+      {
+       "field": "form",
+       "quote": "given it in potions"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Chewed, and applied to wounds, it arrests hæmorrhage",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "adipsos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "adipsos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "arrests hæmorrhage",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "Chewed, and applied"
+      },
+      {
+       "field": "form",
+       "quote": "Chewed, and applied to wounds"
+      },
+      {
+       "field": "filtered",
+       "quote": "Chewed, and applied to wounds"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "some authors have asserted, also, that it expels calculi of the bladder",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "adipsos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "adipsos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "expels calculi of the bladder",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "pliny-nh:b24:c020:001": {
+   "recipes": [
+    {
+     "recipeQuote": "The chamæpitys, called in Latin “abiga,” because it promotes abortion",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "chamæpitys",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "chamæpitys",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "promotes abortion",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  }
+ }
+}
