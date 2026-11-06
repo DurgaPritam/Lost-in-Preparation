@@ -1,0 +1,195 @@
+{
+  "scope": "approved",
+  "run": {
+    "provider": "Claude via Claude Code session",
+    "model": "claude-opus-5-5",
+    "modelVersion": "claude-opus-5-5",
+    "decoding": {
+      "mode": "written directly by the model in an interactive Claude Code session, following the prompt; no API call, no sampling parameters; one attempt per passage, no retries",
+      "writtenOn": "see batches"
+    }
+  },
+  "promptVersion": "m1_extract/v3",
+  "passages": 225,
+  "recipesAccepted": 489,
+  "recipesRejected": 5,
+  "passagesFailedWhole": 0,
+  "batches": [
+    {
+      "batch": 1,
+      "passages": 10,
+      "accepted": 12,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 2,
+      "passages": 10,
+      "accepted": 28,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 3,
+      "passages": 10,
+      "accepted": 12,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 4,
+      "passages": 10,
+      "accepted": 15,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 5,
+      "passages": 10,
+      "accepted": 12,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 6,
+      "passages": 10,
+      "accepted": 20,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 7,
+      "passages": 10,
+      "accepted": 24,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 8,
+      "passages": 10,
+      "accepted": 23,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 9,
+      "passages": 10,
+      "accepted": 6,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 10,
+      "passages": 10,
+      "accepted": 17,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 11,
+      "passages": 10,
+      "accepted": 14,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 12,
+      "passages": 10,
+      "accepted": 31,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 13,
+      "passages": 10,
+      "accepted": 14,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 14,
+      "passages": 10,
+      "accepted": 14,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 15,
+      "passages": 10,
+      "accepted": 29,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 16,
+      "passages": 10,
+      "accepted": 12,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 17,
+      "passages": 10,
+      "accepted": 31,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 18,
+      "passages": 10,
+      "accepted": 15,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 19,
+      "passages": 10,
+      "accepted": 20,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 20,
+      "passages": 10,
+      "accepted": 57,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 21,
+      "passages": 11,
+      "accepted": 20,
+      "rejected": 5,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 22,
+      "passages": 10,
+      "accepted": 54,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": "sample:01",
+      "passages": 1,
+      "accepted": 2,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": "sample:02",
+      "passages": 2,
+      "accepted": 0,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": "sample:04",
+      "passages": 1,
+      "accepted": 7,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    }
+  ],
+  "generatedAt": "2026-11-06T10:52:27+00:00"
+}
