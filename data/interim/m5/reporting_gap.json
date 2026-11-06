@@ -1,0 +1,333 @@
+{
+  "generatedAt": "2026-11-06T11:46:56+00:00",
+  "label": "descriptive findings, not hypothesis tests; 'stated' = coded by the rule-based extractor (heuristic, hand-check pending)",
+  "sets": {
+    "prepared": {
+      "extractor": "m5_rules/v2:cee392297c",
+      "all": {
+        "solvent": {
+          "k": 37,
+          "n": 43,
+          "value": 0.8605,
+          "low": 0.7274,
+          "high": 0.9344
+        },
+        "heat": {
+          "k": 11,
+          "n": 43,
+          "value": 0.2558,
+          "low": 0.1493,
+          "high": 0.4024
+        },
+        "part": {
+          "k": 21,
+          "n": 43,
+          "value": 0.4884,
+          "low": 0.3462,
+          "high": 0.6325
+        },
+        "freshOrDried": {
+          "k": 7,
+          "n": 43,
+          "value": 0.1628,
+          "low": 0.0812,
+          "high": 0.2997
+        },
+        "filtration": {
+          "k": 5,
+          "n": 43,
+          "value": 0.1163,
+          "low": 0.0507,
+          "high": 0.2448
+        },
+        "none": {
+          "k": 2,
+          "n": 43,
+          "value": 0.0465,
+          "low": 0.0128,
+          "high": 0.1546
+        },
+        "all five": {
+          "k": 0,
+          "n": 43,
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.082
+        }
+      },
+      "pmc_fulltext": {
+        "solvent": {
+          "k": 9,
+          "n": 10,
+          "value": 0.9,
+          "low": 0.5958,
+          "high": 0.9821
+        },
+        "heat": {
+          "k": 7,
+          "n": 10,
+          "value": 0.7,
+          "low": 0.3968,
+          "high": 0.8922
+        },
+        "part": {
+          "k": 3,
+          "n": 10,
+          "value": 0.3,
+          "low": 0.1078,
+          "high": 0.6032
+        },
+        "freshOrDried": {
+          "k": 6,
+          "n": 10,
+          "value": 0.6,
+          "low": 0.3127,
+          "high": 0.8318
+        },
+        "filtration": {
+          "k": 5,
+          "n": 10,
+          "value": 0.5,
+          "low": 0.2366,
+          "high": 0.7634
+        },
+        "none": {
+          "k": 0,
+          "n": 10,
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.2775
+        },
+        "all five": {
+          "k": 0,
+          "n": 10,
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.2775
+        }
+      },
+      "abstract": {
+        "solvent": {
+          "k": 28,
+          "n": 33,
+          "value": 0.8485,
+          "low": 0.6908,
+          "high": 0.9335
+        },
+        "heat": {
+          "k": 4,
+          "n": 33,
+          "value": 0.1212,
+          "low": 0.0482,
+          "high": 0.2733
+        },
+        "part": {
+          "k": 18,
+          "n": 33,
+          "value": 0.5455,
+          "low": 0.3799,
+          "high": 0.7016
+        },
+        "freshOrDried": {
+          "k": 1,
+          "n": 33,
+          "value": 0.0303,
+          "low": 0.0054,
+          "high": 0.1532
+        },
+        "filtration": {
+          "k": 0,
+          "n": 33,
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.1043
+        },
+        "none": {
+          "k": 2,
+          "n": 33,
+          "value": 0.0606,
+          "low": 0.0168,
+          "high": 0.1961
+        },
+        "all five": {
+          "k": 0,
+          "n": 33,
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.1043
+        }
+      }
+    },
+    "retrieved": {
+      "extractor": "m5_rules/v1:a058db8e4e",
+      "all": {
+        "solvent": {
+          "k": 109,
+          "n": 303,
+          "value": 0.3597,
+          "low": 0.3078,
+          "high": 0.4152
+        },
+        "heat": {
+          "k": 37,
+          "n": 303,
+          "value": 0.1221,
+          "low": 0.0899,
+          "high": 0.1638
+        },
+        "part": {
+          "k": 97,
+          "n": 303,
+          "value": 0.3201,
+          "low": 0.2701,
+          "high": 0.3746
+        },
+        "freshOrDried": {
+          "k": 37,
+          "n": 303,
+          "value": 0.1221,
+          "low": 0.0899,
+          "high": 0.1638
+        },
+        "filtration": {
+          "k": 30,
+          "n": 303,
+          "value": 0.099,
+          "low": 0.0702,
+          "high": 0.1378
+        },
+        "none": {
+          "k": 131,
+          "n": 303,
+          "value": 0.4323,
+          "low": 0.3778,
+          "high": 0.4886
+        },
+        "all five": {
+          "k": 4,
+          "n": 303,
+          "value": 0.0132,
+          "low": 0.0051,
+          "high": 0.0334
+        }
+      },
+      "pmc_fulltext": {
+        "solvent": {
+          "k": 34,
+          "n": 62,
+          "value": 0.5484,
+          "low": 0.4253,
+          "high": 0.6658
+        },
+        "heat": {
+          "k": 28,
+          "n": 62,
+          "value": 0.4516,
+          "low": 0.3342,
+          "high": 0.5747
+        },
+        "part": {
+          "k": 22,
+          "n": 62,
+          "value": 0.3548,
+          "low": 0.2474,
+          "high": 0.4792
+        },
+        "freshOrDried": {
+          "k": 29,
+          "n": 62,
+          "value": 0.4677,
+          "low": 0.3491,
+          "high": 0.5902
+        },
+        "filtration": {
+          "k": 27,
+          "n": 62,
+          "value": 0.4355,
+          "low": 0.3194,
+          "high": 0.5591
+        },
+        "none": {
+          "k": 14,
+          "n": 62,
+          "value": 0.2258,
+          "low": 0.1396,
+          "high": 0.3441
+        },
+        "all five": {
+          "k": 4,
+          "n": 62,
+          "value": 0.0645,
+          "low": 0.0254,
+          "high": 0.1545
+        }
+      },
+      "abstract": {
+        "solvent": {
+          "k": 75,
+          "n": 241,
+          "value": 0.3112,
+          "low": 0.2561,
+          "high": 0.3722
+        },
+        "heat": {
+          "k": 9,
+          "n": 241,
+          "value": 0.0373,
+          "low": 0.0198,
+          "high": 0.0694
+        },
+        "part": {
+          "k": 75,
+          "n": 241,
+          "value": 0.3112,
+          "low": 0.2561,
+          "high": 0.3722
+        },
+        "freshOrDried": {
+          "k": 8,
+          "n": 241,
+          "value": 0.0332,
+          "low": 0.0169,
+          "high": 0.0641
+        },
+        "filtration": {
+          "k": 3,
+          "n": 241,
+          "value": 0.0124,
+          "low": 0.0042,
+          "high": 0.036
+        },
+        "none": {
+          "k": 117,
+          "n": 241,
+          "value": 0.4855,
+          "low": 0.4231,
+          "high": 0.5483
+        },
+        "all five": {
+          "k": 0,
+          "n": 241,
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0157
+        }
+      }
+    }
+  },
+  "v3Screening": {
+    "source": "data/interim/m4/literature_prereg_v3.json (pre-registered, docs/PREREGISTRATION_v3.md)",
+    "screeningsWithTablesExamined": 257,
+    "distinctArticlesWithTablesExamined": 249,
+    "eligibleScreenings": 6,
+    "eligibleDistinctArticles": 6,
+    "share": {
+      "k": 6,
+      "n": 257,
+      "value": 0.0233,
+      "low": 0.0107,
+      "high": 0.05
+    },
+    "note": "share of article screenings whose tables were examined (after licence and title checks) that compared two preparations of the same plant material in a usable table"
+  }
+}

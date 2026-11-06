@@ -1,0 +1,61 @@
+{
+  "species": "Glycyrrhiza glabra",
+  "indication": "Liver Diseases",
+  "recipeId": "pliny-nh:b22:c011:001#r01",
+  "recipeQuote": "The juice of it is also very good for the voice, for which purpose it is thickened and then placed beneath the tongue: it is good, too, for the chest and liver",
+  "extractedAs": {
+    "part": "juice",
+    "solvent": [
+      "unknown"
+    ],
+    "heat": "unknown",
+    "process": "other",
+    "filtered": "unknown"
+  },
+  "correctedTo": {
+    "part": "root",
+    "solvent": "water",
+    "heat": "boiled",
+    "process": "decoction",
+    "filtered": "yes"
+  },
+  "evidence": [
+    {
+      "passageId": "pliny-nh-bohn-v4:fn2511",
+      "text": "The same preparation that is known to us as Spanish liquorice or Spanish juice."
+    },
+    {
+      "passageId": "culpeper-1850:dispensatory:s040-rob-or-sapa-and-juices:026",
+      "text": "Succus Glycyrrhizæ simplex. Or Juice of Liquorice simple."
+    },
+    {
+      "passageId": "culpeper-1850:dispensatory:s040-rob-or-sapa-and-juices:027",
+      "text": "College.] Infuse Liquorice Roots cleansed and gently bruised, three days in Spring Water, so much that it may over-top the roots the breadth of three fingers, then boil it a little, and press it hard out, and boil the liquor with a gentle fire to its due thickness."
+    }
+  ],
+  "otherLiquoriceRecipesCorrected": [
+    "culpeper-1652:herbal:liquoris:006#r02",
+    "culpeper-1652:herbal:liquoris:006#r03",
+    "culpeper-1850:herbal:liquorice:003#r02",
+    "culpeper-1850:herbal:liquorice:003#r03"
+  ],
+  "before": {
+    "faithful": "fresh juice",
+    "modern": "modern methanol extract",
+    "rank": 1,
+    "gapP5": 0.1218,
+    "gapP50": 0.2014,
+    "gapP95": 0.327,
+    "rankedOf": 3
+  },
+  "after": {
+    "faithful": "decoction in water",
+    "modern": "modern methanol extract",
+    "rank": 1,
+    "gapP5": 0.2939,
+    "gapP50": 0.4234,
+    "gapP95": 0.546,
+    "rankedOf": 3
+  },
+  "label": "case study of an extraction correction; the hypothesis is worth re-testing, not a claim that liquorice works or is safe"
+}

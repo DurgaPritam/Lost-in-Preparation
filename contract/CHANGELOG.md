@@ -2,6 +2,16 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
+## Proposed — P37 (2026-11-06, awaiting the project lead's approval; not implemented)
+
+| # | Proposal |
+|---|---|
+| P37a | `Recipe.corrections`: an optional list of `{field, from, to, reason, evidence, requestedBy, appliedBy, date}` for logged field corrections (`config/m1_corrections.csv`), so the site can show the extracted value next to the corrected one. Additive. |
+| P37b | `metrics.reportingGap`: an optional `dict[str, Metric]` for the descriptive reporting-gap findings (the share of studies stating each preparation variable, and the v3 screening share). Additive. |
+| P37c | `metrics.auditV2`: an optional section with the audit v2 per-variable fidelity rates as `Metric`s, labelled as a pre-registered re-analysis, plus an optional `site-data/audit_v2.json` with the same shape as `audit.json`. Additive. |
+
+Until these are approved, the data stays in `data/interim/` and is reported in RESULTS.md (`docs/SITE_DATA_STATUS.md`).
+
 ## v1.5.1 — 2026-11-06 (documentation only)
 
 | # | Change |

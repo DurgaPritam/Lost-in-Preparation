@@ -160,8 +160,9 @@ def test_profiles_split_per_species_with_index():
         p = C.Profile.model_validate(data[0])
         assert p.speciesId == e["speciesId"] and all(0 <= x.low <= x.likelihood <= x.high <= 1 for x in p.compounds)
         total += len(data)
-    full = json.load(gzip.open("data/release/profiles_full.json.gz", "rt"))
-    assert len(full) == total
+    full = json.load(gzip.open("data/release/profiles_full.json.gz", "rt"))   # every M4 profile, incl. species no longer headline
+    keep = {e["speciesId"] for e in idx}
+    assert sum(1 for r in full if r["speciesId"] in keep) == total
 
 
 def test_toxicity_screen_is_cited_and_conservative():

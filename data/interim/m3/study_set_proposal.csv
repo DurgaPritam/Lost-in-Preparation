@@ -56,7 +56,7 @@ Persea americana,wfo-0000465160,Lauraceae,2.0,1,culpeper-1652,The Pear-tree,1.0,
 Petasites hybridus,wfo-0000045336,Asteraceae,2.0,1,culpeper-1652,The Butter-Bur,1.0,False,154,27,False,False,,False,False,not_curated,,,,,,,,,False,False,,False,False
 Cichorium endivia,wfo-0000121598,Asteraceae,2.0,1,culpeper-1652,Endive,1.0,False,141,12,False,False,,False,False,not_curated,,,,,,,,,False,False,,False,False
 Digitalis purpurea,wfo-0000647394,Plantaginaceae,2.0,1,culpeper-1652,Foxglove,1.0,False,140,59,False,False,,False,False,not_curated,,,,,,,,,False,False,,False,False
-Melissa officinalis,wfo-0000240053,Lamiaceae,2.0,1,culpeper-1652,Balm,1.0,False,139,25,False,False,,False,False,not_curated,,,,,,,reject,no,False,False,,False,True
+Melissa officinalis,wfo-0000240053,Lamiaceae,2.0,1,culpeper-1652,Balm,1.0,False,139,25,False,False,,False,False,not_curated,,,,,,,reject,no,False,False,reject,False,False
 Cichorium intybus,wfo-0000080671,Asteraceae,2.0,1,culpeper-1652,Succory,1.0,False,136,46,False,False,,False,False,not_curated,,,,,,,,,False,False,,False,False
 Nerium oleander,wfo-0000251577,Apocynaceae,2.0,1,pliny,MADDENING HONEY,1.0,False,133,35,False,False,,False,False,not_curated,,,,,,,,,False,False,,False,False
 Portulaca oleracea,wfo-0000484425,Portulacaceae,2.0,1,culpeper-1652,Purslane,0.9008,False,127,27,False,False,,False,False,not_curated,,,,,,,,,False,False,,False,False

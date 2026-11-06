@@ -307,24 +307,6 @@
  },
  {
   "mock": false,
-  "speciesId": "wfo-0000389997",
-  "acceptedName": "Dioscorea communis",
-  "file": "profiles/wfo-0000389997.json",
-  "preparations": 13,
-  "compounds": 42,
-  "toxicityFlag": "concern_reported",
-  "toxicityNote": "Review: the rhizome extract irritates the skin (the source frames this as therapeutic). No poisoning source located. (AI-drafted, unverified)",
-  "toxicityEvidence": {
-   "source": "Review, PMC (open access)",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8949886/",
-   "quote": "The TCR extract has an irritating effect on the skin, thus improving the blood supply to the affected area [ 1 ].",
-   "licence": "CC BY 4.0",
-   "basis": "ai_drafted_unverified",
-   "verifiedBy": ""
-  }
- },
- {
-  "mock": false,
   "speciesId": "wfo-0000983427",
   "acceptedName": "Filipendula ulmaria",
   "file": "profiles/wfo-0000983427.json",

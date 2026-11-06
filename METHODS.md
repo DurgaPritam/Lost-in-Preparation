@@ -377,8 +377,10 @@ M5 compares how modern studies prepared each Phase 5 species with how the histor
 - **Modern preparation:** the most frequent modern solvent that M4 represents. When a study's heat is unstated, the M4 maceration preset is used and a caveat is recorded.
 - **Ranking:** the robust M6 rule (§11) ranks the candidates. Each is a hypothesis worth re-testing, with the curated toxicity entry (AI-drafted, unverified) and caveats.
 
+**The audit analysis is frozen** (2026-11-06, project lead): there will be no further protocol versions. v1 and v2 are reported as they are.
+
 **Audit v2: pre-registered re-analysis after v1's design flaw** (`pipeline/lip/m5/audit_v2.py`, [docs/AUDIT_PROTOCOL_v2.md](docs/AUDIT_PROTOCOL_v2.md), committed before any v2 result). v1 is reported exactly as pre-registered. Its solvent rule makes every non-water recipe unmatchable, so its headline mostly reflects the protocol. v2 changes five things:
-- **Solvent equivalence classes:** water ↔ aqueous; wine ↔ hydroalcoholic with ≤ 20% v/v ethanol (sensitivity at 15% and 25%); vinegar ↔ acidified aqueous; none/fresh juice ↔ fresh pressed juice. Honey or oxymel, and other vehicles, count as "no modern analogue": reported separately, never scored as unfaithful.
+- **Solvent equivalence classes:** water ↔ aqueous; wine ↔ hydroalcoholic with ≤ 20% v/v ethanol. The cut-off covers wine's usual 10–13% and the 14–15% maximum of standard fermentation (Succi et al. 2025, *Foods*, CC BY; `data/reference/wine_alcohol_source.json`); the sensitivity analysis at 15% and 25% gives the same solvent match rate; vinegar ↔ acidified aqueous; none/fresh juice ↔ fresh pressed juice. Honey or oxymel, and other vehicles, count as "no modern analogue": reported separately, never scored as unfaithful.
 - **Eligibility, fixed in advance:** only studies that prepared the plant material. Reviews, case reports, surveys and pure-compound papers are excluded.
 - **Search:** the species-level literature from Phase 5 prep, filtered by MeSH descriptor or descendant (descendants from NLM's MeSH SPARQL endpoint).
 - **Lexicon:** v2 (`config/m5_lexicon/v2.toml`).

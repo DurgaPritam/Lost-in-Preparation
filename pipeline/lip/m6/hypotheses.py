@@ -76,20 +76,21 @@ def compounds_for(species: list[str]) -> dict[str, list[M.Compound]]:
     return out
 
 
-def run(version: str = "v1") -> dict:
+def run(version: str = "v1", corrections: bool = True, out_override=None) -> dict:
     """version v1: audit protocol v1 (outputs site-data/hypotheses.json); v2: protocol v2 (outputs data/interim/m6/v2/).
     Both apply the logged M1 corrections (config/m1_corrections.csv)."""
     from ..m1.corrections import apply
     from ..m5.pairs import preparation_key
     src = INTERIM / "m5" if version == "v1" else INTERIM / "m5" / "v2"
-    out_dir = OUT if version == "v1" else OUT / "v2"
+    out_dir = out_override or (OUT if version == "v1" else OUT / "v2")
     pairs = json.loads((src / "pairs.json").read_text())
     units = pd.read_csv(src / "audit_units.csv", dtype={"pmid": str})
     if version == "v2":
         units = units.rename(columns={"overall": "status"})
     studies = {s["pmid"]: s for s in json.loads((src / "audit_studies.json").read_text())["studies"]}
     pair_pmids = json.loads((src / "audit_studies.json").read_text())["pairPmids"]
-    recipes = {r["id"]: r for r in apply(json.loads((INTERIM / "m1" / "predictions_approved.json").read_text()))}
+    raw = json.loads((INTERIM / "m1" / "predictions_approved.json").read_text())
+    recipes = {r["id"]: r for r in (apply(raw) if corrections else raw)}
     tox = pd.read_csv(ROOT / "data" / "reference" / "toxicity_curated.csv").set_index("acceptedName")
     cfg = M.load_config()
     sd = M.descriptor_sd("rdkit")["sd"]
@@ -179,7 +180,7 @@ def run(version: str = "v1") -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     if len(df):
         df.to_csv(out_dir / "hypotheses.csv", index=False)
-    target = SITE_DATA / "hypotheses.json" if version == "v1" else out_dir / "hypotheses.json"
+    target = SITE_DATA / "hypotheses.json" if (version == "v1" and out_override is None) else out_dir / "hypotheses.json"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps([h.model_dump(mode="json") for h in sorted(hyps, key=lambda h: h.rank)],
                                                           ensure_ascii=False, indent=1))

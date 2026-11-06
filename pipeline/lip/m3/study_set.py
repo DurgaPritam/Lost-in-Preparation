@@ -107,7 +107,7 @@ def build() -> pd.DataFrame:
     g.loc[has_rr, "pendingReReview"] = False
     g["headline"] = g.proposed & (g.approved == "yes") & ~g.pendingReReview
     fixed = set(nx.species)
-    g["reReviewRequested"] = (g.acceptedName.isin(fixed) & g.reviewDecision.isin(["unsure", "reject"])) | g.pendingReReview
+    g["reReviewRequested"] = ((g.acceptedName.isin(fixed) & g.reviewDecision.isin(["unsure", "reject"])) | g.pendingReReview) & (g.reReviewDecision == "")
     return g
 
 

@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-11-06T11:51:10+00:00",
+  "contractVersion": "1.5",
+  "files": {
+    "sources.json": {
+      "records": 4,
+      "mock": 0,
+      "valid": true
+    },
+    "recipes.json": {
+      "records": 631,
+      "mock": 0,
+      "valid": true
+    },
+    "species.json": {
+      "records": 1152,
+      "mock": 0,
+      "valid": true
+    },
+    "profiles/index.json": {
+      "records": 19,
+      "mock": 0,
+      "valid": true
+    },
+    "audit.json": {
+      "records": 323,
+      "mock": 0,
+      "valid": true
+    },
+    "hypotheses.json": {
+      "records": 3,
+      "mock": 0,
+      "valid": true
+    },
+    "metrics.json": {
+      "records": 1,
+      "mock": 0,
+      "valid": true
+    },
+    "profiles/<speciesId>.json": {
+      "files": 19,
+      "records": 247,
+      "valid": true
+    },
+    "strayProfileFiles": []
+  },
+  "speciesCounts": {
+    "recipes": 631,
+    "withCandidates": 548,
+    "noNameEntry": 9,
+    "notAttributable": 58,
+    "nameUnresolved": 16,
+    "droppedByReviewer": 0
+  },
+  "profilesMovedOut": [
+    "Dioscorea communis"
+  ],
+  "correctionsNotInRecipes": [
+    "culpeper-1652:herbal:liquoris:006#r02",
+    "culpeper-1652:herbal:liquoris:006#r03",
+    "culpeper-1850:herbal:liquorice:003#r02",
+    "culpeper-1850:herbal:liquorice:003#r03",
+    "pliny-nh:b22:c011:001#r01"
+  ]
+}

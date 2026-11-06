@@ -1,0 +1,203 @@
+"""Phase 7 preparation: write the remaining contract files, prune stale ones, validate every site-data file against
+the contract (contract/models.py, v1.5), and generate docs/SITE_DATA_STATUS.md.
+
+  recipes.json     the M1 session extraction (gold sample + Phase 5 species), as validated (one attempt, verbatim
+                   quotes). Logged corrections (config/m1_corrections.csv) are NOT in this file: contract v1.5 has no
+                   field for them (proposal P37); they are applied downstream and listed in SITE_DATA_STATUS.md.
+  species.json     per recipe: the M2 candidates (rank 1–3) of the name entry the recipe's plant name is attributable to
+                   (same attribution rule as the Phase 5 pairs); name entries a reviewer removed from a species are dropped.
+  profiles/        only species in the current headline set; others are moved to data/interim/m4/profiles_not_headline/.
+  metrics.json     headlineMatchRate filled from the frozen audit v1 (share faithful), with its note.
+Run: python -m lip site
+"""
+from __future__ import annotations
+
+import json
+import shutil
+from datetime import datetime, timezone
+
+import pandas as pd
+
+from contract import models as C
+
+from .m5.pairs import attributable
+from .paths import INTERIM, ROOT, SITE_DATA
+
+STATUS_DOC = ROOT / "docs" / "SITE_DATA_STATUS.md"
+VALIDATION = INTERIM / "site_validation.json"
+
+
+def recipes() -> list[dict]:
+    out, seen = [], {}
+    for scope in ("sample", "approved"):
+        for r in json.loads((INTERIM / "m1" / f"predictions_{scope}.json").read_text()):
+            if r["id"] in seen:
+                a, b = (dict(x, provenance=None) for x in (seen[r["id"]], r))
+                if a != b:
+                    raise ValueError(f"recipe {r['id']} differs between scopes")
+                continue
+            seen[r["id"]] = r
+            out.append(r)
+    return out
+
+
+def _entries(row, inv: pd.DataFrame) -> list[str]:
+    if row.source_id == "culpeper-1652":
+        return [f"culpeper-1652:{row.entry_slug}"]
+    if row.source_id == "culpeper-1850" and isinstance(row.crosswalk_1652, str):
+        return [f"culpeper-1652:{row.crosswalk_1652}"]
+    if row.source_id.startswith("pliny") and not pd.isna(row.book):
+        pre = f"pliny-nh:b{int(row.book):02d}:{row.entry_slug}:"
+        return list(inv.index[inv.index.str.startswith(pre)])
+    return []
+
+
+def species(recs: list[dict]) -> tuple[list[dict], dict]:
+    from .m1.prompt import load_passages
+    pas = load_passages().set_index("passage_id")
+    inv = pd.read_parquet(INTERIM / "m2" / "name_inventory.parquet").set_index("nameId")
+    cand = pd.read_parquet(INTERIM / "m2" / "name_candidates.parquet")
+    cand = cand[cand.acceptedName.notna() & (cand["rank"] >= 1)]
+    nx = pd.read_csv(ROOT / "config" / "name_entry_exclusions.csv")
+    drop = set(zip(nx.nameId, nx.species))
+    tox = pd.read_csv(ROOT / "data" / "reference" / "toxicity_curated.csv").set_index("acceptedName")
+    by_name = {k: g.sort_values("rank") for k, g in cand.groupby("nameId")}
+    out, counts = [], {"recipes": len(recs), "withCandidates": 0, "noNameEntry": 0, "notAttributable": 0, "nameUnresolved": 0, "droppedByReviewer": 0}
+    for r in recs:
+        row = pas.loc[r["passage"]["passageId"]]
+        ids = [n for n in _entries(row, inv) if n in inv.index]
+        if not ids:
+            counts["noNameEntry"] += 1
+            continue
+        hit = [n for n in ids if attributable(r["plantNameAsWritten"],
+                                              (json.loads(inv.loc[n, "queries"]) if isinstance(inv.loc[n, "queries"], str) else list(inv.loc[n, "queries"])))]
+        if not hit:
+            counts["notAttributable"] += 1
+            continue
+        n_before = len(out)
+        for n in hit:
+            for c in (by_name.get(n, pd.DataFrame()).itertuples()):
+                if (n, c.acceptedName) in drop:
+                    counts["droppedByReviewer"] += 1
+                    continue
+                t = tox.loc[c.acceptedName] if c.acceptedName in tox.index else None
+                out.append(C.SpeciesCandidate(
+                    id=f"{r['id']}|{n}|r{int(c.rank)}", recipeId=r["id"], speciesId=c.wfoId if c.inWFO else None,
+                    nameAsWritten=inv.loc[n, "nameAsWritten"], acceptedName=c.acceptedName, wfoId=c.wfoId if c.inWFO else None,
+                    confidence=round(float(c.confidence), 4), basis=c.basis,
+                    basisRef=c.basisRef if isinstance(c.basisRef, str) else None, disputed=bool(c.disputed),
+                    toxicityFlag=t["toxicity"] if t is not None else "unknown",
+                    toxicityNote=(f"{t['summary']} (AI-drafted, unverified)" if t is not None else None)).model_dump(mode="json"))
+        if len(out) > n_before:
+            counts["withCandidates"] += 1
+        else:
+            counts["nameUnresolved"] += 1
+    return out, counts
+
+
+def prune_profiles() -> list[str]:
+    ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
+    keep = set(ss[ss.headline].wfoId)
+    idx_path = SITE_DATA / "profiles" / "index.json"
+    idx = json.loads(idx_path.read_text())
+    moved = []
+    dest = INTERIM / "m4" / "profiles_not_headline"
+    for e in idx:
+        if e["speciesId"] not in keep:
+            dest.mkdir(parents=True, exist_ok=True)
+            src = SITE_DATA / e["file"]
+            if src.exists():
+                shutil.move(str(src), dest / src.name)
+            moved.append(e["acceptedName"])
+    idx_path.write_text(json.dumps([e for e in idx if e["speciesId"] in keep], ensure_ascii=False, indent=1))
+    names = dict(zip(ss.wfoId, ss.acceptedName))
+    return sorted(names.get(f.stem, f.stem) for f in dest.glob("*.json")) if dest.exists() else moved
+
+
+def headline_match_rate() -> None:
+    a = json.loads((INTERIM / "m5" / "audit_summary.json").read_text())["headline"]
+    p = SITE_DATA / "metrics.json"
+    m = json.loads(p.read_text())
+    m["headlineMatchRate"] = C.Metric(
+        status="computed", value=round(1 - a["value"], 4), low=round(1 - a["high"], 4), high=round(1 - a["low"], 4), n=a["nKnown"],
+        sourceFile="data/interim/m5/audit_summary.json",
+        note=(f"audit v1 as pre-registered (docs/AUDIT_PROTOCOL_v1.md): share of (pair, study) units faithful to a historical preparation, "
+              f"among {a['nKnown']} with a known status ({a['nUnknown']} unknown); 95% CI bootstrap over pairs. v1's solvent rule makes "
+              "non-water recipes unmatchable, so this mostly reflects the protocol; audit v2 and the reporting-gap headline are in RESULTS.md "
+              "(not representable in contract v1.5, proposal P37)")).model_dump(mode="json")
+    p.write_text(json.dumps(C.Metrics.model_validate(m).model_dump(mode="json"), ensure_ascii=False, indent=1))
+
+
+def validate() -> dict:
+    res = {}
+    files = {"sources.json": "sources.json", "recipes.json": "recipes.json", "species.json": "species.json",
+             "profiles/index.json": "profiles.index.json", "audit.json": "audit.json", "hypotheses.json": "hypotheses.json",
+             "metrics.json": "metrics.json"}
+    for path, key in files.items():
+        data = json.loads((SITE_DATA / path).read_text())
+        model = C.FILE_MODELS[key]
+        if key in C.ARRAY_FILES:
+            recs = [model.model_validate(x) for x in data]
+            res[path] = {"records": len(recs), "mock": sum(r.mock for r in recs), "valid": True}
+        else:
+            model.model_validate(data)
+            res[path] = {"records": 1, "mock": int(data.get("mock", False)), "valid": True}
+    idx = json.loads((SITE_DATA / "profiles" / "index.json").read_text())
+    n = 0
+    for e in idx:
+        n += len([C.Profile.model_validate(x) for x in json.loads((SITE_DATA / e["file"]).read_text())])
+    res["profiles/<speciesId>.json"] = {"files": len(idx), "records": n, "valid": True}
+    stray = sorted(p.name for p in (SITE_DATA / "profiles").glob("wfo-*.json") if f"profiles/{p.name}" not in {e["file"] for e in idx})
+    res["strayProfileFiles"] = stray
+    return res
+
+
+def run() -> dict:
+    recs = recipes()
+    for r in recs:
+        C.Recipe.model_validate(r)
+    (SITE_DATA / "recipes.json").write_text(json.dumps(recs, ensure_ascii=False, indent=1))
+    sp, counts = species(recs)
+    (SITE_DATA / "species.json").write_text(json.dumps(sp, ensure_ascii=False, indent=1))
+    moved = prune_profiles()
+    headline_match_rate()
+    val = validate()
+    out = {"generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"), "contractVersion": C.CONTRACT_VERSION,
+           "files": val, "speciesCounts": counts, "profilesMovedOut": moved,
+           "correctionsNotInRecipes": sorted(set(pd.read_csv(ROOT / "config" / "m1_corrections.csv").recipeId))}
+    VALIDATION.write_text(json.dumps(out, indent=2))
+    write_status(out)
+    return out
+
+
+def write_status(v: dict) -> None:
+    f = v["files"]
+    g = lambda k: f[k]["records"]
+    h = json.loads((INTERIM / "m6" / "hypotheses_summary.json").read_text())
+    L = ["# site-data status (Phase 7 preparation)", "",
+         f"Generated by `python -m lip site` on {v['generatedAt'][:10]} (`data/interim/site_validation.json`). Do not edit by hand.", "",
+         f"Every file below **validates against contract v{v['contractVersion']}** (`contract/models.py`). No record is mock "
+         f"({sum(x.get('mock', 0) for x in f.values() if isinstance(x, dict))} mock records). The website has not been started; it waits "
+         "for the Claude Design handoff.", "",
+         "Status words: **validated** = checked against an independent, non-AI reference; *provisional* = AI-made or checked only against "
+         "AI-made references; pending = waiting on human work.", "",
+         "| File | Records | Content status | What is pending |", "|---|---|---|---|",
+         f"| `sources.json` | {g('sources.json')} | **validated**: checksums and licences of the digitised sources; ingestion tested against the source files | — |",
+         f"| `recipes.json` | {g('recipes.json')} | *provisional*: written by Claude in a Claude Code session (prompt v3); every quote passed the verbatim check | human gold annotation (50 passages) and 15-passage re-annotation; {len(v['correctionsNotInRecipes'])} recipes have logged corrections not shown in this file (proposal P37) |",
+         f"| `species.json` | {g('species.json')} | *provisional*: M2 candidates (GBIF/WFO evidence, heuristic weights) for {v['speciesCounts']['withCandidates']} recipes; "
+         f"{v['speciesCounts']['notAttributable']} recipes name a plant other than their entry's, {v['speciesCounts']['noNameEntry']} have no name entry and {v['speciesCounts']['nameUnresolved']} have an entry name M2 did not resolve, so they get no candidate | 30-name scholarly identification check |",
+         f"| `profiles/index.json` + {f['profiles/<speciesId>.json']['files']} species files | {g('profiles/index.json')} species, {f['profiles/<speciesId>.json']['records']} profiles | "
+         "logP descriptor **validated** against experiment; preparation factors *heuristic*; aqueous preparations unvalidated; toxicity entries *provisional* (AI-drafted) | toxicity review |",
+         f"| `audit.json` | {g('audit.json')} | audit **v1 as pre-registered**, rule-based coding (frozen) | 40-study hand-check of the coding; v2 and the reporting gap are not in contract v1.5 (P37) |",
+         f"| `hypotheses.json` | {g('hypotheses.json')} | Phase 6 on audit v1 with logged corrections ({h['ranked']} hypotheses worth re-testing) | depends on the hand-check and the unvalidated aqueous model |",
+         "| `metrics.json` | 1 | extraction run, name resolution, logP error, artemisinin check, `headlineMatchRate` (audit v1); AI-reference results only under `provisional` | gold-set F1 and annotator self-consistency (not computed until annotation exists) |",
+         "", "## Not yet representable in contract v1.5 (proposal P37, awaiting approval)", "",
+         "- **Reporting-gap findings** (the headline): `data/interim/m5/reporting_gap.json`.",
+         "- **Audit v2** (pre-registered re-analysis): `data/interim/m5/v2/`, and its hypotheses in `data/interim/m6/v2/`.",
+         "- **Logged recipe corrections:** `config/m1_corrections.csv`, applied downstream. The liquorice case study is in `data/interim/m6/liquorice_case.json`.",
+         "", "## Changes made for Phase 7", "",
+         f"- `recipes.json` and `species.json` written (they were missing).",
+         f"- Profiles moved out of `site-data/` because the species is no longer in the headline set: {', '.join(v['profilesMovedOut']) or 'none'} "
+         "(kept in `data/interim/m4/profiles_not_headline/`).",
+         "- `metrics.json`: `headlineMatchRate` filled from audit v1, with a note on its design flaw."]
+    STATUS_DOC.write_text("\n".join(L) + "\n")
