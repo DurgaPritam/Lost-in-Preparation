@@ -38,7 +38,7 @@ def _has_credentials() -> bool:
 
 def m1(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(prog="lip m1")
-    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver", "prompt-tokens", "session-ingest", "session-show"])
+    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver", "prompt-tokens", "session-ingest", "session-show", "reannotation-subset"])
     ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--scope", choices=["sample", "all", "approved"], default="sample")
     ap.add_argument("--limit", type=int)
@@ -83,6 +83,9 @@ def m1(argv: list[str]) -> int:
         from .m1 import evaluate
         m = evaluate.evaluate(a.reference)
         print(m.model_dump_json(indent=2)[:4000])
+    elif a.cmd == "reannotation-subset":
+        from .m1 import sample
+        print(json.dumps(sample.write_reannotation_subset(), indent=2))
     elif a.cmd == "session-ingest":
         from .m1 import session
         print(json.dumps(session.ingest(a.scope), indent=2))

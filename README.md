@@ -17,7 +17,7 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 | Stage | What it does | Status |
 |---|---|---|
 | Ingest | Culpeper 1652 (EEBO-TCP), Culpeper 1850 and Pliny (Bostock & Riley; **lower confidence**: a 19th-century translation with often-disputed plant names) → stable, located passages; 1850↔1652 crosswalk | done |
-| M1 Recipes | Structured recipes extracted by an LLM, every field backed by a verbatim quote; Groq-hosted open-weight model by default (Ollama or Claude optional) | built; awaiting gold set |
+| M1 Recipes | Structured recipes, every field backed by a verbatim quote. Written by Claude in a Claude Code session following prompt v3, and checked by the same verbatim-quote validator (failures rejected, never repaired) | done for the gold sample and the Phase 5 species; awaiting the human gold set |
 | M2 Names | Historical name → accepted species (WFO), up to 3 candidates with confidence and basis; disputed flags | done; awaiting 30-name scholarly check |
 | M3 Compounds | Known compounds per species (LOTUS via Wikidata), RDKit-standardised, de-duplicated by InChIKey; coverage per species | done |
 | Study set | Proposed species for re-testing (count in the validation table below), for human approval ([docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md)), each with a cited toxicity entry (AI-drafted, awaiting review) | awaiting approval |
@@ -48,9 +48,11 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 | Text ingestion and segmentation (passage coverage, IDs, chapter counts vs printed contents) | **validated** — automated tests against the source files | `tests/` |
 | logP descriptor: RDKit vs GFN2-xTB vs experiment | **validated** — experimental reference (SangsterLogP, CC BY 4.0) | `data/interim/m4/logp_validation.json` |
 | Artemisinin known-case test | **borderline pass** against pre-registered criteria (5th–95th range crosses the cold-water threshold) | `data/interim/m4/artemisinin_check.json` |
-| M1 extraction accuracy vs human gold set | pending — human annotation not yet done | `data/gold/annotations/` |
-| Inter-annotator agreement (Cohen's kappa) | pending — needs two human annotators | `data/gold/annotations/` |
-| M1 extraction vs AI reference (silver) | *provisional* — AI reference, not human-validated (not yet run: no local model run) | `data/silver/silver_v1.json` |
+| M1 extraction run: 50-passage gold sample | done — Claude via Claude Code session (claude-opus-5-5, prompt m1_extract/v3:13ca4093ec); 50 passages, 151 recipes accepted, 0 rejected by the verbatim-quote check (logged, never repaired) | `data/interim/m1/run_sample.json` |
+| M1 extraction run: recipe-scope passages of the Phase 5 species | done — Claude via Claude Code session (claude-opus-5-5, prompt m1_extract/v3:13ca4093ec); 225 passages, 489 recipes accepted, 5 rejected by the verbatim-quote check (logged, never repaired) | `data/interim/m1/run_approved.json` |
+| M1 extraction accuracy vs human gold set (single annotator) | pending — human annotation not yet done | `data/gold/annotations/` |
+| Annotator self-consistency (15-passage re-annotation, Cohen's kappa) | pending — re-annotation not yet done | `data/gold/reannotation_subset_v1.json` |
+| M1 extraction vs AI reference (silver) | **not used** — circular: the same AI (Claude) wrote the silver set and the session extraction | `data/silver/silver_v1.json` |
 | M2 name resolution vs scholarly identifications | pending — needs human-verified identifications | `data/gold/name_identifications.csv` |
 | M2 name resolution vs AI-drafted identifications | *provisional* — AI-drafted from quoted sources, unverified | `data/gold/name_identifications.csv` (draft* columns) |
 | Preparation model vs published reports — exploratory set | *provisional, exploratory* — 9 rows selected after model build | `data/reference/prep_literature_v1.csv` |
@@ -76,7 +78,8 @@ Sources: `data/interim/ingest_report.json`, `data/gold/sample_v2.json`, `site-da
 | Recipe-scope passages (corpus) | 6,222 | 1,435 | 7,657 |
 | Gold-sample passages (stratified) | 30 | 20 | 50 |
 | M1 extraction F1 vs human gold | pending (no human annotation yet) | pending (no human annotation yet) | pending (no human annotation yet) |
-| M1 extraction vs AI reference (*provisional*) | not computed (no local model run) | not computed (no local model run) | not computed (no local model run) |
+| M1 extraction vs AI reference (silver) | not used (circular) | not used (circular) | not used (circular) |
+| M1 recipes accepted, Phase 5 species (session extraction) | 347 | 142 | 489 |
 | M2 names resolved to a WFO species | 219/281 (78%) | 593/846 (70%) | 812/1127 (72%) |
 | M2 resolved names flagged disputed (descriptive) | 61/223 (27%; 95% CI 22%–34%) | 512/608 (84%; 95% CI 81%–87%) | 573/831 (69%; 95% CI 66%–72%) |
 | M2 top-1 vs AI-drafted identifications (*provisional*) | 9/12 (75%; 95% CI 47%–91%) | 2/8 (25%; 95% CI 7%–59%) | 11/20 (55%; 95% CI 34%–74%) |
@@ -116,10 +119,17 @@ export PYTHONPATH=pipeline:.
 .venv/bin/python -m pytest
 ```
 
-**Extraction** (default provider: Groq). Put `GROQ_API_KEY=...` in your environment or in a local `.env` file (see `.env.example`; `.env` is git-ignored), then run `python -m lip m1 extract --scope sample`. Every response is cached and committed, so the published results reproduce **without a key**: with no key set, the pipeline serves only cached responses. Ollama (local) and Claude are optional providers in `config/pipeline.toml`.
+**Extraction.** The results use extractions written in a Claude Code session (`data/m1_session/`), validated with `python -m lip m1 session-ingest --scope sample` (or `--scope approved`). This step needs no API key or network. The API extractor (`python -m lip m1 extract`; Groq by default, Ollama and Claude optional in `config/pipeline.toml`) is kept. Its cached Groq responses are committed but excluded from evaluation. For Groq, put `GROQ_API_KEY=...` in your environment or a local `.env` file (see `.env.example`; `.env` is git-ignored).
 
 ## Data and licences
 
 All texts are public domain or CC0; see [docs/DATA_LICENCES.md](docs/DATA_LICENCES.md). Method details are in [METHODS.md](METHODS.md).
 
-**AI disclosure:** recipe extraction uses an LLM. By default this is `openai/gpt-oss-120b`, an open-weight model hosted by Groq, chosen on 2026-11-06 from Groq's live model list (`data/interim/m1/groq_model_selection.json`). A local open-weight model (`qwen2.5:7b-instruct` via Ollama) was tried first, on the same day. It overloaded the 16 GB development machine and was removed before producing any results. Claude remains an optional provider. The provider, model, model version, selection date and prompt version are recorded on every extracted record, and every model response is cached in the repository. The prompts are in `prompts/m1_extract/`. Parts of this codebase were written with AI assistance.
+**AI disclosure:**
+- **Recipe extraction (M1)** for the results was written by **Claude (`claude-opus-5-5`) in a Claude Code session**, on 2026-11-06. Claude followed prompt v3 (`prompts/m1_extract/v3/`) directly; there was no API call.
+  - **Validation:** every output passed the same verbatim-quote check as the API extractor, with one attempt. Failures were rejected and logged, never repaired. The provider ("Claude via Claude Code session"), the model, the prompt version and the date are recorded on every extracted record.
+  - **Evaluation:** the same AI wrote the guidelines, the few-shot examples and the silver reference set, so the extraction is **not** scored against the silver set (that would be circular). It will be evaluated only against a human gold annotation of the 50 sample passages: a single annotator, plus a later re-annotation of 15 passages for self-consistency.
+- **Earlier attempts:**
+  - A hosted run on Groq's free tier (`openai/gpt-oss-120b`, selected 2026-11-06) was stopped because of the free tier's rate limits. Its cached responses stay in the repository, excluded from evaluation.
+  - A local model (`qwen2.5:7b-instruct` via Ollama) overloaded the development machine and was removed before producing results.
+- **Rest of the codebase:** parts of it, and the AI-made references listed in METHODS.md §10, were written with AI assistance.

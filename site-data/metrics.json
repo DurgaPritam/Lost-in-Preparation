@@ -1,10 +1,19 @@
 {
   "contractVersion": "1.1",
-  "generatedAt": "2026-11-06T04:58:58+00:00",
+  "generatedAt": "2026-11-06T10:58:14+00:00",
   "pipelineVersion": "0.1.0",
   "mock": false,
   "extraction": {
-    "run": null,
+    "run": {
+      "provider": "Claude via Claude Code session",
+      "model": "claude-opus-5-5",
+      "modelVersion": "claude-opus-5-5",
+      "decoding": {
+        "mode": "written directly by the model in an interactive Claude Code session, following the prompt; no API call, no sampling parameters; one attempt per passage, no retries",
+        "writtenOn": "see batches"
+      },
+      "promptVersion": "m1_extract/v3:13ca4093ec"
+    },
     "overall": {
       "recipeType": {
         "precision": {
@@ -14,7 +23,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -23,7 +32,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -32,7 +41,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "part": {
@@ -43,7 +52,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -52,7 +61,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -61,7 +70,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "freshOrDried": {
@@ -72,7 +81,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -81,7 +90,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -90,7 +99,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "heat": {
@@ -101,7 +110,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -110,7 +119,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -119,7 +128,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "filtered": {
@@ -130,7 +139,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -139,7 +148,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -148,7 +157,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "process": {
@@ -159,7 +168,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -168,7 +177,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -177,7 +186,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "form": {
@@ -188,7 +197,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -197,7 +206,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -206,7 +215,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "solvent": {
@@ -217,7 +226,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -226,7 +235,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -235,7 +244,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "plantNameAsWritten": {
@@ -246,7 +255,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -255,7 +264,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -264,7 +273,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "heatText": {
@@ -275,7 +284,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -284,7 +293,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -293,7 +302,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "durationText": {
@@ -304,7 +313,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -313,7 +322,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -322,7 +331,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "indicationAsWritten": {
@@ -333,7 +342,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -342,7 +351,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -351,7 +360,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "ingredients": {
@@ -362,7 +371,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -371,7 +380,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -380,7 +389,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       }
     },
@@ -394,7 +403,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -403,7 +412,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -412,7 +421,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "part": {
@@ -423,7 +432,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -432,7 +441,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -441,7 +450,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "freshOrDried": {
@@ -452,7 +461,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -461,7 +470,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -470,7 +479,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "heat": {
@@ -481,7 +490,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -490,7 +499,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -499,7 +508,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "filtered": {
@@ -510,7 +519,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -519,7 +528,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -528,7 +537,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "process": {
@@ -539,7 +548,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -548,7 +557,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -557,7 +566,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "form": {
@@ -568,7 +577,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -577,7 +586,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -586,7 +595,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "solvent": {
@@ -597,7 +606,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -606,7 +615,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -615,7 +624,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "plantNameAsWritten": {
@@ -626,7 +635,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -635,7 +644,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -644,7 +653,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "heatText": {
@@ -655,7 +664,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -664,7 +673,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -673,7 +682,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "durationText": {
@@ -684,7 +693,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -693,7 +702,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -702,7 +711,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "indicationAsWritten": {
@@ -713,7 +722,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -722,7 +731,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -731,7 +740,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "ingredients": {
@@ -742,7 +751,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -751,7 +760,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -760,7 +769,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         }
       },
@@ -773,7 +782,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -782,7 +791,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -791,7 +800,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "part": {
@@ -802,7 +811,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -811,7 +820,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -820,7 +829,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "freshOrDried": {
@@ -831,7 +840,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -840,7 +849,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -849,7 +858,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "heat": {
@@ -860,7 +869,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -869,7 +878,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -878,7 +887,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "filtered": {
@@ -889,7 +898,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -898,7 +907,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -907,7 +916,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "process": {
@@ -918,7 +927,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -927,7 +936,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -936,7 +945,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "form": {
@@ -947,7 +956,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -956,7 +965,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -965,7 +974,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "solvent": {
@@ -976,7 +985,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -985,7 +994,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -994,7 +1003,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "plantNameAsWritten": {
@@ -1005,7 +1014,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1014,7 +1023,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1023,7 +1032,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "heatText": {
@@ -1034,7 +1043,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1043,7 +1052,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1052,7 +1061,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "durationText": {
@@ -1063,7 +1072,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1072,7 +1081,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1081,7 +1090,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "indicationAsWritten": {
@@ -1092,7 +1101,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1101,7 +1110,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1110,7 +1119,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "ingredients": {
@@ -1121,7 +1130,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1130,7 +1139,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1139,7 +1148,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         }
       },
@@ -1152,7 +1161,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1161,7 +1170,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1170,7 +1179,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "part": {
@@ -1181,7 +1190,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1190,7 +1199,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1199,7 +1208,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "freshOrDried": {
@@ -1210,7 +1219,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1219,7 +1228,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1228,7 +1237,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "heat": {
@@ -1239,7 +1248,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1248,7 +1257,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1257,7 +1266,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "filtered": {
@@ -1268,7 +1277,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1277,7 +1286,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1286,7 +1295,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "process": {
@@ -1297,7 +1306,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1306,7 +1315,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1315,7 +1324,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "form": {
@@ -1326,7 +1335,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1335,7 +1344,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1344,7 +1353,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "solvent": {
@@ -1355,7 +1364,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1364,7 +1373,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1373,7 +1382,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "plantNameAsWritten": {
@@ -1384,7 +1393,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1393,7 +1402,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1402,7 +1411,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "heatText": {
@@ -1413,7 +1422,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1422,7 +1431,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1431,7 +1440,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "durationText": {
@@ -1442,7 +1451,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1451,7 +1460,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1460,7 +1469,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "indicationAsWritten": {
@@ -1471,7 +1480,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1480,7 +1489,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1489,7 +1498,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         },
         "ingredients": {
@@ -1500,7 +1509,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "recall": {
             "status": "not_computed",
@@ -1509,7 +1518,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           },
           "f1": {
             "status": "not_computed",
@@ -1518,7 +1527,7 @@
             "high": null,
             "n": null,
             "sourceFile": null,
-            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+            "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
           }
         }
       }
@@ -1532,7 +1541,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -1541,7 +1550,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -1550,7 +1559,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "culpeper1652_virtues": {
@@ -1561,7 +1570,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -1570,7 +1579,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -1579,7 +1588,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "culpeper1850_dispensatory": {
@@ -1590,7 +1599,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -1599,7 +1608,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -1608,7 +1617,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       },
       "pliny": {
@@ -1619,7 +1628,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "recall": {
           "status": "not_computed",
@@ -1628,7 +1637,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         },
         "f1": {
           "status": "not_computed",
@@ -1637,18 +1646,18 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json); awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+          "note": "awaiting adjudicated gold set (data/gold/annotations/gold.json)"
         }
       }
     },
     "spanRejectionRate": {
-      "status": "not_computed",
-      "value": null,
+      "status": "computed",
+      "value": 0.0,
       "low": null,
       "high": null,
-      "n": null,
-      "sourceFile": null,
-      "note": "awaiting LLM run on the sample"
+      "n": 151,
+      "sourceFile": "data/interim/m1/run_sample.json",
+      "note": "recipes rejected on the single attempt (session extraction, no retries) because a quote was not verbatim; 0 passages failed whole (refusal/max_tokens/schema)"
     }
   },
   "interAnnotatorAgreement": {
@@ -1659,7 +1668,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     },
     "part": {
       "status": "not_computed",
@@ -1668,7 +1677,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     },
     "freshOrDried": {
       "status": "not_computed",
@@ -1677,7 +1686,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     },
     "heat": {
       "status": "not_computed",
@@ -1686,7 +1695,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     },
     "filtered": {
       "status": "not_computed",
@@ -1695,7 +1704,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     },
     "process": {
       "status": "not_computed",
@@ -1704,7 +1713,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     },
     "form": {
       "status": "not_computed",
@@ -1713,7 +1722,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     },
     "solvent": {
       "status": "not_computed",
@@ -1722,7 +1731,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     },
     "passageHasRecipe": {
       "status": "not_computed",
@@ -1731,7 +1740,7 @@
       "high": null,
       "n": null,
       "sourceFile": null,
-      "note": "needs exactly 2 annotator files in data/gold/annotations/ (found 0)"
+      "note": "needs one annotator file plus its re-annotation, or two annotator files, in data/gold/annotations/ (found 0)"
     }
   },
   "nameResolution": {
@@ -1828,7 +1837,7 @@
   "provisional": {
     "extractionVsSilver": {
       "basis": "silver_ai_reference",
-      "label": "model vs AI reference agreement, provisional; not human-validated",
+      "label": "model vs AI reference agreement, provisional; not human-validated; not run for the session extraction (circular)",
       "extraction": {
         "run": null,
         "overall": {
@@ -1840,7 +1849,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -1849,7 +1858,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -1858,7 +1867,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "part": {
@@ -1869,7 +1878,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -1878,7 +1887,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -1887,7 +1896,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "freshOrDried": {
@@ -1898,7 +1907,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -1907,7 +1916,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -1916,7 +1925,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "heat": {
@@ -1927,7 +1936,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -1936,7 +1945,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -1945,7 +1954,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "filtered": {
@@ -1956,7 +1965,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -1965,7 +1974,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -1974,7 +1983,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "process": {
@@ -1985,7 +1994,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -1994,7 +2003,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -2003,7 +2012,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "form": {
@@ -2014,7 +2023,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -2023,7 +2032,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -2032,7 +2041,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "solvent": {
@@ -2043,7 +2052,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -2052,7 +2061,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -2061,7 +2070,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "plantNameAsWritten": {
@@ -2072,7 +2081,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -2081,7 +2090,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -2090,7 +2099,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "heatText": {
@@ -2101,7 +2110,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -2110,7 +2119,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -2119,7 +2128,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "durationText": {
@@ -2130,7 +2139,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -2139,7 +2148,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -2148,7 +2157,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "indicationAsWritten": {
@@ -2159,7 +2168,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -2168,7 +2177,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -2177,7 +2186,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "ingredients": {
@@ -2188,7 +2197,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -2197,7 +2206,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -2206,7 +2215,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           }
         },
@@ -2220,7 +2229,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2229,7 +2238,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2238,7 +2247,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "part": {
@@ -2249,7 +2258,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2258,7 +2267,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2267,7 +2276,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "freshOrDried": {
@@ -2278,7 +2287,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2287,7 +2296,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2296,7 +2305,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "heat": {
@@ -2307,7 +2316,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2316,7 +2325,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2325,7 +2334,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "filtered": {
@@ -2336,7 +2345,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2345,7 +2354,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2354,7 +2363,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "process": {
@@ -2365,7 +2374,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2374,7 +2383,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2383,7 +2392,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "form": {
@@ -2394,7 +2403,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2403,7 +2412,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2412,7 +2421,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "solvent": {
@@ -2423,7 +2432,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2432,7 +2441,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2441,7 +2450,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "plantNameAsWritten": {
@@ -2452,7 +2461,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2461,7 +2470,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2470,7 +2479,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "heatText": {
@@ -2481,7 +2490,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2490,7 +2499,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2499,7 +2508,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "durationText": {
@@ -2510,7 +2519,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2519,7 +2528,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2528,7 +2537,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "indicationAsWritten": {
@@ -2539,7 +2548,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2548,7 +2557,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2557,7 +2566,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "ingredients": {
@@ -2568,7 +2577,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2577,7 +2586,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2586,7 +2595,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             }
           },
@@ -2599,7 +2608,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2608,7 +2617,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2617,7 +2626,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "part": {
@@ -2628,7 +2637,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2637,7 +2646,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2646,7 +2655,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "freshOrDried": {
@@ -2657,7 +2666,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2666,7 +2675,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2675,7 +2684,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "heat": {
@@ -2686,7 +2695,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2695,7 +2704,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2704,7 +2713,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "filtered": {
@@ -2715,7 +2724,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2724,7 +2733,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2733,7 +2742,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "process": {
@@ -2744,7 +2753,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2753,7 +2762,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2762,7 +2771,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "form": {
@@ -2773,7 +2782,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2782,7 +2791,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2791,7 +2800,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "solvent": {
@@ -2802,7 +2811,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2811,7 +2820,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2820,7 +2829,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "plantNameAsWritten": {
@@ -2831,7 +2840,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2840,7 +2849,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2849,7 +2858,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "heatText": {
@@ -2860,7 +2869,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2869,7 +2878,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2878,7 +2887,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "durationText": {
@@ -2889,7 +2898,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2898,7 +2907,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2907,7 +2916,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "indicationAsWritten": {
@@ -2918,7 +2927,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2927,7 +2936,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2936,7 +2945,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "ingredients": {
@@ -2947,7 +2956,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2956,7 +2965,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2965,7 +2974,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             }
           },
@@ -2978,7 +2987,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -2987,7 +2996,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -2996,7 +3005,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "part": {
@@ -3007,7 +3016,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3016,7 +3025,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3025,7 +3034,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "freshOrDried": {
@@ -3036,7 +3045,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3045,7 +3054,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3054,7 +3063,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "heat": {
@@ -3065,7 +3074,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3074,7 +3083,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3083,7 +3092,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "filtered": {
@@ -3094,7 +3103,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3103,7 +3112,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3112,7 +3121,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "process": {
@@ -3123,7 +3132,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3132,7 +3141,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3141,7 +3150,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "form": {
@@ -3152,7 +3161,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3161,7 +3170,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3170,7 +3179,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "solvent": {
@@ -3181,7 +3190,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3190,7 +3199,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3199,7 +3208,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "plantNameAsWritten": {
@@ -3210,7 +3219,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3219,7 +3228,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3228,7 +3237,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "heatText": {
@@ -3239,7 +3248,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3248,7 +3257,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3257,7 +3266,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "durationText": {
@@ -3268,7 +3277,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3277,7 +3286,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3286,7 +3295,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "indicationAsWritten": {
@@ -3297,7 +3306,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3306,7 +3315,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3315,7 +3324,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             },
             "ingredients": {
@@ -3326,7 +3335,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "recall": {
                 "status": "not_computed",
@@ -3335,7 +3344,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               },
               "f1": {
                 "status": "not_computed",
@@ -3344,7 +3353,7 @@
                 "high": null,
                 "n": null,
                 "sourceFile": null,
-                "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+                "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
               }
             }
           }
@@ -3358,7 +3367,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -3367,7 +3376,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -3376,7 +3385,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "culpeper1652_virtues": {
@@ -3387,7 +3396,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -3396,7 +3405,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -3405,7 +3414,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "culpeper1850_dispensatory": {
@@ -3416,7 +3425,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -3425,7 +3434,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -3434,7 +3443,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           },
           "pliny": {
@@ -3445,7 +3454,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "recall": {
               "status": "not_computed",
@@ -3454,7 +3463,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             },
             "f1": {
               "status": "not_computed",
@@ -3463,7 +3472,7 @@
               "high": null,
               "n": null,
               "sourceFile": null,
-              "note": "awaiting LLM predictions on the sample (data/interim/m1/predictions_sample.json); run `python -m lip m1 extract --scope sample`"
+              "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
             }
           }
         },
@@ -3474,7 +3483,7 @@
           "high": null,
           "n": null,
           "sourceFile": null,
-          "note": "awaiting LLM run on the sample"
+          "note": "dropped: circular — the silver reference and the session extraction were both written by the same AI (Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only"
         }
       },
       "metrics": {}

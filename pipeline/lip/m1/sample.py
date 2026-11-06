@@ -78,3 +78,26 @@ def write(df: pd.DataFrame | None = None) -> dict:
     SAMPLE_PATH.parent.mkdir(parents=True, exist_ok=True)
     SAMPLE_PATH.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
     return out
+
+
+# --- self-consistency re-annotation subset (single annotator) -------------------------------
+# The gold set is annotated by ONE person (the project lead). To measure self-consistency, the same
+# person re-annotates 15 of the 50 passages later, blind to the first pass, in a separate file
+# data/gold/annotations/<name>_reannotation.json. The 15 are drawn here, stratified in proportion
+# to the sample (6 / 3 / 6), with a fixed seed different from the sample's.
+REANNOT_SEED = 20261108
+REANNOT_ALLOCATION = {"culpeper1652_virtues": 6, "culpeper1850_dispensatory": 3, "pliny": 6}
+REANNOT_PATH = ROOT / "data" / "gold" / "reannotation_subset_v1.json"
+
+
+def write_reannotation_subset() -> dict:
+    s = pd.DataFrame(json.loads(SAMPLE_PATH.read_text())["passages"])
+    parts = [s[s.stratum == k].sort_values("passageId").sample(n=n, random_state=REANNOT_SEED)
+             for k, n in REANNOT_ALLOCATION.items()]
+    sub = pd.concat(parts).sort_values(["stratum", "passageId"])
+    out = {"sampleVersion": VERSION, "seed": REANNOT_SEED, "allocation": REANNOT_ALLOCATION,
+           "purpose": "intra-annotator self-consistency: the single gold annotator re-annotates these passages "
+                      "later, without looking at the first annotation, saving <name>_reannotation.json",
+           "passageIds": list(sub.passageId)}
+    REANNOT_PATH.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
+    return out

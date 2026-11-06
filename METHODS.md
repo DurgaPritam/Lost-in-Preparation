@@ -56,6 +56,18 @@ Limitation: an 1850 herb that appears in 1652 under a completely different name 
 
 **Verbatim-quote rule.** Every recipe span, free-text value and non-`unknown` enum value must be supported by a verbatim quote from the passage. Plant names may instead come from the entry heading, and are then flagged `inHeading`. Matching ignores only typography: curly vs straight quotes, dash variants and whitespace. If a quote fails, the model sees the errors and retries, up to 2 times (v2: only the failed recipes are sent back). A recipe that still fails is **rejected and logged**; it is never repaired by code.
 
+**Extraction used for the results: written in a Claude Code session** (`pipeline/lip/m1/session.py`, 2026-11-06). The free Groq tier's limits stopped the hosted run, so the extractions were written directly by Claude (`claude-opus-5-5`) in an interactive Claude Code session, with no API call:
+- **Instructions:** prompt v3's system text, guidelines and schema, unchanged. The silver reference set was not opened while writing.
+- **Batches:** batches of 10 passages, in `data/m1_session/<scope>/batch_NN.json`, with the script that wrote each batch beside it. **Each batch was committed before it was validated**, so the history shows no edits after validation.
+- **Validation:** the same schema check and verbatim-quote check as the API extractor (`m1/spans.py`, unchanged), with **one attempt only**: no retries, because a retry that reads the checker's messages would be repair. A recipe that fails is rejected and logged in `data/interim/m1/rejections_<scope>.jsonl`.
+- **Provenance:** every output records provider `Claude via Claude Code session`, the model, the prompt version and the date written.
+- **Scopes:**
+  - `sample`, the 50 gold-sample passages;
+  - `approved`, every recipe-scope passage of the 19 Phase 5 species (§13). Each species' passages come from the name entries that count towards its attestations: the Culpeper 1652 entry, the Culpeper 1850 entry crosswalked to it, and the Pliny chapter, minus reviewer exclusions. Passages already in the sample keep their sample extraction, so each passage has one extraction.
+- **Counts:** in `data/interim/m1/run_<scope>.json` and the validation table of RESULTS.md.
+- **Groq:** the Groq run was stopped. Its cached responses stay in the repository and are excluded from evaluation.
+- **Recipes not tied to their entry:** recipes whose principal is a different plant from the entry's are recorded under the name as written ("Sea Wormwood", "Leeks", "cultivated gourd"). Where the plant meant is ambiguous, they go under the text's own word (e.g. "gourd"), so the species pairing can tell them apart.
+
 **Providers.** The provider is set in [config/pipeline.toml](config/pipeline.toml). All providers get identical prompts, schema and checks.
 
 | Provider | Model | Decoding |
@@ -63,6 +75,7 @@ Limitation: an 1850 herb that appears in 1652 under a completely different name 
 | `groq` (default, hosted) | An open-weight instruction model served by Groq, chosen at the first keyed run from the live `GET /models` list: the first configured candidate that supports strict JSON-schema output (`openai/gpt-oss-120b`, then `openai/gpt-oss-20b`, then `qwen/qwen3.8-27b`). The choice, the list snapshot and the date are in `data/interim/m1/groq_model_selection.json`. | temperature 0, seed 0, strict JSON-schema structured outputs, low reasoning effort (gpt-oss), at most 4,096 completion tokens |
 | `ollama` (optional, local) | `qwen2.5:7b-instruct` (Q4_K_M, 4.7 GB). Not the default: on the 16 GB development machine it froze the system, so it was uninstalled. | temperature 0, seed 0, context 16,384 tokens |
 | `anthropic` (optional) | `claude-opus-5-5` | effort `high`, server-side refusal fallback |
+| session (used for the results) | `claude-opus-5-5`, written in a Claude Code session (above); not an API provider | no sampling parameters; one attempt per passage, no retries |
 
 **Groq access.** The API key is read only from `GROQ_API_KEY` (the environment or a git-ignored `.env`). It is sent only in the request header and never written to code, config, logs, error messages, caches or outputs; a test scans tracked files for key-like strings. Free-tier limits are respected:
 - a minimum gap between requests;
@@ -102,7 +115,14 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
 
 ## 5. Annotation and evaluation
 
-**Annotation.** [annotation/index.html](annotation/index.html) is a static tool that needs no server and never shows model output. Two annotators work independently and save `data/gold/annotations/<name>.json`. An adjudicator then compares the two files in **Adjudicate** mode and saves `gold.json`.
+**Annotation.** [annotation/index.html](annotation/index.html) is a static tool. It needs no server and never shows model output.
+
+**Gold set.** One human annotator (the project lead) annotates the 50 sample passages and saves `data/gold/annotations/<name>.json`.
+- **No adjudication:** with a single annotator, that file is the gold set. If a `gold.json` from a two-annotator adjudication exists, it takes precedence.
+- **Self-consistency:** later, the same annotator re-annotates 15 of the passages without looking at the first pass, under the annotator name `<name> reannotation`, which saves `<name>_reannotation.json`. The 15 passages are listed in `data/gold/reannotation_subset_v1.json` (`lip m1 reannotation-subset`, seed `20261108`, stratified 6 / 3 / 6 in proportion to the sample).
+- **No silver comparison:** the extraction is not scored against the silver reference (§10). The silver set and the extraction were written by the same AI, so the comparison would be circular.
+
+The adjudication mode remains for a future second annotator.
 
 **Evaluation** (`lip m1 eval` writes `site-data/metrics.json`):
 - **Alignment:** recipes in a passage are paired by the character overlap (IoU) of their recipe spans, with ties broken by the number of agreeing fields.
@@ -113,7 +133,11 @@ Frame sizes and the number of passages excluded for gaps are recorded in the sam
   - `solvent` and `ingredients` are scored as sets; free-text fields match at token-F1 ≥ 0.5.
 - **Recipe detection P/R/F1:** paired vs unpaired recipes.
 - **Intervals:** 95% bootstrap CIs over passages (B = 2000), stratified for the overall figures, reported per stratum and overall.
-- **Agreement:** Cohen's kappa between annotators per categorical field, with `unknown` as a category. If both annotators use a single category, kappa is reported as not computed.
+- **Agreement:** Cohen's kappa per categorical field, with `unknown` as a category.
+  - With one annotator, it compares the first annotation with the 15-passage re-annotation (intra-annotator self-consistency, labelled as such).
+  - With two annotators, it is inter-annotator kappa.
+  - If both annotations use a single category, kappa is not computed.
+  - A single annotator's self-consistency is weaker evidence than agreement between two independent annotators.
 - **Missing inputs:** a metric whose inputs don't exist is written as `not_computed` with the reason. No placeholder numbers are written.
 
 **Error analysis:** `lip m1 errors` writes [docs/extraction_errors.md](docs/extraction_errors.md).
@@ -277,7 +301,7 @@ Until the human gold sets exist, three references made by an AI (Claude Code) le
 
 | Reference | basis | What it is | Limits |
 |---|---|---|---|
-| `data/silver/silver_v1.json` | `silver_ai_reference` | Recipe labels for the 50 sample passages, written by the AI directly from the guidelines (`data/silver/silver_v1_spec.py`). Every quote is checked verbatim by `lip m1 silver`. | Same author as the guidelines and few-shot examples, so agreement may be inflated by shared conventions. |
+| `data/silver/silver_v1.json` | `silver_ai_reference` | Recipe labels for the 50 sample passages, written by the AI directly from the guidelines (`data/silver/silver_v1_spec.py`). Every quote is checked verbatim by `lip m1 silver`. | Same author as the guidelines and few-shot examples, so agreement may be inflated by shared conventions. **Not used to evaluate the session extraction** (§3): the same AI wrote both, so the comparison would be circular. `lip m1 eval --reference silver` records it as not computed, with that reason. |
 | `data/gold/name_identifications.csv`, `draft*` columns | `ai_drafted_unverified` | Candidate identifications drafted only from sources fetched in the run: Lewis & Short (PerseusDL TEI) and English Wikipedia. Each has a quoted line, checked against the fetched text on every run. Bostock & Riley are excluded. `verified_by` is empty. | **Lewis & Short and Wikipedia are not independent modern scholarly sources.** L&S (1879) may rest on the same older commentators as the system's inputs, and Wikipedia is tertiary. The drafts stay unverified. |
 | `data/reference/prep_literature_v1.csv` | `ai_curated_literature_reference` | **Exploratory:** 9 statements from 5 PMC articles. Each quote from an openly licensed article is checked against the fetched article. The one article with no stated licence (PMC2995283) is paraphrased and cited, not quoted, and checked by short anchor terms. | Selected after the model was built, by the same AI; n is small. |
 | `data/reference/prep_literature_prereg_v1.csv` | `ai_curated_literature_reference` | **Pre-registered:** rows selected by the committed rule (docs/PREREGISTRATION.md). | The rule and code were written by an AI. The mechanical rule mostly yields essential-oil rows, which makes it a weak test of aqueous and alcoholic preparations. |
@@ -330,6 +354,7 @@ Anything a study does not state is `unknown`, and is later counted as unknown, n
 - **Extraction is not detection** (§9). The model predicts extracted fractions, but validation rows record detection or amounts, which also depend on plant content and detection limits. LOTUS has no abundance data, so single-row agreement rates measure a mixture of the two. Only paired, within-plant comparisons (v3) cancel the content term, and v3 was inconclusive because few studies report such comparisons.
 - **One descriptor.** The aqueous prediction is a logistic in Crippen logP. It has no solubility, melting-point, dose or contact-time term (§9, water-window diagnostic). Descriptor error (MAE against experiment) is now shown in every range but not removed.
 - **Heuristic factors.** Heat alerts, volatility, filtration carry-over, acidity and the size penalty are heuristics with assumed ranges. They are not fitted to data.
+- **The extraction was written by an AI in a session, not sampled from an API.** The same model also wrote the guidelines, the few-shot examples and the silver set. A single human annotator's gold set is the only independent check. It is not yet done. Self-consistency of one annotator is weaker than agreement between two.
 - **References made by an AI.** Every validation reference so far was built or curated by an AI: the silver labels, the drafted name identifications, the literature tables, the toxicity entries and the genus audit. All are reported as provisional. None has been checked by a person yet.
 - **Names.** Classical names often have several or uncertain identities. Disputed resolutions are kept with their candidates but are excluded from attestation counts. The genus-signal audit reviewed the undisputed resolutions that used that signal; other false friends may remain among the disputed ones.
 - **Pliny is lower confidence** than Culpeper. It is a 19th-century English translation with classical plant names, and resolves with far more disputes (per-source table in RESULTS.md).

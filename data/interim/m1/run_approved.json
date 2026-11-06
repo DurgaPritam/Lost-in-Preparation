@@ -9,7 +9,7 @@
       "writtenOn": "see batches"
     }
   },
-  "promptVersion": "m1_extract/v3",
+  "promptVersion": "m1_extract/v3:13ca4093ec",
   "passages": 225,
   "recipesAccepted": 489,
   "recipesRejected": 5,
@@ -191,5 +191,5 @@
       "writtenOn": "2026-11-06"
     }
   ],
-  "generatedAt": "2026-11-06T10:52:27+00:00"
+  "generatedAt": "2026-11-06T10:56:12+00:00"
 }

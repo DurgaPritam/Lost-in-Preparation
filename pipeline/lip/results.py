@@ -47,15 +47,30 @@ def _n_proposed() -> int:
     return int(ss.proposed.sum())
 
 
+def _m1_run_rows() -> list[tuple[str, str, str]]:
+    """M1 session-extraction runs, read from data/interim/m1/run_<scope>.json."""
+    out = []
+    for scope, what in (("sample", "50-passage gold sample"), ("approved", "recipe-scope passages of the Phase 5 species")):
+        r = _j(f"data/interim/m1/run_{scope}.json")
+        if not r:
+            continue
+        out.append((f"M1 extraction run: {what}",
+                    f"done — {r['run']['provider']} ({r['run']['model']}, prompt {r['promptVersion']}); {r['passages']} passages, "
+                    f"{r['recipesAccepted']} recipes accepted, {r['recipesRejected']} rejected by the verbatim-quote check (logged, never repaired)",
+                    f"`data/interim/m1/run_{scope}.json`"))
+    return out
+
+
 def validation_status(m: C.Metrics) -> list[str]:
     gold_ext = m.extraction.overall.get("part")
     rows = [
         ("Text ingestion and segmentation (passage coverage, IDs, chapter counts vs printed contents)", "**validated** — automated tests against the source files", "`tests/`"),
         ("logP descriptor: RDKit vs GFN2-xTB vs experiment", "**validated** — experimental reference (SangsterLogP, CC BY 4.0)", "`data/interim/m4/logp_validation.json`"),
         ("Artemisinin known-case test", f"**{m.artemisininCheck.result or 'not run'}** against pre-registered criteria (5th–95th range crosses the cold-water threshold)" if (m.artemisininCheck.result or '').startswith('borderline') else f"**{m.artemisininCheck.result or 'not run'}** against pre-registered criteria", "`data/interim/m4/artemisinin_check.json`"),
-        ("M1 extraction accuracy vs human gold set", "pending — human annotation not yet done" if not gold_ext or gold_ext.f1.status != "computed" else "**human-validated**", "`data/gold/annotations/`"),
-        ("Inter-annotator agreement (Cohen's kappa)", "pending — needs two human annotators", "`data/gold/annotations/`"),
-        ("M1 extraction vs AI reference (silver)", "*provisional* — AI reference, not human-validated" + (" (not yet run: no local model run)" if not m.provisional.get("extractionVsSilver") or m.provisional["extractionVsSilver"].extraction is None or m.provisional["extractionVsSilver"].extraction.overall.get("part", None) is None or m.provisional["extractionVsSilver"].extraction.overall["part"].f1.status != "computed" else ""), "`data/silver/silver_v1.json`"),
+        *_m1_run_rows(),
+        ("M1 extraction accuracy vs human gold set (single annotator)", "pending — human annotation not yet done" if not gold_ext or gold_ext.f1.status != "computed" else "**human-validated** (single annotator)", "`data/gold/annotations/`"),
+        ("Annotator self-consistency (15-passage re-annotation, Cohen's kappa)", "pending — re-annotation not yet done" if (m.interAnnotatorAgreement.get("heat") is None or m.interAnnotatorAgreement["heat"].status != "computed") else "computed (see metrics.json)", "`data/gold/reannotation_subset_v1.json`"),
+        ("M1 extraction vs AI reference (silver)", "**not used** — circular: the same AI (Claude) wrote the silver set and the session extraction", "`data/silver/silver_v1.json`"),
         ("M2 name resolution vs scholarly identifications", "pending — needs human-verified identifications" if m.nameResolution["top1"].status != "computed" else "**human-validated**", "`data/gold/name_identifications.csv`"),
         ("M2 name resolution vs AI-drafted identifications", "*provisional* — AI-drafted from quoted sources, unverified", "`data/gold/name_identifications.csv` (draft* columns)"),
         ("Preparation model vs published reports — exploratory set", "*provisional, exploratory* — 9 rows selected after model build", "`data/reference/prep_literature_v1.csv`"),
@@ -119,10 +134,10 @@ def by_source(m: C.Metrics) -> list[str]:
     gold = m.extraction.overall.get("part")
     add("M1 extraction F1 vs human gold", {g: "pending (no human annotation yet)" for g in names},
         _m(gold.f1) if gold and gold.f1.status == "computed" else "pending (no human annotation yet)")
-    sil = m.provisional.get("extractionVsSilver")
-    sil_ok = sil is not None and sil.extraction is not None and "part" in sil.extraction.overall and sil.extraction.overall["part"].f1.status == "computed"
-    add("M1 extraction vs AI reference (*provisional*)", {g: "not computed (no local model run)" if not sil_ok else "see provisional section" for g in names},
-        "not computed (no local model run)" if not sil_ok else _m(sil.extraction.overall["part"].f1))
+    add("M1 extraction vs AI reference (silver)", {g: "not used (circular)" for g in names}, "not used (circular)")
+    ap = _j("data/interim/m1/predictions_approved.json") or []
+    acc = {g: sum(1 for r in ap if _grp(r["sourceId"]) == g) for g in names}
+    add("M1 recipes accepted, Phase 5 species (session extraction)", {g: str(v) for g, v in acc.items()}, str(len(ap)))
     keys = ("names", "resolved", "resolvedInWFO", "disputed")
     agg = {g: dict.fromkeys(keys, 0) for g in names}
     for src, v in m2s.items():

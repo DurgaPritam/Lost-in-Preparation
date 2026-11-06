@@ -1,0 +1,27 @@
+{
+ "sampleVersion": "v2",
+ "seed": 20261108,
+ "allocation": {
+  "culpeper1652_virtues": 6,
+  "culpeper1850_dispensatory": 3,
+  "pliny": 6
+ },
+ "purpose": "intra-annotator self-consistency: the single gold annotator re-annotates these passages later, without looking at the first annotation, saving <name>_reannotation.json",
+ "passageIds": [
+  "culpeper-1652:herbal:chervil:009",
+  "culpeper-1652:herbal:filipendula-or-dropwort:008",
+  "culpeper-1652:herbal:loos-strife-with-spiked-heads-of-flowers:009",
+  "culpeper-1652:herbal:onions:004",
+  "culpeper-1652:herbal:sanicle:008",
+  "culpeper-1652:herbal:wormwood:020",
+  "culpeper-1850:dispensatory:s009-herbs-and-their-leaves:222",
+  "culpeper-1850:dispensatory:s030-simple-distilled-waters:084",
+  "culpeper-1850:dispensatory:s045-species-or-powders:099",
+  "pliny-nh:b20:c013:003",
+  "pliny-nh:b21:c047:001",
+  "pliny-nh:b22:c071:001",
+  "pliny-nh:b23:c057:001",
+  "pliny-nh:b24:c022:001",
+  "pliny-nh:b27:c113:002"
+ ]
+}

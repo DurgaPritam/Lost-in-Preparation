@@ -105,7 +105,9 @@ def ingest(scope: str) -> dict:
     with (OUT / f"rejections_{scope}.jsonl").open("w") as fh:
         for rj in rejections:
             fh.write(json.dumps(rj, ensure_ascii=False) + "\n")
-    summary = {"scope": scope, "run": asdict(_SessionProvider("see batches").info()), "promptVersion": f"m1_extract/{PROMPT}",
+    versions = sorted({b["promptVersion"] for b in bs})
+    summary = {"scope": scope, "run": asdict(_SessionProvider("see batches").info()),
+               "promptVersion": versions[0] if len(versions) == 1 else ",".join(versions),
                "passages": sum(x["passages"] for x in per_batch), "recipesAccepted": len(recipes),
                "recipesRejected": sum(1 for x in rejections if x["recipe"] is not None),
                "passagesFailedWhole": sum(1 for x in rejections if x["recipe"] is None), "batches": per_batch,

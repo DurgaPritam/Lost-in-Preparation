@@ -1,5 +1,11 @@
-"""M1 evaluation: per-field precision/recall/F1 vs the adjudicated gold set, Cohen's kappa between
-the two annotators, bootstrap 95% CIs, and an error tally. Writes site-data/metrics.json.
+"""M1 evaluation: per-field precision/recall/F1 vs the human gold set, Cohen's kappa for annotator
+consistency, bootstrap 95% CIs, and an error tally. Writes site-data/metrics.json.
+
+Gold set (METHODS.md §5): gold.json if present (adjudicated); otherwise, with a SINGLE annotator, that
+annotator's file is the gold set (no adjudication). Consistency: with two annotators, inter-annotator
+kappa; with one annotator and a <name>_reannotation.json file (15 passages re-annotated later),
+intra-annotator (self-consistency) kappa over the re-annotated passages.
+The silver (AI) comparison is not run for the session extraction: the same AI wrote both (circular).
 
 Scoring (documented in METHODS.md §5)
 - Recipes are aligned within a passage, greedily by character IoU of their recipe spans
@@ -289,7 +295,30 @@ def _not_computed_prf(note: str) -> C.PRF:
 
 
 def _annotator_files():
-    return sorted(p for p in ANN_DIR.glob("*.json") if p.name != "gold.json") if ANN_DIR.exists() else []
+    """Primary annotation files (not gold.json, not re-annotations)."""
+    return sorted(p for p in ANN_DIR.glob("*.json") if p.name != "gold.json" and not p.stem.endswith(REANNOT_SUFFIX)) \
+        if ANN_DIR.exists() else []
+
+
+REANNOT_SUFFIX = "_reannotation"
+
+
+def _gold_source():
+    """(path, basis) of the gold set: adjudicated gold.json, else the single annotator's file."""
+    if GOLD_PATH.exists():
+        return GOLD_PATH, "adjudicated"
+    files = _annotator_files()
+    if len(files) == 1:
+        return files[0], "single annotator (no adjudication)"
+    return GOLD_PATH, None
+
+
+def _session_predictions() -> bool:
+    """True when the sample predictions were written in a Claude Code session (see m1/session.py)."""
+    if not PRED_PATH.exists():
+        return False
+    from .session import PROVIDER
+    return any((r.get("provenance") or {}).get("provider") == PROVIDER for r in json.loads(PRED_PATH.read_text()))
 
 
 SILVER_PATH = ROOT / "data" / "silver" / "silver_v1.json"
@@ -300,7 +329,25 @@ def evaluate(reference: str = "gold") -> C.Metrics:
     """reference="gold": human adjudicated gold -> gold fields of metrics.json.
     reference="silver": AI reference set -> metrics.provisional["extractionVsSilver"] ONLY."""
     silver = reference == "silver"
-    ref_path = SILVER_PATH if silver else GOLD_PATH
+    if silver and _session_predictions():
+        note = ("dropped: circular — the silver reference and the session extraction were both written by the same AI "
+                "(Claude, claude-opus-5-5, in Claude Code); evaluation uses the human gold set only")
+        none = {f: _not_computed_prf(note) for f in SCORED_FIELDS}
+        ext = C.ExtractionMetrics(run=None, overall=none, bySource={s: dict(none) for s in ALLOCATION},
+                                  recipeDetection={k: _not_computed_prf(note) for k in ["overall", *ALLOCATION]},
+                                  spanRejectionRate=C.not_computed(note))
+        store_path = metrics_store.PATH
+        metrics_store.PATH = SITE_DATA / "metrics.json"
+        try:
+            return metrics_store.update_provisional("extractionVsSilver", C.ProvisionalSection(
+                basis="silver_ai_reference", label=SILVER_LABEL + "; not run for the session extraction (circular)", extraction=ext))
+        finally:
+            metrics_store.PATH = store_path
+    gold_basis = None
+    if silver:
+        ref_path = SILVER_PATH
+    else:
+        ref_path, gold_basis = _gold_source()
     detail_path = DETAIL_PATH.with_name("eval_detail_silver.json") if silver else DETAIL_PATH
     tally_path = TALLY_PATH.with_name("error_tally_silver.json") if silver else TALLY_PATH
     sample = json.loads(SAMPLE_PATH.read_text())
@@ -308,6 +355,8 @@ def evaluate(reference: str = "gold") -> C.Metrics:
     gold = load_annotation_file(ref_path) if ref_path.exists() else None
     pred = load_predictions()
     detail: dict = {"generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+    if gold_basis:
+        detail.update(goldFile=_rel(ref_path), goldBasis=gold_basis)
 
     # extraction P/R/F1
     reasons = []
@@ -342,10 +391,11 @@ def evaluate(reference: str = "gold") -> C.Metrics:
     if RUN_PATH.exists():
         run = json.loads(RUN_PATH.read_text())
         run_info = C.ExtractionRun(**run["run"], promptVersion=run["promptVersion"])
-        n = run["recipesReturned"]
+        n = run["recipesReturned"] if "recipesReturned" in run else run["recipesAccepted"] + run["recipesRejected"]
+        how = (f"after {run.get('retriesUsed', 0)} retries" if "recipesReturned" in run else "on the single attempt (session extraction, no retries)")
         rej = C.Metric(status="computed", value=round(run["recipesRejected"] / n, 4) if n else 0.0, n=n,
                        sourceFile=_rel(RUN_PATH),
-                       note=f"recipes dropped after {run.get('retriesUsed', 0)} retries because a quote was not verbatim; "
+                       note=f"recipes rejected {how} because a quote was not verbatim; "
                             f"{run.get('passagesFailedWhole', 0)} passages failed whole (refusal/max_tokens/schema)")
     else:
         rej = C.not_computed("awaiting LLM run on the sample")
@@ -364,15 +414,26 @@ def evaluate(reference: str = "gold") -> C.Metrics:
         finally:
             metrics_store.PATH = store_path
 
-    # kappa (gold only)
+    # kappa (gold only): inter-annotator with two annotators; self-consistency with one annotator + re-annotation
     files = _annotator_files()
+    re_files = [ANN_DIR / f"{p.stem}{REANNOT_SUFFIX}.json" for p in files]
     if len(files) == 2:
         a, b = (load_annotation_file(p) for p in files)
         iaa = kappa_metrics(a, b, strata)
         detail["annotators"] = [p.stem for p in files]
+        detail["agreement"] = "inter-annotator"
+    elif len(files) == 1 and re_files[0].exists():
+        a, b = load_annotation_file(files[0]), load_annotation_file(re_files[0])
+        iaa = kappa_metrics(a, b, strata)
+        for v in iaa.values():
+            if v.status == "computed":
+                v.note = "intra-annotator self-consistency (same annotator, re-annotation later): " + v.note
+        detail["annotators"] = [files[0].stem, re_files[0].stem]
+        detail["agreement"] = "intra-annotator (self-consistency)"
     else:
-        iaa = {f: C.not_computed(f"needs exactly 2 annotator files in {_rel(ANN_DIR)}/ (found {len(files)})")
-               for f in KAPPA_FIELDS + ["passageHasRecipe"]}
+        why = (f"single annotator: awaiting the 15-passage re-annotation {_rel(re_files[0])}" if len(files) == 1
+               else f"needs one annotator file plus its re-annotation, or two annotator files, in {_rel(ANN_DIR)}/ (found {len(files)})")
+        iaa = {f: C.not_computed(why) for f in KAPPA_FIELDS + ["passageHasRecipe"]}
 
     DETAIL_PATH.parent.mkdir(parents=True, exist_ok=True)
     DETAIL_PATH.write_text(json.dumps(detail, ensure_ascii=False, indent=1, default=str))
