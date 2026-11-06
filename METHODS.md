@@ -326,7 +326,7 @@ Each uses Spearman correlation and top-20 overlap. Results are in RESULTS.md.
 
 ## 13. Modern-methods audit (M5): preparation
 
-M5 will compare how modern studies prepared each approved species with how the historical recipes did. Pairing studies with historical uses (indications) waits until M1 has run on the full approved set. Built so far, with no LLM calls:
+M5 compares how modern studies prepared each Phase 5 species with how the historical recipes did. It uses **no LLM**. The protocol ([docs/AUDIT_PROTOCOL_v1.md](docs/AUDIT_PROTOCOL_v1.md)) was committed before any study was retrieved for a pair; this protects the headline number. Results are in RESULTS.md (*Modern-methods audit*), generated from `data/interim/m5/audit_summary.json`.
 
 **Phase 5 species.**
 - **Inputs:** the headline set (approved, eligible and unchanged since review), plus approved species pending re-review that are still eligible.
@@ -340,20 +340,51 @@ M5 will compare how modern studies prepared each approved species with how the h
 - **Licence status:** for records with a PMCID, from Europe PMC's REST API (open access or not, and the licence). NCBI's PMC OA web service returned HTTP 404 on the same day, so it could not be used.
 - **Caching:** every request is cached, and NCBI requests are throttled to below 3 per second.
 
-**Study-method extraction** (`pipeline/lip/m5/methods.py`, prompt `prompts/m5_methods/v1/`). For each preparation a study tested, it records the five contract fields: solvent (modern-solvent enum, plus the verbatim solvent text), heat, part, fresh or dried, and filtration. Filtration is included because solvent, temperature and filtration are kept separate everywhere. It follows M1's rules:
-- verbatim, continuous quotes with no ellipses;
-- evidence only for the categorical fields, and a supporting quote for every categorical value other than `unknown`;
-- compact retries;
-- rejection, never repair;
-- a per-study cache.
+**Species–indication pairs** (`pipeline/lip/m5/pairs.py` → `data/interim/m5/pairs.json`).
+- **Input:** the M1 session extraction of the Phase 5 species.
+- **Attribution (heuristic):** a recipe counts for a species only if its passage belongs to that species and its plant name is no more specific than one of the species' entry names. For example, "Sea Wormwood", "Leeks", "gourd" and the antidote plants in the Henbane entry do not count.
+- **Indications:** mapped to MeSH descriptors by the versioned lexicon `config/m5_indications/v1.toml` (heuristic). Historical terms are not modern diagnoses: Culpeper's "cancers" map to Skin Ulcer, not Neoplasms. Each descriptor's ID was confirmed in NCBI MeSH.
+- **Pairs:** a pair is (species, descriptor) with at least one single-plant recipe. It keeps its distinct historical preparation keys.
 
-Anything a study does not state is `unknown`, and is later counted as unknown, never as a mismatch. The ethanol fraction is parsed by code from the quoted solvent text (a heuristic). The extractor is tested with a fake client and has not yet been run against Groq, so that M1 keeps the free-tier token budget.
+**Retrieval** (`pipeline/lip/m5/audit.py`; protocol §2). For each pair:
+- **Search:** PubMed for the species names (accepted name and WFO synonyms) AND the descriptor; the first 30 records by relevance.
+- **Excluded:** reviews, editorials and similar publication types.
+- **Text coded:** for open-access articles, the methods sections of the Europe PMC full text. Otherwise, the title plus abstract.
+- **Storage:** texts stay in the git-ignored cache. The committed audit carries a methods snippet only for open-access articles.
+
+**Rule-based study-method extraction** (`pipeline/lip/m5/rules.py`, lexicon [config/m5_lexicon/v1.toml](config/m5_lexicon/v1.toml), version `m5_rules/v1:<sha256>` on every output). It codes solvent (modern-solvent enum, plus the matched text), heat, part, fresh or dried, and filtration. These are separate variables, as everywhere. The whole lexicon is a **heuristic**.
+- **What counts as a solvent:** only a mention in a sentence with an extraction cue, and not when the context marks it as something else. Examples: a fraction ("ethyl acetate fraction"), a solvent used for partitioning, a disease model ("ethanol-induced"), or another plant's beverage ("green tea").
+- **Preparations:** each distinct solvent is one preparation.
+- **heat:** from that preparation's sentences, with stated extraction temperatures in heuristic bands: ≤ 30 °C cold, 31–94 °C warm, ≥ 95 °C boiled. Temperatures for drying or evaporation are ignored. Conflicting cues give `unknown`.
+- **part:** exactly one part category, else `unknown`.
+- **fresh or dried, filtration:** coded study-wide.
+- **Unknown:** anything not stated is `unknown`. Nothing is inferred.
+- **Ethanol fraction:** parsed from the matched text (heuristic). A stated 95% or more is coded as ethanol.
+- **Evidence:** every value keeps the verbatim matched text and its offsets.
+
+**Matching** (protocol §4, heuristic).
+- **Unknown fields:** a field unknown on either side is `unknown`, never a mismatch.
+- **solvent:** matches only `[water]` vs `water`. Wine, vinegar, oil, honey, mixed vehicles and "no vehicle" have no modern equivalent.
+- **Other fields:** match when equal.
+- **Overall:** mismatch if any field mismatches; match if no field mismatches and both solvent and heat match.
+- **Study status:** a study is *faithful* to a pair if any of its preparations matches any historical preparation of the pair; *not faithful* if every comparison mismatches; otherwise unknown.
+- **Headline:** the share of (pair, study) units that are not faithful, among units with a known status. The 95% CI is a bootstrap over pairs, and nKnown and nUnknown are reported. Pliny-only pairs are reported separately.
+
+**Hand-check** (protocol §6). `data/reference/m5_handcheck_v1.csv` holds 40 audited studies (seed `20261106`), stratified by evidence source. It has the rule values and evidence, plus empty columns for a human reading. The texts for reading are in a git-ignored local file (`data/cache/m5_handcheck/`). Extractor accuracy is computed only from the filled sheet; until then it is pending.
+
+**Phase 6** (`pipeline/lip/m6/hypotheses.py`; protocol §7). Candidates are pairs with at least one study of known status and no faithful study.
+- **Faithful preparation:** the most-attested historical preparation that the M4 model represents (heuristic map).
+- **Modern preparation:** the most frequent modern solvent that M4 represents. When a study's heat is unstated, the M4 maceration preset is used and a caveat is recorded.
+- **Ranking:** the robust M6 rule (§11) ranks the candidates. Each is a hypothesis worth re-testing, with the curated toxicity entry (AI-drafted, unverified) and caveats.
+
+**Earlier LLM-based extractor (not used).** `pipeline/lip/m5/methods.py` with prompt `prompts/m5_methods/v1/` was built for Groq and tested with a fake client. It was never run, and the audit uses the rule-based extractor instead.
 
 ## 12. Limitations
 
 - **Extraction is not detection** (§9). The model predicts extracted fractions, but validation rows record detection or amounts, which also depend on plant content and detection limits. LOTUS has no abundance data, so single-row agreement rates measure a mixture of the two. Only paired, within-plant comparisons (v3) cancel the content term, and v3 was inconclusive because few studies report such comparisons.
 - **One descriptor.** The aqueous prediction is a logistic in Crippen logP. It has no solubility, melting-point, dose or contact-time term (§9, water-window diagnostic). Descriptor error (MAE against experiment) is now shown in every range but not removed.
 - **Heuristic factors.** Heat alerts, volatility, filtration carry-over, acidity and the size penalty are heuristics with assumed ranges. They are not fitted to data.
+- **The audit coding is a keyword heuristic.** Abstracts often omit how the plant was prepared, so many studies stay `unknown`. Extraction cues can still miss or misread a preparation. The search finds studies that mention a plant and a condition, and not every retrieved study tested the plant for that condition. Accuracy is measured only by the 40-study hand-check, which is pending.
 - **The extraction was written by an AI in a session, not sampled from an API.** The same model also wrote the guidelines, the few-shot examples and the silver set. A single human annotator's gold set is the only independent check. It is not yet done. Self-consistency of one annotator is weaker than agreement between two.
 - **References made by an AI.** Every validation reference so far was built or curated by an AI: the silver labels, the drafted name identifications, the literature tables, the toxicity entries and the genus audit. All are reported as provisional. None has been checked by a person yet.
 - **Names.** Classical names often have several or uncertain identities. Disputed resolutions are kept with their candidates but are excluded from attestation counts. The genus-signal audit reviewed the undisputed resolutions that used that signal; other false friends may remain among the disputed ones.

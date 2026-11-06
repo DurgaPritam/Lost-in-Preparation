@@ -17,6 +17,10 @@
   python -m lip m3 review                study-set review sheet -> docs/STUDY_SET_REVIEW.csv / .md
   python -m lip m4 validate-logp         RDKit vs GFN2-xTB logP against experiment (needs .tools/xtb-env)
   python -m lip m4 water-calibration     cold-water likelihood vs logP diagnostic (no model change)
+  python -m lip m5 pairs                 Phase 5 species–indication pairs from the M1 session extraction
+  python -m lip m5 audit                 Phase 5 audit (docs/AUDIT_PROTOCOL_v1.md): retrieval, rule-based coding, matching
+  python -m lip m5 handcheck-eval        extractor accuracy from the filled 40-study hand-check sheet
+  python -m lip m6 hypotheses            Phase 6: rank never-faithfully-tested pairs (hypotheses worth re-testing)
   python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
   python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
   python -m lip results                  RESULTS.md from pipeline outputs (validated vs provisional, labelled)
@@ -156,9 +160,26 @@ def main(argv: list[str]) -> int:
         elif sub == "run":
             from .m4 import run
             print(json.dumps(run.main(), indent=2))
+    elif cmd == "m5":
+        sub = argv[1] if len(argv) > 1 else "audit"
+        if sub == "literature":
+            from .m5 import literature
+            print(json.dumps({k: v for k, v in literature.run().items() if k != "species"}, indent=2, default=str))
+        elif sub == "pairs":
+            from .m5 import pairs
+            print(json.dumps(pairs.build()["counts"], indent=2))
+        elif sub == "audit":
+            from .m5 import audit
+            print(json.dumps(audit.run(), indent=2, default=str))
+        elif sub == "handcheck-eval":
+            from .m5 import audit
+            print(json.dumps(audit.handcheck_eval(), indent=2))
     elif cmd == "m6":
         sub = argv[1] if len(argv) > 1 else "rank-demo"
-        if sub == "rank-demo":
+        if sub == "hypotheses":
+            from .m6 import hypotheses
+            print(json.dumps(hypotheses.run(), indent=2))
+        elif sub == "rank-demo":
             from .m6 import ranking
             print(json.dumps({k: v for k, v in ranking.stability().items() if k != "top"}, indent=2))
     else:

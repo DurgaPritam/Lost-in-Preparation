@@ -1,0 +1,131 @@
+{
+  "protocol": "docs/AUDIT_PROTOCOL_v1.md",
+  "extractor": "m5_rules/v1:a058db8e4e",
+  "indicationLexicon": "m5_indications/v1:b88bcb0dc0",
+  "generatedAt": "2026-11-06T11:20:29+00:00",
+  "retrieval": {
+    "pairs": 238,
+    "retmaxPerPair": 30,
+    "pairsWithHits": 82,
+    "totalHits": 490,
+    "uniqueRecords": 388,
+    "excluded": {
+      "publication type": 76,
+      "no abstract and no open-access methods": 9
+    },
+    "studiesCoded": 303,
+    "byEvidenceSource": {
+      "abstract": 241,
+      "pmc_fulltext": 62
+    },
+    "studiesAllUnknown": 131
+  },
+  "units": {
+    "pairStudyUnits": 344,
+    "byStatus": {
+      "unknown": 277,
+      "not_faithful": 66,
+      "faithful": 1
+    },
+    "pairsWithAnyStudy": 72,
+    "pairsWithKnownStatus": 30
+  },
+  "headline": {
+    "status": "computed",
+    "value": 0.9851,
+    "low": 0.9444,
+    "high": 1.0,
+    "nKnown": 67,
+    "nUnknown": 277,
+    "note": "share of (pair, study) units with no historical-preparation match, among units whose status is known; 95% CI: bootstrap over pairs (B=2000)"
+  },
+  "headlineUniqueStudies": {
+    "status": "computed",
+    "value": 0.9818,
+    "low": null,
+    "high": null,
+    "nKnown": 55,
+    "nUnknown": 248,
+    "note": "each study counted once (not faithful to any pair it was retrieved for)"
+  },
+  "bySourceGroup": {
+    "culpeper": {
+      "status": "computed",
+      "value": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "nKnown": 35,
+      "nUnknown": 178,
+      "note": "pairs attested by Culpeper"
+    },
+    "pliny_only": {
+      "status": "computed",
+      "value": 0.9688,
+      "low": 0.8889,
+      "high": 1.0,
+      "nKnown": 32,
+      "nUnknown": 99,
+      "note": "pairs attested only by Pliny (lower confidence)"
+    }
+  },
+  "byEvidenceSource": {
+    "pmc_fulltext": {
+      "status": "computed",
+      "value": 0.9474,
+      "low": null,
+      "high": null,
+      "nKnown": 19,
+      "nUnknown": 51,
+      "note": "studies coded from pmc_fulltext"
+    },
+    "abstract": {
+      "status": "computed",
+      "value": 1.0,
+      "low": null,
+      "high": null,
+      "nKnown": 48,
+      "nUnknown": 226,
+      "note": "studies coded from abstract"
+    }
+  },
+  "postHocSensitivity": {
+    "label": "POST-HOC, NOT PRE-REGISTERED (added after inspecting results): only studies with a stated solvent, i.e. studies that describe preparing the plant. Under protocol v1 a study can be 'not faithful' on a part mismatch alone even if it never prepared the plant (e.g. a pure-compound study).",
+    "solventStatedOnly": {
+      "status": "computed",
+      "value": 0.9787,
+      "low": 0.9231,
+      "high": 1.0,
+      "nKnown": 47,
+      "nUnknown": 82,
+      "note": "units whose study states a solvent"
+    },
+    "notFaithfulOnPartAlone": 20
+  },
+  "fieldMismatchRate": {
+    "solvent": {
+      "mismatch": 86,
+      "known": 94,
+      "rate": 0.9149
+    },
+    "heat": {
+      "mismatch": 9,
+      "known": 13,
+      "rate": 0.6923
+    },
+    "filtration": {
+      "mismatch": 8,
+      "known": 8,
+      "rate": 1.0
+    },
+    "part": {
+      "mismatch": 59,
+      "known": 71,
+      "rate": 0.831
+    },
+    "freshOrDried": {
+      "mismatch": 0,
+      "known": 0,
+      "rate": 0.0
+    }
+  }
+}

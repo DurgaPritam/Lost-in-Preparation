@@ -80,8 +80,7 @@ def validation_status(m: C.Metrics) -> list[str]:
         ("Genus-signal audit (name resolution)", "*provisional* — AI-reviewed false friends with dictionary quotes, awaiting human review", "`docs/GENUS_SIGNAL_AUDIT.md`"),
         (f"Study-set toxicity entries ({_n_proposed()} species)", "*provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review", "`data/reference/toxicity_curated.csv`"),
         (f"Study set ({_n_proposed()} proposed)", _review_status(), "`docs/STUDY_SET_PROPOSAL.md`"),
-        ("**Modern-methods audit (M5): the planned headline result**", "not started", "—"),
-        ("Hypothesis ranking (M6)", "rule implemented and stability-tested on model-only candidate pairs (not hypotheses)", "`data/interim/m6/ranking_stability.json`"),
+        *_audit_rows(),
     ]
     out = ["## Validation status", "", "| Result | Status | Evidence |", "|---|---|---|"]
     out += [f"| {a} | {b} | {c} |" for a, b, c in rows]
@@ -409,8 +408,102 @@ def toxicity_section() -> list[str]:
             "", "`no_toxicity_reported` and `unknown` are **not evidence of safety**. The Wikipedia *List of poisonous plants* is no longer used for this column (only for M2's toxic-confusion screen)."]
 
 
+def _pct(x: dict) -> str:
+    if not x or x.get("status") != "computed":
+        return f"not computed ({x.get('note', '') if x else 'no data'})"
+    ci = f" (95% CI {x['low']:.0%}–{x['high']:.0%})" if x.get("low") is not None else ""
+    return f"{x['value']:.0%}{ci}; nKnown = {x['nKnown']}, nUnknown = {x['nUnknown']}"
+
+
+def _audit_rows() -> list[tuple[str, str, str]]:
+    a, h = _j("data/interim/m5/audit_summary.json"), _j("data/interim/m6/hypotheses_summary.json")
+    hc = _j("data/interim/m5/handcheck_eval.json")
+    rows = []
+    if a:
+        rows.append(("**Modern-methods audit (M5): share of modern studies with no historical-preparation match**",
+                     f"computed, rule-based coding (`{a['extractor']}`), protocol fixed before retrieval: {_pct(a['headline'])}; "
+                     "*extractor accuracy pending the 40-study human hand-check*", "`data/interim/m5/audit_summary.json`"))
+        rows.append(("M5 extractor accuracy vs human hand-check (40 studies)",
+                     "pending — hand-check sheet not yet filled" if not hc else "computed (see RESULTS)", "`data/reference/m5_handcheck_v1.csv`"))
+    else:
+        rows.append(("**Modern-methods audit (M5): the planned headline result**", "not started", "—"))
+    if h:
+        rows.append(("Hypothesis ranking (M6)", f"{h['ranked']} hypotheses worth re-testing ranked from {h['candidates']} never-faithfully-tested "
+                     f"pairs (robust rule); depends on the unvalidated preparation model and the unchecked audit coding", "`site-data/hypotheses.json`"))
+    else:
+        rows.append(("Hypothesis ranking (M6)", "rule implemented and stability-tested on model-only candidate pairs (not hypotheses)",
+                     "`data/interim/m6/ranking_stability.json`"))
+    return rows
+
+
+def audit_section() -> list[str]:
+    a = _j("data/interim/m5/audit_summary.json")
+    if not a:
+        return []
+    r, u = a["retrieval"], a["units"]
+    L = ["", "## Modern-methods audit (M5)", "",
+         f"Sources: `data/interim/m5/audit_summary.json`, `data/interim/m5/pairs.json`; protocol `{a['protocol']}` (committed before retrieval); "
+         f"extractor `{a['extractor']}` (rule-based, no LLM); indication lexicon `{a['indicationLexicon']}`. "
+         "Unstated preparation details are `unknown` and never count as mismatches.", "",
+         f"- Pairs: {r['pairs']} species–indication pairs; {r['pairsWithHits']} with at least one PubMed hit "
+         f"({r['totalHits']:,} hits in total; first {r['retmaxPerPair']} per pair taken). Unique records: {r['uniqueRecords']:,}; "
+         f"excluded: {', '.join(f'{k} {v}' for k, v in r['excluded'].items()) or 'none'}; coded: {r['studiesCoded']:,} "
+         f"({', '.join(f'{k} {v:,}' for k, v in r['byEvidenceSource'].items())}); every field unknown: {r['studiesAllUnknown']:,}.",
+         f"- (pair, study) units: {u['pairStudyUnits']:,} ({', '.join(f'{k} {v:,}' for k, v in u['byStatus'].items())}); "
+         f"pairs with any study: {u['pairsWithAnyStudy']}; with a known status: {u['pairsWithKnownStatus']}.", "",
+         "| Measure | Share not faithful |", "|---|---|",
+         f"| **Headline: (pair, study) units** | {_pct(a['headline'])} |",
+         f"| Each study counted once | {_pct(a['headlineUniqueStudies'])} |"]
+    for g, x in a["bySourceGroup"].items():
+        L.append(f"| Pairs attested {'only by Pliny (lower confidence)' if g == 'pliny_only' else 'by Culpeper'} | {_pct(x)} |")
+    for g, x in a["byEvidenceSource"].items():
+        L.append(f"| Coded from {g} | {_pct(x)} |")
+    ph = a.get("postHocSensitivity")
+    if ph:
+        L.append(f"| *Post-hoc sensitivity (not pre-registered): only studies that state a solvent* | {_pct(ph['solventStatedOnly'])} |")
+    L += ["", "| Field | Mismatches / known comparisons |", "|---|---|"]
+    for f, x in a["fieldMismatchRate"].items():
+        L.append(f"| {f} | {x['mismatch']:,} / {x['known']:,} ({x['rate']:.0%}) |" if x else f"| {f} | — |")
+    L += ["", "**Reading the headline.** Most retrieved (pair, study) units stay `unknown`, mostly because abstracts do not say how the plant "
+          "was prepared, and many pairs have no PubMed hit at all for the protocol's query. Among units with a known status, the solvent rule "
+          "dominates: historical vehicles other than water (wine, vinegar, oil, honey, none) have no modern equivalent, so they can never "
+          "match. Under protocol v1, a retrieved study can be judged not faithful on a plant-part mismatch alone even if it never "
+          "prepared the plant (e.g. a pure-compound study). The post-hoc row above restricts to studies that state a solvent; "
+          f"{ph['notFaithfulOnPartAlone'] if ph else 'n/a'} not-faithful units had no stated solvent.", "",
+          "This describes how the retrieved studies prepared each plant compared with the recipes. It is **not** evidence that the "
+          "historical preparations work. The coding is a keyword heuristic whose accuracy is measured only by the 40-study hand-check "
+          "(`data/reference/m5_handcheck_v1.csv`, pending)."]
+    h = _j("data/interim/m6/hypotheses_summary.json")
+    hy = _j("site-data/hypotheses.json") or []
+    if h:
+        L += ["", "## Hypotheses worth re-testing (M6)", "",
+              f"Sources: `site-data/hypotheses.json`, `data/interim/m6/hypotheses.csv`, `data/interim/m6/hypotheses_summary.json`. Rule: {h['rule']}.", "",
+              f"- Candidates (pairs never tested faithfully, with a modelled faithful and modern preparation): {h['candidates']}; ranked: {h['ranked']}; "
+              f"not ranked (too few narrow-range compounds): {h['notRanked']}.",
+              "- Skipped pairs: " + ", ".join(f"{k} {v}" for k, v in h["skipped"].items()) + ".", ""]
+        if hy:
+            import pandas as pd
+            names = {}
+            for f in (INTERIM / "m5" / "literature").glob("*.json"):
+                d = json.loads(f.read_text())
+                names[d["wfoId"]] = d["species"]
+            L += ["| Rank | Species | Indication (MeSH) | Faithful preparation | Gap 5th / median / 95th | Toxicity (source says) |", "|---|---|---|---|---|---|"]
+            for x in hy[:15]:
+                g = x["profileGap"]
+                L.append(f"| {x['rank']} | *{names.get(x['speciesId'], x['speciesId'])}* | {x['indication']['label']} | {x['faithfulPreparationText']} | "
+                         f"{g['low']:.2f} / {g['value']:.2f} / {g['high']:.2f} | `{x['toxicityFlag']}` |")
+            L += ["", "Every row is a hypothesis worth re-testing, not a claim that the preparation works or is safe. Gaps are model "
+                  "predictions from an unvalidated preparation model for aqueous preparations (see the preparation-model sections)."]
+    return L
+
+
 def _audit_status() -> str:
     import pandas as pd
+    a = _j("data/interim/m5/audit_summary.json")
+    if a:
+        return (f"It has now been run on the {a['retrieval']['pairs']} species–indication pairs of the Phase 5 species with a rule-based "
+                f"extractor and a protocol fixed before retrieval (headline: {_pct(a['headline'])}). Its coding accuracy awaits the "
+                "40-study human hand-check.")
     ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
     if "headline" in ss and ss.headline.any():
         return (f"The study set has been reviewed by the project lead: {int(ss.headline.sum())} species are approved for the headline "
@@ -532,7 +625,7 @@ def build() -> str:
     L += ["", f"Default descriptor: **{val['default']}** (lower MAE). Caveat: Crippen's parameters were fitted to public logP data that may overlap this set; xTB is unfitted. 95% CIs are paired bootstrap (B = 2000).",
           ""]
     L += artemisinin_section(art, m4s)
-    L += literature_sections() + water_section() + ranking_section() + toxicity_section()
+    L += literature_sections() + water_section() + ranking_section() + toxicity_section() + audit_section()
     L += ["", f"Profiles: {m4s['profiles']['species']} species × {m4s['profiles']['preparations']} preparations "
           f"({m4s['profiles']['profiles']} profiles, {m4s['profiles']['compoundEntries']:,} compound estimates) in `site-data/profiles/` (one file per species, `index.json`; full file in `data/release/profiles_full.json.gz`; model `{m4s['modelVersion']}`). "
           "These are model estimates of what a preparation would carry, not measurements."]

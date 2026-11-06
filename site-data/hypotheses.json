@@ -1,0 +1,278 @@
+[
+ {
+  "mock": false,
+  "rank": 1,
+  "speciesId": "wfo-0000212813",
+  "indication": {
+   "meshId": "D008107",
+   "label": "Liver Diseases"
+  },
+  "indicationAsWritten": "very good for the voice, for which purpose it is thickened and then placed beneath the tongue: it is good, too, for the chest and liver",
+  "faithfulPreparation": "juice|unknown|unknown|unknown|unknown",
+  "faithfulPreparationText": "fresh juice",
+  "attestationCount": 1,
+  "profileGap": {
+   "value": 0.2014,
+   "low": 0.1218,
+   "high": 0.327
+  },
+  "gapRanking": {
+   "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th–95th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
+   "gapP5": 0.1218,
+   "gapThreshold": 0.2,
+   "pGapAboveThreshold": 0.5175,
+   "compoundsUsed": 411,
+   "compoundsExcludedWide": 50,
+   "rankByMedianGap": 1
+  },
+  "neverTestedFaithfully": true,
+  "toxicityFlag": "toxic_reported",
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (source: EMA/HMPC, EU herbal monograph (Glycyrrhiza spp., radix, revision 1); AI-drafted, unverified)",
+  "caveats": [
+   "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+   "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+   "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+   "modern preparation modelled with the M4 maceration preset: heat unstated in 1 of 1 study preparations",
+   "attested only by Pliny (lower confidence)",
+   "13 retrieved studies could not be coded as faithful or not (unknown fields)"
+  ],
+  "evidenceTrail": [
+   {
+    "kind": "recipe",
+    "ref": "pliny-nh:b22:c011:001#r01",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:36807597",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:25691139",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:32410294",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:34233566",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:37481749",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:19084568",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:26400710",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:28346874",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:28165501",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:17724770",
+    "note": null
+   },
+   {
+    "kind": "profile",
+    "ref": "wfo-0000212813:fresh juice vs modern methanol extract",
+    "note": null
+   },
+   {
+    "kind": "species",
+    "ref": "wfo-0000212813",
+    "note": null
+   }
+  ]
+ },
+ {
+  "mock": false,
+  "rank": 2,
+  "speciesId": "wfo-0000755919",
+  "indication": {
+   "meshId": "D012871",
+   "label": "Skin Diseases"
+  },
+  "indicationAsWritten": "taketh away all Blemishes, Spots, and Marks in the Skin",
+  "faithfulPreparation": "juice|unknown|vinegar|cold|unknown",
+  "faithfulPreparationText": "steeped in vinegar",
+  "attestationCount": 2,
+  "profileGap": {
+   "value": 0.0354,
+   "low": 0.012,
+   "high": 0.0729
+  },
+  "gapRanking": {
+   "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th–95th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
+   "gapP5": 0.012,
+   "gapThreshold": 0.2,
+   "pGapAboveThreshold": 0.0,
+   "compoundsUsed": 275,
+   "compoundsExcludedWide": 44,
+   "rankByMedianGap": 2
+  },
+  "neverTestedFaithfully": true,
+  "toxicityFlag": "toxic_reported",
+  "toxicityNote": "Veterinary review: onion causes oxidative haemolysis (anaemia) in cats, dogs and cattle. Animal evidence, not human. (source: Veterinary review, PMC (open access); AI-drafted, unverified)",
+  "caveats": [
+   "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+   "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+   "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+   "9 retrieved studies could not be coded as faithful or not (unknown fields)"
+  ],
+  "evidenceTrail": [
+   {
+    "kind": "recipe",
+    "ref": "culpeper-1652:herbal:onions:003#r10",
+    "note": null
+   },
+   {
+    "kind": "recipe",
+    "ref": "culpeper-1850:herbal:onions:002#r11",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:12126069",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:38146392",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:33461021",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:34829526",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:35001265",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:19579974",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:39253845",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:11302212",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:16690223",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:26625755",
+    "note": null
+   },
+   {
+    "kind": "profile",
+    "ref": "wfo-0000755919:steeped in vinegar vs decoction in water",
+    "note": null
+   },
+   {
+    "kind": "species",
+    "ref": "wfo-0000755919",
+    "note": null
+   }
+  ]
+ },
+ {
+  "mock": false,
+  "rank": 3,
+  "speciesId": "wfo-0000402430",
+  "indication": {
+   "meshId": "D014545",
+   "label": "Urinary Calculi"
+  },
+  "indicationAsWritten": "breaking and expelling calculi of the bladder",
+  "faithfulPreparation": "other|unknown|wine|boiled|unknown",
+  "faithfulPreparationText": "decoction in wine",
+  "attestationCount": 1,
+  "profileGap": {
+   "value": 0.0135,
+   "low": 0.0027,
+   "high": 0.0437
+  },
+  "gapRanking": {
+   "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th–95th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
+   "gapP5": 0.0027,
+   "gapThreshold": 0.2,
+   "pGapAboveThreshold": 0.0,
+   "compoundsUsed": 208,
+   "compoundsExcludedWide": 40,
+   "rankByMedianGap": 3
+  },
+  "neverTestedFaithfully": true,
+  "toxicityFlag": "concern_reported",
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (source: Systematic review, PMC (open access); AI-drafted, unverified)",
+  "caveats": [
+   "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+   "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+   "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+   "attested only by Pliny (lower confidence)"
+  ],
+  "evidenceTrail": [
+   {
+    "kind": "recipe",
+    "ref": "pliny-nh:b20:c013:001#r01",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:19070189",
+    "note": null
+   },
+   {
+    "kind": "study",
+    "ref": "pmid:10624898",
+    "note": null
+   },
+   {
+    "kind": "profile",
+    "ref": "wfo-0000402430:decoction in wine vs decoction in water",
+    "note": null
+   },
+   {
+    "kind": "species",
+    "ref": "wfo-0000402430",
+    "note": null
+   }
+  ]
+ }
+]
