@@ -2,6 +2,21 @@
 
 Each version lives in its own folder and is never edited after use. `[m1] prompt` in `config/pipeline.toml` selects the version for extraction. Human annotators always use the full v1 guidelines (`v1/guidelines.md`). Token counts come from `python -m lip m1 prompt-tokens`, which writes `data/interim/m1/prompt_token_counts.json`.
 
+## v3 — 2026-11-06 (approved by the project lead)
+
+**Why.** On the first 10 v2 passages, 31 of 39 Groq responses failed Groq's schema check, and Groq rejects the whole answer when that happens.
+- **Cause:** in 23 of the 31, the model added `evidence` entries for free-text fields.
+- **Other failures:** some quotes used ellipses, and some categorical values had no supporting quote.
+
+**What changed** (system prompt only; v2's guidelines, worked examples and retry template are copied unchanged). Three rules were added to the quoting rules:
+- `evidence` entries are allowed only for the 8 categorical fields (recipeType, part, freshOrDried, solvent, heat, filtered, process, form), never for free-text fields;
+- a quote is exact, continuous text, with no ellipsis to skip words;
+- every categorical value other than "unknown" needs a supporting quote.
+
+**Size** (`o200k_base`): system prompt 2,602 tokens (v2: 2,494); fixed part with the 888-token schema 3,490 (v2: 3,382).
+
+**Consistency.** All 50 sample passages are re-extracted with v3. The v1 and v2 responses stay in the committed cache under their own prompt versions and are not evaluated.
+
 ## v2 — 2026-11-06 (approved by the project lead)
 
 **Why.** On Groq's free tier (8,000 tokens per minute, counting the input, the schema and the full completion allowance), v1's fixed prompt left too little room for an answer and none for a retry.

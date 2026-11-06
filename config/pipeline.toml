@@ -2,7 +2,7 @@
 
 [m1]
 provider = "groq"            # "groq" (hosted, default) | "ollama" (local; not the default) | "anthropic"
-prompt = "v2"                # prompts/m1_extract/<version>; v1 kept unchanged (see prompts/m1_extract/CHANGELOG.md)
+prompt = "v3"                # prompts/m1_extract/<version>; earlier versions kept unchanged (see prompts/m1_extract/CHANGELOG.md)
 
 [m1.groq]
 # Hosted open-weight model via Groq's OpenAI-compatible API. Key: GROQ_API_KEY (environment or .env), never stored.

@@ -21,6 +21,19 @@
       "fixedTokens": 3382,
       "workedExamples": 2,
       "groqReportedFirstAttemptInputTokens": {
+        "n": 1,
+        "min": 3394,
+        "max": 3394,
+        "median": 3394
+      }
+    },
+    "v3": {
+      "promptVersion": "m1_extract/v3:13ca4093ec",
+      "systemTokens": 2602,
+      "schemaTokens": 888,
+      "fixedTokens": 3490,
+      "workedExamples": 2,
+      "groqReportedFirstAttemptInputTokens": {
         "n": 0,
         "min": null,
         "max": null,

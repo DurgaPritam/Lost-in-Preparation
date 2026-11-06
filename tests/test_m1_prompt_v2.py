@@ -123,3 +123,16 @@ def test_groq_waits_for_the_next_window_instead_of_sending(monkeypatch, tmp_path
     prov.complete("system " * 500, [{"role": "user", "content": "passage"}], {"type": "object"})
     i_sleep = next(i for i, e in enumerate(events) if e[0] == "sleep")
     assert events[i_sleep][1] == pytest.approx(41.7) and events[i_sleep + 1] == ("send", "/chat/completions")
+
+
+def test_v3_adds_the_evidence_and_quote_rules_only():
+    from lip.m1.extract import source_titles
+    v2, v3 = build(source_titles(), "v2"), build(source_titles(), "v3")
+    assert v3.schema == v2.schema and v3.retry_template == v2.retry_template
+    for f in ("guidelines.md", "fewshot.json", "retry.md"):
+        assert open(f"prompts/m1_extract/v3/{f}").read() == open(f"prompts/m1_extract/v2/{f}").read()
+    assert "allowed only for the 8 categorical fields" in v3.system and "never use an ellipsis" in v3.system
+    assert "needs a supporting quote" in v3.system
+    assert subprocess.run(["git", "diff", "--quiet", "HEAD", "--", "prompts/m1_extract/v2"]).returncode == 0
+    from lip.m1.prompt import prompt_version_dir
+    assert prompt_version_dir() == "v3"
