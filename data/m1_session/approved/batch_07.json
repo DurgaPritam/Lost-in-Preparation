@@ -1,0 +1,1344 @@
+{
+ "batch": 7,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1652:herbal:hops:006": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:hops:009": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:hops:010": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:liquoris:002": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:liquoris:004": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:onions:001": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:hops:008": {
+   "recipes": [
+    {
+     "recipeQuote": "This Physical operation is to open Obstructions of the Liver and Spleen to clens the Blood, to loosen the Belly, to clens the Reins from Gravel, and provoke Urine.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "open Obstructions of the Liver and Spleen to clens the Blood, to loosen the Belly, to clens the Reins from Gravel, and provoke Urine",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The Decoction of the tops of Hops, as well of the tame as the wild, worketh the same effects.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "worketh the same effects",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the tops of Hops"
+      },
+      {
+       "field": "heat",
+       "quote": "The Decoction of the tops of Hops"
+      },
+      {
+       "field": "process",
+       "quote": "The Decoction of the tops of Hops"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "In cleansing the Blood they help to cure the French Diseas, and al manner of Scabs, Itch, and other breakings out in the Body, as also al Tetters, Ringworms, and spreading Sores, the Morphew, and all discolourings of the Skin",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the French Diseas, and al manner of Scabs, Itch, and other breakings out in the Body, as also al Tetters, Ringworms, and spreading Sores, the Morphew, and all discolourings of the Skin",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The Decoction of the Flowers and tops, do help to expel poyson that any one hath drunk",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "expel poyson that any one hath drunk",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Flowers and tops"
+      },
+      {
+       "field": "heat",
+       "quote": "The Decoction of the Flowers"
+      },
+      {
+       "field": "process",
+       "quote": "The Decoction of the Flowers"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Half a dram of the Seed in Pouder taken in drink, killeth Worms in the Body, bringeth down Womens Courses, and expelleth Urin",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "no",
+     "process": "powder",
+     "form": "drink",
+     "indicationAsWritten": "killeth Worms in the Body, bringeth down Womens Courses, and expelleth Urin",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Seed in Pouder"
+      },
+      {
+       "field": "heat",
+       "quote": "the Seed in Pouder"
+      },
+      {
+       "field": "process",
+       "quote": "the Seed in Pouder"
+      },
+      {
+       "field": "form",
+       "quote": "taken in drink"
+      },
+      {
+       "field": "filtered",
+       "quote": "the Seed in Pouder taken in drink"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A Syrup made of the Juyce and Sugar, cureth the yellow Jaundice, easeth the Headach that comes of Heat, and tempereth the heat of the Liver and Stomach, and is profitably given in long and hot Agues that rise of Choller and Blood",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Sugar",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "the yellow Jaundice, easeth the Headach that comes of Heat, and tempereth the heat of the Liver and Stomach, and is profitably given in long and hot Agues that rise of Choller and Blood",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "made of the Juyce"
+      },
+      {
+       "field": "process",
+       "quote": "A Syrup made of the Juyce and Sugar"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:liquoris:006": {
+   "recipes": [
+    {
+     "recipeQuote": "Liquoris boyled in fair Water with some Maidenhair and Figs, maketh a good Drink for those that have a dry Cough, or Hoarceness, Wheesing, shortness of breath; and for al the Griefs of the Breast and Lungs, Phtisick or Consumptions caused by the Distillation of Salt humors on them. It is also good in all pains of the Reins, the Strangury, and heat of Urine",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Liquoris",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Maidenhair",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Figs",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Liquoris",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "those that have a dry Cough, or Hoarceness, Wheesing, shortness of breath; and for al the Griefs of the Breast and Lungs, Phtisick or Consumptions caused by the Distillation of Salt humors on them. It is also good in all pains of the Reins, the Strangury, and heat of Urine",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "boyled in fair Water"
+      },
+      {
+       "field": "heat",
+       "quote": "boyled in fair Water"
+      },
+      {
+       "field": "process",
+       "quote": "boyled in fair Water"
+      },
+      {
+       "field": "form",
+       "quote": "maketh a good Drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The fine Pouder of Liquoris blown through a Quil into the Eyes that have a Pin and Web (as they cal it) or Rhewmatick Distillations into them, doth clens and help them",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Liquoris",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Liquoris",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "other",
+     "indicationAsWritten": "the Eyes that have a Pin and Web (as they cal it) or Rhewmatick Distillations into them, doth clens and help them",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "blown through a Quil into the Eyes"
+      },
+      {
+       "field": "heat",
+       "quote": "The fine Pouder of Liquoris"
+      },
+      {
+       "field": "process",
+       "quote": "The fine Pouder of Liquoris"
+      },
+      {
+       "field": "form",
+       "quote": "blown through a Quil into the Eyes"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of Liquoris is as effectual in al the Diseases of the Breast & Lungs, the Reins and Bladder, as the Decoction.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Liquoris",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Liquoris",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "al the Diseases of the Breast & Lungs, the Reins and Bladder",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of Liquoris"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce dissolved in Rose Water with some Gu⟦?⟧-Tragacanth, is a fine licking Medicine for Hoarceness, Wheesings, &c.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Liquoris",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Gu⟦?⟧-Tragacanth",
+       "part": "resin",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Liquoris",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "Hoarceness, Wheesings, &c.",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce dissolved in Rose Water"
+      },
+      {
+       "field": "solvent",
+       "quote": "dissolved in Rose Water"
+      },
+      {
+       "field": "process",
+       "quote": "The Juyce dissolved in Rose Water"
+      },
+      {
+       "field": "form",
+       "quote": "a fine licking Medicine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:onions:003": {
+   "recipes": [
+    {
+     "recipeQuote": "Onions are Flatulent or Windy, yet they do somwhat provoke appetite, encreas thirst, eas the Belly and Bowels; provoke Womens Courses",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "provoke appetite, encreas thirst, eas the Belly and Bowels; provoke Womens Courses",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "help the biting of a mad Dog, and of other Venemous Creatures to be used with Honey and Rue",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Rue",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the biting of a mad Dog, and of other Venemous Creatures",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "used with Honey and Rue"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "and encreaseth Sperm, especially the Seed of them",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "encreaseth Sperm",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "especially the Seed of them"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "They also kill the Worms in Children if they drink the Water fasting wherein they have been steeped all night",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "all night",
+     "filtered": "unknown",
+     "process": "infusion",
+     "form": "drink",
+     "indicationAsWritten": "kill the Worms in Children",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "drink the Water fasting wherein they have been steeped"
+      },
+      {
+       "field": "process",
+       "quote": "steeped all night"
+      },
+      {
+       "field": "form",
+       "quote": "if they drink the Water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Being roasted under the Embers and eaten with Honey, or Sugar and Oyl they much conduce to help an inveterate Cough, and expectorate the tough Flegm",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "warm",
+     "heatText": "roasted under the Embers",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "help an inveterate Cough, and expectorate the tough Flegm",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "eaten with Honey"
+      },
+      {
+       "field": "heat",
+       "quote": "Being roasted under the Embers"
+      },
+      {
+       "field": "process",
+       "quote": "Being roasted under the Embers"
+      },
+      {
+       "field": "form",
+       "quote": "eaten with Honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Being roasted under the Embers and eaten with Honey, or Sugar and Oyl they much conduce to help an inveterate Cough, and expectorate the tough Flegm",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Sugar",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "warm",
+     "heatText": "roasted under the Embers",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "help an inveterate Cough, and expectorate the tough Flegm",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Sugar and Oyl"
+      },
+      {
+       "field": "heat",
+       "quote": "Being roasted under the Embers"
+      },
+      {
+       "field": "process",
+       "quote": "Being roasted under the Embers"
+      },
+      {
+       "field": "form",
+       "quote": "eaten with Honey, or Sugar and Oyl"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce being snuffed up into the Nostrils, purgeth the Head and helpeth the Lethargy",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "inhalation",
+     "indicationAsWritten": "purgeth the Head and helpeth the Lethargy",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce being snuffed up"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce being snuffed up"
+      },
+      {
+       "field": "form",
+       "quote": "snuffed up into the Nostrils"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It hath been held with divers Country people a good preservative against Infection to eat Onions fasting with Bread and Salt",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Bread",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      },
+      {
+       "plantNameAsWritten": "Salt",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "a good preservative against Infection",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "to eat Onions fasting"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "to make a great Onion hollow, filling the place with good Triacle, and after to roast it well under the Embers, which after taking away of the outermost skin thereof, being beaten together, is a Soveraign Salve for either Plague-Sore, or any other putrid Ulcer",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onion",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Triacle",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "Onion",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "warm",
+     "heatText": "roast it well under the Embers",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "ointment",
+     "indicationAsWritten": "Plague-Sore, or any other putrid Ulcer",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "roast it well under the Embers"
+      },
+      {
+       "field": "process",
+       "quote": "being beaten together"
+      },
+      {
+       "field": "form",
+       "quote": "a Soveraign Salve"
+      },
+      {
+       "field": "filtered",
+       "quote": "a Soveraign Salve"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of Onions is good for either scalding, or burning by fire, water, or Gunpouder, and used with Vinegar, taketh away all Blemishes, Spots, and Marks in the Skin, and dropped into the Ears, easeth the pains and nois of them",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "either scalding, or burning by fire, water, or Gunpouder",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of Onions"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce of Onions"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of Onions is good for either scalding, or burning by fire, water, or Gunpouder, and used with Vinegar, taketh away all Blemishes, Spots, and Marks in the Skin, and dropped into the Ears, easeth the pains and nois of them",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "taketh away all Blemishes, Spots, and Marks in the Skin",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of Onions"
+      },
+      {
+       "field": "solvent",
+       "quote": "used with Vinegar"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce of Onions"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of Onions is good for either scalding, or burning by fire, water, or Gunpouder, and used with Vinegar, taketh away all Blemishes, Spots, and Marks in the Skin, and dropped into the Ears, easeth the pains and nois of them",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "easeth the pains and nois of them",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of Onions"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce of Onions"
+      },
+      {
+       "field": "form",
+       "quote": "dropped into the Ears"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Applied also with Figs beaten together, he⟦?⟧peth to ripen and break Impostumes and other Sores.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Figs",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "to ripen and break Impostumes and other Sores",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "with Figs beaten together"
+      },
+      {
+       "field": "process",
+       "quote": "with Figs beaten together"
+      },
+      {
+       "field": "form",
+       "quote": "Applied also with Figs beaten together"
+      },
+      {
+       "field": "filtered",
+       "quote": "Applied also with Figs beaten together"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:onions:005": {
+   "recipes": [
+    {
+     "recipeQuote": "then being bruised and applied to a Plague-Sore 'tis very probable 'twill do the like",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "a Plague-Sore",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "process",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "form",
+       "quote": "being bruised and applied to a Plague-Sore"
+      },
+      {
+       "field": "filtered",
+       "quote": "being bruised and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

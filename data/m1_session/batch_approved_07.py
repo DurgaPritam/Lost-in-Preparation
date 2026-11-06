@@ -1,0 +1,98 @@
+from build_batch import R, write
+P = {}
+for pid in ("hops:006", "hops:009", "hops:010", "liquoris:002", "liquoris:004", "onions:001"):
+    P["culpeper-1652:herbal:" + pid] = []   # time / commentary / astrology / description / place / intro
+HO = "Hops"
+P["culpeper-1652:herbal:hops:008"] = [
+    R("This Physical operation is to open Obstructions of the Liver and Spleen to clens the Blood, to loosen the Belly, to clens the Reins from Gravel, and provoke Urine.",
+      HO, "open Obstructions of the Liver and Spleen to clens the Blood, to loosen the Belly, to clens the Reins from Gravel, and provoke Urine", heading=True),
+    R("The Decoction of the tops of Hops, as well of the tame as the wild, worketh the same effects.", HO, "worketh the same effects", part="other",
+      heat="boiled", process="decoction",
+      ev={"part": "the tops of Hops", "heat": "The Decoction of the tops of Hops", "process": "The Decoction of the tops of Hops"}),
+    R("In cleansing the Blood they help to cure the French Diseas, and al manner of Scabs, Itch, and other breakings out in the Body, as also al Tetters, Ringworms, and spreading Sores, the Morphew, and all discolourings of the Skin",
+      HO, "the French Diseas, and al manner of Scabs, Itch, and other breakings out in the Body, as also al Tetters, Ringworms, and spreading Sores, the Morphew, and all discolourings of the Skin",
+      heading=True),
+    R("The Decoction of the Flowers and tops, do help to expel poyson that any one hath drunk", HO, "expel poyson that any one hath drunk", heading=True,
+      part="other", heat="boiled", process="decoction",
+      ev={"part": "the Flowers and tops", "heat": "The Decoction of the Flowers", "process": "The Decoction of the Flowers"}),
+    R("Half a dram of the Seed in Pouder taken in drink, killeth Worms in the Body, bringeth down Womens Courses, and expelleth Urin", HO,
+      "killeth Worms in the Body, bringeth down Womens Courses, and expelleth Urin", heading=True, part="seed", heat="cold", process="powder",
+      form="drink", filt="no",
+      ev={"part": "the Seed in Pouder", "heat": "the Seed in Pouder", "process": "the Seed in Pouder", "form": "taken in drink",
+          "filtered": "the Seed in Pouder taken in drink"}),
+    R("A Syrup made of the Juyce and Sugar, cureth the yellow Jaundice, easeth the Headach that comes of Heat, and tempereth the heat of the Liver and Stomach, and is profitably given in long and hot Agues that rise of Choller and Blood",
+      HO, "the yellow Jaundice, easeth the Headach that comes of Heat, and tempereth the heat of the Liver and Stomach, and is profitably given in long and hot Agues that rise of Choller and Blood",
+      heading=True, rtype="compound", ingredients=[(HO, "juice", "principal", "plant"), ("Sugar", "unknown", "co_ingredient", "other")],
+      part="juice", process="other", ev={"part": "made of the Juyce", "process": "A Syrup made of the Juyce and Sugar"}),
+]
+L = "Liquoris"
+P["culpeper-1652:herbal:liquoris:006"] = [
+    R("Liquoris boyled in fair Water with some Maidenhair and Figs, maketh a good Drink for those that have a dry Cough, or Hoarceness, Wheesing, shortness of breath; and for al the Griefs of the Breast and Lungs, Phtisick or Consumptions caused by the Distillation of Salt humors on them. It is also good in all pains of the Reins, the Strangury, and heat of Urine",
+      L, "those that have a dry Cough, or Hoarceness, Wheesing, shortness of breath; and for al the Griefs of the Breast and Lungs, Phtisick or Consumptions caused by the Distillation of Salt humors on them. It is also good in all pains of the Reins, the Strangury, and heat of Urine",
+      rtype="compound", ingredients=[(L, "unknown", "principal", "plant"), ("Maidenhair", "unknown", "co_ingredient", "plant"), ("Figs", "fruit", "co_ingredient", "plant")],
+      solvent=("water",), heat="boiled", process="decoction", form="drink",
+      ev={"solvent": "boyled in fair Water", "heat": "boyled in fair Water", "process": "boyled in fair Water", "form": "maketh a good Drink"}),
+    R("The fine Pouder of Liquoris blown through a Quil into the Eyes that have a Pin and Web (as they cal it) or Rhewmatick Distillations into them, doth clens and help them",
+      L, "the Eyes that have a Pin and Web (as they cal it) or Rhewmatick Distillations into them, doth clens and help them", solvent=("none",), heat="cold",
+      process="powder", form="other",
+      ev={"solvent": "blown through a Quil into the Eyes", "heat": "The fine Pouder of Liquoris", "process": "The fine Pouder of Liquoris",
+          "form": "blown through a Quil into the Eyes"}),
+    R("The Juyce of Liquoris is as effectual in al the Diseases of the Breast & Lungs, the Reins and Bladder, as the Decoction.", L,
+      "al the Diseases of the Breast & Lungs, the Reins and Bladder", part="juice", ev={"part": "The Juyce of Liquoris"}),
+    R("The Juyce dissolved in Rose Water with some Gu⟦?⟧-Tragacanth, is a fine licking Medicine for Hoarceness, Wheesings, &c.", L, "Hoarceness, Wheesings, &c.",
+      rtype="compound", ingredients=[(L, "juice", "principal", "plant"), ("Gu⟦?⟧-Tragacanth", "resin", "co_ingredient", "plant")], part="juice",
+      solvent=("other",), process="other", form="other",
+      ev={"part": "The Juyce dissolved in Rose Water", "solvent": "dissolved in Rose Water", "process": "The Juyce dissolved in Rose Water",
+          "form": "a fine licking Medicine"}),
+]
+O = "Onions"
+ROAST = "Being roasted under the Embers and eaten with Honey, or Sugar and Oyl they much conduce to help an inveterate Cough, and expectorate the tough Flegm"
+JU = "The Juyce of Onions is good for either scalding, or burning by fire, water, or Gunpouder, and used with Vinegar, taketh away all Blemishes, Spots, and Marks in the Skin, and dropped into the Ears, easeth the pains and nois of them"
+P["culpeper-1652:herbal:onions:003"] = [
+    R("Onions are Flatulent or Windy, yet they do somwhat provoke appetite, encreas thirst, eas the Belly and Bowels; provoke Womens Courses", O,
+      "provoke appetite, encreas thirst, eas the Belly and Bowels; provoke Womens Courses"),
+    R("help the biting of a mad Dog, and of other Venemous Creatures to be used with Honey and Rue", O, "the biting of a mad Dog, and of other Venemous Creatures",
+      rtype="compound", ingredients=[(O, "unknown", "principal", "plant"), ("Rue", "unknown", "co_ingredient", "plant")], solvent=("honey",),
+      ev={"solvent": "used with Honey and Rue"}),
+    R("and encreaseth Sperm, especially the Seed of them", O, "encreaseth Sperm", part="seed", ev={"part": "especially the Seed of them"}),
+    R("They also kill the Worms in Children if they drink the Water fasting wherein they have been steeped all night", O, "kill the Worms in Children",
+      solvent=("water",), dur="all night", process="infusion", form="drink",
+      ev={"solvent": "drink the Water fasting wherein they have been steeped", "process": "steeped all night", "form": "if they drink the Water"}),
+    R(ROAST, O, "help an inveterate Cough, and expectorate the tough Flegm", solvent=("honey",), heat="warm", heatText="roasted under the Embers",
+      process="other", form="other",
+      ev={"solvent": "eaten with Honey", "heat": "Being roasted under the Embers", "process": "Being roasted under the Embers", "form": "eaten with Honey"}),
+    R(ROAST, O, "help an inveterate Cough, and expectorate the tough Flegm", rtype="compound",
+      ingredients=[(O, "unknown", "principal", "plant"), ("Sugar", "unknown", "co_ingredient", "other")], solvent=("oil",), heat="warm",
+      heatText="roasted under the Embers", process="other", form="other",
+      ev={"solvent": "Sugar and Oyl", "heat": "Being roasted under the Embers", "process": "Being roasted under the Embers", "form": "eaten with Honey, or Sugar and Oyl"}),
+    R("The Juyce being snuffed up into the Nostrils, purgeth the Head and helpeth the Lethargy", O, "purgeth the Head and helpeth the Lethargy",
+      part="juice", heat="cold", form="inhalation",
+      ev={"part": "The Juyce being snuffed up", "heat": "The Juyce being snuffed up", "form": "snuffed up into the Nostrils"}),
+    R("It hath been held with divers Country people a good preservative against Infection to eat Onions fasting with Bread and Salt", O,
+      "a good preservative against Infection", rtype="compound",
+      ingredients=[(O, "unknown", "principal", "plant"), ("Bread", "unknown", "co_ingredient", "other"), ("Salt", "unknown", "co_ingredient", "mineral")],
+      form="other", ev={"form": "to eat Onions fasting"}),
+    R("to make a great Onion hollow, filling the place with good Triacle, and after to roast it well under the Embers, which after taking away of the outermost skin thereof, being beaten together, is a Soveraign Salve for either Plague-Sore, or any other putrid Ulcer",
+      "Onion", "Plague-Sore, or any other putrid Ulcer", rtype="compound",
+      ingredients=[("Onion", "unknown", "principal", "plant"), ("Triacle", "unknown", "co_ingredient", "other")], heat="warm",
+      heatText="roast it well under the Embers", process="other", form="ointment", filt="not_applicable",
+      ev={"heat": "roast it well under the Embers", "process": "being beaten together", "form": "a Soveraign Salve", "filtered": "a Soveraign Salve"}),
+    R(JU, O, "either scalding, or burning by fire, water, or Gunpouder", part="juice", heat="cold",
+      ev={"part": "The Juyce of Onions", "heat": "The Juyce of Onions"}),
+    R(JU, O, "taketh away all Blemishes, Spots, and Marks in the Skin", part="juice", solvent=("vinegar",), heat="cold",
+      ev={"part": "The Juyce of Onions", "solvent": "used with Vinegar", "heat": "The Juyce of Onions"}),
+    R(JU, O, "easeth the pains and nois of them", part="juice", heat="cold", form="other",
+      ev={"part": "The Juyce of Onions", "heat": "The Juyce of Onions", "form": "dropped into the Ears"}),
+    R("Applied also with Figs beaten together, he⟦?⟧peth to ripen and break Impostumes and other Sores.", O, "to ripen and break Impostumes and other Sores",
+      heading=True, rtype="compound", ingredients=[(O, "unknown", "principal", "plant"), ("Figs", "fruit", "co_ingredient", "plant")], heat="cold",
+      process="other", form="poultice", filt="not_applicable",
+      ev={"heat": "with Figs beaten together", "process": "with Figs beaten together", "form": "Applied also with Figs beaten together",
+          "filtered": "Applied also with Figs beaten together"}),
+]
+P["culpeper-1652:herbal:onions:005"] = [
+    R("then being bruised and applied to a Plague-Sore 'tis very probable 'twill do the like", O, "a Plague-Sore", heading=True, heat="cold",
+      process="other", form="poultice", filt="not_applicable",
+      ev={"heat": "being bruised and applied", "process": "being bruised and applied", "form": "being bruised and applied to a Plague-Sore",
+          "filtered": "being bruised and applied"}),
+]
+print(write("approved", 7, P))
