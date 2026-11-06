@@ -1,0 +1,788 @@
+{
+ "batch": 19,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:wormwood:007": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:008": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:009": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:011": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:012": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:013": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:015": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:010": {
+   "recipes": [
+    {
+     "recipeQuote": "It remedies the evils choler can inflict on the body of man by sympathy. It helps the evils Venus and the wanton Boy produce, by antipathy; and it doth something else besides. It cleanses the body of choler (who dares say Mars doth no good?) It provokes urine, helps surfeits, or swellings in the belly; it causes appetite to meat, because Mars rules the attractive faculty in man: The sun never shone upon a better herb for the yellow jaundice than this",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the evils choler can inflict on the body of man by sympathy. It helps the evils Venus and the wanton Boy produce, by antipathy; and it doth something else besides. It cleanses the body of choler (who dares say Mars doth no good?) It provokes urine, helps surfeits, or swellings in the belly; it causes appetite to meat, because Mars rules the attractive faculty in man: The sun never shone upon a better herb for the yellow jaundice",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Take of the flowers of Wormwood, Rosemary, and Black Thorn, of each a like quantity, half that quantity of saffron; boil this in Rhenish wine, but put it not in saffron till it is almost boiled; This is the way to keep a man’s body in health",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "flower",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Rosemary",
+       "part": "flower",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Black Thorn",
+       "part": "flower",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "saffron",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "flower",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "to keep a man’s body in health",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the flowers of Wormwood"
+      },
+      {
+       "field": "solvent",
+       "quote": "boil this in Rhenish wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boil this in Rhenish wine"
+      },
+      {
+       "field": "process",
+       "quote": "boil this in Rhenish wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Besides all this, Wormwood provokes the terms.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "provokes the terms",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Wormwood being an herb of Mars, is a present remedy for the biting of rats and mice.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the biting of rats and mice",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "if any have poisoned himself by eating them, Wormwood, an herb of Mars, cures him",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "poisoned himself by eating them",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Wheals, pushes, black and blue spots, coming either by bruises or beatings. Wormwood, an herb of Mars, helps",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "Wheals, pushes, black and blue spots, coming either by bruises or beatings",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Mars eradicates all diseases in the throat by his herbs (for wormwood is one)",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "all diseases in the throat",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Suppose a man be bitten or stung by a martial creature, imagine a wasp, a hornet, a scorpion, Wormwood, an herb of Mars, gives you a present cure",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "bitten or stung by a martial creature, imagine a wasp, a hornet, a scorpion",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Astrologers think Mars causes scabs and itch, and the virgins are angry with him, because wanton Venus told them he deforms their skins; but, quoth Mars, my only desire is, they should know themselves; my herb Wormwood will restore them to the beauty they formerly had",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "scabs and itch",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "they say he causes the cholic (it is well God hath set some body to pull down the pride of man.) He in the Virgin troubles none with the cholic, but them that know not themselves (for who knows himself, may easily know all the world.) Wormwood, an herb of Mars, is a present cure for it",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the cholic",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "the poor old man lies crying out of his left side. Father Saturn’s angry, Mars comes to him; Come, brother, I confess thou art evil spoken of, and so am I; thou knowest I have my exaltation in thy house, I give him an herb of mine, Wormwood, to cure the old man",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "lies crying out of his left side",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "culpeper-1850:herbal:wormwood:014": {
+   "recipes": [
+    {
+     "recipeQuote": "children are much troubled with the worms; she desired a medicine of him, he bid her take his own herb, Wormwood",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "children are much troubled with the worms",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "I’ll give thee antipathetical cure; Take my herb Wormwood, and thou shall never get a surfeit by drinking",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "thou shall never get a surfeit by drinking",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "A poor silly countryman hath got an ague, and cannot go about his business: he wishes he had it not, and so do I; but I will tell him a remedy, whereby he shall prevent it; Take the herb of Mars, Wormwood",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "an ague",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "though sometimes a man gets a stinking breath, and yet Jupiter is a fortune, forsooth; up comes Mars to him; Come brother Jupiter, thou knowest I sent thee a couple of trines to thy house last night, the one from Aries, and the other from Scorpio; give me thy leave by sympathy to cure this poor man with drinking a draught of Wormwood beer every morning",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "a stinking breath",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "a draught of Wormwood beer"
+      },
+      {
+       "field": "form",
+       "quote": "with drinking a draught of Wormwood beer"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "she gave a man two terrible mischiefs, a dull brain and a weak sight; Mars laid by his sword, and comes to her; Sister Moon, said he, this man hath angered thee, but I beseech thee take notice he is but a fool; prithee be patient, I will with my herb wormwood cure him of both infirmities",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "a dull brain and a weak sight",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "pliny-nh:b20:c008:001": {
+   "recipes": [
+    {
+     "recipeQuote": "Employed by itself when dried, it acts as a very powerful purgative",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "colocynthis",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "colocynthis",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "a very powerful purgative",
+     "evidence": [
+      {
+       "field": "freshOrDried",
+       "quote": "when dried"
+      },
+      {
+       "field": "solvent",
+       "quote": "Employed by itself"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "used as an injection, it is a remedy for all diseases of the intestines, the kidneys, and the loins, as well as for paralysis. The seed being first removed, it is boiled down in hydromel to one half; after which it is used as an injection",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "colocynthis",
+       "part": "fruit",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "colocynthis",
+     "part": "fruit",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water",
+      "honey"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "boiled down in hydromel to one half",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "other",
+     "indicationAsWritten": "all diseases of the intestines, the kidneys, and the loins, as well as for paralysis",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seed being first removed"
+      },
+      {
+       "field": "solvent",
+       "quote": "boiled down in hydromel"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled down in hydromel to one half"
+      },
+      {
+       "field": "process",
+       "quote": "boiled down in hydromel to one half"
+      },
+      {
+       "field": "form",
+       "quote": "used as an injection"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is good, too, for the stomach, taken in pills composed of the dried powder and boiled honey.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "colocynthis",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "colocynthis",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "other",
+     "indicationAsWritten": "for the stomach",
+     "evidence": [
+      {
+       "field": "freshOrDried",
+       "quote": "the dried powder"
+      },
+      {
+       "field": "solvent",
+       "quote": "boiled honey"
+      },
+      {
+       "field": "process",
+       "quote": "the dried powder"
+      },
+      {
+       "field": "form",
+       "quote": "taken in pills"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "In jaundice seven seeds of it may be taken with beneficial effects, with a draught of hydromel immediately after.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "colocynthis",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "colocynthis",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water",
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "jaundice",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "seven seeds of it"
+      },
+      {
+       "field": "solvent",
+       "quote": "a draught of hydromel"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
