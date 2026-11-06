@@ -1,0 +1,1559 @@
+{
+ "batch": 15,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:cleavers:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:cleavers:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:cleavers:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:cleavers:004": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:henbane:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:henbane:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:henbane:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:cleavers:005": {
+   "recipes": [
+    {
+     "recipeQuote": "The juice of the herb and the seed together taken in wine, helps those bitten with an adder, by preserving the heart from the venom.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "those bitten with an adder, by preserving the heart from the venom",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of the herb and the seed together"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "taken in wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is familiarly taken in broth to keep them lean and lank, that are apt to grow fat.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "to keep them lean and lank, that are apt to grow fat",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "taken in broth"
+      },
+      {
+       "field": "form",
+       "quote": "taken in broth"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The distilled water drank twice a day, helps the yellow jaundice",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "drink",
+     "indicationAsWritten": "the yellow jaundice",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "heat",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "process",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "form",
+       "quote": "The distilled water drank"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the decoction of the herb, in experience, is found to do the same, and stays lasks and bloody-fluxes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "to do the same, and stays lasks and bloody-fluxes",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "the decoction of the herb"
+      },
+      {
+       "field": "process",
+       "quote": "the decoction of the herb"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of the leaves, or they a little bruised, and applied to any bleeding wounds, stays the bleeding.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "any bleeding wounds, stays the bleeding",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of the leaves"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice of the leaves"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of the leaves, or they a little bruised, and applied to any bleeding wounds, stays the bleeding.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "any bleeding wounds, stays the bleeding",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of the leaves, or they a little bruised"
+      },
+      {
+       "field": "heat",
+       "quote": "a little bruised, and applied"
+      },
+      {
+       "field": "process",
+       "quote": "a little bruised, and applied"
+      },
+      {
+       "field": "form",
+       "quote": "a little bruised, and applied to any bleeding wounds"
+      },
+      {
+       "field": "filtered",
+       "quote": "a little bruised, and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice also is very good to close up the lips of green wounds",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to close up the lips of green wounds",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice also is very good"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice also is very good"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the powder of the dried herb strewed thereupon doth the same, and likewise helps old ulcers",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "unknown",
+     "freshOrDried": "dried",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "doth the same, and likewise helps old ulcers",
+     "evidence": [
+      {
+       "field": "freshOrDried",
+       "quote": "the dried herb"
+      },
+      {
+       "field": "solvent",
+       "quote": "the powder of the dried herb strewed thereupon"
+      },
+      {
+       "field": "heat",
+       "quote": "the powder of the dried herb"
+      },
+      {
+       "field": "process",
+       "quote": "the powder of the dried herb"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Being boiled in hog’s grease, it helps all sorts of hard swellings or kernels in the throat, being anointed therewith.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "ointment",
+     "indicationAsWritten": "all sorts of hard swellings or kernels in the throat",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Being boiled in hog’s grease"
+      },
+      {
+       "field": "heat",
+       "quote": "Being boiled in hog’s grease"
+      },
+      {
+       "field": "process",
+       "quote": "Being boiled in hog’s grease"
+      },
+      {
+       "field": "form",
+       "quote": "being anointed therewith"
+      },
+      {
+       "field": "filtered",
+       "quote": "being anointed therewith"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice dropped into the ears, takes away the pain of them.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "takes away the pain of them",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice dropped into the ears"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice dropped into the ears"
+      },
+      {
+       "field": "form",
+       "quote": "The juice dropped into the ears"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:cleavers:006": {
+   "recipes": [
+    {
+     "recipeQuote": "It is a good remedy in the Spring, eaten (being first chopped small, and boiled well) in water-gruel, to cleanse the blood, and strengthen the liver, thereby to keep the body in health, and fitting it for that change of season that is coming.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLEAVERS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLEAVERS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "to cleanse the blood, and strengthen the liver, thereby to keep the body in health, and fitting it for that change of season that is coming",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "in water-gruel"
+      },
+      {
+       "field": "heat",
+       "quote": "being first chopped small, and boiled well"
+      },
+      {
+       "field": "form",
+       "quote": "eaten (being first chopped small, and boiled well)"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:henbane:004": {
+   "recipes": [
+    {
+     "recipeQuote": "The leaves of Henbane do cool all hot inflammations in the eyes, or any other part of the body",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "cool all hot inflammations in the eyes, or any other part of the body",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves of Henbane"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "are good to assuage all manner of swellings of the privities, or women’s breast, or elsewhere, if they be boiled in wine, and either applied themselves, or the fomentation warm; it also assuages the pain of the gout, the sciatica, and other pains in the joints which arise from a hot cause",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "decoction",
+     "form": "poultice",
+     "indicationAsWritten": "all manner of swellings of the privities, or women’s breast, or elsewhere, if they be boiled in wine, and either applied themselves, or the fomentation warm; it also assuages the pain of the gout, the sciatica, and other pains in the joints which arise from a hot cause",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves of Henbane"
+      },
+      {
+       "field": "solvent",
+       "quote": "boiled in wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled in wine"
+      },
+      {
+       "field": "process",
+       "quote": "if they be boiled in wine"
+      },
+      {
+       "field": "form",
+       "quote": "applied themselves"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied themselves"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "are good to assuage all manner of swellings of the privities, or women’s breast, or elsewhere, if they be boiled in wine, and either applied themselves, or the fomentation warm; it also assuages the pain of the gout, the sciatica, and other pains in the joints which arise from a hot cause",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "the fomentation warm",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "other",
+     "indicationAsWritten": "all manner of swellings of the privities, or women’s breast, or elsewhere, if they be boiled in wine, and either applied themselves, or the fomentation warm; it also assuages the pain of the gout, the sciatica, and other pains in the joints which arise from a hot cause",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves of Henbane"
+      },
+      {
+       "field": "solvent",
+       "quote": "boiled in wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled in wine"
+      },
+      {
+       "field": "process",
+       "quote": "if they be boiled in wine"
+      },
+      {
+       "field": "form",
+       "quote": "the fomentation warm"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "And applied with vinegar to the forehead and temples, helps the head-ache and want of sleep in hot fevers.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "the head-ache and want of sleep in hot fevers",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves of Henbane"
+      },
+      {
+       "field": "solvent",
+       "quote": "applied with vinegar"
+      },
+      {
+       "field": "form",
+       "quote": "applied with vinegar to the forehead and temples"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied with vinegar to the forehead and temples"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of the herb or seed, or the oil drawn from the seed, does the like.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "does the like",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of the herb or seed"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice of the herb or seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of the herb or seed, or the oil drawn from the seed, does the like.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "does the like",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the oil drawn from the seed"
+      },
+      {
+       "field": "process",
+       "quote": "the oil drawn from the seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The oil of the seed is helpful for deafness, noise, and worms in the ears, being dropped therein",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "deafness, noise, and worms in the ears",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The oil of the seed"
+      },
+      {
+       "field": "process",
+       "quote": "The oil of the seed"
+      },
+      {
+       "field": "form",
+       "quote": "being dropped therein"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the juice of the herb or root doth the same",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "doth the same",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the juice of the herb or root"
+      },
+      {
+       "field": "heat",
+       "quote": "the juice of the herb or root"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The decoction of the herb or seed, or both, kills lice in man or beast.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "kills lice in man or beast",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "The decoction of the herb"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction of the herb"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The fume of the dried herb, stalks and seed, burned, quickly heals swellings, chilblains or kibes in the hands or feet, by holding them in the fume thereof.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Henbane",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Henbane",
+     "part": "other",
+     "freshOrDried": "dried",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "inhalation",
+     "indicationAsWritten": "swellings, chilblains or kibes in the hands or feet",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the dried herb, stalks and seed"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "the dried herb"
+      },
+      {
+       "field": "process",
+       "quote": "stalks and seed, burned"
+      },
+      {
+       "field": "form",
+       "quote": "The fume of the dried herb"
+      },
+      {
+       "field": "filtered",
+       "quote": "by holding them in the fume thereof"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The remedy to help those that have taken Henbane is to drink goat’s milk, honeyed water, or pine kernels, with sweet wine",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "pine kernels",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "pine kernels",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "help those that have taken Henbane",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "pine kernels"
+      },
+      {
+       "field": "solvent",
+       "quote": "with sweet wine"
+      },
+      {
+       "field": "form",
+       "quote": "is to drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel seed, Nettle seed, the seed of Cresses, Mustard, or Radish; as also Onions or Garlic taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Fennel seed",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Fennel seed",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Fennel seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel seed, Nettle seed, the seed of Cresses, Mustard, or Radish; as also Onions or Garlic taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Nettle seed",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Nettle seed",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Nettle seed"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel seed, Nettle seed, the seed of Cresses, Mustard, or Radish; as also Onions or Garlic taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "the seed of Cresses",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "the seed of Cresses",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seed of Cresses"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel seed, Nettle seed, the seed of Cresses, Mustard, or Radish; as also Onions or Garlic taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mustard",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mustard",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Fennel seed, Nettle seed, the seed of Cresses, Mustard, or Radish; as also Onions or Garlic taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Radish",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Radish",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Fennel seed, Nettle seed, the seed of Cresses, Mustard, or Radish; as also Onions or Garlic taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Onions",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Onions",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Onions or Garlic taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "Onions or Garlic taken in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Fennel seed, Nettle seed, the seed of Cresses, Mustard, or Radish; as also Onions or Garlic taken in wine, do all help to free them from danger, and restore them to their due temper again",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Garlic",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Garlic",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "free them from danger, and restore them to their due temper again",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Garlic taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "Garlic taken in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
