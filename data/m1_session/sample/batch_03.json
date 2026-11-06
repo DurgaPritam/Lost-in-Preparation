@@ -1,0 +1,404 @@
+{
+ "batch": 3,
+ "scope": "sample",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:dispensatory:s006-roots:025": {
+   "recipes": [
+    {
+     "recipeQuote": "Of Briony both white and black: they are both hot and dry, some say in the third degree, and some say but in the first; they purge flegm and watery humours, but they trouble the stomach much, they are very good for dropsies",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Briony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Briony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "purge flegm and watery humours, but they trouble the stomach much, they are very good for dropsies",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "the white is most in use, and is good for the fits of the mother",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Briony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Briony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the fits of the mother",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "both of them externally used, take away freckles, sunburning, and morphew from the face, and cleanse filthy ulcers",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Briony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Briony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "take away freckles, sunburning, and morphew from the face, and cleanse filthy ulcers",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "externally used"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:dispensatory:s009-herbs-and-their-leaves:070": {
+   "recipes": [
+    {
+     "recipeQuote": "Centaury the greater and less. They say the greater will do wonders in curing wounds",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Centaury",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Centaury",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "curing wounds",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The less is a present remedy for the yellow jaundice, opens stoppings of the liver, gall, and spleen: purges choler, helps gout, clears the sight, purgeth the stomach, helps the dropsy and green sickness. It is only the tops and flowers which are useful, of which you may take a dram inwardly in powder, or half a handful boiled in posset-drink at a time",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Centaury",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Centaury",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "the yellow jaundice, opens stoppings of the liver, gall, and spleen: purges choler, helps gout, clears the sight, purgeth the stomach, helps the dropsy and green sickness",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the tops and flowers"
+      },
+      {
+       "field": "heat",
+       "quote": "take a dram inwardly in powder"
+      },
+      {
+       "field": "process",
+       "quote": "in powder"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The less is a present remedy for the yellow jaundice, opens stoppings of the liver, gall, and spleen: purges choler, helps gout, clears the sight, purgeth the stomach, helps the dropsy and green sickness. It is only the tops and flowers which are useful, of which you may take a dram inwardly in powder, or half a handful boiled in posset-drink at a time",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Centaury",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Centaury",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "the yellow jaundice, opens stoppings of the liver, gall, and spleen: purges choler, helps gout, clears the sight, purgeth the stomach, helps the dropsy and green sickness",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the tops and flowers"
+      },
+      {
+       "field": "solvent",
+       "quote": "boiled in posset-drink"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled in posset-drink"
+      },
+      {
+       "field": "process",
+       "quote": "boiled in posset-drink"
+      },
+      {
+       "field": "form",
+       "quote": "posset-drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:dispensatory:s009-herbs-and-their-leaves:222": {
+   "recipes": [
+    {
+     "recipeQuote": "Fleabane; hot and dry in the third degree, helps the biting of venomous beasts, wounds and swellings, the yellow jaundice, the falling sickness, and such as cannot make water",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Fleabane",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Fleabane",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the biting of venomous beasts, wounds and swellings, the yellow jaundice, the falling sickness, and such as cannot make water",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "culpeper-1850:dispensatory:s025-herbs:010": {
+   "recipes": []
+  },
+  "culpeper-1850:dispensatory:s030-simple-distilled-waters:084": {
+   "recipes": [
+    {
+     "recipeQuote": "Scabious water helps pleurises and pains, and pricking in the sides; Aposthumes, coughs, pestilences, and straitness of the breast",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Scabious",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Scabious",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "pleurises and pains, and pricking in the sides; Aposthumes, coughs, pestilences, and straitness of the breast",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Scabious water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:dispensatory:s030-simple-distilled-waters:092": {
+   "recipes": [
+    {
+     "recipeQuote": "The water of Marigold flowers is appropriated to most cold diseases of the head, eyes, and stomach",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Marigold",
+       "part": "flower",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Marigold",
+     "part": "flower",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "most cold diseases of the head, eyes, and stomach",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Marigold flowers"
+      },
+      {
+       "field": "solvent",
+       "quote": "The water of Marigold flowers"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:dispensatory:s034-physical-vinegars:003": {
+   "recipes": []
+  },
+  "culpeper-1850:dispensatory:s039-syrups-made-with-vinegar-and-honey:013": {
+   "recipes": []
+  },
+  "culpeper-1850:dispensatory:s045-species-or-powders:099": {
+   "recipes": []
+  },
+  "culpeper-1850:dispensatory:s055-ointments-more-compound:049": {
+   "recipes": []
+  }
+ }
+}
