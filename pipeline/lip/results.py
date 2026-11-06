@@ -28,6 +28,19 @@ def _m(x: C.Metric | None, fmt="{:.3f}") -> str:
     return f"{fmt.format(x.value)}{ci}" + (f", n = {x.n}" if x.n else "")
 
 
+def _review_status() -> str:
+    import pandas as pd
+    p = ROOT / "config" / "study_set_review_decisions.csv"
+    if not p.exists():
+        return "pending — human approval"
+    d = pd.read_csv(p)
+    ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
+    c = d.decision.value_counts()
+    return (f"**human-reviewed** — {c.get('approve', 0)} approve, {c.get('unsure', 0)} unsure, {c.get('reject', 0)} reject; "
+            f"headline set {int(ss.headline.sum()) if 'headline' in ss else 0} species (unsure counts as reject); "
+            f"{int(ss.reReviewRequested.sum()) if 'reReviewRequested' in ss else 0} rows await re-review after reviewer fixes")
+
+
 def _n_proposed() -> int:
     import pandas as pd
     ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
@@ -51,8 +64,8 @@ def validation_status(m: C.Metrics) -> list[str]:
         ("Preparation model vs published reports — pre-registered v3 (paired, within plant)", "*provisional, inconclusive* — too few articles (n in RESULTS); rule pre-registered (docs/PREREGISTRATION_v3.md, one amendment before collection), AI-written rule and code", "`data/reference/prep_literature_prereg_v3_pairs.csv`"),
         ("Genus-signal audit (name resolution)", "*provisional* — AI-reviewed false friends with dictionary quotes, awaiting human review", "`docs/GENUS_SIGNAL_AUDIT.md`"),
         (f"Study-set toxicity entries ({_n_proposed()} species)", "*provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review", "`data/reference/toxicity_curated.csv`"),
-        (f"Study set ({_n_proposed()} species)", "pending — human approval", "`docs/STUDY_SET_PROPOSAL.md`"),
-        ("**Modern-methods audit (M5): the planned headline result**", "not started — waits for study-set approval", "—"),
+        (f"Study set ({_n_proposed()} proposed)", _review_status(), "`docs/STUDY_SET_PROPOSAL.md`"),
+        ("**Modern-methods audit (M5): the planned headline result**", "not started", "—"),
         ("Hypothesis ranking (M6)", "rule implemented and stability-tested on model-only candidate pairs (not hypotheses)", "`data/interim/m6/ranking_stability.json`"),
     ]
     out = ["## Validation status", "", "| Result | Status | Evidence |", "|---|---|---|"]
@@ -381,6 +394,15 @@ def toxicity_section() -> list[str]:
             "", "`no_toxicity_reported` and `unknown` are **not evidence of safety**. The Wikipedia *List of poisonous plants* is no longer used for this column (only for M2's toxic-confusion screen)."]
 
 
+def _audit_status() -> str:
+    import pandas as pd
+    ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
+    if "headline" in ss and ss.headline.any():
+        return (f"The study set has been reviewed by the project lead: {int(ss.headline.sum())} species are approved for the headline "
+                "analysis (`docs/STUDY_SET_REVIEW.md`). The audit itself has not started.")
+    return "It has not started; it waits for the project lead's approval of the study set."
+
+
 def screening_finding() -> dict | None:
     v3 = _j("data/interim/m4/literature_prereg_v3.json")
     if not v3:
@@ -408,7 +430,7 @@ def positioning() -> list[str]:
     L = ["## What the results support", "",
          "**Planned headline: the modern-methods audit (Phase 5).** For each study-set species, it will check how modern studies "
          "prepared the plant (solvent, temperature and filtration, each recorded separately) against how the historical recipes made it, "
-         "and flag remedies that were never tested the way they were made. It has not started; it waits for the project lead's approval of the study set.", "",
+         "and flag remedies that were never tested the way they were made. " + _audit_status(), "",
          "**The preparation model is a transparent hypothesis generator, not a validated predictor.** Every factor and assumption is "
          "inspectable, and every estimate carries a range. Its support differs by preparation:",
          f"- **Essential-oil compounds: best supported.** In the pre-registered v1 check, {int(eo.agree.sum())}/{len(eo)} essential-oil "

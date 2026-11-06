@@ -74,4 +74,4 @@ def test_recorded_stability_and_labels():
     assert rob["monteCarloReseed"]["top20Overlap"] >= 0.8 and rob["compoundBootstrap"]["top20OverlapMean"] >= 0.8
     ss = pd.read_csv("data/interim/m3/study_set_proposal.csv")
     demo = pd.read_csv("data/interim/m6/ranking_demo.csv")
-    assert set(demo.acceptedName) == set(ss[ss.proposed].acceptedName)
+    assert set(demo.acceptedName) == set(ss[ss.headline].acceptedName)

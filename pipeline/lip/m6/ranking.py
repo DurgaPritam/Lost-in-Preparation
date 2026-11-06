@@ -121,7 +121,8 @@ MODERN = ["modern 70% ethanol extract", "modern methanol extract"]
 
 def species_compounds(descriptor: str = "rdkit") -> dict[str, tuple[str, list[M.Compound]]]:
     prop = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
-    prop = prop[prop.proposed]
+    # the headline set: proposed AND approved by the project lead (config/study_set_review_decisions.csv)
+    prop = prop[prop.headline] if "headline" in prop and prop.headline.any() else prop[prop.proposed]
     occ = pd.read_parquet(INTERIM / "m3" / "occurrences.parquet")
     comp = pd.read_parquet(INTERIM / "m3" / "compounds.parquet").drop_duplicates("inchikey").set_index("inchikey")
     out = {}
@@ -182,7 +183,7 @@ def stability(n_boot: int = 20, top_k: int = 20, seed: int = 20261108) -> dict:
                                   "replicates": n_boot},
         }
     used = base[base.notRanked == ""]
-    out = {"label": "DEMONSTRATION on model profiles only: candidate pairs = every study-set species × historical preparation "
+    out = {"label": "DEMONSTRATION on model profiles only: candidate pairs = every headline (approved) study-set species × historical preparation "
                     "× modern extract. No modern-methods audit has been run, so these are NOT hypotheses.",
            "rule": RULE, "widthMax": WIDTH_MAX, "tau": TAU, "minCompounds": MIN_COMPOUNDS, "descriptorErrorSd": sd,
            "modelVersion": M.config_version(cfg), "candidates": int(len(base)), "ranked": int(len(used)),

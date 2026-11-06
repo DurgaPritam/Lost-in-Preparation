@@ -1,282 +1,282 @@
-acceptedName,wfoId,family,attestations,sources,sourceList,namesAsWritten,minConfidence,anyDisputed,nCompounds,nReferences,poorCoverage,toxicConfusion,excludedByDecision,eligible,proposed,toxicity,toxicityNote,toxicitySource,toxicityUrl,toxicityQuote,toxicityBasis,toxicityVerifiedBy,approved
-Artemisia absinthium,wfo-0000134589,Asteraceae,12.0,2,"culpeper-1652, pliny",ABSINTHIUM OR WORMWOOD; Wormwood,0.7636,False,153,47,False,False,,True,True,concern_reported,EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders.,"EMA/HMPC, EU herbal medicine summary for the public (wormwood herb)",https://www.ema.europa.eu/en/documents/herbal-summary/wormwood-herb-summary-public_en.pdf,"They must also not be taken by patients with bile duct obstruction, cholangitis (inflammation of the bile ducts) or liver disease.",ai_drafted_unverified,,
-Agrimonia eupatoria,wfo-0001006654,Rosaceae,6.0,2,"culpeper-1652, pliny",Agrimony; EUPATORIA,0.75,False,21,6,False,False,,True,True,no_toxicity_reported,EMA reported no side effects at its assessment; this is not evidence of safety.,"EMA/HMPC, EU herbal medicine summary for the public (agrimony)",https://www.ema.europa.eu/en/documents/herbal-summary/agrimony-summary-public_en.pdf,"At the time of the HMPC assessment, no side effects had been reported with these medicines.",ai_drafted_unverified,,
-Crocus sativus,wfo-0000788844,Iridaceae,5.0,2,"culpeper-1652, pliny",SAFFRON; Saffron,0.75,False,151,60,False,False,,True,True,toxic_reported,A review reports adverse effects in humans above about 5 g/day and moderate toxicity of an ethanolic extract in zebrafish.,"Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC12729493/,"Although doses exceeding 5 g/day in humans may lead to adverse effects, the IC 50 of saffron ethanolic extract in zebrafish was determined to be 1021.374 mg/L, indicating moderate toxicity.",ai_drafted_unverified,,
-Symphytum officinale,wfo-0000432219,Boraginaceae,5.0,2,"culpeper-1652, pliny","ALUM, ALSO CALLED SYMPHYTON PETRÆON; Comfry; Sopewort, or Bruisewort",0.696,False,37,21,False,False,,True,True,toxic_reported,EMA: comfrey root contains pyrrolizidine alkaloids that are toxic to the liver when taken by mouth.,"EMA/HMPC, EU herbal medicine summary for the public (comfrey root)",https://www.ema.europa.eu/en/documents/herbal-summary/comfrey-root-summary-public_en.pdf,"Comfrey root contains substances known as pyrrolizidine alkaloids, which have toxic effects on the liver when taken by mouth.",ai_drafted_unverified,,
-Lavandula angustifolia,wfo-0000224116,Lamiaceae,4.5,2,"culpeper-1652, pliny",Lavender; TIPHYON,0.875,False,107,11,False,False,,True,True,data_lacking,"EMA monograph: reproductive toxicity, genotoxicity and carcinogenicity have not been tested.","EMA/HMPC, EU herbal monograph (Lavandula angustifolia, flos)",https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-lavandula-angustifolia-p-mill-flos_en.pdf,"Tests on reproductive toxicity, genotoxicity and carcinogenicity have not been performed.",ai_drafted_unverified,,
-Ajuga chamaepitys,wfo-0000933181,Lamiaceae,4.0,2,"culpeper-1652, pliny","CHAMÆPITYS; Ground Pine, or Chamepitys",0.9808,False,46,7,False,False,,True,True,no_toxicity_reported,"Invertebrate assays only (Daphnia, Artemia); the same paper reports toxicity to Daphnia pulex at high concentration. No mammalian data; not evidence of safety.","Primary study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC11085171/,"The extract was virtually non-toxic to Daphnia magna throughout the exposure period, with the highest recorded average lethality being 10%.",ai_drafted_unverified,,
-Ranunculus ficaria,wfo-0000460581,Ranunculaceae,4.0,2,"culpeper-1652, pliny","CHELIDONIA; The Iesser Celondine, usually known by the Name of Pilewort",1.0,False,17,4,False,False,,True,True,toxic_reported,A single human case report of acute toxic liver injury attributed to lesser celandine.,"Case report, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC4342611/,This case is the first to explain hepatotoxicity caused by lesser celandine.,ai_drafted_unverified,,
-Glycyrrhiza glabra,wfo-0000212813,Fabaceae,3.0,2,"culpeper-1652, pliny",GLYCYRRHIZA OR ADIPSOS; Liquoris,1.0,False,461,131,False,False,,True,True,toxic_reported,"EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders.","EMA/HMPC, EU herbal monograph (Glycyrrhiza spp., radix, revision 1)",https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-glycyrrhiza-glabra-l-glycyrrhiza-inflata-bat-glycyrrhiza-uralensis-fisch-radix-revision-1_en.pdf,"Cases of overdose have been reported with prolonged use (more than 4 weeks) and/or intake of high amount of liquorice, with symptoms such as water retention, hypokalaemia, hypertension, cardiac rhythm disorders, and hypertensive encephalopathy.",ai_drafted_unverified,,
-Melissa officinalis,wfo-0000240053,Lamiaceae,3.0,2,"culpeper-1652, pliny",Balm; NEP,1.0,False,139,25,False,False,,True,True,no_toxicity_reported,EMA reported no side effects at its assessment; this is not evidence of safety.,"EMA/HMPC, EU herbal medicine summary for the public (melissa leaf)",https://www.ema.europa.eu/en/documents/herbal-summary/melissa-leaf-summary-public_en.pdf,"At the time of the HMPC assessment, no side effects had been reported with these medicines.",ai_drafted_unverified,,
-Hyssopus officinalis,wfo-0000217205,Lamiaceae,3.0,2,"culpeper-1652, pliny",HYSSOP; Hysop,0.6429,False,80,11,False,False,,True,True,toxic_reported,"Review: ingesting hyssop essential oil may cause convulsions (pinocamphone). About the essential oil, not whole-herb preparations.","Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC7956842/,Ingestion of hyssop oil might cause epileptiform convulsions [ 207 ] and seizures due to its high pinocamphone content [ 121 ].,ai_drafted_unverified,,
-Pastinaca sativa,wfo-0000391752,Apiaceae,3.0,2,"culpeper-1652, pliny",ELAPHOBOSCON; Parsnip,0.8571,False,23,18,False,False,,True,True,concern_reported,Review: phototoxicity on skin contact (furanocoumarins).,"Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC8010426/,A main mentioned side effect of parsnip is phototoxicity that was usually reported in direct skin contact.,ai_drafted_unverified,,
-Galium aparine,wfo-0000968296,Rubiaceae,3.0,2,"culpeper-1652, pliny","Cleavers, or Goosgrass; PHILANTHROPOS",0.8351,False,19,8,False,False,,True,True,no_toxicity_reported,In vitro cell assay only; no in vivo toxicity source located. Not evidence of safety.,"Primary study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC11267910/,The results of the viability assay showed no cytotoxicity effects on human umbilical endothelial cell (HUVEC) and normal human dermal fibroblast (NHDF) cell lines treated with different concentrations of whole plant extract and cell viability increased in a dose-dependent manner.,ai_drafted_unverified,,
-Chelidonium majus,wfo-0000600655,Papaveraceae,7.0,1,culpeper-1652,Celandine,0.9231,False,69,51,False,False,,True,True,toxic_reported,"EMA public statement: products withdrawn in some EU countries over reported adverse effects, particularly liver toxicity.","EMA/HMPC, public statement (Chelidonium majus L., herba)",https://www.ema.europa.eu/en/documents/public-statement/final-public-statement-chelidonium-majus-l-herba_en.pdf,"In some European countries marketing authorisations for medicinal products containing Chelidonium majus have been withdrawn because of concerns with reported adverse effects, particularly liver toxicity.",ai_drafted_unverified,,
-Hyoscyamus niger,wfo-0001021850,Solanaceae,6.0,1,culpeper-1652,Henbane,0.8609,False,78,18,False,False,,True,True,toxic_reported,"Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal.","Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC4224707/,"One of the most important and geographically common plants is Hyoscyamus Niger with therapeutic and possible toxic effects, which may be even fatal.",ai_drafted_unverified,,
-Raphanus sativus,wfo-0000402430,Brassicaceae,5.0,1,pliny,CULTIVATED RADISH,1.0,False,248,61,False,False,,True,True,concern_reported,"Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning.","Systematic review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC11012840/,A noticeable influence on thyroid activity by radish root was observed in two studies on rats ( Table 6 ).,ai_drafted_unverified,,
-Centaurium erythraea,wfo-0000593916,Gentianaceae,5.0,1,pliny,"CENTAURION LEPTON, OR LIBADION, KNOWN ALSO AS FEL TERRÆ; CENTAURION OR CHIRONION; CENTAURIS TRIORCHIS",0.9818,False,36,19,False,False,,True,True,concern_reported,EMA contraindicates centaury medicines in stomach ulcers; no side effects had been reported at its assessment.,"EMA/HMPC, EU herbal medicine summary for the public (centaury)",https://www.ema.europa.eu/en/documents/herbal-summary/centaury-summary-public_en.pdf,Centaury medicines should not be taken by people with ulcers in the stomach.,ai_drafted_unverified,,
-Salvia sclarea,wfo-0000302258,Lamiaceae,4.0,1,culpeper-1652,Clary,1.0,False,136,23,False,False,,True,True,no_toxicity_reported,In vitro cell assay only; the same paper notes a modest drop in HEK 293 viability at the highest concentrations. Not evidence of safety.,"Primary study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC13075098/,"After treatment of HEK 293 and HaCaT cells with increasing concentrations of S. sclarea and S. pratensis extracts (10–200 µg/mL), no significant increase in lactate dehydrogenase (LDH) release was observed compared to the control, indicating that the extracts did not induce detectable cytotoxicity or membrane damage in the tested cell lines after 24 h, as indicates Figure 7 .",ai_drafted_unverified,,
-Euphorbia antiquorum,wfo-0000960724,Euphorbiaceae,4.0,1,pliny,ACHÆMENIS OR HIPPOPHOBAS,1.0,False,43,21,False,False,,True,True,no_toxicity_reported,"Acute oral test of ROOT extracts in rats only (the quoted word 'safe' is the source's, for that test). The irritant latex of the genus is not covered. Not evidence of safety.","Primary study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC4665026/,Both the alcohol and aqueous extracts were found to be safe up to 2000 mg/kg.,ai_drafted_unverified,,
-Papaver somniferum,wfo-0000480963,Papaveraceae,3.3,1,pliny,BLACK POPPY; WHITE POPPY,1.0,False,108,118,False,False,,True,True,toxic_reported,Review and case study: tea from unwashed poppy seeds can carry enough morphine to cause dependence.,"Review and case study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC6513924/,Unwashed poppy seeds may contain sufficient alkaloid residue to produce tea with a substantial morphine content to the extent that regular users can develop dependence and opioid use disorder.,ai_drafted_unverified,,
-Humulus lupulus,wfo-0000725866,Cannabaceae,3.0,1,culpeper-1652,Hops,0.963,False,484,128,False,False,,True,True,no_toxicity_reported,EMA reported no side effects at its assessment; this is not evidence of safety.,"EMA/HMPC, EU herbal medicine summary for the public (hop strobile)",https://www.ema.europa.eu/en/documents/herbal-summary/hop-strobile-summary-public_en.pdf,"At the time of the HMPC assessment, no side effects had been reported with these medicines.",ai_drafted_unverified,,
-Allium cepa,wfo-0000755919,Amaryllidaceae,3.0,1,culpeper-1652,Onions,0.9,False,319,107,False,False,,True,True,toxic_reported,"Veterinary review: onion causes oxidative haemolysis (anaemia) in cats, dogs and cattle. Animal evidence, not human.","Veterinary review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC9495094/,"Cats, dogs and cattle appear most susceptible to the onion’s toxic effects, whereas sheep and goats are more resistant.",ai_drafted_unverified,,
-Coriandrum sativum,wfo-0000621274,Apiaceae,3.0,1,pliny,CORIANDER,1.0,False,157,29,False,False,,True,True,data_lacking,Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA).,"Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC9314633/,"Although the safety of coriander has been confirmed by the United States Food and Drug Administration (FDA) and the Flavor and Extract Manufacturers Association (FEMA), further studies are recommended to investigate the toxicity and adverse effects of this plant when consumed at higher doses and longer periods of time.",ai_drafted_unverified,,
-Carum carvi,wfo-0000588460,Apiaceae,3.0,1,culpeper-1652,Caraway,1.0,False,77,13,False,False,,True,True,concern_reported,"EMA contraindicates caraway fruit medicines in allergy to caraway, other Apiaceae, mugwort or birch.","EMA/HMPC, EU herbal medicine summary for the public (caraway fruit)",https://www.ema.europa.eu/en/documents/herbal-summary/caraway-fruit-summary-public_en.pdf,"Caraway fruit medicines must not be used in patients who are hypersensitive (allergic) to caraway fruit or other plants of the Apiaceae (Umbelliferae) family (fennel, anise, celery, coriander and dill), to mugwort or birch.",ai_drafted_unverified,,
-Citrullus colocynthis,wfo-0000607845,Cucurbitaceae,3.0,1,pliny,COLOCYNTHIS,1.0,False,74,18,False,False,,True,True,toxic_reported,Human case report: multiorgan toxicity after eating the fruit.,"Case report, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC12522648/,"Citrullus colocynthis , a plant traditionally used for its purgative properties, is known for its severe toxicity when consumed in excessive amounts.",ai_drafted_unverified,,
-Dioscorea communis,wfo-0000389997,Dioscoreaceae,3.0,1,pliny,"ASTAPHISAGRIA, OTHERWISE CALLED STAPHIS OR TAMINIA",1.0,False,42,19,False,False,,True,True,concern_reported,Review: the rhizome extract irritates the skin (the source frames this as therapeutic). No poisoning source located.,"Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC8949886/,"The TCR extract has an irritating effect on the skin, thus improving the blood supply to the affected area [ 1 ].",ai_drafted_unverified,,
-Filipendula ulmaria,wfo-0000983427,Rosaceae,3.0,1,culpeper-1652,"Queen of the Meadows, Meadow-sweet, or Mead-sweet",0.8485,False,25,8,False,False,,True,True,concern_reported,EMA monograph: contraindicated in hypersensitivity to salicylates; not recommended with salicylates or NSAIDs without medical advice.,"EMA/HMPC, EU herbal monograph (Filipendula ulmaria, herba)",https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-filipendula-ulmaria-l-maxim-herba-first-version_en.pdf,Concomitant use with salicylates and other NSAIDs is not recommended without medical advice.,ai_drafted_unverified,,
-Betonica officinalis,wfo-0000329771,Lamiaceae,3.0,1,culpeper-1652,Wood-Betony,0.6,False,22,8,False,False,,True,True,unknown,No reputable open source on toxicity located in this session (genus-level Stachys reviews cover other species only). Not evidence of safety.,,,,ai_drafted_unverified,,
-Cuscuta epithymum,wfo-0001296657,Convolvulaceae,6.0,2,"culpeper-1652, pliny","Dodder of Time, or Epithimum, and other Dodders; EPITHYMON OR HIPPOPHEOS",0.9231,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Mercurialis perennis,wfo-0000241769,Euphorbiaceae,5.0,2,"culpeper-1652, pliny",Dogs Mercury; PHYLLON,1.0,False,2,1,True,False,,False,False,not_curated,,,,,,,
-Asplenium scolopendrium,wfo-0001110391,Aspleniaceae,4.0,2,"culpeper-1652, pliny",HERB CALLED LINGUA; Harts-Tongue,1.0,False,3,1,True,False,,False,False,not_curated,,,,,,,
-Parietaria judaica,wfo-0000473199,Urticaceae,3.5,2,"culpeper-1652, pliny",PERDICIUM; Pellitory of the Wall,0.6667,False,1,1,True,False,,False,False,not_curated,,,,,,,
-Argentina anserina,wfo-0001009478,Rosaceae,3.0,2,"culpeper-1652, pliny","STEPHANOMELIS; VVild Tansie, or Silverweed",0.8889,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Triticum aestivum,wfo-0000905667,Poaceae,2.5,2,"culpeper-1652, pliny",SPELT; Wheat,0.723,False,274,79,False,False,,False,False,not_curated,,,,,,,
-Asparagus officinalis,wfo-0000634022,Asparagaceae,2.0,2,"culpeper-1652, pliny","Asparagus, Sparagus, or Sperage; GARDEN ASPARAGUS",0.9534,False,157,48,False,False,,False,False,not_curated,,,,,,,
-Crithmum maritimum,wfo-0001068458,Apiaceae,2.0,2,"culpeper-1652, pliny",CRETHMOS AGRIOS; Sampire,0.6563,False,31,9,False,False,,False,False,not_curated,,,,,,,
-Centaurea calcitrapa,wfo-0000137211,Asteraceae,2.0,2,"culpeper-1652, pliny",HIPPOPHÆSTON; Star-thistle,0.6667,False,28,6,False,False,,False,False,not_curated,,,,,,,
-Dipsacus fullonum,wfo-0000651022,Caprifoliaceae,2.0,2,"culpeper-1652, pliny","LABRUM VENEREUM; The Fullers Thistle, or Teasel",0.6667,False,4,1,True,False,,False,False,not_curated,,,,,,,
-Artemisia abrotanum,wfo-0000024341,Asteraceae,1.7,2,"culpeper-1652, pliny",ABROTONUM; Southernwood,0.913,False,34,7,False,False,,False,False,not_curated,,,,,,,
-Petroselinum crispum,wfo-0000745326,Apiaceae,1.5,2,"culpeper-1652, pliny",PETROSELINON; Parsley,1.0,False,119,34,False,False,,False,False,not_curated,,,,,,,
-Centaurea cyanus,wfo-0000008997,Asteraceae,1.5,2,"culpeper-1652, pliny",Bluebottles; CYANOS,1.0,False,42,16,False,False,,False,False,not_curated,,,,,,,
-Isatis tinctoria,wfo-0000732433,Brassicaceae,1.3,2,"culpeper-1652, pliny",ISATIS; Woad,1.0,False,175,30,False,False,,False,False,not_curated,,,,,,,
-Rosa spinosissima,wfo-0001014557,Rosaceae,7.0,1,pliny,ROSE,0.6977,False,5,1,True,False,,False,False,not_curated,,,,,,,
-Lupinus caudatus,wfo-0000174702,Fabaceae,3.1,1,pliny,LUPINES; OIL OF LUPINES,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Moricandia arvensis,wfo-0000369713,Brassicaceae,3.0,1,pliny,WILD CABBAGE,0.6065,False,19,3,False,False,"Attested only by Pliny 20.36 (WILD CABBAGE), through a single 19th-century Bostock & Riley footnote ('Brassica arvensis') that itself reports Fée's view that Pliny conflated two different plants.",False,False,not_curated,,,,,,,
-Asarum europaeum,wfo-0000550828,Aristolochiaceae,3.0,1,culpeper-1652,Asarabacca,1.0,False,8,4,True,False,,False,False,not_curated,,,,,,,
-Hylotelephium telephium,wfo-0000726974,Crassulaceae,3.0,1,culpeper-1652,Orpine,1.0,False,7,3,True,False,,False,False,not_curated,,,,,,,
-Scrophularia auriculata,wfo-0000495559,Scrophulariaceae,3.0,1,culpeper-1652,Water-Betony,1.0,False,3,1,True,False,,False,False,not_curated,,,,,,,
-Persicaria maculosa,wfo-0000488462,Polygonaceae,3.0,1,pliny,CRATÆGONON,1.0,False,2,2,True,False,,False,False,not_curated,,,,,,,
-Urtica urens,wfo-0000416948,Urticaceae,3.0,1,pliny,NETTLE,0.8781,False,2,2,True,False,,False,False,not_curated,,,,,,,
-Pulmonaria officinalis,wfo-0000397533,Boraginaceae,3.0,1,culpeper-1652,Lungwort,1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,
-Asplenium hemionitis,wfo-0001114329,Aspleniaceae,3.0,1,pliny,"ASPLENON OR HEMIONION; TEUCRION, HEMIONION, OR SPLENION",0.8,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Iris planifolia,wfo-0000783727,Iridaceae,3.0,1,pliny,IRIS,0.8907,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Potentilla rivalis,wfo-0001016975,Rosaceae,3.0,1,culpeper-1652,"Cinkfoyl, or Five Leaved . Grass Called in some Countries, Five finger'd Grass",0.6667,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Ranunculus straussii,wfo-0000462314,Ranunculaceae,3.0,1,pliny,"BATRACHION, RANUNCULUS, OR STRUMUS",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Rhoicissus tomentosus,wfo-0001145366,Vitaceae,3.0,1,culpeper-1652,"Briony, or VVild Vine",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Onopordum acanthium,wfo-0000129725,Asteraceae,2.5,1,pliny,ACANOS; ACANTHION; ONOPORDON,1.0,False,6,4,True,False,,False,False,not_curated,,,,,,,
-Pistacia lentiscus,wfo-0000394118,Anacardiaceae,2.1,1,pliny,LENTISK; OIL OF MASTICH,1.0,False,53,8,False,False,,False,False,not_curated,,,,,,,
-Phaseolus vulgaris,wfo-0000183282,Fabaceae,2.0,1,culpeper-1652,Beans; French-Beans,1.0,False,660,154,False,False,,False,False,not_curated,,,,,,,
-Cannabis sativa,wfo-0000584001,Cannabaceae,2.0,1,culpeper-1652,Hemp,1.0,False,526,86,False,False,,False,False,not_curated,,,,,,,
-Daucus carota,wfo-0000638442,Apiaceae,2.0,1,culpeper-1652,Carrots,1.0,False,414,118,False,False,,False,False,not_curated,,,,,,,
-Foeniculum vulgare,wfo-0000691487,Apiaceae,2.0,1,culpeper-1652,Fennel,0.9462,False,382,66,False,False,,False,False,not_curated,,,,,,,
-Brassica rapa,wfo-0000571544,Brassicaceae,2.0,1,pliny,WILD RAPE,0.7591,False,281,91,False,False,,False,False,not_curated,,,,,,,
-Brassica napus,wfo-0000571271,Brassicaceae,2.0,1,pliny,RAPE,0.678,False,242,65,False,False,,False,False,not_curated,,,,,,,
-Nigella sativa,wfo-0000380671,Ranunculaceae,2.0,1,pliny,"GITH, OR MELANTHION",1.0,False,236,40,False,False,,False,False,not_curated,,,,,,,
-Ruta graveolens,wfo-0000463744,Rutaceae,2.0,1,culpeper-1652,Garden Rue,1.0,False,204,76,False,False,,False,False,not_curated,,,,,,,
-Tanacetum parthenium,wfo-0000079801,Asteraceae,2.0,1,culpeper-1652,Featherfew,0.9635,False,194,61,False,False,,False,False,not_curated,,,,,,,
-Juniperus communis,wfo-0000355532,Cupressaceae,2.0,1,pliny,JUNIPER,0.8906,False,193,34,False,False,,False,False,not_curated,,,,,,,
-Tanacetum vulgare,wfo-0000114512,Asteraceae,2.0,1,culpeper-1652,Garden Tansie,1.0,False,182,55,False,False,,False,False,not_curated,,,,,,,
-Prunus domestica,wfo-0000984349,Rosaceae,2.0,1,culpeper-1652,Plums,0.841,False,179,44,False,False,,False,False,not_curated,,,,,,,
-Artemisia vulgaris,wfo-0000115588,Asteraceae,2.0,1,culpeper-1652,Mugwort,0.8194,False,163,27,False,False,,False,False,not_curated,,,,,,,
-Persea americana,wfo-0000465160,Lauraceae,2.0,1,culpeper-1652,The Pear-tree,1.0,False,157,36,False,False,,False,False,not_curated,,,,,,,
-Petasites hybridus,wfo-0000045336,Asteraceae,2.0,1,culpeper-1652,The Butter-Bur,1.0,False,154,27,False,False,,False,False,not_curated,,,,,,,
-Cichorium endivia,wfo-0000121598,Asteraceae,2.0,1,culpeper-1652,Endive,1.0,False,141,12,False,False,,False,False,not_curated,,,,,,,
-Digitalis purpurea,wfo-0000647394,Plantaginaceae,2.0,1,culpeper-1652,Foxglove,1.0,False,140,59,False,False,,False,False,not_curated,,,,,,,
-Cichorium intybus,wfo-0000080671,Asteraceae,2.0,1,culpeper-1652,Succory,1.0,False,136,46,False,False,,False,False,not_curated,,,,,,,
-Nerium oleander,wfo-0000251577,Apocynaceae,2.0,1,pliny,MADDENING HONEY,1.0,False,133,35,False,False,,False,False,not_curated,,,,,,,
-Portulaca oleracea,wfo-0000484425,Portulacaceae,2.0,1,culpeper-1652,Purslane,0.9008,False,127,27,False,False,,False,False,not_curated,,,,,,,
-Anethum graveolens,wfo-0000536042,Apiaceae,2.0,1,culpeper-1652,Dill,1.0,False,116,32,False,False,,False,False,not_curated,,,,,,,
-Hedera helix,wfo-0000979730,Araliaceae,2.0,1,culpeper-1652,Ivy,1.0,False,110,40,False,False,,False,False,not_curated,,,,,,,
-Marchantia polymorpha,wfo-0001196533,Marchantiaceae,2.0,1,culpeper-1652,Liverwort,1.0,False,103,34,False,False,,False,False,not_curated,,,,,,,
-Lactuca sativa,wfo-0000128816,Asteraceae,2.0,1,culpeper-1652,Lettice,1.0,False,100,40,False,False,,False,False,not_curated,,,,,,,
-Mentha pulegium,wfo-0000241235,Lamiaceae,2.0,1,culpeper-1652,Peny-royal,0.9524,False,98,26,False,False,,False,False,not_curated,,,,,,,
-Levisticum officinale,wfo-0000360816,Apiaceae,2.0,1,culpeper-1652,Lovage,0.875,False,64,18,False,False,,False,False,not_curated,,,,,,,
-Origanum majorana,wfo-0000260658,Lamiaceae,2.0,1,culpeper-1652,Sweet Marjerom,1.0,False,63,13,False,False,,False,False,not_curated,,,,,,,
-Prunella vulgaris,wfo-0000283746,Lamiaceae,2.0,1,culpeper-1652,Self-heal,1.0,False,62,20,False,False,,False,False,not_curated,,,,,,,
-Dittrichia viscosa,wfo-0000059214,Asteraceae,2.0,1,pliny,CONYZA,0.6061,False,59,18,False,False,,False,False,not_curated,,,,,,,
-Ruscus aculeatus,wfo-0000732428,Asparagaceae,2.0,1,culpeper-1652,Butchers-Broom,1.0,False,56,14,False,False,,False,False,not_curated,,,,,,,
-Verbena officinalis,wfo-0000332143,Verbenaceae,2.0,1,culpeper-1652,Vervain,0.6869,False,53,27,False,False,,False,False,not_curated,,,,,,,
-Aconitum lycoctonum,wfo-0000517589,Ranunculaceae,2.0,1,pliny,MYOPHONUM,0.75,False,51,25,False,False,,False,False,not_curated,,,,,,,
-Nepeta cataria,wfo-0000250846,Lamiaceae,2.0,1,culpeper-1652,"Nep, or Catmint",0.6253,False,45,18,False,False,,False,False,not_curated,,,,,,,
-Fumaria officinalis,wfo-0000693355,Papaveraceae,2.0,1,culpeper-1652,Fumitory,0.7362,False,44,23,False,False,,False,False,not_curated,,,,,,,
-Potentilla erecta,wfo-0000984938,Rosaceae,2.0,1,culpeper-1652,Tormentil,1.0,False,43,10,False,False,,False,False,not_curated,,,,,,,
-Nepeta tuberosa,wfo-0000251432,Lamiaceae,2.0,1,pliny,WILD MINT,0.8808,False,38,6,False,False,,False,False,not_curated,,,,,,,
-Linaria vulgaris,wfo-0000446438,Plantaginaceae,2.0,1,culpeper-1652,"Flaxweed, or Toadflax",0.7423,False,35,14,False,False,,False,False,not_curated,,,,,,,
-Senecio vulgaris,wfo-0000011329,Asteraceae,2.0,1,culpeper-1652,Groundsel,0.8093,False,35,28,False,False,,False,False,not_curated,,,,,,,
-Urtica dioica,wfo-0000416616,Urticaceae,2.0,1,culpeper-1652,Nettles,0.9091,False,34,15,False,False,,False,False,not_curated,,,,,,,
-Conium maculatum,wfo-0000617964,Apiaceae,2.0,1,culpeper-1652,Hemlock,0.7773,False,33,9,False,False,,False,False,not_curated,,,,,,,
-Centaurea benedicta,wfo-0000034687,Asteraceae,2.0,1,culpeper-1652,Our Ladies Thistle,1.0,False,31,10,False,False,,False,False,not_curated,,,,,,,
-Glechoma hederacea,wfo-0000972872,Lamiaceae,2.0,1,culpeper-1652,"Alehoof, or Ground-Ivy",0.9714,False,31,10,False,False,,False,False,not_curated,,,,,,,
-Plantago coronopus,wfo-0000487725,Plantaginaceae,2.0,1,culpeper-1652,Bucks-horn Plantane,1.0,False,29,6,False,False,,False,False,not_curated,,,,,,,
-Leonurus cardiaca,wfo-0000224637,Lamiaceae,2.0,1,culpeper-1652,Motherwort,1.0,False,28,15,False,False,,False,False,not_curated,,,,,,,
-Myrrhis odorata,wfo-0000371898,Apiaceae,2.0,1,culpeper-1652,Sweet Chervil OR Sweet Cicely,0.9091,False,26,4,False,False,,False,False,not_curated,,,,,,,
-Sonchus oleraceus,wfo-0000069236,Asteraceae,2.0,1,culpeper-1652,Sow-Thistles,0.7391,False,26,5,False,False,,False,False,not_curated,,,,,,,
-Salvia rosmarinus,wfo-0000302167,Lamiaceae,2.0,1,culpeper-1652,Rosemary,0.85,False,25,13,False,False,,False,False,not_curated,,,,,,,
-Sambucus ebulus,wfo-0000439387,Viburnaceae,2.0,1,pliny,ACTE OR EBULUM; EBULUM,0.9836,False,25,12,False,False,,False,False,not_curated,,,,,,,
-Peucedanum ostruthium,wfo-0000391825,Apiaceae,2.0,1,culpeper-1652,Masterwort,0.7619,False,24,12,False,False,,False,False,not_curated,,,,,,,
-Quercus coccifera,wfo-0000290191,Fagaceae,2.0,1,pliny,EMPLOYMENT OF PLANTS FOR DYEING,1.0,False,24,1,False,False,,False,False,not_curated,,,,,,,
-Crataegus germanica,wfo-0000990421,Rosaceae,2.0,1,culpeper-1652,The Medlar,0.8182,False,22,5,False,False,,False,False,not_curated,,,,,,,
-Smyrnium perfoliatum,wfo-0000431294,Apiaceae,2.0,1,pliny,SMYRNION,1.0,False,22,4,False,False,,False,False,not_curated,,,,,,,
-Descurainia sophia,wfo-0000641996,Brassicaceae,2.0,1,culpeper-1652,Flixweed,0.7727,False,21,4,False,False,,False,False,not_curated,,,,,,,
-Galium verum,wfo-0000970562,Rubiaceae,2.0,1,culpeper-1652,Ladies-Bedstraw,1.0,False,21,7,False,False,,False,False,not_curated,,,,,,,
-Ecballium elaterium,wfo-0000659225,Cucurbitaceae,2.0,1,pliny,WILD CUCUMBER,0.6733,False,19,20,False,False,,False,False,not_curated,,,,,,,
-Cynoglossum officinale,wfo-0000634152,Boraginaceae,2.0,1,culpeper-1652,Houndstongue,0.9841,False,16,6,False,False,,False,False,not_curated,,,,,,,
-Geranium robertianum,wfo-0000701246,Geraniaceae,2.0,1,culpeper-1652,Herb Robert,1.0,False,16,3,False,False,,False,False,not_curated,,,,,,,
-Persicaria bistorta,wfo-0000488076,Polygonaceae,2.0,1,culpeper-1652,"Bistort, or Snakeweed",0.7638,False,14,8,False,False,,False,False,not_curated,,,,,,,
-Aegopodium podagraria,wfo-0000521573,Apiaceae,2.0,1,culpeper-1652,Bishops-weed,0.7653,False,12,1,False,False,,False,False,not_curated,,,,,,,
-Teucrium scordium,wfo-0000322612,Lamiaceae,2.0,1,pliny,SCORDOTIS OR SCORDION,0.6585,False,12,8,False,False,,False,False,not_curated,,,,,,,
-Gnaphalium uliginosum,wfo-0000075561,Asteraceae,2.0,1,culpeper-1652,Mousear,0.7904,False,11,4,False,False,,False,False,not_curated,,,,,,,
-Monarda didyma,wfo-0000245316,Lamiaceae,2.0,1,culpeper-1652,"Calamint, or Mountain Mint",0.6842,False,11,6,False,False,,False,False,not_curated,,,,,,,
-Anthriscus cerefolium,wfo-0000538627,Apiaceae,2.0,1,culpeper-1652,Chervil,0.788,False,10,5,False,False,,False,False,not_curated,,,,,,,
-Convolvulus scammonia,wfo-0001298534,Convolvulaceae,2.0,1,pliny,SCAMMONY,1.0,False,10,3,False,False,,False,False,not_curated,,,,,,,
-Cyclamen hederifolium,wfo-0000631783,Primulaceae,2.0,1,pliny,CYCLAMINOS CISSANTHEMOS; CYCLAMINOS OR TUBER TERRÆ,0.9254,False,10,2,False,False,,False,False,not_curated,,,,,,,
-Meum athamanticum,wfo-0000372873,Apiaceae,2.0,1,pliny,"MEUM, AND MEUM ATHAMANTICUM",1.0,False,10,3,False,False,,False,False,not_curated,,,,,,,
-Cynodon dactylon,wfo-0000861178,Poaceae,2.0,1,pliny,GRAMEN,1.0,False,9,2,True,False,,False,False,not_curated,,,,,,,
-Eruca vesicaria,wfo-0000677413,Brassicaceae,2.0,1,culpeper-1652,Rocket,0.832,False,9,5,True,False,,False,False,not_curated,,,,,,,
-Sempervivum tectorum,wfo-0000441750,Crassulaceae,2.0,1,culpeper-1652,"Houfleeks, or Sengreen",0.8,False,9,3,True,False,,False,False,not_curated,,,,,,,
-Centaurea stoebe,wfo-0000044770,Asteraceae,2.0,1,culpeper-1652,Knapweed,0.8,False,8,4,True,False,,False,False,not_curated,,,,,,,
-Sanicula europaea,wfo-0000435191,Apiaceae,2.0,1,culpeper-1652,Sanicle,1.0,False,8,2,True,False,,False,False,not_curated,,,,,,,
-Asparagus acutifolius,wfo-0000631143,Asparagaceae,2.0,1,pliny,"CORRUDA, LIBYCUM, OR ORMINUM",0.6,False,7,1,True,False,,False,False,not_curated,,,,,,,
-Epilobium roseum,wfo-0000669712,Onagraceae,2.0,1,pliny,ONOTHERAS OR ONEAR,1.0,False,7,2,True,False,,False,False,not_curated,,,,,,,
-Lathyrus clymenum,wfo-0000212676,Fabaceae,2.0,1,pliny,CLYMENUS,0.9268,False,6,2,True,False,,False,False,not_curated,,,,,,,
-Thymus serpyllum,wfo-0000324739,Lamiaceae,2.0,1,pliny,WILD THYME,0.8399,False,6,6,True,False,,False,False,not_curated,,,,,,,
-Umbilicus rupestris,wfo-0000415401,Crassulaceae,2.0,1,culpeper-1652,"Kidneywort, or WallPenyroyal",1.0,False,6,2,True,False,,False,False,not_curated,,,,,,,
-Polygonatum multiflorum,wfo-0000716086,Asparagaceae,2.0,1,culpeper-1652,Solomons Seal,0.9031,False,4,3,True,False,,False,False,not_curated,,,,,,,
-Scirpoides holoschoenus,wfo-0000533499,Cyperaceae,2.0,1,pliny,HOLOSCHŒNUS,1.0,False,4,1,True,False,,False,False,not_curated,,,,,,,
-Senecio sarracenicus,wfo-0000123168,Asteraceae,2.0,1,culpeper-1652,Sarasens Consound,1.0,False,4,2,True,False,,False,False,not_curated,,,,,,,
-Senecio retrorsus,wfo-0000073615,Asteraceae,2.0,1,culpeper-1652,Ragwort,1.0,False,3,3,True,False,,False,False,not_curated,,,,,,,
-Sisymbrium officinale,wfo-0000432010,Brassicaceae,2.0,1,culpeper-1652,Hedg-Mustard,0.8623,False,3,1,True,False,,False,False,not_curated,,,,,,,
-Filipendula vulgaris,wfo-0000999867,Rosaceae,2.0,1,culpeper-1652,"Filipendula, or Dropwort",1.0,False,2,2,True,False,,False,False,not_curated,,,,,,,
-Paeonia officinalis,wfo-0000480634,Paeoniaceae,2.0,1,culpeper-1652,"Peony, Mas. & Femina",0.75,False,2,5,True,False,,False,False,not_curated,,,,,,,
-Echium rubrum,wfo-0000663042,Boraginaceae,2.0,1,pliny,"ALCIBIUM; PSEUDOANCHUSA, ECHIS, OR DORIS",1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,
-Lemna gibba,wfo-0000224424,Araceae,2.0,1,culpeper-1652,Ducksmeat,1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,
-Limonium vulgare,wfo-0000443938,Plumbaginaceae,2.0,1,pliny,"LEMONIUM; LIMONION, OR NEUROIDES",0.9474,False,1,3,True,False,,False,False,not_curated,,,,,,,
-Anchusa arvensis,wfo-0000533553,Boraginaceae,2.0,1,culpeper-1652,Borrage & Bugloss,0.7815,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Asplenium ruta-muraria,wfo-0001109353,Aspleniaceae,2.0,1,culpeper-1652,Wall-Rue Or ordinary White Maidenhair,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Botrychium lunaria,wfo-0001109054,Ophioglossaceae,2.0,1,culpeper-1652,Moonwort,0.9474,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Convolvulus cantabrica,wfo-0000155688,Convolvulaceae,2.0,1,pliny,CANTABRICA,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Crossopetalum rhacoma,wfo-0000626468,Celastraceae,2.0,1,pliny,RHACOMA,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Herniaria ciliolata,wfo-0000720656,Caryophyllaceae,2.0,1,culpeper-1652,Rupture wort,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Hypericum capitatum,wfo-0000727453,Hypericaceae,2.0,1,culpeper-1652,"Tutsan, or Park Leaves",0.75,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Iris xiphium,wfo-0000784062,Iridaceae,2.0,1,pliny,XIPHION OR PHASGANION,0.9474,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Ornithopus perpusillus,wfo-0000205797,Fabaceae,2.0,1,culpeper-1652,Birds-Foot,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Rubus pinnatus,wfo-0001016858,Rosaceae,2.0,1,culpeper-1652,The Bramble OR Black-Berry-Bush,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Squilla pancration,wfo-0000738361,Asparagaceae,2.0,1,pliny,PANCRATIUM,0.6818,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Vicia pubescens,wfo-0000212777,Fabaceae,2.0,1,pliny,"ELELISPHACOS, SPHACOS, OR SALVIA",0.7007,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Euphorbia cyparissias,wfo-0000961626,Euphorbiaceae,1.5,1,pliny,CHAMÆCYPARISSOS; CHAMÆPEUCE,1.0,False,30,3,False,False,,False,False,not_curated,,,,,,,
-Rumex britannica,wfo-0001101334,Polygonaceae,1.3,1,pliny,BRITANNICA,0.878,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Melittis melissophyllum,wfo-0000240105,Lamiaceae,1.2,1,pliny,"APIASTRUM, OR MELISSOPHYLLUM; MELISSOPHYLLUM OR MELITTÆNA",0.9474,False,3,2,True,False,,False,False,not_curated,,,,,,,
-Anthriscus caucalis,wfo-0000538624,Apiaceae,1.1,1,pliny,ANTHRISCUM,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Valeriana officinalis,wfo-0000426953,Caprifoliaceae,1.0,1,culpeper-1652,Garden Valerian,1.0,False,392,78,False,False,,False,False,not_curated,,,,,,,
-Apium graveolens,wfo-0000540626,Apiaceae,1.0,1,culpeper-1652,Smallage,1.0,False,372,59,False,False,,False,False,not_curated,,,,,,,
-Achillea millefolium,wfo-0000042097,Asteraceae,1.0,1,culpeper-1652,Yarrow,0.9623,False,256,58,False,False,,False,False,not_curated,,,,,,,
-Bellis perennis,wfo-0000072578,Asteraceae,1.0,1,pliny,PLANT CALLED BELLIS,1.0,False,231,15,False,False,,False,False,not_curated,,,,,,,
-Tribulus terrestris,wfo-0000457857,Zygophyllaceae,1.0,1,pliny,TRIBULUS,1.0,False,219,52,False,False,,False,False,not_curated,,,,,,,
-Teucrium polium,wfo-0000322436,Lamiaceae,1.0,1,pliny,"POLIUM, OR TEUTHRION",1.0,False,184,37,False,False,,False,False,not_curated,,,,,,,
-Cydonia oblonga,wfo-0001011708,Rosaceae,1.0,1,culpeper-1652,The Quince-Tree,1.0,False,125,19,False,False,,False,False,not_curated,,,,,,,
-Hordeum vulgare,wfo-0000875054,Poaceae,1.0,1,culpeper-1652,Barly,0.9155,False,121,68,False,False,,False,False,not_curated,,,,,,,
-Avena sativa,wfo-0000852231,Poaceae,1.0,1,culpeper-1652,Oats,1.0,False,116,46,False,False,,False,False,not_curated,,,,,,,
-Thalictrum minus,wfo-0000453930,Ranunculaceae,1.0,1,pliny,THALICTRUM,0.75,False,116,66,False,False,,False,False,not_curated,,,,,,,
-Tussilago farfara,wfo-0000117140,Asteraceae,1.0,1,culpeper-1652,"Coltsfoot, or Foalsfoot",1.0,False,94,18,False,False,,False,False,not_curated,,,,,,,
-Secale cereale,wfo-0000898524,Poaceae,1.0,1,culpeper-1652,Rye,1.0,False,87,38,False,False,,False,False,not_curated,,,,,,,
-Euphorbia lathyris,wfo-0000962968,Euphorbiaceae,1.0,1,pliny,LATHYRIS,1.0,False,80,37,False,False,,False,False,not_curated,,,,,,,
-Ononis natrix,wfo-0000212878,Fabaceae,1.0,1,pliny,NATRIX,1.0,False,75,9,False,False,,False,False,not_curated,,,,,,,
-Bupleurum rotundifolium,wfo-0000575774,Apiaceae,1.0,1,culpeper-1652,Thoroughwax,0.6,False,73,9,False,False,,False,False,not_curated,,,,,,,
-Silybum marianum,wfo-0000014591,Asteraceae,1.0,1,pliny,SILLYBUM,0.8571,False,72,52,False,False,,False,False,not_curated,,,,,,,
-Berberis vulgaris,wfo-0000564027,Berberidaceae,1.0,1,culpeper-1652,Barberry,0.6812,False,64,25,False,False,,False,False,not_curated,,,,,,,
-Inula helenium,wfo-0000120207,Asteraceae,1.0,1,culpeper-1652,Elecampane,0.9474,False,64,25,False,False,,False,False,not_curated,,,,,,,
-Marrubium vulgare,wfo-0000236711,Lamiaceae,1.0,1,culpeper-1652,Horehound,0.6878,False,63,29,False,False,,False,False,not_curated,,,,,,,
-Lawsonia inermis,wfo-0000366658,Lythraceae,1.0,1,pliny,PRIVET,0.8199,False,62,21,False,False,,False,False,not_curated,,,,,,,
-Populus deltoides,wfo-0000928101,Salicaceae,1.0,1,culpeper-1652,The Poplar-Tree,1.0,False,58,13,False,False,,False,False,not_curated,,,,,,,
-Campanula medium,wfo-0000827845,Campanulaceae,1.0,1,pliny,MEDION,0.6545,False,57,10,False,False,,False,False,not_curated,,,,,,,
-Onobrychis viciifolia,wfo-0000205013,Fabaceae,1.0,1,pliny,ONOBRYCHIS,1.0,False,56,11,False,False,,False,False,not_curated,,,,,,,
-Rubia tinctorum,wfo-0000298644,Rubiaceae,1.0,1,culpeper-1652,Madder,0.9333,False,53,25,False,False,,False,False,not_curated,,,,,,,
-Globularia alypum,wfo-0000703791,Plantaginaceae,1.0,1,pliny,ALYPON,1.0,False,47,10,False,False,,False,False,not_curated,,,,,,,
-Oenanthe aquatica,wfo-0000385414,Apiaceae,1.0,1,pliny,PHELLANDRION,1.0,False,46,3,False,False,,False,False,not_curated,,,,,,,
-Stellaria media,wfo-0000436325,Caryophyllaceae,1.0,1,culpeper-1652,Chickweed,0.6577,False,44,9,False,False,,False,False,not_curated,,,,,,,
-Alliaria petiolata,wfo-0000526081,Brassicaceae,1.0,1,culpeper-1652,"Sawce alone, or Jack by the Hedg",1.0,False,41,8,False,False,,False,False,not_curated,,,,,,,
-Corydalis solida,wfo-0000622894,Papaveraceae,1.0,1,pliny,"FIRST KIND OF CAPNOS, KNOWN ALSO AS CHICKEN’S FOOT",1.0,False,36,28,False,False,,False,False,not_curated,,,,,,,
-Eryngium campestre,wfo-0000677787,Apiaceae,1.0,1,pliny,ERYNGE OR ERYNGIUM,0.6,False,36,7,False,False,,False,False,not_curated,,,,,,,
-Rhus coriaria,wfo-0000402784,Anacardiaceae,1.0,1,pliny,RHUS OR SUMACH-TREE,1.0,False,33,10,False,False,,False,False,not_curated,,,,,,,
-Osyris alba,wfo-0000388250,Santalaceae,1.0,1,pliny,OSYRIS,0.8571,False,31,2,False,False,,False,False,not_curated,,,,,,,
-Senegalia mellifera,wfo-0000745787,Fabaceae,1.0,1,culpeper-1652,"The Black-Thorne, or, Sloe-Bush",1.0,False,31,6,False,False,,False,False,not_curated,,,,,,,
-Lolium temulentum,wfo-0000878503,Poaceae,1.0,1,culpeper-1652,Darnel,1.0,False,28,9,False,False,,False,False,not_curated,,,,,,,
-Lysimachia arvensis,wfo-0000744184,Primulaceae,1.0,1,culpeper-1652,Pimpernel,0.6152,False,28,8,False,False,,False,False,not_curated,,,,,,,
-Satureja thymbra,wfo-0000304557,Lamiaceae,1.0,1,pliny,TRAGORIGANUM,0.8936,False,28,10,False,False,,False,False,not_curated,,,,,,,
-Thlaspi arvense,wfo-0000410873,Brassicaceae,1.0,1,culpeper-1652,Methridate Mustard,1.0,False,28,7,False,False,,False,False,not_curated,,,,,,,
-Leontice leontopetalum,wfo-0000361311,Berberidaceae,1.0,1,pliny,LEONTOPETALON OR PARDALION,0.9,False,27,6,False,False,,False,False,not_curated,,,,,,,
-Reseda luteola,wfo-0000462704,Resedaceae,1.0,1,culpeper-1652,"VVold, VVeld, or Dyers VVeed",0.6722,False,27,9,False,False,,False,False,not_curated,,,,,,,
-Ononis spinosa,wfo-0000183372,Fabaceae,1.0,1,culpeper-1652,"Rest-Harrow, or Cammoak",0.8163,False,25,19,False,False,,False,False,not_curated,,,,,,,
-Tanacetum balsamita,wfo-0000013170,Asteraceae,1.0,1,culpeper-1652,"Costmary, or Alecost",1.0,False,25,10,False,False,,False,False,not_curated,,,,,,,
-Salvia aethiopis,wfo-0000300194,Lamiaceae,1.0,1,pliny,ÆTHIOPIS,0.75,False,23,19,False,False,,False,False,not_curated,,,,,,,
-Clinopodium vulgare,wfo-0000893535,Lamiaceae,1.0,1,pliny,"CLINOPODION, CLEONICION, ZOPYRON, OR OCIMOÏDES",1.0,False,19,3,False,False,,False,False,not_curated,,,,,,,
-Althaea cannabina,wfo-0000528921,Malvaceae,1.0,1,pliny,HEMP,0.8696,False,17,2,False,False,,False,False,not_curated,,,,,,,
-Lysimachia nummularia,wfo-0000442792,Primulaceae,1.0,1,culpeper-1652,"Money-wort, or Herb Two-pence",1.0,False,17,4,False,False,,False,False,not_curated,,,,,,,
-Heracleum sphondylium,wfo-0000720220,Apiaceae,1.0,1,culpeper-1652,Cow-Parsnep,0.6957,False,16,11,False,False,,False,False,not_curated,,,,,,,
-Echium vulgare,wfo-0000663145,Boraginaceae,1.0,1,culpeper-1652,Vipers Buglofs,0.8902,False,15,6,False,False,,False,False,not_curated,,,,,,,
-Hypericum coris,wfo-0000727515,Hypericaceae,1.0,1,pliny,CAROS OR HYPERICON,1.0,False,15,3,False,False,,False,False,not_curated,,,,,,,
-Euphorbia pithyusa,wfo-0000964037,Euphorbiaceae,1.0,1,pliny,PITYUSA,1.0,False,14,12,False,False,,False,False,not_curated,,,,,,,
-Gentiana acaulis,wfo-0000696760,Gentianaceae,1.0,1,pliny,GENTIAN,0.8054,False,14,3,False,False,,False,False,not_curated,,,,,,,
-Lathyrus aphaca,wfo-0000212673,Fabaceae,1.0,1,pliny,APHACA,0.6923,False,14,4,False,False,,False,False,not_curated,,,,,,,
-Anagyris foetida,wfo-0000211883,Fabaceae,1.0,1,pliny,ANAGYROS OR ACOPON,1.0,False,13,4,False,False,,False,False,not_curated,,,,,,,
-Lonicera periclymenum,wfo-0000367818,Caprifoliaceae,1.0,1,pliny,PERICLYMENOS,1.0,False,12,2,False,False,,False,False,not_curated,,,,,,,
-Iris foetidissima,wfo-0000783342,Iridaceae,1.0,1,culpeper-1652,Stinking Gladwin,1.0,False,11,4,False,False,,False,False,not_curated,,,,,,,
-Phalaris aquatica,wfo-0000889597,Poaceae,1.0,1,pliny,PHALARIS,1.0,False,11,6,False,False,,False,False,not_curated,,,,,,,
-Arisarum vulgare,wfo-0000275694,Araceae,1.0,1,pliny,ARISAROS,1.0,False,10,9,False,False,,False,False,not_curated,,,,,,,
-Peucedanum officinale,wfo-0000391810,Apiaceae,1.0,1,culpeper-1652,"Sow-Fennel, or HogsFennel",1.0,False,10,3,False,False,,False,False,not_curated,,,,,,,
-Sulla coronaria,wfo-0000737469,Fabaceae,1.0,1,culpeper-1652,Cocks-Head,0.8024,False,10,2,False,False,,False,False,not_curated,,,,,,,
-Decodon verticillatus,wfo-0000639120,Lythraceae,1.0,1,culpeper-1652,Loos-strife or WillowHearb,0.6059,False,9,2,True,False,,False,False,not_curated,,,,,,,
-Sium latifolium,wfo-0000431539,Apiaceae,1.0,1,pliny,SIUM,1.0,False,9,2,True,False,,False,False,not_curated,,,,,,,
-Gypsophila vaccaria,wfo-0000713816,Caryophyllaceae,1.0,1,pliny,CONDURDUM,0.75,False,8,7,True,False,,False,False,not_curated,,,,,,,
-Narcissus poeticus,wfo-0000697659,Amaryllidaceae,1.0,1,pliny,NARCISSUS,0.7639,False,8,10,True,False,,False,False,not_curated,,,,,,,
-Paliurus spina-christi,wfo-0000471780,Rhamnaceae,1.0,1,pliny,PALIURUS,0.8696,False,8,3,True,False,,False,False,not_curated,,,,,,,
-Lysimachia vulgaris,wfo-0000442301,Primulaceae,1.0,1,pliny,LYSIMACHIA,0.6667,False,7,2,True,False,,False,False,not_curated,,,,,,,
-Pimpinella saxifraga,wfo-0000391166,Apiaceae,1.0,1,culpeper-1652,Burnet Saxifrage,0.9327,False,7,3,True,False,,False,False,not_curated,,,,,,,
-Teucrium canadense,wfo-0000321931,Lamiaceae,1.0,1,culpeper-1652,Germander,0.6667,False,6,1,True,False,,False,False,not_curated,,,,,,,
-Verbascum blattaria,wfo-0000420104,Scrophulariaceae,1.0,1,pliny,BLATTARIA,0.9474,False,6,1,True,False,,False,False,not_curated,,,,,,,
-Odontites vulgaris,wfo-0000388701,Orobanchaceae,1.0,1,pliny,ODONTITIS,1.0,False,5,3,True,False,,False,False,not_curated,,,,,,,
-Polygala vulgaris,wfo-0000488110,Polygalaceae,1.0,1,pliny,POLYGALA,0.6522,False,5,2,True,False,,False,False,not_curated,,,,,,,
-Aquilegia formosa,wfo-0000541324,Ranunculaceae,1.0,1,culpeper-1652,Columbines,0.75,False,3,2,True,False,,False,False,not_curated,,,,,,,
-Reseda alba,wfo-0000462056,Resedaceae,1.0,1,pliny,RESEDA,0.9302,False,3,2,True,False,,False,False,not_curated,,,,,,,
-Zanthoxylum flavum,wfo-0000429509,Rutaceae,1.0,1,culpeper-1652,Alexander,1.0,False,3,2,True,False,,False,False,not_curated,,,,,,,
-Centaurea crocodylium,wfo-0000080984,Asteraceae,1.0,1,pliny,CROCODILEON,0.9474,False,2,1,True,False,,False,False,not_curated,,,,,,,
-Cirsium heterophyllum,wfo-0000014883,Asteraceae,1.0,1,culpeper-1652,The Melancholly Thistle,0.6206,False,2,1,True,False,,False,False,not_curated,,,,,,,
-Scandix pecten-veneris,wfo-0000434334,Apiaceae,1.0,1,pliny,SCANDIX,0.6,False,2,1,True,False,,False,False,not_curated,,,,,,,
-Chenopodium vulvaria,wfo-0000601914,Chenopodiaceae,1.0,1,culpeper-1652,Arrach wild & stinking,1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,
-Cormus domestica,wfo-0001003501,Rosaceae,1.0,1,culpeper-1652,The Service-tree,1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,
-Asparagus aphyllus,wfo-0000631494,Asparagaceae,1.0,1,culpeper-1652,"& Jupit Prickly Asparagus, Sparagus, or Sperage",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Asplenium inexpectatum,wfo-0001109324,Aspleniaceae,1.0,1,culpeper-1652,"Spleenwort, or Ceterach",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Aster amellus,wfo-0000104449,Asteraceae,1.0,1,pliny,ASTER OR BUBONION,0.9091,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Campanula erinus,wfo-0000827127,Campanulaceae,1.0,1,pliny,HERB ERINEON,0.75,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Cardamine enneaphyllos,wfo-0000586737,Brassicaceae,1.0,1,pliny,ENNEAPHYLLON,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Cephalaria scabra,wfo-0000594610,Caprifoliaceae,1.0,1,culpeper-1652,"Scabious, three sorts",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Chondrilla ramosissima,wfo-0000095785,Asteraceae,1.0,1,pliny,CONDRION OR CHONDRYLLA,0.6667,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Cirsium erisithales,wfo-0000013488,Asteraceae,1.0,1,pliny,ERYSITHALES,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Cistus × conradiae,wfo-0000607270,Cistaceae,1.0,1,pliny,CISTHOS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Cyperus cyperinus,wfo-0000370936,Cyperaceae,1.0,1,pliny,CYPERIS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Gnaphalium leontopodium,wfo-0000017685,Asteraceae,1.0,1,pliny,CEMOS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Lepidium coronopus,wfo-0000367646,Brassicaceae,1.0,1,culpeper-1652,Crowfoot,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Lepidium latifolium,wfo-0000358409,Brassicaceae,1.0,1,pliny,DITTANDER,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Onosma echioides,wfo-0000386375,Boraginaceae,1.0,1,pliny,ONOSMA,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Oxalis acetosella,wfo-0000387238,Oxalidaceae,1.0,1,pliny,OXYS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Panicum antidotale,wfo-0000883036,Poaceae,1.0,1,pliny,PLANT MILIARIA,0.6,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Ptisana purpurascens,wfo-0001032940,Marattiaceae,1.0,1,culpeper-1652,Fern,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Ranunculus gmelinii,wfo-0000461020,Ranunculaceae,1.0,1,pliny,LIMEUM,0.6667,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Ranunculus polyanthemos,wfo-0000463507,Ranunculaceae,1.0,1,pliny,POLYANTHEMUM OR RATRACHION,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Serapias lingua,wfo-0000309419,Orchidaceae,1.0,1,pliny,LONCHITIS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Silaum silaus,wfo-0000434202,Apiaceae,1.0,1,pliny,SILAUS,0.8571,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Sparganium erectum,wfo-0000553880,Typhaceae,1.0,1,pliny,SPARGANION,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Taraxacum palustre,wfo-0000058751,Asteraceae,1.0,1,pliny,HEDYPNOÏS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Valeriana saliunca,wfo-0000426872,Caprifoliaceae,1.0,1,pliny,SALIUNCA,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Ilex aquifolium,wfo-0000729203,Aquifoliaceae,0.7,1,pliny,AGRIFOLIA,1.0,False,20,8,False,False,,False,False,not_curated,,,,,,,
-Glaucium flavum,wfo-0000703573,Papaveraceae,0.5,1,pliny,GLAUCION,0.913,False,44,25,False,False,,False,False,not_curated,,,,,,,
-Glebionis segetum,wfo-0000091403,Asteraceae,0.5,1,pliny,CHRYSANTHEMUM,0.6887,False,32,7,False,False,,False,False,not_curated,,,,,,,
-Cytinus hypocistis,wfo-0000636331,Cytinaceae,0.5,1,pliny,HYPOCISTHIS OR OROBETHRON,1.0,False,2,2,True,False,,False,False,not_curated,,,,,,,
-Anthemis rosea,wfo-0000003243,Asteraceae,0.5,1,pliny,ANTHEMIS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Cyperus cyprius,wfo-0000371077,Cyperaceae,0.5,1,pliny,CYPIROS,0.9,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Mercurialis tomentosa,wfo-0000241796,Euphorbiaceae,0.5,1,pliny,ARSENOGONON,0.75,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Thesium linophyllum,wfo-0001134298,Santalaceae,0.5,1,pliny,THESION,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Anemone coronaria,wfo-0000535196,Ranunculaceae,0.4,1,pliny,CHAPLET ANEMONE,1.0,False,23,4,False,False,,False,False,not_curated,,,,,,,
-Cyperus papyrus,wfo-0000379135,Cyperaceae,0.3,1,pliny,MEAL USED FOR PASTING PAPYRUS,1.0,False,8,2,True,False,,False,False,not_curated,,,,,,,
-Achillea milliana,wfo-0000021401,Asteraceae,0.3,1,pliny,MILITARIS,0.75,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Silene coronaria,wfo-0000440513,Caryophyllaceae,0.2,1,pliny,PHLOX,0.7202,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Tragopogon crocifolius,wfo-0000004808,Asteraceae,0.1,1,pliny,TRAGOPOGON,1.0,False,4,1,True,False,,False,False,not_curated,,,,,,,
-Orlaya grandiflora,wfo-0000384789,Apiaceae,0.1,1,pliny,CAUCALIS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
-Malus × domestica,wfo-0001008355,Rosaceae,0.0,1,culpeper-1652,Apples,1.0,False,184,64,False,False,,False,False,not_curated,,,,,,,
-Polypodium vulgare,wfo-0001107395,Polypodiaceae,0.0,1,culpeper-1652,Golden Maidenhair,1.0,False,68,21,False,False,,False,False,not_curated,,,,,,,
-Rheum rhabarbarum,wfo-0000404478,Polygonaceae,0.0,1,culpeper-1652,"Rubarb, or Rhapontick",0.848,False,46,25,False,False,,False,False,not_curated,,,,,,,
-Erysimum cheiranthoides,wfo-0000678580,Brassicaceae,0.0,1,culpeper-1652,Treacle Mustard,0.6988,False,21,6,False,False,,False,False,not_curated,,,,,,,
-Vitis coignetiae,wfo-0000421604,Vitaceae,0.0,1,culpeper-1652,The Vine,1.0,False,16,7,False,False,,False,False,not_curated,,,,,,,
-Rumex alpinus,wfo-0000403554,Polygonaceae,0.0,1,culpeper-1652,"Garden Patience, or Monks Rubard",1.0,False,3,2,True,False,,False,False,not_curated,,,,,,,
-Liparis loeselii,wfo-0000228284,Orchidaceae,0.0,1,culpeper-1652,"Bifoyl, or Twayblade",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,
+acceptedName,wfoId,family,attestations,sources,sourceList,namesAsWritten,minConfidence,anyDisputed,nCompounds,nReferences,poorCoverage,toxicConfusion,excludedByDecision,eligible,proposed,toxicity,toxicityNote,toxicitySource,toxicityUrl,toxicityQuote,toxicityBasis,toxicityVerifiedBy,reviewDecision,approved,headline,reReviewRequested
+Artemisia absinthium,wfo-0000134589,Asteraceae,12.0,2,"culpeper-1652, pliny",ABSINTHIUM OR WORMWOOD; Wormwood,0.7636,False,153,47,False,False,,True,True,concern_reported,EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders.,"EMA/HMPC, EU herbal medicine summary for the public (wormwood herb)",https://www.ema.europa.eu/en/documents/herbal-summary/wormwood-herb-summary-public_en.pdf,"They must also not be taken by patients with bile duct obstruction, cholangitis (inflammation of the bile ducts) or liver disease.",ai_drafted_unverified,,approve,yes,True,False
+Agrimonia eupatoria,wfo-0001006654,Rosaceae,6.0,2,"culpeper-1652, pliny",Agrimony; EUPATORIA,0.75,False,21,6,False,False,,True,True,no_toxicity_reported,EMA reported no side effects at its assessment; this is not evidence of safety.,"EMA/HMPC, EU herbal medicine summary for the public (agrimony)",https://www.ema.europa.eu/en/documents/herbal-summary/agrimony-summary-public_en.pdf,"At the time of the HMPC assessment, no side effects had been reported with these medicines.",ai_drafted_unverified,,approve,yes,True,False
+Crocus sativus,wfo-0000788844,Iridaceae,5.0,2,"culpeper-1652, pliny",SAFFRON; Saffron,0.75,False,151,60,False,False,,True,True,toxic_reported,A review reports adverse effects in humans above about 5 g/day and moderate toxicity of an ethanolic extract in zebrafish.,"Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC12729493/,"Although doses exceeding 5 g/day in humans may lead to adverse effects, the IC 50 of saffron ethanolic extract in zebrafish was determined to be 1021.374 mg/L, indicating moderate toxicity.",ai_drafted_unverified,,approve,yes,True,False
+Ajuga chamaepitys,wfo-0000933181,Lamiaceae,4.0,2,"culpeper-1652, pliny","CHAMÆPITYS; Ground Pine, or Chamepitys",0.9808,False,46,7,False,False,,True,True,no_toxicity_reported,"Invertebrate assays only (Daphnia, Artemia); the same paper reports toxicity to Daphnia pulex at high concentration. No mammalian data; not evidence of safety.","Primary study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC11085171/,"The extract was virtually non-toxic to Daphnia magna throughout the exposure period, with the highest recorded average lethality being 10%.",ai_drafted_unverified,,approve,yes,True,False
+Symphytum officinale,wfo-0000432219,Boraginaceae,4.0,2,"culpeper-1652, pliny","ALUM, ALSO CALLED SYMPHYTON PETRÆON; Comfry",0.696,False,37,21,False,False,,True,True,toxic_reported,EMA: comfrey root contains pyrrolizidine alkaloids that are toxic to the liver when taken by mouth.,"EMA/HMPC, EU herbal medicine summary for the public (comfrey root)",https://www.ema.europa.eu/en/documents/herbal-summary/comfrey-root-summary-public_en.pdf,"Comfrey root contains substances known as pyrrolizidine alkaloids, which have toxic effects on the liver when taken by mouth.",ai_drafted_unverified,,reject,no,False,True
+Ranunculus ficaria,wfo-0000460581,Ranunculaceae,4.0,2,"culpeper-1652, pliny","CHELIDONIA; The Iesser Celondine, usually known by the Name of Pilewort",1.0,False,17,4,False,False,,True,True,toxic_reported,A single human case report of acute toxic liver injury attributed to lesser celandine.,"Case report, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC4342611/,This case is the first to explain hepatotoxicity caused by lesser celandine.,ai_drafted_unverified,,approve,yes,True,False
+Glycyrrhiza glabra,wfo-0000212813,Fabaceae,3.0,2,"culpeper-1652, pliny",GLYCYRRHIZA OR ADIPSOS; Liquoris,1.0,False,461,131,False,False,,True,True,toxic_reported,"EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders.","EMA/HMPC, EU herbal monograph (Glycyrrhiza spp., radix, revision 1)",https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-glycyrrhiza-glabra-l-glycyrrhiza-inflata-bat-glycyrrhiza-uralensis-fisch-radix-revision-1_en.pdf,"Cases of overdose have been reported with prolonged use (more than 4 weeks) and/or intake of high amount of liquorice, with symptoms such as water retention, hypokalaemia, hypertension, cardiac rhythm disorders, and hypertensive encephalopathy.",ai_drafted_unverified,,approve,yes,True,False
+Hyssopus officinalis,wfo-0000217205,Lamiaceae,3.0,2,"culpeper-1652, pliny",HYSSOP; Hysop,0.6429,False,80,11,False,False,,True,True,toxic_reported,"Review: ingesting hyssop essential oil may cause convulsions (pinocamphone). About the essential oil, not whole-herb preparations.","Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC7956842/,Ingestion of hyssop oil might cause epileptiform convulsions [ 207 ] and seizures due to its high pinocamphone content [ 121 ].,ai_drafted_unverified,,approve,yes,True,False
+Pastinaca sativa,wfo-0000391752,Apiaceae,3.0,2,"culpeper-1652, pliny",ELAPHOBOSCON; Parsnip,0.8571,False,23,18,False,False,,True,True,concern_reported,Review: phototoxicity on skin contact (furanocoumarins).,"Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC8010426/,A main mentioned side effect of parsnip is phototoxicity that was usually reported in direct skin contact.,ai_drafted_unverified,,approve,yes,True,False
+Galium aparine,wfo-0000968296,Rubiaceae,3.0,2,"culpeper-1652, pliny","Cleavers, or Goosgrass; PHILANTHROPOS",0.8351,False,19,8,False,False,,True,True,no_toxicity_reported,In vitro cell assay only; no in vivo toxicity source located. Not evidence of safety.,"Primary study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC11267910/,The results of the viability assay showed no cytotoxicity effects on human umbilical endothelial cell (HUVEC) and normal human dermal fibroblast (NHDF) cell lines treated with different concentrations of whole plant extract and cell viability increased in a dose-dependent manner.,ai_drafted_unverified,,approve,yes,True,False
+Chelidonium majus,wfo-0000600655,Papaveraceae,7.0,1,culpeper-1652,Celandine,0.9231,False,69,51,False,False,,True,True,toxic_reported,"EMA public statement: products withdrawn in some EU countries over reported adverse effects, particularly liver toxicity.","EMA/HMPC, public statement (Chelidonium majus L., herba)",https://www.ema.europa.eu/en/documents/public-statement/final-public-statement-chelidonium-majus-l-herba_en.pdf,"In some European countries marketing authorisations for medicinal products containing Chelidonium majus have been withdrawn because of concerns with reported adverse effects, particularly liver toxicity.",ai_drafted_unverified,,approve,yes,True,False
+Hyoscyamus niger,wfo-0001021850,Solanaceae,6.0,1,culpeper-1652,Henbane,0.8609,False,78,18,False,False,,True,True,toxic_reported,"Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal.","Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC4224707/,"One of the most important and geographically common plants is Hyoscyamus Niger with therapeutic and possible toxic effects, which may be even fatal.",ai_drafted_unverified,,approve,yes,True,False
+Raphanus sativus,wfo-0000402430,Brassicaceae,5.0,1,pliny,CULTIVATED RADISH,1.0,False,248,61,False,False,,True,True,concern_reported,"Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning.","Systematic review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC11012840/,A noticeable influence on thyroid activity by radish root was observed in two studies on rats ( Table 6 ).,ai_drafted_unverified,,approve,yes,True,False
+Salvia sclarea,wfo-0000302258,Lamiaceae,4.0,1,culpeper-1652,Clary,1.0,False,136,23,False,False,,True,True,no_toxicity_reported,In vitro cell assay only; the same paper notes a modest drop in HEK 293 viability at the highest concentrations. Not evidence of safety.,"Primary study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC13075098/,"After treatment of HEK 293 and HaCaT cells with increasing concentrations of S. sclarea and S. pratensis extracts (10–200 µg/mL), no significant increase in lactate dehydrogenase (LDH) release was observed compared to the control, indicating that the extracts did not induce detectable cytotoxicity or membrane damage in the tested cell lines after 24 h, as indicates Figure 7 .",ai_drafted_unverified,,approve,yes,True,False
+Euphorbia antiquorum,wfo-0000960724,Euphorbiaceae,4.0,1,pliny,ACHÆMENIS OR HIPPOPHOBAS,1.0,False,43,21,False,False,,True,True,toxic_reported,"Genus-level review: the latex of most Euphorbia species is toxic, causing severe skin irritation and possibly blindness. Not specific to E. antiquorum. (Replaces an earlier no_toxicity_reported entry from a root-extract test, after review.)","Review of Euphorbia species, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC11821031/,"However, it is critical to note that the latex produced by most Euphorbia species is toxic and can induce severe skin irritation and potentially lead to blindness.",ai_drafted_unverified,,unsure,no,False,False
+Papaver somniferum,wfo-0000480963,Papaveraceae,3.3,1,pliny,BLACK POPPY; WHITE POPPY,1.0,False,108,118,False,False,,True,True,toxic_reported,Review and case study: tea from unwashed poppy seeds can carry enough morphine to cause dependence.,"Review and case study, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC6513924/,Unwashed poppy seeds may contain sufficient alkaloid residue to produce tea with a substantial morphine content to the extent that regular users can develop dependence and opioid use disorder.,ai_drafted_unverified,,approve,yes,True,False
+Humulus lupulus,wfo-0000725866,Cannabaceae,3.0,1,culpeper-1652,Hops,0.963,False,484,128,False,False,,True,True,no_toxicity_reported,EMA reported no side effects at its assessment; this is not evidence of safety.,"EMA/HMPC, EU herbal medicine summary for the public (hop strobile)",https://www.ema.europa.eu/en/documents/herbal-summary/hop-strobile-summary-public_en.pdf,"At the time of the HMPC assessment, no side effects had been reported with these medicines.",ai_drafted_unverified,,approve,yes,True,False
+Allium cepa,wfo-0000755919,Amaryllidaceae,3.0,1,culpeper-1652,Onions,0.9,False,319,107,False,False,,True,True,toxic_reported,"Veterinary review: onion causes oxidative haemolysis (anaemia) in cats, dogs and cattle. Animal evidence, not human.","Veterinary review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC9495094/,"Cats, dogs and cattle appear most susceptible to the onion’s toxic effects, whereas sheep and goats are more resistant.",ai_drafted_unverified,,approve,yes,True,False
+Coriandrum sativum,wfo-0000621274,Apiaceae,3.0,1,pliny,CORIANDER,1.0,False,157,29,False,False,,True,True,data_lacking,Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA).,"Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC9314633/,"Although the safety of coriander has been confirmed by the United States Food and Drug Administration (FDA) and the Flavor and Extract Manufacturers Association (FEMA), further studies are recommended to investigate the toxicity and adverse effects of this plant when consumed at higher doses and longer periods of time.",ai_drafted_unverified,,approve,yes,True,False
+Lavandula angustifolia,wfo-0000224116,Lamiaceae,3.0,1,culpeper-1652,Lavender,0.875,False,107,11,False,False,,True,True,data_lacking,"EMA monograph: reproductive toxicity, genotoxicity and carcinogenicity have not been tested.","EMA/HMPC, EU herbal monograph (Lavandula angustifolia, flos)",https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-lavandula-angustifolia-p-mill-flos_en.pdf,"Tests on reproductive toxicity, genotoxicity and carcinogenicity have not been performed.",ai_drafted_unverified,,unsure,no,False,True
+Carum carvi,wfo-0000588460,Apiaceae,3.0,1,culpeper-1652,Caraway,1.0,False,77,13,False,False,,True,True,concern_reported,"EMA contraindicates caraway fruit medicines in allergy to caraway, other Apiaceae, mugwort or birch.","EMA/HMPC, EU herbal medicine summary for the public (caraway fruit)",https://www.ema.europa.eu/en/documents/herbal-summary/caraway-fruit-summary-public_en.pdf,"Caraway fruit medicines must not be used in patients who are hypersensitive (allergic) to caraway fruit or other plants of the Apiaceae (Umbelliferae) family (fennel, anise, celery, coriander and dill), to mugwort or birch.",ai_drafted_unverified,,approve,yes,True,False
+Citrullus colocynthis,wfo-0000607845,Cucurbitaceae,3.0,1,pliny,COLOCYNTHIS,1.0,False,74,18,False,False,,True,True,toxic_reported,Human case report: multiorgan toxicity after eating the fruit.,"Case report, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC12522648/,"Citrullus colocynthis , a plant traditionally used for its purgative properties, is known for its severe toxicity when consumed in excessive amounts.",ai_drafted_unverified,,approve,yes,True,False
+Dioscorea communis,wfo-0000389997,Dioscoreaceae,3.0,1,pliny,"ASTAPHISAGRIA, OTHERWISE CALLED STAPHIS OR TAMINIA",1.0,False,42,19,False,False,,True,True,concern_reported,Review: the rhizome extract irritates the skin (the source frames this as therapeutic). No poisoning source located.,"Review, PMC (open access)",https://pmc.ncbi.nlm.nih.gov/articles/PMC8949886/,"The TCR extract has an irritating effect on the skin, thus improving the blood supply to the affected area [ 1 ].",ai_drafted_unverified,,reject,no,False,False
+Centaurium erythraea,wfo-0000593916,Gentianaceae,3.0,1,pliny,"CENTAURION LEPTON, OR LIBADION, KNOWN ALSO AS FEL TERRÆ; CENTAURIS TRIORCHIS",0.9818,False,36,19,False,False,,True,True,concern_reported,EMA contraindicates centaury medicines in stomach ulcers; no side effects had been reported at its assessment.,"EMA/HMPC, EU herbal medicine summary for the public (centaury)",https://www.ema.europa.eu/en/documents/herbal-summary/centaury-summary-public_en.pdf,Centaury medicines should not be taken by people with ulcers in the stomach.,ai_drafted_unverified,,unsure,no,False,True
+Filipendula ulmaria,wfo-0000983427,Rosaceae,3.0,1,culpeper-1652,"Queen of the Meadows, Meadow-sweet, or Mead-sweet",0.8485,False,25,8,False,False,,True,True,concern_reported,EMA monograph: contraindicated in hypersensitivity to salicylates; not recommended with salicylates or NSAIDs without medical advice.,"EMA/HMPC, EU herbal monograph (Filipendula ulmaria, herba)",https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-filipendula-ulmaria-l-maxim-herba-first-version_en.pdf,Concomitant use with salicylates and other NSAIDs is not recommended without medical advice.,ai_drafted_unverified,,approve,yes,True,False
+Betonica officinalis,wfo-0000329771,Lamiaceae,3.0,1,culpeper-1652,Wood-Betony,0.6,False,22,8,False,False,,True,True,unknown,No reputable open source on toxicity located in this session (genus-level Stachys reviews cover other species only). Not evidence of safety.,,,,ai_drafted_unverified,,approve,yes,True,False
+Cuscuta epithymum,wfo-0001296657,Convolvulaceae,6.0,2,"culpeper-1652, pliny","Dodder of Time, or Epithimum, and other Dodders; EPITHYMON OR HIPPOPHEOS",0.9231,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Mercurialis perennis,wfo-0000241769,Euphorbiaceae,5.0,2,"culpeper-1652, pliny",Dogs Mercury; PHYLLON,1.0,False,2,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Asplenium scolopendrium,wfo-0001110391,Aspleniaceae,4.0,2,"culpeper-1652, pliny",HERB CALLED LINGUA; Harts-Tongue,1.0,False,3,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Parietaria judaica,wfo-0000473199,Urticaceae,3.5,2,"culpeper-1652, pliny",PERDICIUM; Pellitory of the Wall,0.6667,False,1,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Argentina anserina,wfo-0001009478,Rosaceae,3.0,2,"culpeper-1652, pliny","STEPHANOMELIS; VVild Tansie, or Silverweed",0.8889,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Triticum aestivum,wfo-0000905667,Poaceae,2.5,2,"culpeper-1652, pliny",SPELT; Wheat,0.723,False,274,79,False,False,,False,False,not_curated,,,,,,,,,False,False
+Asparagus officinalis,wfo-0000634022,Asparagaceae,2.0,2,"culpeper-1652, pliny","Asparagus, Sparagus, or Sperage; GARDEN ASPARAGUS",0.9534,False,157,48,False,False,,False,False,not_curated,,,,,,,,,False,False
+Crithmum maritimum,wfo-0001068458,Apiaceae,2.0,2,"culpeper-1652, pliny",CRETHMOS AGRIOS; Sampire,0.6563,False,31,9,False,False,,False,False,not_curated,,,,,,,,,False,False
+Centaurea calcitrapa,wfo-0000137211,Asteraceae,2.0,2,"culpeper-1652, pliny",HIPPOPHÆSTON; Star-thistle,0.6667,False,28,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Dipsacus fullonum,wfo-0000651022,Caprifoliaceae,2.0,2,"culpeper-1652, pliny","LABRUM VENEREUM; The Fullers Thistle, or Teasel",0.6667,False,4,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Artemisia abrotanum,wfo-0000024341,Asteraceae,1.7,2,"culpeper-1652, pliny",ABROTONUM; Southernwood,0.913,False,34,7,False,False,,False,False,not_curated,,,,,,,,,False,False
+Petroselinum crispum,wfo-0000745326,Apiaceae,1.5,2,"culpeper-1652, pliny",PETROSELINON; Parsley,1.0,False,119,34,False,False,,False,False,not_curated,,,,,,,,,False,False
+Centaurea cyanus,wfo-0000008997,Asteraceae,1.5,2,"culpeper-1652, pliny",Bluebottles; CYANOS,1.0,False,42,16,False,False,,False,False,not_curated,,,,,,,,,False,False
+Isatis tinctoria,wfo-0000732433,Brassicaceae,1.3,2,"culpeper-1652, pliny",ISATIS; Woad,1.0,False,175,30,False,False,,False,False,not_curated,,,,,,,,,False,False
+Rosa spinosissima,wfo-0001014557,Rosaceae,7.0,1,pliny,ROSE,0.6977,False,5,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Lupinus caudatus,wfo-0000174702,Fabaceae,3.1,1,pliny,LUPINES; OIL OF LUPINES,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Moricandia arvensis,wfo-0000369713,Brassicaceae,3.0,1,pliny,WILD CABBAGE,0.6065,False,19,3,False,False,"Attested only by Pliny 20.36 (WILD CABBAGE), through a single 19th-century Bostock & Riley footnote ('Brassica arvensis') that itself reports Fée's view that Pliny conflated two different plants.",False,False,not_curated,,,,,,,,,False,False
+Asarum europaeum,wfo-0000550828,Aristolochiaceae,3.0,1,culpeper-1652,Asarabacca,1.0,False,8,4,True,False,,False,False,not_curated,,,,,,,,,False,False
+Hylotelephium telephium,wfo-0000726974,Crassulaceae,3.0,1,culpeper-1652,Orpine,1.0,False,7,3,True,False,,False,False,not_curated,,,,,,,,,False,False
+Scrophularia auriculata,wfo-0000495559,Scrophulariaceae,3.0,1,culpeper-1652,Water-Betony,1.0,False,3,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Persicaria maculosa,wfo-0000488462,Polygonaceae,3.0,1,pliny,CRATÆGONON,1.0,False,2,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Urtica urens,wfo-0000416948,Urticaceae,3.0,1,pliny,NETTLE,0.8781,False,2,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Pulmonaria officinalis,wfo-0000397533,Boraginaceae,3.0,1,culpeper-1652,Lungwort,1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Asplenium hemionitis,wfo-0001114329,Aspleniaceae,3.0,1,pliny,"ASPLENON OR HEMIONION; TEUCRION, HEMIONION, OR SPLENION",0.8,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Iris planifolia,wfo-0000783727,Iridaceae,3.0,1,pliny,IRIS,0.8907,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Potentilla rivalis,wfo-0001016975,Rosaceae,3.0,1,culpeper-1652,"Cinkfoyl, or Five Leaved . Grass Called in some Countries, Five finger'd Grass",0.6667,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Ranunculus straussii,wfo-0000462314,Ranunculaceae,3.0,1,pliny,"BATRACHION, RANUNCULUS, OR STRUMUS",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Rhoicissus tomentosus,wfo-0001145366,Vitaceae,3.0,1,culpeper-1652,"Briony, or VVild Vine",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Onopordum acanthium,wfo-0000129725,Asteraceae,2.5,1,pliny,ACANOS; ACANTHION; ONOPORDON,1.0,False,6,4,True,False,,False,False,not_curated,,,,,,,,,False,False
+Pistacia lentiscus,wfo-0000394118,Anacardiaceae,2.1,1,pliny,LENTISK; OIL OF MASTICH,1.0,False,53,8,False,False,,False,False,not_curated,,,,,,,,,False,False
+Phaseolus vulgaris,wfo-0000183282,Fabaceae,2.0,1,culpeper-1652,Beans; French-Beans,1.0,False,660,154,False,False,,False,False,not_curated,,,,,,,,,False,False
+Cannabis sativa,wfo-0000584001,Cannabaceae,2.0,1,culpeper-1652,Hemp,1.0,False,526,86,False,False,,False,False,not_curated,,,,,,,,,False,False
+Daucus carota,wfo-0000638442,Apiaceae,2.0,1,culpeper-1652,Carrots,1.0,False,414,118,False,False,,False,False,not_curated,,,,,,,,,False,False
+Foeniculum vulgare,wfo-0000691487,Apiaceae,2.0,1,culpeper-1652,Fennel,0.9462,False,382,66,False,False,,False,False,not_curated,,,,,,,,,False,False
+Brassica rapa,wfo-0000571544,Brassicaceae,2.0,1,pliny,WILD RAPE,0.7591,False,281,91,False,False,,False,False,not_curated,,,,,,,,,False,False
+Brassica napus,wfo-0000571271,Brassicaceae,2.0,1,pliny,RAPE,0.678,False,242,65,False,False,,False,False,not_curated,,,,,,,,,False,False
+Nigella sativa,wfo-0000380671,Ranunculaceae,2.0,1,pliny,"GITH, OR MELANTHION",1.0,False,236,40,False,False,,False,False,not_curated,,,,,,,,,False,False
+Ruta graveolens,wfo-0000463744,Rutaceae,2.0,1,culpeper-1652,Garden Rue,1.0,False,204,76,False,False,,False,False,not_curated,,,,,,,,,False,False
+Tanacetum parthenium,wfo-0000079801,Asteraceae,2.0,1,culpeper-1652,Featherfew,0.9635,False,194,61,False,False,,False,False,not_curated,,,,,,,,,False,False
+Juniperus communis,wfo-0000355532,Cupressaceae,2.0,1,pliny,JUNIPER,0.8906,False,193,34,False,False,,False,False,not_curated,,,,,,,,,False,False
+Tanacetum vulgare,wfo-0000114512,Asteraceae,2.0,1,culpeper-1652,Garden Tansie,1.0,False,182,55,False,False,,False,False,not_curated,,,,,,,,,False,False
+Prunus domestica,wfo-0000984349,Rosaceae,2.0,1,culpeper-1652,Plums,0.841,False,179,44,False,False,,False,False,not_curated,,,,,,,,,False,False
+Artemisia vulgaris,wfo-0000115588,Asteraceae,2.0,1,culpeper-1652,Mugwort,0.8194,False,163,27,False,False,,False,False,not_curated,,,,,,,,,False,False
+Persea americana,wfo-0000465160,Lauraceae,2.0,1,culpeper-1652,The Pear-tree,1.0,False,157,36,False,False,,False,False,not_curated,,,,,,,,,False,False
+Petasites hybridus,wfo-0000045336,Asteraceae,2.0,1,culpeper-1652,The Butter-Bur,1.0,False,154,27,False,False,,False,False,not_curated,,,,,,,,,False,False
+Cichorium endivia,wfo-0000121598,Asteraceae,2.0,1,culpeper-1652,Endive,1.0,False,141,12,False,False,,False,False,not_curated,,,,,,,,,False,False
+Digitalis purpurea,wfo-0000647394,Plantaginaceae,2.0,1,culpeper-1652,Foxglove,1.0,False,140,59,False,False,,False,False,not_curated,,,,,,,,,False,False
+Melissa officinalis,wfo-0000240053,Lamiaceae,2.0,1,culpeper-1652,Balm,1.0,False,139,25,False,False,,False,False,not_curated,,,,,,,unsure,no,False,True
+Cichorium intybus,wfo-0000080671,Asteraceae,2.0,1,culpeper-1652,Succory,1.0,False,136,46,False,False,,False,False,not_curated,,,,,,,,,False,False
+Nerium oleander,wfo-0000251577,Apocynaceae,2.0,1,pliny,MADDENING HONEY,1.0,False,133,35,False,False,,False,False,not_curated,,,,,,,,,False,False
+Portulaca oleracea,wfo-0000484425,Portulacaceae,2.0,1,culpeper-1652,Purslane,0.9008,False,127,27,False,False,,False,False,not_curated,,,,,,,,,False,False
+Anethum graveolens,wfo-0000536042,Apiaceae,2.0,1,culpeper-1652,Dill,1.0,False,116,32,False,False,,False,False,not_curated,,,,,,,,,False,False
+Hedera helix,wfo-0000979730,Araliaceae,2.0,1,culpeper-1652,Ivy,1.0,False,110,40,False,False,,False,False,not_curated,,,,,,,,,False,False
+Marchantia polymorpha,wfo-0001196533,Marchantiaceae,2.0,1,culpeper-1652,Liverwort,1.0,False,103,34,False,False,,False,False,not_curated,,,,,,,,,False,False
+Lactuca sativa,wfo-0000128816,Asteraceae,2.0,1,culpeper-1652,Lettice,1.0,False,100,40,False,False,,False,False,not_curated,,,,,,,,,False,False
+Mentha pulegium,wfo-0000241235,Lamiaceae,2.0,1,culpeper-1652,Peny-royal,0.9524,False,98,26,False,False,,False,False,not_curated,,,,,,,,,False,False
+Levisticum officinale,wfo-0000360816,Apiaceae,2.0,1,culpeper-1652,Lovage,0.875,False,64,18,False,False,,False,False,not_curated,,,,,,,,,False,False
+Origanum majorana,wfo-0000260658,Lamiaceae,2.0,1,culpeper-1652,Sweet Marjerom,1.0,False,63,13,False,False,,False,False,not_curated,,,,,,,,,False,False
+Prunella vulgaris,wfo-0000283746,Lamiaceae,2.0,1,culpeper-1652,Self-heal,1.0,False,62,20,False,False,,False,False,not_curated,,,,,,,,,False,False
+Dittrichia viscosa,wfo-0000059214,Asteraceae,2.0,1,pliny,CONYZA,0.6061,False,59,18,False,False,,False,False,not_curated,,,,,,,,,False,False
+Ruscus aculeatus,wfo-0000732428,Asparagaceae,2.0,1,culpeper-1652,Butchers-Broom,1.0,False,56,14,False,False,,False,False,not_curated,,,,,,,,,False,False
+Verbena officinalis,wfo-0000332143,Verbenaceae,2.0,1,culpeper-1652,Vervain,0.6869,False,53,27,False,False,,False,False,not_curated,,,,,,,,,False,False
+Aconitum lycoctonum,wfo-0000517589,Ranunculaceae,2.0,1,pliny,MYOPHONUM,0.75,False,51,25,False,False,,False,False,not_curated,,,,,,,,,False,False
+Nepeta cataria,wfo-0000250846,Lamiaceae,2.0,1,culpeper-1652,"Nep, or Catmint",0.6253,False,45,18,False,False,,False,False,not_curated,,,,,,,,,False,False
+Fumaria officinalis,wfo-0000693355,Papaveraceae,2.0,1,culpeper-1652,Fumitory,0.7362,False,44,23,False,False,,False,False,not_curated,,,,,,,,,False,False
+Potentilla erecta,wfo-0000984938,Rosaceae,2.0,1,culpeper-1652,Tormentil,1.0,False,43,10,False,False,,False,False,not_curated,,,,,,,,,False,False
+Nepeta tuberosa,wfo-0000251432,Lamiaceae,2.0,1,pliny,WILD MINT,0.8808,False,38,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Linaria vulgaris,wfo-0000446438,Plantaginaceae,2.0,1,culpeper-1652,"Flaxweed, or Toadflax",0.7423,False,35,14,False,False,,False,False,not_curated,,,,,,,,,False,False
+Senecio vulgaris,wfo-0000011329,Asteraceae,2.0,1,culpeper-1652,Groundsel,0.8093,False,35,28,False,False,,False,False,not_curated,,,,,,,,,False,False
+Urtica dioica,wfo-0000416616,Urticaceae,2.0,1,culpeper-1652,Nettles,0.9091,False,34,15,False,False,,False,False,not_curated,,,,,,,,,False,False
+Conium maculatum,wfo-0000617964,Apiaceae,2.0,1,culpeper-1652,Hemlock,0.7773,False,33,9,False,False,,False,False,not_curated,,,,,,,,,False,False
+Centaurea benedicta,wfo-0000034687,Asteraceae,2.0,1,culpeper-1652,Our Ladies Thistle,1.0,False,31,10,False,False,,False,False,not_curated,,,,,,,,,False,False
+Glechoma hederacea,wfo-0000972872,Lamiaceae,2.0,1,culpeper-1652,"Alehoof, or Ground-Ivy",0.9714,False,31,10,False,False,,False,False,not_curated,,,,,,,,,False,False
+Plantago coronopus,wfo-0000487725,Plantaginaceae,2.0,1,culpeper-1652,Bucks-horn Plantane,1.0,False,29,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Leonurus cardiaca,wfo-0000224637,Lamiaceae,2.0,1,culpeper-1652,Motherwort,1.0,False,28,15,False,False,,False,False,not_curated,,,,,,,,,False,False
+Myrrhis odorata,wfo-0000371898,Apiaceae,2.0,1,culpeper-1652,Sweet Chervil OR Sweet Cicely,0.9091,False,26,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Sonchus oleraceus,wfo-0000069236,Asteraceae,2.0,1,culpeper-1652,Sow-Thistles,0.7391,False,26,5,False,False,,False,False,not_curated,,,,,,,,,False,False
+Salvia rosmarinus,wfo-0000302167,Lamiaceae,2.0,1,culpeper-1652,Rosemary,0.85,False,25,13,False,False,,False,False,not_curated,,,,,,,,,False,False
+Sambucus ebulus,wfo-0000439387,Viburnaceae,2.0,1,pliny,ACTE OR EBULUM; EBULUM,0.9836,False,25,12,False,False,,False,False,not_curated,,,,,,,,,False,False
+Peucedanum ostruthium,wfo-0000391825,Apiaceae,2.0,1,culpeper-1652,Masterwort,0.7619,False,24,12,False,False,,False,False,not_curated,,,,,,,,,False,False
+Quercus coccifera,wfo-0000290191,Fagaceae,2.0,1,pliny,EMPLOYMENT OF PLANTS FOR DYEING,1.0,False,24,1,False,False,,False,False,not_curated,,,,,,,,,False,False
+Crataegus germanica,wfo-0000990421,Rosaceae,2.0,1,culpeper-1652,The Medlar,0.8182,False,22,5,False,False,,False,False,not_curated,,,,,,,,,False,False
+Smyrnium perfoliatum,wfo-0000431294,Apiaceae,2.0,1,pliny,SMYRNION,1.0,False,22,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Descurainia sophia,wfo-0000641996,Brassicaceae,2.0,1,culpeper-1652,Flixweed,0.7727,False,21,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Galium verum,wfo-0000970562,Rubiaceae,2.0,1,culpeper-1652,Ladies-Bedstraw,1.0,False,21,7,False,False,,False,False,not_curated,,,,,,,,,False,False
+Ecballium elaterium,wfo-0000659225,Cucurbitaceae,2.0,1,pliny,WILD CUCUMBER,0.6733,False,19,20,False,False,,False,False,not_curated,,,,,,,,,False,False
+Cynoglossum officinale,wfo-0000634152,Boraginaceae,2.0,1,culpeper-1652,Houndstongue,0.9841,False,16,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Geranium robertianum,wfo-0000701246,Geraniaceae,2.0,1,culpeper-1652,Herb Robert,1.0,False,16,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Persicaria bistorta,wfo-0000488076,Polygonaceae,2.0,1,culpeper-1652,"Bistort, or Snakeweed",0.7638,False,14,8,False,False,,False,False,not_curated,,,,,,,,,False,False
+Aegopodium podagraria,wfo-0000521573,Apiaceae,2.0,1,culpeper-1652,Bishops-weed,0.7653,False,12,1,False,False,,False,False,not_curated,,,,,,,,,False,False
+Teucrium scordium,wfo-0000322612,Lamiaceae,2.0,1,pliny,SCORDOTIS OR SCORDION,0.6585,False,12,8,False,False,,False,False,not_curated,,,,,,,,,False,False
+Gnaphalium uliginosum,wfo-0000075561,Asteraceae,2.0,1,culpeper-1652,Mousear,0.7904,False,11,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Monarda didyma,wfo-0000245316,Lamiaceae,2.0,1,culpeper-1652,"Calamint, or Mountain Mint",0.6842,False,11,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Anthriscus cerefolium,wfo-0000538627,Apiaceae,2.0,1,culpeper-1652,Chervil,0.788,False,10,5,False,False,,False,False,not_curated,,,,,,,,,False,False
+Convolvulus scammonia,wfo-0001298534,Convolvulaceae,2.0,1,pliny,SCAMMONY,1.0,False,10,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Cyclamen hederifolium,wfo-0000631783,Primulaceae,2.0,1,pliny,CYCLAMINOS CISSANTHEMOS; CYCLAMINOS OR TUBER TERRÆ,0.9254,False,10,2,False,False,,False,False,not_curated,,,,,,,,,False,False
+Meum athamanticum,wfo-0000372873,Apiaceae,2.0,1,pliny,"MEUM, AND MEUM ATHAMANTICUM",1.0,False,10,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Cynodon dactylon,wfo-0000861178,Poaceae,2.0,1,pliny,GRAMEN,1.0,False,9,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Eruca vesicaria,wfo-0000677413,Brassicaceae,2.0,1,culpeper-1652,Rocket,0.832,False,9,5,True,False,,False,False,not_curated,,,,,,,,,False,False
+Sempervivum tectorum,wfo-0000441750,Crassulaceae,2.0,1,culpeper-1652,"Houfleeks, or Sengreen",0.8,False,9,3,True,False,,False,False,not_curated,,,,,,,,,False,False
+Centaurea stoebe,wfo-0000044770,Asteraceae,2.0,1,culpeper-1652,Knapweed,0.8,False,8,4,True,False,,False,False,not_curated,,,,,,,,,False,False
+Sanicula europaea,wfo-0000435191,Apiaceae,2.0,1,culpeper-1652,Sanicle,1.0,False,8,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Asparagus acutifolius,wfo-0000631143,Asparagaceae,2.0,1,pliny,"CORRUDA, LIBYCUM, OR ORMINUM",0.6,False,7,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Epilobium roseum,wfo-0000669712,Onagraceae,2.0,1,pliny,ONOTHERAS OR ONEAR,1.0,False,7,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Lathyrus clymenum,wfo-0000212676,Fabaceae,2.0,1,pliny,CLYMENUS,0.9268,False,6,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Thymus serpyllum,wfo-0000324739,Lamiaceae,2.0,1,pliny,WILD THYME,0.8399,False,6,6,True,False,,False,False,not_curated,,,,,,,,,False,False
+Umbilicus rupestris,wfo-0000415401,Crassulaceae,2.0,1,culpeper-1652,"Kidneywort, or WallPenyroyal",1.0,False,6,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Polygonatum multiflorum,wfo-0000716086,Asparagaceae,2.0,1,culpeper-1652,Solomons Seal,0.9031,False,4,3,True,False,,False,False,not_curated,,,,,,,,,False,False
+Scirpoides holoschoenus,wfo-0000533499,Cyperaceae,2.0,1,pliny,HOLOSCHŒNUS,1.0,False,4,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Senecio sarracenicus,wfo-0000123168,Asteraceae,2.0,1,culpeper-1652,Sarasens Consound,1.0,False,4,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Senecio retrorsus,wfo-0000073615,Asteraceae,2.0,1,culpeper-1652,Ragwort,1.0,False,3,3,True,False,,False,False,not_curated,,,,,,,,,False,False
+Sisymbrium officinale,wfo-0000432010,Brassicaceae,2.0,1,culpeper-1652,Hedg-Mustard,0.8623,False,3,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Filipendula vulgaris,wfo-0000999867,Rosaceae,2.0,1,culpeper-1652,"Filipendula, or Dropwort",1.0,False,2,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Paeonia officinalis,wfo-0000480634,Paeoniaceae,2.0,1,culpeper-1652,"Peony, Mas. & Femina",0.75,False,2,5,True,False,,False,False,not_curated,,,,,,,,,False,False
+Echium rubrum,wfo-0000663042,Boraginaceae,2.0,1,pliny,"ALCIBIUM; PSEUDOANCHUSA, ECHIS, OR DORIS",1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Lemna gibba,wfo-0000224424,Araceae,2.0,1,culpeper-1652,Ducksmeat,1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Limonium vulgare,wfo-0000443938,Plumbaginaceae,2.0,1,pliny,"LEMONIUM; LIMONION, OR NEUROIDES",0.9474,False,1,3,True,False,,False,False,not_curated,,,,,,,,,False,False
+Anchusa arvensis,wfo-0000533553,Boraginaceae,2.0,1,culpeper-1652,Borrage & Bugloss,0.7815,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Asplenium ruta-muraria,wfo-0001109353,Aspleniaceae,2.0,1,culpeper-1652,Wall-Rue Or ordinary White Maidenhair,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Botrychium lunaria,wfo-0001109054,Ophioglossaceae,2.0,1,culpeper-1652,Moonwort,0.9474,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Convolvulus cantabrica,wfo-0000155688,Convolvulaceae,2.0,1,pliny,CANTABRICA,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Crossopetalum rhacoma,wfo-0000626468,Celastraceae,2.0,1,pliny,RHACOMA,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Herniaria ciliolata,wfo-0000720656,Caryophyllaceae,2.0,1,culpeper-1652,Rupture wort,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Hypericum capitatum,wfo-0000727453,Hypericaceae,2.0,1,culpeper-1652,"Tutsan, or Park Leaves",0.75,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Iris xiphium,wfo-0000784062,Iridaceae,2.0,1,pliny,XIPHION OR PHASGANION,0.9474,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Ornithopus perpusillus,wfo-0000205797,Fabaceae,2.0,1,culpeper-1652,Birds-Foot,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Rubus pinnatus,wfo-0001016858,Rosaceae,2.0,1,culpeper-1652,The Bramble OR Black-Berry-Bush,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Squilla pancration,wfo-0000738361,Asparagaceae,2.0,1,pliny,PANCRATIUM,0.6818,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Vicia pubescens,wfo-0000212777,Fabaceae,2.0,1,pliny,"ELELISPHACOS, SPHACOS, OR SALVIA",0.7007,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Euphorbia cyparissias,wfo-0000961626,Euphorbiaceae,1.5,1,pliny,CHAMÆCYPARISSOS; CHAMÆPEUCE,1.0,False,30,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Rumex britannica,wfo-0001101334,Polygonaceae,1.3,1,pliny,BRITANNICA,0.878,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Melittis melissophyllum,wfo-0000240105,Lamiaceae,1.2,1,pliny,"APIASTRUM, OR MELISSOPHYLLUM; MELISSOPHYLLUM OR MELITTÆNA",0.9474,False,3,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Anthriscus caucalis,wfo-0000538624,Apiaceae,1.1,1,pliny,ANTHRISCUM,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Valeriana officinalis,wfo-0000426953,Caprifoliaceae,1.0,1,culpeper-1652,Garden Valerian,1.0,False,392,78,False,False,,False,False,not_curated,,,,,,,,,False,False
+Apium graveolens,wfo-0000540626,Apiaceae,1.0,1,culpeper-1652,Smallage,1.0,False,372,59,False,False,,False,False,not_curated,,,,,,,,,False,False
+Achillea millefolium,wfo-0000042097,Asteraceae,1.0,1,culpeper-1652,Yarrow,0.9623,False,256,58,False,False,,False,False,not_curated,,,,,,,,,False,False
+Bellis perennis,wfo-0000072578,Asteraceae,1.0,1,pliny,PLANT CALLED BELLIS,1.0,False,231,15,False,False,,False,False,not_curated,,,,,,,,,False,False
+Tribulus terrestris,wfo-0000457857,Zygophyllaceae,1.0,1,pliny,TRIBULUS,1.0,False,219,52,False,False,,False,False,not_curated,,,,,,,,,False,False
+Teucrium polium,wfo-0000322436,Lamiaceae,1.0,1,pliny,"POLIUM, OR TEUTHRION",1.0,False,184,37,False,False,,False,False,not_curated,,,,,,,,,False,False
+Cydonia oblonga,wfo-0001011708,Rosaceae,1.0,1,culpeper-1652,The Quince-Tree,1.0,False,125,19,False,False,,False,False,not_curated,,,,,,,,,False,False
+Hordeum vulgare,wfo-0000875054,Poaceae,1.0,1,culpeper-1652,Barly,0.9155,False,121,68,False,False,,False,False,not_curated,,,,,,,,,False,False
+Avena sativa,wfo-0000852231,Poaceae,1.0,1,culpeper-1652,Oats,1.0,False,116,46,False,False,,False,False,not_curated,,,,,,,,,False,False
+Thalictrum minus,wfo-0000453930,Ranunculaceae,1.0,1,pliny,THALICTRUM,0.75,False,116,66,False,False,,False,False,not_curated,,,,,,,,,False,False
+Tussilago farfara,wfo-0000117140,Asteraceae,1.0,1,culpeper-1652,"Coltsfoot, or Foalsfoot",1.0,False,94,18,False,False,,False,False,not_curated,,,,,,,,,False,False
+Secale cereale,wfo-0000898524,Poaceae,1.0,1,culpeper-1652,Rye,1.0,False,87,38,False,False,,False,False,not_curated,,,,,,,,,False,False
+Euphorbia lathyris,wfo-0000962968,Euphorbiaceae,1.0,1,pliny,LATHYRIS,1.0,False,80,37,False,False,,False,False,not_curated,,,,,,,,,False,False
+Ononis natrix,wfo-0000212878,Fabaceae,1.0,1,pliny,NATRIX,1.0,False,75,9,False,False,,False,False,not_curated,,,,,,,,,False,False
+Bupleurum rotundifolium,wfo-0000575774,Apiaceae,1.0,1,culpeper-1652,Thoroughwax,0.6,False,73,9,False,False,,False,False,not_curated,,,,,,,,,False,False
+Silybum marianum,wfo-0000014591,Asteraceae,1.0,1,pliny,SILLYBUM,0.8571,False,72,52,False,False,,False,False,not_curated,,,,,,,,,False,False
+Berberis vulgaris,wfo-0000564027,Berberidaceae,1.0,1,culpeper-1652,Barberry,0.6812,False,64,25,False,False,,False,False,not_curated,,,,,,,,,False,False
+Inula helenium,wfo-0000120207,Asteraceae,1.0,1,culpeper-1652,Elecampane,0.9474,False,64,25,False,False,,False,False,not_curated,,,,,,,,,False,False
+Marrubium vulgare,wfo-0000236711,Lamiaceae,1.0,1,culpeper-1652,Horehound,0.6878,False,63,29,False,False,,False,False,not_curated,,,,,,,,,False,False
+Lawsonia inermis,wfo-0000366658,Lythraceae,1.0,1,pliny,PRIVET,0.8199,False,62,21,False,False,,False,False,not_curated,,,,,,,,,False,False
+Populus deltoides,wfo-0000928101,Salicaceae,1.0,1,culpeper-1652,The Poplar-Tree,1.0,False,58,13,False,False,,False,False,not_curated,,,,,,,,,False,False
+Campanula medium,wfo-0000827845,Campanulaceae,1.0,1,pliny,MEDION,0.6545,False,57,10,False,False,,False,False,not_curated,,,,,,,,,False,False
+Onobrychis viciifolia,wfo-0000205013,Fabaceae,1.0,1,pliny,ONOBRYCHIS,1.0,False,56,11,False,False,,False,False,not_curated,,,,,,,,,False,False
+Rubia tinctorum,wfo-0000298644,Rubiaceae,1.0,1,culpeper-1652,Madder,0.9333,False,53,25,False,False,,False,False,not_curated,,,,,,,,,False,False
+Globularia alypum,wfo-0000703791,Plantaginaceae,1.0,1,pliny,ALYPON,1.0,False,47,10,False,False,,False,False,not_curated,,,,,,,,,False,False
+Oenanthe aquatica,wfo-0000385414,Apiaceae,1.0,1,pliny,PHELLANDRION,1.0,False,46,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Stellaria media,wfo-0000436325,Caryophyllaceae,1.0,1,culpeper-1652,Chickweed,0.6577,False,44,9,False,False,,False,False,not_curated,,,,,,,,,False,False
+Alliaria petiolata,wfo-0000526081,Brassicaceae,1.0,1,culpeper-1652,"Sawce alone, or Jack by the Hedg",1.0,False,41,8,False,False,,False,False,not_curated,,,,,,,,,False,False
+Corydalis solida,wfo-0000622894,Papaveraceae,1.0,1,pliny,"FIRST KIND OF CAPNOS, KNOWN ALSO AS CHICKEN’S FOOT",1.0,False,36,28,False,False,,False,False,not_curated,,,,,,,,,False,False
+Eryngium campestre,wfo-0000677787,Apiaceae,1.0,1,pliny,ERYNGE OR ERYNGIUM,0.6,False,36,7,False,False,,False,False,not_curated,,,,,,,,,False,False
+Rhus coriaria,wfo-0000402784,Anacardiaceae,1.0,1,pliny,RHUS OR SUMACH-TREE,1.0,False,33,10,False,False,,False,False,not_curated,,,,,,,,,False,False
+Osyris alba,wfo-0000388250,Santalaceae,1.0,1,pliny,OSYRIS,0.8571,False,31,2,False,False,,False,False,not_curated,,,,,,,,,False,False
+Senegalia mellifera,wfo-0000745787,Fabaceae,1.0,1,culpeper-1652,"The Black-Thorne, or, Sloe-Bush",1.0,False,31,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Lolium temulentum,wfo-0000878503,Poaceae,1.0,1,culpeper-1652,Darnel,1.0,False,28,9,False,False,,False,False,not_curated,,,,,,,,,False,False
+Lysimachia arvensis,wfo-0000744184,Primulaceae,1.0,1,culpeper-1652,Pimpernel,0.6152,False,28,8,False,False,,False,False,not_curated,,,,,,,,,False,False
+Satureja thymbra,wfo-0000304557,Lamiaceae,1.0,1,pliny,TRAGORIGANUM,0.8936,False,28,10,False,False,,False,False,not_curated,,,,,,,,,False,False
+Thlaspi arvense,wfo-0000410873,Brassicaceae,1.0,1,culpeper-1652,Methridate Mustard,1.0,False,28,7,False,False,,False,False,not_curated,,,,,,,,,False,False
+Leontice leontopetalum,wfo-0000361311,Berberidaceae,1.0,1,pliny,LEONTOPETALON OR PARDALION,0.9,False,27,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Reseda luteola,wfo-0000462704,Resedaceae,1.0,1,culpeper-1652,"VVold, VVeld, or Dyers VVeed",0.6722,False,27,9,False,False,,False,False,not_curated,,,,,,,,,False,False
+Ononis spinosa,wfo-0000183372,Fabaceae,1.0,1,culpeper-1652,"Rest-Harrow, or Cammoak",0.8163,False,25,19,False,False,,False,False,not_curated,,,,,,,,,False,False
+Tanacetum balsamita,wfo-0000013170,Asteraceae,1.0,1,culpeper-1652,"Costmary, or Alecost",1.0,False,25,10,False,False,,False,False,not_curated,,,,,,,,,False,False
+Salvia aethiopis,wfo-0000300194,Lamiaceae,1.0,1,pliny,ÆTHIOPIS,0.75,False,23,19,False,False,,False,False,not_curated,,,,,,,,,False,False
+Clinopodium vulgare,wfo-0000893535,Lamiaceae,1.0,1,pliny,"CLINOPODION, CLEONICION, ZOPYRON, OR OCIMOÏDES",1.0,False,19,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Althaea cannabina,wfo-0000528921,Malvaceae,1.0,1,pliny,HEMP,0.8696,False,17,2,False,False,,False,False,not_curated,,,,,,,,,False,False
+Lysimachia nummularia,wfo-0000442792,Primulaceae,1.0,1,culpeper-1652,"Money-wort, or Herb Two-pence",1.0,False,17,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Heracleum sphondylium,wfo-0000720220,Apiaceae,1.0,1,culpeper-1652,Cow-Parsnep,0.6957,False,16,11,False,False,,False,False,not_curated,,,,,,,,,False,False
+Echium vulgare,wfo-0000663145,Boraginaceae,1.0,1,culpeper-1652,Vipers Buglofs,0.8902,False,15,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Hypericum coris,wfo-0000727515,Hypericaceae,1.0,1,pliny,CAROS OR HYPERICON,1.0,False,15,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Euphorbia pithyusa,wfo-0000964037,Euphorbiaceae,1.0,1,pliny,PITYUSA,1.0,False,14,12,False,False,,False,False,not_curated,,,,,,,,,False,False
+Gentiana acaulis,wfo-0000696760,Gentianaceae,1.0,1,pliny,GENTIAN,0.8054,False,14,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Lathyrus aphaca,wfo-0000212673,Fabaceae,1.0,1,pliny,APHACA,0.6923,False,14,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Anagyris foetida,wfo-0000211883,Fabaceae,1.0,1,pliny,ANAGYROS OR ACOPON,1.0,False,13,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Lonicera periclymenum,wfo-0000367818,Caprifoliaceae,1.0,1,pliny,PERICLYMENOS,1.0,False,12,2,False,False,,False,False,not_curated,,,,,,,,,False,False
+Iris foetidissima,wfo-0000783342,Iridaceae,1.0,1,culpeper-1652,Stinking Gladwin,1.0,False,11,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Phalaris aquatica,wfo-0000889597,Poaceae,1.0,1,pliny,PHALARIS,1.0,False,11,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Arisarum vulgare,wfo-0000275694,Araceae,1.0,1,pliny,ARISAROS,1.0,False,10,9,False,False,,False,False,not_curated,,,,,,,,,False,False
+Peucedanum officinale,wfo-0000391810,Apiaceae,1.0,1,culpeper-1652,"Sow-Fennel, or HogsFennel",1.0,False,10,3,False,False,,False,False,not_curated,,,,,,,,,False,False
+Sulla coronaria,wfo-0000737469,Fabaceae,1.0,1,culpeper-1652,Cocks-Head,0.8024,False,10,2,False,False,,False,False,not_curated,,,,,,,,,False,False
+Decodon verticillatus,wfo-0000639120,Lythraceae,1.0,1,culpeper-1652,Loos-strife or WillowHearb,0.6059,False,9,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Sium latifolium,wfo-0000431539,Apiaceae,1.0,1,pliny,SIUM,1.0,False,9,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Gypsophila vaccaria,wfo-0000713816,Caryophyllaceae,1.0,1,pliny,CONDURDUM,0.75,False,8,7,True,False,,False,False,not_curated,,,,,,,,,False,False
+Narcissus poeticus,wfo-0000697659,Amaryllidaceae,1.0,1,pliny,NARCISSUS,0.7639,False,8,10,True,False,,False,False,not_curated,,,,,,,,,False,False
+Paliurus spina-christi,wfo-0000471780,Rhamnaceae,1.0,1,pliny,PALIURUS,0.8696,False,8,3,True,False,,False,False,not_curated,,,,,,,,,False,False
+Lysimachia vulgaris,wfo-0000442301,Primulaceae,1.0,1,pliny,LYSIMACHIA,0.6667,False,7,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Pimpinella saxifraga,wfo-0000391166,Apiaceae,1.0,1,culpeper-1652,Burnet Saxifrage,0.9327,False,7,3,True,False,,False,False,not_curated,,,,,,,,,False,False
+Teucrium canadense,wfo-0000321931,Lamiaceae,1.0,1,culpeper-1652,Germander,0.6667,False,6,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Verbascum blattaria,wfo-0000420104,Scrophulariaceae,1.0,1,pliny,BLATTARIA,0.9474,False,6,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Odontites vulgaris,wfo-0000388701,Orobanchaceae,1.0,1,pliny,ODONTITIS,1.0,False,5,3,True,False,,False,False,not_curated,,,,,,,,,False,False
+Polygala vulgaris,wfo-0000488110,Polygalaceae,1.0,1,pliny,POLYGALA,0.6522,False,5,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Aquilegia formosa,wfo-0000541324,Ranunculaceae,1.0,1,culpeper-1652,Columbines,0.75,False,3,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Reseda alba,wfo-0000462056,Resedaceae,1.0,1,pliny,RESEDA,0.9302,False,3,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Zanthoxylum flavum,wfo-0000429509,Rutaceae,1.0,1,culpeper-1652,Alexander,1.0,False,3,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Centaurea crocodylium,wfo-0000080984,Asteraceae,1.0,1,pliny,CROCODILEON,0.9474,False,2,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Cirsium heterophyllum,wfo-0000014883,Asteraceae,1.0,1,culpeper-1652,The Melancholly Thistle,0.6206,False,2,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Scandix pecten-veneris,wfo-0000434334,Apiaceae,1.0,1,pliny,SCANDIX,0.6,False,2,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Chenopodium vulvaria,wfo-0000601914,Chenopodiaceae,1.0,1,culpeper-1652,Arrach wild & stinking,1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Cormus domestica,wfo-0001003501,Rosaceae,1.0,1,culpeper-1652,The Service-tree,1.0,False,1,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Asparagus aphyllus,wfo-0000631494,Asparagaceae,1.0,1,culpeper-1652,"& Jupit Prickly Asparagus, Sparagus, or Sperage",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Asplenium inexpectatum,wfo-0001109324,Aspleniaceae,1.0,1,culpeper-1652,"Spleenwort, or Ceterach",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Aster amellus,wfo-0000104449,Asteraceae,1.0,1,pliny,ASTER OR BUBONION,0.9091,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Campanula erinus,wfo-0000827127,Campanulaceae,1.0,1,pliny,HERB ERINEON,0.75,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Cardamine enneaphyllos,wfo-0000586737,Brassicaceae,1.0,1,pliny,ENNEAPHYLLON,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Cephalaria scabra,wfo-0000594610,Caprifoliaceae,1.0,1,culpeper-1652,"Scabious, three sorts",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Chondrilla ramosissima,wfo-0000095785,Asteraceae,1.0,1,pliny,CONDRION OR CHONDRYLLA,0.6667,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Cirsium erisithales,wfo-0000013488,Asteraceae,1.0,1,pliny,ERYSITHALES,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Cistus × conradiae,wfo-0000607270,Cistaceae,1.0,1,pliny,CISTHOS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Cyperus cyperinus,wfo-0000370936,Cyperaceae,1.0,1,pliny,CYPERIS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Gnaphalium leontopodium,wfo-0000017685,Asteraceae,1.0,1,pliny,CEMOS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Lepidium coronopus,wfo-0000367646,Brassicaceae,1.0,1,culpeper-1652,Crowfoot,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Lepidium latifolium,wfo-0000358409,Brassicaceae,1.0,1,pliny,DITTANDER,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Onosma echioides,wfo-0000386375,Boraginaceae,1.0,1,pliny,ONOSMA,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Oxalis acetosella,wfo-0000387238,Oxalidaceae,1.0,1,pliny,OXYS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Panicum antidotale,wfo-0000883036,Poaceae,1.0,1,pliny,PLANT MILIARIA,0.6,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Ptisana purpurascens,wfo-0001032940,Marattiaceae,1.0,1,culpeper-1652,Fern,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Ranunculus gmelinii,wfo-0000461020,Ranunculaceae,1.0,1,pliny,LIMEUM,0.6667,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Ranunculus polyanthemos,wfo-0000463507,Ranunculaceae,1.0,1,pliny,POLYANTHEMUM OR RATRACHION,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Serapias lingua,wfo-0000309419,Orchidaceae,1.0,1,pliny,LONCHITIS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Silaum silaus,wfo-0000434202,Apiaceae,1.0,1,pliny,SILAUS,0.8571,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Sparganium erectum,wfo-0000553880,Typhaceae,1.0,1,pliny,SPARGANION,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Taraxacum palustre,wfo-0000058751,Asteraceae,1.0,1,pliny,HEDYPNOÏS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Valeriana saliunca,wfo-0000426872,Caprifoliaceae,1.0,1,pliny,SALIUNCA,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Ilex aquifolium,wfo-0000729203,Aquifoliaceae,0.7,1,pliny,AGRIFOLIA,1.0,False,20,8,False,False,,False,False,not_curated,,,,,,,,,False,False
+Glaucium flavum,wfo-0000703573,Papaveraceae,0.5,1,pliny,GLAUCION,0.913,False,44,25,False,False,,False,False,not_curated,,,,,,,,,False,False
+Glebionis segetum,wfo-0000091403,Asteraceae,0.5,1,pliny,CHRYSANTHEMUM,0.6887,False,32,7,False,False,,False,False,not_curated,,,,,,,,,False,False
+Cytinus hypocistis,wfo-0000636331,Cytinaceae,0.5,1,pliny,HYPOCISTHIS OR OROBETHRON,1.0,False,2,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Anthemis rosea,wfo-0000003243,Asteraceae,0.5,1,pliny,ANTHEMIS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Cyperus cyprius,wfo-0000371077,Cyperaceae,0.5,1,pliny,CYPIROS,0.9,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Mercurialis tomentosa,wfo-0000241796,Euphorbiaceae,0.5,1,pliny,ARSENOGONON,0.75,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Thesium linophyllum,wfo-0001134298,Santalaceae,0.5,1,pliny,THESION,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Anemone coronaria,wfo-0000535196,Ranunculaceae,0.4,1,pliny,CHAPLET ANEMONE,1.0,False,23,4,False,False,,False,False,not_curated,,,,,,,,,False,False
+Cyperus papyrus,wfo-0000379135,Cyperaceae,0.3,1,pliny,MEAL USED FOR PASTING PAPYRUS,1.0,False,8,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Achillea milliana,wfo-0000021401,Asteraceae,0.3,1,pliny,MILITARIS,0.75,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Silene coronaria,wfo-0000440513,Caryophyllaceae,0.2,1,pliny,PHLOX,0.7202,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Tragopogon crocifolius,wfo-0000004808,Asteraceae,0.1,1,pliny,TRAGOPOGON,1.0,False,4,1,True,False,,False,False,not_curated,,,,,,,,,False,False
+Orlaya grandiflora,wfo-0000384789,Apiaceae,0.1,1,pliny,CAUCALIS,1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False
+Malus × domestica,wfo-0001008355,Rosaceae,0.0,1,culpeper-1652,Apples,1.0,False,184,64,False,False,,False,False,not_curated,,,,,,,,,False,False
+Polypodium vulgare,wfo-0001107395,Polypodiaceae,0.0,1,culpeper-1652,Golden Maidenhair,1.0,False,68,21,False,False,,False,False,not_curated,,,,,,,,,False,False
+Rheum rhabarbarum,wfo-0000404478,Polygonaceae,0.0,1,culpeper-1652,"Rubarb, or Rhapontick",0.848,False,46,25,False,False,,False,False,not_curated,,,,,,,,,False,False
+Erysimum cheiranthoides,wfo-0000678580,Brassicaceae,0.0,1,culpeper-1652,Treacle Mustard,0.6988,False,21,6,False,False,,False,False,not_curated,,,,,,,,,False,False
+Vitis coignetiae,wfo-0000421604,Vitaceae,0.0,1,culpeper-1652,The Vine,1.0,False,16,7,False,False,,False,False,not_curated,,,,,,,,,False,False
+Rumex alpinus,wfo-0000403554,Polygonaceae,0.0,1,culpeper-1652,"Garden Patience, or Monks Rubard",1.0,False,3,2,True,False,,False,False,not_curated,,,,,,,,,False,False
+Liparis loeselii,wfo-0000228284,Orchidaceae,0.0,1,culpeper-1652,"Bifoyl, or Twayblade",1.0,False,0,0,True,False,,False,False,not_curated,,,,,,,,,False,False

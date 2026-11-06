@@ -104,8 +104,10 @@ ENTRIES: list[tuple] = [
     ("Salvia sclarea", "no_toxicity_reported", "In vitro cell assay only; the same paper notes a modest drop in HEK 293 viability at the highest concentrations. Not evidence of safety.",
      "pmc", "PMC13075098", "Primary study, PMC (open access)",
      "After treatment of HEK 293 and HaCaT cells with increasing concentrations of S. sclarea and S. pratensis extracts (10–200 µg/mL), no significant increase in lactate dehydrogenase (LDH) release was observed compared to the control, indicating that the extracts did not induce detectable cytotoxicity or membrane damage in the tested cell lines after 24 h, as indicates Figure 7 ."),
-    ("Euphorbia antiquorum", "no_toxicity_reported", "Acute oral test of ROOT extracts in rats only (the quoted word 'safe' is the source's, for that test). The irritant latex of the genus is not covered. Not evidence of safety.",
-     "pmc", "PMC4665026", "Primary study, PMC (open access)", "Both the alcohol and aqueous extracts were found to be safe up to 2000 mg/kg."),
+    ("Euphorbia antiquorum", "toxic_reported", "Genus-level review: the latex of most Euphorbia species is toxic, causing severe skin irritation and possibly blindness. "
+     "Not specific to E. antiquorum. (Replaces an earlier no_toxicity_reported entry from a root-extract test, after review.)",
+     "pmc", "PMC11821031", "Review of Euphorbia species, PMC (open access)",
+     "However, it is critical to note that the latex produced by most Euphorbia species is toxic and can induce severe skin irritation and potentially lead to blindness."),
     ("Papaver somniferum", "toxic_reported", "Review and case study: tea from unwashed poppy seeds can carry enough morphine to cause dependence.",
      "pmc", "PMC6513924", "Review and case study, PMC (open access)",
      "Unwashed poppy seeds may contain sufficient alkaloid residue to produce tea with a substantial morphine content to the extent that regular users can develop dependence and opioid use disorder."),
@@ -137,6 +139,19 @@ ENTRIES: list[tuple] = [
     ("Moricandia arvensis", "unknown", "No reputable open source on toxicity located in this session (papers found address anti-genotoxicity or cancer-cell cytotoxicity only). Not evidence of safety.",
      None, None, None, None),
 ]
+
+
+# What the cited evidence covers, when it is narrower than "this species, in people" (shown beside the category).
+SCOPE = {
+    "Allium cepa": "animals only (veterinary); not evidence about people at food doses",
+    "Euphorbia antiquorum": "genus-level (Euphorbia latex)",
+    "Ajuga chamaepitys": "invertebrate assays only",
+    "Galium aparine": "in vitro only",
+    "Salvia sclarea": "in vitro only",
+    "Raphanus sativus": "animal studies (rats)",
+    "Hyssopus officinalis": "essential oil only",
+    "Papaver somniferum": "one preparation (unwashed poppy-seed tea)",
+}
 
 
 class ToxicityError(ValueError):
@@ -179,7 +194,7 @@ def build(species: list[str] | None = None) -> pd.DataFrame:
         _, cat, summary, kind, loc, name, quote = e
         if cat not in CATEGORIES:
             raise ToxicityError(f"{sp}: bad category {cat!r}")
-        row = {"acceptedName": sp, "toxicity": cat, "summary": summary, "sourceName": name or "", "sourceUrl": "",
+        row = {"acceptedName": sp, "toxicity": cat, "evidenceScope": SCOPE.get(sp, "species"), "summary": summary, "sourceName": name or "", "sourceUrl": "",
                "quote": quote or "", "sourceSha256": "", "retrievedAt": "", "licence": "", "basis": BASIS, "verified_by": ""}
         if kind:
             text, url, sha, when, lic = _source(kind, loc)

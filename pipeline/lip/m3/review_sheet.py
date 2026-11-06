@@ -33,6 +33,9 @@ WP_RAW = "https://en.wikipedia.org/w/index.php?title={}&action=raw"
 EXCERPT_CHARS = 320
 VEHICLES = {"water": r"\bwater", "wine": r"\bwine", "vinegar": r"\bvinegar|\bvineger|\bacetum", "oil": r"\boyl|\boil\b|\boils\b",
             "honey": r"\bhon[ie]y|\bhoney|\bmel\b"}
+PREP_WORDS = {"decoction": r"\bdecoct\w*|\bboil(?:ed|ing)?\b", "distilled_water": r"\bdistill?ed water|\bdistilled\b|\bdistil\w*",
+              "juice": r"\bjuyce|\bjuice", "ale_beer": r"\bale\b|\bbeer\b|\bposset", "syrup": r"\bsyrr?up|\bsirr?up|\bsyrop",
+              "ointment": r"\boyntment|\bointment|\bunguent|\bsalve"}
 MIN_CONF = 0.6
 
 
@@ -109,16 +112,26 @@ def build() -> pd.DataFrame:
     inv = pd.read_parquet(INTERIM / "m2" / "name_inventory.parquet").set_index("nameId")
     p = pd.read_parquet(INTERIM / "passages.parquet")
     tox = pd.read_csv(ROOT / "data" / "reference" / "toxicity_curated.csv", dtype=str).fillna("").set_index("acceptedName")
+    from .study_set import DECISIONS, NAME_EXCLUSIONS
+    dec = pd.read_csv(DECISIONS).set_index("species") if DECISIONS.exists() else pd.DataFrame()
+    nx = pd.read_csv(NAME_EXCLUSIONS) if NAME_EXCLUSIONS.exists() else pd.DataFrame(columns=["nameId", "species", "reviewerNote"])
+    removed = {(r.nameId, r.species): r.reviewerNote for r in nx.itertuples()}
+    full = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
+    extra = full[full.acceptedName.isin(set(dec.index) - set(ss.acceptedName))] if len(dec) else full.iloc[0:0]
+    ss = pd.concat([ss, extra])  # reviewed species that are no longer proposed keep their row
     rows = []
     for sp in ss.itertuples():
         ents = top[top.acceptedName == sp.acceptedName].copy()
-        ents["counted"] = (~ents.disputed) & (ents.confidence >= MIN_CONF)
+        ents["removedByReviewer"] = [removed.get((n, sp.acceptedName), "") for n in ents.nameId]
+        ents["counted"] = (~ents.disputed) & (ents.confidence >= MIN_CONF) & (ents.removedByReviewer == "")
         names, pids, desc, desc_src, recipe_pids = {"culpeper-1652": [], "pliny": []}, {"culpeper-1652": [], "pliny": []}, "", "", []
         bases, how = [], []
-        for e in ents.sort_values(["counted", "confidence"], ascending=False).itertuples():
+        ents["_culp"] = ents.source == "culpeper-1652"  # Culpeper's morphological Description is preferred
+        for e in ents.sort_values(["counted", "_culp", "confidence"], ascending=False).itertuples():
             ie = inv.loc[e.nameId]
             ps = _passages(p, ie)
-            flag = "" if e.counted else (" [disputed]" if e.disputed else " [confidence < 0.6]")
+            flag = ("" if e.counted else f" [removed by reviewer: {e.removedByReviewer}]" if e.removedByReviewer
+                    else " [disputed]" if e.disputed else " [confidence < 0.6]")
             names[e.source].append(f"{e.nameAsWritten} ({e.confidence:.2f}{', genus-level' if e.genusLevelOnly else ''}){flag}")
             pids[e.source] += list(ps.passage_id)
             ev = json.loads(e.evidence)
@@ -131,15 +144,21 @@ def build() -> pd.DataFrame:
                 if len(d):
                     desc = _sentences_excerpt(" ".join(d.text_clean))
                     desc_src = f"{label}: {d.passage_id.iloc[0]}"
+        recipe_pids = list(dict.fromkeys(recipe_pids))  # several name entries can share one chapter
+        pids = {k: list(dict.fromkeys(v)) for k, v in pids.items()}
         rtext = p[p.passage_id.isin(recipe_pids)].text_clean.str.lower()
         vehicle = {k: int(rtext.str.contains(rx, regex=True).sum()) for k, rx in VEHICLES.items()}
+        prepw = {k: int(rtext.str.contains(rx, regex=True).sum()) for k, rx in PREP_WORDS.items()}
         counted = ents[ents.counted]
-        n_disp = int((~ents.counted & ents.disputed).sum())
+        n_disp = int((~ents.counted & ents.disputed & (ents.removedByReviewer == "")).sum())
+        n_rem = int((ents.removedByReviewer != "").sum())
         genus_level = bool(ents.genusLevelOnly.any())
         genus_signal = int(sum("classical genus match" in x for x in ents[ents.counted].evidence))
         flags = []
         if n_disp:
             flags.append(_n(n_disp, "disputed name entry also resolves here", "disputed name entries also resolve here") + " (excluded from counts)")
+        if n_rem:
+            flags.append(_n(n_rem, "name entry removed by the reviewer", "name entries removed by the reviewer"))
         if genus_level:
             flags.append("a disputed entry is resolved only to genus level")
         if len(counted) and counted.confidence.min() < 0.8:
@@ -166,10 +185,16 @@ def build() -> pd.DataFrame:
             "wfoUrl": f"https://www.worldfloraonline.org/taxon/{sp.wfoId}",
             "recipeScopePassages": len(recipe_pids),
             **{f"mentions_{k}": v for k, v in vehicle.items()},
+            **{f"prep_{k}": v for k, v in prepw.items()},
             "compounds": int(sp.nCompounds), "coverage": "poor (heuristic)" if sp.poorCoverage else "adequate (heuristic)",
-            "toxicity": t.toxicity if t is not None else "not curated", "toxicitySource": t.sourceName if t is not None else "",
+            "toxicity": t.toxicity if t is not None else "not curated (not proposed)",
+            "toxicityScope": (t.evidenceScope if t is not None and "evidenceScope" in t.index else ""),
+            "toxicitySource": t.sourceName if t is not None else "",
             "toxicityUrl": t.sourceUrl if t is not None else "", "toxicityBasis": t.basis if t is not None else "",
-            "decision": "", "reason": "",
+            "proposedNow": bool(sp.proposed), "eligibleNow": bool(sp.eligible),
+            "decision": dec.loc[sp.acceptedName, "decision"] if sp.acceptedName in dec.index else "",
+            "reason": dec.loc[sp.acceptedName, "reason"] if sp.acceptedName in dec.index else "",
+            "reReviewRequested": bool(n_rem) and (dec.loc[sp.acceptedName, "decision"] in ("unsure", "reject") if sp.acceptedName in dec.index else False),
         })
     df = pd.DataFrame(rows)
     df["_s"] = df.minCountedConfidence.fillna(0)
@@ -183,9 +208,9 @@ def build() -> pd.DataFrame:
 
 def _md(df: pd.DataFrame) -> None:
     L = ["# Study-set review sheet", "",
-         f"Generated by `python -m lip m3 review` from pipeline outputs; do not edit by hand. **{len(df)} species.** "
-         "Record decisions in the `decision` (approve / reject / unsure) and `reason` columns of "
-         "[STUDY_SET_REVIEW.csv](STUDY_SET_REVIEW.csv).", "",
+         f"Generated by `python -m lip m3 review` from pipeline outputs; do not edit by hand. **{len(df)} species reviewed.** "
+         "Decisions are read from `config/study_set_review_decisions.csv`; to change one, edit that file and re-run. "
+         "Machine-readable version: [STUDY_SET_REVIEW.csv](STUDY_SET_REVIEW.csv).", "",
          "**Order.** Rows most likely to be wrong come first:",
          "1. species with disputed name entries;",
          "2. then genus-level resolutions;",
@@ -197,10 +222,37 @@ def _md(df: pd.DataFrame) -> None:
          "are a **heuristic proxy**: how many recipe-scope passages mention each word, not how many recipes use it.",
          "- **Toxicity** entries are AI-drafted and unverified.",
          "- **Name entries** marked [disputed] resolve to the species but do not count towards attestation.", "",
-         "| # | Species | Sources | Risk flags | Counted entries | Min. conf. | Compounds | Toxicity |", "|---|---|---|---|---|---|---|---|"]
+         ]
+    dec = df[df.decision.fillna("") != ""]
+    if len(dec):
+        head = df[df.decision == "approve"]
+        L += ["## Review decisions (project lead, `config/study_set_review_decisions.csv`)", "",
+              f"**{(df.decision == 'approve').sum()} approve · {(df.decision == 'unsure').sum()} unsure · {(df.decision == 'reject').sum()} reject.** "
+              f"Unsure counts as reject, so **{len(head)} species form the headline set.**", ""]
+        rr = df[df.reReviewRequested]
+        if len(rr):
+            L += ["**Re-review requested.** For these rows the reviewer removed a wrongly merged name entry (`config/name_entry_exclusions.csv`). "
+                  "The rows below are recomputed without it; the decision stands until re-reviewed:", ""]
+            L += [f"- *{r.species}* ({r.decision}): now {r.countedEntries} counted entr{'y' if r.countedEntries == 1 else 'ies'}, attestation proxy "
+                  f"{r.attestationProxy}, {'still eligible' if r.eligibleNow else '**no longer eligible** (attestation proxy below 3)'}." for r in rr.itertuples()]
+            L += [""]
+        cols = ["water", "wine", "vinegar", "oil", "honey"]
+        pcols = ["decoction", "distilled_water", "juice", "ale_beer", "syrup", "ointment"]
+        L += [f"**Vehicle and preparation words across the {len(head)} headline species** (heuristic: recipe-scope passages mentioning the word, "
+              "after de-duplicating passages shared by several name entries; not recipe counts):", "",
+              "| Word | Passages mentioning it | Species with ≥ 1 |", "|---|---|---|"]
+        L += [f"| {c} | {int(head[f'mentions_{c}'].sum())} | {int((head[f'mentions_{c}'] > 0).sum())} |" for c in cols]
+        L += [f"| {c.replace('_', ' ')} | {int(head[f'prep_{c}'].sum())} | {int((head[f'prep_{c}'] > 0).sum())} |" for c in pcols]
+        none = head[(head[[f"mentions_{c}" for c in cols] + [f"prep_{c}" for c in pcols]].sum(axis=1) == 0)]
+        L += ["", "Headline species with no vehicle or preparation word in their recipe-scope passages: "
+              + (", ".join(f"*{x}*" for x in none.species) if len(none) else "none") + ".", ""]
+    L += ["## All reviewed species", "",
+          "| # | Species | Sources | Risk flags | Counted entries | Min. conf. | Compounds | Toxicity | Decision |", "|---|---|---|---|---|---|---|---|---|"]
     for r in df.itertuples():
+        tx = r.toxicity + (f" ({r.toxicityScope})" if isinstance(r.toxicityScope, str) and r.toxicityScope not in ("", "species") else "")
         L.append(f"| {r.reviewOrder} | [*{r.species}*](#{r.reviewOrder}-{r.species.lower().replace(' ', '-').replace('×', '')}) | {r.sources} | "
-                 f"{r.riskFlags} | {r.countedEntries} | {r.minCountedConfidence} | {r.compounds} | {r.toxicity} |")
+                 f"{r.riskFlags} | {r.countedEntries} | {r.minCountedConfidence} | {r.compounds} | {tx} | "
+                 f"{(r.decision or 'pending') + (' — re-review requested' if r.reReviewRequested else '')} |")
     for r in df.itertuples():
         links = " · ".join(x for x in (f"[Wikipedia]({r.wikipediaUrl})" if r.wikipediaUrl else "Wikipedia: no article found",
                                         f"[GBIF]({r.gbifUrl})" if r.gbifUrl else "GBIF: no match", f"[WFO]({r.wfoUrl})"))
@@ -214,9 +266,17 @@ def _md(df: pd.DataFrame) -> None:
               f"Attestation proxy {r.attestationProxy}.",
               f"- **Description** ({r.descriptionSource or 'none found'}): {r.descriptionExcerpt or '—'}",
               f"- **Recipe-scope passages (counted entries):** {r.recipeScopePassages}. Vehicle mentions (heuristic): "
-              f"water {r.mentions_water}, wine {r.mentions_wine}, vinegar {r.mentions_vinegar}, oil {r.mentions_oil}, honey {r.mentions_honey}.",
+              f"water {r.mentions_water}, wine {r.mentions_wine}, vinegar {r.mentions_vinegar}, oil {r.mentions_oil}, honey {r.mentions_honey}; "
+              f"preparation words: decoction {r.prep_decoction}, distilled water {r.prep_distilled_water}, juice {r.prep_juice}, "
+              f"ale/beer {r.prep_ale_beer}, syrup {r.prep_syrup}, ointment {r.prep_ointment}.",
               f"- **Compounds (LOTUS):** {r.compounds}, coverage {r.coverage}.",
-              f"- **Toxicity (AI-drafted, unverified):** `{r.toxicity}`" + (f", [{r.toxicitySource}]({r.toxicityUrl})" if r.toxicityUrl else ""),
+              f"- **Toxicity (AI-drafted, unverified):** `{r.toxicity}`"
+              + (f" — evidence: {r.toxicityScope}" if isinstance(r.toxicityScope, str) and r.toxicityScope not in ("", "species") else "")
+              + (f", [{r.toxicitySource}]({r.toxicityUrl})" if isinstance(r.toxicityUrl, str) and r.toxicityUrl else ""),
               f"- **Passage IDs:** Culpeper: {r.culpeperPassageIds or '—'}; Pliny: {r.plinyPassageIds or '—'}",
-              "- **Decision:** ______ (approve / reject / unsure) · **Reason:** ______"]
+              (f"- **Decision:** {r.decision}" + (" — **re-review requested** (a name entry was removed)" if r.reReviewRequested else "")
+               + f" · **Reason:** {r.reason}" if isinstance(r.decision, str) and r.decision else
+               "- **Decision:** ______ (approve / reject / unsure) · **Reason:** ______")]
+        if not r.proposedNow:
+            L.insert(len(L) - 1, "- **Status now:** no longer proposed (not eligible after the reviewer's fix).")
     OUT_MD.write_text("\n".join(L) + "\n")
