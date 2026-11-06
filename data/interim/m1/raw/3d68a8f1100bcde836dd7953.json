@@ -1,0 +1,26 @@
+{
+ "passageId": "culpeper-1652:herbal:cich-peas-or-cicers:007",
+ "recipes": [],
+ "rejections": [],
+ "attempts": 1,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 3394,
+  "output_tokens": 48,
+  "reasoning_tokens": 26
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}

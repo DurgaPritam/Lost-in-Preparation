@@ -1,0 +1,777 @@
+{
+ "passageId": "culpeper-1652:herbal:orpine:008",
+ "recipes": [
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:orpine:008#r00",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:orpine:008",
+    "text": "Orpine is seldom used in inward Medicines with us, although Tragus saith from experience in Germany that the distilled water thereof is profitable for gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases, being drunk for certain daies together: And that it stayeth the sharpness of Humors in the Bloody Flux, and other Fluxes in the Body, or in Wounds: The Root, thereof also performeth the same effect. It is used outwardly to cool any heat or Inflamation upon any Hurt or Wound, and easeth the pains of them: as also to heal Scaldings or Burnings: The Juyce thereof beaten with some green Sallet Oyl, and anointed: The Leaf also bruised and laid to any green Wound in the Hands or Legs, doth heal them quickly; and being bound to the Throat, much helpeth the Quinsie, It helpeth also Ruptures and Burstiness.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Orpine.",
+     "subsection": "vertues and use",
+     "lineStart": 13741,
+     "lineEnd": 13762
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Orpine",
+     "part": "unknown",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Orpine",
+       "start": 0,
+       "end": 6,
+       "inHeading": false
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Orpine",
+   "part": "unknown",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "water"
+   ],
+   "heat": "boiled",
+   "heatText": "distilled",
+   "durationText": "for certain daies together",
+   "filtered": "yes",
+   "process": "distillation",
+   "form": "drink",
+   "indicationAsWritten": "gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "solvent": 0.95,
+    "heat": 0.8,
+    "durationText": 0.85,
+    "filtered": 0.8,
+    "process": 0.9,
+    "form": 0.9,
+    "indicationAsWritten": 0.95
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "the distilled water thereof is profitable for gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases, being drunk for certain daies together",
+      "start": 105,
+      "end": 355,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Orpine",
+      "start": 0,
+      "end": 6,
+      "inHeading": false
+     }
+    ],
+    "heatText": [
+     {
+      "quote": "distilled",
+      "start": 109,
+      "end": 118,
+      "inHeading": false
+     }
+    ],
+    "durationText": [
+     {
+      "quote": "for certain daies together",
+      "start": 329,
+      "end": 355,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases",
+      "start": 151,
+      "end": 315,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "the distilled water thereof is profitable",
+      "start": 105,
+      "end": 146,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "distilled water",
+      "start": 109,
+      "end": 124,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "distilled",
+      "start": 109,
+      "end": 118,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "distilled water",
+      "start": 109,
+      "end": 124,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "distilled",
+      "start": 109,
+      "end": 118,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "being drunk",
+      "start": 317,
+      "end": 328,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:51:16+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:orpine:008#r01",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:orpine:008",
+    "text": "Orpine is seldom used in inward Medicines with us, although Tragus saith from experience in Germany that the distilled water thereof is profitable for gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases, being drunk for certain daies together: And that it stayeth the sharpness of Humors in the Bloody Flux, and other Fluxes in the Body, or in Wounds: The Root, thereof also performeth the same effect. It is used outwardly to cool any heat or Inflamation upon any Hurt or Wound, and easeth the pains of them: as also to heal Scaldings or Burnings: The Juyce thereof beaten with some green Sallet Oyl, and anointed: The Leaf also bruised and laid to any green Wound in the Hands or Legs, doth heal them quickly; and being bound to the Throat, much helpeth the Quinsie, It helpeth also Ruptures and Burstiness.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Orpine.",
+     "subsection": "vertues and use",
+     "lineStart": 13741,
+     "lineEnd": 13762
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Orpine",
+     "part": "root",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Orpine",
+       "start": 0,
+       "end": 6,
+       "inHeading": false
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Orpine",
+   "part": "root",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "unknown"
+   ],
+   "heat": "unknown",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "unknown",
+   "process": "unknown",
+   "form": "unknown",
+   "indicationAsWritten": "gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.8,
+    "part": 0.9,
+    "indicationAsWritten": 0.95
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "The Root, thereof also performeth the same effect",
+      "start": 465,
+      "end": 514,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Orpine",
+      "start": 0,
+      "end": 6,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases",
+      "start": 151,
+      "end": 315,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "The Root, thereof also performeth the same effect",
+      "start": 465,
+      "end": 514,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "Root",
+      "start": 469,
+      "end": 473,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:51:16+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:orpine:008#r02",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:orpine:008",
+    "text": "Orpine is seldom used in inward Medicines with us, although Tragus saith from experience in Germany that the distilled water thereof is profitable for gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases, being drunk for certain daies together: And that it stayeth the sharpness of Humors in the Bloody Flux, and other Fluxes in the Body, or in Wounds: The Root, thereof also performeth the same effect. It is used outwardly to cool any heat or Inflamation upon any Hurt or Wound, and easeth the pains of them: as also to heal Scaldings or Burnings: The Juyce thereof beaten with some green Sallet Oyl, and anointed: The Leaf also bruised and laid to any green Wound in the Hands or Legs, doth heal them quickly; and being bound to the Throat, much helpeth the Quinsie, It helpeth also Ruptures and Burstiness.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Orpine.",
+     "subsection": "vertues and use",
+     "lineStart": 13741,
+     "lineEnd": 13762
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "compound",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Orpine",
+     "part": "juice",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Orpine",
+       "start": 0,
+       "end": 6,
+       "inHeading": false
+      }
+     ]
+    },
+    {
+     "plantNameAsWritten": "Sallet Oyl",
+     "part": "unknown",
+     "role": "co_ingredient",
+     "kind": "other",
+     "evidence": [
+      {
+       "quote": "Sallet Oyl",
+       "start": 703,
+       "end": 713,
+       "inHeading": false
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Orpine",
+   "part": "juice",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "oil"
+   ],
+   "heat": "unknown",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "other",
+   "form": "ointment",
+   "indicationAsWritten": "cool any heat or Inflamation upon any Hurt or Wound, and easeth the pains of them: as also to heal Scaldings or Burnings",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "part": 0.96,
+    "solvent": 0.95,
+    "process": 0.92,
+    "form": 0.94,
+    "filtered": 0.9,
+    "indicationAsWritten": 0.95
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "It is used outwardly to cool any heat or Inflamation upon any Hurt or Wound, and easeth the pains of them: as also to heal Scaldings or Burnings: The Juyce thereof beaten with some green Sallet Oyl, and anointed",
+      "start": 516,
+      "end": 727,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Orpine",
+      "start": 0,
+      "end": 6,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "cool any heat or Inflamation upon any Hurt or Wound, and easeth the pains of them: as also to heal Scaldings or Burnings",
+      "start": 540,
+      "end": 660,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "The Juyce thereof",
+      "start": 662,
+      "end": 679,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "green Sallet Oyl",
+      "start": 697,
+      "end": 713,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "beaten",
+      "start": 680,
+      "end": 686,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "anointed",
+      "start": 719,
+      "end": 727,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "anointed",
+      "start": 719,
+      "end": 727,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": true,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:51:16+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:orpine:008#r03",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:orpine:008",
+    "text": "Orpine is seldom used in inward Medicines with us, although Tragus saith from experience in Germany that the distilled water thereof is profitable for gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases, being drunk for certain daies together: And that it stayeth the sharpness of Humors in the Bloody Flux, and other Fluxes in the Body, or in Wounds: The Root, thereof also performeth the same effect. It is used outwardly to cool any heat or Inflamation upon any Hurt or Wound, and easeth the pains of them: as also to heal Scaldings or Burnings: The Juyce thereof beaten with some green Sallet Oyl, and anointed: The Leaf also bruised and laid to any green Wound in the Hands or Legs, doth heal them quickly; and being bound to the Throat, much helpeth the Quinsie, It helpeth also Ruptures and Burstiness.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Orpine.",
+     "subsection": "vertues and use",
+     "lineStart": 13741,
+     "lineEnd": 13762
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Orpine",
+     "part": "leaf",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Orpine",
+       "start": 0,
+       "end": 6,
+       "inHeading": false
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Orpine",
+   "part": "leaf",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "none"
+   ],
+   "heat": "cold",
+   "heatText": "bruised",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "other",
+   "form": "poultice",
+   "indicationAsWritten": "any green Wound in the Hands or Legs",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "part": 0.97,
+    "heat": 0.94,
+    "heatText": 0.94,
+    "process": 0.92,
+    "form": 0.95,
+    "filtered": 0.9,
+    "solvent": 0.88,
+    "indicationAsWritten": 0.96
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "The Leaf also bruised and laid to any green Wound in the Hands or Legs, doth heal them quickly",
+      "start": 729,
+      "end": 823,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Orpine",
+      "start": 0,
+      "end": 6,
+      "inHeading": false
+     }
+    ],
+    "heatText": [
+     {
+      "quote": "bruised",
+      "start": 743,
+      "end": 750,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "any green Wound in the Hands or Legs",
+      "start": 763,
+      "end": 799,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "The Leaf also",
+      "start": 729,
+      "end": 742,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "bruised",
+      "start": 743,
+      "end": 750,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "bruised",
+      "start": 743,
+      "end": 750,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "laid to",
+      "start": 755,
+      "end": 762,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "laid to",
+      "start": 755,
+      "end": 762,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "laid to",
+      "start": 755,
+      "end": 762,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:51:16+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:orpine:008#r04",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:orpine:008",
+    "text": "Orpine is seldom used in inward Medicines with us, although Tragus saith from experience in Germany that the distilled water thereof is profitable for gnawings, or excoriations in the Stomach or Bowels, and for Ulcers in the Lungs, Liver, or other inward parts, as also in the Matrix, and helpeth all those Diseases, being drunk for certain daies together: And that it stayeth the sharpness of Humors in the Bloody Flux, and other Fluxes in the Body, or in Wounds: The Root, thereof also performeth the same effect. It is used outwardly to cool any heat or Inflamation upon any Hurt or Wound, and easeth the pains of them: as also to heal Scaldings or Burnings: The Juyce thereof beaten with some green Sallet Oyl, and anointed: The Leaf also bruised and laid to any green Wound in the Hands or Legs, doth heal them quickly; and being bound to the Throat, much helpeth the Quinsie, It helpeth also Ruptures and Burstiness.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Orpine.",
+     "subsection": "vertues and use",
+     "lineStart": 13741,
+     "lineEnd": 13762
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Orpine",
+     "part": "leaf",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Orpine",
+       "start": 0,
+       "end": 6,
+       "inHeading": false
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Orpine",
+   "part": "leaf",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "none"
+   ],
+   "heat": "unknown",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "other",
+   "form": "other",
+   "indicationAsWritten": "the Quinsie",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "part": 0.95,
+    "process": 0.9,
+    "form": 0.88,
+    "filtered": 0.85,
+    "solvent": 0.85,
+    "indicationAsWritten": 0.94
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "being bound to the Throat, much helpeth the Quinsie",
+      "start": 829,
+      "end": 880,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Orpine",
+      "start": 0,
+      "end": 6,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "the Quinsie",
+      "start": 869,
+      "end": 880,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "being bound to the Throat",
+      "start": 829,
+      "end": 854,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "being bound",
+      "start": 829,
+      "end": 840,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "being bound to the Throat",
+      "start": 829,
+      "end": 854,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "being bound to the Throat",
+      "start": 829,
+      "end": 854,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "being bound to the Throat",
+      "start": 829,
+      "end": 854,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:51:16+00:00"
+   }
+  }
+ ],
+ "rejections": [],
+ "attempts": 3,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}

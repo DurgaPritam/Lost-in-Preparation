@@ -1,0 +1,220 @@
+{
+ "passageId": "culpeper-1652:herbal:loos-strife-with-spiked-heads-of-flowers:009",
+ "recipes": [],
+ "rejections": [
+  {
+   "recipe": {
+    "recipeQuote": "The distilled water is a present remedy for hurts and blows on the eyes and for blindness, ... This Water gargled warm in the Mouth, and somtimes drunk also doth cure the Quinsie, or Kings Evil in the Throat.",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Loos-Strife, with Spiked Heads of Flowers.",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "Loos-Strife, with Spiked Heads of Flowers.",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "water"
+    ],
+    "heat": "warm",
+    "heatText": "warm",
+    "durationText": "unknown",
+    "filtered": "unknown",
+    "process": "other",
+    "form": "drink",
+    "indicationAsWritten": "hurts and blows on the eyes and for blindness ... Quinsie, or Kings Evil in the Throat",
+    "evidence": [
+     {
+      "field": "recipeType",
+      "quote": "The distilled water is a present remedy"
+     },
+     {
+      "field": "solvent",
+      "quote": "The distilled water"
+     },
+     {
+      "field": "heat",
+      "quote": "gargled warm"
+     },
+     {
+      "field": "form",
+      "quote": "gargled warm in the Mouth, and somtimes drunk also"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "hurts and blows on the eyes and for blindness ... Quinsie, or Kings Evil in the Throat"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "recipeType",
+      "confidence": 0.9
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.9
+     },
+     {
+      "field": "heat",
+      "confidence": 0.8
+     },
+     {
+      "field": "form",
+      "confidence": 0.8
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.9
+     }
+    ]
+   },
+   "errors": [
+    "recipe: quote not found verbatim in passage: 'The distilled water is a present remedy for hurts and blows on the eyes and for blindness, ... This Water gargled warm in the Mouth, and somtimes drunk also doth cure the Quinsie, or Kings Evil in the Throat.'",
+    "indicationAsWritten: quote not found verbatim in passage: 'hurts and blows on the eyes and for blindness ... Quinsie, or Kings Evil in the Throat'",
+    "process=other: no evidence quote given"
+   ]
+  },
+  {
+   "recipe": {
+    "recipeQuote": "To every ounce of the Water, ad two drams of May Butter without Salt, and of Sugar and Wax of each as much also, let them boyl gently all together: Let Tents be dipped in the Liquor that remaineth after it is cold, and put into the Wounds, and the place covered with a Linnen cloth doubled and anointed with the Oyntment, ... It likewise clenseth and healeth all foul Ulcers and Sores wheresoever, and staieth their Inflamations by washing them with the Water, and laying on them a green Leaf or two in the Summer, or dry Leaves in the Winter.",
+    "recipeType": "compound",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Loos-Strife, with Spiked Heads of Flowers.",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     },
+     {
+      "plantNameAsWritten": "May Butter",
+      "part": "unknown",
+      "role": "co_ingredient",
+      "kind": "animal"
+     },
+     {
+      "plantNameAsWritten": "Sugar",
+      "part": "unknown",
+      "role": "co_ingredient",
+      "kind": "other"
+     },
+     {
+      "plantNameAsWritten": "Wax",
+      "part": "unknown",
+      "role": "co_ingredient",
+      "kind": "other"
+     }
+    ],
+    "plantNameAsWritten": "Loos-Strife, with Spiked Heads of Flowers.",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "water"
+    ],
+    "heat": "boiled",
+    "heatText": "boyl gently",
+    "durationText": "unknown",
+    "filtered": "yes",
+    "process": "decoction",
+    "form": "ointment",
+    "indicationAsWritten": "Wounds, Ulcers and Sores, and their Inflamations",
+    "evidence": [
+     {
+      "field": "recipeType",
+      "quote": "To every ounce of the Water, ad two drams of May Butter ... let them boyl gently all together"
+     },
+     {
+      "field": "solvent",
+      "quote": "To every ounce of the Water"
+     },
+     {
+      "field": "heat",
+      "quote": "boyl gently"
+     },
+     {
+      "field": "process",
+      "quote": "boyl gently all together"
+     },
+     {
+      "field": "filtered",
+      "quote": "Let Tents be dipped in the Liquor that remaineth after it is cold"
+     },
+     {
+      "field": "form",
+      "quote": "anointed with the Oyntment"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "Wounds, Ulcers and Sores wheresoever, and staieth their Inflamations"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "recipeType",
+      "confidence": 0.9
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.9
+     },
+     {
+      "field": "heat",
+      "confidence": 0.9
+     },
+     {
+      "field": "process",
+      "confidence": 0.9
+     },
+     {
+      "field": "filtered",
+      "confidence": 0.7
+     },
+     {
+      "field": "form",
+      "confidence": 0.9
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.9
+     }
+    ]
+   },
+   "errors": [
+    "recipe: quote not found verbatim in passage: 'To every ounce of the Water, ad two drams of May Butter without Salt, and of Sugar and Wax of each as much also, let them boyl gently all together: Let Tents be dipped in the Liquor that remaineth after it is cold, and put into the Wounds, and the place covered with a Linnen cloth doubled and anointed with the Oyntment, ... It likewise clenseth and healeth all foul Ulcers and Sores wheresoever, and staieth their Inflamations by washing them with the Water, and laying on them a green Leaf or two in the Summer, or dry Leaves in the Winter.'",
+    "indicationAsWritten: quote not found verbatim in passage: 'Wounds, Ulcers and Sores, and their Inflamations'",
+    "recipeType: quote not found verbatim in passage: 'To every ounce of the Water, ad two drams of May Butter ... let them boyl gently all together'"
+   ]
+  }
+ ],
+ "attempts": 3,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}

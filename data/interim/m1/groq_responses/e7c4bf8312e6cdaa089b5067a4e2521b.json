@@ -1,0 +1,17 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "e7c4bf8312e6cdaa089b5067a4e2521b",
+ "retrievedAt": "2026-11-06T06:41:57+00:00",
+ "response": {
+  "_schemaError": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "choices": [
+   {
+    "message": {
+     "content": ""
+    },
+    "finish_reason": "schema_error"
+   }
+  ],
+  "_maxCompletionTokensSent": 1024
+ }
+}

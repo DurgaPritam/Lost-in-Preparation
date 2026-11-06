@@ -1,0 +1,459 @@
+{
+ "passageId": "culpeper-1652:herbal:hedg-mustard:008",
+ "recipes": [
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:hedg-mustard:008#r00",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:hedg-mustard:008",
+    "text": "It is singular good in all the Diseases of the Chest and Lungs, hoarceness ef voice, and by the use of the Decoction therof for a little space, those have been recovered who had utterly lost their voice, and almost their Spirits also. The Juyce threof made into a Syrup, or licking Medicine with Honey or Sugar is no less effectual for the same purpose, and for all other Coughs, Weesings, and shortness of Breath. The same is also profitable for those that have the Jaundice, the Pluresie, pains in the Back and Loyns, and for torments in the Belly or the Chollick, being also used in Clysters. The Seed is held to be a special Remedy against Poyson and Venom: It is singular good for the Sciatica, the Gout, and all Joyntaches, Sores and Cankers in the Mouth, Throat, or behind the Ears; and no less for the hardness and Swelling of the Testicles, or of Womens Breasts.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Hedg-Mustard.",
+     "subsection": "vertues and use",
+     "lineStart": 13261,
+     "lineEnd": 13281
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Hedg-Mustard",
+     "part": "unknown",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Hedg-Mustard",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Hedg-Mustard",
+   "part": "unknown",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "water"
+   ],
+   "heat": "boiled",
+   "heatText": "Decoction",
+   "durationText": "unknown",
+   "filtered": "unknown",
+   "process": "decoction",
+   "form": "drink",
+   "indicationAsWritten": "those have been recovered who had utterly lost their voice, and almost their Spirits also",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "solvent": 0.7,
+    "heat": 0.9,
+    "heatText": 0.9,
+    "process": 0.9,
+    "form": 0.8,
+    "indicationAsWritten": 0.9
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "Decoction therof for a little space, those have been recovered who had utterly lost their voice, and almost their Spirits also",
+      "start": 107,
+      "end": 233,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Hedg-Mustard",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "heatText": [
+     {
+      "quote": "Decoction",
+      "start": 107,
+      "end": 116,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "those have been recovered who had utterly lost their voice, and almost their Spirits also",
+      "start": 144,
+      "end": 233,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "Decoction therof",
+      "start": 107,
+      "end": 123,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "Decoction",
+      "start": 107,
+      "end": 116,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "Decoction",
+      "start": 107,
+      "end": 116,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "Decoction",
+      "start": 107,
+      "end": 116,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "Decoction",
+      "start": 107,
+      "end": 116,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:45:37+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:hedg-mustard:008#r01",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:hedg-mustard:008",
+    "text": "It is singular good in all the Diseases of the Chest and Lungs, hoarceness ef voice, and by the use of the Decoction therof for a little space, those have been recovered who had utterly lost their voice, and almost their Spirits also. The Juyce threof made into a Syrup, or licking Medicine with Honey or Sugar is no less effectual for the same purpose, and for all other Coughs, Weesings, and shortness of Breath. The same is also profitable for those that have the Jaundice, the Pluresie, pains in the Back and Loyns, and for torments in the Belly or the Chollick, being also used in Clysters. The Seed is held to be a special Remedy against Poyson and Venom: It is singular good for the Sciatica, the Gout, and all Joyntaches, Sores and Cankers in the Mouth, Throat, or behind the Ears; and no less for the hardness and Swelling of the Testicles, or of Womens Breasts.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Hedg-Mustard.",
+     "subsection": "vertues and use",
+     "lineStart": 13261,
+     "lineEnd": 13281
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Hedg-Mustard",
+     "part": "juice",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Hedg-Mustard",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Hedg-Mustard",
+   "part": "juice",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "honey",
+    "other"
+   ],
+   "heat": "unknown",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "unknown",
+   "process": "other",
+   "form": "drink",
+   "indicationAsWritten": "the same purpose",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "part": 0.95,
+    "solvent": 0.85,
+    "process": 0.9,
+    "form": 0.9,
+    "indicationAsWritten": 0.9
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "Juyce threof made into a Syrup, or licking Medicine with Honey or Sugar is no less effectual for the same purpose",
+      "start": 239,
+      "end": 352,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Hedg-Mustard",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "the same purpose",
+      "start": 336,
+      "end": 352,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "Juyce threof made into a Syrup",
+      "start": 239,
+      "end": 269,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "Juyce threof",
+      "start": 239,
+      "end": 251,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "with Honey or Sugar",
+      "start": 291,
+      "end": 310,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "made into a Syrup",
+      "start": 252,
+      "end": 269,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "Syrup",
+      "start": 264,
+      "end": 269,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:45:37+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:hedg-mustard:008#r02",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:hedg-mustard:008",
+    "text": "It is singular good in all the Diseases of the Chest and Lungs, hoarceness ef voice, and by the use of the Decoction therof for a little space, those have been recovered who had utterly lost their voice, and almost their Spirits also. The Juyce threof made into a Syrup, or licking Medicine with Honey or Sugar is no less effectual for the same purpose, and for all other Coughs, Weesings, and shortness of Breath. The same is also profitable for those that have the Jaundice, the Pluresie, pains in the Back and Loyns, and for torments in the Belly or the Chollick, being also used in Clysters. The Seed is held to be a special Remedy against Poyson and Venom: It is singular good for the Sciatica, the Gout, and all Joyntaches, Sores and Cankers in the Mouth, Throat, or behind the Ears; and no less for the hardness and Swelling of the Testicles, or of Womens Breasts.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Hedg-Mustard.",
+     "subsection": "vertues and use",
+     "lineStart": 13261,
+     "lineEnd": 13281
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Hedg-Mustard",
+     "part": "seed",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Hedg-Mustard",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Hedg-Mustard",
+   "part": "seed",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "unknown"
+   ],
+   "heat": "unknown",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "unknown",
+   "form": "other",
+   "indicationAsWritten": "against Poyson and Venom: It is singular good for the Sciatica, the Gout, and all Joyntaches, Sores and Cankers in the Mouth, Throat, or behind the Ears; and no less for the hardness and Swelling of the Testicles, or of Womens Breasts",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "part": 0.95,
+    "filtered": 0.85,
+    "form": 0.85,
+    "indicationAsWritten": 0.9
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "The Seed is held to be a special Remedy against Poyson and Venom: It is singular good for the Sciatica, the Gout, and all Joyntaches, Sores and Cankers in the Mouth, Throat, or behind the Ears; and no less for the hardness and Swelling of the Testicles, or of Womens Breasts",
+      "start": 596,
+      "end": 870,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Hedg-Mustard",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "against Poyson and Venom: It is singular good for the Sciatica, the Gout, and all Joyntaches, Sores and Cankers in the Mouth, Throat, or behind the Ears; and no less for the hardness and Swelling of the Testicles, or of Womens Breasts",
+      "start": 636,
+      "end": 870,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "The Seed is held to be a special Remedy",
+      "start": 596,
+      "end": 635,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "The Seed",
+      "start": 596,
+      "end": 604,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "The Seed is held to be a special Remedy",
+      "start": 596,
+      "end": 635,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "special Remedy",
+      "start": 621,
+      "end": 635,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:45:37+00:00"
+   }
+  }
+ ],
+ "rejections": [],
+ "attempts": 2,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}

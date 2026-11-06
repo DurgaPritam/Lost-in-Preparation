@@ -1,0 +1,197 @@
+{
+ "passageId": "culpeper-1652:herbal:filipendula-or-dropwort:008",
+ "recipes": [],
+ "rejections": [
+  {
+   "recipe": {
+    "recipeQuote": "taking the Roots in Pouder",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Filipendula, or Dropwort. ♀",
+      "part": "root",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "Filipendula, or Dropwort. ♀",
+    "part": "root",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "unknown"
+    ],
+    "heat": "cold",
+    "heatText": "unknown",
+    "durationText": "unknown",
+    "filtered": "not_applicable",
+    "process": "powder",
+    "form": "other",
+    "indicationAsWritten": "open the passages of the Urine, and help the Strangury, and all other pains of the Bladder and Reins, helping mightily to expel the Stone in the Kidnies or Bladder, and the Gravel also",
+    "evidence": [
+     {
+      "field": "part",
+      "quote": "Roots in Pouder"
+     },
+     {
+      "field": "process",
+      "quote": "Pouder"
+     },
+     {
+      "field": "heat",
+      "quote": "Pouder"
+     },
+     {
+      "field": "form",
+      "quote": "taking the Roots in Pouder"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "open the passages of the Urine, and help the Strangury, and all other pains of the Bladder and Reins, helping mightily to expel the Stone in the Kidnies or Bladder, and the Gravel also"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "part",
+      "confidence": 0.9
+     },
+     {
+      "field": "process",
+      "confidence": 0.95
+     },
+     {
+      "field": "heat",
+      "confidence": 0.8
+     },
+     {
+      "field": "form",
+      "confidence": 0.8
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "filtered=not_applicable: no evidence quote given"
+   ]
+  },
+  {
+   "recipe": {
+    "recipeQuote": "a Decoction of them in white Wine, whereunto a little Honey is added",
+    "recipeType": "compound",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Filipendula, or Dropwort. ♀",
+      "part": "root",
+      "role": "principal",
+      "kind": "plant"
+     },
+     {
+      "plantNameAsWritten": "Honey",
+      "part": "unknown",
+      "role": "co_ingredient",
+      "kind": "other"
+     }
+    ],
+    "plantNameAsWritten": "Filipendula, or Dropwort. ♀",
+    "part": "root",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "wine"
+    ],
+    "heat": "boiled",
+    "heatText": "Decoction",
+    "durationText": "unknown",
+    "filtered": "yes",
+    "process": "decoction",
+    "form": "drink",
+    "indicationAsWritten": "open the passages of the Urine, and help the Strangury, and all other pains of the Bladder and Reins, helping mightily to expel the Stone in the Kidnies or Bladder, and the Gravel also",
+    "evidence": [
+     {
+      "field": "process",
+      "quote": "Decoction"
+     },
+     {
+      "field": "solvent",
+      "quote": "in white Wine"
+     },
+     {
+      "field": "heat",
+      "quote": "Decoction"
+     },
+     {
+      "field": "filtered",
+      "quote": "Decoction"
+     },
+     {
+      "field": "recipeType",
+      "quote": "mixed with Honey"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "open the passages of the Urine, and help the Strangury, and all other pains of the Bladder and Reins, helping mightily to expel the Stone in the Kidnies or Bladder, and the Gravel also"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "process",
+      "confidence": 0.95
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.9
+     },
+     {
+      "field": "heat",
+      "confidence": 0.9
+     },
+     {
+      "field": "filtered",
+      "confidence": 0.85
+     },
+     {
+      "field": "recipeType",
+      "confidence": 0.85
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "part=root: no evidence quote given",
+    "form=drink: no evidence quote given"
+   ]
+  }
+ ],
+ "attempts": 3,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}

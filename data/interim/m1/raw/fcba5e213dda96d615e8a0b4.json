@@ -1,0 +1,297 @@
+{
+ "passageId": "culpeper-1652:herbal:chervil:009",
+ "recipes": [],
+ "rejections": [
+  {
+   "recipe": {
+    "recipeQuote": "The Garden Chervil being eaten, doth moderately warm the Stomach",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "♃ Chervil.",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "♃ Chervil.",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "none"
+    ],
+    "heat": "unknown",
+    "heatText": "unknown",
+    "durationText": "unknown",
+    "filtered": "not_applicable",
+    "process": "unknown",
+    "form": "other",
+    "indicationAsWritten": "moderately warm the Stomach",
+    "evidence": [
+     {
+      "field": "plantNameAsWritten",
+      "quote": "♃ Chervil."
+     },
+     {
+      "field": "part",
+      "quote": "being eaten"
+     },
+     {
+      "field": "solvent",
+      "quote": "being eaten"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "moderately warm the Stomach"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "plantNameAsWritten",
+      "confidence": 0.98
+     },
+     {
+      "field": "part",
+      "confidence": 0.6
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.9
+     },
+     {
+      "field": "heat",
+      "confidence": 0.5
+     },
+     {
+      "field": "filtered",
+      "confidence": 0.9
+     },
+     {
+      "field": "process",
+      "confidence": 0.5
+     },
+     {
+      "field": "form",
+      "confidence": 0.8
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "filtered=not_applicable: no evidence quote given",
+    "form=other: no evidence quote given"
+   ]
+  },
+  {
+   "recipe": {
+    "recipeQuote": "The Juyce or distilled Water therof being drunk, it is held good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides.",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "♃ Chervil.",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "♃ Chervil.",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "water"
+    ],
+    "heat": "boiled",
+    "heatText": "distilled",
+    "durationText": "unknown",
+    "filtered": "yes",
+    "process": "distillation",
+    "form": "drink",
+    "indicationAsWritten": "provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides",
+    "evidence": [
+     {
+      "field": "plantNameAsWritten",
+      "quote": "♃ Chervil."
+     },
+     {
+      "field": "solvent",
+      "quote": "distilled Water"
+     },
+     {
+      "field": "heat",
+      "quote": "distilled"
+     },
+     {
+      "field": "process",
+      "quote": "distilled"
+     },
+     {
+      "field": "filtered",
+      "quote": "distilled"
+     },
+     {
+      "field": "form",
+      "quote": "being drunk"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "plantNameAsWritten",
+      "confidence": 0.98
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.95
+     },
+     {
+      "field": "heat",
+      "confidence": 0.9
+     },
+     {
+      "field": "heatText",
+      "confidence": 0.9
+     },
+     {
+      "field": "process",
+      "confidence": 0.95
+     },
+     {
+      "field": "filtered",
+      "confidence": 0.9
+     },
+     {
+      "field": "form",
+      "confidence": 0.95
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.97
+     }
+    ]
+   },
+   "errors": [
+    "recipe: quote not found verbatim in passage: 'The Juyce or distilled Water therof being drunk, it is held good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides.'"
+   ]
+  },
+  {
+   "recipe": {
+    "recipeQuote": "the bruised Leavs laid to the place, being taken either in meat or drink, it is held good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides.",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "♃ Chervil.",
+      "part": "leaf",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "♃ Chervil.",
+    "part": "leaf",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "none"
+    ],
+    "heat": "unknown",
+    "heatText": "unknown",
+    "durationText": "unknown",
+    "filtered": "not_applicable",
+    "process": "other",
+    "form": "other",
+    "indicationAsWritten": "provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides",
+    "evidence": [
+     {
+      "field": "plantNameAsWritten",
+      "quote": "♃ Chervil."
+     },
+     {
+      "field": "part",
+      "quote": "Leavs"
+     },
+     {
+      "field": "solvent",
+      "quote": "being taken either in meat or drink"
+     },
+     {
+      "field": "process",
+      "quote": "bruised"
+     },
+     {
+      "field": "form",
+      "quote": "laid to the place"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "plantNameAsWritten",
+      "confidence": 0.98
+     },
+     {
+      "field": "part",
+      "confidence": 0.95
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.8
+     },
+     {
+      "field": "process",
+      "confidence": 0.85
+     },
+     {
+      "field": "form",
+      "confidence": 0.85
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.97
+     }
+    ]
+   },
+   "errors": [
+    "filtered=not_applicable: no evidence quote given"
+   ]
+  }
+ ],
+ "attempts": 3,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}

@@ -1,0 +1,383 @@
+{
+ "passageId": "culpeper-1652:herbal:pellitory-of-the-wall:009",
+ "recipes": [
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:pellitory-of-the-wall:009#r00",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:pellitory-of-the-wall:009",
+    "text": "The Juyce dropped into the Ears easeth the noise in them, and taketh away the pricking and shooting pains therein: The same or the distilled Water, asswageth hot and swelling Impostumes, Burnings and Scaldings by fire or Water, as also all other hot Tumors and Inflamations, or breakings out of Heat, being bathed often with wet Cloathes dipped therein. The said Juyce made into a Liniment with Ceruss and Oyl of Roses and anointed therewith, clenseth foul rotten Ulcers, and stayeth spreading or creeping Ulcers, and the running Scabs or Sores in Childrens Heads: and helpeth to stay falling of the Hair from off the Head. The said Oyntment, or the Herb applied to the Fundament openeth the Piles and easeth their pains; and being mixed with Goats Tallow, helpeth the Gout. The Juyce is very effectual to clens Fistulaes, and to heal them up safely; or the Herb it self bruised, and applied with a little Salt. It is likewise so effectual to heal any green Wound, that if it be bruised and bound thereto for three daies, you shall need no other Medicine to heal it further. A Pultis made hereof with Mallows, and boyled in Wine, with Wheat Bran, and Bean Flower; and some Oyl put thereto, and applied warm to any bruised Sinew, Tendon, or Muscle, doth in a very short time restore them to their strength, taking away the pains of the Bruises; and dissolveth the congealed Blood coming of Blows or Falls from high places.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Pellitory of the Wall.",
+     "subsection": "vertues and use",
+     "lineStart": 14198,
+     "lineEnd": 14230
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Pellitory of the Wall",
+     "part": "juice",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Pellitory of the Wall",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Pellitory of the Wall",
+   "part": "juice",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "none"
+   ],
+   "heat": "cold",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "expression",
+   "form": "other",
+   "indicationAsWritten": "easeth the noise in them, and taketh away the pricking and shooting pains therein",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "part": 0.95,
+    "solvent": 0.9,
+    "heat": 0.8,
+    "process": 0.9,
+    "form": 0.85,
+    "indicationAsWritten": 0.95,
+    "filtered": 0.9
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "The Juyce dropped into the Ears easeth the noise in them, and taketh away the pricking and shooting pains therein",
+      "start": 0,
+      "end": 113,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Pellitory of the Wall",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "easeth the noise in them, and taketh away the pricking and shooting pains therein",
+      "start": 32,
+      "end": 113,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "Juyce",
+      "start": 4,
+      "end": 9,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "dropped into the Ears",
+      "start": 10,
+      "end": 31,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "dropped",
+      "start": 10,
+      "end": 17,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "Juyce",
+      "start": 4,
+      "end": 9,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "dropped into the Ears",
+      "start": 10,
+      "end": 31,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "dropped into the Ears",
+      "start": 10,
+      "end": 31,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:52:35+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:pellitory-of-the-wall:009#r01",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:pellitory-of-the-wall:009",
+    "text": "The Juyce dropped into the Ears easeth the noise in them, and taketh away the pricking and shooting pains therein: The same or the distilled Water, asswageth hot and swelling Impostumes, Burnings and Scaldings by fire or Water, as also all other hot Tumors and Inflamations, or breakings out of Heat, being bathed often with wet Cloathes dipped therein. The said Juyce made into a Liniment with Ceruss and Oyl of Roses and anointed therewith, clenseth foul rotten Ulcers, and stayeth spreading or creeping Ulcers, and the running Scabs or Sores in Childrens Heads: and helpeth to stay falling of the Hair from off the Head. The said Oyntment, or the Herb applied to the Fundament openeth the Piles and easeth their pains; and being mixed with Goats Tallow, helpeth the Gout. The Juyce is very effectual to clens Fistulaes, and to heal them up safely; or the Herb it self bruised, and applied with a little Salt. It is likewise so effectual to heal any green Wound, that if it be bruised and bound thereto for three daies, you shall need no other Medicine to heal it further. A Pultis made hereof with Mallows, and boyled in Wine, with Wheat Bran, and Bean Flower; and some Oyl put thereto, and applied warm to any bruised Sinew, Tendon, or Muscle, doth in a very short time restore them to their strength, taking away the pains of the Bruises; and dissolveth the congealed Blood coming of Blows or Falls from high places.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Pellitory of the Wall.",
+     "subsection": "vertues and use",
+     "lineStart": 14198,
+     "lineEnd": 14230
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "compound",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Pellitory of the Wall",
+     "part": "unknown",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Pellitory of the Wall",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    },
+    {
+     "plantNameAsWritten": "Mallows",
+     "part": "unknown",
+     "role": "co_ingredient",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Mallows",
+       "start": 1101,
+       "end": 1108,
+       "inHeading": false
+      }
+     ]
+    },
+    {
+     "plantNameAsWritten": "Wheat Bran",
+     "part": "unknown",
+     "role": "co_ingredient",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Wheat Bran",
+       "start": 1135,
+       "end": 1145,
+       "inHeading": false
+      }
+     ]
+    },
+    {
+     "plantNameAsWritten": "Bean Flower",
+     "part": "unknown",
+     "role": "co_ingredient",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Bean Flower",
+       "start": 1151,
+       "end": 1162,
+       "inHeading": false
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Pellitory of the Wall",
+   "part": "unknown",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "wine",
+    "other"
+   ],
+   "heat": "warm",
+   "heatText": "applied warm",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "decoction",
+   "form": "poultice",
+   "indicationAsWritten": "any bruised Sinew, Tendon, or Muscle",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "solvent": 0.85,
+    "heat": 0.9,
+    "process": 0.9,
+    "form": 0.9,
+    "indicationAsWritten": 0.95,
+    "filtered": 0.9
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "A Pultis made hereof with Mallows, and boyled in Wine, with Wheat Bran, and Bean Flower; and some Oyl put thereto, and applied warm to any bruised Sinew, Tendon, or Muscle",
+      "start": 1075,
+      "end": 1246,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Pellitory of the Wall",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "heatText": [
+     {
+      "quote": "applied warm",
+      "start": 1194,
+      "end": 1206,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "any bruised Sinew, Tendon, or Muscle",
+      "start": 1210,
+      "end": 1246,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "made hereof with Mallows, and boyled in Wine, with Wheat Bran, and Bean Flower",
+      "start": 1084,
+      "end": 1162,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "boyled in Wine",
+      "start": 1114,
+      "end": 1128,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "applied warm",
+      "start": 1194,
+      "end": 1206,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "boyled",
+      "start": 1114,
+      "end": 1120,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "applied warm to any bruised Sinew, Tendon, or Muscle",
+      "start": 1194,
+      "end": 1246,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "applied warm to any bruised Sinew, Tendon, or Muscle",
+      "start": 1194,
+      "end": 1246,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": true,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:52:35+00:00"
+   }
+  }
+ ],
+ "rejections": [],
+ "attempts": 2,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}

@@ -1,0 +1,17 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "de578d6690f76dd2af7b3e1f898df94d",
+ "retrievedAt": "2026-11-06T06:37:05+00:00",
+ "response": {
+  "_schemaError": "Generated JSON does not match the expected schema. Please adjust your prompt. See 'failed_generation' for more details. Error: jsonschema: '/recipes/0/evidence/4/field' does not validate with /properties/recipes/items/properties/evidence/items/properties/field/enum: value must be one of 'recipeType', 'part', 'freshOrDried', 'heat', 'filtered', 'process', 'form', 'solvent'",
+  "choices": [
+   {
+    "message": {
+     "content": "{\n  \"recipes\": [\n    {\n      \"recipeQuote\": \"Ash-tree Tops and Leaves are good against the biting of Serpents and Vipers\",\n      \"recipeType\": \"single_plant\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Ash-Tree\",\n          \"part\": \"leaf\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Ash-Tree\",\n      \"part\": \"leaf\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"unknown\"\n      ],\n      \"heat\": \"unknown\",\n      \"heatText\": \"unknown\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"not_applicable\",\n      \"process\": \"unknown\",\n      \"form\": \"other\",\n      \"indicationAsWritten\": \"the biting of Serpents and Vipers\",\n      \"evidence\": [\n        {\n          \"field\": \"recipeType\",\n          \"quote\": \"Ash-tree Tops and Leaves are good against the biting of Serpents and Vipers\"\n        },\n        {\n          \"field\": \"part\",\n          \"quote\": \"Tops and Leaves\"\n        },\n        {\n          \"field\": \"filtered\",\n          \"quote\": \"Ash-tree Tops and Leaves are good against the biting of Serpents and Vipers\"\n        },\n        {\n          \"field\": \"form\",\n          \"quote\": \"Ash-tree Tops and Leaves are good against the biting of Serpents and Vipers\"\n        },\n        {\n          \"field\": \"indicationAsWritten\",\n          \"quote\": \"the biting of Serpents and Vipers\"\n        }\n      ],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"recipeType\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"part\",\n          \"confidence\": 0.8\n        },\n        {\n          \"field\": \"filtered\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"form\",\n          \"confidence\": 0.8\n        },\n        {\n          \"field\": \"indicationAsWritten\",\n          \"confidence\": 0.95\n        }\n      ]\n    }\n  ]\n}"
+    },
+    "finish_reason": "schema_error"
+   }
+  ],
+  "_maxCompletionTokensSent": 3226
+ }
+}

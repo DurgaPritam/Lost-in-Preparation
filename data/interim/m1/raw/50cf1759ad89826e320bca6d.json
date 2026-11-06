@@ -1,0 +1,340 @@
+{
+ "passageId": "culpeper-1652:herbal:onions:004",
+ "recipes": [
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:onions:004#r00",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:onions:004",
+    "text": "Leeks are as like them in quality as a Pomewater is like an Apple: They are a Remedy against a Surfeit of Mushroms, being baked under the Embers and taken; and being boyled and applied warm helpeth the Piles; In other things they have the same property as the Onions, although not so effectual.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Onions.",
+     "subsection": "vertues and use",
+     "lineStart": 13688,
+     "lineEnd": 13698
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Leeks",
+     "part": "unknown",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Leeks",
+       "start": 0,
+       "end": 5,
+       "inHeading": false
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Leeks",
+   "part": "unknown",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "none"
+   ],
+   "heat": "unknown",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "other",
+   "form": "other",
+   "indicationAsWritten": "Remedy against a Surfeit of Mushroms",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "solvent": 0.9,
+    "heat": 0.5,
+    "process": 0.7,
+    "form": 0.6,
+    "indicationAsWritten": 0.95,
+    "filtered": 0.8
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "They are a Remedy against a Surfeit of Mushroms, being baked under the Embers and taken",
+      "start": 67,
+      "end": 154,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Leeks",
+      "start": 0,
+      "end": 5,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "Remedy against a Surfeit of Mushroms",
+      "start": 78,
+      "end": 114,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "They are a Remedy against a Surfeit of Mushroms, being baked under the Embers and taken",
+      "start": 67,
+      "end": 154,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "taken",
+      "start": 149,
+      "end": 154,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "baked under the Embers",
+      "start": 122,
+      "end": 144,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "baked",
+      "start": 122,
+      "end": 127,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "taken",
+      "start": 149,
+      "end": 154,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "baked under the Embers and taken",
+      "start": 122,
+      "end": 154,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:49:08+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:onions:004#r01",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:onions:004",
+    "text": "Leeks are as like them in quality as a Pomewater is like an Apple: They are a Remedy against a Surfeit of Mushroms, being baked under the Embers and taken; and being boyled and applied warm helpeth the Piles; In other things they have the same property as the Onions, although not so effectual.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "Onions.",
+     "subsection": "vertues and use",
+     "lineStart": 13688,
+     "lineEnd": 13698
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Leeks",
+     "part": "unknown",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Leeks",
+       "start": 0,
+       "end": 5,
+       "inHeading": false
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Leeks",
+   "part": "unknown",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "none"
+   ],
+   "heat": "warm",
+   "heatText": "warm",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "other",
+   "form": "poultice",
+   "indicationAsWritten": "the Piles",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "solvent": 0.9,
+    "heat": 0.95,
+    "process": 0.7,
+    "form": 0.85,
+    "indicationAsWritten": 0.95,
+    "filtered": 0.8
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "being boyled and applied warm helpeth the Piles",
+      "start": 160,
+      "end": 207,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Leeks",
+      "start": 0,
+      "end": 5,
+      "inHeading": false
+     }
+    ],
+    "heatText": [
+     {
+      "quote": "warm",
+      "start": 185,
+      "end": 189,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "the Piles",
+      "start": 198,
+      "end": 207,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "being boyled and applied warm helpeth the Piles",
+      "start": 160,
+      "end": 207,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "applied",
+      "start": 177,
+      "end": 184,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "warm",
+      "start": 185,
+      "end": 189,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "boyled",
+      "start": 166,
+      "end": 172,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "applied",
+      "start": 177,
+      "end": 184,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "boyled and applied warm",
+      "start": 166,
+      "end": 189,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v2:36e5019562",
+    "annotator": null,
+    "createdAt": "2026-11-06T06:49:08+00:00"
+   }
+  }
+ ],
+ "rejections": [],
+ "attempts": 2,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}

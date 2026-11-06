@@ -1,0 +1,17 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "9815e61e967932bcd4ca53c6bf96d4f7",
+ "retrievedAt": "2026-11-06T06:46:58+00:00",
+ "response": {
+  "_schemaError": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '/recipes/0/evidence/2/field' does not validate with /properties/recipes/items/properties/evidence/items/properties/field/enum: value must be one of 'recipeType', 'part', 'freshOrDried', 'heat', 'filtered', 'process', 'form', 'solvent'",
+  "choices": [
+   {
+    "message": {
+     "content": "{\n  \"recipes\": [\n    {\n      \"recipeQuote\": \"The distilled water is a present remedy for hurts and blows on the eyes and for blindness\",\n      \"recipeType\": \"single_plant\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Loos-Strife, with Spiked Heads of Flowers.\",\n          \"part\": \"unknown\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }\n      ],\n      \"plantNameAsWritten\": \"Loos-Strife, with Spiked Heads of Flowers.\",\n      \"part\": \"unknown\",\n      \"freshOrDried\": \"unknown\",\n      \"solvent\": [\n        \"none\"\n      ],\n      \"heat\": \"unknown\",\n      \"heatText\": \"unknown\",\n      \"durationText\": \"unknown\",\n      \"filtered\": \"unknown\",\n      \"process\": \"distillation\",\n      \"form\": \"other\",\n      \"indicationAsWritten\": \"hurts and blows on the eyes and for blindness\",\n      \"evidence\": [\n        {\n          \"field\": \"solvent\",\n          \"quote\": \"The distilled water\"\n        },\n        {\n          \"field\": \"process\",\n          \"quote\": \"distilled water\"\n        },\n        {\n          \"field\": \"indicationAsWritten\",\n          \"quote\": \"hurts and blows on the eyes and for blindness\"\n        }\n      ],\n      \"quotesFromHeading\": [\n        \"plantNameAsWritten\",\n        \"ingredients\"\n      ],\n      \"fieldConfidence\": [\n        {\n          \"field\": \"solvent\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"process\",\n          \"confidence\": 0.9\n        },\n        {\n          \"field\": \"indicationAsWritten\",\n          \"confidence\": 0.95\n        }\n      ]\n    },\n    {\n      \"recipeQuote\": \"To every ounce of the Water, ad two drams of May Butter without Salt, and of Sugar and Wax of each as much also, let them boyl gently all together: Let Tents be dipped in the Liquor that remaineth after it is cold, and put into the Wounds, and the place covered with a Linnen cloth doubled and anointed with the Oyntment\",\n      \"recipeType\": \"compound\",\n      \"ingredients\": [\n        {\n          \"plantNameAsWritten\": \"Loos-Strife, with Spiked Heads of Flowers.\",\n          \"part\": \"unknown\",\n          \"role\": \"principal\",\n          \"kind\": \"plant\"\n        }]}]}"
+    },
+    "finish_reason": "schema_error"
+   }
+  ],
+  "_maxCompletionTokensSent": 2070
+ }
+}

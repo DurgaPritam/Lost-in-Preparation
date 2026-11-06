@@ -1,0 +1,43 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "requestSha256": "b24e20fef5f9c121d196d45bd0c9ed27",
+ "retrievedAt": "2026-11-06T06:39:52+00:00",
+ "response": {
+  "id": "chatcmpl-363f811e-4471-44e8-9071-8ad98f723654",
+  "object": "chat.completion",
+  "created": 1793947192,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"recipes\": []\n}",
+     "reasoning": "We need to see if any recipe. Passage describes properties, no indication of preparation or use. No recipe. Return empty."
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "queue_time": 0.163926914,
+   "prompt_tokens": 3394,
+   "prompt_time": 0.160459065,
+   "completion_tokens": 48,
+   "completion_time": 0.100710467,
+   "total_tokens": 3442,
+   "total_time": 0.261169532,
+   "completion_tokens_details": {
+    "reasoning_tokens": 26
+   }
+  },
+  "usage_breakdown": null,
+  "system_fingerprint": "fp_4727af4560",
+  "x_groq": {
+   "id": "req_01m6qsbk5aem984zrtbvsd4n24",
+   "seed": 0
+  },
+  "service_tier": "on_demand",
+  "_maxCompletionTokensSent": 3767
+ }
+}

@@ -1,0 +1,444 @@
+{
+ "passageId": "culpeper-1652:herbal:cudweed-or-cottonweed:009",
+ "recipes": [],
+ "rejections": [
+  {
+   "recipe": {
+    "recipeQuote": "The Decoction being made into red Wine and drunk, or the Pouder taken therin; it also helpeth the Bloody Flux, and easeth the torments that come therby, stayeth the immoderate Courses of Women, and is also good for inward or outward Wounds, Hurts, and Bruises, and helpeth Children both of Burstings and the Worms; and the Diseas called Tenasmus, which is an often provocation to the Stool, and doing nothing, being either drunk or injected",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Cudweed, or Cottonweed.",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "Cudweed, or Cottonweed.",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "wine"
+    ],
+    "heat": "boiled",
+    "heatText": "Decoction",
+    "durationText": "unknown",
+    "filtered": "unknown",
+    "process": "decoction",
+    "form": "drink",
+    "indicationAsWritten": "Deflnxions of Rhewm from the Head, and to stay Fluxes, of Blood whersoever, the Bloody Flux, the immoderate Courses of Women, inward or outward Wounds, Hurts, and Bruises, Children both of Burstings and the Worms, the Diseas called Tenasmus",
+    "evidence": [
+     {
+      "field": "recipeType",
+      "quote": "The Decoction being made into red Wine and drunk"
+     },
+     {
+      "field": "solvent",
+      "quote": "into red Wine"
+     },
+     {
+      "field": "heat",
+      "quote": "Decoction"
+     },
+     {
+      "field": "process",
+      "quote": "Decoction"
+     },
+     {
+      "field": "form",
+      "quote": "drunk"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "Deflnxions of Rhewm from the Head, and to stay Fluxes, of Blood whersoever, the Bloody Flux, the immoderate Courses of Women, inward or outward Wounds, Hurts, and Bruises, Children both of Burstings and the Worms, the Diseas called Tenasmus"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "recipeType",
+      "confidence": 0.9
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.9
+     },
+     {
+      "field": "heat",
+      "confidence": 0.9
+     },
+     {
+      "field": "process",
+      "confidence": 0.9
+     },
+     {
+      "field": "form",
+      "confidence": 0.9
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "indicationAsWritten: quote not found verbatim in passage: 'Deflnxions of Rhewm from the Head, and to stay Fluxes, of Blood whersoever, the Bloody Flux, the immoderate Courses of Women, inward or outward Wounds, Hurts, and Bruises, Children both of Burstings and the Worms, the Diseas called Tenasmus'"
+   ]
+  },
+  {
+   "recipe": {
+    "recipeQuote": "The Decoction being made into red Wine and drunk, or the Pouder taken therin; it also helpeth the Bloody Flux, and easeth the torments that come therby, stayeth the immoderate Courses of Women, and is also good for inward or outward Wounds, Hurts, and Bruises, and helpeth Children both of Burstings and the Worms; and the Diseas called Tenasmus, which is an often provocation to the Stool, and doing nothing, being either drunk or injected",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Cudweed, or Cottonweed.",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "Cudweed, or Cottonweed.",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "wine"
+    ],
+    "heat": "cold",
+    "heatText": "Powder",
+    "durationText": "unknown",
+    "filtered": "no",
+    "process": "powder",
+    "form": "drink",
+    "indicationAsWritten": "Deflnxions of Rhewm from the Head, and to stay Fluxes, of Blood whersoever, the Bloody Flux, the immoderate Courses of Women, inward or outward Wounds, Hurts, and Bruises, Children both of Burstings and the Worms, the Diseas called Tenasmus",
+    "evidence": [
+     {
+      "field": "recipeType",
+      "quote": "or the Pouder taken therin"
+     },
+     {
+      "field": "solvent",
+      "quote": "taken therin"
+     },
+     {
+      "field": "heat",
+      "quote": "Powder"
+     },
+     {
+      "field": "heatText",
+      "quote": "Powder"
+     },
+     {
+      "field": "filtered",
+      "quote": "Pouder taken therin"
+     },
+     {
+      "field": "process",
+      "quote": "Pouder"
+     },
+     {
+      "field": "form",
+      "quote": "taken therin"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "Deflnxions of Rhewm from the Head, and to stay Fluxes, of Blood whersoever, the Bloody Flux, the immoderate Courses of Women, inward or outward Wounds, Hurts, and Bruises, Children both of Burstings and the Worms, the Diseas called Tenasmus"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "recipeType",
+      "confidence": 0.9
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.85
+     },
+     {
+      "field": "heat",
+      "confidence": 0.8
+     },
+     {
+      "field": "process",
+      "confidence": 0.9
+     },
+     {
+      "field": "form",
+      "confidence": 0.85
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "heatText: quote not found verbatim in passage: 'Powder'",
+    "indicationAsWritten: quote not found verbatim in passage: 'Deflnxions of Rhewm from the Head, and to stay Fluxes, of Blood whersoever, the Bloody Flux, the immoderate Courses of Women, inward or outward Wounds, Hurts, and Bruises, Children both of Burstings and the Worms, the Diseas called Tenasmus'",
+    "heat: quote not found verbatim in passage: 'Powder'"
+   ]
+  },
+  {
+   "recipe": {
+    "recipeQuote": "The green Leavs bruised and laid to any green Wound staieth the bleeding, and healeth it up quickly",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Cudweed, or Cottonweed.",
+      "part": "leaf",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "Cudweed, or Cottonweed.",
+    "part": "leaf",
+    "freshOrDried": "fresh",
+    "solvent": [
+     "none"
+    ],
+    "heat": "cold",
+    "heatText": "bruised",
+    "durationText": "unknown",
+    "filtered": "not_applicable",
+    "process": "other",
+    "form": "poultice",
+    "indicationAsWritten": "any green Wound",
+    "evidence": [
+     {
+      "field": "part",
+      "quote": "green Leavs"
+     },
+     {
+      "field": "freshOrDried",
+      "quote": "green Leavs"
+     },
+     {
+      "field": "heat",
+      "quote": "bruised"
+     },
+     {
+      "field": "heatText",
+      "quote": "bruised"
+     },
+     {
+      "field": "process",
+      "quote": "bruised"
+     },
+     {
+      "field": "form",
+      "quote": "laid to any green Wound"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "any green Wound"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "part",
+      "confidence": 0.95
+     },
+     {
+      "field": "freshOrDried",
+      "confidence": 0.9
+     },
+     {
+      "field": "heat",
+      "confidence": 0.9
+     },
+     {
+      "field": "process",
+      "confidence": 0.85
+     },
+     {
+      "field": "form",
+      "confidence": 0.9
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "filtered=not_applicable: no evidence quote given",
+    "solvent=['none']: no evidence quote given"
+   ]
+  },
+  {
+   "recipe": {
+    "recipeQuote": "The Decoction or Juyce therof doth the same, and helpeth all old and filthy Ulcers quickly",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Cudweed, or Cottonweed.",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "Cudweed, or Cottonweed.",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "unknown"
+    ],
+    "heat": "boiled",
+    "heatText": "Decoction",
+    "durationText": "unknown",
+    "filtered": "unknown",
+    "process": "decoction",
+    "form": "drink",
+    "indicationAsWritten": "all old and filthy Ulcers",
+    "evidence": [
+     {
+      "field": "process",
+      "quote": "Decoction"
+     },
+     {
+      "field": "heat",
+      "quote": "Decoction"
+     },
+     {
+      "field": "heatText",
+      "quote": "Decoction"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "all old and filthy Ulcers"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "process",
+      "confidence": 0.9
+     },
+     {
+      "field": "heat",
+      "confidence": 0.9
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "form=drink: no evidence quote given"
+   ]
+  },
+  {
+   "recipe": {
+    "recipeQuote": "The juyce of the Herb taken in Wine and Milk is (as Pliny saith) a Sovereign remedy against the Mumps and Quinsie",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "Cudweed, or Cottonweed.",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "Cudweed, or Cottonweed.",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "wine",
+     "other"
+    ],
+    "heat": "cold",
+    "heatText": "taken",
+    "durationText": "unknown",
+    "filtered": "no",
+    "process": "expression",
+    "form": "drink",
+    "indicationAsWritten": "the Mumps and Quinsie",
+    "evidence": [
+     {
+      "field": "process",
+      "quote": "juyce of the Herb"
+     },
+     {
+      "field": "solvent",
+      "quote": "taken in Wine and Milk"
+     },
+     {
+      "field": "heat",
+      "quote": "taken"
+     },
+     {
+      "field": "heatText",
+      "quote": "taken"
+     },
+     {
+      "field": "form",
+      "quote": "taken in Wine and Milk"
+     },
+     {
+      "field": "indicationAsWritten",
+      "quote": "the Mumps and Quinsie"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "process",
+      "confidence": 0.9
+     },
+     {
+      "field": "solvent",
+      "confidence": 0.85
+     },
+     {
+      "field": "heat",
+      "confidence": 0.8
+     },
+     {
+      "field": "indicationAsWritten",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "filtered=no: no evidence quote given"
+   ]
+  }
+ ],
+ "attempts": 3,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v2:36e5019562"
+}
