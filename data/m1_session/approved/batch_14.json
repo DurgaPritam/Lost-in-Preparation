@@ -1,0 +1,860 @@
+{
+ "batch": 14,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:the-lesser-celandine-usually-known-by-the-name-of-pilewort-a:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:the-lesser-celandine-usually-known-by-the-name-of-pilewort-a:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:the-lesser-celandine-usually-known-by-the-name-of-pilewort-a:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:the-lesser-celandine-usually-known-by-the-name-of-pilewort-a:004": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:clary-or-more-properly-clear-eye:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:clary-or-more-properly-clear-eye:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:clary-or-more-properly-clear-eye:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:the-lesser-celandine-usually-known-by-the-name-of-pilewort-a:005": {
+   "recipes": [
+    {
+     "recipeQuote": "the decoction of the leaves and roots wonderfully helps piles and hæmorrhoids, also kernels by the ears and throat, called the king’s evil, or any other hard wens or tumours",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "PILEWORT",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "PILEWORT",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "piles and hæmorrhoids, also kernels by the ears and throat, called the king’s evil, or any other hard wens or tumours",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the leaves and roots"
+      },
+      {
+       "field": "heat",
+       "quote": "the decoction of the leaves and roots"
+      },
+      {
+       "field": "process",
+       "quote": "the decoction of the leaves and roots"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:the-lesser-celandine-usually-known-by-the-name-of-pilewort-a:006": {
+   "recipes": [
+    {
+     "recipeQuote": "Pilewort made into an oil, ointment, or plaister, readily cures both the piles, or hæmorrhoids, and the king’s evil",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Pilewort",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Pilewort",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "the piles, or hæmorrhoids, and the king’s evil",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "made into an oil, ointment"
+      },
+      {
+       "field": "form",
+       "quote": "made into an oil, ointment"
+      },
+      {
+       "field": "filtered",
+       "quote": "made into an oil, ointment"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Pilewort made into an oil, ointment, or plaister, readily cures both the piles, or hæmorrhoids, and the king’s evil",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Pilewort",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Pilewort",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "plaster",
+     "indicationAsWritten": "the piles, or hæmorrhoids, and the king’s evil",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "ointment, or plaister"
+      },
+      {
+       "field": "filtered",
+       "quote": "ointment, or plaister"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The very herb borne about one’s body next the skin helps in such diseases, though it never touch the place grieved",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Pilewort",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Pilewort",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "such diseases",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The very herb borne about one’s body"
+      },
+      {
+       "field": "form",
+       "quote": "The very herb borne about one’s body next the skin"
+      },
+      {
+       "field": "filtered",
+       "quote": "though it never touch the place grieved"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:clary-or-more-properly-clear-eye:004": {
+   "recipes": [
+    {
+     "recipeQuote": "The seed put into the eyes clears them from motes, and such like things gotten within the lids to offend them, as also clears them from white and red spots on them.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "clears them from motes, and such like things gotten within the lids to offend them, as also clears them from white and red spots on them",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seed put into the eyes"
+      },
+      {
+       "field": "form",
+       "quote": "put into the eyes"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The mucilage of the seed made with water, and applied to tumours, or swellings, disperses and takes them away; as also draws forth splinters, thorns, or other things gotten into the flesh.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "tumours, or swellings, disperses and takes them away; as also draws forth splinters, thorns, or other things gotten into the flesh",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The mucilage of the seed"
+      },
+      {
+       "field": "solvent",
+       "quote": "made with water"
+      },
+      {
+       "field": "process",
+       "quote": "The mucilage of the seed made with water"
+      },
+      {
+       "field": "form",
+       "quote": "applied to tumours, or swellings"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied to tumours, or swellings"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The leaves used with vinegar, either by itself, or with a little honey, doth help boils, felons, and the hot inflammation that are gathered by their pains",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "boils, felons, and the hot inflammation that are gathered by their pains",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves used"
+      },
+      {
+       "field": "solvent",
+       "quote": "used with vinegar, either by itself"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The leaves used with vinegar, either by itself, or with a little honey, doth help boils, felons, and the hot inflammation that are gathered by their pains",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar",
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "boils, felons, and the hot inflammation that are gathered by their pains",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves used"
+      },
+      {
+       "field": "solvent",
+       "quote": "used with vinegar"
+      },
+      {
+       "field": "solvent",
+       "quote": "with a little honey"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The powder of the dried root put into the nose, provokes sneezing, and thereby purges the head and brain of much rheum and corruption.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "root",
+     "freshOrDried": "dried",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "inhalation",
+     "indicationAsWritten": "purges the head and brain of much rheum and corruption",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the dried root"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "the dried root"
+      },
+      {
+       "field": "heat",
+       "quote": "The powder of the dried root"
+      },
+      {
+       "field": "process",
+       "quote": "The powder of the dried root"
+      },
+      {
+       "field": "form",
+       "quote": "put into the nose, provokes sneezing"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The seed or leaves taken in wine, provokes to venery.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "provokes to venery",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seed or leaves"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "taken in wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The seed or leaves taken in wine, provokes to venery.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "provokes to venery",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seed or leaves"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "taken in wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is of much use both for men and women that have weak backs, and helps to strengthen the reins: used either by itself, or with other herbs conducing to the same effect",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "men and women that have weak backs, and helps to strengthen the reins",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The fresh leaves dipped in a batter of flour, eggs, and a little milk, and fried in butter, and served to the table, is not unpleasant to any, but exceedingly profitable for those that are troubled with weak backs, and the effects thereof.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "flour",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      },
+      {
+       "plantNameAsWritten": "eggs",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "animal"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "leaf",
+     "freshOrDried": "fresh",
+     "solvent": [
+      "other"
+     ],
+     "heat": "warm",
+     "heatText": "fried in butter",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "those that are troubled with weak backs, and the effects thereof",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The fresh leaves"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "The fresh leaves"
+      },
+      {
+       "field": "solvent",
+       "quote": "a little milk"
+      },
+      {
+       "field": "solvent",
+       "quote": "fried in butter"
+      },
+      {
+       "field": "heat",
+       "quote": "fried in butter"
+      },
+      {
+       "field": "process",
+       "quote": "dipped in a batter of flour, eggs, and a little milk, and fried in butter"
+      },
+      {
+       "field": "form",
+       "quote": "served to the table"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of the herb put into ale or beer, and drank, brings down women’s courses, and expels the after-birth.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CLARY",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CLARY",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "brings down women’s courses, and expels the after-birth",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of the herb"
+      },
+      {
+       "field": "solvent",
+       "quote": "put into ale or beer"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice of the herb put into ale or beer"
+      },
+      {
+       "field": "form",
+       "quote": "and drank"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
