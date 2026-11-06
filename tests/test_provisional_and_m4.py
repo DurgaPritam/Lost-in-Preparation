@@ -166,8 +166,10 @@ def test_profiles_split_per_species_with_index():
 
 
 def test_toxicity_screen_is_cited_and_conservative():
+    from _cache import needs_cache
     from lip.m2 import toxicity
-    assert toxicity.flag("Atropa belladonna")[0] == "known_toxic"
-    flag, note = toxicity.flag("Mentha spicata")
-    assert flag == "unknown" and "not evidence of safety" in note  # never "none_known"
-    assert toxicity.load()["revid"]
+    with needs_cache("data/cache/sources (Wikipedia, List of poisonous plants)", "python -m lip m2 resolve"):
+        assert toxicity.flag("Atropa belladonna")[0] == "known_toxic"
+        flag, note = toxicity.flag("Mentha spicata")
+        assert flag == "unknown" and "not evidence of safety" in note  # never "none_known"
+        assert toxicity.load()["revid"]

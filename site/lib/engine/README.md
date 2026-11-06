@@ -1,6 +1,6 @@
 # Preparation engine (`lib/engine`)
 
-This is the preparation model (M4, `pipeline/lip/m4/model.py`) ported to TypeScript, for the planned Preparation Lab. Given the inputs in `site-data/engine/` (contract v1.7, P38, *proposed*), it computes any combination of solvent, heat, filtration and acidity in the browser:
+This is the preparation model (M4, `pipeline/lip/m4/model.py`) ported to TypeScript, for the planned Preparation Lab. Given the inputs in `site-data/engine/` (contract v1.7, P38, approved), it computes any combination of solvent, heat, filtration and acidity in the browser:
 - the median likelihood;
 - the 5th–95th percentile range, including descriptor error;
 - the four separate factor medians (solvent, heat, filtration, acidity).

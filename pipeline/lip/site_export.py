@@ -366,8 +366,8 @@ def write_status(v: dict) -> None:
          f"| `case_studies.json` | {g('case_studies.json')} | the liquorice extraction correction and its effect on Phase 6 (P37d) | — |",
          f"| `hypotheses.json` | {g('hypotheses.json')} | Phase 6 on audit v1 with logged corrections ({h['ranked']} hypotheses worth re-testing) | depends on the hand-check and the unvalidated aqueous model |",
          *([f"| `engine/` (model.json + {f['engine/']['species']} species files + parity.json) | {f['engine/']['compounds']} compounds, "
-            f"{f['engine/']['parityCases']} parity cases | inputs of the preparation model for the in-browser Preparation Lab (P38, *proposed*); "
-            "the same model inputs as the profiles, self-checked against them; heuristic factors labelled | P38 approval |"] if 'engine/' in f else []),
+            f"{f['engine/']['parityCases']} parity cases | inputs of the preparation model for the in-browser Preparation Lab (P38, approved); "
+            "the same model inputs as the profiles, self-checked against them; heuristic factors labelled | — |"] if 'engine/' in f else []),
          "| `metrics.json` | 1 | extraction run, name resolution, logP error, artemisinin check, `headlineMatchRate` (audit v1); AI-reference results only under `provisional` | gold-set F1 and annotator self-consistency (not computed until annotation exists) |",
          "", "## Added in contract v1.6 (P37, approved by the project lead; P37d added for the case-study page)", "",
          "- `recipes.json` `corrections` (P37a), `metrics.json` `reportingGap` (P37b) and `auditV2` (P37c), `audit_v2.json` (P37c), "

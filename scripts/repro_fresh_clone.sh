@@ -38,6 +38,7 @@ run() {
   local rc=$? status
   if [ $rc -eq 0 ]; then status="pass"
   elif grep -q "LIP_CACHE_ONLY=1" "$LOG/$name.log"; then status="needs download (cache-only refused the network)"
+  elif grep -q "passages.parquet\|data/raw/" "$LOG/$name.log"; then status="needs the raw texts (before fetch --verify)"
   else status="FAIL (exit $rc)"; fi
   if [ "$expect" = reproduce ] && [ $rc -ne 0 ]; then FAIL=1; fi
   ROWS+=("| \`$name\` | $expect | $status | $((SECONDS - start)) s | \`logs/$name.log\` |")
@@ -51,13 +52,21 @@ echo "[repro] clone of $COMMIT in $REPO"
 
 # Expected to reproduce from committed files alone.
 run contract        reproduce   python -m lip contract
-run pytest          reproduce   python -m pytest -q -p no:cacheprovider
 run m6-hypotheses   reproduce   python -m lip m6 hypotheses
-run site-data       reproduce   python -m lip site
 run results         reproduce   python -m lip results
-# Upstream steps: they need the raw texts or the git-ignored download caches, which a fresh clone does not have.
-# In cache-only mode they must fail loudly (never silently produce different data).
-run ingest          needs-download python -m lip ingest
+# Before the raw texts are downloaded these need data/interim/passages.parquet (built by ingest), so they fail loudly.
+run site-data       needs-download python -m lip site
+run pytest          needs-download python -m pytest -q -p no:cacheprovider
+# The raw historical texts are not committed: download them once, checking each against the SHA-256 pinned in
+# data/raw/manifest.json (the only pipeline network step; keyless). Everything after it runs cache-only again.
+( cd "$REPO" && env -i HOME="$WORK/home" PATH="$REPO/.venv/bin:/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin" \
+    PYTHONPATH="$REPO/pipeline:$REPO" python -m lip fetch --verify ) > "$LOG/fetch-verify.log" 2>&1 \
+  && ROWS+=("| \`fetch --verify\` (4 raw texts, checksums pinned) | setup | pass | | \`logs/fetch-verify.log\` |") \
+  || { ROWS+=("| \`fetch --verify\` (4 raw texts, checksums pinned) | setup | FAIL | | \`logs/fetch-verify.log\` |"); FAIL=1; }
+run ingest          reproduce   python -m lip ingest
+run site-data-2     reproduce   python -m lip site
+run pytest-2        reproduce   python -m pytest -q -p no:cacheprovider -rs
+# Needs the git-ignored literature caches (abstracts and open-access texts); in cache-only mode it must fail loudly.
 run m5-audit-v2     needs-download python -m lip m5 audit-v2
 
 # The website: install, then the same gates as CI (minus Lighthouse, which needs a browser).

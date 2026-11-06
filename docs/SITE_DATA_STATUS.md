@@ -16,7 +16,7 @@ Status words: **validated** = checked against an independent, non-AI reference; 
 | `audit_v2.json` | 323 | audit **v2**, pre-registered re-analysis after v1's design flaw (frozen; P37c) | 40-study hand-check; small n |
 | `case_studies.json` | 1 | the liquorice extraction correction and its effect on Phase 6 (P37d) | — |
 | `hypotheses.json` | 3 | Phase 6 on audit v1 with logged corrections (3 hypotheses worth re-testing) | depends on the hand-check and the unvalidated aqueous model |
-| `engine/` (model.json + 19 species files + parity.json) | 2665 compounds, 27 parity cases | inputs of the preparation model for the in-browser Preparation Lab (P38, *proposed*); the same model inputs as the profiles, self-checked against them; heuristic factors labelled | P38 approval |
+| `engine/` (model.json + 19 species files + parity.json) | 2665 compounds, 27 parity cases | inputs of the preparation model for the in-browser Preparation Lab (P38, approved); the same model inputs as the profiles, self-checked against them; heuristic factors labelled | — |
 | `metrics.json` | 1 | extraction run, name resolution, logP error, artemisinin check, `headlineMatchRate` (audit v1); AI-reference results only under `provisional` | gold-set F1 and annotator self-consistency (not computed until annotation exists) |
 
 ## Added in contract v1.6 (P37, approved by the project lead; P37d added for the case-study page)

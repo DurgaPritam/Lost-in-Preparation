@@ -20,7 +20,7 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 | M1 Recipes | Structured recipes, every field backed by a verbatim quote. Written by Claude in a Claude Code session following prompt v3, and checked by the same verbatim-quote validator (failures rejected, never repaired) | done for the gold sample and the Phase 5 species; awaiting the human gold set |
 | M2 Names | Historical name → accepted species (WFO), up to 3 candidates with confidence and basis; disputed flags | done; awaiting 30-name scholarly check |
 | M3 Compounds | Known compounds per species (LOTUS via Wikidata), RDKit-standardised, de-duplicated by InChIKey; coverage per species | done |
-| Study set | Proposed species for re-testing (count in the validation table below), for human approval ([docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md)), each with a cited toxicity entry (AI-drafted, awaiting review) | awaiting approval |
+| Study set | Species for re-testing, reviewed by the project lead ([docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md); decisions in `config/study_set_review_decisions.csv` and `config/study_set_rereview_decisions.csv`), each with a cited toxicity entry (AI-drafted, awaiting review) | reviewed; written reasons for species 17–27 pending |
 | M4 Preparation | Likelihood that each compound reaches each preparation; solvent, heat, filtration and acidity as separate factors with Monte Carlo ranges; RDKit vs GFN2-xTB validated against experiment; artemisinin known case | done |
 | **M5 Audit** (reporting gap is the headline) | How modern studies prepared each Phase 5 plant for each historical use (solvent, temperature and filtration, separately) vs how the recipes made it; rule-based coding with a versioned lexicon, protocol fixed before retrieval ([docs/AUDIT_PROTOCOL_v1.md](docs/AUDIT_PROTOCOL_v1.md)) | done and frozen (v1 and v2); coding accuracy awaits the 40-study hand-check |
 | M6 Ranking | Hypotheses worth re-testing: pairs never tested faithfully, ranked only on profile gaps that hold across the uncertainty range | done (`site-data/hypotheses.json`) |
@@ -119,6 +119,7 @@ config/            sources, pipeline settings (LLM provider), crosswalk reviewer
 annotation/        static annotation & adjudication tool (open index.html in a browser)
 data/gold/         gold-set sample and annotations
 site-data/         exported files for the web explorer
+LICENSE            MIT (code); LICENSE-DATA: CC BY 4.0 (derived data) with the exceptions listed in it
 site/              the website (Next.js static export), built from the Claude Design handoff in design/
 design/            the Claude Design handoff (tokens, components, screens), unchanged
 docs/              data licences, extraction error analysis
@@ -128,14 +129,16 @@ METHODS.md         how every dataset is produced
 ## Reproduce
 
 ```bash
-python3.11 -m venv .venv && .venv/bin/pip install pandas pyarrow pydantic anthropic lxml rdkit pytest
+python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt   # exact versions (Python 3.11)
 export PYTHONPATH=pipeline:.
-.venv/bin/python -m lip fetch          # raw texts, checksums pinned in data/raw/manifest.json
+.venv/bin/python -m lip fetch --verify # raw texts (not committed); checksums pinned in data/raw/manifest.json
 .venv/bin/python -m lip ingest         # passages + crosswalk
 .venv/bin/python -m lip contract       # contract JSON Schemas
 .venv/bin/python -m lip m1 sample      # gold sample + annotation tool data
 .venv/bin/python -m pytest
 ```
+
+**Fresh-clone test, no keys.** `scripts/repro_fresh_clone.sh` clones the repository into a temporary directory and installs `requirements.txt`. Every pipeline step then runs with `LIP_CACHE_ONLY=1`, no API keys and an empty home directory. `LIP_CACHE_ONLY=1` refuses every network connection, so a missing cache fails loudly instead of being downloaded silently. The only network step is `lip fetch --verify`, which downloads the four public-domain texts and checks their pinned checksums. Afterwards the script compares every regenerated file with the commit; a file whose only differences are timestamps counts as reproduced. Tests that need a git-ignored download cache (PubChem, EMA/PMC sources, Wikipedia, tiktoken's encoding) skip when it is missing, naming the cache and the command that fetches it. Results are in [docs/PHASE9_CHECKLIST.md](docs/PHASE9_CHECKLIST.md).
 
 **Extraction.** The results use extractions written in a Claude Code session (`data/m1_session/`), validated with `python -m lip m1 session-ingest --scope sample` (or `--scope approved`). This step needs no API key or network. The API extractor (`python -m lip m1 extract`; Groq by default, Ollama and Claude optional in `config/pipeline.toml`) is kept. Its cached Groq responses are committed but excluded from evaluation. For Groq, put `GROQ_API_KEY=...` in your environment or a local `.env` file (see `.env.example`; `.env` is git-ignored).
 
@@ -157,7 +160,14 @@ CI runs the same gates in `.github/workflows/site.yml`. Deployment notes are in 
 
 ## Data and licences
 
-All texts are public domain or CC0; see [docs/DATA_LICENCES.md](docs/DATA_LICENCES.md). Method details are in [METHODS.md](METHODS.md).
+**Code:** MIT ([LICENSE](LICENSE)). **The project's derived data:** CC BY 4.0 ([LICENSE-DATA](LICENSE-DATA)). Exceptions keep their own status:
+- **Culpeper 1652** (EEBO-TCP): CC0.
+- **The Gutenberg passages** (Culpeper 1850, Pliny tr. Bostock & Riley): public domain in the USA; their status elsewhere has not been independently verified.
+- **Third-party quotations** (short attributed excerpts from PMC, EMA, Wikipedia and Lewis & Short) keep their own licences, listed article by article in [docs/DATA_LICENCES.md](docs/DATA_LICENCES.md).
+- **Abstracts and full article texts:** not in the repository.
+- **Botanical illustrations:** public domain, credited in [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md).
+
+Method details are in [METHODS.md](METHODS.md).
 
 **AI disclosure:**
 - **Recipe extraction (M1)** for the results was written by **Claude (`claude-opus-5-5`) in a Claude Code session**, on 2026-11-06. Claude followed prompt v3 (`prompts/m1_extract/v3/`) directly; there was no API call.

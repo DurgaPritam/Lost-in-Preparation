@@ -42,6 +42,15 @@ These fail, because they need the raw historical texts (git-ignored; built by `l
 2. **The 5 cache-dependent tests.** Should they get a `needs_cache` marker that skips them, with the reason, when their cache is absent? The alternative is committing the small cached responses they read: PubChem JSON, EMA PDFs (reproduction authorised), the Wikipedia page (CC BY-SA), and PMC pages (some are CC BY-NC-ND, which would contradict the no-full-text rule). *Recommended:* the skip marker.
 3. **Stale file.** Refresh the stale `data/interim/ingest_report.json`.
 
+### Decisions applied (2026-11-07)
+
+1. **Raw texts:** the test runs `python -m lip fetch --verify`, which downloads the 4 texts and requires each to match the SHA-256 pinned in `data/raw/manifest.json`, without rewriting the manifest. The texts are not committed. Everything else still runs cache-only.
+2. **Cache-dependent tests:** the 5 tests skip when their git-ignored cache is missing. The skip message names the cache and the command that fetches it (`tests/_cache.py`).
+3. **Stale file:** `data/interim/ingest_report.json` is regenerated (contract 1.7).
+4. **Licences:** `LICENSE` (MIT, code) and `LICENSE-DATA` (CC BY 4.0, derived data), with the exceptions listed in each and in the README and `docs/DATA_LICENCES.md`.
+5. **PMC12309076:** the excerpt is trimmed to the table caption and the one row the check matched. That row is *linalool acetate*, not linalool, so the frozen pre-registered v1 check counted a misread row. The result is unchanged; the misread is reported.
+6. **README:** pinned install, the fresh-clone test, the licence wording and the study-set status are updated.
+
 ## 2. Final README checklist
 
 | # | Item | Status |
@@ -51,12 +60,12 @@ These fail, because they need the raw historical texts (git-ignored; built by `l
 | 3 | Validated vs provisional table | done. The gold annotation, the 40-study hand-check and the 30-name scholarly check are still pending. |
 | 4 | Limitations, including extraction vs detection, Pliny's lower confidence and AI-made references | done |
 | 5 | AI disclosure: model, prompt version and the session-extraction caveat | done. The response-schema hash is recorded in `prompts/m1_extract/CHANGELOG.md`. |
-| 6 | **Licence for the repository** (code, and the project's own derived data) | **missing.** No `LICENSE` file. Needs a decision (for example MIT or Apache-2.0 for code, and CC BY 4.0 for derived data), with exceptions for third-party quotes: CC BY-SA (Wikipedia, Lewis & Short), CC BY-NC(-ND/-SA) (PMC), and EMA's attribution terms. |
-| 7 | "Data and licences" section | **needs wording.** "All texts are public domain or CC0" should say: Gutenberg texts are public domain in the USA only, and short third-party quotes keep their own licences (see `docs/DATA_LICENCES.md`). |
-| 8 | Reproduce section uses pinned versions | **to update.** It installs unpinned packages; it should use `pip install -r requirements.txt`, Python 3.11. |
-| 9 | Reproducibility test and cache-only mode documented | **to add.** `LIP_CACHE_ONLY=1`, `scripts/repro_fresh_clone.sh`, and what needs a download. |
+| 6 | **Licence for the repository** (code, and the project's own derived data) | **done** (2026-11-07): MIT and CC BY 4.0. Previously missing. No `LICENSE` file. Needs a decision (for example MIT or Apache-2.0 for code, and CC BY 4.0 for derived data), with exceptions for third-party quotes: CC BY-SA (Wikipedia, Lewis & Short), CC BY-NC(-ND/-SA) (PMC), and EMA's attribution terms. |
+| 7 | "Data and licences" section | **done** (2026-11-07). Previously needed wording: "All texts are public domain or CC0" should say: Gutenberg texts are public domain in the USA only, and short third-party quotes keep their own licences (see `docs/DATA_LICENCES.md`). |
+| 8 | Reproduce section uses pinned versions | **done** (2026-11-07). Previously: It installs unpinned packages; it should use `pip install -r requirements.txt`, Python 3.11. |
+| 9 | Reproducibility test and cache-only mode documented | **done** (2026-11-07). Previously to add: `LIP_CACHE_ONLY=1`, `scripts/repro_fresh_clone.sh`, and what needs a download. |
 | 10 | Website section, CI badge and live URL | Section done; the CI badge and the live URL are pending deployment. |
-| 11 | Stage table statuses up to date | **check.** The "Study set" row says "awaiting approval", but the study set has re-review decisions recorded; the reasons for species 17–27 are still awaited. |
+| 11 | Stage table statuses up to date | **done** (2026-11-07). Previously: The "Study set" row says "awaiting approval", but the study set has re-review decisions recorded; the reasons for species 17–27 are still awaited. |
 | 12 | How to cite (`CITATION.cff`) | **missing (optional).** |
 | 13 | Hackathon track, team and contact | Track stated; team and contact not stated. |
 | 14 | Secrets | done. gitleaks over all 66 commits found nothing; the Groq key's value does not occur in the history or the working tree; `.env` was never committed. |

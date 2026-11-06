@@ -44,6 +44,8 @@ def _extractor(outputs):
 
 
 def test_v2_is_small_and_v1_is_unchanged():
+    from _cache import require_tiktoken
+    require_tiktoken("o200k_base")
     import tiktoken
     from lip.m1.extract import source_titles
     enc = tiktoken.get_encoding("o200k_base")

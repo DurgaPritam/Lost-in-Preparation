@@ -1,6 +1,7 @@
 """CLI
 
   python -m lip fetch [--refresh]        download raw texts, write data/raw/manifest.json
+  python -m lip fetch --verify           download missing raw texts and check them against the pinned checksums
   python -m lip ingest                   Phase 1: passages.parquet + site-data/sources.json
   python -m lip contract                 regenerate contract/schemas/*.schema.json
   python -m lip m1 sample                draw the gold sample + build annotation/data.js
@@ -115,7 +116,7 @@ def main(argv: list[str]) -> int:
     cmd = argv[0] if argv else "help"
     if cmd == "fetch":
         from . import fetch
-        fetch.fetch(refresh="--refresh" in argv)
+        fetch.fetch(refresh="--refresh" in argv, verify_only="--verify" in argv)
     elif cmd == "ingest":
         from . import ingest
         print(json.dumps(ingest.run(), indent=2, ensure_ascii=False))

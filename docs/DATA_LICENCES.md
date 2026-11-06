@@ -76,7 +76,7 @@ Only short quotations (one sentence each) from openly licensed articles are stor
 | PMC10819686 | pre-registered | CC BY 4.0 |
 | PMC5622382 | pre-registered | CC BY 4.0 |
 | PMC8398316 | pre-registered | CC BY 4.0 |
-| PMC12309076 | pre-registered | **CC BY-NC-ND 4.0** (short attributed quote only; not redistributed) |
+| PMC12309076 | pre-registered | **CC BY-NC-ND 4.0** (short attributed excerpt only; not redistributed). On 2026-11-07 the excerpt was trimmed to the table caption and the one row the check matched (it had been the first 600 characters of the table). **That row is linalool acetate, not linalool**: the v1 rule matched the substring, so this row counted linalool as present. The pre-registered result is frozen and unchanged; the misread is reported here and in the Phase 9 report. |
 | PMC10180401 | pre-registered | CC BY 4.0 |
 | PMC11171837 | pre-registered v2 (water preparations) | CC BY 4.0 |
 | PMC11504252 | pre-registered v2 (water preparations) | CC BY 4.0 |

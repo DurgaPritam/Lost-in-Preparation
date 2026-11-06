@@ -25,9 +25,30 @@ def load_manifest() -> dict:
     return {"files": []}
 
 
-def fetch(refresh: bool = False) -> dict:
+def fetch(refresh: bool = False, verify_only: bool = False) -> dict:
+    """Download the raw texts. `verify_only` (`python -m lip fetch --verify`, used by the fresh-clone test): download any
+    missing file, require its SHA-256 to equal the one pinned in the committed manifest, and leave the manifest unchanged."""
     manifest = load_manifest()
     by_id = {f["source_id"]: f for f in manifest["files"]}
+    if verify_only:
+        for src in load_sources():
+            pin = by_id.get(src["id"])
+            if pin is None:
+                raise RuntimeError(f"{src['id']}: no pinned checksum in {RAW_MANIFEST.relative_to(ROOT)}")
+            dest = ROOT / src["raw_path"]
+            if not dest.exists():
+                req = urllib.request.Request(src["download_url"], headers={"User-Agent": USER_AGENT})
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    data = resp.read()
+                got = hashlib.sha256(data).hexdigest()
+                if got != pin["sha256"]:
+                    raise RuntimeError(f"{src['id']}: downloaded file's sha256 {got} differs from the pinned {pin['sha256']}")
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(data)
+            else:
+                verify(src)
+            print(f"[fetch] {src['id']}: sha256 {pin['sha256'][:12]}… matches the pinned manifest")
+        return manifest
     for src in load_sources():
         dest = ROOT / src["raw_path"]
         if dest.exists() and src["id"] in by_id and not refresh:

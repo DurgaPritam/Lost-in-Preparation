@@ -2,7 +2,7 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
-## v1.7 — 2026-11-06 (additive; P38 **proposed**, implemented at the project lead's request, awaiting approval)
+## v1.7 — 2026-11-06 (additive; P38 **approved by the project lead on 2026-11-07**)
 
 | # | Change |
 |---|---|

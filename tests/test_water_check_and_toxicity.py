@@ -32,7 +32,9 @@ def test_toxicity_entries_cover_study_set_and_are_unverified():
 
 
 def test_toxicity_quotes_reverify_against_sources():
-    toxicity.build(_proposed())  # raises ToxicityError on any quote not found in the fetched source
+    from _cache import needs_cache
+    with needs_cache("data/cache/ema and data/cache/sources (EMA and PMC toxicity sources)", "python -m lip m3 studyset"):
+        toxicity.build(_proposed())  # raises ToxicityError on any quote not found in the fetched source
 
 
 def test_toxicity_rejects_unsourced_category(monkeypatch, tmp_path):
@@ -67,8 +69,10 @@ def test_quote_for_unlicensed_article_is_refused(monkeypatch, tmp_path):
     monkeypatch.setattr(literature, "REF_CSV", tmp_path / "x.csv")
     monkeypatch.setattr(literature, "ROWS", [("Matricaria chamomilla", "apigenin", "tea", "hot water infusion (tea)", "low",
                                               "PMC2995283", "Aqueous extracts")])
-    with pytest.raises(ValueError, match="no stated licence"):
-        literature.build_table()
+    from _cache import needs_cache
+    with needs_cache("data/cache/sources (PMC article pages and licences)", "python -m lip m4 run"):
+        with pytest.raises(ValueError, match="no stated licence"):
+            literature.build_table()
 
 
 # --- v2 registered check ----------------------------------------------------------------------------

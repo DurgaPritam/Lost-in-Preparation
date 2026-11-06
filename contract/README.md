@@ -16,7 +16,7 @@ The contract files live in `site-data/`; profiles are split per species (v1.3). 
 | `case_studies.json` | array | documented extraction correction (v1.6) | [case_studies.schema.json](schemas/case_studies.schema.json) |
 | `hypotheses.json` | array | ranked lead | [hypotheses.schema.json](schemas/hypotheses.schema.json) |
 | `metrics.json` | object | whole project | [metrics.schema.json](schemas/metrics.schema.json) |
-| `engine/model.json` | object | preparation-model parameters, uncertainty settings, the 13 preparations and their seeds (v1.7, P38 *proposed*) | [engine.model.schema.json](schemas/engine.model.schema.json) |
+| `engine/model.json` | object | preparation-model parameters, uncertainty settings, the 13 preparations and their seeds (v1.7, P38) | [engine.model.schema.json](schemas/engine.model.schema.json) |
 | `engine/<speciesId>.json` | object | one species' per-compound model inputs, in profile order (v1.7, P38; loaded on demand) | [engine.species.schema.json](schemas/engine.species.schema.json) |
 | `engine/parity.json` | array | Python reference estimates for one off-grid preparation of one species (v1.7, P38; build-time test fixture, not published) | [engine.parity.schema.json](schemas/engine.parity.schema.json) |
 
