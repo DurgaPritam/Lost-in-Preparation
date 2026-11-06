@@ -1,0 +1,622 @@
+{
+ "batch": 18,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:saffron:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:saffron:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:004": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wormwood:005": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:004": {
+   "recipes": [
+    {
+     "recipeQuote": "It is used to stay all manner of bleedings, fluxes, vomitings, and women’s courses, also their whites",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "MEADOW SWEET",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "MEADOW SWEET",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "stay all manner of bleedings, fluxes, vomitings, and women’s courses, also their whites",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "It is said to alter and take away the fits of the quartan agues, and to make a merry heart, for which purpose some use the flowers, and some the leaves.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "MEADOW SWEET",
+       "part": "flower",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "MEADOW SWEET",
+     "part": "flower",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "alter and take away the fits of the quartan agues, and to make a merry heart",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "some use the flowers"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is said to alter and take away the fits of the quartan agues, and to make a merry heart, for which purpose some use the flowers, and some the leaves.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "MEADOW SWEET",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "MEADOW SWEET",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "alter and take away the fits of the quartan agues, and to make a merry heart",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "and some the leaves"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It helps speedily those that are troubled with the cholic",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "MEADOW SWEET",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "MEADOW SWEET",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "those that are troubled with the cholic",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "being boiled in wine, and with a little honey, taken warm, it opens the belly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "MEADOW SWEET",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "MEADOW SWEET",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine",
+      "honey"
+     ],
+     "heat": "boiled",
+     "heatText": "taken warm",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "it opens the belly",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "being boiled in wine"
+      },
+      {
+       "field": "solvent",
+       "quote": "with a little honey"
+      },
+      {
+       "field": "heat",
+       "quote": "being boiled in wine"
+      },
+      {
+       "field": "process",
+       "quote": "being boiled in wine"
+      },
+      {
+       "field": "form",
+       "quote": "with a little honey, taken warm"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "but boiled in red wine, and drank, it stays the flux of the belly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "MEADOW SWEET",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "MEADOW SWEET",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "stays the flux of the belly",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "boiled in red wine"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled in red wine"
+      },
+      {
+       "field": "process",
+       "quote": "boiled in red wine, and drank"
+      },
+      {
+       "field": "form",
+       "quote": "boiled in red wine, and drank"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Outwardly applied, it helps old ulcers that are cankerous, or hollow fistulous, for which it is by many much commended, as also for the sores in the mouth or secret parts.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "MEADOW SWEET",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "MEADOW SWEET",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "old ulcers that are cankerous, or hollow fistulous, for which it is by many much commended, as also for the sores in the mouth or secret parts",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The water thereof helps the heat and inflammation in the eyes.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "MEADOW SWEET",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "MEADOW SWEET",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the heat and inflammation in the eyes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The water thereof"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:saffron:003": {
+   "recipes": [
+    {
+     "recipeQuote": "you need not demand a reason why it strengthens the heart so exceedingly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Saffron",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Saffron",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "strengthens the heart so exceedingly",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "It quickens the brain, for the Sun is exalted in Aries, as he hath his house in Leo. It helps consumptions of the lungs, and difficulty of breathing. It is excellent in epidemical diseases, as pestilence, small-pox, and measles. It is a notable expulsive medicine, and a notable remedy for the yellow jaundice.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Saffron",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Saffron",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "It quickens the brain, for the Sun is exalted in Aries, as he hath his house in Leo. It helps consumptions of the lungs, and difficulty of breathing. It is excellent in epidemical diseases, as pestilence, small-pox, and measles. It is a notable expulsive medicine, and a notable remedy for the yellow jaundice",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "the roots of all crocus, both white and yellow, purge phlegm as hermodactyls do",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "crocus",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "crocus",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "purge phlegm",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the roots of all crocus"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:wormwood:002": {
+   "recipes": [
+    {
+     "recipeQuote": "The seed of this Wormwood is that which women usually give their children for the worms.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sea Wormwood",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sea Wormwood",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "for the worms",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seed of this Wormwood"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The seeds of the common Wormwood are far more prevalent than the seed of this, to expel worms in children, or people of ripe age",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "common Wormwood",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "common Wormwood",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to expel worms in children, or people of ripe age",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The seeds of the common Wormwood"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "if the liver be weak, and cannot make blood enough, I would have said, Sanguify, if I had written only to scholars, the Seriphian, which is the weakest of Wormwoods, is better than the best",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Seriphian",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Seriphian",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "if the liver be weak, and cannot make blood enough",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "culpeper-1850:herbal:wormwood:006": {
+   "recipes": [
+    {
+     "recipeQuote": "It may be so called, because it is good for a stinking breath",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Roman Wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Roman Wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "a stinking breath",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  }
+ }
+}
