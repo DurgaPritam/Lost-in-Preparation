@@ -1,0 +1,55 @@
+{
+  "scope": "sample",
+  "run": {
+    "provider": "Claude via Claude Code session",
+    "model": "claude-opus-5-5",
+    "modelVersion": "claude-opus-5-5",
+    "decoding": {
+      "mode": "written directly by the model in an interactive Claude Code session, following the prompt; no API call, no sampling parameters; one attempt per passage, no retries",
+      "writtenOn": "see batches"
+    }
+  },
+  "promptVersion": "m1_extract/v3",
+  "passages": 50,
+  "recipesAccepted": 151,
+  "recipesRejected": 0,
+  "passagesFailedWhole": 0,
+  "batches": [
+    {
+      "batch": 1,
+      "passages": 10,
+      "accepted": 46,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 2,
+      "passages": 10,
+      "accepted": 50,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 3,
+      "passages": 10,
+      "accepted": 9,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 4,
+      "passages": 10,
+      "accepted": 22,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    },
+    {
+      "batch": 5,
+      "passages": 10,
+      "accepted": 24,
+      "rejected": 0,
+      "writtenOn": "2026-11-06"
+    }
+  ],
+  "generatedAt": "2026-11-06T10:33:47+00:00"
+}

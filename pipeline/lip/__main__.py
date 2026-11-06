@@ -38,8 +38,9 @@ def _has_credentials() -> bool:
 
 def m1(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(prog="lip m1")
-    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver", "prompt-tokens"])
-    ap.add_argument("--scope", choices=["sample", "all"], default="sample")
+    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver", "prompt-tokens", "session-ingest", "session-show"])
+    ap.add_argument("--start", type=int, default=0)
+    ap.add_argument("--scope", choices=["sample", "all", "approved"], default="sample")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--provider", choices=["groq", "ollama", "anthropic"], help="overrides config/pipeline.toml")
     ap.add_argument("--yes", action="store_true", help="confirm a full-corpus (paid) run")
@@ -82,6 +83,12 @@ def m1(argv: list[str]) -> int:
         from .m1 import evaluate
         m = evaluate.evaluate(a.reference)
         print(m.model_dump_json(indent=2)[:4000])
+    elif a.cmd == "session-ingest":
+        from .m1 import session
+        print(json.dumps(session.ingest(a.scope), indent=2))
+    elif a.cmd == "session-show":
+        from .m1 import session
+        print(session.show(a.scope, a.start, a.limit or 10))
     elif a.cmd == "prompt-tokens":
         from .m1 import token_counts
         print(json.dumps(token_counts.run(), indent=2))
