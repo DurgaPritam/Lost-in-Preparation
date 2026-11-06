@@ -11,7 +11,7 @@ This file lists every change I could not avoid, and every addition. In the code,
 
 | Decision | Where |
 |---|---|
-| P37 (contract changes for the corrections, reporting gap, audit v2 and case study) | Implemented as **contract v1.6**: P37a `Recipe.corrections`, P37b `Metrics.reportingGap`, P37c `Metrics.auditV2` and `site-data/audit_v2.json`, P37d `site-data/case_studies.json`. See [contract/CHANGELOG.md](../contract/CHANGELOG.md). **P37d was added for the case-study page and is flagged there for your approval.** |
+| P37 (contract changes for the corrections, reporting gap, audit v2 and case study) | Implemented as **contract v1.6**: P37a `Recipe.corrections`, P37b `Metrics.reportingGap`, P37c `Metrics.auditV2` and `site-data/audit_v2.json`, P37d `site-data/case_studies.json`. See [contract/CHANGELOG.md](../contract/CHANGELOG.md). P37d was added for the case-study page; approved by the project lead on 2026-11-06. |
 | The 1850 rose-water note | `config/m1_corrections.csv`, recipe `culpeper-1850:herbal:liquorice:003#r03`. The part, solvent and filtration corrections are logged. The process was not changed: it stays "distillation", from this edition's wording "distilled in Rose-water" (the 1652 text says "dissolved"). The note says the Dispensatory evidence does not settle this. It is shown on that recipe's page and in the case study. |
 
 ## Additions (built from existing tokens and components only)
