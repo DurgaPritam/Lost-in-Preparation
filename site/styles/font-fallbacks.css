@@ -4,16 +4,31 @@
  * Liberation Mono) scaled to the vendored web font's average character width and vertical metrics. Text therefore
  * keeps its size and line breaks when EB Garamond and IBM Plex finish loading (font-display: swap), with no layout
  * shift. Without these, Linux (DejaVu) fallbacks reflowed whole pages (CLS 0.16–0.24 in CI Lighthouse).
+ * One face per weight and style the site uses (a single face let medium and bold text fall back to regular widths).
  * The overrides were computed with fontTools from the woff2 files in public/fonts/ and the macOS reference fonts:
  * weighted English average advance width -> size-adjust; hhea ascent/descent/lineGap divided by size-adjust.
  * The design's token stacks (tokens.css) are unchanged after the inserted fallback family.
  */
-@font-face { font-family: 'EB Garamond Fallback'; src: local('Times New Roman'), local('TimesNewRomanPSMT'), local('Liberation Serif');
-  size-adjust: 94.3%; ascent-override: 106.79%; descent-override: 31.6%; line-gap-override: 0%; }
-@font-face { font-family: 'IBM Plex Sans Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans');
-  size-adjust: 101.21%; ascent-override: 101.27%; descent-override: 27.17%; line-gap-override: 0%; }
-@font-face { font-family: 'IBM Plex Mono Fallback'; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono');
-  size-adjust: 99.98%; ascent-override: 102.52%; descent-override: 27.5%; line-gap-override: 0%; }
+@font-face { font-family: 'EB Garamond Fallback'; font-weight: 400; font-style: normal; src: local('Times New Roman'), local('TimesNewRomanPSMT'), local('Liberation Serif'), local('LiberationSerif');
+  size-adjust: 94.30%; ascent-override: 106.79%; descent-override: 31.60%; line-gap-override: 0.00%; }
+@font-face { font-family: 'EB Garamond Fallback'; font-weight: 500; font-style: normal; src: local('Times New Roman'), local('TimesNewRomanPSMT'), local('Liberation Serif'), local('LiberationSerif');
+  size-adjust: 97.86%; ascent-override: 102.90%; descent-override: 30.45%; line-gap-override: 0.00%; }
+@font-face { font-family: 'EB Garamond Fallback'; font-weight: 400; font-style: italic; src: local('Times New Roman Italic'), local('TimesNewRomanPS-ItalicMT'), local('Liberation Serif Italic'), local('LiberationSerif-Italic');
+  size-adjust: 91.10%; ascent-override: 110.53%; descent-override: 32.71%; line-gap-override: 0.00%; }
+@font-face { font-family: 'EB Garamond Fallback'; font-weight: 500; font-style: italic; src: local('Times New Roman Italic'), local('TimesNewRomanPS-ItalicMT'), local('Liberation Serif Italic'), local('LiberationSerif-Italic');
+  size-adjust: 95.96%; ascent-override: 104.94%; descent-override: 31.05%; line-gap-override: 0.00%; }
+@font-face { font-family: 'IBM Plex Sans Fallback'; font-weight: 400; font-style: normal; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('LiberationSans');
+  size-adjust: 101.21%; ascent-override: 101.27%; descent-override: 27.17%; line-gap-override: 0.00%; }
+@font-face { font-family: 'IBM Plex Sans Fallback'; font-weight: 500; font-style: normal; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('LiberationSans');
+  size-adjust: 103.40%; ascent-override: 99.13%; descent-override: 26.60%; line-gap-override: 0.00%; }
+@font-face { font-family: 'IBM Plex Sans Fallback'; font-weight: 600; font-style: normal; src: local('Arial Bold'), local('Arial-BoldMT'), local('Liberation Sans Bold'), local('LiberationSans-Bold');
+  size-adjust: 96.85%; ascent-override: 105.83%; descent-override: 28.39%; line-gap-override: 0.00%; }
+@font-face { font-family: 'IBM Plex Sans Fallback'; font-weight: 400; font-style: italic; src: local('Arial Italic'), local('Arial-ItalicMT'), local('Liberation Sans Italic'), local('LiberationSans-Italic');
+  size-adjust: 99.62%; ascent-override: 102.90%; descent-override: 27.61%; line-gap-override: 0.00%; }
+@font-face { font-family: 'IBM Plex Mono Fallback'; font-weight: 400; font-style: normal; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'), local('LiberationMono');
+  size-adjust: 99.98%; ascent-override: 102.52%; descent-override: 27.50%; line-gap-override: 0.00%; }
+@font-face { font-family: 'IBM Plex Mono Fallback'; font-weight: 500; font-style: normal; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'), local('LiberationMono');
+  size-adjust: 99.98%; ascent-override: 102.52%; descent-override: 27.50%; line-gap-override: 0.00%; }
 
 :root {
   --f-serif: 'EB Garamond', 'EB Garamond Fallback', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;

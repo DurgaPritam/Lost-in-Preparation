@@ -80,6 +80,10 @@ The view types are in [lib/types.ts](lib/types.ts). The selectors in `lib/data/s
 - **Font fallbacks:** `styles/font-fallbacks.css` adds metric-matched fallback faces: local Times New Roman/Liberation Serif, Arial/Liberation Sans and Courier New/Liberation Mono. Their `size-adjust` and ascent/descent overrides were computed with fontTools from the vendored woff2 files.
   - **Why:** on Linux the fallback fonts reflowed whole pages when EB Garamond and IBM Plex swapped in (CLS 0.16–0.24 in CI Lighthouse).
   - **Token stacks:** each stack gains the fallback family right after the web font; the rest of the design's stack is unchanged. `tokens.css` itself is untouched; the override is in the new file, which is imported after it.
+- **Font preload:** the two body-text faces (IBM Plex Sans 400 and 500) are preloaded in `app/layout.tsx`, so they usually arrive before first paint.
+  - **Why:** on /hypotheses/, one paragraph still re-wrapped when they swapped in, even with the metric-matched fallbacks (CI CLS 0.147).
+  - **Result:** CLS is 0.000–0.005 on every page, uncached, at 390px and desktop width.
+  - **Fallbacks:** there is one fallback face per weight and style used.
 - **Favicon:** `app/icon.svg` is the design's `mark-historical.svg`, with the embedded metadata stripped.
 
 ## Data and build
