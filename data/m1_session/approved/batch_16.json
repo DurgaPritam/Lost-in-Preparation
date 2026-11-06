@@ -1,0 +1,686 @@
+{
+ "batch": 16,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:hops:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:hops:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:hops:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:hops:004": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:hops:006": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:liquorice:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:liquorice:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:henbane:005": {
+   "recipes": [
+    {
+     "recipeQuote": "outwardly, an oil ointment, or plaister of it, is most admirable for the gout, to cool the veneral heat of the reins in the French pox; to stop the toothache, being applied to the aching side: to allay all inflammations, and to help the diseases before premised",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "HENBANE",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "HENBANE",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "the gout, to cool the veneral heat of the reins in the French pox; to stop the toothache, being applied to the aching side: to allay all inflammations, and to help the diseases before premised",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "an oil ointment"
+      },
+      {
+       "field": "form",
+       "quote": "an oil ointment"
+      },
+      {
+       "field": "filtered",
+       "quote": "outwardly, an oil ointment"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "outwardly, an oil ointment, or plaister of it, is most admirable for the gout, to cool the veneral heat of the reins in the French pox; to stop the toothache, being applied to the aching side: to allay all inflammations, and to help the diseases before premised",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "HENBANE",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "HENBANE",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "plaster",
+     "indicationAsWritten": "the gout, to cool the veneral heat of the reins in the French pox; to stop the toothache, being applied to the aching side: to allay all inflammations, and to help the diseases before premised",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "or plaister of it"
+      },
+      {
+       "field": "filtered",
+       "quote": "or plaister of it"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:hops:005": {
+   "recipes": [
+    {
+     "recipeQuote": "This, in physical operations, is to open obstructions of the liver and spleen, to cleanse the blood, to loosen the belly, to cleanse the reins from gravel, and provoke urine.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to open obstructions of the liver and spleen, to cleanse the blood, to loosen the belly, to cleanse the reins from gravel, and provoke urine",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The decoction of the tops of Hops, as well of the tame as the wild, works the same effects.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "works the same effects",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the tops of Hops"
+      },
+      {
+       "field": "heat",
+       "quote": "The decoction of the tops of Hops"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction of the tops of Hops"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "In cleansing the blood they help to cure the French diseases, and all manner of scabs, itch, and other breakings-out of the body; as also all tetters, ringworms, and spreading sores, the morphew and all discolouring of the skin.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the French diseases, and all manner of scabs, itch, and other breakings-out of the body; as also all tetters, ringworms, and spreading sores, the morphew and all discolouring of the skin",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The decoction of the flowers and hops, do help to expel poison that any one hath drank.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "expel poison that any one hath drank",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the flowers and hops"
+      },
+      {
+       "field": "heat",
+       "quote": "The decoction of the flowers"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction of the flowers"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Half a dram of the seed in powder taken in drink, kills worms in the body, brings down women’s courses, and expels urine.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "no",
+     "process": "powder",
+     "form": "drink",
+     "indicationAsWritten": "kills worms in the body, brings down women’s courses, and expels urine",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the seed in powder"
+      },
+      {
+       "field": "heat",
+       "quote": "the seed in powder"
+      },
+      {
+       "field": "process",
+       "quote": "the seed in powder"
+      },
+      {
+       "field": "form",
+       "quote": "taken in drink"
+      },
+      {
+       "field": "filtered",
+       "quote": "the seed in powder taken in drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A syrup made of the juice and sugar, cures the yellow jaundice, eases the head-ache that comes of heat, and tempers the heat of the liver and stomach, and is profitably given in long and hot agues that rise in choler and blood.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Hops",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "sugar",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "Hops",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "the yellow jaundice, eases the head-ache that comes of heat, and tempers the heat of the liver and stomach, and is profitably given in long and hot agues that rise in choler and blood",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "made of the juice"
+      },
+      {
+       "field": "process",
+       "quote": "A syrup made of the juice and sugar"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:liquorice:003": {
+   "recipes": [
+    {
+     "recipeQuote": "Liquorice boiled in fair water, with some Maiden-hair and figs, makes a good drink for those that have a dry cough or hoarseness, wheezing or shortness of breath, and for all the griefs of the breast and lungs, phthisic or consumptions caused by the distillation of salt humours on them. It is also good in all pains of the reins, the stranguary, and heat of urine",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Liquorice",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Maiden-hair",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "figs",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Liquorice",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "those that have a dry cough or hoarseness, wheezing or shortness of breath, and for all the griefs of the breast and lungs, phthisic or consumptions caused by the distillation of salt humours on them. It is also good in all pains of the reins, the stranguary, and heat of urine",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "boiled in fair water"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled in fair water"
+      },
+      {
+       "field": "process",
+       "quote": "boiled in fair water"
+      },
+      {
+       "field": "form",
+       "quote": "makes a good drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The fine powder of Liquorice blown through a quill into the eyes that have a pin and web (as they call it) or rheumatic distillations in them, doth cleanse and help them.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Liquorice",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Liquorice",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "other",
+     "indicationAsWritten": "the eyes that have a pin and web (as they call it) or rheumatic distillations in them, doth cleanse and help them",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "blown through a quill into the eyes"
+      },
+      {
+       "field": "heat",
+       "quote": "The fine powder of Liquorice"
+      },
+      {
+       "field": "process",
+       "quote": "The fine powder of Liquorice"
+      },
+      {
+       "field": "form",
+       "quote": "blown through a quill into the eyes"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice of Liquorice is as effectual in all the diseases of the breast and lungs, the reins and bladder, as the decoction.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Liquorice",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Liquorice",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "all the diseases of the breast and lungs, the reins and bladder",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice of Liquorice"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The juice distilled in Rose-water, with some Gum Tragacanth, is a fine licking medicine for hoarseness, wheezing, &c.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Liquorice",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Gum Tragacanth",
+       "part": "resin",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Liquorice",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "other",
+     "indicationAsWritten": "hoarseness, wheezing, &c.",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice distilled in Rose-water"
+      },
+      {
+       "field": "solvent",
+       "quote": "distilled in Rose-water"
+      },
+      {
+       "field": "heat",
+       "quote": "The juice distilled"
+      },
+      {
+       "field": "process",
+       "quote": "The juice distilled"
+      },
+      {
+       "field": "form",
+       "quote": "a fine licking medicine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
