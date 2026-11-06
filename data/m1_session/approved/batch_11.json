@@ -1,0 +1,729 @@
+{
+ "batch": 11,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1850:herbal:agrimony:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:agrimony:002": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:agrimony:003": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:agrimony:009": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:wood-betony:001": {
+   "recipes": []
+  },
+  "culpeper-1850:herbal:agrimony:004": {
+   "recipes": [
+    {
+     "recipeQuote": "must needs be good for the gout, either used outwardly in oil or ointment",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "oil"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "the gout",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "used outwardly in oil or ointment"
+      },
+      {
+       "field": "form",
+       "quote": "in oil or ointment"
+      },
+      {
+       "field": "filtered",
+       "quote": "used outwardly in oil or ointment"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "must needs be good for the gout, either used outwardly in oil or ointment, or inwardly in an electuary, or syrup",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "the gout",
+     "evidence": [
+      {
+       "field": "process",
+       "quote": "inwardly in an electuary, or syrup"
+      },
+      {
+       "field": "form",
+       "quote": "inwardly in an electuary"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "must needs be good for the gout, either used outwardly in oil or ointment, or inwardly in an electuary, or syrup, or concerted juice",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "the gout",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "concerted juice"
+      },
+      {
+       "field": "process",
+       "quote": "concerted juice"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:agrimony:005": {
+   "recipes": [
+    {
+     "recipeQuote": "It opens and cleanses the liver, helps the jaundice, and is very beneficial to the bowels, healing all inward wounds, bruises, hurts, and other distempers.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "opens and cleanses the liver, helps the jaundice, and is very beneficial to the bowels, healing all inward wounds, bruises, hurts, and other distempers",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The decoction of the herb made with wine, and drank, is good against the biting and stinging of serpents, and helps them that make foul, troubled or bloody water.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "the biting and stinging of serpents, and helps them that make foul, troubled or bloody water",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "made with wine"
+      },
+      {
+       "field": "heat",
+       "quote": "The decoction of the herb"
+      },
+      {
+       "field": "process",
+       "quote": "The decoction of the herb"
+      },
+      {
+       "field": "form",
+       "quote": "made with wine, and drank"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:agrimony:006": {
+   "recipes": [
+    {
+     "recipeQuote": "This herb also helps the cholic, cleanses the breast, and rids away the cough.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "helps the cholic, cleanses the breast, and rids away the cough",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "A draught of the decoction taken warm before the fit, first removes, and in time rids away the tertian or quartan agues.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "taken warm",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "the tertian or quartan agues",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "A draught of the decoction taken warm"
+      },
+      {
+       "field": "process",
+       "quote": "A draught of the decoction"
+      },
+      {
+       "field": "form",
+       "quote": "A draught of the decoction"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The leaves and seeds taken in wine, stays the bloody flux",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "stays the bloody flux",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The leaves and seeds"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "taken in wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "outwardly applied, being stamped with old swine’s grease, it helps old sores, cancers, and inveterate ulcers, and draws forth thorns and splinters of wood, nails, or any other such things gotten in the flesh",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "old sores, cancers, and inveterate ulcers, and draws forth thorns and splinters of wood, nails, or any other such things gotten in the flesh",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "stamped with old swine’s grease"
+      },
+      {
+       "field": "process",
+       "quote": "being stamped with old swine’s grease"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It helps to strengthen the members that be out of joint",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "strengthen the members that be out of joint",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "being bruised and applied, or the juice dropped in it, helps foul and imposthumed ears",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "foul and imposthumed ears",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "process",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "form",
+       "quote": "being bruised and applied"
+      },
+      {
+       "field": "filtered",
+       "quote": "being bruised and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "being bruised and applied, or the juice dropped in it, helps foul and imposthumed ears",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "foul and imposthumed ears",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the juice dropped in it"
+      },
+      {
+       "field": "heat",
+       "quote": "the juice dropped in it"
+      },
+      {
+       "field": "form",
+       "quote": "the juice dropped in it"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:agrimony:007": {
+   "recipes": [
+    {
+     "recipeQuote": "The distilled water of the herb is good to all the said purposes, either inward or outward, but a great deal weaker.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "AGRIMONY",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "AGRIMONY",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "unknown",
+     "indicationAsWritten": "good to all the said purposes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "The distilled water of the herb"
+      },
+      {
+       "field": "heat",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "process",
+       "quote": "The distilled water"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1850:herbal:agrimony:008": {
+   "recipes": [
+    {
+     "recipeQuote": "It is a most admirable remedy for such whose livers are annoyed either by heat or cold.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Agrimony",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Agrimony",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "such whose livers are annoyed either by heat or cold",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    }
+   ]
+  }
+ }
+}
