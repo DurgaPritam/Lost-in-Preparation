@@ -1,0 +1,2597 @@
+{
+ "batch": 22,
+ "scope": "approved",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "pliny-nh:b25:c050:001": {
+   "recipes": []
+  },
+  "pliny-nh:b27:c028:001": {
+   "recipes": []
+  },
+  "pliny-nh:b27:c028:005": {
+   "recipes": []
+  },
+  "pliny-nh:b24:c020:002": {
+   "recipes": [
+    {
+     "recipeQuote": "These plants are good for stings inflicted by scorpions",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "stings inflicted by scorpions",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "and are useful as an application, mixed with dates or quinces, for maladies of the liver",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "dates",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "maladies of the liver",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "useful as an application"
+      },
+      {
+       "field": "filtered",
+       "quote": "useful as an application"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "and are useful as an application, mixed with dates or quinces, for maladies of the liver",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "quinces",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "maladies of the liver",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "useful as an application"
+      },
+      {
+       "field": "filtered",
+       "quote": "useful as an application"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "a decoction of them with barley-meal is used for the kidneys and the bladder",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "barley-meal",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "the kidneys and the bladder",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "a decoction of them"
+      },
+      {
+       "field": "process",
+       "quote": "a decoction of them"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A decoction of them in water is used also for jaundice and for strangury.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "jaundice and for strangury",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "A decoction of them in water"
+      },
+      {
+       "field": "heat",
+       "quote": "A decoction of them in water"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction of them in water"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The kind last mentioned, in combination with honey, is good for wounds inflicted by serpents",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "wounds inflicted by serpents",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "in combination with honey"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "a pessary is made of it, with honey, as a detergent for the uterus",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "a detergent for the uterus",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "with honey"
+      },
+      {
+       "field": "form",
+       "quote": "a pessary is made of it"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken in drink it brings away coagulated blood",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "brings away coagulated blood",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "Taken in drink"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "rubbed upon the body it acts as a sudorific",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "acts as a sudorific",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "it is particularly useful also for the kidneys",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the kidneys",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Pills of a purgative nature are made of it for dropsy, with figs.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "figs",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "dropsy",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "Pills of a purgative nature"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken in wine, in doses of one victoriatus, it dispels lumbago, and cures coughs that are not of an inveterate description.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "dispels lumbago, and cures coughs that are not of an inveterate description",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Taken in wine"
+      },
+      {
+       "field": "form",
+       "quote": "Taken in wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A decoction of it in vinegar, taken in drink, will instantaneously bring away the dead fœtus, it is said.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "CHAMÆPITYS",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "CHAMÆPITYS",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "bring away the dead fœtus",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "A decoction of it in vinegar"
+      },
+      {
+       "field": "heat",
+       "quote": "A decoction of it in vinegar"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction of it in vinegar"
+      },
+      {
+       "field": "form",
+       "quote": "taken in drink"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b24:c116:001": {
+   "recipes": [
+    {
+     "recipeQuote": "A chaplet made of this plant has the effect of relieving headache.",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "philanthropos",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "philanthropos",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "relieving headache",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "A chaplet made of this plant"
+      },
+      {
+       "field": "form",
+       "quote": "A chaplet made of this plant"
+      },
+      {
+       "field": "filtered",
+       "quote": "A chaplet made of this plant"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b24:c116:002": {
+   "recipes": [
+    {
+     "recipeQuote": "As to the plant known as the “lappa canaria,” beaten up in wine with plantago and millefolium, it effects the cure of carcinomatous sores",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "lappa canaria",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "plantago",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "millefolium",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "lappa canaria",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "carcinomatous sores",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "beaten up in wine"
+      },
+      {
+       "field": "process",
+       "quote": "beaten up in wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken out of the ground without the aid of iron, and thrown into their wash, or given to them in wine and milk, it cures diseases in swine",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "lappa canaria",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "lappa canaria",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "diseases in swine",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "thrown into their wash"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken out of the ground without the aid of iron, and thrown into their wash, or given to them in wine and milk, it cures diseases in swine",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "lappa canaria",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "lappa canaria",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine",
+      "other"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "diseases in swine",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "given to them in wine and milk"
+      },
+      {
+       "field": "form",
+       "quote": "given to them in wine and milk"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b25:c050:002": {
+   "recipes": [
+    {
+     "recipeQuote": "The juice is extracted while they are in flower, and is boiled gently in a copper vessel on hot ashes, with Attic honey, being esteemed a sovereign remedy for films upon the eyes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "chelidonia",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "chelidonia",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "boiled",
+     "heatText": "boiled gently in a copper vessel on hot ashes",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "films upon the eyes",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The juice is extracted"
+      },
+      {
+       "field": "solvent",
+       "quote": "with Attic honey"
+      },
+      {
+       "field": "heat",
+       "quote": "boiled gently in a copper vessel on hot ashes"
+      },
+      {
+       "field": "process",
+       "quote": "The juice is extracted while they are in flower"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b27:c028:002": {
+   "recipes": [
+    {
+     "recipeQuote": "This plant is very strengthening to the stomach, and hence it is that wines are flavoured with it",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "very strengthening to the stomach",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "the decoction, on the other hand, is wholesome in the highest degree, as it acts astringently upon the stomach, carries off bile, is a powerful diuretic, has a soothing effect upon the bowels, and assuages pains in the intestines",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Salt",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "a day and a night",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "acts astringently upon the stomach, carries off bile, is a powerful diuretic, has a soothing effect upon the bowels, and assuages pains in the intestines",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Six drachmæ of the leaves are boiled, with the branches"
+      },
+      {
+       "field": "solvent",
+       "quote": "in three sextarii of rain water"
+      },
+      {
+       "field": "heat",
+       "quote": "Six drachmæ of the leaves are boiled"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction of it in water"
+      },
+      {
+       "field": "form",
+       "quote": "A decoction of it in water is also taken"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "With the addition of sile, Gallic nard, and a little vinegar, it dispels nausea and flatulency, and expels intestinal worms.",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "sile",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Gallic nard",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water",
+      "vinegar"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "dispels nausea and flatulency, and expels intestinal worms",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Six drachmæ of the leaves are boiled, with the branches"
+      },
+      {
+       "field": "solvent",
+       "quote": "in three sextarii of rain water"
+      },
+      {
+       "field": "solvent",
+       "quote": "a little vinegar"
+      },
+      {
+       "field": "heat",
+       "quote": "Six drachmæ of the leaves are boiled"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction of it in water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It removes qualmishness, promotes the digestion",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "removes qualmishness, promotes the digestion",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Six drachmæ of the leaves are boiled, with the branches"
+      },
+      {
+       "field": "solvent",
+       "quote": "in three sextarii of rain water"
+      },
+      {
+       "field": "heat",
+       "quote": "Six drachmæ of the leaves are boiled"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction of it in water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "with the addition of rue, pepper, and salt, disperses crudities of the stomach",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "rue",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "pepper",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "salt",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "disperses crudities of the stomach",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Six drachmæ of the leaves are boiled, with the branches"
+      },
+      {
+       "field": "solvent",
+       "quote": "in three sextarii of rain water"
+      },
+      {
+       "field": "heat",
+       "quote": "Six drachmæ of the leaves are boiled"
+      },
+      {
+       "field": "process",
+       "quote": "A decoction of it in water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b27:c028:003": {
+   "recipes": [
+    {
+     "recipeQuote": "The ancients were in the habit of giving wormwood as a purgative, the dose being six drachmæ of the seed with three of salt and one cyathus of honey, in one sextarius of sea water kept for some time",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "salt",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water",
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "a purgative",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "six drachmæ of the seed"
+      },
+      {
+       "field": "solvent",
+       "quote": "in one sextarius of sea water"
+      },
+      {
+       "field": "solvent",
+       "quote": "one cyathus of honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The ancients were in the habit of giving wormwood as a purgative, the dose being six drachmæ of the seed with three of salt and one cyathus of honey, in one sextarius of sea water kept for some time. This preparation, however, is rendered more efficacious by doubling the proportion of salt; the seed, too, must be bruised with the greatest care, as there is considerable difficulty in pounding it. Some authorities have prescribed the dose above mentioned to be given in polenta, with the addition of pennyroyal",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "polenta",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      },
+      {
+       "plantNameAsWritten": "pennyroyal",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "a purgative",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "six drachmæ of the seed"
+      },
+      {
+       "field": "process",
+       "quote": "the seed, too, must be bruised"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The ancients were in the habit of giving wormwood as a purgative, the dose being six drachmæ of the seed with three of salt and one cyathus of honey, in one sextarius of sea water kept for some time. This preparation, however, is rendered more efficacious by doubling the proportion of salt; the seed, too, must be bruised with the greatest care, as there is considerable difficulty in pounding it. Some authorities have prescribed the dose above mentioned to be given in polenta, with the addition of pennyroyal; while others recommend the leaves to be given to children in a dried fig, to disguise their bitterness",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "dried fig",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "a purgative",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "recommend the leaves to be given to children"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Taken with iris, wormwood acts as a detergent upon the thoracic organs",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "iris",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "acts as a detergent upon the thoracic organs",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "for jaundice it is used raw, with parsley or adiantum",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "parsley",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "jaundice",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "it is used raw"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "for jaundice it is used raw, with parsley or adiantum",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "adiantum",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "jaundice",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "it is used raw"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "In cases of flatulency, it is sipped every now and then, warmed in water",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "warm",
+     "heatText": "warmed in water",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "flatulency",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "warmed in water"
+      },
+      {
+       "field": "heat",
+       "quote": "warmed in water"
+      },
+      {
+       "field": "form",
+       "quote": "it is sipped every now and then"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "for liver complaints it is taken with Gallic nard",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Gallic nard",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "liver complaints",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "for diseases of the spleen, with vinegar, pap, or figs",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "diseases of the spleen",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "with vinegar"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "for diseases of the spleen, with vinegar, pap, or figs",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "pap",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "diseases of the spleen",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "for diseases of the spleen, with vinegar, pap, or figs",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "figs",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "diseases of the spleen",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Taken in vinegar it neutralizes the bad effects of fungi and of viscus",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "neutralizes the bad effects of fungi and of viscus",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "Taken in vinegar"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "in wine it is an antidote to the poison of hemlock, and to the bite of the shrew-mouse, and is curative of wounds inflicted by the sea-dragon and the scorpion",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "an antidote to the poison of hemlock, and to the bite of the shrew-mouse, and is curative of wounds inflicted by the sea-dragon and the scorpion",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "in wine it is an antidote"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It contributes also very greatly to the improvement of the sight",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the improvement of the sight",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "is used as an external application, with raisin wine, for defluxions of the eyes",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "defluxions of the eyes",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "with raisin wine"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "is used as an external application, with raisin wine, for defluxions of the eyes, and with honey, for bruises",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "bruises",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "and with honey, for bruises"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "pliny-nh:b27:c028:004": {
+   "recipes": [
+    {
+     "recipeQuote": "The steam of a decoction of wormwood is curative of affections of the ears",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "decoction",
+     "form": "inhalation",
+     "indicationAsWritten": "affections of the ears",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "a decoction of wormwood"
+      },
+      {
+       "field": "process",
+       "quote": "a decoction of wormwood"
+      },
+      {
+       "field": "form",
+       "quote": "The steam of a decoction"
+      },
+      {
+       "field": "filtered",
+       "quote": "The steam of a decoction"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "when they are attacked with running sores, a liniment of wormwood bruised with honey is applied",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "ointment",
+     "indicationAsWritten": "running sores",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "bruised with honey"
+      },
+      {
+       "field": "process",
+       "quote": "wormwood bruised with honey"
+      },
+      {
+       "field": "form",
+       "quote": "a liniment of wormwood"
+      },
+      {
+       "field": "filtered",
+       "quote": "a liniment of wormwood"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Three or four sprigs of wormwood, with one root of Gallic nard, taken in six cyathi of water, act as a diuretic and as an emmenagogue",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Gallic nard",
+       "part": "root",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "act as a diuretic and as an emmenagogue",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "taken in six cyathi of water"
+      },
+      {
+       "field": "form",
+       "quote": "taken in six cyathi of water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "indeed, if taken with honey, or employed as a pessary with wool, it has especial virtues as an emmenagogue",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "especial virtues as an emmenagogue",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "if taken with honey"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "indeed, if taken with honey, or employed as a pessary with wool, it has especial virtues as an emmenagogue",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "wool",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "animal"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "especial virtues as an emmenagogue",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "employed as a pessary with wool"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "In combination with honey and nitre it is useful for quinzy",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "nitre",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "mineral"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "quinzy",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "In combination with honey and nitre"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "an infusion of it in water is good for epinyctis",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "infusion",
+     "form": "unknown",
+     "indicationAsWritten": "epinyctis",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "an infusion of it in water"
+      },
+      {
+       "field": "process",
+       "quote": "an infusion of it in water"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A topical application is made of it for recent wounds, provided always they have not been touched with water: it is employed also for ulcers upon the head",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "recent wounds, provided always they have not been touched with water: it is employed also for ulcers upon the head",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "In combination with Cyprian wax or figs, it is highly recommended as a plaster for the iliac regions",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Cyprian wax",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "other"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "plaster",
+     "indicationAsWritten": "the iliac regions",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "as a plaster for the iliac regions"
+      },
+      {
+       "field": "filtered",
+       "quote": "as a plaster"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "In combination with Cyprian wax or figs, it is highly recommended as a plaster for the iliac regions",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "figs",
+       "part": "fruit",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "plaster",
+     "indicationAsWritten": "the iliac regions",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "as a plaster for the iliac regions"
+      },
+      {
+       "field": "filtered",
+       "quote": "as a plaster"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it is curative also of prurigo, but it must never be administered in fevers",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "prurigo",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "Taken in drink, it is a preventive of sea sickness",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "drink",
+     "indicationAsWritten": "a preventive of sea sickness",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "Taken in drink"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "worn attached to the body, beneath an apron, it arrests inguinal swellings",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "arrests inguinal swellings",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "worn attached to the body"
+      },
+      {
+       "field": "form",
+       "quote": "worn attached to the body, beneath an apron"
+      },
+      {
+       "field": "filtered",
+       "quote": "worn attached to the body"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The smell of it induces sleep",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "inhalation",
+     "indicationAsWritten": "induces sleep",
+     "evidence": [
+      {
+       "field": "form",
+       "quote": "The smell of it induces sleep"
+      },
+      {
+       "field": "filtered",
+       "quote": "The smell of it"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The smell of it induces sleep, a similar effect being produced by placing it under the pillow unknown to the party",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "wormwood",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "wormwood",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "induces sleep",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "placing it under the pillow"
+      },
+      {
+       "field": "form",
+       "quote": "placing it under the pillow"
+      },
+      {
+       "field": "filtered",
+       "quote": "placing it under the pillow"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
