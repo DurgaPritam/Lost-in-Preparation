@@ -1,0 +1,132 @@
+# M5 rule-based study-method lexicon, version 2 (2026-11-06), for docs/AUDIT_PROTOCOL_v2.md. Copied from v1; changes below.
+#
+# Used by pipeline/lip/m5/rules.py to code how a modern study prepared a plant: solvent, heat, part, fresh or dried,
+# and filtration (solvent, temperature and filtration are separate variables). Every pattern is a case-insensitive
+# Python regular expression. Every coded value keeps the verbatim matched text as evidence, with offsets.
+# NOTHING IS INFERRED: a field with no matching pattern is "unknown", and unknown is never counted as a mismatch.
+# The whole lexicon is a HEURISTIC. Its accuracy is measured by the 40-study hand-check sheet, not assumed.
+#
+# Changes: never edit a published version; copy to v2.toml and record the change in the CHANGELOG at the bottom.
+# The extractor records "m5_rules/v2:<sha256 of this file, 10 hex>" on every output.
+
+version = "v2"
+
+[sentences]
+# A solvent mention counts only in a sentence that also has an extraction cue (keeps out "ethanol-induced ulcer",
+# HPLC mobile phases, vehicles for dosing). Words that are themselves cues (decoction, infusion, tea) need no other.
+extraction_cues = ['extract', 'macerat', 'percolat', 'tincture', 'soxhlet', 'reflux', 'decoct', 'infus', '\btea\b',
+                   'hydrodistill', 'steam[- ]distill', 'essential oil', 'clevenger', 'supercritical', 'juice', 'powder']
+
+[solvent]
+# v2: fine-grained categories, checked in the order of `order`; each maps to a contract ModernSolvent value through
+# [solvent_category_map] (the category itself is kept as solventClass for the v2 equivalence classes).
+order = ['hydroethanolic', 'acidified_aqueous', 'methanol', 'ethanol', 'hexane', 'chloroform', 'ethyl_acetate', 'dichloromethane',
+         'acetone', 'co2', 'juice', 'powder', 'oil', 'wine', 'water', 'other']
+acidified_aqueous = ['\bacidified (?:water|aqueous solution|aqueous)\b', '\b(?:dilute |\d+(?:\.\d+)?\s?%\s?)?acetic acid (?:solution|extract\w*|in water)\b',
+                     '\bvinegar extracts?\b', '\b(?:extracted|macerated|steeped) in vinegar\b', '\b(?:hydrochloric|citric) acid solution\b']
+juice = ['\bfresh(?:ly)?(?:[- ](?:pressed|squeezed|prepared))? juices?\b', '\b(?:pressed|squeezed|expressed) juices?\b',
+         '\b(?:leaf|root|bulb|fruit|plant|herb|onion|radish|tuber|rhizome) juices?\b',
+         '\bjuices? (?:of|from) (?:the )?(?:fresh )?(?:\w+\s){0,2}(?:leaves|roots?|bulbs?|fruits?|plants?|herbs?|onions?|radish(?:es)?)\b']
+# powder counts only when the sentence says the powder itself was given (not when it was then extracted)
+powder = ['\b(?:leaf|root|seed|fruit|herb|plant|rhizome|flower|bark|stigma|bulb|whole plant) powder\b(?=[^.]{0,100}\b(?:administered|fed|given|supplemented|capsules?|orally|in the diet|diet)\b)',
+          '\bpowdered (?:leaves|roots?|seeds?|fruits?|herb|plant material|rhizomes?|flowers?|bark|stigmas?)\b(?=[^.]{0,100}\b(?:administered|fed|given|supplemented|capsules?|orally|in the diet|diet)\b)']
+oil = ['\b(?:olive|sesame|sunflower|almond|coconut) oil (?:extract|macerat)\w*', '\boil macerat\w*', '\binfused oils?\b',
+       '\bmacerated in (?:olive|sesame|sunflower|almond) oil\b']
+wine = ['\bwine extracts?\b', '\b(?:macerated|steeped|extracted) in (?:red |white )?wine\b']
+# Checked in this order; a span matched by an earlier category is masked for later ones.
+# hydroethanolic: ethanol with a stated water share. A stated ethanol percentage of 95 or more is coded "ethanol"
+# (HEURISTIC threshold, in code).
+hydroethanolic = ['\b\d{1,3}(?:[.,]\d+)?\s?%\s?(?:\(v/v\)\s?|v/v\s?)?(?:aqueous\s|aq\.\s)?ethanol(?:ic)?\b',
+                  '\bethanol(?:ic)?\s?(?:\(\s?)?\d{1,3}(?:[.,]\d+)?\s?%', '\bhydro-?ethanolic\b', '\bhydro-?alcoholic\b',
+                  '\baqueous[- ]ethanol(?:ic)?\b', '\bethanol[- /:–]+water\b', '\bwater[- /:–]+ethanol(?:ic)?\b',
+                  '\bethanol-aqueous\b', '\bethanolic-aqueous\b']
+methanol = ['\b(?:\d{1,3}\s?%\s?(?:aqueous\s)?)?methanol(?:ic)?\b', '\bhydro-?methanolic\b']
+ethanol = ['\bethanol(?:ic)?\b', '\balcoholic extracts?\b', '\babsolute alcohol\b']
+hexane = ['\bn-?hexane\b', '\bhexane\b']
+chloroform = ['\bchloroform(?:ic)?\b']
+ethyl_acetate = ['\bethyl acetate\b', '\bEtOAc\b']
+dichloromethane = ['\bdichloromethane\b', '\bmethylene chloride\b']
+acetone = ['\bacetone\b', '\bacetonic\b']
+co2 = ['\bsupercritical (?:fluid )?(?:CO2|CO₂|carbon dioxide)\b', '\bSC-?CO2\b', '\bSFE-?CO2\b']
+water = ['\baqueous extracts?\b', '\bwater extracts?\b', '\bdecoctions?\b', '\b(?:herbal )?infusions?\b', '\bherbal teas?\b',
+         '\btea\b', '\bhot[- ]water extract\w*\b', '\bboiling water\b', '\bdistilled water extracts?\b', '\bextracted with (?:distilled )?water\b',
+         '\bwater (?:extraction|decoction|infusion)\b']
+other = ['\bessential oils?\b', '\bvolatile oils?\b', '\bpetroleum ether\b', '\bn-?butanol\b', '\bdiethyl ether\b',
+         '\bglycerol extract\w*\b']
+
+[solvent_category_map]
+acidified_aqueous = "water"
+juice = "other"
+powder = "other"
+oil = "other"
+wine = "other"
+
+[solvent_exclude]
+# A solvent match is dropped if the text right after it (up to 25 characters) or right before it (up to 90) matches.
+before_window = 90
+after = ['^\W{0,3}(?:soluble\s)?(?:fraction|phase|layer|partition|sub-?fraction|soluble)', '^\W{0,3}induced', '^\W{0,3}treated',
+         '^\W{0,3}(?:consumption|intake|withdrawal|intoxication|exposure)', '^\s?tree\b', '^\W{0,3}mobile']
+before = ['(?:intravenous|i\.v\.|continuous|saline|drug|insulin)\s+$', '(?:green|black|white|oolong|matcha|camellia)\s+$',
+          'induced by\s+$', '(?:gastric|pancreatic|digestive|intestinal|orange|grapefruit|cranberry|lemon|lime|apple|grape|tomato|beet|carrot|noni|aloe)\s+$', 'partition\w*[^.;]{0,80}?\b(?:with|into|between|against)\s+[^.;]*$', 'fractionat\w*[^.;]{0,60}?\bwith\s+[^.;]*$']
+
+[heat]
+# Order matters: infusion in boiling water is "warm" (heat applied, not boiled), as in the M1 guidelines.
+warm = ['\binfus\w*\s+(?:in|with)\s+(?:hot|boiling|boiled)\s+water\b', '\bboiling water\s+(?:was\s+)?poured\b', '\bhot[- ]water\b', '\bheated\b',
+        '\bheating\b', '\bwarm(?:ed)?\b', '\bthermostat\w*\b']
+boiled = ['\bdecoct\w*\b', '\bboil(?:ed|ing)?\b', '\breflux\w*\b', '\bsoxhlet\b', '\bhydrodistill\w*\b', '\bsteam[- ]distill\w*\b',
+          '\bclevenger\b']
+cold = ['\broom temperature\b', '\bambient temperature\b', '\bcold (?:water|maceration|extraction|percolation)\b', '\bwithout heating\b',
+        '\bat\s+r\.?t\.?\b']
+
+[heat_temperature]
+# A stated temperature in an extraction sentence ("extracted at 60 °C"). HEURISTIC bands: up to 30 °C cold; 31–94 warm;
+# 95 or more boiled. Temperatures in a clause about drying, evaporating, concentrating, storing or incubating are ignored.
+pattern = '(\d{2,3})\s?(?:°|º|˚|degrees?\s)\s?C\b'
+ignore_if_near = ['dri', 'evapor', 'concentrat', 'stor', 'incubat', 'kept', 'rotary', 'vacuo', 'reduced pressure', 'oven', 'lyophil', 'freez']
+cold_max = 30
+boiled_min = 95
+
+[part]
+leaf = ['\bleaf\b', '\bleaves\b', '\bfoliage\b', '\bfolium\b', '\bfolia\b']
+root = ['\broots?\b', '\bradix\b', '\bradices\b']
+rhizome = ['\brhizom\w*\b']
+seed = ['\bseeds?\b', '\bsemen\b', '\bsemina\b']
+fruit = ['\bfruits?\b', '\bberr(?:y|ies)\b', '\bfructus\b']
+flower = ['\bflowers?\b', '\bflowering tops?\b', '\binflorescences?\b', '\bpetals?\b', '\bflos\b', '\bflores\b',
+          '\bstrobil\w*\b', '\b(?:hop|female) cones?\b']   # hop cones (strobiles) are female inflorescences: coded flower (HEURISTIC)
+bark = ['\bbark\b', '\bcortex\b']
+stem = ['\bstems?\b', '\bstalks?\b', '\btwigs?\b', '\bwood\b', '\bstipites?\b']
+aerial_parts = ['\baerial parts?\b', '\babove-?\s?ground parts?\b', '\bherba\b', '\baerial portions?\b']
+whole_plant = ['\bwhole plants?\b', '\bentire plants?\b', '\bwhole herb\b']
+resin = ['\bresins?\b', '\boleo-?gum\b', '\blatex\b', '\boleo-?resins?\b', '\bexudates?\b']
+juice = ['\bjuices?\b']
+other = ['\bbulbs?\b', '\bstigmas?\b', '\bstigmata\b', '\bpeels?\b', '\brinds?\b', '\bhusks?\b', '\bpericarps?\b', '\bcorms?\b']
+# two or more part categories in the deciding sentence -> "unknown" (separate extracts or a mixture cannot be told apart)
+
+[fresh_or_dried]
+# Drying must refer to the plant material, not the extract.
+dried = ['\b(?:air|shade|sun|oven|freeze|vacuum)?[- ]?dried\b', '\bdry (?:leaves|roots?|seeds?|fruits?|flowers?|plant|herb|material|aerial parts|bark|rhizomes?)\b']
+fresh = ['\bfresh(?:ly)?(?:[- ](?:harvested|collected|picked|cut))?\s+(?:\w+\s+){0,1}(?:leaves|leaf|roots?|seeds?|fruits?|flowers?|plants?|herb|material|aerial parts|bulbs?|rhizomes?|juice)\b']
+# a drying word preceded within 30 characters by one of these words describes the extract or a residue: ignored
+dried_exclude_before = ['extract', 'filtrate', 'residue', 'solvent', 'fraction', 'solution', 'spray', 'supernatant', 'eluate', 'oil']
+dried_exclude_after = ['^\s?(?:extracts?|residue|filtrate|under|in vacuo|to (?:dryness|constant))']
+
+[filtered]
+yes = ['\bfilter(?:ed|ing)\b', '\bfiltrat(?:e|es|ion)\b', '\bwhatman\b', '\bstrained\b', '\bcheesecloth\b']
+no = ['\bunfiltered\b', '\bwithout filtration\b', '\bnot filtered\b']
+
+[eligibility]
+# docs/AUDIT_PROTOCOL_v2.md §3: a study is eligible only if it prepared the plant material.
+survey = ['\bethnobotan', '\bethnomedic', '\bethnopharmacological (?:survey|study)\b', '\bsurvey\b', '\bquestionnaires?\b',
+          '\binterview(?:s|ed)?\b', '\binformants?\b']
+plant_preparation = ['\b(?:leaf|leaves|root|roots|rhizomes?|seeds?|fruits?|flowers?|bark|aerial parts?|herb|plant|stems?|bulbs?|stigmas?|corms?|whole plant|tubers?)\s+(?:crude\s+)?(?:extracts?|powder|juice|decoction|infusion|tincture|essential oil|oil)\b',
+                     '\bextracts? (?:of|from) (?:the )?(?:\w+\s){0,3}(?:leaf|leaves|roots?|rhizomes?|seeds?|fruits?|flowers?|bark|aerial parts?|herbs?|plants?|stems?|bulbs?|stigmas?|corms?|tubers?)\b',
+                     '\b(?:crude|plant|herbal|aqueous|ethanolic|methanolic|hydro-?alcoholic|hydro-?ethanolic|water|hexane|chloroform|acetone)\s+extracts?\b',
+                     '\bessential oils?\b', '\bdecoctions?\b', '\binfusions? of\b']
+
+# CHANGELOG
+# v1 (2026-11-06): first version.
+# v2 (2026-11-06): fine-grained solvent categories with an explicit order and a map to ModernSolvent (acidified_aqueous,
+#   juice, powder, oil, wine; the v1 "olive oil / wine / vinegar extract" patterns moved from `other` into them);
+#   'juice' and 'powder' are extraction cues; juice exclusions for non-plant and other-plant juices; [eligibility] added.
+#   Everything else is unchanged from v1.

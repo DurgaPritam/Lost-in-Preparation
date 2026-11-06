@@ -1,0 +1,16 @@
+recipeId,field,from,to,reason,evidence,requestedBy,appliedBy,date
+pliny-nh:b22:c011:001#r01,part,juice,root,"Liquorice 'juice' is the boiled, concentrated root extract (Spanish juice), not a fresh pressed juice","Bostock & Riley footnote 2511, anchored to 'The juice' in this passage: 'The same preparation that is known to us as Spanish liquorice or Spanish juice.' Same passage: 'the root of it is sweet, and this is the only part that is used.'",project lead,Claude via Claude Code session,2026-11-06
+pliny-nh:b22:c011:001#r01,solvent,unknown,water,same,"Culpeper 1850 Dispensatory, Succus Glycyrrhizæ simplex (culpeper-1850:dispensatory:s040-rob-or-sapa-and-juices:027): 'Infuse Liquorice Roots cleansed and gently bruised, three days in Spring Water ... then boil it a little, and press it hard out, and boil the liquor with a gentle fire to its due thickness.'",project lead,Claude via Claude Code session,2026-11-06
+pliny-nh:b22:c011:001#r01,heat,unknown,boiled,same,"Same Dispensatory recipe ('then boil it a little ... boil the liquor with a gentle fire to its due thickness'); this passage: 'it is thickened'.",project lead,Claude via Claude Code session,2026-11-06
+pliny-nh:b22:c011:001#r01,process,other,decoction,same,"Same Dispensatory recipe (root boiled in water, liquor boiled down).",project lead,Claude via Claude Code session,2026-11-06
+pliny-nh:b22:c011:001#r01,filtered,unknown,yes,same,"Same Dispensatory recipe ('press it hard out').",project lead,Claude via Claude Code session,2026-11-06
+culpeper-1652:herbal:liquoris:006#r02,part,juice,root,"Culpeper's 'Juyce of Liquoris' is the Dispensatory's Succus Glycyrrhizæ: a boiled, concentrated root extract","Culpeper 1850 Dispensatory, Succus Glycyrrhizæ simplex (culpeper-1850:dispensatory:s040-rob-or-sapa-and-juices:027), as above.",project lead,Claude via Claude Code session,2026-11-06
+culpeper-1652:herbal:liquoris:006#r02,solvent,unknown,water,same,as above,project lead,Claude via Claude Code session,2026-11-06
+culpeper-1652:herbal:liquoris:006#r02,heat,unknown,boiled,same,as above,project lead,Claude via Claude Code session,2026-11-06
+culpeper-1652:herbal:liquoris:006#r02,process,unknown,decoction,same,as above,project lead,Claude via Claude Code session,2026-11-06
+culpeper-1652:herbal:liquoris:006#r02,filtered,unknown,yes,same,as above,project lead,Claude via Claude Code session,2026-11-06
+culpeper-1850:herbal:liquorice:003#r02,part,juice,root,"Culpeper's 'juice of Liquorice' is the Dispensatory's Succus Glycyrrhizæ: a boiled, concentrated root extract","Culpeper 1850 Dispensatory, Succus Glycyrrhizæ simplex (culpeper-1850:dispensatory:s040-rob-or-sapa-and-juices:027), as above.",project lead,Claude via Claude Code session,2026-11-06
+culpeper-1850:herbal:liquorice:003#r02,solvent,unknown,water,same,as above,project lead,Claude via Claude Code session,2026-11-06
+culpeper-1850:herbal:liquorice:003#r02,heat,unknown,boiled,same,as above,project lead,Claude via Claude Code session,2026-11-06
+culpeper-1850:herbal:liquorice:003#r02,process,unknown,decoction,same,as above,project lead,Claude via Claude Code session,2026-11-06
+culpeper-1850:herbal:liquorice:003#r02,filtered,unknown,yes,same,as above,project lead,Claude via Claude Code session,2026-11-06
