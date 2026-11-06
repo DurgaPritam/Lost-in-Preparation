@@ -45,10 +45,10 @@ def source_titles() -> tuple[tuple[str, str], ...]:
 
 
 class Extractor:
-    def __init__(self, provider, cache: bool = True):
+    def __init__(self, provider, cache: bool = True, prompt_version: str | None = None):
         self.provider = provider
         self.cache = cache
-        self.prompt: Prompt = build(source_titles())
+        self.prompt: Prompt = build(source_titles(), prompt_version)
         self.titles = dict(source_titles())
         self.run = provider.info()
 
@@ -67,6 +67,10 @@ class Extractor:
         messages: list[dict] = [{"role": "user", "content": render_user(row, self.titles.get(row.source_id, ""))}]
         usage: dict[str, int] = {}
         attempts, accepted, failures, stop = 0, [], [], None
+
+        if self.prompt.retry_template:
+            accepted, failures, attempts, stop, usage = self._extract_compact(row, heading, messages[0])
+            return self._finish(row, cp, accepted, failures, attempts, stop, usage)
 
         for attempt in range(MAX_RETRIES + 1):
             attempts = attempt + 1
@@ -96,6 +100,9 @@ class Extractor:
             messages.append(comp.assistant_message)  # append-only history
             messages.append({"role": "user", "content": feedback})
 
+        return self._finish(row, cp, accepted, failures, attempts, stop, usage)
+
+    def _finish(self, row, cp, accepted, failures, attempts, stop, usage) -> dict:
         result = {
             "passageId": row.passage_id,
             "recipes": [self.to_contract(row, r, c, i) for i, (r, c) in enumerate(accepted)],
@@ -110,6 +117,62 @@ class Extractor:
             cp.parent.mkdir(parents=True, exist_ok=True)
             cp.write_text(json.dumps(result, ensure_ascii=False, indent=1, default=str))
         return result
+
+    def _retry_message(self, errors: list[str], failed: list[dict] | None) -> dict:
+        """v2 compact retry: the validation errors and only the failed recipes (the passage is the first message)."""
+        if failed:
+            fj = "The recipe(s) that failed:\n" + json.dumps({"recipes": failed}, ensure_ascii=False, separators=(",", ":"))
+            ask = 'Return JSON whose "recipes" list contains only the corrected version of each failed recipe.'
+        else:
+            fj = "(The output did not validate against the schema, so no recipe could be read.)"
+            ask = "Return the full JSON for the whole passage."
+        text = (self.prompt.retry_template.replace("{{ERRORS}}", "\n".join(f"- {e}" for e in errors))
+                .replace("{{FAILED}}", fj).replace("{{ASK}}", ask))
+        return {"role": "user", "content": text}
+
+    def _extract_compact(self, row, heading, original: dict):
+        """Attempt 1: the whole passage. Retries: only what failed. Accepted recipes are kept across attempts;
+        recipes still failing after MAX_RETRIES are rejected (never repaired by code)."""
+        usage: dict[str, int] = {}
+        accepted: list = []
+        failures: list[dict] = []
+        mode, stop, attempts = "full", None, 0
+        retry_msg = None
+        for attempt in range(MAX_RETRIES + 1):
+            attempts = attempt + 1
+            msgs = [original] if retry_msg is None else [original, retry_msg]
+            comp = self.provider.complete(self.prompt.system, msgs, self.prompt.schema)
+            for k, v in comp.usage.items():
+                usage[k] = usage.get(k, 0) + v
+            stop = comp.stop
+            if stop in ("refusal", "max_tokens"):
+                failures = (failures if mode == "fix" else []) + [{"recipe": None, "errors": [f"stop={stop}"]}]
+                break
+            try:
+                parsed = LLMResponse.model_validate_json(comp.text)
+            except ValidationError as e:
+                err = f"schema: {e.errors()[:3]}"
+                if mode == "full":
+                    failures = [{"recipe": None, "errors": [err]}]
+                    retry_msg = self._retry_message([err], None)
+                else:  # fixing specific recipes: keep them pending
+                    retry_msg = self._retry_message([err] + [x for f in failures for x in f["errors"]],
+                                                    [f["recipe"] for f in failures if f["recipe"]])
+                continue
+            checks = [(r, check_recipe(r, row.text_clean, heading)) for r in parsed.recipes]
+            ok = [(r, c) for r, c in checks if c.ok]
+            bad = [{"recipe": r.model_dump(), "errors": c.errors} for r, c in checks if not c.ok]
+            if mode == "full":
+                accepted, failures = ok, bad
+            else:
+                accepted += ok
+                failures = bad if (ok or bad) else failures  # an empty reply leaves the failures pending
+            if not failures:
+                break
+            mode = "fix"
+            retry_msg = self._retry_message([f"recipe {i + 1}: " + "; ".join(f["errors"]) for i, f in enumerate(failures)],
+                                            [f["recipe"] for f in failures])
+        return accepted, failures, attempts, stop, usage
 
     def to_contract(self, row, r: LLMRecipe, check, i: int) -> dict:
         text, heading = row.text_clean, heading_of(row)

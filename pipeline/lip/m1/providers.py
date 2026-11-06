@@ -229,6 +229,7 @@ class GroqProvider:
         self._reset_tokens_s: float | None = None
         self._tpm_limit: int | None = None
         self._last_cap: int | None = None
+        self.waits: list[float] = []  # window waits taken (seconds), for progress reports
 
     def __repr__(self) -> str:  # never shows the key
         return f"GroqProvider(model={self.model!r})"
@@ -256,11 +257,15 @@ class GroqProvider:
             wait = self.min_interval_s - (time.monotonic() - self._last)
             if wait > 0:
                 self._sleep(wait)
-            if body is not None and self._remaining_tokens is not None and self._reset_tokens_s:
-                # Groq counts the input AND the full max_completion_tokens against tokens-per-minute
+            if body is not None and self._remaining_tokens is not None:
+                # Groq counts the input AND the full max_completion_tokens against tokens-per-minute.
+                # If this request will not fit what is left of the current window, wait for the next window
+                # instead of sending it (a request that cannot fit is never sent).
                 est = self._input_tokens(body) + int(body.get("max_completion_tokens", 0))
                 if self._remaining_tokens < est:
-                    self._sleep(min(self._reset_tokens_s, self.max_wait_s))
+                    self.waits.append(round(min((self._reset_tokens_s or 60.0) + 0.5, self.max_wait_s), 2))
+                    self._sleep(self.waits[-1])
+                    self._remaining_tokens = self._tpm_limit  # the window has refilled
             status, headers, text = self._transport(method, path, body)
             self._last = time.monotonic()
             self._last_cap = (body or {}).get("max_completion_tokens")
@@ -353,8 +358,15 @@ class GroqProvider:
 
     @staticmethod
     def _input_tokens(body: dict) -> int:
-        """Conservative input-token estimate (~3.2 characters per token for this English/JSON mix)."""
-        return int(len(json.dumps(body.get("messages", []), ensure_ascii=False)) / 3.2) + 50
+        """Input-token estimate INCLUDING the response_format schema (Groq counts it). Uses tiktoken's o200k_base
+        (close to gpt-oss's tokenizer) with a 5% + 80-token safety margin when installed; else ~3.2 chars per token."""
+        parts = [json.dumps(body.get("messages", []), ensure_ascii=False), json.dumps(body.get("response_format", {}))]
+        try:
+            import tiktoken
+            enc = tiktoken.get_encoding("o200k_base")
+            return int(sum(len(enc.encode(x)) for x in parts) * 1.05) + 80
+        except Exception:  # noqa: BLE001 - fall back to a conservative character ratio
+            return int(sum(len(x) for x in parts) / 3.2) + 80
 
     def _cap(self, body: dict) -> dict:
         """Keep requests small: cap max_completion_tokens so input + cap fits under the tokens-per-minute limit."""

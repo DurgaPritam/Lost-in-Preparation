@@ -42,7 +42,17 @@ Limitation: an 1850 herb that appears in 1652 under a completely different name 
 
 **Prompt.** One versioned prompt ([prompts/m1_extract/v1/](prompts/m1_extract/v1/)) holds the system text, the [annotation guidelines](prompts/m1_extract/v1/guidelines.md) and four Culpeper worked examples. The output is constrained to a strict JSON schema ([response.schema.json](prompts/m1_extract/v1/response.schema.json)). Human annotators and the model follow the same guidelines.
 
-**Verbatim-quote rule.** Every recipe span, free-text value and non-`unknown` enum value must be supported by a verbatim quote from the passage. Plant names may instead come from the entry heading, and are then flagged `inHeading`. Matching ignores only typography: curly vs straight quotes, dash variants and whitespace. If a quote fails, the model sees the errors and retries, up to 2 times. A recipe that still fails is **rejected and logged**; it is never repaired by code.
+**Prompt versions.** Prompts are versioned folders under `prompts/m1_extract/`, and the version in use is set in `config/pipeline.toml`. Changes are recorded in [prompts/m1_extract/CHANGELOG.md](prompts/m1_extract/CHANGELOG.md).
+
+**v2** (2026-11-06) fits Groq's free tier, which counts the input, the JSON schema and the full completion allowance against 8,000 tokens per minute.
+- **Size:** the fixed prompt is cut from 6,071 to 3,382 tokens (system prompt 5,183 → 2,494, plus the 888-token schema; `data/interim/m1/prompt_token_counts.json`). It keeps two of v1's four worked examples.
+- **Unchanged:** the schema, the field definitions, the verbatim-quote rule and temperature 0.
+- **Compact retries:** a retry sends only the passage, the validation errors and the failed recipes, never the full previous answer.
+- **Annotation:** human annotators keep the full v1 guidelines.
+- **Pacing:** each request's completion allowance is capped so the request fits the per-minute limit. A request or retry that will not fit the tokens left in the current minute waits for the next window instead of being sent.
+- **Re-extraction:** every sample passage is re-extracted with v2. Responses from v1 stay in the cache under their own prompt version and are excluded from evaluation.
+
+**Verbatim-quote rule.** Every recipe span, free-text value and non-`unknown` enum value must be supported by a verbatim quote from the passage. Plant names may instead come from the entry heading, and are then flagged `inHeading`. Matching ignores only typography: curly vs straight quotes, dash variants and whitespace. If a quote fails, the model sees the errors and retries, up to 2 times (v2: only the failed recipes are sent back). A recipe that still fails is **rejected and logged**; it is never repaired by code.
 
 **Providers.** The provider is set in [config/pipeline.toml](config/pipeline.toml). All providers get identical prompts, schema and checks.
 

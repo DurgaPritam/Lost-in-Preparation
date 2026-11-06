@@ -75,7 +75,7 @@ def test_recipe_type_consistency():
 
 
 def test_fewshot_examples_pass_the_validator(passages):
-    for exm in fewshot():
+    for exm in fewshot("v1"):
         row = passages.loc[exm["passageId"]]
         for r in LLMResponse.model_validate(exm["output"]).recipes:
             c = check_recipe(r, row.text_clean, row.entry_title)
@@ -137,11 +137,11 @@ def _row(passages, pid):
 
 def test_retry_then_accept(passages):
     pid = "culpeper-1850:herbal:amara-dulcis:006"
-    good = next(e for e in fewshot() if e["passageId"] == pid)["output"]
+    good = next(e for e in fewshot("v1") if e["passageId"] == pid)["output"]
     bad = json.loads(json.dumps(good))
     bad["recipes"][0]["indicationAsWritten"] = "to open the liver"  # not verbatim
     prov, fake = ollama([bad, good])
-    out = ex.Extractor(prov, cache=False).extract(_row(passages, pid))
+    out = ex.Extractor(prov, cache=False, prompt_version="v1").extract(_row(passages, pid))
     assert out["attempts"] == 2 and len(out["recipes"]) == 1 and out["rejections"] == []
     assert fake.calls[1]["messages"][-1]["role"] == "user" and "quoting rules" in fake.calls[1]["messages"][-1]["content"]
     rec = C.Recipe.model_validate(out["recipes"][0])
@@ -159,10 +159,10 @@ def test_retry_then_accept(passages):
 
 def test_anthropic_provider_uses_same_schema_and_fallbacks(passages):
     pid = "culpeper-1850:herbal:amara-dulcis:006"
-    good = next(e for e in fewshot() if e["passageId"] == pid)["output"]
+    good = next(e for e in fewshot("v1") if e["passageId"] == pid)["output"]
     client = FakeAnthropic([good])
     prov = providers.AnthropicProvider(client=client)
-    out = ex.Extractor(prov, cache=False).extract(_row(passages, pid))
+    out = ex.Extractor(prov, cache=False, prompt_version="v1").extract(_row(passages, pid))
     assert len(out["recipes"]) == 1 and out["run"]["provider"] == "anthropic"
     call = client.calls[0]
     assert call["output_config"]["format"]["schema"] == response_schema()
@@ -172,9 +172,9 @@ def test_anthropic_provider_uses_same_schema_and_fallbacks(passages):
 def test_same_prompt_for_both_providers(passages):
     pid = "culpeper-1850:herbal:one-blade~2:002"
     po, fo = ollama([{"recipes": []}])
-    ex.Extractor(po, cache=False).extract(_row(passages, pid))
+    ex.Extractor(po, cache=False, prompt_version="v1").extract(_row(passages, pid))
     ca = FakeAnthropic([{"recipes": []}])
-    ex.Extractor(providers.AnthropicProvider(client=ca), cache=False).extract(_row(passages, pid))
+    ex.Extractor(providers.AnthropicProvider(client=ca), cache=False, prompt_version="v1").extract(_row(passages, pid))
     assert fo.calls[0]["messages"][0]["content"] == ca.calls[0]["system"][0]["text"]
     assert fo.calls[0]["messages"][1:] == ca.calls[0]["messages"]
 
@@ -188,17 +188,17 @@ def test_cache_key_depends_on_provider_model_and_digest(passages):
 
 def test_persistent_bad_span_is_rejected_not_repaired(passages):
     pid = "culpeper-1850:herbal:amara-dulcis:006"
-    bad = json.loads(json.dumps(next(e for e in fewshot() if e["passageId"] == pid)["output"]))
+    bad = json.loads(json.dumps(next(e for e in fewshot("v1") if e["passageId"] == pid)["output"]))
     bad["recipes"][0]["durationText"] = "12 hours"
-    out = ex.Extractor(ollama([bad] * (ex.MAX_RETRIES + 1))[0], cache=False).extract(_row(passages, pid))
+    out = ex.Extractor(ollama([bad] * (ex.MAX_RETRIES + 1))[0], cache=False, prompt_version="v1").extract(_row(passages, pid))
     assert out["recipes"] == [] and out["attempts"] == ex.MAX_RETRIES + 1
     assert "durationText" in out["rejections"][0]["errors"][0]
 
 
 def test_compound_recipes_excluded_from_headline(passages):
     pid = "culpeper-1850:herbal:one-blade~2:004"
-    good = next(e for e in fewshot() if e["passageId"] == pid)["output"]
-    out = ex.Extractor(ollama([good])[0], cache=False).extract(_row(passages, pid))
+    good = next(e for e in fewshot("v1") if e["passageId"] == pid)["output"]
+    out = ex.Extractor(ollama([good])[0], cache=False, prompt_version="v1").extract(_row(passages, pid))
     flags = [(r["recipeType"], r["excludedFromHeadline"]) for r in out["recipes"]]
     assert flags == [("single_plant", False), ("compound", True)]
 

@@ -38,7 +38,7 @@ def _has_credentials() -> bool:
 
 def m1(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(prog="lip m1")
-    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver"])
+    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver", "prompt-tokens"])
     ap.add_argument("--scope", choices=["sample", "all"], default="sample")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--provider", choices=["groq", "ollama", "anthropic"], help="overrides config/pipeline.toml")
@@ -82,6 +82,9 @@ def m1(argv: list[str]) -> int:
         from .m1 import evaluate
         m = evaluate.evaluate(a.reference)
         print(m.model_dump_json(indent=2)[:4000])
+    elif a.cmd == "prompt-tokens":
+        from .m1 import token_counts
+        print(json.dumps(token_counts.run(), indent=2))
     elif a.cmd == "silver":
         from .m1 import silver
         print(json.dumps(silver.build(), indent=2))

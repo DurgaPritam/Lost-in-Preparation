@@ -1,0 +1,31 @@
+{
+  "encoding": "o200k_base (approximation of gpt-oss's tokenizer)",
+  "versions": {
+    "v1": {
+      "promptVersion": "m1_extract/v1:8aadfda9ef",
+      "systemTokens": 5183,
+      "schemaTokens": 888,
+      "fixedTokens": 6071,
+      "workedExamples": 4,
+      "groqReportedFirstAttemptInputTokens": {
+        "n": 4,
+        "min": 6083,
+        "max": 6684,
+        "median": 6332
+      }
+    },
+    "v2": {
+      "promptVersion": "m1_extract/v2:36e5019562",
+      "systemTokens": 2494,
+      "schemaTokens": 888,
+      "fixedTokens": 3382,
+      "workedExamples": 2,
+      "groqReportedFirstAttemptInputTokens": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "median": null
+      }
+    }
+  }
+}

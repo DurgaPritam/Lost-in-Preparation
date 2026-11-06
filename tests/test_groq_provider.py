@@ -150,7 +150,8 @@ def test_completion_cap_fits_tpm_and_413_retry(env):
     p.check()
     p.complete("sys " * 3000, [{"role": "user", "content": "x"}], SCHEMA)
     first, second = t.calls[1][2], t.calls[2][2]
-    assert first["max_completion_tokens"] < 4096                       # capped to fit 8000 TPM before sending
+    assert first["max_completion_tokens"] < 8192                       # capped below the configured maximum
+    assert P.GroqProvider._input_tokens(first) + first["max_completion_tokens"] <= 8000   # fits 8000 TPM before sending
     assert second["max_completion_tokens"] == first["max_completion_tokens"] - 511 - 150  # tightened after the 413
     stored = json.loads(next((env / "responses").glob("*.json")).read_text())
     assert stored["response"]["_maxCompletionTokensSent"] == second["max_completion_tokens"]

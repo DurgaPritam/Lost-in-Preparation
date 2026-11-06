@@ -12,6 +12,7 @@ dependencies = [
     "rdkit>=2024.3",
     "pypdf>=5",
     "scipy>=1.11",
+    "tiktoken>=0.7",
 ]
 
 [dependency-groups]

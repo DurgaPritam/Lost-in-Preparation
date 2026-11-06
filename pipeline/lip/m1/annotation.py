@@ -7,7 +7,7 @@ from __future__ import annotations
 import json
 
 from ..paths import ROOT
-from .prompt import PROMPT_DIR
+from .prompt import ANNOTATION_GUIDELINES
 from .sample import SAMPLE_PATH
 from .schema import ENUMS, values
 
@@ -18,7 +18,7 @@ def build() -> str:
     payload = {
         "sample": json.loads(SAMPLE_PATH.read_text()),
         "enums": {k: values(v) for k, v in ENUMS.items()},
-        "guidelines": (PROMPT_DIR / "guidelines.md").read_text(),
+        "guidelines": ANNOTATION_GUIDELINES.read_text(),  # the full v1 guidelines, whatever the extraction prompt
         "guidelinesVersion": "v1",
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
