@@ -1,0 +1,2158 @@
+{
+ "species": "Agrimonia eupatoria",
+ "wfoId": "wfo-0001006654",
+ "names": [
+  "Agrimonia eupatoria",
+  "Agrimonia elata",
+  "Agrimonia eupatoria var. minor",
+  "Agrimonia officinarum",
+  "Agrimonia sulcata",
+  "Agrimonia vulgaris",
+  "Eupatorium dioscoridis"
+ ],
+ "term": "\"Agrimonia eupatoria\"[tiab] OR \"Agrimonia elata\"[tiab] OR \"Agrimonia eupatoria var. minor\"[tiab] OR \"Agrimonia officinarum\"[tiab] OR \"Agrimonia sulcata\"[tiab] OR \"Agrimonia vulgaris\"[tiab] OR \"Eupatorium dioscoridis\"[tiab]",
+ "count": 80,
+ "queryTranslation": "\"Agrimonia eupatoria\"[Title/Abstract]",
+ "retrieved": 80,
+ "records": [
+  {
+   "pmid": "37895122",
+   "title": "Plant Extracts as Skin Care and Therapeutic Agents.",
+   "year": 2023,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms242015444",
+   "pmcid": "PMC10607442",
+   "mesh": [
+    "Skin Care",
+    "Skin",
+    "Betula",
+    "Cosmetics",
+    "Centaurea",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0e49e537871c429c54a40b34b51bb94b81887a0cbb83584d4e8884cc0d542d79",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29600757",
+   "title": "Preclinical Hepatoprotective Effect of Herbalism Against Ethanol Induced Hepatotoxicity: A Review.",
+   "year": 2018,
+   "journal": "Current drug metabolism",
+   "doi": "10.2174/1389200219666180330125003",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Liver Diseases, Alcoholic",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Protective Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "62ffde7c6f72d9bae1460d1ec2f31ad48497670a435472d96376a3bd94852cef",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41463411",
+   "title": "Anthelmintic Activity of Traditional Medicinal Plants Used in Europe.",
+   "year": 2025,
+   "journal": "Biology",
+   "doi": "10.3390/biology14121636",
+   "pmcid": "PMC12729885",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c20b7b48e73985447cdad943c16d6f959456849b986398c0dd15fdcd70b75d8f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38142949",
+   "title": "Formulation optimization and evaluation of oromucosal in situ gel loaded with silver nanoparticles prepared by green biosynthesis.",
+   "year": 2024,
+   "journal": "European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences",
+   "doi": "10.1016/j.ejps.2023.106683",
+   "pmcid": null,
+   "mesh": [
+    "Poloxamer",
+    "Silver",
+    "Escherichia coli",
+    "Metal Nanoparticles",
+    "Staphylococcus aureus",
+    "Temperature",
+    "Gels",
+    "Methylcellulose"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "be48716420c8f155c58af8d03aa1c2753fa702e752b049cf4809496d01b6f972",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40917836",
+   "title": "Evaluating efficacy, safety, and innovation in skin care applications of essential oils: a systematic review.",
+   "year": 2025,
+   "journal": "Frontiers in medicine",
+   "doi": "10.3389/fmed.2025.1589691",
+   "pmcid": "PMC12408269",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Systematic Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0fe4b1d29286e10653b753c891d21c1f36a00e0f6c453613ecc56ad4a07a81fd",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "34462643",
+   "title": "Effects of a Chlorogenic Acid-Containing Herbal Medicine (LASNB) on Colon Cancer.",
+   "year": 2021,
+   "journal": "Evidence-based complementary and alternative medicine : eCAM",
+   "doi": "10.1155/2021/9923467",
+   "pmcid": "PMC8403046",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ce8b6e85e14e08f1a5d87297ee87106dc815c8a0dac2a18997dfde74fabcc8a4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36615352",
+   "title": "Therapeutic Potential of Flavonoids and Tannins in Management of Oral Infectious Diseases-A Review.",
+   "year": 2022,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28010158",
+   "pmcid": "PMC9821998",
+   "mesh": [
+    "Tannins",
+    "Flavonoids",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Hydrolyzable Tannins",
+    "Anti-Infective Agents",
+    "Communicable Diseases"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f5772d11566eb5b98cf011cc0524df670b7d18d47a170cfec670dbe47b17e9f1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "17215090",
+   "title": "Radical scavenging capacity of Agrimonia eupatoria and Agrimonia procera.",
+   "year": 2007,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2006.10.002",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Benzothiazoles",
+    "Biphenyl Compounds",
+    "Free Radical Scavengers",
+    "Humans",
+    "Phytotherapy",
+    "Picrates",
+    "Plant Extracts",
+    "Sulfonic Acids"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c845f9daf210361ec3e81929df0a70b8b36735ece25168d31aab3787f118c8fc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37044231",
+   "title": "Modulation of the bacterial virulence and resistance by well-known European medicinal herbs.",
+   "year": 2023,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2023.116484",
+   "pmcid": null,
+   "mesh": [
+    "Plants, Medicinal",
+    "Staphylococcus aureus",
+    "Plant Extracts",
+    "Virulence",
+    "Colistin",
+    "Microbial Sensitivity Tests",
+    "Anti-Bacterial Agents",
+    "Bacteria",
+    "Pseudomonas aeruginosa",
+    "Biofilms"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7a95d4fb6297d1318118082aaf03c3bdb0edde9e0d786a2baf21f6180308ed42",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36375535",
+   "title": "Essential oils of four wild plants inhibit the blood seeking behaviour of female Aedes aegytpi.",
+   "year": 2023,
+   "journal": "Experimental parasitology",
+   "doi": "10.1016/j.exppara.2022.108424",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Female",
+    "Humans",
+    "Oils, Volatile",
+    "Aedes",
+    "Insect Bites and Stings",
+    "Mosquito Vectors",
+    "Insect Repellents",
+    "Larva",
+    "Insecticides"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e3e26309a9b63efef312fe525a3a0ff58a60758faca7edcd42f729c3517e4cfe",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31221152",
+   "title": "Neutralization of cholera toxin by Rosaceae family plant extracts.",
+   "year": 2019,
+   "journal": "BMC complementary and alternative medicine",
+   "doi": "10.1186/s12906-019-2540-6",
+   "pmcid": "PMC6587261",
+   "mesh": [
+    "Agrimonia",
+    "Anti-Bacterial Agents",
+    "Cell Line",
+    "Cholera",
+    "Cholera Toxin",
+    "Fragaria",
+    "G(M1) Ganglioside",
+    "Humans",
+    "Plant Extracts",
+    "Rosaceae",
+    "Rubus",
+    "Vibrio cholerae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bc563c0b822256239f9861032f97014762fccb33525b501a10a9efab0107636e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40814073",
+   "title": "Effect of pre-germination temperature conditions on germination characteristics of temperate grassland species.",
+   "year": 2025,
+   "journal": "BMC ecology and evolution",
+   "doi": "10.1186/s12862-025-02424-5",
+   "pmcid": "PMC12351819",
+   "mesh": [
+    "Germination",
+    "Grassland",
+    "Temperature",
+    "Climate Change",
+    "Europe",
+    "Seasons"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "81ae09dc6a6c384bc1f73b6f06782345bf235f9e3ec5381f9a5ffe6f9cb67bf3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39072163",
+   "title": "Network pharmacology- and molecular docking-based exploration of the molecular mechanism underlying Jianpi Yiwei Recipe treatment of gastric cancer.",
+   "year": 2024,
+   "journal": "World journal of gastrointestinal oncology",
+   "doi": "10.4251/wjgo.v16.i7.2988",
+   "pmcid": "PMC11271781",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6696cd19d8121c4b80c48a44d0cf877b3a9fefa8187b75880c1fc7f1e2e43919",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "40721115",
+   "title": "Exploring the effects of the anti-diarrheal formula on intestinal oxidative stress based on network pharmacology, molecular docking, and microbiomics.",
+   "year": 2025,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2025.106742",
+   "pmcid": null,
+   "mesh": [
+    "Oxidative Stress",
+    "Animals",
+    "Gastrointestinal Microbiome",
+    "Mice",
+    "Network Pharmacology",
+    "Drugs, Chinese Herbal",
+    "Molecular Docking Simulation",
+    "Diarrhea",
+    "Antidiarrheals",
+    "Intestines",
+    "Antioxidants",
+    "Male",
+    "Signal Transduction"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "037578ef34606f88c2acb0e05ee567fc5480448048a637291ac0ed948b55b980",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36836930",
+   "title": "In Situ Gel with Silver Nanoparticles Prepared Using Agrimonia eupatoria L. Shows Antibacterial Activity.",
+   "year": 2023,
+   "journal": "Life (Basel, Switzerland)",
+   "doi": "10.3390/life13020573",
+   "pmcid": "PMC9966964",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0dc388f7e8e36eb485520dfb9d944446783a49965abcbddde0034e3145ac6f57",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36317845",
+   "title": "Investigation of Selected Medicinal Plants for Their Anti-Obesity Properties.",
+   "year": 2022,
+   "journal": "Turkish journal of pharmaceutical sciences",
+   "doi": "10.4274/tjps.galenos.2021.97572",
+   "pmcid": "PMC9634444",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "57f2655c2c1557e32f5136f2b89af9b6f41219f93657fe54ac1375a3c31f2a46",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35478102",
+   "title": "Agrimonia eupatoria L. Aqueous Extract Improves Skin Wound Healing: An In Vitro Study in Fibroblasts and Keratinocytes and In Vivo Study in Rats.",
+   "year": 2022,
+   "journal": "In vivo (Athens, Greece)",
+   "doi": "10.21873/invivo.12822",
+   "pmcid": "PMC9087068",
+   "mesh": [
+    "Agrimonia",
+    "Animals",
+    "Disease Models, Animal",
+    "Fibroblasts",
+    "Keratinocytes",
+    "Plant Extracts",
+    "Rats",
+    "Water",
+    "Wound Healing"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "94687b1dfc7b3e8d1da6977ce070e1d2e09154e1c4a435ed993afeec7b765d9c",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19653313",
+   "title": "Investigations into the antibacterial activities of phytotherapeutics against Helicobacter pylori and Campylobacter jejuni.",
+   "year": 2010,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.2933",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Campylobacter jejuni",
+    "Helicobacter pylori",
+    "Magnoliopsida",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Phytotherapy",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e3a05b466ae847052f91232111b0ad7b7ce47e6085dcf324ae26b559e8e3cb57",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31136046",
+   "title": "Novel approach to combat antibiotic resistance: evaluation of some Armenian herb crude extracts for their antibiotic modulatory and antiviral properties.",
+   "year": 2019,
+   "journal": "Journal of applied microbiology",
+   "doi": "10.1111/jam.14335",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Antiviral Agents",
+    "Armenia",
+    "Drug Resistance, Bacterial",
+    "Drug Synergism",
+    "Gram-Negative Bacteria",
+    "Gram-Positive Bacteria",
+    "Plant Extracts",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2cbd3eb2c9736001fc78fbcc6805a186b0699feea5607296d834aa3f02be317d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39942904",
+   "title": "From Traditional Medicine to the Laboratory: A Multidisciplinary Investigation on Agrimonia eupatoria L. Collected in Valle Imagna (BG, North of Italy).",
+   "year": 2025,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants14030340",
+   "pmcid": "PMC11819889",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6a931a5e4b3d4cee920fc22b43ceda489a881ca465614272f5c14a1866500c77",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37939910",
+   "title": "Comparative polyphenolic profiling of five ethnomedicinal plants and their applicative potential in the treatment of type 2 diabetes.",
+   "year": 2024,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2023.117377",
+   "pmcid": null,
+   "mesh": [
+    "Diabetes Mellitus, Type 2",
+    "Antioxidants",
+    "Chlorogenic Acid",
+    "Plant Extracts",
+    "Hypoglycemic Agents",
+    "Flavonoids",
+    "Plants, Medicinal",
+    "Phenols",
+    "Anti-Infective Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "75fc718c7de97066b82e3b4ac7d187fb5969db6e5afd8eb14de8b69eabca95b5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39566522",
+   "title": "[Alpha-bisabolol reverses ABCB1-mediated multidrug resistance in tumor and its mechanisms].",
+   "year": 2024,
+   "journal": "Xi bao yu fen zi mian yi xue za zhi = Chinese journal of cellular and molecular immunology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Drug Resistance, Neoplasm",
+    "Drug Resistance, Multiple",
+    "ATP Binding Cassette Transporter, Subfamily B",
+    "Monocyclic Sesquiterpenes",
+    "Molecular Docking Simulation",
+    "Sesquiterpenes",
+    "Cell Line, Tumor",
+    "Neoplasms"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1295cac91eb70b7dc059f32fb075663a9a7604c2322fd52afbf48754070c0564",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28491113",
+   "title": "Antioxidant, Anti-Inflammatory, and Analgesic Activities of Agrimonia eupatoria L. Infusion.",
+   "year": 2017,
+   "journal": "Evidence-based complementary and alternative medicine : eCAM",
+   "doi": "10.1155/2017/8309894",
+   "pmcid": "PMC5405390",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ccbc7f6be823df356c1f49266f85f78b278bddc36feb96fd739723905662e151",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33375482",
+   "title": "Designing New Antibacterial Wound Dressings: Development of a Dual Layer Cotton Material Coated with Poly(Vinyl Alcohol)_Chitosan Nanofibers Incorporating Agrimonia eupatoria L. Extract.",
+   "year": 2020,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26010083",
+   "pmcid": "PMC7795418",
+   "mesh": [
+    "Agrimonia",
+    "Anti-Bacterial Agents",
+    "Bandages",
+    "Cell Death",
+    "Cell Survival",
+    "Chitosan",
+    "Cotton Fiber",
+    "Dermis",
+    "Drug Liberation",
+    "Fibroblasts",
+    "Humans",
+    "Microbial Sensitivity Tests",
+    "Nanofibers",
+    "Plant Extracts",
+    "Polyvinyl Alcohol",
+    "Porosity",
+    "Pseudomonas aeruginosa",
+    "Spectroscopy, Fourier Transform Infrared",
+    "Staphylococcus aureus",
+    "Steam",
+    "Wettability",
+    "Wound Healing"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9ea51af3085b0a430d8a2c5e90e70418a4475dd948129d4b927cc8c0f8ac7756",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "41011680",
+   "title": "Effect of Phenological Stage and Leaf Age on Changes of Chlorophyll and Carotenoid Contents in Some Weeds and Invasive Species.",
+   "year": 2025,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules30183788",
+   "pmcid": "PMC12472832",
+   "mesh": [
+    "Plant Leaves",
+    "Carotenoids",
+    "Chlorophyll",
+    "Plant Weeds",
+    "Introduced Species"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e9dad5573c4cf3161b68501673bcd46de5883c402dc9601631ec748ab625453b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37103272",
+   "title": "Antioxidant and Protective Effects of the Polyphenolic Glycoconjugate from Agrimonia eupatoria L. Herb in the Prevention of Inflammation in Human Cells.",
+   "year": 2023,
+   "journal": "Journal of functional biomaterials",
+   "doi": "10.3390/jfb14040182",
+   "pmcid": "PMC10142550",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3f47d834b6ae6a54dcb1a4b6acc9e2b78ebfc8c31b508a207bb98c4a26438a59",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33646008",
+   "title": "The therapeutic effects of Agrimonia eupatoria L.",
+   "year": 2020,
+   "journal": "Physiological research",
+   "doi": "10.33549/physiolres.934641",
+   "pmcid": "PMC8603700",
+   "mesh": [
+    "Agrimonia",
+    "Anti-Infective Agents",
+    "Antioxidants",
+    "Humans",
+    "Immunologic Factors",
+    "Male",
+    "Phytochemicals",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0e2d93bbc10340be833dfe8f35e952c0eacadf8b6f8eba5dacb827f5b72fadc8",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26092224",
+   "title": "The phytochemical investigation of Agrimonia eupatoria L. and Agrimonia procera Wallr. as valid sources of Agrimoniae herba--The pharmacopoeial plant material.",
+   "year": 2015,
+   "journal": "Journal of pharmaceutical and biomedical analysis",
+   "doi": "10.1016/j.jpba.2015.05.027",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Apigenin",
+    "Chemistry, Pharmaceutical",
+    "Chromatography, High Pressure Liquid",
+    "Germany",
+    "Hydrolyzable Tannins",
+    "Mass Spectrometry",
+    "Phytochemicals",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Solvents",
+    "Spectrophotometry, Ultraviolet",
+    "Tannins"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68e2f349db411a094fabf88c822ee00d263b5b1376b4906a6c3021c834407823",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36770686",
+   "title": "Effect of Agrimonia eupatoria L. and Origanum vulgare L. Leaf, Flower, Stem, and Root Extracts on the Survival of Pseudomonas aeruginosa.",
+   "year": 2023,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28031019",
+   "pmcid": "PMC9921178",
+   "mesh": [
+    "Humans",
+    "Pseudomonas aeruginosa",
+    "Origanum",
+    "Agrimonia",
+    "Plant Leaves",
+    "Antioxidants",
+    "Flavonoids",
+    "Phenols",
+    "Flowers",
+    "Anti-Infective Agents",
+    "Anti-Bacterial Agents",
+    "Ethanol",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "587f5cab9990df23526666a70e15231427524dfc8be6da78343dd325797ec06a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25489732",
+   "title": "The four-herb Chinese medicine ANBP enhances wound healing and inhibits scar formation via bidirectional regulation of transformation growth factor pathway.",
+   "year": 2014,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0112274",
+   "pmcid": "PMC4260828",
+   "mesh": [
+    "Animals",
+    "Cicatrix, Hypertrophic",
+    "Collagen",
+    "Drugs, Chinese Herbal",
+    "Ear",
+    "Extracellular Matrix",
+    "Gene Expression Regulation",
+    "Inflammation Mediators",
+    "Powders",
+    "Rabbits",
+    "Signal Transduction",
+    "Smad Proteins",
+    "Temperature",
+    "Transforming Growth Factor beta1",
+    "Wound Healing"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1cede2999e8bfeb83cccc78a870137056bd7013cbdffd8b51bd80db4b587f918",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21280113",
+   "title": "Investigations into the antiadhesive activity of herbal extracts against Campylobacter jejuni.",
+   "year": 2011,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.3384",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Bacterial Adhesion",
+    "Campylobacter Infections",
+    "Campylobacter jejuni",
+    "HT29 Cells",
+    "Humans",
+    "Plant Extracts",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6f9581f6f98f67b1c13c180e7aef61c1434bf4c97b384ae68acd015c78ae1b9b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17313151",
+   "title": "Comparison of various extraction techniques for isolation and determination of isoflavonoids in plants.",
+   "year": 2007,
+   "journal": "Journal of separation science",
+   "doi": "10.1002/jssc.200600306",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Supercritical Fluid",
+    "Isoflavones",
+    "Plant Extracts",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d6f1300711693a3e8ebd750a60d8b34109a22c6a4aadbca4692f8f0f0cb50ce6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38318620",
+   "title": "Biosynthesis and characterization of silver nanoparticles synthesized using extracts of Agrimonia eupatoria L. and in vitro and in vivo studies of potential medicinal applications.",
+   "year": 2024,
+   "journal": "RSC advances",
+   "doi": "10.1039/d3ra07819a",
+   "pmcid": "PMC10839552",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "096dc555e71fced45522d287db71b5f0ec34129e8133e47e9f628ae08d0fad37",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "23026307",
+   "title": "Antimicrobial assays of three native British plants used in Anglo-Saxon medicine for wound healing formulations in 10th century England.",
+   "year": 2012,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2012.09.031",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Anti-Bacterial Agents",
+    "Arctium",
+    "Bacteria",
+    "England",
+    "Medicine, Traditional",
+    "Microbial Sensitivity Tests",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Potentilla",
+    "Wound Healing"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0759300b682440787c9b9049613f9e212855c361e9439810c31ce9cdc0fb1111",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41702057",
+   "title": "Novel 3D-printed polycaprolactone/gelatin based biopatches loaded with natural antibacterial agents for hernia treatment.",
+   "year": 2026,
+   "journal": "Biomedical materials (Bristol, England)",
+   "doi": "10.1088/1748-605X/ae4702",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Polyesters",
+    "Gelatin",
+    "Anti-Bacterial Agents",
+    "Printing, Three-Dimensional",
+    "Rats",
+    "Wound Healing",
+    "Rifampin",
+    "Staphylococcus aureus",
+    "Tensile Strength",
+    "Tissue Scaffolds",
+    "Male",
+    "Polypropylenes",
+    "Nanofibers",
+    "Surgical Mesh",
+    "Carrageenan",
+    "Plant Extracts",
+    "Materials Testing"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9ce8718c3727af3093ab98d23d367475558b4281f2714a047dd7a5d0a3962eb8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32107627",
+   "title": "Phytochemical Screening and Detection of Antibacterial Components from Crude Extracts of Some Armenian Herbs Using TLC-Bioautographic Technique.",
+   "year": 2020,
+   "journal": "Current microbiology",
+   "doi": "10.1007/s00284-020-01929-0",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Armenia",
+    "Chromatography, Thin Layer",
+    "Magnoliopsida",
+    "Phytochemicals",
+    "Plant Extracts",
+    "Staphylococcus aureus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e25ff642ebd66be4c04a0ed1c9628cb743f8aa33da629e4c63ca957c4373559d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36145771",
+   "title": "Phytochemical and Pharmacological Research in Agrimonia eupatoria L. Herb Extract with Anti-Inflammatory and Hepatoprotective Properties.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11182371",
+   "pmcid": "PMC9502318",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9d5c8d555cc0674910251eb1b13c51dd1b242700e433a35e31d9b46c57fbe83b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32540521",
+   "title": "Scientific basis for the industrialization of traditionally used plants of the Rosaceae family.",
+   "year": 2020,
+   "journal": "Food chemistry",
+   "doi": "10.1016/j.foodchem.2020.127197",
+   "pmcid": null,
+   "mesh": [
+    "Industrial Development",
+    "Phenols",
+    "Rosaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8d964449dddc7bda8fc52ca1a3c4a231255fc7b83dd35bd8cc408394c7af846a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24001902",
+   "title": "Development and validation of HPLC-DAD-CAD-MS(3) method for qualitative and quantitative standardization of polyphenols in Agrimoniae eupatoriae herba (Ph. Eur).",
+   "year": 2013,
+   "journal": "Journal of pharmaceutical and biomedical analysis",
+   "doi": "10.1016/j.jpba.2013.08.006",
+   "pmcid": null,
+   "mesh": [
+    "Aerosols",
+    "Agrimonia",
+    "Chromatography, High Pressure Liquid",
+    "Mass Spectrometry",
+    "Plant Extracts",
+    "Polyphenols",
+    "Tandem Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Validation Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68ab59a10912af6a7b8b765b1ec612c9c5abc2eb60018cc4be1129529619f1e7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41727527",
+   "title": "Antibiofilm Activity of Agrimonia eupatoria Extracts Against Clinically Relevant Pathogens.",
+   "year": 2026,
+   "journal": "International journal of microbiology",
+   "doi": "10.1155/ijm/5222416",
+   "pmcid": "PMC12921527",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b096ac892011636310368212a8a1b53f8301bd585f459dc42c142139461615c9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35631463",
+   "title": "Vascular Effects of Polyphenols from Agrimonia eupatoria L. and Role of Isoquercitrin in Its Vasorelaxant Potential in Human Arteries.",
+   "year": 2022,
+   "journal": "Pharmaceuticals (Basel, Switzerland)",
+   "doi": "10.3390/ph15050638",
+   "pmcid": "PMC9143967",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "48971b8324d36118ebcfcca0726cce15f82f91e05c15ebb34dd9848c25dd8710",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35752261",
+   "title": "Agrimonia eupatoria L.: An integrative perspective on ethnomedicinal use, phenolic composition and pharmacological activity.",
+   "year": 2022,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2022.115498",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Ethnopharmacology",
+    "Medicine, Traditional",
+    "Phenols",
+    "Phytochemicals",
+    "Phytotherapy",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4322785bf4c00945caf70ccbfe9738348d6126ef37eb07c97f2958a0925eb1b9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23078582",
+   "title": "Agrimonia eupatoria tea consumption in relation to markers of inflammation, oxidative status and lipid metabolism in healthy subjects.",
+   "year": 2013,
+   "journal": "Archives of physiology and biochemistry",
+   "doi": "10.3109/13813455.2012.729844",
+   "pmcid": null,
+   "mesh": [
+    "Adolescent",
+    "Adult",
+    "Agrimonia",
+    "Antioxidants",
+    "Beverages",
+    "Biomarkers",
+    "Cholesterol, HDL",
+    "Drug Evaluation",
+    "Female",
+    "Glucose",
+    "Humans",
+    "Inflammation",
+    "Interleukin-6",
+    "Lipid Metabolism",
+    "Male",
+    "Middle Aged",
+    "Oxidative Stress",
+    "Phytotherapy",
+    "Plant Components, Aerial",
+    "Plant Extracts",
+    "Young Adult"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4f854b812e49d10cc4bec77832d92084fa624e9169ded3fb6893050bccaa3a2a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22525864",
+   "title": "Agrimonia eupatoria protects against chronic ethanol-induced liver injury in rats.",
+   "year": 2012,
+   "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+   "doi": "10.1016/j.fct.2012.04.005",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Animals",
+    "Base Sequence",
+    "Body Weight",
+    "Cytochrome P-450 CYP2E1",
+    "Cytokines",
+    "DNA Primers",
+    "Dose-Response Relationship, Drug",
+    "Ethanol",
+    "Inflammation Mediators",
+    "Lipid Peroxidation",
+    "Liver Diseases, Alcoholic",
+    "Male",
+    "NF-kappa B",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Reverse Transcriptase Polymerase Chain Reaction",
+    "Toll-Like Receptor 4",
+    "Transaminases"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a6d837a81e4da7ee9c482ba13cf89e56da4ed99d108b1cc75242ba7602702334",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28911559",
+   "title": "Extracts of Agrimonia eupatoria L. as sources of biologically active compounds and evaluation of their antioxidant, antimicrobial, and antibiofilm activities.",
+   "year": 2016,
+   "journal": "Journal of food and drug analysis",
+   "doi": "10.1016/j.jfda.2016.02.007",
+   "pmcid": "PMC9336665",
+   "mesh": [
+    "Agrimonia",
+    "Anti-Infective Agents",
+    "Antioxidants",
+    "Biofilms",
+    "Biphenyl Compounds",
+    "Flavonoids",
+    "Picrates",
+    "Plant Extracts",
+    "Plant Leaves"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cece789ee8eb6531b89863f7849ba3b294a67cd379c323b136de833ff2460030",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "39766296",
+   "title": "Assessment of Agrimonia eupatoria L. and Lipophosphonoxin (DR-6180) Combination for Wound Repair: Bridging the Gap Between Phytomedicine and Organic Chemistry.",
+   "year": 2024,
+   "journal": "Biomolecules",
+   "doi": "10.3390/biom14121590",
+   "pmcid": "PMC11674006",
+   "mesh": [
+    "Wound Healing",
+    "Animals",
+    "Humans",
+    "Rats",
+    "Plant Extracts",
+    "Staphylococcus aureus",
+    "Anti-Bacterial Agents",
+    "Agrimonia",
+    "Fibroblasts",
+    "Keratinocytes",
+    "Cell Proliferation",
+    "Male",
+    "Vascular Endothelial Growth Factor A",
+    "Transforming Growth Factor beta1",
+    "Rats, Sprague-Dawley"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5be88f1f857eccdf941b0e8322bd295b2885d56ab4b21656d02830bde8820d06",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "41419696",
+   "title": "The benefits of multi-2D LC × LC compared to LC × LC for the analysis of European herbal remedies.",
+   "year": 2026,
+   "journal": "Analytical and bioanalytical chemistry",
+   "doi": "10.1007/s00216-025-06278-0",
+   "pmcid": "PMC12901227",
+   "mesh": [
+    "Plants, Medicinal",
+    "Chromatography, Liquid",
+    "Europe",
+    "Plant Extracts",
+    "Mass Spectrometry",
+    "Chromatography, High Pressure Liquid"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Comparative Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e133dfe2779601435ea806b6644dc29d6fa9cd55f4c0bdf5d617f8c826355216",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38139137",
+   "title": "Anti-Inflammatory Effects of Alphitolic Acid Isolated from Agrimonia coreana Nakai Extracts Are Mediated via the Inhibition of ICRAC Activity in T Cells.",
+   "year": 2023,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms242417309",
+   "pmcid": "PMC10743429",
+   "mesh": [
+    "Humans",
+    "Agrimonia",
+    "T-Lymphocytes",
+    "Plant Extracts",
+    "Anti-Inflammatory Agents",
+    "Triterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bd2ced46a99d500996822ab1170bd8dc3c3ad369af5bc79dc65895173c6b4499",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "28487904",
+   "title": "ANTI-NOCICEPTIVE EFFECT OF AGRIMONIA EUPATORIA EXTRACT ON A CISPLATIN-INDUCED NEUROPATHIC MODEL.",
+   "year": 2016,
+   "journal": "African journal of traditional, complementary, and alternative medicines : AJTCAM",
+   "doi": "10.21010/ajtcam.v13i5.18",
+   "pmcid": "PMC5416632",
+   "mesh": [
+    "Agrimonia",
+    "Amines",
+    "Analgesics",
+    "Animals",
+    "Cisplatin",
+    "Cyclohexanecarboxylic Acids",
+    "Foot",
+    "Gabapentin",
+    "Male",
+    "Neuralgia",
+    "Pain Threshold",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "gamma-Aminobutyric Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ff444d152d8900808df357c76aff6e375e742ca0b9f8c1eef4dcb588998b279b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34946788",
+   "title": "The Aerial Parts of Agrimonia procera Wallr. and Agrimonia eupatoria L. as a Source of Polyphenols, and Especially Agrimoniin and Flavonoids.",
+   "year": 2021,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26247706",
+   "pmcid": "PMC8705483",
+   "mesh": [
+    "Agrimonia",
+    "Chromatography, High Pressure Liquid",
+    "Hydrolyzable Tannins",
+    "Plant Extracts",
+    "Polyphenols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8a9bec34513bd4b40f9470788694c467e2bf2a29d29d577faae7f5bd97635cfe",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30521917",
+   "title": "The polyphenolic-polysaccharide complex of Agrimonia eupatoria L. as an indirect thrombin inhibitor - isolation and chemical characterization.",
+   "year": 2019,
+   "journal": "International journal of biological macromolecules",
+   "doi": "10.1016/j.ijbiomac.2018.12.017",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Animals",
+    "Anticoagulants",
+    "Blood Coagulation",
+    "Humans",
+    "Methylation",
+    "Molecular Weight",
+    "Phytochemicals",
+    "Polyphenols",
+    "Polysaccharides",
+    "Spectrum Analysis"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "080c68bbb2415cf55ebfa39bdefb5884f08ebae9d569aec6d255dee576716a58",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15423994",
+   "title": "[Agrimonia eupatoria L].",
+   "year": 1950,
+   "journal": "Die Pharmazie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Rosaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41268097",
+   "title": "Agrimonia eupatoria Leaf Extract Attenuates Alcohol-Induced Oxidative Stress, Ulcer and Alleviates Stomach Damage in Rats.",
+   "year": 2025,
+   "journal": "Food science & nutrition",
+   "doi": "10.1002/fsn3.71203",
+   "pmcid": "PMC12628086",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dfae7ab5920b3a819efee06b6175a851be19399c72d369a55c5ca78d7dec2149",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "12628408",
+   "title": "Antibacterial and free radical scavenging activity of the seeds of Agrimonia eupatoria.",
+   "year": 2003,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/s0367-326x(02)00317-9",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Anti-Infective Agents",
+    "Biphenyl Compounds",
+    "Free Radical Scavengers",
+    "Gram-Negative Bacteria",
+    "Gram-Positive Bacteria",
+    "Humans",
+    "Microbial Sensitivity Tests",
+    "Phytotherapy",
+    "Picrates",
+    "Plant Extracts",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "28173b7f37729606da7f8c39947a54e2592b5eb5aeb8de76620aa41f37e948f4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26254898",
+   "title": "Dandelion (Taraxacum officinale) and Agrimony (Agrimonia eupatoria) as Indicators of Geogenic Contamination of Flysch Soils in Eastern Slovakia.",
+   "year": 2016,
+   "journal": "Archives of environmental contamination and toxicology",
+   "doi": "10.1007/s00244-015-0206-z",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Environmental Monitoring",
+    "Slovakia",
+    "Soil",
+    "Soil Pollutants",
+    "Taraxacum"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "67222a1eb314a21dfda2d48c550ca5a426d5eccfe4e4601314d2912c7d52fd89",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36145749",
+   "title": "Efficiency of Natural Deep Eutectic Solvents to Extract Phenolic Compounds from Agrimonia eupatoria: Experimental Study and In Silico Modelling.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11182346",
+   "pmcid": "PMC9501009",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "559c914431cfc5ef07ffc07b731dc91f3764e8c54056a6bd3be8079b543f416c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40722936",
+   "title": "Optimisation of Phenolic Compound Extraction from Agrimonia eupatoria L. Using Response Surface Methodology for Enhanced Yield of Different Phenolics and Maximised Antioxidant Activity.",
+   "year": 2025,
+   "journal": "Antioxidants (Basel, Switzerland)",
+   "doi": "10.3390/antiox14070831",
+   "pmcid": "PMC12291865",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "157c494a478f1edd9c5fcfb4d3244023cb7a40172d03607a2d7da6e17975c133",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "41495771",
+   "title": "Inhibition of the PI3K signaling pathway in cancer cells by Agrimonia eupatoria L. ethanolic extract: identification of tricoumaroyl spermidine as a potential PI3K inhibitor.",
+   "year": 2026,
+   "journal": "BMC complementary medicine and therapies",
+   "doi": "10.1186/s12906-025-05231-z",
+   "pmcid": "PMC12870893",
+   "mesh": [
+    "Humans",
+    "Plant Extracts",
+    "Signal Transduction",
+    "Cell Line, Tumor",
+    "Spermidine",
+    "Phosphatidylinositol 3-Kinases",
+    "Molecular Docking Simulation",
+    "Phosphoinositide-3 Kinase Inhibitors"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "76420534a7b3b355242b3933cbfc37e959e472e91f7cbcc3fdd03bc7194da97d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "2210118",
+   "title": "Traditional plant treatments for diabetes. Studies in normal and streptozotocin diabetic mice.",
+   "year": 1990,
+   "journal": "Diabetologia",
+   "doi": "10.1007/BF00405106",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Blood Glucose",
+    "Body Weight",
+    "Diabetes Mellitus, Experimental",
+    "Drinking Behavior",
+    "Energy Intake",
+    "Feeding Behavior",
+    "Hypoglycemic Agents",
+    "Insulin",
+    "Male",
+    "Mice",
+    "Plants, Medicinal",
+    "Reference Values"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2a5370d8fdc958b42bbf0a8a0811446e6857ccd0321602076bcf07b1865c56f2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25543737",
+   "title": "Eriophyoid mites (Acari: Prostigmata: Eriophyoidea) from Hungary: a new species on Agrimonia eupatoria (Rosaceae) and new record on Convolvulus arvensis (Convolvulaceae).",
+   "year": 2014,
+   "journal": "Zootaxa",
+   "doi": "10.11646/zootaxa.3900.2.6",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Animal Distribution",
+    "Animal Structures",
+    "Animals",
+    "Body Size",
+    "Convolvulus",
+    "Female",
+    "Hungary",
+    "Male",
+    "Mites",
+    "Organ Size",
+    "Plant Diseases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "064a078b4f189b44cf7e02405e518b3aa9fcd2c4f99462100127b93bdd4aaa26",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21831230",
+   "title": "The effect of supplementation of clove and agrimony or clove and lemon balm on growth performance, antioxidant status and selected indices of lipid profile of broiler chickens.",
+   "year": 2012,
+   "journal": "Journal of animal physiology and animal nutrition",
+   "doi": "10.1111/j.1439-0396.2011.01207.x",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Animal Feed",
+    "Animal Nutritional Physiological Phenomena",
+    "Animals",
+    "Antioxidants",
+    "Chickens",
+    "Diet",
+    "Dietary Supplements",
+    "Female",
+    "Lamiaceae",
+    "Lipids",
+    "Male",
+    "Syzygium"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68b383161e18f650e7394d4b4ff59d7ba42e0fe42867c1cd6f9e4384ce14b249",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15981197",
+   "title": "Polyphenolic profile characterization of Agrimonia eupatoria L. by HPLC with different detection devices.",
+   "year": 2006,
+   "journal": "Biomedical chromatography : BMC",
+   "doi": "10.1002/bmc.533",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Antioxidants",
+    "Chromatography, High Pressure Liquid",
+    "Flavonoids",
+    "Phenols",
+    "Polyphenols",
+    "Spectrometry, Mass, Electrospray Ionization",
+    "Spectrophotometry, Ultraviolet"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2d123d3bee03628efa34520f4de34ff0b56669c87da9f69fe0ea7aeb2c31623a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24286016",
+   "title": "Comparative Analysis of the Volatile Components of Agrimonia eupatoria from Leaves and Roots by Gas Chromatography-Mass Spectrometry and Multivariate Curve Resolution.",
+   "year": 2013,
+   "journal": "Journal of analytical methods in chemistry",
+   "doi": "10.1155/2013/246986",
+   "pmcid": "PMC3826377",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "22c8247f38d0c59670813405c7d729ca176e052428c9ee61d03da712180283dd",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26235662",
+   "title": "Anticholinesterase, antioxidant activity and phytochemical investigation into aqueous extracts from five species of Agrimonia genus.",
+   "year": 2016,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2015.1043552",
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholinesterase",
+    "Agrimonia",
+    "Antioxidants",
+    "Apigenin",
+    "Butyrylcholinesterase",
+    "Cholinesterase Inhibitors",
+    "Luteolin",
+    "Phytochemicals",
+    "Plant Extracts",
+    "Quercetin"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a324d430f21c70ff1de096d643d94240b020683a5abf979d79e392efeae53608",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "631352",
+   "title": "[Diagnostic traits of common agrimony (Agrimonia eupatoria L.), a herbal raw material].",
+   "year": 1978,
+   "journal": "Farmatsiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Magnoliopsida",
+    "Plants, Medicinal",
+    "USSR"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15588663",
+   "title": "Polyphenols and antioxidant capacity of Bulgarian medicinal plants.",
+   "year": 2005,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2004.08.033",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Beverages",
+    "Bulgaria",
+    "Flavonoids",
+    "Humans",
+    "Phenols",
+    "Plant Extracts",
+    "Polyphenols"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7f365ab27d7c5693044675483c45ef316396059816b14f437cb20236a693dd53",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40779740",
+   "title": "Impact of Species, Growth Conditions, and Plant Processing on the Phytochemistry and Antimicrobial Activity of Agrimonia Extracts.",
+   "year": 2025,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202501283",
+   "pmcid": "PMC12715982",
+   "mesh": [
+    "Agrimonia",
+    "Plant Extracts",
+    "Microbial Sensitivity Tests",
+    "Phytochemicals",
+    "Gram-Positive Bacteria",
+    "Anti-Bacterial Agents",
+    "Anti-Infective Agents",
+    "Gram-Negative Bacteria",
+    "Chromatography, High Pressure Liquid"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "029352cb81190f0c571b885c358d2ea587cd28580bf7d17e593aac5bfc54bf71",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "5349335",
+   "title": "[Pharmacobotanical study of family Agrimonia. I. Evaluation of Agrimonia eupatoria L. subsp. eupatoria and Agrimonia procera Wallr].",
+   "year": 1969,
+   "journal": "Ceskoslovenska farmacie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Plants, Medicinal",
+    "Spectrophotometry",
+    "Tannins",
+    "Ultraviolet Rays"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27136516",
+   "title": "Agrimonia eupatoria L. and Cynara cardunculus L. Water Infusions: Comparison of Anti-Diabetic Activities.",
+   "year": 2016,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules21050564",
+   "pmcid": "PMC6273028",
+   "mesh": [
+    "Agrimonia",
+    "Animals",
+    "Antioxidants",
+    "Blood Glucose",
+    "Body Weight",
+    "Butyrylcholinesterase",
+    "Cynara",
+    "Diabetes Mellitus, Experimental",
+    "Gene Expression Regulation",
+    "Humans",
+    "Hypoglycemic Agents",
+    "Plant Extracts",
+    "Rats",
+    "Streptozocin"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8a90c9d220543f70b0318094cb56cca88f6edd9b443072755b2fafbef5a1f13e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "17673826",
+   "title": "The activity of an extract and fraction of Agrimonia eupatoria L. against reactive species.",
+   "year": 2007,
+   "journal": "BioFactors (Oxford, England)",
+   "doi": "10.1002/biof.552029209",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Flavonoids",
+    "Free Radical Scavengers",
+    "Hydrogen Peroxide",
+    "Hydroxyl Radical",
+    "Hypochlorous Acid",
+    "Peroxynitrous Acid",
+    "Plant Extracts",
+    "Reactive Oxygen Species",
+    "Superoxides",
+    "Xanthine Oxidase"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8178c38b299525f0fc12609236c9d5a7dbfe7169dd1973c9671549995bec8e08",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26593896",
+   "title": "Agrimonia eupatoria L. and Cynara cardunculus L. Water Infusions: Phenolic Profile and Comparison of Antioxidant Activities.",
+   "year": 2015,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules201119715",
+   "pmcid": "PMC6332114",
+   "mesh": [
+    "Agrimonia",
+    "Animals",
+    "Antioxidants",
+    "Catalase",
+    "Cell Line",
+    "Cell Survival",
+    "Chromatography, High Pressure Liquid",
+    "Cynara",
+    "DNA Damage",
+    "Humans",
+    "Oxidative Stress",
+    "Phenols",
+    "Plant Extracts",
+    "Rats",
+    "Reactive Oxygen Species",
+    "Superoxide Dismutase"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "015a95fd1ff6062b448e2f55cc9c542f1fc36bf84f3336c281d86e8e275ffd63",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "20699556",
+   "title": "Effect of neuroprotective flavonoids of Agrimonia eupatoria on glutamate-induced oxidative injury to HT22 hippocampal cells.",
+   "year": 2010,
+   "journal": "Bioscience, biotechnology, and biochemistry",
+   "doi": "10.1271/bbb.100200",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Cell Line",
+    "Flavonoids",
+    "Glutamic Acid",
+    "Hippocampus",
+    "Neuroprotective Agents",
+    "Oxidative Stress"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d3673e56552e258adf64029b6c858863210b7f70e824c5a86252f1a3dd6b1e73",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16041735",
+   "title": "Inhibition of hepatitis B virus by an aqueous extract of Agrimonia eupatoria L.",
+   "year": 2005,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.1689",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Cell Line",
+    "Hepatitis B",
+    "Hepatitis B Surface Antigens",
+    "Hepatitis B virus",
+    "Hot Temperature",
+    "Humans",
+    "Microbial Sensitivity Tests",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Plant Stems"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dce7bf6f54a750be678e5d69417707429495838fee82b835f58a092698760afa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29486131",
+   "title": "Agrimonia eupatoria L. (Agrimony) Extract Alters Liver Health in Subjects with Elevated Alanine Transaminase Levels: A Controlled, Randomized, and Double-Blind Trial.",
+   "year": 2018,
+   "journal": "Journal of medicinal food",
+   "doi": "10.1089/jmf.2017.4054",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Agrimonia",
+    "Alanine Transaminase",
+    "Antioxidants",
+    "Biomarkers",
+    "Dietary Supplements",
+    "Double-Blind Method",
+    "Female",
+    "Hepatic Insufficiency",
+    "Humans",
+    "Hypertriglyceridemia",
+    "Hypolipidemic Agents",
+    "Liver",
+    "Male",
+    "Middle Aged",
+    "Patient Compliance",
+    "Patient Dropouts",
+    "Plant Extracts",
+    "Severity of Illness Index",
+    "Triglycerides",
+    "Ultrasonography",
+    "Young Adult"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c6e89115ea7671b16d1e5e4d125d16d49d5ffd3962e2a07f62b525d46d64319b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "5068869",
+   "title": "[Pharmacobotanical study of the genus Agrimonia. 3. Phenolic substances and saccharides in Agrimonia eupatoria L. ssp. eupatoria and Agrimonia procera Wallr].",
+   "year": 1972,
+   "journal": "Ceskoslovenska farmacie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Carbohydrates",
+    "Chromatography, Paper",
+    "Phenols",
+    "Plants, Medicinal",
+    "Ultraviolet Rays"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21143739",
+   "title": "Limited phenotypic plasticity in range-edge populations: a comparison of co-occurring populations of two Agrimonia species with different geographical distributions.",
+   "year": 2011,
+   "journal": "Plant biology (Stuttgart, Germany)",
+   "doi": "10.1111/j.1438-8677.2010.00342.x",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Phenotype"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2b0ed8938a3f125a71ccc383e08e1baed3a3f9273d59145761b221b149952aee",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18918346",
+   "title": "Agrimonia eupatoria L., Odermennig.",
+   "year": 1947,
+   "journal": "Die Pharmazie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41603958",
+   "title": "Comparison of the phenolic and antioxidant potential of five European herbal remedies by effect-directed analysis using offline two-dimensional liquid chromatography-high resolution mass spectrometry.",
+   "year": 2026,
+   "journal": "Analytical and bioanalytical chemistry",
+   "doi": "10.1007/s00216-026-06319-2",
+   "pmcid": "PMC12909492",
+   "mesh": [
+    "Antioxidants",
+    "Phenols",
+    "Liquid Chromatography-Mass Spectrometry",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Chromatography, High Pressure Liquid",
+    "Europe",
+    "Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Comparative Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5236128c00bfa87d2c78d4736d89460d3290b5a1a00ae6311bbea0130330e71c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24318674",
+   "title": "Chromosome numbers, characterization of chromosomal pairing during meiosis, origin and natural propagation in polyploid cytotypes (4x, 5x and 6x) of Agrimonia eupatoria L. (Rosaceae) in northwest Himalayas (India).",
+   "year": 2014,
+   "journal": "Protoplasma",
+   "doi": "10.1007/s00709-013-0581-0",
+   "pmcid": null,
+   "mesh": [
+    "Agrimonia",
+    "Chromosomes, Plant",
+    "India",
+    "Meiosis",
+    "Polyploidy"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "44117bdf48bb0aa403b2fd878cd579451dc6fc34d9c8a4b718cba987d4c11696",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "3790308",
+   "title": "[Diuretic and uricosuric activity of Agrimonia eupatoria L].",
+   "year": 1986,
+   "journal": "Bollettino della Societa italiana di biologia sperimentale",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Diuresis",
+    "Male",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Rats",
+    "Rats, Inbred Strains",
+    "Uric Acid"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  }
+ ]
+}

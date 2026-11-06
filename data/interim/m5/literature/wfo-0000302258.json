@@ -1,0 +1,5831 @@
+{
+ "species": "Salvia sclarea",
+ "wfoId": "wfo-0000302258",
+ "names": [
+  "Salvia sclarea",
+  "Aethiopis sclarea",
+  "Salvia altilabrosa",
+  "Salvia calostachya",
+  "Salvia coarctata",
+  "Salvia haematodes",
+  "Salvia lucana",
+  "Salvia pamirica",
+  "Salvia sclarea var. calostachya",
+  "Salvia sclarea var. hispanica",
+  "Salvia sclarea var. turkestaniana",
+  "Salvia simsiana",
+  "Salvia turkestanica",
+  "Sclarea vulgaris"
+ ],
+ "term": "\"Salvia sclarea\"[tiab] OR \"Aethiopis sclarea\"[tiab] OR \"Salvia altilabrosa\"[tiab] OR \"Salvia calostachya\"[tiab] OR \"Salvia coarctata\"[tiab] OR \"Salvia haematodes\"[tiab] OR \"Salvia lucana\"[tiab] OR \"Salvia pamirica\"[tiab] OR \"Salvia sclarea var. calostachya\"[tiab] OR \"Salvia sclarea var. hispanica\"[tiab] OR \"Salvia sclarea var. turkestaniana\"[tiab] OR \"Salvia simsiana\"[tiab] OR \"Salvia turkestanica\"[tiab] OR \"Sclarea vulgaris\"[tiab]",
+ "count": 215,
+ "queryTranslation": "\"Salvia sclarea\"[Title/Abstract] OR \"Salvia haematodes\"[Title/Abstract]",
+ "retrieved": 215,
+ "records": [
+  {
+   "pmid": "37899305",
+   "title": "Biotransformation of Sclareol by a Fungal Endophyte of Salvia sclarea.",
+   "year": 2023,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202301363",
+   "pmcid": null,
+   "mesh": [
+    "Endophytes",
+    "Salvia",
+    "Prospective Studies",
+    "Biotransformation",
+    "Diterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f2130f432bd6cb0563599a4215d3ae81f982a61b1b1983102e07c0a95fc89499",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38840459",
+   "title": "Engineering Sclareol Production on the Leaf Surface of Nicotiana tabacum.",
+   "year": 2024,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/acs.jafc.4c02442",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2966db9b50632b46b1fd99f14de3bcdd69959432c51ece4c7acce1dc562694d5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37683367",
+   "title": "Larvicidal activity in vitro of essential oils against Cochliomyia hominivorax.",
+   "year": 2023,
+   "journal": "Veterinary parasitology",
+   "doi": "10.1016/j.vetpar.2023.110020",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Oils, Volatile",
+    "Thymol",
+    "Calliphoridae",
+    "Cymenes",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dfbe8e20eba5f9239f4506a4677733f87b30ab9254ed9af20a34b7eeee64299d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40347925",
+   "title": "Comprehensive multi-omics and pharmacokinetics reveal sclareol's role in inhibiting ocular neovascularization.",
+   "year": 2025,
+   "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+   "doi": "10.1016/j.phymed.2025.156817",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Diterpenes",
+    "Mice",
+    "Choroidal Neovascularization",
+    "Mice, Inbred C57BL",
+    "Humans",
+    "Endothelial Cells",
+    "Molecular Docking Simulation",
+    "Male",
+    "Angiogenesis Inhibitors",
+    "Administration, Oral",
+    "Retinal Neovascularization",
+    "Cell Proliferation",
+    "Multiomics"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4d8f26c9de6921999ec5e3463e30b8f781e982674ca717fadc9769c7b37521d4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25846965",
+   "title": "Enzymes for synthetic biology of ambroxide-related diterpenoid fragrance compounds.",
+   "year": 2015,
+   "journal": "Advances in biochemical engineering/biotechnology",
+   "doi": "10.1007/10_2015_308",
+   "pmcid": null,
+   "mesh": [
+    "Acids",
+    "Alkyl and Aryl Transferases",
+    "Biotechnology",
+    "Diterpenes",
+    "Furans",
+    "Naphthalenes",
+    "Naphthols",
+    "Oxides",
+    "Plant Extracts",
+    "Plant Proteins",
+    "Saliva",
+    "Synthetic Biology",
+    "Systems Biology",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "50995f07ea892ced279ab1eaade141a4e90435e7a765c692bfc28f47735dc37e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36852221",
+   "title": "Retrospective screening of serum IgG glycosylation biomarker for primary Sjögren's syndrome using lectin microarray.",
+   "year": 2023,
+   "journal": "PeerJ",
+   "doi": "10.7717/peerj.14853",
+   "pmcid": "PMC9961092",
+   "mesh": [
+    "Humans",
+    "Retrospective Studies",
+    "Glycosylation",
+    "Fucose",
+    "Mannose",
+    "Sjogren's Syndrome",
+    "Lectins",
+    "Biomarkers",
+    "Immunoglobulin G"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3b6b1aacfed5635d826e88a4238ff59e2f50473805fd6699f0cb119921f19b46",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37175312",
+   "title": "Supercritical Fluid Extraction of Essential Oil and Sclareol from a Clary Sage Concrete.",
+   "year": 2023,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28093903",
+   "pmcid": "PMC10179952",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "976e00cfbd5a7a5306ddbe1a425f4cd2e37acd138ad6b8345e758f6d9b9ee95b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37132081",
+   "title": "Sclareol attenuates liver fibrosis through SENP1-mediated VEGFR2 SUMOylation and inhibition of downstream STAT3 signaling.",
+   "year": 2023,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.7845",
+   "pmcid": null,
+   "mesh": [
+    "Rats",
+    "Mice",
+    "Animals",
+    "Sumoylation",
+    "Liver Cirrhosis",
+    "Liver",
+    "Signal Transduction",
+    "Fibrosis",
+    "Hepatic Stellate Cells",
+    "Diterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3630a4c8168424113735932050aa334b2421869d6dcaa728a0bacf2fd3faf48f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36982252",
+   "title": "Salvia sclarea Essential Oil Chemical Composition and Biological Activities.",
+   "year": 2023,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms24065179",
+   "pmcid": "PMC10049179",
+   "mesh": [
+    "Oils, Volatile",
+    "Antioxidants",
+    "Meropenem",
+    "Salvia",
+    "Gas Chromatography-Mass Spectrometry",
+    "Anti-Infective Agents",
+    "Insecticides",
+    "Microbial Sensitivity Tests",
+    "Polycyclic Sesquiterpenes",
+    "Acyclic Monoterpenes",
+    "Sulfonic Acids",
+    "Benzothiazoles"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0908bb3bc2e0bfb6e25e37303b50bdcc9673ecab26b52765f5034a9b00d430d9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31738086",
+   "title": "Discovery of sclareol and sclareolide as filovirus entry inhibitors.",
+   "year": 2020,
+   "journal": "Journal of Asian natural products research",
+   "doi": "10.1080/10286020.2019.1681407",
+   "pmcid": null,
+   "mesh": [
+    "Diterpenes",
+    "Ebolavirus",
+    "Hemorrhagic Fever, Ebola",
+    "Humans",
+    "Molecular Structure"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7c47aa19e7067de38e7f9763ade50cd64356e84b75433d66b0a200b7630eb34e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36432838",
+   "title": "Effects of Essential Oil Fumigation on Potato Sprouting at Room-Temperature Storage.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11223109",
+   "pmcid": "PMC9695867",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "46c9cfd3532ae315f67b16c4ad11f608453c4a35d0ca624d3b515dba3c9217b4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36297710",
+   "title": "Immunomodulatory Effects of Plant Extracts from Salvia deserta Schang. and Salvia sclarea L.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11202690",
+   "pmcid": "PMC9610708",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "502b6cfd3c86cbd2bf07e9c16e52b8688d1bfca7f4a59997be3d2fa79434dd68",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30610871",
+   "title": "Sclareol-loaded lipid nanoparticles improved metabolic profile in obese mice.",
+   "year": 2019,
+   "journal": "Life sciences",
+   "doi": "10.1016/j.lfs.2018.12.063",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Diet, High-Fat",
+    "Diterpenes",
+    "Glucose Intolerance",
+    "Lipids",
+    "Male",
+    "Metabolome",
+    "Mice",
+    "Mice, Obese",
+    "Nanoparticles",
+    "Obesity"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bf3a5477bdaf32862059dc12e04dab0b607042114b4f798e0afba10458a70591",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26227503",
+   "title": "Antifungal Effect of Essential Oils against Fusarium Keratitis Isolates.",
+   "year": 2015,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-0035-1546272",
+   "pmcid": null,
+   "mesh": [
+    "Acrolein",
+    "Antifungal Agents",
+    "Cinnamomum zeylanicum",
+    "Citrus",
+    "Drug Interactions",
+    "Eucalyptus",
+    "Fusarium",
+    "Gaultheria",
+    "Humans",
+    "India",
+    "Juniperus",
+    "Keratitis",
+    "Microbial Sensitivity Tests",
+    "Natamycin",
+    "Oils, Volatile",
+    "Origanum"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "969b55a09d8610f9374dd9ea83ac455a2c8c14436f1226fe245378669b912f70",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40876907",
+   "title": "Non-Apoptotic Inhibition of Colorectal Cancer Proliferation by Sclareol via Ferroptosis Involving SLC7A11/GPX4 Modulation.",
+   "year": 2025,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.70010",
+   "pmcid": null,
+   "mesh": [
+    "Ferroptosis",
+    "Humans",
+    "Animals",
+    "Colorectal Neoplasms",
+    "Cell Proliferation",
+    "Mice",
+    "Phospholipid Hydroperoxide Glutathione Peroxidase",
+    "Amino Acid Transport System y+",
+    "Reactive Oxygen Species",
+    "Cell Line, Tumor",
+    "Molecular Docking Simulation",
+    "Diterpenes",
+    "Apoptosis",
+    "Xenograft Model Antitumor Assays",
+    "Mice, Inbred BALB C",
+    "Cell Cycle Checkpoints",
+    "Antineoplastic Agents, Phytogenic"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4031a28f1e31f2b224231d0921269a0f17797151543583e22411b244811357b1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37242618",
+   "title": "An In Vitro and In Silico Characterization of Salvia sclarea L. Methanolic Extracts as Spasmolytic Agents.",
+   "year": 2023,
+   "journal": "Pharmaceutics",
+   "doi": "10.3390/pharmaceutics15051376",
+   "pmcid": "PMC10223974",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7edd02a62c9915ee74959e4a0c1da6a13756bb544aeea444eb4336ee1c4b15ff",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36178264",
+   "title": "Sclareol attenuates angiotensin II-induced cardiac remodeling and inflammation via inhibiting MAPK signaling.",
+   "year": 2023,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.7635",
+   "pmcid": null,
+   "mesh": [
+    "Mice",
+    "Animals",
+    "Mitogen-Activated Protein Kinases",
+    "Angiotensin II",
+    "Ventricular Remodeling",
+    "Heart Failure",
+    "Myocytes, Cardiac",
+    "Hypertension",
+    "Fibrosis",
+    "Inflammation",
+    "Myocardium",
+    "Mice, Inbred C57BL",
+    "Diterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0cc00a89880814a5c0525da89bc86469019202dce81b91c3267981556062d6f1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42173900",
+   "title": "Neofunctionalization underlies the evolutionary origin of sclareol biosynthesis in the mint family.",
+   "year": 2026,
+   "journal": "Nature communications",
+   "doi": "10.1038/s41467-026-73637-5",
+   "pmcid": "PMC13385783",
+   "mesh": [
+    "Diterpenes",
+    "Evolution, Molecular",
+    "Salvia",
+    "Multigene Family",
+    "Plant Proteins",
+    "Alkyl and Aryl Transferases",
+    "Mutagenesis, Site-Directed",
+    "Phylogeny",
+    "Gene Expression Regulation, Plant",
+    "Biosynthetic Pathways"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "100ea2ce4193c58bc39a26d8a9ec1dcc5e003b741290d71297b4e44677e42df4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38566271",
+   "title": "Feedback regulation of the isoprenoid pathway by SsdTPS overexpression has the potential to enhance plant tolerance to drought stress.",
+   "year": 2024,
+   "journal": "Physiologia plantarum",
+   "doi": "10.1111/ppl.14277",
+   "pmcid": null,
+   "mesh": [
+    "Arabidopsis",
+    "Reactive Oxygen Species",
+    "Droughts",
+    "Feedback",
+    "Plants, Genetically Modified",
+    "Stress, Physiological",
+    "Terpenes",
+    "Gene Expression Regulation, Plant",
+    "Plant Proteins",
+    "Abscisic Acid",
+    "Diterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "66796a6bbe35c2e68fd6405e6704a12e4856992decb9d939b63b85a6badf22a0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36263135",
+   "title": "The bioactivities of sclareol: A mini review.",
+   "year": 2022,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2022.1014105",
+   "pmcid": "PMC9574335",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f59422e534b40ddd9be4a7b6b750185c057f875cf2aed76cbb00bb96dedfc936",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35748659",
+   "title": "A case of Tn polyagglutination discovered by an ABO blood group discrepancy.",
+   "year": 2022,
+   "journal": "Transfusion",
+   "doi": "10.1111/trf.16966",
+   "pmcid": null,
+   "mesh": [
+    "ABO Blood-Group System",
+    "Adult",
+    "Antigens, Tumor-Associated, Carbohydrate",
+    "Blood Grouping and Crossmatching",
+    "Ficain",
+    "Humans",
+    "Male",
+    "Middle Aged"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "45be073a4c133d5376f0cbf9e61c19723dfa1667ec54bb9073389973a8c9bcb2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34593779",
+   "title": "Sclareol and linalyl acetate are produced by glandular trichomes through the MEP pathway.",
+   "year": 2021,
+   "journal": "Horticulture research",
+   "doi": "10.1038/s41438-021-00640-w",
+   "pmcid": "PMC8484277",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "04c0a7520059c197bc7c268678a298375f33145eca42a1aceba4002c6b050d08",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40380140",
+   "title": "Combinatorial metabolic engineering of Yarrowia lipolytica for high-level production of the plant-derived diterpenoid sclareol.",
+   "year": 2025,
+   "journal": "Microbial cell factories",
+   "doi": "10.1186/s12934-025-02744-7",
+   "pmcid": "PMC12082891",
+   "mesh": [
+    "Diterpenes",
+    "Metabolic Engineering",
+    "Yarrowia",
+    "Mevalonic Acid",
+    "Polyisoprenyl Phosphates",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "db351340eb2159e5442961cfd8e448be065416d0e7eb1680423567115054d6e1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "31117507",
+   "title": "Combinatorial Engineering of Mevalonate Pathway and Diterpenoid Synthases in Escherichia coli for cis-Abienol Production.",
+   "year": 2019,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/acs.jafc.9b02156",
+   "pmcid": null,
+   "mesh": [
+    "Abies",
+    "Biosynthetic Pathways",
+    "Diterpenes",
+    "Escherichia coli",
+    "Fermentation",
+    "Glucose",
+    "Metabolic Engineering",
+    "Mevalonic Acid",
+    "Naphthols",
+    "Plant Proteins",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "12db4fd04e931f8626be7850c70fec28405051d78a4df37000b540837013cb44",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37008100",
+   "title": "Enhanced Bioactivity of Rosemary, Sage, Lavender, and Chamomile Essential Oils by Fractionation, Combination, and Emulsification.",
+   "year": 2023,
+   "journal": "ACS omega",
+   "doi": "10.1021/acsomega.2c07508",
+   "pmcid": "PMC10061596",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "53a696fb3cd065f60b6114e83173431adfc086556043b49458d2a37946b93822",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29936811",
+   "title": "Activity of selected essential oils on spoiling fungi cultured from Marzolino cheese.",
+   "year": 2018,
+   "journal": "Annals of agricultural and environmental medicine : AAEM",
+   "doi": "10.26444/aaem/80907",
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Cheese",
+    "Cymbopogon",
+    "Fungi",
+    "Microbial Sensitivity Tests",
+    "Mucor",
+    "Ocimum",
+    "Oils, Volatile",
+    "Origanum",
+    "Penicillium",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2c24376267ae0399a6466d4a5716ace598d5d13172c24919703d645296181098",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36903258",
+   "title": "Toxicity and Physiological Effects of Nine Lamiaceae Essential Oils and Their Major Compounds on Reticulitermes dabieshanensis.",
+   "year": 2023,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28052007",
+   "pmcid": "PMC10003775",
+   "mesh": [
+    "Oils, Volatile",
+    "Lamiaceae",
+    "Thymol",
+    "Menthol",
+    "Eucalyptol",
+    "Eugenol",
+    "Acetylcholinesterase",
+    "Plant Oils",
+    "Acyclic Monoterpenes",
+    "Monoterpenes",
+    "Aldehydes",
+    "Cyclohexane Monoterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7c8c988a039f215a6843d76443c485968bd2eefd91b116b96572a5ccda922b72",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39545222",
+   "title": "Safety and efficacy of a feed additive consisting of an essential oil derived from the flowering stems of Salvia sclarea L. (clary sage oil) for use in all animal species (FEFANA asbl).",
+   "year": 2024,
+   "journal": "EFSA journal. European Food Safety Authority",
+   "doi": "10.2903/j.efsa.2024.9016",
+   "pmcid": "PMC11561422",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1e02ae517c1f3dcdad2d70dc50070015e26d374fb669e0eef32b99bda7a69c54",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nd"
+   }
+  },
+  {
+   "pmid": "32148863",
+   "title": "Crystal structure and Hirshfeld surface analysis of the methanol solvate of sclareol, a labdane-type diterpenoid.",
+   "year": 2020,
+   "journal": "Acta crystallographica. Section E, Crystallographic communications",
+   "doi": "10.1107/S2056989020001474",
+   "pmcid": "PMC7057370",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1e9fd418eb3607e7d84d27ae3df2205e57f643e0145594514738c5cf02b821f5",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40998044",
+   "title": "In-vitro anthelmintic activity and phytochemistry of Salvia sclarea extracts against Haemonchuscontortus.",
+   "year": 2025,
+   "journal": "Experimental parasitology",
+   "doi": "10.1016/j.exppara.2025.109029",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Haemonchus",
+    "Plant Extracts",
+    "Anthelmintics",
+    "Salvia",
+    "Phenols",
+    "Albendazole",
+    "Terpenes",
+    "Coumarins",
+    "Alkanes",
+    "Female",
+    "Acetates",
+    "Haemonchiasis",
+    "Ethanol"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "09f134e1ac24ff9a797052942cff4c768e60effaadcbe745413ca66dd4a033bd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41011278",
+   "title": "Promising Norlabdane-Heterocyclic Hybrids: Synthesis, Structural Characterization and Antimicrobial Activity Evaluation.",
+   "year": 2025,
+   "journal": "Pharmaceuticals (Basel, Switzerland)",
+   "doi": "10.3390/ph18091411",
+   "pmcid": "PMC12472533",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a9b01254e268e7dcdca20cb14b361fab60a25352d944a03b6fb142df2224f37e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36306427",
+   "title": "Melissa officinalis L. as a Sprout Suppressor in Solanum tuberosum L. and an Alternative to Synthetic Pesticides.",
+   "year": 2022,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/acs.jafc.2c05942",
+   "pmcid": null,
+   "mesh": [
+    "Melissa",
+    "Solanum tuberosum",
+    "Pesticides",
+    "Gas Chromatography-Mass Spectrometry",
+    "Oils, Volatile",
+    "Acyclic Monoterpenes",
+    "Alkenes",
+    "Cyclohexane Monoterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "641dcf861a3a634b9f6c1cf98b3cf70964e5638308545eb4034b793f8bb4f90d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41550165",
+   "title": "Sclareol exerts an anti-inflammatory effect, possibly through COXs inhibition pathway: In vivo and in silico studies.",
+   "year": 2024,
+   "journal": "Pharmaceutical science advances",
+   "doi": "10.1016/j.pscia.2023.100029",
+   "pmcid": "PMC12710028",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "12cf50f37f371d7fd70689940520a91e162ab0ad6736587bfcc2bb1446063685",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "37836125",
+   "title": "Salvia officinalis L. and Salvia sclarea Essential Oils: Chemical Composition, Biological Activities and Preservative Effects against Listeria monocytogenes Inoculated into Minced Beef Meat.",
+   "year": 2023,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants12193385",
+   "pmcid": "PMC10574192",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8985c080eb9ca8728ec97d6a52afea82796eede4cbe852e1d13c16c8184ccc6f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29713562",
+   "title": "Changing Face: A Key Residue for the Addition of Water by Sclareol Synthase.",
+   "year": 2018,
+   "journal": "ACS catalysis",
+   "doi": "10.1021/acscatal.8b00121",
+   "pmcid": "PMC5921835",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6b3451f217f16e9298a0c9076320efc22f8259dffaff7707d42800e270dd83ae",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27525411",
+   "title": "New chromosome reports in Lamiaceae of Kashmir (Northwest Himalaya), India.",
+   "year": 2017,
+   "journal": "Protoplasma",
+   "doi": "10.1007/s00709-016-1006-7",
+   "pmcid": null,
+   "mesh": [
+    "Chromosomes, Plant",
+    "India",
+    "Lamiaceae",
+    "Meiosis",
+    "Ploidies",
+    "Pollen",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "40fed6eabe9609f0890af6972a48f361d679019c6bc4a11b208255cbeb1b9f1d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34759738",
+   "title": "Chromatographic profiles and antimicrobial activity of the essential oils obtained from some species and cultivars of the Mentheae tribe (Lamiaceae).",
+   "year": 2021,
+   "journal": "Saudi journal of biological sciences",
+   "doi": "10.1016/j.sjbs.2021.06.068",
+   "pmcid": "PMC8568706",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "88881fad059a7bd04f365a68cab73688d404a0fc97481813a892dbe93a3c1824",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "19607974",
+   "title": "Intraplantar injection of bergamot essential oil into the mouse hindpaw: effects on capsaicin-induced nociceptive behaviors.",
+   "year": 2009,
+   "journal": "International review of neurobiology",
+   "doi": "10.1016/S0074-7742(09)85018-6",
+   "pmcid": null,
+   "mesh": [
+    "Acyclic Monoterpenes",
+    "Analgesics",
+    "Animals",
+    "Capsaicin",
+    "Hindlimb",
+    "Injections, Intralesional",
+    "Mice",
+    "Molecular Structure",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Pain",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0e01dd6178e0f0991048354a3d9c9724b31a71776d0b60e9c86164f82359d7b6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16236461",
+   "title": "Insecticidal activity of some essential oils against larvae of Spodoptera littoralis.",
+   "year": 2005,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2005.06.001",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Topical",
+    "Animals",
+    "Fumigation",
+    "Insecticides",
+    "Larva",
+    "Nepeta",
+    "Oils, Volatile",
+    "Spodoptera",
+    "Thuja"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8a4d0bc0641db2c604b496b97a5b1e1b9a1b8449e015c95ee05ce5e9d5b51ecf",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30012894",
+   "title": "Phytochemical Compositions and Antidiabetic Potentials of Salvia sclarea L. Essential Oils.",
+   "year": 2018,
+   "journal": "Journal of oleo science",
+   "doi": "10.5650/jos.ess17187",
+   "pmcid": null,
+   "mesh": [
+    "Acyclic Monoterpenes",
+    "Alloxan",
+    "Animals",
+    "Diabetes Mellitus, Experimental",
+    "Gas Chromatography-Mass Spectrometry",
+    "Hypoglycemic Agents",
+    "Male",
+    "Mice",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Phytochemicals",
+    "Phytotherapy",
+    "Plant Oils",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3ad924e0e9d2b0bcf24cbf14f5fb1e59fb7b77215afe17bda4350cefee18c8ab",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19831048",
+   "title": "Essential oils and anxiolytic aromatherapy.",
+   "year": 2009,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Anxiety Disorders",
+    "Aromatherapy",
+    "Humans",
+    "Plant Oils",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "01808a303bbc2344fd10078c150d9be33479ac7ff2054f81d6c107d231f377b3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25821423",
+   "title": "The effect of clary sage oil on staphylococci responsible for wound infections.",
+   "year": 2015,
+   "journal": "Postepy dermatologii i alergologii",
+   "doi": "10.5114/pdia.2014.40957",
+   "pmcid": "PMC4360007",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5a26fcc4e490df470170f59a11fe8160dbe56b939cb4292f165ecc0a10d0e01b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "34770858",
+   "title": "Combination of Analytical and Statistical Methods in Order to Optimize Antibacterial Activity of Clary Sage Supercritical Fluid Extracts.",
+   "year": 2021,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26216449",
+   "pmcid": "PMC8586929",
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Carbon Dioxide",
+    "Chromatography, Supercritical Fluid",
+    "Methicillin-Resistant Staphylococcus aureus",
+    "Microbial Sensitivity Tests",
+    "Pseudomonas aeruginosa",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "df59fd36b007a3bc6aa4933ed706963bd2c762f92dd9fa3d00480e2fa9185237",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39726767",
+   "title": "Unleashing nature's defense: potent antimicrobial power of plant extracts against oral pathogens and Streptococcus mutans biofilms.",
+   "year": 2024,
+   "journal": "Frontiers in oral health",
+   "doi": "10.3389/froh.2024.1469174",
+   "pmcid": "PMC11669686",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "745ea5b649e66767cf27724e9199979d4f73ed3d0aff0e447637e056241927c6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39619984",
+   "title": "Molecular docking analysis of Salvia sclarea flower extracts evaluated for protein target affinity based on different extraction methods.",
+   "year": 2024,
+   "journal": "Food science & nutrition",
+   "doi": "10.1002/fsn3.4467",
+   "pmcid": "PMC11606907",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "00613a427461349360dc50a0f6c5d470a23cd186341f0469a1128e757403876c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38870629",
+   "title": "Sclareol antagonizes the sedative effect of diazepam in thiopental sodium-induced sleeping animals: In vivo and in silico studies.",
+   "year": 2024,
+   "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+   "doi": "10.1016/j.biopha.2024.116939",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Male",
+    "Hypnotics and Sedatives",
+    "Molecular Docking Simulation",
+    "Mice",
+    "Diazepam",
+    "Sleep",
+    "Thiopental",
+    "Diterpenes",
+    "Caffeine",
+    "Computer Simulation",
+    "Receptors, GABA-A",
+    "Humans",
+    "Dose-Response Relationship, Drug",
+    "Sleep Latency"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "87f0d33549bbeb3ca53868bfb35f5c75345121323076c384f858b08533a5bbf2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36840143",
+   "title": "Phytochemical Profile and In Vitro Bioactivities of Plant-Based By-Products in View of a Potential Reuse and Valorization.",
+   "year": 2023,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants12040795",
+   "pmcid": "PMC9961642",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "791632b1572a5b0921b56065bb345e8019ad5f51cc482fd5f34cc526201c5896",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33272849",
+   "title": "Tn Red cell polyagglutination in a healthy blood donor: A case report.",
+   "year": 2021,
+   "journal": "Transfusion and apheresis science : official journal of the World Apheresis Association : official journal of the European Society for Haemapheresis",
+   "doi": "10.1016/j.transci.2020.103013",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Autoimmune Diseases",
+    "Blood Donors",
+    "Erythrocytes",
+    "Healthy Volunteers",
+    "Humans",
+    "Male"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3c27ef2715061aa0698b2ee3a6989e1b39384612c847901fa111211757a2fe79",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39738778",
+   "title": "Synergistic effect of mulch and nitrogen management on growth and essential oil yield of Salvia sclarea L.",
+   "year": 2024,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-024-83824-3",
+   "pmcid": "PMC11686162",
+   "mesh": [
+    "Salvia",
+    "Oils, Volatile",
+    "Nitrogen",
+    "Fertilizers",
+    "Soil"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0e81257e695b82993ab598e1c56b6fd286595c6ffeeb4fc3705ed01343a372c4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "34745819",
+   "title": "Characterization and evolutionary analysis of Cucumber mosaic virus isolate infecting Salvia sclarea in India.",
+   "year": 2021,
+   "journal": "3 Biotech",
+   "doi": "10.1007/s13205-021-03023-z",
+   "pmcid": "PMC8531141",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ca4b1d67cf3140ee7020ab53e9652657618ab9242474e51cdb05aa4b7d30fba9",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34205382",
+   "title": "Clary Sage Cultivation and Mycorrhizal Inoculation Influence the Rhizosphere Fungal Community of an Aged Trace-Element Polluted Soil.",
+   "year": 2021,
+   "journal": "Microorganisms",
+   "doi": "10.3390/microorganisms9061333",
+   "pmcid": "PMC8234821",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "269e705c70560a66ea5b95bdacf478849b1b52b15b58784a904a23662aaa7d79",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33375193",
+   "title": "Rapid Hormetic Responses of Photosystem II Photochemistry of Clary Sage to Cadmium Exposure.",
+   "year": 2020,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms22010041",
+   "pmcid": "PMC7793146",
+   "mesh": [
+    "Cadmium",
+    "Chlorophyll",
+    "Chlorophyll A",
+    "Chloroplasts",
+    "Hormesis",
+    "Hydroponics",
+    "Microscopy, Electron, Transmission",
+    "Photochemistry",
+    "Photosynthesis",
+    "Photosystem II Protein Complex",
+    "Plant Leaves",
+    "Plant Roots",
+    "Reactive Oxygen Species",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "768e70162aaef19e0fcb54846d3e498ef1dfb69c5b3950cd804330e6bbfdb194",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40894219",
+   "title": "Mechanistic insights into clary sage oils role in wound healing: targeting oxidative stress and inflammatory pathways.",
+   "year": 2025,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2025.1567205",
+   "pmcid": "PMC12394166",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ec8a7fc8493de0ec0695cd4e722fc0e0596e030316223d8a9fe3d5d46bf97220",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30938173",
+   "title": "Assessment of chemically characterized Salvia sclarea L. essential oil and its combination with linalyl acetate as novel plant based antifungal, antiaflatoxigenic and antioxidant agent against herbal drugs contamination and probable mode of action.",
+   "year": 2021,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2019.1593168",
+   "pmcid": null,
+   "mesh": [
+    "Aflatoxins",
+    "Antifungal Agents",
+    "Antioxidants",
+    "Drug Contamination",
+    "Free Radical Scavengers",
+    "Fungi",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Pharmaceutical Preparations",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ca202b899272e9fffc9e8eb39eaef607205691f488276e84da51518cacb84d41",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31549110",
+   "title": "Sclareol prevents ovariectomy-induced bone loss in vivo and inhibits osteoclastogenesis in vitro via suppressing NF-κB and MAPK/ERK signaling pathways.",
+   "year": 2019,
+   "journal": "Food & function",
+   "doi": "10.1039/c9fo00206e",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Diterpenes",
+    "Female",
+    "Humans",
+    "MAP Kinase Signaling System",
+    "Mice, Inbred C57BL",
+    "NF-kappa B",
+    "Osteoclasts",
+    "Osteogenesis",
+    "Osteoporosis, Postmenopausal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d4d2daa7d05f2a332082529e7a71ae3a0e20cc1919dda7bb9d53fc65506df44f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33988468",
+   "title": "Pythium spp. Associated with Root Rot and Stunting of Winter Crops in North Carolina.",
+   "year": 2021,
+   "journal": "Plant disease",
+   "doi": "10.1094/PDIS-11-20-2403-RE",
+   "pmcid": null,
+   "mesh": [
+    "Growth Disorders",
+    "North Carolina",
+    "Plant Diseases",
+    "Pythium",
+    "Seasons"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dbef73dc8f7553e863948c58ef83a484c93e39a425a7ca718307cf0caeb9d464",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34288908",
+   "title": "Study of the genetic and phenotypic variation among wild and cultivated clary sages provides interesting avenues for breeding programs of a perfume, medicinal and aromatic plant.",
+   "year": 2021,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0248954",
+   "pmcid": "PMC8294528",
+   "mesh": [
+    "Phenotype",
+    "Genetic Variation",
+    "Plant Breeding",
+    "Salvia",
+    "Plants, Medicinal",
+    "Croatia",
+    "Genotype",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2bbffb8c3e9733aa4002e49194b7157daac1113937ed6fcc6aeb004eace62b5e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40076343",
+   "title": "Recovery of Bioactive Compounds from the Biomass of Aromatic Plants After Distillation Using NADES: A Sustainable Alternative Extraction Method.",
+   "year": 2025,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules30051120",
+   "pmcid": "PMC11901988",
+   "mesh": [
+    "Biomass",
+    "Distillation",
+    "Plant Extracts",
+    "Deep Eutectic Solvents",
+    "Polyphenols",
+    "Phytochemicals",
+    "Plants, Medicinal",
+    "Solvents",
+    "Ethanol"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ce07f8de7861ad5cdf14c5449195b4d023e4883465383a35ae81674ff61f67ab",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "16274702",
+   "title": "Comparative screening of plant essential oils: phenylpropanoid moiety as basic core for antiplatelet activity.",
+   "year": 2006,
+   "journal": "Life sciences",
+   "doi": "10.1016/j.lfs.2005.07.020",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Blood Platelets",
+    "Gas Chromatography-Mass Spectrometry",
+    "Guinea Pigs",
+    "Male",
+    "Oils, Volatile",
+    "Phenylpropionates",
+    "Plant Oils",
+    "Platelet Aggregation Inhibitors",
+    "Rats",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8bc34505886a8e3807c917ca00fb8c834b70e22470ff81379d788a607ca2884c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28930236",
+   "title": "Antibacterial and Antifungal Activity of Essential Oils against Pathogens Responsible for Otitis Externa in Dogs and Cats.",
+   "year": 2017,
+   "journal": "Medicines (Basel, Switzerland)",
+   "doi": "10.3390/medicines4020021",
+   "pmcid": "PMC5590057",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f507d999ebfd671a88e637370d1550c959c394d9a9787d016a39a9dd5eebc751",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38472787",
+   "title": "Sheep's Second Cheese Whey Edible Coatings with Oregano and Clary Sage Essential Oils Used as Sustainable Packaging Material in Cheese.",
+   "year": 2024,
+   "journal": "Foods (Basel, Switzerland)",
+   "doi": "10.3390/foods13050674",
+   "pmcid": "PMC10931019",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4a394a599739d3f7a07707da36c84a631699f35cc37ad21a31ec7423844301a9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40650212",
+   "title": "Taxonomy, Phylogeny, Genomes, and Repeatomes in the Subgenera Salvia, Sclarea, and Glutinaria (Salvia, Lamiaceae).",
+   "year": 2025,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms26136436",
+   "pmcid": "PMC12249511",
+   "mesh": [
+    "Phylogeny",
+    "Salvia",
+    "Genome, Plant",
+    "Chromosomes, Plant"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cdb3fcae45246686f1ddfb325f869e39cd306a088f8700956fac3fa727c25d4a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33066489",
+   "title": "Salvia sclarea L. Essential Oil Extract and Its Antioxidative Phytochemical Sclareol Inhibit Oxytocin-Induced Uterine Hypercontraction Dysmenorrhea Model by Inhibiting the Ca2+-MLCK-MLC20 Signaling Cascade: An Ex Vivo and In Vivo Study.",
+   "year": 2020,
+   "journal": "Antioxidants (Basel, Switzerland)",
+   "doi": "10.3390/antiox9100991",
+   "pmcid": "PMC7602146",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fc5d3c3d3370270b9d19e98f61ed84b268cfe78bcabd4fe4a77217a2fa0d0395",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38635350",
+   "title": "Hemisynthesis and cytotoxic evaluation of manoyl oxide analogs from sclareol: effect of two tertiary hydroxyls & Heck coupling on cytotoxicity.",
+   "year": 2025,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2024.2342558",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Diterpenes",
+    "Molecular Structure",
+    "MCF-7 Cells",
+    "Cell Line, Tumor",
+    "Salvia",
+    "Antineoplastic Agents, Phytogenic",
+    "Drug Screening Assays, Antitumor",
+    "HCT116 Cells",
+    "Inhibitory Concentration 50",
+    "Structure-Activity Relationship"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c27c82801acf9d47db04db59fe02e4ff6251f65ebd094c91c9863e25b348b2f7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25243877",
+   "title": "Carthamus, Salvia and Stachys species protect neuronal cells against oxidative stress-induced apoptosis.",
+   "year": 2014,
+   "journal": "Pharmaceutical biology",
+   "doi": "10.3109/13880209.2014.908394",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Apoptosis",
+    "Carthamus",
+    "Cell Survival",
+    "Dose-Response Relationship, Drug",
+    "Iran",
+    "Medicine, Traditional",
+    "Neurons",
+    "Neuroprotective Agents",
+    "Oxidative Stress",
+    "PC12 Cells",
+    "Plant Components, Aerial",
+    "Plant Extracts",
+    "Rats",
+    "Reactive Oxygen Species",
+    "Salvia",
+    "Stachys"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4f4c4d9767ab0fb1fe6d7eb65883048832d58d90fea3cb34bf63790a4d25441b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27825341",
+   "title": "Essential oils: in vitro activity against Leishmania amazonensis, cytotoxicity and chemical composition.",
+   "year": 2016,
+   "journal": "BMC complementary and alternative medicine",
+   "doi": "10.1186/s12906-016-1401-9",
+   "pmcid": "PMC5101707",
+   "mesh": [
+    "Antiprotozoal Agents",
+    "Cell Survival",
+    "Humans",
+    "Leishmania mexicana",
+    "Leishmaniasis, Cutaneous",
+    "Oils, Volatile",
+    "Parasitic Sensitivity Tests",
+    "Plant Extracts",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "95a25b45784d0803f64870e25192ad1170b77a1410e6e13298862beb71b44a04",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "20593515",
+   "title": "In vitro assay for the anti-Brucella activity of medicinal plants against tetracycline-resistant Brucella melitensis.",
+   "year": 2010,
+   "journal": "Journal of Zhejiang University. Science. B",
+   "doi": "10.1631/jzus.B0900365",
+   "pmcid": "PMC2897020",
+   "mesh": [
+    "Animals",
+    "Anti-Bacterial Agents",
+    "Brucella melitensis",
+    "Brucellosis",
+    "Humans",
+    "Microbial Sensitivity Tests",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Tetracycline Resistance"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "97ff699ca6abf8f8e0ad0c5d7bf975f0c88b5601a3fc9c1270357250bf6337f9",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "9343930",
+   "title": "Differential binding properties of Gal/GalNAc specific lectins available for characterization of glycoreceptors.",
+   "year": 1997,
+   "journal": "Indian journal of biochemistry & biophysics",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Acetylgalactosamine",
+    "Binding Sites",
+    "Carbohydrate Sequence",
+    "Galactose",
+    "Humans",
+    "In Vitro Techniques",
+    "Lectins",
+    "Molecular Sequence Data",
+    "Oligosaccharides",
+    "Receptors, Mitogen"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "de73b98118537a6a7334f533d85e6f4f9aa607bc157d99400c8170045110449a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31026875",
+   "title": "High Yield of Bioactive Abietane Diterpenes in Salvia sclarea Hairy Roots by Overexpressing Cyanobacterial DXS or DXR Genes.",
+   "year": 2019,
+   "journal": "Planta medica",
+   "doi": "10.1055/a-0895-5878",
+   "pmcid": null,
+   "mesh": [
+    "Abietanes",
+    "Blotting, Western",
+    "Cyanobacteria",
+    "Gene Expression Regulation, Plant",
+    "Genes, Bacterial",
+    "Plant Roots",
+    "Plants, Genetically Modified",
+    "Polymerase Chain Reaction",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5b42f1f2a98d24c20d804258cc7bfb5fe99ba184bca3e758e7240b635d0c286a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32688401",
+   "title": "Clary Sage Essential Oil and Its Effect on Human Mood and Pulse Rate: An in vivo Pilot Study.",
+   "year": 2020,
+   "journal": "Planta medica",
+   "doi": "10.1055/a-1211-6325",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Aromatherapy",
+    "Female",
+    "Heart Rate",
+    "Humans",
+    "Male",
+    "Oils, Volatile",
+    "Pilot Projects",
+    "Salvia",
+    "Sex Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4d4de79d252870a238528c47fc928b465d8d226fb69e4faa24ea4906f195dfb6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39019617",
+   "title": "Eco-friendly Nanoparticles Synthesized from Salvia sclarea Ethanol Extract Protect against STZ-induced Diabetic Nephropathy in Rats via Antioxidant, Anti-inflammatory, and Apoptosis Mechanisms.",
+   "year": 2024,
+   "journal": "Journal of oleo science",
+   "doi": "10.5650/jos.ess24056",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Apoptosis",
+    "Diabetic Nephropathies",
+    "Antioxidants",
+    "Metal Nanoparticles",
+    "Salvia",
+    "Plant Extracts",
+    "Silver",
+    "Anti-Inflammatory Agents",
+    "Male",
+    "Diabetes Mellitus, Experimental",
+    "Streptozocin",
+    "Ethanol",
+    "Green Chemistry Technology",
+    "Rats",
+    "Rats, Wistar",
+    "Oxidative Stress"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "11f4e93e73647d6e1004726c84bb009860d3f5bac68b03e45841b3ef3ff19bc5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41215858",
+   "title": "Serum immunoglobulin G glycosylation profiling in breast cancer using a 56-lectin microarray and subtype-specific patterns.",
+   "year": 2025,
+   "journal": "Gland surgery",
+   "doi": "10.21037/gs-2025-298",
+   "pmcid": "PMC12596431",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d9fa9b585f4ea94bb0dfd72429be5730d1a030337a6cace73f4e58d70fb13087",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "22928313",
+   "title": "Fumigant toxicity of plant essential oils against Camptomyia corticalis (Diptera: Cecidomyiidae).",
+   "year": 2012,
+   "journal": "Journal of economic entomology",
+   "doi": "10.1603/ec12049",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Dichlorvos",
+    "Diptera",
+    "Fumigation",
+    "Insecticides",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Evaluation Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0305a095f4faf3cf535d9de34b1d21d0c4596a2c693c6657867571f70dc54cee",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "3377987",
+   "title": "Haemoglobin M-Hyde Park associated with polyagglutinable red blood cells in a South African family.",
+   "year": 1988,
+   "journal": "British journal of haematology",
+   "doi": "10.1111/j.1365-2141.1988.tb04236.x",
+   "pmcid": null,
+   "mesh": [
+    "Adolescent",
+    "Adult",
+    "Child",
+    "Child, Preschool",
+    "Erythrocytes",
+    "Female",
+    "Hemagglutination Tests",
+    "Hemoglobin M",
+    "Hemoglobinopathies",
+    "Hemoglobins, Abnormal",
+    "Humans",
+    "Male",
+    "Middle Aged",
+    "Pedigree"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7628e6d92df8d0a86b570d57daf804213bbd9e1894ca9dc3350be5b633b34744",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29987237",
+   "title": "Antimicrobial Activity of Five Essential Oils against Bacteria and Fungi Responsible for Urinary Tract Infections.",
+   "year": 2018,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules23071668",
+   "pmcid": "PMC6100505",
+   "mesh": [
+    "Animals",
+    "Anti-Bacterial Agents",
+    "Antifungal Agents",
+    "Apiaceae",
+    "Candida",
+    "Cats",
+    "Dogs",
+    "Drug Resistance, Fungal",
+    "Drug Resistance, Multiple, Bacterial",
+    "Enterococcus",
+    "Escherichia coli",
+    "Lamiaceae",
+    "Ocimum basilicum",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Salvia",
+    "Thymus Plant",
+    "Urinary Tract Infections"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ff4d274908b19e0c6fa5a26fe840c0c11ad5930b0fe81d4e404182b9aac0f7b6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "1910178",
+   "title": "Studies on the genotoxic properties of essential oils with Bacillus subtilis rec-assay and Salmonella/microsome reversion assay.",
+   "year": 1991,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-960081",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bacillus subtilis",
+    "DNA",
+    "Male",
+    "Microsomes",
+    "Mutagens",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Rats",
+    "Rats, Inbred Strains",
+    "Salmonella"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "319291960ed481772082c4bc93c660481bc7428bc9d5f1b3408e5407b0866e64",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29184240",
+   "title": "Essential oils as antibacterial agents against food-borne pathogens: Are they really as useful as they are claimed to be?",
+   "year": 2017,
+   "journal": "Journal of food science and technology",
+   "doi": "10.1007/s13197-017-2905-0",
+   "pmcid": "PMC5686014",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "208f03d51d9b2e0e8b2f6d8c585ca0b50dd2293527931c8c82c8d2ec20588923",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39201676",
+   "title": "Burn Wound Healing Activity of Hydroxyethylcellulose Gels with Different Water Extracts Obtained from Various Medicinal Plants in Pseudomonas aeruginosa-Infected Rabbits.",
+   "year": 2024,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms25168990",
+   "pmcid": "PMC11354801",
+   "mesh": [
+    "Animals",
+    "Rabbits",
+    "Wound Healing",
+    "Plant Extracts",
+    "Burns",
+    "Pseudomonas aeruginosa",
+    "Pseudomonas Infections",
+    "Plants, Medicinal",
+    "Male",
+    "Gels",
+    "Water",
+    "Disease Models, Animal",
+    "Anti-Bacterial Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d6671a293f2e5b92d09c10c5ca053009239ac4e153f150a25fcae25dfbf90984",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26045743",
+   "title": "Sclareol exerts anti-osteoarthritic activities in interleukin-1β-induced rabbit chondrocytes and a rabbit osteoarthritis model.",
+   "year": 2015,
+   "journal": "International journal of clinical and experimental pathology",
+   "doi": null,
+   "pmcid": "PMC4440052",
+   "mesh": [
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Cartilage, Articular",
+    "Cells, Cultured",
+    "Chondrocytes",
+    "Cyclooxygenase 2",
+    "Dinoprostone",
+    "Disease Models, Animal",
+    "Diterpenes",
+    "Dose-Response Relationship, Drug",
+    "Gene Expression Regulation",
+    "Humans",
+    "Injections, Intra-Articular",
+    "Interleukin-1beta",
+    "Joints",
+    "Matrix Metalloproteinases",
+    "Nitric Oxide",
+    "Nitric Oxide Synthase Type II",
+    "Osteoarthritis",
+    "RNA, Messenger",
+    "Rabbits",
+    "Signal Transduction",
+    "Tissue Inhibitor of Metalloproteinase-1"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ee3ce3cd79f73a2cc96185c43a82c4db7e0c15a9007b9ee64d1120d98db6e379",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27917678",
+   "title": "Traditional Mediterranean plants: characterization and use of an essential oils mixture to treat Malassezia otitis externa in atopic dogs.",
+   "year": 2017,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2016.1263853",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antifungal Agents",
+    "Dermatomycoses",
+    "Dog Diseases",
+    "Dogs",
+    "Malassezia",
+    "Medicine, Traditional",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Otitis Externa",
+    "Plants, Medicinal",
+    "Rosmarinus",
+    "Thymus Plant"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "509be045cc60c27f5ca27b50c61817508839b0c9212793b051b6693c4ec1f058",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34184234",
+   "title": "Phytomanagement of a metal(loid)-contaminated agricultural site using aromatic and medicinal plants to produce essential oils: analysis of the metal(loid) fate in the value chain.",
+   "year": 2021,
+   "journal": "Environmental science and pollution research international",
+   "doi": "10.1007/s11356-021-15045-4",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Metals, Heavy",
+    "Oils, Volatile",
+    "Plants, Medicinal",
+    "Soil",
+    "Soil Pollutants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "283207cc8ed49bece84d04695ceb4d0c1a07d087f897a33c82a4918a064020fa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35159462",
+   "title": "In Vitro Potential of Clary Sage and Coriander Essential Oils as Crop Protection and Post-Harvest Decay Control Products.",
+   "year": 2022,
+   "journal": "Foods (Basel, Switzerland)",
+   "doi": "10.3390/foods11030312",
+   "pmcid": "PMC8834200",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7f709f7b84203040e3c89ab5026d504bb066addaa836be760d4785dab84c2831",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40446110",
+   "title": "Chemical Profiling and Hepatoprotective Potential of Chloroform-Methanolic Extract of Salvia sclarea L.: GC-MS Analysis and In Vivo Studies.",
+   "year": 2025,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202403496",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Gas Chromatography-Mass Spectrometry",
+    "Mice",
+    "Plant Extracts",
+    "Salvia",
+    "Antioxidants",
+    "Acetaminophen",
+    "Liver",
+    "Chloroform",
+    "Chemical and Drug Induced Liver Injury",
+    "Methanol",
+    "Male",
+    "Protective Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "62a17d271bf9c775260c7bd01a22a6919ddaf39667e77b4e8104b0cf5ad4de0e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28865183",
+   "title": "Comparison of Chemical Profile and Antioxidant Capacity of Seeds and Oils from Salvia sclarea and Salvia officinalis.",
+   "year": 2017,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.201700344",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Carotenoids",
+    "Chromatography, Gas",
+    "Chromatography, High Pressure Liquid",
+    "Gas Chromatography-Mass Spectrometry",
+    "Oils, Volatile",
+    "Salvia",
+    "Salvia officinalis",
+    "Seeds",
+    "alpha-Tocopherol"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4c00da2a289dd3c3a920f60c6692ba0ba58691ec9b8d1fa62caa6754c78ce9c5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24621398",
+   "title": "Dose-dependent effects of ethanol extract of Salvia haematodes Wall roots on reproductive function and copulatory behaviour in male rats.",
+   "year": 2015,
+   "journal": "Andrologia",
+   "doi": "10.1111/and.12255",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Camphanes",
+    "Copulation",
+    "Dose-Response Relationship, Drug",
+    "Drugs, Chinese Herbal",
+    "Ethanol",
+    "Female",
+    "Male",
+    "Panax notoginseng",
+    "Plant Roots",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Reproduction",
+    "Salvia miltiorrhiza",
+    "Sperm Count",
+    "Spermatogenesis",
+    "Testis"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7e4aacff757f10269d2348d63961a96194eabc27bb3236b50157a698a762f3bd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2384093",
+   "title": "Comparison of the carbohydrate-binding specificities of seven N-acetyl-D-galactosamine-recognizing lectins.",
+   "year": 1990,
+   "journal": "European journal of biochemistry",
+   "doi": "10.1111/j.1432-1033.1990.tb19144.x",
+   "pmcid": null,
+   "mesh": [
+    "Acetylgalactosamine",
+    "Binding Sites",
+    "Blood Group Antigens",
+    "Carbohydrate Sequence",
+    "Erythrocytes",
+    "Galactosamine",
+    "Glycopeptides",
+    "Glycoproteins",
+    "Hemagglutination Tests",
+    "Humans",
+    "Lectins",
+    "Molecular Sequence Data",
+    "Oligosaccharides"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c741d959c0c7b79c71321410bed82448cf29cb25094504ecdc636eee2311c47b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24222768",
+   "title": "In Vitro Antibacterial and Antibiotic Resistance Modifying Effect of Bioactive Plant Extracts on Methicillin-Resistant Staphylococcus epidermidis.",
+   "year": 2013,
+   "journal": "International journal of microbiology",
+   "doi": "10.1155/2013/760969",
+   "pmcid": "PMC3810435",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "de594bb3935b65b9d615c70e4951683fe86c146f0ba79a2111c2b6780495a57f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "3933597",
+   "title": "Tn polyagglutinability occurring in a patient with B cell lymphoma.",
+   "year": 1985,
+   "journal": "Blut",
+   "doi": "10.1007/BF00320046",
+   "pmcid": null,
+   "mesh": [
+    "ABO Blood-Group System",
+    "Aged",
+    "Anemia, Hemolytic",
+    "Antigens, Neoplasm",
+    "Antigens, Tumor-Associated, Carbohydrate",
+    "B-Lymphocytes",
+    "Female",
+    "Hemagglutination",
+    "Humans",
+    "Lymphoma",
+    "Rh-Hr Blood-Group System"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2ee7365df7bc2acea9557eeb288d1d6749572b827542408255c1c29c084a53dc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17009204",
+   "title": "Larvicidal activity of some Labiatae (Lamiaceae) plant extracts from Turkey.",
+   "year": 2006,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.2004",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Culex",
+    "Ethanol",
+    "Insecticides",
+    "Lamiaceae",
+    "Larva",
+    "Lethal Dose 50",
+    "Plant Components, Aerial",
+    "Plant Extracts",
+    "Temefos",
+    "Turkey"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "00ebfdf6cbd9936c5d29f54afcf93d0c047913549dfeb7062462ca4ff800fb9d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41023065",
+   "title": "Salvia sclarea L. mediated green synthesis of gold nanoparticles (AuNPs) and evaluation of their antibacterial, anticandidal, and scolicidal properties.",
+   "year": 2025,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-025-18448-2",
+   "pmcid": "PMC12480542",
+   "mesh": [
+    "Gold",
+    "Metal Nanoparticles",
+    "Salvia",
+    "Anti-Bacterial Agents",
+    "Green Chemistry Technology",
+    "Plant Extracts",
+    "Microbial Sensitivity Tests",
+    "Antifungal Agents",
+    "Candida",
+    "Particle Size",
+    "X-Ray Diffraction"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4678b9e68c4438f5c90ea7946342fd8322b555eb4ca84c9bc03a476c3bbfa054",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "1943176",
+   "title": "Effect of Salvia haematodes on sexual behaviour of male rats.",
+   "year": 1991,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/0378-8741(91)90163-8",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Copulation",
+    "Ethanol",
+    "Female",
+    "Male",
+    "Orientation",
+    "Penile Erection",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Rats",
+    "Rats, Inbred Strains",
+    "Sexual Behavior, Animal"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cb3686a3a21d8011d6d411f493b0dd815d79259a0ce2a560c342e9372ea805d7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25825934",
+   "title": "Design and Synthesis of Antitumor Heck-Coupled Sclareol Analogues: Modulation of BH3 Family Members by SS-12 in Autophagy and Apoptotic Cell Death.",
+   "year": 2015,
+   "journal": "Journal of medicinal chemistry",
+   "doi": "10.1021/jm501942m",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Apoptosis",
+    "Apoptosis Regulatory Proteins",
+    "Autophagy",
+    "Beclin-1",
+    "Cell Line, Tumor",
+    "Diterpenes",
+    "Drug Design",
+    "Female",
+    "Halogenation",
+    "Humans",
+    "Membrane Proteins",
+    "Mice",
+    "Proto-Oncogene Proteins c-bcl-2",
+    "Salvia",
+    "Sarcoma 180",
+    "Signal Transduction",
+    "TOR Serine-Threonine Kinases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1c50cafc1424fcff100229bdc50952cd86119c328b91b943da7194bc68474322",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7466135",
+   "title": "Increase of blood group A and loss of blood group Sda activity in the mucus from human neoplastic colon.",
+   "year": 1980,
+   "journal": "Revue francaise de transfusion et immuno-hematologie",
+   "doi": "10.1016/s0338-4535(80)80163-2",
+   "pmcid": null,
+   "mesh": [
+    "ABO Blood-Group System",
+    "Blood Group Antigens",
+    "Colon",
+    "Colonic Neoplasms",
+    "Humans",
+    "Intestinal Mucosa"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "29b58cd2e8785fa69160793c97bc96332c3a9f3035e2b86d6d5c896aa0ae7659",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30540782",
+   "title": "Mediterranean herb extracts inhibit microbial growth of representative oral microorganisms and biofilm formation of Streptococcus mutans.",
+   "year": 2018,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0207574",
+   "pmcid": "PMC6291084",
+   "mesh": [
+    "Anti-Infective Agents",
+    "Biofilms",
+    "Candida albicans",
+    "Chromatography, High Pressure Liquid",
+    "Cistus",
+    "Mass Spectrometry",
+    "Mediterranean Region",
+    "Microbial Sensitivity Tests",
+    "Phytochemicals",
+    "Plant Components, Aerial",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Rosmarinus",
+    "Streptococcus mutans"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "315336ca18a5a8d31ca2c7163f52d6f385f1326c7579ee50d4e762e1b80e5200",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35336663",
+   "title": "An Insight into Salvia haematodes L. (Lamiaceae) Bioactive Extracts Obtained by Traditional and Green Extraction Procedures.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11060781",
+   "pmcid": "PMC8956035",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "213c48d4b4029286eec11d387a71fcc6e47e3f809bcb7fd104418bda6fe8bf6f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "20409537",
+   "title": "Sclareol modulates the Treg intra-tumoral infiltrated cell and inhibits tumor growth in vivo.",
+   "year": 2010,
+   "journal": "Cellular immunology",
+   "doi": "10.1016/j.cellimm.2010.02.009",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antineoplastic Agents",
+    "Breast Neoplasms",
+    "Cell Proliferation",
+    "Cells, Cultured",
+    "Cytokines",
+    "Diterpenes",
+    "Female",
+    "Flow Cytometry",
+    "Injections, Intralesional",
+    "Interferon-gamma",
+    "Interleukin-4",
+    "Magnetic Resonance Spectroscopy",
+    "Mice",
+    "Mice, Inbred BALB C",
+    "Phytotherapy",
+    "Sheep",
+    "T-Lymphocytes, Regulatory"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ef8df56ddfd1b3412fec0ec66804730332e20ca87e32a6d76e6fcb14c9418711",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7765213",
+   "title": "Terpenoids from Salvia sclarea.",
+   "year": 1994,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/s0031-9422(00)90474-6",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Infective Agents",
+    "Magnetic Resonance Spectroscopy",
+    "Plants",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4f5a4d34cd243cbffa26c6ce8cd726d96dc6d87d06b5501051baf3ea4a08c5c7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25311097",
+   "title": "Effects of Salvia sclarea on chronic immobilization stress induced endothelial dysfunction in rats.",
+   "year": 2014,
+   "journal": "BMC complementary and alternative medicine",
+   "doi": "10.1186/1472-6882-14-396",
+   "pmcid": "PMC4200217",
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Blood Pressure",
+    "Endothelial Cells",
+    "Heart Rate",
+    "Male",
+    "Malondialdehyde",
+    "Nitric Oxide",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Restraint, Physical",
+    "Salvia",
+    "Stress, Physiological"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3be2a1ec4ebb4c48b3f799390be35d9cabb421a23adb9370564d5b1968158729",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "34832836",
+   "title": "Anti-Methanogenic Effect of Phytochemicals on Methyl-Coenzyme M Reductase-Potential: In Silico and Molecular Docking Studies for Environmental Protection.",
+   "year": 2021,
+   "journal": "Micromachines",
+   "doi": "10.3390/mi12111425",
+   "pmcid": "PMC8617884",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5cf3f172a51bba7ac721b9134f663bdfe07246b91c7e2bdefea89deb5c3a9252",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26395247",
+   "title": "Properties and limits of some essential oils: chemical characterisation, antimicrobial activity, interaction with antibiotics and cytotoxicity.",
+   "year": 2016,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2015.1086346",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Anti-Infective Agents",
+    "Antineoplastic Agents, Phytogenic",
+    "Coriandrum",
+    "Cuminum",
+    "Cymbopogon",
+    "HeLa Cells",
+    "Humans",
+    "Melaleuca",
+    "Microbial Sensitivity Tests",
+    "Ocimum basilicum",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "572eaeae29ef638d32113684731b3c3648066b08c78041183340419eaac9ab03",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18810999",
+   "title": "Activity of essential oils and individual components against acetyl- and butyrylcholinesterase.",
+   "year": 2008,
+   "journal": "Zeitschrift fur Naturforschung. C, Journal of biosciences",
+   "doi": "10.1515/znc-2008-7-813",
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholinesterase",
+    "Butyrylcholinesterase",
+    "Cholinesterase Inhibitors",
+    "Oils, Volatile",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7de3ef5e2c43a365cb1df0540eb1e25c7e69e485773c498a018268098b38eca6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22593711",
+   "title": "In vitro conservation of twenty-three overexploited medicinal plants belonging to the Indian sub continent.",
+   "year": 2012,
+   "journal": "TheScientificWorldJournal",
+   "doi": "10.1100/2012/929650",
+   "pmcid": "PMC3349164",
+   "mesh": [
+    "Biodiversity",
+    "Conservation of Natural Resources",
+    "Endangered Species",
+    "Environment, Controlled",
+    "Flowers",
+    "Geography",
+    "Germination",
+    "India",
+    "Morphogenesis",
+    "Plant Roots",
+    "Plant Shoots",
+    "Plants, Medicinal",
+    "Seeds",
+    "Species Specificity",
+    "Tissue Culture Techniques"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7cb646ddb22f7a2f49e904833fe236af65c5f94963cd7aa40130c2770682b711",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "23502334",
+   "title": "Sclareol reduces CD4+ CD25+ FoxP3+ Treg cells in a breast cancer model in vivo.",
+   "year": 2013,
+   "journal": "Iranian journal of immunology : IJI",
+   "doi": "10.22034/iji.2013.16799",
+   "pmcid": null,
+   "mesh": [
+    "Adjuvants, Immunologic",
+    "Animals",
+    "Antineoplastic Agents",
+    "Breast Neoplasms",
+    "CD4 Antigens",
+    "Cancer Vaccines",
+    "Cell Proliferation",
+    "Disease Models, Animal",
+    "Diterpenes",
+    "Female",
+    "Forkhead Transcription Factors",
+    "Humans",
+    "Injections, Intraperitoneal",
+    "Interferon-gamma",
+    "Interleukin-2 Receptor alpha Subunit",
+    "Interleukin-4",
+    "K562 Cells",
+    "Mice",
+    "Mice, Inbred BALB C",
+    "Salvia",
+    "T-Lymphocytes, Regulatory",
+    "Tumor Burden"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "82b85d04ef7287ba800cabe3d765a6e65d3d5bc49b6ad90edb5cdbce4728aaab",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37383790",
+   "title": "Data regarding anti-quorum sensing and antimicrobial activity of Melaleuca alternifolia and Salvia sclarea essential oil against Pseudomonas aeruginosa.",
+   "year": 2023,
+   "journal": "Data in brief",
+   "doi": "10.1016/j.dib.2023.109145",
+   "pmcid": "PMC10293969",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1cd1ba27277221c0b5857edd127fc9878935831d7c1447eedf5376d8f3af42ee",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24031963",
+   "title": "Inhibitory effect of essential oils against Trichosporon ovoides causing Piedra Hair Infection.",
+   "year": 2012,
+   "journal": "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]",
+   "doi": "10.1590/S1517-838220120004000016",
+   "pmcid": "PMC3769027",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f48f8f69dd3a2613c9db208a9cf5e7029e7d5d0a2a666646ac06427bad058b51",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "34500751",
+   "title": "Chemical Composition, Antioxidant and Anti-Inflammatory Activities of Clary Sage and Coriander Essential Oils Produced on Polluted and Amended Soils-Phytomanagement Approach.",
+   "year": 2021,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26175321",
+   "pmcid": "PMC8434190",
+   "mesh": [
+    "Anti-Inflammatory Agents",
+    "Antioxidants",
+    "Biodegradation, Environmental",
+    "Biphenyl Compounds",
+    "Cell Line",
+    "Coriandrum",
+    "Cytokines",
+    "Dose-Response Relationship, Drug",
+    "Environmental Pollution",
+    "Humans",
+    "Molecular Structure",
+    "Oils, Volatile",
+    "Picrates",
+    "Salvia",
+    "Structure-Activity Relationship"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "49c5376df95acca76512a8f859195bd1585d8d7799e756a45a959ca0beb76780",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24569175",
+   "title": "Characterization of two genes for the biosynthesis of abietane-type diterpenes in rosemary (Rosmarinus officinalis) glandular trichomes.",
+   "year": 2014,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/j.phytochem.2014.01.021",
+   "pmcid": null,
+   "mesh": [
+    "Abietanes",
+    "Alkyl and Aryl Transferases",
+    "Biocatalysis",
+    "Carbamoyl-Phosphate Synthase (Ammonia)",
+    "Escherichia coli",
+    "Molecular Sequence Data",
+    "Phylogeny",
+    "Rosmarinus",
+    "Trichomes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "14d494918d1caea68e7fbb603b4dcaa6a546fdec0682210d2157fcc5d36ace19",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2869600",
+   "title": "Uneventful administration of plasma products in a recipient with T-activated red cells.",
+   "year": 1986,
+   "journal": "Transfusion",
+   "doi": "10.1046/j.1537-2995.1986.26286152912.x",
+   "pmcid": null,
+   "mesh": [
+    "Blood Coagulation Disorders",
+    "Blood Transfusion",
+    "Clostridium Infections",
+    "Clostridium perfringens",
+    "Gallbladder Diseases",
+    "Hemagglutinins",
+    "Humans",
+    "Male",
+    "Middle Aged"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f9bbf5d3f2e7aa67140a235a2a7c34431ae2714a7bb1af495381e854d0078492",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40265807",
+   "title": "Analysis of the Antioxidant and Antimicrobial Activity, Cytotoxic, and Anti-Migratory Properties of the Essential Oils Obtained from Cultivated Medicinal Lamiaceae Species.",
+   "year": 2025,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants14060846",
+   "pmcid": "PMC11944916",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6e9a2bea15b4427067077ed7c1615c35d8e39f5c1c5b6a574874f8c39cefeb81",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33424786",
+   "title": "The Aromatic Plant Clary Sage Shaped Bacterial Communities in the Roots and in the Trace Element-Contaminated Soil More Than Mycorrhizal Inoculation - A Two-Year Monitoring Field Trial.",
+   "year": 2020,
+   "journal": "Frontiers in microbiology",
+   "doi": "10.3389/fmicb.2020.586050",
+   "pmcid": "PMC7794003",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "76599ee955c3a75d2f558a173078bbc6085e83a84f37f68b2d8523b5b87f1224",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36975682",
+   "title": "The Effect of Sage (Salvia sclarea) Essential Oil on the Physiochemical and Antioxidant Properties of Sodium Alginate and Casein-Based Composite Edible Films.",
+   "year": 2023,
+   "journal": "Gels (Basel, Switzerland)",
+   "doi": "10.3390/gels9030233",
+   "pmcid": "PMC10048354",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b1974026f9fe55b2e06d37e04094a8185483947ba3df059d3ea6017f71a65664",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "16884344",
+   "title": "Effect of aromatherapy on symptoms of dysmenorrhea in college students: A randomized placebo-controlled clinical trial.",
+   "year": 2006,
+   "journal": "Journal of alternative and complementary medicine (New York, N.Y.)",
+   "doi": "10.1089/acm.2006.12.535",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Aromatherapy",
+    "Confidence Intervals",
+    "Double-Blind Method",
+    "Dysmenorrhea",
+    "Female",
+    "Humans",
+    "Odds Ratio",
+    "Pain Measurement",
+    "Patient Selection",
+    "Treatment Outcome",
+    "Women's Health"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7027610aa9883c5489d719923366a3e9560f6dcfc653bb9e7d08dc42ff91e286",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39147955",
+   "title": "Insecticidal and Repellent Activity of Essential Oils from Copaifera reticulata, Citrus paradisi, Lavandula hybrida and Salvia sclarea Against Immature and Adult Stages of Ctenocephalides felis felis.",
+   "year": 2024,
+   "journal": "Acta parasitologica",
+   "doi": "10.1007/s11686-024-00874-3",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Oils, Volatile",
+    "Salvia",
+    "Insect Repellents",
+    "Insecticides",
+    "Ctenocephalides",
+    "Fabaceae",
+    "Lavandula",
+    "Larva",
+    "Pupa",
+    "Citrus",
+    "Acyclic Monoterpenes",
+    "Monoterpenes",
+    "Plant Oils",
+    "Lethal Dose 50"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f5de2aaff6b8f5d372357b49cced139aa4d00362381c0e0321a8840a4b6010a1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42283895",
+   "title": "Endophytic Xenodidymella from Iranian medicinal plants: description of three novel species and a new host record.",
+   "year": 2026,
+   "journal": "Antonie van Leeuwenhoek",
+   "doi": "10.1007/s10482-026-02346-2",
+   "pmcid": null,
+   "mesh": [
+    "Iran",
+    "Endophytes",
+    "Phylogeny",
+    "Plants, Medicinal",
+    "DNA, Fungal",
+    "Sequence Analysis, DNA",
+    "Tubulin",
+    "Euphorbia",
+    "DNA, Ribosomal",
+    "DNA, Ribosomal Spacer"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "88b40fc33460943e8fe7d18026455368bdf50d86e3af3ce61fc2904d749c39e0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28504569",
+   "title": "Comparisons for Effectiveness of Aromatherapy and Acupressure Massage on Quality of Life in Career Women: A Randomized Controlled Trial.",
+   "year": 2017,
+   "journal": "Journal of alternative and complementary medicine (New York, N.Y.)",
+   "doi": "10.1089/acm.2016.0403",
+   "pmcid": null,
+   "mesh": [
+    "Acupressure",
+    "Adult",
+    "Aromatherapy",
+    "Female",
+    "Humans",
+    "Middle Aged",
+    "Quality of Life",
+    "Sleep",
+    "Sleep Wake Disorders",
+    "Surveys and Questionnaires",
+    "Women, Working"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c4cfc0d3fa8d989be111930ce912d9f0ae6af37182bd2d1608d2185546d62c69",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27826675",
+   "title": "Effects of clary sage oil and its main components, linalool and linalyl acetate, on the plasma membrane of Candida albicans: an in vivo EPR study.",
+   "year": 2017,
+   "journal": "Apoptosis : an international journal on programmed cell death",
+   "doi": "10.1007/s10495-016-1321-7",
+   "pmcid": null,
+   "mesh": [
+    "Acyclic Monoterpenes",
+    "Antifungal Agents",
+    "Apoptosis",
+    "Candida albicans",
+    "Cell Membrane",
+    "Electron Spin Resonance Spectroscopy",
+    "Membrane Fluidity",
+    "Monoterpenes",
+    "Plant Oils",
+    "Salvia",
+    "Spin Labels"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b58230abc5b0db3764f1e4169693b99945589060779aaef67f8cea3caea11283",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20441789",
+   "title": "Antidepressant-like effect of Salvia sclarea is explained by modulation of dopamine activities in rats.",
+   "year": 2010,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2010.04.035",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antidepressive Agents",
+    "Corticosterone",
+    "Dopamine",
+    "Enzyme-Linked Immunosorbent Assay",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Receptors, Adrenergic, alpha-2",
+    "Receptors, Dopamine",
+    "Receptors, GABA",
+    "Receptors, Serotonin",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fdfa8ba50bdd0c8711772c79cb3d78409a496caa4ad1272d734acc2e0e722989",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42489835",
+   "title": "Synthetic Biology of Sclareol: From the Plant Biosynthetic Pathway to Engineered Microbial and Photosynthetic Chassis.",
+   "year": 2026,
+   "journal": "Biotechnology journal",
+   "doi": "10.1002/biot.70285",
+   "pmcid": "PMC13394516",
+   "mesh": [
+    "Synthetic Biology",
+    "Metabolic Engineering",
+    "Diterpenes",
+    "Biosynthetic Pathways",
+    "Photosynthesis",
+    "Plants",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4d8804fdf78f4bb10ed9550166c748e8239cb4feb3f23af286fca8033a4d6d3d",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24761118",
+   "title": "Presence of monoterpene synthase in four Labiatae species and Solid-Phase Microextraction- Gas chromatography-Mass Spectroscopy analysis of their aroma profiles.",
+   "year": 2014,
+   "journal": "Pharmacognosy research",
+   "doi": "10.4103/0974-8490.129033",
+   "pmcid": "PMC3996750",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "072548947c0d1e6874e0201ee8a831c2014ffe7f9d2c22948b09a9be20bd6999",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "17650545",
+   "title": "Salvipisone and aethiopinone from Salvia sclarea hairy roots modulate staphylococcal antibiotic resistance and express anti-biofilm activity.",
+   "year": 2007,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2007-967179",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Biofilms",
+    "Diterpenes",
+    "Humans",
+    "Methicillin Resistance",
+    "Microbial Sensitivity Tests",
+    "Naphthoquinones",
+    "Phytotherapy",
+    "Plant Roots",
+    "Salvia",
+    "Staphylococcus aureus",
+    "Staphylococcus epidermidis"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f32569d0db6c861312e62b4212be8633c58bb930b294cb737991d26bc4f42586",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15222560",
+   "title": "In vitro antimicrobial activity of essential oils from aromatic plants against selected foodborne pathogens.",
+   "year": 2004,
+   "journal": "Journal of food protection",
+   "doi": "10.4315/0362-028x-67.6.1252",
+   "pmcid": null,
+   "mesh": [
+    "Bacteria",
+    "Colony Count, Microbial",
+    "Consumer Product Safety",
+    "Food Microbiology",
+    "Food Preservation",
+    "Food Preservatives",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3758f43207e6e0f38c2bff1a71339fd4224c7aa0bc99123c4a5c66eec5b97783",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15504164",
+   "title": "Altered glycosylation leads to Tr polyagglutination.",
+   "year": 2004,
+   "journal": "Transfusion",
+   "doi": "10.1111/j.0041-1132.2004.04133.x",
+   "pmcid": null,
+   "mesh": [
+    "Anemia, Hemolytic",
+    "Bernard-Soulier Syndrome",
+    "Blood",
+    "Electrophoresis, Polyacrylamide Gel",
+    "Erythrocytes",
+    "Fetal Blood",
+    "Glycosylation",
+    "Hemagglutination",
+    "Hematologic Diseases",
+    "Humans",
+    "Infant, Newborn",
+    "Intellectual Disability",
+    "Lectins",
+    "Male",
+    "Mitral Valve Insufficiency",
+    "N-Acetylneuraminic Acid",
+    "Neutropenia"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e4ce32cb4a4c9e01ed56212e9b7ed38b0e244a15ba7f5cc719dd177bd62c6823",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39755684",
+   "title": "Chromosome-level genome assembly of Salvia sclarea.",
+   "year": 2025,
+   "journal": "Scientific data",
+   "doi": "10.1038/s41597-024-04347-0",
+   "pmcid": "PMC11700129",
+   "mesh": [
+    "Salvia",
+    "Genome, Plant",
+    "Phylogeny",
+    "Chromosomes, Plant"
+   ],
+   "publicationTypes": [
+    "Dataset",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "daded507198666b28aaaf8acaca3d9acc5f1c6f800836b63e61f9c397f141d17",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "10691981",
+   "title": "Biochemical and functional characterization of the Tn-specific lectin from Salvia sclarea seeds.",
+   "year": 2000,
+   "journal": "European journal of biochemistry",
+   "doi": "10.1046/j.1432-1327.2000.01141.x",
+   "pmcid": null,
+   "mesh": [
+    "Antibodies, Monoclonal",
+    "Antigens, Tumor-Associated, Carbohydrate",
+    "Carbohydrate Conformation",
+    "Carbohydrate Sequence",
+    "Dimerization",
+    "Disulfides",
+    "Epitopes",
+    "Glycopeptides",
+    "Lectins",
+    "Molecular Sequence Data",
+    "Plant Lectins",
+    "Plants",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ebb40bcdc5f268439ee9749bd6075349b1870f01173421c3d5ea3f6215d8b4f2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39911870",
+   "title": "Differential effects of clary sage (Salvia sclarea L.) oil and linalyl acetate on depression levels in diabetic foot ulcer patients with T2DM: a randomized blinded controlled trial.",
+   "year": 2025,
+   "journal": "Frontiers in medicine",
+   "doi": "10.3389/fmed.2025.1523441",
+   "pmcid": "PMC11794106",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "faf3e271b96aa1e7f6a564678d1c267d5657fed2750617546c1027607513c7db",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "23360656",
+   "title": "Randomized controlled trial for Salvia sclarea or Lavandula angustifolia: differential effects on blood pressure in female patients with urinary incontinence undergoing urodynamic examination.",
+   "year": 2013,
+   "journal": "Journal of alternative and complementary medicine (New York, N.Y.)",
+   "doi": "10.1089/acm.2012.0148",
+   "pmcid": "PMC3700459",
+   "mesh": [
+    "Adult",
+    "Aged",
+    "Aromatherapy",
+    "Autonomic Nervous System",
+    "Blood Pressure",
+    "Camphanes",
+    "Double-Blind Method",
+    "Drugs, Chinese Herbal",
+    "Female",
+    "Heart Rate",
+    "Humans",
+    "Lavandula",
+    "Middle Aged",
+    "Oils, Volatile",
+    "Panax notoginseng",
+    "Phytotherapy",
+    "Respiratory Rate",
+    "Salvia miltiorrhiza",
+    "Stress, Psychological",
+    "Surveys and Questionnaires",
+    "Urinary Incontinence",
+    "Urodynamics"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Randomized Controlled Trial",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5a47f48498ec564e7dccc30de73f988d2de89ca4c0ba75a159f1c07e00d5ad64",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19772730",
+   "title": "Fingerprint of selected Salvia species by HS-GC-MS analysis of their volatile fraction.",
+   "year": 2009,
+   "journal": "Journal of chromatographic science",
+   "doi": "10.1093/chromsci/47.7.575",
+   "pmcid": null,
+   "mesh": [
+    "Gas Chromatography-Mass Spectrometry",
+    "Salvia",
+    "Volatile Organic Compounds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f130d131fd515322f8ef8044be685695f439e8520e8db1b353a6cc7860f421ed",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38253648",
+   "title": "Comparative assessment of phenolic composition profile and biological activities of green extract and conventional extracts of Salvia sclarea.",
+   "year": 2024,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-024-51661-z",
+   "pmcid": "PMC10803343",
+   "mesh": [
+    "Antioxidants",
+    "Methanol",
+    "Phenols",
+    "Plant Extracts",
+    "Salvia",
+    "Solvents",
+    "Staphylococcus aureus"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0822a634858b6bcb8a4f399b1fc59cab9e144b14cbc65700d596d361f8350fc8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26592573",
+   "title": "Optimization of the derivatization protocol of pentacyclic triterpenes prior to their gas chromatography-mass spectrometry analysis in plant extracts.",
+   "year": 2016,
+   "journal": "Talanta",
+   "doi": "10.1016/j.talanta.2015.09.026",
+   "pmcid": null,
+   "mesh": [
+    "Chemistry Techniques, Analytical",
+    "Cyclization",
+    "Gas Chromatography-Mass Spectrometry",
+    "Plant Extracts",
+    "Reproducibility of Results",
+    "Triterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0745af151496371ccc2e7dd5883e868bd9120d99baef7dd254a57b26a18005dc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18557903",
+   "title": "Diversity of essential oil glands of clary sage (Salvia sclarea L., Lamiaceae).",
+   "year": 2008,
+   "journal": "Plant biology (Stuttgart, Germany)",
+   "doi": "10.1111/j.1438-8677.2008.00053.x",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Gas",
+    "Microscopy, Electron, Scanning",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Salvia",
+    "Solid Phase Extraction"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "deaf01ffc95d6589e5bf274f93fec7267971e777abf806ddf365c03e7e549e8f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15000847",
+   "title": "Monoclonal antibodies against the Tn-specific isolectin B4 from Vicia villosa seeds: characterization of the epitope of the blocking antibody VV34.",
+   "year": 2004,
+   "journal": "Hybridoma and hybridomics",
+   "doi": "10.1089/153685904322772015",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Antibodies, Monoclonal",
+    "Antigens, Tumor-Associated, Carbohydrate",
+    "Blotting, Western",
+    "Electrophoresis, Polyacrylamide Gel",
+    "Enzyme-Linked Immunosorbent Assay",
+    "Epitopes",
+    "Lectins",
+    "Molecular Sequence Data",
+    "Seeds",
+    "Vicia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1f68f4ae137e50a4ebf7f3345a825a1c71dd224aa0503b47f6e44937c9a56746",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24364354",
+   "title": "[Engineering Saccharomyces cerevisiae for sclareol production].",
+   "year": 2013,
+   "journal": "Sheng wu gong cheng xue bao = Chinese journal of biotechnology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alkyl and Aryl Transferases",
+    "Diterpenes",
+    "Metabolic Engineering",
+    "Metabolic Networks and Pathways",
+    "Recombinant Fusion Proteins",
+    "Saccharomyces cerevisiae",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0ccd39a028686fff2c70b155cdd3ee1915ca7e24034c9a868376c1de436e42e2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22435409",
+   "title": "Pain relief assessment by aromatic essential oil massage on outpatients with primary dysmenorrhea: a randomized, double-blind clinical trial.",
+   "year": 2012,
+   "journal": "The journal of obstetrics and gynaecology research",
+   "doi": "10.1111/j.1447-0756.2011.01802.x",
+   "pmcid": null,
+   "mesh": [
+    "Adolescent",
+    "Adult",
+    "Aromatherapy",
+    "Double-Blind Method",
+    "Dysmenorrhea",
+    "Female",
+    "Humans",
+    "Lavandula",
+    "Massage",
+    "Oils, Volatile",
+    "Origanum",
+    "Pain Measurement",
+    "Salvia",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5cced02ed6985f1d6db4508e4503a5a98cb2b829bc92f4dfdb47d4b7694b6b1a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2140570",
+   "title": "Biosynthesis of truncated O-glycans in the T cell line Jurkat. Localization of O-glycan initiation.",
+   "year": 1990,
+   "journal": "The Journal of biological chemistry",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Acetylgalactosamine",
+    "Antigens, CD",
+    "Carbohydrate Conformation",
+    "Carbohydrate Sequence",
+    "Electrophoresis, Polyacrylamide Gel",
+    "Galactosyltransferases",
+    "Glycoproteins",
+    "Glycosylation",
+    "Humans",
+    "Immunosorbent Techniques",
+    "Lectins",
+    "Leukemia, Lymphoid",
+    "Leukosialin",
+    "Molecular Sequence Data",
+    "Polysaccharides",
+    "Sialoglycoproteins",
+    "Tumor Cells, Cultured"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8565c2f68eeec1062f869fe37040cdb58a33685d6b50bdfb6e75f93445d9693a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "880947",
+   "title": "Investigation into the occurrence and structure of lectin receptors on human and bovine erythrocytes milk fat globule and lymphocyte plasma-membrane glycoproteins.",
+   "year": 1977,
+   "journal": "European journal of biochemistry",
+   "doi": "10.1111/j.1432-1033.1977.tb11580.x",
+   "pmcid": null,
+   "mesh": [
+    "ABO Blood-Group System",
+    "Animals",
+    "Cattle",
+    "Cell Membrane",
+    "Chemical Phenomena",
+    "Chemistry",
+    "Disaccharides",
+    "Erythrocyte Membrane",
+    "Erythrocytes",
+    "Glycoproteins",
+    "Hemagglutination Inhibition Tests",
+    "Humans",
+    "Lectins",
+    "Lymphocytes",
+    "MNSs Blood-Group System",
+    "Membrane Proteins",
+    "Milk",
+    "Monosaccharides",
+    "Receptors, Drug",
+    "Sialic Acids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "03476b9192fc97c427b4d6489cb02b5f43bd0163179baa157bfdc9a4a8cc502b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2526734",
+   "title": "O-glycosylation of leukosialin in K562 cells. Evidence for initiation and elongation in early Golgi compartments.",
+   "year": 1989,
+   "journal": "European journal of biochemistry",
+   "doi": "10.1111/j.1432-1033.1989.tb14904.x",
+   "pmcid": null,
+   "mesh": [
+    "Antigens, CD",
+    "Biological Transport",
+    "Cell Line",
+    "Chromatography, Gel",
+    "Electrophoresis, Polyacrylamide Gel",
+    "Endoplasmic Reticulum",
+    "Glycoside Hydrolases",
+    "Glycosylation",
+    "Golgi Apparatus",
+    "Humans",
+    "Lectins",
+    "Leukemia, Erythroblastic, Acute",
+    "Leukosialin",
+    "Microscopy, Electron",
+    "Monensin",
+    "Oligosaccharides",
+    "Polysaccharides",
+    "Sialoglycoproteins"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8392d359d683694c4be29147608c6119d935dde01f7814fd5868c6927cac3f25",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34062469",
+   "title": "In situ cultivation of aromatic plant species for the phytomanagement of an aged-trace element polluted soil: Plant biomass improvement options and techno-economic assessment of the essential oil production channel.",
+   "year": 2021,
+   "journal": "The Science of the total environment",
+   "doi": "10.1016/j.scitotenv.2021.147944",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Biomass",
+    "Oils, Volatile",
+    "Soil",
+    "Soil Pollutants",
+    "Trace Elements"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5508b6eee41725703e009abfbde68fde3789e03eccbe1c468f86001179f7430b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27853836",
+   "title": "Increasing the synthesis of bioactive abietane diterpenes in Salvia sclarea hairy roots by elicited transcriptional reprogramming.",
+   "year": 2017,
+   "journal": "Plant cell reports",
+   "doi": "10.1007/s00299-016-2076-x",
+   "pmcid": null,
+   "mesh": [
+    "Abietanes",
+    "Acetates",
+    "Amino Acids",
+    "Biomass",
+    "Cyclopentanes",
+    "Gene Expression Profiling",
+    "Gene Expression Regulation, Plant",
+    "Indenes",
+    "Naphthoquinones",
+    "Oxylipins",
+    "Plant Roots",
+    "RNA, Messenger",
+    "Salvia",
+    "Transcription, Genetic"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b7fa1c9ea522fd7653c1b498707a4cc6d0b2b25545fa42dee2f817ca78558c28",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32904171",
+   "title": "Two new species of the Peronospora belbahrii species complex, Pe. choii sp. nov. and Pe. salviae-pratensis sp. nov., and a new host for Pe. salviae-officinalis.",
+   "year": 2020,
+   "journal": "Fungal systematics and evolution",
+   "doi": "10.3114/fuse.2020.06.03",
+   "pmcid": "PMC7451775",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1b5419064d3dd30de8a2beba509bb3f5892886501123a0f181e09ac93924d389",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "25536164",
+   "title": "Temporal transcriptome changes induced by methyl jasmonate in Salvia sclarea.",
+   "year": 2015,
+   "journal": "Gene",
+   "doi": "10.1016/j.gene.2014.12.043",
+   "pmcid": null,
+   "mesh": [
+    "Acetates",
+    "Cyclopentanes",
+    "Gene Expression Regulation, Plant",
+    "Metabolic Networks and Pathways",
+    "Oxylipins",
+    "Plant Growth Regulators",
+    "Plant Leaves",
+    "Plant Roots",
+    "Salvia",
+    "Transcriptome"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "936976532cbad4de5ffa85b1a40475448fe95d9cf9d0dafdd64aced12c0b3179",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35051078",
+   "title": "Excess Zinc Supply Reduces Cadmium Uptake and Mitigates Cadmium Toxicity Effects on Chloroplast Structure, Oxidative Stress, and Photosystem II Photochemical Efficiency in Salvia sclarea Plants.",
+   "year": 2022,
+   "journal": "Toxics",
+   "doi": "10.3390/toxics10010036",
+   "pmcid": "PMC8778245",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fe975246639c763864e9754e4bd9650a80ab6e2ffadcc415a5fcba7b859cb9d3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33494177",
+   "title": "Tolerance Mechanisms of the Aromatic and Medicinal Plant Salvia sclarea L. to Excess Zinc.",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10020194",
+   "pmcid": "PMC7909794",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d7e2b382e508a7511440232fa21641e7ae236f05c9ef681ccfd24fffee89661a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36232535",
+   "title": "A Hormetic Spatiotemporal Photosystem II Response Mechanism of Salvia to Excess Zinc Exposure.",
+   "year": 2022,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms231911232",
+   "pmcid": "PMC9569477",
+   "mesh": [
+    "Chlorophyll",
+    "Humans",
+    "Micronutrients",
+    "Oxygen",
+    "Photosynthesis",
+    "Photosystem II Protein Complex",
+    "Plant Leaves",
+    "Salvia",
+    "Zinc"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eb084b07539feb95770308323db1f930d9ed712b4942eb9cf6a1caba4a4659e0",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "17703879",
+   "title": "Study of ambient ozone phytotoxicity in Ukraine and ozone protective effect of some antioxidants.",
+   "year": 2007,
+   "journal": "Journal of hazardous materials",
+   "doi": "10.1016/j.jhazmat.2007.06.112",
+   "pmcid": null,
+   "mesh": [
+    "Air Pollutants",
+    "Antioxidants",
+    "Environmental Exposure",
+    "Environmental Monitoring",
+    "Flavonoids",
+    "Light",
+    "Oxidants, Photochemical",
+    "Oxidative Stress",
+    "Ozone",
+    "Plant Leaves",
+    "Salvia",
+    "Time Factors",
+    "Trifolium",
+    "Ukraine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c889db24069b684fb14694201829b93b9334d4d6e176a5c7adff2d9be67dae55",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25039830",
+   "title": "In vitro antioxidant and antiproliferative activities of nine Salvia species.",
+   "year": 2014,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2014.939086",
+   "pmcid": null,
+   "mesh": [
+    "Antineoplastic Agents, Phytogenic",
+    "Antioxidants",
+    "Biphenyl Compounds",
+    "Drug Screening Assays, Antitumor",
+    "Flavonoids",
+    "In Vitro Techniques",
+    "Inhibitory Concentration 50",
+    "Phenols",
+    "Picrates",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "693759c081090a358e4aaadd8249cb1afec2dabc0e8a108f73ac91e707df0c87",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7631389",
+   "title": "Identification of variant glycophorins of human red cells by lectinoblotting: application to the Mi.III variant that is relatively frequent in the Taiwanese population.",
+   "year": 1995,
+   "journal": "Transfusion",
+   "doi": "10.1046/j.1537-2995.1995.35795357879.x",
+   "pmcid": null,
+   "mesh": [
+    "Erythrocyte Membrane",
+    "Glycophorins",
+    "Humans",
+    "Lectins",
+    "Taiwan"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "66c55d0342578469f9cea8fd4ba496b04b8ac7bfcd24ea108b0cdfa2a90fbb30",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20989390",
+   "title": "[Pharmacodynamic action of clary sage (Salvia sclarea L.) and officinal sage (Salvia officinalis L.) essences].",
+   "year": 1945,
+   "journal": "Comptes rendus des seances de la Societe de biologie et de ses filiales",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Blood",
+    "Erythroblastosis, Fetal",
+    "Female",
+    "Humans",
+    "Placenta",
+    "Pregnancy"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31547238",
+   "title": "Spatial Heterogeneity of Cadmium Effects on Salvia sclarea Leaves Revealed by Chlorophyll Fluorescence Imaging Analysis and Laser Ablation Inductively Coupled Plasma Mass Spectrometry.",
+   "year": 2019,
+   "journal": "Materials (Basel, Switzerland)",
+   "doi": "10.3390/ma12182953",
+   "pmcid": "PMC6766342",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b9a2dd0a4843798b1b58f2bc47d60b2f9cac6013a5c64d8c9c018b48c627d088",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "28093319",
+   "title": "Anti-inflammatory effect of the Salvia sclarea L. ethanolic extract on lipopolysaccharide-induced periodontitis in rats.",
+   "year": 2017,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2017.01.020",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Ethanol",
+    "Inflammation Mediators",
+    "Lipopolysaccharides",
+    "Male",
+    "Periodontitis",
+    "Plant Extracts",
+    "Random Allocation",
+    "Rats",
+    "Rats, Wistar",
+    "Salvia",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4c56d81dbbffc1a9921734999b9de31305b5e3e1cebeb8a4ecdc40257eeedfc1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30030474",
+   "title": "Coactivation of MEP-biosynthetic genes and accumulation of abietane diterpenes in Salvia sclarea by heterologous expression of WRKY and MYC2 transcription factors.",
+   "year": 2018,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-018-29389-4",
+   "pmcid": "PMC6054658",
+   "mesh": [
+    "Abietanes",
+    "Arabidopsis Proteins",
+    "Cell Line, Tumor",
+    "Erythritol",
+    "Gene Expression Regulation, Plant",
+    "Gene Transfer Techniques",
+    "Humans",
+    "Multiple Myeloma",
+    "Plant Proteins",
+    "Plant Roots",
+    "Salvia",
+    "Secondary Metabolism",
+    "Sugar Phosphates",
+    "Transcription Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "44c697e76c5aa76348607d1cb14748c8b9d27ebde986b9cab9b418c2271958c1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25382125",
+   "title": "Abietane diterpenoids from Salvia sclarea transformed roots as growth inhibitors of pathogenic Acanthamoeba spp.",
+   "year": 2015,
+   "journal": "Parasitology research",
+   "doi": "10.1007/s00436-014-4211-3",
+   "pmcid": null,
+   "mesh": [
+    "Abietanes",
+    "Acanthamoeba",
+    "Amebicides",
+    "Diterpenes",
+    "Naphthoquinones",
+    "Plant Extracts",
+    "Plant Roots",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1041bf1c7fe95d3cb8ec7d93f8ada4f7d9815b6c8879c6bf9bd61759641f6318",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35268670",
+   "title": "The Changes in Bioactive Compounds and Antioxidant Activity of Chia (Salvia hispanica L.) Herb under Storage and Different Drying Conditions: A Comparison with Other Species of Sage.",
+   "year": 2022,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules27051569",
+   "pmcid": "PMC8911904",
+   "mesh": [
+    "Antioxidants",
+    "Polyphenols",
+    "Salvia",
+    "Salvia hispanica",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "af396ddd123deacad0a52728b53219b4bc91aa3498a2eca1b296cd9eb266d3d1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "2553391",
+   "title": "[Study of the effect of sclareol glycol diterpene on the 3',5'-AMP level].",
+   "year": 1989,
+   "journal": "Eksperimentalna meditsina i morfologiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Brain",
+    "Cells, Cultured",
+    "Cyclic AMP",
+    "Diterpenes",
+    "Microsomes, Liver",
+    "Pituitary Gland, Anterior",
+    "Rats"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ad92397840b004c8f6f869141765562bc7cf0d9634f4ac044d7a7a440a596c0c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16395892",
+   "title": "[Analysis of essential oil components by GC/FTIR and GC/MS].",
+   "year": 2005,
+   "journal": "Guang pu xue yu guang pu fen xi = Guang pu",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Gas",
+    "Gas Chromatography-Mass Spectrometry",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Salvia",
+    "Spectroscopy, Fourier Transform Infrared"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9794ad4fa1856475015fd73177a8ba4f43631c252b6274d425284da34279a886",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36145808",
+   "title": "Combined Impact of Excess Zinc and Cadmium on Elemental Uptake, Leaf Anatomy and Pigments, Antioxidant Capacity, and Function of Photosynthetic Apparatus in Clary Sage (Salvia sclarea L.).",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11182407",
+   "pmcid": "PMC9500708",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "de4cb512e603ad20bc259ebecc70d94a621de434bd5b415871d263a297c7d791",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42855945",
+   "title": "Chemical Composition and Multi-Target Bioactivity of Salvia sclarea L. Essential Oil From the Algerian Edough Massif: Antimicrobial, Enzyme-Inhibitory, and Molecular Docking Studies.",
+   "year": 2026,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.71811",
+   "pmcid": "PMC13653116",
+   "mesh": [
+    "Oils, Volatile",
+    "Molecular Docking Simulation",
+    "Salvia",
+    "Microbial Sensitivity Tests",
+    "Acetylcholinesterase",
+    "Algeria",
+    "Antioxidants",
+    "Anti-Bacterial Agents",
+    "Cholinesterase Inhibitors",
+    "Humans",
+    "Structure-Activity Relationship",
+    "Anti-Infective Agents",
+    "Cyclooxygenase 2",
+    "Plant Components, Aerial"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a42956bf382af8312929f0dc640443f1a3556fd238f25279ad118d5b3406a3fd",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "42810230",
+   "title": "Integrative transcriptome network analysis identifies SsMYB1 as a dual R2R3-MYB candidate activator of sclareol and flavonoid biosynthesis in Salvia sclarea.",
+   "year": 2026,
+   "journal": "Plant physiology and biochemistry : PPB",
+   "doi": "10.1016/j.plaphy.2026.111768",
+   "pmcid": null,
+   "mesh": [
+    "Salvia",
+    "Flavonoids",
+    "Diterpenes",
+    "Plant Proteins",
+    "Transcription Factors",
+    "Gene Expression Regulation, Plant",
+    "Gene Expression Profiling",
+    "Promoter Regions, Genetic",
+    "Gene Regulatory Networks",
+    "Phylogeny"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0f4066fae7278ef1caf262c535900d39758f79351844e622465a807d0ef4c324",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20521556",
+   "title": "Essential oil content and composition, nutrient and mycorrhizal status of some aromatic and medicinal plants of northern Greece.",
+   "year": 2010,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Gas Chromatography-Mass Spectrometry",
+    "Greece",
+    "Mycorrhizae",
+    "Oils, Volatile",
+    "Plant Extracts",
+    "Plant Roots",
+    "Plants",
+    "Plants, Medicinal",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d0043a07ed8b1121587d268179eef0e2632f9509ba8e02a769b10b11b5527ae8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25996359",
+   "title": "Application of Heavy Metal Rich Tannery Sludge on Sustainable Growth, Yield and Metal Accumulation by Clarysage (Salvia sclarea L.).",
+   "year": 2015,
+   "journal": "International journal of phytoremediation",
+   "doi": "10.1080/15226514.2015.1045128",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Environmental Restoration and Remediation",
+    "India",
+    "Metals, Heavy",
+    "Plant Oils",
+    "Salvia",
+    "Seasons",
+    "Sewage",
+    "Soil Pollutants",
+    "Tanning"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ac985edd943a92cc5420a216ce47c8155bff7a1e8db4c020dadd81b60f25cd58",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16676297",
+   "title": "In vitro antiproliferative effect of six Salvia species on human tumor cell lines.",
+   "year": 2006,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.1911",
+   "pmcid": null,
+   "mesh": [
+    "Antineoplastic Agents",
+    "Cell Line, Tumor",
+    "Cell Proliferation",
+    "Cell Survival",
+    "Dose-Response Relationship, Drug",
+    "Drug Screening Assays, Antitumor",
+    "Humans",
+    "Inhibitory Concentration 50",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "87b96ee733df0e9a9c8eca6571ba034c6f3b090da06855ae84e50ac95bee1a29",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18811013",
+   "title": "Diterpenoid production in hairy root culture of Salvia sclarea L.",
+   "year": 2008,
+   "journal": "Zeitschrift fur Naturforschung. C, Journal of biosciences",
+   "doi": "10.1515/znc-2008-7-827",
+   "pmcid": null,
+   "mesh": [
+    "Culture Techniques",
+    "Diterpenes",
+    "Plant Roots",
+    "Rhizobium",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "11ba7e041c6771c5b70ea0863c450229be958d6384c6e869cb902d859970ea75",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32625231",
+   "title": "Boosting the Synthesis of Pharmaceutically Active Abietane Diterpenes in S. sclarea Hairy Roots by Engineering the GGPPS and CPPS Genes.",
+   "year": 2020,
+   "journal": "Frontiers in plant science",
+   "doi": "10.3389/fpls.2020.00924",
+   "pmcid": "PMC7315395",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "392f103842dd187c099fc9292bcec0286b4c7c1ca559b41ed95818a828bfeba7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "11409330",
+   "title": "Chromatographic (GC-MS, HPLC) and virological evaluations of Salvia sclarea infected by BBWV-I.",
+   "year": 2001,
+   "journal": "Farmaco (Societa chimica italiana : 1989)",
+   "doi": "10.1016/s0014-827x(01)01038-2",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, High Pressure Liquid",
+    "Fabavirus",
+    "Gas Chromatography-Mass Spectrometry",
+    "Italy",
+    "Mass Spectrometry",
+    "Oils, Volatile",
+    "Plant Diseases",
+    "Plant Viruses",
+    "Salvia officinalis"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "471f92303e8016af0073b585814d6651de9260c9a03a0a7538222f28703e9175",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21268866",
+   "title": "[The relationship between cytokines and the amount of nitrogen in the wintering organs of herbaceous plants].",
+   "year": 2010,
+   "journal": "Izvestiia Akademii nauk. Seriia biologicheskaia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Cytokinins",
+    "Moscow",
+    "Nitrogen",
+    "Potentilla",
+    "Salvia",
+    "Seasons"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7186cef3076cf2e3041f271d4c6f2246f71df20e80a6910178551cd9f4913c9f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "6171313",
+   "title": "Immunochemical studies on Tn erythrocyte glycoprotein.",
+   "year": 1981,
+   "journal": "Blood",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "ABO Blood-Group System",
+    "Agglutination",
+    "Animals",
+    "Blood Group Antigens",
+    "Chemical Phenomena",
+    "Chemistry",
+    "Electrophoresis, Polyacrylamide Gel",
+    "Epitopes",
+    "Erythrocytes",
+    "Glycoproteins",
+    "Humans",
+    "Immune Sera",
+    "Influenza A virus",
+    "Lectins",
+    "MNSs Blood-Group System",
+    "Rabbits"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2dcc13598e6b604d689b07ae84f5bfd820208c9371c09935346a86e276105ec4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30781268",
+   "title": "Occurrence of Fusarium Wilt Caused by Fusarium oxysporum on Common Sage in Argentina.",
+   "year": 2006,
+   "journal": "Plant disease",
+   "doi": "10.1094/PD-90-0833A",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ad02077a538b2c1585afeca2a69ff067d82d4b7bf3e419b6099db50abd6ced75",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17190643",
+   "title": "Antimicrobial activity of diterpenoids from hairy roots of Salvia sclarea L.: salvipisone as a potential anti-biofilm agent active against antibiotic resistant Staphylococci.",
+   "year": 2007,
+   "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+   "doi": "10.1016/j.phymed.2005.10.008",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Diterpenes",
+    "Gram-Negative Bacteria",
+    "Gram-Positive Bacteria",
+    "Humans",
+    "Methicillin Resistance",
+    "Microbial Sensitivity Tests",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plant Roots",
+    "Salvia",
+    "Staphylococcus aureus"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "77d68d2aaec29c036882a015d1795484af823e4010d308a912258bde082fd72f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42844181",
+   "title": "Comparative Anti-Inflammatory Evaluation of Lamiaceae Essential Oils and Mechanistic Insights into Mentha haplocalyx Essential Oil via Network Pharmacology and Molecular Dynamics.",
+   "year": 2026,
+   "journal": "Journal of oleo science",
+   "doi": "10.5650/jos.ess25271",
+   "pmcid": null,
+   "mesh": [
+    "Oils, Volatile",
+    "Animals",
+    "Mice",
+    "Mentha",
+    "Anti-Inflammatory Agents",
+    "RAW 264.7 Cells",
+    "Network Pharmacology",
+    "Molecular Dynamics Simulation",
+    "Nitric Oxide",
+    "Lipopolysaccharides",
+    "Inflammation Mediators",
+    "Macrophages",
+    "Lamiaceae",
+    "Gas Chromatography-Mass Spectrometry",
+    "Molecular Docking Simulation",
+    "Nitric Oxide Synthase Type II"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Comparative Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "21e89b2507b50d52d5053635aa35c77f90e2fa2588b942420df5a68ed9ddddb9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21151550",
+   "title": "Pneumococcal Induced T-activation with Resultant Thrombotic Microangiopathy.",
+   "year": 2010,
+   "journal": "Clinical medicine insights. Pathology",
+   "doi": "10.4137/cpath.s670",
+   "pmcid": "PMC2999997",
+   "mesh": [],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6415ac1267b841b968da1784690675f3af036e8d4a06bd19aee5f7e5b0b84ec1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "3771523",
+   "title": "Isolation and characterization of an N-acetylgalactosamine specific lectin from Salvia sclarea seeds.",
+   "year": 1986,
+   "journal": "The Journal of biological chemistry",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Acetylgalactosamine",
+    "Amino Acids",
+    "Calcium",
+    "Carbohydrate Metabolism",
+    "Carbohydrate Sequence",
+    "Galactosamine",
+    "Hemagglutination",
+    "Isoelectric Point",
+    "Kinetics",
+    "Lectins",
+    "Magnesium",
+    "Manganese",
+    "Molecular Weight",
+    "Plant Lectins",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b305114469799ecf41ee6e6fcdfc15edd790b9aeb16040159f89a5e7964b7b2b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25846244",
+   "title": "The inhibition the Tet(K) efflux pump of tetracycline resistant Staphylococcus epidermidis by essential oils from three Salvia species.",
+   "year": 2015,
+   "journal": "Letters in applied microbiology",
+   "doi": "10.1111/lam.12424",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Bacterial Proteins",
+    "Biological Transport",
+    "Membrane Proteins",
+    "Membrane Transport Proteins",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Salvia",
+    "Staphylococcus epidermidis",
+    "Tetracycline",
+    "Tetracycline Resistance"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "350ab6d9e28b7c76a2ea1c9f1e8c68396c27b05b2a40148a729610640775c2a4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23133579",
+   "title": "Extracellular localization of the diterpene sclareol in clary sage (Salvia sclarea L., Lamiaceae).",
+   "year": 2012,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0048253",
+   "pmcid": "PMC3484996",
+   "mesh": [
+    "Chemistry, Organic",
+    "Crystallization",
+    "Diterpenes",
+    "Gas Chromatography-Mass Spectrometry",
+    "Gene Expression Regulation, Plant",
+    "Ions",
+    "Mass Spectrometry",
+    "Microscopy, Electron, Scanning",
+    "Oils",
+    "Plant Extracts",
+    "Plant Proteins",
+    "Salvia",
+    "Temperature",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5b32081bb99eeb73128990fdeefd9a03db845d5447a407ad2a0b21c9213711cd",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25629066",
+   "title": "Evaluation of Repellency Effect of Essential Oils of Satureja khuzestanica (Carvacrol), Myrtus communis (Myrtle), Lavendula officinalis and Salvia sclarea using Standard WHO Repellency Tests.",
+   "year": 2014,
+   "journal": "Journal of arthropod-borne diseases",
+   "doi": null,
+   "pmcid": "PMC4289512",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "36ae16e7f1f73b71e993e51ee4c9e62cd94edd53e36fb36581225c7af9b7aa35",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "10630121",
+   "title": "Chemical composition and antimicrobial action of the essential oils of Salvia desoleana and S. sclarea.",
+   "year": 1999,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-960857",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Escherichia coli",
+    "Gas Chromatography-Mass Spectrometry",
+    "Lamiaceae",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Staphylococcus aureus",
+    "Staphylococcus epidermidis"
+   ],
+   "publicationTypes": [
+    "Letter"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "212f919dcc56b2fdb6dfc4fa415a9ba4f8a8a3c33f2bc695e3ba150549d688c9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36079625",
+   "title": "Integration of Repeatomic and Cytogenetic Data on Satellite DNA for the Genome Analysis in the Genus Salvia (Lamiaceae).",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11172244",
+   "pmcid": "PMC9460151",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "21f60ec150449225842d5dac5f92ffcef271e471e3df58a49a23420320087939",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "6998652",
+   "title": "The role of lectins in blood group serology.",
+   "year": 1980,
+   "journal": "Critical reviews in clinical laboratory sciences",
+   "doi": "10.3109/10408368009108729",
+   "pmcid": null,
+   "mesh": [
+    "Blood Grouping and Crossmatching",
+    "Humans",
+    "Indicators and Reagents",
+    "Lectins",
+    "Receptors, Antigen"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "04892b4eeb6e224adadbc159b6870f5b8c6fe6d71f79f37679a420904e38b62e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17416571",
+   "title": "Antibacterial and cytotoxic activity of the acetone extract of the flowers of Salvia sclarea and some natural products.",
+   "year": 2007,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Acetone",
+    "Anti-Bacterial Agents",
+    "Antineoplastic Agents",
+    "Cell Line, Tumor",
+    "Cell Survival",
+    "Diterpenes",
+    "Dose-Response Relationship, Drug",
+    "Enterococcus faecalis",
+    "Escherichia coli",
+    "Flowers",
+    "Furans",
+    "Humans",
+    "Inhibitory Concentration 50",
+    "Liver Neoplasms",
+    "Microbial Sensitivity Tests",
+    "Naphthalenes",
+    "Plant Extracts",
+    "Pseudomonas aeruginosa",
+    "Salvia",
+    "Solvents",
+    "Staphylococcus aureus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "081884c3348dbcee492d35f83ecf73060194f67f5f127dfccf92e2a9c185b9ce",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22834731",
+   "title": "Discovery and functional characterization of two diterpene synthases for sclareol biosynthesis in Salvia sclarea (L.) and their relevance for perfume manufacture.",
+   "year": 2012,
+   "journal": "BMC plant biology",
+   "doi": "10.1186/1471-2229-12-119",
+   "pmcid": "PMC3520730",
+   "mesh": [
+    "Alkyl and Aryl Transferases",
+    "Amino Acid Sequence",
+    "Chromatography, Liquid",
+    "DNA, Complementary",
+    "Diterpenes",
+    "Gas Chromatography-Mass Spectrometry",
+    "Gene Expression Regulation, Plant",
+    "Genetic Engineering",
+    "Molecular Sequence Data",
+    "Perfume",
+    "Phylogeny",
+    "Protein Transport",
+    "Reference Standards",
+    "Saccharomyces cerevisiae",
+    "Salvia",
+    "Sequence Alignment",
+    "Subcellular Fractions",
+    "Transcriptome"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8f44fb5910e148d290488ee6f69d25870d92845548d38dfd8173ccb3cb50fa98",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29034195",
+   "title": "Protective effect of hydro-alcoholic extract of Salvia haematodes Wall root on cognitive functions in scopolamine-induced amnesia in rats.",
+   "year": 2017,
+   "journal": "Journal of traditional and complementary medicine",
+   "doi": "10.1016/j.jtcme.2016.12.008",
+   "pmcid": "PMC5634740",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6eeb04e48f602325035f9d0b2bc758a6f43d299f89421f2675f521570cf4ab14",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "19384275",
+   "title": "Chemical composition and biological activities of essential oil from Salvia sclarea plants regenerated in vitro.",
+   "year": 2009,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules14041438",
+   "pmcid": "PMC6254371",
+   "mesh": [
+    "Cell Line, Tumor",
+    "Cell Proliferation",
+    "Humans",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Regeneration",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ae8e3123a791cbf1bf9921a0be6fa2e22d5e0d880a6e4780ec1e7ae5bc33d321",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33421673",
+   "title": "Cadmium toxicity in Salvia sclarea L.: An integrative response of element uptake, oxidative stress markers, leaf structure and photosynthesis.",
+   "year": 2021,
+   "journal": "Ecotoxicology and environmental safety",
+   "doi": "10.1016/j.ecoenv.2020.111851",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Cadmium",
+    "Chlorophyll",
+    "Electron Transport",
+    "Oxidative Stress",
+    "Photosynthesis",
+    "Photosystem I Protein Complex",
+    "Photosystem II Protein Complex",
+    "Plant Leaves",
+    "Salvia",
+    "Soil",
+    "Soil Pollutants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ffb4b75032d7b70601294ec134e0a5d71ce447193cc074624931bbf5a4f66a46",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12405762",
+   "title": "Composition and antifungal activity on soil-borne pathogens of the essential oil of Salvia sclarea from Greece.",
+   "year": 2002,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf020422n",
+   "pmcid": null,
+   "mesh": [
+    "Acetates",
+    "Acyclic Monoterpenes",
+    "Antifungal Agents",
+    "Ascomycota",
+    "Cyclohexane Monoterpenes",
+    "Cyclohexenes",
+    "Fusarium",
+    "Greece",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Salvia",
+    "Soil Microbiology",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "12797f3275b78e7974b6b500c11acc98534b9cd1d36273d841fb39e02831dabd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30823174",
+   "title": "Identification of an Isolate of Potato virus Y-Tuber Necrotic Strain on Clary Sage (Salvia sclarea).",
+   "year": 2001,
+   "journal": "Plant disease",
+   "doi": "10.1094/PDIS.2001.85.11.1207C",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0393d03c4624503ca92082932fe2412f4a92a63cbcae225f5e2757c32ec86e8a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42798971",
+   "title": "Sclareol Production Driven by Advanced Synthetic Biology Strategies.",
+   "year": 2026,
+   "journal": "ACS omega",
+   "doi": "10.1021/acsomega.6c07601",
+   "pmcid": "PMC13613412",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7135a5919e2328cf08f8bc3799ce5f8f35fd551b98f032901d5a6fa17795a7be",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "38659454",
+   "title": "Effect of Salvia sclarea L. extract on growth performance, antioxidant capacity, and immune function in lambs.",
+   "year": 2024,
+   "journal": "Frontiers in veterinary science",
+   "doi": "10.3389/fvets.2024.1367843",
+   "pmcid": "PMC11039921",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a9043324a379641e6b84e2591b6bfebe648c43c7081cff73c12e50f72ecdc58b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "28025661",
+   "title": "Erratum to: Increasing the synthesis of bioactive abietane diterpenes in Salvia sclarea hairy roots by elicited transcriptional reprogramming.",
+   "year": 2017,
+   "journal": "Plant cell reports",
+   "doi": "10.1007/s00299-016-2087-7",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Published Erratum"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29772456",
+   "title": "New insights into the in vitro biological effects, in silico docking and chemical profile of clary sage - Salvia sclarea L.",
+   "year": 2018,
+   "journal": "Computational biology and chemistry",
+   "doi": "10.1016/j.compbiolchem.2018.05.005",
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholinesterase",
+    "Antioxidants",
+    "Butyrylcholinesterase",
+    "Chromatography, High Pressure Liquid",
+    "Dose-Response Relationship, Drug",
+    "Enzyme Inhibitors",
+    "Humans",
+    "Ligands",
+    "Molecular Docking Simulation",
+    "Monophenol Monooxygenase",
+    "Phytochemicals",
+    "Plant Extracts",
+    "Salvia",
+    "Structure-Activity Relationship",
+    "alpha-Amylases",
+    "alpha-Glucosidases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f8ae80d2ee68563703576bc8a0e01a16c38c7a6e4a94d0504d9fa7e23801f804",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42715920",
+   "title": "Bioactivity-guided isolation and identification of Sclareol as a potent anthelmintic compound from Salvia sclarea L against Haemonchus contortus.",
+   "year": 2026,
+   "journal": "Veterinary parasitology",
+   "doi": "10.1016/j.vetpar.2026.110919",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anthelmintics",
+    "Haemonchus",
+    "Salvia",
+    "Plant Extracts",
+    "Diterpenes",
+    "Haemonchiasis"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "14615f8367f4c2d3092f2b4e3ff6d416b4cde4738adc6282dde4779e629d6442",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22959531",
+   "title": "A diterpene synthase from the clary sage Salvia sclarea catalyzes the cyclization of geranylgeranyl diphosphate to (8R)-hydroxy-copalyl diphosphate.",
+   "year": 2013,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/j.phytochem.2012.07.019",
+   "pmcid": null,
+   "mesh": [
+    "Alkyl and Aryl Transferases",
+    "Biocatalysis",
+    "Cyclization",
+    "Molecular Conformation",
+    "Molecular Sequence Data",
+    "Organophosphates",
+    "Polyisoprenyl Phosphates",
+    "Salvia",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "524cfcc45ea91cec3ee790558dc5f9d69321f16d4174d347cf47ffeec42d540b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21437408",
+   "title": "Morphological characterisation and agronomical parameters of different species of Salvia sp. (Lamiaceae).",
+   "year": 2011,
+   "journal": "Brazilian journal of biology = Revista brasleira de biologia",
+   "doi": "10.1590/s1519-69842011000100018",
+   "pmcid": null,
+   "mesh": [
+    "Biomass",
+    "Brazil",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Salvia",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "62022406df3960323ab5d95add3cafafbb05a719fb50aff49a49a23288d4bdd8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22417543",
+   "title": "Effect of γ-irradiation on bioactivity, fatty acid compositions and volatile compounds of clary sage seed (Salvia sclarea L.).",
+   "year": 2011,
+   "journal": "Journal of food science",
+   "doi": "10.1111/j.1750-3841.2011.02331.x",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Bicyclic Monoterpenes",
+    "Bridged Bicyclo Compounds",
+    "Cyclohexenes",
+    "Dose-Response Relationship, Radiation",
+    "Fatty Acids",
+    "Fatty Acids, Omega-3",
+    "Food Irradiation",
+    "Gamma Rays",
+    "Limonene",
+    "Monoterpenes",
+    "Salvia",
+    "Seeds",
+    "Terpenes",
+    "Turkey",
+    "Volatile Organic Compounds",
+    "alpha-Linolenic Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b9126eac0450386518482a377cbea0fd3c809cb415948a528a65b08ccda066c1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16989306",
+   "title": "Cytotoxic and proapoptotic activity of diterpenoids from in vitro cultivated Salvia sclarea roots. Studies on the leukemia cell lines.",
+   "year": 2006,
+   "journal": "Zeitschrift fur Naturforschung. C, Journal of biosciences",
+   "doi": "10.1515/znc-2006-7-804",
+   "pmcid": null,
+   "mesh": [
+    "Apoptosis",
+    "Caspase 3",
+    "Caspases",
+    "Cell Line, Tumor",
+    "Cell Survival",
+    "Diterpenes",
+    "Doxorubicin",
+    "Drug Resistance, Multiple",
+    "HL-60 Cells",
+    "Humans",
+    "Kinetics",
+    "Leukemia",
+    "Molecular Structure",
+    "Plant Roots",
+    "Plant Shoots",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "204ffe3ac6fb7a6191366acf4f4ed27f93e0846f3abd991cd814516d973b1fcb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "4850787",
+   "title": "Biosynthesis of volatile oils in Salvia sclarea in the course of germination. I.",
+   "year": 1974,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-0028-1097956",
+   "pmcid": null,
+   "mesh": [
+    "Carbon Radioisotopes",
+    "Oils, Volatile",
+    "Plants, Medicinal",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26880926",
+   "title": "Modulation of mecA Gene Expression by Essential Oil from Salvia sclarea and Synergism with Oxacillin in Methicillin Resistant Staphylococcus epidermidis Carrying Different Types of Staphylococcal Chromosomal Cassette mec.",
+   "year": 2016,
+   "journal": "International journal of microbiology",
+   "doi": "10.1155/2016/6475837",
+   "pmcid": "PMC4736799",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f25d7e92bf3959334b67e7a6638feb6f4eeb7f9c1597e4938a1f572e973c49b8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "15864748",
+   "title": "Lectinochemical studies on the glyco-recognition factors of a Tn (GalNAcalpha1-->Ser/Thr) specific lectin isolated from the seeds of Salvia sclarea.",
+   "year": 2005,
+   "journal": "Journal of biomedical science",
+   "doi": "10.1007/s11373-004-8180-x",
+   "pmcid": null,
+   "mesh": [
+    "Antigens, Tumor-Associated, Carbohydrate",
+    "Carbohydrate Sequence",
+    "Glycoproteins",
+    "Humans",
+    "Lectins",
+    "Molecular Sequence Data",
+    "Oligosaccharides",
+    "Plant Extracts",
+    "Protein Binding",
+    "Salvia",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5590cfa75fcb47f1c4aee7d32af7cab32e923be4704f7d86e2781b22a977d526",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22264035",
+   "title": "Amphilectane diterpenes from Salvia sclarea: biosynthetic considerations.",
+   "year": 2012,
+   "journal": "Journal of natural products",
+   "doi": "10.1021/np2004177",
+   "pmcid": null,
+   "mesh": [
+    "Biphenyl Compounds",
+    "Diterpenes",
+    "France",
+    "Molecular Structure",
+    "Nuclear Magnetic Resonance, Biomolecular",
+    "Picrates",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e3f84e88078e195903e08929907809bfc85cb30ec08c025fb0e2c462a146d8ed",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30097677",
+   "title": "Correction to: Increasing the synthesis of bioactive abietane diterpenes in Salvia sclarea hairy roots by elicited transcriptional reprogramming.",
+   "year": 2018,
+   "journal": "Plant cell reports",
+   "doi": "10.1007/s00299-018-2330-5",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Published Erratum"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "920923c068c5dad4fce66eb5c09614dfed121424e7ffa2f42e81a73d8be93f3e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "3039740",
+   "title": "[Effect of Salvia sclarea essential oil on indices of the hematopoietic, immune and enzyme systems].",
+   "year": 1987,
+   "journal": "Vrachebnoe delo",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Cholinesterases",
+    "Hematopoiesis",
+    "Immune System",
+    "Male",
+    "Oils, Volatile",
+    "Phosphoric Monoester Hydrolases",
+    "Plant Oils",
+    "Rats",
+    "Rats, Inbred Strains"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41977699",
+   "title": "Comparative Phytochemical Characterization, Biological Activities and Safety Assessment of Salvia pratensis L. and Salvia sclarea L.",
+   "year": 2026,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants15071038",
+   "pmcid": "PMC13075098",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f0fe7c9ba691eb3a807f1f5a92db2d3c84173ea55e502ac973a1f3ef5003f8a8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42123793",
+   "title": "Comparison of Selected Pro-Health Biologically Active Chemical Compounds in Salviae herba from Selected Species.",
+   "year": 2026,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules31091425",
+   "pmcid": "PMC13165463",
+   "mesh": [
+    "Phytochemicals",
+    "Plant Extracts",
+    "Salvia",
+    "Amino Acids",
+    "Flavonoids",
+    "Antioxidants",
+    "Humans",
+    "Phenols"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Comparative Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "91c68971909ff641f4241483a4c7e1f6116d9b79a2e3ef172a3a408ca64d7adb",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42326700",
+   "title": "Effectiveness of Natural Deep Eutectic Solvents (NADES) in Extracting Bioactive Compounds from Salvia sclarea: HPLC-DAD Analysis, Antioxidant and Enzymes Inhibition Potential Evaluation.",
+   "year": 2026,
+   "journal": "ACS omega",
+   "doi": "10.1021/acsomega.5c11757",
+   "pmcid": "PMC13280919",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "180cad106d6594171dbc5d4ce65111b298a7678595517123823aade2d9eb39e1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "33917630",
+   "title": "Laurus nobilis, Salvia sclarea and Salvia officinalis Essential Oils and Hydrolates: Evaluation of Liquid and Vapor Phase Chemical Composition and Biological Activities.",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10040707",
+   "pmcid": "PMC8067454",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "87987ab719ad96569dcb7582db13de14f3cdb79f82d4039c1cee678e26260912",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "19840835",
+   "title": "One-step identification of conserved miRNAs, their targets, potential transcription factors and effector genes of complete secondary metabolism pathways after 454 pyrosequencing of calyx cDNAs from the Labiate Salvia sclarea L.",
+   "year": 2010,
+   "journal": "Gene",
+   "doi": "10.1016/j.gene.2009.10.004",
+   "pmcid": null,
+   "mesh": [
+    "Base Sequence",
+    "Conserved Sequence",
+    "DNA, Complementary",
+    "DNA, Plant",
+    "Expressed Sequence Tags",
+    "Flowers",
+    "Gene Library",
+    "Metabolic Networks and Pathways",
+    "MicroRNAs",
+    "Salvia",
+    "Sequence Analysis, DNA",
+    "Transcription Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "36d986915f99a1331b0b24fc79cd6d5e83e9d3b8137dcd7f0788aead14cfa3d3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "5525705",
+   "title": "Experimental studies on certain effects of the essential oil of Salvia sclarea L. on the central nervous system.",
+   "year": 1970,
+   "journal": "Izvestiia na Instituta po fiziologiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anticonvulsants",
+    "Azoles",
+    "Mice",
+    "Oils, Volatile",
+    "Rats",
+    "Seizures",
+    "Strychnine"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23444964",
+   "title": "Chronic food administration of Salvia sclarea oil reduces animals' anxious and dominant behavior.",
+   "year": 2013,
+   "journal": "Journal of medicinal food",
+   "doi": "10.1089/jmf.2012.0137",
+   "pmcid": null,
+   "mesh": [
+    "Affect",
+    "Animals",
+    "Anti-Anxiety Agents",
+    "Anxiety",
+    "Corticosterone",
+    "Dietary Supplements",
+    "Fatty Acids, Omega-3",
+    "Female",
+    "Mice",
+    "Mice, Inbred Strains",
+    "Phytotherapy",
+    "Plant Oils",
+    "Pregnancy",
+    "Prenatal Exposure Delayed Effects",
+    "Salvia",
+    "Sunflower Oil"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eb52deb87f973a25823266d9aeffdbe8284d1faf30778d852a1a9b576513018f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18668716",
+   "title": "[Physiological and biochemical aspects of clary (Salvia sclarea L) overwintering in central Russia].",
+   "year": 2008,
+   "journal": "Izvestiia Akademii nauk. Seriia biologicheskaia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Abscisic Acid",
+    "Acclimatization",
+    "Carbohydrate Metabolism",
+    "Cytokinins",
+    "Minerals",
+    "Plant Components, Aerial",
+    "Plant Roots",
+    "Russia",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d78d58049734cd464b7fe4720108bdebc746297f41e5349c86b1fb9ad7c43124",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24006802",
+   "title": "Screening of some essential oils against Trichosporon species.",
+   "year": 2013,
+   "journal": "Journal of environmental biology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Fungicides, Industrial",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Plants",
+    "Species Specificity",
+    "Trichosporon"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "611e9362acf91315a2f2cf6e0b1351fba3a4b48c52cb061208eba0caa282569f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "982580",
+   "title": "[Use of cytoplasmic male sterility in selection of nutmeg sage (Salvia sclarea L.) and true lavandula (Lavandula officinalis ch)].",
+   "year": 1976,
+   "journal": "TSitologiia i genetika",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Genotype",
+    "Hybridization, Genetic",
+    "Phenotype",
+    "Plant Diseases",
+    "Selection, Genetic"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2868639",
+   "title": "Pharmacological studies on Salvia haematodes Wall.",
+   "year": 1985,
+   "journal": "Acta tropica",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Blood Pressure",
+    "Body Temperature",
+    "Dogs",
+    "Female",
+    "Guinea Pigs",
+    "Heart Rate",
+    "In Vitro Techniques",
+    "India",
+    "Male",
+    "Mice",
+    "Motor Activity",
+    "Muscle Contraction",
+    "Myocardial Contraction",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Ranidae",
+    "Sleep"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c6eb387eb0fe96c185bc648f003f3ddf4dc16ffb0a17ffdb6ba8b812fa707077",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28510825",
+   "title": "Antimicrobial activity and mechanisms of Salvia sclarea essential oil.",
+   "year": 2015,
+   "journal": "Botanical studies",
+   "doi": "10.1186/s40529-015-0096-4",
+   "pmcid": "PMC5432889",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6246635de4cf67a2ec24938fca69c433d099569440b109ab3638ebb378f53cb8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42197548",
+   "title": "Effects of Dietary Salvia sclarea L. Extract Supplementation on the Gut Microbiota, and Serum Metabolome in Lambs.",
+   "year": 2026,
+   "journal": "Microorganisms",
+   "doi": "10.3390/microorganisms14051163",
+   "pmcid": "PMC13210186",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f27f22757955f8dd2aa5fbdb7cd2e165a46d3e3e1e96b191d391ea3bd07462ff",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "2087987",
+   "title": "[Quality control of essential oil of muscat sage (Salvia sclarea) during laboratory and industrial preparation. IV. Causes of color changes].",
+   "year": 1990,
+   "journal": "Acta pharmaceutica Hungarica",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Color",
+    "Industry",
+    "Laboratories",
+    "Oils, Volatile",
+    "Plants",
+    "Quality Control"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "04f3aa571730123b6fbb70e3cda9dfc8cd29155ea8e2227fe87feeb6af1862b3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28480423",
+   "title": "GEOMETRIC, VOLUMETRIC, COLOUR AND FRICTIONAL PROPERTIES OF SELECTED SALVIA SPECIES OF TURKEY.",
+   "year": 2017,
+   "journal": "African journal of traditional, complementary, and alternative medicines : AJTCAM",
+   "doi": "10.21010/ajtcam.v14i3.13",
+   "pmcid": "PMC5412217",
+   "mesh": [
+    "Color",
+    "Friction",
+    "Salvia",
+    "Seeds",
+    "Surface Properties",
+    "Turkey"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d18989a2395313a7797cdef9b0a30c1933bfda83f928f1ee43916db2e777f759",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24929006",
+   "title": "Essential oil composition, antioxidant and antifungal activities of Salvia sclarea L. from Munzur Valley in Tunceli, Turkey.",
+   "year": 2014,
+   "journal": "Cellular and molecular biology (Noisy-le-Grand, France)",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Antioxidants",
+    "Colletotrichum",
+    "Gas Chromatography-Mass Spectrometry",
+    "Oils, Volatile",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Saccharomycetales",
+    "Salvia",
+    "Turkey"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "876bc86b1b8e2a190481b202d19fe397c503167b7c69b6cac7bf82e5b1dbb8ff",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13728755",
+   "title": "Isolation of a beta-sitosterol complex from Salvia sclarea.",
+   "year": 1961,
+   "journal": "Journal of pharmaceutical sciences",
+   "doi": "10.1002/jps.2600500613",
+   "pmcid": null,
+   "mesh": [
+    "Plants",
+    "Salvia",
+    "Sitosterols",
+    "Sterols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  }
+ ]
+}

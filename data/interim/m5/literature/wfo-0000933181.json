@@ -1,0 +1,198 @@
+{
+ "species": "Ajuga chamaepitys",
+ "wfoId": "wfo-0000933181",
+ "names": [
+  "Ajuga chamaepitys",
+  "Bugula arvensis",
+  "Bugula chamaepithys",
+  "Bulga chamaepitys",
+  "Chamaepitys vulgaris",
+  "Teucrium chamaepitys"
+ ],
+ "term": "\"Ajuga chamaepitys\"[tiab] OR \"Bugula arvensis\"[tiab] OR \"Bugula chamaepithys\"[tiab] OR \"Bulga chamaepitys\"[tiab] OR \"Chamaepitys vulgaris\"[tiab] OR \"Teucrium chamaepitys\"[tiab]",
+ "count": 8,
+ "queryTranslation": "\"Ajuga chamaepitys\"[Title/Abstract]",
+ "retrieved": 8,
+ "records": [
+  {
+   "pmid": "36149402",
+   "title": "Synthesis and Characterization of Copper-Nanoflowers with the Utilization of Medicinal Plant Extracts for Enhanced Various Enzyme Inhibitory Activities.",
+   "year": 2022,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202200476",
+   "pmcid": null,
+   "mesh": [
+    "Plants, Medicinal",
+    "Copper",
+    "alpha-Glucosidases",
+    "Spectroscopy, Fourier Transform Infrared",
+    "alpha-Amylases",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f147544544e202d80a4fe8a78aca39e6f15265b7bee613c6370588e2cb3092c0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32726593",
+   "title": "Beneficial effects of Ajuga chamaepitys (L.) Schreber subsp. chia (Schreber) and its iridoids on the colitis model: Histopathological and biochemical evidence.",
+   "year": 2020,
+   "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+   "doi": "10.1016/j.fct.2020.111589",
+   "pmcid": null,
+   "mesh": [
+    "Ajuga",
+    "Animals",
+    "Colitis",
+    "Iridoids",
+    "Male",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Sprague-Dawley"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5097a3f1bfebe5f78656a56a854691b6421c2d535cc01096e4e64137d85413a5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40808707",
+   "title": "From Herbal Tea to Science: Phytochemical and Biological Investigation of Ajuga chamaepitys subsp. chia (Lamiaceae) With Molecular Docking Analysis.",
+   "year": 2025,
+   "journal": "Food science & nutrition",
+   "doi": "10.1002/fsn3.70749",
+   "pmcid": "PMC12344866",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "af49bb71dda42357bd71501173c7f2d8a21f68476bb8399af96f1aa11c950df5",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "27373875",
+   "title": "Phytochemistry, micromorphology and bioactivities of Ajuga chamaepitys (L.) Schreb. (Lamiaceae, Ajugoideae): Two new harpagide derivatives and an unusual iridoid glycosides pattern.",
+   "year": 2016,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2016.06.016",
+   "pmcid": null,
+   "mesh": [
+    "Ajuga",
+    "Antineoplastic Agents, Phytogenic",
+    "Cell Line, Tumor",
+    "Free Radical Scavengers",
+    "Humans",
+    "Iridoid Glycosides",
+    "Oils, Volatile",
+    "Plant Extracts",
+    "Plant Oils",
+    "Pyrans",
+    "Trichomes",
+    "Volatile Organic Compounds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6ad9f02f1fe003c60bbb5688ab9bf77c62d8108589494806641c1604f7ecd09f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38732407",
+   "title": "Phytochemical, In Vitro, In Vivo, and In Silico Research on the Extract of Ajuga chamaepitys (L.) Schreb.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13091192",
+   "pmcid": "PMC11085171",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1b2366948bea3804f624be986cc5cfaf4f4db83e91f28730b4cb6134b8f8835f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "28925834",
+   "title": "Antimicrobial Activities of Some Plants from the Eastern Anatolia Region of Turkey.",
+   "year": 2005,
+   "journal": "Pharmaceutical biology",
+   "doi": "10.1080/13880200590951757",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "28c10b1219079e1c18ddf34a3d9e4a94b6efbc4b7b87cc88dcae0c0aa1c87566",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20648818",
+   "title": "Site properties for Crimean juniper (Juniperus excelsa) in semi-natural forests of south western Anatolia, Turkey.",
+   "year": 2010,
+   "journal": "Journal of environmental biology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Demography",
+    "Ecosystem",
+    "Juniperus",
+    "Trees",
+    "Turkey"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "725704f31bc89244a1cca34f5af850363f64932e4957edb5b28ca8a40179fdb1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42588809",
+   "title": "Comparative Phytochemical Characterization and Bioactivity Profiling of Serbian Ajuga Species from Different Localities: Antioxidant, Antityrosinase, Antimicrobial and Anti-Pyocyanin Activities.",
+   "year": 2026,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants15152306",
+   "pmcid": "PMC13468636",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f9a8b13c509530971577e6330a04fdafe43cf2b77c56ea15d1dd4afd4f24331f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  }
+ ]
+}

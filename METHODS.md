@@ -300,6 +300,26 @@ A hypothesis compares a species' **faithful** preparation (as the recipe made it
 
 Each uses Spearman correlation and top-20 overlap. Results are in RESULTS.md.
 
+## 13. Modern-methods audit (M5): preparation
+
+M5 will compare how modern studies prepared each approved species with how the historical recipes did. Pairing studies with historical uses (indications) waits until M1 has run on the full approved set. Built so far, with no LLM calls:
+
+**Literature retrieval** (`pipeline/lip/m5/literature.py`; per-species files in `data/interim/m5/literature/`, summary in `data/interim/m5/summary.json`).
+- **Searches:** PubMed searches use NCBI E-utilities, which returned HTTP 200 when checked on 2026-11-06. The query covers the accepted WFO name and every WFO synonym (from the WFO Plant List GraphQL API, reduced to the Latin name), searched in title and abstract and sorted by relevance. Up to 300 records are taken per species; the total hit count is recorded, so the cap is visible.
+- **Stored per record:** PMID, title, year, journal, DOI, PMCID, MeSH headings and publication types.
+- **Abstracts:** stored in the git-ignored cache (`data/cache/m5_abstracts/`), because they are generally publisher-copyright. The committed record keeps each abstract's SHA-256.
+- **Licence status:** for records with a PMCID, from Europe PMC's REST API (open access or not, and the licence). NCBI's PMC OA web service returned HTTP 404 on the same day, so it could not be used.
+- **Caching:** every request is cached, and NCBI requests are throttled to below 3 per second.
+
+**Study-method extraction** (`pipeline/lip/m5/methods.py`, prompt `prompts/m5_methods/v1/`). For each preparation a study tested, it records the five contract fields: solvent (modern-solvent enum, plus the verbatim solvent text), heat, part, fresh or dried, and filtration. Filtration is included because solvent, temperature and filtration are kept separate everywhere. It follows M1's rules:
+- verbatim, continuous quotes with no ellipses;
+- evidence only for the categorical fields, and a supporting quote for every categorical value other than `unknown`;
+- compact retries;
+- rejection, never repair;
+- a per-study cache.
+
+Anything a study does not state is `unknown`, and is later counted as unknown, never as a mismatch. The ethanol fraction is parsed by code from the quoted solvent text (a heuristic). The extractor is tested with a fake client and has not yet been run against Groq, so that M1 keeps the free-tier token budget.
+
 ## 12. Limitations
 
 - **Extraction is not detection** (§9). The model predicts extracted fractions, but validation rows record detection or amounts, which also depend on plant content and detection limits. LOTUS has no abundance data, so single-row agreement rates measure a mixture of the two. Only paired, within-plant comparisons (v3) cancel the content term, and v3 was inconclusive because few studies report such comparisons.

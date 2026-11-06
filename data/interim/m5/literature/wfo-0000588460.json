@@ -1,0 +1,5903 @@
+{
+ "species": "Carum carvi",
+ "wfoId": "wfo-0000588460",
+ "names": [
+  "Carum carvi",
+  "Aegopodium carum",
+  "Apium carvi",
+  "Bunium carvi",
+  "Carum aromaticum",
+  "Carum carvi f. carvi",
+  "Carum carvi f. gracile",
+  "Carum carvi f. pygmaeum",
+  "Carum carvi f. rhodochranthum",
+  "Carum carvi f. rubriflorum",
+  "Carum carvi subsp. rosellum",
+  "Carum carvi var. gracile",
+  "Carum carvi var. intermedium",
+  "Carum carvi var. pterochlaenum",
+  "Carum carvi var. vulgare",
+  "Carum decussatum",
+  "Carum gracile",
+  "Carum officinale",
+  "Carum rosellum",
+  "Carum velenovskyi",
+  "Carvi careum",
+  "Falcaria carvifolia",
+  "Foeniculum carvi",
+  "Karos carvi",
+  "Ligusticum carvi",
+  "Pimpinella carvi",
+  "Pimpinella involucrata",
+  "Selinum carvi",
+  "Seseli carum",
+  "Seseli carvi",
+  "Sium carum",
+  "Sium carvi"
+ ],
+ "term": "\"Carum carvi\"[tiab] OR \"Aegopodium carum\"[tiab] OR \"Apium carvi\"[tiab] OR \"Bunium carvi\"[tiab] OR \"Carum aromaticum\"[tiab] OR \"Carum carvi f. carvi\"[tiab] OR \"Carum carvi f. gracile\"[tiab] OR \"Carum carvi f. pygmaeum\"[tiab] OR \"Carum carvi f. rhodochranthum\"[tiab] OR \"Carum carvi f. rubriflorum\"[tiab] OR \"Carum carvi subsp. rosellum\"[tiab] OR \"Carum carvi var. gracile\"[tiab] OR \"Carum carvi var. intermedium\"[tiab] OR \"Carum carvi var. pterochlaenum\"[tiab] OR \"Carum carvi var. vulgare\"[tiab] OR \"Carum decussatum\"[tiab] OR \"Carum gracile\"[tiab] OR \"Carum officinale\"[tiab] OR \"Carum rosellum\"[tiab] OR \"Carum velenovskyi\"[tiab] OR \"Carvi careum\"[tiab] OR \"Falcaria carvifolia\"[tiab] OR \"Foeniculum carvi\"[tiab] OR \"Karos carvi\"[tiab] OR \"Ligusticum carvi\"[tiab] OR \"Pimpinella carvi\"[tiab] OR \"Pimpinella involucrata\"[tiab] OR \"Selinum carvi\"[tiab] OR \"Seseli carum\"[tiab] OR \"Seseli carvi\"[tiab] OR \"Sium carum\"[tiab] OR \"Sium carvi\"[tiab]",
+ "count": 221,
+ "queryTranslation": "\"Carum carvi\"[Title/Abstract]",
+ "retrieved": 220,
+ "records": [
+  {
+   "pmid": "34681427",
+   "title": "Phytosterol Profiling of Apiaceae Family Seeds Spices Using GC-MS.",
+   "year": 2021,
+   "journal": "Foods (Basel, Switzerland)",
+   "doi": "10.3390/foods10102378",
+   "pmcid": "PMC8535917",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9c98c57e1c4ffda7a409cd8b4efe502fcf051d83bfb2b1e09d566b24fe9fca0d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30374904",
+   "title": "Caraway as Important Medicinal Plants in Management of Diseases.",
+   "year": 2019,
+   "journal": "Natural products and bioprospecting",
+   "doi": "10.1007/s13659-018-0190-x",
+   "pmcid": "PMC6328425",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6b3c419718fbd97744ab2000a3e6420c5be0142d9627aec66e5623614603c442",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30848570",
+   "title": "The Stimulatory Effects of Medicinal Plants on β2-adrenoceptors of Tracheal Smooth Muscle.",
+   "year": 2019,
+   "journal": "Iranian journal of allergy, asthma, and immunology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adrenergic beta-2 Receptor Agonists",
+    "Adrenergic beta-2 Receptor Antagonists",
+    "Animals",
+    "Humans",
+    "Muscle, Smooth",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Receptors, Adrenergic, beta-2",
+    "Trachea"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0efee21bb45329f6507c1e325170bee49c5d41d0c5a3f4ae368bc2bfae91f14f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38671280",
+   "title": "Acaricidal Efficacy of Thirty-Five Egyptian Plants Against the Camel Tick, Hyalomma Dromedarii.",
+   "year": 2024,
+   "journal": "Acta parasitologica",
+   "doi": "10.1007/s11686-024-00801-6",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Acaricides",
+    "Plant Extracts",
+    "Egypt",
+    "Camelus",
+    "Ixodidae",
+    "Tick Infestations"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "475a592639b004d970b92b086acd38aa46aeb0f9d670f06a696985b256188d45",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36978458",
+   "title": "Comprehensive Study of Components and Antimicrobial Properties of Essential Oil Extracted from Carum carvi L. Seeds.",
+   "year": 2023,
+   "journal": "Antibiotics (Basel, Switzerland)",
+   "doi": "10.3390/antibiotics12030591",
+   "pmcid": "PMC10045241",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "452e7e0e94fc6c35c61513e4fda1c2c004059981e44937c3995350a32e7f6c40",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40282698",
+   "title": "Caraway Essential Oil as a Post-Preservative Agent in Low-Salt Cheese Brine.",
+   "year": 2025,
+   "journal": "Foods (Basel, Switzerland)",
+   "doi": "10.3390/foods14081297",
+   "pmcid": "PMC12026341",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3c792c10c13fdb09e15d9bdb074587e6fbd32afc606c030d22a134490a373c47",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37999074",
+   "title": "In Vivo Bioassay of the Repellent Activity of Caraway Essential Oil against Green Peach Aphid.",
+   "year": 2023,
+   "journal": "Insects",
+   "doi": "10.3390/insects14110876",
+   "pmcid": "PMC10672326",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0b4557c029969d73774f7b73e3269505e208f83022ae71a9f87f6186a99533a3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38383733",
+   "title": "The effect of caraway oil-loaded bio-nanoemulsions on the growth and performance of barnyard grass and maize.",
+   "year": 2024,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-024-54721-6",
+   "pmcid": "PMC10881981",
+   "mesh": [
+    "Echinochloa",
+    "Zea mays",
+    "Plant Oils",
+    "Oils, Volatile",
+    "Seedlings",
+    "Surface-Active Agents",
+    "Carum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "969b370b67a905949ce242986251bfd58cb753ba10fcb1cabb8aabef17bc800d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31569578",
+   "title": "Effect of the Chemical Composition of Free-Terpene Hydrocarbons Essential Oils on Antifungal Activity.",
+   "year": 2019,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules24193532",
+   "pmcid": "PMC6804076",
+   "mesh": [
+    "Antifungal Agents",
+    "Hydrocarbons",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c28ec5befc4da4c9d72f9798a99506c56e18b854eaa7b8983f243fab0b643423",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36891966",
+   "title": "Screening of antimicrobial and insecticidal properties of essential oils extracted from three Tunisian aromatic and medicinal plants.",
+   "year": 2024,
+   "journal": "International journal of environmental health research",
+   "doi": "10.1080/09603123.2023.2187354",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Oils, Volatile",
+    "Plants, Medicinal",
+    "Insecticides",
+    "Anti-Infective Agents",
+    "Weevils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a1ed16626337e702ccfc4b610abcc7d52b13fdbf483f9bb4e30df6428a8802ca",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38729502",
+   "title": "Chitosan nanoemulsion incorporated with Carum carvi essential oil as ecofriendly alternative for mitigation of aflatoxin B1 contamination in stored herbal raw materials.",
+   "year": 2024,
+   "journal": "International journal of biological macromolecules",
+   "doi": "10.1016/j.ijbiomac.2024.132248",
+   "pmcid": null,
+   "mesh": [
+    "Aflatoxin B1",
+    "Chitosan",
+    "Oils, Volatile",
+    "Emulsions",
+    "Carum",
+    "Aspergillus flavus",
+    "Antifungal Agents",
+    "Animals",
+    "Mice",
+    "Food Contamination",
+    "Antioxidants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cf992174cfee83bd42abccf024dd442515ef42f176717479009dfce20585e3b4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36840093",
+   "title": "Essential Oils from Apiaceae, Asteraceae, Cupressaceae and Lamiaceae Families Grown in Serbia: Comparative Chemical Profiling with In Vitro Antioxidant Activity.",
+   "year": 2023,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants12040745",
+   "pmcid": "PMC9968228",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e27bdcf865a878087b581426210d65876805e296fe4fbe6ad0e9c0426627d5de",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "34443651",
+   "title": "Microencapsulated Caraway Essential Oil Affects Initial Growth of Maize Cultivars.",
+   "year": 2021,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26165059",
+   "pmcid": "PMC8402095",
+   "mesh": [
+    "Biomass",
+    "Carum",
+    "Chlorophyll A",
+    "Cyclohexane Monoterpenes",
+    "Fluorescence",
+    "Herbicides",
+    "Limonene",
+    "Oils, Volatile",
+    "Photosynthesis",
+    "Plant Leaves",
+    "Plant Oils",
+    "Plant Roots",
+    "Zea mays"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f21d25f96c2d9c75e34b98049f89b8a87393920505e036c614acd92a8c6ffb45",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29268967",
+   "title": "Rescue effects of aqueous seed extracts of Foeniculum vulgare and Carum carvi against cadmium-induced hepatic, renal and gonadal damage in female albino rats.",
+   "year": 2017,
+   "journal": "Asian Pacific journal of tropical medicine",
+   "doi": "10.1016/j.apjtm.2017.10.019",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2d510bfada12457efc7319fdd7b7ac4124bd1e26e68791f949e2c9724c03d876",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17337133",
+   "title": "Aromatic plant-derived essential oil: an alternative larvicide for mosquito control.",
+   "year": 2007,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2007.01.003",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Culicidae",
+    "Dengue",
+    "Insecticides",
+    "Larva",
+    "Lethal Dose 50",
+    "Mosquito Control",
+    "Phytotherapy",
+    "Plant Oils",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "63ed8e1b103f4e421c5aad793785550ef522019c2f4308770400fecd5e9acd29",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30505003",
+   "title": "Fungal Planet description sheets: 716-784.",
+   "year": 2018,
+   "journal": "Persoonia",
+   "doi": "10.3767/persoonia.2018.40.10",
+   "pmcid": "PMC6146637",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b008410ad74c5dc5486c9aa8120b037f314a0d4a43b1397e211d886333fd3efd",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "39086459",
+   "title": "Safety and efficacy of a feed additive consisting of an essential oil obtained from the fruit of Carum carvi L. (caraway oil) for all animal species (FEFANA asbl).",
+   "year": 2024,
+   "journal": "EFSA journal. European Food Safety Authority",
+   "doi": "10.2903/j.efsa.2024.8906",
+   "pmcid": "PMC11289620",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ea1e552789d73d3446f028392cab7a3e5fb219ff03e4b55d9026037b7e540a25",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nd"
+   }
+  },
+  {
+   "pmid": "32507740",
+   "title": "Green-photodegradation of model pharmaceutical contaminations over biogenic Fe3O4/Au nanocomposite and antimicrobial activity.",
+   "year": 2020,
+   "journal": "Journal of environmental management",
+   "doi": "10.1016/j.jenvman.2020.110831",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Infective Agents",
+    "Catalysis",
+    "Nanocomposites",
+    "Photolysis",
+    "X-Ray Diffraction"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "715b81dcbeefa5efc1dc3ed00e7995958919beabd65055731224243046fda647",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32525777",
+   "title": "Persian Herbal Medicine in Functional Dyspepsia: A Systematic Review.",
+   "year": 2021,
+   "journal": "Current drug discovery technologies",
+   "doi": "10.2174/1570163817666200611132831",
+   "pmcid": null,
+   "mesh": [
+    "Drug Discovery",
+    "Dyspepsia",
+    "Herbal Medicine",
+    "Humans",
+    "Medicine, Iranian Traditional",
+    "Phytochemicals",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Systematic Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d763cfe265923c7e2dd216e1b853e70a62ccbde9c0cc7446a239d33bda2a67cc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36432786",
+   "title": "Nutritive and Phytochemical Composition of Aromatic Microgreen Herbs and Spices Belonging to the Apiaceae Family.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11223057",
+   "pmcid": "PMC9695664",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "33a24ac2d242938f86acc8520f0b40d935db8d75c40390b5e63f257e9cde6715",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26407909",
+   "title": "Hydroalcoholic extract of Carum carvi L. in oral mucositis: a clinical trial in male golden hamsters.",
+   "year": 2016,
+   "journal": "Oral diseases",
+   "doi": "10.1111/odi.12375",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Infective Agents",
+    "Carum",
+    "Cricetinae",
+    "Double-Blind Method",
+    "Fluorouracil",
+    "Glutathione",
+    "Male",
+    "Malondialdehyde",
+    "Mesocricetus",
+    "Mouth Mucosa",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Random Allocation",
+    "Staphylococcus epidermidis",
+    "Stomatitis",
+    "Streptococcus intermedius"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7ebbf219776db06e1fd9cb0418b922e3769108d1b40fd7f55f45341a3f03500d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34672233",
+   "title": "Mechanistic investigations on antifungal and antiaflatoxigenic activities of chemically characterised Carum carvi L. essential oil against fungal infestation and aflatoxin contamination of herbal raw materials.",
+   "year": 2022,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2021.1994566",
+   "pmcid": null,
+   "mesh": [
+    "Aflatoxin B1",
+    "Aflatoxins",
+    "Antifungal Agents",
+    "Aspergillus flavus",
+    "Carum",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68fd426381d0bbf75a68574e9846b344651de0c2a70292ff34f5525aead96652",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42901455",
+   "title": "Carum carvi L. alleviates skin depigmentation by suppressing STAT1-mediated inflammatory responses.",
+   "year": 2026,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2026.122555",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2298d0b530c067cf13059f568d636ec5a79ecfada5042b45a2cc65207ddd3a0e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39447628",
+   "title": "Tetracycline but not sulfamethazine inhibits early root growth of wild grassland species, while seed germination is hardly affected by either antibiotic.",
+   "year": 2024,
+   "journal": "Environmental pollution (Barking, Essex : 1987)",
+   "doi": "10.1016/j.envpol.2024.125178",
+   "pmcid": null,
+   "mesh": [
+    "Germination",
+    "Sulfamethazine",
+    "Tetracycline",
+    "Plant Roots",
+    "Grassland",
+    "Anti-Bacterial Agents",
+    "Seeds",
+    "Seedlings",
+    "Soil Pollutants",
+    "Centaurea"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bf092d3fc18da140713ddf6eece65c6e5c007f342459a8f62084bccf4c6a0f53",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38180792",
+   "title": "Methyl Red Adsorption on Biochar Obtained by Physical Activation of Caraway Seeds with Carbon Dioxide.",
+   "year": 2024,
+   "journal": "Chemphyschem : a European journal of chemical physics and physical chemistry",
+   "doi": "10.1002/cphc.202300821",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a485882a5b81341e07a24c701448080902153a185fea268607e3cdfc2dedc77a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41303454",
+   "title": "Caraway Extract Increases Ucp-1 mRNA Expression in C3H10T1/2 Adipocytes Through Direct and Indirect Effects.",
+   "year": 2025,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms262210970",
+   "pmcid": "PMC12652911",
+   "mesh": [
+    "Animals",
+    "Uncoupling Protein 1",
+    "Mice",
+    "Plant Extracts",
+    "RNA, Messenger",
+    "RAW 264.7 Cells",
+    "Cell Differentiation",
+    "Thermogenesis",
+    "Adipocytes",
+    "Adipocytes, Beige",
+    "Gene Expression Regulation",
+    "Inflammation",
+    "Macrophages",
+    "Cell Line",
+    "Lipopolysaccharides"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7308dd09c8f8aac4f2a12772daa72a29c5606665aae2c38f196647eb6ec3822f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39124890",
+   "title": "Detailed Phytochemical Composition, Cyto-/Hepatotoxicity, and Antioxidant/Anti-Inflammatory Profile of Moroccan Spices: A Study on Coriander, Caraway, and Mystical Cumin.",
+   "year": 2024,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules29153485",
+   "pmcid": "PMC11313914",
+   "mesh": [
+    "Antioxidants",
+    "Humans",
+    "Anti-Inflammatory Agents",
+    "Phytochemicals",
+    "Coriandrum",
+    "Spices",
+    "Morocco",
+    "Cuminum",
+    "Plant Extracts",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "97b9988524f7664dc2502333c85dd77eded141804bf222ba7f42e02cd16cb7f6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36975642",
+   "title": "Caraway Nanoemulsion Gel: A Potential Antibacterial Treatment against Escherichia coli and Staphylococcus aureus.",
+   "year": 2023,
+   "journal": "Gels (Basel, Switzerland)",
+   "doi": "10.3390/gels9030193",
+   "pmcid": "PMC10048749",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "64e91558c6d7f4ecad067f54828628869048a7e686071f0e264f03e8458da827",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25780826",
+   "title": "Antifungal activity of essential oils against selected terverticillate penicillia.",
+   "year": 2015,
+   "journal": "Annals of agricultural and environmental medicine : AAEM",
+   "doi": "10.5604/12321966.1141367",
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Penicillium",
+    "Plant Oils",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fa5c9452f8f24d1c151b7655640a0cab034d816310a92d21bc8a30316c0d22ff",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33373410",
+   "title": "On genetic diversity in caraway: Genotyping of a large germplasm collection.",
+   "year": 2020,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0244666",
+   "pmcid": "PMC7771672",
+   "mesh": [
+    "Carum",
+    "Genetic Variation",
+    "Genetics, Population",
+    "Genome, Plant",
+    "Genotype",
+    "Genotyping Techniques",
+    "Phylogeny",
+    "Polymorphism, Single Nucleotide"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "72978cc60acd02cb913ab8dd0f865c08eadbc8b18088039bdfed8194d8f78b82",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31133023",
+   "title": "Caraway yellows virus, a novel nepovirus from Carum carvi.",
+   "year": 2019,
+   "journal": "Virology journal",
+   "doi": "10.1186/s12985-019-1181-1",
+   "pmcid": "PMC6537451",
+   "mesh": [
+    "Capsid Proteins",
+    "Carum",
+    "Genome, Viral",
+    "High-Throughput Nucleotide Sequencing",
+    "Nepovirus",
+    "Phylogeny",
+    "Plant Diseases",
+    "Plant Leaves",
+    "RNA, Viral",
+    "Sequence Homology, Amino Acid",
+    "Viral Proteins"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "197ecd3c2bc7c6f00aa1ad3abbc39b048d3c88b2b2e5983a7e20ea1b0b962a5d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31850096",
+   "title": "The Effects of Carum Carvi (Bunium Persicum Boiss) on Early Return of Bowel Motility After Caesarean Section: Double-Blind, Randomized, Placebo-Controlled Trial.",
+   "year": 2019,
+   "journal": "Journal of family & reproductive health",
+   "doi": null,
+   "pmcid": "PMC6911146",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d4405a5e201729d630e7f191dcd8286f64fbcae613a53cd2c793287177510750",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25453384",
+   "title": "Appraisal of adaptive neuro-fuzzy computing technique for estimating anti-obesity properties of a medicinal plant.",
+   "year": 2015,
+   "journal": "Computer methods and programs in biomedicine",
+   "doi": "10.1016/j.cmpb.2014.10.006",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Body Mass Index",
+    "Carum",
+    "Computer Simulation",
+    "Double-Blind Method",
+    "Female",
+    "Fuzzy Logic",
+    "Humans",
+    "Medicine, Traditional",
+    "Obesity",
+    "Phytotherapy",
+    "Plants, Medicinal",
+    "Support Vector Machine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8dd62d3c8fc2b7bf13a3486b771ece8680bece4627d47e4832fccb3d2aca25d1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41458132",
+   "title": "Reducing acrylamide in bread with plant additives: a systematic review.",
+   "year": 2025,
+   "journal": "Food chemistry: X",
+   "doi": "10.1016/j.fochx.2025.103378",
+   "pmcid": "PMC12743532",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fd9bc932d14b23ffb60e482a07372e39e5764cd347dba67ef0541ed5f8c6ce41",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40718314",
+   "title": "Beneficial Effects of Caraway Oil in Aluminium Chloride-Induced Neurotoxicity.",
+   "year": 2025,
+   "journal": "Cureus",
+   "doi": "10.7759/cureus.86783",
+   "pmcid": "PMC12296912",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "55dc459c3ee6e6c3ac8535ad9428cd1fdd189e5bc32ee6037da452093d91e073",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39833442",
+   "title": "Enhancing black mulberry storage with sodium caseinate and gum tragacanth edible films.",
+   "year": 2025,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-025-86909-9",
+   "pmcid": "PMC11747432",
+   "mesh": [
+    "Edible Films",
+    "Caseins",
+    "Tragacanth",
+    "Tensile Strength",
+    "Food Storage",
+    "Food Packaging",
+    "Food Preservation",
+    "Oils, Volatile",
+    "Permeability",
+    "Steam"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d92e7cc15732ac84c2fddfee6257799a5fe14fe2344ae9c2d47d4329c3535f2f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "26956506",
+   "title": "Volatile emission in dry seeds as a way to probe chemical reactions during initial asymptomatic deterioration.",
+   "year": 2016,
+   "journal": "Journal of experimental botany",
+   "doi": "10.1093/jxb/erv568",
+   "pmcid": "PMC4783362",
+   "mesh": [
+    "Carum",
+    "Desiccation",
+    "Fatty Acids",
+    "Germination",
+    "Humidity",
+    "Kinetics",
+    "Lactuca",
+    "Seeds",
+    "Temperature",
+    "Time Factors",
+    "Volatile Organic Compounds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "99be79c4d3fd6268fe3ab9d1a75843d3a728f20ac3c13240b441371af3865ad3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24459470",
+   "title": "Effects of Carum carvi L. (Caraway) extract and essential oil on TNBS-induced colitis in rats.",
+   "year": 2013,
+   "journal": "Research in pharmaceutical sciences",
+   "doi": null,
+   "pmcid": "PMC3895295",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0f1a7bd54a494cfd69d1f290c2b06da7aedc5c9fbf4a4131ff9fef3d03590305",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "29383802",
+   "title": "Reversal of visceral hypersensitivity in rat by Menthacarin® , a proprietary combination of essential oils from peppermint and caraway, coincides with mycobiome modulation.",
+   "year": 2018,
+   "journal": "Neurogastroenterology and motility",
+   "doi": "10.1111/nmo.13299",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Animals, Newborn",
+    "Anti-Bacterial Agents",
+    "Antifungal Agents",
+    "Drug Combinations",
+    "Hyperalgesia",
+    "Male",
+    "Maternal Deprivation",
+    "Mentha piperita",
+    "Mycobiome",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Rats",
+    "Rats, Long-Evans",
+    "Visceral Pain",
+    "Carum"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cf2f9ef953aa5cfbe272057ea5c4ee8d9f036f9907b946051e9b8f96e70b667b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33807960",
+   "title": "An Insight into the Anxiolytic and Antidepressant-Like Proprieties of Carum carvi L. and Their Association with Its Antioxidant Activity.",
+   "year": 2021,
+   "journal": "Life (Basel, Switzerland)",
+   "doi": "10.3390/life11030207",
+   "pmcid": "PMC8000502",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cbc1d4715869f7fb674b7ee75080556779615dae332e511d81e0cd484900b16a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39936409",
+   "title": "Potential Alteration of Rifampicin's Bioavailability by Phyllanthus niruri Supplementation in Tuberculosis Therapy.",
+   "year": 2025,
+   "journal": "Current drug metabolism",
+   "doi": "10.2174/0113892002361205250123101231",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1ecac9009f17796e738b68589e47411e7963e4803b93586fe47f566b167355c2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12377243",
+   "title": "Water-soluble constituents of caraway: aromatic compound, aromatic compound glucoside and glucides.",
+   "year": 2002,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/s0031-9422(02)00288-1",
+   "pmcid": null,
+   "mesh": [
+    "Anisoles",
+    "Carum",
+    "Fruit",
+    "Glucosides",
+    "Hydrocarbons, Aromatic",
+    "Molecular Structure",
+    "Phenols",
+    "Solubility",
+    "Sugar Alcohols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3f9c44132afa3bdc7e6a7b4654d035e330a782c8a139ca11eabc6230685809a4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27119969",
+   "title": "Method for Attaining Caraway Seed Oil Fractions with Different Composition.",
+   "year": 2016,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.201500190",
+   "pmcid": null,
+   "mesh": [
+    "Carum",
+    "Chromatography, Gas",
+    "Distillation",
+    "Oils, Volatile",
+    "Seeds",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3bdea6e83f8f3f675f7ac434033c195378a46dc57453b550d1965d793ced52d7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36235480",
+   "title": "GC-MS Profiling, Anti-Helicobacter pylori, and Anti-Inflammatory Activities of Three Apiaceous Fruits' Essential Oils.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11192617",
+   "pmcid": "PMC9570728",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ca26ffcc81878a2f663120e649e4fa4cb9302c8045fa1bd5d6907b914f791fed",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29495324",
+   "title": "Protein Bread Fortification with Cumin and Caraway Seeds and By-Product Flour.",
+   "year": 2018,
+   "journal": "Foods (Basel, Switzerland)",
+   "doi": "10.3390/foods7030028",
+   "pmcid": "PMC5867543",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c8990faa12db25c1e3e5489cf1376cf3087e30aa1ee0aafb2c58afb44e508e20",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30268004",
+   "title": "Metabolome based volatiles mapping of roasted umbelliferous fruits aroma via HS-SPME GC/MS and peroxide levels analyses.",
+   "year": 2018,
+   "journal": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences",
+   "doi": "10.1016/j.jchromb.2018.09.022",
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Cooking",
+    "Fruit",
+    "Gas Chromatography-Mass Spectrometry",
+    "Limit of Detection",
+    "Linear Models",
+    "Metabolome",
+    "Monoterpenes",
+    "Peroxides",
+    "Reproducibility of Results",
+    "Solid Phase Microextraction",
+    "Volatile Organic Compounds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "980622ab30a21e1052363e61bbacff5b274f2aa2ea069e39a540f70b6a08f48c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18330128",
+   "title": "Toxicity of plant essential oils and their components against Lycoriella ingenua (Diptera: Sciaridae).",
+   "year": 2008,
+   "journal": "Journal of economic entomology",
+   "doi": "10.1603/0022-0493(2008)101[139:topeoa]2.0.co;2",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Biological Assay",
+    "Diptera",
+    "Dose-Response Relationship, Drug",
+    "Fumigation",
+    "Insect Control",
+    "Insecticides",
+    "Larva",
+    "Oils, Volatile",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dd045280a5d76ee201f3b63b96d3e890e79023033d8a9f92e06a51278e98d973",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36432799",
+   "title": "Exploring Contact Toxicity of Essential Oils against Sitophilus zeamais through a Meta-Analysis Approach.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11223070",
+   "pmcid": "PMC9696113",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "57c83fae9190e569478586860e8373201806a19879acd2d6a8daa8f865be6740",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39532223",
+   "title": "Exploring the mechanism of action of huoermai essential oil for plateau insomnia based on the camp/CREB/BDNF/gabaergic pathway.",
+   "year": 2025,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2024.119092",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Oils, Volatile",
+    "Sleep Initiation and Maintenance Disorders",
+    "Brain-Derived Neurotrophic Factor",
+    "Mice",
+    "Male",
+    "Cyclic AMP",
+    "Signal Transduction",
+    "Cyclic AMP Response Element-Binding Protein",
+    "Disease Models, Animal",
+    "gamma-Aminobutyric Acid",
+    "Brain",
+    "Tibet"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "24f06cc6e80def23852c940c64074a2283ec0b14aecaebcc2f4fa70fed8fcfc1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27725613",
+   "title": "Rapid Discrimination of Closely Related Seed Herbs (Cumin, Caraway, and Fennel) by Direct Analysis in Real Time Mass Spectrometry (DART-MS).",
+   "year": 2016,
+   "journal": "Analytical sciences : the international journal of the Japan Society for Analytical Chemistry",
+   "doi": "10.2116/analsci.32.1111",
+   "pmcid": null,
+   "mesh": [
+    "Biomarkers",
+    "Carum",
+    "Cuminum",
+    "Foeniculum",
+    "Mass Spectrometry",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Principal Component Analysis",
+    "Seeds",
+    "Species Specificity",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e181d6c5db8a892fb1eaeec91422e3f70edf5dfc9b2483726352a9ea2b3ac4a4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32523878",
+   "title": "Therapeutic effects of HESA-A (a herbal-marine compound) in acute organophosphorus pesticide poisoning.",
+   "year": 2020,
+   "journal": "Avicenna journal of phytomedicine",
+   "doi": null,
+   "pmcid": "PMC7256278",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c1677f2ef17fc352d526dd909c32ce96bcf7a31f5677c462e3fef3c8630bb087",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31560648",
+   "title": "Acute and 28-day repeated dose oral toxicity study of caraway oil in rats.",
+   "year": 2019,
+   "journal": "Drug metabolism and personalized therapy",
+   "doi": "10.1515/dmpt-2019-0011",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Oral",
+    "Animals",
+    "Plant Oils",
+    "Rats",
+    "Rats, Wistar",
+    "Carum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7bc7e3f2b923c48f7d13fe5b4c89099757e03a095a89010ee63441fa84c45251",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34270006",
+   "title": "Caraway (Carum carvi L.): Anther Culture and Production of DH Plants Caraway.",
+   "year": 2021,
+   "journal": "Methods in molecular biology (Clifton, N.J.)",
+   "doi": "10.1007/978-1-0716-1335-1_5",
+   "pmcid": null,
+   "mesh": [
+    "Carum",
+    "Crops, Agricultural",
+    "Culture Media",
+    "Diploidy",
+    "Esterases",
+    "Flowers",
+    "Haploidy",
+    "Homozygote",
+    "Isoenzymes",
+    "Molecular Biology",
+    "Plant Breeding",
+    "Pollen",
+    "Tissue Culture Techniques"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "412ed86aa1a3f186532a03c7b97d2979be2c820960e38ed20ee6fe1cebb6fd99",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30972988",
+   "title": "Effect of Caraway, Fennel and Melissa addition on in vitro Rumen Fermentation and Gas Production.",
+   "year": 2019,
+   "journal": "Pakistan journal of biological sciences : PJBS",
+   "doi": "10.3923/pjbs.2019.67.72",
+   "pmcid": null,
+   "mesh": [
+    "Ammonia",
+    "Animal Feed",
+    "Animals",
+    "Carum",
+    "Dietary Fiber",
+    "Digestion",
+    "Fatty Acids, Volatile",
+    "Fermentation",
+    "Foeniculum",
+    "Melissa",
+    "Methane",
+    "Rumen"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6bbb672742e003a2b58e74bc0bf3f8dba7f6e4a23efad3be0cd02a2b571fcec2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35674716",
+   "title": "Attraction or Repelling Effects of Commercial Plant Essential Oils on the Synanthropic Cheiracanthium mildei (Araneae: Cheiracanthiidae).",
+   "year": 2022,
+   "journal": "Journal of economic entomology",
+   "doi": "10.1093/jee/toac086",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Dust",
+    "Insect Repellents",
+    "Musa",
+    "Oils, Volatile",
+    "Phobic Disorders",
+    "Plant Oils",
+    "Plants",
+    "Silk",
+    "Spiders"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eef73d6026c5abd9401bdbc45ddb5e89fe15ad8d1a17aaaa6615c6e6a29fb33f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29635674",
+   "title": "Anti-Obesity Effect of Arq Zeera and Its Main Components Thymol and Cuminaldehyde in High Fat Diet Induced Obese Rats.",
+   "year": 2018,
+   "journal": "Drug research",
+   "doi": "10.1055/a-0590-1956",
+   "pmcid": null,
+   "mesh": [
+    "Adipose Tissue",
+    "Animals",
+    "Anti-Obesity Agents",
+    "Benzaldehydes",
+    "Blood Glucose",
+    "Cymenes",
+    "Diet, High-Fat",
+    "Disease Models, Animal",
+    "Humans",
+    "India",
+    "Leptin",
+    "Lipase",
+    "Lipid Metabolism",
+    "Lipids",
+    "Liver",
+    "Male",
+    "Medicine, Unani",
+    "Obesity",
+    "Orlistat",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Rats",
+    "Rats, Wistar",
+    "Thymol",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a6e36a8e028d6bd0df481a610da73cff9d83038db4d0be3ef82e6d6c3b40c421",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14531636",
+   "title": "Element analysis and biological studies on ten oriental spices using XRF and Ames test.",
+   "year": 2003,
+   "journal": "Journal of trace elements in medicine and biology : organ of the Society for Minerals and Trace Elements (GMS)",
+   "doi": "10.1016/s0946-672x(03)80003-2",
+   "pmcid": null,
+   "mesh": [
+    "Asia",
+    "Humans",
+    "Mutagenicity Tests",
+    "Mutagens",
+    "Plant Structures",
+    "Spectrometry, X-Ray Emission",
+    "Spices"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "313aeed08fbfb67178cd0a044f1bbde0d37715fd063f102ab269be77e66f7038",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "9556156",
+   "title": "Antiproliferative constituents in Umbelliferae plants II. Screening for polyacetylenes in some Umbelliferae plants, and isolation of panaxynol and falcarindiol from the root of Heracleum moellendorffii.",
+   "year": 1998,
+   "journal": "Biological & pharmaceutical bulletin",
+   "doi": "10.1248/bpb.21.257",
+   "pmcid": null,
+   "mesh": [
+    "Acetylene",
+    "Alkynes",
+    "Animals",
+    "Antineoplastic Agents, Phytogenic",
+    "Apiaceae",
+    "Cell Division",
+    "Diynes",
+    "Enzyme-Linked Immunosorbent Assay",
+    "Fatty Alcohols",
+    "Humans",
+    "Mice",
+    "Plant Extracts",
+    "Plant Roots",
+    "Polymers",
+    "Polyynes",
+    "Tumor Cells, Cultured"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "48113768e700202dbced3bb28cafac10781be970e9c3e84696bf5fc6e8c91cf0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28213109",
+   "title": "Screening of plants used in the European traditional medicine to treat memory disorders for acetylcholinesterase inhibitory activity and anti amyloidogenic activity.",
+   "year": 2017,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2017.02.020",
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholinesterase",
+    "Amyloid beta-Peptides",
+    "Cholinesterase Inhibitors",
+    "Europe",
+    "Humans",
+    "Medicine, Traditional",
+    "Memory Disorders",
+    "Plant Extracts",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "62c9760aa7105aed87e812a850312426d6a3ba876361011909be336a96bce6a3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36791939",
+   "title": "Synthesis, characterization, and assessment of chitosan-nanomatrix enriched with antifungal formulation against biodeterioration of active ingredients of selected herbal raw materials.",
+   "year": 2023,
+   "journal": "International journal of biological macromolecules",
+   "doi": "10.1016/j.ijbiomac.2023.123684",
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Chitosan",
+    "Molecular Docking Simulation",
+    "Oils, Volatile",
+    "Aspergillus flavus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bd9218ba7fd2728853d495a5ee14669e86654a3960a86e898361615b90bbf499",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35448799",
+   "title": "GC-MS Profiling, Vibriocidal, Antioxidant, Antibiofilm, and Anti-Quorum Sensing Properties of Carum carvi L. Essential Oil: In Vitro and In Silico Approaches.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11081072",
+   "pmcid": "PMC9032858",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2e2cddd1a58788cb9cef12119f8e8877a7bf403638d527e165a8307110e69b11",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30019960",
+   "title": "Antibacterial Effect of Essential Oils against Spoilage Bacteria from Vacuum-Packed Cooked Cured Sausages.",
+   "year": 2018,
+   "journal": "Journal of food protection",
+   "doi": "10.4315/0362-028X.JFP-17-474",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Food Microbiology",
+    "Food Packaging",
+    "Food Preservation",
+    "Meat Products",
+    "Oils, Volatile",
+    "Vacuum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5a7ec4241507f62b83738c4fbbfc646ae177d015fcd03e3f5ae551ebb1899433",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15261975",
+   "title": "Caraway and caper: potential anti-hyperglycaemic plants in diabetic rats.",
+   "year": 2004,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2004.05.006",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Oral",
+    "Animals",
+    "Blood Glucose",
+    "Capparis",
+    "Carum",
+    "Diabetes Mellitus, Experimental",
+    "Fruit",
+    "Hypoglycemic Agents",
+    "Insulin",
+    "Male",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Streptozocin",
+    "Vanadates"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d14f00833331557b46955705bab395432f96b89ce66490cca89e87337ffd728b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35336656",
+   "title": "The Comparison of Soil Agrochemical and Biological Properties in the Multi-Cropping Farming Systems.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11060774",
+   "pmcid": "PMC8954686",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e8f7b81da715ad823541684367ba589e996dd39beee54d4c6c8763a51fd44388",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "18944489",
+   "title": "Nematicidal activity of essential oils and their components against the root-knot nematode.",
+   "year": 2000,
+   "journal": "Phytopathology",
+   "doi": "10.1094/PHYTO.2000.90.7.710",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "140d0b3e1f37f7fc900b62a0a7106173f19ebfc1e30566f74401e91dfc1ae95e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34834740",
+   "title": "Apiaceae Essential Oils: Boosters of Terbinafine Activity against Dermatophytes and Potent Anti-Inflammatory Effectors.",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10112378",
+   "pmcid": "PMC8623916",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e203c9fe48a68a8380d409a022580a3aa4965d0c95aa4a7b46781a8c4050bfb3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "17433114",
+   "title": "Wild vascular plants gathered for consumption in the Polish countryside: a review.",
+   "year": 2007,
+   "journal": "Journal of ethnobiology and ethnomedicine",
+   "doi": "10.1186/1746-4269-3-17",
+   "pmcid": "PMC1859986",
+   "mesh": [
+    "Cooking",
+    "Ethnobotany",
+    "History, 17th Century",
+    "History, 19th Century",
+    "History, 20th Century",
+    "Humans",
+    "Plants, Edible",
+    "Poland",
+    "Terminology as Topic"
+   ],
+   "publicationTypes": [
+    "Historical Article",
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a4fd943825fa00eb374729e10af4a013ac511419c9558c5e8069ebbf6f561a03",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "22928313",
+   "title": "Fumigant toxicity of plant essential oils against Camptomyia corticalis (Diptera: Cecidomyiidae).",
+   "year": 2012,
+   "journal": "Journal of economic entomology",
+   "doi": "10.1603/ec12049",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Dichlorvos",
+    "Diptera",
+    "Fumigation",
+    "Insecticides",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Evaluation Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0305a095f4faf3cf535d9de34b1d21d0c4596a2c693c6657867571f70dc54cee",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38136159",
+   "title": "Antioxidant Activity of Medicinal Herbs and Spices from Plants of the Lamiaceae, Apiaceae and Asteraceae Families: Chemometric Interpretation of the Data.",
+   "year": 2023,
+   "journal": "Antioxidants (Basel, Switzerland)",
+   "doi": "10.3390/antiox12122039",
+   "pmcid": "PMC10740862",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ddc5e118cb73bf5974ad0b6e4280b57795e8ca20321ef9e02d193d9922850859",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36284942",
+   "title": "Effect of Caraway Seed Extract on the Blood Biochemistry and Antioxidant Capacity among the Hyperoxidative Stress-Induced Rats.",
+   "year": 2022,
+   "journal": "Archives of Razi Institute",
+   "doi": "10.22092/ARI.2021.356810.1917",
+   "pmcid": "PMC9548277",
+   "mesh": [
+    "Mice",
+    "Rats",
+    "Male",
+    "Animals",
+    "Carum",
+    "Antioxidants",
+    "Hydrogen Peroxide",
+    "Drinking Water",
+    "Saline Solution",
+    "Plant Extracts",
+    "Rats, Wistar",
+    "Seeds",
+    "Lipids",
+    "Cholesterol",
+    "Body Weight",
+    "Glutathione",
+    "Flavonoids",
+    "Malondialdehyde"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bdda99aa57e366303d33fae1b7bcd8ada87d3ff40a97f9d2da24140a61a366cb",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30152663",
+   "title": "Antioxidant Activity of Essential Oil From Carum Carvi L. Cultivated in North-Eastern Romania.",
+   "year": 2016,
+   "journal": "Revista medico-chirurgicala a Societatii de Medici si Naturalisti din Iasi",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Carum",
+    "Gas Chromatography-Mass Spectrometry",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Romania"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7b896159eb25e793c330a22392fd999d5b0f476895fb170b8c96ea9930da56c6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17221240",
+   "title": "Comparison of different extraction methods for the determination of essential oils and related compounds from aromatic plants and optimization of solid-phase microextraction/gas chromatography.",
+   "year": 2007,
+   "journal": "Analytical and bioanalytical chemistry",
+   "doi": "10.1007/s00216-006-1045-6",
+   "pmcid": null,
+   "mesh": [
+    "Acetates",
+    "Bicyclic Monoterpenes",
+    "Chromatography, Gas",
+    "Molecular Structure",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Plant Extracts",
+    "Plants, Edible",
+    "Solid Phase Microextraction",
+    "Terpenes",
+    "Water"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6f3f180eb0c7bc23883d5114169a3865dbd65432ba5b748b0775f3f4254dc41c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15631509",
+   "title": "Antibacterial activity of Cuminum cyminum L. and Carum carvi L. essential oils.",
+   "year": 2005,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf0487351",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Bacteria",
+    "Carum",
+    "Cuminum",
+    "Oils, Volatile",
+    "Plant Diseases"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "53014899002e38b5e49ed7bdfc034c2fa67ce862cabc11c6ec2914392f65ce4d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40934466",
+   "title": "Carum carvi and Ormenis multicaulis Extracts: Chemical Analysis and In Vivo Experiments to Evaluate the Synergistic Analgesic and Anti-Inflammatory Effects.",
+   "year": 2025,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202501286",
+   "pmcid": "PMC12715987",
+   "mesh": [
+    "Animals",
+    "Mice",
+    "Plant Extracts",
+    "Analgesics",
+    "Anti-Inflammatory Agents",
+    "Pain",
+    "Male",
+    "Antioxidants",
+    "Chromatography, High Pressure Liquid",
+    "Inflammation",
+    "Seeds",
+    "Drug Synergism",
+    "Flowers"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d64186710bae0de89809edfb4c776907ae024542d28e644c8198efb87a6aea7c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37419436",
+   "title": "The synergistic effects of four medicinal plant seeds and chelated minerals on the growth, immunity, and antioxidant capacity of rainbow trout (Oncorhynchus mykiss).",
+   "year": 2023,
+   "journal": "Fish & shellfish immunology",
+   "doi": "10.1016/j.fsi.2023.108930",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Dietary Supplements",
+    "Oncorhynchus mykiss",
+    "Plants, Medicinal",
+    "Animal Feed",
+    "Diet",
+    "Minerals",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2db1efdd2d70ff98cf85b86386bb99ae3ab0713b0a4c0e81f1787ab17f206e7e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29124622",
+   "title": "Medicinal plants with antithrombotic property in Persian medicine: a mechanistic review.",
+   "year": 2018,
+   "journal": "Journal of thrombosis and thrombolysis",
+   "doi": "10.1007/s11239-017-1580-3",
+   "pmcid": null,
+   "mesh": [
+    "Fibrinolytic Agents",
+    "Persia",
+    "Phytotherapy",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "04e5c599e263b8a15e324a9d7492148fecf24ce87b8b3af038d5871e1d3e9d1a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24741485",
+   "title": "Effect of Carum carvi, a herbal bioenhancer on pharmacokinetics of antitubercular drugs: A study in healthy human volunteers.",
+   "year": 2014,
+   "journal": "Perspectives in clinical research",
+   "doi": "10.4103/2229-3485.128027",
+   "pmcid": "PMC3980549",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cf2421ec1d524ef713c16964a1afe10a1b2cf994ff8ed9dbd8ae18421f8852d2",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "34497525",
+   "title": "(-)-Carveol Prevents Gastric Ulcers via Cytoprotective, Antioxidant, Antisecretory and Immunoregulatory Mechanisms in Animal Models.",
+   "year": 2021,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2021.736829",
+   "pmcid": "PMC8419343",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d374f3189fcae581bf708b0f5d39e8e3cbb196d5639671a8e19fd7cea7278002",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "28465551",
+   "title": "Forbs enhance productivity of unfertilised grass-clover leys and support low-carbon bioenergy.",
+   "year": 2017,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-017-01632-4",
+   "pmcid": "PMC5431050",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0039a064ba286936218c4d837eac1521f5cf725271474f2fbdecb0ea19d0b10c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36661234",
+   "title": "Effects of methyl jasmonate elicitation on the carvone and limonene contents, phenolic compounds and antioxidant activity in caraway (Carum carvi L.) callus cultures.",
+   "year": 2023,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2023.2169862",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Limonene",
+    "Carum",
+    "Cyclohexane Monoterpenes",
+    "Acetates",
+    "Cyclopentanes",
+    "Oxylipins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6affa2ffa097529f4ffa577a00b8c243efd6bd0f080f23d4518e48f19026baaa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36160955",
+   "title": "Alleviation of postharvest chilling injury in sweet pepper using Salicylic acid foliar spraying incorporated with caraway oil coating under cold storage.",
+   "year": 2022,
+   "journal": "Frontiers in plant science",
+   "doi": "10.3389/fpls.2022.999518",
+   "pmcid": "PMC9495611",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0c3de3934875a55546e1395bc46ec9290291145b5dcefd2d1d50a19c52f70051",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35121309",
+   "title": "Selective extraction of oxygenated terpene in caraway (Carum carvi L.) using subcritical water extraction (SWE) technique.",
+   "year": 2022,
+   "journal": "Food chemistry",
+   "doi": "10.1016/j.foodchem.2022.132192",
+   "pmcid": null,
+   "mesh": [
+    "Carum",
+    "Limonene",
+    "Solubility",
+    "Terpenes",
+    "Water"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "27dbb659b9e622ae389ef180d58256abb91e8e0a2a6d1f648f7fb21b40595990",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40011276",
+   "title": "The diversity pattern of soil bacteria in the rhizosphere of different plants in mountain ecosystems.",
+   "year": 2025,
+   "journal": "World journal of microbiology & biotechnology",
+   "doi": "10.1007/s11274-025-04299-6",
+   "pmcid": null,
+   "mesh": [
+    "Rhizosphere",
+    "Soil Microbiology",
+    "Bacteria",
+    "China",
+    "RNA, Ribosomal, 16S",
+    "Biodiversity",
+    "Ecosystem",
+    "Soil",
+    "Plants",
+    "Phylogeny",
+    "High-Throughput Nucleotide Sequencing",
+    "DNA, Bacterial",
+    "Microbiota"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "82fb8de9cbfab948378b773ff53b1d3a7407d8a181bc869a07f297f171aa59c0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32085476",
+   "title": "Plant Growth Inhibitory Activities and Volatile Active Compounds of 53 Spices and Herbs.",
+   "year": 2020,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants9020264",
+   "pmcid": "PMC7076484",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "53108356d59f26d4dc7335ed9f466da82425d4698185782b028b41483a95b9a5",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "11824587",
+   "title": "Water-soluble constituents of caraway: carvone derivatives and their glucosides.",
+   "year": 2002,
+   "journal": "Chemical & pharmaceutical bulletin",
+   "doi": "10.1248/cpb.50.66",
+   "pmcid": null,
+   "mesh": [
+    "Carum",
+    "Chromatography, Gel",
+    "Chromatography, High Pressure Liquid",
+    "Cyclohexane Monoterpenes",
+    "Fruit",
+    "Glucosides",
+    "Molecular Structure",
+    "Monoterpenes",
+    "Plant Extracts",
+    "Solubility",
+    "Terpenes",
+    "Water"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2b2029030fad04d166bd6451e92f5dd43ff70a9de37fd2feea5c653574334150",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35870011",
+   "title": "Phytotherapy known and applied by head-neck cancer patients and medical students to treat oral discomfort in Germany: an observational study.",
+   "year": 2023,
+   "journal": "Journal of cancer research and clinical oncology",
+   "doi": "10.1007/s00432-022-04200-0",
+   "pmcid": "PMC10097744",
+   "mesh": [
+    "Humans",
+    "Students, Medical",
+    "Phytotherapy",
+    "Plants, Medicinal",
+    "Germany",
+    "Head and Neck Neoplasms"
+   ],
+   "publicationTypes": [
+    "Observational Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "053c0de2c957407dc3ca9cc710ec37d7152efe5f04de10f26d4ef262815a778d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35153304",
+   "title": "Starch bio-based composite active edible film functionalized with Carum carvi L. essential oil: antimicrobial, rheological, physic-mechanical and optical attributes.",
+   "year": 2022,
+   "journal": "Journal of food science and technology",
+   "doi": "10.1007/s13197-021-05028-1",
+   "pmcid": "PMC8814089",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "28c597d44adb017b5d6b4c33dddb3c6909b1fb32eae5935f1d4856a483f68809",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32408518",
+   "title": "Study of Antioxidant Activity of some Medicinal Plants Having High Content of Caffeic Acid Derivatives.",
+   "year": 2020,
+   "journal": "Antioxidants (Basel, Switzerland)",
+   "doi": "10.3390/antiox9050412",
+   "pmcid": "PMC7278751",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ed5a6d8dce00ba5dcff1e7d637a5126e52ebfeb5a188f95b0f7f9ad2f8ce39f3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32848717",
+   "title": "Computational and Pharmacological Evaluation of Carveol for Antidiabetic Potential.",
+   "year": 2020,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2020.00919",
+   "pmcid": "PMC7403477",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9826a0c09190b88acbd0bf3e215c1a82d4fb3ae17aafe5487a7026619b1c980a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25616491",
+   "title": "Carum induced hypothyroidism: an interesting observation and an experiment.",
+   "year": 2015,
+   "journal": "Daru : journal of Faculty of Pharmacy, Tehran University of Medical Sciences",
+   "doi": "10.1186/s40199-015-0094-9",
+   "pmcid": "PMC4310175",
+   "mesh": [
+    "Carcinoma",
+    "Carcinoma, Papillary",
+    "Carum",
+    "Female",
+    "Humans",
+    "Hypothyroidism",
+    "Thyroid Cancer, Papillary",
+    "Thyroid Neoplasms",
+    "Thyrotropin",
+    "Thyroxine",
+    "Young Adult"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "87f1c7e21dc67afc97dd76c6a0fefed860ce577001a716221874bc9942e76778",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "19734267",
+   "title": "Pharmacokinetic interaction of some antitubercular drugs with caraway: implications in the enhancement of drug bioavailability.",
+   "year": 2009,
+   "journal": "Human & experimental toxicology",
+   "doi": "10.1177/0960327108097431",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antitubercular Agents",
+    "Area Under Curve",
+    "Biological Availability",
+    "Carum",
+    "Chromatography, High Pressure Liquid",
+    "Drug Interactions",
+    "Female",
+    "Intestinal Absorption",
+    "Intestinal Mucosa",
+    "Isoniazid",
+    "Jejunum",
+    "Male",
+    "Plant Extracts",
+    "Pyrazinamide",
+    "Rats",
+    "Rats, Wistar",
+    "Reference Standards",
+    "Rifampin",
+    "Seeds",
+    "Solvents"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e48bfa76556cfdb34057a2ca100babc617ffe49641fe40c828e0eabd9639d44e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "1438594",
+   "title": "Anethofuran, carvone, and limonene: potential cancer chemopreventive agents from dill weed oil and caraway oil.",
+   "year": 1992,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-961480",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antineoplastic Agents, Phytogenic",
+    "Benzofurans",
+    "Cyclohexane Monoterpenes",
+    "Cyclohexenes",
+    "Enzyme Induction",
+    "Female",
+    "Glutathione Transferase",
+    "Limonene",
+    "Mice",
+    "Monoterpenes",
+    "Plant Oils",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d9df8c1df183061f08aad2a22fecac7dde4992ec574633ea40ca5ce739e80b83",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37474939",
+   "title": "The structural characterization and bioactivity assessment of nonspecific lipid transfer protein 1 (nsLTP1) from caraway (Carum carvi) seeds.",
+   "year": 2023,
+   "journal": "BMC complementary medicine and therapies",
+   "doi": "10.1186/s12906-023-04083-9",
+   "pmcid": "PMC10357877",
+   "mesh": [
+    "Humans",
+    "Carum",
+    "Antioxidants",
+    "Fatty Acids",
+    "Seeds",
+    "Carrier Proteins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5330822518af15249e84fdb8b7842c0127b0e87f6701f39d75dd13a9ebb8e6a9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26988309",
+   "title": "Slimming and Appetite-Suppressing Effects of Caraway Aqueous Extract as a Natural Therapy in Physically Active Women.",
+   "year": 2016,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.5603",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Appetite",
+    "Carum",
+    "Energy Intake",
+    "Female",
+    "Herbal Medicine",
+    "Humans",
+    "Male",
+    "Middle Aged",
+    "Obesity",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "491950caeea80cfc030f230e88cb18b4bcc6b015752e7f8da718d24f23d566c5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37384842",
+   "title": "Concept of dementia (Nisy ā n) in Unani system of medicine and scientific validation of an important Unani pharmacopoeial preparation 'Majoon Vaj' for its management: a review.",
+   "year": 2024,
+   "journal": "Journal of complementary & integrative medicine",
+   "doi": "10.1515/jcim-2021-0447",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Dementia",
+    "Plant Extracts",
+    "Medicine, Unani",
+    "Phytochemicals",
+    "Phytotherapy",
+    "Nootropic Agents",
+    "Pharmacopoeias as Topic"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fad2ffceea5d82bb0f31edf5794c7ff3e5c35cf5e34c49a19d12771ebcd79c75",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31239859",
+   "title": "Ethnobotanical Study of Cultivated Plants in Kaišiadorys District, Lithuania: Possible Trends for New Herbal Based Medicines.",
+   "year": 2019,
+   "journal": "Evidence-based complementary and alternative medicine : eCAM",
+   "doi": "10.1155/2019/3940397",
+   "pmcid": "PMC6556360",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "19b5cb1162256950806520330a2d35da7994894dfbb2702cf5a4effd214a2bc8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37004150",
+   "title": "More complex than you think: Taxonomic and temporal patterns of plant-pollinator networks of caraway (Carum carvi L.).",
+   "year": 2023,
+   "journal": "Molecular ecology",
+   "doi": "10.1111/mec.16943",
+   "pmcid": null,
+   "mesh": [
+    "Bees",
+    "Animals",
+    "Carum",
+    "Insecta",
+    "Pollination",
+    "Plants",
+    "Diptera",
+    "Flowers"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "aaf1e6120131b986989adf8df425f439fcd89d3b28fd71d5d953d613e56a35d8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23552268",
+   "title": "Potential anticancer activity of carvone in N2a neuroblastoma cell line.",
+   "year": 2015,
+   "journal": "Toxicology and industrial health",
+   "doi": "10.1177/0748233713484660",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antineoplastic Agents",
+    "Cell Line, Tumor",
+    "Comet Assay",
+    "Cyclohexane Monoterpenes",
+    "Dose-Response Relationship, Drug",
+    "Monoterpenes",
+    "Mutagens",
+    "Neuroblastoma",
+    "Neurons",
+    "Oxidative Stress",
+    "Rats"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0e97d8f134fddcef13d1af63ef094703404ac15f7c85ba36b7349314cf85af1d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36853579",
+   "title": "Molecular phylogenetic study of flavonoids in medicinal plants: a case study family Apiaceae.",
+   "year": 2023,
+   "journal": "Journal of plant research",
+   "doi": "10.1007/s10265-023-01442-y",
+   "pmcid": "PMC10126080",
+   "mesh": [
+    "Phylogeny",
+    "Plants, Medicinal",
+    "Flavonoids",
+    "Apiaceae",
+    "Flavones",
+    "Flavonols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1deb677bd09263ae53d46a8a3f90ab8f6969fe40b93cbe2d08f30e1647b3a0af",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "15364640",
+   "title": "Antioxidant activity of the aqueous extracts of spicy food additives--evaluation and comparison with ascorbic acid in in-vitro systems.",
+   "year": 2004,
+   "journal": "Journal of herbal pharmacotherapy",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Anethum graveolens",
+    "Antioxidants",
+    "Apiaceae",
+    "Ascorbic Acid",
+    "Carum",
+    "Coriandrum",
+    "Cuminum",
+    "Foeniculum",
+    "Free Radical Scavengers",
+    "Humans",
+    "In Vitro Techniques",
+    "Lipid Peroxidation",
+    "Oxidation-Reduction",
+    "Spices"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "be11759e7710b7bdc3a1c47e60f87647b352b77999c254f48261bca82f6cf3fd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31326154",
+   "title": "Synergy quantifications to identify individual contributions of combination partners to the overall activity - The example of STW 5.",
+   "year": 2019,
+   "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+   "doi": "10.1016/j.phymed.2019.153013",
+   "pmcid": null,
+   "mesh": [
+    "Brassicaceae",
+    "Drug Synergism",
+    "Gastrointestinal Diseases",
+    "Humans",
+    "Inflammation",
+    "Interleukin-8",
+    "Intestines",
+    "Muscle, Smooth",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0d8727e0cd276e6ffe5f4b75a5490432dba44956907028d885d9816d1728d77d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27322876",
+   "title": "The in vitro effect of selected essential oils on the growth and mycotoxin production of Aspergillus species.",
+   "year": 2016,
+   "journal": "Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes",
+   "doi": "10.1080/03601234.2016.1191887",
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Aspergillus",
+    "Fungi",
+    "Microbial Sensitivity Tests",
+    "Mycotoxins",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Slovakia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c1ae82f08aa081c3a1dc2e962c7d57f409a32e1b975c109d8177f29ce593fcaa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22012453",
+   "title": "Bait formulations of molluscicides and their effects on biochemical changes in the ovotestis of snail Lymnaea acuminata (Mollusca; Gastropoda:Lymnaeidae).",
+   "year": 2011,
+   "journal": "Revista do Instituto de Medicina Tropical de Sao Paulo",
+   "doi": "10.1590/s0036-46652011000500006",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acids",
+    "Animals",
+    "Coumaric Acids",
+    "Cyclohexenes",
+    "DNA",
+    "Eugenol",
+    "Female",
+    "Lethal Dose 50",
+    "Limonene",
+    "Lymnaea",
+    "Male",
+    "Molluscacides",
+    "Ovary",
+    "Plant Extracts",
+    "RNA",
+    "Terpenes",
+    "Testis",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "45b9ae71b40671333ac119ff444471efff970452a2ed8cbcf70bd1ef3d14dcfa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41752358",
+   "title": "Carvone-Rich Essential Oils and Their Agrobiological Interactions: A Review.",
+   "year": 2026,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules31040579",
+   "pmcid": "PMC12943060",
+   "mesh": [
+    "Oils, Volatile",
+    "Cyclohexane Monoterpenes",
+    "Animals",
+    "Insecticides",
+    "Antifungal Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "740115d32646dba5f998b49638f15fe4b794f47eb4853bed1a2e072c68bdcb7b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "23194763",
+   "title": "Phytotherapy in functional upper abdominal complaints Results of a clinical study with a preparation of several plants.",
+   "year": 1996,
+   "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+   "doi": "10.1016/S0944-7113(96)80070-5",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0e8119fdda38d5387c0f73fdf4e2f3506175f485da342ca87b5b89beb6677446",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25573460",
+   "title": "Interrelations between herbage yield, α-tocopherol, β-carotene, lutein, protein, and fiber in non-leguminous forbs, forage legumes, and a grass-clover mixture as affected by harvest date.",
+   "year": 2015,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf503658n",
+   "pmcid": null,
+   "mesh": [
+    "Animal Feed",
+    "Animal Nutritional Physiological Phenomena",
+    "Animals",
+    "Cattle",
+    "Fabaceae",
+    "Lutein",
+    "Medicago",
+    "Plant Proteins",
+    "Poaceae",
+    "Seasons",
+    "Vitamins",
+    "alpha-Tocopherol",
+    "beta Carotene"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "340e49b774f6c99fdb80dad35e0440bb493771fda1b23a7216a64d8fb5717fc3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24319489",
+   "title": "Antiobesity effect of caraway extract on overweight and obese women: a randomized, triple-blind, placebo-controlled clinical trial.",
+   "year": 2013,
+   "journal": "Evidence-based complementary and alternative medicine : eCAM",
+   "doi": "10.1155/2013/928582",
+   "pmcid": "PMC3844184",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "21b28a7cd6a04d17420fcb7b96f7f66d32e889b00534435e459da4d05d925a76",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21517705",
+   "title": "Heart and kidney oxidative stress status in septic rats treated with caraway extracts.",
+   "year": 2011,
+   "journal": "Pharmaceutical biology",
+   "doi": "10.3109/13880209.2010.539618",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Carum",
+    "Disease Models, Animal",
+    "Dose-Response Relationship, Drug",
+    "Glutathione",
+    "Heart",
+    "Injections, Intraperitoneal",
+    "Kidney",
+    "Lipid Peroxidation",
+    "Male",
+    "Medicine, Traditional",
+    "Oils, Volatile",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Sepsis"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "304b3ed445ab7697283c9bd4f3d84e3a932d0ab26150d58898e5b7e1e35945df",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26500081",
+   "title": "Larvicidal and acetylcholinesterase inhibitory activities of apiaceae plant essential oils and their constituents against aedes albopictus and formulation development.",
+   "year": 2015,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/acs.jafc.5b03586",
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholinesterase",
+    "Aedes",
+    "Animals",
+    "Apiaceae",
+    "Chemistry, Pharmaceutical",
+    "Cholinesterase Inhibitors",
+    "Female",
+    "Insect Proteins",
+    "Insecticides",
+    "Larva",
+    "Male",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "17650426dc1a454526c853d79b323af18e35830330d8624096a63e842cc33e66",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34799324",
+   "title": "Assessment of acute, sub-acute, chronic and genotoxicity of polyherbal formulation DCD-684 in mice.",
+   "year": 2021,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Cytokines",
+    "Drug Administration Schedule",
+    "Gastrointestinal Agents",
+    "Gene Expression Regulation",
+    "Medicine, Traditional",
+    "Mice",
+    "Micronucleus Tests",
+    "Pakistan",
+    "Plants, Medicinal",
+    "Toxicity Tests, Acute",
+    "Toxicity Tests, Chronic"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4a97043de9f40d9f3e65aeabc3215e08e619becc61a831b78180fc4471d9101a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31969303",
+   "title": "Anti-Oxidant and digestive enzymes inhibitory based anti diabetic activity of crude and fractions of Carum carvi L. extracts.",
+   "year": 2019,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Carum",
+    "Dose-Response Relationship, Drug",
+    "Gas Chromatography-Mass Spectrometry",
+    "Glycoside Hydrolase Inhibitors",
+    "Humans",
+    "Hypoglycemic Agents",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Seeds",
+    "alpha-Amylases",
+    "alpha-Glucosidases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "53ef591ae9f67dde04a54531c7b8df020f438316e5e05766c48c4ccbda60afb7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39951927",
+   "title": "Efficacy of an Iranian herbal medicine formula for postoperative constipation in trauma patients with hip and lower limb fractures: A triple-blind, placebo-controlled randomized clinical trial.",
+   "year": 2025,
+   "journal": "International journal of orthopaedic and trauma nursing",
+   "doi": "10.1016/j.ijotn.2025.101163",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Constipation",
+    "Male",
+    "Female",
+    "Iran",
+    "Middle Aged",
+    "Adult",
+    "Postoperative Complications",
+    "Double-Blind Method",
+    "Aged",
+    "Treatment Outcome",
+    "Phytotherapy",
+    "Hip Fractures",
+    "Laxatives",
+    "Lower Extremity",
+    "Fractures, Bone"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5a550d47f90112c167ba39c8571e848ef983ef9798f476725a82e3276797f649",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35549975",
+   "title": "Phytochemical constitutes and biological activities of essential oil extracted from irradiated caraway seeds (Carum carvi L.).",
+   "year": 2023,
+   "journal": "International journal of radiation biology",
+   "doi": "10.1080/09553002.2022.2078004",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Oils, Volatile",
+    "Carum",
+    "Anti-Bacterial Agents",
+    "Caco-2 Cells",
+    "Gram-Negative Bacteria",
+    "Gram-Positive Bacteria",
+    "Phytochemicals",
+    "Antioxidants",
+    "Seeds",
+    "Anti-Infective Agents",
+    "Phenols",
+    "Liver Neoplasms"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5ca442a46c88ffa896b303b3f215cbcc01b1f18020be2e6e31c3579618a8dff6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17052873",
+   "title": "Ethnopharmacological survey of plants used in the traditional treatment of hypertension and diabetes in south-eastern Morocco (Errachidia province).",
+   "year": 2007,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2006.09.011",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Infective Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "86ac97da3a57cb22b7edd841ebe698d38c705ffa96fb1d82df15eff4c4ce7243",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16738885",
+   "title": "Essential oils as potential adulticides against two populations of Aedes aegypti, the laboratory and natural field strains, in Chiang Mai province, northern Thailand.",
+   "year": 2006,
+   "journal": "Parasitology research",
+   "doi": "10.1007/s00436-006-0232-x",
+   "pmcid": null,
+   "mesh": [
+    "Aedes",
+    "Animals",
+    "Female",
+    "Insecticides",
+    "Lethal Dose 50",
+    "Mosquito Control",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Plants",
+    "Thailand"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68d57ba7765f548ccb8decced51652d15f3e916bbcd0a13de64270459baa121b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35349082",
+   "title": "Stimulation of Secondary Metabolites and γ-Terpinene Synthase by Silver Nanoparticles in Callus Cultures of Carum carvi.",
+   "year": 2022,
+   "journal": "Applied biochemistry and biotechnology",
+   "doi": "10.1007/s12010-022-03879-8",
+   "pmcid": null,
+   "mesh": [
+    "Carum",
+    "Cyclohexane Monoterpenes",
+    "Metal Nanoparticles",
+    "Oils, Volatile",
+    "Silver"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f73f4a2e2f9b4526f7ac8adb250f345f491fdbfd242d4bf18ca4c9d6c46eea2c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27522414",
+   "title": "Short communication: Effect of oregano and caraway essential oils on the production and flavor of cow milk.",
+   "year": 2016,
+   "journal": "Journal of dairy science",
+   "doi": "10.3168/jds.2016-10910",
+   "pmcid": null,
+   "mesh": [
+    "Animal Feed",
+    "Animals",
+    "Carum",
+    "Cattle",
+    "Diet",
+    "Female",
+    "Fermentation",
+    "Lactation",
+    "Methane",
+    "Milk",
+    "Oils, Volatile",
+    "Origanum",
+    "Rumen"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "65233b74f46da683659ad3e4fbc76088c8a71cbb6ede87dcc52f9ab5f5f92714",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18814203",
+   "title": "Kinetics of enzyme inhibition by active molluscicidal agents ferulic acid, umbelliferone, eugenol and limonene in the nervous tissue of snail Lymnaea acuminata.",
+   "year": 2009,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.2578",
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholinesterase",
+    "Alkaline Phosphatase",
+    "Animals",
+    "Coumaric Acids",
+    "Cyclohexenes",
+    "Enzyme Inhibitors",
+    "Eugenol",
+    "Kinetics",
+    "Limonene",
+    "Lymnaea",
+    "Molluscacides",
+    "Nerve Tissue",
+    "Terpenes",
+    "Umbelliferones"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c0a4ce6071e94a234952a2699dfc163e0b95f9d175374ab3dc2901ee5b24a4ed",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26970377",
+   "title": "Antimanic-like effects of (R)-(-)-carvone and (S)-(+)-carvone in mice.",
+   "year": 2016,
+   "journal": "Neuroscience letters",
+   "doi": "10.1016/j.neulet.2016.03.013",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antimanic Agents",
+    "Bipolar Disorder",
+    "Cyclohexane Monoterpenes",
+    "Male",
+    "Methylphenidate",
+    "Mice",
+    "Monoterpenes",
+    "Motor Activity",
+    "Sleep Deprivation",
+    "Stereoisomerism",
+    "Structure-Activity Relationship"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c34fedaf57b0cee70cf1cba65bdf6c0bc33044c1d07b5b435f09f6849fac141a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18672039",
+   "title": "Apoptotic activities of ethanol extracts from some Apiaceae on human leukaemia cell lines.",
+   "year": 2008,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2008.07.002",
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Apoptosis",
+    "Cell Line",
+    "Cell Line, Tumor",
+    "Cell Survival",
+    "Fruit",
+    "Humans",
+    "Leukemia",
+    "Phytotherapy",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "841f913a2d4bc217a728bc5c8219c4361cecdf411ee5dd6c868f51f5d87968cb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32626295",
+   "title": "Safety and efficacy of Biomin®DC-C as a zootechnical feed additive for weaned piglets.",
+   "year": 2019,
+   "journal": "EFSA journal. European Food Safety Authority",
+   "doi": "10.2903/j.efsa.2019.5688",
+   "pmcid": "PMC7009209",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "176030be40295344b23ad9b310c1c2de92493effbd736e82b4e5aadf8c48bb75",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nd"
+   }
+  },
+  {
+   "pmid": "21744751",
+   "title": "Combination of molluscicides with attractant carbohydrates and amino acids in bait formulation against the snail Lymnaea acuminata.",
+   "year": 2011,
+   "journal": "European review for medical and pharmacological sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Amino Acids",
+    "Animals",
+    "Carbohydrates",
+    "Lymnaea",
+    "Molluscacides"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "660c28f6aea8ff5218f3e7a315684d8114a1246c22405256a80adbd73703c168",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "9662532",
+   "title": "Biosynthesis of the monoterpenes limonene and carvone in the fruit of caraway. I. Demonstration Of enzyme activities and their changes with development.",
+   "year": 1998,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.117.3.901",
+   "pmcid": "PMC34944",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "26a8b52a4692eddb3747ce83473273de44fdd24e9d21f1e2bb701964176bba31",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16659897",
+   "title": "Hormonal control of somatic embryo development from cultured cells of caraway: interactions of abscisic Acid, zeatin, and gibberellic Acid.",
+   "year": 1977,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.59.4.579",
+   "pmcid": "PMC542452",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "55d43500c8f098d711dd06d9a648be3650ae8565ad9914121d8898ff32c9729a",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40281484",
+   "title": "The potential biofortification role of Actinopolyspora sp. JTT-01 in enhancing the yield and tissue chemical composition of caraway plants.",
+   "year": 2025,
+   "journal": "BMC plant biology",
+   "doi": "10.1186/s12870-025-06137-1",
+   "pmcid": "PMC12032728",
+   "mesh": [
+    "Biofortification",
+    "Carum",
+    "Seeds",
+    "Nutritive Value"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d03d05be4d73639c2f50b96f12cf8bffe5cbd5105ad298034d1df42344957bd7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "14888359",
+   "title": "[Investigations on the effect of Foeniculum vulgare, Carum carvi, Anisum vulgare, Crataegus oxyacanthus, and Galga officinalis on lactation].",
+   "year": 1951,
+   "journal": "Izvestiia na meditsinskite instituti. [Bulletin des instituts de medecine]. Bulgarska akademiia na naukite. Otdelenie za biologicheski i meditsinski nauki",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Breast Feeding",
+    "Carum",
+    "Crataegus",
+    "Female",
+    "Foeniculum",
+    "Humans",
+    "Lactation",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27936247",
+   "title": "Land-Use and Socioeconomic Change, Medicinal Plant Selection and Biodiversity Resilience in Far Western Nepal.",
+   "year": 2016,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0167812",
+   "pmcid": "PMC5147989",
+   "mesh": [
+    "Biodiversity",
+    "Conservation of Natural Resources",
+    "Nepal",
+    "Plants, Medicinal",
+    "Social Class"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "94f2090cda483a8a78eec42362e69bb32f403476610e2e17431fa05de8fa5404",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29751723",
+   "title": "[Study on medication laws of Tibetan medicine in treatment of plateau disease based on data mining technology].",
+   "year": 2018,
+   "journal": "Zhongguo Zhong yao za zhi = Zhongguo zhongyao zazhi = China journal of Chinese materia medica",
+   "doi": "10.19540/j.cnki.cjcmm.20180112.001",
+   "pmcid": null,
+   "mesh": [
+    "Data Mining",
+    "Drug Prescriptions",
+    "Medicine, Chinese Traditional",
+    "Medicine, Tibetan Traditional"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "884f784584b50b266e5bdd4dad231464127646a260b3fbf935f620f4751f89ab",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34708005",
+   "title": "Characterization, Biological Activity, and Mechanism of Action of a Plant-Based Novel Antifungal Peptide, Cc-AFP1, Isolated From Carum carvi.",
+   "year": 2021,
+   "journal": "Frontiers in cellular and infection microbiology",
+   "doi": "10.3389/fcimb.2021.743346",
+   "pmcid": "PMC8544420",
+   "mesh": [
+    "Antifungal Agents",
+    "Aspergillus",
+    "Carum",
+    "HEK293 Cells",
+    "Humans",
+    "Microbial Sensitivity Tests",
+    "Peptides"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "01c4fdf47ceb1e58df24f646e35af191f9dfc0c0cde24a73b60239bc984f98e4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40371337",
+   "title": "Menthacarin, a proprietary combination of peppermint and caraway oil, alters cultured human fecal microbiota composition, resulting in increased SCFA production.",
+   "year": 2025,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2025.1569052",
+   "pmcid": "PMC12075938",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7ca20d2a348bece4c9882659e331e4b220bdf6599e5c88bc3451ec685278c639",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "11505785",
+   "title": "Antiulcerogenic effect of some gastrointestinally acting plant extracts and their combination.",
+   "year": 2001,
+   "journal": "Arzneimittel-Forschung",
+   "doi": "10.1055/s-0031-1300078",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Ulcer Agents",
+    "Gastric Acid",
+    "Gastric Mucosa",
+    "Gastrointestinal Agents",
+    "Gastrointestinal Contents",
+    "Leukotrienes",
+    "Male",
+    "Mucins",
+    "Pepsin A",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Prostaglandins",
+    "Rats",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1f0a4386e6c6035ed84dc6822819a795ae1e9ab2b6e8e087e6a2256acfeef280",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35453199",
+   "title": "Comparative Analysis of the Antimicrobial Activity of Essential Oils and Their Formulated Microemulsions against Foodborne Pathogens and Spoilage Bacteria.",
+   "year": 2022,
+   "journal": "Antibiotics (Basel, Switzerland)",
+   "doi": "10.3390/antibiotics11040447",
+   "pmcid": "PMC9025571",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e9a37885885c8cb82fb66ce6d73b79e0432588bc64dfa13073c9303efec2a099",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "15713544",
+   "title": "Suppressive effects of caraway (Carum carvi) extracts on 2, 3, 7, 8-tetrachloro-dibenzo-p-dioxin-dependent gene expression of cytochrome P450 1A1 in the rat H4IIE cells.",
+   "year": 2005,
+   "journal": "Toxicology in vitro : an international journal published in association with BIBRA",
+   "doi": "10.1016/j.tiv.2004.11.003",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carcinoma, Hepatocellular",
+    "Carum",
+    "Cell Line, Tumor",
+    "Cytochrome P-450 CYP1A1",
+    "Dose-Response Relationship, Drug",
+    "Drug Screening Assays, Antitumor",
+    "Environmental Pollutants",
+    "Enzyme Induction",
+    "Enzyme Inhibitors",
+    "Gene Expression Regulation, Neoplastic",
+    "Liver Neoplasms",
+    "Plant Extracts",
+    "Polychlorinated Dibenzodioxins",
+    "RNA, Messenger",
+    "Rats"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "83d6a5f624fb2c9838e7247776225db0740b8363a1152498b85bdd654395eb28",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20874226",
+   "title": "An attempt of postharvest orange fruit rot control using essential oils from Mediterranean plants.",
+   "year": 2010,
+   "journal": "Journal of medicinal food",
+   "doi": "10.1089/jmf.2009.0285",
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Botrytis",
+    "Citrus sinensis",
+    "Disk Diffusion Antimicrobial Tests",
+    "Food Microbiology",
+    "Food Parasitology",
+    "Food Preservation",
+    "Food Preservatives",
+    "Fruit",
+    "Fungi",
+    "Fungicides, Industrial",
+    "Lamiaceae",
+    "Mediterranean Region",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Organic Agriculture",
+    "Penicillium",
+    "Pesticides",
+    "Phytophthora",
+    "Plant Components, Aerial",
+    "Plant Diseases",
+    "Rhizopus",
+    "Verbenaceae"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6f1bbe584d0069e62b5fd2f15e0503a6b06f4f8d5ecd14cab180deaa8709882c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40728800",
+   "title": "Assessing the efficacy of nanofabricated plant-based antifungal formulation against the growth and zearalenone toxin production by Fusarium graminearum.",
+   "year": 2025,
+   "journal": "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]",
+   "doi": "10.1007/s42770-025-01744-4",
+   "pmcid": "PMC12660558",
+   "mesh": [
+    "Fusarium",
+    "Antifungal Agents",
+    "Zearalenone",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9111f590da9b061d0dda72a49a3c41d2a51e7dc2cf5cf5b2a844e1f984da5577",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24868889",
+   "title": "Composition of the essential oil of wild grown caraway in meadows of the Vienna region (Austria).",
+   "year": 2014,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Austria",
+    "Carum",
+    "Demography",
+    "Ecosystem",
+    "Oils, Volatile",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3c367c47ea7e9167a032d39f1dcea33a71f20249da2b6938787c1d974bddd4ff",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24262011",
+   "title": "Fatty acids, α-tocopherol, β-carotene, and lutein contents in forage legumes, forbs, and a grass-clover mixture.",
+   "year": 2013,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf403195v",
+   "pmcid": null,
+   "mesh": [
+    "Animal Feed",
+    "Animals",
+    "Fabaceae",
+    "Fatty Acids",
+    "Lutein",
+    "Magnoliopsida",
+    "Medicago",
+    "Poaceae",
+    "alpha-Tocopherol",
+    "beta Carotene"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c35cd87400e009abe14041d5708bce77e7ce5da36657d40b64f3a0b53571e2d0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24638976",
+   "title": "Preliminary safety evaluation and biochemical efficacy of a Carum carvi extract: results from a randomized, triple-blind, and placebo-controlled clinical trial.",
+   "year": 2014,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.5147",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Blood Glucose",
+    "Blood Pressure",
+    "Carum",
+    "Female",
+    "Heart Rate",
+    "Hematologic Tests",
+    "Humans",
+    "Iran",
+    "Kidney Function Tests",
+    "Lipids",
+    "Liver Function Tests",
+    "Middle Aged",
+    "Obesity",
+    "Overweight",
+    "Plant Extracts",
+    "Young Adult"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "95d21e2425b4a0466c2e48b621c3016e160e7d2f582f9a3cacbd60d6fe3bfd1d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22688506",
+   "title": "Seed rain and its relationship with above-ground vegetation of degraded Kobresia meadows.",
+   "year": 2013,
+   "journal": "Journal of plant research",
+   "doi": "10.1007/s10265-012-0498-2",
+   "pmcid": null,
+   "mesh": [
+    "Biodiversity",
+    "Conservation of Natural Resources",
+    "Cyperaceae",
+    "Ecosystem",
+    "Environmental Pollution",
+    "Environmental Restoration and Remediation",
+    "Geography",
+    "Plant Weeds",
+    "Seed Dispersal",
+    "Soil",
+    "Tibet",
+    "Weed Control"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "76c5530d7c207b9c98e28f4317e354274f9cf1039b6b997164b435632d02891d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42738766",
+   "title": "Molecular Targets and Biological Activities of Carvone: An Evidence-Graded Review.",
+   "year": 2026,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules31173106",
+   "pmcid": "PMC13567479",
+   "mesh": [
+    "Cyclohexane Monoterpenes",
+    "Humans",
+    "Animals"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c3e9cb19563a254547f1b98764c06fcdf0d62488b9c1a7c5d4c423b72fedc2d4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25243884",
+   "title": "Nutraceutical properties of dietary plants extracts: prevention of diabetic nephropathy through inhibition of glycation and toxicity to erythrocytes and HEK293 cells.",
+   "year": 2015,
+   "journal": "Pharmaceutical biology",
+   "doi": "10.3109/13880209.2014.910236",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Cell Survival",
+    "Diabetic Nephropathies",
+    "Erythrocytes",
+    "Glycation End Products, Advanced",
+    "Glycosylation",
+    "HEK293 Cells",
+    "Hemolysis",
+    "Humans",
+    "Plant Extracts",
+    "Plants, Edible",
+    "Serum Albumin, Bovine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8fcdf2391ee757bb8476d33666049d5e3a39b1bdfff2843195672448c529641f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20234067",
+   "title": "Hydrophilic and lipophilic antioxidant capacities of Georgian spices for meat and their possible health implications.",
+   "year": 2010,
+   "journal": "Georgian medical news",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Food Handling",
+    "Georgia (Republic)",
+    "Health Status",
+    "Humans",
+    "Hydrophobic and Hydrophilic Interactions",
+    "Meat",
+    "Spices"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "291d0224ce9e3a2a016f852cc63b793cb80c5f8c942df6a1fabe817dfdcbaa1a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16317658",
+   "title": "In vitro susceptibility of Helicobacter pylori to botanical extracts used traditionally for the treatment of gastrointestinal disorders.",
+   "year": 2005,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.1776",
+   "pmcid": null,
+   "mesh": [
+    "Curcuma",
+    "Zingiber officinale",
+    "Helicobacter pylori",
+    "Medicine, Traditional",
+    "Microbial Sensitivity Tests",
+    "Myristica",
+    "Plant Extracts",
+    "Rosmarinus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d2f59975c3a67a216446b58beff546d156bc2d2e85c9ff7797d48ef430fbab85",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12058595",
+   "title": "[Influence of spiced feed additives on taste of hen's eggs].",
+   "year": 2002,
+   "journal": "Berliner und Munchener tierarztliche Wochenschrift",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animal Feed",
+    "Animals",
+    "Chickens",
+    "Eggs",
+    "Female",
+    "Odorants",
+    "Spices",
+    "Taste"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3ef4300267a9a062c6ae94e67770d29aebcd8a69e9eb144ad8e1ddc8c8cc795f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42122882",
+   "title": "Medicinal Plants Traditionally Used to Treat Digestive System Disorders in Lithuania.",
+   "year": 2026,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants15091390",
+   "pmcid": "PMC13164646",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "21589b2ae53c8fa3783f1a44ce46a5d67094d55841900bb71e3ad194e6811668",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42000819",
+   "title": "Phytochemical characterization and antidiabetic potential of Carum carvi L. seeds from Beni Mellal-Khenifra: in vitro, in vivo, in silico and ADME investigations.",
+   "year": 2026,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-026-47853-4",
+   "pmcid": "PMC13250129",
+   "mesh": [
+    "Hypoglycemic Agents",
+    "Animals",
+    "Seeds",
+    "Plant Extracts",
+    "Mice",
+    "alpha-Amylases",
+    "Carum",
+    "Phytochemicals",
+    "Molecular Docking Simulation",
+    "Male",
+    "Blood Glucose",
+    "alpha-Glucosidases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "08b179202f3767d550760838ba47ab1d74a1b6c3714db81a42b9ac2d3a01f3ab",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "27217604",
+   "title": "Anticonvulsant Effect of the Aqueous Extract and Essential Oil of Carum Carvi L. Seeds in a Pentylenetetrazol Model of Seizure in Mice.",
+   "year": 2016,
+   "journal": "Iranian journal of medical sciences",
+   "doi": null,
+   "pmcid": "PMC4876298",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "72fdf4e3f13dcde014d66af3d4969fbd6da6e3995ad4ac88ff4d9c1997148ccb",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "34275806",
+   "title": "Antispasmodic activity and mechanism of action of polyherbal formulation DCD-684 on rabbit jejunum.",
+   "year": 2021,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholine",
+    "Animals",
+    "Carbachol",
+    "Carum",
+    "Colic",
+    "Female",
+    "Foeniculum",
+    "Zingiber officinale",
+    "Histamine",
+    "Jejunum",
+    "Male",
+    "Mentha",
+    "Parasympatholytics",
+    "Plants, Medicinal",
+    "Rabbits",
+    "Serotonin"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dabaade6b7dc000c6decb4bf8870e9a582a1fd22ba1a5da3d386e1c067dbc705",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27023323",
+   "title": "Determination of methanol in Iranian herbal distillates.",
+   "year": 2016,
+   "journal": "Journal of complementary & integrative medicine",
+   "doi": "10.1515/jcim-2015-0041",
+   "pmcid": null,
+   "mesh": [
+    "Blindness",
+    "Carum",
+    "Chromatography, Gas",
+    "Distillation",
+    "Humans",
+    "Iran",
+    "Maximum Allowable Concentration",
+    "Mentha piperita",
+    "Methanol",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "12999f4aecb4baa23f37226c29785a85f356a14273d05c3019529960ccc36185",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33437175",
+   "title": "New allergens from spices in the Apiaceae family: anise Pimpinella anisum L. and caraway Carum carvi L.",
+   "year": 2020,
+   "journal": "Central-European journal of immunology",
+   "doi": "10.5114/ceji.2020.101236",
+   "pmcid": "PMC7790001",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ac8ee99cb22698bf02b599d3e7bedbd1deb92a603c2f9adea9981779c414b5f2",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "35841634",
+   "title": "Caraway (Carum carvi L.) in fast-growing and slow-growing broiler chickens' diets and its effect on performance, digestive tract morphology and blood biochemical profile.",
+   "year": 2022,
+   "journal": "Poultry science",
+   "doi": "10.1016/j.psj.2022.101980",
+   "pmcid": "PMC9289846",
+   "mesh": [
+    "Animal Feed",
+    "Animal Nutritional Physiological Phenomena",
+    "Animals",
+    "Carum",
+    "Chickens",
+    "Diet",
+    "Dietary Supplements",
+    "Gastrointestinal Tract",
+    "Male"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial, Veterinary"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b461e23e24fa3d676d9ac7eb0f500ae5f2c323b31e041be4e225ecdd06614e30",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "20402506",
+   "title": "Raman analysis of caraway (Carum carvi L.) single fruits. Evaluation of essential oil content and its composition.",
+   "year": 2010,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf100298z",
+   "pmcid": null,
+   "mesh": [
+    "Calibration",
+    "Carum",
+    "Chromatography, Gas",
+    "Fourier Analysis",
+    "Oils, Volatile",
+    "Spectrum Analysis, Raman"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "af51b4df6037a15cdd66f01cc637c51ab5a116a1ba28fbaa7e51a96e55134cec",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20657443",
+   "title": "Phytotoxic activities of Mediterranean essential oils.",
+   "year": 2010,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules15064309",
+   "pmcid": "PMC6257658",
+   "mesh": [
+    "Apiaceae",
+    "Foeniculum",
+    "Germination",
+    "Lamiaceae",
+    "Lepidium sativum",
+    "Lactuca",
+    "Oils, Volatile",
+    "Pimpinella",
+    "Plant Oils",
+    "Raphanus",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "96357ca00c8f259356746740271dd2a9560a916fbc34f67624cafac3a488e492",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "22096320",
+   "title": "Cuminum cyminum and Carum carvi: An update.",
+   "year": 2011,
+   "journal": "Pharmacognosy reviews",
+   "doi": "10.4103/0973-7847.79101",
+   "pmcid": "PMC3210012",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e3151f0058cc4b8f56c2fd006f3aee82c59fd9f9b705fbb0be521452c62e04de",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "20645759",
+   "title": "Relaxant effect of ethanol extract of Carum carvi on dispersed intestinal smooth muscle cells of the guinea pig.",
+   "year": 2010,
+   "journal": "Pharmaceutical biology",
+   "doi": "10.3109/13880200903046161",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carum",
+    "Ethanol",
+    "Female",
+    "Guinea Pigs",
+    "Intestine, Small",
+    "Male",
+    "Muscle Relaxation",
+    "Myocytes, Smooth Muscle",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c4d0e8f72a2a052415a5dbf007169fa08074edda0a0f0f47942b5dcb6442402e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40245342",
+   "title": "Innovative Extraction of Caraway (Carum carvi) Essential Oil: Comparing Hydrodistillation and Microwave-Assisted Techniques for Chemical Profiling, Kinetic Modeling, Enhanced Yield, Antioxidant, and Antimicrobial Properties.",
+   "year": 2025,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202500461",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Anti-Infective Agents",
+    "Antioxidants",
+    "Benzothiazoles",
+    "Biphenyl Compounds",
+    "Carum",
+    "Distillation",
+    "Kinetics",
+    "Microbial Sensitivity Tests",
+    "Microwaves",
+    "Oils, Volatile",
+    "Picrates",
+    "Plant Oils",
+    "Nigella sativa"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Comparative Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cf4bdc9a8541b002cce8a2908b08d45d89a3d9f02f6ee5079ca584c7ffc19fca",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20608729",
+   "title": "Antioxidant and hepatoprotective potential of essential oils of coriander (Coriandrum sativum L.) and caraway (Carum carvi L.) (Apiaceae).",
+   "year": 2010,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf101645n",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Carum",
+    "Coriandrum",
+    "Lipid Peroxidation",
+    "Liver",
+    "Male",
+    "Mice",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Protective Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "23db1be1e4b06c73f9b837964070d49bcc787129eef5b97f5c1ed78c0a8b7253",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26633337",
+   "title": "Accurate Mass GC/LC-Quadrupole Time of Flight Mass Spectrometry Analysis of Fatty Acids and Triacylglycerols of Spicy Fruits from the Apiaceae Family.",
+   "year": 2015,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules201219779",
+   "pmcid": "PMC4881421",
+   "mesh": [
+    "Apiaceae",
+    "Chromatography, Liquid",
+    "Fatty Acids",
+    "Fruit",
+    "Gas Chromatography-Mass Spectrometry",
+    "Seeds",
+    "Spices",
+    "Triglycerides"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3810af42e54fc3a4cfbad28ea7dc727fa2bcab5f2c2cec77bcb8be3469f0caf2",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "23495832",
+   "title": "Extraction of the volatile oil from Carum carvi of Tunisia and Lithuania by supercritical carbon dioxide: chemical composition and antiulcerogenic activity.",
+   "year": 2013,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2013.771350",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Ulcer Agents",
+    "Apiaceae",
+    "Carbon Dioxide",
+    "Drug Evaluation, Preclinical",
+    "Male",
+    "Oils, Volatile",
+    "Omeprazole",
+    "Rats",
+    "Rats, Wistar",
+    "Stomach Ulcer"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "850917711ff92fed897602ee820bd47e7515313e25b440af6fcedcb793330834",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16567073",
+   "title": "Cholesterol and triglycerides lowering activities of caraway fruits in normal and streptozotocin diabetic rats.",
+   "year": 2006,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2006.01.033",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Oral",
+    "Animals",
+    "Anticholesteremic Agents",
+    "Carum",
+    "Cholesterol",
+    "Diabetes Mellitus, Experimental",
+    "Dose-Response Relationship, Drug",
+    "Fruit",
+    "Lipid Metabolism",
+    "Male",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Streptozocin",
+    "Triglycerides"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8964bd7c230692ef6848427d9a6c75b2c36721874ea22d1f31b0602ec9df855a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41830032",
+   "title": "Age-Related Olfactory and Cognitive Decline: Potential Effects of Rosmarinus officinalis and Carum carvi Essential Oils.",
+   "year": 2026,
+   "journal": "Nutrients",
+   "doi": "10.3390/nu18050862",
+   "pmcid": "PMC12987288",
+   "mesh": [
+    "Humans",
+    "Oils, Volatile",
+    "Rosmarinus",
+    "Female",
+    "Male",
+    "Aging",
+    "Aged",
+    "Middle Aged",
+    "Cognition",
+    "Adult",
+    "Smell",
+    "Young Adult",
+    "Age Factors",
+    "Eucalyptol",
+    "Limonene"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "02cdf18d0e64ba4f1916864121994a5b8e7bb8c4ed1bf0b75cad9dea4e3d9fb9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32368551",
+   "title": "Efficacy of Extractions of Iranian Native Plants against Main Malaria Vector, Anopheles stephensi in Iran for Making Appropriate Formulation for Disease Control.",
+   "year": 2019,
+   "journal": "Journal of arthropod-borne diseases",
+   "doi": null,
+   "pmcid": "PMC7188767",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9f2d637bc1e024a7be949fe9dc959b4b5cd9888adbb5a92ef56478919e117af7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33256083",
+   "title": "Repellent Effect of the Caraway Carum carvi L. on the Rice Weevil Sitophilus oryzae L. (Coleoptera, Dryophthoridae).",
+   "year": 2020,
+   "journal": "Insects",
+   "doi": "10.3390/insects11120836",
+   "pmcid": "PMC7761064",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "adfe8c3c8cc0350ad738301bc5d83912da416d0085c2134fcc074b7d3f5af16e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "41775830",
+   "title": "The association between medicinal herbs consumption and body weight and composition: a hospital based cross-sectional study.",
+   "year": 2026,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-026-42069-y",
+   "pmcid": "PMC13066575",
+   "mesh": [
+    "Humans",
+    "Cross-Sectional Studies",
+    "Middle Aged",
+    "Plants, Medicinal",
+    "Male",
+    "Adult",
+    "Female",
+    "Aged",
+    "Iran",
+    "Body Weight",
+    "Body Mass Index",
+    "Body Composition",
+    "Waist Circumference",
+    "Hospitals",
+    "Coronary Angiography"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d81fc53d72f95150de6d126f013b0cdd5f560f30e3ccb774752139593cfbadff",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "16538005",
+   "title": "Inhibitory effects of caraway (Carum carvi L. ) and its component on N-methyl-N'-nitro-N-nitrosoguanidine-induced mutagenicity.",
+   "year": 2006,
+   "journal": "The journal of medical investigation : JMI",
+   "doi": "10.2152/jmi.53.123",
+   "pmcid": null,
+   "mesh": [
+    "Antimutagenic Agents",
+    "Carum",
+    "DNA Adducts",
+    "Methylnitronitrosoguanidine",
+    "Mutagenicity Tests",
+    "Mutagens",
+    "Plant Extracts",
+    "Salmonella typhimurium",
+    "Seeds",
+    "Sulfhydryl Compounds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "12a2a9a086b13925d7dd1bc03e6a41dbed7aa362425b1e55836bde5da6f7b76e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29786839",
+   "title": "The Influence of Scalded Flour, Fermentation, and Plants Belonging to Lamiaceae Family on the Wheat Bread Quality and Acrylamide Content.",
+   "year": 2018,
+   "journal": "Journal of food science",
+   "doi": "10.1111/1750-3841.14176",
+   "pmcid": null,
+   "mesh": [
+    "Acrylamide",
+    "Bread",
+    "Coriandrum",
+    "Fermentation",
+    "Flour",
+    "Food Handling",
+    "Food Quality",
+    "Humans",
+    "Lactiplantibacillus plantarum",
+    "Lamiaceae",
+    "Ocimum",
+    "Origanum",
+    "Triticum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ad4cbb3ff9295682b1ea275862dcea7a465a302352bcd7fad60cbece2758dbf7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42013767",
+   "title": "Immunorestorative effects of caraway and marjoram extracts on Th2-mediated inflammation in house dust mite-triggered asthma.",
+   "year": 2026,
+   "journal": "Molecular immunology",
+   "doi": "10.1016/j.molimm.2026.04.007",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Th2 Cells",
+    "Asthma",
+    "Plant Extracts",
+    "Rats",
+    "Inflammation",
+    "Bronchoalveolar Lavage Fluid",
+    "Pyroglyphidae",
+    "Cytokines",
+    "STAT6 Transcription Factor",
+    "Male",
+    "NF-kappa B",
+    "Immunoglobulin E",
+    "Lung",
+    "Mucin 5AC",
+    "Disease Models, Animal",
+    "Forkhead Transcription Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0673ace59bb891380665278aae5eba9dcf43f7f14dbd7d4dd500d8e1d78db074",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19093484",
+   "title": "Evaluation of antibacterial activity of selected Iranian essential oils against Staphylococcus aureus and Escherichia coli in nutrient broth medium.",
+   "year": 2007,
+   "journal": "Pakistan journal of biological sciences : PJBS",
+   "doi": "10.3923/pjbs.2007.3693.3697",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Artemisia",
+    "Carum",
+    "Cyclohexanones",
+    "Escherichia coli",
+    "Foeniculum",
+    "Food Microbiology",
+    "Humans",
+    "Iran",
+    "Mentha piperita",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Staphylococcus aureus",
+    "Thymus Plant"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e02f7436cbd137cf3748dfbbaa83224852e2bd822a45e6e7fd2d7918543cc742",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20355058",
+   "title": "Fatty acid and essential oil composition of three Tunisian caraway (Carum carvi L.) seed ecotypes.",
+   "year": 2010,
+   "journal": "Journal of the science of food and agriculture",
+   "doi": "10.1002/jsfa.3827",
+   "pmcid": null,
+   "mesh": [
+    "Carum",
+    "Cyclohexane Monoterpenes",
+    "Cyclohexenes",
+    "Ecosystem",
+    "Fatty Acids",
+    "Limonene",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Oleic Acids",
+    "Plant Extracts",
+    "Seeds",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "af462529519678aae756642742b185031cead0836e6f2e0e6262eb3329e02877",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42449941",
+   "title": "Integrating Microbiological Indicators and Shotgun Metagenomics for the Assessment of the Rhizosphere Microbiome of Medicinal Plants.",
+   "year": 2026,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms27135665",
+   "pmcid": "PMC13361732",
+   "mesh": [
+    "Rhizosphere",
+    "Metagenomics",
+    "Microbiota",
+    "Plants, Medicinal",
+    "Soil Microbiology",
+    "Bacteria",
+    "Metagenome"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bc3673c7965788f9e963d8f2986a19af34acc19e40ba2a7daea2508dff1a2931",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "16483625",
+   "title": "Effect of dietary caraway (Carum carvi L.) on aberrant crypt foci development, fecal steroids, and intestinal alkaline phosphatase activities in 1,2-dimethylhydrazine-induced colon carcinogenesis.",
+   "year": 2006,
+   "journal": "Toxicology and applied pharmacology",
+   "doi": "10.1016/j.taap.2006.01.001",
+   "pmcid": null,
+   "mesh": [
+    "1,2-Dimethylhydrazine",
+    "Administration, Oral",
+    "Alkaline Phosphatase",
+    "Animals",
+    "Anticarcinogenic Agents",
+    "Bile Acids and Salts",
+    "Carum",
+    "Colon",
+    "Colonic Neoplasms",
+    "Dose-Response Relationship, Drug",
+    "Feces",
+    "Male",
+    "Plant Preparations",
+    "Rats",
+    "Rats, Wistar",
+    "Seeds",
+    "Sterols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "690af5b25d9fc0d53384d7bd26b87f9b4c92a8c47cd5a9ea52632a2853f406ca",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19079537",
+   "title": "Comparative study of the major Iranian cereal cultivars and some selected spices in relation to support Aspergillus parasiticus growth and aflatoxin production.",
+   "year": 2008,
+   "journal": "Iranian biomedical journal",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Aflatoxins",
+    "Aspergillus",
+    "Edible Grain",
+    "Iran",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0ef83fa427533d552b98b46ce73d309689c4222bc605268a52905c80ee4281c6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21173724",
+   "title": "Insecticidal activity of essential oil of Carum Carvi fruits from China and its main components against two grain storage insects.",
+   "year": 2010,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules15129391",
+   "pmcid": "PMC6259201",
+   "mesh": [
+    "Animals",
+    "Carum",
+    "Edible Grain",
+    "Insecticides",
+    "Oils, Volatile",
+    "Tribolium"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "36e4e30c67e2283c5b3d67550da074f1949da9dcabe061da756f96ddc7318645",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42448884",
+   "title": "Dissecting flowering time and flower color in Carum carvi utilizing a long-read draft genome and a GBS-based QTL mapping.",
+   "year": 2026,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-026-61767-1",
+   "pmcid": "PMC13370025",
+   "mesh": [
+    "Quantitative Trait Loci",
+    "Flowers",
+    "Chromosome Mapping",
+    "Genome, Plant",
+    "Polymorphism, Single Nucleotide",
+    "Phenotype",
+    "Genetic Linkage",
+    "Pigmentation",
+    "Genotype"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "408fb82ab3b051e26307b6bad5bd8d50df4f3b5c8d86f020dac5bd3e49bc0509",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40143099",
+   "title": "In Vitro Study to Evaluate the Best Conditions Highlighting the Antimicrobial Activity of Carum carvi Essential Oil on Human Pathogen Isolates in Formulations Against the Spread of Antibiotic Resistance.",
+   "year": 2025,
+   "journal": "Pharmaceuticals (Basel, Switzerland)",
+   "doi": "10.3390/ph18030321",
+   "pmcid": "PMC11945957",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "35fb5c69dcad52909fb1c527f19291d7b33ae93e23ab4fa82460d7bd3dc71fde",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "16872560",
+   "title": "Dose-response efficacy of caraway (Carum carvi L.) on tissue lipid peroxidation and antioxidant profile in rat colon carcinogenesis.",
+   "year": 2006,
+   "journal": "The Journal of pharmacy and pharmacology",
+   "doi": "10.1211/jpp.58.8.0014",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antineoplastic Agents, Phytogenic",
+    "Antioxidants",
+    "Ascorbic Acid",
+    "Carcinogens",
+    "Carum",
+    "Catalase",
+    "Colon",
+    "Colonic Neoplasms",
+    "Diet",
+    "Glutathione",
+    "Lipid Peroxidation",
+    "Male",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Superoxide Dismutase",
+    "Suspensions",
+    "Thiobarbituric Acid Reactive Substances",
+    "Vitamin E"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2f7646bd5588ad6d41dfceb454b5a508e156b11c90b8123c50a2a5dace41019d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19722567",
+   "title": "Fumigant antitermitic activity of plant essential oils and components from Ajowan ( Trachyspermum ammi ), Allspice ( Pimenta dioica ), caraway ( Carum carvi ), dill ( Anethum graveolens ), Geranium ( Pelargonium graveolens ), and Litsea ( Litsea cubeba ) oils against Japanese termite ( Reticulitermes speratus Kolbe).",
+   "year": 2009,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf9015416",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Fumigation",
+    "Insect Control",
+    "Insecticides",
+    "Isoptera",
+    "Magnoliopsida",
+    "Oils, Volatile",
+    "Plant Extracts",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1750717d5b73547cbd536f3b8ee5887cbd8ac22315b3536f4ecda65fa313b79e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36329347",
+   "title": "Morphology, physiology, and biochemistry of zinc-stressed caraway plants.",
+   "year": 2023,
+   "journal": "Protoplasma",
+   "doi": "10.1007/s00709-022-01818-2",
+   "pmcid": null,
+   "mesh": [
+    "Zinc",
+    "Carum",
+    "Antioxidants",
+    "Oils, Volatile",
+    "Shikimic Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4cfb38cdf4a1dcda81439660fa1b5a893caf3f7a75af1c853c95c39637d5457a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7336705",
+   "title": "[Use of an herbal combination with laxative action on duodenal peptic ulcer and gastroduodenitis patients with a concomitant obstipation syndrome].",
+   "year": 1981,
+   "journal": "Vutreshni bolesti",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Cathartics",
+    "Constipation",
+    "Drug Combinations",
+    "Drug Evaluation",
+    "Duodenal Ulcer",
+    "Duodenitis",
+    "Female",
+    "Gastritis",
+    "Humans",
+    "Male",
+    "Middle Aged",
+    "Plant Extracts",
+    "Syndrome"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a07933f3ea8cbd93d0cbc4992bc69724b67d6d57e7af133c4477cc45185692b5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32884716",
+   "title": "Effect of power ultrasound on the extraction of black caraway (Carum carvi L.) and evaluation of their qualitative properties using response surface methodology.",
+   "year": 2020,
+   "journal": "Food science & nutrition",
+   "doi": "10.1002/fsn3.1733",
+   "pmcid": "PMC7455972",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c3a966a0c876718dbfff03d365f707796943c8c2b515d4d6feb503ca7429ac70",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38649707",
+   "title": "Design of three-component essential oil extract mixture from Cymbopogon flexuosus, Carum carvi, and Acorus calamus with enhanced antioxidant activity.",
+   "year": 2024,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-024-59708-x",
+   "pmcid": "PMC11035653",
+   "mesh": [
+    "Cymbopogon",
+    "Oils, Volatile",
+    "Antioxidants",
+    "Plant Extracts",
+    "Acorus",
+    "Carum",
+    "Gas Chromatography-Mass Spectrometry",
+    "Biphenyl Compounds",
+    "Free Radical Scavengers"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2ab49eeea9b2868e9c6fc26872a13df05be7f61debea678fa47aed057144ecb6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "16598436",
+   "title": "Dose dependent inhibitory effect of dietary caraway on 1,2-dimethylhydrazine induced colonic aberrant crypt foci and bacterial enzyme activity in rats.",
+   "year": 2006,
+   "journal": "Investigational new drugs",
+   "doi": "10.1007/s10637-006-6801-0",
+   "pmcid": null,
+   "mesh": [
+    "1,2-Dimethylhydrazine",
+    "Animals",
+    "Antineoplastic Agents, Phytogenic",
+    "Bacteria",
+    "Carcinogens",
+    "Carum",
+    "Catalase",
+    "Colon",
+    "Colonic Neoplasms",
+    "Diet",
+    "Dose-Response Relationship, Drug",
+    "Feces",
+    "Lipid Peroxidation",
+    "Liver",
+    "Male",
+    "Plant Preparations",
+    "Precancerous Conditions",
+    "Rats",
+    "Rats, Wistar",
+    "Seeds",
+    "Superoxide Dismutase"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e64ec27443820c781b6ca4aa6d083016e3df39bef9c09f7ebb31ecc20cd1b098",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37772516",
+   "title": "Lower dose of plant substance more effective in repelling Rhyzopertha dominica F . (Coleoptera, Bostrichidae) and Sitophilus granarius L. (Coleoptera, Dryophthoridae).",
+   "year": 2023,
+   "journal": "Annals of agricultural and environmental medicine : AAEM",
+   "doi": "10.26444/aaem/163326",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Coleoptera",
+    "Insecticides",
+    "Weevils",
+    "Oils, Volatile",
+    "Cyclohexane Monoterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f97b05d77db49ff30834686425a4b8ae803916444df8f0db6f2a8e0db3f56d92",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42838162",
+   "title": "Targeted anti-inflammatory effects of folic acid-conjugated chitosan-ZnO NPs: Modulation of inflammatory cytokines and oxidative stress.",
+   "year": 2026,
+   "journal": "International journal of biological macromolecules",
+   "doi": "10.1016/j.ijbiomac.2026.154784",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8a49878b65c331798f0d0aff03be914d643cc59d91d5e71d7124526a53deffd9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23194576",
+   "title": "Regeneration of Plants by Embryogenesis with Callus Cultures of Carum carvi L.",
+   "year": 1984,
+   "journal": "Journal of plant physiology",
+   "doi": "10.1016/S0176-1617(84)80122-4",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "730a216da1b32c15265acd65ae6e2211a7e330039958db7f4ed269416d307125",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31368576",
+   "title": "Synthesis of Carum Carvi essential oil nanoemulsion, the cytotoxic effect, and expression of caspase 3 gene.",
+   "year": 2019,
+   "journal": "Journal of food biochemistry",
+   "doi": "10.1111/jfbc.12956",
+   "pmcid": null,
+   "mesh": [
+    "Apoptosis",
+    "Carum",
+    "Caspase 3",
+    "Cell Survival",
+    "Emulsions",
+    "HT29 Cells",
+    "Humans",
+    "Oils, Volatile",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "85e9be77a4107d46d41996b0a39a432febec81666410c334770f285745206f4a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33473316",
+   "title": "Development of nanochitosan-based active packaging films containing free and nanoliposome caraway (Carum carvi. L) seed extract.",
+   "year": 2021,
+   "journal": "Food science & nutrition",
+   "doi": "10.1002/fsn3.2025",
+   "pmcid": "PMC7802560",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "438f39ef0a2bbefa24a3f35b5a95b227610c34e64cbaab9d7c624ddf5fded91c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "15752626",
+   "title": "Study on the transfer of components of Aetheroleum carvi and Aetheroleum foeniculi oils.",
+   "year": 2005,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2004.11.005",
+   "pmcid": null,
+   "mesh": [
+    "Carum",
+    "Foeniculum",
+    "Gas Chromatography-Mass Spectrometry",
+    "Gastric Mucosa",
+    "Humans",
+    "Intestinal Mucosa",
+    "Phytotherapy",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "219d0abf3c98bf47e9cd2a2e68d161c64476710b7a5f8b98890cafe6acbcc871",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "910554",
+   "title": "[Isolation and identification of flavon(ol)-O-glycosides in caraway (Carum carvi L.), fennel (Foeniculum vulgare Mill.), anise (Pimpinella anisum L.), and coriander (Coriandrum sativum L.), and of flavon-C-glycosides in anise. I. Phenolics of spices (author's transl)].",
+   "year": 1977,
+   "journal": "Zeitschrift fur Lebensmittel-Untersuchung und -Forschung",
+   "doi": "10.1007/BF01263030",
+   "pmcid": null,
+   "mesh": [
+    "Condiments",
+    "Flavonoids",
+    "Food Analysis",
+    "Glycosides",
+    "Plants",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "aed9b3eeec51234bf4ba55269236e93bbd9c40b794b7230a48e898027f935168",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34834797",
+   "title": "Effect of Elevated CO2 on Biomolecules' Accumulation in Caraway (Carum carvi L.) Plants at Different Developmental Stages.",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10112434",
+   "pmcid": "PMC8619137",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "473da45388d3b62caf95b9d2c0b30ea8c4c6157ced2f65f61af1bfc1a50a59ae",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30732417",
+   "title": "Transgenic caraway, Carum carvi L.: a model species for metabolic engineering.",
+   "year": 1997,
+   "journal": "Plant cell reports",
+   "doi": "10.1007/s002990050348",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7d4d4fd2a5906caa37d5ac82a74121da2eaad42d9daeb0968c772ece6b9c0ad4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14240449",
+   "title": "[DETERMINATION OF OILS IN THE TETRAPLOID FORM OF CARUM CARVI L].",
+   "year": 1964,
+   "journal": "Acta poloniae pharmaceutica",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Carum",
+    "Chemistry, Pharmaceutical",
+    "Oils, Volatile",
+    "Plants, Medicinal",
+    "Research",
+    "Tetraploidy"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32787839",
+   "title": "The effects of thylakoid-rich spinach extract and aqueous extract of caraway (Carum carvi L.) in letrozole-induced polycystic ovarian syndrome rats.",
+   "year": 2020,
+   "journal": "BMC complementary medicine and therapies",
+   "doi": "10.1186/s12906-020-03044-w",
+   "pmcid": "PMC7425561",
+   "mesh": [
+    "Animals",
+    "Biomarkers",
+    "Carum",
+    "Disease Models, Animal",
+    "Female",
+    "Hypoglycemic Agents",
+    "Iran",
+    "Letrozole",
+    "Metformin",
+    "Plant Extracts",
+    "Polycystic Ovary Syndrome",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Spinacia oleracea",
+    "Thylakoids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "90d62240bd6909ceace670db7e569737022ea3c526ec901c31c906542dfbf6c7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31313408",
+   "title": "Green extraction of oil from Carum carvi seeds using bio-based solvent and supercritical fluid: Evaluation of its antioxidant and anti-inflammatory activities.",
+   "year": 2020,
+   "journal": "Phytochemical analysis : PCA",
+   "doi": "10.1002/pca.2864",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Inflammatory Agents",
+    "Antioxidants",
+    "Carbon Dioxide",
+    "Carum",
+    "Chromatography, Supercritical Fluid",
+    "Humans",
+    "Oils",
+    "Plant Oils",
+    "Seeds",
+    "Solvents"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "356fc379ab1c7736f4acd59d18f2051be0d0baeb0f598e890e05b39f4fe8760d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17113735",
+   "title": "Diuretic activity of the aqueous extracts of Carum carvi and Tanacetum vulgare in normal rats.",
+   "year": 2007,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2006.10.005",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carum",
+    "Diuretics",
+    "Fruit",
+    "Furosemide",
+    "Male",
+    "Medicine, African Traditional",
+    "Morocco",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Plants, Medicinal",
+    "Potassium",
+    "Rats",
+    "Rats, Wistar",
+    "Sodium",
+    "Tanacetum",
+    "Water-Electrolyte Balance"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3e48e85c3752c80335c31c23a895749d82d4c060e16e1808f85098a4f091cfc1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42339389",
+   "title": "A nanotechnology-based approach to enhance caraway (Carum carvi L.) productivity, chemical, biochemical and essential oil under salinity stress.",
+   "year": 2026,
+   "journal": "Frontiers in plant science",
+   "doi": "10.3389/fpls.2026.1814332",
+   "pmcid": "PMC13284733",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "918092f6e4256bf9c59d25dd1a8174c19ecfd7db08737ebc74e494c56feb96f9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33023434",
+   "title": "Efficacy of Six Plants of Apiaceae Family for Body Weight Management: A Review from the Perspective of Modern and Traditional Persian Medicine.",
+   "year": 2021,
+   "journal": "Current drug discovery technologies",
+   "doi": "10.2174/1570163817999201006192538",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Apiaceae",
+    "Body Weight",
+    "Diabetes Mellitus, Type 2",
+    "Humans",
+    "Medicine, Traditional",
+    "Phytotherapy"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f06474f02f013358be759419b6b9527965f6632a873c91ed513bd91ac4ed8956",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42046680",
+   "title": "Influence of a garlic-based additive on the performance parameters and intestinal morphology of replacement gilts in Ukraine under commercial conditions.",
+   "year": 2026,
+   "journal": "Veterinary world",
+   "doi": "10.14202/vetworld.2026.1229-1245",
+   "pmcid": "PMC13110479",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b53104be8fc70af1458a7e341e54648204566ba21494c5dc3719cdce6c6435f7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32113847",
+   "title": "Analgesic and anti-inflammatory properties of hydroalcoholic extracts of Malva sylvestris, Carum carvi or Medicago sativa, and their combination in a rat model.",
+   "year": 2020,
+   "journal": "Journal of integrative medicine",
+   "doi": "10.1016/j.joim.2020.02.003",
+   "pmcid": null,
+   "mesh": [
+    "Analgesics",
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Carum",
+    "Drug Combinations",
+    "Edema",
+    "Inflammation",
+    "Iran",
+    "Male",
+    "Malva",
+    "Medicago sativa",
+    "Medicine, Traditional",
+    "Nociception",
+    "Pain",
+    "Pain Measurement",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e7cecf89e48fb0222b82fa162cece9eb501bd3be8b13be1f9e840acb12fa85d7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23994468",
+   "title": "Where does the border lie: locally grown plants used for making tea for recreation and/or healing, 1970s-1990s Estonia.",
+   "year": 2013,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2013.08.031",
+   "pmcid": null,
+   "mesh": [
+    "Beverages",
+    "Estonia",
+    "Female",
+    "Humans",
+    "Magnoliopsida",
+    "Male",
+    "Plant Preparations",
+    "Surveys and Questionnaires"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fad6ef11decf4083c2e0fa0738b709b1fb522ec7ce58af6c4ec3848e89a79abc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16310827",
+   "title": "Molluscicidal activity of Ferula asafoetida, Syzygium aromaticum and Carum carvi and their active components against the snail Lymnaea acuminata.",
+   "year": 2006,
+   "journal": "Chemosphere",
+   "doi": "10.1016/j.chemosphere.2005.08.071",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carum",
+    "Chromatography, Thin Layer",
+    "Coumaric Acids",
+    "Dose-Response Relationship, Drug",
+    "Drug Evaluation, Preclinical",
+    "Ethanol",
+    "Ferula",
+    "Lymnaea",
+    "Molluscacides",
+    "Myrtaceae",
+    "Plant Extracts",
+    "Umbelliferones"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4b814cb1b70bf67a514f3b500f4e190d3ac49da9e437c77d2ee18127b7383acd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36239922",
+   "title": "Wound healing effect of Carum carvi L. on the incised skin wound in male rats: Histopathology, total protein and biomechanical evaluations.",
+   "year": 2022,
+   "journal": "Veterinary medicine and science",
+   "doi": "10.1002/vms3.961",
+   "pmcid": "PMC9677395",
+   "mesh": [
+    "Rats",
+    "Animals",
+    "Carum",
+    "Plant Extracts",
+    "Rats, Sprague-Dawley",
+    "Wound Healing",
+    "Skin"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "070e032d3f598162b02dd1fb6562e85d79315c797b3208b8211d7afdfa5326a4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "24813985",
+   "title": "Antibacterial activity against Clostridium genus and antiradical activity of the essential oils from different origin.",
+   "year": 2014,
+   "journal": "Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes",
+   "doi": "10.1080/03601234.2014.896673",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Antioxidants",
+    "Biphenyl Compounds",
+    "Clostridium",
+    "Disk Diffusion Antimicrobial Tests",
+    "Oils, Volatile",
+    "Picrates",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c05de569ced740a9028b22b58f7e43ddfe2e2e86256578c4ff6b828e83f2c0a8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42603797",
+   "title": "UV-C irradiation and hermetic storage modulate essential oil profiles and antifungal bioactivity of Apiaceae fruits during long-term storage.",
+   "year": 2026,
+   "journal": "BMC plant biology",
+   "doi": "10.1186/s12870-026-09644-x",
+   "pmcid": "PMC13476923",
+   "mesh": [
+    "Oils, Volatile",
+    "Fruit",
+    "Antifungal Agents",
+    "Ultraviolet Rays",
+    "Foeniculum",
+    "Apiaceae",
+    "Cuminum",
+    "Food Storage",
+    "Allylbenzene Derivatives",
+    "Carum",
+    "Fusarium",
+    "Pimpinella",
+    "Rhizoctonia",
+    "Alternaria"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e549cbf301cd48dfa9827f73dd917a45901e4b75236ce0bf602aad5ee82736d6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21748206",
+   "title": "The effect of oral administration of Carum carvi on weight, serum glucose, and lipid profile in streptozotocin-induced diabetic rats.",
+   "year": 2011,
+   "journal": "Saudi medical journal",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Administration, Oral",
+    "Animals",
+    "Blood Glucose",
+    "Body Weight",
+    "Carum",
+    "Cholesterol",
+    "Diabetes Mellitus, Experimental",
+    "Male",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Streptozocin"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cd150f1bc83d7e84f06933353304f6809ffae52374baa77813e822279459ea9f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21665585",
+   "title": "Temporal changes in floral nectar production, reabsorption, and composition associated with dichogamy in annual caraway (Carum carvi; Apiaceae).",
+   "year": 2002,
+   "journal": "American journal of botany",
+   "doi": "10.3732/ajb.89.10.1588",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8c843801953ecab771ff65fe43aa745ca7d72578d05b4e7548c40417a0949225",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "4647565",
+   "title": "[Carved isomers of the volatile oil of Carum carvi L. of Rumanian origin].",
+   "year": 1972,
+   "journal": "Die Pharmazie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Thin Layer",
+    "Magnoliopsida",
+    "Oils, Volatile",
+    "Oxidation-Reduction",
+    "Plants, Medicinal",
+    "Romania",
+    "Stereoisomerism",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42259123",
+   "title": "Application of Finnish caraway (Carum carvi) essential oil in gelled lipid-based nanoparticles to enhance the shelf-life of freshwater fish.",
+   "year": 2026,
+   "journal": "International journal of food microbiology",
+   "doi": "10.1016/j.ijfoodmicro.2026.111887",
+   "pmcid": null,
+   "mesh": [
+    "Oils, Volatile",
+    "Animals",
+    "Food Preservation",
+    "Nanoparticles",
+    "Carum",
+    "Listeria monocytogenes",
+    "Anti-Bacterial Agents",
+    "Fishes",
+    "Bacteria",
+    "Food Storage",
+    "Seafood",
+    "Lipids",
+    "Particle Size"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "61215e76f3b96b5833eb66a1d5cba2c6f159f97c45ec77491c8f33977039ecba",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19266918",
+   "title": "The potential application of plant essential oils as natural preservatives against Escherichia coli O157:H7.",
+   "year": 2008,
+   "journal": "Pakistan journal of biological sciences : PJBS",
+   "doi": "10.3923/pjbs.2008.2054.2061",
+   "pmcid": null,
+   "mesh": [
+    "Escherichia coli O157",
+    "Food Preservation",
+    "Magnoliopsida",
+    "Microbial Viability",
+    "Oils, Volatile",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bddf8e658b40939454a92ec6dc4d4dd8b62e0200b05c0e85866eec8797369807",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22459457",
+   "title": "Hypolipidemic effect of aqueous extract of Carum carvi (black Zeera) seeds in diet induced hyperlipidemic rats.",
+   "year": 2012,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carum",
+    "Hyperlipidemias",
+    "Hypolipidemic Agents",
+    "Lipoproteins, HDL",
+    "Lipoproteins, LDL",
+    "Male",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Seeds",
+    "Triglycerides"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "06390f29955b790474b96f469c6ac082f16325f7d4202ca11a2d7c239e55fa51",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33628979",
+   "title": "Effect of Carum carvi essential oil on ERG6 gene expression and virulence factors in Candida albicans.",
+   "year": 2020,
+   "journal": "Current medical mycology",
+   "doi": "10.18502/CMM.6.2.3628",
+   "pmcid": "PMC7888518",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fb4c16a368adc2b78f414d194f9480598bb89fc30508a85f17359921c32d7be6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21462837",
+   "title": "Antimicrobial activity of plant essential oils against bacterial and fungal species involved in food poisoning and/or food decay.",
+   "year": 2010,
+   "journal": "Roumanian archives of microbiology and immunology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Infective Agents",
+    "Bacteria",
+    "Food Microbiology",
+    "Food Preservation",
+    "Food Safety",
+    "Foodborne Diseases",
+    "Fungi",
+    "Humans",
+    "Microbial Sensitivity Tests",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "988c6b9813eb6405ece88e6ed3530dae7880aca1ded29f2b43846cb6aa0e756a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34199316",
+   "title": "Antimicrobial, Antioxidant, Anti-Acetylcholinesterase, Antidiabetic, and Pharmacokinetic Properties of Carum carvi L. and Coriandrum sativum L. Essential Oils Alone and in Combination.",
+   "year": 2021,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26123625",
+   "pmcid": "PMC8231812",
+   "mesh": [
+    "Acetylcholinesterase",
+    "Anti-Bacterial Agents",
+    "Antioxidants",
+    "Carum",
+    "Coriandrum",
+    "Hypoglycemic Agents",
+    "Oils, Volatile",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c83a8eba2f2226c7abbff1ad906ec2b989aca9dc5dd108ff175edab2f5e8b18b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42983627",
+   "title": "Edaphic and environmental factors shaping essential oil profiles and morphological variation in wild Carum carvi L. populations from northwestern Iran.",
+   "year": 2026,
+   "journal": "BMC plant biology",
+   "doi": "10.1186/s12870-026-09680-7",
+   "pmcid": null,
+   "mesh": [
+    "Oils, Volatile",
+    "Iran",
+    "Soil",
+    "Carum",
+    "Gas Chromatography-Mass Spectrometry",
+    "Environment"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "234b3a22664f379d8ed85cf0a28ffb450fad6ea46f51cf2aba67de0b64900e7a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20030464",
+   "title": "Essential oils in the treatment of intestinal dysbiosis: A preliminary in vitro study.",
+   "year": 2009,
+   "journal": "Alternative medicine review : a journal of clinical therapeutic",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Bacteria",
+    "Carum",
+    "Citrus",
+    "Coriandrum",
+    "Foeniculum",
+    "Humans",
+    "In Vitro Techniques",
+    "Intestinal Absorption",
+    "Intestinal Diseases",
+    "Mentha piperita",
+    "Oils, Volatile",
+    "Phytotherapy",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68ce841e335f5ce50405462c6f6dae6193c8563eec34ce0636cfa5dca5c4f2d1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20120118",
+   "title": "Chemistry, antioxidant, antibacterial and antifungal activities of volatile oils and their components.",
+   "year": 2009,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Antifungal Agents",
+    "Antioxidants",
+    "Biphenyl Compounds",
+    "Free Radical Scavengers",
+    "Fungi",
+    "Gas Chromatography-Mass Spectrometry",
+    "Gram-Negative Bacteria",
+    "Gram-Positive Bacteria",
+    "Lactates",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Oxidants",
+    "Picrates",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "353a765485d05059654f9f8993af299cbca4c751802acbf9c88c8921f7dd3782",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33817239",
+   "title": "Antifungal activity of selected volatile essential oils against Penicillium sp.",
+   "year": 2020,
+   "journal": "Open life sciences",
+   "doi": "10.1515/biol-2020-0045",
+   "pmcid": "PMC7874545",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "70742d6163aa631806484b8d6c19961654f04176789e1fc412817da190fc2735",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "22746406",
+   "title": "Insecticidal and acetylcholine esterase inhibition activity of Apiaceae plant essential oils and their constituents against adults of German cockroach (Blattella germanica).",
+   "year": 2012,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf302009w",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Apiaceae",
+    "Benzaldehydes",
+    "Cholinesterase Inhibitors",
+    "Cockroaches",
+    "Cyclohexane Monoterpenes",
+    "Cymenes",
+    "Female",
+    "Fumigation",
+    "Insecticides",
+    "Male",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Thymol"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5bbe75df190643113b3ee066197dd1576e86daf364fa42e34165bbf8d7904957",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21060174",
+   "title": "The reno-protective effect of aqueous extract of Carum carvi (black zeera) seeds in streptozotocin induced diabetic nephropathy in rodents.",
+   "year": 2010,
+   "journal": "Saudi journal of kidney diseases and transplantation : an official publication of the Saudi Center for Organ Transplantation, Saudi Arabia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Biomarkers",
+    "Blood Glucose",
+    "Body Weight",
+    "Carum",
+    "Creatinine",
+    "Diabetes Mellitus, Experimental",
+    "Diabetic Nephropathies",
+    "Kidney",
+    "Male",
+    "Plant Extracts",
+    "Protective Agents",
+    "Proteinuria",
+    "Rats",
+    "Rats, Wistar",
+    "Seeds",
+    "Urea",
+    "Urination"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f6e930a0b9176825fad49fb6bc47ec04eed44d0a2f37b64ea35d65c217bd53bc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41373965",
+   "title": "Medicinal Plants in Food Supplements for Gastrointestinal Disorders: Critical Assessment of Health Claims on Gastric Acid Regulation.",
+   "year": 2025,
+   "journal": "Nutrients",
+   "doi": "10.3390/nu17233674",
+   "pmcid": "PMC12693992",
+   "mesh": [
+    "Humans",
+    "Dietary Supplements",
+    "Gastrointestinal Diseases",
+    "Plants, Medicinal",
+    "Gastric Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "96fe22c37b7b3734301454f9c9d56f4775ac2edc60e110e00c4277b5bce769b7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  }
+ ]
+}

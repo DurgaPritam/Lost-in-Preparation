@@ -22,7 +22,7 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 | M3 Compounds | Known compounds per species (LOTUS via Wikidata), RDKit-standardised, de-duplicated by InChIKey; coverage per species | done |
 | Study set | Proposed species for re-testing (count in the validation table below), for human approval ([docs/STUDY_SET_PROPOSAL.md](docs/STUDY_SET_PROPOSAL.md)), each with a cited toxicity entry (AI-drafted, awaiting review) | awaiting approval |
 | M4 Preparation | Likelihood that each compound reaches each preparation; solvent, heat, filtration and acidity as separate factors with Monte Carlo ranges; RDKit vs GFN2-xTB validated against experiment; artemisinin known case | done |
-| **M5 Audit (planned headline)** | How modern studies prepared each study-set plant (solvent, temperature and filtration, separately) vs how the recipes made it | planned |
+| **M5 Audit (planned headline)** | How modern studies prepared each study-set plant (solvent, temperature and filtration, separately) vs how the recipes made it | in preparation: literature retrieved and method extractor built (no LLM calls yet); pairing waits for M1 on the full set |
 | M6 Ranking | Hypotheses ranked only on profile gaps that hold across the uncertainty range | rule implemented and stability-tested; awaits M5 |
 
 **Scope:** only **single-plant recipes** enter the core analysis (M4–M6) and the headline numbers. Compound recipes, with two or more ingredients besides the vehicle, are extracted and stored in `recipes.json` with `excludedFromHeadline: true`. They are left out because a mixture's chemistry can't be attributed to one plant.

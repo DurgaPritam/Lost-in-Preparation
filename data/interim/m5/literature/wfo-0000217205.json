@@ -1,0 +1,2787 @@
+{
+ "species": "Hyssopus officinalis",
+ "wfoId": "wfo-0000217205",
+ "names": [
+  "Hyssopus officinalis",
+  "Hyssopus officinalis var. vulgaris",
+  "Thymus hyssopus"
+ ],
+ "term": "\"Hyssopus officinalis\"[tiab] OR \"Hyssopus officinalis var. vulgaris\"[tiab] OR \"Thymus hyssopus\"[tiab]",
+ "count": 110,
+ "queryTranslation": "\"Hyssopus officinalis\"[Title/Abstract]",
+ "retrieved": 109,
+ "records": [
+  {
+   "pmid": "37895122",
+   "title": "Plant Extracts as Skin Care and Therapeutic Agents.",
+   "year": 2023,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms242015444",
+   "pmcid": "PMC10607442",
+   "mesh": [
+    "Skin Care",
+    "Skin",
+    "Betula",
+    "Cosmetics",
+    "Centaurea",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0e49e537871c429c54a40b34b51bb94b81887a0cbb83584d4e8884cc0d542d79",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38931115",
+   "title": "The Genus Hyssopus: Traditional Use, Phytochemicals and Pharmacological Properties.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13121683",
+   "pmcid": "PMC11207324",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "512cb3a10ca186a3801377e03c5d16e64dca39b9b2da1306023e889bf0dc5005",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35069979",
+   "title": "Hyssopus Essential Oil: An Update of Its Phytochemistry, Biological Activities, and Safety Profile.",
+   "year": 2022,
+   "journal": "Oxidative medicine and cellular longevity",
+   "doi": "10.1155/2022/8442734",
+   "pmcid": "PMC8776447",
+   "mesh": [
+    "Animals",
+    "Antineoplastic Agents",
+    "Antioxidants",
+    "Humans",
+    "Hyssopus Plant",
+    "Oils, Volatile",
+    "Phytochemicals"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "44f434d58a0420b4e6cf0aabeb4713acee17f8065724f7797faa24cbeadd39b0",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39367824",
+   "title": "Study of Hyssop Essential Oil from Southeastern Serbia.",
+   "year": 2025,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202401954",
+   "pmcid": null,
+   "mesh": [
+    "Oils, Volatile",
+    "Serbia",
+    "Microbial Sensitivity Tests",
+    "Anti-Bacterial Agents",
+    "Antifungal Agents",
+    "Bacteria"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f79b2bc45b5848fd02e4246f06700335c6e8008a6708bf4a8759778dcd8cdae2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37508297",
+   "title": "Antimicrobial and Cytotoxic Activities of the Secondary Metabolites of Endophytic Fungi Isolated from the Medicinal Plant Hyssopus officinalis.",
+   "year": 2023,
+   "journal": "Antibiotics (Basel, Switzerland)",
+   "doi": "10.3390/antibiotics12071201",
+   "pmcid": "PMC10376753",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8b8862cdc9181cd4e6a12ba8495ef22f336a10327fb846a2d55dde679f3799f6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38611526",
+   "title": "Application of Common Culinary Herbs for the Development of Bioactive Materials.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13070997",
+   "pmcid": "PMC11013859",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7ae0b964ca6d4558115dc62e2769cb3f4602382bd509bb702436e945ffbe3fb7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35861965",
+   "title": "Efficacy of Lamiaceae essential oils with selected azoles against Candida albicans clinical isolates.",
+   "year": 2022,
+   "journal": "Polish journal of veterinary sciences",
+   "doi": "10.24425/pjvs.2022.141812",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antifungal Agents",
+    "Azoles",
+    "Candida albicans",
+    "Fluconazole",
+    "Itraconazole",
+    "Lamiaceae",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "62cfc7105d475858bae38c8335d0805c22e7f42216dfd585f8daab5427e730b2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38628881",
+   "title": "Herbal Treatment of COPD and Asthma According to Persian Medicine: a Review of Current Evidence.",
+   "year": 2023,
+   "journal": "Tanaffos",
+   "doi": null,
+   "pmcid": "PMC11016916",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6dcaddda6d24e2c7a4a462707f6764eb3b42d31d2dcdd61dbebd5b95980817ed",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "34961198",
+   "title": "Allelopathic Effects of Essential Oils on Seed Germination of Barley and Wheat.",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10122728",
+   "pmcid": "PMC8708003",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3e88f0633ad2bd2ca69eda9730b8d9d203af8a0f306a17ddffc8dcdd25666024",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36431804",
+   "title": "Sustainable-Green Synthesis of Silver Nanoparticles Using Aqueous Hyssopus officinalis and Calendula officinalis Extracts and Their Antioxidant and Antibacterial Activities.",
+   "year": 2022,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules27227700",
+   "pmcid": "PMC9696917",
+   "mesh": [
+    "Antioxidants",
+    "Silver",
+    "Hyssopus Plant",
+    "Calendula",
+    "Metal Nanoparticles",
+    "Anti-Bacterial Agents",
+    "Plant Extracts",
+    "Bacteria"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2fb2f7b4e7084235e425b87909cc8f195f768d81fc6bab0d7da7b5c372207213",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "27774904",
+   "title": "Medicinal Plants for the Treatment of Asthma: A Traditional Persian Medicine Perspective.",
+   "year": 2017,
+   "journal": "Current pharmaceutical design",
+   "doi": "10.2174/1381612822666161021143332",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Asthmatic Agents",
+    "Asthma",
+    "Herbal Medicine",
+    "Humans",
+    "Medicine, Traditional",
+    "Persia",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6a27e43bdf7c000ce9dd999a5fa6da9940417e403a7a6cf4c5ed75e4f779d2f0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36287300",
+   "title": "Effects of Hyssopus Officinalis Hydroalcoholic Extract on Pentylenetetrazol-Induced Convulsive Seizures in Rat.",
+   "year": 2022,
+   "journal": "Neurochemical research",
+   "doi": "10.1007/s11064-022-03759-x",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Rats",
+    "Pentylenetetrazole",
+    "Hyssopus Plant",
+    "Antioxidants",
+    "Flumazenil",
+    "Kindling, Neurologic",
+    "Anticonvulsants",
+    "Nitric Oxide",
+    "Plant Oils",
+    "Seizures",
+    "Plant Extracts",
+    "Receptors, GABA"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f1f1b8f665dfb7190734360dbf4c03d1f18e18c5fce1b6aadac28eb6202ac8b2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26008751",
+   "title": "Laūq: A Sustained-Release Dosage Form for Respiratory Disorders in Traditional Persian Medicine.",
+   "year": 2016,
+   "journal": "Journal of evidence-based complementary & alternative medicine",
+   "doi": "10.1177/2156587215587417",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Anti-Inflammatory Agents",
+    "Antioxidants",
+    "Delayed-Action Preparations",
+    "Humans",
+    "Iran",
+    "Medicine, Traditional",
+    "Plant Extracts",
+    "Respiratory Tract Diseases"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1b996ef5ee867ab33e9122ec09975ced74376dc7a43a166c1302413ae4ca9990",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39959798",
+   "title": "Effect of Hyssop (Hyssopus officinalis) Syrup on Mild to Moderate Asthma: A Randomized Double-Blind Placebo-Controlled Trial.",
+   "year": 2024,
+   "journal": "Tanaffos",
+   "doi": null,
+   "pmcid": "PMC11825080",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "327eac86a078aa6a7220570f0704f5171a048de1391f364a543480c4e870fa31",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "31736373",
+   "title": "Differential effect of herbal tea extracts on free fatty acids-, ethanol- and acetaminophen-induced hepatotoxicity in FL83B hepatocytes.",
+   "year": 2022,
+   "journal": "Drug and chemical toxicology",
+   "doi": "10.1080/01480545.2019.1692026",
+   "pmcid": null,
+   "mesh": [
+    "Acetaminophen",
+    "Animals",
+    "Chemical and Drug Induced Liver Injury",
+    "Ethanol",
+    "Fatty Acids, Nonesterified",
+    "Hepatocytes",
+    "Mice",
+    "Plant Extracts",
+    "Teas, Herbal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0823f80ea5e1898ab93d957c89d4415a3b0c3d951be94240afe06ca57650f5ba",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34462838",
+   "title": "In vitro Regeneration of Hyssopus officinalis L. and Plant Genetic Similarity.",
+   "year": 2021,
+   "journal": "Doklady biological sciences : proceedings of the Academy of Sciences of the USSR, Biological sciences sections",
+   "doi": "10.1134/S0012496621040013",
+   "pmcid": null,
+   "mesh": [
+    "Hyssopus Plant",
+    "Plant Growth Regulators",
+    "Plant Shoots",
+    "Random Amplified Polymorphic DNA Technique"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "221fb64dc3a23579bb4e0de43869d37f613ed19af24fa565bc6b302de973b859",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31694395",
+   "title": "Gastroprotective effect of Hyssopus officinalis L. leaves via reduction of oxidative stress in indomethacin-induced gastric ulcer in experimental rats.",
+   "year": 2022,
+   "journal": "Drug and chemical toxicology",
+   "doi": "10.1080/01480545.2019.1685537",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Gastric Mucosa",
+    "Hyssopus Plant",
+    "Indomethacin",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Rats, Wistar",
+    "Stomach Ulcer"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8c899d8910051c3f03c530ebc56d822401404e32aee32a423e7e1521000863d0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38931048",
+   "title": "Exploring the Antibacterial Potential of Lamiaceae Plant Extracts: Inhibition of Bacterial Growth, Adhesion, Invasion, and Biofilm Formation and Degradation in Pseudomonas aeruginosa PAO1.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13121616",
+   "pmcid": "PMC11207635",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eb5a15dbbb338a1b5f7245335ec4f2da4554da3f6ed557c700b8dbca05081ad8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35320907",
+   "title": "Effect of salicylic acid on phenolic compounds, antioxidant and antihyperglycemic activity of Lamiaceae plants grown in a temperate climate.",
+   "year": 2022,
+   "journal": "Frontiers in bioscience (Elite edition)",
+   "doi": "10.31083/j.fbe1401003",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Coumaric Acids",
+    "Flavonoids",
+    "Hypoglycemic Agents",
+    "Lamiaceae",
+    "Phenols",
+    "Plant Extracts",
+    "Plants",
+    "Salicylic Acid",
+    "alpha-Amylases",
+    "alpha-Glucosidases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5112baee43f615340cdae7cff80a9df8418a2395d6a557b71fa0a87574add2e3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27761420",
+   "title": "A review study on the effect of Iranian herbal medicines against in vitro replication of herpes simplex virus.",
+   "year": 2016,
+   "journal": "Avicenna journal of phytomedicine",
+   "doi": null,
+   "pmcid": "PMC5052413",
+   "mesh": [],
+   "publicationTypes": [
+    "Review",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "75326dd8d8c996a400f6f3f23928d15edeaaaf21d705ff9f97a3462c92fcfed3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33957454",
+   "title": "Acidic pH-responsive changes of DNA structure and surface dynamics as probed with ultrasensitive Raman spectroscopy.",
+   "year": 2021,
+   "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+   "doi": "10.1016/j.saa.2021.119866",
+   "pmcid": null,
+   "mesh": [
+    "DNA",
+    "Hydrogen-Ion Concentration",
+    "Oils, Volatile",
+    "Silver",
+    "Spectrum Analysis, Raman"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f50a43e15d45b3bc99336b66ce457eb9ef59b5154c47ac2adfc48f1474cf0387",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34184508",
+   "title": "Antibiofilm activity of selected plant essential oils from the Lamiaceae family against Candida albicans clinical isolates.",
+   "year": 2021,
+   "journal": "Annals of agricultural and environmental medicine : AAEM",
+   "doi": "10.26444/aaem/135892",
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Biofilms",
+    "Candida albicans",
+    "Candidiasis",
+    "Humans",
+    "Lamiaceae",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Origanum",
+    "Plant Extracts",
+    "Plant Oils",
+    "Salvia officinalis",
+    "Thymus Plant"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c4333420021c0e7aec2dfdf212cbe50386bb14c2aeb57a93e63223e59ec00e8e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30430990",
+   "title": "Extraction of Hyssopus officinalis L. essential oil using instant controlled pressure drop process.",
+   "year": 2018,
+   "journal": "Journal of chromatography. A",
+   "doi": "10.1016/j.chroma.2018.10.020",
+   "pmcid": null,
+   "mesh": [
+    "Chemistry Techniques, Analytical",
+    "Ethanol",
+    "Hot Temperature",
+    "Hyssopus Plant",
+    "Oils, Volatile",
+    "Phenols",
+    "Pressure",
+    "Sesquiterpenes",
+    "Steam"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6a93fd95b62048e4591ce70e824c91d770c8febbdd7162a140b8eb4a0e600ba4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26838345",
+   "title": "Functionality of Selected Aromatic Lamiaceae in Attracting Pollinators in Central Spain.",
+   "year": 2016,
+   "journal": "Journal of economic entomology",
+   "doi": "10.1093/jee/tow004",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bees",
+    "Feeding Behavior",
+    "Flowers",
+    "Lamiaceae",
+    "Pollination",
+    "Spain"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "82d8dfca8e47f5f655c21b21f874d8a6ccd3d0a0f14e12748bac0a15feaa945e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39124223",
+   "title": "Exploring Conventional and Green Extraction Methods for Enhancing the Polyphenol Yield and Antioxidant Activity of Hyssopus officinalis Extracts.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13152105",
+   "pmcid": "PMC11313759",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f9fa99f0d12a7b5580538c1cb966462db777de129ce5adc0fcbbfbfb293f2524",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32574178",
+   "title": "Can the foregut nematode Haemonchus contortus and medicinal plants influence the fecal microbial community of the experimentally infected lambs?",
+   "year": 2020,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0235072",
+   "pmcid": "PMC7310730",
+   "mesh": [
+    "Abomasum",
+    "Animals",
+    "Anthelmintics",
+    "Digestive System",
+    "Drug Therapy, Combination",
+    "Feces",
+    "Female",
+    "Haemonchiasis",
+    "Haemonchus",
+    "Microbiota",
+    "Phytotherapy",
+    "Plant Preparations",
+    "Plants, Medicinal",
+    "Sheep",
+    "Sheep Diseases",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e8bca1328b1ed4db1e7df407b6b9352864e653bc1f88beb6a85c96c1c7b3ceb3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "28452024",
+   "title": "Total phenolics, antioxidant, antitumor, and enzyme inhibitory activity of Indian medicinal and aromatic plants extracted with different extraction methods.",
+   "year": 2017,
+   "journal": "3 Biotech",
+   "doi": "10.1007/s13205-017-0706-9",
+   "pmcid": "PMC5428111",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "96543561ff2156b029c8fd96a1e2af975d14815cc8b460ff8fee50651bf43880",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31717808",
+   "title": "Phytochemical Screening, Antibacterial Activity and Heavy Metal Analysis of Ethnomedicinal Recipes and Their Sources Used Against Infectious Diseases.",
+   "year": 2019,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants8110454",
+   "pmcid": "PMC6918150",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c4f4b1e99087f17760874e07b3e4d8a0bb4cf92688b49529cedc9e2be030a27b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "22936395",
+   "title": "Mycotoxicogenic fungal inhibition by innovative cheese cover with aromatic plants.",
+   "year": 2013,
+   "journal": "Journal of the science of food and agriculture",
+   "doi": "10.1002/jsfa.5859",
+   "pmcid": null,
+   "mesh": [
+    "Anethum graveolens",
+    "Chamaemelum",
+    "Cheese",
+    "Cyclohexane Monoterpenes",
+    "Cyclohexenes",
+    "Food Contamination",
+    "Food Packaging",
+    "Food Preservation",
+    "Fungi",
+    "Gas Chromatography-Mass Spectrometry",
+    "Inhibitory Concentration 50",
+    "Lamiaceae",
+    "Mediterranean Region",
+    "Microbial Viability",
+    "Microwaves",
+    "Monoterpenes",
+    "Mycotoxins",
+    "Oils, Volatile",
+    "Penicillium",
+    "Spain",
+    "Volatile Organic Compounds"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a1e61ad169b30bd9d4a7b8c2a3f0fe15804231648704a7106af0d5162917ffc9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31997899",
+   "title": "Assessment of selected Saudi and Yemeni plants for mosquitocidal activities against the yellow fever mosquito Aedes aegypti.",
+   "year": 2019,
+   "journal": "Saudi pharmaceutical journal : SPJ : the official publication of the Saudi Pharmaceutical Society",
+   "doi": "10.1016/j.jsps.2019.07.001",
+   "pmcid": "PMC6978618",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9d3199b600152891ff62675ae3d637dfeb0398501133f7d0de949d86a1368ff8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "38931043",
+   "title": "Green Synthesis of Silver Nanoparticles with Hyssopus officinalis and Salvia officinalis Extracts, Their Properties, and Antifungal Activity on Fusarium spp.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13121611",
+   "pmcid": "PMC11207945",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "785caf65f5b4b435d719975dfb4c3eb2d9277d6c682e6bf03060c888214c5e1b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "22465769",
+   "title": "Vibrational spectroscopy and electrophoresis as a \"golden means\" in monitoring of polysaccharides in medical plant and gels.",
+   "year": 2012,
+   "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+   "doi": "10.1016/j.saa.2012.03.003",
+   "pmcid": null,
+   "mesh": [
+    "Cell Wall",
+    "Cellulose",
+    "Electrophoresis",
+    "Gels",
+    "Membranes, Artificial",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Polysaccharides",
+    "Spectroscopy, Fourier Transform Infrared",
+    "Spectrum Analysis, Raman"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "594b046060483ea40802f9f2844357367e96826e62275a952a6883b8aa92b17a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33297565",
+   "title": "Potential Use of Hyssopus officinalis and Borago officinalis as Curing Ingredients in Pork Meat Formulations.",
+   "year": 2020,
+   "journal": "Animals : an open access journal from MDPI",
+   "doi": "10.3390/ani10122327",
+   "pmcid": "PMC7762358",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b96f1060b8088e603e4d6df3f368913097be72ce617a44f39a0ef9f93c644ef7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39599468",
+   "title": "Chemical and Biological Properties of Different Romanian Populations of Hyssopus officinalis Correlated via Molecular Docking.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13223259",
+   "pmcid": "PMC11598396",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4996906cdbc8f2789e6baaa97254de5a490712fbc341ea016137d98be82fd169",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32700853",
+   "title": "Induction of Biosynthetic Genes Related to Rosmarinic Acid in Plant Callus Culture and Antiproliferative Activity Against Breast Cancer Cell Line.",
+   "year": 2020,
+   "journal": "Pakistan journal of biological sciences : PJBS",
+   "doi": "10.3923/pjbs.2020.1025.1036",
+   "pmcid": null,
+   "mesh": [
+    "Breast Neoplasms",
+    "Cell Proliferation",
+    "Cinnamates",
+    "Depsides",
+    "Female",
+    "Humans",
+    "MCF-7 Cells",
+    "Neoplasm Proteins",
+    "Protein Biosynthesis",
+    "Rosmarinic Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "700510a22edddf62c12b97e343f2ed3915252784ab00970f2066edc432177ca9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33810509",
+   "title": "Wild Italian Hyssopus officinalis subsp. aristatus (Godr.) Nyman: From Morphological and Phytochemical Evidences to Biological Activities.",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10040631",
+   "pmcid": "PMC8065824",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "457fdb85a99e718c73998b0507ac6abf01caf0d2c448ee101c20824bb2a66730",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33877247",
+   "title": "A comprehensive assessment of the chemical composition, antioxidant, genoprotective and antigenotoxic activities of Lamiaceae species using different experimental models in vitro.",
+   "year": 2021,
+   "journal": "Food & function",
+   "doi": "10.1039/d1fo00447f",
+   "pmcid": null,
+   "mesh": [
+    "Antimutagenic Agents",
+    "Antioxidants",
+    "DNA Damage",
+    "DNA Repair",
+    "Fibroblasts",
+    "Flavonoids",
+    "Humans",
+    "Lamiaceae",
+    "Mutagenicity Tests",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Polyphenols",
+    "Salmonella typhimurium"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c9e0d716eaa910d1d8c399e1adbf86438a861defde23750afa9b4624972ff689",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20874226",
+   "title": "An attempt of postharvest orange fruit rot control using essential oils from Mediterranean plants.",
+   "year": 2010,
+   "journal": "Journal of medicinal food",
+   "doi": "10.1089/jmf.2009.0285",
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Botrytis",
+    "Citrus sinensis",
+    "Disk Diffusion Antimicrobial Tests",
+    "Food Microbiology",
+    "Food Parasitology",
+    "Food Preservation",
+    "Food Preservatives",
+    "Fruit",
+    "Fungi",
+    "Fungicides, Industrial",
+    "Lamiaceae",
+    "Mediterranean Region",
+    "Monoterpenes",
+    "Oils, Volatile",
+    "Organic Agriculture",
+    "Penicillium",
+    "Pesticides",
+    "Phytophthora",
+    "Plant Components, Aerial",
+    "Plant Diseases",
+    "Rhizopus",
+    "Verbenaceae"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6f1bbe584d0069e62b5fd2f15e0503a6b06f4f8d5ecd14cab180deaa8709882c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30496681",
+   "title": "Trypanocidal Effects of Essential Oils from Selected Medicinal Plants. Synergy among the Main Components.",
+   "year": 2017,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antineoplastic Agents, Phytogenic",
+    "Cell Line, Tumor",
+    "Drug Synergism",
+    "Humans",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Plants, Medicinal",
+    "Trypanocidal Agents",
+    "Trypanosoma cruzi"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "53a0fa2b085d49bbecf97315994188bfe309a29c959382ad8e1d306fc13dcab3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40089925",
+   "title": "In vitro urease inhibition screening of some edible and medicinal herbs to combat Helicobacter pylori related gastric diseases.",
+   "year": 2025,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Helicobacter pylori",
+    "Plants, Medicinal",
+    "Urease",
+    "Helicobacter Infections",
+    "Plant Extracts",
+    "Plants, Edible",
+    "Humans",
+    "Enzyme Inhibitors",
+    "Stomach Diseases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9ff3dbc5f933bf28af37b6027dbc8b2c58ad235311dcb297692fe15bc60982bf",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24761118",
+   "title": "Presence of monoterpene synthase in four Labiatae species and Solid-Phase Microextraction- Gas chromatography-Mass Spectroscopy analysis of their aroma profiles.",
+   "year": 2014,
+   "journal": "Pharmacognosy research",
+   "doi": "10.4103/0974-8490.129033",
+   "pmcid": "PMC3996750",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "072548947c0d1e6874e0201ee8a831c2014ffe7f9d2c22948b09a9be20bd6999",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "35617511",
+   "title": "Chemical compositions, yield and antioxidant activity of the essential oil of hyssop (Hyssopus officinalis L.) under intercropping with fenugreek (Trigonella foenum-graecum L.).",
+   "year": 2023,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2022.2078971",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Oils, Volatile",
+    "Hyssopus Plant",
+    "Trigonella",
+    "Plant Extracts",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "83fb1f2161f7ded7cf090d8ac4a967e1fab3a229849b48f4664aa5ef352a39da",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35963984",
+   "title": "The Effects of Methanol Extracts of Hyssopus officinalis on Model of Induced Glioblastoma Multiforme (GBM) in Rats.",
+   "year": 2022,
+   "journal": "Journal of molecular neuroscience : MN",
+   "doi": "10.1007/s12031-022-02058-y",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Brain Neoplasms",
+    "Glioblastoma",
+    "Hyssopus Plant",
+    "Methanol",
+    "Plant Extracts",
+    "RNA, Messenger",
+    "Rats",
+    "Superoxide Dismutase",
+    "Tumor Suppressor Protein p53",
+    "Vascular Endothelial Growth Factor A"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "646572e773be0d139347f76e2f5407834395e01065f943a13ee761e00b485625",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20657443",
+   "title": "Phytotoxic activities of Mediterranean essential oils.",
+   "year": 2010,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules15064309",
+   "pmcid": "PMC6257658",
+   "mesh": [
+    "Apiaceae",
+    "Foeniculum",
+    "Germination",
+    "Lamiaceae",
+    "Lepidium sativum",
+    "Lactuca",
+    "Oils, Volatile",
+    "Pimpinella",
+    "Plant Oils",
+    "Raphanus",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "96357ca00c8f259356746740271dd2a9560a916fbc34f67624cafac3a488e492",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24312758",
+   "title": "Phytochemical analysis and antioxidant activity of Hyssopus officinalis L. from Iran.",
+   "year": 2011,
+   "journal": "Advanced pharmaceutical bulletin",
+   "doi": "10.5681/apb.2011.009",
+   "pmcid": "PMC3845980",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "997e86d650b656d0934b4107445e5ddedb78f827001b405b6afc967c059d6925",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36740126",
+   "title": "Effect of ultrasound-assisted cold plasma pretreatment on cell wall polysaccharides distribution and extraction of phenolic compounds from hyssop (Hyssopus officinalis L.).",
+   "year": 2023,
+   "journal": "International journal of biological macromolecules",
+   "doi": "10.1016/j.ijbiomac.2023.123557",
+   "pmcid": null,
+   "mesh": [
+    "Hyssopus Plant",
+    "Antioxidants",
+    "Plasma Gases",
+    "Phenols",
+    "Plant Extracts",
+    "Plant Oils",
+    "Polysaccharides"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "308162817ae61ed1a893a152da0474d084458a510b5f41c66077d37fb143f354",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34558263",
+   "title": "Comparison of antifungal activity of selected essential oils against Fusarium graminearum in vitro.",
+   "year": 2021,
+   "journal": "Annals of agricultural and environmental medicine : AAEM",
+   "doi": "10.26444/aaem/137653",
+   "pmcid": null,
+   "mesh": [
+    "Fungicides, Industrial",
+    "Fusarium",
+    "Hyssopus Plant",
+    "Microbial Sensitivity Tests",
+    "Myristica",
+    "Ocimum basilicum",
+    "Oils, Volatile",
+    "Origanum",
+    "Plant Oils",
+    "Syzygium",
+    "Thymus Plant"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "67506071a52ca186d11cc92580ad468b923ece272b3102be3fb1b18a0d493273",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28606766",
+   "title": "Medicinal species as MTDLs: Turnera diffusa Willd. Ex Schult inhibits CNS enzymes and delays glutamate excitotoxicity in SH-SY5Y cells via oxidative damage.",
+   "year": 2017,
+   "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+   "doi": "10.1016/j.fct.2017.06.014",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Cell Line",
+    "Central Nervous System Diseases",
+    "Glutamic Acid",
+    "Humans",
+    "Mass Spectrometry",
+    "Oxidative Stress",
+    "Phenols",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Reactive Oxygen Species",
+    "Turnera"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4ff6a26792300d33e1c8342e66b9974b263c47870b2382c131f3326273408be9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35765116",
+   "title": "Zinc oxide nanoparticles synthesized using Hyssopus Officinalis L. Extract Induced oxidative stress and changes the expression of key genes involved in inflammatory and antioxidant Systems.",
+   "year": 2022,
+   "journal": "Biological research",
+   "doi": "10.1186/s40659-022-00392-4",
+   "pmcid": "PMC9238176",
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Biomarkers",
+    "Blood Glucose",
+    "Creatinine",
+    "Hyssopus Plant",
+    "Male",
+    "Mice",
+    "Nanoparticles",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Zinc Oxide"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a9f1ebe6173153063990e03b585a781eb21d3b001280e2eef4122e3a3d0f1501",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "11914956",
+   "title": "Muscle relaxing activity of Hyssopus officinalis essential oil on isolated intestinal preparations.",
+   "year": 2002,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2002-23139",
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholine",
+    "Animals",
+    "Barium Compounds",
+    "Bicyclic Monoterpenes",
+    "Bridged Bicyclo Compounds",
+    "Calcium Chloride",
+    "Camphanes",
+    "Chlorides",
+    "Cyclohexenes",
+    "Guinea Pigs",
+    "Ileum",
+    "In Vitro Techniques",
+    "Inhibitory Concentration 50",
+    "Jejunum",
+    "Lamiaceae",
+    "Limonene",
+    "Male",
+    "Monoterpenes",
+    "Muscle Contraction",
+    "Muscle Relaxation",
+    "Oils, Volatile",
+    "Papaverine",
+    "Rabbits",
+    "Terpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "20121740a412e55c91782da54e349c067d76823fb68481750785255072fb420b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32965267",
+   "title": "; INTRODUCTION OF AROMATIC PLANTS IN THE BATUMI BOTANICAL GARDEN AND THEIR RESEARCH FOR THE CONTENT OF BIOLOGICALLY ACTIVE COMPOUNDS.",
+   "year": 2020,
+   "journal": "Georgian medical news",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Gardens",
+    "Gas Chromatography-Mass Spectrometry",
+    "Oils, Volatile",
+    "Plant Leaves",
+    "Satureja"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "14cd9f677ff4444457979dea2abdacd2693ee330d4a391f1fb2dbf8b180d3a63",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40670696",
+   "title": "Hyssopus officinalis: MicroRNA-mediated regulation of terpenoid biosynthesis and defense metabolites.",
+   "year": 2025,
+   "journal": "Planta",
+   "doi": "10.1007/s00425-025-04776-0",
+   "pmcid": null,
+   "mesh": [
+    "MicroRNAs",
+    "Terpenes",
+    "Gene Expression Regulation, Plant",
+    "RNA, Plant",
+    "Argonaute Proteins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6ff931c084b15568acfe9b7facee6c034a5cc81c2d28286eb390c62d6001e1ba",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28801935",
+   "title": "Biocidal Potential and Chemical Composition of Industrial Essential Oils from Hyssopus officinalis, Lavandula × intermedia var. Super, and Santolina chamaecyparissus.",
+   "year": 2018,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.201700313",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Aphids",
+    "Asteraceae",
+    "Dose-Response Relationship, Drug",
+    "Hyssopus Plant",
+    "Insecticides",
+    "Lavandula",
+    "Oils, Volatile",
+    "Spodoptera",
+    "Structure-Activity Relationship",
+    "Ticks"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f1edda1839e462f37cfcaf8b671e05b2f0f072ba4394e4be4040ebc2d24a8baf",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30389531",
+   "title": "Ovicidal and larvicidal activity of extracts from medicinal-plants against Haemonchus contortus.",
+   "year": 2018,
+   "journal": "Experimental parasitology",
+   "doi": "10.1016/j.exppara.2018.10.009",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anthelmintics",
+    "Artemisia absinthium",
+    "Chromatography, Liquid",
+    "Europe",
+    "Feces",
+    "Fumaria",
+    "Haemonchus",
+    "Kaempferols",
+    "Larva",
+    "Malva",
+    "Matricaria",
+    "Ovum",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Quercetin",
+    "Sheep",
+    "Tandem Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "40597793ef933ab0f0e55c2272a9fe3be22dbe6bf7ea645c7073ede16b06115c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29448222",
+   "title": "A colorimetric broth microdilution method for assessment of Helicobacter pylori sensitivity to antimicrobial agents.",
+   "year": 2018,
+   "journal": "Journal of pharmaceutical and biomedical analysis",
+   "doi": "10.1016/j.jpba.2018.02.003",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Infective Agents",
+    "Colorimetry",
+    "Culture Media",
+    "Cupressaceae",
+    "Helicobacter pylori",
+    "Lamiaceae",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "32419c8240470f48ee877977feb3976a49942f3a84c06053485309c1bb71a110",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32550200",
+   "title": "Hyssopus officinalis exerts hypoglycemic effects on streptozotocin-induced diabetic rats via modulating GSK-3β, C-fos, NF-κB, ABCA1 and ABGA1 gene expression.",
+   "year": 2020,
+   "journal": "Journal of diabetes and metabolic disorders",
+   "doi": "10.1007/s40200-020-00535-y",
+   "pmcid": "PMC7271080",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d81a15f1c67ce782891e522fcb331bb266dfe9499fa6ef104cbbfec671f6e03b",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24657421",
+   "title": "FTIR spectroscopic evaluation of changes in the cellular biochemical composition of the phytopathogenic fungus Alternaria alternata induced by extracts of some Greek medicinal and aromatic plants.",
+   "year": 2014,
+   "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+   "doi": "10.1016/j.saa.2014.02.113",
+   "pmcid": null,
+   "mesh": [
+    "Alternaria",
+    "Greece",
+    "Medicine, Traditional",
+    "Mycelium",
+    "Plant Extracts",
+    "Spectroscopy, Fourier Transform Infrared"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9bb4f9b7baab731d0247e6989e92a56ed4273679ca0b5933b2779bcea131bc38",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36503515",
+   "title": "The impact of Hyssop (Hyssopus officinalis) extract on activation of endosomal toll like receptors and their downstream signaling pathways.",
+   "year": 2022,
+   "journal": "BMC research notes",
+   "doi": "10.1186/s13104-022-06253-3",
+   "pmcid": "PMC9742021",
+   "mesh": [
+    "Hyssopus Plant",
+    "NF-kappa B",
+    "Leukocytes, Mononuclear",
+    "Toll-Like Receptors",
+    "Signal Transduction",
+    "Cytokines",
+    "Adaptor Proteins, Signal Transducing",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f49e547449127f017c0c7825e8bf25de50ebfb58ce72f30e4ee88998d4532c6d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25289025",
+   "title": "Effect of Hyssopus officinalis L. on inhibiting airway inflammation and immune regulation in a chronic asthmatic mouse model.",
+   "year": 2014,
+   "journal": "Experimental and therapeutic medicine",
+   "doi": "10.3892/etm.2014.1978",
+   "pmcid": "PMC4186396",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "06866d64934464e43e2eb2393e7dabe4dbbb27ec2f12c1ca6607073e16a95b9a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39253917",
+   "title": "Phytochemical Profile and Antioxidant and Protective Activities of Various Types of Extracts from Hyssopus officinalis L. and Grindelia robusta Nutt. Herb Grown in Poland.",
+   "year": 2024,
+   "journal": "Current topics in medicinal chemistry",
+   "doi": "10.2174/0115680266319052240819104310",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Plant Extracts",
+    "Phytochemicals",
+    "Humans",
+    "Poland",
+    "Oils, Volatile",
+    "Cell Survival",
+    "Protective Agents",
+    "Fibroblasts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ed72468a78b8fa6e2513a48c3a8d36ed0bf4a6a67fef5158daa73910ac6ddaa6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42517378",
+   "title": "A direct 1H NMR spectroscopic method for the quantification of diosmin in Hyssopus officinalis L.",
+   "year": 2026,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2026.2707353",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "96a962a8bc2450ef3a618c829d285901fcf440248795e8cffaf5ec134eafbd6e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30984577",
+   "title": "Short-course administration of a traditional herbal mixture ameliorates asthma symptoms of the common cold in children.",
+   "year": 2019,
+   "journal": "Avicenna journal of phytomedicine",
+   "doi": null,
+   "pmcid": "PMC6448545",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e3c42b702dcacffa143d09f449761d9fafcd5aa9cb7c1cc2bc83ec53bae99b6a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "18601990",
+   "title": "In vitro inhibitory activities of plants used in Lebanon traditional medicine against angiotensin converting enzyme (ACE) and digestive enzymes related to diabetes.",
+   "year": 2008,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2008.06.003",
+   "pmcid": null,
+   "mesh": [
+    "Angiotensin-Converting Enzyme Inhibitors",
+    "Diabetes Mellitus",
+    "Inhibitory Concentration 50",
+    "Lebanon",
+    "Medicine, Traditional",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "alpha-Amylases",
+    "alpha-Glucosidases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1cd9059bc0e63da87bfa1af7238db53b639c726969b0df492865651961705fe2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34063290",
+   "title": "Evaluation of the Conditions for the Cultivation of Callus Cultures of Hyssopus officinalis Regarding the Yield of Polyphenolic Compounds.",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10050915",
+   "pmcid": "PMC8147393",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0b2e9ac26b0661283f328320cea2da41201e609aa6ed94b7f78128530ceedae7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26891001",
+   "title": "Comparative Study of Composition, Antioxidant, and Antimicrobial Activities of Essential Oils of Selected Aromatic Plants from Balkan Peninsula.",
+   "year": 2016,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-0042-101942",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Anti-Infective Agents",
+    "Antioxidants",
+    "Apiaceae",
+    "Asteraceae",
+    "Balkan Peninsula",
+    "Humans",
+    "Lamiaceae",
+    "Oils, Volatile",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "525c43b8691c59b4879d751695acec88a9b7fac3fc0a28dd2d25420f79714f52",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16274702",
+   "title": "Comparative screening of plant essential oils: phenylpropanoid moiety as basic core for antiplatelet activity.",
+   "year": 2006,
+   "journal": "Life sciences",
+   "doi": "10.1016/j.lfs.2005.07.020",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Blood Platelets",
+    "Gas Chromatography-Mass Spectrometry",
+    "Guinea Pigs",
+    "Male",
+    "Oils, Volatile",
+    "Phenylpropionates",
+    "Plant Oils",
+    "Platelet Aggregation Inhibitors",
+    "Rats",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8bc34505886a8e3807c917ca00fb8c834b70e22470ff81379d788a607ca2884c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42505409",
+   "title": "Hyssopus officinalis L. (Lamiaceae) Cell Culture Extract Modulates Epidermal Lipid-Related and Differentiation Markers.",
+   "year": 2026,
+   "journal": "Cells",
+   "doi": "10.3390/cells15141300",
+   "pmcid": "PMC13406663",
+   "mesh": [
+    "Filaggrin Proteins",
+    "Plant Extracts",
+    "Cell Differentiation",
+    "Humans",
+    "Epidermis",
+    "Biomarkers",
+    "Keratinocytes",
+    "Lipid Metabolism",
+    "Glucosylceramidase",
+    "Ceramides"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b161f8465fa070050c21236a400ada07d333b62393af40b458b180879bf1b6ea",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36337198",
+   "title": "Effects of dietary Hyssop, Hyssopus officinalis, extract on physiological and antioxidant responses of rainbow trout, Oncorhynchus mykiss, juveniles to thermal stress.",
+   "year": 2022,
+   "journal": "Frontiers in veterinary science",
+   "doi": "10.3389/fvets.2022.1042063",
+   "pmcid": "PMC9631786",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c576c8c2f5a6ffe973e56e0ed8f744c0e3d6cda8d8445eeb077041df2cf9724c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37289391",
+   "title": "Green synthesis of Au@g-C3N4 nanocomposite using Hyssopus officinalis extract and its sensing application for vortioxetine determination.",
+   "year": 2023,
+   "journal": "Environmental science and pollution research international",
+   "doi": "10.1007/s11356-023-28040-8",
+   "pmcid": null,
+   "mesh": [
+    "Graphite",
+    "Hyssopus Plant",
+    "Vortioxetine",
+    "Carbon",
+    "Electrodes",
+    "Nanocomposites",
+    "Electrochemical Techniques"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "edfec8ed57d590d1c1aefccafc4cc52397f1045956284c05c66c29eafe608eaa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26687747",
+   "title": "Assessment of rosmarinic acid content in six Lamiaceae species extracts and their antioxidant and antimicrobial potential.",
+   "year": 2015,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0fbd5f3ceb9044d57f537a7d82633dbd216e498c1a6548e6af9b8b178f6e49e4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42100700",
+   "title": "Comparative analysis of rhizobacterial communities across five medicinal plants in Xinjiang.",
+   "year": 2026,
+   "journal": "Frontiers in microbiology",
+   "doi": "10.3389/fmicb.2026.1785383",
+   "pmcid": "PMC13144048",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c0238b0db38e1b5bd08d65a15cba97a7a7e6114e006588977dbc4559db22a3f1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37780336",
+   "title": "New coating containing chitosan and Hyssopus officinalis essential oil (emulsion and nanoemulsion) to protect shrimp (Litopenaeus vannamei) against chemical, microbial and sensory changes.",
+   "year": 2023,
+   "journal": "Food chemistry: X",
+   "doi": "10.1016/j.fochx.2023.100801",
+   "pmcid": "PMC10534186",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e8f5bc61e116818aaef80e57705c79c8b98ce0a0ca6d8c4c1a025515a6a00a13",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32523876",
+   "title": "Effects of aqueous extract of Hyssopus officinalis on seizures induced by pentylenetetrazole and hippocampus mRNA level of iNOS in rats.",
+   "year": 2020,
+   "journal": "Avicenna journal of phytomedicine",
+   "doi": null,
+   "pmcid": "PMC7256281",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "40eb52166e56c6655c40b26ef01aa59c42592f7bdb06373cf674b856732c8b05",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25383084",
+   "title": "The Effects of Uygur Herb Hyssopus officinalis L. on the Process of Airway Remodeling in Asthmatic Mice.",
+   "year": 2014,
+   "journal": "Evidence-based complementary and alternative medicine : eCAM",
+   "doi": "10.1155/2014/710870",
+   "pmcid": "PMC4212596",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2b53fc4173aa15718d5b1de17f2dd195c786ba1ca27b0b50f39e6d26c79c3483",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "8630713",
+   "title": "Labiatae allergy: systemic reactions due to ingestion of oregano and thyme.",
+   "year": 1996,
+   "journal": "Annals of allergy, asthma & immunology : official publication of the American College of Allergy, Asthma, & Immunology",
+   "doi": "10.1016/S1081-1206(10)63456-4",
+   "pmcid": null,
+   "mesh": [
+    "Food Hypersensitivity",
+    "Humans",
+    "Immunoglobulin E",
+    "Intradermal Tests",
+    "Magnoliopsida",
+    "Male",
+    "Middle Aged"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "33262dd1489b087072aad4eab26a4759722ad814b649681c28adfa6054148242",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35434601",
+   "title": "Characterization of antioxidant active biopolymer bilayer film based on gelatin-frankincense incorporated with ascorbic acid and Hyssopus officinalis essential oil.",
+   "year": 2022,
+   "journal": "Food chemistry: X",
+   "doi": "10.1016/j.fochx.2022.100300",
+   "pmcid": "PMC9011010",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9fa2cc5c2c411bd24a78446d9a0b4ba0018060f7ae6ea8a25f9dd33e1665c183",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "41681651",
+   "title": "Ontogenetic and Environmental Variability of Hyssop (Hyssopus officinalis L.) Essential Oil Composition and Activity.",
+   "year": 2026,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants15030487",
+   "pmcid": "PMC12899879",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e26d714c23ea57dc06ae456fbfc9c77587d84a7c57a9edb2ef24fb46ef872f99",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33916934",
+   "title": "Antioxidant, Antigenotoxic and Cytotoxic Activity of Essential Oils and Methanol Extracts of Hyssopus officinalis L. Subsp. aristatus (Godr.) Nyman (Lamiaceae).",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10040711",
+   "pmcid": "PMC8067569",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "210d3f6de149e94fbc241060e25335db70e4f28090d14d5b430a130898fffb69",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "14703310",
+   "title": "Inhibitory effects of hyssop (Hyssopus officinalis) extracts on intestinal alpha-glucosidase activity and postprandial hyperglycemia.",
+   "year": 2003,
+   "journal": "Journal of nutritional science and vitaminology",
+   "doi": "10.3177/jnsv.49.346",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carbohydrate Metabolism",
+    "Enzyme Inhibitors",
+    "Food",
+    "Glucose",
+    "Glycoside Hydrolase Inhibitors",
+    "Hyperglycemia",
+    "Intestinal Absorption",
+    "Intestines",
+    "Lamiaceae",
+    "Male",
+    "Maltose",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Sucrose",
+    "alpha-Glucosidases"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4a2f5f703781306ea14ce8e882c4dcecb816041959f0535ff6ab15df6934e4f3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39519905",
+   "title": "Comparative Study on the Response of Hyssop (Hyssopus officinalis L.), Salvia (Salvia officinalis L.), and Oregano (Origanum vulgare L.) to Drought Stress Under Foliar Application of Selenium.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13212986",
+   "pmcid": "PMC11547996",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "645912a08aa005d0222ea7d3414526e2f3dbdadda35f361c33452ccd6f28ed5f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "12872919",
+   "title": "Sterols and triterpenes in cell culture of Hyssopus officinalis L.",
+   "year": 2003,
+   "journal": "Zeitschrift fur Naturforschung. C, Journal of biosciences",
+   "doi": "10.1515/znc-2003-5-602",
+   "pmcid": null,
+   "mesh": [
+    "Cell Culture Techniques",
+    "Chromatography, Thin Layer",
+    "Lamiaceae",
+    "Magnetic Resonance Spectroscopy",
+    "Mass Spectrometry",
+    "Molecular Conformation",
+    "Oleanolic Acid",
+    "Plant Extracts",
+    "Sterols",
+    "Triterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f3245ee33c02c0f5f252f49cece7443b55837e47ee1bb9abef4d54148f90709f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14697274",
+   "title": "Isolation of alpha-glusosidase inhibitors from hyssop (Hyssopus officinalis).",
+   "year": 2004,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/j.phytochem.2003.10.009",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Enzyme Inhibitors",
+    "Glucosides",
+    "Glycoside Hydrolase Inhibitors",
+    "Lamiaceae",
+    "Molecular Structure",
+    "Nuclear Magnetic Resonance, Biomolecular",
+    "Plant Leaves",
+    "Rats",
+    "Spectrometry, Mass, Fast Atom Bombardment"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0657ef15a33e8c95685833339d6c1cf64473d2dd4db538d4fb1fd7b315d06fd7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36605713",
+   "title": "Effects of different hormonal treatments on growth parameters and secondary metabolite production in organ culture of Hyssopus officinalis L.",
+   "year": 2021,
+   "journal": "Biotechnologia",
+   "doi": "10.5114/bta.2021.103760",
+   "pmcid": "PMC9642917",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b8d07b44d81397a86d7f61c5c667935eed16417d03c17f5bbdee0ccf2d4c8024",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "32659662",
+   "title": "Effects of exogenous application of citrulline on prolonged water stress damages in hyssop (Hyssopus officinalis L.): Antioxidant activity, biochemical indices, and essential oils profile.",
+   "year": 2020,
+   "journal": "Food chemistry",
+   "doi": "10.1016/j.foodchem.2020.127433",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Camphanes",
+    "Catalase",
+    "Catechol Oxidase",
+    "Citrulline",
+    "Dehydration",
+    "Droughts",
+    "Hyssopus Plant",
+    "Oils, Volatile",
+    "Plant Proteins",
+    "Plants, Medicinal",
+    "Polyphenols",
+    "Superoxide Dismutase"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9e731858302414fde8e51279fd870fd8a87975bfe702260d49ac9390a117bbd5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42357503",
+   "title": "Impact of Extraction Scale and Method on the Chemical Profile of Essential Oils: A Comparative Study Between Laboratory Hydrodistillation and Semi-Industrial Dry Steam Distillation.",
+   "year": 2026,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules31122105",
+   "pmcid": "PMC13305851",
+   "mesh": [
+    "Oils, Volatile",
+    "Distillation",
+    "Gas Chromatography-Mass Spectrometry",
+    "Steam",
+    "Principal Component Analysis",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Comparative Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "de97046050a1114c89b478d24f12dd0b364ef72de9c0eeab6240ecfb0b13f363",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35358622",
+   "title": "In vitro, in vivo and in silico evaluation of the anti-inflammatory potential of Hyssopus officinalis L. subsp. aristatus (Godr.) Nyman (Lamiaceae).",
+   "year": 2022,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2022.115201",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Anti-Inflammatory Agents, Non-Steroidal",
+    "Carrageenan",
+    "Cyclooxygenase 2",
+    "Edema",
+    "Hyssopus Plant",
+    "Ibuprofen",
+    "Molecular Docking Simulation",
+    "Oils, Volatile",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5e4d5189af4d151c3801c8d895576d355bcfeb078a4ff5cd107e4feddb4b7c64",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37562266",
+   "title": "Fabrication of double nano-emulsions loaded with hyssop (Hyssopus officinalis L.) extract stabilized with soy protein isolate alone and combined with chia seed gum in controlling the oxidative stability of canola oil.",
+   "year": 2024,
+   "journal": "Food chemistry",
+   "doi": "10.1016/j.foodchem.2023.137093",
+   "pmcid": null,
+   "mesh": [
+    "Soybean Proteins",
+    "Emulsions",
+    "Hyssopus Plant",
+    "Rapeseed Oil",
+    "Plant Oils",
+    "Plant Extracts",
+    "Oxidative Stress",
+    "Salvia hispanica"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9adfcab63eed0312b48c654e815620ede3b52e7d1a9940b3c70efdde5068dcec",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22332324",
+   "title": "[FT-IR spectroscopic analysis in monitoring of hydroxyl stretching vibrations in plant hydrogels].",
+   "year": 2011,
+   "journal": "Polimery w medycynie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Hydrogels",
+    "Hydroxyl Radical",
+    "Molecular Conformation",
+    "Plants",
+    "Spectrum Analysis",
+    "Vibration"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "27993f2fa32ce8b154bc64e05bfb4428ffafe486a0aa0eaa8dae98a29c4547b5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32573004",
+   "title": "Ameliorative Effects of a Static Magnetic Field on Hyssop (Hyssopus officinalis L.) Growth and Phytochemical Traits Under Water Stress.",
+   "year": 2020,
+   "journal": "Bioelectromagnetics",
+   "doi": "10.1002/bem.22278",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Hyssopus Plant",
+    "Magnetic Fields",
+    "Photosynthesis",
+    "Phytochemicals",
+    "Stress, Physiological",
+    "Water"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "30f7aa28769612dc747719927be08651de6270ff2806e20b5d2186280271d636",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31717325",
+   "title": "Essential Oil Composition of Ruta graveolens L. Fruits and Hyssopus officinalis Subsp. aristatus (Godr.) Nyman Biomass as a Function of Hydrodistillation Time.",
+   "year": 2019,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules24224047",
+   "pmcid": "PMC6891472",
+   "mesh": [
+    "Biomass",
+    "Distillation",
+    "Fruit",
+    "Hyssopus Plant",
+    "Kinetics",
+    "Oils, Volatile",
+    "Phytochemicals",
+    "Ruta",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0a726bbcf6fcef6b6fcfd373216ec5673cce7b013da448e7b2476f9ecf3a5860",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32197463",
+   "title": "Yield, Essential Oil and Quality Performances of Artemisia dracunculus, Hyssopus officinalis and Lavandula angustifolia as Affected by Arbuscular Mycorrhizal Fungi under Organic Management.",
+   "year": 2020,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants9030375",
+   "pmcid": "PMC7154847",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9a4256f4cc9eed7eeafb51c91018dbf5348b56fe36b911fc5b2723654a41a13b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "27165530",
+   "title": "Changes in antioxidant enzymes activities and proline, total phenol and anthocyanine contents in Hyssopus officinalis L. plants under salt stress.",
+   "year": 2016,
+   "journal": "Acta biologica Hungarica",
+   "doi": "10.1556/018.67.2016.2.7",
+   "pmcid": null,
+   "mesh": [
+    "Anthocyanins",
+    "Antioxidants",
+    "Hyssopus Plant",
+    "Phenols",
+    "Proline",
+    "Salinity",
+    "Stress, Physiological"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dbb14bfb2e17448ebf6ec53203d5bda2da35a0f0f6fa1f4c78c8b35119cf3417",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17253233",
+   "title": "Distribution of flavone glycoside diosmin in Hyssopus officinalis plants: changes during growth.",
+   "year": 1998,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-957401",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Letter"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "df2470924f2b46413e324407b261faf0cb55e3b7acd5038a751b609be277b269",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7935731",
+   "title": "Effect of essential oil of Hyssopus officinalis on the lipid composition of Aspergillus fumigatus.",
+   "year": 1994,
+   "journal": "Mycopathologia",
+   "doi": "10.1007/BF01103770",
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Aspergillus fumigatus",
+    "Fatty Acids",
+    "Lipid Metabolism",
+    "Phospholipids",
+    "Plant Oils",
+    "Sterols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7f32adf6459be6cf933e7994ba84f102433bfd1f31545a92e01903ad423fc207",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32148832",
+   "title": "The effect of encapsulated plant extract of hyssop (Hyssopus officinalis L.) in biopolymer nanoemulsions of Lepidium perfoliatum and Orchis mascula on controlling oxidative stability of soybean oil.",
+   "year": 2020,
+   "journal": "Food science & nutrition",
+   "doi": "10.1002/fsn3.1415",
+   "pmcid": "PMC7020334",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9f712c77a622c09d2de158fc135783c98e717ddb71cf2900ed156fb2f68f1abe",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "34746475",
+   "title": "Qualitative and quantitative analysis of diosmin content of hyssop (Hyssopus officinalis) in response to salinity stress.",
+   "year": 2021,
+   "journal": "Heliyon",
+   "doi": "10.1016/j.heliyon.2021.e08228",
+   "pmcid": "PMC8551591",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c663e4ca366a45ce98dfa6a77f0938df0e947a143b49f6652b3032c8234a723d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "32394355",
+   "title": "Precision Harvesting of Medicinal Plants: Elements and Ash Content of Hyssop (Hyssopus officinalis L.) as Affected by Harvest Height.",
+   "year": 2021,
+   "journal": "Biological trace element research",
+   "doi": "10.1007/s12011-020-02171-2",
+   "pmcid": null,
+   "mesh": [
+    "Hyssopus Plant",
+    "Metals, Heavy",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "542b3d38d0abc391ee8cb4cc5c39f15ed4dda956e8323042768b8e8ddaa19870",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24786688",
+   "title": "Evaluation of antioxidant and antimicrobial activities and phenolic profile for Hyssopus officinalis, Ocimum basilicum and Teucrium chamaedrys.",
+   "year": 2014,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules19055490",
+   "pmcid": "PMC6270679",
+   "mesh": [
+    "Anti-Infective Agents",
+    "Antioxidants",
+    "Bacteria",
+    "Lamiaceae",
+    "Ocimum basilicum",
+    "Phenols",
+    "Plant Extracts",
+    "Teucrium"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "24fd57f5b63dca4932d75b77594955bc32612e3fdb55ff24561e9eb0e21cbcf7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21513560",
+   "title": "Inhibition of HIV-1 infection by aqueous extracts of Prunella vulgaris L.",
+   "year": 2011,
+   "journal": "Virology journal",
+   "doi": "10.1186/1743-422X-8-188",
+   "pmcid": "PMC3096947",
+   "mesh": [
+    "Anti-HIV Agents",
+    "Down-Regulation",
+    "HIV Infections",
+    "HIV-1",
+    "HeLa Cells",
+    "Humans",
+    "Lamiaceae",
+    "Plant Extracts",
+    "Virus Replication"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1eba7d8188cf6eea2ac7bcf2a8d90061365d909912fe05b26fa6391eb098b3fa",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21806885",
+   "title": "[The effect of Uygur medicine Hyssopus officinalis L on expression of T-bet, GATA-3 and STAT-3 mRNA in lung tissue of asthma rats].",
+   "year": 2011,
+   "journal": "Xi bao yu fen zi mian yi xue za zhi = Chinese journal of cellular and molecular immunology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Asthma",
+    "Disease Models, Animal",
+    "GATA3 Transcription Factor",
+    "Gene Expression Regulation",
+    "Lamiaceae",
+    "Lung",
+    "Male",
+    "Plant Preparations",
+    "RNA, Messenger",
+    "Rats",
+    "Rats, Wistar",
+    "STAT3 Transcription Factor",
+    "T-Box Domain Proteins",
+    "Transcription Factors",
+    "T-bet Transcription Factor"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c1a73c8666d20f96a3ec934b26eec3897047b586d029dafcfa30f05e39d0fbe4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25920235",
+   "title": "Chemical composition and biological activity of essential oils of Dracocephalum heterophyllum and Hyssopus officinalis from Western Himalaya.",
+   "year": 2015,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Aedes",
+    "Animals",
+    "Anti-Bacterial Agents",
+    "Antifungal Agents",
+    "Asia",
+    "Insect Repellents",
+    "Lamiaceae",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3b0191b66052ea9b4d94a3b5ea99d5a6999bef3dde207b86845bec4ef5118653",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21128145",
+   "title": "Two new flavonoid glycosides from the whole herbs of Hyssopus officinalis.",
+   "year": 2010,
+   "journal": "Journal of Asian natural products research",
+   "doi": "10.1080/10286020.2010.533120",
+   "pmcid": null,
+   "mesh": [
+    "Algorithms",
+    "Biphenyl Compounds",
+    "Drugs, Chinese Herbal",
+    "Free Radical Scavengers",
+    "Glycosides",
+    "Lamiaceae",
+    "Molecular Structure",
+    "Nuclear Magnetic Resonance, Biomolecular",
+    "Picrates",
+    "Quercetin",
+    "Stereoisomerism"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "712066680caa500d40ab90f929dfbe8171b951e37eba3aa7ff50f6fea3df3b50",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31692026",
+   "title": "Anticancer properties of green-synthesised zinc oxide nanoparticles using Hyssopus officinalis extract on prostate carcinoma cells and its effects on testicular damage and spermatogenesis in Balb/C mice.",
+   "year": 2020,
+   "journal": "Andrologia",
+   "doi": "10.1111/and.13450",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Oral",
+    "Animals",
+    "Apoptosis",
+    "Cell Line, Tumor",
+    "Drug Screening Assays, Antitumor",
+    "Green Chemistry Technology",
+    "Humans",
+    "Hyssopus Plant",
+    "Inhibitory Concentration 50",
+    "Male",
+    "Metal Nanoparticles",
+    "Mice",
+    "Mice, Inbred BALB C",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Prostate",
+    "Prostatic Neoplasms",
+    "Sperm Motility",
+    "Spermatogenesis",
+    "Testis",
+    "Toxicity Tests, Subacute",
+    "Zinc Oxide"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5d865c7516ff527dc3f3c630ca7127587054815d20325514c6bab760d2b0859d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28110082",
+   "title": "Acute larvicidal toxicity of five essential oils (Pinus nigra, Hyssopus officinalis, Satureja montana, Aloysia citrodora and Pelargonium graveolens) against the filariasis vector Culex quinquefasciatus: Synergistic and antagonistic effects.",
+   "year": 2017,
+   "journal": "Parasitology international",
+   "doi": "10.1016/j.parint.2017.01.012",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Culex",
+    "Drug Antagonism",
+    "Drug Synergism",
+    "Elephantiasis, Filarial",
+    "Encephalitis, St. Louis",
+    "Gas Chromatography-Mass Spectrometry",
+    "Hyssopus Plant",
+    "Insecticides",
+    "Larva",
+    "Mosquito Vectors",
+    "Oils, Volatile",
+    "Pelargonium",
+    "Pinus",
+    "Plant Leaves",
+    "Plant Oils",
+    "Satureja",
+    "Verbenaceae",
+    "West Nile Fever"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68af30360acfe722cb1fdf7397feb30c4bc9be4855e1a943f926b4a006aa9687",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16333566",
+   "title": "Influence of essential oil of Hyssopus officinalis on the chemical composition of the walls of Aspergillus fumigatus (Fresenius).",
+   "year": 1997,
+   "journal": "Mycopathologia",
+   "doi": "10.1023/A:1006876018261",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8ae0c8c59541a8c59aec298cb9c340de5d94427824a61271069339fd34ec4cbb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22153611",
+   "title": "Effect of adding essential oils of coriander (Coriandrum sativum L.) and hyssop (Hyssopus officinalis L.) on the shelf life of ground beef.",
+   "year": 2012,
+   "journal": "Meat science",
+   "doi": "10.1016/j.meatsci.2011.11.026",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bacteria",
+    "Cattle",
+    "Colony Count, Microbial",
+    "Consumer Product Safety",
+    "Coriandrum",
+    "Electrophoresis, Polyacrylamide Gel",
+    "Food Microbiology",
+    "Food Packaging",
+    "Food Preservation",
+    "Food Storage",
+    "Hydrogen-Ion Concentration",
+    "Lamiaceae",
+    "Meat",
+    "Oils, Volatile",
+    "Taste",
+    "Vacuum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "725d960a8af6ca2da8bc897a86cc64ce903b29065017b14e334aa4a69d79480d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19630202",
+   "title": "Different drying technologies and alternation of mycobiots in the raw material of Hyssopus officinalis L.",
+   "year": 2009,
+   "journal": "Annals of agricultural and environmental medicine : AAEM",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alternaria",
+    "Cladosporium",
+    "Drug Contamination",
+    "Fungi",
+    "Humidity",
+    "Lamiaceae",
+    "Penicillium",
+    "Temperature"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8c70ea50f16ccdf47020fd850f4517a74496c9019b4ef436386facb98337b0f2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20989391",
+   "title": "[On the pharmacodynamic action of the essence of hyssop (Hyssopus officinalis L.)].",
+   "year": 1945,
+   "journal": "Comptes rendus des seances de la Societe de biologie et de ses filiales",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Lamiaceae",
+    "Salvia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "9703705",
+   "title": "[Investigation of variation of the production of biological and chemical compounds of Hyssopus officinalis L].",
+   "year": 1998,
+   "journal": "Acta pharmaceutica Hungarica",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Gas",
+    "Climate",
+    "Gas Chromatography-Mass Spectrometry",
+    "Hungary",
+    "Medicine, Traditional",
+    "Oils, Volatile",
+    "Plants, Medicinal",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4fecb1e7ed014f254aa827ded6e0490beaa1fd48eb884cf3bf18b2eb9d058a14",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  }
+ ]
+}

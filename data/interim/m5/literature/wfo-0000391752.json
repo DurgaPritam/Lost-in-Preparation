@@ -1,0 +1,2652 @@
+{
+ "species": "Pastinaca sativa",
+ "wfoId": "wfo-0000391752",
+ "names": [
+  "Pastinaca sativa",
+  "Anethum pastinaca",
+  "Elaphoboscum sativum",
+  "Pastinaca sativa subsp. sylvestris",
+  "Peucedanum pastinaca",
+  "Peucedanum sativum",
+  "Selinum pastinaca"
+ ],
+ "term": "\"Pastinaca sativa\"[tiab] OR \"Anethum pastinaca\"[tiab] OR \"Elaphoboscum sativum\"[tiab] OR \"Pastinaca sativa subsp. sylvestris\"[tiab] OR \"Peucedanum pastinaca\"[tiab] OR \"Peucedanum sativum\"[tiab] OR \"Selinum pastinaca\"[tiab]",
+ "count": 104,
+ "queryTranslation": "\"Pastinaca sativa\"[Title/Abstract]",
+ "retrieved": 104,
+ "records": [
+  {
+   "pmid": "39728369",
+   "title": "Characterisation of Itersonilia spp. from Parsnip and Other Hosts.",
+   "year": 2024,
+   "journal": "Journal of fungi (Basel, Switzerland)",
+   "doi": "10.3390/jof10120873",
+   "pmcid": "PMC11677935",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "56794ab30ceb1d65cba659b5bb3a0a4b030d624b5ff7dabe017bbc286381bab2",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32079080",
+   "title": "Antioxidant Activity of Pastinaca sativa L. ssp. sylvestris [Mill.] Rouy and Camus Essential Oil.",
+   "year": 2020,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules25040869",
+   "pmcid": "PMC7070583",
+   "mesh": [
+    "Acetates",
+    "Antioxidants",
+    "Biological Assay",
+    "Biphenyl Compounds",
+    "Butylated Hydroxyanisole",
+    "Butylated Hydroxytoluene",
+    "Gas Chromatography-Mass Spectrometry",
+    "Linoleic Acid",
+    "Oils, Volatile",
+    "Pastinaca",
+    "Phenols",
+    "Picrates",
+    "Plant Extracts",
+    "Seeds",
+    "Sunflower Oil",
+    "Thiobarbiturates",
+    "beta Carotene"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f58b42dc3593bf6a31670c1c0e21f5917f7c424a838787b779e77c86fd369477",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31173794",
+   "title": "Wild parsnip (Pastinaca sativa)-induced photosensitization.",
+   "year": 2019,
+   "journal": "Toxicon : official journal of the International Society on Toxinology",
+   "doi": "10.1016/j.toxicon.2019.06.007",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Dermatitis, Photoallergic",
+    "Furocoumarins",
+    "Goat Diseases",
+    "Goats",
+    "Horse Diseases",
+    "Horses",
+    "Pastinaca",
+    "Photosensitivity Disorders",
+    "Photosensitizing Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6c5cf0f17e9941572bae37bd5cc41e34bfe97aff7c0628104493077870f7f44f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36450872",
+   "title": "Degree of Dietary Specialization on Furanocoumarin-Containing Hostplants in a Newly Invasive Web Building Caterpillar.",
+   "year": 2022,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1007/s10886-022-01389-9",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Furocoumarins",
+    "Phylogeny",
+    "Moths",
+    "Larva",
+    "Diet",
+    "Pastinaca"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e8ff739a315cadb9143dced77ac8cf869fca9308741030dd43628ca96b41e6cd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37457187",
+   "title": "Morphological characterizations of parsnip (Pastinaca sativa L.) to select superior genotypes.",
+   "year": 2023,
+   "journal": "Food science & nutrition",
+   "doi": "10.1002/fsn3.3371",
+   "pmcid": "PMC10345681",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c8aeb598c5053be6489025909c538f99c903adc067db520f77252eb0fcfc722e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26918393",
+   "title": "Molecular evolution of parsnip (Pastinaca sativa) membrane-bound prenyltransferases for linear and/or angular furanocoumarin biosynthesis.",
+   "year": 2016,
+   "journal": "The New phytologist",
+   "doi": "10.1111/nph.13899",
+   "pmcid": null,
+   "mesh": [
+    "Catharanthus",
+    "Cell Membrane",
+    "Cloning, Molecular",
+    "Coumarins",
+    "Dimethylallyltranstransferase",
+    "Evolution, Molecular",
+    "Furocoumarins",
+    "Isoenzymes",
+    "Pastinaca",
+    "Plant Proteins",
+    "Plants, Genetically Modified",
+    "Plastids",
+    "Substrate Specificity",
+    "Nicotiana",
+    "Umbelliferones"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "41d4f0242b1ec77030cf606e1b1e96e3c4f033fbc472ba98eee13d2c757dc182",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34575872",
+   "title": "Impact of Genomic and Transcriptomic Resources on Apiaceae Crop Breeding Strategies.",
+   "year": 2021,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms22189713",
+   "pmcid": "PMC8465131",
+   "mesh": [
+    "Apiaceae",
+    "Cell Nucleus",
+    "Chromosome Mapping",
+    "Crops, Agricultural",
+    "Cytoplasm",
+    "Genes, Plant",
+    "Genetic Markers",
+    "Genome, Plant",
+    "Genomics",
+    "Genotype",
+    "Microsatellite Repeats",
+    "Phylogeny",
+    "Plant Breeding",
+    "Polymorphism, Single Nucleotide",
+    "RNA-Seq",
+    "Transcriptome"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "76858665ddc0ec8337f714d8b0b53709b29e2b2df099b1a2767a7037b0c39142",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39575581",
+   "title": "Catalytic mechanism underlying the regiospecificity of coumarin-substrate transmembrane prenyltransferases in Apiaceae.",
+   "year": 2025,
+   "journal": "Plant & cell physiology",
+   "doi": "10.1093/pcp/pcae134",
+   "pmcid": "PMC11775389",
+   "mesh": [
+    "Substrate Specificity",
+    "Dimethylallyltranstransferase",
+    "Coumarins",
+    "Apiaceae",
+    "Plant Proteins",
+    "Mutagenesis, Site-Directed",
+    "Prenylation",
+    "Amino Acid Sequence",
+    "Models, Molecular"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fd3fa666e9537a97f7bf920d1db8eeb4b7e653395ae5ffdc173a08aa76bce144",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39634555",
+   "title": "Post-harvest processed parsnip showed improved anti-oxidative capacity and protective potential against acrolein-induced inflammation in vitro and in vivo.",
+   "year": 2024,
+   "journal": "Frontiers in nutrition",
+   "doi": "10.3389/fnut.2024.1507886",
+   "pmcid": "PMC11614627",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dc98427b22c821c366eecf88617f2aadc4deaf2188e9e64af2e553299672122e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32887350",
+   "title": "Identification and Quantification of a Phytotoxic Metabolite from Alternaria dauci.",
+   "year": 2020,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules25174003",
+   "pmcid": "PMC7504779",
+   "mesh": [
+    "Alternaria",
+    "Metabolome",
+    "Piperazine",
+    "Plant Leaves",
+    "Secondary Metabolism",
+    "Toxins, Biological"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0ac85a5f84d1161be35481c9ca4cceb16afc48266a59cde0f1948ffdbf6f46d2",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32700246",
+   "title": "Xanthotoxin reverses Parkinson's disease-like symptoms in zebrafish larvae and mice models: a comparative study.",
+   "year": 2021,
+   "journal": "Pharmacological reports : PR",
+   "doi": "10.1007/s43440-020-00136-9",
+   "pmcid": "PMC7862530",
+   "mesh": [
+    "Animals",
+    "Antiparkinson Agents",
+    "Biological Assay",
+    "Drug Discovery",
+    "Fruit",
+    "Larva",
+    "MPTP Poisoning",
+    "Male",
+    "Methoxsalen",
+    "Mice",
+    "Movement Disorders",
+    "Oxidopamine",
+    "Parkinson Disease, Secondary",
+    "Pastinaca",
+    "Plant Extracts",
+    "Species Specificity",
+    "Zebrafish"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "99aff2f3493c9611932cc68600be2ecfdf1c5fb41a8750f9af06293e78c9833e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32353989",
+   "title": "Imperatorin as a Promising Chemotherapeutic Agent Against Human Larynx Cancer and Rhabdomyosarcoma Cells.",
+   "year": 2020,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules25092046",
+   "pmcid": "PMC7248852",
+   "mesh": [
+    "Angelica archangelica",
+    "Antineoplastic Agents, Phytogenic",
+    "Apoptosis",
+    "Cell Cycle",
+    "Cell Line, Tumor",
+    "Cell Proliferation",
+    "Cell Survival",
+    "Chromatography",
+    "Cyclin-Dependent Kinase Inhibitor p21",
+    "Drug Screening Assays, Antitumor",
+    "Fibroblasts",
+    "Flow Cytometry",
+    "Fruit",
+    "Furocoumarins",
+    "Humans",
+    "L-Lactate Dehydrogenase",
+    "Laryngeal Neoplasms",
+    "Pastinaca",
+    "Rhabdomyosarcoma"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5cc11c3f97eac5e68c209c1386e5e98c698ada149a7a209a5812f03cf2ceb908",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40882037",
+   "title": "Chemical Composition and Insecticidal Activity of Pastinaca sativa L. Essential Oils Against Two Storage Insects.",
+   "year": 2025,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202501938",
+   "pmcid": null,
+   "mesh": [
+    "Oils, Volatile",
+    "Animals",
+    "Insecticides",
+    "Coleoptera",
+    "Tribolium",
+    "Gas Chromatography-Mass Spectrometry",
+    "Structure-Activity Relationship"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dd6727eef282b660c5d0fd9c291cafd11d254a3facd7e1154e29fd5247cf8d3d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41175232",
+   "title": "Morphological dormancy, embryo growth and pericarp restraint during crop and wild Apiaceae mericarp germination in response to ambient temperature.",
+   "year": 2025,
+   "journal": "Planta",
+   "doi": "10.1007/s00425-025-04850-7",
+   "pmcid": "PMC12579680",
+   "mesh": [
+    "Germination",
+    "Seeds",
+    "Temperature",
+    "Plant Dormancy",
+    "Apiaceae",
+    "Fruit",
+    "Crops, Agricultural",
+    "Indoleacetic Acids",
+    "Plant Growth Regulators"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "afaa4959ae5642370392aa407a5b2efa7cce7b706a8fbfa205ccfe843a6a154a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "9811871",
+   "title": "Chemical phenotype matching between a plant and its insect herbivore.",
+   "year": 1998,
+   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+   "doi": "10.1073/pnas.95.23.13743",
+   "pmcid": "PMC24890",
+   "mesh": [
+    "Animals",
+    "Biological Evolution",
+    "Insecta",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "42743a4a8301b7520754c47ec82ed93f97aca4c3b70202ee32e38020b701b0c3",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34577335",
+   "title": "Camera Assisted Roadside Monitoring for Invasive Alien Plant Species Using Deep Learning.",
+   "year": 2021,
+   "journal": "Sensors (Basel, Switzerland)",
+   "doi": "10.3390/s21186126",
+   "pmcid": "PMC8473160",
+   "mesh": [
+    "Biodiversity",
+    "Deep Learning",
+    "Introduced Species",
+    "Neural Networks, Computer",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c42414bd0c28e66f2d8aeb741ab53915b2ae58d4edc2ae12954bc451b129b069",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40733297",
+   "title": "South Tyrol (Italy) Pastinaca sativa L. subsp. sativa Essential Oil: GC-MS Composition, Antimicrobial, Anti-Biofilm, and Antioxidant Properties.",
+   "year": 2025,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules30143033",
+   "pmcid": "PMC12298367",
+   "mesh": [
+    "Oils, Volatile",
+    "Antioxidants",
+    "Gas Chromatography-Mass Spectrometry",
+    "Biofilms",
+    "Anti-Infective Agents",
+    "Italy",
+    "Apiaceae",
+    "Microbial Sensitivity Tests",
+    "Anti-Bacterial Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dbf2d422ea3024b1868753243115e467a78d4c0f61f306ce9894432ee081ade4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29378112",
+   "title": "Scopolamine-Induced Memory Impairment Is Alleviated by Xanthotoxin: Role of Acetylcholinesterase and Oxidative Stress Processes.",
+   "year": 2018,
+   "journal": "ACS chemical neuroscience",
+   "doi": "10.1021/acschemneuro.8b00011",
+   "pmcid": null,
+   "mesh": [
+    "Acetylcholinesterase",
+    "Animals",
+    "Brain",
+    "Male",
+    "Memory",
+    "Memory Disorders",
+    "Methoxsalen",
+    "Mice",
+    "Neuroprotective Agents",
+    "Oxidative Stress",
+    "Scopolamine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "176a3aa7931b3b70a71f3cbf1bb9f683be095208e920fc9c48081ec9d4883204",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18510976",
+   "title": "Metabolism of myristicin by Depressaria pastinacella CYP6AB3v2 and inhibition by its metabolite.",
+   "year": 2008,
+   "journal": "Insect biochemistry and molecular biology",
+   "doi": "10.1016/j.ibmb.2008.03.013",
+   "pmcid": null,
+   "mesh": [
+    "Allylbenzene Derivatives",
+    "Animals",
+    "Benzyl Compounds",
+    "Binding Sites",
+    "Cytochrome P-450 Enzyme Inhibitors",
+    "Cytochrome P-450 Enzyme System",
+    "Dioxolanes",
+    "Furocoumarins",
+    "Molecular Structure",
+    "Moths",
+    "Pastinaca",
+    "Pyrogallol"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "17218a0ca632ec6c349e69612ef2af26d66d76b17a99eaff284bf3f3e6c086a8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41225037",
+   "title": "Antibacterial properties of bioengineered silver nanoparticles from Pastinaca sativa against Enterococcus faecalis biofilms in endodontic therapy.",
+   "year": 2025,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-025-23394-0",
+   "pmcid": "PMC12612073",
+   "mesh": [
+    "Biofilms",
+    "Enterococcus faecalis",
+    "Metal Nanoparticles",
+    "Anti-Bacterial Agents",
+    "Silver",
+    "Plant Extracts",
+    "Microbial Sensitivity Tests",
+    "Humans",
+    "Antioxidants",
+    "Plant Roots"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5b42d481a7042953db8ea419b8814b945831b62a0feb87d7e719ae5aca247dda",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "27168684",
+   "title": "Stereoselective Reduction of Prochiral Ketones by Plant and Microbial Biocatalysts.",
+   "year": 2016,
+   "journal": "Indian journal of pharmaceutical sciences",
+   "doi": "10.4103/0250-474x.180252",
+   "pmcid": "PMC4852578",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2dfa981f34ea04a5cff4ff72556514f5ee99d4dac577c89a8dc73ad34f32601f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "16031362",
+   "title": "A vesiculo-bullous disease in pigs resembling foot and mouth disease. I. Field cases.",
+   "year": 1987,
+   "journal": "New Zealand veterinary journal",
+   "doi": "10.1080/00480169.1987.35369",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6c7daaf4c282af3720105da829383ddf5390570fbc663ef93e83d81a43f47232",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25417738",
+   "title": "Evolution of tolerance in an invasive weed after reassociation with its specialist herbivore.",
+   "year": 2014,
+   "journal": "Journal of evolutionary biology",
+   "doi": "10.1111/jeb.12469",
+   "pmcid": null,
+   "mesh": [
+    "Adaptation, Physiological",
+    "Animals",
+    "Biological Evolution",
+    "Ecosystem",
+    "Flowers",
+    "Gene-Environment Interaction",
+    "Genetic Fitness",
+    "Herbivory",
+    "Moths",
+    "New Zealand",
+    "Pastinaca",
+    "Plant Weeds",
+    "Pollination",
+    "Selection, Genetic",
+    "United States"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "34fe9aeb6bb1e2cd79bc960c35a7ea1fb6ebfb6048213c20957f86889c2c1a91",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28309701",
+   "title": "Compensatory reproduction in a biennial herb following insect defloration.",
+   "year": 1979,
+   "journal": "Oecologia",
+   "doi": "10.1007/BF00347622",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "173eb508e1563a86dec8f3a2fb061e11c17b20fcbb6f0efd4fc9dfe68401011d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27651816",
+   "title": "Biotransformation of acetoin to 2,3-butanediol: Assessment of plant and microbial biocatalysts.",
+   "year": 2016,
+   "journal": "Research in pharmaceutical sciences",
+   "doi": "10.4103/1735-5362.189330",
+   "pmcid": "PMC5022384",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "51cac3f38514a8841f5e3a6f26be37caf936dd7275d8f6fdbb2017fd9070e131",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "19098286",
+   "title": "Isolation and functional characterization of CYP71AJ4 encoding for the first P450 monooxygenase of angular furanocoumarin biosynthesis.",
+   "year": 2009,
+   "journal": "The Journal of biological chemistry",
+   "doi": "10.1074/jbc.M807351200",
+   "pmcid": null,
+   "mesh": [
+    "Cytochrome P-450 Enzyme System",
+    "Evolution, Molecular",
+    "Furocoumarins",
+    "Hydroxylation",
+    "Pastinaca",
+    "Plant Proteins",
+    "Sequence Homology, Amino Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f649b7d0c1bc5bc7bb80deeaca415247a50b2deb502381061d340aee26aa60a1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21950154",
+   "title": "Quantification of polyacetylenes in apiaceous plants by high-performance liquid chromatography coupled with diode array detection.",
+   "year": 2011,
+   "journal": "Zeitschrift fur Naturforschung. C, Journal of biosciences",
+   "doi": "10.1515/znc-2011-7-801",
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Chromatography, High Pressure Liquid",
+    "Polyynes",
+    "Spectrum Analysis"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f65cec2112a778763b5372b3fa8271f9064697e14e950abedcaec74d68af6d0d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23185340",
+   "title": "Can soil seed banks serve as genetic memory? A study of three species with contrasting life history strategies.",
+   "year": 2012,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0049471",
+   "pmcid": "PMC3504043",
+   "mesh": [
+    "Alleles",
+    "Amaranthus",
+    "Carduus",
+    "Ecosystem",
+    "Genetic Variation",
+    "Geography",
+    "Models, Genetic",
+    "Models, Statistical",
+    "Pastinaca",
+    "Plants",
+    "Seasons",
+    "Seeds",
+    "Soil",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b23c2d68e1d44bd741b97f9971d48c4e9e8688134b01ae656d6273606f6b6726",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39202761",
+   "title": "New Insights Concerning Phytophotodermatitis Induced by Phototoxic Plants.",
+   "year": 2024,
+   "journal": "Life (Basel, Switzerland)",
+   "doi": "10.3390/life14081019",
+   "pmcid": "PMC11355232",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7db8de7d05a3ede9f98f367c4af4db01d5d8b7c269d629470b5ba1f9c80651cc",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24989119",
+   "title": "Impact of reassociation with a coevolved herbivore on oviposition deterrence in a hostplant.",
+   "year": 2014,
+   "journal": "Oecologia",
+   "doi": "10.1007/s00442-014-2999-2",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Biological Evolution",
+    "Chromatography, Gas",
+    "Furocoumarins",
+    "Herbivory",
+    "Illinois",
+    "Introduced Species",
+    "Moths",
+    "New Zealand",
+    "Oviposition",
+    "Pastinaca",
+    "Plant Leaves",
+    "Sesquiterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fc3c576409aa052bbebf106ca295e4a4651b2d85c4905a64d836c5e5d719b15f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31429690",
+   "title": "The Parsnip (Pastinaca sativa L), A Proposed Remedy as to a Fertile Agent in the Viewpoint of Iranian Traditional Medicine.",
+   "year": 2020,
+   "journal": "Current drug discovery technologies",
+   "doi": "10.2174/1570163816666190820143052",
+   "pmcid": null,
+   "mesh": [
+    "Female",
+    "Humans",
+    "Infertility, Female",
+    "Infertility, Male",
+    "Iran",
+    "Male",
+    "Medicine, Traditional",
+    "Ovulation",
+    "Pastinaca",
+    "Plant Extracts",
+    "Sperm Motility",
+    "Spermatogenesis"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5d1e349397e2224a84ea3a9e7f8c61f900fae07cc1a6b8d0538949645e10ac54",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39915500",
+   "title": "Preventive role of Pastinaca sativa in mitigating metabolic dysfunction-associated steatotic liver disease via modulation of metabolic endotoxemia.",
+   "year": 2025,
+   "journal": "NPJ science of food",
+   "doi": "10.1038/s41538-024-00366-8",
+   "pmcid": "PMC11803109",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d5a9422c434a59478844ccc3bd234c1089a96bb4a23e1461bebe8b8204397a9d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "30562630",
+   "title": "Evaluation of furanocoumarins from seeds of the wild parsnip (Pastinaca sativa L. s.l.).",
+   "year": 2019,
+   "journal": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences",
+   "doi": "10.1016/j.jchromb.2018.12.012",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, High Pressure Liquid",
+    "Furocoumarins",
+    "Gas Chromatography-Mass Spectrometry",
+    "Limit of Detection",
+    "Linear Models",
+    "Pastinaca",
+    "Reproducibility of Results",
+    "Seeds",
+    "Spectrometry, Mass, Electrospray Ionization"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "94372c5eb51e6db0c5c6b3ba1256eba0c1c3dce95827e0bfd0aa570cf1028565",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42110206",
+   "title": "Pastinaca sativa L.: Nutritional Composition, Phytochemistry, and Pharmacological Properties Supporting Its Potential as a Functional Food and Therapeutic Agent.",
+   "year": 2026,
+   "journal": "Food science & nutrition",
+   "doi": "10.1002/fsn3.71860",
+   "pmcid": "PMC13150342",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8351257291656c86b1f0f8a4e13b330072216f3618937e34d33b0ed84b583a48",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35219345",
+   "title": "Photodermatitis and ocular changes in nine horses after ingestion of wild parsnip (pastinaca sativa).",
+   "year": 2022,
+   "journal": "BMC veterinary research",
+   "doi": "10.1186/s12917-022-03162-2",
+   "pmcid": "PMC8881838",
+   "mesh": [
+    "Animals",
+    "Eating",
+    "Furocoumarins",
+    "Horse Diseases",
+    "Horses",
+    "Pastinaca",
+    "Photosensitivity Disorders",
+    "Plant Breeding"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eb2cdebec90f2519e42c62d6cdf0f9ce258c35d8bcea265ac8550a87ee1494eb",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "12199501",
+   "title": "Effects of furanocoumarins on feeding behavior of parsnip webworms Depressaria pastinacella.",
+   "year": 2002,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1023/a:1016244402019",
+   "pmcid": null,
+   "mesh": [
+    "Adaptation, Physiological",
+    "Animals",
+    "Avoidance Learning",
+    "Butyrates",
+    "Feeding Behavior",
+    "Furocoumarins",
+    "Larva",
+    "Lepidoptera",
+    "Plants, Edible"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3234c32d3cbd75cce19e0685f6ca5682e2349760dba70bf72b1382f2bcca0bc5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18238901",
+   "title": "Selection for chemical trait remixing in an invasive weed after reassociation with a coevolved specialist.",
+   "year": 2008,
+   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+   "doi": "10.1073/pnas.0710280105",
+   "pmcid": "PMC2290761",
+   "mesh": [
+    "Animals",
+    "Biological Evolution",
+    "Europe",
+    "Flowers",
+    "Furocoumarins",
+    "Host-Parasite Interactions",
+    "Lepidoptera",
+    "New Zealand",
+    "North America",
+    "Pastinaca",
+    "Phylogeny",
+    "Pupa",
+    "Quantitative Trait, Heritable",
+    "Regression Analysis",
+    "Reproduction",
+    "Seeds",
+    "Selection, Genetic"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "094360872e988b8faf7774ad345ce6f0e81f348fe238f6cf80cd3ac2e818fcc6",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18205131",
+   "title": "Chemical and principal-component analyses of the essential oils of Apioideae taxa (Apiaceae) from central Balkan.",
+   "year": 2008,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.200890000",
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Chromatography, Gas",
+    "Gas Chromatography-Mass Spectrometry",
+    "Molecular Structure",
+    "Oils, Volatile",
+    "Species Specificity",
+    "Yugoslavia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0bf5106ddb6642e72e2a764fe6f4ee1dea833d3d1686208d8ff89809f1d07171",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16230607",
+   "title": "Increase in toxicity of an invasive weed after reassociation with its coevolved herbivore.",
+   "year": 2005,
+   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+   "doi": "10.1073/pnas.0507805102",
+   "pmcid": "PMC1266144",
+   "mesh": [
+    "Animals",
+    "Biological Evolution",
+    "Furocoumarins",
+    "Moths",
+    "Pastinaca",
+    "Pest Control, Biological"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "14fe5fac6e96c9ffc313ae98ff352dc37e3508bca1ebde4426be5c39c2b9fac4",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22350520",
+   "title": "Aliphatic esters as targets of esterase activity in the parsnip webworm (Depressaria pastinacella).",
+   "year": 2012,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1007/s10886-012-0073-2",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Esterases",
+    "Esters",
+    "Gas Chromatography-Mass Spectrometry",
+    "Inactivation, Metabolic",
+    "Larva",
+    "Lepidoptera",
+    "NADP",
+    "Protein Binding"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d6feafda8f149877007a47f01915c74247ec9e66c3be2625c3f2ac48b7152a93",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24758347",
+   "title": "Starch biosynthetic genes and enzymes are expressed and active in the absence of starch accumulation in sugar beet tap-root.",
+   "year": 2014,
+   "journal": "BMC plant biology",
+   "doi": "10.1186/1471-2229-14-104",
+   "pmcid": "PMC4108048",
+   "mesh": [
+    "Beta vulgaris",
+    "Biomass",
+    "Biosynthetic Pathways",
+    "Circadian Rhythm",
+    "Gene Expression Regulation, Plant",
+    "Genes, Plant",
+    "Pastinaca",
+    "Plant Leaves",
+    "Plant Proteins",
+    "Plant Roots",
+    "Solubility",
+    "Starch"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cc1361384d3cc9ca20bb84d208ca1cf7ee55d3a9b5b5d788e768c1613becd25a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29971079",
+   "title": "The CYP71AZ P450 Subfamily: A Driving Factor for the Diversification of Coumarin Biosynthesis in Apiaceous Plants.",
+   "year": 2018,
+   "journal": "Frontiers in plant science",
+   "doi": "10.3389/fpls.2018.00820",
+   "pmcid": "PMC6018538",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d7e89f9cca4d51cfb73ff98a6517056c6a25ccdf179c919e0aec85c98f5d49ef",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "41011680",
+   "title": "Effect of Phenological Stage and Leaf Age on Changes of Chlorophyll and Carotenoid Contents in Some Weeds and Invasive Species.",
+   "year": 2025,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules30183788",
+   "pmcid": "PMC12472832",
+   "mesh": [
+    "Plant Leaves",
+    "Carotenoids",
+    "Chlorophyll",
+    "Plant Weeds",
+    "Introduced Species"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e9dad5573c4cf3161b68501673bcd46de5883c402dc9601631ec748ab625453b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "10830901",
+   "title": "Molecular and microscopical detection of aster yellows phytoplasma associated with infected parsnip.",
+   "year": 2000,
+   "journal": "Microbiological research",
+   "doi": "10.1016/S0944-5013(00)80023-3",
+   "pmcid": null,
+   "mesh": [
+    "Acholeplasmataceae",
+    "Apiaceae",
+    "DNA, Ribosomal",
+    "Microscopy, Electron",
+    "Microscopy, Fluorescence",
+    "Plant Diseases",
+    "Polymerase Chain Reaction",
+    "Polymorphism, Restriction Fragment Length",
+    "RNA, Ribosomal, 16S"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d71733381515c76f99bec033f0763e762f52734305fb4bb6fac6b7a1ddba3291",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29600888",
+   "title": "Genetic Variation of 'Candidatus Liberibacter solanacearum' Haplotype C and Identification of a Novel Haplotype from Trioza urticae and Stinging Nettle.",
+   "year": 2018,
+   "journal": "Phytopathology",
+   "doi": "10.1094/PHYTO-12-17-0410-R",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bacteria",
+    "Genetic Variation",
+    "Haplotypes",
+    "Hemiptera",
+    "Insect Vectors",
+    "Multilocus Sequence Typing",
+    "Phylogeny",
+    "Plant Diseases",
+    "Urtica dioica"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fa06d55f64ec24bc0f9774e3956f105fb2195756068f46ef6d6b635280c24447",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28563494",
+   "title": "CONSTRAINTS ON CHEMICAL COEVOLUTION: WILD PARSNIPS AND THE PARSNIP WEBWORM.",
+   "year": 1986,
+   "journal": "Evolution; international journal of organic evolution",
+   "doi": "10.1111/j.1558-5646.1986.tb05746.x",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d778367c3c7c82ead18ffd20df9c418b7feb89a22ec3bbe28f92ed29c68e8088",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27943460",
+   "title": "A bacterial artificial chromosome (BAC) genomic approach reveals partial clustering of the furanocoumarin pathway genes in parsnip.",
+   "year": 2017,
+   "journal": "The Plant journal : for cell and molecular biology",
+   "doi": "10.1111/tpj.13450",
+   "pmcid": null,
+   "mesh": [
+    "Chromosomes, Artificial, Bacterial",
+    "Dimethylallyltranstransferase",
+    "Furocoumarins",
+    "In Situ Hybridization, Fluorescence",
+    "Pastinaca",
+    "Plant Proteins",
+    "Signal Transduction"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "01bdaaf967c4c4842044bc187da983aefba10c7c5b82b729326a7f76c5045bb5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23495636",
+   "title": "Using habitat suitability models to target invasive plant species surveys.",
+   "year": 2013,
+   "journal": "Ecological applications : a publication of the Ecological Society of America",
+   "doi": "10.1890/12-0465.1",
+   "pmcid": null,
+   "mesh": [
+    "Centaurea",
+    "Conservation of Natural Resources",
+    "Demography",
+    "Ecosystem",
+    "Environmental Monitoring",
+    "Introduced Species",
+    "Models, Biological",
+    "Pastinaca",
+    "United States"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a02898a3c0760621bcac605ab9b5f75dcff97b45e0b3cc64aecefba8e43a57c3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "4362498",
+   "title": "The amino acid sequences of cytochrome c from four plant sources.",
+   "year": 1974,
+   "journal": "The Biochemical journal",
+   "doi": "10.1042/bj1370093",
+   "pmcid": "PMC1166085",
+   "mesh": [
+    "Amino Acid Sequence",
+    "Amino Acids",
+    "Carboxypeptidases",
+    "Chymotrypsin",
+    "Cytochrome c Group",
+    "Dansyl Compounds",
+    "Electrophoresis, Paper",
+    "Peptide Fragments",
+    "Plants",
+    "Pronase",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9d7072efb71792908bce166c51b159604770ddb0d8e1b4abcc9ece0582908c77",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28569000",
+   "title": "GENETICS OF PHYSIOLOGICAL AND BEHAVIORAL RESISTANCE TO HOST FURANOCOUMARINS IN THE PARSNIP WEBWORM.",
+   "year": 1992,
+   "journal": "Evolution; international journal of organic evolution",
+   "doi": "10.1111/j.1558-5646.1992.tb01130.x",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "65c4e8c0c27549f92cf4c6a3bfb51b41982b6b86f1eb250315e8f6ee8130ded8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24442374",
+   "title": "The control of the production of lactate and ethanol by higher plants.",
+   "year": 1974,
+   "journal": "Planta",
+   "doi": "10.1007/BF00385580",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "16e25f39e9110d5067092b057c6fb5edf214c25a4cceb3b0158b9c1b30b8bc50",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12778550",
+   "title": "Phenotype matching in wild parsnip and parsnip webworms: causes and consequences.",
+   "year": 2003,
+   "journal": "Evolution; international journal of organic evolution",
+   "doi": "10.1111/j.0014-3820.2003.tb00292.x",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Biological Evolution",
+    "Cytochrome P-450 Enzyme System",
+    "Furocoumarins",
+    "Geography",
+    "Illinois",
+    "Larva",
+    "Linear Models",
+    "Moths",
+    "Pastinaca",
+    "Phenotype",
+    "Selection, Genetic"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eb7774b75326563201ab468b73b05ee4a9770f7cced5e2fe397b854e1d912e3b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16031363",
+   "title": "A vesiculo-bullous disease in pigs resembling foot and mouth disease. II. Experimental reproduction of the lesion.",
+   "year": 1987,
+   "journal": "New Zealand veterinary journal",
+   "doi": "10.1080/00480169.1987.35370",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4c938e013363ed911a511727e36c9371911279c05ce1bdae61c78099e5ffd6dc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17249232",
+   "title": "Parsnip webworms and host plants at home and abroad: trophic complexity in a geographic mosaic.",
+   "year": 2006,
+   "journal": "Ecology",
+   "doi": "10.1890/0012-9658(2006)87[3070:pwahpa]2.0.co;2",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Climate",
+    "Ecosystem",
+    "Europe",
+    "Furocoumarins",
+    "Geography",
+    "Host-Parasite Interactions",
+    "Inactivation, Metabolic",
+    "Larva",
+    "Midwestern United States",
+    "Moths",
+    "Pastinaca",
+    "Seeds",
+    "Selection, Genetic",
+    "Species Specificity",
+    "Wasps"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d6d3e1a3ecbe97c3a56bcdbe2a94065666d6b08da465f79dc575654e9a5299bb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31340592",
+   "title": "Untargeted Metabolomics Approach Reveals Diverse Responses of Pastinaca Sativa to Ozone and Wounding Stresses.",
+   "year": 2019,
+   "journal": "Metabolites",
+   "doi": "10.3390/metabo9070153",
+   "pmcid": "PMC6681050",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2de9d257ba902002d2f2870491abe163ff5c1e776b035160b2cca224a3f4212b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "20222564",
+   "title": "Biodiversity and new records of microfungi in the Ruhrarea (north Rhine Westfalia), Germany.",
+   "year": 2009,
+   "journal": "Communications in agricultural and applied biological sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Ascomycota",
+    "Basidiomycota",
+    "Biodiversity",
+    "Fungi",
+    "Germany",
+    "Host-Parasite Interactions",
+    "Mycoses",
+    "Plant Diseases",
+    "Plant Leaves",
+    "Plants",
+    "Viburnum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e501d089df0d62dc23060ac5612311cc761542650ac5ac59d863b286d1517efd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28944029",
+   "title": "Predicting the establishment success of introduced target species in grassland restoration by functional traits.",
+   "year": 2017,
+   "journal": "Ecology and evolution",
+   "doi": "10.1002/ece3.3268",
+   "pmcid": "PMC5606862",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "69619a71b256f1f567937bd854096c739dd39177606741a7dc760b2e057a3a2c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "18672039",
+   "title": "Apoptotic activities of ethanol extracts from some Apiaceae on human leukaemia cell lines.",
+   "year": 2008,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2008.07.002",
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Apoptosis",
+    "Cell Line",
+    "Cell Line, Tumor",
+    "Cell Survival",
+    "Fruit",
+    "Humans",
+    "Leukemia",
+    "Phytotherapy",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "841f913a2d4bc217a728bc5c8219c4361cecdf411ee5dd6c868f51f5d87968cb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30823214",
+   "title": "A Blight Disease of Dill in California Caused by Itersonilia perplexans.",
+   "year": 2001,
+   "journal": "Plant disease",
+   "doi": "10.1094/PDIS.2001.85.7.802B",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c422d95de6a415e82aec0b6636637b05c58a82d542e2eafc52441e447df0f2fb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41483212",
+   "title": "Enhancement of Apiaceae pre-germination embryo growth, mericarp ageing resilience and germination differs between hormone, gas plasma, and hydropriming technologies.",
+   "year": 2026,
+   "journal": "Planta",
+   "doi": "10.1007/s00425-025-04900-0",
+   "pmcid": "PMC12764683",
+   "mesh": [
+    "Germination",
+    "Plant Growth Regulators",
+    "Abscisic Acid",
+    "Seeds",
+    "Gibberellins",
+    "Daucus carota",
+    "Plasma Gases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "02033275280522a1dbef810205795e3ecd9c9eca3978e4cddf8226dbfea13966",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "16555136",
+   "title": "Lutein sequestration and furanocoumarin metabolism in parsnip webworms under different ultraviolet light regimes in the montane west.",
+   "year": 2006,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1007/s10886-005-9002-y",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Canada",
+    "Fruit",
+    "Furocoumarins",
+    "Heracleum",
+    "Host-Parasite Interactions",
+    "Hymenoptera",
+    "Lepidoptera",
+    "Lutein",
+    "Pastinaca",
+    "Pheromones",
+    "Ultraviolet Rays",
+    "United States"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d3354f6e4d71d14c0fbabf2bd23c60abc0dff7e45405e9b435ba139a69810a95",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24310190",
+   "title": "Composition of suberin-associated waxes from the subterranean storage organs of seven plants : Parsnip, carrot, rutabaga, turnip, red beet, sweet potato and potato.",
+   "year": 1980,
+   "journal": "Planta",
+   "doi": "10.1007/BF00552662",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "66b7e340818016f83c12bdc3060f706a568e1381a48a8698f25b26126ab9840a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41559852",
+   "title": "Chromosomal-scale genome assembly of parsnip (Pastinaca sativa) reveals genome evolution and carotenoid regulation.",
+   "year": 2026,
+   "journal": "Plant physiology",
+   "doi": "10.1093/plphys/kiag009",
+   "pmcid": null,
+   "mesh": [
+    "Carotenoids",
+    "Genome, Plant",
+    "Evolution, Molecular",
+    "Gene Expression Regulation, Plant",
+    "Chromosomes, Plant",
+    "Plant Proteins",
+    "Phylogeny"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ccf55ec32986888e64a3af45525f4c1f66349c9b431a6304cd2eb35586a2d562",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10739131",
+   "title": "Heritability estimates for octyl acetate and octyl butyrate in the mature fruit of the wild parsnip.",
+   "year": 2000,
+   "journal": "The Journal of heredity",
+   "doi": "10.1093/jhered/91.1.68",
+   "pmcid": null,
+   "mesh": [
+    "Acetates",
+    "Coumarins",
+    "Data Interpretation, Statistical",
+    "Fruit",
+    "Oils, Volatile",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bdfcc8866dcdcc939454307339badc5752ddd066303a3bc88dbd34676f0640e3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14698253",
+   "title": "Influence of the extraction mode on the yield of some furanocoumarins from Pastinaca sativa fruits.",
+   "year": 2004,
+   "journal": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences",
+   "doi": "10.1016/j.jchromb.2003.07.006",
+   "pmcid": null,
+   "mesh": [
+    "Calibration",
+    "Chromatography, High Pressure Liquid",
+    "Fruit",
+    "Furocoumarins",
+    "Indicators and Reagents",
+    "Microwaves",
+    "Pastinaca",
+    "Reference Standards",
+    "Solvents",
+    "Ultrasonics"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ba9a70ff917086fa3208b5021e6553fec3c83f77a712322c853712b3a0f5575a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12523562",
+   "title": "Behavioral responses of the parsnip webworm to host plant volatiles.",
+   "year": 2002,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1023/a:1021093114663",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Behavior, Animal",
+    "Lepidoptera",
+    "Oils, Volatile",
+    "Pastinaca",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bbfe45743e596d6cdd9cd4141d4a687d26fe6dcb40af417b759a152d21d88b90",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30812405",
+   "title": "First Report of Solanum physalifolium as a Host Plant for Phytophthora infestans in Sweden.",
+   "year": 2003,
+   "journal": "Plant disease",
+   "doi": "10.1094/PDIS.2003.87.12.1538B",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "abe2b4aa1cdda7a19da352b746865c66bb272c10832bcd5386f60e0bb144ae5e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33833896",
+   "title": "Review of Pharmacological Properties and Chemical Constituents of Pastinaca sativa.",
+   "year": 2021,
+   "journal": "Journal of pharmacopuncture",
+   "doi": "10.3831/KPI.2021.24.1.14",
+   "pmcid": "PMC8010426",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "251932665dc298e63f96896443cbeb5616a0c88ba8cee7f4737f5d8eba18fa0d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "30699709",
+   "title": "First Report of Pseudomonas syringae pv. coriandricola Causing Bacterial Leaf Spot on Carrot, Parsley, and Parsnip in Serbia.",
+   "year": 2015,
+   "journal": "Plant disease",
+   "doi": "10.1094/PDIS-10-14-1041-PDN",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7bc5c72e839dfd360dfa3ffddee4b42e5cd4994063de8b6a734f37c3d75c8e2f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16662339",
+   "title": "Potentiating effect of pure oxygen on the enhancement of respiration by ethylene in plant storage organs: a comparative study.",
+   "year": 1982,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.69.5.1031",
+   "pmcid": "PMC426353",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "74e173f48e02941633f9cc118d6a261de2dbc1148a27f979c667e2d35f61aa50",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16659124",
+   "title": "Determination of structure and composition of suberin from the roots of carrot, parsnip, rutabaga, turnip, red beet, and sweet potato by combined gas-liquid chromatography and mass spectrometry.",
+   "year": 1975,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.55.3.567",
+   "pmcid": "PMC541660",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b1747d096cd64160f3c8370e4c2e5bc932b061c54dbcaa703d4e354823733bbc",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19694949",
+   "title": "Genetic and physiological determinants of Streptomyces scabies pathogenicity.",
+   "year": 2009,
+   "journal": "Molecular plant pathology",
+   "doi": "10.1111/j.1364-3703.2009.00561.x",
+   "pmcid": "PMC6640508",
+   "mesh": [
+    "Amino Acids, Aromatic",
+    "Genes, Bacterial",
+    "Plant Diseases",
+    "Streptomyces",
+    "Virulence"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "986505e8d1de5d5e038102c2ddff8dcaf4d4128597df78b91d67fc666d52dcf0",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15609832",
+   "title": "Genetic variation in primary metabolites of Pastinaca sativa; can herbivores act as selective agents?",
+   "year": 2004,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1023/b:joec.0000045590.28631.00",
+   "pmcid": null,
+   "mesh": [
+    "5-Methoxypsoralen",
+    "Animals",
+    "Cluster Analysis",
+    "Fatty Acids",
+    "Ficusin",
+    "Fructose",
+    "Fruit",
+    "Furocoumarins",
+    "Genetic Variation",
+    "Inositol",
+    "Insecta",
+    "Methoxsalen",
+    "Pastinaca",
+    "Phenotype",
+    "Proteins",
+    "Sorbitol"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4977de18a526f770f3238d6e425883bfe94d6d0d569254f9ce8eede4aafdec8f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "520500",
+   "title": "The boar-pheromone steroid identified in vegetables.",
+   "year": 1979,
+   "journal": "Experientia",
+   "doi": "10.1007/BF01953265",
+   "pmcid": null,
+   "mesh": [
+    "Androstenes",
+    "Animals",
+    "Cattle",
+    "Male",
+    "Pheromones",
+    "Plants",
+    "Swine",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c58ceb4c2dfdd7ee56fc80b15ce961035a1f144216c5c1bbc23e7623ebaeae13",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24102077",
+   "title": "Systemic allergic dermatitis caused by Apiaceae root vegetables.",
+   "year": 2014,
+   "journal": "Contact dermatitis",
+   "doi": "10.1111/cod.12122",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Apium",
+    "Conjunctivitis",
+    "Daucus carota",
+    "Dermatitis, Allergic Contact",
+    "Diynes",
+    "Fatty Alcohols",
+    "Female",
+    "Food Hypersensitivity",
+    "Hand Dermatoses",
+    "Humans",
+    "Pastinaca",
+    "Patch Tests",
+    "Rhinitis",
+    "Stomatitis",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f6aeadeddcbc12d3ccaf09f74f2cfdbbc4a13f9de7b6d6fea028a43bca6a804c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20521838",
+   "title": "Influence of Sous Vide and water immersion processing on polyacetylene content and instrumental color of parsnip (Pastinaca sativa) disks.",
+   "year": 2010,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf100517p",
+   "pmcid": null,
+   "mesh": [
+    "Color",
+    "Food Handling",
+    "Pastinaca",
+    "Plant Extracts",
+    "Polyynes"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bee081fd1b0ecfcfa4e3d54e3d31e8e5c1cc03339c9519dc70d926f2853c76ed",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28309316",
+   "title": "Patterns of furanocoumarin production and insect herbivory in a population of wild parsnip (Pastinaca sativa L.).",
+   "year": 1981,
+   "journal": "Oecologia",
+   "doi": "10.1007/BF00349195",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a8e05b372fb0adb61d16eee8e738ab36eb6b9e33acf27bd7e0927113e20d0cbf",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13319154",
+   "title": "A note on the isolation of bergapten and imperatorin from the fruits of Pastinaca sativa L.",
+   "year": 1956,
+   "journal": "Journal of the American Pharmaceutical Association. American Pharmaceutical Association",
+   "doi": "10.1002/jps.3030450623",
+   "pmcid": null,
+   "mesh": [
+    "5-Methoxypsoralen",
+    "Coumarins",
+    "Fruit",
+    "Furocoumarins",
+    "Methoxsalen",
+    "Pastinaca",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7276395",
+   "title": "Variation of myristicin content in cultivated parsnip roots (Pastinaca sativa ssp. sativa var. hortensis).",
+   "year": 1981,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf00106a055",
+   "pmcid": null,
+   "mesh": [
+    "Allylbenzene Derivatives",
+    "Benzyl Compounds",
+    "Chromatography, Gas",
+    "Dioxolanes",
+    "Dioxoles",
+    "Pyrogallol",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28564196",
+   "title": "FLORAL HERBIVORY IN PASTINACA SATIVA: DO COMPENSATORY RESPONSES OFFSET REDUCTIONS IN FITNESS?",
+   "year": 1989,
+   "journal": "Evolution; international journal of organic evolution",
+   "doi": "10.1111/j.1558-5646.1989.tb05186.x",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42739498",
+   "title": "Nine Centuries, Seven Words: Cross-Cultural and Cross-Temporal Evidence for the Erosion of Gallo-Lucanian Plant Heritage in Inland Southern Italy.",
+   "year": 2026,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants15172731",
+   "pmcid": "PMC13568229",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "24c03e3cd1bb7368a11f90a84b40087e3d771fb41bcdfb76a7875ea9c586c23a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33874142",
+   "title": "Are seedlings from small seeds always inferior to seedlings from large seeds? Effects of seed biomass on seedling growth in Pastinaca sativa L.",
+   "year": 1991,
+   "journal": "The New phytologist",
+   "doi": "10.1111/j.1469-8137.1991.tb01034.x",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "313198df11940bc65097923867c22165b24c5c023bc00dea20d845f3142d88fa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18811288",
+   "title": "Cost of chemically defending seeds: furanocoumarins and Pastinaca sativa.",
+   "year": 1997,
+   "journal": "The American naturalist",
+   "doi": "10.1086/286077",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "1161888",
+   "title": "[On the essential oils from the Apiaceae (Umbelliferae). I. The oil of roots from Pastinaca sativa (author's transl)].",
+   "year": 1975,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-0028-1097792",
+   "pmcid": null,
+   "mesh": [
+    "Germany, West",
+    "Oils, Volatile",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "1534739",
+   "title": "Occupational dermatitis from organically grown parsnip (Pastinaca sativa L.).",
+   "year": 1992,
+   "journal": "Contact dermatitis",
+   "doi": "10.1111/j.1600-0536.1992.tb00880.x",
+   "pmcid": null,
+   "mesh": [
+    "Agricultural Workers' Diseases",
+    "Dermatitis, Contact",
+    "Dermatitis, Occupational",
+    "Female",
+    "Humans",
+    "Male",
+    "Sunlight",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21682272",
+   "title": "Nondestructive Raman analysis of polyacetylenes in apiaceae vegetables.",
+   "year": 2011,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf202366w",
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Plant Extracts",
+    "Polyynes",
+    "Spectrum Analysis, Raman",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Evaluation Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b569ba1f4e51817b1514db31caf510e41f6d795a330cbd429931a9a2638faeee",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8157221",
+   "title": "Effect of addition of dried healthy or diseased parsnip root tissue to a modified AIN-76A diet on cell proliferation and histopathology in the liver, oesophagus and forestomach of male Swiss Webster mice.",
+   "year": 1994,
+   "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+   "doi": "10.1016/0278-6915(94)90199-6",
+   "pmcid": null,
+   "mesh": [
+    "Animal Feed",
+    "Animals",
+    "Cell Division",
+    "Diet",
+    "Esophagus",
+    "Furocoumarins",
+    "Liver",
+    "Male",
+    "Mice",
+    "Neuromuscular Junction",
+    "Plant Diseases",
+    "Plants",
+    "Stomach"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "64c41b981cabfe2fef0a374b1042a34540e8d83d7abd88b677f1c5dd85c1dc01",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13425874",
+   "title": "[Study and report of a case of phytodermatosis caused by Pastinaca sativa].",
+   "year": 1957,
+   "journal": "L' Arcispedale S. Anna di Ferrara",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Dermatitis",
+    "Dermatitis, Contact",
+    "Humans",
+    "Pastinaca",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "5618641",
+   "title": "[Formation place of furocoumarias from Pastinaca sativa L. (On the furocoumarins. 10)].",
+   "year": 1967,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-0028-1099987",
+   "pmcid": null,
+   "mesh": [
+    "Coumarins",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11958623",
+   "title": "Effects of storage conditions on furocoumarin levels in intact, chopped, or homogenized parsnips.",
+   "year": 2002,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf011426f",
+   "pmcid": null,
+   "mesh": [
+    "5-Methoxypsoralen",
+    "Chromatography, High Pressure Liquid",
+    "Ficusin",
+    "Food Handling",
+    "Food Preservation",
+    "Furocoumarins",
+    "Methoxsalen",
+    "Pastinaca",
+    "Temperature"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "607c94e67cd57d10393e4324ef129c97ea6cf70f86826e8b8255df2103fdca5e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "5510374",
+   "title": "[Morphological-anatomical characteristic of the fruits from Pastinaca sativa L. and the localization of furocoumarins in them].",
+   "year": 1970,
+   "journal": "Farmatsiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Coumarins",
+    "Fruit",
+    "Methods",
+    "Plant Extracts",
+    "Plants, Edible"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13368066",
+   "title": "A pharmacognostical study of the fruit of Pastinaca sativa L. cultivated in Egypt.",
+   "year": 1956,
+   "journal": "The Journal of pharmacy and pharmacology",
+   "doi": "10.1111/j.2042-7158.1956.tb12197.x",
+   "pmcid": null,
+   "mesh": [
+    "Egypt",
+    "Flavoring Agents",
+    "Fruit",
+    "Pastinaca",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "4175582",
+   "title": "[Furocoumarin of Pastinaca sativa L. A study on the question of xanthotoxin content of a plant of the temperate zone].",
+   "year": 1966,
+   "journal": "Die Pharmazie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Paper",
+    "Heterocyclic Compounds",
+    "Ketones",
+    "Khellin",
+    "Methoxsalen",
+    "Oils, Volatile",
+    "Plants",
+    "Polycyclic Compounds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "6044304",
+   "title": "[Variations in the furocoumarin content of Pastinaca sativa L. subspecies eusativa Briq., during the vegetation period].",
+   "year": 1967,
+   "journal": "Ceskoslovenska farmacie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Coumarins",
+    "Plants, Edible",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "854546",
+   "title": "[On the essential oils from the apiaceae (umbelliferae) II. The essential oils from the above ground parts of Pastinaca sativa (author's transl)].",
+   "year": 1977,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-0028-1097511",
+   "pmcid": null,
+   "mesh": [
+    "Magnoliopsida",
+    "Oils, Volatile"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41410226",
+   "title": "A Multimodal Ensemble Framework for Optimal Mutant Prediction and Computational Enzyme Engineering.",
+   "year": 2026,
+   "journal": "Angewandte Chemie (International ed. in English)",
+   "doi": "10.1002/anie.202521396",
+   "pmcid": null,
+   "mesh": [
+    "Protein Engineering",
+    "Mutation",
+    "Enzymes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1565d30d4b23066028656a621eeaee54a06e9a3ed261946608b1e01dd45c972f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "1798717",
+   "title": "[The production of furocumarin in Apium graveolens L. and Pastinaca sativa L. after infection with Sclerotinia slcerotiorum].",
+   "year": 1991,
+   "journal": "Die Pharmazie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Ascomycota",
+    "Chromatography, High Pressure Liquid",
+    "Furocoumarins",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "feef83748d57c0e071fcab65e96624702922f942a53ffba6f3483e4d4e22009c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10989843",
+   "title": "Furanocoumarins in Pastinaca sativa L. in vitro culture.",
+   "year": 2000,
+   "journal": "Die Pharmazie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Apiaceae",
+    "Cells, Cultured",
+    "Chromatography, High Pressure Liquid",
+    "Coumarins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8cd87c3b169b1d613db67a19142dd6bd314a8a2dcd630e0ce5fb332c04c1fa5e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28312835",
+   "title": "Chemical barriers to adaptation by a specialist herbivore.",
+   "year": 1989,
+   "journal": "Oecologia",
+   "doi": "10.1007/BF00380073",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b2537b17334dc400fc0d311884eeadc64288b113158faa7a598a10d2a202c207",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "3780212",
+   "title": "Contact dermatitis to Pastinaca sativa.",
+   "year": 1986,
+   "journal": "Contact dermatitis",
+   "doi": "10.1111/j.1600-0536.1986.tb01291.x",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Dermatitis, Contact",
+    "Humans",
+    "Male",
+    "Patch Tests",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24079184",
+   "title": "Absolute configuration of falcarinol (9Z-heptadeca-1,9-diene-4,6-diyn-3-ol) from Pastinaca sativa.",
+   "year": 2013,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, High Pressure Liquid",
+    "Diynes",
+    "Fatty Alcohols",
+    "Molecular Conformation",
+    "Pastinaca",
+    "Plant Roots",
+    "Stereoisomerism"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "75bef15a2bb7a8d3a22203d9822be94282398b7b8c7a2acc9877317b226acef1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21010245",
+   "title": "[Skin lesions caused by pastinaca sativa L].",
+   "year": 1945,
+   "journal": "Praxis",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Pastinaca"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24276402",
+   "title": "Artificial defloration and furanocoumarin induction inPastinaca sativa (Umbelliferae).",
+   "year": 1988,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1007/BF01012423",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "43107770261d88673ea22970be29620393d6d86833a40c7fd0b81bcb8433c0ae",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14468755",
+   "title": "[Furocoumarins in some types of Pastinaca sativa].",
+   "year": 1962,
+   "journal": "Meditsinskaia promyshlennost' SSSR",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Coumarins",
+    "Furocoumarins",
+    "Pastinaca",
+    "Plants",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  }
+ ]
+}

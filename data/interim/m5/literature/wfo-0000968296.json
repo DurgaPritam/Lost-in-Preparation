@@ -1,0 +1,1716 @@
+{
+ "species": "Galium aparine",
+ "wfoId": "wfo-0000968296",
+ "names": [
+  "Galium aparine",
+  "Aparine hispida",
+  "Aparine vulgaris",
+  "Asperula aparine",
+  "Asperula aparine var. aparine",
+  "Asterophyllum aparine",
+  "Crucianella purpurea",
+  "Galion aparinum",
+  "Galium aculeatissimum",
+  "Galium adhaerens",
+  "Galium aparine f. angustifolium",
+  "Galium aparine f. intermedium",
+  "Galium aparine f. latifolium",
+  "Galium aparine subsp. agreste",
+  "Galium aparine subsp. aparine",
+  "Galium aparine subsp. verum",
+  "Galium aparine var. agreste",
+  "Galium aparine var. aparine",
+  "Galium aparine var. fructibushispidis",
+  "Galium aparine var. hirsutum",
+  "Galium aparine var. intermedium",
+  "Galium aparine var. marinum",
+  "Galium aparine var. microphyllum",
+  "Galium aparine var. minor",
+  "Galium aparine var. minus",
+  "Galium aparine var. pseudoaparine",
+  "Galium aparine var. subglabrum",
+  "Galium aparine var. thalassicum",
+  "Galium aparine var. verum",
+  "Galium asperum",
+  "Galium australe",
+  "Galium borbonicum var. makianum",
+  "Galium charoides",
+  "Galium chilense",
+  "Galium chonosense",
+  "Galium hispidum",
+  "Galium horridum",
+  "Galium intermedium",
+  "Galium lappaceum",
+  "Galium larecajense",
+  "Galium parviflorum",
+  "Galium pseudoaparine",
+  "Galium segetum",
+  "Galium tenerrimum",
+  "Galium uliginosum",
+  "Galium uncinatum",
+  "Rubia aparine"
+ ],
+ "term": "\"Galium aparine\"[tiab] OR \"Aparine hispida\"[tiab] OR \"Aparine vulgaris\"[tiab] OR \"Asperula aparine\"[tiab] OR \"Asperula aparine var. aparine\"[tiab] OR \"Asterophyllum aparine\"[tiab] OR \"Crucianella purpurea\"[tiab] OR \"Galion aparinum\"[tiab] OR \"Galium aculeatissimum\"[tiab] OR \"Galium adhaerens\"[tiab] OR \"Galium aparine f. angustifolium\"[tiab] OR \"Galium aparine f. intermedium\"[tiab] OR \"Galium aparine f. latifolium\"[tiab] OR \"Galium aparine subsp. agreste\"[tiab] OR \"Galium aparine subsp. aparine\"[tiab] OR \"Galium aparine subsp. verum\"[tiab] OR \"Galium aparine var. agreste\"[tiab] OR \"Galium aparine var. aparine\"[tiab] OR \"Galium aparine var. fructibushispidis\"[tiab] OR \"Galium aparine var. hirsutum\"[tiab] OR \"Galium aparine var. intermedium\"[tiab] OR \"Galium aparine var. marinum\"[tiab] OR \"Galium aparine var. microphyllum\"[tiab] OR \"Galium aparine var. minor\"[tiab] OR \"Galium aparine var. minus\"[tiab] OR \"Galium aparine var. pseudoaparine\"[tiab] OR \"Galium aparine var. subglabrum\"[tiab] OR \"Galium aparine var. thalassicum\"[tiab] OR \"Galium aparine var. verum\"[tiab] OR \"Galium asperum\"[tiab] OR \"Galium australe\"[tiab] OR \"Galium borbonicum var. makianum\"[tiab] OR \"Galium charoides\"[tiab] OR \"Galium chilense\"[tiab] OR \"Galium chonosense\"[tiab] OR \"Galium hispidum\"[tiab] OR \"Galium horridum\"[tiab] OR \"Galium intermedium\"[tiab] OR \"Galium lappaceum\"[tiab] OR \"Galium larecajense\"[tiab] OR \"Galium parviflorum\"[tiab] OR \"Galium pseudoaparine\"[tiab] OR \"Galium segetum\"[tiab] OR \"Galium tenerrimum\"[tiab] OR \"Galium uliginosum\"[tiab] OR \"Galium uncinatum\"[tiab] OR \"Rubia aparine\"[tiab]",
+ "count": 64,
+ "queryTranslation": "\"Galium aparine\"[Title/Abstract]",
+ "retrieved": 64,
+ "records": [
+  {
+   "pmid": "38474724",
+   "title": "Immuno-Enhancing Effects of Galium aparine L. in Cyclophosphamide-Induced Immunosuppressed Animal Models.",
+   "year": 2024,
+   "journal": "Nutrients",
+   "doi": "10.3390/nu16050597",
+   "pmcid": "PMC10934713",
+   "mesh": [
+    "Animals",
+    "Galium",
+    "Cyclophosphamide",
+    "Immunocompromised Host",
+    "Cytokines",
+    "Models, Animal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cbee4ec5e0b18e2b198feec7c29f6fbf0aaf29db45722a1e4be2783986799e69",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39097128",
+   "title": "Comparative study on mechanical properties and biomineralization of hooks in the diaspores of three epizoochorous plant species.",
+   "year": 2024,
+   "journal": "Acta biomaterialia",
+   "doi": "10.1016/j.actbio.2024.07.041",
+   "pmcid": null,
+   "mesh": [
+    "Biomineralization",
+    "Species Specificity",
+    "Elastic Modulus",
+    "Biomechanical Phenomena"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Comparative Study",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1f7e9c41b2d5eee1c320e6808bdabadc79ffaac013090a2dc0eb13f51345fd0a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30313305",
+   "title": "Two new eriophyoid mites from Iran in the subfamilies Phyllocoptinae and Eriophyinae (Acari: Trombidiformes: Eriophyidae).",
+   "year": 2018,
+   "journal": "Zootaxa",
+   "doi": "10.11646/zootaxa.4425.3.12",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Asteraceae",
+    "Iran",
+    "Mites",
+    "Rubiaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "08ba8d148c47577f9acfd2c571c03fbdc3c03bd25cba038450427fd02fd3a852",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36985838",
+   "title": "Phytochemical Screening and Antioxidant Activity of Selected Estonian Galium Species.",
+   "year": 2023,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28062867",
+   "pmcid": "PMC10056973",
+   "mesh": [
+    "Antioxidants",
+    "Galium",
+    "Estonia",
+    "Tandem Mass Spectrometry",
+    "Flavonoids",
+    "Plant Extracts",
+    "Phytochemicals"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5e29f2ff6575450679203bf504f44a4fe08e9b469780d3617c4b592dc72908ea",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40006823",
+   "title": "False Seedbed and Stale Seedbed Against Important Broadleaf Weeds: A Case Study and a Step Closer to Agroecology.",
+   "year": 2025,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants14040564",
+   "pmcid": "PMC11859391",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bb81b61568d3506de95a74225f5e178c06a4698d3fcdda36c8046cc16defad4d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36029804",
+   "title": "Galium aparine L. protects against acetaminophen-induced hepatotoxicity in rats.",
+   "year": 2022,
+   "journal": "Chemico-biological interactions",
+   "doi": "10.1016/j.cbi.2022.110119",
+   "pmcid": null,
+   "mesh": [
+    "Acetaminophen",
+    "Alanine Transaminase",
+    "Animals",
+    "Anti-Anxiety Agents",
+    "Aspartate Aminotransferases",
+    "Bilirubin",
+    "Chemical and Drug Induced Liver Injury",
+    "Galium",
+    "Hepatic Encephalopathy",
+    "Liver",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "017c7e5a61b53c848620a98e633a551d5e53777961510fb1cd7a36eff0d3a97c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39044256",
+   "title": "Bringing back Galium aparine L. from forgotten corners of traditional wound treatment procedures: an antimicrobial, antioxidant, and in-vitro wound healing assay along with HPTLC fingerprinting study.",
+   "year": 2024,
+   "journal": "BMC complementary medicine and therapies",
+   "doi": "10.1186/s12906-024-04355-y",
+   "pmcid": "PMC11267910",
+   "mesh": [
+    "Wound Healing",
+    "Antioxidants",
+    "Plant Extracts",
+    "Humans",
+    "Phytochemicals",
+    "Chromatography, Thin Layer",
+    "Anti-Bacterial Agents",
+    "Anti-Infective Agents",
+    "Medicine, Traditional"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "27c521017d765aea949bfa2b4fd7cf1fe44d73b14d2a9eca25597d61e076c422",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33109243",
+   "title": "Ethnobotanical survey of the medicinal flora of Harighal, Azad Jammu & Kashmir, Pakistan.",
+   "year": 2020,
+   "journal": "Journal of ethnobiology and ethnomedicine",
+   "doi": "10.1186/s13002-020-00417-w",
+   "pmcid": "PMC7590686",
+   "mesh": [
+    "Adult",
+    "Aged",
+    "Aged, 80 and over",
+    "Ethnobotany",
+    "Ethnopharmacology",
+    "Female",
+    "Humans",
+    "Knowledge",
+    "Male",
+    "Medicine, Traditional",
+    "Middle Aged",
+    "Pakistan",
+    "Plant Leaves",
+    "Plant Preparations",
+    "Plants, Medicinal",
+    "Rural Population",
+    "Young Adult"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f3036c20aa1f5583f74fb6c7cfd5675979f25e3e629be808c5deaed41e1a98a9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31775336",
+   "title": "Phytochemical Profiles and In Vitro Immunomodulatory Activity of Ethanolic Extracts from Galium aparine L.",
+   "year": 2019,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants8120541",
+   "pmcid": "PMC6963662",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d5bee7a41129365fb394eb370007e94ac5abaa3184e862e57cf9d229fd9a67ee",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42473037",
+   "title": "Tribenuron-methyl resistance in catchweed bedstraw (Galium aparine): status and MIRA-based rapid detection of ALS D376E mutation.",
+   "year": 2026,
+   "journal": "Pest management science",
+   "doi": "10.1002/ps.71132",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bdd69fa77199f842f2d95c3dd70fc7f0cae308777aed9096eb99bb4efba5ed20",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42075201",
+   "title": "Evaluation of Bioactivity and Biochemical Composition of Galium aparine L.",
+   "year": 2026,
+   "journal": "Microorganisms",
+   "doi": "10.3390/microorganisms14040804",
+   "pmcid": "PMC13118831",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "45a177ba57b01471a6de4098db18641c6e34ebac37e1b84dd11bea2a0e793c13",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "41493013",
+   "title": "Anticancer Effects of Galium aparine L Extract: Dose-Dependent Cytotoxicity in HNO210 Human Laryngeal Carcinoma Cells.",
+   "year": 2026,
+   "journal": "The Journal of craniofacial surgery",
+   "doi": "10.1097/SCS.0000000000012337",
+   "pmcid": "PMC13552565",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d8b701788df45b7cda0ed13eadfca66a730514dfd5ea3b7bd173668258d77bc9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "38681726",
+   "title": "Impact of novel herbicide based on synthetic auxins and ALS inhibitor on weed control.",
+   "year": 2024,
+   "journal": "Open life sciences",
+   "doi": "10.1515/biol-2022-0868",
+   "pmcid": "PMC11049747",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3f3aab265864fcb48c9f5e10e0e7c0ec60cfa0c735e21b254a8db6e1b425415d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39562594",
+   "title": "Surveillance and mapping of tribenuron-methyl-resistant weeds in wheat fields.",
+   "year": 2024,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-024-75308-1",
+   "pmcid": "PMC11576891",
+   "mesh": [
+    "Plant Weeds",
+    "Triticum",
+    "Herbicide Resistance",
+    "Herbicides",
+    "Arylsulfonates",
+    "Iran",
+    "Weed Control"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "97e918d24eba4edfc108c17ae0e2f5a9762409489325c1814417ef7523ea136c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "17324258",
+   "title": "Ethnoveterinary medicines used for ruminants in British Columbia, Canada.",
+   "year": 2007,
+   "journal": "Journal of ethnobiology and ethnomedicine",
+   "doi": "10.1186/1746-4269-3-11",
+   "pmcid": "PMC1831764",
+   "mesh": [
+    "Animal Diseases",
+    "Animal Feed",
+    "Animal Husbandry",
+    "Animals",
+    "Animals, Domestic",
+    "British Columbia",
+    "Dairying",
+    "Ethnobotany",
+    "Female",
+    "Humans",
+    "Medicine, Traditional",
+    "Phytotherapy",
+    "Plant Preparations",
+    "Plant Structures",
+    "Plants, Medicinal",
+    "Plants, Toxic",
+    "Pregnancy",
+    "Pregnancy Complications",
+    "Ruminants"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "305468eac4bac173bafe321f02f9e85036544aad9b51386a6b27cb7495d464a1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32824103",
+   "title": "Immunomodulatory Activity and Phytochemical Profile of Infusions from Cleavers Herb.",
+   "year": 2020,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules25163721",
+   "pmcid": "PMC7464609",
+   "mesh": [
+    "Antioxidants",
+    "Galium",
+    "Humans",
+    "Lymphocytes",
+    "Phytochemicals",
+    "Plant Extracts",
+    "Plant Leaves"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ad2ed3ae803e0ebe53199e63274e9cc78cfa4e1189842258dc294d53632d5e62",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42919671",
+   "title": "Bacillaceae Within Galium aparine L.: A Plant-Associated Treasure of Biosynthetic Diversity and Growth-Promoting Potential.",
+   "year": 2026,
+   "journal": "Environmental microbiology reports",
+   "doi": "10.1111/1758-2229.70447",
+   "pmcid": "PMC13694211",
+   "mesh": [
+    "Biosurfactants",
+    "Endophytes",
+    "Galium",
+    "Phylogeny",
+    "Bacillus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9df57b61149e94d21520f870c5490de4ddd40605d793e888e14920da6c9546c1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24416223",
+   "title": "Impact of fertilizing pattern on the biodiversity of a weed community and wheat growth.",
+   "year": 2014,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0084370",
+   "pmcid": "PMC3885565",
+   "mesh": [
+    "Adaptation, Physiological",
+    "Biodiversity",
+    "Biomass",
+    "Fertilizers",
+    "Magnoliopsida",
+    "Plant Shoots",
+    "Seasons",
+    "Time Factors",
+    "Triticum"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "db6b848b88e6172cc548307da5144c30cd8d48d4e584a4e9cb4bd461a4815ea4",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21914660",
+   "title": "Structure, attachment properties, and ecological importance of the attachment system of English ivy (Hedera helix).",
+   "year": 2012,
+   "journal": "Journal of experimental botany",
+   "doi": "10.1093/jxb/err260",
+   "pmcid": "PMC3245459",
+   "mesh": [
+    "Ecology",
+    "Hedera",
+    "Plant Roots",
+    "Tensile Strength"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a9f7a759794a7bb3711b10d08a71774cb0459adc91f1da206cd99306fe6df186",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "15574483",
+   "title": "Mechanical adaptations of cleavers (Galium aparine).",
+   "year": 2005,
+   "journal": "Annals of botany",
+   "doi": "10.1093/aob/mci038",
+   "pmcid": "PMC4246785",
+   "mesh": [
+    "Adaptation, Physiological",
+    "Biomechanical Phenomena",
+    "Cell Wall",
+    "Galium",
+    "Microfibrils",
+    "Plant Roots",
+    "Plant Stems"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f48a650fa9fc41c7605f613c024c60ff1f13ae639b9b60cf38e9df8ca6d9613e",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40649264",
+   "title": "Phytochemical Analysis and Chymotrypsin Inhibitory Potential of Galium sp. and Solidago sp. via Effect-Directed HPTLC Bioassay.",
+   "year": 2025,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules30132746",
+   "pmcid": "PMC12250678",
+   "mesh": [
+    "Chymotrypsin",
+    "Phytochemicals",
+    "Antioxidants",
+    "Plant Extracts",
+    "Chromatography, Thin Layer",
+    "Biological Assay",
+    "Flavonoids",
+    "Phenols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c8eef2bdd28688958f1e7f575409afd3b48a975e9a2d7b8deef5cd8e8208d379",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "27585260",
+   "title": "Anti-methicillin-resistant Staphylococcus aureus (MRSA) activity of Rubiaceae, Fabaceae and Poaceae plants: A search for new sources of useful alternative antibacterials against MRSA infections.",
+   "year": 2016,
+   "journal": "Cellular and molecular biology (Noisy-le-Grand, France)",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Fabaceae",
+    "Flavonoids",
+    "Methicillin-Resistant Staphylococcus aureus",
+    "Microbial Sensitivity Tests",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Poaceae",
+    "Polyphenols",
+    "Rubiaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fff9d50026be9bb47bda88ca57bb2309b8262756709ea9f91a567f3806f45d05",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19894511",
+   "title": "[Phenolic compounds from Galium aparine var. tenerum].",
+   "year": 2009,
+   "journal": "Zhongguo Zhong yao za zhi = Zhongguo zhongyao zazhi = China journal of Chinese materia medica",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Drugs, Chinese Herbal",
+    "Galium",
+    "Magnetic Resonance Spectroscopy",
+    "Mass Spectrometry",
+    "Phenols"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d8cab3c8565315a68cf256920ce6b887209cf5f6856932438d8d23343631387d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20598554",
+   "title": "Syntheses and herbicidal activity of new triazolopyrimidine-2-sulfonamides as acetohydroxyacid synthase inhibitor.",
+   "year": 2010,
+   "journal": "Bioorganic & medicinal chemistry",
+   "doi": "10.1016/j.bmc.2010.06.015",
+   "pmcid": null,
+   "mesh": [
+    "Acetolactate Synthase",
+    "Arabidopsis",
+    "Bridged Bicyclo Compounds, Heterocyclic",
+    "Herbicides",
+    "Models, Molecular",
+    "Protein Binding",
+    "Sulfonamides"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d77a6499619aebc02def1c5be125c7a532b47db654380aa11f801c37d0b99589",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40617380",
+   "title": "Thermostable and solvent-tolerant alkaline protease from Galium aparine: Purification and industrial applications.",
+   "year": 2025,
+   "journal": "Archives of biochemistry and biophysics",
+   "doi": "10.1016/j.abb.2025.110529",
+   "pmcid": null,
+   "mesh": [
+    "Enzyme Stability",
+    "Endopeptidases",
+    "Hydrogen-Ion Concentration",
+    "Kinetics",
+    "Bacterial Proteins",
+    "Solvents",
+    "Temperature",
+    "Substrate Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d7d0217039fe1d818c3b481eab4737298378a78ecc15abc63eea566f6a37fde2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23553904",
+   "title": "Estimating economic thresholds for site-specific weed control using manual weed counts and sensor technology: an example based on three winter wheat trials.",
+   "year": 2014,
+   "journal": "Pest management science",
+   "doi": "10.1002/ps.3545",
+   "pmcid": null,
+   "mesh": [
+    "Galium",
+    "Herbicides",
+    "Matricaria",
+    "Seasons",
+    "Triticum",
+    "Weed Control"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e6e8412e2d15b16b8a259dd1446b4e48e3efdbd3a5c6097eae701055adcc05f4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16506146",
+   "title": "Uptake, translocation and metabolism of the herbicide florasulam in wheat and broadleaf weeds.",
+   "year": 2006,
+   "journal": "Pest management science",
+   "doi": "10.1002/ps.1163",
+   "pmcid": null,
+   "mesh": [
+    "Biological Transport",
+    "Galium",
+    "Herbicides",
+    "Lamiaceae",
+    "Molecular Structure",
+    "Plant Leaves",
+    "Plant Roots",
+    "Polygonum",
+    "Pyrimidines",
+    "Sulfonamides",
+    "Triticum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4078d4b32a41a7c55664e3c5603596bfdc22ad62ca8a10c5f3d68bcd598087c7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42310522",
+   "title": "Mining the Galium aparine L. microbiome: genome-guided discovery and experimental validation of metallophore-producing endophytic bacteria.",
+   "year": 2026,
+   "journal": "BMC genomics",
+   "doi": "10.1186/s12864-026-13037-7",
+   "pmcid": "PMC13508288",
+   "mesh": [
+    "Metals, Heavy",
+    "Endophytes",
+    "Galium",
+    "Bacteria",
+    "Multigene Family",
+    "Phylogeny",
+    "Genome, Bacterial",
+    "Genomics"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "81c0f99ae4b9b6e04b36fb0f4976ef79a3140016e6ecf404c8d7815644e4acb8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "42161891",
+   "title": "Establishment of a versatile virus-based system for elucidating herbicide resistance in Galium aparine.",
+   "year": 2026,
+   "journal": "Plant physiology",
+   "doi": "10.1093/plphys/kiag285",
+   "pmcid": "PMC13316935",
+   "mesh": [
+    "Herbicide Resistance",
+    "Tobacco Mosaic Virus",
+    "Herbicides",
+    "Galium",
+    "Plants, Genetically Modified",
+    "Plant Weeds",
+    "Cytochrome P-450 Enzyme System",
+    "Plant Proteins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "207c65215cc55f5f14e9a90e37fded5d0730fdb828010cf0430b82c3258d79e7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "32017769",
+   "title": "Reference gene selection for quantitative real-time PCR (qRT-PCR) expression analysis in Galium aparine L.",
+   "year": 2020,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0226668",
+   "pmcid": "PMC6999859",
+   "mesh": [
+    "Galium",
+    "Gene Expression Profiling",
+    "Real-Time Polymerase Chain Reaction",
+    "Reference Standards",
+    "Software"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fbc95333295801c901df5473a757da5dffa1060c9eb5d5ae54cf84faeb9cac4e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "20750642",
+   "title": "Galium Aparine as a Remedy for Chronic Ulcers.",
+   "year": 1883,
+   "journal": "British medical journal",
+   "doi": "10.1136/bmj.1.1172.1173",
+   "pmcid": "PMC2372573",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40661978",
+   "title": "Exploring the diversity and genomics of cultivable Bacillus-related endophytic bacteria from the medicinal plant Galium aparine L.",
+   "year": 2025,
+   "journal": "Frontiers in microbiology",
+   "doi": "10.3389/fmicb.2025.1612860",
+   "pmcid": "PMC12256460",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4330dc93c8081ad555dccc9506d5b6c68760e571dc687c5f285c22bfedee5ee9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "12009319",
+   "title": "Antifeedant activity of an anthraquinone aldehyde in Galium aparine L. against Spodoptera litura F.",
+   "year": 2002,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/s0031-9422(02)00095-x",
+   "pmcid": null,
+   "mesh": [
+    "Aldehydes",
+    "Animals",
+    "Anthraquinones",
+    "Feeding Behavior",
+    "Insecticides",
+    "Larva",
+    "Mass Spectrometry",
+    "Molecular Structure",
+    "Plant Roots",
+    "Rubiaceae",
+    "Spodoptera"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cdc026b82cf5430a08190d2aca6e3128a63dba6cd1b709ed82a87992dc78a021",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30891211",
+   "title": "Cover crops and compost prevent weed seed bank buildup in herbicide-free wheat-potato rotations under conservation tillage.",
+   "year": 2019,
+   "journal": "Ecology and evolution",
+   "doi": "10.1002/ece3.4942",
+   "pmcid": "PMC6405492",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2ddd298cbf92eac071f191fa3bca857805e804355f6cfe2bdb8deb67e446841a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37357883",
+   "title": "A new strategy to achieve high antimicrobial activity: green synthesised silver nanoparticle formulations with Galium aparine and Helichrysum arenarium.",
+   "year": 2023,
+   "journal": "Arhiv za higijenu rada i toksikologiju",
+   "doi": "10.2478/aiht-2023-74-3684",
+   "pmcid": "PMC10291498",
+   "mesh": [
+    "Metal Nanoparticles",
+    "Silver",
+    "Galium",
+    "Helichrysum",
+    "Spectroscopy, Fourier Transform Infrared",
+    "Escherichia coli",
+    "Staphylococcus aureus",
+    "Anti-Infective Agents",
+    "Anti-Bacterial Agents",
+    "Microbial Sensitivity Tests",
+    "Candida albicans",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "110793496508d6619012fec89e7896c6620f078eb57551c4448b7997ffc03f96",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "27085941",
+   "title": "Effects of Galium aparine extract on the cell viability, cell cycle and cell death in breast cancer cell lines.",
+   "year": 2016,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2016.04.007",
+   "pmcid": null,
+   "mesh": [
+    "Antineoplastic Agents",
+    "Apoptosis",
+    "Breast Neoplasms",
+    "Cell Cycle",
+    "Cell Division",
+    "Cell Line",
+    "Cell Line, Tumor",
+    "Cell Survival",
+    "Female",
+    "Galium",
+    "Humans",
+    "Phytochemicals",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bfe748c794009f619809425918142d3699315066fd3418f07031e21fe7e07b8a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27275108",
+   "title": "Separation and purification and in vitro anti-proliferative activity of leukemia cell K562 of Galium aparine L. petroleum ether phase.",
+   "year": 2016,
+   "journal": "Saudi pharmaceutical journal : SPJ : the official publication of the Saudi Pharmaceutical Society",
+   "doi": "10.1016/j.jsps.2016.04.005",
+   "pmcid": "PMC4880947",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "51999154652c12a3c27b96db1018f0aaf94964383ccae5407d3beaa167321bd6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "17390822",
+   "title": "Study on the weediness of winter wheat in a long-term fertilization field experiment.",
+   "year": 2006,
+   "journal": "Communications in agricultural and applied biological sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Biomass",
+    "Crops, Agricultural",
+    "Fertilizers",
+    "Nitrogen",
+    "Phosphorus",
+    "Potassium",
+    "Random Allocation",
+    "Soil",
+    "Triticum"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4488893513c207abae733b6c82cf231ebb4b2c9365a5ee6b6f63b4327b415a71",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21147808",
+   "title": "Always on the bright side: the climbing mechanism of Galium aparine.",
+   "year": 2011,
+   "journal": "Proceedings. Biological sciences",
+   "doi": "10.1098/rspb.2010.2038",
+   "pmcid": "PMC3107623",
+   "mesh": [
+    "Biomechanical Phenomena",
+    "Friction",
+    "Galium",
+    "Photosynthesis",
+    "Plant Leaves",
+    "Sunlight"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8f9ed9f30edc8afea4956110c2c27ba02cb08c72c0280c4eca9a5f6966af3007",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24223020",
+   "title": "Use of herbal supplements for overactive bladder.",
+   "year": 2013,
+   "journal": "Reviews in urology",
+   "doi": null,
+   "pmcid": "PMC3821987",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4c955925fa66c26208a3f1272c15f86074bd7d7c3ce2721e9c5aa18518a80699",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23211618",
+   "title": "Evaluation of diverse antioxidant activities of Galium aparine.",
+   "year": 2013,
+   "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+   "doi": "10.1016/j.saa.2012.09.056",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Benzothiazoles",
+    "Biphenyl Compounds",
+    "Flavonoids",
+    "Hydrogen Peroxide",
+    "Hydroxyl Radical",
+    "Oxidation-Reduction",
+    "Phenols",
+    "Picrates",
+    "Plant Extracts",
+    "Rubiaceae",
+    "Sulfonic Acids",
+    "Superoxides",
+    "Thiazoles"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "39814c6237b84d6a9f8c7ce4d7d7e974ae8c0d1683f168912bd0d501ed42f33b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32638307",
+   "title": "Effects of intercropping accumulator plants and applying their straw on the growth and cadmium accumulation of Brassica chinensis L.",
+   "year": 2020,
+   "journal": "Environmental science and pollution research international",
+   "doi": "10.1007/s11356-020-09148-7",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Brassica",
+    "Cadmium",
+    "Plant Roots",
+    "Soil",
+    "Soil Pollutants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f1b9fbad948fce5756d74b98f373d27a0b46480d6292b0f23650e5cd7bb3016d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31371740",
+   "title": "Ecology, threats and conservation status of Carex buekii (Cyperaceae) in Central Europe.",
+   "year": 2019,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-019-47563-0",
+   "pmcid": "PMC6671956",
+   "mesh": [
+    "Carex Plant",
+    "Conservation of Natural Resources",
+    "Cyperaceae",
+    "Ecosystem",
+    "Europe",
+    "Wetlands"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "283f757a4bb8ae8cbe54b0c7e4203a37860b0021761a2099b662498a3edfac52",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29124423",
+   "title": "Effects of mutual intercropping on the cadmium accumulation in accumulator plants Stellaria media, Malachium aquaticum, and Galium aparine.",
+   "year": 2017,
+   "journal": "Environmental monitoring and assessment",
+   "doi": "10.1007/s10661-017-6322-7",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Biomass",
+    "Cadmium",
+    "Environmental Monitoring",
+    "Galium",
+    "Metals, Heavy",
+    "Plant Roots",
+    "Plants",
+    "Soil Pollutants",
+    "Stellaria"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ee8fbb30907945f3f84268a5889fb6a946ef155eef6214b2d8c4b2955e267645",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24249491",
+   "title": "Combining microtomy and confocal laser scanning microscopy for structural analyses of plant-fungus associations.",
+   "year": 2014,
+   "journal": "Mycorrhiza",
+   "doi": "10.1007/s00572-013-0530-y",
+   "pmcid": null,
+   "mesh": [
+    "Fluorescent Dyes",
+    "Microscopy, Confocal",
+    "Microtomy",
+    "Mycorrhizae",
+    "Plants",
+    "Staining and Labeling"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5d0e494eed057e546bdfe7601dacdd80a1a049faf89b03a4fa7bc70d76c35a8c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42884782",
+   "title": "Biochemical Profiles, DPPH Radical-Scavenging Activity, and Associated Soil Properties of Wild Galium verum L. and Galium aparine L. Populations in Southeastern Bulgaria.",
+   "year": 2026,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants15192917",
+   "pmcid": "PMC13667112",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4dcec80908be1e17e68c179fa029f32adfdceb4b51df365dd9fce99c21057b57",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39128343",
+   "title": "Effect of mowing versus abandonment of mesic grasslands in Central Europe on biomass use for biogas production: Implications for semi-natural ecosystem conservation.",
+   "year": 2024,
+   "journal": "Journal of environmental management",
+   "doi": "10.1016/j.jenvman.2024.122132",
+   "pmcid": null,
+   "mesh": [
+    "Biomass",
+    "Grassland",
+    "Biofuels",
+    "Conservation of Natural Resources",
+    "Europe",
+    "Ecosystem",
+    "Poaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f45f511549ce782557c97205abd933c4b9bd3c6137f963fff9e7077c33d8dde2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11520869",
+   "title": "Auxin herbicides induce H(2)O(2) overproduction and tissue damage in cleavers (Galium aparine L.).",
+   "year": 2001,
+   "journal": "Journal of experimental botany",
+   "doi": "10.1093/jexbot/52.362.1811",
+   "pmcid": null,
+   "mesh": [
+    "Abscisic Acid",
+    "Amino Acids, Cyclic",
+    "Apoptosis",
+    "Carbon Dioxide",
+    "Cellular Senescence",
+    "Chlorophyll",
+    "Chloroplasts",
+    "Deoxyribonucleases",
+    "Dose-Response Relationship, Drug",
+    "Ethylenes",
+    "Herbicides",
+    "Hydrogen Cyanide",
+    "Hydrogen Peroxide",
+    "Hydroponics",
+    "Indoleacetic Acids",
+    "Models, Biological",
+    "Plant Shoots",
+    "Rubiaceae",
+    "Starch"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6604fd551cbdb301d4f834ef4a564186d8c6c2f951b85ea8c3f38fbd4133bc06",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11080318",
+   "title": "Auxin-induced ethylene triggers abscisic acid biosynthesis and growth inhibition.",
+   "year": 2000,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.124.3.1437",
+   "pmcid": "PMC59240",
+   "mesh": [
+    "Abscisic Acid",
+    "Ethylenes",
+    "Hydroponics",
+    "Indoleacetic Acids",
+    "Lyases",
+    "Magnoliopsida",
+    "Naproxen",
+    "Plant Growth Regulators",
+    "Plant Shoots",
+    "Pyridones",
+    "Tungsten Compounds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "30764a0b0b283d8446b15a4734fbd88b815e82b863544d4efdd1e6d82e4c7620",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32285162",
+   "title": "Impact of River Water and Bottom Sediment Pollution on Accumulation of Metal(loid)s and Arsenic Species in the Coastal Plants Stuckenia pectinata L., Galium aparine L., and Urtica dioica L.: A Chemometric and Environmental Study.",
+   "year": 2020,
+   "journal": "Archives of environmental contamination and toxicology",
+   "doi": "10.1007/s00244-020-00727-w",
+   "pmcid": "PMC7297822",
+   "mesh": [
+    "Arsenicals",
+    "Bioaccumulation",
+    "Cacodylic Acid",
+    "Chromatography, High Pressure Liquid",
+    "Ecosystem",
+    "Environmental Monitoring",
+    "Galium",
+    "Geologic Sediments",
+    "Mass Spectrometry",
+    "Plants",
+    "Poland",
+    "Rivers",
+    "Urtica dioica",
+    "Water Pollutants, Chemical"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c81d888c8ac24684132a05e11e4f205b154571ad983785fa707c58966cb6181f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "17317672",
+   "title": "Indole-3-acetic acid and auxin herbicides up-regulate 9-cis-epoxycarotenoid dioxygenase gene expression and abscisic acid accumulation in cleavers (Galium aparine): interaction with ethylene.",
+   "year": 2007,
+   "journal": "Journal of experimental botany",
+   "doi": "10.1093/jxb/erm011",
+   "pmcid": null,
+   "mesh": [
+    "Abscisic Acid",
+    "Dioxygenases",
+    "Ethylenes",
+    "Galium",
+    "Gene Expression Regulation, Enzymologic",
+    "Gene Expression Regulation, Plant",
+    "Herbicides",
+    "Indoleacetic Acids",
+    "Oxygenases",
+    "Plant Growth Regulators",
+    "Plant Proteins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6967246c94f1bdec60d30a045e1860b74e295bfc7a4a0c3acbf0347cfd9e7b32",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21614777",
+   "title": "Was the famous astronomer Copernicus also a nephrologist.",
+   "year": 2011,
+   "journal": "Journal of nephrology",
+   "doi": "10.5301/JN.2011.6459",
+   "pmcid": null,
+   "mesh": [
+    "Astronomy",
+    "History, 16th Century",
+    "Nephrology",
+    "Poland"
+   ],
+   "publicationTypes": [
+    "Biography",
+    "Historical Article",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1870cc059c53d986b87e7d471c2505806549553f62298cad5501df0df90c31a0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18581040",
+   "title": "Unusual trichome structure and composition in mericarps of catchweed bedstraw (Galium aparine).",
+   "year": 2008,
+   "journal": "Protoplasma",
+   "doi": "10.1007/s00709-008-0006-7",
+   "pmcid": null,
+   "mesh": [
+    "Galium",
+    "Immunohistochemistry",
+    "Microscopy, Electron, Scanning",
+    "Pectins",
+    "Plant Structures"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6017aa2833dd9d40577cec301db08e7c84072125f365bc47322fe74180338754",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12400439",
+   "title": "On the mechanism of selectivity of the corn herbicide BAS 662H: a combination of the novel auxin transport inhibitor diflufenzopyr and the auxin herbicide dicamba.",
+   "year": 2002,
+   "journal": "Pest management science",
+   "doi": "10.1002/ps.549",
+   "pmcid": null,
+   "mesh": [
+    "Abscisic Acid",
+    "Amaranthus",
+    "Biological Transport",
+    "Carbon Radioisotopes",
+    "Dicamba",
+    "Ethylenes",
+    "Galium",
+    "Herbicides",
+    "Hydrogen Peroxide",
+    "Indoleacetic Acids",
+    "Nicotinic Acids",
+    "Pesticide Synergists",
+    "Plant Roots",
+    "Plant Shoots",
+    "Semicarbazones",
+    "Zea mays"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dcabdf35c6d85a07c79b12a18712ac66b1d47a5235858514df1d3866247e5d51",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10548979",
+   "title": "Content of p-coumaric and ferulic acid in forbs with potential grazing utilization.",
+   "year": 1999,
+   "journal": "Archiv fur Tierernahrung",
+   "doi": "10.1080/17450399909386154",
+   "pmcid": null,
+   "mesh": [
+    "Animal Feed",
+    "Animals",
+    "Cattle",
+    "Chromatography, High Pressure Liquid",
+    "Coumaric Acids",
+    "Male",
+    "Plants, Edible",
+    "Propionates",
+    "Rumen"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9d032c532a85cb86db22f2b3961229ea8ed252075ebfc49965c68a2202da1f59",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21377100",
+   "title": "Climbing plants: attachment and the ascent for light.",
+   "year": 2011,
+   "journal": "Current biology : CB",
+   "doi": "10.1016/j.cub.2011.01.034",
+   "pmcid": null,
+   "mesh": [
+    "Galium",
+    "Light",
+    "Movement",
+    "Plant Leaves"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c1419a89dcd0724313bc83d46d75723c8f8f5e23d4e82573fc2d24dbedd03ee8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15310070",
+   "title": "Increases in jasmonic acid caused by indole-3-acetic acid and auxin herbicides in cleavers (Galium aparine).",
+   "year": 2004,
+   "journal": "Journal of plant physiology",
+   "doi": "10.1016/j.jplph.2003.12.002",
+   "pmcid": null,
+   "mesh": [
+    "Abscisic Acid",
+    "Cyclopentanes",
+    "Ethylenes",
+    "Galium",
+    "Herbicides",
+    "Indoleacetic Acids",
+    "Lyases",
+    "Organophosphorus Compounds",
+    "Oxylipins",
+    "Plant Growth Regulators"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a9dbdcbdefe8b0733d5e8e73a78e46a92de6bc7ba64285cb89b328aca597650e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41919049",
+   "title": "Dynamics of arable weeds communities in spring and winter wheat under different legume pre-crops during organic conversion.",
+   "year": 2026,
+   "journal": "Frontiers in plant science",
+   "doi": "10.3389/fpls.2026.1769409",
+   "pmcid": "PMC13033544",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "42d2cede4116a7b258cb1c24c40708968bff474398584cd903013a36207cc5c8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "18860990",
+   "title": "[On the hypotensive action of extracts of Buxus balearica willd., Hedera delix L. and Galium aparine L].",
+   "year": 1948,
+   "journal": "Toulouse medical",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antihypertensive Agents",
+    "Blood Pressure",
+    "Blood Pressure Determination",
+    "Humans",
+    "Hypertension",
+    "Pharmaceutical Preparations"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11539099",
+   "title": "The role of nodal and internodal responses in gravitropism and autotropism in Galium aparine L.",
+   "year": 1987,
+   "journal": "Plant, cell & environment",
+   "doi": "10.1111/j.1365-3040.1987.tb01854.x",
+   "pmcid": null,
+   "mesh": [
+    "Darkness",
+    "Gravitropism",
+    "Photography",
+    "Plant Stems",
+    "Poaceae",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8de8c6c6d5d822f361192b5ecd5b50184dc1e8b04623d8f6fc2817505467a196",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17171722",
+   "title": "Performance of potential non-crop or wild species under OECD 208 testing guideline study conditions for terrestrial non-target plants.",
+   "year": 2007,
+   "journal": "Pest management science",
+   "doi": "10.1002/ps.1310",
+   "pmcid": null,
+   "mesh": [
+    "Biomass",
+    "Galium",
+    "Germination",
+    "Herbicides",
+    "Ipomoea",
+    "Magnoliopsida",
+    "Malvaceae",
+    "Poaceae",
+    "Polygonaceae",
+    "Seeds",
+    "Species Specificity",
+    "Toxicity Tests",
+    "United States",
+    "United States Environmental Protection Agency",
+    "Veronica",
+    "Guidelines as Topic"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "004f4a15740f418483319f7e4636c181f80d459ae086dd75017a624976fd916c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24172283",
+   "title": "Discriminating crop, weeds and soil surface with a terrestrial LIDAR sensor.",
+   "year": 2013,
+   "journal": "Sensors (Basel, Switzerland)",
+   "doi": "10.3390/s131114662",
+   "pmcid": "PMC3871132",
+   "mesh": [
+    "Agriculture",
+    "Environmental Monitoring",
+    "Image Processing, Computer-Assisted",
+    "Monte Carlo Method",
+    "Plant Weeds",
+    "Regression Analysis",
+    "Soil",
+    "Zea mays"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e0dd2c715a33bb0a74158280ebfa1da6e8445289cdbe01d8ea26b16d2e9c7197",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30722392",
+   "title": "First Report of Powdery Mildew Caused by Golovinomyces sp. on Plantago australis in Brazil.",
+   "year": 2013,
+   "journal": "Plant disease",
+   "doi": "10.1094/PDIS-07-12-0660-PDN",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e098b90fe39f8b793e29b74db59f493f502e3a3ef9ca86a52d056c2e4f2cf0a7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32201471",
+   "title": "Vascular plants of Victoria Island (Northwest Territories and Nunavut, Canada): a specimen-based study of an Arctic flora.",
+   "year": 2020,
+   "journal": "PhytoKeys",
+   "doi": "10.3897/phytokeys.141.48810",
+   "pmcid": "PMC7070024",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "545d799fe746c43138b245b3598295a91b1263342c016ae65572efe94a2113b9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  }
+ ]
+}

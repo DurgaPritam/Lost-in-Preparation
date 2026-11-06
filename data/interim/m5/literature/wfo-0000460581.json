@@ -1,0 +1,678 @@
+{
+ "species": "Ranunculus ficaria",
+ "wfoId": "wfo-0000460581",
+ "names": [
+  "Ranunculus ficaria",
+  "Caltha hiranoi",
+  "Chelidonium minus",
+  "Ficaria aperta",
+  "Ficaria boryi",
+  "Ficaria bulbifera",
+  "Ficaria communis",
+  "Ficaria degenii",
+  "Ficaria ficaria",
+  "Ficaria peloponnesiaca",
+  "Ficaria polypetala",
+  "Ficaria ranunculiflora",
+  "Ficaria ranunculoides",
+  "Ficaria roberti",
+  "Ficaria rotundifolia",
+  "Ficaria verna",
+  "Ficaria verna f. divergens",
+  "Ficaria verna f. dolichopetala",
+  "Ficaria verna f. marmorata",
+  "Ficaria verna f. polypetala",
+  "Ficaria verna subsp. bulbifera",
+  "Ficaria vulgaris",
+  "Ranunculus ficaria subsp. bulbilifer",
+  "Ranunculus ficaria var. bulbifera",
+  "Ranunculus ficaria var. grandiflora",
+  "Ranunculus vernus f. divergens"
+ ],
+ "term": "\"Ranunculus ficaria\"[tiab] OR \"Caltha hiranoi\"[tiab] OR \"Chelidonium minus\"[tiab] OR \"Ficaria aperta\"[tiab] OR \"Ficaria boryi\"[tiab] OR \"Ficaria bulbifera\"[tiab] OR \"Ficaria communis\"[tiab] OR \"Ficaria degenii\"[tiab] OR \"Ficaria ficaria\"[tiab] OR \"Ficaria peloponnesiaca\"[tiab] OR \"Ficaria polypetala\"[tiab] OR \"Ficaria ranunculiflora\"[tiab] OR \"Ficaria ranunculoides\"[tiab] OR \"Ficaria roberti\"[tiab] OR \"Ficaria rotundifolia\"[tiab] OR \"Ficaria verna\"[tiab] OR \"Ficaria verna f. divergens\"[tiab] OR \"Ficaria verna f. dolichopetala\"[tiab] OR \"Ficaria verna f. marmorata\"[tiab] OR \"Ficaria verna f. polypetala\"[tiab] OR \"Ficaria verna subsp. bulbifera\"[tiab] OR \"Ficaria vulgaris\"[tiab] OR \"Ranunculus ficaria subsp. bulbilifer\"[tiab] OR \"Ranunculus ficaria var. bulbifera\"[tiab] OR \"Ranunculus ficaria var. grandiflora\"[tiab] OR \"Ranunculus vernus f. divergens\"[tiab]",
+ "count": 27,
+ "queryTranslation": "\"Ranunculus ficaria\"[Title/Abstract] OR \"Ficaria ficaria\"[Title/Abstract] OR \"Ficaria verna\"[Title/Abstract]",
+ "retrieved": 27,
+ "records": [
+  {
+   "pmid": "33955286",
+   "title": "Ranunculus species suppress nitric oxide production in LPS-stimulated RAW 264.7 macrophages.",
+   "year": 2022,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2021.1920018",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Lipopolysaccharides",
+    "Macrophages",
+    "Mice",
+    "Nitric Oxide",
+    "Nitrites",
+    "Plant Extracts",
+    "RAW 264.7 Cells",
+    "Ranunculus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ff31a859337c5bf1d2ef12d253fc3fcb3fee8730be3ea7cf8fdd8cb71223fea1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39370724",
+   "title": "Phenology mediates direct and indirect interactions among co-occurring invasive plant species.",
+   "year": 2024,
+   "journal": "Ecology",
+   "doi": "10.1002/ecy.4446",
+   "pmcid": null,
+   "mesh": [
+    "Introduced Species",
+    "Seasons"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "879973230e861ce9d30624e4787c0c402b30f4699dc23f822a78d81d7f8d7933",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39412705",
+   "title": "[Scurvy-A now forgotten previously widespread disease].",
+   "year": 2025,
+   "journal": "Wiener medizinische Wochenschrift (1946)",
+   "doi": "10.1007/s10354-024-01054-8",
+   "pmcid": "PMC11903575",
+   "mesh": [
+    "Scurvy",
+    "Humans",
+    "History, 15th Century",
+    "History, 16th Century",
+    "History, Medieval",
+    "Europe"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Historical Article",
+    "English Abstract"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2a351a0e27fed3d15277c4d43ea1865fd1228ee6f167f4c66e59004828952d52",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38509479",
+   "title": "Comparative plastome analysis of the sister genera Ceratocephala and Myosurus (Ranunculaceae) reveals signals of adaptive evolution to arid and aquatic environments.",
+   "year": 2024,
+   "journal": "BMC plant biology",
+   "doi": "10.1186/s12870-024-04891-2",
+   "pmcid": "PMC10953084",
+   "mesh": [
+    "Evolution, Molecular",
+    "Base Sequence",
+    "Ranunculaceae",
+    "Phylogeny",
+    "Genome, Plastid"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fd73968264dd0e632e0082a8e39ef2b2f82893b2885437d5b9eeec69b8625261",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "17145148",
+   "title": "An ethnobotanical study on the usage of wild medicinal herbs from Kopaonik Mountain (Central Serbia).",
+   "year": 2007,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2006.11.007",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Biodiversity",
+    "Ethnobotany",
+    "Humans",
+    "Medicine, Traditional",
+    "Phytotherapy",
+    "Plant Preparations",
+    "Plants, Medicinal",
+    "Veterinary Medicine",
+    "Yugoslavia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "81ee3051e8da3981d888b5c376a25ad0b703ad42bec001f4b5441a010623e5be",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34627295",
+   "title": "Preserving for the future the - once widespread but now vanishing - knowledge on traditional pig grazing in forests and marshes (Sava-Bosut floodplain, Serbia).",
+   "year": 2021,
+   "journal": "Journal of ethnobiology and ethnomedicine",
+   "doi": "10.1186/s13002-021-00482-9",
+   "pmcid": "PMC8501720",
+   "mesh": [
+    "Animal Feed",
+    "Animals",
+    "Ethnobotany",
+    "Forests",
+    "Herbivory",
+    "Knowledge",
+    "Plant Breeding",
+    "Serbia",
+    "Swine",
+    "Wetlands"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a44205bcf93bf3b5452789a8a5010523ec06c279c26a83644b4fe3d38cfeea18",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25729484",
+   "title": "Lesser celandine (pilewort) induced acute toxic liver injury: The first case report worldwide.",
+   "year": 2015,
+   "journal": "World journal of hepatology",
+   "doi": "10.4254/wjh.v7.i2.285",
+   "pmcid": "PMC4342611",
+   "mesh": [],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "aa0c03f8d7686a7f1ddd793e7b0d40e562da7299484216284077eb4b863fe289",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28306841",
+   "title": "Interspecies differences in the preference of ammonium and nitrate in vascular plants.",
+   "year": 1995,
+   "journal": "Oecologia",
+   "doi": "10.1007/BF00329797",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "93d987e0e221d44afb2b459f0f37724e4659d5cd504f1fcc8fec0a2eb6fb2f70",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12132681",
+   "title": "Flavonoids from Ficaria verna Huds.",
+   "year": 2002,
+   "journal": "Zeitschrift fur Naturforschung. C, Journal of biosciences",
+   "doi": "10.1515/znc-2002-5-606",
+   "pmcid": null,
+   "mesh": [
+    "Boraginaceae",
+    "Flavonoids",
+    "Molecular Structure",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Plant Stems",
+    "Ranunculaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cca3c644fd8f12083f31efa0fd16851c3568c445cbf7335c231bc267f98a90ac",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36635990",
+   "title": "Flower angle favors pollen export efficiency in the snowdrop Galanthus nivalis (Linnaeus, 1753) but not in the lesser celandine Ficaria verna (Huds, 1762).",
+   "year": 2023,
+   "journal": "Plant signaling & behavior",
+   "doi": "10.1080/15592324.2022.2163065",
+   "pmcid": "PMC9851262",
+   "mesh": [
+    "Animals",
+    "Galanthus",
+    "Chelidonium",
+    "Insecta",
+    "Pollination",
+    "Pollen",
+    "Flowers"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "673157735d1666a5aa1d8d6a35eb2a76f7f1403937c485a4271895f3854082dd",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29681119",
+   "title": "CYTOGENETIC VARIATION IN THE BRITISH FLORA: ORIGINS AND SIGNIFICANCE.",
+   "year": 1984,
+   "journal": "The New phytologist",
+   "doi": "10.1111/j.1469-8137.1984.tb06100.x",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3a2962ccc8ec25fb21c6c993804b4e42881ab63f23759b14274896df07f14753",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40431002",
+   "title": "Floral Closure in Lesser Celandine (Ficaria verna) Protects Anthers from Pollen Flushing and Preserves Pollen Viability.",
+   "year": 2025,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants14101437",
+   "pmcid": "PMC12115288",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "79a7340dfa4cde2f2e7bc453959b1fa7249dc1c0b9176394b9fff2eae520744c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "11742545",
+   "title": "Multilocus nested haplotype networks extended with DNA fingerprints show common origin and fine-scale, ongoing genetic divergence in a wild microbial metapopulation.",
+   "year": 2001,
+   "journal": "Molecular ecology",
+   "doi": "10.1046/j.0962-1083.2001.01380.x",
+   "pmcid": null,
+   "mesh": [
+    "Ascomycota",
+    "DNA Fingerprinting",
+    "Genetic Variation",
+    "Haplotypes",
+    "Microsatellite Repeats",
+    "Norway",
+    "Phylogeny",
+    "Ranunculaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c456e905eaa3779c373c84cc62d3c0a12dc3f26667d7615022f82d63571ab045",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12533962",
+   "title": "Composition of lipophylic extracts from Ficaria verna HUDS. flowers.",
+   "year": 2002,
+   "journal": "Roczniki Akademii Medycznej w Bialymstoku (1995)",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Gas",
+    "Chromatography, Thin Layer",
+    "Flowers",
+    "Humans",
+    "Molecular Structure",
+    "Plant Extracts",
+    "Plant Structures",
+    "Plants, Medicinal",
+    "Poland",
+    "Sensitivity and Specificity",
+    "Sterols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4e96b889d9f70ecb743c4939b581662021092cfc193942bad042d21d67f7d522",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22390207",
+   "title": "Ficaria verna Huds. extracts and their β-cyclodextrin supramolecular systems.",
+   "year": 2012,
+   "journal": "Chemistry Central journal",
+   "doi": "10.1186/1752-153X-6-16",
+   "pmcid": "PMC3365867",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fb6f8d456d05ac3a01a160178737b46e2eac8c51545f4c449324eee3d26ac675",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "34756898",
+   "title": "Herbaceous plant species support soil microbial performance in deciduous temperate forests.",
+   "year": 2022,
+   "journal": "The Science of the total environment",
+   "doi": "10.1016/j.scitotenv.2021.151313",
+   "pmcid": null,
+   "mesh": [
+    "Forests",
+    "Fungi",
+    "Microbiota",
+    "Plants",
+    "Soil",
+    "Soil Microbiology"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "318fada3589a0087db086a10bac12e93a632cf2075867a85d9bf42d7eeb4f030",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11154084",
+   "title": "Growth and stomatal responses of temperate meadow species to enhanced levels of UV-A and UV-B+A radiation in the natural environment.",
+   "year": 2000,
+   "journal": "Journal of photochemistry and photobiology. B, Biology",
+   "doi": "10.1016/s1011-1344(00)00096-8",
+   "pmcid": null,
+   "mesh": [
+    "Asteraceae",
+    "Environment",
+    "Magnoliopsida",
+    "Rosales",
+    "Ultraviolet Rays"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "06efc380aff9ba068d6323d7a34ac8cd7158a91b049f88970333b114232f01e4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40558541",
+   "title": "Microfungus Podosphaera fusca and the Fungus-like Organism Peronospora ficariae as Potential Inhalant Allergens in a Mouse Model of Asthma.",
+   "year": 2025,
+   "journal": "Cells",
+   "doi": "10.3390/cells14120914",
+   "pmcid": "PMC12190413",
+   "mesh": [
+    "Animals",
+    "Asthma",
+    "Allergens",
+    "Disease Models, Animal",
+    "Mice",
+    "Mice, Inbred BALB C",
+    "Cytokines",
+    "Immunoglobulin E",
+    "Female",
+    "Ascomycota",
+    "Lung"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f27ae36d95e1be333b5986f00926e5f5e022089c5e3f0f5932338f52bf51cb89",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36212342",
+   "title": "A flat petal as ancestral state for Ranunculaceae.",
+   "year": 2022,
+   "journal": "Frontiers in plant science",
+   "doi": "10.3389/fpls.2022.961906",
+   "pmcid": "PMC9532948",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "47eb6719537f00580ce9e7e703397bea6606eae5d09c5330b5ff65d9df24eb1e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "17359253",
+   "title": "Design and construction of a new temperature-controlled chamber for light and confocal microscopy under monitored conditions: biological application for plant samples.",
+   "year": 2007,
+   "journal": "Journal of microscopy",
+   "doi": "10.1111/j.1365-2818.2007.01730.x",
+   "pmcid": null,
+   "mesh": [
+    "Chloroplasts",
+    "Environment, Controlled",
+    "Equipment Design",
+    "Microscopy",
+    "Microscopy, Confocal",
+    "Plant Leaves",
+    "Plants",
+    "Ranunculaceae",
+    "Temperature"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "564708bdfb8b10c30925603a905023e1f008e52b719473a45c7a33785c169190",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7158960",
+   "title": "[Use of a strain of Aspergillus niger for purification of a hederagenin rhamnoglucoside from tubers of ficaria(Ficaria ranunculoides Moench)].",
+   "year": 1982,
+   "journal": "Annales pharmaceutiques francaises",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Aspergillus niger",
+    "Oleanolic Acid",
+    "Plants, Medicinal",
+    "Sapogenins",
+    "Saponins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14577646",
+   "title": "Quantitative analysis of flavonoids in the flowers and leaves of Ficaria verna Huds.",
+   "year": 2003,
+   "journal": "Zeitschrift fur Naturforschung. C, Journal of biosciences",
+   "doi": "10.1515/znc-2003-9-1030",
+   "pmcid": null,
+   "mesh": [
+    "Apigenin",
+    "Chromatography, High Pressure Liquid",
+    "Flavonoids",
+    "Flowers",
+    "Glucosides",
+    "Kaempferols",
+    "Plant Leaves",
+    "Quercetin",
+    "Ranunculaceae",
+    "Spectrophotometry"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "088463ce7f5db05d38035c37ef65c574e36e383103f60025489e5d963c07e72b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13189240",
+   "title": "[About some medicinal plants: Anagallis arvensis, Ononis spinosa, Poterium sanguisorbal, Ranunculus ficaria].",
+   "year": 1954,
+   "journal": "Annali di medicina navale",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Anagallis",
+    "Fabaceae",
+    "Plants",
+    "Plants, Medicinal",
+    "Ranunculaceae",
+    "Ranunculus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40787262",
+   "title": "In vitro Study of Fungus-Like Organisms Peronospora ficariae and Wilsoniana bliti as Potential Inhalant Allergens.",
+   "year": 2025,
+   "journal": "Journal of inflammation research",
+   "doi": "10.2147/JIR.S531453",
+   "pmcid": "PMC12333880",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d9470a8a94f276db2280df957510aa59d959a08ffe444cffba0a55da0716b6f6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "35053083",
+   "title": "The Effectiveness of the Sexual Reproduction in Selected Clonal and Nonclonal Species of the Genus Ranunculus.",
+   "year": 2022,
+   "journal": "Biology",
+   "doi": "10.3390/biology11010085",
+   "pmcid": "PMC8772756",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3ade644d2c5b1b953bc12dea50bab761e6fe9083bef32702df88d4e3682e5eea",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30722385",
+   "title": "First Report of Persian Buttercup Downy Mildew Caused by Peronospora sp. in Korea.",
+   "year": 2013,
+   "journal": "Plant disease",
+   "doi": "10.1094/PDIS-08-12-0743-PDN",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cb20f67720b19163c9d7ccf12cb62d044a8c0be32a8453cbcdc57164320bd049",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30728604",
+   "title": "Broad host range species in specialised pathogen groups should be treated with suspicion - a case study on Entyloma infecting Ranunculus.",
+   "year": 2018,
+   "journal": "Persoonia",
+   "doi": "10.3767/persoonia.2018.41.09",
+   "pmcid": "PMC6344810",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a6d31d96d4e19f39e9a6a15a3cb570b5b1c07b7d2c1cd439a5eac5e56be2286c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  }
+ ]
+}

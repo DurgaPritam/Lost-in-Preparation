@@ -1,0 +1,4141 @@
+{
+ "species": "Hyoscyamus niger",
+ "wfoId": "wfo-0001021850",
+ "names": [
+  "Hyoscyamus niger",
+  "Hyoscarpus niger",
+  "Hyoscyamus agrestis",
+  "Hyoscyamus auriculatus",
+  "Hyoscyamus bohemicus",
+  "Hyoscyamus lethalis",
+  "Hyoscyamus niger subsp. agrestis",
+  "Hyoscyamus niger subsp. niger",
+  "Hyoscyamus niger var. annuus",
+  "Hyoscyamus niger var. chinensis",
+  "Hyoscyamus pallidus",
+  "Hyoscyamus persicus",
+  "Hyoscyamus pictus",
+  "Hyoscyamus syspirensis",
+  "Hyoscyamus verviensis"
+ ],
+ "term": "\"Hyoscyamus niger\"[tiab] OR \"Hyoscarpus niger\"[tiab] OR \"Hyoscyamus agrestis\"[tiab] OR \"Hyoscyamus auriculatus\"[tiab] OR \"Hyoscyamus bohemicus\"[tiab] OR \"Hyoscyamus lethalis\"[tiab] OR \"Hyoscyamus niger subsp. agrestis\"[tiab] OR \"Hyoscyamus niger subsp. niger\"[tiab] OR \"Hyoscyamus niger var. annuus\"[tiab] OR \"Hyoscyamus niger var. chinensis\"[tiab] OR \"Hyoscyamus pallidus\"[tiab] OR \"Hyoscyamus persicus\"[tiab] OR \"Hyoscyamus pictus\"[tiab] OR \"Hyoscyamus syspirensis\"[tiab] OR \"Hyoscyamus verviensis\"[tiab]",
+ "count": 148,
+ "queryTranslation": "\"Hyoscyamus niger\"[Title/Abstract]",
+ "retrieved": 148,
+ "records": [
+  {
+   "pmid": "31639489",
+   "title": "The Saga continues: Solanaceae May cast too much shade for effective berserking.",
+   "year": 2020,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2019.112327",
+   "pmcid": null,
+   "mesh": [
+    "Hyoscyamus",
+    "Solanaceae"
+   ],
+   "publicationTypes": [
+    "Editorial",
+    "Comment"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36109439",
+   "title": "Beauty of the beast: anticholinergic tropane alkaloids in therapeutics.",
+   "year": 2022,
+   "journal": "Natural products and bioprospecting",
+   "doi": "10.1007/s13659-022-00357-w",
+   "pmcid": "PMC9478010",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "76aa1d02b4ad91f6607d366c3bc8fe256ef568440f12aa1da88060a7fb7b6664",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25386392",
+   "title": "Black henbane and its toxicity - a descriptive review.",
+   "year": 2014,
+   "journal": "Avicenna journal of phytomedicine",
+   "doi": null,
+   "pmcid": "PMC4224707",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e912306899555844a675d5cf49e1d376c055c0dea77162e52b1fc4d5ce8b3ad5",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30425989",
+   "title": "Forestalling the Epidemics of Parkinson's Disease Through Plant-Based Remedies.",
+   "year": 2018,
+   "journal": "Frontiers in nutrition",
+   "doi": "10.3389/fnut.2018.00095",
+   "pmcid": "PMC6218400",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bd191cc76004eb9e672226454eb7aacd5e43084b10965e275af556b2e7f3393d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "979798",
+   "title": "Henbane chewing.",
+   "year": 1976,
+   "journal": "The Medical journal of Australia",
+   "doi": "10.5694/j.1326-5377.1976.tb117621.x",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Atropine",
+    "Humans",
+    "Male",
+    "Plant Poisoning",
+    "Plants, Toxic"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4c15a312ac08fc6d65e5e11cfabd1e4862b770e10a546f7faca205fe9de40f15",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31404578",
+   "title": "Sagas of the Solanaceae: Speculative ethnobotanical perspectives on the Norse berserkers.",
+   "year": 2019,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2019.112151",
+   "pmcid": null,
+   "mesh": [
+    "Amanita",
+    "Ethnobotany",
+    "Humans",
+    "Hyoscyamus",
+    "Plant Preparations",
+    "Scandinavian and Nordic Countries"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "790925642bb5b0a1438c97cd64e57f9b380f176b94ffdc3986ce05a80e161b85",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36928121",
+   "title": "Break-induced replication is the primary recombination pathway in plant somatic hybrid mitochondria: a model for mitochondrial horizontal gene transfer.",
+   "year": 2023,
+   "journal": "Journal of experimental botany",
+   "doi": "10.1093/jxb/erad104",
+   "pmcid": null,
+   "mesh": [
+    "Gene Transfer, Horizontal",
+    "Mitochondria",
+    "Nicotiana",
+    "DNA Repair",
+    "Homologous Recombination"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4316a2b0467bf04c554f54caad6b52e16276b454177d7f02d39001c84b74e177",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34222532",
+   "title": "Treatment of opium addiction in persian medicine: A review study.",
+   "year": 2021,
+   "journal": "Journal of education and health promotion",
+   "doi": "10.4103/jehp.jehp_5_21",
+   "pmcid": "PMC8224515",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8447dcc4bde6d7d6d7d78e89911da7e43b5a2cc0ae62f9f9c0dd1e63ad682c8b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "32455988",
+   "title": "Insecticidal Activity of Hyoscyamus niger L. on Lucilia sericata Causing Myiasis.",
+   "year": 2020,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants9050655",
+   "pmcid": "PMC7284550",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ea232a354141d605771132e137ef885d7bcd1379b7af49ec56db9a379907b036",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33366800",
+   "title": "Characterization of the complete chloroplast genome sequence of Anisodus acutangulus (Solanaceae).",
+   "year": 2020,
+   "journal": "Mitochondrial DNA. Part B, Resources",
+   "doi": "10.1080/23802359.2020.1717387",
+   "pmcid": "PMC7748740",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "748291fde081a36d8eee52e7eaba42f5a6a3958f14b9cde41c5a69fd486156cd",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36421800",
+   "title": "Characterization of the Evolutionary Pressure on Anisodus tanguticus Maxim. with Complete Chloroplast Genome Sequence.",
+   "year": 2022,
+   "journal": "Genes",
+   "doi": "10.3390/genes13112125",
+   "pmcid": "PMC9690199",
+   "mesh": [
+    "Genome, Chloroplast",
+    "Phylogeny",
+    "Chloroplasts",
+    "Solanaceae",
+    "Gene Order",
+    "DNA, Intergenic"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9e8a463f2a54e32202a3d8c7d7f06ae77438c9a3d51e4ea5d1b798b39d7ba49c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38714928",
+   "title": "Diversity of the Rysto gene conferring resistance to potato virus Y in wild relatives of potato.",
+   "year": 2024,
+   "journal": "BMC plant biology",
+   "doi": "10.1186/s12870-024-05089-2",
+   "pmcid": "PMC11077776",
+   "mesh": [
+    "Potyvirus",
+    "Disease Resistance",
+    "Plant Diseases",
+    "Solanum",
+    "Solanum tuberosum",
+    "Genetic Variation",
+    "Genes, Plant",
+    "Genotype",
+    "Plant Proteins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "07885f74af7f323f2d6b28bad06d64d2186bba76b3fe32f37458d3a4e4157c2b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37365431",
+   "title": "Evaluation of medicinal plants using laser-induced breakdown spectroscopy (LIBS) combined with chemometric techniques.",
+   "year": 2023,
+   "journal": "Lasers in medical science",
+   "doi": "10.1007/s10103-023-03805-2",
+   "pmcid": null,
+   "mesh": [
+    "Plants, Medicinal",
+    "Chemometrics",
+    "Spectrum Analysis",
+    "Trace Elements",
+    "Magnesium",
+    "Calcium",
+    "Lasers, Solid-State",
+    "Sodium"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eacd754b03ee8d22b9bffd76029f6e3fe99ef9dc839a681413caad4956939ee1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27924793",
+   "title": "[Cardiodoron® bei Patienten mit Schlafstörungen - Ergebnisse einer prospektiven Beobachtungsstudie].",
+   "year": 2017,
+   "journal": "Complementary medicine research",
+   "doi": "10.1159/000452236",
+   "pmcid": null,
+   "mesh": [
+    "Female",
+    "Humans",
+    "Male",
+    "Middle Aged",
+    "Plant Extracts",
+    "Sleep Wake Disorders",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "14b5b951d106cfd5cf9c3d0a96bfa2527a5cac97ee4f5c150da7ddc809887eeb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32217234",
+   "title": "Common anticholinergic solanaceaous plants of temperate Europe - A review of intoxications from the literature (1966-2018).",
+   "year": 2020,
+   "journal": "Toxicon : official journal of the International Society on Toxinology",
+   "doi": "10.1016/j.toxicon.2020.02.005",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropa belladonna",
+    "Cholinergic Antagonists",
+    "Europe",
+    "Humans",
+    "Hyoscyamus",
+    "Plant Extracts",
+    "Plant Poisoning",
+    "Scopolamine",
+    "Scopolia",
+    "Solanaceae",
+    "Solanaceous Alkaloids",
+    "Tropanes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0fc09eae8c0466955b203ad96c3b885d580f825c669290c0fa6e2280b0d40d4a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10353217",
+   "title": "Expression of Atropa belladonna putrescine N-methyltransferase gene in root pericycle.",
+   "year": 1999,
+   "journal": "Plant & cell physiology",
+   "doi": "10.1093/oxfordjournals.pcp.a029540",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Base Sequence",
+    "Cloning, Molecular",
+    "DNA, Complementary",
+    "Gene Expression Regulation, Enzymologic",
+    "Gene Expression Regulation, Plant",
+    "Methyltransferases",
+    "Molecular Sequence Data",
+    "Plant Roots",
+    "Plants, Genetically Modified",
+    "Sequence Homology, Amino Acid",
+    "Solanaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a8a6cf04b39f6bfef96d3befc013f43bf29b78799129defc73398dd7fce4ec7b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30968307",
+   "title": "Elucidating genomic patterns and recombination events in plant cybrid mitochondria.",
+   "year": 2019,
+   "journal": "Plant molecular biology",
+   "doi": "10.1007/s11103-019-00869-z",
+   "pmcid": null,
+   "mesh": [
+    "DNA, Mitochondrial",
+    "Genome, Mitochondrial",
+    "Genome, Plant",
+    "Homologous Recombination",
+    "Hybridization, Genetic",
+    "Hyoscyamus",
+    "Mitochondria",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d60f70091e47b737cb9f877b1552d4d0b93b44b3dc626c985c82c15210977485",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8066129",
+   "title": "Species-dependent expression of the hyoscyamine 6 beta-hydroxylase gene in the pericycle.",
+   "year": 1994,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.105.2.483",
+   "pmcid": "PMC159385",
+   "mesh": [
+    "Amino Acid Sequence",
+    "Atropa belladonna",
+    "Base Sequence",
+    "Biological Evolution",
+    "DNA",
+    "DNA Primers",
+    "Exons",
+    "Gene Expression",
+    "Genes, Plant",
+    "Genes, Reporter",
+    "Glucuronidase",
+    "Histocytochemistry",
+    "Introns",
+    "Mixed Function Oxygenases",
+    "Molecular Sequence Data",
+    "Plants, Genetically Modified",
+    "Plants, Medicinal",
+    "Plants, Toxic",
+    "Species Specificity",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e5704f1c89e8933bb20675cccf9e3bf6c09c29afa9ede59f4feade39b30488e6",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33026919",
+   "title": "Induced mutation breeding for qualitative and quantitative traits and varietal development in medicinal and aromatic crops at CSIR-CIMAP, Lucknow (India): past and recent accomplishment.",
+   "year": 2020,
+   "journal": "International journal of radiation biology",
+   "doi": "10.1080/09553002.2020.1834161",
+   "pmcid": null,
+   "mesh": [
+    "Crops, Agricultural",
+    "Mutation",
+    "Plant Breeding",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bd06e6a6a592ac69dd4ad7d1f2d039b51885cd2c9d6b9a8d87119cf1677c957b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15971136",
+   "title": "A DNA microarray for the authentication of toxic traditional Chinese medicinal plants.",
+   "year": 2005,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2005-864166",
+   "pmcid": null,
+   "mesh": [
+    "Base Sequence",
+    "DNA Primers",
+    "DNA, Plant",
+    "Drugs, Chinese Herbal",
+    "Humans",
+    "Molecular Sequence Data",
+    "Oligonucleotide Array Sequence Analysis",
+    "Phytotherapy",
+    "Plants, Medicinal",
+    "RNA, Ribosomal"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "35c91b07bd5dfd423f176059d73c34308e088c6a51a02ca8c2eb1f67a04a420b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16664866",
+   "title": "Hyoscyamine 6beta-hydroxylase, a 2-oxoglutarate-dependent dioxygenase, in alkaloid-producing root cultures.",
+   "year": 1986,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.81.2.619",
+   "pmcid": "PMC1075387",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ba02297f5172c3bd0a21d10161bad05aafade07ceeb27ac0d858c7b350c58460",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10394953",
+   "title": "An Atropa belladonna hyoscyamine 6beta-hydroxylase gene is differentially expressed in the root pericycle and anthers.",
+   "year": 1999,
+   "journal": "Plant molecular biology",
+   "doi": "10.1023/a:1026465518112",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Atropa belladonna",
+    "Base Sequence",
+    "Culture Techniques",
+    "Gene Expression Regulation, Plant",
+    "Genes, Plant",
+    "Genes, Reporter",
+    "Genomic Library",
+    "Immunohistochemistry",
+    "In Situ Hybridization",
+    "Mixed Function Oxygenases",
+    "Molecular Sequence Data",
+    "Plant Roots",
+    "Plant Shoots",
+    "Plants, Medicinal",
+    "Plants, Toxic",
+    "Pseudogenes",
+    "Reverse Transcriptase Polymerase Chain Reaction",
+    "Scopolamine",
+    "Tissue Distribution",
+    "Transgenes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68bb57985fed71cb4694e062de02f67972e8c0401a18762fad03cffd8c055080",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33617573",
+   "title": "Nixing the nightshades: Traditional knowledge of intoxicating members of the Solanaceae among hallucinogenic plant and mushroom users in Slovenia.",
+   "year": 2021,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0247688",
+   "pmcid": "PMC7899348",
+   "mesh": [
+    "Adolescent",
+    "Adult",
+    "Agaricales",
+    "Female",
+    "Hallucinogens",
+    "Humans",
+    "Knowledge",
+    "Male",
+    "Middle Aged",
+    "Plant Extracts",
+    "Slovenia",
+    "Solanaceae",
+    "Young Adult"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "39ff45aa060efd665fa7e1c7ffb4bc02f50064051144156b51947fb0ae418ddb",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29407173",
+   "title": "Comparison of two hyoscyamine 6β-hydroxylases in engineering scopolamine biosynthesis in root cultures of Scopolia lurida.",
+   "year": 2018,
+   "journal": "Biochemical and biophysical research communications",
+   "doi": "10.1016/j.bbrc.2018.01.173",
+   "pmcid": null,
+   "mesh": [
+    "Enzyme Activation",
+    "Enzyme Stability",
+    "Genetic Enhancement",
+    "Metabolic Engineering",
+    "Mixed Function Oxygenases",
+    "Plant Roots",
+    "Plants, Genetically Modified",
+    "Recombinant Proteins",
+    "Scopolamine",
+    "Scopolia"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Evaluation Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "51b055cf3b3ba8772dba4caf834094fe1a382b5b4ca9ed3b4eeda108ed62594d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37992760",
+   "title": "The influence of propolis plus Hyoscyamus niger L. against COVID-19: A phase II, multicenter, placebo-controlled, randomized trial.",
+   "year": 2024,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.8047",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "COVID-19",
+    "SARS-CoV-2",
+    "Hyoscyamus",
+    "Propolis",
+    "Treatment Outcome",
+    "Cough",
+    "Dyspnea",
+    "Oxygen"
+   ],
+   "publicationTypes": [
+    "Randomized Controlled Trial",
+    "Multicenter Study",
+    "Clinical Trial, Phase II",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ad058aad172442dcdfe17889ecbe19380f1bf85c7765531018188348ac6b581c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39435070",
+   "title": "Ultrasound-assisted extraction of scopolamine and hyoscyamine from Hyoscyamus niger roots using central compost design.",
+   "year": 2024,
+   "journal": "Heliyon",
+   "doi": "10.1016/j.heliyon.2024.e38856",
+   "pmcid": "PMC11493190",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b5133c554deaac8b729ed58ef4ac64fcff9124b2c0cf1b44686daba9e067081f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "37814140",
+   "title": "Alteration in the callogenesis, tropane alkaloid formation, and gene expression in Hyoscyamus niger under clinorotation.",
+   "year": 2024,
+   "journal": "Protoplasma",
+   "doi": "10.1007/s00709-023-01894-y",
+   "pmcid": null,
+   "mesh": [
+    "Hyoscyamus",
+    "Antioxidants",
+    "Hydrogen Peroxide",
+    "Rotation",
+    "Plant Roots",
+    "Tropanes",
+    "Gene Expression"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1692c971a62f346324a559e6c97e58af978dffa581bf83beca5b7718d9acc84e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7629522",
+   "title": "Hyoscyamus niger (henbane).",
+   "year": 1995,
+   "journal": "Journal of neurology, neurosurgery, and psychiatry",
+   "doi": "10.1136/jnnp.59.2.114",
+   "pmcid": "PMC485983",
+   "mesh": [
+    "Czechoslovakia",
+    "History, 20th Century",
+    "Philately",
+    "Solanaceous Alkaloids"
+   ],
+   "publicationTypes": [
+    "Historical Article",
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32454617",
+   "title": "Cytotoxic Activities of Certain Medicinal Plants on Different Cancer Cell Lines.",
+   "year": 2017,
+   "journal": "Turkish journal of pharmaceutical sciences",
+   "doi": "10.4274/tjps.80299",
+   "pmcid": "PMC7227927",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4ca56545524fee987c6c72f2763418ecdfc5b72cf60fa39c5000890c71bfcdef",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31112782",
+   "title": "The complete organelle genomes of Physochlaina orientalis: Insights into short sequence repeats across seed plant mitochondrial genomes.",
+   "year": 2019,
+   "journal": "Molecular phylogenetics and evolution",
+   "doi": "10.1016/j.ympev.2019.05.012",
+   "pmcid": null,
+   "mesh": [
+    "Base Sequence",
+    "DNA, Mitochondrial",
+    "Genome, Mitochondrial",
+    "Genome, Plant",
+    "Genome, Plastid",
+    "Introns",
+    "Microsatellite Repeats",
+    "Mitochondria",
+    "Phylogeny",
+    "Seeds",
+    "Solanaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "af1881b2797bea450c7e37da8309e131d71b9d806232afceef8a80ffe52b8319",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21731356",
+   "title": "Investigation of neuropsychopharmacological effects of a polyherbal formulation on the learning and memory process in rats.",
+   "year": 2011,
+   "journal": "Journal of young pharmacists : JYP",
+   "doi": "10.4103/0975-1483.80296",
+   "pmcid": "PMC3122040",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7ae061c9dc5e7002e4e541f536264b663458c3a295576effb66972373e55d522",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "25248046",
+   "title": "Discrimination of Solanaceae taxa and quantification of scopolamine and hyoscyamine by ATR-FTIR spectroscopy.",
+   "year": 2014,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-0034-1383046",
+   "pmcid": null,
+   "mesh": [
+    "Algorithms",
+    "Calibration",
+    "Cluster Analysis",
+    "Hyoscyamine",
+    "Least-Squares Analysis",
+    "Plant Leaves",
+    "Scopolamine",
+    "Solanaceae",
+    "Spectroscopy, Fourier Transform Infrared"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4ffddbf08fa1a7e6a91122d5b5d4f42e6ff06b76fb96498bdec6e547c5876ac2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34381841",
+   "title": "Clove Buds Essential Oil: The Impact of Grinding on the Chemical Composition and Its Biological Activities Involved in Consumer's Health Security.",
+   "year": 2021,
+   "journal": "BioMed research international",
+   "doi": "10.1155/2021/9940591",
+   "pmcid": "PMC8352679",
+   "mesh": [
+    "Animals",
+    "Anti-Bacterial Agents",
+    "Antioxidants",
+    "Disk Diffusion Antimicrobial Tests",
+    "Escherichia coli",
+    "Food Safety",
+    "Gas Chromatography-Mass Spectrometry",
+    "Hyoscyamus",
+    "Insecticides",
+    "Microbial Viability",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Seeds",
+    "Syzygium",
+    "Weevils"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a151bf77c271b1abd997258ae54f82b244d25ced401f5cbeca93728b27764bd6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26344026",
+   "title": "Protein and alkaloid patterns of the floral nectar in some solanaceous species.",
+   "year": 2015,
+   "journal": "Acta biologica Hungarica",
+   "doi": "10.1556/018.66.2015.3.6",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bees",
+    "Plant Nectar",
+    "Plant Proteins",
+    "Solanaceae",
+    "Solanaceous Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "97043d142c23f8c5b8adfd7663148d5c4fdc09865d4293a5c45dfcee5ed17383",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16088399",
+   "title": "Putrescine N-methyltransferase in Solanum tuberosum L., a calystegine-forming plant.",
+   "year": 2006,
+   "journal": "Planta",
+   "doi": "10.1007/s00425-005-0077-z",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Cloning, Molecular",
+    "DNA, Complementary",
+    "Kinetics",
+    "Methyltransferases",
+    "Molecular Sequence Data",
+    "Nortropanes",
+    "Plant Tubers",
+    "Polyamines",
+    "RNA, Messenger",
+    "Recombinant Fusion Proteins",
+    "Sequence Analysis, DNA",
+    "Sequence Homology, Amino Acid",
+    "Solanum tuberosum",
+    "Spermidine Synthase"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8ee8dee8f67179db03dd2d684737fd82c51159d15a473282b95ddefcd9fc0036",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "1757054",
+   "title": "[Mydriasis caused by plant contact].",
+   "year": 1991,
+   "journal": "Fortschritte der Ophthalmologie : Zeitschrift der Deutschen Ophthalmologischen Gesellschaft",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Diagnosis, Differential",
+    "Humans",
+    "Mydriasis",
+    "Mydriatics",
+    "Plants, Toxic"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f5d910601514884ecc9db52ce1ef872bce52cf71df53647e88e7ae047d0fe851",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10858869",
+   "title": "Evaluation of modulations in heart rate variability caused by a composition of herbal extracts.",
+   "year": 2000,
+   "journal": "Arzneimittel-Forschung",
+   "doi": "10.1055/s-0031-1300226",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Double-Blind Method",
+    "Electrocardiography",
+    "Electrocardiography, Ambulatory",
+    "Female",
+    "Fourier Analysis",
+    "Heart Rate",
+    "Humans",
+    "Male",
+    "Plant Extracts",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Clinical Trial",
+    "Journal Article",
+    "Randomized Controlled Trial"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d5a4494329fd1fb0cea219cadc176f2715bf9f9cbf0ef71526086abbc316cedd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33860587",
+   "title": "The effect of propolis plus Hyoscyamus niger L. methanolic extract on clinical symptoms in patients with acute respiratory syndrome suspected to COVID-19: A clinical trial.",
+   "year": 2021,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.7116",
+   "pmcid": "PMC8251320",
+   "mesh": [
+    "Adult",
+    "Female",
+    "Humans",
+    "Hyoscyamus",
+    "Iran",
+    "Male",
+    "Methanol",
+    "Middle Aged",
+    "Plant Extracts",
+    "Propolis",
+    "Respiratory Distress Syndrome",
+    "Treatment Outcome",
+    "COVID-19 Drug Treatment"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Randomized Controlled Trial"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "978a17382d38b852d9bb6b09d0908cfe0df48fb856578a2331620fd1af74dbc6",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "3668202",
+   "title": "Mystery root ingestion.",
+   "year": 1987,
+   "journal": "The Journal of emergency medicine",
+   "doi": "10.1016/0736-4679(87)90143-0",
+   "pmcid": null,
+   "mesh": [
+    "Atropine",
+    "Cognition Disorders",
+    "Female",
+    "Humans",
+    "Hypertension",
+    "Male",
+    "Plant Poisoning",
+    "Pulse",
+    "Thirst"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "29a47d13af25e03e0ac1d679a0d82d46dd7fad24b57e9f7957f8dc6cd302324c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16105856",
+   "title": "Enhanced secretion of tropane alkaloids in Nicotiana tabacum hairy roots expressing heterologous hyoscyamine-6beta-hydroxylase.",
+   "year": 2005,
+   "journal": "Journal of experimental botany",
+   "doi": "10.1093/jxb/eri253",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Gene Expression Regulation, Enzymologic",
+    "Gene Expression Regulation, Plant",
+    "Mixed Function Oxygenases",
+    "Plant Roots",
+    "Plants, Genetically Modified",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "60b824eeff7b24ff728452997d64788e1e2237f335030eee9be06f6a40b53474",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10635114",
+   "title": "Two tropinone reductases, that catalyze opposite stereospecific reductions in tropane alkaloid biosynthesis, are localized in plant root with different cell-specific patterns.",
+   "year": 1999,
+   "journal": "Plant & cell physiology",
+   "doi": "10.1093/oxfordjournals.pcp.a029494",
+   "pmcid": null,
+   "mesh": [
+    "Alcohol Oxidoreductases",
+    "Alkaloids",
+    "Blotting, Western",
+    "Catalysis",
+    "Immune Sera",
+    "Immunohistochemistry",
+    "Isoenzymes",
+    "Oxidation-Reduction",
+    "Plant Roots",
+    "Recombinant Proteins"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "be51ba9727f6db09cc16b503051d2ef37ee95cb9e631dbc5382bc0b181ab4360",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30873201",
+   "title": "Metabolic Characterization of Hyoscyamus niger Ornithine Decarboxylase.",
+   "year": 2019,
+   "journal": "Frontiers in plant science",
+   "doi": "10.3389/fpls.2019.00229",
+   "pmcid": "PMC6400997",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cd1f7bb03007884fa724ad7f6333cc83eea2cd9378eeaeb4a00056b6a5849173",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "1999440",
+   "title": "Hyoscyamine 6 beta-hydroxylase, an enzyme involved in tropane alkaloid biosynthesis, is localized at the pericycle of the root.",
+   "year": 1991,
+   "journal": "The Journal of biological chemistry",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antibodies, Monoclonal",
+    "Atropine",
+    "Blotting, Western",
+    "Cells, Cultured",
+    "Mixed Function Oxygenases",
+    "Molecular Weight",
+    "Plant Proteins",
+    "Plants",
+    "Scopolamine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e69cc147f7143d561ec57e7623497cad89c57e184d66d58594248122d59b02ea",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16665071",
+   "title": "Immunochemical comparison of glutamine synthetases from some solanaceae plants.",
+   "year": 1986,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.82.2.585",
+   "pmcid": "PMC1056162",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5a29cff1d9e63e6e55f4496a46271851adcd2f42c5a1a6994a1e13602232a54c",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27135818",
+   "title": "Promoting scopolamine biosynthesis in transgenic Atropa belladonna plants with pmt and h6h overexpression under field conditions.",
+   "year": 2016,
+   "journal": "Plant physiology and biochemistry : PPB",
+   "doi": "10.1016/j.plaphy.2016.04.034",
+   "pmcid": null,
+   "mesh": [
+    "Atropa belladonna",
+    "Biosynthetic Pathways",
+    "Gene Expression Profiling",
+    "Gene Expression Regulation, Plant",
+    "Genes, Plant",
+    "Hyoscyamus",
+    "Methyltransferases",
+    "Mixed Function Oxygenases",
+    "Organ Specificity",
+    "Plants, Genetically Modified",
+    "Scopolamine",
+    "Nicotiana",
+    "Transgenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4158d7e29cfbd39dd64eb57dd2b66774a32e25d5502b8d9ec5618f24bd7b7474",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "1465402",
+   "title": "Metabolic engineering of medicinal plants: transgenic Atropa belladonna with an improved alkaloid composition.",
+   "year": 1992,
+   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+   "doi": "10.1073/pnas.89.24.11799",
+   "pmcid": "PMC50644",
+   "mesh": [
+    "Atropa belladonna",
+    "Atropine",
+    "Blotting, Southern",
+    "Blotting, Western",
+    "Gene Expression",
+    "Genes, Plant",
+    "Mixed Function Oxygenases",
+    "Plants, Genetically Modified",
+    "Plants, Medicinal",
+    "Plants, Toxic",
+    "Rhizobium",
+    "Scopolamine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "811e98b5ed89ed20f086a47028a1cb073283b4f52b18ff17e4946019fb819963",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24309829",
+   "title": "Radioimmunoassays for the differential and direct analysis of free and conjugated abscisic acid in plant extracts.",
+   "year": 1980,
+   "journal": "Planta",
+   "doi": "10.1007/BF00380037",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3ade25aed275f3db8b9459134be574a78bd086bda90040bd49fc913bdad36b88",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17927905",
+   "title": "Molecular cloning and characterization of a new cDNA encoding hyoscyamine 6beta-hydroxylase from roots of Anisodus acutangulus.",
+   "year": 2007,
+   "journal": "Journal of biochemistry and molecular biology",
+   "doi": "10.5483/bmbrep.2007.40.5.715",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Base Sequence",
+    "Blotting, Southern",
+    "Cloning, Molecular",
+    "DNA, Complementary",
+    "Evolution, Molecular",
+    "Gene Expression Profiling",
+    "Mixed Function Oxygenases",
+    "Molecular Sequence Data",
+    "Molecular Structure",
+    "Phylogeny",
+    "Plant Proteins",
+    "Plant Roots",
+    "Reverse Transcriptase Polymerase Chain Reaction",
+    "Scopolamine",
+    "Sequence Analysis, DNA",
+    "Sequence Homology, Amino Acid",
+    "Solanaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1a02fcc05c32f52cf3a9a0122cee1d2951d4dc80e24d51b7da5e4b730588fedc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18952449",
+   "title": "Cloning, characterization and analysis of expression profiles of a cDNA encoding a hyoscyamine 6beta-hydroxylase (H6H) from Atropa baetica Willk.",
+   "year": 2009,
+   "journal": "Plant physiology and biochemistry : PPB",
+   "doi": "10.1016/j.plaphy.2008.09.004",
+   "pmcid": null,
+   "mesh": [
+    "Atropa",
+    "Base Sequence",
+    "DNA, Complementary",
+    "Gene Expression Profiling",
+    "Mixed Function Oxygenases",
+    "Molecular Sequence Data",
+    "Phylogeny",
+    "Plant Proteins",
+    "Plant Roots",
+    "Scopolamine",
+    "Sequence Analysis, DNA",
+    "Transcription, Genetic"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0fe342e5866c9a1d64fbb6277b3a76f990fa6b4707c545665cfbf300c006f858",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19751215",
+   "title": "Molecular cloning and characterization of two tropinone reductases in Anisodus acutangulus and enhancement of tropane alkaloid production in AaTRI-transformed hairy roots.",
+   "year": 2009,
+   "journal": "Biotechnology and applied biochemistry",
+   "doi": "10.1042/BA20090171",
+   "pmcid": null,
+   "mesh": [
+    "Alcohol Oxidoreductases",
+    "Amino Acid Sequence",
+    "Cloning, Molecular",
+    "Evolution, Molecular",
+    "Molecular Sequence Data",
+    "Phylogeny",
+    "Plant Leaves",
+    "Plant Proteins",
+    "Plant Roots",
+    "Plant Stems",
+    "Plants, Genetically Modified",
+    "Polymerase Chain Reaction",
+    "Sequence Alignment",
+    "Sequence Homology, Amino Acid",
+    "Solanaceae",
+    "Tropanes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8a2eccc87de3360903bc3fdd1106446839bf49472db4c363c87f7ff0e92bccce",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19693762",
+   "title": "Mechanistic insights into the cytochrome P450-mediated oxidation and rearrangement of littorine in tropane alkaloid biosynthesis.",
+   "year": 2009,
+   "journal": "Chembiochem : a European journal of chemical biology",
+   "doi": "10.1002/cbic.200900318",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropine",
+    "Atropine Derivatives",
+    "Biocatalysis",
+    "Cytochrome P-450 Enzyme System",
+    "Fluorine",
+    "Hydroxylation",
+    "Oxidation-Reduction",
+    "Stereoisomerism"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "21b46c41df2d4daad76b81e6935e80a25356e296baf89e5a756dac4a176f413a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25441621",
+   "title": "Homologous recombination and retention of a single form of most genes shape the highly chimeric mitochondrial genome of a cybrid plant.",
+   "year": 2015,
+   "journal": "The New phytologist",
+   "doi": "10.1111/nph.13188",
+   "pmcid": "PMC4342287",
+   "mesh": [
+    "Base Sequence",
+    "Chimera",
+    "DNA, Mitochondrial",
+    "Genome, Mitochondrial",
+    "Genome, Plant",
+    "Homologous Recombination",
+    "Hyoscyamus",
+    "Magnoliopsida",
+    "Mitochondria",
+    "Molecular Sequence Data",
+    "Sequence Analysis, DNA",
+    "Solanaceae",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0b6da534ea31a5c3e449ba6cdeeea908ef96939f45916558700ba16e2e856be6",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31135192",
+   "title": "Antifungal activity of Mongolian medicinal plant extracts.",
+   "year": 2020,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2019.1610960",
+   "pmcid": null,
+   "mesh": [
+    "Antifungal Agents",
+    "Arthrodermataceae",
+    "Candida",
+    "Flavones",
+    "Malassezia",
+    "Microbial Sensitivity Tests",
+    "Mongolia",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Scutellaria",
+    "Skin Diseases, Infectious"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d99abb569edaf406e9a9420f22ac93b673dcdbcdd2b78827d744503313fcf20b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32437389",
+   "title": "Promoting the accumulation of scopolamine and hyoscyamine in Hyoscyamus niger L. through EMS based mutagenesis.",
+   "year": 2020,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0231355",
+   "pmcid": "PMC7241962",
+   "mesh": [
+    "Biosynthetic Pathways",
+    "Ethyl Methanesulfonate",
+    "Gene Expression Regulation, Plant",
+    "Hyoscyamine",
+    "Hyoscyamus",
+    "Methyltransferases",
+    "Mixed Function Oxygenases",
+    "Mutagenesis",
+    "Mutagens",
+    "Mutation",
+    "Plants, Genetically Modified",
+    "Scopolamine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b219a6408a413135645817e66ba5035aa9b38e2cd8fd321785f83b4e1a9202e0",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39037503",
+   "title": "Elemental Profiling of Common Anti-diabetic Medicinal Plants of Swat and Peshawar Districts of Khyber Pakhtunkhwa (KPK) Province of Pakistan: An Investigation Using PIXE and ICP-OES.",
+   "year": 2025,
+   "journal": "Biological trace element research",
+   "doi": "10.1007/s12011-024-04305-2",
+   "pmcid": null,
+   "mesh": [
+    "Pakistan",
+    "Plants, Medicinal",
+    "Hypoglycemic Agents",
+    "Trace Elements",
+    "Spectrometry, X-Ray Emission"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "97be4b56425943de103309f1ff5304476c909d34940d81cffcb3a2f1fe99abe1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40885905",
+   "title": "Enhancing the accumulation of scopolamine and atropine in Hyoscyamus niger L. callus by LED light and glycine-a cheap method.",
+   "year": 2025,
+   "journal": "BMC plant biology",
+   "doi": "10.1186/s12870-025-07062-z",
+   "pmcid": "PMC12398075",
+   "mesh": [
+    "Glycine",
+    "Scopolamine",
+    "Hyoscyamus",
+    "Light",
+    "Atropine",
+    "Plant Leaves"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "383ff8fe8be0d6905133cf367db1d46ba6b2d754f61f98314e19738c79ff3db8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "16145869",
+   "title": "[Intoxication with henbane].",
+   "year": 2005,
+   "journal": "Lijecnicki vjesnik",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adolescent",
+    "Hallucinogens",
+    "Humans",
+    "Hyoscyamus",
+    "Male",
+    "Plant Poisoning"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e8a7a25d1cd0864e6a10385044ac4738b4a717cc1e6f93681e620e5d57219349",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30558695",
+   "title": "Development and Validation of a High-Performance Thin-Layer Chromatographic (HPTLC) Method for Simultaneous Quantification of Reserpine, Atropine, and Piperine in Sarpagandha Ghanvati, a Classical Ayurvedic Preparation.",
+   "year": 2019,
+   "journal": "Journal of AOAC International",
+   "doi": "10.5740/jaoacint.18-0382",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Anti-Anxiety Agents",
+    "Atropine",
+    "Benzodioxoles",
+    "Biomarkers",
+    "Calibration",
+    "Chromatography, Thin Layer",
+    "Medicine, Ayurvedic",
+    "Piperidines",
+    "Plant Preparations",
+    "Plant Roots",
+    "Plant Stems",
+    "Plants, Medicinal",
+    "Polyunsaturated Alkamides",
+    "Reserpine",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d8189c0a1c250380e5a5a94d1806591f7f9b039cca99ceeaeccab86e10a91ab9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22438667",
+   "title": "Inorganic ions in the medium modify tropane alkaloids and riboflavin output in Hyoscyamus niger root cultures.",
+   "year": 2012,
+   "journal": "Pharmacognosy magazine",
+   "doi": "10.4103/0973-1296.93330",
+   "pmcid": "PMC3307207",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ffda467111b8f59b9f4776e34c77480b4a37009ee079941bf6d86b0a8499f49b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "8711457",
+   "title": "[Serious plant poisonings in Switzerland 1966-1994. Case analysis from the Swiss Toxicology Information Center].",
+   "year": 1996,
+   "journal": "Schweizerische medizinische Wochenschrift",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Child",
+    "Female",
+    "Humans",
+    "Male",
+    "Plant Poisoning",
+    "Plants, Toxic",
+    "Poison Control Centers",
+    "Retrospective Studies",
+    "Switzerland"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "06e54f09924828e9830a4167233f447ca22a03bbf0d78a0613d8916967ac0582",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35182262",
+   "title": "A novel spray bioreactor for the proliferation of plant callus; Hyoscyamus niger and Arnebia pulchra.",
+   "year": 2022,
+   "journal": "Biotechnology letters",
+   "doi": "10.1007/s10529-022-03235-0",
+   "pmcid": null,
+   "mesh": [
+    "Bioreactors",
+    "Boraginaceae",
+    "Cell Proliferation",
+    "Culture Media",
+    "Humans",
+    "Hyoscyamus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "af47ba1be4bb1ead5880bb3c86da9653e5af91d830e2b06dc5ec38e0ae9e62b0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42090245",
+   "title": "The toxicity of hyoscyamus niger (henbane) in children: a five-year experience in a pediatric intensive care unit.",
+   "year": 2026,
+   "journal": "Clinical toxicology (Philadelphia, Pa.)",
+   "doi": "10.1080/15563650.2026.2655383",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Male",
+    "Retrospective Studies",
+    "Child, Preschool",
+    "Female",
+    "Intensive Care Units, Pediatric",
+    "Infant",
+    "Child",
+    "Hyoscyamus",
+    "Plant Poisoning",
+    "Adolescent",
+    "Seizures"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Observational Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eeaf5ae7aaf8cbf13e4a5944add3e4c224cd9f6803da8b3354e4d6020d7edc00",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24126062",
+   "title": "An ethnobotanical study of medicinal plants used by the local people of Alaşehir (Manisa) in Turkey.",
+   "year": 2013,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2013.09.040",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Aged",
+    "Aged, 80 and over",
+    "Data Collection",
+    "Ethnobotany",
+    "Female",
+    "Humans",
+    "Magnoliopsida",
+    "Male",
+    "Medicine, Traditional",
+    "Middle Aged",
+    "Phytotherapy",
+    "Plants, Medicinal",
+    "Turkey"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0afca4eaea2a52a8c753cee32f45c75f04cabe4fc21efa1ac493422adc9ae729",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27086450",
+   "title": "[On the history of barbiturates].",
+   "year": 2015,
+   "journal": "Dansk medicinhistorisk arbog",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Anticonvulsants",
+    "Barbiturates",
+    "Germany",
+    "History, 19th Century",
+    "History, 20th Century",
+    "Hypnotics and Sedatives"
+   ],
+   "publicationTypes": [
+    "Biography",
+    "Historical Article",
+    "Journal Article",
+    "Portrait"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b5579940108a09398c1f0b0cf7284911b61357a297b1e2d12aedaff5776e4c5e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17968201",
+   "title": "Clinical outcomes in children with hyoscyamus niger intoxication not receiving physostigmine therapy.",
+   "year": 2007,
+   "journal": "European journal of emergency medicine : official journal of the European Society for Emergency Medicine",
+   "doi": "10.1097/MEJ.0b013e328122de2f",
+   "pmcid": null,
+   "mesh": [
+    "Antidotes",
+    "Charcoal",
+    "Child",
+    "Child, Preschool",
+    "Cholinesterase Inhibitors",
+    "Female",
+    "Gastric Lavage",
+    "Hospitals, University",
+    "Humans",
+    "Hyoscyamus",
+    "Male",
+    "Physostigmine",
+    "Plant Poisoning",
+    "Psychomotor Agitation",
+    "Retrospective Studies",
+    "Seizures",
+    "Sodium Chloride",
+    "Treatment Outcome",
+    "Turkey"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "44f8b27f94b203c364e17a5f26ac9e96116daeeebe9d01ea1e56570ace61e6c1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10356981",
+   "title": "Gene for a protein capable of enhancing lateral root formation.",
+   "year": 1999,
+   "journal": "FEBS letters",
+   "doi": "10.1016/s0014-5793(99)00489-5",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Base Sequence",
+    "DNA, Plant",
+    "Gene Expression",
+    "Genes, Plant",
+    "Solanum lycopersicum",
+    "Molecular Sequence Data",
+    "Plant Growth Regulators",
+    "Plant Proteins",
+    "Plant Roots",
+    "Sequence Analysis, DNA",
+    "Sequence Homology, Amino Acid",
+    "Solanum tuberosum"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "430d9c328fdf43ff459baaf31f1c11e6c501540f0f9d8d079ae59223742d6cec",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "6118937",
+   "title": "[Evaluation of the activity on the mouse CNS of several plant extracts and a combination of them].",
+   "year": 1981,
+   "journal": "Rivista di neurologia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Anxiety Agents",
+    "Apigenin",
+    "Barbiturates",
+    "Belladonna Alkaloids",
+    "Central Nervous System",
+    "Exploratory Behavior",
+    "Flavonoids",
+    "Hypnotics and Sedatives",
+    "Iridoids",
+    "Mice",
+    "Motor Activity",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Pyrans",
+    "Sleep",
+    "Valerian"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "59ca2aee1a2e821f20b15045b9579fa7f0f397901ab0a170cc277baaa94d5e53",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "9290645",
+   "title": "Molecular cloning and characterization of desacetoxyvindoline-4-hydroxylase, a 2-oxoglutarate dependent-dioxygenase involved in the biosynthesis of vindoline in Catharanthus roseus (L.) G. Don.",
+   "year": 1997,
+   "journal": "Plant molecular biology",
+   "doi": "10.1023/a:1005894001516",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Base Sequence",
+    "Cloning, Molecular",
+    "DNA, Complementary",
+    "Escherichia coli",
+    "Gene Dosage",
+    "Gene Expression Regulation, Plant",
+    "Genomic Library",
+    "Ketoglutaric Acids",
+    "Light",
+    "Mixed Function Oxygenases",
+    "Molecular Sequence Data",
+    "Oxygenases",
+    "Plant Proteins",
+    "Plants, Medicinal",
+    "Recombinant Proteins",
+    "Sequence Analysis, DNA",
+    "Sequence Homology, Amino Acid",
+    "Tissue Distribution",
+    "Vinblastine"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "018de5c11ddbf1d0c41a138c99c946040b17085c4e859abd603fd16122d8ef84",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10586504",
+   "title": "Structures and expression patterns of two tropinone reductase genes from Hyoscyamus niger.",
+   "year": 1999,
+   "journal": "Bioscience, biotechnology, and biochemistry",
+   "doi": "10.1271/bbb.63.1756",
+   "pmcid": null,
+   "mesh": [
+    "Alcohol Oxidoreductases",
+    "Artificial Gene Fusion",
+    "Base Sequence",
+    "Gene Expression Regulation, Plant",
+    "Gene Library",
+    "Genes, Plant",
+    "Genes, Reporter",
+    "Models, Chemical",
+    "Models, Genetic",
+    "Molecular Sequence Data",
+    "Plants, Medicinal",
+    "Promoter Regions, Genetic",
+    "Sequence Homology, Nucleic Acid",
+    "Solanaceae",
+    "TATA Box",
+    "Transcription, Genetic"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bca8fc5629e52fffe9d4c564cc0e3c3df6a8c24b32af4657fcabc896fe38f5be",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15084741",
+   "title": "Engineering tropane biosynthetic pathway in Hyoscyamus niger hairy root cultures.",
+   "year": 2004,
+   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+   "doi": "10.1073/pnas.0401391101",
+   "pmcid": "PMC404123",
+   "mesh": [
+    "Alkaloids",
+    "Culture Techniques",
+    "Genetic Engineering",
+    "Genetic Vectors",
+    "Hyoscyamus",
+    "Plant Roots",
+    "Plasmids",
+    "Tropanes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "52297e8816ef5e7af643f40aaaac3b5d17e21d363c5721a7137cbcc037026999",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16802099",
+   "title": "Tailoring tropane alkaloid accumulation in transgenic hairy roots of Atropa baetica by over-expressing the gene encoding hyoscyamine 6beta-hydroxylase.",
+   "year": 2006,
+   "journal": "Biotechnology letters",
+   "doi": "10.1007/s10529-006-9085-8",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropa",
+    "Biotechnology",
+    "Culture Media",
+    "DNA, Complementary",
+    "Genes, Plant",
+    "Genetic Engineering",
+    "Mixed Function Oxygenases",
+    "Plant Proteins",
+    "Plant Roots",
+    "Plants, Genetically Modified",
+    "Plasmids",
+    "RNA"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "34af1536444cef2d88f71eaae68ce30d6144580cbb9ea630e832128339ea9e3c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16665388",
+   "title": "Epoxidation in vivo of hyoscyamine to scopolamine does not involve a dehydration step.",
+   "year": 1987,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.84.1.144",
+   "pmcid": "PMC1056542",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8f88c1f8ed6ec4f6a5bdfcb5faaed1382dbd0da015d62078b7cb66accbf93568",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16414703",
+   "title": "Biological studies of indigenous medicinal plants--I: physicochemical and antimicrobial screening of non-alkaloidal constituents of some solanaceous seeds.",
+   "year": 1992,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f24566d5f1ff7f22e413ac932af10d7eadd048a42d101c1cfbb0aa16e1c4ed01",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11824773",
+   "title": "Analysis of 156 cases of plant intoxication received in the Toxicologic Information Center at Catholic University of Chile.",
+   "year": 2002,
+   "journal": "Veterinary and human toxicology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adolescent",
+    "Adult",
+    "Age Distribution",
+    "Child",
+    "Child, Preschool",
+    "Chile",
+    "Humans",
+    "Incidence",
+    "Infant",
+    "Mushroom Poisoning",
+    "Plant Poisoning",
+    "Poison Control Centers",
+    "Retrospective Studies"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "80b45cfd07c73a126d3d510e38ed0e44dcdee6477558fa649bf2d07185db561f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42181405",
+   "title": "Hyperactivity and Euphoria Without Agitation Due to Hyoscyamus niger (Henbane) Poisoning in a Child.",
+   "year": 2026,
+   "journal": "Cureus",
+   "doi": "10.7759/cureus.107588",
+   "pmcid": "PMC13198423",
+   "mesh": [],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8576833631e2787d01da6225299c48abba43133c21c23e414ef49d19554e7fee",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "1799296",
+   "title": "[Psychopathologic manifestations of oral administration of endemic nightshade plants].",
+   "year": 1991,
+   "journal": "Archiv fur Kriminologie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Dose-Response Relationship, Drug",
+    "Drug Overdose",
+    "Female",
+    "Hallucinations",
+    "Humans",
+    "Male",
+    "Neurologic Examination",
+    "Neuropsychological Tests",
+    "Psychoses, Substance-Induced",
+    "Sex Offenses",
+    "Solanaceous Alkaloids"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bd710f0622b937c5e1673ee3dce392e83b9d6a6b29df9aa0dd4ca84d4feea350",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21273703",
+   "title": "Chromosomal localization of rDNA and DAPI bands in solanaceous medicinal plant Hyoscyamus niger L.",
+   "year": 2010,
+   "journal": "Journal of genetics",
+   "doi": "10.1007/s12041-010-0071-5",
+   "pmcid": null,
+   "mesh": [
+    "Chromosomes, Plant",
+    "DNA, Plant",
+    "DNA, Ribosomal",
+    "Fluorescent Dyes",
+    "Hyoscyamus",
+    "Indoles",
+    "Plants, Medicinal",
+    "RNA, Ribosomal",
+    "RNA, Ribosomal, 5S",
+    "Solanaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20972705",
+   "title": "Antiparkinsonian effects of aqueous methanolic extract of Hyoscyamus niger seeds result from its monoamine oxidase inhibitory and hydroxyl radical scavenging potency.",
+   "year": 2011,
+   "journal": "Neurochemical research",
+   "doi": "10.1007/s11064-010-0289-x",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antiparkinson Agents",
+    "Behavior, Animal",
+    "Disease Models, Animal",
+    "Free Radical Scavengers",
+    "Humans",
+    "Hydroxyl Radical",
+    "Hyoscyamus",
+    "MPTP Poisoning",
+    "Male",
+    "Medicine, Ayurvedic",
+    "Methanol",
+    "Mice",
+    "Mice, Inbred BALB C",
+    "Monoamine Oxidase",
+    "Monoamine Oxidase Inhibitors",
+    "Parkinson Disease",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a5c3b76ad83df63c0dbbd701768819fd74c2c40a49934340a4362c5417918f35",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37830795",
+   "title": "Simultaneous quantification of hyoscyamine and scopolamine using HPLC-DAD in four Solanaceae: Hyoscyamus niger, Datura stramonium, Atropa belladonna and Mandragora officinarum.",
+   "year": 2025,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2023.2269595",
+   "pmcid": null,
+   "mesh": [
+    "Scopolamine",
+    "Chromatography, High Pressure Liquid",
+    "Solanaceae",
+    "Datura stramonium",
+    "Hyoscyamus",
+    "Hyoscyamine",
+    "Atropa belladonna"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0dc17de8e87ed4003997cc24e17b1ad54772f70ac672c6a1c00d92bdce3850f4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25044356",
+   "title": "Simultaneous determination of atropine, scopolamine, and anisodamine from Hyoscyamus niger L. in rat plasma by high-performance liquid chromatography with tandem mass spectrometry and its application to a pharmacokinetics study.",
+   "year": 2014,
+   "journal": "Journal of separation science",
+   "doi": "10.1002/jssc.201400534",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Atropine",
+    "Chromatography, High Pressure Liquid",
+    "Hyoscyamus",
+    "Male",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Scopolamine",
+    "Solanaceous Alkaloids",
+    "Tandem Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ef31f072416324851af43be6cafe3f003ff98018d3df4820a7bc348b88873482",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24322778",
+   "title": "Production of tropane alkaloids in Hyoscyamus niger (black henbane) hairy roots grown in bubble-column and spray bioreactors.",
+   "year": 2014,
+   "journal": "Biotechnology letters",
+   "doi": "10.1007/s10529-013-1426-9",
+   "pmcid": "PMC3955140",
+   "mesh": [
+    "Alkaloids",
+    "Bioreactors",
+    "Cyclopentanes",
+    "Hyoscyamus",
+    "Oxylipins",
+    "Plant Roots",
+    "Tropanes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a0bea1a0a6cb1970fa17adf127059c9362b7aee5533d24855ad7f261c36173f6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29549757",
+   "title": "Metabolic characterization of Hyoscyamus niger root-specific putrescine N-methyltransferase.",
+   "year": 2018,
+   "journal": "Plant physiology and biochemistry : PPB",
+   "doi": "10.1016/j.plaphy.2018.03.001",
+   "pmcid": null,
+   "mesh": [
+    "Arabidopsis",
+    "Hyoscyamus",
+    "Methyltransferases",
+    "Plant Proteins",
+    "Plant Roots",
+    "Plants, Genetically Modified"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5cdb956dddea08a8590163d44ffaaf7e9d7e3fe6df892abb43af504b3d098648",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18219667",
+   "title": "Authentication of the 31 species of Toxic and Potent Chinese Materia Medica (T/PCMM) by microscopic technique, part 2: Three species of seed T/PCMM.",
+   "year": 2008,
+   "journal": "Microscopy research and technique",
+   "doi": "10.1002/jemt.20556",
+   "pmcid": null,
+   "mesh": [
+    "Drugs, Chinese Herbal",
+    "Euphorbia",
+    "Hyoscyamus",
+    "Materia Medica",
+    "Microscopy, Polarization",
+    "Seeds",
+    "Strychnos nux-vomica"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e53b5b031273971824efcb9a986f8109d34c9be4512b52cfaad7a3df9ce94a17",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16653065",
+   "title": "Two Tropinone Reductases with Distinct Stereospecificities from Cultured Roots of Hyoscyamus niger.",
+   "year": 1992,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.100.2.836",
+   "pmcid": "PMC1075633",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eddad2e91ba3a8b47f0c4d1eb9021b42f2947889a8fefbbc11985d9e43eae3f8",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31134341",
+   "title": "Absence of photosynthetic state transitions in alien chloroplasts.",
+   "year": 2019,
+   "journal": "Planta",
+   "doi": "10.1007/s00425-019-03187-2",
+   "pmcid": "PMC6602992",
+   "mesh": [
+    "Cell Nucleus",
+    "Chloroplasts",
+    "Genome, Chloroplast",
+    "Genome, Plant",
+    "Light-Harvesting Protein Complexes",
+    "Phosphorylation",
+    "Photosynthesis",
+    "Photosystem II Protein Complex",
+    "Proteomics",
+    "Threonine",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68ef68e00d33eca933c0e25caa8e7f09a115438f4f5dfd653e275605210103c3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "19214562",
+   "title": "Promotion of nicotine biosynthesis in transgenic tobacco by overexpressing allene oxide cyclase from Hyoscyamus niger.",
+   "year": 2009,
+   "journal": "Planta",
+   "doi": "10.1007/s00425-009-0896-4",
+   "pmcid": null,
+   "mesh": [
+    "Blotting, Southern",
+    "Cyclopentanes",
+    "Gene Expression Regulation, Plant",
+    "Genes, Plant",
+    "Hyoscyamus",
+    "Intramolecular Oxidoreductases",
+    "Nicotine",
+    "Oxylipins",
+    "Plant Leaves",
+    "Plant Proteins",
+    "Plants, Genetically Modified",
+    "RNA, Messenger",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "aedfaaa3202525349ede04b91f47e5e24908d9a590c87a11da41514669f31d72",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35951765",
+   "title": "Rapid Detection and Determination of Scopolamine in the Leaf Extract of Black Henbane (Hyoscyamus niger L.) Plants Using a Novel Nanosensor.",
+   "year": 2022,
+   "journal": "Journal of AOAC International",
+   "doi": "10.1093/jaoacint/qsac061",
+   "pmcid": null,
+   "mesh": [
+    "Hyoscyamus",
+    "Scopolamine",
+    "Reproducibility of Results",
+    "Parasympatholytics",
+    "Spectroscopy, Fourier Transform Infrared",
+    "Tropanes",
+    "Cholinergic Antagonists",
+    "Plant Extracts",
+    "Ethanol",
+    "Citric Acid",
+    "Cellulose"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4a0fe34d09db344321c3bb6c588399dfa8ad31c2a47ea91595636ae2dc3ee736",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "9517003",
+   "title": "Molecular cloning of plant spermidine synthases.",
+   "year": 1998,
+   "journal": "Plant & cell physiology",
+   "doi": "10.1093/oxfordjournals.pcp.a029291",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Arabidopsis",
+    "Base Sequence",
+    "Cloning, Molecular",
+    "DNA, Plant",
+    "Escherichia coli",
+    "Gene Expression",
+    "Molecular Sequence Data",
+    "Plant Proteins",
+    "Plants, Toxic",
+    "Sequence Homology, Amino Acid",
+    "Solanaceae",
+    "Spermidine Synthase",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a06391ecb569062d0a4b55f8e2440c7b2f6000a893ed456aab359871b04ae67a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21489105",
+   "title": "Genetic and physiological analysis of biennialism in Hyoscyamus niger.",
+   "year": 2011,
+   "journal": "Plant biology (Stuttgart, Germany)",
+   "doi": "10.1111/j.1438-8677.2010.00382.x",
+   "pmcid": null,
+   "mesh": [
+    "Alleles",
+    "Cold Temperature",
+    "Flowers",
+    "Gene Expression Regulation, Plant",
+    "Genes, Dominant",
+    "Genes, Plant",
+    "Hyoscyamus",
+    "Photoperiod"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a535fa2dc2df9b35c58d7424582294ae265da26bc9bccd17c04648baccc5cd49",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16720272",
+   "title": "Functional genomic analysis of alkaloid biosynthesis in Hyoscyamus niger reveals a cytochrome P450 involved in littorine rearrangement.",
+   "year": 2006,
+   "journal": "Chemistry & biology",
+   "doi": "10.1016/j.chembiol.2006.03.005",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropine Derivatives",
+    "Cytochrome P-450 Enzyme System",
+    "DNA, Complementary",
+    "Expressed Sequence Tags",
+    "Gene Silencing",
+    "Genome, Plant",
+    "Hyoscyamus",
+    "Molecular Sequence Data",
+    "RNA Interference",
+    "Saccharomyces cerevisiae"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c3df5cf7fa0743a7e63d372d1fd456083338fa8a9386cde85e2f74612ad047d7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24851862",
+   "title": "The chloroplast genome of Hyoscyamus niger and a phylogenetic study of the tribe Hyoscyameae (Solanaceae).",
+   "year": 2014,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0098353",
+   "pmcid": "PMC4031233",
+   "mesh": [
+    "Base Sequence",
+    "DNA Primers",
+    "Genome, Chloroplast",
+    "Hyoscyamus",
+    "Introns",
+    "Open Reading Frames",
+    "Phylogeny",
+    "Polymerase Chain Reaction",
+    "RNA Editing",
+    "Replication Origin"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cfec09d3b42a3043102b93225d391b2d33cae39504348a8f91dcb4c92fdac1ab",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "23745717",
+   "title": "A new steroidal glycoside from the seeds of Hyoscyamus niger.",
+   "year": 2013,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2013.805331",
+   "pmcid": null,
+   "mesh": [
+    "Glycosides",
+    "Hyoscyamus",
+    "Molecular Structure",
+    "Seeds",
+    "Solanaceae",
+    "Spectrometry, Mass, Electrospray Ionization"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e9158146e39ae5a5f54dfc0b8b50cab037a296f4a7fcc5b5c368c949530a9673",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22280058",
+   "title": "Phytotoxicity of lignanamides isolated from the seeds of Hyoscyamus niger.",
+   "year": 2012,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf2046784",
+   "pmcid": null,
+   "mesh": [
+    "Allium",
+    "Germination",
+    "Herbicides",
+    "Hyoscyamus",
+    "Lignans",
+    "Magnetic Resonance Spectroscopy",
+    "Plant Extracts",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "47db0463c07726714e94e87332de428baaffdc5dd84fe9b50556a89bb60cef77",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19401911",
+   "title": "Hyoscyamal, a new tetrahydrofurano lignan from Hyoscyamus niger Linn.",
+   "year": 2009,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786410802113961",
+   "pmcid": null,
+   "mesh": [
+    "Furans",
+    "Hyoscyamus",
+    "Lignans",
+    "Magnetic Resonance Spectroscopy",
+    "Mass Spectrometry",
+    "Molecular Structure",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6305bc250f13698f1e782d1108be9c96721efc2c0d3695f3152f6bf47b77ecea",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19720117",
+   "title": "Study of anti-inflammatory, analgesic and antipyretic activities of seeds of Hyoscyamus niger and isolation of a new coumarinolignan.",
+   "year": 2010,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2009.08.024",
+   "pmcid": null,
+   "mesh": [
+    "Analgesics",
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Behavior, Animal",
+    "Carrageenan",
+    "Cotton Fiber",
+    "Coumarins",
+    "Disease Models, Animal",
+    "Edema",
+    "Fever",
+    "Granuloma",
+    "Hyoscyamus",
+    "Lignans",
+    "Mice",
+    "Molecular Structure",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Seeds",
+    "Yeasts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c872f7e743e8f6dfd4495bd531e77339ca3a2fe23749a1a3c9e7356c26a7c6bf",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2033047",
+   "title": "Molecular cloning of hyoscyamine 6 beta-hydroxylase, a 2-oxoglutarate-dependent dioxygenase, from cultured roots of Hyoscyamus niger.",
+   "year": 1991,
+   "journal": "The Journal of biological chemistry",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Atropine",
+    "Base Sequence",
+    "Blotting, Northern",
+    "Cloning, Molecular",
+    "DNA",
+    "Ketoglutaric Acids",
+    "Mixed Function Oxygenases",
+    "Molecular Sequence Data",
+    "Plants",
+    "RNA, Messenger",
+    "Sequence Homology, Nucleic Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4ebbb32f7e9607f52f53839f2f7dbbb227452070ce3e651489889a58ba1629ab",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30568179",
+   "title": "Targeted expression of Vitreoscilla hemoglobin improves the production of tropane alkaloids in Hyoscyamus niger hairy roots.",
+   "year": 2018,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-018-36156-y",
+   "pmcid": "PMC6299274",
+   "mesh": [
+    "Bacterial Proteins",
+    "Biosynthetic Pathways",
+    "Gene Expression",
+    "Gene Expression Regulation, Plant",
+    "Hyoscyamus",
+    "Intracellular Space",
+    "Models, Biological",
+    "Plant Roots",
+    "Plants, Genetically Modified",
+    "Protein Transport",
+    "Transformation, Genetic",
+    "Tropanes",
+    "Truncated Hemoglobins"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f8c529952cdd782974cf40438f6d04057a63b819f882097b4385a8d441235881",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "27810325",
+   "title": "Mechanisms underlying toxicity and stimulatory role of single-walled carbon nanotubes in Hyoscyamus niger during drought stress simulated by polyethylene glycol.",
+   "year": 2017,
+   "journal": "Journal of hazardous materials",
+   "doi": "10.1016/j.jhazmat.2016.10.064",
+   "pmcid": null,
+   "mesh": [
+    "Catalase",
+    "Droughts",
+    "Germination",
+    "Hydrogen Peroxide",
+    "Hyoscyamus",
+    "Malondialdehyde",
+    "Nanotubes, Carbon",
+    "Peroxidases",
+    "Phenols",
+    "Plant Proteins",
+    "Plant Shoots",
+    "Polyethylene Glycols",
+    "Seeds",
+    "Stress, Physiological",
+    "Superoxide Dismutase"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8c40b47c9a587df6f39a86364cd90de33b7323b8cb67e9cd9a76f8e893f766a8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16662596",
+   "title": "Phytochrome Regulation of Flowering in the Long-Day Plant, Hyoscyamus niger.",
+   "year": 1982,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.70.3.898",
+   "pmcid": "PMC1065791",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "13f372f468a4c7d820d02aa62f3c95d913e7a2c1d942f67e4ded4493f5c508cf",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39420840",
+   "title": "Hyoscyamus niger poisoning in Sudan: A case report.",
+   "year": 2025,
+   "journal": "Tropical doctor",
+   "doi": "10.1177/00494755241289456",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Male",
+    "Adult",
+    "Plant Poisoning",
+    "Sudan",
+    "Hyoscyamus",
+    "Charcoal",
+    "Fluid Therapy",
+    "Anticholinergic Syndrome"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Case Reports"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "97908e89f77842ea851917da8fcaa338044a559a3f69039bfe3665242eca806c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27011719",
+   "title": "Adverse reaction of Parasika Yavani (Hyoscyamus niger Linn): Two case study reports.",
+   "year": 2015,
+   "journal": "Ayu",
+   "doi": "10.4103/0974-8520.175550",
+   "pmcid": "PMC4784128",
+   "mesh": [],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "af220260738ec21f203085f29fc13d799d1b6044fd1882802eaaff1934f916d0",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "19553180",
+   "title": "Effect of methanolic extract of Hyoscymus niger L. on the seizure induced by picritoxin in mice.",
+   "year": 2009,
+   "journal": "Pakistan journal of pharmaceutical sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anticonvulsants",
+    "Disease Models, Animal",
+    "Dose-Response Relationship, Drug",
+    "Injections, Intraperitoneal",
+    "Male",
+    "Mice",
+    "Phytotherapy",
+    "Picrotoxin",
+    "Plant Extracts",
+    "Seeds",
+    "Seizures",
+    "Solanaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "52c7f586459f84cc7eebf5cb51e3f83e8ee414f0a3ad89f051d6de188e2cac9c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18698633",
+   "title": "Flow cytometric investigations of diploid and tetraploid plants and in vitro cultures of Datura stramonium and Hyoscyamus niger.",
+   "year": 2008,
+   "journal": "Cytometry. Part A : the journal of the International Society for Analytical Cytology",
+   "doi": "10.1002/cyto.a.20628",
+   "pmcid": null,
+   "mesh": [
+    "Cell Separation",
+    "DNA, Plant",
+    "Datura stramonium",
+    "Diploidy",
+    "Flow Cytometry",
+    "Hyoscyamus",
+    "Plant Leaves",
+    "Plant Roots",
+    "Polyploidy",
+    "Tissue Culture Techniques"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9d57ac05b7a29ec527026240df146923ee4559bcfcf6635f066e6476facbf1c2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24259019",
+   "title": "Production of tropane alkaloids in cultured cells of Hyoscyamus niger.",
+   "year": 1982,
+   "journal": "Plant cell reports",
+   "doi": "10.1007/BF00272363",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e02bf8196bb4d798d14628f914a9b0c6516c9793c9853fef663b3c2acde00a30",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17004056",
+   "title": "Tropane alkaloids production in transgenic Hyoscyamus niger hairy root cultures over-expressing putrescine N-methyltransferase is methyl jasmonate-dependent.",
+   "year": 2007,
+   "journal": "Planta",
+   "doi": "10.1007/s00425-006-0402-1",
+   "pmcid": null,
+   "mesh": [
+    "Acetates",
+    "Culture Techniques",
+    "Cyclopentanes",
+    "Gene Expression",
+    "Hyoscyamus",
+    "Methyltransferases",
+    "Oxylipins",
+    "Plant Roots",
+    "Plants, Genetically Modified",
+    "Polyamines",
+    "Nicotiana",
+    "Tropanes"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cdeb9e5ee60ded860db08ef6fb33278244dddda05097630b0e0b240d3c051723",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16667438",
+   "title": "Diamine Oxidase from Cultured Roots of Hyoscyamus niger: Its Function in Tropane Alkaloid Biosynthesis.",
+   "year": 1990,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.93.1.216",
+   "pmcid": "PMC1062491",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5cb8f192e3a26a6a26be1e9b198049ef1df0e150d01db85aa34f2cc0873d90f6",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16595960",
+   "title": "Hyosgerin, a new optically active coumarinolignan, from the seeds of Hyoscyamus niger.",
+   "year": 2006,
+   "journal": "Chemical & pharmaceutical bulletin",
+   "doi": "10.1248/cpb.54.538",
+   "pmcid": null,
+   "mesh": [
+    "Coumarins",
+    "Dioxanes",
+    "Hyoscyamus",
+    "Lignans",
+    "Molecular Structure",
+    "Optical Rotation",
+    "Plants, Medicinal",
+    "Seeds",
+    "Spectrum Analysis",
+    "Stereoisomerism"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f0cfda51b5f0d9210682bf37b392ab6cf2225cc731c949df61447d0a48a7acc6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16656562",
+   "title": "Studies of the Involvement of an Endogenous Rhythm in the Photoperiodic Response of Hyoscyamus niger.",
+   "year": 1967,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.42.5.725",
+   "pmcid": "PMC1086609",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7ef0a0fededd498632436a1f24655c6091f1441a60c0c85cfb65f132b0568c29",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24197459",
+   "title": "Induced polygenic changes occurring simultaneously with major gene changes in black henbane (Hyoscyamus niger L.).",
+   "year": 1992,
+   "journal": "TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik",
+   "doi": "10.1007/BF00222326",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e33a357aa3bcdb9d615d31b91b9429118f2c6b951bc41b0dbf53e38ace3d276f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "5494707",
+   "title": "Henbane (Hyoscyamus niger) poisonings in the vicinity of Erzurum.",
+   "year": 1970,
+   "journal": "The Turkish journal of pediatrics",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Age Factors",
+    "Atropa belladonna",
+    "Atropine",
+    "Child",
+    "Child, Preschool",
+    "Female",
+    "Humans",
+    "Male",
+    "Plant Poisoning",
+    "Plants, Medicinal",
+    "Plants, Toxic",
+    "Scopolamine",
+    "Sex Factors",
+    "Turkey"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20252792",
+   "title": "Influence of time of application of fertilizers on growth and alkaloidal content of Hyoscyamus niger Linn.",
+   "year": 1947,
+   "journal": "Journal of the American Pharmaceutical Association. American Pharmaceutical Association",
+   "doi": "10.1002/jps.3030360605",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Biological Phenomena",
+    "Fertilizers",
+    "Humans",
+    "Hyoscyamus",
+    "Leadership",
+    "Niger",
+    "Physiological Phenomena"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24200823",
+   "title": "[Administration of Cardiodoron® in patients with functional cardiovascular disorders and/or sleep disorders--results of a prospective, non-interventional study].",
+   "year": 2013,
+   "journal": "Forschende Komplementarmedizin (2006)",
+   "doi": "10.1159/000355255",
+   "pmcid": null,
+   "mesh": [
+    "Adolescent",
+    "Adult",
+    "Aged",
+    "Aged, 80 and over",
+    "Cardiovascular Diseases",
+    "Child",
+    "Child, Preschool",
+    "Female",
+    "Humans",
+    "Male",
+    "Middle Aged",
+    "Patient Compliance",
+    "Plant Extracts",
+    "Prospective Studies",
+    "Sleep Wake Disorders",
+    "Treatment Outcome",
+    "Young Adult"
+   ],
+   "publicationTypes": [
+    "Clinical Trial",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c37d39e3a31642f36aff45788b7f9aa53c0f37416ac53575a3098801410d1b45",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28262116",
+   "title": "ITS2 barcoding DNA region combined with high resolution melting (HRM) analysis of Hyoscyami Semen, the mature seed of Hyoscyamus niger.",
+   "year": 2016,
+   "journal": "Chinese journal of natural medicines",
+   "doi": "10.1016/S1875-5364(17)30014-6",
+   "pmcid": null,
+   "mesh": [
+    "China",
+    "DNA Barcoding, Taxonomic",
+    "DNA, Intergenic",
+    "DNA, Plant",
+    "Discriminant Analysis",
+    "Drug Contamination",
+    "Drugs, Chinese Herbal",
+    "Hyoscyamus",
+    "Seeds",
+    "Transition Temperature"
+   ],
+   "publicationTypes": [
+    "Evaluation Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "300caa0c9f6fc96e3674b2b210041567d42a5298e86dfcfb379466c31ec4e2f8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27285814",
+   "title": "Microclimatic variation in UV perception and related disparity in tropane and quinolizidine alkaloid composition of Atropa acuminata, Lupinus polyphyllus and Hyoscyamus niger.",
+   "year": 2016,
+   "journal": "Journal of photochemistry and photobiology. B, Biology",
+   "doi": "10.1016/j.jphotobiol.2016.04.028",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropa",
+    "Gas Chromatography-Mass Spectrometry",
+    "Hyoscyamus",
+    "Lupinus",
+    "Piperidines",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Principal Component Analysis",
+    "Pyridines",
+    "Quinolizidines",
+    "Sparteine",
+    "Temperature",
+    "Tropanes",
+    "Ultraviolet Rays"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1ac85d586f2dd9ab20a12fa704ca0e42973d2630fd8ed044af7852560761be6c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11319030",
+   "title": "Extensive developmental and metabolic alterations in cybrids Nicotiana tabacum (+ Hyoscyamus niger) are caused by complex nucleo-cytoplasmic incompatibility.",
+   "year": 2001,
+   "journal": "The Plant journal : for cell and molecular biology",
+   "doi": "10.1046/j.1365-313x.2001.00997.x",
+   "pmcid": null,
+   "mesh": [
+    "Cell Fusion",
+    "Cell Nucleus",
+    "Chimera",
+    "Chloroplasts",
+    "Cotyledon",
+    "Cytoplasm",
+    "DNA, Mitochondrial",
+    "DNA, Recombinant",
+    "Genes, Homeobox",
+    "Genes, Plant",
+    "Genetic Engineering",
+    "Phenotype",
+    "Pigments, Biological",
+    "Plant Stems",
+    "Plants, Toxic",
+    "Solanaceae",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ac35826e2bedfdd0638c4d892c14e0a0512cd4c47066d599dba21cacb5cfca1e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16079510",
+   "title": "Amino acid sequences of ferredoxins from Atropa belladonna and Hyoscyamus niger: their similarities to those in other tropane-alkaloid-containing plants.",
+   "year": 2005,
+   "journal": "Biological & pharmaceutical bulletin",
+   "doi": "10.1248/bpb.28.1535",
+   "pmcid": null,
+   "mesh": [
+    "Amino Acid Sequence",
+    "Atropa belladonna",
+    "Ferredoxins",
+    "Hyoscyamus",
+    "Molecular Sequence Data",
+    "Phylogeny",
+    "Sequence Homology, Amino Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bdd4f2772608a5032ca6e44450ef5aceab654ced1dd9459fb0fb5fbda89e5b38",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18251725",
+   "title": "Gastrointestinal, selective airways and urinary bladder relaxant effects of Hyoscyamus niger are mediated through dual blockade of muscarinic receptors and Ca2+ channels.",
+   "year": 2008,
+   "journal": "Fundamental & clinical pharmacology",
+   "doi": "10.1111/j.1472-8206.2007.00561.x",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Calcium Channel Blockers",
+    "Carbachol",
+    "Castor Oil",
+    "Diarrhea",
+    "Female",
+    "Guinea Pigs",
+    "Hyoscyamus",
+    "Ileum",
+    "Intestinal Secretions",
+    "Jejunum",
+    "Male",
+    "Mice",
+    "Mice, Inbred BALB C",
+    "Muscarinic Antagonists",
+    "Muscle Contraction",
+    "Parasympatholytics",
+    "Plant Extracts",
+    "Rabbits",
+    "Trachea",
+    "Urinary Bladder"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "911df22d679d3a2de8746d77ca02c5f79f73046568521f457daf7b12216ed0e3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16655453",
+   "title": "Investigation of Hyoscyamus Niger L., A Long-Day Plant, for Endodiurnal Periodicity in Flowering Response.",
+   "year": 1960,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.35.6.982",
+   "pmcid": "PMC406070",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24317414",
+   "title": "In vitro hybridization by sexual methods and by fusion of somatic protoplasts : Experiments with Nicotiana tabacum x Petunia hybrida, N. tabacum x Hyoscyamus niger, H. niger x P. hybrida, Melandrium album x P. hybrida.",
+   "year": 1978,
+   "journal": "TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik",
+   "doi": "10.1007/BF00281321",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c32f5e6409d028e5c4dbf69196f5d247e0d26697f47217113d7e0ab8f72afff6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "6166618",
+   "title": "Distribution of poly(A)-containing RNA during normal pollen development and during induced pollen embryogenesis in Hyoscyamus niger.",
+   "year": 1981,
+   "journal": "The Journal of cell biology",
+   "doi": "10.1083/jcb.89.3.593",
+   "pmcid": "PMC2111802",
+   "mesh": [
+    "Dactinomycin",
+    "Plant Development",
+    "Pollen",
+    "Poly A",
+    "Poly U",
+    "RNA",
+    "RNA, Messenger",
+    "Transcription, Genetic"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "929928873721ccfb92b0fa673d40ae7a21a3f4b902531bd1446ae0f92b0fa014",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "15422518",
+   "title": "The structure of the flower of Hyoscyamus niger linn.",
+   "year": 1950,
+   "journal": "The Journal of pharmacy and pharmacology",
+   "doi": "10.1111/j.2042-7158.1950.tb12936.x",
+   "pmcid": null,
+   "mesh": [
+    "Flowers",
+    "Hyoscyamus",
+    "Niger"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "6162694",
+   "title": "A transient accumulation of poly(A)-containing RNA in the tapetum of Hyoscyamus niger during microsporogenesis.",
+   "year": 1981,
+   "journal": "Developmental biology",
+   "doi": "10.1016/0012-1606(81)90298-0",
+   "pmcid": null,
+   "mesh": [
+    "Cell Division",
+    "Cell Nucleus",
+    "Nucleic Acid Hybridization",
+    "Plant Physiological Phenomena",
+    "Poly A",
+    "Poly U",
+    "RNA",
+    "RNA, Messenger"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7857034",
+   "title": "[Plant poisoning cases in Turkey].",
+   "year": 1994,
+   "journal": "Annales pharmaceutiques francaises",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Amanita",
+    "Child",
+    "Child, Preschool",
+    "Humans",
+    "Mushroom Poisoning",
+    "Plant Poisoning",
+    "Plants, Toxic",
+    "Turkey"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b7207fc571ca80c5b84a928a5bfc4c4a8fcf306582d7030e62789d0548b64b08",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21024496",
+   "title": "The influence of fertilizers on the growth and alkaloidal content of Hyoscyamus niger Linn.",
+   "year": 1946,
+   "journal": "Journal of the American Pharmaceutical Association. American Pharmaceutical Association",
+   "doi": "10.1002/jps.3030350406",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Biological Phenomena",
+    "Fertilizers",
+    "Humans",
+    "Hyoscyamus",
+    "Leadership",
+    "Niger",
+    "Physiological Phenomena"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "3569262",
+   "title": "Purification and characterization of hyoscyamine 6 beta-hydroxylase from root cultures of Hyoscyamus niger L. Hydroxylase and epoxidase activities in the enzyme preparation.",
+   "year": 1987,
+   "journal": "European journal of biochemistry",
+   "doi": "10.1111/j.1432-1033.1987.tb11055.x",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Ascorbic Acid",
+    "Catalase",
+    "Hydrogen-Ion Concentration",
+    "Iron",
+    "Ketoglutaric Acids",
+    "Kinetics",
+    "Mixed Function Oxygenases",
+    "Molecular Weight",
+    "Plants, Medicinal",
+    "Substrate Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fb92c855b00f4f4ec288832648960c4d5b96f3898de0b2da1db80bbe386e84b9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12829446",
+   "title": "New CMS-associated phenotypes in cybrids Nicotiana tabacum L. (+Hyoscyamus niger L.).",
+   "year": 2003,
+   "journal": "Annals of botany",
+   "doi": "10.1093/aob/mcg135",
+   "pmcid": "PMC4243657",
+   "mesh": [
+    "Cytoplasm",
+    "Flowers",
+    "Hybridization, Genetic",
+    "Phenotype",
+    "Plant Leaves",
+    "Plant Stems",
+    "Reproduction",
+    "Nicotiana"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "31f18e88c36d02867351e0a736292c079228c497515688edda8cb00a25d7d9ac",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15427096",
+   "title": "[Alkaloid content of Hyoscyamus niger L. in various stages of development].",
+   "year": 1950,
+   "journal": "Casopis ceskeho lekarnictva",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Hyoscyamus",
+    "Niger",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29911833",
+   "title": "[Cloning and characterization of an aromatic amino acid aminotransferase(ArAT) gene involved in tropane alkaloid biosynthesis from Hyoscyamus niger].",
+   "year": 2017,
+   "journal": "Yao xue xue bao = Acta pharmaceutica Sinica",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropa belladonna",
+    "Biosynthetic Pathways",
+    "Cholinergic Antagonists",
+    "Cloning, Molecular",
+    "Hyoscyamine",
+    "Hyoscyamus",
+    "Plant Proteins",
+    "Plant Roots",
+    "Scopolamine",
+    "Solanaceous Alkaloids",
+    "Transaminases",
+    "Tropanes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ba6942b134c6f88180df4aab0579deeb8182a3535b50fc6e8ddf08044eadfe06",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10543915",
+   "title": "Withanolides from hyoscyamus niger seeds.",
+   "year": 1999,
+   "journal": "Journal of natural products",
+   "doi": "10.1021/np9902082",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "91408551c2d758e9ff824303904034ce8046b770366c6beeb9eea32d1777e998",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18773124",
+   "title": "Cardiovascular inhibitory effects of Hyoscyamus niger.",
+   "year": 2008,
+   "journal": "Methods and findings in experimental and clinical pharmacology",
+   "doi": "10.1358/mf.2008.30.4.1186075",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Aorta",
+    "Blood Pressure",
+    "Calcium Channel Blockers",
+    "Dose-Response Relationship, Drug",
+    "Endothelium, Vascular",
+    "Female",
+    "Guinea Pigs",
+    "Heart Atria",
+    "Hyoscyamus",
+    "Male",
+    "Myocardial Contraction",
+    "Plant Extracts",
+    "Rabbits",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Vasodilator Agents",
+    "Verapamil"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6cad95887c34ee5335293e4857ac8b1a1e2299b7b9be6f27ee0b8f053a860377",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17404913",
+   "title": "Scopolamine production in suspension cultures and redifferentiated roots of Hyoscyamus niger.",
+   "year": 1983,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2007-969984",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "26ea24de2c091d4235025f37f982cac062b63f3928fc4fc59d030b9d93a5adb3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14907494",
+   "title": "Cultivation studies of the solanaceous drugs. V. A note on a method for increasing the growth of Hyoscyamus niger.",
+   "year": 1952,
+   "journal": "Journal of the American Pharmaceutical Association. American Pharmaceutical Association",
+   "doi": "10.1002/jps.3030410118",
+   "pmcid": null,
+   "mesh": [
+    "Biological Phenomena",
+    "Humans",
+    "Hyoscyamus",
+    "Lupus Vulgaris",
+    "Niger",
+    "Physiological Phenomena",
+    "Research"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15637898",
+   "title": "[Mystery of mydriatic pupils].",
+   "year": 2000,
+   "journal": "Vnitrni lekarstvi",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Atropine",
+    "Food Contamination",
+    "Humans",
+    "Male",
+    "Mydriasis",
+    "Plants, Toxic"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c92ca74d83f189b15b48bc0f98a5a4f799259b97e0095dd2e29371ffc0010904",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18896574",
+   "title": "[On the indefinite culture of tissues of the root of henbane (Hyoscyamus niger L.)].",
+   "year": 1947,
+   "journal": "Comptes rendus hebdomadaires des seances de l'Academie des sciences",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Hyoscyamus",
+    "Immunologic Tests",
+    "Research Design",
+    "Tissues"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14456702",
+   "title": "Thiophosphoric acid derivatives of ethylamine, DL-methionine, and L-proline ethyl esters. IV. Biological activities in seeds of Hyoscyamus niger.",
+   "year": 1962,
+   "journal": "Journal of pharmaceutical sciences",
+   "doi": "10.1002/jps.2600510611",
+   "pmcid": null,
+   "mesh": [
+    "Esters",
+    "Ethylamines",
+    "Hyoscyamus",
+    "Methionine",
+    "Niger",
+    "Phosphates",
+    "Plants",
+    "Proline",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24469780",
+   "title": "[Flower initiation by cycloheximide in the long-day plant Hyoscyamus niger during short-days].",
+   "year": 1973,
+   "journal": "Planta",
+   "doi": "10.1007/BF00386028",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1d757eed2320484a1b7a71e19ae3e5d56ddacd0e568d61a1b16a8e97356d7cc1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13707671",
+   "title": "[Collective poisoning caused by ingestion of Hyoscyamus niger (with a fatal case)].",
+   "year": 1960,
+   "journal": "Minerva medicolegale; archivio di antropologia criminale, psichiatria, e medicina legale",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Herbicides",
+    "Hyoscyamus",
+    "Niger",
+    "Plant Poisoning",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24504778",
+   "title": "[Flower initiation in the long-day plant Hyoscyamus niger by application of 2-thiouracil during short days].",
+   "year": 1969,
+   "journal": "Planta",
+   "doi": "10.1007/BF00388314",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "137a1f163eb787cde62245fcb4e39716bb4f3a2a94fd19f4e302ba9e5a3c3cba",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13689554",
+   "title": "[On the problem of henbane (Hyoscyamus niger L.) poisoning in children].",
+   "year": 1961,
+   "journal": "Voprosy okhrany materinstva i detstva",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Child",
+    "Humans",
+    "Hyoscyamus",
+    "Infant",
+    "Niger",
+    "Plants",
+    "Plants, Medicinal",
+    "Poisoning"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18702301",
+   "title": "[Molecular cloning and expression profile of a jasmonate biosynthetic pathway gene allene oxide cyclase from Hyoscyamus niger].",
+   "year": 2008,
+   "journal": "Molekuliarnaia biologiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Base Sequence",
+    "Cloning, Molecular",
+    "Cyclopentanes",
+    "DNA, Complementary",
+    "Gene Expression Regulation, Enzymologic",
+    "Gene Expression Regulation, Plant",
+    "Hyoscyamus",
+    "Intramolecular Oxidoreductases",
+    "Molecular Sequence Data",
+    "Oxylipins",
+    "Plant Proteins",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "224c3c275b202cd7789e21a5b91cc1ff8e74a1773fc43b593b21cb8b40c858b6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13095324",
+   "title": "[Effect of duration and intensity of illumination on alkaloid content in leaves of Hyoscyamus niger and Belladonna].",
+   "year": 1953,
+   "journal": "Doklady Akademii nauk SSSR",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropa belladonna",
+    "Hyoscyamus",
+    "Light",
+    "Lighting",
+    "Niger",
+    "Parasympatholytics",
+    "Photobiology"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19507702",
+   "title": "Molecular cloning and mRNA expression profiling of the first specific jasmonate biosynthetic pathway gene allene oxide synthase from Hyoscyamus niger.",
+   "year": 2009,
+   "journal": "Genetika",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Base Sequence",
+    "Cloning, Molecular",
+    "Cyclopentanes",
+    "Gene Expression Profiling",
+    "Gene Expression Regulation, Enzymologic",
+    "Gene Expression Regulation, Plant",
+    "Hyoscyamus",
+    "Intramolecular Oxidoreductases",
+    "Molecular Sequence Data",
+    "Oxylipins",
+    "Plant Proteins",
+    "RNA, Messenger",
+    "RNA, Plant"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b37acb8e616ec47fb7f84dfa753d1511d54105e1b89c421615b587fdf4ef2f44",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18899969",
+   "title": "[Comments on the [structural] evolution of the cultures of the black henbane vascular parenchyma [hyoscyamus niger L.]].",
+   "year": 1947,
+   "journal": "Comptes rendus des seances de la Societe de biologie et de ses filiales",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Hyoscyamus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14778781",
+   "title": "Cultivation studies of the solanaceous drugs. II. The effect of nutritional and soil reaction fertilizers on the production yields and total alkaloidal content of Atropa belladonna and Hyoscyamus niger.",
+   "year": 1950,
+   "journal": "Journal of the American Pharmaceutical Association. American Pharmaceutical Association",
+   "doi": "10.1002/jps.3030391015",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropa belladonna",
+    "Fertilizers",
+    "Gastrointestinal Agents",
+    "Hyoscyamus",
+    "Niger",
+    "Parasympatholytics",
+    "Pharmaceutical Preparations",
+    "Plants",
+    "Research",
+    "Soil"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8290643",
+   "title": "cDNA encoding tropinone reductase-II from Hyoscyamus niger.",
+   "year": 1993,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.103.4.1465",
+   "pmcid": "PMC159147",
+   "mesh": [
+    "Alcohol Oxidoreductases",
+    "Amino Acid Sequence",
+    "Base Sequence",
+    "Cloning, Molecular",
+    "DNA, Complementary",
+    "Genes, Plant",
+    "Molecular Sequence Data",
+    "Oligonucleotide Probes",
+    "Plants, Toxic"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11858758",
+   "title": "Lignanamides and nonalkaloidal components of Hyoscyamus niger seeds.",
+   "year": 2002,
+   "journal": "Journal of natural products",
+   "doi": "10.1021/np010073b",
+   "pmcid": null,
+   "mesh": [
+    "China",
+    "Chromatography, Thin Layer",
+    "Coumaric Acids",
+    "Drug Screening Assays, Antitumor",
+    "Fatty Acids",
+    "Glycerol",
+    "Humans",
+    "Hydrolysis",
+    "Inhibitory Concentration 50",
+    "Lignans",
+    "Male",
+    "Molecular Structure",
+    "Nuclear Magnetic Resonance, Biomolecular",
+    "Plants, Medicinal",
+    "Prostatic Neoplasms",
+    "Seeds",
+    "Solanaceae",
+    "Spectrophotometry, Infrared",
+    "Spectroscopy, Fourier Transform Infrared",
+    "Stereoisomerism",
+    "Tumor Cells, Cultured",
+    "Tyramine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "404747148e6467f35d4cab95e2a9e5044aabbd90b032075f10d3c781b519f0fa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14294011",
+   "title": "[POISONING WITH HYOSCYAMUS NIGER IN CHILDREN].",
+   "year": 1964,
+   "journal": "Pediatriia akusherstvo i ginekologiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Atropa belladonna",
+    "Child",
+    "Humans",
+    "Hyoscyamus",
+    "Muscarinic Antagonists",
+    "Niger",
+    "Parasympatholytics",
+    "Poisoning",
+    "Toxicology"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24430282",
+   "title": "Regeneration of anther-derived plants of Hyoscyamus niger L.",
+   "year": 1975,
+   "journal": "Planta",
+   "doi": "10.1007/BF00388860",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1c881bcd53c47b72c6c470f279dc137121bebce1040b60ddf27e1095c5be323d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  }
+ ]
+}

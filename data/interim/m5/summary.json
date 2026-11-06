@@ -1,0 +1,496 @@
+{
+  "search": "NCBI E-utilities (esearch, efetch)",
+  "licence": "Europe PMC REST (search by PMCID: isOpenAccess, license)",
+  "checkedOn": "2026-11-06",
+  "status": "E-utilities and Europe PMC returned HTTP 200; NCBI's PMC OA web service (oa.fcgi) returned 404, so licence status comes from Europe PMC",
+  "retmax": 300,
+  "generatedAt": "2026-11-06T07:09:18+00:00",
+  "species": {
+    "Artemisia absinthium": {
+      "wfoId": "wfo-0000134589",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 16,
+      "hits": 379,
+      "retrieved": 300,
+      "withAbstract": 293,
+      "licenceStatus": {
+        "no_pmc": 153,
+        "pmc_oa": 135,
+        "pmc_not_oa": 12
+      },
+      "oaLicences": {
+        "cc by": 118,
+        "cc by-nc": 9,
+        "cc by-nc-sa": 4,
+        "cc by-nc-nd": 3
+      }
+    },
+    "Crocus sativus": {
+      "wfoId": "wfo-0000788844",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 13,
+      "hits": 1485,
+      "retrieved": 300,
+      "withAbstract": 293,
+      "licenceStatus": {
+        "pmc_oa": 145,
+        "no_pmc": 143,
+        "pmc_not_oa": 10,
+        "pmc_unknown": 2
+      },
+      "oaLicences": {
+        "cc by": 115,
+        "cc by-nc-nd": 11,
+        "cc by-nc": 11,
+        "cc by-nc-sa": 6
+      }
+    },
+    "Ajuga chamaepitys": {
+      "wfoId": "wfo-0000933181",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 6,
+      "hits": 8,
+      "retrieved": 8,
+      "withAbstract": 8,
+      "licenceStatus": {
+        "no_pmc": 5,
+        "pmc_oa": 3
+      },
+      "oaLicences": {
+        "cc by": 3
+      }
+    },
+    "Ranunculus ficaria": {
+      "wfoId": "wfo-0000460581",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 26,
+      "hits": 27,
+      "retrieved": 27,
+      "withAbstract": 25,
+      "licenceStatus": {
+        "no_pmc": 15,
+        "pmc_oa": 11,
+        "pmc_not_oa": 1
+      },
+      "oaLicences": {
+        "cc by": 9,
+        "cc by-nc": 1,
+        "cc by-nc-nd": 1
+      }
+    },
+    "Glycyrrhiza glabra": {
+      "wfoId": "wfo-0000212813",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 32,
+      "hits": 1344,
+      "retrieved": 298,
+      "withAbstract": 290,
+      "licenceStatus": {
+        "no_pmc": 169,
+        "pmc_oa": 120,
+        "pmc_not_oa": 7,
+        "pmc_unknown": 2
+      },
+      "oaLicences": {
+        "cc by": 79,
+        "cc by-nc-nd": 15,
+        "cc by-nc-sa": 9,
+        "cc by-nc": 7
+      }
+    },
+    "Galium aparine": {
+      "wfoId": "wfo-0000968296",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 47,
+      "hits": 64,
+      "retrieved": 64,
+      "withAbstract": 62,
+      "licenceStatus": {
+        "no_pmc": 30,
+        "pmc_oa": 29,
+        "pmc_not_oa": 4,
+        "pmc_unknown": 1
+      },
+      "oaLicences": {
+        "cc by": 21,
+        "cc by-nc-nd": 6,
+        "cc by-nc": 1
+      }
+    },
+    "Chelidonium majus": {
+      "wfoId": "wfo-0000600655",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 1,
+      "hits": 395,
+      "retrieved": 300,
+      "withAbstract": 285,
+      "licenceStatus": {
+        "no_pmc": 202,
+        "pmc_oa": 88,
+        "pmc_not_oa": 8,
+        "pmc_unknown": 2
+      },
+      "oaLicences": {
+        "cc by": 78,
+        "cc by-nc-nd": 4,
+        "cc by-nc-sa": 2,
+        "cc by-nc": 1
+      }
+    },
+    "Hyoscyamus niger": {
+      "wfoId": "wfo-0001021850",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 15,
+      "hits": 148,
+      "retrieved": 148,
+      "withAbstract": 128,
+      "licenceStatus": {
+        "no_pmc": 108,
+        "pmc_oa": 23,
+        "pmc_unknown": 10,
+        "pmc_not_oa": 7
+      },
+      "oaLicences": {
+        "cc by": 17,
+        "cc by-nc-sa": 4,
+        "cc by-nc": 1,
+        "cc by-nc-nd": 1
+      }
+    },
+    "Raphanus sativus": {
+      "wfoId": "wfo-0000402430",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 8,
+      "hits": 1741,
+      "retrieved": 300,
+      "withAbstract": 297,
+      "licenceStatus": {
+        "no_pmc": 158,
+        "pmc_oa": 125,
+        "pmc_not_oa": 13,
+        "pmc_unknown": 4
+      },
+      "oaLicences": {
+        "cc by": 100,
+        "cc by-nc-nd": 11,
+        "cc by-nc": 8,
+        "cc by-nc-sa": 3
+      }
+    },
+    "Agrimonia eupatoria": {
+      "wfoId": "wfo-0001006654",
+      "headline": false,
+      "pendingReReview": true,
+      "eligible": true,
+      "names": 7,
+      "hits": 80,
+      "retrieved": 80,
+      "withAbstract": 74,
+      "licenceStatus": {
+        "no_pmc": 42,
+        "pmc_oa": 35,
+        "pmc_not_oa": 3
+      },
+      "oaLicences": {
+        "cc by": 32,
+        "cc by-nc": 1,
+        "cc by-nc-nd": 1
+      }
+    },
+    "Salvia sclarea": {
+      "wfoId": "wfo-0000302258",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 14,
+      "hits": 215,
+      "retrieved": 215,
+      "withAbstract": 208,
+      "licenceStatus": {
+        "no_pmc": 126,
+        "pmc_oa": 82,
+        "pmc_not_oa": 7
+      },
+      "oaLicences": {
+        "cc by": 63,
+        "cc by-nc-nd": 13,
+        "cc by-nc": 2,
+        "cc by-nd": 1,
+        "cc by-nc-sa": 1
+      }
+    },
+    "Papaver somniferum": {
+      "wfoId": "wfo-0000480963",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 12,
+      "hits": 579,
+      "retrieved": 297,
+      "withAbstract": 289,
+      "licenceStatus": {
+        "no_pmc": 180,
+        "pmc_oa": 89,
+        "pmc_not_oa": 18,
+        "pmc_unknown": 10
+      },
+      "oaLicences": {
+        "cc by": 75,
+        "cc by-nc-nd": 5,
+        "cc by-nc": 4,
+        "cc by-nc-sa": 3,
+        "cc by-nd": 1
+      }
+    },
+    "Humulus lupulus": {
+      "wfoId": "wfo-0000725866",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 14,
+      "hits": 982,
+      "retrieved": 300,
+      "withAbstract": 297,
+      "licenceStatus": {
+        "no_pmc": 162,
+        "pmc_oa": 128,
+        "pmc_not_oa": 9,
+        "pmc_unknown": 1
+      },
+      "oaLicences": {
+        "cc by": 110,
+        "cc by-nc": 7,
+        "cc by-nc-nd": 5,
+        "cc by-nc-sa": 3,
+        "cc0": 1
+      }
+    },
+    "Allium cepa": {
+      "wfoId": "wfo-0000755919",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 43,
+      "hits": 3224,
+      "retrieved": 300,
+      "withAbstract": 265,
+      "licenceStatus": {
+        "no_pmc": 204,
+        "pmc_oa": 88,
+        "pmc_not_oa": 8
+      },
+      "oaLicences": {
+        "cc by": 60,
+        "cc by-nc-nd": 14,
+        "cc by-nc": 6,
+        "cc by-nc-sa": 4
+      }
+    },
+    "Coriandrum sativum": {
+      "wfoId": "wfo-0000621274",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 22,
+      "hits": 692,
+      "retrieved": 299,
+      "withAbstract": 294,
+      "licenceStatus": {
+        "no_pmc": 162,
+        "pmc_oa": 128,
+        "pmc_not_oa": 9
+      },
+      "oaLicences": {
+        "cc by": 100,
+        "cc by-nc-nd": 11,
+        "cc by-nc-sa": 9,
+        "cc by-nc": 4,
+        "cc by-nd": 1
+      }
+    },
+    "Carum carvi": {
+      "wfoId": "wfo-0000588460",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 32,
+      "hits": 221,
+      "retrieved": 220,
+      "withAbstract": 217,
+      "licenceStatus": {
+        "no_pmc": 131,
+        "pmc_oa": 84,
+        "pmc_not_oa": 3,
+        "pmc_unknown": 2
+      },
+      "oaLicences": {
+        "cc by": 70,
+        "cc by-nc-nd": 7,
+        "cc by-nc-sa": 5,
+        "cc by-nd": 2
+      }
+    },
+    "Citrullus colocynthis": {
+      "wfoId": "wfo-0000607845",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 12,
+      "hits": 328,
+      "retrieved": 300,
+      "withAbstract": 294,
+      "licenceStatus": {
+        "no_pmc": 158,
+        "pmc_oa": 127,
+        "pmc_not_oa": 15
+      },
+      "oaLicences": {
+        "cc by": 90,
+        "cc by-nc-nd": 17,
+        "cc by-nc": 12,
+        "cc by-nc-sa": 7,
+        "cc by-nd": 1
+      }
+    },
+    "Filipendula ulmaria": {
+      "wfoId": "wfo-0000983427",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 11,
+      "hits": 90,
+      "retrieved": 90,
+      "withAbstract": 84,
+      "licenceStatus": {
+        "no_pmc": 59,
+        "pmc_oa": 30,
+        "pmc_not_oa": 1
+      },
+      "oaLicences": {
+        "cc by": 27,
+        "cc by-nc-sa": 1,
+        "cc by-nc-nd": 1,
+        "cc by-nd": 1
+      }
+    },
+    "Betonica officinalis": {
+      "wfoId": "wfo-0000329771",
+      "headline": true,
+      "pendingReReview": false,
+      "eligible": true,
+      "names": 3,
+      "hits": 19,
+      "retrieved": 18,
+      "withAbstract": 16,
+      "licenceStatus": {
+        "no_pmc": 18
+      },
+      "oaLicences": {}
+    },
+    "Lavandula angustifolia": {
+      "wfoId": "wfo-0000224116",
+      "headline": false,
+      "pendingReReview": false,
+      "eligible": false,
+      "names": 1,
+      "hits": 636,
+      "retrieved": 299,
+      "withAbstract": 294,
+      "licenceStatus": {
+        "pmc_oa": 156,
+        "no_pmc": 139,
+        "pmc_not_oa": 3,
+        "pmc_unknown": 1
+      },
+      "oaLicences": {
+        "cc by": 129,
+        "cc by-nc-nd": 17,
+        "cc by-nc": 5,
+        "cc by-nc-sa": 4,
+        "cc by-nd": 1
+      }
+    },
+    "Hyssopus officinalis": {
+      "wfoId": "wfo-0000217205",
+      "headline": false,
+      "pendingReReview": true,
+      "eligible": false,
+      "names": 3,
+      "hits": 110,
+      "retrieved": 109,
+      "withAbstract": 108,
+      "licenceStatus": {
+        "no_pmc": 62,
+        "pmc_oa": 44,
+        "pmc_not_oa": 3
+      },
+      "oaLicences": {
+        "cc by": 37,
+        "cc by-nc-nd": 4,
+        "cc by-nc": 2,
+        "cc by-nc-sa": 1
+      }
+    },
+    "Symphytum officinale": {
+      "wfoId": "wfo-0000432219",
+      "headline": false,
+      "pendingReReview": false,
+      "eligible": false,
+      "names": 16,
+      "hits": 168,
+      "retrieved": 167,
+      "withAbstract": 152,
+      "licenceStatus": {
+        "no_pmc": 120,
+        "pmc_oa": 40,
+        "pmc_not_oa": 5,
+        "pmc_unknown": 2
+      },
+      "oaLicences": {
+        "cc by": 31,
+        "cc by-nc-nd": 4,
+        "cc by-nc": 4
+      }
+    },
+    "Pastinaca sativa": {
+      "wfoId": "wfo-0000391752",
+      "headline": false,
+      "pendingReReview": true,
+      "eligible": false,
+      "names": 7,
+      "hits": 104,
+      "retrieved": 104,
+      "withAbstract": 88,
+      "licenceStatus": {
+        "no_pmc": 69,
+        "pmc_oa": 28,
+        "pmc_not_oa": 5,
+        "pmc_unknown": 2
+      },
+      "oaLicences": {
+        "cc by": 23,
+        "cc by-nc-nd": 2,
+        "cc by-nc-sa": 2,
+        "cc by-nc": 1
+      }
+    }
+  }
+}

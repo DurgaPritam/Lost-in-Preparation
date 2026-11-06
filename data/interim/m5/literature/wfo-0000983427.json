@@ -1,0 +1,2469 @@
+{
+ "species": "Filipendula ulmaria",
+ "wfoId": "wfo-0000983427",
+ "names": [
+  "Filipendula ulmaria",
+  "Filipendula ulmaria subsp. quinqueloba",
+  "Filipendula ulmaria var. nivea",
+  "Spiraea quinqueloba",
+  "Spiraea ulmaria",
+  "Spiraea ulmaria f. tomentosa",
+  "Spiraea ulmaria subsp. denudata",
+  "Spiraea ulmaria var. tomentosa",
+  "Thecanisia ulmaria",
+  "Ulmaria pentapetala",
+  "Ulmaria ulmaria"
+ ],
+ "term": "\"Filipendula ulmaria\"[tiab] OR \"Filipendula ulmaria subsp. quinqueloba\"[tiab] OR \"Filipendula ulmaria var. nivea\"[tiab] OR \"Spiraea quinqueloba\"[tiab] OR \"Spiraea ulmaria\"[tiab] OR \"Spiraea ulmaria f. tomentosa\"[tiab] OR \"Spiraea ulmaria subsp. denudata\"[tiab] OR \"Spiraea ulmaria var. tomentosa\"[tiab] OR \"Thecanisia ulmaria\"[tiab] OR \"Ulmaria pentapetala\"[tiab] OR \"Ulmaria ulmaria\"[tiab]",
+ "count": 90,
+ "queryTranslation": "\"Filipendula ulmaria\"[Title/Abstract] OR \"Spiraea ulmaria\"[Title/Abstract]",
+ "retrieved": 90,
+ "records": [
+  {
+   "pmid": "38622779",
+   "title": "Quantifying the production of plant pollen at the farm scale.",
+   "year": 2024,
+   "journal": "The New phytologist",
+   "doi": "10.1111/nph.19763",
+   "pmcid": null,
+   "mesh": [
+    "Pollen",
+    "Plant Nectar",
+    "Farms",
+    "Flowers",
+    "Seasons",
+    "Pollination",
+    "Ecosystem"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "504fbea2bf42b0462dc88dd6ac6dc1e1adf7b76881e9e0d784eb699a5d69c2eb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34997711",
+   "title": "Variable neuroprotective role of Filipendula ulmaria extract in rat hippocampus.",
+   "year": 2021,
+   "journal": "Journal of integrative neuroscience",
+   "doi": "10.31083/j.jin2004089",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Anxiety",
+    "Apoptosis",
+    "Behavior, Animal",
+    "Calcium Phosphates",
+    "Filipendula",
+    "Hippocampus",
+    "Male",
+    "Nanoparticles",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a901f0e69ea18b1a3f875f95040b00965127e53e3aea5a2369ad1b4518ab2e0d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36679011",
+   "title": "Variations in Yield, Essential Oil, and Salicylates of Filipendula ulmaria Inflorescences at Different Blooming Stages.",
+   "year": 2023,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants12020300",
+   "pmcid": "PMC9862637",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "62f82279811cb9df96c2ef9ce5fd7e41c709452b6dc310848f6e46d8cb7db83c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29485725",
+   "title": "Climate change accelerates local disease extinction rates in a long-term wild host-pathogen association.",
+   "year": 2018,
+   "journal": "Global change biology",
+   "doi": "10.1111/gcb.14111",
+   "pmcid": null,
+   "mesh": [
+    "Basidiomycota",
+    "Climate Change",
+    "Extinction, Biological",
+    "Filipendula",
+    "Global Warming",
+    "Host-Pathogen Interactions",
+    "Plant Diseases",
+    "Population Dynamics",
+    "Seasons",
+    "Sweden"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9e3f73067a9edbcc2656e6e4795769049a1550be0d70fb600a4f296c5563a674",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25695410",
+   "title": "Bioactivity, stability and phenolic characterization of Filipendula ulmaria (L.) Maxim.",
+   "year": 2015,
+   "journal": "Food & function",
+   "doi": "10.1039/c4fo01208a",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Infective Agents",
+    "Antioxidants",
+    "Chromatography, High Pressure Liquid",
+    "Enterococcus faecalis",
+    "Escherichia coli",
+    "Filipendula",
+    "Flavonoids",
+    "Fusarium",
+    "Hydrogen-Ion Concentration",
+    "Hydrolyzable Tannins",
+    "Lipid Peroxidation",
+    "Microbial Sensitivity Tests",
+    "Models, Biological",
+    "Penicillium",
+    "Phenols",
+    "Plant Extracts",
+    "Temperature"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e01440e9e8672d9dc127c232c4e19e569e1525fec241b47ae655009ff6e5fe95",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2750445",
+   "title": "Evaluation of traditional plant treatments for diabetes: studies in streptozotocin diabetic mice.",
+   "year": 1989,
+   "journal": "Acta diabetologica latina",
+   "doi": "10.1007/BF02581196",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Body Weight",
+    "Diabetes Mellitus, Experimental",
+    "Energy Intake",
+    "Magnoliopsida",
+    "Male",
+    "Medicine, Traditional",
+    "Mice",
+    "Phytotherapy",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0ccbd15a9be7d3b4129f42d317003699e1e9e9d9b6f318512e107988fb3de5c0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16106386",
+   "title": "Cytotoxicity of some Russian ethnomedicinal plants and plant compounds.",
+   "year": 2005,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.1616",
+   "pmcid": null,
+   "mesh": [
+    "Antineoplastic Agents, Phytogenic",
+    "Cell Line, Tumor",
+    "Ethnopharmacology",
+    "Humans",
+    "Medicine, Traditional",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Russia"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1d85a2e209ccb791cc332f8410c5c3a480a2df689d0eca999a1467ac59a690b0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36400901",
+   "title": "Assessment of heavy metal accumulation potential of aquatic plants for bioindication and bioremediation of aquatic environment.",
+   "year": 2022,
+   "journal": "Environmental monitoring and assessment",
+   "doi": "10.1007/s10661-022-10750-0",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Environmental Monitoring",
+    "Metals, Heavy",
+    "Plants",
+    "Typhaceae",
+    "Water"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3e280b7eea777178aea80cc096a94fd518e4e0b2ce540d8b34f91c7d7d72a957",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "10857921",
+   "title": "Antimicrobial effects of Finnish plant extracts containing flavonoids and other phenolic compounds.",
+   "year": 2000,
+   "journal": "International journal of food microbiology",
+   "doi": "10.1016/s0168-1605(00)00218-x",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Anti-Inflammatory Agents",
+    "Antioxidants",
+    "Calcium",
+    "Finland",
+    "Flavonoids",
+    "Food Preservation",
+    "Humans",
+    "Microbial Sensitivity Tests",
+    "Phenols",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ff5c1b7834927226912710f04411b6293e76b1eee410142a8ea3e2045355cbb1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27721054",
+   "title": "In vitro and in vivo assessment of meadowsweet (Filipendula ulmaria) as anti-inflammatory agent.",
+   "year": 2016,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2016.10.015",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Cell Line, Tumor",
+    "Cyclooxygenase 1",
+    "Cyclooxygenase 2",
+    "Cyclooxygenase Inhibitors",
+    "Dose-Response Relationship, Drug",
+    "Edema",
+    "Ethnopharmacology",
+    "Filipendula",
+    "Gene Expression",
+    "Humans",
+    "Male",
+    "Nociceptive Pain",
+    "Plant Components, Aerial",
+    "Plant Extracts",
+    "Plant Roots",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "16bc8265e79bb4b9d1e6c3ba38793e84906d3b9a689d4858eb3c1fb4787ca321",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38474277",
+   "title": "Complex Hippocampal Response to Thermal Skin Injury and Protocols with Hyperbaric Oxygen Therapy and Filipendula ulmaria Extract in Rats.",
+   "year": 2024,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms25053033",
+   "pmcid": "PMC10932411",
+   "mesh": [
+    "Rats",
+    "Male",
+    "Animals",
+    "Rats, Wistar",
+    "Hyperbaric Oxygenation",
+    "Filipendula",
+    "Antioxidants",
+    "Hippocampus",
+    "Burns"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a2dacdd8e6a5bb54c440cb720991877bd8972230bd096eecb2ec559e07e033ce",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "27871982",
+   "title": "Filipendula ulmaria extracts attenuate cisplatin-induced liver and kidney oxidative stress in rats: In vivo investigation and LC-MS analysis.",
+   "year": 2017,
+   "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+   "doi": "10.1016/j.fct.2016.11.018",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antineoplastic Agents",
+    "Cell Survival",
+    "Chemical and Drug Induced Liver Injury",
+    "Chromatography, Liquid",
+    "Cisplatin",
+    "DNA Damage",
+    "Filipendula",
+    "Kidney",
+    "Kidney Diseases",
+    "Liver",
+    "Mass Spectrometry",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5e0f3ac7f069b8fe394fe52eba51452bb0e6a9804977b62c2376163f1e323d38",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37687176",
+   "title": "Rapid Chemical Profiling of Filipendula ulmaria Using CPC Fractionation, 2-D Mapping of 13C NMR Data, and High-Resolution LC-MS.",
+   "year": 2023,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28176349",
+   "pmcid": "PMC10489126",
+   "mesh": [
+    "Humans",
+    "Filipendula",
+    "Chromatography, Liquid",
+    "Tandem Mass Spectrometry",
+    "Magnetic Resonance Imaging",
+    "Epidermis"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "07f8a3b6efa682b3c486f6fa70289dec09a7b7c4b2cf049acfcfa56a7232042f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40963187",
+   "title": "Long-range pollen transport across the North Sea: Insights from migratory hoverflies landing on a remote oil rig.",
+   "year": 2025,
+   "journal": "The Journal of animal ecology",
+   "doi": "10.1111/1365-2656.70126",
+   "pmcid": "PMC12586786",
+   "mesh": [
+    "Animals",
+    "Animal Migration",
+    "Pollen",
+    "Pollination",
+    "Diptera",
+    "North Sea",
+    "Scotland"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d825ee36149a172f51852c05a53e57a824d0c3388829c18caaf0cd496cd86c18",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "37111776",
+   "title": "In Vitro Biotransformation and Anti-Inflammatory Activity of Constituents and Metabolites of Filipendula ulmaria.",
+   "year": 2023,
+   "journal": "Pharmaceutics",
+   "doi": "10.3390/pharmaceutics15041291",
+   "pmcid": "PMC10146082",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a125c7864cf09c0960bcad31cf7a529f4a23b6304e936eb1b4ef26dee124fa31",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "16502319",
+   "title": "Tall herb herbivory resistance reflects historic exposure to leaf beetles in a boreal archipelago age-gradient.",
+   "year": 2006,
+   "journal": "Oecologia",
+   "doi": "10.1007/s00442-006-0390-7",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Biological Evolution",
+    "Cold Climate",
+    "Coleoptera",
+    "Ecosystem",
+    "Feeding Behavior",
+    "Filipendula",
+    "Geography",
+    "Larva",
+    "Sweden"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9ccef8517e336179bc0ac2caf6ad92de0d4bb15bf2b4fce17490762be81f9092",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27095919",
+   "title": "A natural herbal remedy modulates angiogenic activity of bronchoalveolar lavage cells from sarcoidosis patients.",
+   "year": 2016,
+   "journal": "Central-European journal of immunology",
+   "doi": "10.5114/ceji.2016.58311",
+   "pmcid": "PMC4829814",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "881480dc3220e09b69d34c5a698c8b828c65faaf6fcdf0398128ac77ca7702cc",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-sa"
+   }
+  },
+  {
+   "pmid": "29132911",
+   "title": "Antioxidant, anti-inflammatory and gastroprotective activity of Filipendula ulmaria (L.) Maxim. and Filipendula vulgaris Moench.",
+   "year": 2018,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2017.11.013",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Anti-Ulcer Agents",
+    "Antioxidants",
+    "Blood Platelets",
+    "Eicosanoids",
+    "Ethanol",
+    "Filipendula",
+    "Flowers",
+    "Humans",
+    "Male",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats, Wistar",
+    "Stomach Ulcer"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f682d66c1d10222c1983e984d687f271635ca11d12ca9328253c62f3d50b1a8f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40415972",
+   "title": "Untangling host specialization in a \"double dark taxa\" system.",
+   "year": 2025,
+   "journal": "Annals of the Entomological Society of America",
+   "doi": "10.1093/aesa/saaf003",
+   "pmcid": "PMC12095911",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "32a8450d0d6c039e8069c6a263510e80d489d38cc22712d0389aaffe744b5530",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "38667929",
+   "title": "Transcriptome-Wide Identification and Expression Analysis of Genes Encoding Defense-Related Peptides of Filipendula ulmaria in Response to Bipolaris sorokiniana Infection.",
+   "year": 2024,
+   "journal": "Journal of fungi (Basel, Switzerland)",
+   "doi": "10.3390/jof10040258",
+   "pmcid": "PMC11050963",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "378085f1176390567846a028ff698f778d55bad4b0f38c15ae049edbe20de922",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "22711544",
+   "title": "Inhibition of proinflammatory biomarkers in THP1 macrophages by polyphenols derived from chamomile, meadowsweet and willow bark.",
+   "year": 2013,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.4753",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Inflammatory Agents",
+    "Apigenin",
+    "Cell Line",
+    "Comet Assay",
+    "Filipendula",
+    "Humans",
+    "Interleukin-1beta",
+    "Interleukin-6",
+    "Macrophages",
+    "Matricaria",
+    "Plant Extracts",
+    "Polyphenols",
+    "Quercetin",
+    "Salicylic Acid",
+    "Salix",
+    "Tumor Necrosis Factor-alpha"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c9968af50204d93a804f5b8ff61f4f0c5c5e8c03d84b4efdecc4be89f1e01472",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29607788",
+   "title": "Inhibitory Effect of Filipendula ulmaria on Mammary Carcinogenesis Induced by Local Administration of Methylnitrosourea to Target Organ in Rats.",
+   "year": 2018,
+   "journal": "Anti-cancer agents in medicinal chemistry",
+   "doi": "10.2174/1871520618666180402125913",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Cell Proliferation",
+    "Dose-Response Relationship, Drug",
+    "Drug Screening Assays, Antitumor",
+    "Female",
+    "Filipendula",
+    "Flavonoids",
+    "Mammary Neoplasms, Experimental",
+    "Methylnitrosourea",
+    "Molecular Structure",
+    "Phenols",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar",
+    "Structure-Activity Relationship",
+    "Tannins"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a812a5f58885ed257f73e19ae4b383f0ae5e0c1ca11b162107880433e964fddd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33808360",
+   "title": "Xanthine Oxidase Inhibitors from Filipendula ulmaria (L.) Maxim. and Their Efficient Detections by HPTLC and HPLC Analyses.",
+   "year": 2021,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26071939",
+   "pmcid": "PMC8038090",
+   "mesh": [
+    "Enzyme Inhibitors",
+    "Filipendula",
+    "Gout Suppressants",
+    "Plant Extracts",
+    "Quercetin",
+    "Xanthine Oxidase"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1df032b73f2593f7275bfe2a1894a5a42ba144d48356110ef286de12b377d52f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "23411280",
+   "title": "Inhibitory activity of Filipendula ulmaria constituents on recombinant human histidine decarboxylase.",
+   "year": 2013,
+   "journal": "Food chemistry",
+   "doi": "10.1016/j.foodchem.2012.10.074",
+   "pmcid": null,
+   "mesh": [
+    "Enzyme Inhibitors",
+    "Filipendula",
+    "Histidine Decarboxylase",
+    "Humans",
+    "Kinetics",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9263fe7384ce8314399c2e5d13396c00210b2b0453d6ff6951f43c7865a6f262",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18069242",
+   "title": "Inhibition of acetylcholinesterase by extracts and constituents from Angelica archangelica and Geranium sylvaticum.",
+   "year": 2007,
+   "journal": "Zeitschrift fur Naturforschung. C, Journal of biosciences",
+   "doi": "10.1515/znc-2007-9-1011",
+   "pmcid": null,
+   "mesh": [
+    "Angelica archangelica",
+    "Animals",
+    "Brain",
+    "Cholinesterase Inhibitors",
+    "Ethanol",
+    "Flowers",
+    "Furocoumarins",
+    "Geranium",
+    "Kinetics",
+    "Methoxsalen",
+    "Mice",
+    "Plant Extracts",
+    "Plant Leaves"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8a4009577524209ae8e62a1932badb4d5e28f88de2e0709aab3253f3a71d50b9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36145820",
+   "title": "Study of the Antioxidant Properties of Filipendula ulmaria and Alnus glutinosa.",
+   "year": 2022,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants11182415",
+   "pmcid": "PMC9504179",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "264c8553c60b36fa0222d43c1bbc2c3ccd10e5436c110466390b0efd9ed36061",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42221477",
+   "title": "Effect of supplemental dietary phytogenic blends on growth performance, jejunal histomorphometry, and jejunal immunity of broiler chickens.",
+   "year": 2025,
+   "journal": "Archives animal breeding",
+   "doi": "10.5194/aab-68-13-2025",
+   "pmcid": "PMC13218387",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "862ccbb89ea200738400de3a5782664d3f2c73ea09888d82c53207fa8f17031c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39456454",
+   "title": "DNA-Protective, Antioxidant and Anti-Carcinogenic Potential of Meadowsweet (Filipendula ulmaria) Dry Tincture.",
+   "year": 2024,
+   "journal": "Antioxidants (Basel, Switzerland)",
+   "doi": "10.3390/antiox13101200",
+   "pmcid": "PMC11504252",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "838aecb707753aa2f0b2c49d5bcef01a89ff723844e81e31d19805ee46004fec",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30114518",
+   "title": "The inhibitory effect of Filipendula ulmaria (L.) Maxim. on colorectal carcinogenesis induced in rats by methylnitrosourea.",
+   "year": 2018,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2018.08.013",
+   "pmcid": null,
+   "mesh": [
+    "Adenocarcinoma",
+    "Animals",
+    "Antineoplastic Agents",
+    "Colorectal Neoplasms",
+    "Female",
+    "Filipendula",
+    "Flowers",
+    "Methylnitrosourea",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8bf385413a5cbe8318067aedae46c8677bc082dca9b9e2f5ba11b5207cc1d46d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29374230",
+   "title": "Targeted and Untargeted Metabolic Profiling of Wild Grassland Plants identifies Antibiotic and Anthelmintic Compounds Targeting Pathogen Physiology, Metabolism and Reproduction.",
+   "year": 2018,
+   "journal": "Scientific reports",
+   "doi": "10.1038/s41598-018-20091-z",
+   "pmcid": "PMC5786025",
+   "mesh": [
+    "Animals",
+    "Anthelmintics",
+    "Anti-Bacterial Agents",
+    "Chromatography, Liquid",
+    "England",
+    "Grassland",
+    "Mass Spectrometry",
+    "Metabolome",
+    "Phytochemicals",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c7c9c2e931d01537b44a6593f56d4de87ef180f1f32656e00e7aad2308b6a607",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21280113",
+   "title": "Investigations into the antiadhesive activity of herbal extracts against Campylobacter jejuni.",
+   "year": 2011,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.3384",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Bacterial Adhesion",
+    "Campylobacter Infections",
+    "Campylobacter jejuni",
+    "HT29 Cells",
+    "Humans",
+    "Plant Extracts",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6f9581f6f98f67b1c13c180e7aef61c1434bf4c97b384ae68acd015c78ae1b9b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19291675",
+   "title": "Qualitative and quantitative determination of hydrolysable tannins and other polyphenols in herbal products from meadowsweet and dog rose.",
+   "year": 2009,
+   "journal": "Phytochemical analysis : PCA",
+   "doi": "10.1002/pca.1113",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, High Pressure Liquid",
+    "Chromatography, Thin Layer",
+    "Filipendula",
+    "Hydrolysis",
+    "Magnetic Resonance Spectroscopy",
+    "Reproducibility of Results",
+    "Rosa",
+    "Sensitivity and Specificity",
+    "Spectrometry, Mass, Electrospray Ionization",
+    "Spectrophotometry, Ultraviolet",
+    "Tannins"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Validation Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7ec93013215246dfc2e05a0b1569508a45e90810472cf86de88cce88ee694944",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37763795",
+   "title": "Simultaneous Administration of Hyperbaric Oxygen Therapy and Antioxidant Supplementation with Filipendula ulmaria Extract in the Treatment of Thermal Skin Injuries Alters Nociceptive Signalling and Wound Healing.",
+   "year": 2023,
+   "journal": "Medicina (Kaunas, Lithuania)",
+   "doi": "10.3390/medicina59091676",
+   "pmcid": "PMC10536773",
+   "mesh": [
+    "Male",
+    "Animals",
+    "Rats",
+    "Rats, Wistar",
+    "Hyperbaric Oxygenation",
+    "Antioxidants",
+    "Filipendula",
+    "Nociception",
+    "Wound Healing",
+    "Burns",
+    "Oxygen",
+    "Dietary Supplements",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f6bdecf46bd7f789f54839a4a731545a08108f78ba2a510bcf297768ed9f4b6e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "27827272",
+   "title": "The inhibitory effect of meadowsweet (Filipendula ulmaria) on radiation-induced carcinogenesis in rats.",
+   "year": 2017,
+   "journal": "International journal of radiation biology",
+   "doi": "10.1080/09553002.2016.1257834",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carcinogenesis",
+    "Dose-Response Relationship, Drug",
+    "Dose-Response Relationship, Radiation",
+    "Female",
+    "Filipendula",
+    "Flowers",
+    "Neoplasms, Radiation-Induced",
+    "Plant Extracts",
+    "Radiation Dosage",
+    "Radiation-Protective Agents",
+    "Rats",
+    "Survival Rate",
+    "Treatment Outcome",
+    "Whole-Body Irradiation"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c941ac000bc8938909d7b0c26c18db7b31c2176df090ccf8abd25e9f7e27fe64",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11453770",
+   "title": "Free radical scavenging activities measured by electron spin resonance spectroscopy and B16 cell antiproliferative behaviors of seven plants.",
+   "year": 2001,
+   "journal": "Journal of agricultural and food chemistry",
+   "doi": "10.1021/jf010086v",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Electron Spin Resonance Spectroscopy",
+    "Free Radical Scavengers",
+    "Plant Extracts",
+    "Reactive Oxygen Species"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "96fa3a84f8bc911d0707e4e7be30a56274b3b16930d92a6a7732d20426c64051",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20017405",
+   "title": "[Evaluation of anti-inflammatory activity of extracts from Siberian plants].",
+   "year": 2009,
+   "journal": "Vestnik Rossiiskoi akademii meditsinskikh nauk",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Aconitum",
+    "Alkaloids",
+    "Animals",
+    "Conium",
+    "Delphinium",
+    "Disease Models, Animal",
+    "Female",
+    "Fragaria",
+    "Inflammation",
+    "Male",
+    "Mice",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Rats",
+    "Salicylic Acid",
+    "Salix",
+    "Siberia",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a7a1d71c6ea335a7787c1522017f4d9c8d4cf5e0f1944b184d48071ec2f79bf6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38719124",
+   "title": "Enhancing nitrogen removal through macrophyte harvest and installation of woodchips-based floating beds in surface-flow constructed wetlands.",
+   "year": 2024,
+   "journal": "Chemosphere",
+   "doi": "10.1016/j.chemosphere.2024.142284",
+   "pmcid": null,
+   "mesh": [
+    "Wetlands",
+    "Nitrogen",
+    "Wood",
+    "Biomass",
+    "Denitrification",
+    "Plant Roots",
+    "Biodegradation, Environmental",
+    "Water Pollutants, Chemical"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "415394c3f2b345e8627661a42e5e2bd472f26d562b82bb72467c1daa9096233d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32540521",
+   "title": "Scientific basis for the industrialization of traditionally used plants of the Rosaceae family.",
+   "year": 2020,
+   "journal": "Food chemistry",
+   "doi": "10.1016/j.foodchem.2020.127197",
+   "pmcid": null,
+   "mesh": [
+    "Industrial Development",
+    "Phenols",
+    "Rosaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8d964449dddc7bda8fc52ca1a3c4a231255fc7b83dd35bd8cc408394c7af846a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26308362",
+   "title": "Using DNA Metabarcoding to Identify the Floral Composition of Honey: A New Tool for Investigating Honey Bee Foraging Preferences.",
+   "year": 2015,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0134735",
+   "pmcid": "PMC4550469",
+   "mesh": [
+    "Animals",
+    "Bees",
+    "Behavior, Animal",
+    "DNA Barcoding, Taxonomic",
+    "Flowers",
+    "High-Throughput Nucleotide Sequencing",
+    "Honey",
+    "Pollen",
+    "Ribulose-Bisphosphate Carboxylase",
+    "Sequence Analysis, DNA"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c2d057fa934fd342ff6e5e4a01b01788c1f946603e3f4c1ff6b636abb9d80782",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24969824",
+   "title": "Role of human gut microbiota metabolism in the anti-inflammatory effect of traditionally used ellagitannin-rich plant materials.",
+   "year": 2014,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2014.06.032",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Anti-Inflammatory Agents",
+    "Cell Line",
+    "Coumarins",
+    "Feces",
+    "Gastrointestinal Tract",
+    "Humans",
+    "Hydrolyzable Tannins",
+    "Macrophages",
+    "Medicine, Traditional",
+    "Microbiota",
+    "Middle Aged",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Tumor Necrosis Factor-alpha"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "90a042c108ccb15eb68b8afdfa69141bcb87cc86a01c702e13568a363da82c87",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11804159",
+   "title": "Nitrogen and phosphorus variation in shallow groundwater and assimilation in plants in complex riparian buffer zones.",
+   "year": 2001,
+   "journal": "Water science and technology : a journal of the International Association on Water Pollution Research",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Biomass",
+    "Ecosystem",
+    "Environmental Monitoring",
+    "Nitrogen",
+    "Phosphorus",
+    "Trees",
+    "Waste Disposal, Fluid",
+    "Water Pollution"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1b5df9afb905a2327565914a5e5a1264464dff3cb44dbce1801eb766c664fc09",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16729755",
+   "title": "[Application of chemiluminescent methods for analysis of the antioxidant activity of herbal extracts].",
+   "year": 2006,
+   "journal": "Voprosy pitaniia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Luminescent Measurements",
+    "Plant Extracts",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "616adce1e62936cdd4456b169a890f6f7fe101557b7efd635a760fa66591d158",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27543023",
+   "title": "Bridging the gap between comprehensive extraction protocols in plant metabolomics studies and method validation.",
+   "year": 2016,
+   "journal": "Analytica chimica acta",
+   "doi": "10.1016/j.aca.2016.06.047",
+   "pmcid": null,
+   "mesh": [
+    "Capsicum",
+    "Filipendula",
+    "Metabolomics",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0c879d739b9a19e4039678fc3442e1873084b953d9e1665220d0b2408092d326",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41892152",
+   "title": "Characterization and Biological Activity of Rutin Extracted from Filipendula ulmaria (L.) Maxim.",
+   "year": 2026,
+   "journal": "Biotech (Basel (Switzerland))",
+   "doi": "10.3390/biotech15010025",
+   "pmcid": "PMC13024509",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "10b093565435b7bae39b9bd2967e63e41e9a7d637b187f72db859305e422281f",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "2131766",
+   "title": "[Tannin content and inhibiting activity of elastase in Rosaceae].",
+   "year": 1990,
+   "journal": "Annales pharmaceutiques francaises",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Pancreatic Elastase",
+    "Plants, Medicinal",
+    "Tannins"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "672e9bfd2d1e96269c8280fba00872ba9751db360364e10522b0f93e07fcd4a0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21952153",
+   "title": "Hypovolemic shock due to severe gastrointestinal bleeding in a child taking an herbal syrup.",
+   "year": 2011,
+   "journal": "Annali dell'Istituto superiore di sanita",
+   "doi": "10.4415/ANN_11_03_07",
+   "pmcid": null,
+   "mesh": [
+    "Child, Preschool",
+    "Chromatography, High Pressure Liquid",
+    "Common Cold",
+    "Critical Care",
+    "Drug Recalls",
+    "Endoscopy, Digestive System",
+    "Gastrointestinal Hemorrhage",
+    "Hernia, Hiatal",
+    "Humans",
+    "Italy",
+    "Male",
+    "Plant Preparations",
+    "Reference Standards",
+    "Salicylates",
+    "Shock"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bdaa9949b70c253517d9d2f70b9bfaeb446d31470d17427cd1c023ce27b9e491",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34500608",
+   "title": "Insight into the Way the Content of Biologically Active Compounds in Meadowsweet Inflorescences (Filipendula ulmaria (L.) Maxim.) Is Shaped by Phytosociological Habitats.",
+   "year": 2021,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26175172",
+   "pmcid": "PMC8433760",
+   "mesh": [
+    "Antioxidants",
+    "Ecosystem",
+    "Filipendula",
+    "Inflorescence",
+    "Phenols",
+    "Plant Breeding",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3910b37ca7f63e63a74ee29184a6b898fca5379312648d9116363c966322664e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26303017",
+   "title": "In vitro and in vivo assessment of the genotoxicity and antigenotoxicity of the Filipendula hexapetala and Filipendula ulmaria methanol extracts.",
+   "year": 2015,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2015.08.025",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "DNA Damage",
+    "Drosophila melanogaster",
+    "Filipendula",
+    "Methanol",
+    "Mutagenicity Tests",
+    "Plant Components, Aerial",
+    "Plant Extracts",
+    "Plant Roots"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "cb52b8f98d45447dc1b644113af84f9570c46952429456f8852dbaec28a73482",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34624904",
+   "title": "Gut Microbiota of Pigs Metabolizes Extracts of Filipendula ulmaria and Orthosiphon aristatus-Herbal Remedies Used in Urinary Tract Disorders.",
+   "year": 2022,
+   "journal": "Planta medica",
+   "doi": "10.1055/a-1647-2866",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Filipendula",
+    "Gastrointestinal Microbiome",
+    "Orthosiphon",
+    "Plant Extracts",
+    "Swine",
+    "Urinary Tract"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bbd3bf5f09ac85d120cef30cf368fbacbc0a8e7562d0e9756f8d137fe73ecadf",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28031235",
+   "title": "HTP Nutraceutical Screening for Histone Deacetylase Inhibitors and Effects of HDACis on Tumor-suppressing miRNAs by Trichostatin A and Grapeseed (Vitis vinifera) in HeLa cells.",
+   "year": 2017,
+   "journal": "Cancer genomics & proteomics",
+   "doi": "10.21873/cgp.20016",
+   "pmcid": "PMC5267498",
+   "mesh": [
+    "Cell Survival",
+    "Dose-Response Relationship, Drug",
+    "Drug Screening Assays, Antitumor",
+    "Enzyme Activation",
+    "Gene Expression Profiling",
+    "Gene Expression Regulation, Neoplastic",
+    "HeLa Cells",
+    "High-Throughput Screening Assays",
+    "Histone Deacetylase Inhibitors",
+    "Histone Deacetylases",
+    "Humans",
+    "Hydroxamic Acids",
+    "MicroRNAs",
+    "Models, Molecular",
+    "Molecular Conformation",
+    "Plant Extracts",
+    "Seeds",
+    "Vitis"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7297c63293542c47afea5c62b9d289a7d6e26d06d0c88c5773b091dd03d6dd82",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33628375",
+   "title": "The Beneficial Role of Filipendula ulmaria Extract in Prevention of Prodepressant Effect and Cognitive Impairment Induced by Nanoparticles of Calcium Phosphates in Rats.",
+   "year": 2021,
+   "journal": "Oxidative medicine and cellular longevity",
+   "doi": "10.1155/2021/6670135",
+   "pmcid": "PMC7895592",
+   "mesh": [
+    "Animals",
+    "Apoptosis",
+    "Brain-Derived Neurotrophic Factor",
+    "Calcium Phosphates",
+    "Cognitive Dysfunction",
+    "Depression",
+    "Filipendula",
+    "Gene Expression Regulation",
+    "Hindlimb Suspension",
+    "Male",
+    "Nanoparticles",
+    "Open Field Test",
+    "Oxidative Stress",
+    "Plant Extracts",
+    "Rats, Wistar",
+    "gamma-Aminobutyric Acid",
+    "Rats"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "43a0dc11df802610e7b0b461ab872d0990df30cfeaef0781ed35ebb289a4df37",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "19370892",
+   "title": "Discovering protein kinase C active plants growing in Finland utilizing automated bioassay combined to LC/MS.",
+   "year": 2009,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Automation",
+    "Biological Assay",
+    "Chromatography, Liquid",
+    "Finland",
+    "Mass Spectrometry",
+    "Plant Extracts",
+    "Plants",
+    "Protein Kinase C"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ef0a00509ecf64dce56adf27a9a6cd8a3186085141267a94982799f4e1c19ea1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24233745",
+   "title": "Alcohol dehydrogenase activity in the roots of marsh plants in naturally waterlogged soils.",
+   "year": 1986,
+   "journal": "Planta",
+   "doi": "10.1007/BF00407019",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1aa657726a21d4610555899cf5a9fe772be083684806b52c5264ed826bd9c5b3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37110746",
+   "title": "Variation in Phenolic Compounds, Antioxidant and Antibacterial Activities of Extracts from Different Plant Organs of Meadowsweet (Filipendula ulmaria (L.) Maxim.).",
+   "year": 2023,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28083512",
+   "pmcid": "PMC10140895",
+   "mesh": [
+    "Antioxidants",
+    "Plant Extracts",
+    "Quercetin",
+    "Filipendula",
+    "Proanthocyanidins",
+    "Coumaric Acids",
+    "Tannins",
+    "Flavonoids",
+    "Phenols",
+    "Salicylates",
+    "Anti-Bacterial Agents",
+    "Hydroxybenzoates"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b5b42702344bafb6f6c01cce272f9b2b69d04489fb9eee6c0cf2d2aa20db580b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42835906",
+   "title": "Safety and efficacy of a feed additive consisting of a tincture derived from the aerial parts of Filipendula ulmaria (L.) Maxim. (meadowsweet tincture) for use in all animal species (FEFANA asbl).",
+   "year": 2026,
+   "journal": "EFSA journal. European Food Safety Authority",
+   "doi": "10.2903/j.efsa.2026.10344",
+   "pmcid": "PMC13635976",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "68d19f6e2ec21c80770439d1c6732c68004cc91b3f519249f67d75c9069c70ec",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nd"
+   }
+  },
+  {
+   "pmid": "34447488",
+   "title": "The Antioxidant Supplementation with Filipendula ulmaria Extract Attenuates the Systemic Adverse Effects of Nanosized Calcium Phosphates in Rats.",
+   "year": 2021,
+   "journal": "Oxidative medicine and cellular longevity",
+   "doi": "10.1155/2021/8207283",
+   "pmcid": "PMC8384520",
+   "mesh": [
+    "Animals",
+    "Antioxidants",
+    "Calcium Phosphates",
+    "Filipendula",
+    "Male",
+    "Nanostructures",
+    "Plant Extracts",
+    "Rats",
+    "Rats, Wistar"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4ac34701219bd61c0f42af56ab7d03e90f69acaebe14309dc8cbab2c0afa543b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "19093369",
+   "title": "[Effect of Filipendula ulmaria extract on immune system of CBA/CaLac and C57Bl/6 mice].",
+   "year": 2008,
+   "journal": "Eksperimental'naia i klinicheskaia farmakologiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Antibody Formation",
+    "Dose-Response Relationship, Drug",
+    "Filipendula",
+    "Hypersensitivity, Delayed",
+    "Interleukin-2",
+    "Macrophages, Peritoneal",
+    "Male",
+    "Mice",
+    "Plant Extracts",
+    "Spleen"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "51b11a4a0976bd018f910575bb68ccda76d13d01136930634bebd9776bf4ad77",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26939657",
+   "title": "Inhibition of Morganella morganii Histidine Decarboxylase Activity and Histamine Accumulation in Mackerel Muscle Derived from Filipendula ulumaria Extracts.",
+   "year": 2016,
+   "journal": "Journal of food protection",
+   "doi": "10.4315/0362-028X.JFP-15-313",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Filipendula",
+    "Food Contamination",
+    "Food Microbiology",
+    "Foodborne Diseases",
+    "Histamine",
+    "Histidine Decarboxylase",
+    "Hydrolyzable Tannins",
+    "Morganella morganii",
+    "Perciformes",
+    "Plant Extracts",
+    "Seafood"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "65404636873ba1a23fd12624b8068b65e7418a9d169364521a714eb3a742e00d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27725238",
+   "title": "Antihyperalgesic activity of Filipendula ulmaria (L.) Maxim. and Filipendula vulgaris Moench in a rat model of inflammation.",
+   "year": 2016,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2016.10.024",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Oral",
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Disease Models, Animal",
+    "Dose-Response Relationship, Drug",
+    "Edema",
+    "Filipendula",
+    "Flower Essences",
+    "Hyperalgesia",
+    "Lethal Dose 50",
+    "Male",
+    "Medicine, Traditional",
+    "Mice",
+    "Rats, Wistar",
+    "Toxicity Tests, Acute"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6c1afa66d674749955daf45570c8901174e9ca276b2d2d5e8e76aa9dd5b50e8b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42353644",
+   "title": "Genome-Wide Identification and Expression Analysis of the Thaumatin-like Protein Genes in Filipendula ulmaria under Bipolaris sorokiniana Infection.",
+   "year": 2026,
+   "journal": "Current issues in molecular biology",
+   "doi": "10.3390/cimb48060640",
+   "pmcid": "PMC13298582",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5de0068917be666256c1fbd60362ad8b41ce0206599e978a4939814163c8420d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "41756116",
+   "title": "Miquelianin and spiraeoside from Filipendula ulmaria mitigate α-synuclein accumulation in C.elegans and reduce the expression of neuroinflammatory cytokines in human microglia.",
+   "year": 2025,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2025.1720314",
+   "pmcid": "PMC12933199",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6af8a5f392e30f498af2cc1de7310b0423fde89aa5a2ad0f500aeb8be3fc3d1a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "35195180",
+   "title": "Optimization of parameters for obtaining callus, suspension, and root cultures of meadowsweet (filipendula ulmaria) to isolate the largest number of biologically active substances with geroprotective properties.",
+   "year": 2022,
+   "journal": "Brazilian journal of biology = Revista brasleira de biologia",
+   "doi": "10.1590/1519-6984.257074",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Filipendula",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c0a21110cf1139391b1eb43e4f9a5ea4ae4c194e5bf4aa7965668718a0baadd9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2226759",
+   "title": "[The content of a heparin-like anticoagulant in the flowers of the meadowsweet (Filipendula ulmaria)].",
+   "year": 1990,
+   "journal": "Farmakologiia i toksikologiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Blood Coagulation",
+    "Fibrinolysis",
+    "Heparin",
+    "Male",
+    "Plant Proteins",
+    "Plants, Medicinal",
+    "Protamines",
+    "Protein Binding",
+    "Rats",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c45149d2ea0001f30104d792b17117273c02a3a6144f2ed581a61715e3ebe3dd",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30403696",
+   "title": "Species- and developmental stage-specific effects of allelopathy and competition of invasive Impatiens glandulifera on co-occurring plants.",
+   "year": 2018,
+   "journal": "PloS one",
+   "doi": "10.1371/journal.pone.0205843",
+   "pmcid": "PMC6221290",
+   "mesh": [
+    "Allelopathy",
+    "Biomass",
+    "Impatiens",
+    "Introduced Species",
+    "Plant Development",
+    "Plant Roots",
+    "Seedlings",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4010f0b1459def8ca370ffe6fbf916b7c0fc8558a461bea26e0b259d1ae1d18a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40869280",
+   "title": "Broad-Spectrum Antimicrobial Potential of the γ-Core Motif Peptides of Filipendula ulmaria for Practical Applications in Agriculture and Medicine.",
+   "year": 2025,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms26167959",
+   "pmcid": "PMC12386561",
+   "mesh": [
+    "Antimicrobial Peptides",
+    "Anti-Infective Agents",
+    "Microbial Sensitivity Tests",
+    "Humans",
+    "Agriculture",
+    "Amino Acid Sequence",
+    "Bacteria",
+    "Fungi"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "28e49639be0705d8b6dd5cfd6b596d96b01a5a314a446f66d5a811d6e344dd1d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "19653313",
+   "title": "Investigations into the antibacterial activities of phytotherapeutics against Helicobacter pylori and Campylobacter jejuni.",
+   "year": 2010,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.2933",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Campylobacter jejuni",
+    "Helicobacter pylori",
+    "Magnoliopsida",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Phytotherapy",
+    "Plant Oils"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e3a05b466ae847052f91232111b0ad7b7ce47e6085dcf324ae26b559e8e3cb57",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40298802",
+   "title": "Green-Synthesized Silver Nanoparticles Using Filipendula ulmaria (L.) Maxim. and Salvia verticillata L. Extracts Inhibit Migration and Modulate Redox Homeostasis in Human Breast Cancer Cells via Nrf-2 Signaling Pathway.",
+   "year": 2025,
+   "journal": "Antioxidants (Basel, Switzerland)",
+   "doi": "10.3390/antiox14040469",
+   "pmcid": "PMC12024124",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "78551dcbf2c9ec4df14ae9460553a308bae242fae68be572daa827624844ebb7",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "36677866",
+   "title": "Green Synthesis of Silver Nanoparticles Using Salvia verticillata and Filipendula ulmaria Extracts: Optimization of Synthesis, Biological Activities, and Catalytic Properties.",
+   "year": 2023,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28020808",
+   "pmcid": "PMC9861472",
+   "mesh": [
+    "Humans",
+    "Silver",
+    "Filipendula",
+    "Metal Nanoparticles",
+    "Salvia",
+    "Anti-Bacterial Agents",
+    "Plant Extracts",
+    "Spectroscopy, Fourier Transform Infrared"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5c97a83c33066be25f752bd22929177fb92f92d40c31d00210f38603ff99d591",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29482177",
+   "title": "Evaluation on the effects of 0.1% Peumus boldus leaf and Spiraea ulmaria plant extract combination on bacterial colonization in canine atopic dermatitis: A preliminary randomized, placebo controlled, double-blinded study.",
+   "year": 2018,
+   "journal": "Research in veterinary science",
+   "doi": "10.1016/j.rvsc.2018.02.006",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Dermatitis, Atopic",
+    "Dog Diseases",
+    "Dogs",
+    "Double-Blind Method",
+    "Peumus",
+    "Plant Extracts",
+    "Spiraea",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Clinical Trial, Veterinary",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c3a71cd6e4df495a6087950055857a388a1255397d0c42ab8fbc3eb0bdda7196",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42650299",
+   "title": "Green-Synthesized Silver Nanoparticles from Filipendula ulmaria and Salvia verticillata Extracts Exert Antimetastatic and Anti-Inflammatory Effects Through Redox-Mediated Nrf-2/NF-κB/MMP-2/9 Signaling in Human Colon Cancer Cells.",
+   "year": 2026,
+   "journal": "Antioxidants (Basel, Switzerland)",
+   "doi": "10.3390/antiox15081035",
+   "pmcid": "PMC13510101",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "90ba0e0a63598f0c780b00103ffc482ae0d41e4263fd2118a769161925712c95",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "28237769",
+   "title": "Corrigendum to \"In vitro and in vivo assessment of the genotoxicity and antigenotoxicity of the Filipendula hexapetala and Filipendula ulmaria methanol extracts\" [J. Ethnopharmacol. 174 (2015) 287-292].",
+   "year": 2017,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2017.02.030",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Published Erratum"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26845709",
+   "title": "A First Step in the Quest for the Active Constituents in Filipendula ulmaria (Meadowsweet): Comprehensive Phytochemical Identification by Liquid Chromatography Coupled to Quadrupole-Orbitrap Mass Spectrometry.",
+   "year": 2016,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-0042-101943",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Liquid",
+    "Filipendula",
+    "Flavonoids",
+    "Phenols",
+    "Phytochemicals",
+    "Phytosterols",
+    "Plants, Medicinal",
+    "Proanthocyanidins",
+    "Tandem Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a716ba9bd96f41cbf04be81242ca77cf6e81a4763f7c798c658111ec689aa6b2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24945135",
+   "title": "Antioxidant, antimicrobial and neutrophil-modulating activities of herb extracts.",
+   "year": 2014,
+   "journal": "Acta biochimica Polonica",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Anti-Infective Agents",
+    "Antioxidants",
+    "Gram-Negative Bacteria",
+    "Gram-Positive Bacteria",
+    "Humans",
+    "Lipid Peroxidation",
+    "Macrophages",
+    "Microbial Sensitivity Tests",
+    "Neutrophils",
+    "Opsonin Proteins",
+    "Plant Components, Aerial",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Plants, Medicinal",
+    "Polyphenols",
+    "Primary Cell Culture",
+    "Reactive Oxygen Species",
+    "Tetradecanoylphorbol Acetate"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "be2ff9f7c641696246e43250f5e14f96cc22a7d0f87de7a73e63e46e4b29b8e3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "1809785",
+   "title": "[Heparin from the meadowsweet (Filipendula ulmaria) and its properties].",
+   "year": 1991,
+   "journal": "Izvestiia Akademii nauk SSSR. Seriia biologicheskaia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Chromatography, Gel",
+    "Electrophoresis, Polyacrylamide Gel",
+    "Heparin",
+    "Molecular Weight",
+    "Partial Thromboplastin Time",
+    "Plants, Medicinal",
+    "Rats",
+    "Spectrometry, Mass, Fast Atom Bombardment",
+    "Spectrophotometry, Infrared",
+    "Thrombin Time"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d5126d20391b8739ccbacd3ca8bf8884329a1feaa6e78517df7e077e381502bb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14750429",
+   "title": "Aquatic and terrestrial plant species with potential to remove heavy metals from storm-water.",
+   "year": 2003,
+   "journal": "International journal of phytoremediation",
+   "doi": "10.1080/713779221",
+   "pmcid": null,
+   "mesh": [
+    "Ecosystem",
+    "Environmental Pollution",
+    "Humans",
+    "Metals, Heavy",
+    "Plant Roots",
+    "Plants",
+    "Sweden",
+    "Water Pollutants, Chemical",
+    "Water Supply"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1ce85fbcbd7c4b4fb84eb96c4c9bb60cd35fdbf436f74b00c6c83280d1860dc2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28190630",
+   "title": "Corrigendum to: \"In vitro and in vivo assessment of meadowsweet (Filipendula ulmaria ) as anti-inflammatory agent\", Journal of Ethnopharmacology 193 (2016) 627-636.",
+   "year": 2017,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2017.02.012",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Published Erratum"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7450008",
+   "title": "[Anti-ulcer action of a decoction of the flowers of the dropwort, Filipendula ulmaria (L.) Maxim].",
+   "year": 1980,
+   "journal": "Farmakologiia i toksikologiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Ulcer Agents",
+    "Drug Evaluation, Preclinical",
+    "Guinea Pigs",
+    "Mice",
+    "Peptic Ulcer",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Rats",
+    "Stomach"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9798e79f172d35cb809cfd86935c5acb3878094a0d4b97724268812a14a700a1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7371811",
+   "title": "[Phytochemical study of the dropworts, Filipendula ulmaria and F. hexapetala, from the flora of Lvov Province].",
+   "year": 1980,
+   "journal": "Farmatsevtychnyi zhurnal",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chemical Phenomena",
+    "Chemistry",
+    "Plants, Medicinal",
+    "Ukraine"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28035976",
+   "title": "Meadowsweet Teas as New Functional Beverages: Comparative Analysis of Nutrients, Phytochemicals and Biological Effects of Four Filipendula Species.",
+   "year": 2016,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules22010016",
+   "pmcid": "PMC6155584",
+   "mesh": [
+    "Aldehydes",
+    "Amylases",
+    "Antioxidants",
+    "Benzothiazoles",
+    "Biphenyl Compounds",
+    "Chromatography, High Pressure Liquid",
+    "Complement System Proteins",
+    "Filipendula",
+    "Flavonoids",
+    "Humans",
+    "Hydrolyzable Tannins",
+    "Immunologic Factors",
+    "Monoterpenes",
+    "Phenols",
+    "Picrates",
+    "Plant Extracts",
+    "Polysaccharides",
+    "Receptor for Advanced Glycation End Products",
+    "Salicylates",
+    "Sesquiterpenes",
+    "Species Specificity",
+    "Sulfonic Acids",
+    "Teas, Herbal",
+    "alpha-Glucosidases"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "447e8e683c528c86e5fa03a959d6c565b118791a26e0d56ee270481a9feca5ab",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "18376554",
+   "title": "Herbivore-induced \"rent rise\" in the host plant may drive a diet breadth enlargement in the tenant.",
+   "year": 2008,
+   "journal": "Ecology",
+   "doi": "10.1890/07-0252.1",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Biodiversity",
+    "Biological Evolution",
+    "Coleoptera",
+    "Ecosystem",
+    "Feeding Behavior",
+    "Filipendula",
+    "Host-Parasite Interactions",
+    "Population Dynamics",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "97e8aaf7e22853a1c695947b364b690b91f55ce6b0a20c37ab6920ce3a66d08f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "5982978",
+   "title": "[Isolation of a new phenolic glycoside from the blossoms of Filipendula ulmaria (L.) Maxim].",
+   "year": 1966,
+   "journal": "Die Pharmazie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Glycosides",
+    "Phenols",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15526604",
+   "title": "[Life threatening intestinal bleeding in a Bearded Collie associated with a food supplement for horses].",
+   "year": 2004,
+   "journal": "Schweizer Archiv fur Tierheilkunde",
+   "doi": "10.1024/0036-7281.146.10.479",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Benzyl Alcohols",
+    "Dietary Supplements",
+    "Dog Diseases",
+    "Dogs",
+    "Filipendula",
+    "Gastrointestinal Hemorrhage",
+    "Glucosides",
+    "Horses",
+    "Male",
+    "Plant Extracts",
+    "Salicaceae"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4d9e6c5ce4ba4d58318fa5c851cc7090e1090385ef3e9c537e3ce6387eeb3167",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "1298367",
+   "title": "Densitometric evaluation of spiraeoside after derivatization in flowers of Filipendula ulmaria (L.) Maxim.",
+   "year": 1992,
+   "journal": "Journal of pharmaceutical and biomedical analysis",
+   "doi": "10.1016/0731-7085(91)80125-s",
+   "pmcid": null,
+   "mesh": [
+    "Densitometry",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Quercetin",
+    "Spectrophotometry, Ultraviolet"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20437393",
+   "title": "Using Apedin Vapor(R) in the control of Varroa mites and in honeybee feeding.",
+   "year": 2004,
+   "journal": "Veterinaria italiana",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6c92f6281abf045d96818d0cb6b60e80cf14cf18ed979f0b5a155c8defaeafc5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42512024",
+   "title": "Preliminary Assessment of Anticancer Activity of Aqueous Meadowsweet (Filipendula ulmaria (L.) Maxim.) Extract in LoVo Colorectal Cancer Cells.",
+   "year": 2026,
+   "journal": "Biomedicines",
+   "doi": "10.3390/biomedicines14071551",
+   "pmcid": "PMC13404949",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "59e5cc4a90c05702dcc7fc0c2726412332af9be02217db190706436cba941839",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "17269103",
+   "title": "On the Occurrence of Kaempferol-4'-O-beta-D-glucopyranoside in Filipendula ulmaria and Allium cepa.",
+   "year": 1987,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-962817",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b673a65f9f25cabf83ffebccd725a9f12ae571d965e45d81883db0000b2ca40c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8358277",
+   "title": "[A comparative study of the action on the hemostatic system of extracts from the flowers and seeds of the meadowsweet (Filipendula ulmaria (L.) Maxim.)].",
+   "year": 1993,
+   "journal": "Izvestiia Akademii nauk. Seriia biologicheskaia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anticoagulants",
+    "Fibrinolysis",
+    "Hemostasis",
+    "Male",
+    "Plant Extracts",
+    "Rats",
+    "Seeds",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2409734de7de89a7754578930be4434980259c166b5ef7fa14f92436c1b526b2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17265241",
+   "title": "The Essential Oil of Filipendula ulmaria.",
+   "year": 1988,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-962390",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7825300",
+   "title": "[Clinico-experimental study of using plant preparations from the flowers of Filipendula ulmaria (L.) Maxim for the treatment of precancerous changes and prevention of uterine cervical cancer].",
+   "year": 1993,
+   "journal": "Voprosy onkologii",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Administration, Intravaginal",
+    "Animals",
+    "Benz(a)Anthracenes",
+    "Carcinoma, Squamous Cell",
+    "Female",
+    "Humans",
+    "Mice",
+    "Mice, Hairless",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Uterine Cervical Dysplasia",
+    "Uterine Cervical Neoplasms",
+    "Vaginal Neoplasms"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ed66d7894ca3fa45b657550ea5706b757bca0260efd2f8cc8f1683ac3beedf69",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40876308",
+   "title": "Bioindication of radioactive contamination by honey bees in the Bryansk and Rostov regions: Foraging dynamics of 137Cs and 40K in the plant-bee-bee product pathway.",
+   "year": 2025,
+   "journal": "Applied radiation and isotopes : including data, instrumentation and methods for use in agriculture, industry and medicine",
+   "doi": "10.1016/j.apradiso.2025.112105",
+   "pmcid": null,
+   "mesh": [
+    "Bees",
+    "Animals",
+    "Cesium Radioisotopes",
+    "Honey",
+    "Radiation Monitoring",
+    "Food Contamination, Radioactive",
+    "Potassium Radioisotopes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4d9ea39ffb1841df88d7b30b3df540259f2387abfa54d96a2f8e83ca0b338966",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  }
+ ]
+}

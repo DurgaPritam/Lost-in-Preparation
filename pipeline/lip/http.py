@@ -28,7 +28,23 @@ _locks: dict[str, threading.Semaphore] = {}
 SSL_CONTEXT = ssl.create_default_context()
 for _pem in sorted((ROOT / "config" / "certs").glob("*.pem")):
     SSL_CONTEXT.load_verify_locations(cafile=str(_pem))
-LIMITS = {"gbif": 6, "wfo": 4, "wikidata": 2}
+LIMITS = {"gbif": 6, "wfo": 4, "wikidata": 2, "ncbi": 1, "wfo_gql": 2}
+# minimum seconds between NETWORK requests per service (cached responses are never throttled).
+# NCBI E-utilities: at most 3 requests per second without an API key.
+MIN_INTERVAL = {"ncbi": 0.4}
+_last_call: dict[str, float] = {}
+_throttle_lock = threading.Lock()
+
+
+def _throttle(service: str) -> None:
+    gap = MIN_INTERVAL.get(service)
+    if not gap:
+        return
+    with _throttle_lock:
+        wait = _last_call.get(service, 0.0) + gap - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        _last_call[service] = time.monotonic()
 
 
 class HTTPError(RuntimeError):
@@ -40,19 +56,25 @@ def _path(service: str, key: str):
 
 
 def get_json(service: str, url: str, params: dict | None = None, data: dict | None = None,
-             headers: dict | None = None, retries: int = 4) -> dict:
+             headers: dict | None = None, retries: int = 4, json_body: dict | None = None) -> dict:
+    """GET, form POST (`data`) or JSON POST (`json_body`), cached on disk."""
     full = url + ("?" + urllib.parse.urlencode(params) if params else "")
-    key = full + ("|POST|" + json.dumps(data, sort_keys=True) if data else "")
+    key = full + ("|POST|" + json.dumps(data, sort_keys=True) if data else "") + \
+        ("|JSON|" + json.dumps(json_body, sort_keys=True) if json_body is not None else "")
     cp = _path(service, key)
     if cp.exists():
         return json.loads(cp.read_text())["response"]
     sem = _locks.setdefault(service, threading.Semaphore(LIMITS.get(service, 2)))
     body = urllib.parse.urlencode(data).encode() if data else None
     hdrs = {"User-Agent": USER_AGENT, "Accept": "application/json", **(headers or {})}
+    if json_body is not None:
+        body = json.dumps(json_body).encode()
+        hdrs["Content-Type"] = "application/json"
     delay = 2.0
     for attempt in range(retries + 1):
         with sem:
             try:
+                _throttle(service)
                 req = urllib.request.Request(full, data=body, headers=hdrs, method="POST" if body else "GET")
                 with urllib.request.urlopen(req, timeout=45, context=SSL_CONTEXT) as r:
                     resp = json.loads(r.read())
@@ -91,6 +113,7 @@ def get_text(service: str, url: str, retries: int = 3) -> tuple[str, str, str]:
     last = None
     for attempt in range(retries + 1):
         try:
+            _throttle(service)
             with urllib.request.urlopen(req, timeout=300, context=SSL_CONTEXT) as r:
                 raw = r.read()
             break

@@ -1,0 +1,4571 @@
+{
+ "species": "Symphytum officinale",
+ "wfoId": "wfo-0000432219",
+ "names": [
+  "Symphytum officinale",
+  "Consolida major",
+  "Symphytum album",
+  "Symphytum ambiguum",
+  "Symphytum besseri",
+  "Symphytum bohemicum",
+  "Symphytum commune",
+  "Symphytum consolida",
+  "Symphytum elatum",
+  "Symphytum majus",
+  "Symphytum microcalyx",
+  "Symphytum molle",
+  "Symphytum patens",
+  "Symphytum peregrinum",
+  "Symphytum rakosiense",
+  "Symphytum stenophyllum"
+ ],
+ "term": "\"Symphytum officinale\"[tiab] OR \"Consolida major\"[tiab] OR \"Symphytum album\"[tiab] OR \"Symphytum ambiguum\"[tiab] OR \"Symphytum besseri\"[tiab] OR \"Symphytum bohemicum\"[tiab] OR \"Symphytum commune\"[tiab] OR \"Symphytum consolida\"[tiab] OR \"Symphytum elatum\"[tiab] OR \"Symphytum majus\"[tiab] OR \"Symphytum microcalyx\"[tiab] OR \"Symphytum molle\"[tiab] OR \"Symphytum patens\"[tiab] OR \"Symphytum peregrinum\"[tiab] OR \"Symphytum rakosiense\"[tiab] OR \"Symphytum stenophyllum\"[tiab]",
+ "count": 168,
+ "queryTranslation": "\"Symphytum officinale\"[Title/Abstract]",
+ "retrieved": 167,
+ "records": [
+  {
+   "pmid": "36984794",
+   "title": "Artemisia abrotanum and Symphytum officinale Polyphenolic Compounds-Rich Extracts with Potential Application in Diabetes Management.",
+   "year": 2023,
+   "journal": "Metabolites",
+   "doi": "10.3390/metabo13030354",
+   "pmcid": "PMC10052636",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a413a864b0b6c8e907ebacd0b1b620649736f45cb6753cfe22ead7040153b651",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "39134793",
+   "title": "GLDA exhibits advantages in the phytoextraction of Cd and Ni in land-applied municipal sludge.",
+   "year": 2024,
+   "journal": "Environmental science and pollution research international",
+   "doi": "10.1007/s11356-024-34657-0",
+   "pmcid": null,
+   "mesh": [
+    "Cadmium",
+    "Sewage",
+    "Nickel",
+    "Biodegradation, Environmental",
+    "Soil Pollutants",
+    "Metals, Heavy",
+    "Soil"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eb63e85afb729e8e3854024dc01f3a6f65b5bb93407d3daca6c0b234878931ff",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38657451",
+   "title": "Cadmium/zinc stresses and plant cultivation influenced soil microflora: a pot experiment conducted in field.",
+   "year": 2024,
+   "journal": "Ecotoxicology and environmental safety",
+   "doi": "10.1016/j.ecoenv.2024.116384",
+   "pmcid": null,
+   "mesh": [
+    "Soil Microbiology",
+    "Cadmium",
+    "Zinc",
+    "Soil Pollutants",
+    "Rhizosphere",
+    "Biodegradation, Environmental",
+    "Fungi",
+    "Bacteria",
+    "Soil",
+    "Microbiota",
+    "Metals, Heavy",
+    "Stress, Physiological"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d85a8e76bca08843d9b31ffc39c906daad17f8f7056312e41319179126577836",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34116569",
+   "title": "Support for Regulatory Assessment of Percutaneous Absorption of Retronecine-type Pyrrolizidine Alkaloids through Human Skin.",
+   "year": 2022,
+   "journal": "Planta medica",
+   "doi": "10.1055/a-1505-8524",
+   "pmcid": null,
+   "mesh": [
+    "Comfrey",
+    "Humans",
+    "Pyrrolizidine Alkaloids",
+    "Skin",
+    "Skin Absorption"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c0b332db81a9086f20460274fac24123c2cec10663e380a9f1d7663622eba27e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36493995",
+   "title": "Influence of pyrrolizidine alkaloids depletion upon the biological activity of Symphytum officinale L. extracts.",
+   "year": 2023,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2022.116010",
+   "pmcid": null,
+   "mesh": [
+    "Comfrey",
+    "Pyrrolizidine Alkaloids",
+    "Chromatography, Liquid",
+    "Antioxidants",
+    "Monophenol Monooxygenase",
+    "Interleukin-8",
+    "Lipopolysaccharides",
+    "Tumor Necrosis Factor-alpha",
+    "Tandem Mass Spectrometry",
+    "Boraginaceae",
+    "Plant Extracts",
+    "Phytochemicals"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "da18b06e721930753960954f01ccd5b950e242dfc13c0cb4864b30506ed14770",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38592867",
+   "title": "Potential of Plant-Based Extracts to Alleviate Sorbitol-Induced Osmotic Stress in Cabbage Seedlings.",
+   "year": 2024,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants13060843",
+   "pmcid": "PMC10974712",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3f4467f92fe5ff1b35c5efb31a87675b18800f3dec0c675562875001b61b7e89",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "38506958",
+   "title": "Effect of robbing intensity on reproductive success of Symphytum officinale (Boraginaceae).",
+   "year": 2024,
+   "journal": "Journal of plant research",
+   "doi": "10.1007/s10265-024-01536-1",
+   "pmcid": null,
+   "mesh": [
+    "Pollination",
+    "Flowers",
+    "Animals",
+    "Bees",
+    "Reproduction",
+    "Plant Nectar",
+    "Boraginaceae",
+    "Pollen"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "64acd612f889ecd620f0d5aac3835ae17d7f16067dea6cd4e39fb1440392bfa4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27840092",
+   "title": "Penetration of lycopsamine from a comfrey ointment through human epidermis.",
+   "year": 2017,
+   "journal": "Regulatory toxicology and pharmacology : RTP",
+   "doi": "10.1016/j.yrtph.2016.11.015",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Cutaneous",
+    "Adult",
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Diffusion",
+    "Epidermis",
+    "Humans",
+    "Kinetics",
+    "Male",
+    "Membranes, Artificial",
+    "Models, Biological",
+    "Ointments",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plant Roots",
+    "Plants, Medicinal",
+    "Pyrrolizidine Alkaloids",
+    "Risk Assessment",
+    "Skin Absorption",
+    "Spectrometry, Mass, Electrospray Ionization",
+    "Tandem Mass Spectrometry",
+    "Toxicokinetics"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3c81b74c3ab257adc923713f88de5a6b9f263a7b7adcc5e1d13e1d849940ee30",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "36703603",
+   "title": "Traditional Plants Used in Southern Brazil as a Source to Wound Healing Therapies.",
+   "year": 2023,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.202201021",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Brazil",
+    "Plants, Medicinal",
+    "Medicine, Traditional",
+    "Ethnobotany",
+    "Phytotherapy",
+    "Wound Healing",
+    "Ethnopharmacology"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7fc391ef8962a86256d1c7b56850f86425390363f23d13d6bf4ec84f2d70c0da",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38663189",
+   "title": "Transcriptomic and physiological analyses of Symphytum officinale L. in response to multiple heavy metal stress.",
+   "year": 2024,
+   "journal": "Ecotoxicology and environmental safety",
+   "doi": "10.1016/j.ecoenv.2024.116361",
+   "pmcid": null,
+   "mesh": [
+    "Metals, Heavy",
+    "Soil Pollutants",
+    "Transcriptome",
+    "Stress, Physiological",
+    "Lead",
+    "Gene Expression Regulation, Plant",
+    "Cadmium",
+    "Gene Expression Profiling",
+    "Biodegradation, Environmental",
+    "Zinc"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e7a2ee39701207993092bada6e35ccee764894cf4eb06d32f5d99e365a9fbdf1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29908576",
+   "title": "Traditional and ethnobotanical dermatology practices in Romania and other Eastern European countries.",
+   "year": 2018,
+   "journal": "Clinics in dermatology",
+   "doi": "10.1016/j.clindermatol.2018.03.008",
+   "pmcid": null,
+   "mesh": [
+    "Databases as Topic",
+    "Ethnobotany",
+    "Humans",
+    "Medicine, Traditional",
+    "Phytotherapy",
+    "Romania",
+    "Skin Diseases"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b7696eccb4bc625707023a6d5759603659e9eeaa4f04e8c3b3f865dfa7f87f1e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40483819",
+   "title": "Transfer of pyrrolizidine and tropane alkaloids from tea and herbal tea to infusions.",
+   "year": 2025,
+   "journal": "Food chemistry",
+   "doi": "10.1016/j.foodchem.2025.145026",
+   "pmcid": null,
+   "mesh": [
+    "Pyrrolizidine Alkaloids",
+    "Food Contamination",
+    "Teas, Herbal",
+    "Tropanes",
+    "Tandem Mass Spectrometry",
+    "Tea",
+    "Chromatography, High Pressure Liquid",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "450059ee44b9c26f7ae9070bab8dd6b3f443f2a13f6e7f7b0a7301a92832189b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28490191",
+   "title": "Proliferative and antioxidant activity of Symphytum officinale root extract.",
+   "year": 2018,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2017.1326492",
+   "pmcid": null,
+   "mesh": [
+    "Allantoin",
+    "Antioxidants",
+    "Cell Proliferation",
+    "Cell Survival",
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Drug Evaluation, Preclinical",
+    "Fibroblasts",
+    "Humans",
+    "Phenols",
+    "Plant Extracts",
+    "Plant Roots",
+    "Skin",
+    "Wound Healing"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "381ac8c8c057bb5879332046c607f3034094e6035ed476e287350b84b8842a84",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37630423",
+   "title": "LC-MS/MS Evaluation of Pyrrolizidine Alkaloids Profile in Relation to Safety of Comfrey Roots and Leaves from Polish Sources.",
+   "year": 2023,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules28166171",
+   "pmcid": "PMC10459857",
+   "mesh": [
+    "Chromatography, Liquid",
+    "Comfrey",
+    "Tandem Mass Spectrometry",
+    "Poland",
+    "Plant Leaves",
+    "Boraginaceae",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fb510089a228872a02cfad78fd83319d41c5bfb90bb1fa647f0d563b62bf446a",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "34958410",
+   "title": "Honeybees with extensive foraging experience rob nectar more frequently.",
+   "year": 2021,
+   "journal": "Die Naturwissenschaften",
+   "doi": "10.1007/s00114-021-01781-7",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bees",
+    "Feeding Behavior",
+    "Flowers",
+    "Humans",
+    "Plant Nectar",
+    "Pollen",
+    "Wings, Animal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2ae7507a1056e6b04bd73e2725130d742cbd18b354d33e30cd1ef56511ba0979",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40614237",
+   "title": "Complete chloroplast genome sequence and phylogenetic analysis of Symphytum officinale.",
+   "year": 2025,
+   "journal": "Genetics and molecular biology",
+   "doi": "10.1590/1678-4685-GMB-2024-0258",
+   "pmcid": "PMC12210358",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3f6fae2387f7fd23572a026d39badab9916182f79ec800b637b6ef1272cd443d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40293848",
+   "title": "Unveiling the Potential of Cell Line Models in Homeopathic Research: A Review.",
+   "year": 2025,
+   "journal": "Alternative therapies in health and medicine",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Biomedical Research",
+    "Cell Line",
+    "Homeopathy",
+    "Materia Medica"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Systematic Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2217878c5ab6095dfa5fc0623d4747f4d27a8c0fbff63983b19d256f730b0148",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28002518",
+   "title": "Oral toxicity study of certain plant extracts containing pyrrolizidine alkaloids.",
+   "year": 2016,
+   "journal": "Romanian journal of morphology and embryology = Revue roumaine de morphologie et embryologie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Administration, Oral",
+    "Humans",
+    "Plant Extracts",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5fc4b8a5da7a6a132516264e60aabbed15e970f337f0454aff8d8385b7990e31",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29620235",
+   "title": "Toxicity of plant extracts containing pyrrolizidine alkaloids using alternative invertebrate models.",
+   "year": 2018,
+   "journal": "Molecular medicine reports",
+   "doi": "10.3892/mmr.2018.8795",
+   "pmcid": "PMC5983973",
+   "mesh": [
+    "Animals",
+    "Gas Chromatography-Mass Spectrometry",
+    "Inhibitory Concentration 50",
+    "Invertebrates",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Pyrrolizidine Alkaloids",
+    "Toxicity Tests"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "35ad57537e1c5fc3b49375b1dad1d2a5ae7295e399fa0f9dd4c2d911f9737722",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "28140740",
+   "title": "Comparison of some secondary metabolite content in the seventeen species of the Boraginaceae family.",
+   "year": 2017,
+   "journal": "Pharmaceutical biology",
+   "doi": "10.1080/13880209.2016.1265986",
+   "pmcid": "PMC6130574",
+   "mesh": [
+    "Boraginaceae",
+    "Electrophoresis, Capillary",
+    "Phytochemicals",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "afd0bf34e76c9612b616e2e0b98ff85a5b82ef7e9de9f3a08ce4288a4a2a335b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26630428",
+   "title": "Herbal Medicine for Low Back Pain: A Cochrane Review.",
+   "year": 2016,
+   "journal": "Spine",
+   "doi": "10.1097/BRS.0000000000001310",
+   "pmcid": null,
+   "mesh": [
+    "Analgesics",
+    "Evidence-Based Medicine",
+    "Humans",
+    "Low Back Pain",
+    "Pain Measurement",
+    "Plant Preparations",
+    "Randomized Controlled Trials as Topic",
+    "Research Design",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Systematic Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0d862c5d5e4ce642dfd54534c78970924c6f52da1e6e4222c0e20b477b7d13c6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41596105",
+   "title": "Comparative Chromatographic Analysis of Polyphenolic Compounds in Comfrey Leaf and Root with Determination of Their In Vitro Antioxidant and Anti-Inflammatory Activity.",
+   "year": 2025,
+   "journal": "Antioxidants (Basel, Switzerland)",
+   "doi": "10.3390/antiox15010046",
+   "pmcid": "PMC12838359",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7c9a06a94d5f1f4c6ed15e4decad3794671329ef740dba429257642908571bf5",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "41417665",
+   "title": "Evaluating Echimidine Impact on Food Safety and the Health of Living Organisms.",
+   "year": 2025,
+   "journal": "Journal of food science",
+   "doi": "10.1111/1750-3841.70777",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Food Safety",
+    "Pyrrolizidine Alkaloids",
+    "Animals",
+    "Food Contamination",
+    "Honey"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1f83df8a0f65160fda0272f68a87b033082fd7c725f6e471cd09e42cd0c77f86",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37506778",
+   "title": "Skin microbiota metabolism of natural products from comfrey root (Symphytum officinale L.).",
+   "year": 2024,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2023.116968",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Comfrey",
+    "Plant Extracts",
+    "Biological Products",
+    "Skin",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f26d3f42551607f726d801bb950f7e3b3578a1d938b99dea8b232694ce92ac53",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "39168703",
+   "title": "[Screening and Stress Responsive Characteristics of Potential Hyperaccumulator of Pb, Zn, and Cd Compound Heavy Metals].",
+   "year": 2024,
+   "journal": "Huan jing ke xue= Huanjing kexue",
+   "doi": "10.13227/j.hjkx.202308262",
+   "pmcid": null,
+   "mesh": [
+    "Cadmium",
+    "Soil Pollutants",
+    "Lead",
+    "Zinc",
+    "Metals, Heavy",
+    "Chlorophyll",
+    "Biodegradation, Environmental",
+    "Stress, Physiological",
+    "Mining",
+    "China",
+    "Bioaccumulation"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7e3d543a8d49a5cee4c913b29c013774f9aebe40dfc69231d67f3ea96384e804",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25880800",
+   "title": "Comparative Study of the Biological Activity of Allantoin and Aqueous Extract of the Comfrey Root.",
+   "year": 2015,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.5356",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Cutaneous",
+    "Allantoin",
+    "Animals",
+    "Cell Line",
+    "Cell Proliferation",
+    "Cell Survival",
+    "Comfrey",
+    "Dogs",
+    "Erythema",
+    "Gels",
+    "Humans",
+    "Madin Darby Canine Kidney Cells",
+    "Mice",
+    "Plant Extracts",
+    "Plant Roots",
+    "Skin",
+    "Skin Cream"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0699c76a7a24e628233e367a46b3b777d7b8180ed338a3a888d7c808409df441",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35028171",
+   "title": "The Effect of Comfrey on Enoxaparin-Induced Bruise in Patients with Acute Coronary Syndrome: A Randomised Clinical Trial.",
+   "year": 2021,
+   "journal": "Journal of pharmacopuncture",
+   "doi": "10.3831/KPI.2021.24.4.196",
+   "pmcid": "PMC8716702",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "42b84c4abae9c891954ab81311ceaf4b0df5542edc8c9b605792c9403e5d9339",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "37627708",
+   "title": "Metronidazole Potentiation by Panax Ginseng and Symphytum officinale: A New Strategy for P. gingivalis Infection Control.",
+   "year": 2023,
+   "journal": "Antibiotics (Basel, Switzerland)",
+   "doi": "10.3390/antibiotics12081288",
+   "pmcid": "PMC10452024",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "22d7495fd5381c681944c683c15dfc2c9f6bfbf508e1aae1040b5656434411e3",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "32739565",
+   "title": "Symphytum officinale L.: Liquid-liquid chromatography isolation of caffeic acid oligomers and evaluation of their influence on pro-inflammatory cytokine release in LPS-stimulated neutrophils.",
+   "year": 2020,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2020.113169",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Anti-Inflammatory Agents",
+    "Caffeic Acids",
+    "Cells, Cultured",
+    "Chromatography, High Pressure Liquid",
+    "Chromatography, Liquid",
+    "Comfrey",
+    "Cytokines",
+    "Humans",
+    "Lipopolysaccharides",
+    "Male",
+    "Neutrophils",
+    "Plant Extracts",
+    "Plant Roots"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "74c9197106b7004aefc97f396e35c3c0cc8686a31d9c761491909b1e2a1ee84c",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25101832",
+   "title": "Herbal and polymeric approaches for liver-targeting drug delivery: novel strategies and their significance.",
+   "year": 2016,
+   "journal": "Drug delivery",
+   "doi": "10.3109/10717544.2014.945018",
+   "pmcid": null,
+   "mesh": [
+    "Asialoglycoproteins",
+    "Disaccharides",
+    "Drug Delivery Systems",
+    "Fetuins",
+    "Hepatocytes",
+    "Humans",
+    "Ligands",
+    "Liposomes",
+    "Liver",
+    "Liver Diseases",
+    "Nanoparticles",
+    "Nanotechnology",
+    "Polymers"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "792ec4c632fbca09ac7fe5abe42435d6a363252dfbe159f0e29c445f9e29a9d7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38815125",
+   "title": "Seeing double: two different homospermidine oxidases are involved in pyrrolizidine alkaloid biosynthesis in different organs of comfrey (Symphytum officinale).",
+   "year": 2024,
+   "journal": "The Plant journal : for cell and molecular biology",
+   "doi": "10.1111/tpj.16847",
+   "pmcid": "PMC13087479",
+   "mesh": [
+    "Pyrrolizidine Alkaloids",
+    "Comfrey",
+    "Plant Proteins",
+    "Plant Roots",
+    "Plant Leaves",
+    "Amine Oxidase (Copper-Containing)",
+    "Gene Expression Regulation, Plant"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b1e265ac4fedc8b18adc6dfe5bdba6aafae7400602a318d06673df20fa81994c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "6836587",
+   "title": "An evaluation of acetone extracts from six plants in the Ames mutagenicity test.",
+   "year": 1983,
+   "journal": "Toxicology letters",
+   "doi": "10.1016/0378-4274(83)90164-9",
+   "pmcid": null,
+   "mesh": [
+    "Acetone",
+    "Animals",
+    "Biotransformation",
+    "In Vitro Techniques",
+    "Microsomes, Liver",
+    "Mutagenicity Tests",
+    "Mutagens",
+    "Plant Extracts",
+    "Rats"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "def288e477c4f4abba907b76d39ea05c61eca7271e22baa7f58e777af6b7620a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41993578",
+   "title": "Ethnopharmacological insights into Symphytum officinale L.: traditional uses, phytochemical composition, therapeutic potential, and clinical-toxicological implications.",
+   "year": 2026,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2026.1793084",
+   "pmcid": "PMC13079377",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9ba64cd6f961d8ade26a124af988d4cde58f47d9462c02edc3ca50771311c95d",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24280482",
+   "title": "A critical scoping review of external uses of comfrey (Symphytum spp.).",
+   "year": 2013,
+   "journal": "Complementary therapies in medicine",
+   "doi": "10.1016/j.ctim.2013.09.009",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Topical",
+    "Comfrey",
+    "Humans",
+    "Musculoskeletal Pain",
+    "Plant Extracts",
+    "Randomized Controlled Trials as Topic"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Scoping Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ba5b04daa15994b0a30189af628bbf98d10234de314125a344dd3955bea63fd5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35180015",
+   "title": "Remediation of atmospheric sulfur and ammonia by wetland plants: development of a study method.",
+   "year": 2022,
+   "journal": "International journal of phytoremediation",
+   "doi": "10.1080/15226514.2021.1949264",
+   "pmcid": null,
+   "mesh": [
+    "Ammonia",
+    "Biodegradation, Environmental",
+    "Plants",
+    "Sulfur",
+    "Wetlands"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6fc0b8f8b01715962936e5d5b779fd8377775f5a6bec73d965068a5bf8c70b3a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38542069",
+   "title": "Healing of Skin Wounds in Rats Using Creams Based on Symphytum Officinale Extract.",
+   "year": 2024,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms25063099",
+   "pmcid": "PMC10970371",
+   "mesh": [
+    "Rats",
+    "Animals",
+    "Comfrey",
+    "Allantoin",
+    "Plant Extracts",
+    "Rats, Wistar",
+    "Wound Healing",
+    "Antioxidants",
+    "Boraginaceae"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b013b92e0625330bf97c24c9bf51d4c48e355aed8fc882ceab0319e81d51cb52",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40701001",
+   "title": "Integrated metagenomics and metabolomic to reveal the effects of dietary comfrey polysaccharides on the oxidative stability and fatty acid composition of egg yolks in laying hens.",
+   "year": 2025,
+   "journal": "Poultry science",
+   "doi": "10.1016/j.psj.2025.105553",
+   "pmcid": "PMC12304768",
+   "mesh": [
+    "Animals",
+    "Chickens",
+    "Diet",
+    "Female",
+    "Animal Feed",
+    "Fatty Acids",
+    "Egg Yolk",
+    "Polysaccharides",
+    "Metagenomics",
+    "Oxidation-Reduction",
+    "Metabolomics",
+    "Dietary Supplements",
+    "Gastrointestinal Microbiome",
+    "Random Allocation",
+    "Antioxidants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "67944a173e7668c743d88ed76bee8561052f361b11fb6832831ae6367ea03219",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "36937831",
+   "title": "Detoxification of comfrey (Symphytum officinale L.) extract using natural deep eutectic solvent (NADES) and evaluation of its anti-inflammatory, antioxidant, and hepatoprotective properties.",
+   "year": 2023,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2023.1012716",
+   "pmcid": "PMC10020234",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "917380000c81415573cb77e165893b53570733b0bf865b2f0a52708415131987",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31677368",
+   "title": "TLC-densitometric analysis of allantoin in Symphytum officinale L. roots.",
+   "year": 2020,
+   "journal": "Acta pharmaceutica (Zagreb, Croatia)",
+   "doi": "10.2478/acph-2020-0014",
+   "pmcid": null,
+   "mesh": [
+    "Allantoin",
+    "Chromatography, High Pressure Liquid",
+    "Chromatography, Thin Layer",
+    "Comfrey",
+    "Densitometry",
+    "Limit of Detection",
+    "Plant Roots"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Validation Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1da23dd8b3b7e4f3190034d6c9f154668373fb2a88a41fa23a5a2e74c1ea7f6f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28275146",
+   "title": "Identification of a Second Site of Pyrrolizidine Alkaloid Biosynthesis in Comfrey to Boost Plant Defense in Floral Stage.",
+   "year": 2017,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.17.00265",
+   "pmcid": "PMC5411159",
+   "mesh": [
+    "Alkyl and Aryl Transferases",
+    "Comfrey",
+    "Flowers",
+    "Gene Expression Regulation, Plant",
+    "Plant Leaves",
+    "Plant Proteins",
+    "Plant Roots",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "992ad2c8ae8bfc6899cae78a080b605167c215cbc5a56b3b4d0b96211a883d1b",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31634933",
+   "title": "Efficient Extraction of Pyrrolizidine Alkaloids from Plants by Pressurised Liquid Extraction - A Preliminary Study.",
+   "year": 2020,
+   "journal": "Planta medica",
+   "doi": "10.1055/a-1023-7419",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, High Pressure Liquid",
+    "Molecular Structure",
+    "Plants",
+    "Pyrrolizidine Alkaloids",
+    "Solvents",
+    "Tandem Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "82960f20d04781c76f8fec18b028c2513286e076a0a7fac503f84946bbdbca67",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40679908",
+   "title": "Roots of Indian heliotrope (Heliotropium indicum) produce simple pyrrolizidine alkaloids using the same homospermidine oxidase involved in biosynthesis of complex pyrrolizidine alkaloids in aerial parts.",
+   "year": 2025,
+   "journal": "Plant biology (Stuttgart, Germany)",
+   "doi": "10.1111/plb.70077",
+   "pmcid": "PMC12631511",
+   "mesh": [
+    "Pyrrolizidine Alkaloids",
+    "Plant Roots",
+    "Heliotropium",
+    "Plant Components, Aerial",
+    "Amine Oxidase (Copper-Containing)",
+    "Plant Proteins",
+    "Phylogeny"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2a89c3eef76f61f540bd13c2a7fb7600b476579c69755c841d5ea5669768a6ce",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26669124",
+   "title": "Herbal Supplements and Hepatotoxicity: A Short Review.",
+   "year": 2015,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chemical and Drug Induced Liver Injury",
+    "Dietary Supplements",
+    "Humans",
+    "Plant Preparations",
+    "Plants, Toxic"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b5edac03da58855e32272bc83746a4e29e2829dbeb1dce914d2f0c5d9ea460fa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22566491",
+   "title": "Distinct cell-specific expression of homospermidine synthase involved in pyrrolizidine alkaloid biosynthesis in three species of the boraginales.",
+   "year": 2012,
+   "journal": "Plant physiology",
+   "doi": "10.1104/pp.112.195024",
+   "pmcid": "PMC3387717",
+   "mesh": [
+    "Alkyl and Aryl Transferases",
+    "Biosynthetic Pathways",
+    "Boraginaceae",
+    "Gene Expression Regulation, Enzymologic",
+    "Gene Expression Regulation, Plant",
+    "Immunohistochemistry",
+    "Organ Specificity",
+    "Plant Roots",
+    "Plant Shoots",
+    "Protein Transport",
+    "Pyrrolizidine Alkaloids",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "921c1b94aff51e7fff54c45dc1167e0e3ca4b13743b9e1c8599cded886677937",
+   "licenceStatus": {
+    "status": "pmc_unknown",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33015885",
+   "title": "Globoidnan A, rabdosiin and globoidnan B as new phenolic markers in European-sourced comfrey (Symphytum officinale L.) root samples.",
+   "year": 2021,
+   "journal": "Phytochemical analysis : PCA",
+   "doi": "10.1002/pca.2996",
+   "pmcid": null,
+   "mesh": [
+    "Caffeic Acids",
+    "Chromatography, Liquid",
+    "Comfrey",
+    "Europe",
+    "Lignans",
+    "Plant Extracts",
+    "Plant Roots",
+    "Pyrrolizidine Alkaloids",
+    "Tandem Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "94ca05f6e70e3d6d6eefc40737a6cc9fe2810f6f2c46ff89c31084a819359988",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20013038",
+   "title": "Hydrocarbon footprints as a record of bumblebee flower visitation.",
+   "year": 2009,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1007/s10886-009-9720-7",
+   "pmcid": null,
+   "mesh": [
+    "Alkenes",
+    "Animals",
+    "Bees",
+    "Comfrey",
+    "Environment",
+    "Flowers",
+    "Hydrocarbons",
+    "Pollination",
+    "Stereoisomerism",
+    "Temperature",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7f2771dd8775e48eeece8c610d3d9d3b92f32a11b16ccd57b3f82fad0958f333",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42010475",
+   "title": "The Impact of Homeopathic Medicines on Dental Stem Cells: An Experimental Study.",
+   "year": 2026,
+   "journal": "DNA and cell biology",
+   "doi": "10.1177/10445498261444142",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Stem Cells",
+    "Homeopathy",
+    "Tooth, Deciduous",
+    "Cells, Cultured",
+    "Materia Medica",
+    "Microscopy, Electron, Scanning"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "534d7cc562f370c69ee45120dee6cb401e3b645cfa4114e377830e8ffff16cdb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26482059",
+   "title": "Quantification of pyrrolizidine alkaloids in North American plants and honey by LC-MS: single laboratory validation.",
+   "year": 2015,
+   "journal": "Food additives & contaminants. Part A, Chemistry, analysis, control, exposure & risk assessment",
+   "doi": "10.1080/19440049.2015.1099743",
+   "pmcid": null,
+   "mesh": [
+    "Boraginaceae",
+    "British Columbia",
+    "Calibration",
+    "Chromatography, Liquid",
+    "Comfrey",
+    "Echium",
+    "Environmental Pollutants",
+    "Food Contamination",
+    "High Fructose Corn Syrup",
+    "Honey",
+    "Humans",
+    "Limit of Detection",
+    "Plant Extracts",
+    "Pyrrolizidine Alkaloids",
+    "Reproducibility of Results",
+    "Senecio",
+    "Tandem Mass Spectrometry",
+    "Zea mays"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Validation Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c329ca0e24f1d0e1f67ed252a9725633680a40803a8ad2048a3b829ee4777bc8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34329923",
+   "title": "LC-HRMS/MS phytochemical profiling of Symphytum officinale L. and Anchusa ochroleuca M. Bieb. (Boraginaceae): Unveiling their multi-biological potential via an integrated approach.",
+   "year": 2021,
+   "journal": "Journal of pharmaceutical and biomedical analysis",
+   "doi": "10.1016/j.jpba.2021.114283",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Boraginaceae",
+    "Chromatography, Liquid",
+    "Comfrey",
+    "Phytochemicals",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "bff4734a871ef06dcb0ee8e420a3194247e38a63eaee8f48aa8e3131f1f284c4",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21756341",
+   "title": "Organic parasite control for poultry and rabbits in British Columbia, Canada.",
+   "year": 2011,
+   "journal": "Journal of ethnobiology and ethnomedicine",
+   "doi": "10.1186/1746-4269-7-21",
+   "pmcid": "PMC3143080",
+   "mesh": [
+    "Animal Husbandry",
+    "Animals",
+    "British Columbia",
+    "Food Parasitology",
+    "Meat",
+    "Parasitic Diseases, Animal",
+    "Pest Control, Biological",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Poultry",
+    "Rabbits"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e9bedf24b39910b564ab9347f9bd197dc2de82e9768d6f619d902590a940de8c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "26057225",
+   "title": "Single cell subtractive transcriptomics for identification of cell-specifically expressed candidate genes of pyrrolizidine alkaloid biosynthesis.",
+   "year": 2015,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/j.phytochem.2015.05.003",
+   "pmcid": null,
+   "mesh": [
+    "Alkyl and Aryl Transferases",
+    "Boraginaceae",
+    "DNA, Complementary",
+    "Evolution, Molecular",
+    "Molecular Sequence Data",
+    "Plant Leaves",
+    "Plant Roots",
+    "Plant Stems",
+    "Pyrrolizidine Alkaloids",
+    "Real-Time Polymerase Chain Reaction",
+    "Sequence Homology, Nucleic Acid"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "432b55cffa5605ca6733bf3ae04113e3ff9da854b81dcc6796928faa434b2f50",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22465769",
+   "title": "Vibrational spectroscopy and electrophoresis as a \"golden means\" in monitoring of polysaccharides in medical plant and gels.",
+   "year": 2012,
+   "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+   "doi": "10.1016/j.saa.2012.03.003",
+   "pmcid": null,
+   "mesh": [
+    "Cell Wall",
+    "Cellulose",
+    "Electrophoresis",
+    "Gels",
+    "Membranes, Artificial",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Polysaccharides",
+    "Spectroscopy, Fourier Transform Infrared",
+    "Spectrum Analysis, Raman"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "594b046060483ea40802f9f2844357367e96826e62275a952a6883b8aa92b17a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34592330",
+   "title": "Streptomyces pactum and Bacillus consortium influenced the bioavailability of toxic metals, soil health, and growth attributes of Symphytum officinale in smelter/mining polluted soil.",
+   "year": 2021,
+   "journal": "Environmental pollution (Barking, Essex : 1987)",
+   "doi": "10.1016/j.envpol.2021.118237",
+   "pmcid": null,
+   "mesh": [
+    "Bacillus",
+    "Biodegradation, Environmental",
+    "Biological Availability",
+    "Cadmium",
+    "Comfrey",
+    "Metals, Heavy",
+    "Soil",
+    "Soil Pollutants",
+    "Streptomyces"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "85614d6b6f0f7b577d69d58fea2e4db64123702520b0b94bd52864b144ec4d92",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30167919",
+   "title": "Ontogeny of Defensive Chemistry in Longitarsus Flea Beetles (Coleoptera, Chrysomelidae): More Protection for the Vulnerable Stages?",
+   "year": 2019,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1007/s10886-018-1010-9",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Boraginaceae",
+    "Coleoptera",
+    "Gas Chromatography-Mass Spectrometry",
+    "Larva",
+    "Plant Roots",
+    "Pupa",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d7984b72defcfb9363a8c6868189017f49866ed2cda23087e0e513118ad6d5a1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38543528",
+   "title": "Effects of Different Heavy Metal Stressors on the Endophytic Community Composition and Diversity of Symphytum officinale.",
+   "year": 2024,
+   "journal": "Microorganisms",
+   "doi": "10.3390/microorganisms12030477",
+   "pmcid": "PMC10972526",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b03bd60311661f69ecce2762ab24b5b2306cbc52db14f4db4eac34345172f033",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "31105555",
+   "title": "A Symphytum officinale Root Extract Exerts Anti-inflammatory Properties by Affecting Two Distinct Steps of NF-κB Signaling.",
+   "year": 2019,
+   "journal": "Frontiers in pharmacology",
+   "doi": "10.3389/fphar.2019.00289",
+   "pmcid": "PMC6498879",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8a823c906f62af040511dbe4055fe9e4504732041cda11443279102a09fc41a2",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24816769",
+   "title": "Semi-automated separation of the epimeric dehydropyrrolizidine alkaloids lycopsamine and intermedine: preparation of their N-oxides and NMR comparison with diastereoisomeric rinderine and echinatine.",
+   "year": 2014,
+   "journal": "Phytochemical analysis : PCA",
+   "doi": "10.1002/pca.2511",
+   "pmcid": null,
+   "mesh": [
+    "Automation",
+    "Chemical Fractionation",
+    "Comfrey",
+    "Magnetic Resonance Spectroscopy",
+    "Molecular Structure",
+    "Plant Roots",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "07481248e687580a390f38fdab529a53f5ccf88adf8fe285d9f0d030c5e8e136",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32075048",
+   "title": "Comparative Assessment of Phytochemical Profiles of Comfrey (Symphytum officinale L.) Root Extracts Obtained by Different Extraction Techniques.",
+   "year": 2020,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules25040837",
+   "pmcid": "PMC7070662",
+   "mesh": [
+    "Antioxidants",
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Liquid-Liquid Extraction",
+    "Phenols",
+    "Phytochemicals",
+    "Plant Extracts",
+    "Plant Roots",
+    "Solvents",
+    "Spectrometry, Mass, Electrospray Ionization",
+    "Tandem Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7a38d11f9c8d5f25e7104e5e4275af99bc97b428692bd285ee4eaa2f31995d66",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "10099252",
+   "title": "Polysaccharide production by plant cells in suspension: experiments and mathematical modeling.",
+   "year": 1998,
+   "journal": "Biotechnology and bioengineering",
+   "doi": "10.1002/(sici)1097-0290(19980320)57:6<732::aid-bit10>3.0.co;2-9",
+   "pmcid": null,
+   "mesh": [
+    "Biomass",
+    "Cells, Cultured",
+    "Ecosystem",
+    "Models, Biological",
+    "Plants",
+    "Polysaccharides"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2cd13876f40c65ebac09759d51f5823cb49bbcfe7438cea7348a0719e2f56dc1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32630037",
+   "title": "LC-ESI-FT-MSn Metabolite Profiling of Symphytum officinale L. Roots Leads to Isolation of Comfreyn A, an Unusual Arylnaphthalene Lignan.",
+   "year": 2020,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms21134671",
+   "pmcid": "PMC7370062",
+   "mesh": [
+    "Anti-Inflammatory Agents",
+    "Chromatography, Liquid",
+    "Comfrey",
+    "Human Umbilical Vein Endothelial Cells",
+    "Humans",
+    "Molecular Structure",
+    "Plant Roots",
+    "Plants, Medicinal",
+    "Spectrometry, Mass, Electrospray Ionization"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "85da77120d34451d3cc56eb6eff361aedecff2dfbe990a3dc3fccacca4b83425",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "34571781",
+   "title": "Corolla Abscission Triggered by Nectar Robbers Positively Affects Reproduction by Enhancing Self-Pollination in Symphytum officinale (Boraginaceae).",
+   "year": 2021,
+   "journal": "Biology",
+   "doi": "10.3390/biology10090903",
+   "pmcid": "PMC8471318",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "418ad2446e626817fca5a88cbe93cf33ebc38137ee898d72e5868b6712544fe6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "33855513",
+   "title": "Subcritical Water for Recovery of Polyphenols from Comfrey Root and Biological Activities of Extracts.",
+   "year": 2019,
+   "journal": "Acta chimica Slovenica",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9090daef1978a04683652dd393c1022670db975bb0f5a49d27995046ecd0835b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15500257",
+   "title": "Efficacy and tolerance of a comfrey root extract (Extr. Rad. Symphyti) in the treatment of ankle distorsions: results of a multicenter, randomized, placebo-controlled, double-blind study.",
+   "year": 2004,
+   "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+   "doi": "10.1016/j.phymed.2004.02.001",
+   "pmcid": null,
+   "mesh": [
+    "Adolescent",
+    "Adult",
+    "Aged",
+    "Ankle Injuries",
+    "Comfrey",
+    "Double-Blind Method",
+    "Female",
+    "Germany",
+    "Humans",
+    "Male",
+    "Middle Aged",
+    "Pain",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plant Roots",
+    "Sprains and Strains",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Clinical Trial",
+    "Journal Article",
+    "Multicenter Study",
+    "Randomized Controlled Trial"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "347392466372df40d21eb4f23c03ed6d90e2af76fa7d9aa8a31ce726baaec7c7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29288756",
+   "title": "Is comfrey root more than toxic pyrrolizidine alkaloids? Salvianolic acids among antioxidant polyphenols in comfrey (Symphytum officinale L.) roots.",
+   "year": 2018,
+   "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+   "doi": "10.1016/j.fct.2017.12.051",
+   "pmcid": null,
+   "mesh": [
+    "Alkenes",
+    "Antioxidants",
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Plant Roots",
+    "Polyphenols",
+    "Pyrrolizidine Alkaloids",
+    "Tandem Mass Spectrometry"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "94c7d71c5cf6f11d563dc760c2461280747da191fc001e208147677726d3e149",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15708669",
+   "title": "Assays of physical stability and antioxidant activity of a topical formulation added with different plant extracts.",
+   "year": 2005,
+   "journal": "Journal of pharmaceutical and biomedical analysis",
+   "doi": "10.1016/j.jpba.2004.10.030",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Topical",
+    "Antioxidants",
+    "Drug Stability",
+    "Free Radical Scavengers",
+    "Ginkgo biloba",
+    "Glycyrrhiza",
+    "Plant Extracts",
+    "Vitamin E"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "40de4c539c2484476e4a7ec0321d2abe97ad7f9591ae883ce5da3ab9ccc29da5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20978796",
+   "title": "Reconstructing the pollinator community and predicting seed set from hydrocarbon footprints on flowers.",
+   "year": 2011,
+   "journal": "Oecologia",
+   "doi": "10.1007/s00442-010-1816-9",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bees",
+    "Ecosystem",
+    "Flowers",
+    "Forecasting",
+    "Gas Chromatography-Mass Spectrometry",
+    "Hydrocarbons",
+    "Pollination",
+    "Seeds"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "93847d695dd1b2bab079e68efda9df6d062d4f10f3566eb7bfb737a393cc8da1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7314446",
+   "title": "[Uterotonic action of extracts from a group of medicinal plants].",
+   "year": 1981,
+   "journal": "Veterinarno-meditsinski nauki",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Infective Agents",
+    "Anti-Inflammatory Agents",
+    "Female",
+    "Guinea Pigs",
+    "In Vitro Techniques",
+    "Muscle Tonus",
+    "Plant Extracts",
+    "Rabbits",
+    "Uterus"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "76b147213891c9e9e94b14a070ad78a4786ef6389c0fe8882829c468cfeac333",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19477483",
+   "title": "Lead chelation to immobilised Symphytum officinale L. (comfrey) root tannins.",
+   "year": 2009,
+   "journal": "Chemosphere",
+   "doi": "10.1016/j.chemosphere.2009.04.059",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Biomass",
+    "Chelating Agents",
+    "Comfrey",
+    "Environmental Pollutants",
+    "Flavonoids",
+    "Lead",
+    "Phenols",
+    "Plant Roots",
+    "Polyphenols",
+    "Povidone",
+    "Tannins"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0f2558d35eda388268951412de0fa2b90785706da805f794da5562dbdc989dce",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19836573",
+   "title": "Determination of pyrrolizidine alkaloids in comfrey by liquid chromatography-electrospray ionization mass spectrometry.",
+   "year": 2009,
+   "journal": "Talanta",
+   "doi": "10.1016/j.talanta.2009.08.020",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Liquid",
+    "Comfrey",
+    "Hot Temperature",
+    "Methanol",
+    "Molecular Structure",
+    "Pyrrolizidine Alkaloids",
+    "Reproducibility of Results",
+    "Sonication",
+    "Spectrometry, Mass, Electrospray Ionization"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4d99d946b6dea0f12d6298b6458f9bfea54f0889e1b77cb013eaef6d1f44b716",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24247963",
+   "title": "Selective uptake of pyrrolizidine N-oxides by cell suspension cultures from pyrrolizidine alkaloid producing plants.",
+   "year": 1986,
+   "journal": "Plant cell reports",
+   "doi": "10.1007/BF00269714",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "852e3937de2d2e26010e69178f53f37145640a95242a57c65b8a8114475912fc",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40989236",
+   "title": "A comprehensive dataset on pollinator diversity, visitation rates, individual-based traits, and pollination success across four plant species in an urban garden experiment in Zurich, Switzerland.",
+   "year": 2025,
+   "journal": "Data in brief",
+   "doi": "10.1016/j.dib.2025.112013",
+   "pmcid": "PMC12452694",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7af8226f982060d01890cfe933ea875343ba62b22fd4a61fd31fa81ac08564f9",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "18047722",
+   "title": "Comparison of gene expression profiles altered by comfrey and riddelliine in rat liver.",
+   "year": 2007,
+   "journal": "BMC bioinformatics",
+   "doi": "10.1186/1471-2105-8-S7-S22",
+   "pmcid": "PMC2099491",
+   "mesh": [
+    "Animals",
+    "Carcinogenicity Tests",
+    "Carcinogens",
+    "Comfrey",
+    "Gene Expression Profiling",
+    "Gene Expression Regulation",
+    "Liver",
+    "Proteome",
+    "Pyrrolizidine Alkaloids",
+    "Rats",
+    "Signal Transduction"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c71f6d1cc85d0085f7527424111ed008c94ea7183dd69fd193eb8725d6621993",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29990729",
+   "title": "Screening of native plants from wasteland surrounding a Zn smelter in Feng County China, for phytoremediation.",
+   "year": 2018,
+   "journal": "Ecotoxicology and environmental safety",
+   "doi": "10.1016/j.ecoenv.2018.06.095",
+   "pmcid": null,
+   "mesh": [
+    "Asteraceae",
+    "Biodegradation, Environmental",
+    "China",
+    "Environmental Monitoring",
+    "Metals, Heavy",
+    "Plants",
+    "Soil",
+    "Soil Pollutants",
+    "Zinc"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d525a6587dca426b2bdd31b3af37ded9bd08f02e0b1ba75da2a8b896ffa7801f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22759727",
+   "title": "Traditional use of herbal remedies in livestock by farmers in 3 Swiss cantons (Aargau, Zurich, Schaffhausen).",
+   "year": 2012,
+   "journal": "Forschende Komplementarmedizin (2006)",
+   "doi": "10.1159/000339336",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Aged",
+    "Aged, 80 and over",
+    "Animal Diseases",
+    "Animals",
+    "Cattle",
+    "Cattle Diseases",
+    "Female",
+    "Health Knowledge, Attitudes, Practice",
+    "Herbal Medicine",
+    "Humans",
+    "Livestock",
+    "Male",
+    "Medicine, Traditional",
+    "Middle Aged",
+    "Plants, Medicinal",
+    "Surveys and Questionnaires",
+    "Switzerland",
+    "Veterinary Medicine"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3acede786eebf09930c906bade74504793f890acd87cf7e8bb6f2e096b8f2f9a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40753589",
+   "title": "Phenolic composition, cholinesterase inhibition, and in silico study of traditional medicinal plants from Bosnia And Herzegovina.",
+   "year": 2026,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2025.2542309",
+   "pmcid": null,
+   "mesh": [
+    "Cholinesterase Inhibitors",
+    "Plants, Medicinal",
+    "Phenols",
+    "Plant Extracts",
+    "Bosnia and Herzegovina",
+    "Depsides",
+    "Butyrylcholinesterase",
+    "Rutin",
+    "Chromatography, High Pressure Liquid",
+    "Acetylcholinesterase",
+    "Rosmarinic Acid",
+    "Antioxidants",
+    "Molecular Docking Simulation",
+    "Quercetin",
+    "Catechin",
+    "Cinnamates"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "81a365b49c91a375c53911c61453a4a16553b17c1693f581b9af8d399e2db459",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20765942",
+   "title": "THE NEW CELL PROLIFERANT: A NOTE ON THE SYMPHYTUM OFFICINALE OR COMMON COMFREY.",
+   "year": 1912,
+   "journal": "British medical journal",
+   "doi": "10.1136/bmj.1.2662.12",
+   "pmcid": "PMC2344233",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "38252561",
+   "title": "Phytochemical profiling and bioactivity assessment of underutilized Symphytum species in comparison with Symphytum officinale.",
+   "year": 2024,
+   "journal": "Journal of the science of food and agriculture",
+   "doi": "10.1002/jsfa.13279",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Comfrey",
+    "Butyrylcholinesterase",
+    "Acetylcholinesterase",
+    "Plant Extracts",
+    "Phytochemicals",
+    "Sulfonic Acids",
+    "Benzothiazoles"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "a1b36ae96c2b9c329fcbb9dbe9f9d010adff601a36fd5258bc8a2b9ee4c7f9f0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15493660",
+   "title": "A rapid cleanup method for the isolation and concentration of pyrrolizidine alkaloids in comfrey root.",
+   "year": 2004,
+   "journal": "Journal of AOAC International",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Liquid",
+    "Comfrey",
+    "Mass Spectrometry",
+    "Plant Roots",
+    "Pyrrolizidine Alkaloids",
+    "Spectrophotometry, Ultraviolet"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9050f351525e33b65ee386925dcd33c1b8e79a7e3331afae951b223795c54893",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22809174",
+   "title": "A homeopathic remedy from arnica, marigold, St. John's wort and comfrey accelerates in vitro wound scratch closure of NIH 3T3 fibroblasts.",
+   "year": 2012,
+   "journal": "BMC complementary and alternative medicine",
+   "doi": "10.1186/1472-6882-12-100",
+   "pmcid": "PMC3565897",
+   "mesh": [
+    "Animals",
+    "Arnica",
+    "Calendula",
+    "Cell Movement",
+    "Cell Proliferation",
+    "Comfrey",
+    "Fibroblasts",
+    "Hypericum",
+    "Materia Medica",
+    "Mice",
+    "NIH 3T3 Cells",
+    "Plant Extracts",
+    "Wound Healing"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ccc2ee73481004413996739c41bc55f43e253c43da4c20b9d60b64e2f24a88f8",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "29428386",
+   "title": "Extraction condition optimization and effects of drying methods on physicochemical properties and antioxidant activities of polysaccharides from comfrey (Symphytum officinale L.) root.",
+   "year": 2018,
+   "journal": "International journal of biological macromolecules",
+   "doi": "10.1016/j.ijbiomac.2018.01.198",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Benzothiazoles",
+    "Biphenyl Compounds",
+    "Chemical Phenomena",
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Congo Red",
+    "Desiccation",
+    "Free Radical Scavengers",
+    "Humidity",
+    "Hydrogen-Ion Concentration",
+    "Molecular Weight",
+    "Monosaccharides",
+    "Oxidation-Reduction",
+    "Picrates",
+    "Plant Roots",
+    "Polysaccharides",
+    "Regression Analysis",
+    "Solubility",
+    "Sulfonic Acids",
+    "Temperature",
+    "Time Factors",
+    "Viscosity"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "aaa93548e02ba631edd64e559ca6190badc094f0a199e8e1240ed6513fd82a54",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17324258",
+   "title": "Ethnoveterinary medicines used for ruminants in British Columbia, Canada.",
+   "year": 2007,
+   "journal": "Journal of ethnobiology and ethnomedicine",
+   "doi": "10.1186/1746-4269-3-11",
+   "pmcid": "PMC1831764",
+   "mesh": [
+    "Animal Diseases",
+    "Animal Feed",
+    "Animal Husbandry",
+    "Animals",
+    "Animals, Domestic",
+    "British Columbia",
+    "Dairying",
+    "Ethnobotany",
+    "Female",
+    "Humans",
+    "Medicine, Traditional",
+    "Phytotherapy",
+    "Plant Preparations",
+    "Plant Structures",
+    "Plants, Medicinal",
+    "Plants, Toxic",
+    "Pregnancy",
+    "Pregnancy Complications",
+    "Ruminants"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "305468eac4bac173bafe321f02f9e85036544aad9b51386a6b27cb7495d464a1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20171590",
+   "title": "An outbreak of foxglove leaf poisoning.",
+   "year": 2010,
+   "journal": "Journal of the Chinese Medical Association : JCMA",
+   "doi": "10.1016/S1726-4901(10)70009-5",
+   "pmcid": null,
+   "mesh": [
+    "Antibodies",
+    "Digitalis",
+    "Digoxin",
+    "Disease Outbreaks",
+    "Female",
+    "Humans",
+    "Middle Aged",
+    "Plant Poisoning",
+    "Potassium"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "832bb786c8f1f8c06f7297049d74eb86f8480ff5eaa5d33cc500f00122c746f1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18618436",
+   "title": "Safety assessment of food and herbal products containing hepatotoxic pyrrolizidine alkaloids: interlaboratory consistency and the importance of N-oxide determination.",
+   "year": 2008,
+   "journal": "Phytochemical analysis : PCA",
+   "doi": "10.1002/pca.1079",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Cyclic N-Oxides",
+    "Food Analysis",
+    "Humans",
+    "Plants, Medicinal",
+    "Pyrrolizidine Alkaloids",
+    "Senecio",
+    "Solid Phase Extraction",
+    "Spectrometry, Mass, Electrospray Ionization"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "abed9304f41e22005254dbeff2638c5c571b8df3eb42c5d2e28c978140647d6b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42462396",
+   "title": "Symphytum officinale enhances fracture healing in Wistar albino rats by promoting osteogenesis in fracture callus.",
+   "year": 2026,
+   "journal": "Journal of Ayurveda and integrative medicine",
+   "doi": "10.1016/j.jaim.2026.101344",
+   "pmcid": "PMC13400945",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ebf655693fe274d095fc3194bf73ecea9c9afde69d15b6cfb4ab8ea0831819d6",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc-nd"
+   }
+  },
+  {
+   "pmid": "21370286",
+   "title": "MicroRNAs and their predicted target messenger RNAs are deregulated by exposure to a carcinogenic dose of comfrey in rat liver.",
+   "year": 2011,
+   "journal": "Environmental and molecular mutagenesis",
+   "doi": "10.1002/em.20645",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carcinogens",
+    "Comfrey",
+    "Gene Expression Profiling",
+    "Liver",
+    "MicroRNAs",
+    "Polymerase Chain Reaction",
+    "RNA, Messenger",
+    "Rats"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b70ac0b5c3110578aaabc0a15a5bfd469cb59522d629bd27d4ae1918b19ba1e0",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34271464",
+   "title": "Bacillus subtilis and saponin shifted the availability of heavy metals, health indicators of smelter contaminated soil, and the physiological indicators of Symphytum officinale.",
+   "year": 2021,
+   "journal": "Chemosphere",
+   "doi": "10.1016/j.chemosphere.2021.131454",
+   "pmcid": null,
+   "mesh": [
+    "Bacillus subtilis",
+    "Biodegradation, Environmental",
+    "Cadmium",
+    "Comfrey",
+    "Metals, Heavy",
+    "Saponins",
+    "Soil",
+    "Soil Pollutants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "27b9e9b364e4b89fc78d9f98ff2db6f45e563d00395c92505118c8412bd5f38f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23772427",
+   "title": "Botanical briefs: comfrey (Symphytum officinale).",
+   "year": 2013,
+   "journal": "Cutis",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Comfrey",
+    "Humans",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Skin Diseases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25536022",
+   "title": "Herbal medicine for low-back pain.",
+   "year": 2014,
+   "journal": "The Cochrane database of systematic reviews",
+   "doi": "10.1002/14651858.CD004504.pub4",
+   "pmcid": "PMC7197042",
+   "mesh": [
+    "Acute Pain",
+    "Adult",
+    "Benzyl Alcohols",
+    "Capsicum",
+    "Chronic Pain",
+    "Cyclooxygenase 2 Inhibitors",
+    "Glucosides",
+    "Harpagophytum",
+    "Humans",
+    "Lactones",
+    "Low Back Pain",
+    "Phytotherapy",
+    "Randomized Controlled Trials as Topic",
+    "Salix",
+    "Sulfones"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Meta-Analysis",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "63b51056578f245282dbb8a46a08729fea31cdca30e197b84c27f9dd8bad8718",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "42402791",
+   "title": "First report of a Citrobacter sp. for fungal plant disease control: phenethyl alcohol-producing NJC30 suppresses target spot on soybean.",
+   "year": 2026,
+   "journal": "Pest management science",
+   "doi": "10.1002/ps.71058",
+   "pmcid": "PMC13569375",
+   "mesh": [
+    "Ascomycota",
+    "Glycine max",
+    "Plant Diseases",
+    "Citrobacter",
+    "Phenylethyl Alcohol",
+    "Pest Control, Biological",
+    "Endophytes",
+    "Biological Control Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "97ab2ee6830bac1c380e0f3620c0f248dc48348fb7b3882f6d374190277624cc",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "33801907",
+   "title": "CRISPR/Cas9-Mediated Genome Editing in Comfrey (Symphytum officinale) Hairy Roots Results in the Complete Eradication of Pyrrolizidine Alkaloids.",
+   "year": 2021,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules26061498",
+   "pmcid": "PMC7998174",
+   "mesh": [
+    "Alkyl and Aryl Transferases",
+    "Boraginaceae",
+    "CRISPR-Cas Systems",
+    "Comfrey",
+    "Gene Editing",
+    "Gene Expression Regulation, Plant",
+    "Plant Roots",
+    "Plants, Medicinal",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "dda1330b093ef712ed28b6a96d52f96df41309c377e8f5c40cec5a936658bb6e",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "42794490",
+   "title": "Anti-Inflammatory and Antimicrobial Activities of Extracts Developed from Symphytum officinale Leaves, Flowers, and Roots: Experimental Evaluation and Molecular Docking Study.",
+   "year": 2026,
+   "journal": "International journal of molecular sciences",
+   "doi": "10.3390/ijms27188060",
+   "pmcid": "PMC13606896",
+   "mesh": [
+    "Molecular Docking Simulation",
+    "Animals",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Anti-Inflammatory Agents",
+    "Rats",
+    "Flowers",
+    "Plant Roots",
+    "Anti-Infective Agents",
+    "Edema",
+    "Cyclooxygenase 2",
+    "Tumor Necrosis Factor-alpha",
+    "Male"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "215600c25229434c2986d4b66816802c48b51bcf2f72c88dcbbe2bb6b9c5f71c",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "21069386",
+   "title": "Reconstructing the pollinator community and predicting seed set from hydrocarbon footprints on flowers.",
+   "year": 2011,
+   "journal": "Oecologia",
+   "doi": "10.1007/s00442-010-1824-9",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bees",
+    "Biodiversity",
+    "Comfrey",
+    "Female",
+    "Flowers",
+    "Germany",
+    "Hydrocarbons",
+    "Male",
+    "Pollination",
+    "Seeds",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2fb40e13150a63ce7335c2b3f3a85d0dcfd4e6e18a984e6aa2dea2f8106ec11f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17480214",
+   "title": "The importance of a taste. A comparative study on wild food plant consumption in twenty-one local communities in Italy.",
+   "year": 2007,
+   "journal": "Journal of ethnobiology and ethnomedicine",
+   "doi": "10.1186/1746-4269-3-22",
+   "pmcid": "PMC1877798",
+   "mesh": [
+    "Acculturation",
+    "Cross-Cultural Comparison",
+    "Ethnobotany",
+    "Food Preferences",
+    "Italy",
+    "Plants, Edible",
+    "Social Change",
+    "Taste",
+    "Vegetables"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Multicenter Study",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9791a65d0de307fdbb6d5da01e69a18eb674435776334f62e96f34f2b282edae",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "34579358",
+   "title": "Influence of the Post-Harvest Storage Time on the Multi-Biological Potential, Phenolic and Pyrrolizidine Alkaloid Content of Comfrey (Symphytum officinale L.) Roots Collected from Different European Regions.",
+   "year": 2021,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants10091825",
+   "pmcid": "PMC8471851",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "eb865750488ff869f2a432ba833b8af8c164ca6329179655592382fc329f54ee",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "20970094",
+   "title": "Homeopathic Symphytum officinale increases removal torque and radiographic bone density around titanium implants in rats.",
+   "year": 2010,
+   "journal": "Homeopathy : the journal of the Faculty of Homeopathy",
+   "doi": "10.1016/j.homp.2010.08.002",
+   "pmcid": null,
+   "mesh": [
+    "Analysis of Variance",
+    "Animals",
+    "Bone Density",
+    "Comfrey",
+    "Implants, Experimental",
+    "Male",
+    "Osseointegration",
+    "Plant Exudates",
+    "Radiography",
+    "Random Allocation",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Tibia",
+    "Titanium",
+    "Torque",
+    "Wound Healing"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "77d3829df33556a64d32d97eb0aae19e9684d46dd35e93f8d73511c994597e7f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22570943",
+   "title": "In vivo wound healing effects of Symphytum officinale L. leaves extract in different topical formulations.",
+   "year": 2012,
+   "journal": "Die Pharmazie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Administration, Topical",
+    "Allantoin",
+    "Animals",
+    "Chemistry, Pharmaceutical",
+    "Comfrey",
+    "Emulsions",
+    "Female",
+    "Inflammation",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Rats",
+    "Rats, Wistar",
+    "Skin",
+    "Wound Healing",
+    "Wounds and Injuries"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ccf8e629686794b5c0c5af354b9543d44baee4896b6d1061766d17861278692a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8993111",
+   "title": "The influence of some vegetable extracts on the in vitro adherence of mouse and human lymphocytes to nylon fibers.",
+   "year": 1995,
+   "journal": "Roumanian archives of microbiology and immunology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Agglutination",
+    "Animals",
+    "Cell Adhesion",
+    "Chemical Precipitation",
+    "Erythrocytes",
+    "Galactose",
+    "Glucose",
+    "Humans",
+    "Immunoglobulin G",
+    "Lymphocytes",
+    "Mannose",
+    "Mice",
+    "Nylons",
+    "Plant Extracts",
+    "Sheep"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6a9b0a6e24a8645424168d65bca6ccd834e43acd475617bdf047941ba95a709b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32941922",
+   "title": "Safety of medicinal comfrey cream preparations (Symphytum officinale s.l.): The pyrrolizidine alkaloid lycopsamine is poorly absorbed through human skin.",
+   "year": 2020,
+   "journal": "Regulatory toxicology and pharmacology : RTP",
+   "doi": "10.1016/j.yrtph.2020.104784",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Cutaneous",
+    "Adult",
+    "Aged",
+    "Biological Availability",
+    "Comfrey",
+    "Female",
+    "Humans",
+    "Middle Aged",
+    "Plant Extracts",
+    "Pyrrolizidine Alkaloids",
+    "Risk Assessment",
+    "Skin",
+    "Skin Absorption",
+    "Skin Cream"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ea07da4dd4e3ccb92baaa91ad3d1a06b35e4775ebc89be441e716e3c42d6c477",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22164787",
+   "title": "Histological study of some Echium vulgare, Pulmonaria officinalis and Symphytum officinale populations.",
+   "year": 2011,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Comfrey",
+    "Echium",
+    "Plant Leaves",
+    "Polycyclic Aromatic Hydrocarbons",
+    "Pulmonaria"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e157804430c7c322932281dff829aab2baa8478c3be66528c078a2ddacab4aa3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40733325",
+   "title": "Metabolomic and Transcriptomic Analyses Reveal Changes in Active Components During the Growth and Development of Comfrey (Symphytum officinale L.).",
+   "year": 2025,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants14142088",
+   "pmcid": "PMC12299076",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f7cafb0d1fa7c444e92b455b18095b153ba98cd6a5bdbb1366f4bfc99cb5db90",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "7128756",
+   "title": "Pyrrolizidine alkaloids from Symphytum officinale L. and their percutaneous absorption in rats.",
+   "year": 1982,
+   "journal": "Experientia",
+   "doi": "10.1007/BF01955382",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Gas Chromatography-Mass Spectrometry",
+    "Intestinal Absorption",
+    "Male",
+    "Plants",
+    "Pyrrolizidine Alkaloids",
+    "Rats",
+    "Skin Absorption"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fc02ce7775139cdbaea38233058fdfe55b940adc8d9c2f52cd8a3f3437e832f3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22536684",
+   "title": "[Pharmaceutical sheet. Symphytum officinale L., dermal use (Flexagile cream)].",
+   "year": 2012,
+   "journal": "Journal de pharmacie de Belgique",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Administration, Topical",
+    "Comfrey",
+    "Drug Interactions",
+    "Humans",
+    "Musculoskeletal Pain",
+    "Ointments",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24184990",
+   "title": "Sodium-hydrogen exchanger inhibitory potential of Malus domestica, Musa × paradisiaca, Daucus carota, and Symphytum officinale.",
+   "year": 2014,
+   "journal": "Journal of basic and clinical physiology and pharmacology",
+   "doi": "10.1515/jbcpp-2013-0088",
+   "pmcid": null,
+   "mesh": [
+    "Amiloride",
+    "Blood Platelets",
+    "Comfrey",
+    "Daucus carota",
+    "Humans",
+    "In Vitro Techniques",
+    "Inhibitory Concentration 50",
+    "Malus",
+    "Musa",
+    "Plant Extracts",
+    "Sodium-Hydrogen Exchangers"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "70698260ec7f5899443f2e981c1c0b615634381081dd788e8a7c4a9e66e89775",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13733824",
+   "title": "The anatomy of the leaf of Symphytum officinale L.",
+   "year": 1961,
+   "journal": "The Journal of pharmacy and pharmacology",
+   "doi": "10.1111/j.2042-7158.1961.tb11806.x",
+   "pmcid": null,
+   "mesh": [
+    "Comfrey",
+    "Plant Leaves",
+    "Plants",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "6619497",
+   "title": "Mutagenic effects of aqueous extracts of Symphytum officinale L. and of its alkaloidal fractions.",
+   "year": 1983,
+   "journal": "Journal of applied toxicology : JAT",
+   "doi": "10.1002/jat.2550030304",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Chromosome Aberrations",
+    "Fabaceae",
+    "Mutagens",
+    "Plant Extracts",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "60a856a0281cd644a27ec3f900c099856a1552629c315da275659d8bf3051e19",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31450245",
+   "title": "Reduction of Pyrrolizidine Alkaloid Levels in Comfrey (Symphytum officinale) Hairy Roots by RNAi Silencing of Homospermidine Synthase.",
+   "year": 2019,
+   "journal": "Planta medica",
+   "doi": "10.1055/a-0998-5125",
+   "pmcid": null,
+   "mesh": [
+    "Alkyl and Aryl Transferases",
+    "Comfrey",
+    "Gene Expression Regulation, Plant",
+    "Mutation",
+    "Plant Roots",
+    "Plants, Medicinal",
+    "Pyrrolizidine Alkaloids",
+    "RNA Interference"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b4cf72e36cbb7b31641d8368b7cb47a4689c24e1ebff00cdf833b0082a7920b7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28312186",
+   "title": "Effects of flowering plant's patch size on species composition of pollinator communities, foraging strategies, and resource partitioning in bumblebees (Hymenoptera: Apidae).",
+   "year": 1989,
+   "journal": "Oecologia",
+   "doi": "10.1007/BF00378747",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9422ad4034c82b781742966a1f0953f0f95221e02b5ef3f6c0292346fbb690b9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23224633",
+   "title": "Comfrey root: from tradition to modern clinical trials.",
+   "year": 2013,
+   "journal": "Wiener medizinische Wochenschrift (1946)",
+   "doi": "10.1007/s10354-012-0162-4",
+   "pmcid": "PMC3580139",
+   "mesh": [
+    "Adult",
+    "Anti-Inflammatory Agents",
+    "Back Pain",
+    "Child",
+    "Child, Preschool",
+    "Comfrey",
+    "Diclofenac",
+    "Drug Combinations",
+    "Humans",
+    "Medicine, Traditional",
+    "Nicotinic Acids",
+    "Osteoarthritis",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plant Roots",
+    "Product Surveillance, Postmarketing",
+    "Randomized Controlled Trials as Topic",
+    "Rheumatic Diseases",
+    "Skin Cream",
+    "Wounds, Nonpenetrating"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "51b502d0815b08681b46b0d47974d388bc8c68970383318e13535b38ae9ae5c0",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "22332324",
+   "title": "[FT-IR spectroscopic analysis in monitoring of hydroxyl stretching vibrations in plant hydrogels].",
+   "year": 2011,
+   "journal": "Polimery w medycynie",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Hydrogels",
+    "Hydroxyl Radical",
+    "Molecular Conformation",
+    "Plants",
+    "Spectrum Analysis",
+    "Vibration"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "27993f2fa32ce8b154bc64e05bfb4428ffafe486a0aa0eaa8dae98a29c4547b5",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7546550",
+   "title": "A bidesmosidic hederagenin hexasaccharide from the roots of Symphytum officinale.",
+   "year": 1995,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/0031-9422(95)00246-4",
+   "pmcid": null,
+   "mesh": [
+    "Carbohydrate Conformation",
+    "Carbohydrate Sequence",
+    "Magnetic Resonance Spectroscopy",
+    "Mass Spectrometry",
+    "Molecular Sequence Data",
+    "Oleanolic Acid",
+    "Oligosaccharides",
+    "Plant Roots",
+    "Plants, Medicinal",
+    "Saponins",
+    "Spectrometry, Mass, Fast Atom Bombardment",
+    "Triterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f58d6b6ad396b2f95fd12fe187cccb2af4802232533700ed54c53805a7be2037",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8482944",
+   "title": "A new triterpene glycoside from the roots of Symphytum officinale.",
+   "year": 1993,
+   "journal": "Journal of natural products",
+   "doi": "10.1021/np50093a003",
+   "pmcid": null,
+   "mesh": [
+    "Carbohydrate Sequence",
+    "Hydrolysis",
+    "Magnetic Resonance Spectroscopy",
+    "Molecular Sequence Data",
+    "Monosaccharides",
+    "Oleanolic Acid",
+    "Plants, Medicinal",
+    "Saponins",
+    "Spectrometry, Mass, Fast Atom Bombardment"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "50aac9201c5b7dee98ce061e1324735ac0af931e10581f2ee0cd482b1639db72",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28894626",
+   "title": "Ultraviolet light assisted extraction of flavonoids and allantoin from aqueous and alcoholic extracts of Symphytum officinale.",
+   "year": 2017,
+   "journal": "Journal of intercultural ethnopharmacology",
+   "doi": "10.5455/jice.20170630092831",
+   "pmcid": "PMC5580953",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "311d6c917efc1abac89bbcf8acc1178b7aa3d657758284fefb5e4daa9a7f8141",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "7763474",
+   "title": "Symphytoxide A, a triterpenoid saponin from the roots of Symphytum officinale.",
+   "year": 1993,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/0031-9422(93)85244-l",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antihypertensive Agents",
+    "Blood Pressure",
+    "Carbohydrate Sequence",
+    "Female",
+    "Magnetic Resonance Spectroscopy",
+    "Male",
+    "Molecular Sequence Data",
+    "Oleanolic Acid",
+    "Plants, Medicinal",
+    "Rats",
+    "Rats, Wistar",
+    "Saponins"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "509ff860249b275bb44d0c60cd4f9acb67644a5b2f9156b909aec03f05ee14b7",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "29953177",
+   "title": "Herbal Induced Hepatoprotection and Hepatotoxicity: A Critical Review.",
+   "year": 2016,
+   "journal": "Indian journal of physiology and pharmacology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Chemical and Drug Induced Liver Injury",
+    "Humans",
+    "Liver Diseases",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Protective Agents"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ac1792328fab9309b8d1766b78935621ff235ec44cd751f1bf96dd1a7819108f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "18955295",
+   "title": "Comfrey (Symphytum Officinale. l.) and Experimental Hepatic Carcinogenesis: A Short-term Carcinogenesis Model Study.",
+   "year": 2010,
+   "journal": "Evidence-based complementary and alternative medicine : eCAM",
+   "doi": "10.1093/ecam/nem172",
+   "pmcid": "PMC2862927",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c0646436f0ff6a5099813f0cf15b8b6bc83cd8b3ec1adf8fcb5ff532807129c1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "42357554",
+   "title": "Organ-Specific Phytochemical Profiles, Wound-Healing and Hemostatic Activities of Symphytum officinale Aerial Parts and Roots with Differential Pyrrolizidine Alkaloid Content.",
+   "year": 2026,
+   "journal": "Molecules (Basel, Switzerland)",
+   "doi": "10.3390/molecules31122159",
+   "pmcid": "PMC13306179",
+   "mesh": [
+    "Wound Healing",
+    "Animals",
+    "Hemostatics",
+    "Phytochemicals",
+    "Pyrrolizidine Alkaloids",
+    "Plant Extracts",
+    "Plant Roots",
+    "Comfrey",
+    "Rats",
+    "Plant Components, Aerial",
+    "Plant Leaves",
+    "Flowers",
+    "Organ Specificity",
+    "Male"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7f00c40a6b65c738f14e3449fac433c9eeb663dd4ddfb1969a8a1c5ea460d3dc",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "30572090",
+   "title": "Ethnoveterinary contemporary knowledge of farmers in pre-alpine and alpine regions of the Swiss cantons of Bern and Lucerne compared to ancient and recent literature - Is there a tradition?",
+   "year": 2019,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2018.12.022",
+   "pmcid": null,
+   "mesh": [
+    "Adult",
+    "Aged",
+    "Animal Diseases",
+    "Animals",
+    "Farmers",
+    "Female",
+    "Health Knowledge, Attitudes, Practice",
+    "Humans",
+    "Male",
+    "Medicine, Traditional",
+    "Middle Aged",
+    "Phytotherapy",
+    "Plant Preparations",
+    "Plants, Medicinal",
+    "Surveys and Questionnaires",
+    "Switzerland",
+    "Young Adult"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "65fa007992e81f7544ad60333df2f93348d33ba5ff8538c50e0ec0c1f84e411f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "19827020",
+   "title": "Absence of mutagenic effects of a particular Symphytum officinale L. liquid extract in the bacterial reverse mutation assay.",
+   "year": 2010,
+   "journal": "Phytotherapy research : PTR",
+   "doi": "10.1002/ptr.3000",
+   "pmcid": null,
+   "mesh": [
+    "Colony Count, Microbial",
+    "Comfrey",
+    "Mutagenicity Tests",
+    "Mutagens",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plant Roots",
+    "Salmonella typhimurium"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f26592a56e50058df87c36fd9b1a5684476cf60449813bbdbbbaec74e539ae88",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "26177929",
+   "title": "The comparative toxicity of a reduced, crude comfrey (Symphytum officinale) alkaloid extract and the pure, comfrey-derived pyrrolizidine alkaloids, lycopsamine and intermedine in chicks (Gallus gallus domesticus).",
+   "year": 2016,
+   "journal": "Journal of applied toxicology : JAT",
+   "doi": "10.1002/jat.3205",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Aspartate Aminotransferases",
+    "Bile Acids and Salts",
+    "Chickens",
+    "Cholesterol",
+    "Comfrey",
+    "Creatine Kinase",
+    "L-Iditol 2-Dehydrogenase",
+    "L-Lactate Dehydrogenase",
+    "Liver",
+    "Male",
+    "Plant Extracts",
+    "Pyrrolizidine Alkaloids",
+    "Triglycerides",
+    "gamma-Glutamyltransferase"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c09c0c5f48a3ccca4f6f482af1183f817fc4b33b210cc09d674c392758e8fbf8",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11712913",
+   "title": "Screening botanical extracts for quinoid metabolites.",
+   "year": 2001,
+   "journal": "Chemical research in toxicology",
+   "doi": "10.1021/tx010106n",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Biological Assay",
+    "Chromatography, Liquid",
+    "Cytochrome P-450 Enzyme System",
+    "Dietary Supplements",
+    "Drug Evaluation, Preclinical",
+    "Enzyme Induction",
+    "Humans",
+    "Liver",
+    "Mass Spectrometry",
+    "NADP",
+    "Peptides",
+    "Plant Extracts",
+    "Quinones",
+    "Rats",
+    "Sensitivity and Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3353b44abf7b122bc1cfb2c4ec0eacefa03f465c3ad8903023f3c98a3ed48467",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17236008",
+   "title": "A New Bidesmosidic Triterpenoidal Saponin from the Roots of Symphytum officinale.",
+   "year": 1993,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-959733",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0219d47c39ce8ab6dd59bd6fc7106dff74d8dbf274096c506fa164cf9c1d3d64",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "13307681",
+   "title": "Comfrey (Symphytum officinale L.) root; its anatomy and its detection in admixture with chicory in dandelion coffee.",
+   "year": 1956,
+   "journal": "Journal. Royal Microscopical Society (Great Britain)",
+   "doi": "10.1111/j.1365-2818.1955.tb00417.x",
+   "pmcid": null,
+   "mesh": [
+    "Boraginaceae",
+    "Cichorium intybus",
+    "Coffee",
+    "Comfrey",
+    "Plant Roots",
+    "Plants",
+    "Taraxacum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "41681597",
+   "title": "Symphytum officinale L. Plays a Dominant Role in Mitigating Nitrogen Accumulation in Soil Under Long-Term Irrigation with Treated Poultry Wastewater.",
+   "year": 2026,
+   "journal": "Plants (Basel, Switzerland)",
+   "doi": "10.3390/plants15030433",
+   "pmcid": "PMC12899791",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "48881306798a35c4069f6bf77970f6a330ba87f927ab89d61c8806ba4251b431",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24031320",
+   "title": "Selection of endophytic fungi from comfrey (Symphytum officinale L.) for in vitro biological control of the phytopathogen Sclerotinia sclerotiorum (Lib.).",
+   "year": 2009,
+   "journal": "Brazilian journal of microbiology : [publication of the Brazilian Society for Microbiology]",
+   "doi": "10.1590/S1517-838220090001000011",
+   "pmcid": "PMC3768515",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "c5649a0c3ead299149e5f4368e2b85a3670169066592cb8c252a6cc046d277b1",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by-nc"
+   }
+  },
+  {
+   "pmid": "13527040",
+   "title": "[Aqueous extract of Symphytum officinale in the treatment of some skin diseases in infants].",
+   "year": 1957,
+   "journal": "Pediatria polska",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Child",
+    "Comfrey",
+    "Humans",
+    "Infant",
+    "Plant Extracts",
+    "Skin Diseases"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32105669",
+   "title": "A systematic review and quality assessment of case reports of adverse events for borage (Borago officinalis), coltsfoot (Tussilago farfara) and comfrey (Symphytum officinale).",
+   "year": 2020,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2020.104519",
+   "pmcid": null,
+   "mesh": [
+    "Borago",
+    "Comfrey",
+    "Humans",
+    "Tussilago"
+   ],
+   "publicationTypes": [
+    "Case Reports",
+    "Journal Article",
+    "Systematic Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "3b30a439ab345fbac0aabdd9d1987b6233b123b569f972076d1614da67fa19ca",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17320124",
+   "title": "Tissue distribution, core biosynthesis and diversification of pyrrolizidine alkaloids of the lycopsamine type in three Boraginaceae species.",
+   "year": 2007,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/j.phytochem.2007.01.002",
+   "pmcid": null,
+   "mesh": [
+    "Boraginaceae",
+    "Carbon Radioisotopes",
+    "Cells, Cultured",
+    "Chromatography, High Pressure Liquid",
+    "Gas Chromatography-Mass Spectrometry",
+    "Models, Chemical",
+    "Molecular Structure",
+    "Plant Roots",
+    "Plants, Genetically Modified",
+    "Pyrrolizidine Alkaloids",
+    "Species Specificity"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "99e9aca2a8e7a1895c2b0e622926f56112595904a1083204ebe11bc84aa2f070",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "9235147",
+   "title": "[The effect of products of plant and microbial origin on phagocytic function and on the release of oxygen free radicals by mouse peritoneal macrophages].",
+   "year": 1997,
+   "journal": "Bacteriologia, virusologia, parazitologia, epidemiologia (Bucharest, Romania : 1990)",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adjuvants, Immunologic",
+    "Animals",
+    "Dose-Response Relationship, Drug",
+    "Free Radicals",
+    "Luminescent Measurements",
+    "Macrophages, Peritoneal",
+    "Mice",
+    "Oxygen",
+    "Phagocytosis",
+    "Phospholipids",
+    "Plant Extracts",
+    "Plant Roots",
+    "Pseudomonas aeruginosa"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "43f917a0472736512c128d83b0d0b248f4d9f9a9341c50fa71a8f685bab7816a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7764880",
+   "title": "A bidesmosidic triterpene glycoside from the roots of Symphytum officinale.",
+   "year": 1994,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/s0031-9422(00)97091-2",
+   "pmcid": null,
+   "mesh": [
+    "Carbohydrate Sequence",
+    "Magnetic Resonance Spectroscopy",
+    "Mass Spectrometry",
+    "Molecular Sequence Data",
+    "Plants, Medicinal",
+    "Saponins",
+    "Triterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8a146d7e0af5ac2536e8f95f99ff451750f07815780755b8f82010e81886eb7a",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30054770",
+   "title": "Specific Distribution of Pyrrolizidine Alkaloids in Floral Parts of Comfrey (Symphytum officinale) and its Implications for Flower Ecology.",
+   "year": 2019,
+   "journal": "Journal of chemical ecology",
+   "doi": "10.1007/s10886-018-0990-9",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Flowers",
+    "Gas Chromatography-Mass Spectrometry",
+    "Mass Spectrometry",
+    "Plant Leaves",
+    "Plant Roots",
+    "Pyrrolizidine Alkaloids",
+    "Solid Phase Extraction"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "99cbe6f4691891efc55221dcb7dddf43db61468ca9726d1b71b39d9ebbbc96a6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22014903",
+   "title": "Effect of a blend of comfrey root extract (Symphytum officinale L.) and tannic acid creams in the treatment of osteoarthritis of the knee: randomized, placebo-controlled, double-blind, multiclinical trials.",
+   "year": 2011,
+   "journal": "Journal of chiropractic medicine",
+   "doi": "10.1016/j.jcm.2011.01.003",
+   "pmcid": "PMC3259911",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "593a83f04e47bec1c80ef29a479805f3a0985e72b19f1157f48522a4169fd093",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7080084",
+   "title": "Consumption of poisonous plants (Senecio jacobaea, Symphytum officinale, Pteridium aquilinum, Hypericum perforatum) by rats: chronic toxicity, mineral metabolism, and hepatic drug-metabolizing enzymes.",
+   "year": 1982,
+   "journal": "Toxicology letters",
+   "doi": "10.1016/0378-4274(82)90072-8",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Epoxide Hydrolases",
+    "Glutathione Transferase",
+    "Liver",
+    "Male",
+    "Minerals",
+    "Plants, Toxic",
+    "Rats",
+    "Rats, Inbred Strains"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5b0d918da8204dea94aeb1e7988ad495bced3034c6b3537ef341c476dabc83b1",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30500766",
+   "title": "Thermal conversion of a promising phytoremediation plant (Symphytum officinale L.) into biochar: Dynamic of potentially toxic elements and environmental acceptability assessment of the biochar.",
+   "year": 2019,
+   "journal": "Bioresource technology",
+   "doi": "10.1016/j.biortech.2018.11.077",
+   "pmcid": null,
+   "mesh": [
+    "Biodegradation, Environmental",
+    "Charcoal",
+    "Comfrey",
+    "Hot Temperature"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b18992656f3a66cbd13a660b0cbcfc4d9f3d952980627517075c8bfb6d1f08d2",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "4096630",
+   "title": "[Biochemical-pharmacologic studies of medicinal plants. 1. Isolation of rosmarinic acid from Symphytum officinale L. and its anti-inflammatory activity in an in vitro model].",
+   "year": 1985,
+   "journal": "Archiv der Pharmazie",
+   "doi": "10.1002/ardp.19853181207",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Chemical Phenomena",
+    "Chemistry",
+    "Chromatography, High Pressure Liquid",
+    "Cinnamates",
+    "Depsides",
+    "Humans",
+    "In Vitro Techniques",
+    "Plants, Medicinal",
+    "Rats",
+    "Rosmarinic Acid"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8887946",
+   "title": "Analysis, separation, and bioassay of pyrrolizidine alkaloids from comfrey (Symphytum officinale).",
+   "year": 1996,
+   "journal": "Natural toxins",
+   "doi": "10.1002/19960404nt3",
+   "pmcid": null,
+   "mesh": [
+    "Base Sequence",
+    "Biological Assay",
+    "Cell Division",
+    "Cell Line",
+    "Chromatography, Gas",
+    "Chromatography, High Pressure Liquid",
+    "Electrophoresis, Polyacrylamide Gel",
+    "Gas Chromatography-Mass Spectrometry",
+    "Humans",
+    "Liver Neoplasms",
+    "Lung Neoplasms",
+    "Magnetic Resonance Spectroscopy",
+    "Methanol",
+    "Molecular Sequence Data",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Plant Roots",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f4a75b2e98288fe2add627a1b26c69be840f03c1f3444b049345cbb38d0a8e3b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "9480686",
+   "title": "Foraging bumblebees avoid flowers already visited by conspecifics or by other bumblebee species.",
+   "year": 1998,
+   "journal": "Animal behaviour",
+   "doi": "10.1006/anbe.1997.0570",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "5b708d069e59156352141942e5ea4469010f5ad676e4707585c08d279132fcf6",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "2616671",
+   "title": "[Studies on the effect of an alkaloid extract of Symphytum officinale on human lymphocyte cultures].",
+   "year": 1989,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-962084",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Animals",
+    "Chromosomes",
+    "Humans",
+    "Liver",
+    "Lymphocytes",
+    "Molecular Structure",
+    "Plants, Medicinal",
+    "Rats",
+    "Sister Chromatid Exchange"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e303b090926fa90a8ee66204c40779c5c457ce01a139ee942c40ca849a25742f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25113427",
+   "title": "The external use of comfrey: a practitioner survey.",
+   "year": 2014,
+   "journal": "Complementary therapies in clinical practice",
+   "doi": "10.1016/j.ctcp.2014.07.003",
+   "pmcid": null,
+   "mesh": [
+    "Administration, Topical",
+    "Adult",
+    "Aged",
+    "Comfrey",
+    "Data Collection",
+    "Female",
+    "Health Personnel",
+    "Humans",
+    "Male",
+    "Middle Aged",
+    "Phytotherapy",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7bea3648ebf88a5de4a73abf5e0833901ee435ffae0b3af22babce9dbe82c4d9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34179257",
+   "title": "Radioactive Tracer Feeding Experiments and Product Analysis to Determine the Biosynthetic Capability of Comfrey (Symphytum officinale) Leaves for Pyrrolizidine Alkaloids.",
+   "year": 2018,
+   "journal": "Bio-protocol",
+   "doi": "10.21769/BioProtoc.2719",
+   "pmcid": "PMC8203869",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "2914c9870e5c05c3e603bb0562af2e308ec5c789a802a4bc26ce453a0fddf92f",
+   "licenceStatus": {
+    "status": "pmc_not_oa",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11430014",
+   "title": "Isolation of symlandine from the roots of common comfrey (Symphytum officinale) using countercurrent chromatography.",
+   "year": 2001,
+   "journal": "Journal of natural products",
+   "doi": "10.1021/np0004653",
+   "pmcid": null,
+   "mesh": [
+    "Countercurrent Distribution",
+    "Magnetic Resonance Spectroscopy",
+    "Magnoliopsida",
+    "Models, Chemical",
+    "Plant Roots",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8b7a93bbf767b99c748d400c628e84f6017817009f122a05752c511421204e68",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7701007",
+   "title": "Bidesmosidic triterpenoidal saponins from the roots of Symphytum officinale.",
+   "year": 1995,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-958017",
+   "pmcid": null,
+   "mesh": [
+    "Plant Roots",
+    "Plants, Medicinal",
+    "Saponins",
+    "Triterpenes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "22908565",
+   "title": "Improved method for isolation of lycopsamine from roots of comfrey (Symphytum officinale).",
+   "year": 2012,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Magnetic Resonance Spectroscopy",
+    "Mass Spectrometry",
+    "Plant Roots"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "ad713325173bd91a4b4e3ddd7ae6e7a88a959807b654f04159412338e54d4eeb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "5719032",
+   "title": "Studies on constituents of crude drugs. I. Alkaloids of Symphytum officinale Linn.",
+   "year": 1968,
+   "journal": "Chemical & pharmaceutical bulletin",
+   "doi": "10.1248/cpb.16.2512",
+   "pmcid": null,
+   "mesh": [
+    "Alkaloids",
+    "Chemical Phenomena",
+    "Chemistry",
+    "Plants, Medicinal",
+    "Spectrum Analysis"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15482618",
+   "title": "Analysis of herbal teas made from the leaves of comfrey (Symphytum officinale): reduction of N-oxides results in order of magnitude increases in the measurable concentration of pyrrolizidine alkaloids.",
+   "year": 2004,
+   "journal": "Public health nutrition",
+   "doi": "10.1079/phn2004624",
+   "pmcid": null,
+   "mesh": [
+    "Beverages",
+    "Chromatography, Gas",
+    "Comfrey",
+    "Nitrogen Oxides",
+    "Oxidation-Reduction",
+    "Plant Extracts",
+    "Plant Leaves",
+    "Pyrrolizidine Alkaloids"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "fc133f0a31c8127f4568e8e2c9d6ae21f36a66e8859d79060aa8dc439fddcd97",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28308029",
+   "title": "Floral display size in comfrey, Symphytum officinale L. (Boraginaceae): relationships with visitation by three bumblebee species and subsequent seed set.",
+   "year": 1998,
+   "journal": "Oecologia",
+   "doi": "10.1007/s004420050402",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e9248a286447bcded910ac97df06fb126fa938d9e060ff3ad540789a9b08d1fa",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8186457",
+   "title": "Action of some proteic and carbohydrate components of Symphytum officinale upon normal and neoplastic cells.",
+   "year": 1993,
+   "journal": "Roumanian archives of microbiology and immunology",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Antineoplastic Agents, Phytogenic",
+    "Carbohydrates",
+    "Carcinoma, Ehrlich Tumor",
+    "Cell Division",
+    "Cells, Cultured",
+    "Drug Screening Assays, Antitumor",
+    "Female",
+    "Humans",
+    "Lymphocytes",
+    "Mice",
+    "Neoplasm Transplantation",
+    "Neutrophils",
+    "Phytotherapy",
+    "Plant Extracts",
+    "Plant Proteins",
+    "Plants, Medicinal",
+    "Respiratory Burst",
+    "Tumor Cells, Cultured"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6160856f4ebd4396c21f4096f92c12b2d9e01b4c1a9902374d5f2af29fac0c40",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "278864",
+   "title": "Carcinogenic activity of Symphytum officinale.",
+   "year": 1978,
+   "journal": "Journal of the National Cancer Institute",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carcinogens",
+    "Female",
+    "Hemangioendothelioma",
+    "Liver Neoplasms",
+    "Liver Neoplasms, Experimental",
+    "Magnoliopsida",
+    "Male",
+    "Neoplasms, Experimental",
+    "Rats",
+    "Rats, Inbred ACI",
+    "Time Factors",
+    "Urinary Bladder Neoplasms"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1cab589c44bbd3633b6f7c74e458c28b0c8727ccfe8740665c1686bd12789c91",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "25531790",
+   "title": "TLC densitometric method for screening of lycopsamine in comfrey root (Symphytum officinale L.) extracts using retrorsine as a reference compound.",
+   "year": 2014,
+   "journal": "Acta pharmaceutica (Zagreb, Croatia)",
+   "doi": "10.2478/acph-2014-0031",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, Thin Layer",
+    "Comfrey",
+    "Densitometry",
+    "Plant Extracts",
+    "Plant Roots",
+    "Pyrrolizidine Alkaloids",
+    "Reference Standards"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Validation Study"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8c31372aa58a47ccefa88ebbd1914be9c9fc9a57ea0bfac08cfdb37ca6b4bc55",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "4193311",
+   "title": "[Lithospermic acid, the antihormonally active principle of Lycopus europaeus L. and Symphytum officinale. 3. Ingredients of medicinal plants with hormonal and antihormonal-like effect].",
+   "year": 1970,
+   "journal": "Arzneimittel-Forschung",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Acids",
+    "Animals",
+    "Antithyroid Agents",
+    "Chlorogenic Acid",
+    "Chromatography",
+    "Depression, Chemical",
+    "Drug Synergism",
+    "Female",
+    "Gonadotropins",
+    "Infrared Rays",
+    "Mice",
+    "Organ Size",
+    "Ovary",
+    "Oxidation-Reduction",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Rats",
+    "Rutin",
+    "Spectrum Analysis",
+    "Ultraviolet Rays",
+    "Uterus"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15726100",
+   "title": "Mutagenicity of comfrey (Symphytum Officinale) in rat liver.",
+   "year": 2005,
+   "journal": "British journal of cancer",
+   "doi": "10.1038/sj.bjc.6602420",
+   "pmcid": "PMC2361893",
+   "mesh": [
+    "Alkaloids",
+    "Animals",
+    "Animals, Genetically Modified",
+    "Comfrey",
+    "In Vitro Techniques",
+    "Liver",
+    "Liver Neoplasms",
+    "Mutagenicity Tests",
+    "Mutagens",
+    "Rats"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "10465e3f553786ba883bf9e71261c095ed83dbfa71fd56a5b620474afaa907e5",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "13071463",
+   "title": "[Use of a natural combination of choline and allantoin from Symphytum officinale in gynecology].",
+   "year": 1953,
+   "journal": "Medizinische Klinik",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Allantoin",
+    "Choline",
+    "Comfrey",
+    "Female",
+    "Genital Diseases, Female",
+    "Gynecology",
+    "Humans",
+    "Plants"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24221738",
+   "title": "The influence of phytohormones on growth, organ differentiation and fructan production in callus of Symphytum officinale L.",
+   "year": 1991,
+   "journal": "Plant cell reports",
+   "doi": "10.1007/BF00232616",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "0f4da8e93885c5dd1f7e0102bb8065130a7c48d4e70e14c7e2196a5d549b0036",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17401925",
+   "title": "Analysis of Pyrrolizidine Alkaloids from the Symphytum officinale Species Complex and S. asperum.",
+   "year": 1981,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2007-971589",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17269073",
+   "title": "Fructan Synthesis in Tissue Cultures of Symphytum officinale; L. Initiation, Differentiation, and Metabolic Activity.",
+   "year": 1987,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2006-962778",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "55370861890466ffc651cf4e0bf1819d5f5f857d0804618c1982434296871288",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17118137",
+   "title": "Analysis of gene expression changes in relation to toxicity and tumorigenesis in the livers of Big Blue transgenic rats fed comfrey (Symphytum officinale).",
+   "year": 2006,
+   "journal": "BMC bioinformatics",
+   "doi": "10.1186/1471-2105-7-S2-S16",
+   "pmcid": "PMC1683566",
+   "mesh": [
+    "Animal Feed",
+    "Animals",
+    "Body Weight",
+    "Cell Transformation, Neoplastic",
+    "Comfrey",
+    "Gene Expression Profiling",
+    "Gene Expression Regulation, Neoplastic",
+    "Liver Neoplasms",
+    "Male",
+    "Mutation",
+    "Rats",
+    "Rats, Inbred F344",
+    "Rats, Transgenic"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "e355ecb73fe0939f2919af31976efb4e44adb522389910f6dc8dbd63318cde5b",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "24549342",
+   "title": "[Development of root-layers of symphytum officinale L. and their storage and consumption of carbohydrates].",
+   "year": 1967,
+   "journal": "Planta",
+   "doi": "10.1007/BF00387358",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f7c70f495a891f8ef60f0d5f851dea68a5d5d159c0bb542f9996e71c470df962",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "31672526",
+   "title": "Symphytum officinale augments osteogenesis in human bone marrow-derived mesenchymal stem cells in vitro as they differentiate into osteoblasts.",
+   "year": 2020,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2019.112329",
+   "pmcid": null,
+   "mesh": [
+    "Alkaline Phosphatase",
+    "Bone Density Conservation Agents",
+    "Cell Differentiation",
+    "Cell Line",
+    "Comfrey",
+    "Core Binding Factor Alpha 1 Subunit",
+    "Dose-Response Relationship, Drug",
+    "Gene Expression Regulation",
+    "Homeopathy",
+    "Humans",
+    "Mesenchymal Stem Cells",
+    "Osteoblasts",
+    "Osteocalcin",
+    "Osteogenesis",
+    "Osteopontin",
+    "Phenotype",
+    "Plant Extracts"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6272ad7b84d7b53b6b48a546d752b9027ae9d88e1b5688d5687f00968e8ea677",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "24554049",
+   "title": "[Annual developmental cycle of roots and shoots in Symphytum officinale L. in relation to storage and consumption of carbohydrates].",
+   "year": 1966,
+   "journal": "Planta",
+   "doi": "10.1007/BF00384888",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "81c2b4a95516a3360940f036e6e61bc03f2587531c65a326527d293a873fe85b",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "7199215",
+   "title": "[Anti-inflammatory action of a group of plant extracts].",
+   "year": 1981,
+   "journal": "Veterinarno-meditsinski nauki",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Alprostadil",
+    "Animals",
+    "Anti-Inflammatory Agents",
+    "Carrageenan",
+    "Drug Evaluation, Preclinical",
+    "Female",
+    "Inflammation",
+    "Male",
+    "Plant Extracts",
+    "Prostaglandins E",
+    "Rats",
+    "Rats, Inbred Strains",
+    "Time Factors"
+   ],
+   "publicationTypes": [
+    "Comparative Study",
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "db4dd651bbc6f58bb6409aeb12937bbe5cdb6770e3462a561e4f97f69b165ad9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14979525",
+   "title": "Evaporative light scattering detection of pyrrolizidine alkaloids.",
+   "year": 2004,
+   "journal": "Phytochemical analysis : PCA",
+   "doi": "10.1002/pca.715",
+   "pmcid": null,
+   "mesh": [
+    "Chromatography, High Pressure Liquid",
+    "Comfrey",
+    "Light",
+    "Plant Extracts",
+    "Pyrrolizidine Alkaloids",
+    "Scattering, Radiation",
+    "Senecio"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "8c0a13c25d58c2e5111cd409984584cee09964b56fef4d5ade7323c2b12fcf3d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40677081",
+   "title": "[Responsive Characteristics of Symphytum officinale L. to Pb， Zn， and Cd Heavy Metals Under Hydroponic Conditions].",
+   "year": 2025,
+   "journal": "Huan jing ke xue= Huanjing kexue",
+   "doi": "10.13227/j.hjkx.202401245",
+   "pmcid": null,
+   "mesh": [
+    "Cadmium",
+    "Zinc",
+    "Hydroponics",
+    "Lead",
+    "Soil Pollutants",
+    "Metals, Heavy",
+    "Biodegradation, Environmental",
+    "Stress, Physiological",
+    "Superoxide Dismutase"
+   ],
+   "publicationTypes": [
+    "English Abstract",
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "d7aa0b6285558b6042ff409223dd69087668715a6d969316a01c8c7c6330e77d",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "35874916",
+   "title": "Morphological, ecological and geographic differences between diploids and tetraploids of Symphytum officinale (Boraginaceae) justify both cytotypes as separate species.",
+   "year": 2022,
+   "journal": "AoB PLANTS",
+   "doi": "10.1093/aobpla/plac028",
+   "pmcid": "PMC9297162",
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "18b1986f4272ddae74d7dcbf283d288eb8de27072a707a4c95eb67f894ed3c61",
+   "licenceStatus": {
+    "status": "pmc_oa",
+    "licence": "cc by"
+   }
+  },
+  {
+   "pmid": "40876308",
+   "title": "Bioindication of radioactive contamination by honey bees in the Bryansk and Rostov regions: Foraging dynamics of 137Cs and 40K in the plant-bee-bee product pathway.",
+   "year": 2025,
+   "journal": "Applied radiation and isotopes : including data, instrumentation and methods for use in agriculture, industry and medicine",
+   "doi": "10.1016/j.apradiso.2025.112105",
+   "pmcid": null,
+   "mesh": [
+    "Bees",
+    "Animals",
+    "Cesium Radioisotopes",
+    "Honey",
+    "Radiation Monitoring",
+    "Food Contamination, Radioactive",
+    "Potassium Radioisotopes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4d9ea39ffb1841df88d7b30b3df540259f2387abfa54d96a2f8e83ca0b338966",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "11276298",
+   "title": "The efficacy and safety of comfrey.",
+   "year": 2000,
+   "journal": "Public health nutrition",
+   "doi": "10.1017/s1368980000000586",
+   "pmcid": null,
+   "mesh": [
+    "Comfrey",
+    "Hepatic Veno-Occlusive Disease",
+    "Humans",
+    "Inflammation",
+    "Liver",
+    "Phytotherapy",
+    "Plants, Medicinal",
+    "Safety",
+    "Treatment Outcome"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b74b9ef623a9de0016d99996a77a49237ae09ece3b21c8131e7e7301420c8acb",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8957312",
+   "title": "Phyto-pharmacology of saponins from Symphytum officinale L.",
+   "year": 1996,
+   "journal": "Advances in experimental medicine and biology",
+   "doi": "10.1007/978-1-4899-1367-8_34",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Carbohydrate Sequence",
+    "Europe",
+    "Hemodynamics",
+    "Magnetic Resonance Spectroscopy",
+    "Male",
+    "Molecular Sequence Data",
+    "Oleanolic Acid",
+    "Plants, Medicinal",
+    "Rats",
+    "Rats, Sprague-Dawley",
+    "Saponins",
+    "Spectrometry, Mass, Fast Atom Bombardment",
+    "Spectrophotometry, Infrared",
+    "Spectrophotometry, Ultraviolet"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "12999159",
+   "title": "[Antiphlogistic application with symphytum officinale].",
+   "year": 1952,
+   "journal": "Hippokrates",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Comfrey",
+    "Inflammation"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "17345440",
+   "title": "Fructan-Synthesis in Cell Cultures of Symphytum officinale.",
+   "year": 1986,
+   "journal": "Planta medica",
+   "doi": "10.1055/s-2007-969283",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  }
+ ]
+}

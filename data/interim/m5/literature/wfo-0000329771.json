@@ -1,0 +1,475 @@
+{
+ "species": "Betonica officinalis",
+ "wfoId": "wfo-0000329771",
+ "names": [
+  "Betonica officinalis",
+  "Stachys betonica",
+  "Stachys officinalis"
+ ],
+ "term": "\"Betonica officinalis\"[tiab] OR \"Stachys betonica\"[tiab] OR \"Stachys officinalis\"[tiab]",
+ "count": 19,
+ "queryTranslation": "\"Betonica officinalis\"[Title/Abstract] OR \"Stachys officinalis\"[Title/Abstract]",
+ "retrieved": 18,
+ "records": [
+  {
+   "pmid": "31520668",
+   "title": "Genotoxic properties of Betonica officinalis, Gratiola officinalis, Vincetoxicum luteum and Vincetoxicum hirundinaria extracts.",
+   "year": 2019,
+   "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+   "doi": "10.1016/j.fct.2019.110815",
+   "pmcid": null,
+   "mesh": [
+    "Comet Assay",
+    "Humans",
+    "Lamiales",
+    "Lymphocytes",
+    "Micronucleus Tests",
+    "Mutagens",
+    "Plant Extracts",
+    "Salmonella typhimurium",
+    "Stachys",
+    "Vincetoxicum"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "57ec12b1472cde35b37d217dfffbcbbac67ca2c3ba6bb93d9945dbf74f35bf9f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "34554446",
+   "title": "ETS and plastid sequence data indicate a spontaneous origin of Scandinavian betony, Betonica officinalis L.",
+   "year": 2019,
+   "journal": "Biologia futura",
+   "doi": "10.1556/019.70.2019.27",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "7780174a79ecf38370e5cfc69a9fa8703a80801ca822362b7cd3a0440267d435",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "37622505",
+   "title": "SCREENING OF MEDICINAL AND AROMATIC PLANTS EXTRACTS FOR THE SYNERGISM WITH FLUCONAZOLE AGAINST CANDIDA ALBICANS AND CANDIDA TROPICALIS FUNGI ASSOCIATED WITH DENTURE STOMATITIS.",
+   "year": 2023,
+   "journal": "Wiadomosci lekarskie (Warsaw, Poland : 1960)",
+   "doi": "10.36740/WLek202307115",
+   "pmcid": null,
+   "mesh": [
+    "Humans",
+    "Fluconazole",
+    "Antifungal Agents",
+    "Candida albicans",
+    "Candida tropicalis",
+    "Stomatitis, Denture",
+    "Ethanol"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "4b1043d3d5d058835d92a70a2d775d5a5acf19fead528939818ab03e7897e957",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "8862039",
+   "title": "Phenylethanoid glycosides from Stachys officinalis.",
+   "year": 1996,
+   "journal": "Phytochemistry",
+   "doi": "10.1016/0031-9422(96)00322-6",
+   "pmcid": null,
+   "mesh": [
+    "Carbohydrate Conformation",
+    "Carbohydrate Sequence",
+    "Catechols",
+    "Disaccharides",
+    "Magnetic Resonance Spectroscopy",
+    "Molecular Sequence Data",
+    "Molecular Structure",
+    "Optical Rotation",
+    "Plant Extracts",
+    "Spectrometry, Mass, Fast Atom Bombardment"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "6aa79228b8092e02a15868b12184605f4254c6098d8e3b6431cabc9451abbb60",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32149570",
+   "title": "Phytotoxic effects of biosynthesized ZnO nanoparticles using Betonica officinalis extract.",
+   "year": 2021,
+   "journal": "Environmental technology",
+   "doi": "10.1080/09593330.2020.1740331",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Bacterial Agents",
+    "Humans",
+    "Metal Nanoparticles",
+    "Microbial Sensitivity Tests",
+    "Nanoparticles",
+    "Plant Extracts",
+    "Spectroscopy, Fourier Transform Infrared",
+    "Stachys",
+    "X-Ray Diffraction",
+    "Zinc Oxide"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "44ba182e3e03dfdb3e2d4e914bc7dd52dd95406eeaa22b5c21e42b5df5f39ee3",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "40836517",
+   "title": "Chemical and Antioxidant Profile of Hydroalcoholic Extracts of Stachys Officinalis L., Stachys Palustris L., Stachys Sylvatica L. from Romania.",
+   "year": 2023,
+   "journal": "Acta chimica Slovenica",
+   "doi": "10.17344/acsi.2023.8046",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "67935f729b15bbc63e77cc64a38dfee951d051a27d17e79b14f8c7727774f184",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "15221579",
+   "title": "Red list plants: colonization by arbuscular mycorrhizal fungi and dark septate endophytes.",
+   "year": 2004,
+   "journal": "Mycorrhiza",
+   "doi": "10.1007/s00572-004-0314-5",
+   "pmcid": null,
+   "mesh": [
+    "Asteraceae",
+    "Conservation of Natural Resources",
+    "Drosera",
+    "Environment",
+    "Fungi",
+    "Lycopodiaceae",
+    "Mycorrhizae",
+    "Plants",
+    "Soil Microbiology",
+    "Spores, Fungal",
+    "Stachys"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "85effd41d10c7eee184f63f524a791919ac9cb70ee2b0f836fd5b7b9676a5b20",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "16713687",
+   "title": "Antioxidant and free radical scavenging activities of some medicinal plants from the Lamiaceae.",
+   "year": 2006,
+   "journal": "Fitoterapia",
+   "doi": "10.1016/j.fitote.2006.04.004",
+   "pmcid": null,
+   "mesh": [
+    "Antioxidants",
+    "Biphenyl Compounds",
+    "Flavonoids",
+    "Hydrazines",
+    "Lamiaceae",
+    "Linoleic Acid",
+    "Lipid Peroxidation",
+    "Molybdenum",
+    "Phenols",
+    "Picrates",
+    "Plant Extracts",
+    "Plants, Medicinal",
+    "Polyphenols"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "043ceaee62d78ba222d3c8a78fa315c2697f3b3a36f07205e8d36df50416ba9f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "14149830",
+   "title": "[COMPARATIVE DATA ON THE STUDY OF BETONICA OFFICINALIS AND BETONICA GRANDIFLORA GLYCOSIDES].",
+   "year": 1963,
+   "journal": "Farmatsevtychnyi zhurnal",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Anura",
+    "Blood Pressure",
+    "Blood Pressure Determination",
+    "Glycosides",
+    "Heart",
+    "Pharmacology",
+    "Research",
+    "Stachys"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "28307818",
+   "title": "Effects of elevated CO2 on flowering phenology and nectar production of nectar plants important for butterflies of calcareous grasslands.",
+   "year": 1998,
+   "journal": "Oecologia",
+   "doi": "10.1007/s004420050385",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9ee64950967f0de5b6ba7cfa629ec61a302aaf421d9fafc0470caaae52de0363",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "20155288",
+   "title": "Delayed response in a plant-pollinator system to experimental grassland fragmentation.",
+   "year": 2010,
+   "journal": "Oecologia",
+   "doi": "10.1007/s00442-010-1567-7",
+   "pmcid": null,
+   "mesh": [
+    "Animals",
+    "Bees",
+    "DNA, Plant",
+    "Feeding Behavior",
+    "Genetic Variation",
+    "Pollination",
+    "Random Amplified Polymorphic DNA Technique",
+    "Stachys"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "9d754d913ca3eafe18137d1e9d29068f87090d8942d43a694e44fe08c85fe87f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "27931115",
+   "title": "Secretory structures and essential oil composition in Stachys officinalis (L.) Trevisan subsp. officinalis (Lamiaceae) from Italy.",
+   "year": 2017,
+   "journal": "Natural product research",
+   "doi": "10.1080/14786419.2016.1261347",
+   "pmcid": null,
+   "mesh": [
+    "Flowers",
+    "Gas Chromatography-Mass Spectrometry",
+    "Italy",
+    "Oils, Volatile",
+    "Plant Leaves",
+    "Stachys",
+    "Trichomes"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "b2a9795e0f735586583ec4bfa45e82e859ec79298befd7e76c5d6aa1a084f3e9",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "21941911",
+   "title": "Variability of essential oils of Betonica officinalis (Lamiaceae) from different wild populations in Kosovo.",
+   "year": 2011,
+   "journal": "Natural product communications",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Gas Chromatography-Mass Spectrometry",
+    "Oils, Volatile",
+    "Plant Oils",
+    "Stachys",
+    "Yugoslavia"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "84f98d2fdd64b3a53d9c64a915d58007be076c2c04fca102baef190893144c2e",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "557295",
+   "title": "[Effect of an extract of Betonica officinalis on lactation].",
+   "year": 1977,
+   "journal": "Akusherstvo i ginekologiia",
+   "doi": null,
+   "pmcid": null,
+   "mesh": [
+    "Adolescent",
+    "Adult",
+    "Female",
+    "Humans",
+    "Lactation",
+    "Plant Extracts",
+    "Pregnancy",
+    "Stimulation, Chemical"
+   ],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": false,
+   "abstractSha256": null,
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "23847079",
+   "title": "Chemical composition and antimicrobial activity of the essential oil of Stachys officinalis (L.) Trevis. (Lamiaceae).",
+   "year": 2013,
+   "journal": "Chemistry & biodiversity",
+   "doi": "10.1002/cbdv.201200332",
+   "pmcid": null,
+   "mesh": [
+    "Anti-Infective Agents",
+    "Aspergillus niger",
+    "Candida albicans",
+    "Cluster Analysis",
+    "Gas Chromatography-Mass Spectrometry",
+    "Microbial Sensitivity Tests",
+    "Oils, Volatile",
+    "Plant Components, Aerial",
+    "Principal Component Analysis",
+    "Stachys"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "f798dde9fe15c6dc660eec278127ec18f8496233311dceb2629e191a621ed381",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30772483",
+   "title": "Do recent research studies validate the medicinal plants used in British Columbia, Canada for pet diseases and wild animals taken into temporary care?",
+   "year": 2019,
+   "journal": "Journal of ethnopharmacology",
+   "doi": "10.1016/j.jep.2019.02.030",
+   "pmcid": null,
+   "mesh": [
+    "Animal Diseases",
+    "Animals",
+    "Animals, Domestic",
+    "Animals, Wild",
+    "British Columbia",
+    "Chronic Pain",
+    "Medicine, Traditional",
+    "Phytotherapy",
+    "Plant Preparations",
+    "Plants, Medicinal"
+   ],
+   "publicationTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "32e4ec0c0663f0cd5b38c2857400d13fb64d1efb1475bea81888b029a029a525",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "30823272",
+   "title": "First Report of Phoma strasseri as a Pathogen of Stachys officinalis in Bulgaria.",
+   "year": 2002,
+   "journal": "Plant disease",
+   "doi": "10.1094/PDIS.2002.86.6.699B",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "1453bb0700c357d5cf83799f29a7c48336bc02dd940049d7218ff0510f617339",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  },
+  {
+   "pmid": "32050738",
+   "title": "Native or Exotic? Double or Single? Evaluating Plants for Pollinator-friendly Gardens.",
+   "year": 2001,
+   "journal": "Annals of botany",
+   "doi": "10.1006/anbo.2000.1322",
+   "pmcid": null,
+   "mesh": [],
+   "publicationTypes": [
+    "Journal Article"
+   ],
+   "hasAbstract": true,
+   "abstractSha256": "000df7ac23b41fce1b15da3410a18ac0c408bc772dbf0f63741fe25312f1a46f",
+   "licenceStatus": {
+    "status": "no_pmc",
+    "licence": null
+   }
+  }
+ ]
+}
