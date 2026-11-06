@@ -1,0 +1,2867 @@
+{
+ "batch": 2,
+ "scope": "sample",
+ "author": "Claude via Claude Code session",
+ "model": "claude-opus-5-5",
+ "promptVersion": "m1_extract/v3:13ca4093ec",
+ "writtenOn": "2026-11-06",
+ "note": "written directly from prompt v3's instructions without consulting the silver reference set",
+ "passages": {
+  "culpeper-1652:herbal:sanicle:008": {
+   "recipes": [
+    {
+     "recipeQuote": "It is exceeding good to heal all green Wounds speedily, or any Ulcers, Impostumes, or bleedings inwardly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to heal all green Wounds speedily, or any Ulcers, Impostumes, or bleedings inwardly",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "It doth wonderfully help those that have any Tumors in any part of their Bodies, for it represseth and dissipateth the Humors, if the Decoction or Juyce thereof be taken, or the Pouder in drink, and the Juyce used outwardly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "those that have any Tumors in any part of their Bodies",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "the Decoction"
+      },
+      {
+       "field": "process",
+       "quote": "the Decoction"
+      },
+      {
+       "field": "form",
+       "quote": "if the Decoction or Juyce thereof be taken"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It doth wonderfully help those that have any Tumors in any part of their Bodies, for it represseth and dissipateth the Humors, if the Decoction or Juyce thereof be taken, or the Pouder in drink, and the Juyce used outwardly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "drink",
+     "indicationAsWritten": "those that have any Tumors in any part of their Bodies",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Juyce thereof"
+      },
+      {
+       "field": "heat",
+       "quote": "Juyce thereof"
+      },
+      {
+       "field": "process",
+       "quote": "Juyce thereof"
+      },
+      {
+       "field": "form",
+       "quote": "if the Decoction or Juyce thereof be taken"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It doth wonderfully help those that have any Tumors in any part of their Bodies, for it represseth and dissipateth the Humors, if the Decoction or Juyce thereof be taken, or the Pouder in drink, and the Juyce used outwardly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "no",
+     "process": "powder",
+     "form": "drink",
+     "indicationAsWritten": "those that have any Tumors in any part of their Bodies",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "the Pouder in drink"
+      },
+      {
+       "field": "filtered",
+       "quote": "the Pouder in drink"
+      },
+      {
+       "field": "process",
+       "quote": "the Pouder"
+      },
+      {
+       "field": "form",
+       "quote": "the Pouder in drink"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It doth wonderfully help those that have any Tumors in any part of their Bodies, for it represseth and dissipateth the Humors, if the Decoction or Juyce thereof be taken, or the Pouder in drink, and the Juyce used outwardly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "other",
+     "indicationAsWritten": "those that have any Tumors in any part of their Bodies",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce used outwardly"
+      },
+      {
+       "field": "heat",
+       "quote": "the Juyce used outwardly"
+      },
+      {
+       "field": "process",
+       "quote": "the Juyce used outwardly"
+      },
+      {
+       "field": "form",
+       "quote": "used outwardly"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "For there is not found any Herb that can give such present help either to Man or Beast when the Disease falleth upon the Lungs or Throat, and to heal up all the putrid Malignant Ulcers in the Mouth, Throat, and Privities, by gargling or washing with the Decoction of the Leavs and Root, made in Water, and a little Honey put thereto",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water",
+      "honey"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "gargle",
+     "indicationAsWritten": "the Disease falleth upon the Lungs or Throat, and to heal up all the putrid Malignant Ulcers in the Mouth, Throat, and Privities",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Leavs and Root"
+      },
+      {
+       "field": "solvent",
+       "quote": "made in Water"
+      },
+      {
+       "field": "solvent",
+       "quote": "a little Honey put thereto"
+      },
+      {
+       "field": "heat",
+       "quote": "the Decoction of the Leavs and Root"
+      },
+      {
+       "field": "process",
+       "quote": "the Decoction of the Leavs and Root"
+      },
+      {
+       "field": "form",
+       "quote": "by gargling"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "For there is not found any Herb that can give such present help either to Man or Beast when the Disease falleth upon the Lungs or Throat, and to heal up all the putrid Malignant Ulcers in the Mouth, Throat, and Privities, by gargling or washing with the Decoction of the Leavs and Root, made in Water, and a little Honey put thereto",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water",
+      "honey"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "other",
+     "indicationAsWritten": "the Disease falleth upon the Lungs or Throat, and to heal up all the putrid Malignant Ulcers in the Mouth, Throat, and Privities",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Leavs and Root"
+      },
+      {
+       "field": "solvent",
+       "quote": "made in Water"
+      },
+      {
+       "field": "solvent",
+       "quote": "a little Honey put thereto"
+      },
+      {
+       "field": "heat",
+       "quote": "the Decoction of the Leavs and Root"
+      },
+      {
+       "field": "process",
+       "quote": "the Decoction of the Leavs and Root"
+      },
+      {
+       "field": "form",
+       "quote": "washing with the Decoction"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It helpeth to stay Womens Courses, and all other Fluxes of Blood either by the Mouth, Urine or Stool, and Lasks of the Belly, the Ulceration of the Kidneys also, and the pains in the Bowels, and the Gonorrhea or running of the Reins, being boyled in Wine or Water, and drunk",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine",
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "to stay Womens Courses, and all other Fluxes of Blood either by the Mouth, Urine or Stool, and Lasks of the Belly, the Ulceration of the Kidneys also, and the pains in the Bowels, and the Gonorrhea or running of the Reins",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "being boyled in Wine or Water"
+      },
+      {
+       "field": "heat",
+       "quote": "being boyled"
+      },
+      {
+       "field": "process",
+       "quote": "boyled in Wine or Water"
+      },
+      {
+       "field": "form",
+       "quote": "and drunk"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The same also is no less powerful to help any Ruptures or Burstings, used both inwardly and outwardly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sanicle",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sanicle",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "any Ruptures or Burstings",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    }
+   ]
+  },
+  "culpeper-1652:herbal:sorrel:003": {
+   "recipes": [
+    {
+     "recipeQuote": "Sorrel is prevalent in all hot Diseases, to cool any Inflamation and heat of Blood in Agues Pestilential or Chollerick, or other sicknesses and sainting, rising from heat, and to refresh the overspent Spirits with the violence of furious or fiery fits of Agues, to quench Thirst, and procure an Appetite in fainting or decayd Stomachs",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "all hot Diseases, to cool any Inflamation and heat of Blood in Agues Pestilential or Chollerick, or other sicknesses and sainting, rising from heat, and to refresh the overspent Spirits with the violence of furious or fiery fits of Agues, to quench Thirst, and procure an Appetite in fainting or decayd Stomachs",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "the Seed doth more effectually being more drying and binding, and thereby stayeth the hot Fluxes of Womens Courses, or of Humors in the Bloody Flux, or Flux of the Stomach",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "stayeth the hot Fluxes of Womens Courses, or of Humors in the Bloody Flux, or Flux of the Stomach",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Seed"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "Both Roots and Seed as well as the Herb is held powerful to resist the poyson of the Scorpion",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to resist the poyson of the Scorpion",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "Both Roots and Seed as well as the Herb"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Decoction of the Roots is taken to help the Jaundice, and to expel Gravel and the Stone in the Reins or Kidneys",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "to help the Jaundice, and to expel Gravel and the Stone in the Reins or Kidneys",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Decoction of the Roots"
+      },
+      {
+       "field": "heat",
+       "quote": "The Decoction"
+      },
+      {
+       "field": "process",
+       "quote": "The Decoction of the Roots"
+      },
+      {
+       "field": "form",
+       "quote": "is taken"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Decoction of the Flowers made with Wine and drunk helpeth the black Jaundice, as also the inward Ulcers of the Body or Bowels",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "flower",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "flower",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "drink",
+     "indicationAsWritten": "the black Jaundice, as also the inward Ulcers of the Body or Bowels",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Decoction of the Flowers"
+      },
+      {
+       "field": "solvent",
+       "quote": "made with Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "The Decoction of the Flowers"
+      },
+      {
+       "field": "process",
+       "quote": "The Decoction of the Flowers"
+      },
+      {
+       "field": "form",
+       "quote": "made with Wine and drunk"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A Syrup made with the Juyce of Sorrel and Fumitary is a Soveraign help to kill those sharp Humors that cause the Itch",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Fumitary",
+       "part": "juice",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "to kill those sharp Humors that cause the Itch",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce of Sorrel"
+      },
+      {
+       "field": "process",
+       "quote": "A Syrup made with the Juyce"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce thereof with a little Vinegar serveth well to be used outwardly for the same cause, and is also profitable for Tetters, Ringworms",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "other",
+     "indicationAsWritten": "Tetters, Ringworms",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce thereof"
+      },
+      {
+       "field": "solvent",
+       "quote": "with a little Vinegar"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce thereof"
+      },
+      {
+       "field": "process",
+       "quote": "The Juyce thereof"
+      },
+      {
+       "field": "form",
+       "quote": "used outwardly"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It helpeth also to discuss the Kernels in the Throat",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to discuss the Kernels in the Throat",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "the Juyce gargled in the Mouth helpeth the Sores therein",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "gargle",
+     "indicationAsWritten": "the Sores therein",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce gargled"
+      },
+      {
+       "field": "heat",
+       "quote": "the Juyce gargled"
+      },
+      {
+       "field": "process",
+       "quote": "the Juyce gargled"
+      },
+      {
+       "field": "form",
+       "quote": "gargled in the Mouth"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Leaves wrapped up in a Colewoort Leaf, and roasted under the Embers, and applied to a hard Impostume, Botch, Boyl, or Plague Sore, both ripeneth and breaketh it",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sorrel",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Colewoort",
+       "part": "leaf",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sorrel",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "warm",
+     "heatText": "roasted under the Embers",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "a hard Impostume, Botch, Boyl, or Plague Sore, both ripeneth and breaketh it",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leaves wrapped up"
+      },
+      {
+       "field": "heat",
+       "quote": "roasted under the Embers"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied to a hard Impostume"
+      },
+      {
+       "field": "process",
+       "quote": "roasted under the Embers"
+      },
+      {
+       "field": "form",
+       "quote": "applied to a hard Impostume"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:the-butter-bur:006": {
+   "recipes": [
+    {
+     "recipeQuote": "The Roots hereof are by long experience found to be very available against the Plague and Pestilential Feavers, by provoking Sweat, if the Pouder therof be taken in Wine",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Butter-Bur",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Butter-Bur",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "no",
+     "process": "powder",
+     "form": "drink",
+     "indicationAsWritten": "the Plague and Pestilential Feavers",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Roots hereof"
+      },
+      {
+       "field": "solvent",
+       "quote": "taken in Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "the Pouder therof be taken in Wine"
+      },
+      {
+       "field": "filtered",
+       "quote": "the Pouder therof be taken in Wine"
+      },
+      {
+       "field": "process",
+       "quote": "the Pouder therof"
+      },
+      {
+       "field": "form",
+       "quote": "taken in Wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Root hereof taken with Zedoàry and Angelica, or without them, helps the rising of the Mother",
+     "recipeType": "compound",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Butter-Bur",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Zedoàry",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      },
+      {
+       "plantNameAsWritten": "Angelica",
+       "part": "unknown",
+       "role": "co_ingredient",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Butter-Bur",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the rising of the Mother",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Root hereof"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Root hereof taken with Zedoàry and Angelica, or without them, helps the rising of the Mother",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Butter-Bur",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Butter-Bur",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the rising of the Mother",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Root hereof"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Decoction of the Root in Wine is singular good for those that wheeze much, or are short-winded",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Butter-Bur",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Butter-Bur",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "wine"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "those that wheeze much, or are short-winded",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Decoction of the Root"
+      },
+      {
+       "field": "solvent",
+       "quote": "in Wine"
+      },
+      {
+       "field": "heat",
+       "quote": "The Decoction of the Root"
+      },
+      {
+       "field": "process",
+       "quote": "The Decoction of the Root in Wine"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It provoketh Urin also and Womens courses, and killeth the flat and broad Worms in the Belly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Butter-Bur",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Butter-Bur",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "provoketh Urin also and Womens courses, and killeth the flat and broad Worms in the Belly",
+     "evidence": [],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The Pouder of the Root doth wonderfully help to dry up the moisture of sores that are hard to be cured, and taketh away all spots and blemishes of the skin",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Butter-Bur",
+       "part": "root",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Butter-Bur",
+     "part": "root",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "powder",
+     "form": "unknown",
+     "indicationAsWritten": "to dry up the moisture of sores that are hard to be cured, and taketh away all spots and blemishes of the skin",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Pouder of the Root"
+      },
+      {
+       "field": "heat",
+       "quote": "The Pouder of the Root"
+      },
+      {
+       "field": "process",
+       "quote": "The Pouder of the Root"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:the-mulberry-tree:005": {
+   "recipes": [
+    {
+     "recipeQuote": "the ripe Berries by reason of their Sweetness and slippery moisture, opening the Belly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "fruit",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "fruit",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "opening the Belly",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the ripe Berries"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the unripe binding it, especially when they are dried, and then they are good to stay Fluxes, Lasks, and the abundance of Womens Courses",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "fruit",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "fruit",
+     "freshOrDried": "dried",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "to stay Fluxes, Lasks, and the abundance of Womens Courses",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the ripe Berries"
+      },
+      {
+       "field": "freshOrDried",
+       "quote": "when they are dried"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "freshOrDried",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Bark of the Root killeth the broad Worms in the Body",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "bark",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "bark",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "killeth the broad Worms in the Body",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Bark of the Root"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce, or the Syrup made of the Juyce of the Berries, helpeth all Inflamations and Sores in the Mouth or Throat, and the Pallet of the Mouth when it is fallen down",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "unknown",
+     "indicationAsWritten": "all Inflamations and Sores in the Mouth or Throat, and the Pallet of the Mouth when it is fallen down",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce of the Berries"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce"
+      },
+      {
+       "field": "process",
+       "quote": "The Juyce"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce, or the Syrup made of the Juyce of the Berries, helpeth all Inflamations and Sores in the Mouth or Throat, and the Pallet of the Mouth when it is fallen down",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "all Inflamations and Sores in the Mouth or Throat, and the Pallet of the Mouth when it is fallen down",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce of the Berries"
+      },
+      {
+       "field": "process",
+       "quote": "the Syrup made of the Juyce"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Juyce of the Leavs is a Remedy against the biting of Serpents, and for those that have taken Aconite",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "unknown",
+     "indicationAsWritten": "the biting of Serpents, and for those that have taken Aconite",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Juyce of the Leavs"
+      },
+      {
+       "field": "heat",
+       "quote": "The Juyce of the Leavs"
+      },
+      {
+       "field": "process",
+       "quote": "The Juyce of the Leavs"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Leavs beaten with Vinegar is good to lay on any place that is burnt with fire",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "vinegar"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "any place that is burnt with fire",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leavs beaten"
+      },
+      {
+       "field": "solvent",
+       "quote": "beaten with Vinegar"
+      },
+      {
+       "field": "heat",
+       "quote": "The Leavs beaten with Vinegar"
+      },
+      {
+       "field": "filtered",
+       "quote": "to lay on any place"
+      },
+      {
+       "field": "process",
+       "quote": "The Leavs beaten"
+      },
+      {
+       "field": "form",
+       "quote": "to lay on any place"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A Decoction made of the Bark and Leavs, is good to wash the Mouth and Teeth when they ach",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "other",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "other",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "gargle",
+     "indicationAsWritten": "the Mouth and Teeth when they ach",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Bark and Leavs"
+      },
+      {
+       "field": "heat",
+       "quote": "A Decoction"
+      },
+      {
+       "field": "process",
+       "quote": "A Decoction made of the Bark and Leavs"
+      },
+      {
+       "field": "form",
+       "quote": "to wash the Mouth and Teeth"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "it will give out a certain Juyce, which being hardned, the next day is of good use to help the Toothach, to dissolve Knots, and purge the Belly",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "unknown",
+     "indicationAsWritten": "to help the Toothach, to dissolve Knots, and purge the Belly",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "a certain Juyce"
+      },
+      {
+       "field": "process",
+       "quote": "which being hardned"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Leavs of Mulberries are said to stay bleeding at Mouth or Nose, or the Bleeding of the Piles, or of a Wound being bound unto the places",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "to stay bleeding at Mouth or Nose, or the Bleeding of the Piles, or of a Wound",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leavs of Mulberries"
+      },
+      {
+       "field": "solvent",
+       "quote": "being bound unto the places"
+      },
+      {
+       "field": "filtered",
+       "quote": "being bound unto the places"
+      },
+      {
+       "field": "form",
+       "quote": "being bound unto the places"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A Branch of the Tree taken when the Moon is at the full and bound to the Wrist of a Womans Arm whose Courses come down too much doth stay them in a short space",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Mulberry",
+       "part": "stem",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Mulberry",
+     "part": "stem",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "other",
+     "indicationAsWritten": "a Womans Arm whose Courses come down too much doth stay them",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "A Branch of the Tree"
+      },
+      {
+       "field": "solvent",
+       "quote": "bound to the Wrist"
+      },
+      {
+       "field": "filtered",
+       "quote": "bound to the Wrist"
+      },
+      {
+       "field": "form",
+       "quote": "bound to the Wrist of a Womans Arm"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:the-sea-colewort:008": {
+   "recipes": [
+    {
+     "recipeQuote": "The Broth or first Decoction of the Sea Colewort doth by the sharp nitrous and bitter qualities therin, open the Belly and purge the Body",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sea Colewort",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sea Colewort",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "unknown",
+     "indicationAsWritten": "open the Belly and purge the Body",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "first Decoction"
+      },
+      {
+       "field": "process",
+       "quote": "first Decoction"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Seed herof bruised and drunk, killeth Worms",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sea Colewort",
+       "part": "seed",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sea Colewort",
+     "part": "seed",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "no",
+     "process": "other",
+     "form": "drink",
+     "indicationAsWritten": "killeth Worms",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Seed herof"
+      },
+      {
+       "field": "heat",
+       "quote": "The Seed herof bruised"
+      },
+      {
+       "field": "filtered",
+       "quote": "bruised and drunk"
+      },
+      {
+       "field": "process",
+       "quote": "bruised"
+      },
+      {
+       "field": "form",
+       "quote": "bruised and drunk"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Leavs or the Juyce of them applied to Sores or Ulcers clenseth and healeth them, and dissolveth Swellings, and taketh away Inflamations",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sea Colewort",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sea Colewort",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "poultice",
+     "indicationAsWritten": "Sores or Ulcers clenseth and healeth them, and dissolveth Swellings, and taketh away Inflamations",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The Leavs"
+      },
+      {
+       "field": "filtered",
+       "quote": "applied to Sores or Ulcers"
+      },
+      {
+       "field": "form",
+       "quote": "applied to Sores or Ulcers"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Leavs or the Juyce of them applied to Sores or Ulcers clenseth and healeth them, and dissolveth Swellings, and taketh away Inflamations",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Sea Colewort",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Sea Colewort",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "other",
+     "indicationAsWritten": "Sores or Ulcers clenseth and healeth them, and dissolveth Swellings, and taketh away Inflamations",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce of them"
+      },
+      {
+       "field": "heat",
+       "quote": "the Juyce of them"
+      },
+      {
+       "field": "process",
+       "quote": "the Juyce of them"
+      },
+      {
+       "field": "form",
+       "quote": "applied to Sores or Ulcers"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:violets:006": {
+   "recipes": [
+    {
+     "recipeQuote": "It is conducing in like manner as Violets to the hot Diseases of the Chest and Lungs: for Agues, Convulsions, and Falling-sickness in Children",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Pansies",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Pansies",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "unknown",
+     "form": "unknown",
+     "indicationAsWritten": "the hot Diseases of the Chest and Lungs: for Agues, Convulsions, and Falling-sickness in Children",
+     "evidence": [],
+     "quotesFromHeading": [],
+     "fieldConfidence": []
+    },
+    {
+     "recipeQuote": "The Decoction helpeth Itch and Scabs being bathed therwith",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Pansies",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Pansies",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "decoction",
+     "form": "other",
+     "indicationAsWritten": "Itch and Scabs",
+     "evidence": [
+      {
+       "field": "heat",
+       "quote": "The Decoction"
+      },
+      {
+       "field": "process",
+       "quote": "The Decoction"
+      },
+      {
+       "field": "form",
+       "quote": "being bathed therwith"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is said also to soder green Wounds, and to help old Sores, the Juyce or distilled Water thereof being drunk",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Pansies",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Pansies",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "expression",
+     "form": "drink",
+     "indicationAsWritten": "to soder green Wounds, and to help old Sores",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce"
+      },
+      {
+       "field": "solvent",
+       "quote": "the Juyce or distilled Water thereof being drunk"
+      },
+      {
+       "field": "heat",
+       "quote": "the Juyce"
+      },
+      {
+       "field": "process",
+       "quote": "the Juyce"
+      },
+      {
+       "field": "form",
+       "quote": "being drunk"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "It is said also to soder green Wounds, and to help old Sores, the Juyce or distilled Water thereof being drunk",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Pansies",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Pansies",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "drink",
+     "indicationAsWritten": "to soder green Wounds, and to help old Sores",
+     "evidence": [
+      {
+       "field": "solvent",
+       "quote": "distilled Water"
+      },
+      {
+       "field": "heat",
+       "quote": "distilled Water"
+      },
+      {
+       "field": "process",
+       "quote": "distilled Water"
+      },
+      {
+       "field": "form",
+       "quote": "being drunk"
+      }
+     ],
+     "quotesFromHeading": [],
+     "fieldConfidence": [
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:water-betony:008": {
+   "recipes": [
+    {
+     "recipeQuote": "the Leavs bruised and applied are effectual for all old and filthy Ulcers",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Water-Betony",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Water-Betony",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "none"
+     ],
+     "heat": "cold",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "other",
+     "form": "poultice",
+     "indicationAsWritten": "all old and filthy Ulcers",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Leavs bruised"
+      },
+      {
+       "field": "solvent",
+       "quote": "the Leavs bruised and applied"
+      },
+      {
+       "field": "heat",
+       "quote": "the Leavs bruised"
+      },
+      {
+       "field": "filtered",
+       "quote": "bruised and applied"
+      },
+      {
+       "field": "process",
+       "quote": "the Leavs bruised"
+      },
+      {
+       "field": "form",
+       "quote": "bruised and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "the Leavs bruised and applied are effectual for all old and filthy Ulcers; and especially if the Juyce of the Leavs be boyled with a little Honey, and tents dipped therin, and the Sores dressed therwith",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Water-Betony",
+       "part": "juice",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Water-Betony",
+     "part": "juice",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "honey"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "other",
+     "form": "other",
+     "indicationAsWritten": "all old and filthy Ulcers",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "the Juyce of the Leavs"
+      },
+      {
+       "field": "solvent",
+       "quote": "boyled with a little Honey"
+      },
+      {
+       "field": "heat",
+       "quote": "be boyled"
+      },
+      {
+       "field": "process",
+       "quote": "boyled with a little Honey"
+      },
+      {
+       "field": "form",
+       "quote": "tents dipped therin, and the Sores dressed therwith"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The distilled water of the Leaves is used for the same purposes; as also to bath the Face or Hands spotted or blemished, or discolored by Sunburning",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Water-Betony",
+       "part": "leaf",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Water-Betony",
+     "part": "leaf",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "water"
+     ],
+     "heat": "boiled",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "unknown",
+     "process": "distillation",
+     "form": "other",
+     "indicationAsWritten": "the Face or Hands spotted or blemished, or discolored by Sunburning",
+     "evidence": [
+      {
+       "field": "part",
+       "quote": "The distilled water of the Leaves"
+      },
+      {
+       "field": "solvent",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "heat",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "process",
+       "quote": "The distilled water"
+      },
+      {
+       "field": "form",
+       "quote": "to bath the Face or Hands"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "part",
+       "confidence": 0.85
+      },
+      {
+       "field": "solvent",
+       "confidence": 0.85
+      },
+      {
+       "field": "heat",
+       "confidence": 0.85
+      },
+      {
+       "field": "process",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:woad:008": {
+   "recipes": [
+    {
+     "recipeQuote": "An Oyntment made thereof stancheth Bleeding",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Woad",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Woad",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "stancheth Bleeding",
+     "evidence": [
+      {
+       "field": "filtered",
+       "quote": "An Oyntment"
+      },
+      {
+       "field": "form",
+       "quote": "An Oyntment made thereof"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "A Plaister made thereof and applied to the Region of the Spleen (and I pray you take notice, that the Spleen lies on the left side) takes away the hardness and pains thereof",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Woad",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Woad",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "plaster",
+     "indicationAsWritten": "takes away the hardness and pains thereof",
+     "evidence": [
+      {
+       "field": "filtered",
+       "quote": "A Plaister"
+      },
+      {
+       "field": "form",
+       "quote": "A Plaister made thereof and applied"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    },
+    {
+     "recipeQuote": "The Oyntment is excellent good in such Ulcers as abound with moisture, and takes away the corroding and fretting Humors: It cools Inflamations, quencheth St. Anthonies fire, and stayeth Defluxions of Blood to any part of the Body",
+     "recipeType": "single_plant",
+     "ingredients": [
+      {
+       "plantNameAsWritten": "Woad",
+       "part": "unknown",
+       "role": "principal",
+       "kind": "plant"
+      }
+     ],
+     "plantNameAsWritten": "Woad",
+     "part": "unknown",
+     "freshOrDried": "unknown",
+     "solvent": [
+      "unknown"
+     ],
+     "heat": "unknown",
+     "heatText": "unknown",
+     "durationText": "unknown",
+     "filtered": "not_applicable",
+     "process": "unknown",
+     "form": "ointment",
+     "indicationAsWritten": "such Ulcers as abound with moisture, and takes away the corroding and fretting Humors: It cools Inflamations, quencheth St. Anthonies fire, and stayeth Defluxions of Blood to any part of the Body",
+     "evidence": [
+      {
+       "field": "filtered",
+       "quote": "The Oyntment"
+      },
+      {
+       "field": "form",
+       "quote": "The Oyntment"
+      }
+     ],
+     "quotesFromHeading": [
+      "plantNameAsWritten",
+      "ingredients"
+     ],
+     "fieldConfidence": [
+      {
+       "field": "filtered",
+       "confidence": 0.85
+      },
+      {
+       "field": "form",
+       "confidence": 0.85
+      }
+     ]
+    }
+   ]
+  },
+  "culpeper-1652:herbal:wood-betony:010": {
+   "recipes": []
+  },
+  "culpeper-1652:herbal:wormwood:020": {
+   "recipes": []
+  }
+ }
+}
