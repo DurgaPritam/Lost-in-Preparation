@@ -1,0 +1,409 @@
+{
+ "passageId": "culpeper-1652:herbal:chervil:009",
+ "recipes": [
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:chervil:009#r00",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:chervil:009",
+    "text": "The Garden Chervil being eaten, doth moderately warm the Stomach, and is a certain remedy (saith Tragus) to dissolve congealed or clotted Bloud in the Body, or that which is clotted by bruises, fals, &c. The Juyce or distilled Water therof being drunk, and the bruised Leavs laid to the place, being taken either in meat or drink, it is held good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "♃ Chervil.",
+     "subsection": "vertues and use",
+     "lineStart": 5462,
+     "lineEnd": 5472
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "♃ Chervil",
+     "part": "unknown",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "♃ Chervil",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "♃ Chervil",
+   "part": "unknown",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "none"
+   ],
+   "heat": "cold",
+   "heatText": "being eaten",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "other",
+   "form": "other",
+   "indicationAsWritten": "moderately warm the Stomach, and is a certain remedy (saith Tragus) to dissolve congealed or clotted Bloud in the Body, or that which is clotted by bruises, fals, &c.",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "solvent": 0.95,
+    "heat": 0.9,
+    "filtered": 0.9,
+    "process": 0.9,
+    "form": 0.9
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "The Garden Chervil being eaten, doth moderately warm the Stomach, and is a certain remedy (saith Tragus) to dissolve congealed or clotted Bloud in the Body, or that which is clotted by bruises, fals, &c",
+      "start": 0,
+      "end": 202,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "♃ Chervil",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "heatText": [
+     {
+      "quote": "being eaten",
+      "start": 19,
+      "end": 30,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "moderately warm the Stomach, and is a certain remedy (saith Tragus) to dissolve congealed or clotted Bloud in the Body, or that which is clotted by bruises, fals, &c",
+      "start": 37,
+      "end": 202,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "being eaten",
+      "start": 19,
+      "end": 30,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "being eaten",
+      "start": 19,
+      "end": 30,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "being eaten",
+      "start": 19,
+      "end": 30,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "being eaten",
+      "start": 19,
+      "end": 30,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "being eaten",
+      "start": 19,
+      "end": 30,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v3:13ca4093ec",
+    "annotator": null,
+    "createdAt": "2026-11-06T09:56:02+00:00"
+   }
+  },
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:chervil:009#r01",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:chervil:009",
+    "text": "The Garden Chervil being eaten, doth moderately warm the Stomach, and is a certain remedy (saith Tragus) to dissolve congealed or clotted Bloud in the Body, or that which is clotted by bruises, fals, &c. The Juyce or distilled Water therof being drunk, and the bruised Leavs laid to the place, being taken either in meat or drink, it is held good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "♃ Chervil.",
+     "subsection": "vertues and use",
+     "lineStart": 5462,
+     "lineEnd": 5472
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "♃ Chervil",
+     "part": "leaf",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "♃ Chervil",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "♃ Chervil",
+   "part": "leaf",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "none"
+   ],
+   "heat": "cold",
+   "heatText": "laid to the place",
+   "durationText": "unknown",
+   "filtered": "not_applicable",
+   "process": "other",
+   "form": "poultice",
+   "indicationAsWritten": "to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "part": 0.96,
+    "solvent": 0.9,
+    "heat": 0.9,
+    "filtered": 0.9,
+    "process": 0.9,
+    "form": 0.95
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "the bruised Leavs laid to the place, being taken either in meat or drink, it is held good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides",
+      "start": 257,
+      "end": 479,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "♃ Chervil",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "heatText": [
+     {
+      "quote": "laid to the place",
+      "start": 275,
+      "end": 292,
+      "inHeading": false
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides",
+      "start": 347,
+      "end": 479,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "Leavs",
+      "start": 269,
+      "end": 274,
+      "inHeading": false
+     }
+    ],
+    "solvent": [
+     {
+      "quote": "Leavs",
+      "start": 269,
+      "end": 274,
+      "inHeading": false
+     }
+    ],
+    "heat": [
+     {
+      "quote": "laid to the place",
+      "start": 275,
+      "end": 292,
+      "inHeading": false
+     }
+    ],
+    "filtered": [
+     {
+      "quote": "laid to the place",
+      "start": 275,
+      "end": 292,
+      "inHeading": false
+     }
+    ],
+    "process": [
+     {
+      "quote": "bruised",
+      "start": 261,
+      "end": 268,
+      "inHeading": false
+     }
+    ],
+    "form": [
+     {
+      "quote": "laid to the place",
+      "start": 275,
+      "end": 292,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v3:13ca4093ec",
+    "annotator": null,
+    "createdAt": "2026-11-06T09:56:02+00:00"
+   }
+  }
+ ],
+ "rejections": [
+  {
+   "recipe": {
+    "recipeQuote": "The Juyce or distilled Water therof being drunk, it is held good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides",
+    "recipeType": "single_plant",
+    "ingredients": [
+     {
+      "plantNameAsWritten": "♃ Chervil",
+      "part": "unknown",
+      "role": "principal",
+      "kind": "plant"
+     }
+    ],
+    "plantNameAsWritten": "♃ Chervil",
+    "part": "unknown",
+    "freshOrDried": "unknown",
+    "solvent": [
+     "water"
+    ],
+    "heat": "cold",
+    "heatText": "being drunk",
+    "durationText": "unknown",
+    "filtered": "unknown",
+    "process": "expression",
+    "form": "drink",
+    "indicationAsWritten": "to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides",
+    "evidence": [
+     {
+      "field": "solvent",
+      "quote": "Juyce or distilled Water"
+     },
+     {
+      "field": "heat",
+      "quote": "being drunk"
+     },
+     {
+      "field": "process",
+      "quote": "Juyce"
+     },
+     {
+      "field": "form",
+      "quote": "being drunk"
+     }
+    ],
+    "quotesFromHeading": [
+     "plantNameAsWritten",
+     "ingredients"
+    ],
+    "fieldConfidence": [
+     {
+      "field": "solvent",
+      "confidence": 0.96
+     },
+     {
+      "field": "heat",
+      "confidence": 0.9
+     },
+     {
+      "field": "process",
+      "confidence": 0.94
+     },
+     {
+      "field": "form",
+      "confidence": 0.95
+     }
+    ]
+   },
+   "errors": [
+    "recipe: quote not found verbatim in passage: 'The Juyce or distilled Water therof being drunk, it is held good to provoke Urin, to expel the Stone in the Kidnies, to send down Womens Courses, and to help the Plurisie and prickings of the Sides'"
+   ]
+  }
+ ],
+ "attempts": 3,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 12722,
+  "output_tokens": 6556,
+  "reasoning_tokens": 2426
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v3:13ca4093ec"
+}

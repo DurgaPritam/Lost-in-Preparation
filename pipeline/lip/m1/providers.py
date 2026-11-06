@@ -398,6 +398,7 @@ class GroqProvider:
             r = {**r, "_maxCompletionTokensSent": self._last_cap}
             GROQ_RESPONSES.mkdir(parents=True, exist_ok=True)
             cp.write_text(json.dumps({"model": self.model, "requestSha256": key,
+                                      "systemSha256": hashlib.sha256(system.encode()).hexdigest()[:16],
                                       "retrievedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                       "response": r}, ensure_ascii=False, indent=1))
         ch = (r.get("choices") or [{}])[0]

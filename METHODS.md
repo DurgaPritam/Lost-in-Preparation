@@ -304,6 +304,11 @@ Each uses Spearman correlation and top-20 overlap. Results are in RESULTS.md.
 
 M5 will compare how modern studies prepared each approved species with how the historical recipes did. Pairing studies with historical uses (indications) waits until M1 has run on the full approved set. Built so far, with no LLM calls:
 
+**Phase 5 species.**
+- **Inputs:** the headline set (approved, eligible and unchanged since review), plus approved species pending re-review that are still eligible.
+- **Not enough:** an "approve" decision alone. Approved species whose attestation proxy fell below 3, or whose conditional approval was not met, are held; they are listed with reasons in `data/interim/m5/summary.json` (`held`), and their already-retrieved records sit in `data/interim/m5/literature_held/`.
+- **No name fallback:** no species enters through a name fallback, because none is implemented.
+
 **Literature retrieval** (`pipeline/lip/m5/literature.py`; per-species files in `data/interim/m5/literature/`, summary in `data/interim/m5/summary.json`).
 - **Searches:** PubMed searches use NCBI E-utilities, which returned HTTP 200 when checked on 2026-11-06. The query covers the accepted WFO name and every WFO synonym (from the WFO Plant List GraphQL API, reduced to the Latin name), searched in title and abstract and sorted by relevance. Up to 300 records are taken per species; the total hit count is recorded, so the cap is visible.
 - **Stored per record:** PMID, title, year, journal, DOI, PMCID, MeSH headings and publication types.

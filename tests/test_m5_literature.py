@@ -49,3 +49,15 @@ def test_committed_records_hold_no_abstract_text():
         d = json.load(open(f))
         assert all("abstract" not in r and "abstractSha256" in r for r in d["records"])
     assert subprocess.run(["git", "check-ignore", "-q", str(L.ABSTRACTS / "x.json")]).returncode == 0
+
+
+def test_phase5_inputs_are_headline_plus_eligible_pending_only():
+    import pandas as pd
+    ss = pd.read_csv("data/interim/m3/study_set_proposal.csv")
+    sp = L.species_list()
+    expected = set(ss[ss.headline | (ss.pendingReReview & ss.eligible)].acceptedName)
+    assert set(sp.acceptedName) == expected and sp.eligible.all()
+    held = L.held_species()
+    assert not set(held.species) & set(sp.acceptedName)
+    files = {p.stem for p in L.OUT.glob("*.json")}
+    assert files == set(sp.wfoId)            # held species' files are not Phase 5 inputs

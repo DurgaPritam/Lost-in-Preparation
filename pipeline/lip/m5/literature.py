@@ -127,12 +127,34 @@ def oa_status_batch(pmcids: list[str]) -> dict[str, dict]:
     return {p: out.get(p, {"status": "pmc_unknown", "licence": None}) for p in pmcids}
 
 
+HELD = INTERIM / "m5" / "literature_held"   # retrieved earlier for species now outside the Phase 5 set; not used
+
+
 def species_list() -> pd.DataFrame:
+    """Phase 5 inputs: the headline set (approved, eligible, unchanged since review) plus approved species that are
+    pending re-review but still ELIGIBLE. An "approve" decision alone is not enough: species whose attestation
+    proxy fell below the threshold, or whose conditional approval was not met, are held until the project lead
+    decides."""
     ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
     dec = pd.read_csv(INTERIM.parent.parent / "config" / "study_set_review_decisions.csv")
     approved = set(dec[dec.decision == "approve"].species)
-    ss = ss[ss.acceptedName.isin(approved)].copy()
+    ss = ss[ss.acceptedName.isin(approved) & (ss.headline | (ss.pendingReReview & ss.eligible))].copy()
     return ss[["acceptedName", "wfoId", "headline", "pendingReReview", "eligible"]]
+
+
+def held_species() -> pd.DataFrame:
+    """Approved species NOT in the Phase 5 set, with the reason."""
+    ss = pd.read_csv(INTERIM / "m3" / "study_set_proposal.csv")
+    dec = pd.read_csv(INTERIM.parent.parent / "config" / "study_set_review_decisions.csv").set_index("species")
+    a = ss[ss.acceptedName.isin(dec[dec.decision == "approve"].index) & ~(ss.headline | (ss.pendingReReview & ss.eligible))]
+    def why(r):
+        if r.pendingReReview:
+            return "pending re-review after the footnote rule; attestation proxy below 3"
+        if dec.loc[r.acceptedName, "headline"] == "conditional":
+            return "conditional approval not met (attestation proxy below 3)"
+        return "approved, but attestation proxy below 3 after the reviewer's removals: needs a decision"
+    return pd.DataFrame([{"species": r.acceptedName, "wfoId": r.wfoId, "attestations": r.attestations, "reason": why(r)}
+                         for r in a.itertuples()])
 
 
 def run(species: list[str] | None = None) -> dict:
@@ -164,5 +186,11 @@ def run(species: list[str] | None = None) -> dict:
                                               "eligible": bool(r.eligible), "names": len(names), "hits": s["count"],
                                               "retrieved": len(recs), "withAbstract": sum(x["hasAbstract"] for x in recs),
                                               "licenceStatus": lic_counts, "oaLicences": oal}
+    summary["held"] = held_species().to_dict("records")
+    HELD.mkdir(parents=True, exist_ok=True)
+    keep = set(sp.wfoId)
+    for f in OUT.glob("*.json"):
+        if f.stem not in keep:
+            f.rename(HELD / f.name)   # kept for later, not deleted; not a Phase 5 input
     (OUT.parent / "summary.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False))
     return summary

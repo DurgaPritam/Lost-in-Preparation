@@ -1,0 +1,144 @@
+{
+ "passageId": "culpeper-1652:herbal:ash-tree:004",
+ "recipes": [
+  {
+   "mock": false,
+   "id": "culpeper-1652:herbal:ash-tree:004#r00",
+   "sourceId": "culpeper-1652",
+   "passage": {
+    "passageId": "culpeper-1652:herbal:ash-tree:004",
+    "text": "I can justly except against none of all this save only the first, viz. That Ash-tree Tops and Leaves are good against the biting of Serpents and Vipers, and I suppose this had its rise from Gerard, or Pliny, both which hold that there is such an Antipathy between an Adder and an Ash-tree, that if an Adder be compassed round with Ash-tree Leaves, she wil sooner run through the fire than through the Leaves, the contrary to which is the truth, as both my eyes are witnesses: the rest are Vertues somthing likely; only if it be in Winter when you cannot get the Leaves, you may safely use the Bank instead of them, the Keys you may easily keep all the year, gathering them when they are ripe.",
+    "location": {
+     "part": "herbal",
+     "book": null,
+     "chapter": null,
+     "entry": "☉ Ash-Tree.",
+     "subsection": "vertues and use",
+     "lineStart": 2309,
+     "lineEnd": 2324
+    },
+    "translation": null,
+    "translationSource": null
+   },
+   "recipeType": "single_plant",
+   "ingredients": [
+    {
+     "plantNameAsWritten": "Ash-Tree",
+     "part": "leaf",
+     "role": "principal",
+     "kind": "plant",
+     "evidence": [
+      {
+       "quote": "Ash-Tree",
+       "start": -1,
+       "end": -1,
+       "inHeading": true
+      }
+     ]
+    }
+   ],
+   "plantNameAsWritten": "Ash-Tree",
+   "part": "leaf",
+   "freshOrDried": "unknown",
+   "solvent": [
+    "unknown"
+   ],
+   "heat": "unknown",
+   "heatText": "unknown",
+   "durationText": "unknown",
+   "filtered": "unknown",
+   "process": "unknown",
+   "form": "unknown",
+   "indicationAsWritten": "biting of Serpents and Vipers",
+   "indicationNormalized": null,
+   "fieldConfidence": {
+    "recipeType": 0.9,
+    "part": 0.95,
+    "indicationAsWritten": 0.95,
+    "filtered": 0.6
+   },
+   "evidence": {
+    "recipe": [
+     {
+      "quote": "Ash-tree Tops and Leaves are good against the biting of Serpents and Vipers",
+      "start": 76,
+      "end": 151,
+      "inHeading": false
+     }
+    ],
+    "plantNameAsWritten": [
+     {
+      "quote": "Ash-Tree",
+      "start": -1,
+      "end": -1,
+      "inHeading": true
+     }
+    ],
+    "indicationAsWritten": [
+     {
+      "quote": "biting of Serpents and Vipers",
+      "start": 122,
+      "end": 151,
+      "inHeading": false
+     }
+    ],
+    "recipeType": [
+     {
+      "quote": "Ash-tree Tops and Leaves",
+      "start": 76,
+      "end": 100,
+      "inHeading": false
+     }
+    ],
+    "part": [
+     {
+      "quote": "Leaves",
+      "start": 94,
+      "end": 100,
+      "inHeading": false
+     }
+    ]
+   },
+   "attributionCaveat": null,
+   "excludedFromHeadline": false,
+   "provenance": {
+    "method": "llm",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+    "decoding": {
+     "temperature": 0.0,
+     "seed": 0,
+     "max_completion_tokens": 4096,
+     "responseFormat": "json_schema (strict)",
+     "selectedOn": "2026-11-06",
+     "reasoningEffort": "low"
+    },
+    "promptVersion": "m1_extract/v3:13ca4093ec",
+    "annotator": null,
+    "createdAt": "2026-11-06T09:52:34+00:00"
+   }
+  }
+ ],
+ "rejections": [],
+ "attempts": 2,
+ "stop": "end",
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0
+ },
+ "run": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "modelVersion": "openai/gpt-oss-120b@created=1754408224",
+  "decoding": {
+   "temperature": 0.0,
+   "seed": 0,
+   "max_completion_tokens": 4096,
+   "responseFormat": "json_schema (strict)",
+   "selectedOn": "2026-11-06",
+   "reasoningEffort": "low"
+  }
+ },
+ "promptVersion": "m1_extract/v3:13ca4093ec"
+}

@@ -4,7 +4,7 @@
   "checkedOn": "2026-11-06",
   "status": "E-utilities and Europe PMC returned HTTP 200; NCBI's PMC OA web service (oa.fcgi) returned 404, so licence status comes from Europe PMC",
   "retmax": 300,
-  "generatedAt": "2026-11-06T07:09:18+00:00",
+  "generatedAt": "2026-11-06T09:56:26+00:00",
   "species": {
     "Artemisia absinthium": {
       "wfoId": "wfo-0000134589",
@@ -404,93 +404,32 @@
         "no_pmc": 18
       },
       "oaLicences": {}
-    },
-    "Lavandula angustifolia": {
-      "wfoId": "wfo-0000224116",
-      "headline": false,
-      "pendingReReview": false,
-      "eligible": false,
-      "names": 1,
-      "hits": 636,
-      "retrieved": 299,
-      "withAbstract": 294,
-      "licenceStatus": {
-        "pmc_oa": 156,
-        "no_pmc": 139,
-        "pmc_not_oa": 3,
-        "pmc_unknown": 1
-      },
-      "oaLicences": {
-        "cc by": 129,
-        "cc by-nc-nd": 17,
-        "cc by-nc": 5,
-        "cc by-nc-sa": 4,
-        "cc by-nd": 1
-      }
-    },
-    "Hyssopus officinalis": {
-      "wfoId": "wfo-0000217205",
-      "headline": false,
-      "pendingReReview": true,
-      "eligible": false,
-      "names": 3,
-      "hits": 110,
-      "retrieved": 109,
-      "withAbstract": 108,
-      "licenceStatus": {
-        "no_pmc": 62,
-        "pmc_oa": 44,
-        "pmc_not_oa": 3
-      },
-      "oaLicences": {
-        "cc by": 37,
-        "cc by-nc-nd": 4,
-        "cc by-nc": 2,
-        "cc by-nc-sa": 1
-      }
-    },
-    "Symphytum officinale": {
-      "wfoId": "wfo-0000432219",
-      "headline": false,
-      "pendingReReview": false,
-      "eligible": false,
-      "names": 16,
-      "hits": 168,
-      "retrieved": 167,
-      "withAbstract": 152,
-      "licenceStatus": {
-        "no_pmc": 120,
-        "pmc_oa": 40,
-        "pmc_not_oa": 5,
-        "pmc_unknown": 2
-      },
-      "oaLicences": {
-        "cc by": 31,
-        "cc by-nc-nd": 4,
-        "cc by-nc": 4
-      }
-    },
-    "Pastinaca sativa": {
-      "wfoId": "wfo-0000391752",
-      "headline": false,
-      "pendingReReview": true,
-      "eligible": false,
-      "names": 7,
-      "hits": 104,
-      "retrieved": 104,
-      "withAbstract": 88,
-      "licenceStatus": {
-        "no_pmc": 69,
-        "pmc_oa": 28,
-        "pmc_not_oa": 5,
-        "pmc_unknown": 2
-      },
-      "oaLicences": {
-        "cc by": 23,
-        "cc by-nc-nd": 2,
-        "cc by-nc-sa": 2,
-        "cc by-nc": 1
-      }
     }
-  }
+  },
+  "held": [
+    {
+      "species": "Lavandula angustifolia",
+      "wfoId": "wfo-0000224116",
+      "attestations": 2.0,
+      "reason": "conditional approval not met (attestation proxy below 3)"
+    },
+    {
+      "species": "Hyssopus officinalis",
+      "wfoId": "wfo-0000217205",
+      "attestations": 2.0,
+      "reason": "pending re-review after the footnote rule; attestation proxy below 3"
+    },
+    {
+      "species": "Symphytum officinale",
+      "wfoId": "wfo-0000432219",
+      "attestations": 2.0,
+      "reason": "approved, but attestation proxy below 3 after the reviewer's removals: needs a decision"
+    },
+    {
+      "species": "Pastinaca sativa",
+      "wfoId": "wfo-0000391752",
+      "attestations": 2.0,
+      "reason": "pending re-review after the footnote rule; attestation proxy below 3"
+    }
+  ]
 }
