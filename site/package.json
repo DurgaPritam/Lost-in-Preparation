@@ -11,14 +11,15 @@
     "dev": "npm run prebuild && next dev",
     "serve": "node scripts/serve.mjs out 4517",
     "typecheck": "npm run gen:contract && tsc --noEmit",
-    "lint": "next lint --max-warnings 0",
+    "lint": "next lint --dir app --dir components --dir features --dir lib --dir scripts --dir tests --max-warnings 0",
     "test": "vitest run",
     "e2e": "playwright test",
     "lighthouse": "node scripts/lighthouse.mjs",
     "screenshots": "tsx scripts/screenshots.ts",
-    "ci": "npm run typecheck && npm run lint && npm test && npm run build && npm run e2e && npm run lighthouse",
+    "ci": "npm run typecheck && npm run lint && npm test && npm run build && npm run e2e && LH_SCHEME=light npm run lighthouse && LH_SCHEME=dark npm run lighthouse",
     "engine:parity": "tsx scripts/engine-parity.ts",
-    "engine:bench": "tsx scripts/engine-bench.ts"
+    "engine:bench": "tsx scripts/engine-bench.ts",
+    "lab:latency": "tsx scripts/lab-latency.ts"
   },
   "dependencies": {
     "next": "14.2.35",

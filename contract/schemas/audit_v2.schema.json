@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.7/audit_v2.json",
+  "$id": "lost-in-preparation/contract/1.8/audit_v2.json",
   "title": "audit_v2.json",
   "type": "array",
   "items": {

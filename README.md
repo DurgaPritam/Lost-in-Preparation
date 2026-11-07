@@ -113,15 +113,15 @@ The model predicts the **fraction** of a compound that a preparation extracts. P
 
 ```
 pipeline/lip/      Python package: ingest, segmenters, M1 extraction/evaluation, name & compound resolution
-contract/          data contract: pydantic models + generated JSON Schemas for the 7 site-data files
+contract/          data contract: pydantic models + generated JSON Schemas for the site-data files
 prompts/m1_extract versioned extraction prompt, guidelines, worked examples, response schema
 config/            sources, pipeline settings (LLM provider), crosswalk reviewer overrides
 annotation/        static annotation & adjudication tool (open index.html in a browser)
 data/gold/         gold-set sample and annotations
 site-data/         exported files for the web explorer
 LICENSE            MIT (code); LICENSE-DATA: CC BY 4.0 (derived data) with the exceptions listed in it
-site/              the website (Next.js static export), built from the Claude Design handoff in design/
-design/            the Claude Design handoff (tokens, components, screens), unchanged
+site/              the website (Next.js static export), built from the Claude Design v2 handoff in design/v2/
+design/            the Claude Design handoffs (v1 at the top level, v2 in design/v2/), unchanged
 docs/              data licences, extraction error analysis
 METHODS.md         how every dataset is produced
 ```
@@ -147,13 +147,16 @@ export PYTHONPATH=pipeline:.
 `site/` is a Next.js (App Router, TypeScript strict) static export. It reads only `site-data/` at build time:
 - **Contract types:** the TypeScript types and Zod schemas are generated from the contract JSON Schemas.
 - **Validation:** every file is validated, and the build fails on any mismatch.
-- **Changes from the design:** listed in [site/CHANGES.md](site/CHANGES.md), together with the three additions (the Home reporting-gap section, the liquorice case study, and audit v1 and v2 side by side).
+- **Screens:** the landing page with a live mini-demo, the Preparation Lab, the Recipe Atlas and recipe pages, the evidence gap, the liquorice case study, the Lab Planner (a placeholder until the quantum feature ships), Methods & data, and Credits.
+- **Preparation Lab:** computes each profile in the browser with the preparation engine ([site/lib/engine/](site/lib/engine/)), in a Web Worker. The engine is the M4 model ported to TypeScript, and the build fails unless it reproduces every published Python estimate exactly. Every Lab configuration is a shareable URL (`/lab/?plant=&solvent=&heat=&strained=&acid=`).
+- **Botanical plates:** 19th-century plates whose Wikimedia Commons licence field says public domain (each still to be confirmed by a person), downloaded once by `python -m lip plates` and served locally; credits are in [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md) and on `/credits/`.
+- **Changes from the design:** listed in [site/CHANGES.md](site/CHANGES.md).
 
 ```bash
 cd site && npm ci
 npm run build        # generate contract types, validate site-data, export to site/out/
 npm run serve        # http://localhost:4517
-npm run ci           # type-check, lint, Vitest, build, Playwright + axe (desktop and 390px), Lighthouse
+npm run ci           # type-check, lint, Vitest, build (with the engine parity gate), Playwright + axe (both themes, desktop and 390px), Lighthouse in both themes (medians in site/perf/)
 ```
 
 CI runs the same gates in `.github/workflows/site.yml`. Deployment notes are in [site/DEPLOY.md](site/DEPLOY.md).

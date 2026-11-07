@@ -1,0 +1,9 @@
+{
+  "nameResolutions": {
+    "validated": 111,
+    "provisional": 222,
+    "pending": 333
+  },
+  "recipes": 555,
+  "studies": 66
+}

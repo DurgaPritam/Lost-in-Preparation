@@ -1,9 +1,6 @@
-import type { Metadata } from 'next';
-import { DataLicences } from '@/features/data/DataLicences';
-import { CONTRACT_VERSION } from '@/lib/data/generated';
-import { getSources } from '@/lib/data/site';
+import { Redirect } from '@/features/shared/Redirect';
 
-export const metadata: Metadata = { title: 'Data & licences' };
+export const metadata = { title: 'Moved', robots: { index: false } };
 export default function Page() {
-  return <DataLicences data={getSources()} contractVersion={CONTRACT_VERSION} />;
+  return <Redirect to="/docs/#downloads" label="Downloads in Methods & data" />;
 }

@@ -1,5 +1,3 @@
-'use client';
-
 import { cx } from '@/lib/data/format';
 import { Tooltip } from '../base/Tooltip';
 import { IconUnknown } from '../icons';

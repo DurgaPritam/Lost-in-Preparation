@@ -1,0 +1,17 @@
+[
+  {
+    "id": "acidity",
+    "label": "Acidity",
+    "rule": "Vinegar is treated as favouring extraction of basic compounds (e.g. alkaloids) as salts."
+  },
+  {
+    "id": "heat_sensitivity",
+    "label": "Heat sensitivity",
+    "rule": "Prolonged boiling is treated as reducing volatile and heat-labile compounds."
+  },
+  {
+    "id": "ethanol_strength",
+    "label": "Ethanol strength of wine",
+    "rule": "Historical wine is modelled as dilute ethanol of unknown strength; a range of strengths is propagated, not a single value."
+  }
+]

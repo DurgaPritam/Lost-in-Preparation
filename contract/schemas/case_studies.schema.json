@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.7/case_studies.json",
+  "$id": "lost-in-preparation/contract/1.8/case_studies.json",
   "title": "case_studies.json",
   "type": "array",
   "items": {

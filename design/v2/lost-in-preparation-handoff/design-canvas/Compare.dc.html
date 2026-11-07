@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Compare preparations</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 22px">
+
+  <header style="border-bottom: 1px solid #D8CDB9">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px">
+      <span style="font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">Lost in Preparation</span>
+      <span style="font-size: 13px; color: #685E51">EthnoHack 2026 · Traditional Knowledge Mining</span>
+    </div>
+  </header>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 24px 16px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+    <nav aria-label="Primary" style="flex: 1 1 200px">
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px">
+        <li style="flex: 1 1 150px"><a href="Home.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Home</a></li>
+        <li style="flex: 1 1 150px"><a href="Recipes.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Recipe explorer</a></li>
+        <li style="flex: 1 1 150px"><a href="Compare.dc.html" aria-current="page" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; background: #EDE6D7; color: #1E1A15; font-weight: 600; text-decoration: none">Compare</a></li>
+        <li style="flex: 1 1 150px"><a href="Audit.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Audit</a></li>
+        <li style="flex: 1 1 150px"><a href="Hypotheses.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Hypotheses</a></li>
+        <li style="flex: 1 1 150px"><a href="Methods.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Methods &amp; validation</a></li>
+        <li style="flex: 1 1 150px"><a href="Data.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Data &amp; licences</a></li>
+      </ul>
+    </nav>
+
+    <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 38px; line-height: 46px; font-weight: 500">Compare</h1>
+        <p style="margin: 0; max-width: 68ch; font-size: 17px; line-height: 26px; color: #554C40">For one plant, how does the historical preparation differ from how modern studies prepared it?</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; flex-direction: column; gap: 4px; width: 100%; max-width: 320px">
+          <label for="sp" style="font-size: 13px; font-weight: 500">Species</label>
+          <select id="sp" value="{{species}}" onChange="{{pickSpecies}}" style="height: 40px; padding: 0 12px; border: 1px solid #8F826D; border-radius: 4px; background: #FCFAF5; color: #1E1A15; font: inherit; font-style: italic">
+            <option value="Artemisia absinthium">Artemisia absinthium</option>
+            <option value="Salvia officinalis">Salvia officinalis</option>
+            <option value="Mentha">Mentha sp. (genus only)</option>
+          </select>
+        </div>
+        <p style="margin: 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: #554C40">ⓘ These are <b style="font-weight: 500; color: #1E1A15">predicted extraction</b> likelihoods, not lab detection. <a href="#xd" style="color: #554C40">Why it matters</a></p>
+      </div>
+
+      <sc-if value="{{isLoading}}" hint-placeholder-val="{{ false }}">
+        <div role="status" aria-live="polite" aria-busy="true" style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+          <span style="font-size: 13px; color: #554C40">Loading extraction profile for <i>{{speciesLabel}}</i>…</span>
+          <span style="height: 28px; width: 40%; border-radius: 2px; background: #EDE6D7"></span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px"><span style="height: 120px; border-radius: 4px; background: #EDE6D7"></span><span style="height: 120px; border-radius: 4px; background: #EDE6D7"></span></div>
+          <span style="height: 12px; border-radius: 2px; background: #EDE6D7"></span><span style="height: 12px; border-radius: 2px; background: #EDE6D7"></span><span style="height: 12px; width: 70%; border-radius: 2px; background: #EDE6D7"></span>
+          <span style="font-size: 12px; color: #685E51">Profiles load per species; nothing above has changed.</span>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{isError}}" hint-placeholder-val="{{ false }}">
+        <div role="alert" style="display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #FCFAF5; border: 2px solid #1E1A15; border-radius: 4px">
+          <span style="font-size: 15px; font-weight: 600">⊗ Couldn’t load this species’ profile</span>
+          <span>{{errorText}}</span>
+          <button type="button" onClick="{{retry}}" style="width: max-content; height: 32px; padding: 0 12px; border-radius: 4px; border: 1px solid #8F826D; background: #FCFAF5; font: inherit; font-size: 13px; font-weight: 500; cursor: pointer">Try again</button>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{isReady}}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; flex-direction: column; gap: 24px">
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px">
+              <h2 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500; font-style: italic">{{p.taxon}}</h2>
+              <span style="{{p.toxStyle}}">{{p.toxLabel}}</span>
+            </div>
+            <p style="margin: 0; font-size: 13px; color: #554C40; max-width: 68ch">{{p.linked}}</p>
+            <sc-if value="{{p.concern}}" hint-placeholder-val="{{ true }}"><div role="note" style="padding: 12px; border: 1px dashed #8A1C24; border-radius: 4px; background: #FCFAF5; color: #8A1C24; font-size: 13px; line-height: 18px; max-width: 68ch">ⓘ A toxicity concern is recorded for this plant. Shown for analysis only.</div></sc-if>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+            <sc-for list="{{cols}}" as="c" hint-placeholder-count="2">
+              <div style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px; min-width: 0">
+                <label for="{{c.selId}}" style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Preparation {{c.side}}</label>
+                <select id="{{c.selId}}" value="{{c.value}}" onChange="{{c.pick}}" style="height: 40px; width: 100%; padding: 0 12px; border: 1px solid #8F826D; border-radius: 4px; background: #FCFAF5; color: #1E1A15; font: inherit">
+                  <sc-for list="{{c.options}}" as="o" hint-placeholder-count="2"><option value="{{o.id}}">{{o.text}}</option></sc-for>
+                </select>
+                <span style="{{c.tagStyle}}"><span aria-hidden="true" style="{{c.markStyle}}"></span><span style="{{c.vehicleStyle}}">{{c.vehicle}}</span><span style="font-size: 12px">· {{c.detail}}</span></span>
+                <span style="font-size: 13px; color: #554C40">{{c.origin}}</span>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px">
+            <span style="display: inline-flex; align-items: center; gap: 6px; color: #8A4513"><span aria-hidden="true" style="width: 10px; height: 10px; background: #C27A35"></span>Historical preparation</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px; color: #1D4E7E"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #23588C"></span>Modern study preparation</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px; color: #5C5750"><span aria-hidden="true" style="width: 16px; height: 10px; border: 1px solid #B8B1A5; background-color: #E7E3DB; background-image: repeating-linear-gradient(135deg, #B8B1A5 0 1px, transparent 1px 6px)"></span>Unknown</span>
+            <span style="color: #554C40">“Enriched” only when ranges do not overlap.</span>
+          </div>
+
+          <sc-for list="{{groups}}" as="g" hint-placeholder-count="4">
+            <section style="display: flex; flex-direction: column">
+              <h3 style="margin: 0 0 8px; font-size: 20px; line-height: 28px; font-weight: 600">{{g.name}}</h3>
+              <ul style="margin: 0; padding: 0; list-style: none">
+                <sc-for list="{{g.rows}}" as="r" hint-placeholder-count="2">
+                  <li onMouseEnter="{{r.enter}}" onMouseLeave="{{r.leave}}" style="display: flex; flex-direction: column; gap: 12px; padding: 16px 0; border-top: 1px solid #D8CDB9">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 12px 20px; align-items: start">
+                      <div style="display: flex; flex-direction: column; gap: 4px">
+                        <span style="font-weight: 500">{{r.compound}}</span>
+                        <button type="button" aria-expanded="{{r.open}}" onClick="{{r.toggle}}" style="width: max-content; min-height: 32px; padding: 0; border: 0; background: none; color: #554C40; font: inherit; font-size: 13px; text-decoration: underline; text-underline-offset: 2px; cursor: pointer">{{r.toggleLabel}}</button>
+                      </div>
+                      <sc-for list="{{r.bars}}" as="b" hint-placeholder-count="2">
+                        <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+                          <span style="{{b.labelStyle}}"><span aria-hidden="true" style="{{b.markStyle}}"></span><b style="font-weight: 500">{{b.label}}</b></span>
+                          <span role="img" aria-label="{{b.aria}}" style="{{b.trackStyle}}">
+                            <span aria-hidden="true" style="position: absolute; left: 25%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span>
+                            <span aria-hidden="true" style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span>
+                            <span aria-hidden="true" style="position: absolute; left: 75%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span>
+                            <sc-if value="{{b.known}}" hint-placeholder-val="{{ true }}"><span aria-hidden="true" style="{{b.bandStyle}}"></span></sc-if>
+                            <sc-if value="{{b.hasPoint}}" hint-placeholder-val="{{ true }}"><span aria-hidden="true" style="{{b.pointStyle}}"></span></sc-if>
+                          </span>
+                          <span style="{{b.valueStyle}}">{{b.value}}</span>
+                          <sc-if value="{{b.enriched}}" hint-placeholder-val="{{ false }}"><span style="{{b.enrichedStyle}}">▲ Enriched here</span></sc-if>
+                        </div>
+                      </sc-for>
+                      <div style="display: flex; align-items: flex-start"><span style="{{r.verdictStyle}}">{{r.verdict}}</span></div>
+                    </div>
+                    <sc-if value="{{r.open}}" hint-placeholder-val="{{ false }}">
+                      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px; padding: 16px; background: #FFFFFF; border: 1px solid #D8CDB9; border-radius: 4px; box-shadow: 0 4px 16px rgba(30,26,21,0.12)">
+                        <sc-for list="{{r.drivers}}" as="d" hint-placeholder-count="2">
+                          <div style="display: flex; flex-direction: column; gap: 8px">
+                            <span style="{{d.headStyle}}">Drivers · {{d.prep}}</span>
+                            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 13px; line-height: 18px">
+                              <sc-for list="{{d.items}}" as="it" hint-placeholder-count="4">
+                                <li style="display: flex; flex-direction: column; gap: 2px">
+                                  <span style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px">
+                                    <sc-if value="{{it.heuristic}}" hint-placeholder-val="{{ false }}"><span title="Heuristic: a rule of thumb applied by the model, not a measurement." style="display: inline-flex; align-items: baseline; gap: 4px"><span aria-hidden="true" style="color: #554C40">◇</span><span style="font-size: 12px; color: #554C40; font-variant-caps: all-small-caps; letter-spacing: .06em">heuristic</span><span style="font-weight: 500; text-decoration: underline dashed #554C40; text-underline-offset: 4px">{{it.label}}</span></span></sc-if>
+                                    <sc-if value="{{it.plain}}" hint-placeholder-val="{{ true }}"><span style="font-weight: 500">{{it.label}}</span></sc-if>
+                                    <span style="{{it.effectStyle}}">{{it.effect}}</span>
+                                  </span>
+                                  <span style="font-size: 12px; line-height: 16px; color: #685E51">{{it.note}}</span>
+                                </li>
+                              </sc-for>
+                            </ul>
+                          </div>
+                        </sc-for>
+                        <p style="margin: 0; grid-column: 1 / -1; font-size: 12px; line-height: 16px; color: #685E51">Drivers explain the predicted extraction. They say nothing about how much of the compound the plant contained.</p>
+                      </div>
+                    </sc-if>
+                  </li>
+                </sc-for>
+              </ul>
+            </section>
+          </sc-for>
+
+          <div id="xd" style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <h3 style="margin: 0; font-size: 15px; font-weight: 600">Extraction is not detection</h3>
+            <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 12px">
+              <li style="display: flex; flex-direction: column; gap: 4px; padding: 12px; border: 1px dashed #8F826D; border-radius: 4px"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Step 1 · outside the model</span><span style="font-weight: 500">Plant content</span><span style="font-size: 13px; line-height: 18px; color: #554C40">Varies with species, part, season, storage. Not modelled.</span></li>
+              <li style="display: flex; flex-direction: column; gap: 4px; padding: 12px; border: 1px solid #1E1A15; border-radius: 4px; background: #FFFFFF"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Step 2 · modelled</span><span style="font-weight: 500">Extraction</span><span style="font-size: 13px; line-height: 18px; color: #554C40">What these bars estimate.</span></li>
+              <li style="display: flex; flex-direction: column; gap: 4px; padding: 12px; border: 1px dashed #8F826D; border-radius: 4px"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Step 3 · outside the model</span><span style="font-weight: 500">Lab detection</span><span style="font-size: 13px; line-height: 18px; color: #554C40">Also depends on content and the assay’s limit of detection. Not predicted.</span></li>
+            </ol>
+          </div>
+          <p style="margin: 0; font-size: 12px; line-height: 16px; color: #685E51">Mock data: every number is a placeholder.</p>
+        </div>
+      </sc-if>
+    </main>
+  </div>
+
+  <footer style="border-top: 1px solid #D8CDB9">
+    <p style="max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 13px; line-height: 18px; color: #685E51">A research tool that generates hypotheses for re-testing. It makes no medical claims and gives no guidance on preparing or taking any plant.</p>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"previewState":{"editor":"enum","options":["ready","loading","error"],"default":"ready"},"openFirstDrivers":{"editor":"boolean","default":true},"phone":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":2700}}'>
+const DR = {
+  wine: ['solvent', 'raises', 'moderate', 'Dilute ethanol carries mid-polarity compounds.'],
+  meth: ['solvent', 'raises', 'strong', 'Methanol carries a wide polarity range.'],
+  water: ['solvent', 'lowers', 'moderate', 'Water carries little of the less polar compounds.'],
+  cold: ['heat', 'raises', 'moderate', 'No heating: volatile compounds treated as retained.'],
+  hot: ['heat', 'lowers', 'strong', 'Prolonged heat: volatile and heat-labile compounds treated as reduced.'],
+  hotUp: ['heat', 'raises', 'moderate', 'Heat treated as raising extraction of stable compounds.'],
+  filt: ['filtration', 'lowers', 'weak', 'Particulate-bound material removed.'],
+  filtN: ['filtration', 'neutral', null, ''],
+  acidW: ['acidity', 'neutral', 'weak', 'Wine is mildly acidic; little effect assumed here.'],
+  acidN: ['acidity', 'neutral', null, ''],
+  acidU: ['acidity', 'unknown', null, 'Acidity of this vehicle not modelled.'],
+};
+const LBL = { solvent: 'Solvent', heat: 'Heat', filtration: 'Filtration', acidity: 'Acidity' };
+const HEUR = { heat: true, acidity: true };
+const R = (lo, hi, pt) => ({ lo, hi, pt });
+const PROFILES = {
+  'Artemisia absinthium': {
+    taxon: 'Artemisia absinthium', tox: 'concern',
+    linked: 'Linked recipes: “Wormwood” (Culpeper, resolved) · “absinthium” (Pliny, candidate 1 of 3, disputed). This profile is for this species only.',
+    preps: [
+      { id: 'wine', fam: 'historical', short: 'Wine', vehicle: 'Wine', detail: 'cold · 3 days · strained', origin: 'From recipe “Wormwood” · Culpeper 1652 ▮▮ higher confidence', drv: ['wine', 'cold', 'filt', 'acidW'],
+        est: { 'Absinthin': R(.33, .55, .44), 'Artabsin': R(.22, .55, .33), 'Thujone (α/β)': R(.55, .77, .66), 'Sabinene': R(.33, .66, .5), 'Quercetin glycosides': R(.33, .66, .44), 'Artemetin': R(null, null, null), 'Chlorogenic acid': R(.22, .44, .33) } },
+      { id: 'meth', fam: 'modern', short: 'Methanol extract', vehicle: 'Methanol extract', detail: 'reflux · filtered', origin: '[MOCK] Study A (placeholder citation)', drv: ['meth', 'hotUp', 'filt', 'acidN'],
+        est: { 'Absinthin': R(.66, .88, .77), 'Artabsin': R(.44, .77, .55), 'Thujone (α/β)': R(.11, .33, .22), 'Sabinene': R(.11, .44, .22), 'Quercetin glycosides': R(.55, .88, .66), 'Artemetin': R(.44, .77, .55), 'Chlorogenic acid': R(.44, .77, .66) } },
+      { id: 'dec', fam: 'modern', short: 'Aqueous decoction', vehicle: 'Aqueous extract', detail: 'boiled · filtered', origin: '[MOCK] Study B (placeholder citation)', drv: ['water', 'hotUp', 'filt', 'acidN'],
+        est: { 'Absinthin': R(.11, .33, .22), 'Artabsin': R(.11, .33, null), 'Thujone (α/β)': R(.11, .22, .11), 'Sabinene': R(null, null, null), 'Quercetin glycosides': R(.33, .55, .44), 'Artemetin': R(.11, .33, null), 'Chlorogenic acid': R(.55, .77, .66) } },
+      { id: 'vin', fam: 'historical', short: 'Vinegar', vehicle: 'Vinegar', detail: 'boiled · filtering not stated', origin: 'From recipe “absinthium” · Pliny, NH ▮▯ lower confidence · name disputed', drv: ['water', 'hot', 'filtN', 'acidU'],
+        est: { 'Absinthin': R(.11, .44, .22), 'Artabsin': R(null, null, null), 'Thujone (α/β)': R(.11, .22, null), 'Sabinene': R(null, null, null), 'Quercetin glycosides': R(.22, .55, .33), 'Artemetin': R(null, null, null), 'Chlorogenic acid': R(.33, .66, .44) } },
+    ],
+    classes: [['Sesquiterpene lactones', ['Absinthin', 'Artabsin']], ['Monoterpenes (volatile oil)', ['Thujone (α/β)', 'Sabinene']], ['Flavonoids', ['Quercetin glycosides', 'Artemetin']], ['Phenolic acids', ['Chlorogenic acid']]],
+  },
+  'Salvia officinalis': {
+    taxon: 'Salvia officinalis', tox: 'none',
+    linked: 'Linked recipe: “Sage” (Culpeper, resolved, provisional).',
+    preps: [
+      { id: 'cold', fam: 'historical', short: 'Cold infusion', vehicle: 'Cold infusion', detail: '≈1 night · strained', origin: 'From recipe “Sage” · Culpeper 1652 ▮▮ higher confidence', drv: ['water', 'cold', 'filt', 'acidN'],
+        est: { 'Rosmarinic acid': R(.44, .66, .55), 'Carnosic acid': R(.11, .22, .11), 'Thujone (α/β)': R(.22, .55, .33) } },
+      { id: 'eth', fam: 'modern', short: 'Ethanol extract', vehicle: 'Ethanol extract', detail: 'warm · filtered', origin: '[MOCK] Study C (placeholder citation)', drv: ['meth', 'hotUp', 'filt', 'acidN'],
+        est: { 'Rosmarinic acid': R(.55, .77, .66), 'Carnosic acid': R(.55, .88, .77), 'Thujone (α/β)': R(.22, .44, .33) } },
+    ],
+    classes: [['Phenolic acids', ['Rosmarinic acid']], ['Diterpenes', ['Carnosic acid']], ['Monoterpenes (volatile oil)', ['Thujone (α/β)']]],
+  },
+};
+const PILL = 'display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; font-size: 13px; line-height: 18px; font-weight: 500; ';
+const TOX = {
+  concern: [PILL + 'border: 1px solid #8A1C24; background: #F7E0E0; color: #8A1C24', 'ⓘ Toxicity concern'],
+  none: [PILL + 'border: 1px solid #8F826D; background: #FCFAF5; color: #554C40', '▭ No toxicity reported'],
+};
+const FAM = {
+  historical: { fg: '#8A4513', bg: '#F3E2CC', solid: '#C27A35', mark: 'width: 8px; height: 8px; background: #8A4513' },
+  modern: { fg: '#1D4E7E', bg: '#DCE7F2', solid: '#23588C', mark: 'width: 8px; height: 8px; border-radius: 50%; background: #1D4E7E' },
+};
+const f2 = (n) => n.toFixed(2);
+class Component extends DCLogic {
+  constructor(p) {
+    super(p);
+    this.state = { species: 'Artemisia absinthium', loading: false, error: false, a: 'wine', b: 'meth', pinned: {}, hover: null, touched: false };
+  }
+  componentWillUnmount() { clearTimeout(this.t); }
+  load(species) {
+    clearTimeout(this.t);
+    this.setState({ species, loading: true, error: false, pinned: {}, touched: true });
+    this.t = setTimeout(() => {
+      const prof = PROFILES[species];
+      if (!prof) return this.setState({ loading: false, error: true });
+      const h = prof.preps.find((x) => x.fam === 'historical');
+      const m = prof.preps.find((x) => x.fam === 'modern');
+      this.setState({ loading: false, a: h.id, b: m.id });
+    }, 900);
+  }
+  renderVals() {
+    const st = this.state;
+    const preview = this.props.previewState ?? 'ready';
+    const forced = !st.touched && preview !== 'ready';
+    const isLoading = forced ? preview === 'loading' : st.loading;
+    const isError = forced ? preview === 'error' : (!st.loading && st.error);
+    const isReady = !isLoading && !isError;
+    const base = {
+      species: st.species, speciesLabel: st.species === 'Mentha' ? 'Mentha sp.' : st.species,
+      pickSpecies: (e) => this.load(e.target.value),
+      isLoading, isError, isReady,
+      errorText: st.species === 'Mentha' ? 'No species-level profile exists for a genus-only name (Mentha sp.). Nothing on this page has changed.' : 'The profile file didn’t respond (mock 503). Nothing on this page has changed.',
+      retry: () => this.load(st.species === 'Mentha' ? 'Artemisia absinthium' : st.species),
+    };
+    if (!isReady) return { ...base, p: {}, cols: [], groups: [] };
+    const prof = PROFILES[st.species] || PROFILES['Artemisia absinthium'];
+    const A = prof.preps.find((x) => x.id === st.a) || prof.preps[0];
+    const B = prof.preps.find((x) => x.id === st.b && x.id !== A.id) || prof.preps.find((x) => x.id !== A.id);
+    const col = (P, side, other, setKey) => ({
+      side, selId: 'prep-' + side, value: P.id,
+      options: prof.preps.filter((x) => x.id !== other.id).map((x) => ({ id: x.id, text: (x.fam === 'historical' ? '■ Historical · ' : '● Modern · ') + x.vehicle + ', ' + x.detail })),
+      pick: (e) => this.setState({ [setKey]: e.target.value, pinned: {} }),
+      tagStyle: 'display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; width: max-content; max-width: 100%; padding: 2px 8px; border: 1px solid ' + FAM[P.fam].fg + '; border-radius: 2px; background: ' + FAM[P.fam].bg + '; color: ' + FAM[P.fam].fg + '; font-size: 13px',
+      markStyle: FAM[P.fam].mark,
+      vehicleStyle: P.fam === 'historical' ? "font-family: 'EB Garamond', Georgia, serif; font-size: 15px; font-style: italic" : '',
+      vehicle: P.vehicle, detail: P.detail, origin: P.origin,
+    });
+    const bar = (P, r, enriched) => {
+      const known = r.lo != null && r.hi != null;
+      const F = FAM[P.fam];
+      return {
+        label: P.short, known, hasPoint: known && r.pt != null, enriched,
+        labelStyle: 'display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: ' + F.fg,
+        markStyle: P.fam === 'historical' ? 'width: 10px; height: 10px; background: ' + F.solid : 'width: 10px; height: 10px; border-radius: 50%; background: ' + F.solid,
+        trackStyle: 'position: relative; display: block; height: 12px; border: 1px solid #8F826D; border-radius: 2px; ' + (known ? 'background: #EDE6D7' : 'background-color: #E7E3DB; background-image: repeating-linear-gradient(135deg, #B8B1A5 0 1px, transparent 1px 6px)'),
+        bandStyle: known ? 'position: absolute; top: 0; bottom: 0; left: ' + r.lo * 100 + '%; width: ' + (r.hi - r.lo) * 100 + '%; background: ' + F.solid + '; border-radius: 2px' : '',
+        pointStyle: known && r.pt != null ? 'position: absolute; top: -3px; height: 16px; width: 2px; left: calc(' + r.pt * 100 + '% - 1px); background: #1E1A15' : '',
+        value: known ? f2(r.lo) + '–' + f2(r.hi) + (r.pt != null ? '  (point ' + f2(r.pt) + ')' : '') : '? Unknown',
+        valueStyle: known ? "font-family: 'IBM Plex Mono', monospace; font-size: 13px; white-space: pre" : 'font-size: 13px; color: #5C5750',
+        enrichedStyle: 'width: max-content; font-size: 12px; font-weight: 600; color: ' + F.fg,
+        aria: P.short + ': predicted extraction ' + (known ? 'between ' + f2(r.lo) + ' and ' + f2(r.hi) + (r.pt != null ? ', point ' + f2(r.pt) : '') : 'unknown'),
+      };
+    };
+    const drivers = (P) => ({
+      prep: P.vehicle + ', ' + P.detail,
+      headStyle: 'font-size: 13px; font-weight: 500; color: ' + FAM[P.fam].fg,
+      items: P.drv.map((k) => {
+        const [id, eff, str, note] = DR[k];
+        const arrow = eff === 'raises' ? '↑ raises' : eff === 'lowers' ? '↓ lowers' : eff === 'neutral' ? '– little effect' : '? effect unknown';
+        return { label: LBL[id], heuristic: !!HEUR[id], plain: !HEUR[id], effect: arrow + (str && eff !== 'neutral' ? ' · ' + str : ''), effectStyle: 'color: ' + (eff === 'unknown' ? '#5C5750' : '#1E1A15'), note: note || '' };
+      }),
+    });
+    let first = true;
+    const groups = prof.classes.map(([name, list]) => ({
+      name,
+      rows: list.map((cpd) => {
+        const ra = A.est[cpd], rb = B.est[cpd];
+        const unknown = ra.lo == null || rb.lo == null;
+        const v = unknown ? 'u' : ra.lo > rb.hi ? 'a' : rb.lo > ra.hi ? 'b' : 'o';
+        const isFirst = first; first = false;
+        const pinned = st.pinned[cpd] ?? (isFirst && (this.props.openFirstDrivers ?? true) && !st.touched);
+        const open = pinned || st.hover === cpd;
+        const W = v === 'a' ? A : B;
+        return {
+          compound: cpd, open,
+          toggleLabel: pinned ? 'Hide drivers' : 'Drivers',
+          toggle: () => this.setState((s) => ({ pinned: { ...s.pinned, [cpd]: !pinned }, touched: true })),
+          enter: () => this.setState({ hover: cpd }),
+          leave: () => this.setState({ hover: null }),
+          bars: [bar(A, ra, v === 'a'), bar(B, rb, v === 'b')],
+          verdict: v === 'u' ? '? Can’t compare · a range is unknown' : v === 'o' ? 'Ranges overlap · no clear difference' : 'Enriched in ' + W.short.toLowerCase() + ' · ranges don’t overlap',
+          verdictStyle: v === 'u' ? 'font-size: 13px; color: #5C5750' : v === 'o' ? 'font-size: 13px; color: #554C40' : 'display: inline-flex; padding: 2px 8px; border: 1px solid ' + FAM[W.fam].fg + '; border-radius: 2px; background: ' + FAM[W.fam].bg + '; color: ' + FAM[W.fam].fg + '; font-size: 13px; font-weight: 500',
+          drivers: [drivers(A), drivers(B)],
+        };
+      }),
+    }));
+    return {
+      ...base,
+      p: { taxon: prof.taxon, linked: prof.linked, toxStyle: TOX[prof.tox][0], toxLabel: TOX[prof.tox][1], concern: prof.tox === 'concern' },
+      cols: [col(A, 'A', B, 'a'), col(B, 'B', A, 'b')],
+      groups,
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,4 +1,20 @@
-export const ROUTES = [
-  '/', '/recipes/', '/recipes/pliny-nh_b22_c011_001_r01/', '/recipes/culpeper-1652_herbal_agrimony_008_r01/', '/compare/', '/audit/',
-  '/hypotheses/', '/hypotheses/wfo-0000212813-D008107/', '/case-studies/liquorice/', '/methods/', '/data/',
+/** Every v2 screen and designed state, with the selector that means "ready" (engine finished, or no-data shown). */
+export const ROUTES: { path: string; ready?: string }[] = [
+  { path: '/', ready: '[data-engine-status="ready"]' },
+  { path: '/lab/?plant=Salvia%20sclarea&solvent=water&heat=boiled&strained=true&acid=false', ready: '[data-engine-status="ready"]' },
+  { path: '/lab/?plant=Salvia%20sclarea&solvent=wine&heat=cold&strained=true&acid=false&modern=true', ready: '[data-engine-status="ready"]' },
+  { path: '/lab/?plant=Hyoscyamus%20niger&solvent=water&heat=boiled&strained=true&acid=false', ready: '[data-engine-status="ready"]' },
+  { path: '/lab/?plant=Salvia%20sclarea&solvent=water&heat=boiled&strained=true&acid=true', ready: '[data-engine-status="nodata"]' },
+  { path: '/lab/?plant=Mentha', ready: '[data-engine-status="nodata"]' },
+  { path: '/lab/?plant=Filipendula%20ulmaria&solvent=oil&heat=warm&strained=true&acid=false', ready: '[data-engine-status="ready"]' },
+  { path: '/atlas/' },
+  { path: '/atlas/?plant=Glycyrrhiza%20glabra' },
+  { path: '/recipes/culpeper-1652_herbal_agrimony_008_r01/' },
+  { path: '/recipes/pliny-nh_b20_c099_002_r00/' },
+  { path: '/recipes/culpeper-1652_herbal_liquoris_006_r00/' },
+  { path: '/evidence-gap/' },
+  { path: '/case/liquorice/' },
+  { path: '/planner/' },
+  { path: '/docs/' },
+  { path: '/credits/' },
 ];

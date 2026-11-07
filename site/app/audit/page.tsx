@@ -1,9 +1,6 @@
-import type { Metadata } from 'next';
-import { Audit } from '@/features/audit/Audit';
-import { getAudit } from '@/lib/data/site';
+import { Redirect } from '@/features/shared/Redirect';
 
-export const metadata: Metadata = { title: 'Audit' };
+export const metadata = { title: 'Moved', robots: { index: false } };
 export default function Page() {
-  const a = getAudit();
-  return <Audit v1={{ id: 'v1', ...a.v1 }} v2={{ id: 'v2', ...a.v2 }} headline={a.headline} auditV2={a.auditV2} confidences={a.confidences} />;
+  return <Redirect to="/docs/#studies" label="Audited studies in Methods & data" />;
 }

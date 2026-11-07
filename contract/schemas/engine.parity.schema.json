@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.7/engine.parity.json",
+  "$id": "lost-in-preparation/contract/1.8/engine.parity.json",
   "title": "engine.parity.json",
   "type": "array",
   "items": {

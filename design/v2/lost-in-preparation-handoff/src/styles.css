@@ -1,0 +1,35 @@
+@import '../assets/fonts/fonts.css';
+@import '../tokens/tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: var(--c-paper); color: var(--c-ink); font-family: var(--f-sans); -webkit-font-smoothing: antialiased; }
+  body { margin: 0; font-size: 15px; line-height: 22px; font-variant-numeric: tabular-nums; }
+  :focus-visible { outline: 2px solid var(--c-focus); outline-offset: 2px; border-radius: 4px; }
+  /* A `hidden` attribute must win over display utilities (flex, grid…). */
+  [hidden] { display: none !important; }
+  ::selection { background: var(--c-hist-bg); color: var(--c-ink); }
+  /* Fraunces uses its optical-size axis at display sizes; Instrument Serif ignores it. */
+  .font-display { font-variation-settings: 'opsz' 144; letter-spacing: var(--display-tracking); }
+}
+
+@layer utilities {
+  /* "Unknown" fill: neutral hatch so it can never be read as zero or empty. */
+  .bg-hatch-unknown {
+    background-color: var(--c-unk-bg);
+    background-image: repeating-linear-gradient(135deg, var(--c-unk-line) 0 1px, transparent 1px 6px);
+  }
+  .bg-hatch-lacking { @apply bg-hatch-unknown; }
+  .small-caps { font-variant-caps: all-small-caps; letter-spacing: 0.08em; }
+  .eyebrow { font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+  .num { font-variant-numeric: tabular-nums; }
+  /* Bars animate between preparations; tokens drop to 0ms under reduced motion. */
+  .bar-motion { transition: left var(--d-bar) var(--ease), width var(--d-bar) var(--ease), opacity var(--d-base) var(--ease); }
+  .fade-in { animation: fade-in var(--d-base) var(--ease) both; }
+  @keyframes fade-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in { animation: none; }
+  }
+}

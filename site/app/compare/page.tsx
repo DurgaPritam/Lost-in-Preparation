@@ -1,9 +1,6 @@
-import type { Metadata } from 'next';
-import { Compare } from '@/features/compare/Compare';
-import { confidences, getCompareIndex } from '@/lib/data/site';
+import { Redirect } from '@/features/shared/Redirect';
 
-export const metadata: Metadata = { title: 'Compare preparations' };
+export const metadata = { title: 'Moved', robots: { index: false } };
 export default function Page() {
-  const idx = getCompareIndex();
-  return <Compare species={idx.species} defaults={idx.default} confidences={confidences()} />;
+  return <Redirect to="/lab/" label="the Preparation Lab" />;
 }

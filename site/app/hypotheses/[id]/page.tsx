@@ -1,18 +1,11 @@
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { HypothesisPage } from '@/features/hypotheses/Hypotheses';
-import { confidences, getHypothesis, hypothesisIds } from '@/lib/data/site';
+import { Redirect } from '@/features/shared/Redirect';
+import { getHypotheses } from '@/lib/data/site';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return hypothesisIds().map((id) => ({ id }));
+  return getHypotheses().map((h) => ({ id: h.id }));
 }
-export function generateMetadata({ params }: { params: { id: string } }): Metadata {
-  const h = getHypothesis(params.id);
-  return { title: h ? `${h.indication} · ${h.taxon}` : 'Hypothesis' };
-}
-export default function Page({ params }: { params: { id: string } }) {
-  const h = getHypothesis(params.id);
-  if (!h) notFound();
-  return <HypothesisPage h={h} confidences={confidences()} />;
+export const metadata = { title: 'Moved', robots: { index: false } };
+export default function Page() {
+  return <Redirect to="/planner/" label="the Lab Planner" />;
 }

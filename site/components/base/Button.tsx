@@ -1,42 +1,26 @@
-'use client';
-
-import { forwardRef, type ButtonHTMLAttributes } from 'react';
+import { forwardRef, type AnchorHTMLAttributes, type ButtonHTMLAttributes } from 'react';
 import { cx } from '@/lib/data/format';
 
 /**
- * Three variants only. Primary is ink-on-paper inverted (not a brand colour),
- * so it never competes with the historical/modern families or toxicity red.
- * Minimum hit area 36px (md) / 44px (lg for touch-primary actions).
+ * Pill buttons. Primary uses the brand colour (botanical green / verdigris):
+ * brand is wayfinding, never a judgement. Heights 32 / 40 / 48.
  */
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
-}
-
-const V = {
-  primary: 'bg-ink text-paper border-ink hover:bg-ink-muted hover:border-ink-muted',
-  secondary: 'bg-surface text-ink border-border-strong hover:bg-sunken',
+type Variant = 'primary' | 'secondary' | 'ghost';
+type Size = 'sm' | 'md' | 'lg';
+const V: Record<Variant, string> = {
+  primary: 'bg-brand text-brand-on border-brand hover:opacity-90',
+  secondary: 'bg-transparent text-ink border-border-strong hover:bg-sunken',
   ghost: 'bg-transparent text-ink border-transparent hover:bg-sunken',
 };
-const S = { sm: 'h-8 px-3 text-sm', md: 'h-10 px-4 text-base', lg: 'h-12 px-5 text-base' };
+const S: Record<Size, string> = { sm: 'h-8 px-3 text-sm', md: 'h-10 px-4 text-base', lg: 'h-12 px-6 text-base' };
+const base = 'inline-flex items-center justify-center gap-2 rounded-full border font-semibold no-underline transition-[background-color,opacity] duration-fast ease-standard disabled:cursor-not-allowed disabled:border-border disabled:bg-sunken disabled:text-ink-subtle';
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
-  { variant = 'secondary', size = 'md', className, type = 'button', ...rest },
-  ref,
-) {
-  return (
-    <button
-      ref={ref}
-      type={type}
-      className={cx(
-        'inline-flex items-center justify-center gap-2 rounded border font-medium',
-        'transition-colors duration-fast ease-standard',
-        'disabled:cursor-not-allowed disabled:border-border disabled:bg-sunken disabled:text-ink-subtle',
-        V[variant],
-        S[size],
-        className,
-      )}
-      {...rest}
-    />
-  );
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> { variant?: Variant; size?: Size }
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button({ variant = 'secondary', size = 'md', className, type = 'button', ...rest }, ref) {
+  return <button ref={ref} type={type} className={cx(base, V[variant], S[size], className)} {...rest} />;
 });
+
+export interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> { variant?: Variant; size?: Size }
+export function LinkButton({ variant = 'secondary', size = 'md', className, ...rest }: LinkButtonProps) {
+  return <a className={cx(base, V[variant], S[size], className)} {...rest} />;
+}

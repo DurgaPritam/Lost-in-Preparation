@@ -77,3 +77,17 @@ export const IconSort = ({ dir, ...p }: P & { dir: 'asc' | 'desc' | 'none' }) =>
     <path d="M5 9.5l3 3 3-3" opacity={dir === 'asc' ? 0.3 : 1} />
   </svg>
 );
+
+/* v2 additions */
+export const IconSun = (p: P) => (
+  <svg {...base(p)}><circle cx="8" cy="8" r="3" /><path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1" /></svg>
+);
+export const IconMoon = (p: P) => (
+  <svg {...base(p)}><path d="M13 9.6A5.5 5.5 0 0 1 6.4 3a5.5 5.5 0 1 0 6.6 6.6z" /></svg>
+);
+export const IconMenu = (p: P) => (
+  <svg {...base(p)}><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11" /></svg>
+);
+export const IconArrowRight = (p: P) => (
+  <svg {...base(p)}><path d="M3 8h10M9 4l4 4-4 4" /></svg>
+);

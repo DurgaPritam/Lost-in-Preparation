@@ -1,7 +1,7 @@
 /** Contract hypotheses (+ audit, profiles, index) → the design's Hypothesis cards and evidence trail. */
 import type { Hypothesis, SourceWork, TrailStep } from '../../types';
 import type { ContractAudit, ContractHypothesis, ContractProfile, ContractProfileIndex } from '../load';
-import { preparationOfKey, prepId } from './compare';
+import { labHrefOfKey, preparationOfKey } from './prepKey';
 import { sourceWork, toxicityCategory, toxicityFromIndex } from './common';
 import { recipeSlug } from './recipes';
 
@@ -12,15 +12,6 @@ export function modernLabel(h: ContractHypothesis): string | null {
   const ref = h.evidenceTrail.find((e) => e.kind === 'profile')?.ref ?? '';
   const m = ref.match(/ vs (.+)$/);
   return m ? m[1] : null;
-}
-
-export function compareHref(speciesId: string, profiles: ContractProfile[], aLabel: string, bLabel: string | null): string {
-  const a = profiles.find((p) => p.preparationLabel === aLabel);
-  const b = bLabel ? profiles.find((p) => p.preparationLabel === bLabel) : undefined;
-  const q = new URLSearchParams({ species: speciesId });
-  if (a) q.set('a', prepId(a));
-  if (b) q.set('b', prepId(b));
-  return `/compare/?${q.toString()}`;
 }
 
 export function toHypothesis(h: ContractHypothesis, ctx: { index: ContractProfileIndex[]; audit: ContractAudit[]; profiles: ContractProfile[]; rankedOf: number }): Hypothesis {
@@ -50,8 +41,12 @@ export function toHypothesis(h: ContractHypothesis, ctx: { index: ContractProfil
     { id: 'model', stage: 'model', title: `Predicted profile gap ${h.profileGap.low.toFixed(2)}–${h.profileGap.high.toFixed(2)} (median ${h.profileGap.value.toFixed(2)})`,
       detail: gr ? `${gr.rule}. ${gr.compoundsUsed} compounds used, ${gr.compoundsExcludedWide} excluded as too wide.` : 'Ranking inputs not recorded.',
       evidence: 'pending', heuristics: ['heat_sensitivity', 'acidity', 'filtration_carryover'],
-      // Acceptance check 5: a toxic_reported plant never gets a Compare link.
-      refs: toxicityCategory(entry?.toxicityFlag ?? h.toxicityFlag) === 'toxic_reported' ? [] : [{ label: 'Open this comparison', href: compareHref(h.speciesId, ctx.profiles, h.faithfulPreparationText, ml) }] },
+      // Acceptance check 5: a toxic_reported plant never gets a Lab link. SITE: the v1 Compare link became a Lab link.
+      refs: (() => {
+        if (toxicityCategory(entry?.toxicityFlag ?? h.toxicityFlag) === 'toxic_reported') return [];
+        const href = labHrefOfKey(taxon, h.faithfulPreparation);
+        return href ? [{ label: 'Open the faithful preparation in the Lab', href }] : [];
+      })() },
     { id: 'audit', stage: 'audit', title: 'No retrieved study prepared it faithfully',
       detail: `${studies.length} retrieved stud${studies.length === 1 ? 'y' : 'ies'} listed; coded by the rule-based extractor (hand-check pending).`,
       evidence: 'pending', refs: studies.map((p) => ({ label: `PMID ${p}`, href: `https://pubmed.ncbi.nlm.nih.gov/${p}/` })) },

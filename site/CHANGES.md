@@ -1,102 +1,95 @@
-# Site changes from the Claude Design handoff
+# Site changes from the Claude Design v2 handoff
 
-The site is built from the handoff in [`design/`](../design/) (extracted from `lost-in-preparation-handoff.zip`) without redesign.
-- The tokens are used unchanged: [`styles/tokens.css`](styles/tokens.css) and [`styles/tokens.json`](styles/tokens.json) are byte-for-byte copies of `design/tokens/`.
-- The Tailwind theme is the design's file, with only the `content` globs changed.
-- The components in [`components/`](components/) are the design's files, with the import paths rewritten and `'use client'` added where they hold state.
+The site is built from the v2 handoff in [`design/v2/lost-in-preparation-handoff/`](../design/v2/lost-in-preparation-handoff/) (extracted from `design/lost-in-preparation-handoff (1).zip`, which is kept). The v1 system (tokens, components, screens and routes) has been removed from `site/`; the two systems are not mixed.
 
-This file lists every change I could not avoid, and every addition. In the code, each change carries a `SITE:` comment.
+- **Tokens:** used unchanged. [`styles/tokens.css`](styles/tokens.css) and [`styles/tokens.json`](styles/tokens.json) are byte-for-byte copies of the handoff's `tokens/`. `styles/globals.css` is the handoff's `src/styles.css`; `styles/fonts.css` is its `assets/fonts/fonts.css` with the URLs pointing at `/fonts/`.
+- **Tailwind theme:** the handoff's file, with only the `content` globs changed.
+- **Components:** [`components/`](components/) holds the handoff's files with the import paths rewritten and `'use client'` added where they hold state. 20 of the 26 are otherwise identical. The six that differ are listed below, and each change carries a `SITE:` comment in the code.
 
-## Earlier decisions applied (before the site work)
+This file lists every change I could not avoid, and every addition.
 
-| Decision | Where |
-|---|---|
-| P37 (contract changes for the corrections, reporting gap, audit v2 and case study) | Implemented as **contract v1.6**: P37a `Recipe.corrections`, P37b `Metrics.reportingGap`, P37c `Metrics.auditV2` and `site-data/audit_v2.json`, P37d `site-data/case_studies.json`. See [contract/CHANGELOG.md](../contract/CHANGELOG.md). P37d was added for the case-study page; approved by the project lead on 2026-11-06. |
-| The 1850 rose-water note | `config/m1_corrections.csv`, recipe `culpeper-1850:herbal:liquorice:003#r03`. The part, solvent and filtration corrections are logged. The process was not changed: it stays "distillation", from this edition's wording "distilled in Rose-water" (the 1652 text says "dissolved"). The note says the Dispensatory evidence does not settle this. It is shown on that recipe's page and in the case study. |
+## Changes to design components
 
-## Additions (built from existing tokens and components only)
-
-1. **Home: the reporting-gap section** ([features/home/ReportingGap.tsx](features/home/ReportingGap.tsx)). It sits after the artemisinin panels and shows:
-   - for each of heat, fresh/dried, filtration, solvent and part: the share of studies stating it, with *k* of *n* and a 95% CI;
-   - the share stating none of them;
-   - the v3 screening result.
-
-   Wherever the solvent share appears, the inflated-solvent caveat sits beside it (`InflatedSolventCaveat`). The caveat is driven by the data key (`prepared:*:solvent`), not by position.
-
-   The bar is `features/shared/ShareBar.tsx`, a share with an interval drawn from tokens only, the same way as the design's local MatchBar and IntervalChart. Every number comes from `metrics.reportingGap` in `site-data/metrics.json`.
-2. **The liquorice case-study page** ([features/case/LiquoriceCase.tsx](features/case/LiquoriceCase.tsx), `/case-studies/liquorice/`). It shows:
-   - the misclassification;
-   - the corpus evidence, quoted from the Dispensatory;
-   - the 22 logged field corrections across 5 recipes;
-   - the before/after ranking table (rank, gap and interval).
-
-   All of it comes from `site-data/case_studies.json`. It is built from Card, DataTable, LikelihoodBar, ToxicityBadge and the AppShell. Its subtitle uses a new optional AppShell prop, `question`.
-3. **Audit: v1 and v2 side by side** ([features/audit/Audit.tsx](features/audit/Audit.tsx)). There are two Cards:
-   - **v1:** "as pre-registered", with its design-flaw note (its solvent rule makes non-water recipes unmatchable).
-   - **v2:** "pre-registered re-analysis after v1's design flaw", with a "Small n" note that gives the known, unknown and no-analogue unit counts. Below it are the per-variable fidelity shares, each with *n* and a CI.
-
-   Tabs switch the per-source breakdowns and the study table between versions. The study table is the design's.
-
-Shareable URLs (also required):
-- each recipe: `/recipes/<id>/`;
-- each comparison: `/compare/?species=&a=&b=`;
-- each hypothesis: `/hypotheses/<id>/`;
-- the case study.
-
-These are ordinary URLs in the address bar; I added no copy-link control. Every hypothesis card in the list links to its own page, and the case study links to its comparisons and hypothesis.
-
-## Changes forced by the real data (the design's mock shapes differ from contract v1.6)
-
-The view types are in [lib/types.ts](lib/types.ts). The selectors in `lib/data/selectors/` map contract records onto them.
-
-| Area | Design assumed | Real data, and what the site does |
+| Component | Change | Why |
 |---|---|---|
-| Sources | Culpeper 1652 and Pliny | There is a third source, Culpeper 1850. It has its own label and confidence marker and is never merged with the other two. |
-| Vehicle | One fixed enum | The contract has separate historical and modern solvent enums, with mixtures such as "wine + honey". A label for each is in `format.ts` (`vehicleLabel`). Solvent, heat and filtration stay separate fields (non-negotiable 4). |
-| Filtration | Boolean or unknown | Adds `not_applicable` (ointments, amulets and similar), printed as such. |
-| Extracted fields | Included quantity | M1 never extracts quantity, so the site does not list it as "not stated". It adds fresh/dried, process, form and indication. |
-| Field highlighting | Every quote drawn inline | Quotes that overlap, or come from the entry heading, are listed in the field table but not drawn in the passage (a span cannot overlap another). |
-| Name confidence | An interval for each candidate | M2 gives a heuristic score with no interval. DisputedName shows "Interval unknown" and puts the score in the tooltip; it is never drawn as a range. |
-| Profiles | Tied to a recipe or study | M4 profiles are model presets per species (origin `model`). The driver text adds the model multiplier. |
-| Match states | Matches, differs, not stated | Adds `no_analogue` (audit v2 only). It is a fourth bar segment and is never counted as "differs". |
-| Study rows | Duration and ratio | Not in the contract, so the site has no such columns. It adds fresh/dried, and the evidence source (methods or abstract). |
-| Hypotheses | Compound-level likelihood pairs | The contract hypothesis is a species-level profile gap (1 − cosine similarity) with an interval. The card's LikelihoodBar shows the gap. A lead is marked weak when the gap's 5th percentile is below the ranking rule's threshold; both values come from the data. |
-| Methods outcomes | Pass, borderline or fail | Adds `reported`: a result exists in site-data but is not graded there. It is printed as "Outcome not graded". |
-| Positive control | Structured ranges | The artemisinin check has no structured ranges, so no ranges are drawn. |
-| Hypotheses question (IA) | — | Reworded to "Which plant–use pairs are worth re-testing in their historical preparation, and why?" to match the data. |
-| Toxicity | Three values | Deprecated contract values map forward (`known_toxic` to `toxic_reported`). A `toxic_reported` plant never gets a Compare link anywhere (recipe, hypothesis trail, case study), and is never the default Compare species. |
+| `layout/SiteShell` | Links use Next's `Link`; the `onNavigate` prop is gone. | The handoff's hash router is a stand-in (HANDOFF §1); the site uses the real router. |
+| `layout/SiteShell` | `THEME_BOOT_SCRIPT` exports the handoff's `applyStoredTheme` logic as an inline `<head>` script. | A statically exported page has to apply the stored theme (or `?theme=`) before the first paint. |
+| `layout/SiteShell` | `ThemeToggle` starts as `light` and reads the theme after mount; it writes `data-theme` only on click. | The static HTML cannot know the reader's theme, so reading it during render caused a hydration mismatch. |
+| `layout/SiteShell` | The footer has a Credits link beside Methods & data; `current` accepts `'credits'`. | The image licences need a public page (see Additions). |
+| `base/PlantCard` | `recipes` holds one count per source: Culpeper 1652, Culpeper 1850 and Pliny. | The corpus has two Culpeper editions, and HANDOFF §4.6 says sources are never merged. |
+| `base/PlateSlot` | Renders a `<picture>` with AVIF and WebP `srcset` (240, 480, 720 and 960 px, or the original's own width when smaller), `sizes` (the mobile size subtracts the page gutters), explicit `width`/`height`, and `loading="lazy"`, so a slot hidden at the current width (the recipe hero on phones) is never downloaded; the hero is fetched with high priority when shown. | The plates are downloaded and served locally, never hotlinked. Explicit sizes prevent layout shift. |
+| `base/PrepTag` | Uses `vehicleLabel()`; adds "filtering not applicable". | The contract has solvent mixtures ("wine + honey") and a real `not_applicable` filtration value (ointments, amulets). |
+| `honesty/DisputedName` | A candidate without an interval shows "Interval unknown", with the heuristic score in the reason. | M2 gives a heuristic match score with no interval. Drawing it as a range would invent one. |
+| `honesty/LikelihoodBar` | The band's width is `clamp(high) − clamp(low)`. | An interval running past the track (e.g. 1.2 on a 0–1 track) widened the page at 390 px. The bar now stops at the edge, and the numbers are unchanged. |
+| `base/Link` (site only) | next/link with prefetch off. | Prefetching pulled other pages' payloads on every load. |
 
-## Changes for scale, performance and accessibility
+## Changes forced by the real data
 
-- **Lists:** 631 recipes and 387 audit rows are shown in pages ("Show more"; 40 recipes and 50 studies at a time). The plant facet shows its 12 most frequent values, with "Show all".
-- **Recipe explorer:** the facet logic moved from the component to [lib/data/selectors/recipeFacets.ts](lib/data/selectors/recipeFacets.ts), where it is unit-tested. The first 40 recipes and the unfiltered counts are rendered statically. The full list (`/data/recipe-index.json`) loads after the first screen. If someone searches or filters before it arrives, they see the design's LoadingState, never partial counts.
-- **Audit:** the study rows load when the table is shown (`/data/audit-studies-v1.json` and `-v2.json`), and only the selected tab panel is rendered. Together these took the page from 2.1 MB and 16,000 DOM nodes to 48 KB.
-- **Compare:** each species' profile loads on demand from `/data/compare/<speciesId>.json`. This is a compact form of `site-data/profiles/`, expanded and validated in `selectors/compare.ts`. The loading state holds a screen's height, which avoids a layout shift. Each compound class shows 12 rows, with "Show all".
-- **Links:** `components/base/Link.tsx` is next/link with prefetch off (new). Prefetching pulled about 1 MB of other pages' payloads on every page load.
-- **Wrapping:** long IUPAC compound names wrap (`break-words`, `min-w-0`) so that a 390px page never scrolls sideways.
-- **Scroll regions:** the wide correction tables on recipe pages and the case study are focusable regions with labels (axe `scrollable-region-focusable`).
-- **Target size:** PubMed links in the audit table get vertical padding.
-- **Heading order:** the standalone hypothesis page adds a visually hidden h2 ("Hypothesis"), because the card's title is the design Card's h3.
-- **Font fallbacks:** `styles/font-fallbacks.css` adds metric-matched fallback faces: local Times New Roman/Liberation Serif, Arial/Liberation Sans and Courier New/Liberation Mono. Their `size-adjust` and ascent/descent overrides were computed with fontTools from the vendored woff2 files.
-  - **Why:** on Linux the fallback fonts reflowed whole pages when EB Garamond and IBM Plex swapped in (CLS 0.16–0.24 in CI Lighthouse).
-  - **Token stacks:** each stack gains the fallback family right after the web font; the rest of the design's stack is unchanged. `tokens.css` itself is untouched; the override is in the new file, which is imported after it.
-- **Font preload:** the two body-text faces (IBM Plex Sans 400 and 500) are preloaded in `app/layout.tsx`, so they usually arrive before first paint.
-  - **Why:** on /hypotheses/, one paragraph still re-wrapped when they swapped in, even with the metric-matched fallbacks (CI CLS 0.147).
-  - **Result:** CLS is 0.000–0.005 on every page, uncached, at 390px and desktop width.
-  - **Fallbacks:** there is one fallback face per weight and style used.
-- **Favicon:** `app/icon.svg` is the design's `mark-historical.svg`, with the embedded metadata stripped.
+| Area | Handoff assumed | Real data, and what the site does |
+|---|---|---|
+| Landing and Lab default plant | Liquorice (*Glycyrrhiza glabra*) | Liquorice has toxicity reported in this data, and a front-door "try it" must never feature a toxic plant. The landing demo and the Lab default to *Salvia sclarea* (no toxicity reported). Liquorice remains in the Lab (with its toxicity notice), the Atlas and the case study. |
+| Lab profiles | `species_profiles.json` with pre-computed combinations, matched exactly on four settings | Profiles are computed live by the preparation engine (`lib/engine`, contract v1.7 P38) in a Web Worker. The engine is the M4 model in TypeScript, and the build fails unless it reproduces every published Python estimate exactly. Each grid setting maps to a pipeline preparation (boiled → decoction, water → infusion, otherwise maceration). |
+| Acidity | Any solvent can be acidified | The model represents acidity only through vinegar (basic nitrogen in an acid vehicle). "Acidified" with another solvent gets the designed no-data state, with buttons for the nearest modelled combinations; the Lab never invents an estimate. Vinegar forces acidity on, as specified. |
+| Modern comparison | `modern-methanol` profile | The pipeline's modern preset, "modern methanol extract", computed by the same engine. |
+| Lab list length | Every compound | A species can have hundreds of compounds. Each class shows its 12 highest medians first, with "Show all". |
+| Lab "Plan an experiment" | Shown unless toxic | Unchanged. It links to the Planner, which is a placeholder. |
+| `reporting_gap.json` | A separate file | Derived from `metrics.reportingGap` (contract v1.6, P37b). The headline field is fresh/dried, as in the handoff, stated as a count ("k / n studies state…") rather than the mock sentence. |
+| Evidence gap: the solvent row | — | Carries the inflated-by-construction caveat wherever it appears: audit eligibility already requires a stated solvent. |
+| Evidence gap: "did it match" | `audit_summary` | Uses audit v2 (the pre-registered re-analysis), with its small-n note, and links to v1 (as pre-registered, with its design flaw) in Methods & data. |
+| `lab_plan.json` | A separate file with readout, effort and rank range | Derived from `hypotheses.json`. Readout and effort are not decided anywhere in the data, and the ranking records no rank interval, so they show "Not decided" / "Not estimated". The quantum score is null: "Coming in this release". |
+| Planner: withheld leads | — | Hypotheses 1 and 2 have toxicity reported, so they are withheld and named, as specified. The list is the remaining lead(s). |
+| Planner bar | A compound likelihood | A hypothesis is a species-level profile gap (1 − cosine similarity) with an interval, and the bar shows that gap. |
+| Case study copy | `[MOCK STORY]` placeholder | Replaced by the project's own analysis from `case_studies.json` (P37d), the corrected recipes and the published profiles, in the four-part structure. The before/after figures are the five compounds whose medians separate most between the two published profiles. |
+| Case study ending | "Try it in the Lab" and the Planner rank | Liquorice has toxicity reported, so the page ends on the ToxicityNotice with no Lab or Planner action (HANDOFF §4.5). The lead is withheld from the Planner, so there is no Planner rank to show. |
+| Atlas source chips | Culpeper, Pliny | Three source chips (Culpeper 1652, Culpeper 1850, Pliny), plus the handoff's disputed, heat-stated and strained chips. |
+| Atlas card subtitle | A common name | The data has no common names, so the card shows the historical name as written (in quotes when disputed). No names are invented. |
+| Recipe page | Passage fields | The passage is the real transcription. Quotes that overlap a drawn span, or come from the entry heading, are listed in the field cards but not drawn. M1 never extracts quantity, so quantity is not listed as "not stated". Logged corrections (P37a) get their own section, with evidence. Lab links are built only from stated fields, one per species candidate with a profile, and none for toxic-reported plants. |
+| Methods & data: studies | `studies[]` with duration and ratio | These are the real audit rows, loaded per version (v1 and v2 in tabs). The extractor codes neither duration nor ratio, so the columns are fresh/dried and plant part instead. An outcome recorded but not graded reads "Outcome not graded". |
+| Plates | `plates.json` | Added as **contract v1.8, P39** (`PlateRecord`, written by `python -m lip plates`). The file is proposed and implemented; see `contract/CHANGELOG.md`. |
+
+## Additions
+
+- **Credits page** (`/credits/`): every botanical plate with its Commons source URL, author, date, work and licence, plus the font and code licences. The same records are in [docs/IMAGE_CREDITS.md](../docs/IMAGE_CREDITS.md); both are written from `site-data/plates.json`.
+- **Plates:** 15 species have a plate, chosen by script from Köhler's *Medizinal-Pflanzen*, then Thomé, then Sturm, taking only files whose Commons licence field is public domain. They are downloaded once and resized to AVIF/WebP. The 4 species with no suitable file get the design's empty plate slot. Every plate's status is "sourced" (licence read from Commons by script), not "confirmed" (checked by a person).
+- **Shareable addresses:**
+  - every Lab configuration: `/lab/?plant=&solvent=&heat=&strained=&acid=&modern=` (`modern` is added for the comparison overlay);
+  - every Atlas search: `?q=`;
+  - every plant: `/atlas/?plant=`;
+  - every recipe: `/recipes/<id>/`;
+  - the case study: `/case/liquorice/`.
+- **Old v1 addresses** (`/recipes/`, `/compare/`, `/audit/`, `/hypotheses/…`, `/methods/`, `/data/`, `/case-studies/liquorice/`) forward to their v2 pages. A static export cannot send a server redirect, so each is a stub page that replaces the location; `vercel.json` adds real 301s on the host.
+- **Not shipped:** the handoff's Gallery (`#/gallery`), which is for review only.
+
+## Engine responsiveness
+
+- **Web Worker:** the engine runs in `lib/engine/worker.ts`, so the page never blocks. It computes in chunks of 24 compounds and yields between chunks.
+- **Cancellation:** a newer request on the same channel cancels the older one in the worker, and the page ignores any stale result that still arrives.
+- **Previous result:** while a new profile computes, the previous one stays visible, marked as updating (`data-engine-status="updating"`).
+- **Cache:** results are cached in memory per (species, preparation), in both the worker and the page.
+- **Parity:** `npm run engine:parity` runs in `prebuild` and fails the build on any difference.
+- **Latency:** `npm run lab:latency` measures the UI's response and the time to a new profile at 1×, 2× and 4× CPU slowdown ([lib/engine/README.md](lib/engine/README.md#responsiveness-in-the-lab), results in `lib/engine/latency-report.json`). Chrome cannot throttle a worker, so the slowed engine time is a labelled estimate.
+
+## Performance and accessibility
+
+- **Font fallbacks:** `styles/font-fallbacks.css` adds metric-matched fallback faces for all six v2 families, written by [scripts/font-fallbacks.py](scripts/font-fallbacks.py) with fontTools.
+  - **How:** each face is a local Times New Roman, Arial or Courier New (or the metric-compatible Liberation font on Linux), scaled to the web face's average character width and vertical metrics.
+  - **Token stacks:** the design's stacks for both themes, with the fallback family inserted after the web font. `tokens.css` itself is untouched; the override is imported after it.
+  - **Why:** headings and paragraphs re-wrapped when the web faces swapped in (a large Lighthouse layout-shift penalty on the recipe and docs pages).
+- **Fraunces file size:** `scripts/pin-fraunces-opsz.py` writes the two Fraunces files with the optical-size axis pinned at 144, which roughly halves each file; the weight axis is kept. The site sets Fraunces only through `.font-display`, which always applies `opsz 144`, so rendering is unchanged (a pixel comparison across weights and styles showed only anti-aliasing differences). The OFL permits modified versions, and Fraunces declares no Reserved Font Name.
+- **Font preload:** an inline script in `app/layout.tsx` preloads the active theme's display face and its body faces (400 and 600), after the theme script has decided the theme. A dark-theme reader therefore never downloads the light faces first.
+- **Atlas:** the plant cards render statically. The recipe index (`/data/recipe-index.json`) loads only when a search or filter is used.
+- **Methods & data:** the audited-study rows load per version, only when their section is reached.
+- **Lighthouse:** runs in both themes (`LH_SCHEME=light|dark`; headless Chrome otherwise follows the OS theme), locally and in CI. Each run writes its medians to `perf/lighthouse-<theme>.json`.
+- **Scroll regions:** wide tables are focusable regions with labels (axe `scrollable-region-focusable`).
+- **Wrapping:** long compound names wrap (`break-words`, `min-w-0`), so no page scrolls sideways at 390 px.
+
+## Token lint
+
+`.eslintrc.json` enforces the v2 tokens over `app/`, `components/`, `features/`, `lib/`, `scripts/` and `tests/`. It bans hex, `rgb()`/`hsl()` and raw pixel values in class names and styles, and Tailwind's default palette names. One exception: `underline-offset-[6px]`, which the handoff's own Atlas screen uses for the passage spans.
 
 ## Data and build
 
-- **Source of data:** at build time the site reads only `../site-data/`.
-- **Generated types:**
-  - [scripts/gen-contract.mjs](scripts/gen-contract.mjs) generates the TypeScript types and Zod schemas from `contract/schemas/*.schema.json`, writing them to `lib/data/generated/`.
-  - Objects are closed: unknown fields are rejected, and every property is required, as the exported data always carries every key.
-- **Validation:**
-  - [scripts/prepare-data.ts](scripts/prepare-data.ts) validates every site-data file with Zod, and exits 1 on any mismatch, which fails the build.
-  - It then writes `public/data/`: the downloads and the on-demand files listed above.
-- **Mock data:** there is no mock data in the site; the design's `mock.ts` is not used.
-- **Honesty treatments:** all of them are driven by data fields: evidence status, source confidence (disputed share ≥ 0.5 means lower confidence), disputed names, ranges, heuristic flags, toxicity, unknowns, and extraction versus detection.
-- **Hard-coded text:** the only hard-coded strings are labels and explanations, never values.
-- **Tests:** the local static server `scripts/serve.mjs` compresses responses with brotli or gzip, as Vercel does, so Lighthouse measures the deployed transfer sizes.
-- **Preparation engine:** `lib/engine/` (contract v1.7, P38, approved 2026-11-07) adds **no UI**; the site's design is unchanged. It is the M4 model in TypeScript, for the planned Preparation Lab, and its parity with the Python pipeline is a build gate (`npm run engine:parity` in `prebuild`). See [lib/engine/README.md](lib/engine/README.md).
+- **Data source:** at build time the site reads only `../site-data/`.
+- **Validation:** `scripts/prepare-data.ts` validates every file with Zod schemas generated from `contract/schemas/` and exits 1 on any mismatch, which fails the build.
+- **Mock data:** none. The design's `mock-data/`, `src/contract/lab.ts` (its "toy model") and its 700 ms mock latency are not used.
+- **Honesty treatments:** all are driven by data fields: evidence status, source confidence, disputed names, ranges, heuristic flags, toxicity, unknowns, and extraction versus detection. Hard-coded strings are labels and explanations, never values.

@@ -1,7 +1,7 @@
-import { Home } from '@/features/home/Home';
-import { getHome } from '@/lib/data/site';
+import { Landing } from '@/features/landing/Landing';
+import { getLanding } from '@/lib/data/site';
+import { loadEngineModel } from '@/lib/data/load';
 
 export default function Page() {
-  const d = getHome();
-  return <Home coverage={d.coverage} confidences={d.confidences} gap={d.gap} />;
+  return <Landing {...getLanding()} model={loadEngineModel()} />;
 }

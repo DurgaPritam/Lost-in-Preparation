@@ -26,3 +26,7 @@ data/raw/logp/*.xlsx
 .env
 .env.*
 !.env.example
+
+# Claude Design handoff archives (kept locally; the extracted handoff is in design/ and design/v2/) and duplicate downloads
+design/*.zip
+design/* (1).md

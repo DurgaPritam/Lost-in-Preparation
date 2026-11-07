@@ -1,103 +1,72 @@
-import type { LikelihoodRange, PreparationFamily } from '@/lib/types';
+import type { LikelihoodRange } from '@/lib/types';
 import { cx, fmt, isKnownRange, rangeSpoken } from '@/lib/data/format';
-import { MarkHistorical, MarkModern } from '../icons';
 import { UnknownValue } from './UnknownValue';
 
 /**
- * Honesty treatment 4 — every likelihood is a range.
- * The low–high band is the dominant mark; the point estimate is a thin
- * tick drawn ON the band, never a separate bar. The printed value leads with
- * the range ("0.33–0.66") and puts the point second and muted. Unknown ranges
- * fill the whole track with the neutral hatch and print "Unknown".
- *
- * Historical vs modern: colour family + lightness (historical lighter) +
- * marker shape (square vs circle) in the label. Never colour alone.
- *
- * What it measures defaults to "Predicted extraction" (treatment 5); pass a
- * different `measure` only for name-resolution confidence.
+ * Honesty 4 — every likelihood is a RANGE.
+ * - The saffron band (historical preparation) is the value; the point is a
+ *   thin ink tick on it. Light theme draws the band with a darker edge (the
+ *   saffron fill alone is under 3:1 on paper).
+ * - `compare` overlays the modern lab method as an OUTLINED aubergine/lilac
+ *   band — fill style + lightness, not hue alone, separates the two.
+ * - Bands animate between preparations (480ms; 0ms under reduced motion).
+ * - Unknown fills the whole track with the neutral hatch.
  */
 export interface LikelihoodBarProps {
   range: LikelihoodRange;
-  family?: PreparationFamily | 'neutral';
+  compare?: LikelihoodRange | null;
+  compareLabel?: string;
   label?: string;
   measure?: string;
-  showScale?: boolean;
-  width?: 'sm' | 'md' | 'full';
+  family?: 'historical' | 'modern' | 'neutral';
+  showValue?: boolean;
+  size?: 'sm' | 'md';
 }
 
-const FILL: Record<NonNullable<LikelihoodBarProps['family']>, string> = {
-  historical: 'bg-hist-solid',
-  modern: 'bg-mod-solid',
-  neutral: 'bg-ink-muted',
-};
-const TEXT: Record<NonNullable<LikelihoodBarProps['family']>, string> = {
-  historical: 'text-hist-fg',
-  modern: 'text-mod-fg',
-  neutral: 'text-ink',
-};
+const clamp = (n: number) => Math.max(0, Math.min(1, n));
+const pct = (n: number) => `${clamp(n) * 100}%`;
+/** SITE: the band's width is clamp(high) - clamp(low), so a range that runs past the track (e.g. an error interval drawn
+ *  on a 0–1.5 scale) ends at the edge instead of widening the page. */
+const span = (lo: number, hi: number) => `${Math.max(0, clamp(hi) - clamp(lo)) * 100}%`;
 
-export function LikelihoodBar({
-  range,
-  family = 'neutral',
-  label,
-  measure = 'Predicted extraction',
-  showScale = false,
-  width = 'md',
-}: LikelihoodBarProps) {
+export function LikelihoodBar({ range, compare, compareLabel = 'modern lab method', label, measure = 'Predicted extraction', family = 'historical', showValue = true, size = 'md' }: LikelihoodBarProps) {
   const known = isKnownRange(range);
-  const pct = (n: number) => `${Math.max(0, Math.min(1, n)) * 100}%`;
-  const Mark = family === 'historical' ? MarkHistorical : family === 'modern' ? MarkModern : null;
-
+  const cKnown = compare ? isKnownRange(compare) : false;
+  const spoken = rangeSpoken(range, `${label ? label + ': ' : ''}${measure}`) + (compare ? ` ${cKnown ? `Compared with ${compareLabel}: between ${fmt(compare!.low!)} and ${fmt(compare!.high!)}.` : `${compareLabel}: unknown.`}` : '');
+  const band =
+    family === 'historical' ? 'bg-hist-solid border border-hist-edge shadow-glow'
+    : family === 'modern' ? 'border-2 border-mod-edge'
+    : 'bg-ink-muted';
   return (
-    <div className={cx('flex flex-col gap-1', width === 'sm' ? 'w-bar-sm' : width === 'md' ? 'w-bar-md' : 'w-full')}>
-      {label && (
-        <div className={cx('flex items-center gap-1.5 text-sm', TEXT[family])}>
-          {Mark && <Mark />}
-          <span className="font-medium">{label}</span>
-          <span className="text-ink-subtle">· {measure}</span>
-        </div>
-      )}
+    <div className="flex min-w-0 flex-col gap-1.5">
       <div
         role="img"
-        aria-label={rangeSpoken(range, `${label ? label + ': ' : ''}${measure}`)}
-        className={cx(
-          'relative h-3 rounded-sm border border-border-strong',
-          known ? 'bg-sunken' : 'bg-hatch-unknown',
-        )}
+        aria-label={spoken}
+        className={cx('relative w-full rounded-full border border-border-strong', size === 'sm' ? 'h-3' : 'h-4', known ? 'bg-sunken' : 'bg-hatch-unknown')}
       >
-        {/* quarter ticks */}
-        {[0.25, 0.5, 0.75].map((t) => (
-          <span key={t} aria-hidden className="absolute top-0 h-full w-px bg-border" style={{ left: pct(t) }} />
-        ))}
-        {known && (
-          <>
-            <span
-              aria-hidden
-              className={cx('absolute top-0 h-full rounded-sm', FILL[family])}
-              style={{ left: pct(range.low), width: pct(range.high - range.low) }}
-            />
-            {range.point != null && (
-              <span
-                aria-hidden
-                className="absolute -top-0.5 h-4 w-0.5 -translate-x-1/2 bg-ink"
-                style={{ left: pct(range.point) }}
-              />
-            )}
-          </>
+        {[0.25, 0.5, 0.75].map((t) => <span key={t} aria-hidden className="absolute inset-y-0 w-px bg-border" style={{ left: pct(t) }} />)}
+        <span
+          aria-hidden
+          className={cx('bar-motion absolute inset-y-0.5 rounded-full', band)}
+          style={known ? { left: pct(range.low), width: span(range.low, range.high), opacity: 1 } : { left: 0, width: 0, opacity: 0 }}
+        />
+        {known && range.point != null && (
+          <span aria-hidden className="bar-motion absolute -inset-y-0.5 w-0.5 -translate-x-1/2 rounded-full bg-ink" style={{ left: pct(range.point) }} />
+        )}
+        {compare && cKnown && (
+          <span aria-hidden className="bar-motion absolute -inset-y-1 rounded-full border-2 border-mod-edge" style={{ left: pct(compare.low!), width: span(compare.low!, compare.high!) }} />
         )}
       </div>
-      {/* Visible value; aria-hidden because the role="img" label above already says it in full. */}
-      <div aria-hidden className="flex items-baseline justify-between gap-2 text-sm">
-        {known ? (
-          <span className="num font-mono text-ink">
-            {fmt(range.low)}–{fmt(range.high)}
-            {range.point != null && <span className="text-ink-subtle"> (point {fmt(range.point)})</span>}
-          </span>
-        ) : (
-          <UnknownValue />
-        )}
-        {showScale && <span className="num font-mono text-xs text-ink-subtle">scale 0–1</span>}
-      </div>
+      {showValue && (
+        <div aria-hidden className="flex flex-wrap items-baseline justify-between gap-x-3 text-sm">
+          {known ? (
+            <span className="num font-mono text-ink">{fmt(range.low)}–{fmt(range.high)}{range.point != null && <span className="text-ink-subtle"> · pt {fmt(range.point)}</span>}</span>
+          ) : <UnknownValue />}
+          {compare && (cKnown
+            ? <span className="num font-mono text-mod-fg">lab {fmt(compare.low!)}–{fmt(compare.high!)}</span>
+            : <span className="text-unk-fg">lab: unknown</span>)}
+        </div>
+      )}
     </div>
   );
 }

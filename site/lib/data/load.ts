@@ -34,6 +34,7 @@ export type ContractMetrics = z.infer<typeof G.metrics.schema>;
 export type ContractMetric = ContractMetrics['logPError'][string];
 export type ContractSource = z.infer<typeof G.sources.schema>[number];
 export type ContractCase = z.infer<typeof G.caseStudies.schema>[number];
+export type ContractPlate = z.infer<typeof G.plates.schema>[number];
 
 export const loadSources = () => parse('sources.json', G.sources.schema);
 export const loadRecipes = () => parse('recipes.json', G.recipes.schema);
@@ -49,6 +50,8 @@ export const loadCaseStudies = () => parse('case_studies.json', G.caseStudies.sc
 export const loadEngineModel = () => parse('engine/model.json', G.engineModel.schema);
 export const loadEngineSpecies = (speciesId: string) => parse(`engine/${speciesId}.json`, G.engineSpecies.schema);
 export const loadEngineParity = () => parse('engine/parity.json', G.engineParity.schema);
+// v1.8 (P39): botanical plates
+export const loadPlates = () => parse('plates.json', G.plates.schema);
 
 /** Every contract file, for the pre-build validation script and the unit tests. */
 export function validateAll(): Record<string, number> {
@@ -61,5 +64,6 @@ export function validateAll(): Record<string, number> {
   out['engine/model.json'] = loadEngineModel().preparations.length;
   for (const e of loadProfileIndex()) out[`engine/${e.speciesId}.json`] = loadEngineSpecies(e.speciesId).compounds.length;
   out['engine/parity.json'] = loadEngineParity().length;
+  out['plates.json'] = loadPlates().length;
   return out;
 }

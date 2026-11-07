@@ -1,0 +1,260 @@
+{
+  "pipeline": [
+    {
+      "id": "transcribe",
+      "name": "Transcribe",
+      "does": "Source pages to text, illegible stretches marked ⟦?⟧.",
+      "tool": null,
+      "validation": "validated"
+    },
+    {
+      "id": "extract",
+      "name": "Extract recipe fields",
+      "does": "Plant, part, vehicle, heat, duration, filtration as character spans.",
+      "tool": null,
+      "validation": "provisional"
+    },
+    {
+      "id": "resolve",
+      "name": "Resolve names",
+      "does": "Historical name → candidate taxa with confidence ranges.",
+      "tool": null,
+      "validation": "provisional"
+    },
+    {
+      "id": "compounds",
+      "name": "Look up compounds",
+      "does": "Known constituents per taxon, grouped by class.",
+      "tool": null,
+      "validation": "pending"
+    },
+    {
+      "id": "estimate",
+      "name": "Estimate extraction",
+      "does": "Likelihood ranges per compound and preparation, from descriptors and heuristics.",
+      "tool": "RDKit",
+      "validation": "provisional"
+    },
+    {
+      "id": "audit",
+      "name": "Audit modern studies",
+      "does": "How published studies prepared the same plants.",
+      "tool": "PubMed",
+      "validation": "provisional"
+    },
+    {
+      "id": "rank",
+      "name": "Rank hypotheses",
+      "does": "By the conservative gap between ranges, with rank ranges.",
+      "tool": null,
+      "validation": "pending"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "m-cer",
+      "stage": "Transcribe",
+      "name": "Character error rate vs hand transcription",
+      "value": {
+        "point": 0.11,
+        "low": 0.05,
+        "high": 0.22,
+        "unit": "rate (lower is better)"
+      },
+      "n": 111,
+      "evidence": "validated"
+    },
+    {
+      "id": "m-fields",
+      "stage": "Extract recipe fields",
+      "name": "Agreement with hand annotation",
+      "value": {
+        "point": 0.77,
+        "low": 0.66,
+        "high": 0.88,
+        "unit": "κ"
+      },
+      "n": 111,
+      "evidence": "provisional"
+    },
+    {
+      "id": "m-names-c",
+      "stage": "Resolve names",
+      "name": "Top candidate agrees with expert · Culpeper",
+      "value": {
+        "point": 0.88,
+        "low": 0.77,
+        "high": 0.99,
+        "unit": "proportion"
+      },
+      "n": 55,
+      "evidence": "validated"
+    },
+    {
+      "id": "m-names-p",
+      "stage": "Resolve names",
+      "name": "Top candidate agrees with expert · Pliny",
+      "value": {
+        "point": 0.44,
+        "low": 0.22,
+        "high": 0.66,
+        "unit": "proportion"
+      },
+      "n": 55,
+      "evidence": "provisional",
+      "note": "Lower confidence source; many names have no single correct answer."
+    },
+    {
+      "id": "m-logp",
+      "stage": "Estimate extraction",
+      "name": "logP error vs experimental values (RDKit)",
+      "value": {
+        "point": 0.55,
+        "low": 0.44,
+        "high": 0.66,
+        "unit": "MAE, log units"
+      },
+      "n": 111,
+      "evidence": "validated"
+    },
+    {
+      "id": "m-study",
+      "stage": "Audit modern studies",
+      "name": "Study field extraction agreement",
+      "value": {
+        "point": null,
+        "low": null,
+        "high": null,
+        "unit": "κ"
+      },
+      "n": null,
+      "evidence": "pending",
+      "note": "Not yet measured."
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c-xtb",
+      "preregisteredId": "p2",
+      "question": "Does quantum chemistry (xTB) estimate logP better than RDKit?",
+      "direction": "lower_better",
+      "methods": [
+        {
+          "name": "RDKit (Crippen)",
+          "value": {
+            "point": 0.55,
+            "low": 0.44,
+            "high": 0.66,
+            "unit": "MAE, log units"
+          }
+        },
+        {
+          "name": "xTB (GFN2, implicit solvent)",
+          "value": {
+            "point": 1.11,
+            "low": 0.88,
+            "high": 1.33,
+            "unit": "MAE, log units"
+          }
+        }
+      ],
+      "finding": "No. xTB performed worse than RDKit on our reference set, and the intervals do not overlap.",
+      "decision": "The pipeline uses RDKit. xTB results stay in the data download so others can check this.",
+      "evidence": "validated"
+    }
+  ],
+  "positiveControls": [
+    {
+      "id": "pc-artemisinin",
+      "preregisteredId": "p1",
+      "taxon": "Artemisia annua",
+      "compound": "Artemisinin",
+      "a": {
+        "label": "Cold soak, wrung out (as in Ge Hong)",
+        "preparation": {
+          "family": "historical",
+          "vehicle": "cold_infusion",
+          "filtered": null,
+          "heat": "cold",
+          "duration": null
+        },
+        "likelihood": {
+          "low": 0.33,
+          "high": 0.55,
+          "point": 0.44
+        }
+      },
+      "b": {
+        "label": "Hot decoction",
+        "preparation": {
+          "family": "modern",
+          "vehicle": "aqueous_extract",
+          "filtered": true,
+          "heat": "boiled",
+          "duration": null
+        },
+        "likelihood": {
+          "low": 0.11,
+          "high": 0.33,
+          "point": 0.22
+        }
+      },
+      "expected": "The cold preparation ranks above the hot decoction.",
+      "outcome": "borderline",
+      "explanation": "The direction matches the historical account, but the ranges touch at 0.33. By our own pre-registered rule, touching ranges are not a clear difference, so this is borderline, not a pass.",
+      "evidence": "validated"
+    }
+  ],
+  "preregistered": [
+    {
+      "id": "p1",
+      "registeredOn": "2026-09-01",
+      "criterion": "Positive control: cold A. annua preparation above hot decoction for artemisinin, ranges not overlapping.",
+      "outcome": "borderline",
+      "detail": "Direction right; ranges touch.",
+      "evidence": "validated"
+    },
+    {
+      "id": "p2",
+      "registeredOn": "2026-09-01",
+      "criterion": "xTB logP error lower than RDKit logP error on the reference set.",
+      "outcome": "fail",
+      "detail": "xTB worse; intervals do not overlap.",
+      "evidence": "validated"
+    },
+    {
+      "id": "p3",
+      "registeredOn": "2026-09-01",
+      "criterion": "Culpeper top-candidate name agreement with expert review at or above the registered threshold.",
+      "outcome": "pass",
+      "detail": "Met.",
+      "evidence": "validated"
+    },
+    {
+      "id": "p4",
+      "registeredOn": "2026-09-01",
+      "criterion": "Pliny top-candidate name agreement with expert review at or above the same threshold.",
+      "outcome": "fail",
+      "detail": "Not met; source treated as lower confidence throughout.",
+      "evidence": "provisional"
+    },
+    {
+      "id": "p5",
+      "registeredOn": null,
+      "criterion": "Top-5 hypothesis ranks stable when any one heuristic is switched off.",
+      "outcome": "not_run",
+      "detail": "Scheduled.",
+      "evidence": "pending"
+    }
+  ],
+  "limitations": [
+    "The model predicts extraction, not detection; plant content is not modelled.",
+    "Historical quantities (handfuls, quarts) are unstandardised.",
+    "The composition of historical wine and vinegar is unknown and modelled as ranges.",
+    "Pliny’s plant names are often disputed; results for Pliny are lower confidence.",
+    "Field extraction is AI-assisted; provisional items have not been checked by a person.",
+    "The study audit covers indexed literature only and may miss non-English work.",
+    "Heuristics (acidity, heat sensitivity) are rules of thumb.",
+    "No hypothesis has yet been tested in a laboratory."
+  ]
+}

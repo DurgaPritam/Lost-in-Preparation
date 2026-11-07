@@ -41,12 +41,18 @@ jobs:
         run: npm run build
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
-      - name: E2E journeys, axe accessibility, honesty checks (desktop and 390px)
+      - name: E2E journeys, axe accessibility (both themes), honesty checks (desktop and 390px)
         run: npm run e2e
         env:
           CI: 'true'
-      - name: Lighthouse (performance, accessibility, best practices >= 90, median of 3 runs)
+      - name: Lighthouse, light theme (performance, accessibility, best practices >= 90, median of 3 runs)
         run: npm run lighthouse
+        env:
+          LH_SCHEME: light
+      - name: Lighthouse, dark theme (same assertions)
+        run: npm run lighthouse
+        env:
+          LH_SCHEME: dark
       - if: failure()
         uses: actions/upload-artifact@v4
         with:
@@ -55,5 +61,6 @@ jobs:
             site/playwright-report
             site/test-results
             site/.lighthouseci
+            site/perf
           retention-days: 7
           include-hidden-files: true

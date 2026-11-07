@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Data and licences</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 22px">
+
+  <header style="border-bottom: 1px solid #D8CDB9">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px">
+      <span style="font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">Lost in Preparation</span>
+      <span style="font-size: 13px; color: #685E51">EthnoHack 2026 · Traditional Knowledge Mining</span>
+    </div>
+  </header>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 24px 16px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+    <nav aria-label="Primary" style="flex: 1 1 200px">
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px">
+        <sc-for list="{{nav}}" as="n" hint-placeholder-count="7"><li style="flex: 1 1 150px"><a href="{{n.href}}" aria-current="{{n.current}}" style="{{n.style}}">{{n.label}}</a></li></sc-for>
+      </ul>
+    </nav>
+
+    <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 38px; line-height: 46px; font-weight: 500">Data &amp; licences</h1>
+        <p style="margin: 0; max-width: 68ch; font-size: 17px; line-height: 26px; color: #554C40">Where does every record come from, and can I reuse it?</p>
+      </div>
+
+      <section aria-labelledby="src" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="src" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Sources</h2>
+        <p style="margin: 0; max-width: 68ch; color: #554C40">Each licence carries its own check status. “Provisional” means it is our reading and a person has not yet confirmed the terms.</p>
+        <div style="overflow-x: auto; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+          <table style="width: 100%; min-width: 760px; border-collapse: collapse; font-size: 13px; line-height: 18px">
+            <caption style="padding: 8px 12px; text-align: left; color: #554C40">Texts, data and software used, with edition, year and licence</caption>
+            <thead style="background: #EDE6D7"><tr style="text-align: left">
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Source</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Role</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Edition</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Year</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Licence<span style="display: block; font-size: 12px; font-weight: 400; color: #685E51">with check status</span></th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{sources}}" as="s" hint-placeholder-count="9">
+                <tr style="border-bottom: 1px solid #D8CDB9; vertical-align: top">
+                  <td style="padding: 8px 12px; max-width: 320px">
+                    <sc-if value="{{s.hasUrl}}" hint-placeholder-val="{{ false }}"><a href="{{s.url}}" style="color: #1E1A15">{{s.title}}</a></sc-if>
+                    <sc-if value="{{s.noUrl}}" hint-placeholder-val="{{ true }}"><span>{{s.title}}</span></sc-if>
+                    <span style="display: block; margin-top: 2px; font-size: 12px; color: #685E51">{{s.note}}</span>
+                  </td>
+                  <td style="padding: 8px 12px; color: #554C40">{{s.role}}</td>
+                  <td style="padding: 8px 12px"><span style="{{s.edStyle}}">{{s.edition}}</span></td>
+                  <td style="padding: 8px 12px"><span style="{{s.yrStyle}}">{{s.year}}</span></td>
+                  <td style="padding: 8px 12px"><span style="display: flex; flex-direction: column; align-items: flex-start; gap: 4px"><span style="{{s.licStyle}}">{{s.licence}}</span><span style="{{s.evStyle}}">{{s.evLabel}}</span></span></td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="dl" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="dl" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Downloads</h2>
+        <p style="margin: 0; max-width: 68ch; color: #554C40">Each file is one contract file of the pipeline, exactly as the site reads it. A licence for the derived data has not been chosen yet.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 12px">
+          <sc-for list="{{downloads}}" as="d" hint-placeholder-count="9">
+            <li style="display: flex; flex-direction: column; gap: 6px; padding: 16px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+              <a href="#" style="width: max-content; font-family: 'IBM Plex Mono', monospace; color: #1E1A15">{{d.file}}</a>
+              <span style="font-size: 13px; line-height: 18px; color: #554C40">{{d.desc}}</span>
+              <span style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-size: 12px; color: #685E51"><span style="font-family: 'IBM Plex Mono', monospace">{{d.contract}}</span><span>JSON</span><span style="color: #5C5750">? Licence not chosen</span></span>
+            </li>
+          </sc-for>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer style="border-top: 1px solid #D8CDB9">
+    <p style="max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 13px; line-height: 18px; color: #685E51">A research tool that generates hypotheses for re-testing. It makes no medical claims and gives no guidance on preparing or taking any plant.</p>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"phone":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":1600}}'>
+const NAV = [['Home', 'Home.dc.html'], ['Recipe explorer', 'Recipes.dc.html'], ['Compare', 'Compare.dc.html'], ['Audit', 'Audit.dc.html'], ['Hypotheses', 'Hypotheses.dc.html'], ['Methods & validation', 'Methods.dc.html'], ['Data & licences', 'Data.dc.html']];
+const CURRENT = 'Data & licences';
+const SOURCES = [
+  ['Nicholas Culpeper, The English Physitian', 'historical text', 'London: Peter Cole', '1652', 'Public domain (work)', 'provisional', null, 'The digital transcription used, and its licence, are to be confirmed.'],
+  ['Transcription of The English Physitian', 'historical text', null, null, null, 'pending', null, 'Team to confirm source and terms.'],
+  ['Pliny the Elder, Naturalis Historia (Latin)', 'historical text', null, 'c. 77 CE', 'Public domain (work)', 'provisional', null, 'Edition used to be confirmed.'],
+  ['The Natural History of Pliny, trans. J. Bostock & H. T. Riley', 'translation', 'London: H. G. Bohn', '1855–1857', 'Public domain (translation)', 'provisional', 'https://www.gutenberg.org/ebooks/57493', 'Project Gutenberg vol. 1 linked; confirm this is the text used.'],
+  ['Taxonomic backbone for name resolution', 'taxonomy', null, null, null, 'pending', null, ''],
+  ['PubMed (NCBI) citation records', 'literature', null, null, 'NLM terms of use (confirm)', 'pending', 'https://pubmed.ncbi.nlm.nih.gov/', ''],
+  ['Toxicity references', 'toxicity', null, null, null, 'pending', null, ''],
+  ['RDKit', 'software', null, null, 'BSD 3-Clause', 'provisional', 'https://www.rdkit.org/', ''],
+  ['xtb (Grimme lab)', 'software', null, null, 'LGPL-3.0', 'provisional', 'https://github.com/grimme-lab/xtb', ''],
+];
+const DOWNLOADS = [
+  ['recipes.json', 'Recipe[]', 'Recipes with passages, extracted field spans, name resolutions, preparations and toxicity.'],
+  ['species_profiles.json', 'SpeciesProfile[]', 'Predicted extraction per compound and preparation, with drivers.'],
+  ['studies.json', 'Study[]', 'Modern study preparations, field by field.'],
+  ['audit_summary.json', 'AuditBreakdown[]', 'Per-source match counts.'],
+  ['hypotheses.json', 'Hypothesis[]', 'Ranked leads with evidence trails.'],
+  ['validation.json', 'Validation', 'Pipeline, metrics, method comparisons, controls, pre-registered checks, limitations.'],
+  ['heuristics.json', 'Heuristic[]', 'The rules of thumb the model applies.'],
+  ['sources.json', 'SourcesFile', 'This table and the download list.'],
+  ['coverage.json', 'Coverage', 'Counts shown on Home.'],
+];
+const PILL = 'display: inline-flex; align-items: center; gap: 6px; width: max-content; padding: 0 8px; border-radius: 9999px; font-size: 12px; line-height: 18px; font-weight: 500; white-space: nowrap; ';
+const EV = {
+  validated: [PILL + 'border: 1px solid #554C40; color: #1E1A15', '● Validated'],
+  provisional: [PILL + 'border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C', '◐ Provisional'],
+  pending: [PILL + 'border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750', '◌ Pending'],
+};
+const UNK = 'color: #5C5750';
+class Component extends DCLogic {
+  renderVals() {
+    const nav = NAV.map(([label, href]) => ({ label, href, current: label === CURRENT ? 'page' : undefined,
+      style: 'display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; text-decoration: none; ' + (label === CURRENT ? 'background: #EDE6D7; color: #1E1A15; font-weight: 600' : 'color: #554C40') }));
+    const sources = SOURCES.map(([title, role, edition, year, licence, ev, url, note]) => ({
+      title, role, note, url: url || '#', hasUrl: !!url, noUrl: !url,
+      edition: edition || '? To confirm', edStyle: edition ? '' : UNK,
+      year: year || '? Unknown', yrStyle: year ? "font-family: 'IBM Plex Mono', monospace; white-space: nowrap" : UNK,
+      licence: licence || '? Not yet determined', licStyle: licence ? '' : UNK,
+      evStyle: EV[ev][0], evLabel: EV[ev][1] }));
+    const downloads = DOWNLOADS.map(([file, contract, desc]) => ({ file, contract, desc }));
+    return { nav, sources, downloads };
+  }
+}
+</script>
+</body>
+</html>

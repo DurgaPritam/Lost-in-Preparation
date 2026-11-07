@@ -2,6 +2,13 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
+## v1.8 — 2026-11-07 (additive; P39 **proposed**, implemented for the v2 site's plates and awaiting the project lead's approval)
+
+| # | Change |
+|---|---|
+| P39 | **Botanical plates** (`site-data/plates.json`, `PlateRecord[]`, one per Lab species), for the v2 design's `PlateSlot`. Fields: `speciesId`, `taxon`, `caption`, `status` (`to_source` \| `sourced` \| `confirmed`), the Commons `licence` (LicenseShortName) and `licenceDetail` (UsageTerms), `host`, `fileUrl` (file page), `sourceUrl` (the image downloaded once), `author`, `date`, `work`, `matchedName`, `sha256`, `retrievedAt`, and `image` (`PlateImage`: AVIF and WebP `srcset`, fallback `src`, `width`, `height`). |
+| | Written by `python -m lip plates`, which accepts only files whose Commons licence field is public domain. A species without a suitable file has status `to_source`, a caption saying so, and every source and image field `null`, so the site shows the design's empty slot. `sourced` means the licence was read by script; only a person's check makes it `confirmed`. The same records are written to `docs/IMAGE_CREDITS.md`. Nothing existing changes. |
+
 ## v1.7 — 2026-11-06 (additive; P38 **approved by the project lead on 2026-11-07**)
 
 | # | Change |

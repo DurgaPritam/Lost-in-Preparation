@@ -122,4 +122,4 @@ export function toSummary(rec: Recipe): RecipeSummary {
 }
 
 /** URL-safe id for a recipe page (recipe ids contain ':' and '#'). */
-export const recipeSlug = (id: string) => id.replace(/[:#]/g, '_');
+export { recipeSlug } from './recipeSlug';

@@ -25,7 +25,7 @@ export function ChartTable({ caption, headers, rows, label = 'View as table', nu
         <span aria-hidden className="mr-2 hidden font-mono text-ink-muted group-open:inline">−</span>
         {label}
       </summary>
-      <div className="overflow-x-auto border-t border-border">
+      <div className="overflow-x-auto border-t border-border" tabIndex={0} role="region" aria-label={`${caption} (scrollable)`}>
         <table className="w-full border-collapse text-sm">
           <caption className="px-3 py-2 text-left text-xs text-ink-subtle">{caption}</caption>
           <thead className="bg-sunken">

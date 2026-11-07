@@ -1,0 +1,27 @@
+{
+  "species": 19,
+  "sourced": 15,
+  "noPlate": [
+    {
+      "speciesId": "wfo-0000933181",
+      "taxon": "Ajuga chamaepitys",
+      "reason": "no plate in the three series under the accepted name or a WFO synonym"
+    },
+    {
+      "speciesId": "wfo-0000402430",
+      "taxon": "Raphanus sativus",
+      "reason": "no plate in the three series under the accepted name or a WFO synonym"
+    },
+    {
+      "speciesId": "wfo-0000755919",
+      "taxon": "Allium cepa",
+      "reason": "no plate in the three series under the accepted name or a WFO synonym"
+    },
+    {
+      "speciesId": "wfo-0000329771",
+      "taxon": "Betonica officinalis",
+      "reason": "no plate in the three series under the accepted name or a WFO synonym"
+    }
+  ],
+  "generatedAt": "2026-11-07T05:03:21+00:00"
+}

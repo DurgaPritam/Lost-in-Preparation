@@ -1,40 +1,49 @@
 import type { Preparation } from '@/lib/types';
-import { cx, filteredText, vehicleLabel } from '@/lib/data/format';
-import { MarkHistorical, MarkModern } from '../icons';
+import { cx, HEAT_LABEL, vehicleLabel } from '@/lib/data/format';
 
 /**
- * Preparation tag. Historical = warm family + square mark + serif vehicle
- * name; modern = cool family + circle mark + sans. Three redundant cues.
- * `filtered: null` prints "filtering not stated" rather than guessing.
+ * Preparation tag. Historical = saffron tint + square mark + display-serif
+ * vehicle; modern lab = aubergine/lilac outline + round mark + sans.
+ * Unstated details read "not stated" rather than being guessed.
  */
-export function PrepTag({ prep }: { prep: Preparation }) {
+export function MarkHist({ className }: { className?: string }) {
+  return <span aria-hidden className={cx('inline-block h-2.5 w-2.5 shrink-0 rounded-sm border border-hist-edge bg-hist-solid', className)} />;
+}
+export function MarkMod({ className }: { className?: string }) {
+  return <span aria-hidden className={cx('inline-block h-2.5 w-2.5 shrink-0 rounded-full border-2 border-mod-edge', className)} />;
+}
+
+export function PrepTag({ prep, compact }: { prep: Preparation; compact?: boolean }) {
   const hist = prep.family === 'historical';
-  const Mark = hist ? MarkHistorical : MarkModern;
-  const filt = filteredText(prep.filtered);
+  const bits = [
+    prep.heat ? HEAT_LABEL[prep.heat].toLowerCase() : 'heat not stated',
+    // SITE: 'not_applicable' (ointments, poultices, amulets) is a real contract value.
+    prep.filtered == null ? 'filtering not stated' : prep.filtered === 'not_applicable' ? 'filtering not applicable' : prep.filtered ? 'strained' : 'unstrained',
+    ...(prep.acidified ? ['acidified'] : []),
+  ];
   return (
     <span
       className={cx(
-        'inline-flex items-center gap-1.5 rounded-sm border px-2 py-0.5 text-sm',
-        hist ? 'border-hist-fg bg-hist-bg text-hist-fg' : 'border-mod-fg bg-mod-bg text-mod-fg',
+        'inline-flex max-w-full flex-wrap items-center gap-x-1.5 rounded-full px-3 py-0.5 text-sm',
+        hist ? 'bg-hist-bg text-hist-fg' : 'border border-mod-edge text-mod-fg',
       )}
     >
-      <Mark />
-      <span className="sr-only">{hist ? 'Historical preparation:' : 'Modern preparation:'}</span>
-      <span className={cx(hist && 'font-serif text-base italic')}>{vehicleLabel(prep.vehicle)}</span>
-      <span className={cx('text-xs', prep.filtered == null && 'italic')}>· {filt}</span>
+      {hist ? <MarkHist /> : <MarkMod />}
+      <span className="sr-only">{hist ? 'Historical preparation:' : 'Modern lab method:'}</span>
+      {/* SITE: vehicleLabel prints the contract's mixtures ("Wine + honey") and unknown parts as "Vehicle unknown". */}
+      <span className={cx('font-medium', hist && 'font-display italic')}>{vehicleLabel(prep.vehicle)}</span>
+      {!compact && <span className="text-ink-muted">· {bits.join(' · ')}</span>}
     </span>
   );
 }
 
-/** Legend that appears once per chart/table that mixes families. */
-export function PrepLegend() {
+/** One legend for any view that mixes families. */
+export function PrepLegend({ modernLabel = 'Modern lab method' }: { modernLabel?: string }) {
   return (
-    <div className="flex flex-wrap items-center gap-4 text-sm">
-      <span className="inline-flex items-center gap-1.5 text-hist-fg"><MarkHistorical /> Historical preparation</span>
-      <span className="inline-flex items-center gap-1.5 text-mod-fg"><MarkModern /> Modern study preparation</span>
-      <span className="inline-flex items-center gap-1.5 text-unk-fg">
-        <span aria-hidden className="inline-block h-2.5 w-4 rounded-sm border border-unk-line bg-hatch-unknown" /> Unknown
-      </span>
+    <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-ink-muted">
+      <span className="inline-flex items-center gap-2"><span aria-hidden className="inline-block h-2.5 w-6 rounded-full border border-hist-edge bg-hist-solid" />This preparation (range)</span>
+      <span className="inline-flex items-center gap-2"><span aria-hidden className="inline-block h-2.5 w-6 rounded-full border-2 border-mod-edge" />{modernLabel}</span>
+      <span className="inline-flex items-center gap-2"><span aria-hidden className="inline-block h-2.5 w-6 rounded-full border border-unk-line bg-hatch-unknown" />Unknown</span>
     </div>
   );
 }

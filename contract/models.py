@@ -19,7 +19,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-CONTRACT_VERSION = "1.7"
+CONTRACT_VERSION = "1.8"
 UNKNOWN = "unknown"
 
 
@@ -466,6 +466,37 @@ class EngineParityCase(_Record):  # site-data/engine/parity.json
     expected: list[EngineEstimate] = Field(description="Python (pipeline/lip/m4/model.py) estimates, one per compound, in species order")
 
 
+# --- plates.json (v1.8, P39: botanical plates for the site) ------------------------------
+# One record per modelled species: a public-domain 19th-century plate from Wikimedia Commons, or status "to_source"
+# with no image. Written by `python -m lip plates`; the licence, author and date are as stated on Commons.
+
+class PlateImage(_Model):
+    avif: str = Field(description="srcset of the AVIF copies served by the site")
+    webp: str = Field(description="srcset of the WebP copies served by the site")
+    src: str = Field(description="largest WebP copy (img fallback)")
+    width: int
+    height: int
+
+
+class PlateRecord(_Record):  # site-data/plates.json
+    speciesId: str
+    taxon: str
+    caption: str
+    status: str = Field(description="to_source (no image) | sourced (licence read from Commons by script) | confirmed (checked by a person)")
+    licence: str | None = Field(None, description="Commons LicenseShortName, e.g. 'Public domain'")
+    licenceDetail: str | None = Field(None, description="Commons UsageTerms")
+    host: str | None = None
+    fileUrl: str | None = Field(None, description="Commons file description page")
+    sourceUrl: str | None = Field(None, description="the image URL that was downloaded once (never hotlinked)")
+    author: str | None = None
+    date: str | None = None
+    work: str | None = Field(None, description="the plate series")
+    matchedName: str | None = Field(None, description="the name the file is titled with (accepted name or a WFO synonym)")
+    sha256: str | None = None
+    retrievedAt: str | None = None
+    image: PlateImage | None = None
+
+
 # --- audit.json ---------------------------------------------------------------------------
 
 class MeshTerm(_Model):  # P17
@@ -691,5 +722,6 @@ FILE_MODELS = {
     "engine.model.json": EngineModel,              # v1.7 (P38) site-data/engine/model.json
     "engine.species.json": EngineSpecies,          # v1.7 (P38) site-data/engine/<speciesId>.json
     "engine.parity.json": EngineParityCase,        # v1.7 (P38) site-data/engine/parity.json
+    "plates.json": PlateRecord,                    # v1.8 (P39) site-data/plates.json
 }
 ARRAY_FILES = {k for k in FILE_MODELS if k not in ("metrics.json", "engine.model.json", "engine.species.json")}

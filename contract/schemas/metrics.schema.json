@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.7/metrics.json",
+  "$id": "lost-in-preparation/contract/1.8/metrics.json",
   "title": "Metrics",
   "$defs": {
     "AuditV2Section": {
@@ -379,7 +379,7 @@
   "additionalProperties": false,
   "properties": {
     "contractVersion": {
-      "default": "1.7",
+      "default": "1.8",
       "title": "Contractversion",
       "type": "string"
     },

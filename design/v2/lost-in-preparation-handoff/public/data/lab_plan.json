@@ -1,0 +1,78 @@
+{
+  "feature": {
+    "name": "Quantum-informed priority",
+    "status": "coming_soon",
+    "release": null,
+    "description": "Will add a solvation-based priority score for each experiment. Until it ships, experiments are ordered by the conservative gap only."
+  },
+  "items": [
+    {
+      "id": "lp-1",
+      "hypothesisId": "h-thujone-wine",
+      "title": "Thujone: cold wine vs methanol reflux",
+      "compares": [
+        "Wine, cold, 3 days, strained",
+        "Methanol extract, reflux"
+      ],
+      "readout": "[MOCK] GC-MS quantification of the extract",
+      "effort": "medium",
+      "rank": 1,
+      "rankRange": [
+        1,
+        2
+      ],
+      "quantumScore": null
+    },
+    {
+      "id": "lp-2",
+      "hypothesisId": "h-menthol-oil",
+      "title": "Menthol: warm oil vs hydrodistillation",
+      "compares": [
+        "Oil, sun-warmed",
+        "Hydrodistillation"
+      ],
+      "readout": "[MOCK] GC-MS quantification of the extract",
+      "effort": "low",
+      "rank": 2,
+      "rankRange": [
+        1,
+        3
+      ],
+      "quantumScore": null
+    },
+    {
+      "id": "lp-3",
+      "hypothesisId": "h-glycyrrhizin-decoction",
+      "title": "Glycyrrhizin: strained decoction vs methanol reflux",
+      "compares": [
+        "Decoction, strained",
+        "Methanol extract, reflux"
+      ],
+      "readout": null,
+      "effort": null,
+      "rank": 3,
+      "rankRange": [
+        2,
+        4
+      ],
+      "quantumScore": null
+    },
+    {
+      "id": "lp-4",
+      "hypothesisId": "h-absinthin-vinegar",
+      "title": "Absinthin: boiled vinegar vs aqueous decoction",
+      "compares": [
+        "Vinegar, boiled to a third",
+        "Aqueous decoction"
+      ],
+      "readout": "[MOCK] LC-MS quantification of the extract",
+      "effort": "medium",
+      "rank": 4,
+      "rankRange": [
+        3,
+        4
+      ],
+      "quantumScore": null
+    }
+  ]
+}

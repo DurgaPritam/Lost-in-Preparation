@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Honesty treatments</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+.serif{font-family:'EB Garamond',Georgia,serif}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.caps{font-variant-caps:all-small-caps;letter-spacing:.06em}
+.hatch{background-color:#E7E3DB;background-image:repeating-linear-gradient(135deg,#B8B1A5 0 1px,transparent 1px 6px)}
+.hatch-dk{background-color:#2A2722;background-image:repeating-linear-gradient(135deg,#4A453D 0 1px,transparent 1px 6px)}
+button{font:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="width: 1440px; min-height: 2080px; box-sizing: border-box; padding: 64px 80px; background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column; gap: 32px">
+
+  <header style="display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid #D8CDB9; padding-bottom: 24px">
+    <span class="caps" style="font-size: 13px; color: #685E51">Honesty treatments · used identically on every page</span>
+    <h1 class="serif" style="margin: 0; font-size: 44px; line-height: 52px; font-weight: 500">Eight ways the interface stays honest</h1>
+    <p style="margin: 0; font-size: 17px; line-height: 26px; color: #554C40; max-width: 820px">Every status is carried by shape, line style and a printed word; colour is the redundant fourth channel. Tooltips explain, never hold the only copy. All numbers below are mock placeholders.</p>
+  </header>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+
+    <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">1 · EvidenceStatusBadge</span><h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Evidence status</h2></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+        <button type="button" style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #554C40; background: #FCFAF5; color: #1E1A15; font-size: 13px; font-weight: 500"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="#1E1A15"/><path d="M5.2 8.2l1.9 1.9 3.7-4" stroke="#FCFAF5" stroke-width="1.5" fill="none"/></svg>Validated</button>
+        <button type="button" style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 13px; font-weight: 500"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="#5A3F8C" stroke-width="1.5"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="#5A3F8C"/></svg>Provisional</button>
+        <button type="button" style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750; font-size: 13px; font-weight: 500"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="#5C5750" stroke-width="1.5" stroke-dasharray="2.2 2.2"/></svg>Pending</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px; width: 320px; padding: 8px 12px; background: #FFFFFF; border: 1px solid #D8CDB9; border-radius: 4px; box-shadow: 0 4px 16px rgba(30,26,21,0.12); font-size: 13px; line-height: 18px">
+        <span style="font-weight: 500">Provisional</span>
+        <span style="color: #554C40">AI-generated reference. Not yet checked by a person. Read it as a lead, not a finding.</span>
+      </div>
+      <span style="font-size: 13px; color: #554C40">Filled · half · dashed ring. Solid · dashed · dotted border. Focusable, so the tooltip opens from the keyboard.</span>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">2 · SourceConfidenceMarker</span><h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Source confidence, per source</h2></div>
+      <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start">
+        <button type="button" style="display: inline-flex; align-items: center; gap: 8px; padding: 2px 10px; border-radius: 4px; border: 1px solid #8A4513; background: #F3E2CC; color: #8A4513; font-size: 13px"><span class="serif" style="font-size: 15px; font-style: italic">Culpeper 1652</span><span style="display: inline-flex; gap: 2px"><span style="width: 6px; height: 10px; border: 1px solid #8A4513; background: #8A4513; border-radius: 1px"></span><span style="width: 6px; height: 10px; border: 1px solid #8A4513; background: #8A4513; border-radius: 1px"></span></span>Higher</button>
+        <button type="button" style="display: inline-flex; align-items: center; gap: 8px; padding: 2px 10px; border-radius: 4px; border: 1px dashed #8A4513; background: #F3E2CC; color: #8A4513; font-size: 13px"><span class="serif" style="font-size: 15px; font-style: italic">Pliny, NH</span><span style="display: inline-flex; gap: 2px"><span style="width: 6px; height: 10px; border: 1px solid #8A4513; background: #8A4513; border-radius: 1px"></span><span style="width: 6px; height: 10px; border: 1px solid #8A4513; border-radius: 1px"></span></span>Lower<span style="font-size: 12px">· 70% of resolved names disputed</span></button>
+        <button type="button" style="display: inline-flex; align-items: center; gap: 8px; padding: 2px 10px; border-radius: 4px; border: 1px solid #8A4513; background: #F3E2CC; color: #8A4513; font-size: 13px"><span class="serif" style="font-size: 15px; font-style: italic">Pliny, NH</span><span style="display: inline-flex; align-items: center; gap: 4px; color: #5C5750"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="1" fill="none" stroke="#5C5750" stroke-width="1.5" stroke-dasharray="2 2"/><path d="M6.4 6.4a1.7 1.7 0 1 1 2.4 1.5c-.5.3-.8.6-.8 1.2M8 11.2v.1" fill="none" stroke="#5C5750" stroke-width="1.5"/></svg>Confidence unknown</span></button>
+      </div>
+      <span style="font-size: 13px; color: #554C40">Never averaged into one score. Two pips + solid = higher; one pip + dashed = lower. Both in the historical family; the meter carries the level.</span>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">3 · DisputedName</span><h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Disputed names, never settled</h2></div>
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="caps" style="font-size: 12px; color: #685E51">As written in source</span><span class="serif" style="font-size: 24px; line-height: 32px; font-style: italic">“absinthium”</span></div>
+      <span style="width: max-content; padding: 2px 8px; border: 1px dashed #554C40; border-radius: 2px; font-size: 13px; color: #554C40">Disputed — not settled · 3 candidates</span>
+      <div style="display: flex; flex-direction: column; font-size: 13px">
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding: 4px 0; font-size: 12px; color: #685E51; font-weight: 500"><span>Candidate</span><span>Match confidence</span><span>Evidence</span></div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding: 6px 0; border-top: 1px solid #D8CDB9; align-items: center"><span><i>Artemisia absinthium</i> <span style="color: #685E51">L.</span></span><span class="mono">0.22–0.66</span><span style="width: max-content; padding: 0 8px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 12px">◐ Provisional</span></div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding: 6px 0; border-top: 1px solid #D8CDB9; align-items: center"><span><i>Artemisia pontica</i> <span style="color: #685E51">L.</span></span><span class="mono">0.11–0.55</span><span style="width: max-content; padding: 0 8px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 12px">◐ Provisional</span></div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding: 6px 0; border-top: 1px solid #D8CDB9; align-items: center"><span><i>Artemisia</i> sp. <span style="color: #554C40; font-size: 12px">(genus)</span></span><span style="color: #5C5750">? Unknown</span><span style="width: max-content; padding: 0 8px; border-radius: 9999px; border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750; font-size: 12px">◌ Pending</span></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; color: #554C40; border-top: 1px solid #D8CDB9; padding-top: 12px">
+        <span><span class="serif" style="font-size: 17px; font-style: italic; color: #1E1A15">“menta”</span> <i>Mentha</i> sp. · genus only</span>
+        <span><span class="serif" style="font-size: 17px; font-style: italic; color: #1E1A15">“[illegible name]”</span> <span style="color: #5C5750">? Unresolved</span></span>
+      </div>
+      <span style="font-size: 13px; color: #554C40">The source’s word leads, in quotes. Every candidate at equal weight: no bold winner, no pre-selection.</span>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">4 · LikelihoodBar</span><h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Every likelihood is a range</h2></div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #8A4513"><span style="width: 10px; height: 10px; background: #C27A35"></span><b style="font-weight: 500">Wine, unfiltered</b><span style="color: #685E51">· Predicted extraction</span></span>
+        <span style="display: block; position: relative; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7"><span style="position: absolute; left: 25%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span><span style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span><span style="position: absolute; left: 75%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span><span style="position: absolute; left: 55%; width: 11%; top: 0; bottom: 0; background: #C27A35; border-radius: 2px"></span><span style="position: absolute; left: 60%; top: -3px; width: 2px; height: 16px; background: #1E1A15"></span></span>
+        <span class="mono" style="font-size: 13px">0.55–0.66 <span style="color: #685E51">(point 0.60)</span></span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #1D4E7E"><span style="width: 10px; height: 10px; border-radius: 50%; background: #23588C"></span><b style="font-weight: 500">Methanol extract</b><span style="color: #685E51">· Predicted extraction</span></span>
+        <span style="display: block; position: relative; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7"><span style="position: absolute; left: 25%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span><span style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span><span style="position: absolute; left: 75%; top: 0; bottom: 0; width: 1px; background: #D8CDB9"></span><span style="position: absolute; left: 11%; width: 77%; top: 0; bottom: 0; background: #23588C; border-radius: 2px"></span><span style="position: absolute; left: 50%; top: -3px; width: 2px; height: 16px; background: #1E1A15"></span></span>
+        <span class="mono" style="font-size: 13px">0.11–0.88 <span style="color: #685E51">(point 0.50)</span></span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #8A4513"><span style="width: 10px; height: 10px; background: #C27A35"></span><b style="font-weight: 500">Vinegar</b><span style="color: #685E51">· Predicted extraction</span></span>
+        <span class="hatch" style="display: block; height: 12px; border: 1px solid #8F826D; border-radius: 2px"></span>
+        <span style="font-size: 13px; color: #5C5750">Unknown</span>
+      </div>
+      <span style="font-size: 13px; color: #554C40">The band is the value; the point is a thin tick. A wide band is drawn at full weight, because it is a finding too. Read aloud: “between 0.11 and 0.88, range width 0.77”.</span>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px; grid-column: span 2">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">5 · ExtractionDetectionExplainer</span><h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Extraction is not detection</h2></div>
+      <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #554C40"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="#554C40" stroke-width="1.5"/><path d="M8 7.2v4M8 4.8v.1" stroke="#554C40" stroke-width="1.5"/></svg>These are <b style="font-weight: 500; color: #1E1A15">predicted extraction</b> likelihoods, not lab detection. <a href="#" style="color: #554C40">Why it matters</a></span>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: 16px; border: 1px dashed #8F826D; border-radius: 4px"><span class="caps" style="font-size: 12px; color: #685E51">Step 1 · outside the model</span><span style="font-size: 15px; font-weight: 500">Plant content</span><span style="font-size: 13px; color: #554C40">How much of the compound the material held. Varies with species, part, season, storage.</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: 16px; border: 1px solid #1E1A15; border-radius: 4px; background: #FFFFFF"><span class="caps" style="font-size: 12px; color: #685E51">Step 2 · modelled</span><span style="font-size: 15px; font-weight: 500">Extraction</span><span style="font-size: 13px; color: #554C40">Whether vehicle, heat, time and filtering would carry the compound into the liquid. This is what we estimate.</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: 16px; border: 1px dashed #8F826D; border-radius: 4px"><span class="caps" style="font-size: 12px; color: #685E51">Step 3 · outside the model</span><span style="font-size: 15px; font-weight: 500">Lab detection</span><span style="font-size: 13px; color: #554C40">Whether an assay would find it. Depends on content, extraction and the method’s limit of detection.</span></div>
+      </div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">6 · HeuristicMarker</span><h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Heuristics, marked as rules of thumb</h2></div>
+      <p style="margin: 0; font-size: 15px; line-height: 26px; max-width: 560px">Alkaloid extraction is raised because the vehicle is <span style="display: inline-flex; align-items: baseline; gap: 4px"><svg width="12" height="12" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2l6 6-6 6-6-6z" fill="none" stroke="#554C40" stroke-width="1.5"/></svg><span class="caps" style="font-size: 12px; color: #554C40">heuristic</span><span style="text-decoration: underline dashed #554C40; text-underline-offset: 4px">acidic</span></span>, and volatile oils are lowered because it was <span style="display: inline-flex; align-items: baseline; gap: 4px"><svg width="12" height="12" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2l6 6-6 6-6-6z" fill="none" stroke="#554C40" stroke-width="1.5"/></svg><span class="caps" style="font-size: 12px; color: #554C40">heuristic</span><span style="text-decoration: underline dashed #554C40; text-underline-offset: 4px">boiled long</span></span>.</p>
+      <div style="display: flex; flex-direction: column; gap: 4px; width: 340px; padding: 8px 12px; background: #FFFFFF; border: 1px solid #D8CDB9; border-radius: 4px; box-shadow: 0 4px 16px rgba(30,26,21,0.12); font-size: 13px; line-height: 18px">
+        <span style="font-weight: 500">Heuristic: Acidity</span>
+        <span style="color: #554C40">Vinegar is treated as favouring extraction of basic compounds as salts.</span>
+        <span style="color: #685E51">A rule of thumb applied by the model, not a measurement.</span>
+      </div>
+      <span style="font-size: 13px; color: #554C40">Ink only, no new hue: an annotation, not a category.</span>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">8 · UnknownValue</span><h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Unknown is a value</h2></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; font-size: 15px">
+        <span style="display: inline-flex; align-items: center; gap: 4px; color: #5C5750"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="1" fill="none" stroke="#5C5750" stroke-width="1.5" stroke-dasharray="2 2"/><path d="M6.4 6.4a1.7 1.7 0 1 1 2.4 1.5c-.5.3-.8.6-.8 1.2M8 11.2v.1" fill="none" stroke="#5C5750" stroke-width="1.5"/></svg>Unknown</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px; color: #5C5750"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="1" fill="none" stroke="#5C5750" stroke-width="1.5" stroke-dasharray="2 2"/><path d="M6.4 6.4a1.7 1.7 0 1 1 2.4 1.5c-.5.3-.8.6-.8 1.2M8 11.2v.1" fill="none" stroke="#5C5750" stroke-width="1.5"/></svg>Not stated in source</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px; padding: 0 6px; border: 1px dashed #B8B1A5; border-radius: 2px; background: #E7E3DB; color: #5C5750; font-size: 13px">? Unknown <span style="font-size: 12px">· table cell</span></span>
+        <span style="display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border: 1px dashed #8F826D; border-radius: 9999px; color: #5C5750; font-size: 13px">Unknown <span class="mono" style="color: #685E51">44</span></span>
+      </div>
+      <span style="font-size: 13px; color: #554C40">Never blank, “—”, 0 or red. Sorts last both ways. Every filter that can be unknown has an Unknown chip with a count.</span>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 6px; grid-column: span 2">
+      <div style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 12px; color: #685E51">7 · ToxicityBadge + ToxicityNotice</span><h2 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Toxicity, with sources. Toxic plants never look like something to try.</h2></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center">
+        <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #A3262E; background: #A3262E; color: #FFFFFF; font-size: 13px; font-weight: 500"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.2L14.3 13.5H1.7z M8 6.5v3.2 M8 11.6v.1" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/></svg>Toxicity reported</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #8A1C24; background: #F7E0E0; color: #8A1C24; font-size: 13px; font-weight: 500"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="#8A1C24" stroke-width="1.5"/><path d="M8 4.8v3.8M8 11v.1" stroke="#8A1C24" stroke-width="1.5"/></svg>Toxicity concern</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #8F826D; background: #FCFAF5; color: #554C40; font-size: 13px; font-weight: 500"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="1" fill="none" stroke="#554C40" stroke-width="1.5"/><path d="M5 8h6" stroke="#554C40" stroke-width="1.5"/></svg>No toxicity reported</span>
+        <span class="hatch" style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #B8B1A5; color: #5C5750; font-size: 13px; font-weight: 500">Toxicity data lacking</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dashed #B8B1A5; background: #E7E3DB; color: #5C5750; font-size: 13px; font-weight: 500">? Toxicity unknown</span>
+        <a href="#" style="font-size: 12px; color: #554C40">2 sources</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+        <div role="note" style="display: flex; gap: 8px; align-items: flex-start; padding: 12px; border: 1px solid #8A1C24; border-radius: 4px; background: #F7E0E0; color: #8A1C24; font-size: 13px; line-height: 18px"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="flex-shrink: 0; margin-top: 1px"><path d="M8 2.2L14.3 13.5H1.7z M8 6.5v3.2 M8 11.6v.1" fill="none" stroke="#8A1C24" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Toxicity is reported for this plant. Shown as a historical record for analysis only — not a preparation to make or take.</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: 12px; border: 1px solid #D8CDB9; border-radius: 4px; background: #FFFFFF; font-size: 13px; line-height: 18px"><span style="color: #554C40">No reports found in the sources checked. This is not evidence of safety.</span><span>[MOCK] Database D</span></div>
+      </div>
+      <span style="font-size: 13px; color: #554C40">Only “reported” is filled. “No toxicity reported” is neutral: never green, never a tick. On a toxic plant the notice replaces every call to action.</span>
+    </section>
+  </div>
+
+  <section style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: #15120E; color: #EEE7DA; border-radius: 6px">
+    <span class="caps" style="font-size: 13px; color: #A4998A">Same components, dark theme</span>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+      <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #BDB2A1; background: #1D1914; color: #EEE7DA; font-size: 13px; font-weight: 500">● Validated</span>
+      <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dashed #C6B2EC; background: #2C2340; color: #C6B2EC; font-size: 13px; font-weight: 500">◐ Provisional</span>
+      <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dotted #B4AEA4; background: #2A2722; color: #B4AEA4; font-size: 13px; font-weight: 500">◌ Pending</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 2px 10px; border-radius: 4px; border: 1px dashed #E8A566; background: #3A2615; color: #E8A566; font-size: 13px"><span class="serif" style="font-size: 15px; font-style: italic">Pliny, NH</span>Lower · 70% disputed</span>
+      <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; background: #E57A80; color: #1A0B0C; font-size: 13px; font-weight: 500">▲ Toxicity reported</span>
+      <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #F2A7AA; background: #3E1A1C; color: #F2A7AA; font-size: 13px; font-weight: 500">Toxicity concern</span>
+      <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #7A6E5C; color: #BDB2A1; font-size: 13px; font-weight: 500">No toxicity reported</span>
+      <span style="color: #B4AEA4; font-size: 15px">? Unknown</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #E8A566">■ Wine · Predicted extraction</span><span style="display: block; position: relative; height: 12px; border: 1px solid #7A6E5C; border-radius: 2px; background: #100E0B"><span style="position: absolute; left: 55%; width: 11%; top: 0; bottom: 0; background: #E3A466"></span></span><span class="mono" style="font-size: 13px">0.55–0.66</span></div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #8FBCE6">● Methanol extract · Predicted extraction</span><span style="display: block; position: relative; height: 12px; border: 1px solid #7A6E5C; border-radius: 2px; background: #100E0B"><span style="position: absolute; left: 11%; width: 77%; top: 0; bottom: 0; background: #4C86BF"></span></span><span class="mono" style="font-size: 13px">0.11–0.88</span></div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #E8A566">■ Vinegar · Predicted extraction</span><span class="hatch-dk" style="display: block; height: 12px; border: 1px solid #7A6E5C; border-radius: 2px"></span><span style="font-size: 13px; color: #B4AEA4">Unknown</span></div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2080}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

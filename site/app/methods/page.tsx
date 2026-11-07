@@ -1,8 +1,6 @@
-import type { Metadata } from 'next';
-import { Methods } from '@/features/methods/Methods';
-import { getValidation } from '@/lib/data/site';
+import { Redirect } from '@/features/shared/Redirect';
 
-export const metadata: Metadata = { title: 'Methods & validation' };
+export const metadata = { title: 'Moved', robots: { index: false } };
 export default function Page() {
-  return <Methods data={getValidation()} />;
+  return <Redirect to="/docs/" label="Methods & data" />;
 }

@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.8/plates.json",
+  "title": "plates.json",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "mock": {
+        "default": false,
+        "title": "Mock",
+        "type": "boolean"
+      },
+      "speciesId": {
+        "title": "Speciesid",
+        "type": "string"
+      },
+      "taxon": {
+        "title": "Taxon",
+        "type": "string"
+      },
+      "caption": {
+        "title": "Caption",
+        "type": "string"
+      },
+      "status": {
+        "description": "to_source (no image) | sourced (licence read from Commons by script) | confirmed (checked by a person)",
+        "title": "Status",
+        "type": "string"
+      },
+      "licence": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Commons LicenseShortName, e.g. 'Public domain'",
+        "title": "Licence"
+      },
+      "licenceDetail": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Commons UsageTerms",
+        "title": "Licencedetail"
+      },
+      "host": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Host"
+      },
+      "fileUrl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Commons file description page",
+        "title": "Fileurl"
+      },
+      "sourceUrl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "the image URL that was downloaded once (never hotlinked)",
+        "title": "Sourceurl"
+      },
+      "author": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Author"
+      },
+      "date": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Date"
+      },
+      "work": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "the plate series",
+        "title": "Work"
+      },
+      "matchedName": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "the name the file is titled with (accepted name or a WFO synonym)",
+        "title": "Matchedname"
+      },
+      "sha256": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Sha256"
+      },
+      "retrievedAt": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Retrievedat"
+      },
+      "image": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/PlateImage"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "speciesId",
+      "taxon",
+      "caption",
+      "status"
+    ],
+    "title": "PlateRecord",
+    "type": "object"
+  },
+  "$defs": {
+    "PlateImage": {
+      "additionalProperties": false,
+      "properties": {
+        "avif": {
+          "description": "srcset of the AVIF copies served by the site",
+          "title": "Avif",
+          "type": "string"
+        },
+        "webp": {
+          "description": "srcset of the WebP copies served by the site",
+          "title": "Webp",
+          "type": "string"
+        },
+        "src": {
+          "description": "largest WebP copy (img fallback)",
+          "title": "Src",
+          "type": "string"
+        },
+        "width": {
+          "title": "Width",
+          "type": "integer"
+        },
+        "height": {
+          "title": "Height",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "avif",
+        "webp",
+        "src",
+        "width",
+        "height"
+      ],
+      "title": "PlateImage",
+      "type": "object"
+    }
+  }
+}

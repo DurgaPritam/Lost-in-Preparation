@@ -87,7 +87,7 @@ export function DataTable<R>({ caption, columns, rows, rowKey, onRowClick, dense
         </ul>
       </div>
     )}
-    <div className={cx('w-full overflow-x-auto rounded border border-border bg-surface', stackOnMobile && 'hidden md:block')}>
+    <div tabIndex={0} role="region" aria-label={`${caption} (scrollable)`} className={cx('w-full overflow-x-auto rounded border border-border bg-surface', stackOnMobile && 'hidden md:block')}>
       <table className="w-full border-collapse text-base">
         <caption className="px-3 py-2 text-left text-sm text-ink-muted">{caption}</caption>
         <thead className="sticky top-0 bg-sunken">

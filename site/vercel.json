@@ -6,12 +6,87 @@
   "outputDirectory": "out",
   "trailingSlash": true,
   "headers": [
-    { "source": "/_next/static/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/fonts/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/data/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
-    { "source": "/(.*)", "headers": [
-      { "key": "X-Content-Type-Options", "value": "nosniff" },
-      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-    ] }
+    {
+      "source": "/_next/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/recipes/",
+      "destination": "/atlas/",
+      "permanent": true
+    },
+    {
+      "source": "/compare/",
+      "destination": "/lab/",
+      "permanent": true
+    },
+    {
+      "source": "/audit/",
+      "destination": "/docs/#studies",
+      "permanent": true
+    },
+    {
+      "source": "/hypotheses/",
+      "destination": "/planner/",
+      "permanent": true
+    },
+    {
+      "source": "/hypotheses/:id/",
+      "destination": "/planner/",
+      "permanent": true
+    },
+    {
+      "source": "/methods/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/data/",
+      "destination": "/docs/#downloads",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/liquorice/",
+      "destination": "/case/liquorice/",
+      "permanent": true
+    }
   ]
 }

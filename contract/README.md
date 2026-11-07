@@ -1,6 +1,6 @@
-# Data contract — v1.7
+# Data contract — v1.8
 
-Frozen since v1.0 (2026-11-05); v1.1–v1.7 are additive or layout-only changes (v1.4 deprecates two toxicity values but keeps them valid). The source of truth is [models.py](models.py); the JSON Schemas in [schemas/](schemas/) are generated from it with `python -m lip contract`. A test fails if a schema and the models drift apart. Any change from here on starts as a proposal in [CHANGELOG.md](CHANGELOG.md).
+Frozen since v1.0 (2026-11-05); v1.1–v1.8 are additive or layout-only changes (v1.4 deprecates two toxicity values but keeps them valid). The source of truth is [models.py](models.py); the JSON Schemas in [schemas/](schemas/) are generated from it with `python -m lip contract`. A test fails if a schema and the models drift apart. Any change from here on starts as a proposal in [CHANGELOG.md](CHANGELOG.md).
 
 The contract files live in `site-data/`; profiles are split per species (v1.3). The pipeline exports them, and the web frontend validates every file against these schemas. Mock data for design work uses exactly these shapes, with `"mock": true` on every record.
 
@@ -19,6 +19,7 @@ The contract files live in `site-data/`; profiles are split per species (v1.3). 
 | `engine/model.json` | object | preparation-model parameters, uncertainty settings, the 13 preparations and their seeds (v1.7, P38) | [engine.model.schema.json](schemas/engine.model.schema.json) |
 | `engine/<speciesId>.json` | object | one species' per-compound model inputs, in profile order (v1.7, P38; loaded on demand) | [engine.species.schema.json](schemas/engine.species.schema.json) |
 | `engine/parity.json` | array | Python reference estimates for one off-grid preparation of one species (v1.7, P38; build-time test fixture, not published) | [engine.parity.schema.json](schemas/engine.parity.schema.json) |
+| `plates.json` | array | botanical plates: Commons source, author, date, licence and the locally served image sizes (v1.8, P39, **proposed**) | [plates.schema.json](schemas/plates.schema.json) |
 
 ## Shared enumerations
 

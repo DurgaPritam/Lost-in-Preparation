@@ -1,131 +1,79 @@
-/* Lost in Preparation — design tokens as CSS custom properties.
-   Mirrors tokens/tokens.json. Light is the default; dark applies with
-   [data-theme="dark"] or, if no explicit theme, prefers-color-scheme. */
-
-/* Fonts are vendored in assets/fonts/fonts.css (imported by src/styles.css). */
+/* Lost in Preparation v2 — tokens as CSS custom properties (mirrors tokens.json).
+   LIGHT = Herbarium (default). DARK = Nocturne, applied by [data-theme="dark"],
+   or by the system preference when no theme is chosen. Each theme carries its
+   own palette AND type system; component code only uses the semantic names. */
 
 :root {
   color-scheme: light;
-  --c-paper: #F6F1E7;
-  --c-surface: #FCFAF5;
-  --c-sunken: #EDE6D7;
-  --c-raised: #FFFFFF;
-  --c-ink: #1E1A15;
-  --c-ink-muted: #554C40;
-  --c-ink-subtle: #685E51;
-  --c-border: #D8CDB9;
-  --c-border-strong: #8F826D;
-  --c-focus: #2F6DA6;
-  --c-overlay: rgba(30, 26, 21, 0.40);
+  --c-paper: #F5F0E4; --c-surface: #FBF8F1; --c-sunken: #ECE4D3; --c-raised: #FFFFFF;
+  --c-ink: #241A28; --c-ink-muted: #57495A; --c-ink-subtle: #655767;
+  --c-border: #DDD3C1; --c-border-strong: #847786; --c-focus: #2E5A43; --c-overlay: rgba(36, 26, 40, 0.45);
+  --c-brand: #2E5A43; --c-brand-soft: #DCE8DE; --c-brand-on: #FBF8F1;
+  --c-hist-fg: #83560A; --c-hist-bg: #F6E6C4; --c-hist-solid: #E0A33A; --c-hist-edge: #83560A; --c-hist-on-solid: #241A28;
+  --c-mod-fg: #4F3570; --c-mod-bg: #E9E0F1; --c-mod-solid: #5B3F7A; --c-mod-edge: #5B3F7A;
+  --c-unk-fg: #5C5754; --c-unk-bg: #E8E2DA; --c-unk-line: #B9B0A6;
+  --c-prov-fg: #57495A; --c-prov-bg: #EEE7DC;
+  --c-tox-fg: #9B2335; --c-tox-bg: #F7DDE0; --c-tox-solid: #9B2335; --c-tox-on-solid: #FFFFFF;
 
-  --c-hist-fg: #8A4513;
-  --c-hist-bg: #F3E2CC;
-  --c-hist-solid: #C27A35;
-  --c-hist-on-solid: #1E1A15;
+  --f-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --f-sans: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --display-scale: 1;            /* Instrument Serif is set larger in dark */
+  --display-tracking: -0.02em;
 
-  --c-mod-fg: #1D4E7E;
-  --c-mod-bg: #DCE7F2;
-  --c-mod-solid: #23588C;
-  --c-mod-on-solid: #FFFFFF;
+  --e-1: 0 1px 0 #DDD3C1, 0 10px 24px -18px rgba(36, 26, 40, .35);
+  --e-2: 0 18px 44px -24px rgba(36, 26, 40, .45);
+  --e-3: 0 30px 80px -30px rgba(36, 26, 40, .55);
+  --e-glow: none;
 
-  --c-unk-fg: #5C5750;
-  --c-unk-bg: #E7E3DB;
-  --c-unk-line: #B8B1A5;
-
-  --c-prov-fg: #5A3F8C;
-  --c-prov-bg: #ECE5F5;
-
-  --c-tox-fg: #8A1C24;
-  --c-tox-bg: #F7E0E0;
-  --c-tox-solid: #A3262E;
-  --c-tox-on-solid: #FFFFFF;
-
-  --e-0: none;
-  --e-1: 0 1px 2px rgba(30, 26, 21, 0.08);
-  --e-2: 0 4px 16px rgba(30, 26, 21, 0.12);
-  --e-3: 0 12px 40px rgba(30, 26, 21, 0.18);
-
-  --f-serif: 'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-  --f-sans: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
-  --f-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
-
-  --d-fast: 120ms;
-  --d-base: 200ms;
+  --d-fast: 140ms; --d-base: 240ms; --d-bar: 480ms;
   --ease: cubic-bezier(0.2, 0, 0, 1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --c-paper: #15120E;
-    --c-surface: #1D1914;
-    --c-sunken: #100E0B;
-    --c-raised: #26211B;
-    --c-ink: #EEE7DA;
-    --c-ink-muted: #BDB2A1;
-    --c-ink-subtle: #A4998A;
-    --c-border: #3A332A;
-    --c-border-strong: #7A6E5C;
-    --c-focus: #8FBCE6;
-    --c-overlay: rgba(0, 0, 0, 0.55);
-    --c-hist-fg: #E8A566;
-    --c-hist-bg: #3A2615;
-    --c-hist-solid: #E3A466;
-    --c-hist-on-solid: #15120E;
-    --c-mod-fg: #8FBCE6;
-    --c-mod-bg: #172B40;
-    --c-mod-solid: #4C86BF;
-    --c-mod-on-solid: #15120E;
-    --c-unk-fg: #B4AEA4;
-    --c-unk-bg: #2A2722;
-    --c-unk-line: #4A453D;
-    --c-prov-fg: #C6B2EC;
-    --c-prov-bg: #2C2340;
-    --c-tox-fg: #F2A7AA;
-    --c-tox-bg: #3E1A1C;
-    --c-tox-solid: #E57A80;
-    --c-tox-on-solid: #1A0B0C;
-    --e-1: 0 1px 2px rgba(0, 0, 0, 0.5);
-    --e-2: 0 4px 16px rgba(0, 0, 0, 0.6);
-    --e-3: 0 12px 40px rgba(0, 0, 0, 0.7);
+    --c-paper: #120E16; --c-surface: #1C1621; --c-sunken: #0D0A10; --c-raised: #261E2C;
+    --c-ink: #F3ECE0; --c-ink-muted: #BFB3C2; --c-ink-subtle: #A99BAC;
+    --c-border: #2E2533; --c-border-strong: #7A6C7E; --c-focus: #7DC2A6; --c-overlay: rgba(0, 0, 0, 0.6);
+    --c-brand: #7DC2A6; --c-brand-soft: #173029; --c-brand-on: #120E16;
+    --c-hist-fg: #F2B544; --c-hist-bg: #3B2A0C; --c-hist-solid: #F2B544; --c-hist-edge: #F2B544; --c-hist-on-solid: #1C1420;
+    --c-mod-fg: #B9A2E6; --c-mod-bg: #2A2142; --c-mod-solid: #8B6CCB; --c-mod-edge: #B9A2E6;
+    --c-unk-fg: #B3AAA6; --c-unk-bg: #231D25; --c-unk-line: #4A433E;
+    --c-prov-fg: #BFB3C2; --c-prov-bg: #261E2C;
+    --c-tox-fg: #F4A3AD; --c-tox-bg: #40171E; --c-tox-solid: #F4A3AD; --c-tox-on-solid: #1A0B0C;
+    --f-display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+    --f-sans: 'Hanken Grotesk', 'Segoe UI', system-ui, sans-serif;
+    --f-mono: 'DM Mono', ui-monospace, Menlo, monospace;
+    --display-scale: 1.12; --display-tracking: -0.025em;
+    --e-1: 0 0 0 1px #2E2533, 0 12px 28px -18px rgba(0, 0, 0, .8);
+    --e-2: 0 18px 44px -20px rgba(0, 0, 0, .9);
+    --e-3: 0 30px 80px -24px rgba(0, 0, 0, .95);
+    --e-glow: 0 0 14px rgba(242, 181, 68, .30);
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --c-paper: #15120E;
-  --c-surface: #1D1914;
-  --c-sunken: #100E0B;
-  --c-raised: #26211B;
-  --c-ink: #EEE7DA;
-  --c-ink-muted: #BDB2A1;
-  --c-ink-subtle: #A4998A;
-  --c-border: #3A332A;
-  --c-border-strong: #7A6E5C;
-  --c-focus: #8FBCE6;
-  --c-overlay: rgba(0, 0, 0, 0.55);
-  --c-hist-fg: #E8A566;
-  --c-hist-bg: #3A2615;
-  --c-hist-solid: #E3A466;
-  --c-hist-on-solid: #15120E;
-  --c-mod-fg: #8FBCE6;
-  --c-mod-bg: #172B40;
-  --c-mod-solid: #4C86BF;
-  --c-mod-on-solid: #15120E;
-  --c-unk-fg: #B4AEA4;
-  --c-unk-bg: #2A2722;
-  --c-unk-line: #4A453D;
-  --c-prov-fg: #C6B2EC;
-  --c-prov-bg: #2C2340;
-  --c-tox-fg: #F2A7AA;
-  --c-tox-bg: #3E1A1C;
-  --c-tox-solid: #E57A80;
-  --c-tox-on-solid: #1A0B0C;
-  --e-1: 0 1px 2px rgba(0, 0, 0, 0.5);
-  --e-2: 0 4px 16px rgba(0, 0, 0, 0.6);
-  --e-3: 0 12px 40px rgba(0, 0, 0, 0.7);
+  --c-paper: #120E16; --c-surface: #1C1621; --c-sunken: #0D0A10; --c-raised: #261E2C;
+  --c-ink: #F3ECE0; --c-ink-muted: #BFB3C2; --c-ink-subtle: #A99BAC;
+  --c-border: #2E2533; --c-border-strong: #7A6C7E; --c-focus: #7DC2A6; --c-overlay: rgba(0, 0, 0, 0.6);
+  --c-brand: #7DC2A6; --c-brand-soft: #173029; --c-brand-on: #120E16;
+  --c-hist-fg: #F2B544; --c-hist-bg: #3B2A0C; --c-hist-solid: #F2B544; --c-hist-edge: #F2B544; --c-hist-on-solid: #1C1420;
+  --c-mod-fg: #B9A2E6; --c-mod-bg: #2A2142; --c-mod-solid: #8B6CCB; --c-mod-edge: #B9A2E6;
+  --c-unk-fg: #B3AAA6; --c-unk-bg: #231D25; --c-unk-line: #4A433E;
+  --c-prov-fg: #BFB3C2; --c-prov-bg: #261E2C;
+  --c-tox-fg: #F4A3AD; --c-tox-bg: #40171E; --c-tox-solid: #F4A3AD; --c-tox-on-solid: #1A0B0C;
+  --f-display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+  --f-sans: 'Hanken Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --f-mono: 'DM Mono', ui-monospace, Menlo, monospace;
+  --display-scale: 1.12; --display-tracking: -0.025em;
+  --e-1: 0 0 0 1px #2E2533, 0 12px 28px -18px rgba(0, 0, 0, .8);
+  --e-2: 0 18px 44px -20px rgba(0, 0, 0, .9);
+  --e-3: 0 30px 80px -24px rgba(0, 0, 0, .95);
+  --e-glow: 0 0 14px rgba(242, 181, 68, .30);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  :root { --d-fast: 0ms; --d-base: 0ms; }
+  :root { --d-fast: 0ms; --d-base: 0ms; --d-bar: 0ms; }
 }

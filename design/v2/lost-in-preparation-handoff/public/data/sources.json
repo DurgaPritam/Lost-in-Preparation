@@ -1,0 +1,184 @@
+{
+  "sources": [
+    {
+      "id": "culpeper",
+      "title": "Nicholas Culpeper, The English Physitian",
+      "role": "historical text",
+      "edition": "London: Peter Cole",
+      "year": "1652",
+      "licence": "Public domain (work)",
+      "licenceEvidence": "provisional",
+      "url": null,
+      "note": "The digital transcription used, and its licence, are to be confirmed."
+    },
+    {
+      "id": "culpeper-tx",
+      "title": "Transcription of The English Physitian",
+      "role": "historical text",
+      "edition": null,
+      "year": null,
+      "licence": null,
+      "licenceEvidence": "pending",
+      "url": null,
+      "note": "Team to confirm source and terms."
+    },
+    {
+      "id": "pliny",
+      "title": "Pliny the Elder, Naturalis Historia (Latin)",
+      "role": "historical text",
+      "edition": null,
+      "year": "c. 77 CE",
+      "licence": "Public domain (work)",
+      "licenceEvidence": "provisional",
+      "url": null,
+      "note": "Edition used to be confirmed."
+    },
+    {
+      "id": "pliny-tr",
+      "title": "The Natural History of Pliny, trans. J. Bostock & H. T. Riley",
+      "role": "translation",
+      "edition": "London: H. G. Bohn",
+      "year": "1855–1857",
+      "licence": "Public domain (translation)",
+      "licenceEvidence": "provisional",
+      "url": "https://www.gutenberg.org/ebooks/57493",
+      "note": "Project Gutenberg vol. 1 linked; confirm this is the text used."
+    },
+    {
+      "id": "taxonomy",
+      "title": "Taxonomic backbone for name resolution",
+      "role": "taxonomy",
+      "edition": null,
+      "year": null,
+      "licence": null,
+      "licenceEvidence": "pending",
+      "url": null
+    },
+    {
+      "id": "pubmed",
+      "title": "PubMed (NCBI) citation records",
+      "role": "literature",
+      "edition": null,
+      "year": null,
+      "licence": "NLM terms of use (confirm)",
+      "licenceEvidence": "pending",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/"
+    },
+    {
+      "id": "tox",
+      "title": "Toxicity references",
+      "role": "toxicity",
+      "edition": null,
+      "year": null,
+      "licence": null,
+      "licenceEvidence": "pending",
+      "url": null
+    },
+    {
+      "id": "rdkit",
+      "title": "RDKit",
+      "role": "software",
+      "edition": null,
+      "year": null,
+      "licence": "BSD 3-Clause",
+      "licenceEvidence": "provisional",
+      "url": "https://www.rdkit.org/"
+    },
+    {
+      "id": "xtb",
+      "title": "xtb (Grimme lab)",
+      "role": "software",
+      "edition": null,
+      "year": null,
+      "licence": "LGPL-3.0",
+      "licenceEvidence": "provisional",
+      "url": "https://github.com/grimme-lab/xtb"
+    }
+  ],
+  "downloads": [
+    {
+      "file": "recipes.json",
+      "contract": "Recipe[]",
+      "description": "Recipes with passages, extracted field spans, name resolutions, preparations and toxicity.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "species_profiles.json",
+      "contract": "SpeciesProfile[]",
+      "description": "Predicted extraction per compound and preparation, with drivers.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "studies.json",
+      "contract": "Study[]",
+      "description": "Modern study preparations, field by field.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "audit_summary.json",
+      "contract": "AuditBreakdown[]",
+      "description": "Per-source match counts.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "hypotheses.json",
+      "contract": "Hypothesis[]",
+      "description": "Ranked leads with evidence trails.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "validation.json",
+      "contract": "Validation",
+      "description": "Pipeline, metrics, method comparisons, controls, pre-registered checks, limitations.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "heuristics.json",
+      "contract": "Heuristic[]",
+      "description": "The rules of thumb the model applies.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "sources.json",
+      "contract": "SourcesFile",
+      "description": "This table and the download list.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "coverage.json",
+      "contract": "Coverage",
+      "description": "Counts shown on Home.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "reporting_gap.json",
+      "contract": "ReportingGapFile",
+      "description": "How often modern studies state each preparation detail, with 95% intervals.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "plates.json",
+      "contract": "Plate[]",
+      "description": "Illustration slots, each with its licence, host and sourcing status.",
+      "format": "json",
+      "licence": null
+    },
+    {
+      "file": "lab_plan.json",
+      "contract": "LabPlanFile",
+      "description": "Lab Planner shortlist; quantum priority empty until the feature ships.",
+      "format": "json",
+      "licence": null
+    }
+  ]
+}

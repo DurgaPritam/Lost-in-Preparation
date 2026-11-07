@@ -26,6 +26,7 @@
   python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
   python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
   python -m lip m4 engine-export         Preparation Lab inputs -> site-data/engine/ (self-checked against the profiles)
+  python -m lip plates                   public-domain botanical plates from Wikimedia Commons -> site-data/plates.json, docs/IMAGE_CREDITS.md
   python -m lip site                     write recipes/species, prune stale profiles, validate site-data/, docs/SITE_DATA_STATUS.md
   python -m lip results                  RESULTS.md from pipeline outputs (validated vs provisional, labelled)
 """
@@ -150,6 +151,9 @@ def main(argv: list[str]) -> int:
             from .m3 import review_sheet
             d = review_sheet.build()
             print(f"wrote {review_sheet.OUT_CSV.name} and {review_sheet.OUT_MD.name}: {len(d)} species")
+    elif cmd == "plates":
+        from . import plates
+        print(json.dumps(plates.run(), indent=2, ensure_ascii=False))
     elif cmd == "site":
         from . import site_export
         print(json.dumps(site_export.run(), indent=2))

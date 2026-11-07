@@ -1,9 +1,6 @@
-import type { Metadata } from 'next';
-import { RecipeExplorer } from '@/features/recipes/RecipeExplorer';
-import { RECIPE_PAGE } from '@/lib/data/selectors/recipeFacets';
-import { getRecipeExplorer } from '@/lib/data/site';
+import { Redirect } from '@/features/shared/Redirect';
 
-export const metadata: Metadata = { title: 'Recipe explorer' };
+export const metadata = { title: 'Moved', robots: { index: false } };
 export default function Page() {
-  return <RecipeExplorer {...getRecipeExplorer(RECIPE_PAGE)} />;
+  return <Redirect to="/atlas/" label="the Recipe Atlas" />;
 }

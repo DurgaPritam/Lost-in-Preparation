@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Recipe detail</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 22px">
+
+  <header style="border-bottom: 1px solid #D8CDB9">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px">
+      <span style="font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">Lost in Preparation</span>
+      <span style="font-size: 13px; color: #685E51">EthnoHack 2026 · Traditional Knowledge Mining</span>
+    </div>
+  </header>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 24px 16px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+    <nav aria-label="Primary" style="flex: 1 1 200px">
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px">
+        <li style="flex: 1 1 150px"><a href="Home.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Home</a></li>
+        <li style="flex: 1 1 150px"><a href="Recipes.dc.html" aria-current="page" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; background: #EDE6D7; color: #1E1A15; font-weight: 600; text-decoration: none">Recipe explorer</a></li>
+        <li style="flex: 1 1 150px"><a href="Compare.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Compare</a></li>
+        <li style="flex: 1 1 150px"><a href="Audit.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Audit</a></li>
+        <li style="flex: 1 1 150px"><a href="Hypotheses.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Hypotheses</a></li>
+        <li style="flex: 1 1 150px"><a href="Methods.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Methods &amp; validation</a></li>
+        <li style="flex: 1 1 150px"><a href="Data.dc.html" style="display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; color: #554C40; text-decoration: none">Data &amp; licences</a></li>
+      </ul>
+    </nav>
+
+    <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <a href="Recipes.dc.html" style="width: max-content; font-size: 13px; color: #554C40">← All recipes</a>
+        <span style="font-size: 12px; line-height: 16px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Recipe · Pliny the Elder, Naturalis Historia</span>
+        <h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 38px; line-height: 46px; font-weight: 500"><i>absinthium</i> in vinegar</h1>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+          <span style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 2px 10px; border-radius: 4px; border: 1px dashed #8A4513; background: #F3E2CC; color: #8A4513; font-size: 13px"><i style="font-family: 'EB Garamond', Georgia, serif; font-size: 15px">Pliny, NH</i> ▮▯ Lower · 70% of resolved names disputed</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 13px; font-weight: 500">◐ Provisional</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #8A1C24; background: #F7E0E0; color: #8A1C24; font-size: 13px; font-weight: 500">ⓘ Toxicity concern</span>
+          <a href="#" style="font-size: 12px; color: #554C40">1 source</a>
+        </div>
+        <div role="note" style="display: flex; gap: 8px; align-items: flex-start; padding: 12px; border: 1px dashed #8A1C24; border-radius: 4px; background: #FCFAF5; color: #8A1C24; font-size: 13px; line-height: 18px; max-width: 68ch">ⓘ A toxicity concern is recorded for this plant. Shown for analysis only.</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 24px; align-items: start">
+        <section aria-labelledby="passage" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+          <h2 id="passage" style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Original passage</h2>
+          <figure style="margin: 0; display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <p style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 20px; line-height: 34px">
+              <sc-for list="{{segs}}" as="s" hint-placeholder-count="12">
+                <sc-if value="{{s.isText}}" hint-placeholder-val="{{ true }}"><span>{{s.text}}</span></sc-if>
+                <sc-if value="{{s.isField}}" hint-placeholder-val="{{ false }}"><button type="button" aria-label="{{s.aria}}" onMouseEnter="{{s.enter}}" onMouseLeave="{{s.leave}}" onFocus="{{s.enter}}" onBlur="{{s.leave}}" style="{{s.style}}">{{s.text}}<sup style="margin-left: 2px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 0; color: #8A4513">{{s.n}}</sup></button></sc-if>
+                <sc-if value="{{s.isIll}}" hint-placeholder-val="{{ false }}"><span title="{{s.note}}" aria-label="Illegible text" style="display: inline-flex; align-items: center; margin: 0 2px; padding: 0 4px; border: 1px dashed #B8B1A5; border-radius: 2px; background: #E7E3DB; color: #5C5750; font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; line-height: 20px">⟦?⟧</span></sc-if>
+              </sc-for>
+            </p>
+            <figcaption style="display: flex; flex-direction: column; gap: 2px; border-top: 1px solid #D8CDB9; padding-top: 12px; font-size: 12px; line-height: 16px; color: #685E51">
+              <span>[MOCK] Pliny the Elder, Naturalis Historia, translation placeholder</span>
+              <span>Book and chapter placeholder</span>
+            </figcaption>
+          </figure>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: #554C40">
+            <span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="display: inline-block; width: 24px; height: 12px; border-radius: 2px; border-bottom: 2px solid #8A4513; background: #F3E2CC"></span>Extracted field (numbered)</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="padding: 0 4px; border: 1px dashed #B8B1A5; border-radius: 2px; background: #E7E3DB; color: #5C5750; font-size: 12px">⟦?⟧</span>Illegible: 1 lacuna before “until”, length unknown</span>
+          </div>
+        </section>
+
+        <section aria-labelledby="fields" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+          <h2 id="fields" style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Extracted fields</h2>
+          <div style="overflow-x: auto; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <table style="width: 100%; min-width: 520px; border-collapse: collapse; font-size: 13px; line-height: 18px">
+              <caption style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Fields extracted from the passage, numbered as in the text</caption>
+              <thead style="background: #EDE6D7">
+                <tr style="text-align: left">
+                  <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">#</th>
+                  <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Field</th>
+                  <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">As written</th>
+                  <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Normalised</th>
+                  <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Evidence</th>
+                </tr>
+              </thead>
+              <tbody>
+                <sc-for list="{{rows}}" as="f" hint-placeholder-count="6">
+                  <tr onMouseEnter="{{f.enter}}" onMouseLeave="{{f.leave}}" style="{{f.rowStyle}}">
+                    <td style="padding: 8px 12px; font-family: 'IBM Plex Mono', monospace; color: #8A4513">{{f.n}}</td>
+                    <td style="padding: 8px 12px">{{f.label}}</td>
+                    <td style="padding: 8px 12px; font-family: 'EB Garamond', Georgia, serif; font-size: 16px; font-style: italic">{{f.written}}</td>
+                    <td style="{{f.valueStyle}}">{{f.value}}</td>
+                    <td style="padding: 8px 12px"><span style="{{f.evStyle}}">{{f.evLabel}}</span></td>
+                  </tr>
+                </sc-for>
+                <tr>
+                  <td style="padding: 8px 12px; color: #685E51">–</td>
+                  <td style="padding: 8px 12px">Quantity</td>
+                  <td colspan="3" style="padding: 8px 12px; color: #5C5750">? Not stated in source</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 style="margin: 8px 0 0; font-size: 20px; line-height: 28px; font-weight: 600">Species</h2>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <div style="display: flex; flex-direction: column"><span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">As written in source</span><span style="font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-style: italic">“absinthium”</span></div>
+            <span style="width: max-content; max-width: 100%; padding: 2px 8px; border: 1px dashed #554C40; border-radius: 2px; font-size: 13px; color: #554C40">Disputed — not settled · 3 candidates</span>
+            <div style="overflow-x: auto">
+              <table style="width: 100%; min-width: 340px; border-collapse: collapse; font-size: 13px; line-height: 18px">
+                <thead><tr style="text-align: left; font-size: 12px; color: #685E51"><th scope="col" style="padding: 4px 12px 4px 0; font-weight: 500">Candidate</th><th scope="col" style="padding: 4px 12px 4px 0; font-weight: 500">Match confidence</th><th scope="col" style="padding: 4px 0; font-weight: 500">Evidence</th></tr></thead>
+                <tbody>
+                  <tr style="border-top: 1px solid #D8CDB9"><td style="padding: 6px 12px 6px 0"><i>Artemisia absinthium</i> <span style="color: #685E51">L.</span></td><td style="padding: 6px 12px 6px 0; font-family: 'IBM Plex Mono', monospace">0.22–0.66</td><td style="padding: 6px 0"><span style="display: inline-flex; padding: 0 8px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 12px; font-weight: 500">◐ Provisional</span></td></tr>
+                  <tr style="border-top: 1px solid #D8CDB9"><td style="padding: 6px 12px 6px 0"><i>Artemisia pontica</i> <span style="color: #685E51">L.</span></td><td style="padding: 6px 12px 6px 0; font-family: 'IBM Plex Mono', monospace">0.11–0.55</td><td style="padding: 6px 0"><span style="display: inline-flex; padding: 0 8px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 12px; font-weight: 500">◐ Provisional</span></td></tr>
+                  <tr style="border-top: 1px solid #D8CDB9"><td style="padding: 6px 12px 6px 0"><i>Artemisia</i> sp. <span style="font-size: 12px; color: #554C40">(genus)</span></td><td style="padding: 6px 12px 6px 0; color: #5C5750">? Unknown</td><td style="padding: 6px 0"><span style="display: inline-flex; padding: 0 8px; border-radius: 9999px; border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750; font-size: 12px; font-weight: 500">◌ Pending</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2 style="margin: 8px 0 0; font-size: 20px; line-height: 28px; font-weight: 600">Preparation</h2>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+            <span style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 2px 8px; border: 1px solid #8A4513; border-radius: 2px; background: #F3E2CC; color: #8A4513; font-size: 13px"><span aria-hidden="true" style="width: 8px; height: 8px; background: #8A4513"></span><i style="font-family: 'EB Garamond', Georgia, serif; font-size: 15px">Vinegar</i><i style="font-size: 12px">· filtering not stated</i></span>
+            <span style="font-size: 13px; color: #554C40">Boiled</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 4px">
+            <p style="margin: 0; font-size: 13px; color: #554C40; max-width: 68ch">The name is disputed, so there is no single species to compare. Compare each candidate separately:</p>
+            <a href="Compare.dc.html" style="width: max-content; max-width: 100%; color: #1E1A15; font-weight: 500; text-underline-offset: 4px"><i>Artemisia absinthium</i> · candidate 1 of 3 →</a>
+            <a href="#" style="width: max-content; max-width: 100%; color: #1E1A15; font-weight: 500; text-underline-offset: 4px"><i>Artemisia pontica</i> · candidate 2 of 3 →</a>
+            <span style="font-size: 13px; color: #5C5750">? <i>Artemisia</i> sp. · no species-level profile</span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <footer style="border-top: 1px solid #D8CDB9">
+    <p style="max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 13px; line-height: 18px; color: #685E51">A research tool that generates hypotheses for re-testing. It makes no medical claims and gives no guidance on preparing or taking any plant.</p>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1700}}'>
+const TEXT = '[MOCK] The tops of absinthium are boiled in sharp vinegar until it comes to a third part; it is then pressed out, and the liquor kept in a sealed vessel.';
+const FIELDS = [
+  ['tops', 'part', 'Part', 'flowering tops', 'provisional'],
+  ['absinthium', 'plant', 'Plant', 'absinthium (disputed)', 'provisional'],
+  ['boiled', 'heat', 'Heat', 'boiled', 'provisional'],
+  ['sharp vinegar', 'vehicle', 'Solvent / vehicle', 'vinegar', 'provisional'],
+  ['until it comes to a third part', 'duration', 'Duration', null, 'pending'],
+  ['pressed out', 'filtration', 'Filtration', 'pressed; straining not stated', 'provisional'],
+].map(([w, kind, label, value, ev]) => { const start = TEXT.indexOf(w); return { id: kind, start, end: start + w.length, written: w, label, value, ev }; })
+ .sort((a, b) => a.start - b.start);
+const ILL = [{ at: TEXT.indexOf('until'), note: 'Lacuna in the source text; length unknown.' }];
+const EV = {
+  validated: ['display: inline-flex; padding: 0 8px; border-radius: 9999px; border: 1px solid #554C40; font-size: 12px; font-weight: 500', '● Validated'],
+  provisional: ['display: inline-flex; padding: 0 8px; border-radius: 9999px; border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C; font-size: 12px; font-weight: 500; white-space: nowrap', '◐ Provisional'],
+  pending: ['display: inline-flex; padding: 0 8px; border-radius: 9999px; border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750; font-size: 12px; font-weight: 500; white-space: nowrap', '◌ Pending'],
+};
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { active: null }; }
+  renderVals() {
+    const active = this.state.active;
+    const set = (id) => () => this.setState({ active: id });
+    const clear = () => this.setState({ active: null });
+    const cuts = [
+      ...FIELDS.map((f, i) => ({ at: f.start, end: f.end, order: 1, f, n: i + 1 })),
+      ...ILL.map((x) => ({ at: x.at, end: x.at, order: 0, ill: x })),
+    ].sort((a, b) => a.at - b.at || a.order - b.order);
+    const segs = [];
+    let pos = 0;
+    cuts.forEach((c) => {
+      if (c.at > pos) segs.push({ isText: true, text: TEXT.slice(pos, c.at) });
+      if (c.ill) segs.push({ isIll: true, note: 'Illegible. ' + c.ill.note });
+      else segs.push({
+        isField: true, text: c.f.written, n: c.n,
+        aria: 'Field ' + c.n + ': ' + c.f.label + ', “' + c.f.written + '”',
+        enter: set(c.f.id), leave: clear,
+        style: 'display: inline; margin: 0; padding: 0 2px; border: 0; border-bottom: 2px solid #8A4513; border-radius: 2px; background: #F3E2CC; color: #1E1A15; font: inherit; text-align: left; cursor: default;' + (active === c.f.id ? ' outline: 2px solid #1E1A15; outline-offset: 1px' : ''),
+      });
+      pos = Math.max(pos, c.end);
+    });
+    if (pos < TEXT.length) segs.push({ isText: true, text: TEXT.slice(pos) });
+    const rows = FIELDS.map((f, i) => ({
+      n: i + 1, label: f.label, written: f.written,
+      value: f.value == null ? '? Could not normalise' : f.value,
+      valueStyle: 'padding: 8px 12px' + (f.value == null ? '; color: #5C5750' : ''),
+      evStyle: EV[f.ev][0], evLabel: EV[f.ev][1],
+      enter: set(f.id), leave: clear,
+      rowStyle: 'border-bottom: 1px solid #D8CDB9' + (active === f.id ? '; background: #F3E2CC' : ''),
+    }));
+    return { segs, rows };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "scheme": "light",
+  "lighthouse": "12.1.0",
+  "formFactor": "mobile",
+  "throttling": "simulate",
+  "aggregation": "median of runs",
+  "assertionsPassed": true,
+  "pages": [
+    {
+      "url": "/",
+      "runs": 3,
+      "performance": 94,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 3006
+    },
+    {
+      "url": "/atlas/",
+      "runs": 3,
+      "performance": 93,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 3080
+    },
+    {
+      "url": "/case/liquorice/",
+      "runs": 3,
+      "performance": 93,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 3006
+    },
+    {
+      "url": "/credits/",
+      "runs": 3,
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 2556
+    },
+    {
+      "url": "/docs/",
+      "runs": 3,
+      "performance": 91,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 3308
+    },
+    {
+      "url": "/evidence-gap/",
+      "runs": 3,
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 2861
+    },
+    {
+      "url": "/lab/?plant=Hyoscyamus+niger&solvent=water&heat=boiled&strained=true&acid=false",
+      "runs": 3,
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 2553
+    },
+    {
+      "url": "/lab/?plant=Salvia+sclarea&solvent=water&heat=boiled&strained=true&acid=false",
+      "runs": 3,
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 2554
+    },
+    {
+      "url": "/planner/",
+      "runs": 3,
+      "performance": 93,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 3011
+    },
+    {
+      "url": "/recipes/culpeper-1652_herbal_agrimony_008_r01/",
+      "runs": 3,
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 2855
+    },
+    {
+      "url": "/recipes/pliny-nh_b20_c099_002_r00/",
+      "runs": 3,
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 2857
+    }
+  ],
+  "generatedAt": "2026-11-07T06:12:55.361Z"
+}

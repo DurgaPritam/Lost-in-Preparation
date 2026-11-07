@@ -80,3 +80,8 @@ export const shareText = (k: number, n: number) => `${k} of ${n}`;
 export const ciText = (low: number | null | undefined, high: number | null | undefined, digits = 0) =>
   low == null || high == null ? 'CI not computed' : `95% CI ${(low * 100).toFixed(digits)}–${(high * 100).toFixed(digits)}%`;
 export const intText = (n: number) => n.toLocaleString('en-GB');
+/** Mean width of the known ranges; used to flag "wide uncertainty" (design v2). */
+export const meanWidth = (rs: LikelihoodRange[]) => {
+  const k = rs.filter(isKnownRange);
+  return k.length ? k.reduce((s, r) => s + (r.high - r.low), 0) / k.length : null;
+};

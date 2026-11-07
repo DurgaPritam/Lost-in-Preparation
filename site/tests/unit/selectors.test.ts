@@ -4,8 +4,14 @@ import * as L from '@/lib/data/load';
 import { bestState, breakdowns, auditView } from '@/lib/data/selectors/audit';
 import { caseView } from '@/lib/data/selectors/caseStudy';
 import { mostSevere, sourceConfidence, toxicityCategory } from '@/lib/data/selectors/common';
-import { compactProfile, driverOf, expandProfile, familyOfKey, toSpeciesProfile } from '@/lib/data/selectors/compare';
-import { coverage, reportingGap } from '@/lib/data/selectors/home';
+import { ATLAS_CHIPS, plantKeyOf, recipeMatches } from '@/lib/data/selectors/atlas';
+import { toReportingGap } from '@/lib/data/selectors/gap';
+import { coverage } from '@/lib/data/selectors/home';
+import { choiceOf, driverOf, labQueryString, parseLabQuery, toEstimates } from '@/lib/data/selectors/lab';
+import { toLabPlan } from '@/lib/data/selectors/planner';
+import { toPlate } from '@/lib/data/selectors/plates';
+import { familyOfKey, labHrefOfKey } from '@/lib/data/selectors/prepKey';
+import { getRecipeSummaries, getHypotheses } from '@/lib/data/assemble';
 import { modernLabel, toHypothesis } from '@/lib/data/selectors/hypotheses';
 import { toValidation } from '@/lib/data/selectors/methods';
 import { extractedFields, illegibleSpans, nameResolution, preparationOf, recipeSlug, toRecipe } from '@/lib/data/selectors/recipes';
@@ -79,20 +85,73 @@ describe('recipes', () => {
   });
 });
 
-describe('compare', () => {
-  it('drivers print the model multiplier; heuristic flags come from the profile', () => {
+describe('Lab', () => {
+  it('drivers print the model multiplier; direction and strength are a display binning of it', () => {
     expect(driverOf('heat', 0.23, true)).toMatchObject({ effect: 'lowers', strength: 'strong', heuristic: true, note: 'Model multiplier ×0.23' });
     expect(driverOf('solvent', 1, false).effect).toBe('neutral');
+    expect(driverOf('filtration', 1.4, true)).toMatchObject({ effect: 'raises', strength: 'moderate' });
     expect(familyOfKey('unknown|unknown|methanol|cold|yes')).toBe('modern');
     expect(familyOfKey('unknown|unknown|water|boiled|yes')).toBe('historical');
   });
-  it('the compact file expands to the same profile', () => {
-    const e = index[0];
-    const ps = L.loadProfile(e.file);
-    const full = toSpeciesProfile(e, ps);
-    const back = expandProfile(JSON.parse(JSON.stringify(compactProfile(e, ps))));
-    expect(back.preparations.map((p) => p.estimates.length)).toEqual(full.preparations.map((p) => p.estimates.length));
-    expect(back.preparations[0].estimates[0].likelihood).toEqual(full.preparations[0].estimates[0].likelihood);
+  it('acidity without vinegar has no estimate; vinegar is always acidic', () => {
+    expect(choiceOf({ solvent: 'water', heat: 'cold', filtered: true, acidified: true })).toBeNull();
+    expect(choiceOf({ solvent: 'vinegar', heat: 'cold', filtered: true, acidified: true })).toMatchObject({ solvents: ['vinegar'], filtered: 'yes' });
+    expect(parseLabQuery(new URLSearchParams('solvent=vinegar&acid=false')).acidified).toBe(true);
+  });
+  it('the URL carries the plant and every setting, and round-trips', () => {
+    const q = parseLabQuery(new URLSearchParams('plant=Salvia sclarea&solvent=wine&heat=boiled&strained=false&acid=false&modern=true'));
+    expect(q).toMatchObject({ plant: 'Salvia sclarea', solvent: 'wine', heat: 'boiled', filtered: false, acidified: false, modern: true });
+    expect(parseLabQuery(new URLSearchParams(labQueryString(q)))).toEqual(q);
+    expect(parseLabQuery(new URLSearchParams('solvent=mercury&heat=reflux'))).toMatchObject({ solvent: 'water', heat: 'cold' });
+  });
+  it('engine estimates become ranges with the median as the point; only heat, acidity and unfiltered carry-over are heuristic', () => {
+    const [e] = toEstimates([{ compoundId: 'X', name: 'x', compoundClass: 'c (heuristic)', heatFlags: [], volatile: false, basicN: false }],
+      [{ compoundId: 'X', likelihood: 0.4, low: 0.2, high: 0.6, rangeModelOnly: [0.25, 0.55], drivers: { solvent: 0.4, heat: 1, filtration: 1, acidity: 1 } }],
+      { solvent: 'water', heat: 'cold', filtered: true, acidified: false });
+    expect(e.likelihood).toEqual({ low: 0.2, high: 0.6, point: 0.4 });
+    expect(e.drivers.map((d) => [d.id, d.heuristic])).toEqual([['solvent', false], ['heat', false], ['filtration', false], ['acidity', true]]);
+  });
+  it('a Lab link is made only for a preparation the Lab represents exactly', () => {
+    expect(labHrefOfKey('Raphanus sativus', 'unknown|unknown|wine|boiled|yes')).toContain('solvent=wine&heat=boiled&strained=true');
+    expect(labHrefOfKey('X y', 'unknown|unknown|wine+honey|boiled|yes')).toBeNull();
+    expect(labHrefOfKey('X y', 'unknown|unknown|water|unknown|yes')).toBeNull();
+  });
+});
+
+describe('v2 pages: evidence gap, planner, plates, atlas', () => {
+  it('reporting gap: counts, intervals and n from metrics; only the prepared solvent row is inflated', () => {
+    const g = toReportingGap(metrics);
+    expect(g.rows.map((r) => r.field).sort()).toEqual(['filtration', 'freshOrDried', 'heat', 'part', 'solvent']);
+    expect(g.rows.filter((r) => r.inflated).map((r) => r.field)).toEqual(['solvent']);
+    for (const r of g.rows) {
+      const m = metrics.reportingGap![`prepared:all:${r.field}`];
+      expect([r.stated, r.n, r.ci]).toEqual([Math.round(m.value! * m.n!), m.n, [m.low, m.high]]);
+    }
+    expect(g.none?.n).toBe(g.rows[0].n);
+    expect(g.extra.some((x) => x.label.includes('v3'))).toBe(true);
+  });
+  it('planner: toxic-reported leads are withheld and named; nothing is invented', () => {
+    const { plan, withheld, planned } = toLabPlan(getHypotheses());
+    expect(withheld.every((h) => h.toxicity.category === 'toxic_reported')).toBe(true);
+    expect(planned.some((h) => h.toxicity.category === 'toxic_reported')).toBe(false);
+    expect(plan.items.map((i) => i.rank)).toEqual(planned.map((_, i) => i + 1));
+    for (const it of plan.items) expect([it.quantumScore, it.readout, it.effort, it.rankRange]).toEqual([null, null, null, null]);
+  });
+  it('plates: an image only when sourced, with licence and host; status never claims a person confirmed it', () => {
+    for (const p of L.loadPlates().map(toPlate)) {
+      if (p.image) expect([p.status, p.host, p.licence && /^public domain/i.test(p.licence)]).toEqual(['sourced', 'Wikimedia Commons', true]);
+      else expect(p.status).toBe('to_source');
+    }
+  });
+  it('atlas: a disputed name is filed under its historical name; source chips never merge Culpeper editions', () => {
+    const rs = getRecipeSummaries();
+    const d = rs.find((r) => r.name.state === 'disputed')!;
+    expect(plantKeyOf(d.name)).toBe(`“${d.name.historicalName}”`);
+    expect(ATLAS_CHIPS.filter((c) => c.id.startsWith('culpeper')).length).toBe(2);
+    const only1850 = rs.filter((r) => recipeMatches(r, '', ['culpeper_1850']));
+    expect(only1850.length).toBeGreaterThan(0);
+    expect(only1850.every((r) => r.source === 'culpeper_1850')).toBe(true);
+    expect(rs.filter((r) => recipeMatches(r, 'VINEGAR', [])).length).toBe(rs.filter((r) => recipeMatches(r, 'vinegar', [])).length);
   });
 });
 
@@ -117,23 +176,14 @@ describe('audit', () => {
 
 describe('hypotheses, home, methods, case study', () => {
   const hs = L.loadHypotheses();
-  it('modern preparation is read from the trail and is always the modern family; toxic plants get no Compare link', () => {
+  it('modern preparation is read from the trail and is always the modern family; toxic plants get no Lab link', () => {
     const h = hs[0];
     expect(modernLabel(h)).toBe('modern methanol extract');
     const e = index.find((x) => x.speciesId === h.speciesId)!;
     const v = toHypothesis(h, { index, audit: L.loadAudit(), profiles: L.loadProfile(e.file), rankedOf: hs.length });
     expect(v.modern?.preparation.family).toBe('modern');
     expect(v.gap).toEqual({ low: h.profileGap.low, high: h.profileGap.high, point: h.profileGap.value });
-    if (v.toxicity.category === 'toxic_reported') expect(v.trail.flatMap((s) => s.refs ?? []).some((r) => r.href?.startsWith('/compare'))).toBe(false);
-  });
-  it('reporting gap: n, CI and the inflated-solvent flag', () => {
-    const g = reportingGap(metrics);
-    const sol = g.prepared.vars.find((r) => r.key.endsWith(':solvent'))!;
-    expect(sol.inflated).toBe(true);
-    expect(g.prepared.vars.filter((r) => r.inflated)).toHaveLength(1);
-    expect(g.retrieved.vars.some((r) => r.inflated)).toBe(false);
-    for (const r of g.prepared.vars) expect(r.k).toBe(Math.round(r.value! * r.n!));
-    expect(g.v3.n).toBeGreaterThan(0);
+    if (v.toxicity.category === 'toxic_reported') expect(v.trail.flatMap((s) => s.refs ?? []).some((r) => r.href?.startsWith('/lab'))).toBe(false);
   });
   it('coverage counts every name once by evidence status', () => {
     const c = coverage(species, recipes, 1);

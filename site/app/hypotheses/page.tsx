@@ -1,9 +1,6 @@
-import type { Metadata } from 'next';
-import { Hypotheses } from '@/features/hypotheses/Hypotheses';
-import { confidences, getHypotheses } from '@/lib/data/site';
+import { Redirect } from '@/features/shared/Redirect';
 
-export const metadata: Metadata = { title: 'Hypotheses' };
+export const metadata = { title: 'Moved', robots: { index: false } };
 export default function Page() {
-  const hs = getHypotheses();
-  return <Hypotheses items={hs} confidences={confidences()} rule={hs[0]?.rule ?? null} />;
+  return <Redirect to="/planner/" label="the Lab Planner" />;
 }

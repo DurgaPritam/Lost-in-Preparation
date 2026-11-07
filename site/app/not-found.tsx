@@ -1,11 +1,11 @@
-import Link from '@/components/base/Link';
-import { AppShell } from '@/components/layout/AppShell';
+import { SiteShell } from '@/components/layout/SiteShell';
 import { EmptyState } from '@/components/base/States';
+import { LinkButton } from '@/components/base/Button';
 
 export default function NotFound() {
   return (
-    <AppShell current="home" title="Page not found">
-      <EmptyState title="Nothing at this address" body="The link may be out of date." action={<Link href="/" className="text-ink underline underline-offset-2">Go to Home</Link>} />
-    </AppShell>
+    <SiteShell current="landing">
+      <EmptyState title="No page at this address" body="The link may be out of date." action={<LinkButton href="/">Back to the start</LinkButton>} />
+    </SiteShell>
   );
 }

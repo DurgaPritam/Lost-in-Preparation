@@ -1,0 +1,86 @@
+{
+  "headline": {
+    "field": "material",
+    "text": "Most modern studies never say whether the plant was fresh or dried."
+  },
+  "method": "[MOCK] Each audited study was checked for whether it states each preparation detail. Interval: 95% Wilson interval for the proportion stated.",
+  "rows": [
+    {
+      "field": "solvent",
+      "label": "Solvent",
+      "stated": 99,
+      "n": 111,
+      "ci": [
+        0.82,
+        0.94
+      ],
+      "evidence": "provisional"
+    },
+    {
+      "field": "plant_part",
+      "label": "Plant part",
+      "stated": 77,
+      "n": 111,
+      "ci": [
+        0.6,
+        0.77
+      ],
+      "evidence": "provisional"
+    },
+    {
+      "field": "duration",
+      "label": "Extraction time",
+      "stated": 55,
+      "n": 111,
+      "ci": [
+        0.4,
+        0.59
+      ],
+      "evidence": "provisional"
+    },
+    {
+      "field": "heat",
+      "label": "Heat / temperature",
+      "stated": 44,
+      "n": 111,
+      "ci": [
+        0.31,
+        0.49
+      ],
+      "evidence": "provisional"
+    },
+    {
+      "field": "ratio",
+      "label": "Plant-to-solvent ratio",
+      "stated": 33,
+      "n": 111,
+      "ci": [
+        0.22,
+        0.39
+      ],
+      "evidence": "provisional"
+    },
+    {
+      "field": "filtration",
+      "label": "Filtration",
+      "stated": 22,
+      "n": 111,
+      "ci": [
+        0.13,
+        0.28
+      ],
+      "evidence": "provisional"
+    },
+    {
+      "field": "material",
+      "label": "Fresh or dried",
+      "stated": 11,
+      "n": 111,
+      "ci": [
+        0.06,
+        0.17
+      ],
+      "evidence": "provisional"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Direction A · Herbarium</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+.anim{transition:left 480ms cubic-bezier(.2,0,0,1),width 480ms cubic-bezier(.2,0,0,1),opacity 300ms}
+@media (prefers-reduced-motion: reduce){.anim{transition:none}}
+</style>
+</helmet>
+<div style="width: 1440px; min-height: 3000px; box-sizing: border-box; background: #F5F0E4; color: #241A28; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 15px; line-height: 22px">
+
+  <!-- Direction label strip -->
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 72px; background: #241A28; color: #F1EADF; font-size: 13px; letter-spacing: .04em">
+    <span><b style="font-weight: 600">DIRECTION A</b> · Herbarium — light-led, illustrated, specimen-sheet calm</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #C3B6C4">Fraunces · Instrument Sans · JetBrains Mono</span>
+  </div>
+
+  <!-- Site header -->
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 22px 72px; border-bottom: 1px solid #DDD3C1">
+    <div style="display: flex; align-items: baseline; gap: 10px">
+      <span style="font-family: 'Fraunces', serif; font-size: 26px; font-weight: 600; font-variation-settings: 'opsz' 144, 'SOFT' 50; letter-spacing: -.01em">Lost in Preparation</span>
+      <span style="font-family: 'Fraunces', serif; font-style: italic; font-size: 15px; color: #2E5A43">a preparation-aware atlas</span>
+    </div>
+    <nav aria-label="Primary" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
+      <a href="#" style="color: #241A28; text-decoration: none">Preparation Lab</a>
+      <a href="#" style="color: #57495A; text-decoration: none">Recipe Atlas</a>
+      <a href="#" style="color: #57495A; text-decoration: none">Evidence gap</a>
+      <a href="#" style="color: #57495A; text-decoration: none">Case study</a>
+      <a href="#" style="color: #57495A; text-decoration: none">Lab Planner</a>
+      <a href="#" style="color: #57495A; text-decoration: none">Methods</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section style="display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; padding: 72px 72px 64px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 24px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: .14em; color: #2E5A43">PREPARATION-AWARE RESEARCH TOOL</span>
+      <h1 style="margin: 0; font-family: 'Fraunces', serif; font-size: 68px; line-height: 72px; font-weight: 400; font-variation-settings: 'opsz' 144, 'SOFT' 30; letter-spacing: -.02em">Historical remedies were <i style="color: #2E5A43">recipes</i>, not just plants.</h1>
+      <p style="margin: 0; font-size: 21px; line-height: 31px; color: #57495A; max-width: 520px">See what each preparation actually extracts — with the uncertainty left in.</p>
+      <div style="display: flex; gap: 12px; align-items: center">
+        <a href="#" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 999px; background: #2E5A43; color: #FBF8F1; font-weight: 600; text-decoration: none">Open the Preparation Lab</a>
+        <a href="#" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid #8C7F8E; color: #241A28; font-weight: 600; text-decoration: none">Explore recipes</a>
+      </div>
+      <p style="margin: 0; font-size: 13px; color: #6A5C6C">Culpeper (1652) and Pliny’s <i>Natural History</i> · predicted extraction, not lab detection · no medical claims</p>
+    </div>
+
+    <!-- Live mini-demo -->
+    <div style="position: relative; display: flex; flex-direction: column; background: #FBF8F1; border: 1px solid #DDD3C1; border-radius: 14px; box-shadow: 0 1px 0 #DDD3C1, 0 24px 48px -28px rgba(36,26,40,.35); overflow: hidden">
+      <div style="display: flex; gap: 16px; padding: 18px 20px; border-bottom: 1px solid #DDD3C1; align-items: center">
+        <div aria-hidden="true" style="flex-shrink: 0; width: 64px; height: 80px; border-radius: 6px; background: #EFE6D2; border: 1px solid #DDD3C1; display: flex; align-items: center; justify-content: center">
+          <svg width="44" height="64" viewBox="0 0 44 64"><path d="M22 62 C22 44 21 28 23 4" fill="none" stroke="#2E5A43" stroke-width="1.2"/><g fill="none" stroke="#2E5A43" stroke-width="1"><path d="M22 50 C14 48 9 44 7 40 C13 41 18 44 22 50"/><path d="M22 50 C30 48 35 44 37 40 C31 41 26 44 22 50"/><path d="M22 38 C15 36 11 32 9 28 C15 29 19 32 22 38"/><path d="M22 38 C29 36 33 32 35 28 C29 29 25 32 22 38"/><path d="M22.5 26 C16 24 13 20 12 16 C17 17 20 20 22.5 26"/><path d="M22.5 26 C29 24 32 20 33 16 C28 17 25 20 22.5 26"/><path d="M23 12 C20 10 19 7 20 4 C22 6 23 9 23 12"/></g></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 2px; flex: 1">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .1em; color: #6A5C6C">TRY IT · LIVE</span>
+          <span style="font-family: 'Fraunces', serif; font-size: 22px; line-height: 28px"><i>Glycyrrhiza glabra</i> <span style="font-style: normal; color: #57495A; font-size: 16px">· liquorice root</span></span>
+          <span style="font-size: 12px; color: #6A5C6C">Plate slot · public domain · Wikimedia Commons</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px; padding: 20px">
+        <div role="group" aria-label="Preparation" style="display: inline-flex; width: max-content; padding: 4px; border-radius: 999px; background: #ECE4D3">
+          <button type="button" aria-pressed="{{coldOn}}" onClick="{{pickCold}}" style="{{coldStyle}}">Cold water</button>
+          <button type="button" aria-pressed="{{decOn}}" onClick="{{pickDec}}" style="{{decStyle}}">Decoction</button>
+        </div>
+        <sc-for list="{{rows}}" as="r" hint-placeholder-count="4">
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+              <span style="font-weight: 600">{{r.compound}} <span style="font-weight: 400; color: #6A5C6C; font-size: 13px">· {{r.cls}}</span></span>
+              <span style="{{r.valueStyle}}">{{r.value}}</span>
+            </div>
+            <span role="img" aria-label="{{r.aria}}" style="{{r.track}}">
+              <span class="anim" aria-hidden="true" style="{{r.band}}"></span>
+              <span aria-hidden="true" style="{{r.modern}}"></span>
+            </span>
+          </div>
+        </sc-for>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: 12px; color: #57495A; border-top: 1px solid #DDD3C1; padding-top: 14px">
+          <span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 18px; height: 8px; border-radius: 4px; background: #E0A33A; box-shadow: inset 0 0 0 1px #8A5A0B"></span>This preparation (range)</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 18px; height: 3px; background: #5B3F7A"></span>Modern lab method (methanol)</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border-radius: 999px; border: 1px solid #8C7F8E">ⓘ Extraction ≠ detection</span>
+          <span style="font-family: 'JetBrains Mono', monospace; color: #6A5C6C">mock values</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE PATHS -->
+  <section style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 0 72px 80px">
+    <sc-for list="{{paths}}" as="p" hint-placeholder-count="3">
+      <a href="#" style="display: flex; flex-direction: column; background: #FBF8F1; border: 1px solid #DDD3C1; border-radius: 14px; overflow: hidden; color: #241A28; text-decoration: none">
+        <div aria-hidden="true" style="position: relative; height: 200px; background: #EFE6D2; border-bottom: 1px solid #DDD3C1; display: flex; align-items: center; justify-content: center">
+          <svg width="120" height="160" viewBox="0 0 44 64" style="opacity: .8"><path d="M22 62 C22 44 21 28 23 4" fill="none" stroke="#2E5A43" stroke-width=".8"/><g fill="none" stroke="#2E5A43" stroke-width=".7"><path d="M22 50 C14 48 9 44 7 40 C13 41 18 44 22 50"/><path d="M22 50 C30 48 35 44 37 40 C31 41 26 44 22 50"/><path d="M22 38 C15 36 11 32 9 28 C15 29 19 32 22 38"/><path d="M22 38 C29 36 33 32 35 28 C29 29 25 32 22 38"/><path d="M22.5 26 C16 24 13 20 12 16 C17 17 20 20 22.5 26"/><path d="M22.5 26 C29 24 32 20 33 16 C28 17 25 20 22.5 26"/></g></svg>
+          <span style="position: absolute; left: 12px; bottom: 10px; font-size: 11px; line-height: 14px; color: #57495A; background: rgba(251,248,241,.9); padding: 3px 7px; border-radius: 4px">{{p.plate}}</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px 22px 24px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #2E5A43">{{p.n}}</span>
+          <span style="font-family: 'Fraunces', serif; font-size: 28px; line-height: 34px; font-variation-settings: 'opsz' 72">{{p.title}}</span>
+          <span style="color: #57495A">{{p.body}}</span>
+          <span style="margin-top: 6px; font-weight: 600; color: #2E5A43">{{p.cta}} →</span>
+        </div>
+      </a>
+    </sc-for>
+  </section>
+
+  <!-- IDENTITY SHEET -->
+  <section style="display: flex; flex-direction: column; gap: 40px; padding: 64px 72px 72px; background: #FBF8F1; border-top: 1px solid #DDD3C1">
+    <h2 style="margin: 0; font-family: 'Fraunces', serif; font-size: 40px; line-height: 46px; font-weight: 400; font-variation-settings: 'opsz' 144">Identity sheet</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; color: #6A5C6C">LIGHT · WARM PAPER</span>
+        <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; font-size: 12px; line-height: 16px">
+          <sc-for list="{{light}}" as="s" hint-placeholder-count="10"><div style="display: flex; flex-direction: column; gap: 4px"><span style="{{s.chip}}"></span><span style="font-weight: 600">{{s.name}}</span><span style="font-family: 'JetBrains Mono', monospace; color: #6A5C6C">{{s.hex}}</span><span style="color: #57495A">{{s.note}}</span></div></sc-for>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 14px; background: #17121A; color: #F1EADF">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; color: #A898AA">DARK · INK</span>
+        <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; font-size: 12px; line-height: 16px">
+          <sc-for list="{{dark}}" as="s" hint-placeholder-count="10"><div style="display: flex; flex-direction: column; gap: 4px"><span style="{{s.chip}}"></span><span style="font-weight: 600">{{s.name}}</span><span style="font-family: 'JetBrains Mono', monospace; color: #A898AA">{{s.hex}}</span><span style="color: #C3B6C4">{{s.note}}</span></div></sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; color: #6A5C6C">TYPE</span>
+        <span style="font-family: 'Fraunces', serif; font-size: 56px; line-height: 60px; font-variation-settings: 'opsz' 144, 'SOFT' 30; letter-spacing: -.02em">Decoction, <i>reconsidered</i></span>
+        <span style="font-family: 'Fraunces', serif; font-size: 22px; line-height: 30px; font-style: italic; color: #57495A">“Take the root of Liquorice, bruise it, and boil it in water…” <span style="font-style: normal; font-size: 13px; font-family: 'Instrument Sans'">[MOCK passage]</span></span>
+        <span style="font-size: 17px; line-height: 26px">Instrument Sans for interface and data — crisp, slightly humanist, tabular figures.</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 15px">0.33–0.55 <span style="color: #6A5C6C">· point 0.44 · n = 11</span></span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; color: #6A5C6C">HONESTY, COMPACT</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+          <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; background: #241A28; color: #FBF8F1; font-size: 13px; font-weight: 600">● Validated</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; border: 1px dashed #4F3570; background: #E9E0F1; color: #4F3570; font-size: 13px; font-weight: 600">◐ AI reference</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; border: 1px dotted #5F5A57; color: #5F5A57; font-size: 13px; font-weight: 600">◌ Pending</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 6px; border: 1px solid #8A5A0B; background: #F6E6C4; color: #8A5A0B; font-size: 13px"><i style="font-family: 'Fraunces', serif">Culpeper</i> ▮▮</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 6px; border: 1px dashed #8A5A0B; color: #8A5A0B; font-size: 13px"><i style="font-family: 'Fraunces', serif">Pliny</i> ▮▯ 70% disputed</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+          <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; background: #9B2335; color: #FFFFFF; font-size: 13px; font-weight: 600">▲ Toxicity reported</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; border: 1px solid #9B2335; background: #F7DDE0; color: #9B2335; font-size: 13px; font-weight: 600">! Concern</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; border: 1px dashed #8C7F8E; color: #5F5A57; font-size: 13px">? Unknown</span>
+          <span style="display: inline-flex; align-items: baseline; gap: 4px; font-size: 13px"><span aria-hidden="true">◇</span><span style="font-variant-caps: all-small-caps; letter-spacing: .06em; color: #57495A">heuristic</span><span style="text-decoration: underline dashed #57495A; text-underline-offset: 4px">acidic</span></span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border-radius: 10px; border: 1px solid #DDD3C1; background: #F5F0E4">
+          <span style="font-family: 'Fraunces', serif; font-size: 20px"><i>“absinthium”</i> <span style="font-family: 'Instrument Sans'; font-size: 13px; color: #57495A">→ 3 candidates · disputed</span></span>
+          <div aria-hidden="true" style="display: flex; gap: 3px; height: 6px"><span style="flex: 3; border-radius: 3px; background: #4F3570"></span><span style="flex: 2; border-radius: 3px; background: #8C7F8E"></span><span style="flex: 1; border-radius: 3px; background: repeating-linear-gradient(135deg,#8C7F8E 0 1px,transparent 1px 5px)"></span></div>
+          <span style="font-size: 12px; color: #6A5C6C">Equal-weight candidates; tap to see each range and status</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dark-mode sample of the Lab card -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 24px; border-radius: 14px; background: #17121A; color: #F1EADF">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; color: #A898AA">DARK MODE · LAB ROW</span>
+        <div style="display: flex; justify-content: space-between"><span style="font-weight: 600">Glycyrrhizin <span style="font-weight: 400; color: #A898AA; font-size: 13px">· triterpene saponins</span></span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px">0.55–0.77</span></div>
+        <span style="position: relative; display: block; height: 14px; border-radius: 7px; background: #120E15; box-shadow: inset 0 0 0 1px #7D6E80"><span style="position: absolute; top: 2px; bottom: 2px; left: 55%; width: 22%; border-radius: 5px; background: #F0B95A"></span><span style="position: absolute; bottom: -6px; height: 3px; left: 66%; width: 22%; background: #C3AEE6"></span></span>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 999px; border: 1px dashed #C3AEE6; background: #2C2140; color: #C3AEE6; font-size: 12px; font-weight: 600">◐ AI reference</span><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 999px; background: #F2A2AC; color: #1A0B0C; font-size: 12px; font-weight: 600">▲ Toxicity reported</span><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 999px; border: 1px solid #8CC2A0; color: #8CC2A0; font-size: 12px; font-weight: 600">Why did this change? ›</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 21px; color: #57495A">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; color: #6A5C6C">RULES OF THE PALETTE</span>
+        <span><b style="color: #241A28">Saffron</b> = the historical preparation. <b style="color: #241A28">Aubergine</b> = the modern lab method. Warm vs cool and light vs dark, so they separate without relying on hue (safe for red–green colour blindness).</span>
+        <span><b style="color: #241A28">Botanical green</b> is the brand and navigation colour only. It never means “safe” or “good”.</span>
+        <span><b style="color: #241A28">Crimson</b> is reserved for toxicity.</span>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3000}}'>
+const DATA = [
+  { compound: 'Glycyrrhizin', cls: 'triterpene saponins', cold: [.33, .55], dec: [.55, .77], modern: [.66, .88] },
+  { compound: 'Liquiritin', cls: 'flavonoid glycosides', cold: [.22, .44], dec: [.44, .66], modern: [.55, .77] },
+  { compound: 'Isoliquiritigenin', cls: 'chalcones', cold: [.11, .33], dec: [.22, .44], modern: [.44, .66] },
+  { compound: 'Glabridin', cls: 'isoflavans', cold: null, dec: [.11, .22], modern: [.55, .88] },
+];
+const SEG = 'height: 36px; padding: 0 16px; border: 0; border-radius: 999px; font: inherit; font-weight: 600; cursor: pointer; ';
+const f2 = (n) => n.toFixed(2);
+const sw = (name, hex, note, extra) => ({ name, hex, note, chip: 'height: 56px; border-radius: 8px; background: ' + hex + '; ' + (extra || '') });
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { prep: 'cold' }; }
+  renderVals() {
+    const prep = this.state.prep;
+    const rows = DATA.map((d) => {
+      const r = d[prep];
+      return {
+        compound: d.compound, cls: d.cls,
+        value: r ? f2(r[0]) + '–' + f2(r[1]) : '? Unknown',
+        valueStyle: r ? "font-family: 'JetBrains Mono', monospace; font-size: 13px" : 'font-size: 13px; color: #5F5A57',
+        aria: d.compound + ': predicted extraction ' + (r ? 'between ' + f2(r[0]) + ' and ' + f2(r[1]) : 'unknown') + '; modern lab method between ' + f2(d.modern[0]) + ' and ' + f2(d.modern[1]),
+        track: 'position: relative; display: block; height: 14px; border-radius: 7px; ' + (r ? 'background: #ECE4D3; box-shadow: inset 0 0 0 1px #8C7F8E' : 'background-color: #E8E2DA; background-image: repeating-linear-gradient(135deg,#B9B0A6 0 1px,transparent 1px 6px); box-shadow: inset 0 0 0 1px #8C7F8E'),
+        band: 'position: absolute; top: 2px; bottom: 2px; border-radius: 5px; background: #E0A33A; box-shadow: inset 0 0 0 1px #8A5A0B; ' + (r ? 'left: ' + r[0] * 100 + '%; width: ' + (r[1] - r[0]) * 100 + '%; opacity: 1' : 'left: 0; width: 0; opacity: 0'),
+        modern: 'position: absolute; bottom: -7px; height: 3px; border-radius: 2px; background: #5B3F7A; left: ' + d.modern[0] * 100 + '%; width: ' + (d.modern[1] - d.modern[0]) * 100 + '%',
+      };
+    });
+    const on = 'background: #241A28; color: #FBF8F1', off = 'background: transparent; color: #57495A';
+    return {
+      rows,
+      coldOn: prep === 'cold', decOn: prep === 'dec',
+      coldStyle: SEG + (prep === 'cold' ? on : off), decStyle: SEG + (prep === 'dec' ? on : off),
+      pickCold: () => this.setState({ prep: 'cold' }), pickDec: () => this.setState({ prep: 'dec' }),
+      paths: [
+        { n: '01', title: 'Explore recipes', body: 'Search Culpeper and Pliny. Every plant, every passage, every extracted field.', cta: 'Open the Recipe Atlas', plate: 'Plate slot · public domain · Wikimedia Commons' },
+        { n: '02', title: 'Preparation Lab', body: 'Change the solvent, heat and filtration. Watch the compound profile respond.', cta: 'Start an experiment', plate: 'Plate slot · public domain · Wikimedia Commons' },
+        { n: '03', title: 'The evidence gap', body: 'How rarely modern studies say how they prepared the plant.', cta: 'See the gap', plate: 'Plate slot · public domain · Wikimedia Commons' },
+      ],
+      light: [
+        sw('Paper', '#F5F0E4', 'ground', 'box-shadow: inset 0 0 0 1px #DDD3C1'), sw('Ink', '#241A28', 'text · 13.3:1'), sw('Botanical', '#2E5A43', 'brand · 6.2:1'), sw('Saffron', '#E0A33A', 'historical fill'), sw('Saffron text', '#8A5A0B', '4.7:1'),
+        sw('Aubergine', '#5B3F7A', 'modern lab · 7.6:1'), sw('Crimson', '#9B2335', 'toxicity · 6.2:1'), sw('Muted', '#57495A', '6.6:1'), sw('Surface', '#FBF8F1', 'cards', 'box-shadow: inset 0 0 0 1px #DDD3C1'), sw('Unknown', '#E8E2DA', 'hatched', 'background-image: repeating-linear-gradient(135deg,#B9B0A6 0 1px,transparent 1px 6px)'),
+      ],
+      dark: [
+        sw('Ink ground', '#17121A', 'ground', 'box-shadow: inset 0 0 0 1px #3A2F3D'), sw('Paper text', '#F1EADF', '14.2:1'), sw('Botanical', '#8CC2A0', 'brand · 8.3:1'), sw('Saffron', '#F0B95A', 'historical · 9.5:1'), sw('Saffron soft', '#3A2A12', 'tint'),
+        sw('Lilac', '#C3AEE6', 'modern lab · 8.5:1'), sw('Rose', '#F2A2AC', 'toxicity · 8.5:1'), sw('Muted', '#C3B6C4', '8.7:1'), sw('Surface', '#211A25', 'cards', 'box-shadow: inset 0 0 0 1px #3A2F3D'), sw('Unknown', '#2A2522', 'hatched', 'background-image: repeating-linear-gradient(135deg,#4A433E 0 1px,transparent 1px 6px)'),
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -21,5 +21,6 @@ To use the CLI instead: run `npm i -g vercel`, then `vercel login`, then `cd sit
 1. It generates the TypeScript types and Zod schemas from `contract/schemas/`.
 2. It validates every `site-data/` file and exits 1 on any mismatch, so a bad data file fails the deployment.
 3. It writes `public/data/`.
+4. It runs the preparation-engine parity gate (`npm run engine:parity`) and fails if the browser engine differs from any published Python estimate.
 
-Then `next build` exports 645 static pages.
+Then `next build` exports every page as static HTML (one per recipe, plus the screens and the redirect stubs for v1 addresses). The v1 addresses also get real 301 redirects from `vercel.json`.

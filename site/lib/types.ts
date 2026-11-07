@@ -1,5 +1,5 @@
 /**
- * VIEW-MODEL TYPES (from design/src/types.ts).
+ * VIEW-MODEL TYPES (from design/v2 src/types.ts; the v1 adaptations are kept).
  * The contract types are GENERATED from the JSON Schemas into lib/data/generated/ and validated with Zod at build
  * time. These are the narrow props the design's components take; lib/data/selectors/ maps contract records onto
  * them. Changes from the design's assumed shapes are marked "SITE:" and listed in site/CHANGES.md.
@@ -84,6 +84,8 @@ export interface Preparation {
   /** null = not stated in the source. Rendered as Unknown, never as "no".
    *  SITE: 'not_applicable' (ointments, poultices, amulets ...) is a real contract value and prints as such. */
   filtered: boolean | null | 'not_applicable';
+  /** v2 (additive): acid added or inherent (vinegar). null = not stated. */
+  acidified?: boolean | null;
   /** Added in Phase 2. null = not stated. */
   heat?: HeatLevel | null;
   /** Free text as normalised, e.g. "3 days". null = not stated. */
@@ -374,6 +376,76 @@ export interface DownloadFile {
 export interface SourcesFile {
   sources: SourceRecord[];
   downloads: DownloadFile[];
+}
+
+/* ───────────────────────── v2 additions ───────────────────────── */
+
+/** Evidence gap: how often modern studies state each preparation detail.
+ *  SITE: built from metrics.reportingGap (contract v1.6, P37b), not a separate file. The fields are the audit's five
+ *  coded variables; `inflated` marks the solvent share, which is inflated by construction in the prepared set. */
+export type ReportingField = 'solvent' | 'part' | 'heat' | 'freshOrDried' | 'filtration';
+export interface ReportingGapRow {
+  field: ReportingField;
+  label: string;
+  stated: number;
+  n: number;
+  /** 95% Wilson interval for the share stated. null = not computed. */
+  ci: [number, number] | null;
+  evidence: EvidenceStatus;
+  inflated: boolean;
+  note: string | null;
+}
+export interface ReportingGapView {
+  headline: { field: ReportingField; text: string };
+  method: string;
+  rows: ReportingGapRow[];
+  /** SITE: the share stating none of the five details (same set). */
+  none: ReportingGapRow | null;
+  /** SITE: the other study sets (all retrieved studies; heat by coding source) and the v3 screening. */
+  extra: { label: string; stated: number; n: number; ci: [number, number] | null; note: string | null }[];
+}
+
+/** Botanical plate (contract v1.8, P39: site-data/plates.json).
+ *  SITE: the image is a set of optimised, locally served files (AVIF + WebP at several widths, explicit size), never a
+ *  hotlinked Commons URL; author, date and the Commons licence travel with it. */
+export interface PlateImage {
+  avif: string;
+  webp: string;
+  src: string;
+  width: number;
+  height: number;
+}
+export interface Plate {
+  taxon: string;
+  caption: string;
+  /** 'sourced' = file chosen and its licence read from Commons by script; 'confirmed' = a person checked it. */
+  status: 'to_source' | 'sourced' | 'confirmed';
+  licence: string | null;
+  host: 'Wikimedia Commons' | null;
+  fileUrl: string | null;
+  imageUrl: string | null;
+  author: string | null;
+  date: string | null;
+  work: string | null;
+  image: PlateImage | null;
+}
+
+/** Lab Planner (placeholder until the quantum feature ships). SITE: derived from hypotheses.json; rankRange is null
+ *  because the ranking records no rank interval, and readout/effort are not decided anywhere in the data. */
+export interface LabPlanItem {
+  id: string;
+  hypothesisId: string;
+  title: string;
+  compares: [string, string];
+  readout: string | null;
+  effort: 'low' | 'medium' | 'high' | null;
+  rank: number;
+  rankRange: [number, number] | null;
+  quantumScore: LikelihoodRange | null;
+}
+export interface LabPlanFile {
+  feature: { name: string; status: 'coming_soon' | 'available'; release: string | null; description: string };
+  items: LabPlanItem[];
 }
 
 /** contract: coverage.json — Home counts. */

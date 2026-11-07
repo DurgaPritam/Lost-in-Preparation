@@ -65,6 +65,17 @@ Run `npm run engine:bench`, which writes [bench-report.json](bench-report.json).
 
 The heaviest off-grid case is vinegar + water with heat and filtration not stated: two solvent windows, acidity, and per-draw heat and filtration. Throttling uses Chrome DevTools' CPU emulation. 2× is the closer stand-in for a mid-range laptop's single-thread speed; 4× is Lighthouse's slow-device setting. Smaller species scale linearly with their compound count (median species: 78 compounds).
 
+## Responsiveness in the Lab
+
+Run `npm run lab:latency` (needs `npm run serve`). It writes [latency-report.json](latency-report.json): every sample, plus a summary per CPU rate, species and cache state. It clicks Lab settings for *Salvia sclarea* (the default, 136 compounds) and *Humulus lupulus* (the largest, 484), 3 repeats of 9 steps each. Five steps reach a preparation the page has not computed; four return to one it has.
+
+- **Measured under the slowdown (main thread):** the click to the next frame, which is the UI's response, and the longest main-thread task. The previous profile stays visible, marked as updating, until the new one is ready.
+- **Not throttled (the worker):** Chrome applies DevTools CPU throttling only to pages; `Emulation.setCPUThrottlingRate` is rejected for worker targets. The time until the new profile is ready is therefore measured with the engine's worker at full speed.
+- **Estimate (heuristic):** `estReadyMs` adds (rate − 1) × the worker's own time for the request. This assumes the worker would slow down linearly.
+- **Yields:** the worker yields between chunks of 24 compounds through a `MessageChannel` task, not `setTimeout`. Nested timeouts are clamped to 4 ms, which had made the yields most of a large species' time.
+
+The numbers are in `latency-report.json`; this file does not repeat them.
+
 ## Files
 
 | File | Contents |
@@ -75,4 +86,6 @@ The heaviest off-grid case is vinegar + water with heat and filtration not state
 | `numpy/random.ts` | `numpy/stats.ts`, `numpy/fma.ts`, `numpy/zigguratTables.ts` |
 | `../../scripts/engine-parity.ts` | the build gate |
 | `../../scripts/engine-bench.ts` | the benchmark |
+| `worker.ts` | the Web Worker: per-(species, preparation) cache, per-channel cancellation, chunked compute |
+| `../../scripts/lab-latency.ts` | the Lab latency measurement |
 | `../../tests/unit/engine.test.ts` | unit tests: generator, FMA, percentiles, seeds, one-species parity |

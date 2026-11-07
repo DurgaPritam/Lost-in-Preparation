@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Methods and validation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="background: #F6F1E7; color: #1E1A15; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 22px">
+
+  <header style="border-bottom: 1px solid #D8CDB9">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px">
+      <span style="font-family: 'EB Garamond', Georgia, serif; font-size: 24px; line-height: 32px; font-weight: 500">Lost in Preparation</span>
+      <span style="font-size: 13px; color: #685E51">EthnoHack 2026 · Traditional Knowledge Mining</span>
+    </div>
+  </header>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 24px 16px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+    <nav aria-label="Primary" style="flex: 1 1 200px">
+      <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px">
+        <sc-for list="{{nav}}" as="n" hint-placeholder-count="7"><li style="flex: 1 1 150px"><a href="{{n.href}}" aria-current="{{n.current}}" style="{{n.style}}">{{n.label}}</a></li></sc-for>
+      </ul>
+    </nav>
+
+    <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 38px; line-height: 46px; font-weight: 500">Methods &amp; validation</h1>
+        <p style="margin: 0; max-width: 68ch; font-size: 17px; line-height: 26px; color: #554C40">How were names resolved and extraction estimated, and what has a person checked?</p>
+      </div>
+
+      <section aria-labelledby="pipe" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="pipe" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Pipeline</h2>
+        <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 12px">
+          <sc-for list="{{pipeline}}" as="s" hint-placeholder-count="7">
+            <li style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #685E51">{{s.step}}</span>
+              <span style="font-weight: 600">{{s.name}}</span>
+              <span style="font-size: 13px; line-height: 18px; color: #554C40">{{s.does}}</span>
+              <span style="{{s.toolStyle}}">{{s.tool}}</span>
+              <span style="{{s.evStyle}}">{{s.evLabel}}</span>
+            </li>
+          </sc-for>
+        </ol>
+        <p style="margin: 0; font-size: 13px; color: #554C40">ⓘ Step 5 predicts <b style="font-weight: 500; color: #1E1A15">extraction</b>, not lab detection; plant content is outside the model.</p>
+      </section>
+
+      <section aria-labelledby="metrics" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="metrics" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Metrics</h2>
+        <div style="overflow-x: auto; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+          <table style="width: 100%; min-width: 720px; border-collapse: collapse; font-size: 13px; line-height: 18px">
+            <caption style="padding: 8px 12px; text-align: left; color: #554C40">Every metric with its interval and evidence status (mock values)</caption>
+            <thead style="background: #EDE6D7"><tr style="text-align: left">
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Stage</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Metric</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500; text-align: right">Value<span style="display: block; font-size: 12px; font-weight: 400; color: #685E51">interval (point)</span></th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500; text-align: right">n</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Evidence</th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{metrics}}" as="m" hint-placeholder-count="6">
+                <tr style="border-bottom: 1px solid #D8CDB9; vertical-align: top">
+                  <td style="padding: 8px 12px; color: #554C40">{{m.stage}}</td>
+                  <td style="padding: 8px 12px">{{m.name}}<span style="display: block; font-size: 12px; color: #685E51">{{m.note}}</span></td>
+                  <td style="padding: 8px 12px; text-align: right"><span style="{{m.valStyle}}">{{m.val}}</span><span style="display: block; font-size: 12px; color: #685E51">{{m.unit}}</span></td>
+                  <td style="{{m.nStyle}}">{{m.n}}</td>
+                  <td style="padding: 8px 12px"><span style="{{m.evStyle}}">{{m.evLabel}}</span></td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="honest" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="honest" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Honest findings</h2>
+        <p style="margin: 0; max-width: 68ch; color: #554C40">Results that went against us are reported at the same weight as the ones that didn’t.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 16px; align-items: start">
+          <article style="display: flex; flex-direction: column; gap: 14px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Negative result</span>
+            <h3 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Does quantum chemistry (xTB) estimate logP better than RDKit?</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px solid #1E1A15; font-size: 13px; font-weight: 500">✕ Fail (pre-registered)</span><span style="display: inline-flex; padding: 2px 10px; border-radius: 9999px; border: 1px solid #554C40; font-size: 13px; font-weight: 500">● Validated</span></div>
+            <span style="font-size: 12px; color: #685E51">MAE, log units · lower is better</span>
+            <sc-for list="{{xtb}}" as="x" hint-placeholder-count="2">
+              <div style="display: flex; flex-direction: column; gap: 4px">
+                <span style="font-size: 13px; font-weight: 500">{{x.name}}</span>
+                <span role="img" aria-label="{{x.aria}}" style="position: relative; display: block; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7"><span aria-hidden="true" style="{{x.band}}"></span><span aria-hidden="true" style="{{x.point}}"></span></span>
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">{{x.text}}</span>
+              </div>
+            </sc-for>
+            <p style="margin: 0"><b style="font-weight: 500">Finding.</b> No. xTB performed worse than RDKit on our reference set, and the intervals do not overlap.</p>
+            <p style="margin: 0"><b style="font-weight: 500">Decision.</b> The pipeline uses RDKit. xTB results stay in the data download so others can check this.</p>
+          </article>
+
+          <article style="display: flex; flex-direction: column; gap: 14px; padding: 20px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+            <span style="font-size: 12px; color: #685E51; font-variant-caps: all-small-caps; letter-spacing: .06em">Positive control</span>
+            <h3 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600">Artemisinin <span style="font-weight: 400; color: #554C40">in</span> <i>Artemisia annua</i></h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 9999px; border: 1px dashed #1E1A15; font-size: 13px; font-weight: 500">◐ Borderline</span><span style="display: inline-flex; padding: 2px 10px; border-radius: 9999px; border: 1px solid #554C40; font-size: 13px; font-weight: 500">● Validated</span></div>
+            <p style="margin: 0; font-size: 13px; color: #554C40">Expected: the cold preparation ranks above the hot decoction.</p>
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #8A4513"><span aria-hidden="true" style="width: 10px; height: 10px; background: #C27A35"></span><b style="font-weight: 500">Cold soak, wrung out (as in Ge Hong)</b></span>
+              <span role="img" aria-label="Cold soak: predicted extraction between 0.33 and 0.55" style="position: relative; display: block; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7"><span aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 33%; width: 22%; background: #C27A35; border-radius: 2px"></span><span aria-hidden="true" style="position: absolute; top: -3px; height: 16px; width: 2px; left: calc(44% - 1px); background: #1E1A15"></span></span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">0.33–0.55 <span style="color: #685E51">(point 0.44)</span></span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #1D4E7E"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #23588C"></span><b style="font-weight: 500">Hot decoction</b></span>
+              <span role="img" aria-label="Hot decoction: predicted extraction between 0.11 and 0.33" style="position: relative; display: block; height: 12px; border: 1px solid #8F826D; border-radius: 2px; background: #EDE6D7"><span aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 11%; width: 22%; background: #23588C; border-radius: 2px"></span><span aria-hidden="true" style="position: absolute; top: -3px; height: 16px; width: 2px; left: calc(22% - 1px); background: #1E1A15"></span><span aria-hidden="true" style="position: absolute; top: -6px; bottom: -6px; left: 33%; width: 0; border-left: 1px dashed #1E1A15"></span></span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">0.11–0.33 <span style="color: #685E51">(point 0.22)</span></span>
+            </div>
+            <p style="margin: 0">The direction matches the historical account, but the ranges touch at 0.33 (dashed line). By our own pre-registered rule, touching ranges are not a clear difference, so this is <b style="font-weight: 500">borderline, not a pass</b>.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="prereg" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 id="prereg" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Pre-registered checks</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; color: #554C40"><span>✓ Pass</span><span>✕ Fail</span><span>◐ Borderline</span><span style="color: #5C5750">? Not yet run</span><span>· Criteria were fixed before results were seen (mock dates).</span></div>
+        <div style="overflow-x: auto; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+          <table style="width: 100%; min-width: 680px; border-collapse: collapse; font-size: 13px; line-height: 18px">
+            <thead style="background: #EDE6D7"><tr style="text-align: left">
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Criterion</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Registered</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Outcome</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #8F826D; font-weight: 500">Evidence</th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{prereg}}" as="p" hint-placeholder-count="5">
+                <tr style="border-bottom: 1px solid #D8CDB9; vertical-align: top">
+                  <td style="padding: 8px 12px; max-width: 420px">{{p.criterion}}</td>
+                  <td style="padding: 8px 12px"><span style="{{p.dateStyle}}">{{p.date}}</span></td>
+                  <td style="padding: 8px 12px"><span style="{{p.outStyle}}">{{p.out}}</span><span style="display: block; margin-top: 4px; font-size: 12px; color: #685E51">{{p.detail}}</span></td>
+                  <td style="padding: 8px 12px"><span style="{{p.evStyle}}">{{p.evLabel}}</span></td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 24px; align-items: start">
+        <section aria-labelledby="heur" style="display: flex; flex-direction: column; gap: 12px">
+          <h2 id="heur" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Heuristics register</h2>
+          <sc-for list="{{heur}}" as="h" hint-placeholder-count="3">
+            <div style="display: flex; flex-direction: column; gap: 4px; padding: 16px; background: #FCFAF5; border: 1px solid #D8CDB9; border-radius: 4px">
+              <span style="display: inline-flex; align-items: baseline; gap: 6px"><span aria-hidden="true" style="color: #554C40">◇</span><span style="font-size: 12px; color: #554C40; font-variant-caps: all-small-caps; letter-spacing: .06em">heuristic</span><span style="font-weight: 500; text-decoration: underline dashed #554C40; text-underline-offset: 4px">{{h.label}}</span></span>
+              <span style="font-size: 13px; line-height: 18px; color: #554C40">{{h.rule}}</span>
+            </div>
+          </sc-for>
+        </section>
+        <section aria-labelledby="lim" style="display: flex; flex-direction: column; gap: 12px">
+          <h2 id="lim" style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 30px; line-height: 38px; font-weight: 500">Limitations</h2>
+          <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px"><sc-for list="{{lims}}" as="l" hint-placeholder-count="8"><li>{{l}}</li></sc-for></ol>
+        </section>
+      </div>
+      <p style="margin: 0; font-size: 12px; line-height: 16px; color: #685E51">Mock data: every number and date is a placeholder.</p>
+    </main>
+  </div>
+
+  <footer style="border-top: 1px solid #D8CDB9">
+    <p style="max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 13px; line-height: 18px; color: #685E51">A research tool that generates hypotheses for re-testing. It makes no medical claims and gives no guidance on preparing or taking any plant.</p>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"phone":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":3200}}'>
+const NAV = [['Home', 'Home.dc.html'], ['Recipe explorer', 'Recipes.dc.html'], ['Compare', 'Compare.dc.html'], ['Audit', 'Audit.dc.html'], ['Hypotheses', 'Hypotheses.dc.html'], ['Methods & validation', 'Methods.dc.html'], ['Data & licences', 'Data.dc.html']];
+const CURRENT = 'Methods & validation';
+const PILL = 'display: inline-flex; align-items: center; gap: 6px; width: max-content; padding: 2px 10px; border-radius: 9999px; font-size: 12px; line-height: 16px; font-weight: 500; white-space: nowrap; ';
+const EV = {
+  validated: [PILL + 'border: 1px solid #554C40; color: #1E1A15', '● Validated'],
+  provisional: [PILL + 'border: 1px dashed #5A3F8C; background: #ECE5F5; color: #5A3F8C', '◐ Provisional'],
+  pending: [PILL + 'border: 1px dotted #5C5750; background: #E7E3DB; color: #5C5750', '◌ Pending'],
+};
+const OUT = {
+  pass: [PILL + 'border: 1px solid #1E1A15; background: #1E1A15; color: #F6F1E7', '✓ Pass'],
+  fail: [PILL + 'border: 1px solid #1E1A15; color: #1E1A15', '✕ Fail'],
+  borderline: [PILL + 'border: 1px dashed #1E1A15; color: #1E1A15', '◐ Borderline'],
+  not_run: ['display: inline-flex; color: #5C5750; white-space: nowrap', '? Not yet run'],
+};
+const PIPE = [
+  ['Transcribe', 'Source pages to text, illegible stretches marked ⟦?⟧.', null, 'validated'],
+  ['Extract recipe fields', 'Plant, part, vehicle, heat, duration, filtration as character spans.', null, 'provisional'],
+  ['Resolve names', 'Historical name → candidate taxa with confidence ranges.', null, 'provisional'],
+  ['Look up compounds', 'Known constituents per taxon, grouped by class.', null, 'pending'],
+  ['Estimate extraction', 'Likelihood ranges per compound and preparation, from descriptors and heuristics.', 'RDKit', 'provisional'],
+  ['Audit modern studies', 'How published studies prepared the same plants.', 'PubMed', 'provisional'],
+  ['Rank hypotheses', 'By the conservative gap between ranges, with rank ranges.', null, 'pending'],
+];
+const METRICS = [
+  ['Transcribe', 'Character error rate vs hand transcription', '', 0.05, 0.22, 0.11, 'rate · lower is better', 111, 'validated'],
+  ['Extract recipe fields', 'Agreement with hand annotation', '', 0.66, 0.88, 0.77, 'κ', 111, 'provisional'],
+  ['Resolve names', 'Top candidate agrees with expert · Culpeper', '', 0.77, 0.99, 0.88, 'proportion', 55, 'validated'],
+  ['Resolve names', 'Top candidate agrees with expert · Pliny', 'Lower-confidence source; many names have no single correct answer.', 0.22, 0.66, 0.44, 'proportion', 55, 'provisional'],
+  ['Estimate extraction', 'logP error vs experimental values (RDKit)', '', 0.44, 0.66, 0.55, 'MAE, log units', 111, 'validated'],
+  ['Audit modern studies', 'Study field extraction agreement', 'Not yet measured.', null, null, null, 'κ', null, 'pending'],
+];
+const PREREG = [
+  ['Positive control: cold A. annua preparation above hot decoction for artemisinin, ranges not overlapping.', '2026-09-01', 'borderline', 'Direction right; ranges touch.', 'validated'],
+  ['xTB logP error lower than RDKit logP error on the reference set.', '2026-09-01', 'fail', 'xTB worse; intervals do not overlap.', 'validated'],
+  ['Culpeper top-candidate name agreement with expert review at or above the registered threshold.', '2026-09-01', 'pass', 'Met.', 'validated'],
+  ['Pliny top-candidate name agreement at or above the same threshold.', '2026-09-01', 'fail', 'Not met; source treated as lower confidence throughout.', 'provisional'],
+  ['Top-5 hypothesis ranks stable when any one heuristic is switched off.', null, 'not_run', 'Scheduled.', 'pending'],
+];
+const HEUR = [
+  ['Acidity', 'Vinegar is treated as favouring extraction of basic compounds (e.g. alkaloids) as salts.'],
+  ['Heat sensitivity', 'Prolonged boiling is treated as reducing volatile and heat-labile compounds.'],
+  ['Ethanol strength of wine', 'Historical wine is modelled as dilute ethanol of unknown strength; a range of strengths is propagated, not a single value.'],
+];
+const LIMS = [
+  'The model predicts extraction, not detection; plant content is not modelled.',
+  'Historical quantities (handfuls, quarts) are unstandardised.',
+  'The composition of historical wine and vinegar is unknown and modelled as ranges.',
+  'Pliny’s plant names are often disputed; results for Pliny are lower confidence.',
+  'Field extraction is AI-assisted; provisional items have not been checked by a person.',
+  'The study audit covers indexed literature only and may miss non-English work.',
+  'Heuristics (acidity, heat sensitivity) are rules of thumb.',
+  'No hypothesis has yet been tested in a laboratory.',
+];
+const f2 = (n) => n.toFixed(2);
+class Component extends DCLogic {
+  renderVals() {
+    const nav = NAV.map(([label, href]) => ({ label, href, current: label === CURRENT ? 'page' : undefined,
+      style: 'display: flex; align-items: center; height: 40px; padding: 0 12px; border-radius: 4px; text-decoration: none; ' + (label === CURRENT ? 'background: #EDE6D7; color: #1E1A15; font-weight: 600' : 'color: #554C40') }));
+    const pipeline = PIPE.map(([name, does, tool, ev], i) => ({ step: (i + 1) + ' of ' + PIPE.length + (i < PIPE.length - 1 ? '  →' : ''), name, does,
+      tool: tool || '? Tool not documented yet', toolStyle: 'font-size: 13px; ' + (tool ? "font-family: 'IBM Plex Mono', monospace" : 'color: #5C5750'),
+      evStyle: EV[ev][0], evLabel: EV[ev][1] }));
+    const metrics = METRICS.map(([stage, name, note, lo, hi, pt, unit, n, ev]) => ({ stage, name, note, unit,
+      val: lo == null ? '? Not yet measured' : f2(lo) + '–' + f2(hi) + ' (' + f2(pt) + ')',
+      valStyle: lo == null ? 'display: inline-flex; padding: 0 6px; border: 1px dashed #B8B1A5; border-radius: 2px; background: #E7E3DB; color: #5C5750; white-space: nowrap' : "font-family: 'IBM Plex Mono', monospace; white-space: nowrap",
+      n: n == null ? '? Unknown' : String(n), nStyle: 'padding: 8px 12px; text-align: right; ' + (n == null ? 'color: #5C5750' : "font-family: 'IBM Plex Mono', monospace"),
+      evStyle: EV[ev][0], evLabel: EV[ev][1] }));
+    const max = 1.33 * 1.15;
+    const xtb = [['RDKit (Crippen)', 0.44, 0.66, 0.55, '#554C40'], ['xTB (GFN2, implicit solvent)', 0.88, 1.33, 1.11, '#554C40']].map(([name, lo, hi, pt, c]) => ({ name,
+      band: 'position: absolute; top: 0; bottom: 0; left: ' + (lo / max) * 100 + '%; width: ' + ((hi - lo) / max) * 100 + '%; background: ' + c + '; border-radius: 2px',
+      point: 'position: absolute; top: -3px; height: 16px; width: 2px; left: calc(' + (pt / max) * 100 + '% - 1px); background: #1E1A15',
+      text: f2(lo) + '–' + f2(hi) + '  (point ' + f2(pt) + ')', aria: name + ': error between ' + f2(lo) + ' and ' + f2(hi) + ' log units' }));
+    const prereg = PREREG.map(([criterion, date, out, detail, ev]) => ({ criterion, detail,
+      date: date || '? Unknown', dateStyle: date ? "font-family: 'IBM Plex Mono', monospace; white-space: nowrap" : 'color: #5C5750',
+      outStyle: OUT[out][0], out: OUT[out][1], evStyle: EV[ev][0], evLabel: EV[ev][1] }));
+    return { nav, pipeline, metrics, xtb, prereg, heur: HEUR.map(([label, rule]) => ({ label, rule })), lims: LIMS };
+  }
+}
+</script>
+</body>
+</html>
