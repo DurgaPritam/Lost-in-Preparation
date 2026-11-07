@@ -2,7 +2,7 @@
 
 Changes after v1.0 are additive unless a major version says otherwise. New proposals are added at the top as **Proposed** and are implemented only once accepted.
 
-## v1.9 — 2026-11-07 (additive; P40 **proposed**, awaiting the project lead's approval)
+## v1.9 — 2026-11-07 (additive; P40 **approved by the project lead on 2026-11-07**)
 
 | # | Change |
 |---|---|
@@ -10,7 +10,7 @@ Changes after v1.0 are additive unless a major version says otherwise. New propo
 | | **Contents:** the exact-solver panel for the default configuration (`panel`: `PanelCandidate` with species, historical preparation, modern comparator and its basis, indication, gap percentiles, normalised value, compounds likely to differ, compound classes, toxicity, caveats and evidence trail); the other panels (`alternatives`, k = 4/6/8 × toxic rule); the weight `sensitivity`; a per-size, per-solver `benchmark` summary (approximation ratio, P(optimum), feasibility, runtime, two-qubit gates and depth); `winnerBySize`; the `noise` sweep and its model; `hardware` (none used); versions, seeds and the config hash. |
 | | **Source:** written by `python -m lip m8 export` from `data/interim/m8/`. The panel optimises model predictions (basis `exact_optimisation_of_model_outputs`); every entry is a hypothesis worth re-testing. Nothing existing changes. The site does not read the file until the Lab Planner design is approved. |
 
-## v1.8 — 2026-11-07 (additive; P39 **proposed**, implemented for the v2 site's plates and awaiting the project lead's approval)
+## v1.8 — 2026-11-07 (additive; P39 **approved by the project lead on 2026-11-07**)
 
 | # | Change |
 |---|---|

@@ -19,8 +19,8 @@ The contract files live in `site-data/`; profiles are split per species (v1.3). 
 | `engine/model.json` | object | preparation-model parameters, uncertainty settings, the 13 preparations and their seeds (v1.7, P38) | [engine.model.schema.json](schemas/engine.model.schema.json) |
 | `engine/<speciesId>.json` | object | one species' per-compound model inputs, in profile order (v1.7, P38; loaded on demand) | [engine.species.schema.json](schemas/engine.species.schema.json) |
 | `engine/parity.json` | array | Python reference estimates for one off-grid preparation of one species (v1.7, P38; build-time test fixture, not published) | [engine.parity.schema.json](schemas/engine.parity.schema.json) |
-| `plates.json` | array | botanical plates: Commons source, author, date, licence and the locally served image sizes (v1.8, P39, **proposed**) | [plates.schema.json](schemas/plates.schema.json) |
-| `lab_panel.json` | object | the recommended re-test panel, its alternatives and sensitivity, and the Phase 8 solver benchmark (v1.9, P40, **proposed**) | [lab_panel.schema.json](schemas/lab_panel.schema.json) |
+| `plates.json` | array | botanical plates: Commons source, author, date, licence and the locally served image sizes (v1.8, P39) | [plates.schema.json](schemas/plates.schema.json) |
+| `lab_panel.json` | object | the recommended re-test panel, its alternatives and sensitivity, and the Phase 8 solver benchmark (v1.9, P40) | [lab_panel.schema.json](schemas/lab_panel.schema.json) |
 
 ## Shared enumerations
 
