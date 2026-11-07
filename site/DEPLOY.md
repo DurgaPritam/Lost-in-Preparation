@@ -5,7 +5,7 @@ The site has not been deployed yet. It is a static export: Vercel runs the build
 ## One-time setup (you)
 
 1. Log in at **vercel.com** with **GitHub**, using the `DurgaPritam` account. The Hobby plan is free.
-2. **Add New… → Project → Import** `DurgaPritam/Lost-in-Preperation`, then grant the Vercel GitHub app access to this private repository when asked.
+2. **Add New… → Project → Import** `DurgaPritam/Lost-in-Preparation`, then grant the Vercel GitHub app access to this private repository when asked.
 3. In the import screen, set:
    - **Root Directory:** `site`
    - **Include files outside the Root Directory in the Build Step:** on (the default). The build reads `../site-data/` and `../contract/schemas/`.

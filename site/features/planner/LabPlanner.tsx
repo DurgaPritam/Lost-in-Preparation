@@ -128,7 +128,7 @@ function Benchmark({ v }: { v: PanelView }) {
             ]} />
         </div>
       )}
-      <p className="m-0 text-sm text-ink-subtle">Details: <a href="https://github.com/DurgaPritam/Lost-in-Preperation/blob/main/docs/QUANTUM_RESULTS.md" className="text-brand underline">docs/QUANTUM_RESULTS.md</a> and <a href="https://github.com/DurgaPritam/Lost-in-Preperation/blob/main/docs/QUBO.md" className="text-brand underline">docs/QUBO.md</a>.</p>
+      <p className="m-0 text-sm text-ink-subtle">Details: <a href="https://github.com/DurgaPritam/Lost-in-Preparation/blob/main/docs/QUANTUM_RESULTS.md" className="text-brand underline">docs/QUANTUM_RESULTS.md</a> and <a href="https://github.com/DurgaPritam/Lost-in-Preparation/blob/main/docs/QUBO.md" className="text-brand underline">docs/QUBO.md</a>.</p>
     </section>
   );
 }
@@ -208,7 +208,7 @@ export function LabPlanner({ panel, heuristics }: { panel: PanelView | null; heu
         <div className="mt-3 flex max-w-prose flex-col gap-2 text-sm text-ink-muted">
           <p className="m-0">The panel maximises robust value (each candidate’s 5th-percentile profile gap) plus coverage of compound classes, indications and preparation types, minus overlap between the compounds each re-test would measure, for exactly {size.k} re-tests. It is solved exactly with integer programming.</p>
           <p className="m-0">Weights, fixed before any comparison: {Object.entries(panel.weights).map(([w, x]) => `${WEIGHT[w] ?? w} ${x}`).join(', ')}. Pool after rule {panel.ruleVersion}: {panel.poolSize} candidates.</p>
-          <p className="m-0">Formulation: <a href="https://github.com/DurgaPritam/Lost-in-Preperation/blob/main/docs/QUBO.md" className="text-brand underline">docs/QUBO.md</a>; rule: <a href={`https://github.com/DurgaPritam/Lost-in-Preperation/blob/main/${panel.ruleDoc}`} className="text-brand underline">{panel.ruleDoc}</a>.</p>
+          <p className="m-0">Formulation: <a href="https://github.com/DurgaPritam/Lost-in-Preparation/blob/main/docs/QUBO.md" className="text-brand underline">docs/QUBO.md</a>; rule: <a href={`https://github.com/DurgaPritam/Lost-in-Preparation/blob/main/${panel.ruleDoc}`} className="text-brand underline">{panel.ruleDoc}</a>.</p>
         </div>
       </details>
 

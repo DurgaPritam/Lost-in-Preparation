@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 from .paths import ROOT
 
 CACHE = ROOT / "data" / "cache"
-USER_AGENT = "LostInPreparation/0.3 (https://github.com/DurgaPritam/Lost-in-Preperation) python-urllib"
+USER_AGENT = "LostInPreparation/0.3 (https://github.com/DurgaPritam/Lost-in-Preparation) python-urllib"
 _locks: dict[str, threading.Semaphore] = {}
 
 # Some servers (WFO) omit their intermediate certificate. Published intermediates are shipped in

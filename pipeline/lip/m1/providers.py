@@ -242,7 +242,7 @@ class GroqProvider:
         data = json.dumps(body).encode() if body is not None else None
         req = urllib.request.Request(GROQ_BASE + path, data=data, method=method,
                                      headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json",
-                                              "User-Agent": "LostInPreparation/0.3 (+https://github.com/DurgaPritam/Lost-in-Preperation)"})
+                                              "User-Agent": "LostInPreparation/0.3 (+https://github.com/DurgaPritam/Lost-in-Preparation)"})
         try:
             with urllib.request.urlopen(req, timeout=300) as r:
                 return r.status, {k.lower(): v for k, v in r.headers.items()}, r.read().decode("utf-8", "replace")
