@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, type MouseEvent, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react';
 import type {
   AuditBreakdown, CheckOutcome, Coverage, Heuristic, MatchState, Metric, MetricValue, SourceConfidence, SourceWork, SourcesFile, StatedField, Study, Validation,
 } from '@/lib/types';
@@ -104,7 +104,46 @@ function Section({ id, title, lead, children }: { id: string; title: string; lea
   );
 }
 
+/** SITE: renders its children only once the placeholder comes within about a screen of the viewport, so a long
+ *  section (the audited studies) adds nothing to the first load (Lighthouse DOM size / blocking time). */
+function WhenNear({ children, label }: { children: ReactNode; label: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [near, setNear] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || near) return;
+    if (typeof IntersectionObserver === 'undefined') { setNear(true); return; }
+    const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { setNear(true); io.disconnect(); } }, { rootMargin: '800px 0px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [near]);
+  return <div ref={ref}>{near ? children : <LoadingState label={label} rows={3} />}</div>;
+}
+
+const METRIC_COLUMNS: Column<Metric>[] = [
+  { key: 'stage', header: 'Step', render: (m) => m.stage, sortValue: (m) => m.stage },
+  { key: 'name', header: 'Measure', render: (m) => <span className="flex flex-col gap-0.5">{m.name}{m.note && <span className="text-xs text-ink-subtle">{m.note}</span>}</span> },
+  { key: 'value', header: 'Value', render: (m) => <MetricText v={m.value} /> },
+  { key: 'n', header: 'n', numeric: true, render: (m) => (m.n == null ? <UnknownValue variant="cell" /> : m.n), sortValue: (m) => m.n },
+  { key: 'ev', header: 'Status', render: (m) => <EvidenceStatusBadge wording="validation" status={m.evidence} size="sm" /> },
+];
+
+/** SITE: the AI-assisted check metrics (provisional) render on request, so the first load stays small. */
+function ProvisionalMetrics({ rows }: { rows: Metric[] }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="flex flex-col gap-3">
+      <Button onClick={() => setOpen((o) => !o)} aria-expanded={open}>{open ? 'Hide' : 'Show'} the {rows.length} AI-assisted check metrics (provisional)</Button>
+      {open && <DataTable<Metric> caption="AI-assisted check metrics (provisional)" rows={rows} rowKey={(m) => m.id} columns={METRIC_COLUMNS} />}
+    </div>
+  );
+}
+
 function StudiesTable({ version, rows }: { version: 'v1' | 'v2'; rows: number }) {
+  return <WhenNear label={`Loading ${rows} study preparations`}><StudiesRows version={version} rows={rows} /></WhenNear>;
+}
+
+function StudiesRows({ version, rows }: { version: 'v1' | 'v2'; rows: number }) {
   const [data, setData] = useState<Study[] | null>(null);
   const [failed, setFailed] = useState(false);
   const [limit, setLimit] = useState(PAGE);
@@ -225,18 +264,8 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
           </Section>
 
           <Section id="metrics" title="How accurate each step is" lead="Each value is a point with its 95% interval and sample size. A step not yet measured says so.">
-            <DataTable<Metric>
-              caption="Step metrics"
-              rows={v.metrics}
-              rowKey={(m) => m.id}
-              columns={[
-                { key: 'stage', header: 'Step', render: (m) => m.stage, sortValue: (m) => m.stage },
-                { key: 'name', header: 'Measure', render: (m) => <span className="flex flex-col gap-0.5">{m.name}{m.note && <span className="text-xs text-ink-subtle">{m.note}</span>}</span> },
-                { key: 'value', header: 'Value', render: (m) => <MetricText v={m.value} /> },
-                { key: 'n', header: 'n', numeric: true, render: (m) => (m.n == null ? <UnknownValue variant="cell" /> : m.n), sortValue: (m) => m.n },
-                { key: 'ev', header: 'Status', render: (m) => <EvidenceStatusBadge wording="validation" status={m.evidence} size="sm" /> },
-              ]}
-            />
+            <DataTable<Metric> caption="Step metrics" rows={v.metrics.filter((m) => !m.id.startsWith('prov-'))} rowKey={(m) => m.id} columns={METRIC_COLUMNS} />
+            {v.metrics.some((m) => m.id.startsWith('prov-')) && <ProvisionalMetrics rows={v.metrics.filter((m) => m.id.startsWith('prov-'))} />}
           </Section>
 
           <Section id="findings" title="Honest findings" lead="Including the ones that did not go our way.">
