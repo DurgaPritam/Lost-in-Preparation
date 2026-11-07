@@ -82,12 +82,9 @@ The checklist was re-run after the v2 site, Phase 8 and the AI-assisted checks.
    - the 30-name scholarly identifications;
    - a person's confirmation of the 15 plate licences;
    - human review of the AI-drafted toxicity entries and the genus-signal audit.
-2. **History of `data/reference/m5_ai_check_v1.json`:** commit `ccb6fe4` holds 27 short verbatim quotes (up to 100
-   characters each, attributed by PMID) from PubMed abstracts and from articles with no stated licence. They were
-   removed from the current tree.
-   - **Options:** keep them (your original rule allowed "short attributed evidence quotes"), or rewrite that one file
-     out of history with `git filter-repo` before the repository is made public. That needs a force-push; the local
-     `backup-before-trailer-cleanup` tag is unaffected.
+2. **History of `data/reference/m5_ai_check_v1.json`:** resolved on 2026-11-08. `git filter-repo` rewrote this one
+   file in `main` (the 27 quotes became the position-plus-hash form). No commit holds them, and the final tree and
+   the commit count are unchanged. A local backup tag `backup-before-quote-rewrite` was kept and not pushed.
 3. **Repository rename** to `Lost-in-Preparation`, then update the remote and every reference. This waits on the
    project lead's confirmation.
 4. **Making the repository public** and **deploying the site** wait on the project lead's confirmation. After
@@ -110,7 +107,7 @@ The checklist was re-run after the v2 site, Phase 8 and the AI-assisted checks.
 | 9 | Reproducibility test and cache-only mode documented | **done** (2026-11-07). Previously to add: `LIP_CACHE_ONLY=1`, `scripts/repro_fresh_clone.sh`, and what needs a download. |
 | 10 | Website section, CI badge and live URL | Section done; the CI badge and the live URL are pending deployment. |
 | 11 | Stage table statuses up to date | **done** (2026-11-07). Previously: The "Study set" row says "awaiting approval", but the study set has re-review decisions recorded; the reasons for species 17–27 are still awaited. |
-| 12 | How to cite (`CITATION.cff`) | **missing (optional).** |
-| 13 | Hackathon track, team and contact | Track stated; team and contact not stated. |
+| 12 | How to cite (`CITATION.cff`) | **done** (2026-11-08), with author placeholders for the team to fill in. |
+| 13 | Hackathon track, team and contact | Track stated; "Team and contact" section added with placeholders ([names], [emails or GitHub handles], [university]). |
 | 14 | Secrets | done. gitleaks over all 66 commits found nothing; the Groq key's value does not occur in the history or the working tree; `.env` was never committed. |
 | 15 | Third-party text audit | done. No abstracts or full article texts in the tree or the history (see the audit report). |

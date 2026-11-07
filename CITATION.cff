@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite it as below."
+title: "Lost in Preparation"
+abstract: >-
+  Historical herbal recipes read as preparations: predicted compound profiles for each historical preparation, an
+  audit of how modern studies prepared the same plants, and ranked hypotheses worth re-testing. Built for
+  EthnoHack 2026, Track 1 (Traditional Knowledge Mining). Hypotheses worth re-testing, not medical claims.
+type: software
+authors:
+  # Placeholders: replace with each team member (one entry per person).
+  - family-names: "[names]"
+    given-names: "[names]"
+    affiliation: "[university]"
+    email: "[emails or GitHub handles]"
+repository-code: "https://github.com/DurgaPritam/Lost-in-Preperation"
+license: MIT
+keywords:
+  - ethnobotany
+  - historical herbals
+  - extraction
+  - reproducibility
+  - hypothesis generation

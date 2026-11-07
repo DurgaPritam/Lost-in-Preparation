@@ -170,6 +170,13 @@ npm run ci           # type-check, lint, Vitest, build (with the engine parity g
 
 CI runs the same gates in `.github/workflows/site.yml`. Deployment notes are in [site/DEPLOY.md](site/DEPLOY.md).
 
+## Team and contact
+
+- **Team:** [names]
+- **Contact:** [emails or GitHub handles]
+- **Affiliation:** [university]
+- **How to cite:** see [CITATION.cff](CITATION.cff).
+
 ## Data and licences
 
 **Code:** MIT ([LICENSE](LICENSE)). **The project's derived data:** CC BY 4.0 ([LICENSE-DATA](LICENSE-DATA)). Exceptions keep their own status:

@@ -125,8 +125,9 @@ evidence it read:
 - **Abstracts and articles with no stated licence:** no quote text. The record keeps the quote's position in the cached
   study text and its SHA-256. `lip m5 ai-check` re-verifies both forms against the git-ignored texts in
   `data/cache/m5_handcheck/`.
-- **History:** this policy was applied on 2026-11-07. Earlier commits of the file (from `ccb6fe4`) hold those quotes
-  as short verbatim text. That is reported in the Phase 9 checklist for the project lead's decision.
+- **History:** this policy was applied on 2026-11-07. On 2026-11-08 the file's earlier version was rewritten in the
+  git history (`git filter-repo`, this one file only), so no commit holds those quotes verbatim. The final tree is
+  unchanged.
 
 ## Audit methods snippets (Phase 5)
 
