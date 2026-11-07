@@ -36,6 +36,7 @@
   python -m lip plates                   public-domain botanical plates from Wikimedia Commons -> site-data/plates.json, docs/IMAGE_CREDITS.md
   python -m lip plates-check             AI-assisted reading of each plate's Commons page (provisional) -> data/reference/plates_ai_check_v1.json
   python -m lip site                     write recipes/species, prune stale profiles, validate site-data/, docs/SITE_DATA_STATUS.md
+  python -m lip review-merge             review pass v1 (provisional): toxicity, plates, genus audit, study-set rationale -> data/reference/review_v1.json
   python -m lip results                  RESULTS.md from pipeline outputs (validated vs provisional, labelled)
 """
 from __future__ import annotations
@@ -168,6 +169,9 @@ def main(argv: list[str]) -> int:
     elif cmd == "plates-check":
         from . import plates_check
         print(json.dumps(plates_check.run(), indent=2, ensure_ascii=False))
+    elif cmd == "review-merge":
+        from . import review_merge
+        print(json.dumps(review_merge.run(), indent=2, ensure_ascii=False))
     elif cmd == "site":
         from . import site_export
         print(json.dumps(site_export.run(), indent=2))

@@ -22,7 +22,7 @@
       "accessibility": 96,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3079
+      "lcpMs": 3080
     },
     {
       "url": "/case/liquorice/",
@@ -31,25 +31,25 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3004
+      "lcpMs": 3008
     },
     {
       "url": "/credits/",
       "runs": 3,
-      "performance": 96,
+      "performance": 97,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2707
+      "lcpMs": 2555
     },
     {
       "url": "/docs/",
       "runs": 3,
-      "performance": 91,
+      "performance": 92,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3202
+      "lcpMs": 3157
     },
     {
       "url": "/evidence-gap/",
@@ -58,7 +58,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2856
+      "lcpMs": 2855
     },
     {
       "url": "/hypotheses/",
@@ -85,7 +85,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2554
+      "lcpMs": 2629
     },
     {
       "url": "/planner/",
@@ -94,7 +94,7 @@
       "accessibility": 98,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3155
+      "lcpMs": 3157
     },
     {
       "url": "/recipes/culpeper-1652_herbal_agrimony_008_r01/",
@@ -103,7 +103,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2856
+      "lcpMs": 2855
     },
     {
       "url": "/recipes/pliny-nh_b20_c099_002_r00/",
@@ -112,8 +112,8 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2854
+      "lcpMs": 2856
     }
   ],
-  "generatedAt": "2026-11-07T14:33:48.475Z"
+  "generatedAt": "2026-11-07T20:02:56.163Z"
 }

@@ -143,7 +143,7 @@ export function RecipePage({ recipe, plate, confidence, labLinks }: RecipePagePr
                     <span className="font-semibold text-ink">{FIELD_LABEL[c.field as ExtractedFieldKind] ?? c.field}: <span className="font-mono">{c.from}</span> → <span className="font-mono">{c.to}</span></span>
                     <span className="break-words text-ink-muted">{c.reason}</span>
                     <span className="break-words text-xs text-ink-subtle">Evidence: {c.evidence}</span>
-                    <span className="text-xs text-ink-subtle">Requested by {c.requestedBy}; applied by {c.appliedBy}; {c.date}</span>
+                    <span className="text-xs text-ink-subtle">Requested by {c.requestedBy}; {c.date}</span>
                   </li>
                 ))}
               </ul>

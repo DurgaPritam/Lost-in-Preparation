@@ -1,4 +1,5 @@
 /** Contract hypotheses (+ audit, profiles, index) → the design's Hypothesis cards and evidence trail. */
+import { neutralWording } from '../wording';
 import type { Hypothesis, SourceWork, TrailStep } from '../../types';
 import type { ContractAudit, ContractHypothesis, ContractProfile, ContractProfileIndex } from '../load';
 import { labHrefOfKey, preparationOfKey } from './prepKey';
@@ -31,7 +32,7 @@ export function toHypothesis(h: ContractHypothesis, ctx: { index: ContractProfil
   const trailRecipes = h.evidenceTrail.filter((e) => e.kind === 'recipe').map((e) => e.ref);
   const trail: TrailStep[] = [
     { id: 'source', stage: 'source', title: `${recipeIds.length} historical recipe${recipeIds.length === 1 ? '' : 's'} for this use`,
-      detail: `Indication as written: “${h.indicationAsWritten}”. Extracted by Claude in a Claude Code session; every quote passed the verbatim check.`,
+      detail: `Indication as written: “${h.indicationAsWritten}”. Provisional extraction; every quote passed the verbatim check.`,
       evidence: 'provisional', refs: trailRecipes.map((id) => ({ label: `Recipe ${id}`, href: `/recipes/${recipeSlug(id)}/` })) },
     { id: 'name', stage: 'name', title: `Name resolved to ${taxon}`, detail: 'Resolution from GBIF / WFO evidence with heuristic weights; awaiting the 30-name scholarly check.',
       evidence: 'pending' },
@@ -50,7 +51,7 @@ export function toHypothesis(h: ContractHypothesis, ctx: { index: ContractProfil
     { id: 'audit', stage: 'audit', title: 'No retrieved study prepared it faithfully',
       detail: `${studies.length} retrieved stud${studies.length === 1 ? 'y' : 'ies'} listed; coded by the rule-based extractor (hand-check pending).`,
       evidence: 'pending', refs: studies.map((p) => ({ label: `PMID ${p}`, href: `https://pubmed.ncbi.nlm.nih.gov/${p}/` })) },
-    { id: 'toxicity', stage: 'toxicity', title: 'Toxicity entry', detail: h.toxicityNote ?? 'No curated toxicity entry. Unknown is not evidence of safety.',
+    { id: 'toxicity', stage: 'toxicity', title: 'Toxicity entry', detail: neutralWording(h.toxicityNote) ?? 'No curated toxicity entry. Unknown is not evidence of safety.',
       evidence: 'provisional' },
   ];
   return {

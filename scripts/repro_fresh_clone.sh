@@ -54,6 +54,7 @@ echo "[repro] clone of $COMMIT in $REPO"
 run contract        reproduce   python -m lip contract
 run m6-hypotheses   reproduce   python -m lip m6 hypotheses
 run results         reproduce   python -m lip results
+run review-merge    reproduce   python -m lip review-merge
 # AI-assisted checks and Phase 8, from committed inputs. The full QAOA benchmark (lip m8 bench, ~45 min) is not re-run
 # here; its committed outputs are exported and validated instead.
 run gap-sensitivity reproduce   python -m lip m5 gap-sensitivity

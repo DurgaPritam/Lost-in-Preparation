@@ -3,6 +3,7 @@
  * the metric's own value, n and Wilson interval; nothing is recomputed here except stated = round(value * n), the count
  * the metric's note also gives.
  */
+import { neutralWording } from '../wording';
 import type { EvidenceStatus, ReportingField, ReportingGapRow, ReportingGapView } from '../../types';
 import type { ContractMetric, ContractMetrics } from '../load';
 
@@ -33,12 +34,12 @@ function rowOf(g: GapMetrics, key: string, field: ReportingField, label: string,
     sensitivity: !sens || !s ? null
       : s.status === 'computed' && s.value != null && s.low != null && s.high != null
         ? { point: s.value, low: s.low, high: s.high, checkedRule: kn(sens[`checked40:rule:${v}`]), checkedAi: kn(sens[`checked40:ai:${v}`]) }
-        : { notComputed: s.note ?? 'Not computed.' },
+        : { notComputed: neutralWording(s.note) ?? 'Not computed.' },
   };
 }
 
 /** SITE: label of the provisional sensitivity section (project lead, 2026-11-07). */
-export const SENSITIVITY_LABEL = 'AI-assisted sensitivity check (provisional)';
+export const SENSITIVITY_LABEL = 'Sensitivity check (provisional)';
 
 export const INFLATED_SOLVENT_NOTE =
   'Inflated by construction: a study counts as having prepared the plant partly because a solvent was stated, so this share is higher than it would be among all studies that prepared the plant.';

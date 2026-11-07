@@ -2172,7 +2172,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -2187,7 +2187,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -2202,7 +2202,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -2217,7 +2217,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -2232,7 +2232,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -2247,7 +2247,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -2262,7 +2262,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -5817,7 +5817,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -5847,7 +5847,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -5877,7 +5877,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -5907,7 +5907,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -5937,7 +5937,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -5967,7 +5967,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -5997,7 +5997,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6027,7 +6027,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6057,7 +6057,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6087,7 +6087,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6117,7 +6117,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6147,7 +6147,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6357,7 +6357,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6372,7 +6372,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6387,7 +6387,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -6402,7 +6402,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -7932,7 +7932,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -7977,7 +7977,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8022,7 +8022,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8067,7 +8067,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8112,7 +8112,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8157,7 +8157,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8202,7 +8202,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8247,7 +8247,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8292,7 +8292,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8337,7 +8337,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8382,7 +8382,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8427,7 +8427,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8472,7 +8472,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8517,7 +8517,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8562,7 +8562,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8607,7 +8607,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -8652,7 +8652,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11457,7 +11457,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11487,7 +11487,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11517,7 +11517,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11547,7 +11547,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11577,7 +11577,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11607,7 +11607,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11637,7 +11637,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11667,7 +11667,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11697,7 +11697,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11727,7 +11727,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11757,7 +11757,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11787,7 +11787,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal. (AI-drafted, unverified)"
+  "toxicityNote": "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -11997,7 +11997,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -12012,7 +12012,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -12027,7 +12027,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -12042,7 +12042,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13572,7 +13572,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13617,7 +13617,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13662,7 +13662,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13707,7 +13707,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13752,7 +13752,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13797,7 +13797,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13842,7 +13842,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13887,7 +13887,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13932,7 +13932,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -13977,7 +13977,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14022,7 +14022,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14067,7 +14067,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14112,7 +14112,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14157,7 +14157,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14202,7 +14202,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14247,7 +14247,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14292,7 +14292,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14457,7 +14457,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14472,7 +14472,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14487,7 +14487,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14502,7 +14502,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14517,7 +14517,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14532,7 +14532,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14547,7 +14547,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14562,7 +14562,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14577,7 +14577,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14592,7 +14592,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14607,7 +14607,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14622,7 +14622,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14637,7 +14637,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14652,7 +14652,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14667,7 +14667,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14682,7 +14682,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14697,7 +14697,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14712,7 +14712,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14727,7 +14727,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14742,7 +14742,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14757,7 +14757,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14772,7 +14772,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14787,7 +14787,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14802,7 +14802,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14817,7 +14817,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14832,7 +14832,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -14847,7 +14847,7 @@
   "basisRef": "pliny-nh-bohn-v4:fn1351",
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (AI-drafted, unverified)"
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15102,7 +15102,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15117,7 +15117,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15132,7 +15132,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15147,7 +15147,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15162,7 +15162,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15177,7 +15177,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15192,7 +15192,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15207,7 +15207,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15222,7 +15222,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15237,7 +15237,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "data_lacking",
-  "toxicityNote": "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA). (AI-drafted, unverified)"
+  "toxicityNote": "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA). (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15252,7 +15252,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15267,7 +15267,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15282,7 +15282,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15297,7 +15297,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15312,7 +15312,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15327,7 +15327,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15342,7 +15342,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15357,7 +15357,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15372,7 +15372,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15672,7 +15672,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15717,7 +15717,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15762,7 +15762,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15807,7 +15807,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15852,7 +15852,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15897,7 +15897,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15942,7 +15942,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -15987,7 +15987,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16032,7 +16032,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16077,7 +16077,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16122,7 +16122,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16167,7 +16167,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16212,7 +16212,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16257,7 +16257,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16302,7 +16302,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16347,7 +16347,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16392,7 +16392,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16437,7 +16437,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16482,7 +16482,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16527,7 +16527,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16572,7 +16572,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16617,7 +16617,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16662,7 +16662,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16707,7 +16707,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16752,7 +16752,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16797,7 +16797,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16842,7 +16842,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16887,7 +16887,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16932,7 +16932,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -16977,7 +16977,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -17022,7 +17022,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -17067,7 +17067,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -17112,7 +17112,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -17157,7 +17157,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -17202,7 +17202,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,
@@ -17247,7 +17247,7 @@
   "basisRef": null,
   "disputed": false,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders. (AI-drafted, unverified)"
+  "toxicityNote": "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders. (AI-drafted, unverified)"
  },
  {
   "mock": false,

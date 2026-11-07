@@ -1,0 +1,55 @@
+{
+ "basis": "ai_assisted_check",
+ "label": "Review pass v1 (provisional; not human validation)",
+ "reviewer": "Claude (claude-opus-5-5) in Claude Code",
+ "reviewedOn": "2026-11-08",
+ "toxicity": {
+  "n": 20,
+  "summaryFaithful": {
+   "not_applicable": 1,
+   "partly": 5,
+   "yes": 14
+  },
+  "categoryDisagreements": [
+   "Ajuga chamaepitys"
+  ],
+  "summariesCorrected": [
+   "Artemisia absinthium",
+   "Glycyrrhiza glabra",
+   "Hyoscyamus niger",
+   "Raphanus sativus",
+   "Coriandrum sativum"
+  ],
+  "file": "data/reference/review_v1/toxicity_review.csv"
+ },
+ "plates": {
+  "n": 15,
+  "consistentWithPublicDomain": {
+   "yes": 15
+  },
+  "withNotes": 14,
+  "file": "data/reference/review_v1/plate_licence_review.csv"
+ },
+ "genusAudit": {
+  "n": 32,
+  "agree": {
+   "unsure": 3,
+   "yes": 29
+  },
+  "lewisShortAsQuotedInAudit": 24,
+  "generalKnowledgeOnly": 8,
+  "sourceReopened": 0,
+  "file": "data/reference/review_v1/genus_audit_review.csv"
+ },
+ "studySetRationale": {
+  "n": 9,
+  "kind": "rationale from the proposal's evidence; not the project lead's own words",
+  "file": "data/reference/review_v1/study_set_rationale.csv"
+ },
+ "notMeasured": [
+  "M1 extraction accuracy vs a human gold set",
+  "annotator self-consistency (re-annotation)",
+  "human hand-check of the M5 extractor",
+  "M2 name resolution vs human-checked identifications"
+ ]
+}

@@ -9,7 +9,7 @@
     "pliny-nh:b22:c011:001#r01"
   ],
   "rule": "rank by the 5th percentile of the profile gap over coupled Monte Carlo draws (descriptor error included); ties: P(gap > 0.2), then median gap; compounds with a 5th\u201395th range wider than 0.8 in either preparation are excluded (heuristic); at least 5 usable compounds",
-  "generatedAt": "2026-11-06T11:46:32+00:00",
+  "generatedAt": "2026-11-07T19:45:28+00:00",
   "pairs": 238,
   "candidates": 3,
   "ranked": 3,

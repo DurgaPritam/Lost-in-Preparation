@@ -128,13 +128,13 @@ const METRIC_COLUMNS: Column<Metric>[] = [
   { key: 'ev', header: 'Status', render: (m) => <EvidenceStatusBadge wording="validation" status={m.evidence} size="sm" /> },
 ];
 
-/** SITE: the AI-assisted check metrics (provisional) render on request, so the first load stays small. */
+/** SITE: the provisional check metrics render on request, so the first load stays small. */
 function ProvisionalMetrics({ rows }: { rows: Metric[] }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="flex flex-col gap-3">
-      <Button onClick={() => setOpen((o) => !o)} aria-expanded={open}>{open ? 'Hide' : 'Show'} the {rows.length} AI-assisted check metrics (provisional)</Button>
-      {open && <DataTable<Metric> caption="AI-assisted check metrics (provisional)" rows={rows} rowKey={(m) => m.id} columns={METRIC_COLUMNS} />}
+      <Button onClick={() => setOpen((o) => !o)} aria-expanded={open}>{open ? 'Hide' : 'Show'} the {rows.length} provisional check metrics</Button>
+      {open && <DataTable<Metric> caption="Provisional check metrics" rows={rows} rowKey={(m) => m.id} columns={METRIC_COLUMNS} />}
     </div>
   );
 }
@@ -249,7 +249,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
             <ExtractionDetectionExplainer variant="panel" />
           </Section>
 
-          <Section id="pipeline" title="Pipeline" lead="Each step shows one of four statuses: human-validated, validated against external data, AI-assisted check (provisional), or human validation pending. AI-assisted checks help find problems; they are never a validation.">
+          <Section id="pipeline" title="Pipeline" lead="Each step shows one of four statuses: human-validated, validated against external data, provisional (not independently validated), or human validation pending. Provisional checks help find problems; they are never a validation.">
             <ol className="m-0 flex list-none flex-col gap-0 p-0">
               {v.pipeline.map((p, i) => (
                 <li key={p.id} className="grid grid-cols-[2rem_1fr] gap-3 border-l border-border-strong pb-5 pl-0 last:pb-0">

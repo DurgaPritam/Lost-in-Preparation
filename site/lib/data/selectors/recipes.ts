@@ -102,7 +102,9 @@ export function toRecipe(r: ContractRecipe, inp: RecipeInputs, byRecipe = groupS
                illegible: illegibleSpans(r.passage.text) },
     toxicity: tox, evidence, indication: known(r.indicationAsWritten), recipeType: r.recipeType as Recipe['recipeType'],
     excludedFromHeadline: r.excludedFromHeadline, recipeQuote: r.evidence.recipe?.[0]?.quote ?? '',
-    provenance: [r.provenance.provider ?? r.provenance.method, r.provenance.model, r.provenance.promptVersion].filter(Boolean).join(' · '),
+    // SITE: the website states the status only; recipes.json keeps the full provenance (provider, model, prompt).
+    provenance: r.provenance.method === 'human' || r.provenance.method === 'adjudicated' ? 'Human annotation'
+      : `Provisional extraction · prompt ${(r.provenance.promptVersion ?? 'unknown').split(':')[0].replace('m1_extract/', '')} · every quote passed the verbatim check`,
     corrections: (r.corrections ?? []).map((c) => ({ ...c, from: c.from })),
   };
 }

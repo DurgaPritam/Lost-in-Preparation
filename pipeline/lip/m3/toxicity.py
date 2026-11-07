@@ -3,7 +3,8 @@
 basis = "ai_drafted_unverified": each entry was drafted by an AI (Claude Code) from ONE reputable source
 opened in the pipeline run, and quotes ONE sentence of it. The quote is re-checked against the
 fetched source text on every run (whitespace-normalised; PDF text extracted with pypdf). `verified_by`
-stays empty until a person checks the entry.
+stays empty until a person checks the entry. Five summaries were revised after the review pass in
+data/reference/review_v1/toxicity_review.csv (basis ai_assisted_check), each within its source.
 
 Sources: European Medicines Agency herbal documents (EU herbal monographs, assessment reports,
 public statements; "Reproduction is authorised provided the source is acknowledged") and
@@ -54,7 +55,7 @@ EMA_MONO = "EMA/HMPC, EU herbal monograph"
 NO_SIDE = "At the time of the HMPC assessment, no side effects had been reported with these medicines."
 
 ENTRIES: list[tuple] = [
-    ("Artemisia absinthium", "concern_reported", "EMA contraindicates wormwood herb medicines in liver disease and bile-duct disorders.",
+    ("Artemisia absinthium", "concern_reported", "EMA contraindicates wormwood herb medicines in allergy to wormwood or other Asteraceae, and in liver disease and bile-duct disorders.",
      "ema", EMA_DOC["wormwood"], EMA_SUMMARY + " (wormwood herb)",
      "They must also not be taken by patients with bile duct obstruction, cholangitis (inflammation of the bile ducts) or liver disease."),
     ("Agrimonia eupatoria", "no_toxicity_reported", "EMA reported no side effects at its assessment; this is not evidence of safety.",
@@ -74,7 +75,7 @@ ENTRIES: list[tuple] = [
     ("Ranunculus ficaria", "toxic_reported", "A single human case report of acute toxic liver injury attributed to lesser celandine.",
      "pmc", "PMC4342611", "Case report, PMC (open access)",
      "This case is the first to explain hepatotoxicity caused by lesser celandine."),
-    ("Glycyrrhiza glabra", "toxic_reported", "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders.",
+    ("Glycyrrhiza glabra", "toxic_reported", "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy.",
      "ema", EMA_DOC["liquorice"], EMA_MONO + " (Glycyrrhiza spp., radix, revision 1)",
      "Cases of overdose have been reported with prolonged use (more than 4 weeks) and/or intake of high amount of liquorice, with symptoms such as water retention, hypokalaemia, hypertension, cardiac rhythm disorders, and hypertensive encephalopathy."),
     ("Melissa officinalis", "no_toxicity_reported", "EMA reported no side effects at its assessment; this is not evidence of safety.",
@@ -93,10 +94,10 @@ ENTRIES: list[tuple] = [
     ("Chelidonium majus", "toxic_reported", "EMA public statement: products withdrawn in some EU countries over reported adverse effects, particularly liver toxicity.",
      "ema", EMA_DOC["celandine"], "EMA/HMPC, public statement (Chelidonium majus L., herba)",
      "In some European countries marketing authorisations for medicinal products containing Chelidonium majus have been withdrawn because of concerns with reported adverse effects, particularly liver toxicity."),
-    ("Hyoscyamus niger", "toxic_reported", "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal.",
+    ("Hyoscyamus niger", "toxic_reported", "Clinical toxicology review: tropane-alkaloid poisoning, possibly fatal, though the review notes that deaths are very rare.",
      "pmc", "PMC4224707", "Review, PMC (open access)",
      "One of the most important and geographically common plants is Hyoscyamus Niger with therapeutic and possible toxic effects, which may be even fatal."),
-    ("Raphanus sativus", "concern_reported", "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning.",
+    ("Raphanus sativus", "concern_reported", "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning.",
      "pmc", "PMC11012840", "Systematic review, PMC (open access)",
      "A noticeable influence on thyroid activity by radish root was observed in two studies on rats ( Table 6 )."),
     ("Laser trilobum", "unknown", "No reputable open source on toxicity located in this session (PMC searches for Laser trilobum and Siler trilobum). Not evidence of safety.",
@@ -116,7 +117,7 @@ ENTRIES: list[tuple] = [
     ("Allium cepa", "toxic_reported", "Veterinary review: onion causes oxidative haemolysis (anaemia) in cats, dogs and cattle. Animal evidence, not human.",
      "pmc", "PMC9495094", "Veterinary review, PMC (open access)",
      "Cats, dogs and cattle appear most susceptible to the onion’s toxic effects, whereas sheep and goats are more resistant."),
-    ("Coriandrum sativum", "data_lacking", "Review: toxicity at higher doses and longer use has not been adequately studied (it cites food-use status in the USA).",
+    ("Coriandrum sativum", "data_lacking", "Review: recommends further study of toxicity and adverse effects at higher doses and over longer periods (it cites food-use status in the USA).",
      "pmc", "PMC9314633", "Review, PMC (open access)",
      "Although the safety of coriander has been confirmed by the United States Food and Drug Administration (FDA) and the Flavor and Extract Manufacturers Association (FEMA), further studies are recommended to investigate the toxicity and adverse effects of this plant when consumed at higher doses and longer periods of time."),
     ("Carum carvi", "concern_reported", "EMA contraindicates caraway fruit medicines in allergy to caraway, other Apiaceae, mugwort or birch.",

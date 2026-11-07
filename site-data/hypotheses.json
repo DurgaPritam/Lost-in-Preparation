@@ -27,7 +27,7 @@
   },
   "neverTestedFaithfully": true,
   "toxicityFlag": "toxic_reported",
-  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension and cardiac rhythm disorders. (source: EMA/HMPC, EU herbal monograph (Glycyrrhiza spp., radix, revision 1); AI-drafted, unverified)",
+  "toxicityNote": "EMA monograph: overdose with prolonged or high intake causes water retention, hypokalaemia, hypertension, cardiac rhythm disorders and hypertensive encephalopathy. (source: EMA/HMPC, EU herbal monograph (Glycyrrhiza spp., radix, revision 1); AI-drafted, unverified)",
   "caveats": [
    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
@@ -241,7 +241,7 @@
   },
   "neverTestedFaithfully": true,
   "toxicityFlag": "concern_reported",
-  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (goitrogenic potential), not poisoning. (source: Systematic review, PMC (open access); AI-drafted, unverified)",
+  "toxicityNote": "Systematic review: radish root affected thyroid activity in two rat studies (one found signs of hypothyroidism; the other reached different conclusions). Not poisoning. (source: Systematic review, PMC (open access); AI-drafted, unverified)",
   "caveats": [
    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",

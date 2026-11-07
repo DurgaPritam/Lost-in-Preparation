@@ -21,19 +21,19 @@ import { UnknownValue } from '@/components/honesty/UnknownValue';
  */
 const ciText = (ci: [number, number] | null) => (ci ? `${pct(ci[0])}–${pct(ci[1])}` : 'not computed');
 
-/** SITE: the AI-assisted sensitivity check (provisional) under each row; the frozen share above is unchanged. */
+/** SITE: the sensitivity check (provisional) under each row; the frozen share above is unchanged. */
 function sensText(r: ReportingGapRow): string {
   const s = r.sensitivity;
   if (!s) return '';
   if ('notComputed' in s) return s.notComputed;
-  const c = s.checkedRule && s.checkedAi ? ` On the ${s.checkedRule[1]} checked studies: ${s.checkedRule[0]} stated by the extractor, ${s.checkedAi[0]} by the AI coder.` : '';
-  return `${pct(s.point)} (95% interval ${pct(s.low)}–${pct(s.high)}) if the extractor's error rates from the AI check applied.${c}`;
+  const c = s.checkedRule && s.checkedAi ? ` On the ${s.checkedRule[1]} checked studies: ${s.checkedRule[0]} stated by the extractor, ${s.checkedAi[0]} by the second coder.` : '';
+  return `${pct(s.point)} (95% interval ${pct(s.low)}–${pct(s.high)}) if the extractor's error rates from the provisional check applied.${c}`;
 }
 
 function Sensitivity({ r }: { r: ReportingGapRow }) {
   return (
     <p className="m-0 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-ink-muted md:col-span-12">
-      <EvidenceStatusBadge wording="validation" status="provisional" size="sm" detail="An AI coder's reading of 40 studies stands in for the truth. Not human validation." />
+      <EvidenceStatusBadge wording="validation" status="provisional" size="sm" detail="A second coder's reading of 40 studies stands in for the truth; that reading is itself unverified. Not human validation." />
       <span><span className="font-semibold text-ink">{SENSITIVITY_LABEL}:</span> {sensText(r)}</span>
     </p>
   );

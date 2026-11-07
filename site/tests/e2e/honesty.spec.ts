@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { expect, test } from '@playwright/test';
 import { ROUTES } from './routes';
@@ -86,4 +86,61 @@ test('9: the quantum benchmark is labelled as a benchmark, never a validation, a
   await page.goto('/docs/');
   await expect(page.locator('#quantum').getByRole('button', { name: 'Evidence: Benchmark against exact optimum' })).toBeVisible();
   await expect(page.locator('#quantum')).toContainText('no quantum advantage is claimed');
+});
+
+/** SITE (project lead, 2026-11-08): the website names no AI tool or model anywhere; it states only the status
+ *  (provisional, not independently validated). The repository keeps the full method record. Checked on the rendered
+ *  copy: text (closed tooltips included, scripts excluded), aria-labels, titles, alt text and page metadata. */
+const PROVENANCE = /\bAI\b|\bAI-|Claude|\bLLMs?\b|Groq|Llama|Anthropic|language model/i;
+const copyOf = (page: import('@playwright/test').Page) => page.evaluate(() => {
+  const b = document.body.cloneNode(true) as HTMLElement;
+  b.querySelectorAll('script,style,noscript,template').forEach((e) => e.remove());
+  const attrs = [...document.querySelectorAll('[aria-label],[title],[alt],[placeholder]')]
+    .map((e) => ['aria-label', 'title', 'alt', 'placeholder'].map((a) => e.getAttribute(a) ?? '').join(' ')).join(' ');
+  const meta = [...document.querySelectorAll('meta[name="description"],meta[property^="og:"],meta[name^="twitter:"]')].map((m) => m.getAttribute('content') ?? '').join(' ');
+  return [document.title, meta, b.textContent ?? '', attrs].join('\n');
+});
+const leak = (s: string) => { const m = PROVENANCE.exec(s); return m ? s.slice(Math.max(0, m.index - 80), m.index + 80) : null; };
+
+for (const r of ROUTES) {
+  test(`no AI wording · ${r.path}`, async ({ page }) => {
+    await page.goto(r.path);
+    if (r.ready) await page.waitForSelector(r.ready, { timeout: 30000 });
+    if (r.path === '/docs/') {
+      await page.getByRole('button', { name: /Show the \d+ provisional check metrics/ }).click();
+      await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 600) { scrollTo(0, y); await new Promise((res) => setTimeout(res, 30)); } });
+      await page.waitForTimeout(500);
+    }
+    expect(leak(await copyOf(page))).toBeNull();
+  });
+}
+
+test('no AI wording in any built page (static HTML, scripts excluded)', () => {
+  const root = path.resolve(__dirname, '../../out');
+  const pages: string[] = [];
+  const walk = (d: string) => { for (const e of readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else if (e.name.endsWith('.html')) pages.push(p); } };
+  walk(root);
+  expect(pages.length).toBeGreaterThan(100);
+  const bad: string[] = [];
+  for (const f of pages) {
+    const html = readFileSync(f, 'utf8').replace(/<script\b[\s\S]*?<\/script>/g, ' ').replace(/<style\b[\s\S]*?<\/style>/g, ' ');
+    const attrs = [...html.matchAll(/(?:alt|title|aria-label|content|placeholder)="([^"]*)"/g)].map((m) => m[1]).join(' ');
+    const l = leak(html.replace(/<[^>]+>/g, ' ') + ' ' + attrs);
+    if (l) bad.push(`${path.relative(root, f)}: ${l}`);
+  }
+  expect(bad.slice(0, 5)).toEqual([]);
+});
+
+test('unchecked items are never shown as validated', async ({ page }) => {
+  await page.goto('/docs/');
+  const stages = page.locator('#pipeline li');
+  for (const name of ['Recipes (M1)', 'Preparation model (M4)', 'Audit (M5)', 'Ranking (M6)']) {
+    const li = stages.filter({ hasText: name });
+    await expect(li.getByRole('button', { name: /^Evidence: (Human-validated|Validated)$/ })).toHaveCount(0);
+  }
+  await page.goto('/credits/');
+  await expect(page.locator('main')).not.toContainText(/licence confirmed/i);
+  await expect(page.locator('main').getByRole('button', { name: 'Evidence: Provisional: not independently validated' }).first()).toBeVisible();
+  await page.goto('/hypotheses/');
+  await expect(page.locator('main')).toContainText('provisional, unverified');
 });

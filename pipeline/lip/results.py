@@ -67,7 +67,7 @@ HV, EXT, AI, PEND = "**human-validated**", "**validated against external data**"
 
 
 def _ai_check_rows() -> list[tuple[str, str, str]]:
-    """The three AI-assisted checks (basis ai_assisted_check): never human validation."""
+    """The AI-assisted checks (basis ai_assisted_check): never human validation."""
     rows = []
     e = _j("data/interim/m5/ai_check_eval.json")
     if e:
@@ -82,6 +82,23 @@ def _ai_check_rows() -> list[tuple[str, str, str]]:
         rows.append((f"Botanical plate licences ({n} Commons pages)",
                      f"{AI} — an AI agent read each page on {pc['checkedOn']} and recorded its licence tag, source and date; "
                      f"{fl} pages flagged for a person to look at; awaiting human confirmation", "`data/reference/plates_ai_check_v1.json`"))
+    rv = _j("data/reference/review_v1.json")
+    if rv:
+        t, pl, g = rv["toxicity"], rv["plates"], rv["genusAudit"]
+        fa = ", ".join(f"{k} {v}" for k, v in t["summaryFaithful"].items())
+        rows.append((f"Review pass v1: study-set toxicity entries ({t['n']})",
+                     f"{AI} — each summary judged against the source text around its quote ({fa}); "
+                     f"{len(t['summariesCorrected'])} summaries corrected within their sources; category disagreements recorded, not applied: "
+                     f"{', '.join(t['categoryDisagreements']) or 'none'}. By an AI; verified_by stays empty", f"`{t['file']}`"))
+        rows.append((f"Review pass v1: plate licences ({pl['n']})",
+                     f"{AI} — each Commons licence template tested against the latest death year considered for its series, and US "
+                     f"publication before 1931: consistent with public domain {pl['consistentWithPublicDomain'].get('yes', 0)}/{pl['n']}; "
+                     "plate status unchanged (only a person confirms)", f"`{pl['file']}`"))
+        rows.append((f"Review pass v1: genus-signal audit ({g['n']} findings)",
+                     f"{AI} — agree {g['agree'].get('yes', 0)}, unsure {g['agree'].get('unsure', 0)}; {g['lewisShortAsQuotedInAudit']} rely on the "
+                     f"Lewis & Short entry as quoted in the audit, {g['generalKnowledgeOnly']} on general knowledge only; no source re-opened", f"`{g['file']}`"))
+        rows.append((f"Review pass v1: study-set rationale ({rv['studySetRationale']['n']} decisions whose reason was not received)",
+                     f"{AI} — written from the proposal's evidence; not the project lead's own words", f"`{rv['studySetRationale']['file']}`"))
     if (ROOT / "data/reference/m1_review_priority_v1.csv").exists():
         rows.append(("M1 review priority: 10 passages most likely to hold extraction errors",
                      f"{AI} — not an evaluation; tells a human reviewer where to start", "`data/reference/m1_review_priority_v1.csv`"))

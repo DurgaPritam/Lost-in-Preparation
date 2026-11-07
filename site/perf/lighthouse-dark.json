@@ -13,7 +13,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2782
+      "lcpMs": 2781
     },
     {
       "url": "/atlas/",
@@ -22,7 +22,7 @@
       "accessibility": 96,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2779
+      "lcpMs": 2706
     },
     {
       "url": "/case/liquorice/",
@@ -31,16 +31,16 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2629
+      "lcpMs": 2630
     },
     {
       "url": "/credits/",
       "runs": 3,
-      "performance": 98,
+      "performance": 97,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2405
+      "lcpMs": 2496
     },
     {
       "url": "/docs/",
@@ -49,7 +49,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2702
+      "lcpMs": 2612
     },
     {
       "url": "/evidence-gap/",
@@ -58,7 +58,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2554
+      "lcpMs": 2557
     },
     {
       "url": "/hypotheses/",
@@ -67,7 +67,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2554
+      "lcpMs": 2558
     },
     {
       "url": "/lab/?plant=Hyoscyamus+niger&solvent=water&heat=boiled&strained=true&acid=false",
@@ -85,16 +85,16 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2405
+      "lcpMs": 2404
     },
     {
       "url": "/planner/",
       "runs": 3,
-      "performance": 97,
+      "performance": 96,
       "accessibility": 98,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2556
+      "lcpMs": 2672
     },
     {
       "url": "/recipes/culpeper-1652_herbal_agrimony_008_r01/",
@@ -103,7 +103,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2556
+      "lcpMs": 2555
     },
     {
       "url": "/recipes/pliny-nh_b20_c099_002_r00/",
@@ -112,8 +112,8 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2554
+      "lcpMs": 2555
     }
   ],
-  "generatedAt": "2026-11-07T14:40:09.634Z"
+  "generatedAt": "2026-11-07T20:09:48.604Z"
 }

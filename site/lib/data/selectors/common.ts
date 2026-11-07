@@ -5,12 +5,13 @@
  *  Evidence status (DESIGN.md §4.1)
  *    validated   a person checked it against an independent reference (human annotation, scholarly basis,
  *                experimental logP reference)
- *    provisional made by an AI and not yet checked by a person (the M1 session extraction; AI-made references)
+ *    provisional not yet independently validated (the M1 session extraction; unverified references)
  *    pending     produced by a rule or model and not yet assessed (M2 database/model matches, rule-based audit coding)
  *  Source confidence (§4.2): per source from metrics.nameResolution["disputedShare:<source>"]; the level is "lower"
  *    when at least half of that source's resolved names are disputed (display rule, stated in the tooltip note).
  *  Toxicity (§4.7): the contract's source-based flags; deprecated values map to their successors.
  */
+import { neutralWording } from '../wording';
 import type { EvidenceStatus, SourceConfidence, SourceWork, ToxicityCategory, ToxicityRecord } from '../../types';
 
 export const sourceWork = (sourceId: string): SourceWork =>
@@ -61,7 +62,7 @@ export function toxicityFromIndex(e: IndexEntryLike | undefined, flag?: string |
   const ev = e?.toxicityEvidence;
   return {
     category,
-    sources: ev ? [{ label: `${ev.source} (${ev.basis === 'ai_drafted_unverified' ? 'AI-drafted, unverified' : ev.basis})`, href: ev.url }] : [],
-    note: (e?.toxicityNote ?? note) || undefined,
+    sources: ev ? [{ label: `${ev.source} (${ev.basis === 'ai_drafted_unverified' ? 'provisional, unverified' : neutralWording(ev.basis)})`, href: ev.url }] : [],
+    note: neutralWording((e?.toxicityNote ?? note) || undefined),
   };
 }

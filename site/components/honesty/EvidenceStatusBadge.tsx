@@ -7,13 +7,13 @@ import { IconInfo, IconPending, IconProvisional, IconValidated } from '../icons'
  * Honesty 1 — evidence status, as a compact pill.
  * Shape + border style + word carry the meaning; colour is redundant.
  *   Validated   filled disc ✓, solid ink border
- *   Provisional half disc, DASHED border (AI reference, not human-checked)
+ *   Provisional half disc, DASHED border (not independently validated)
  *   Pending     dashed ring, DOTTED border, unknown grey
  * v2: Provisional is neutral (prov-*) — it no longer shares the modern-lab hue.
  */
 const SPEC: Record<EvidenceStatus, { label: string; explain: string; cls: string; Icon: typeof IconValidated }> = {
   validated: { label: 'Validated', explain: 'A person has checked this against the cited reference.', cls: 'border-ink text-ink', Icon: IconValidated },
-  provisional: { label: 'Provisional', explain: 'AI-generated reference. Not yet checked by a person. Read it as a lead, not a finding.', cls: 'border-dashed border-prov-fg bg-prov-bg text-prov-fg', Icon: IconProvisional },
+  provisional: { label: 'Provisional', explain: 'Not independently validated. Read it as a lead, not a finding.', cls: 'border-dashed border-prov-fg bg-prov-bg text-prov-fg', Icon: IconProvisional },
   pending: { label: 'Pending', explain: 'Not yet assessed. No claim is made either way.', cls: 'border-dotted border-unk-fg bg-unk-bg text-unk-fg', Icon: IconPending },
 };
 
@@ -21,8 +21,8 @@ const SPEC: Record<EvidenceStatus, { label: string; explain: string; cls: string
  *  2026-11-07). Shape, border and colour are the design's; only the word and explanation change. */
 const VALIDATION_WORDING: Record<ValidationStatus, { label: string; explain: string }> = {
   validated: { label: 'Human-validated', explain: 'Checked by a person against the cited reference.' },
-  external: { label: 'Validated against external data', explain: 'Compared with an independent, published dataset (for example measured experimental values). No AI-made reference is involved.' },
-  provisional: { label: 'AI-assisted check (provisional)', explain: 'Checked by an AI, or against a reference an AI made. Useful for finding problems; never a validation.' },
+  external: { label: 'Validated against external data', explain: 'Compared with an independent, published dataset (for example measured experimental values). No provisional reference is involved.' },
+  provisional: { label: 'Provisional: not independently validated', explain: 'Checked only by an automated or unverified check. Useful for finding problems; never a validation.' },
   pending: { label: 'Human validation pending', explain: 'No independent check yet. No claim is made either way.' },
   benchmark: { label: 'Benchmark against exact optimum', explain: 'A computed comparison of methods against the exact optimum of the same problem. It measures the methods, not the panel; not a validation.' },
 };
