@@ -130,6 +130,19 @@ describe('v2 pages: evidence gap, planner, plates, atlas', () => {
     expect(g.none?.n).toBe(g.rows[0].n);
     expect(g.extra.some((x) => x.label.includes('v3'))).toBe(true);
   });
+  it('reporting gap: the AI-assisted sensitivity sits beside the frozen share and never replaces it', () => {
+    const g = toReportingGap(metrics);
+    const sec = metrics.provisional.reportingGapSensitivity;
+    for (const r of g.rows) {
+      const m = metrics.reportingGap![`prepared:all:${r.field}`];
+      expect(r.stated).toBe(Math.round(m.value! * m.n!)); // frozen number unchanged
+      if (!sec) { expect(r.sensitivity).toBeNull(); continue; }
+      expect(sec.basis).toBe('ai_assisted_check');
+      const s = sec.metrics[`prepared:all:${r.field}`];
+      if (r.field === 'filtration') expect(r.sensitivity && 'notComputed' in r.sensitivity).toBe(true); // not in the AI check
+      else expect(r.sensitivity && !('notComputed' in r.sensitivity) ? r.sensitivity.point : null).toBe(s.value);
+    }
+  });
   it('planner: toxic-reported leads are withheld and named; nothing is invented', () => {
     const { plan, withheld, planned } = toLabPlan(getHypotheses());
     expect(withheld.every((h) => h.toxicity.category === 'toxic_reported')).toBe(true);
@@ -194,14 +207,23 @@ describe('hypotheses, home, methods, case study', () => {
     for (const m of v.metrics) if (m.value.low == null || m.value.high == null) expect(m.value.low == null && m.value.high == null).toBe(true);
     expect(v.comparisons[0].methods).toHaveLength(2);
   });
-  it('AI-assisted checks never appear as validated (validation wording, 2026-11-07)', () => {
+  it('four statuses: AI-assisted checks are never validated, and logP is validated against external data (2026-11-07)', () => {
     const v = toValidation(metrics);
     const prov = v.metrics.filter((m) => m.id.startsWith('prov-'));
     expect(prov.length).toBeGreaterThan(0);
     for (const m of prov) expect(m.evidence === 'provisional' || m.evidence === 'pending').toBe(true);
+    // the logP descriptor check is against measured, published values: external data, not a person's check
+    for (const id of ['m4-rdkit', 'm4-xtb']) {
+      const m = v.metrics.find((x) => x.id === id)!;
+      expect(m.evidence).toBe(metrics.logPError[id === 'm4-rdkit' ? 'rdkit' : 'xtb']?.status === 'computed' ? 'external' : 'pending');
+    }
+    if (v.comparisons[0]) expect(v.comparisons[0].evidence).toBe('external');
+    // nothing is human-validated unless a human reference was computed
+    if (metrics.extraction.overall?.part?.f1?.status !== 'computed' && metrics.nameResolution.top1?.status !== 'computed' && metrics.interAnnotatorAgreement.heat?.status !== 'computed')
+      expect(v.metrics.filter((m) => m.evidence === 'validated')).toEqual([]);
     // a stage is human-validated only when its human reference has been computed
     const stage = (id: string) => v.pipeline.find((p) => p.id === id)!.validation;
-    expect(stage('m4')).not.toBe('validated');
+    expect(['validated', 'external']).not.toContain(stage('m4'));
     if (metrics.extraction.overall?.part?.f1?.status !== 'computed') expect(stage('m1')).not.toBe('validated');
     if (metrics.nameResolution.top1?.status !== 'computed') expect(stage('m2')).not.toBe('validated');
     if (metrics.provisional.m5ExtractorAiCheck) expect(stage('m5')).toBe('provisional');

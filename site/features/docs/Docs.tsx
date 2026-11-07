@@ -200,7 +200,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
             <ExtractionDetectionExplainer variant="panel" />
           </Section>
 
-          <Section id="pipeline" title="Pipeline" lead="Each step shows one of three statuses: human-validated, AI-assisted check (provisional), or human validation pending. AI-assisted checks help find problems; they are never a validation.">
+          <Section id="pipeline" title="Pipeline" lead="Each step shows one of four statuses: human-validated, validated against external data, AI-assisted check (provisional), or human validation pending. AI-assisted checks help find problems; they are never a validation.">
             <ol className="m-0 flex list-none flex-col gap-0 p-0">
               {v.pipeline.map((p, i) => (
                 <li key={p.id} className="grid grid-cols-[2rem_1fr] gap-3 border-l border-border-strong pb-5 pl-0 last:pb-0">

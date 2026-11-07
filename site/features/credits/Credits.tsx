@@ -50,7 +50,7 @@ export function Credits({ plates }: { plates: ContractPlate[] }) {
           ]}
         />
         {none.length > 0 && (
-          <p className="m-0 max-w-prose text-sm text-ink-muted">No plate was found for {none.map((p, i) => <span key={p.speciesId}>{i > 0 && (i === none.length - 1 ? ' and ' : ', ')}<Taxon name={p.taxon} /></span>)} in the three series searched (Köhler 1887, Thomé 1885, Sturm 1796–1855); they show the drawn placeholder instead of a doubtful image.</p>
+          <p className="m-0 max-w-prose text-sm text-ink-muted">No plate was found for {none.map((p, i) => <span key={p.speciesId}>{i > 0 && (i === none.length - 1 ? ' and ' : ', ')}<Taxon name={p.taxon} /></span>)} in the three series searched (Köhler 1883–1898, Thomé 1885, Sturm 1796–1855); they show the drawn placeholder instead of a doubtful image.</p>
         )}
       </section>
       <section aria-labelledby="type" className="flex flex-col gap-3">

@@ -1,0 +1,308 @@
+{
+ "basis": "ai_assisted_check",
+ "label": "AI-assisted sensitivity check (provisional)",
+ "method": "study-level miss and false-stated rates from the AI-assisted check, per evidence source, applied to each coded set; percentile bootstrap B = 2000, seed 20261107, resampling checked studies and coded studies within source",
+ "assumptions": [
+  "the AI coder's reading stands in for the truth (an AI, not a person)",
+  "the 40 checked studies represent every coded set (only 10 are in the 43-study prepared set)",
+  "filtration, 'none' and 'all five' are not adjusted: filtration was not in the AI check"
+ ],
+ "checkedStudies": 40,
+ "checkedInPrepared": 10,
+ "rates": {
+  "solvent": {
+   "pmc_fulltext": {
+    "missK": 3,
+    "missN": 10,
+    "falseK": 1,
+    "falseN": 10
+   },
+   "abstract": {
+    "missK": 1,
+    "missN": 10,
+    "falseK": 1,
+    "falseN": 10
+   },
+   "pooled": {
+    "missK": 4,
+    "missN": 20,
+    "falseK": 2,
+    "falseN": 20
+   }
+  },
+  "heat": {
+   "pmc_fulltext": {
+    "missK": 2,
+    "missN": 10,
+    "falseK": 2,
+    "falseN": 10
+   },
+   "abstract": {
+    "missK": 0,
+    "missN": 18,
+    "falseK": 0,
+    "falseN": 2
+   },
+   "pooled": {
+    "missK": 2,
+    "missN": 28,
+    "falseK": 2,
+    "falseN": 12
+   }
+  },
+  "part": {
+   "pmc_fulltext": {
+    "missK": 7,
+    "missN": 13,
+    "falseK": 2,
+    "falseN": 7
+   },
+   "abstract": {
+    "missK": 1,
+    "missN": 11,
+    "falseK": 2,
+    "falseN": 9
+   },
+   "pooled": {
+    "missK": 8,
+    "missN": 24,
+    "falseK": 4,
+    "falseN": 16
+   }
+  },
+  "freshOrDried": {
+   "pmc_fulltext": {
+    "missK": 0,
+    "missN": 9,
+    "falseK": 1,
+    "falseN": 11
+   },
+   "abstract": {
+    "missK": 1,
+    "missN": 20,
+    "falseK": 0,
+    "falseN": 0
+   },
+   "pooled": {
+    "missK": 1,
+    "missN": 29,
+    "falseK": 1,
+    "falseN": 11
+   }
+  }
+ },
+ "checked40": {
+  "solvent": {
+   "rule": {
+    "k": 20,
+    "n": 40,
+    "value": 0.5,
+    "low": 0.352,
+    "high": 0.648
+   },
+   "ai": {
+    "k": 22,
+    "n": 40,
+    "value": 0.55,
+    "low": 0.3983,
+    "high": 0.6929
+   }
+  },
+  "heat": {
+   "rule": {
+    "k": 12,
+    "n": 40,
+    "value": 0.3,
+    "low": 0.1807,
+    "high": 0.4543
+   },
+   "ai": {
+    "k": 12,
+    "n": 40,
+    "value": 0.3,
+    "low": 0.1807,
+    "high": 0.4543
+   }
+  },
+  "part": {
+   "rule": {
+    "k": 16,
+    "n": 40,
+    "value": 0.4,
+    "low": 0.2635,
+    "high": 0.554
+   },
+   "ai": {
+    "k": 20,
+    "n": 40,
+    "value": 0.5,
+    "low": 0.352,
+    "high": 0.648
+   }
+  },
+  "freshOrDried": {
+   "rule": {
+    "k": 11,
+    "n": 40,
+    "value": 0.275,
+    "low": 0.1611,
+    "high": 0.4284
+   },
+   "ai": {
+    "k": 11,
+    "n": 40,
+    "value": 0.275,
+    "low": 0.1611,
+    "high": 0.4284
+   }
+  }
+ },
+ "sets": {
+  "prepared": {
+   "solvent": {
+    "frozen": {
+     "k": 37,
+     "n": 43,
+     "value": 0.8605,
+     "low": 0.7274,
+     "high": 0.9344
+    },
+    "adjusted": {
+     "value": 0.793,
+     "low": 0.6233,
+     "high": 0.9302,
+     "n": 43
+    }
+   },
+   "heat": {
+    "frozen": {
+     "k": 11,
+     "n": 43,
+     "value": 0.2558,
+     "low": 0.1493,
+     "high": 0.4024
+    },
+    "adjusted": {
+     "value": 0.2372,
+     "low": 0.1357,
+     "high": 0.3488,
+     "n": 43
+    }
+   },
+   "part": {
+    "frozen": {
+     "k": 21,
+     "n": 43,
+     "value": 0.4884,
+     "low": 0.3462,
+     "high": 0.6325
+    },
+    "adjusted": {
+     "value": 0.4948,
+     "low": 0.3293,
+     "high": 0.6605,
+     "n": 43
+    }
+   },
+   "freshOrDried": {
+    "frozen": {
+     "k": 7,
+     "n": 43,
+     "value": 0.1628,
+     "low": 0.0812,
+     "high": 0.2997
+    },
+    "adjusted": {
+     "value": 0.1852,
+     "low": 0.0827,
+     "high": 0.3027,
+     "n": 43
+    }
+   },
+   "filtration": {
+    "frozen": {
+     "k": 5,
+     "n": 43,
+     "value": 0.1163,
+     "low": 0.0507,
+     "high": 0.2448
+    },
+    "adjusted": null,
+    "note": "not computed: filtration was not part of the AI-assisted check"
+   }
+  },
+  "retrieved": {
+   "solvent": {
+    "frozen": {
+     "k": 109,
+     "n": 303,
+     "value": 0.3597,
+     "low": 0.3078,
+     "high": 0.4152
+    },
+    "adjusted": {
+     "value": 0.4063,
+     "low": 0.2904,
+     "high": 0.5469,
+     "n": 303
+    }
+   },
+   "heat": {
+    "frozen": {
+     "k": 37,
+     "n": 303,
+     "value": 0.1221,
+     "low": 0.0899,
+     "high": 0.1638
+    },
+    "adjusted": {
+     "value": 0.1261,
+     "low": 0.0798,
+     "high": 0.1705,
+     "n": 303
+    }
+   },
+   "part": {
+    "frozen": {
+     "k": 97,
+     "n": 303,
+     "value": 0.3201,
+     "low": 0.2701,
+     "high": 0.3746
+    },
+    "adjusted": {
+     "value": 0.3653,
+     "low": 0.2409,
+     "high": 0.5114,
+     "n": 303
+    }
+   },
+   "freshOrDried": {
+    "frozen": {
+     "k": 37,
+     "n": 303,
+     "value": 0.1221,
+     "low": 0.0899,
+     "high": 0.1638
+    },
+    "adjusted": {
+     "value": 0.1495,
+     "low": 0.0837,
+     "high": 0.2406,
+     "n": 303
+    }
+   },
+   "filtration": {
+    "frozen": {
+     "k": 30,
+     "n": 303,
+     "value": 0.099,
+     "low": 0.0702,
+     "high": 0.1378
+    },
+    "adjusted": null,
+    "note": "not computed: filtration was not part of the AI-assisted check"
+   }
+  }
+ }
+}

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import type { AuditBreakdown, MatchState, ReportingGapRow, ReportingGapView, SourceConfidence, SourceWork } from '@/lib/types';
 import { pct } from '@/lib/data/format';
-import { INFLATED_SOLVENT_NOTE } from '@/lib/data/selectors/gap';
+import { INFLATED_SOLVENT_NOTE, SENSITIVITY_LABEL } from '@/lib/data/selectors/gap';
 import { SiteShell, PageHeader } from '@/components/layout/SiteShell';
 import { ChartTable } from '@/components/base/ChartTable';
 import { LinkButton } from '@/components/base/Button';
@@ -20,6 +20,24 @@ import { UnknownValue } from '@/components/honesty/UnknownValue';
  * pre-registered re-analysis) with its small-n note, and links to v1 (as pre-registered, with its design flaw) in Docs.
  */
 const ciText = (ci: [number, number] | null) => (ci ? `${pct(ci[0])}–${pct(ci[1])}` : 'not computed');
+
+/** SITE: the AI-assisted sensitivity check (provisional) under each row; the frozen share above is unchanged. */
+function sensText(r: ReportingGapRow): string {
+  const s = r.sensitivity;
+  if (!s) return '';
+  if ('notComputed' in s) return s.notComputed;
+  const c = s.checkedRule && s.checkedAi ? ` On the ${s.checkedRule[1]} checked studies: ${s.checkedRule[0]} stated by the extractor, ${s.checkedAi[0]} by the AI coder.` : '';
+  return `${pct(s.point)} (95% interval ${pct(s.low)}–${pct(s.high)}) if the extractor's error rates from the AI check applied.${c}`;
+}
+
+function Sensitivity({ r }: { r: ReportingGapRow }) {
+  return (
+    <p className="m-0 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-ink-muted md:col-span-12">
+      <EvidenceStatusBadge wording="validation" status="provisional" size="sm" detail="An AI coder's reading of 40 studies stands in for the truth. Not human validation." />
+      <span><span className="font-semibold text-ink">{SENSITIVITY_LABEL}:</span> {sensText(r)}</span>
+    </p>
+  );
+}
 
 function GapRow({ r, i }: { r: ReportingGapRow; i: number }) {
   const p = r.stated / r.n;
@@ -49,6 +67,7 @@ function GapRow({ r, i }: { r: ReportingGapRow; i: number }) {
         </button>
       </Tooltip>
       <span className="num font-mono text-sm text-ink md:col-span-2 md:text-right">{r.stated}/{r.n} · {pct(p)}</span>
+      {r.sensitivity && <Sensitivity r={r} />}
       {r.inflated && <p role="note" className="m-0 rounded-sm border border-dashed border-border-strong px-3 py-2 text-sm text-ink md:col-span-12"><span className="font-semibold">Solvent share is inflated by construction.</span> {INFLATED_SOLVENT_NOTE.replace(/^Inflated by construction: a/, 'A')}</p>}
     </li>
   );
@@ -121,9 +140,9 @@ export function EvidenceGap({ gap, audit }: { gap: ReportingGapView; audit: Audi
         )}
         <ChartTable
           caption="Preparation details stated by modern studies that prepared the plant (95% Wilson interval)"
-          headers={['Detail', 'Stated', 'Studies (n)', 'Proportion', '95% interval']}
+          headers={['Detail', 'Stated', 'Studies (n)', 'Proportion', '95% interval', SENSITIVITY_LABEL]}
           numeric={[1, 2, 3, 4]}
-          rows={[...rows, ...(gap.none ? [gap.none] : [])].map((r) => [r.inflated ? `${r.label} (inflated by construction)` : r.label, r.stated, r.n, pct(r.stated / r.n), r.ci ? ciText(r.ci) : <UnknownValue />])}
+          rows={[...rows, ...(gap.none ? [gap.none] : [])].map((r) => [r.inflated ? `${r.label} (inflated by construction)` : r.label, r.stated, r.n, pct(r.stated / r.n), r.ci ? ciText(r.ci) : <UnknownValue />, r.sensitivity ? sensText(r) : <UnknownValue label="Not computed" />])}
         />
         <p className="m-0 max-w-prose text-sm text-ink-subtle">{gap.method}</p>
         {gap.extra.length > 0 && (

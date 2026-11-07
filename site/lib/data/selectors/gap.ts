@@ -4,7 +4,7 @@
  * the metric's note also gives.
  */
 import type { EvidenceStatus, ReportingField, ReportingGapRow, ReportingGapView } from '../../types';
-import type { ContractMetrics } from '../load';
+import type { ContractMetric, ContractMetrics } from '../load';
 
 type GapMetrics = NonNullable<ContractMetrics['reportingGap']>;
 
@@ -18,21 +18,35 @@ const FIELDS: [ReportingField, string, string][] = [
 /** "Stated" means the rule-based extractor coded a value: a heuristic whose accuracy awaits the 40-study hand-check. */
 const EVIDENCE: EvidenceStatus = 'pending';
 
-function rowOf(g: GapMetrics, key: string, field: ReportingField, label: string, inflated = false): ReportingGapRow | null {
+type Sens = Record<string, ContractMetric> | null;
+const kn = (x: ContractMetric | undefined): [number, number] | null =>
+  x && x.status === 'computed' && x.value != null && x.n != null ? [Math.round(x.value * x.n), x.n] : null;
+
+function rowOf(g: GapMetrics, key: string, field: ReportingField, label: string, inflated = false, sens: Sens = null): ReportingGapRow | null {
   const m = g[key];
   if (!m || m.status !== 'computed' || m.value == null || m.n == null) return null;
+  const s = sens?.[key];
+  const v = key.split(':')[2];
   return {
     field, label, stated: Math.round(m.value * m.n), n: m.n,
     ci: m.low != null && m.high != null ? [m.low, m.high] : null, evidence: EVIDENCE, inflated, note: m.note ?? null,
+    sensitivity: !sens || !s ? null
+      : s.status === 'computed' && s.value != null && s.low != null && s.high != null
+        ? { point: s.value, low: s.low, high: s.high, checkedRule: kn(sens[`checked40:rule:${v}`]), checkedAi: kn(sens[`checked40:ai:${v}`]) }
+        : { notComputed: s.note ?? 'Not computed.' },
   };
 }
+
+/** SITE: label of the provisional sensitivity section (project lead, 2026-11-07). */
+export const SENSITIVITY_LABEL = 'AI-assisted sensitivity check (provisional)';
 
 export const INFLATED_SOLVENT_NOTE =
   'Inflated by construction: a study counts as having prepared the plant partly because a solvent was stated, so this share is higher than it would be among all studies that prepared the plant.';
 
 export function toReportingGap(m: ContractMetrics): ReportingGapView {
   const g = m.reportingGap ?? {};
-  const rows = FIELDS.map(([f, label, k]) => rowOf(g, `prepared:all:${k}`, f, label, f === 'solvent')).filter((r): r is ReportingGapRow => r !== null);
+  const sens: Sens = m.provisional?.reportingGapSensitivity?.metrics ?? null;
+  const rows = FIELDS.map(([f, label, k]) => rowOf(g, `prepared:all:${k}`, f, label, f === 'solvent', sens)).filter((r): r is ReportingGapRow => r !== null);
   const none = rowOf(g, 'prepared:all:none', 'freshOrDried', 'None of the five stated');
   const extra = ([
     ['retrieved:all:none', 'Every coded study retrieved for a plant–use pair (audit v1): none of the five stated'],

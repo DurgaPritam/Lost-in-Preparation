@@ -7,6 +7,9 @@
 
 /** 1. Evidence status */
 export type EvidenceStatus = 'validated' | 'provisional' | 'pending';
+/** SITE: Methods & data uses four statuses (project lead, 2026-11-07): 'external' = validated against external data
+ *  (an independent, published dataset such as measured values), distinct from a person's check ('validated'). */
+export type ValidationStatus = EvidenceStatus | 'external';
 
 /** 2. Source confidence */
 /** SITE: the real corpus has a third source, Culpeper's 1850 Complete Herbal (never merged with 1652 or Pliny). */
@@ -290,7 +293,7 @@ export interface PipelineStage {
   name: string;
   does: string;
   tool: string | null;
-  validation: EvidenceStatus;
+  validation: ValidationStatus;
 }
 export interface MetricValue {
   point: number | null;
@@ -304,7 +307,7 @@ export interface Metric {
   name: string;
   value: MetricValue;
   n: number | null;
-  evidence: EvidenceStatus;
+  evidence: ValidationStatus;
   note?: string;
 }
 export interface MethodComparison {
@@ -317,7 +320,7 @@ export interface MethodComparison {
   methods: { name: string; value: MetricValue }[];
   finding: string;
   decision: string;
-  evidence: EvidenceStatus;
+  evidence: ValidationStatus;
 }
 export interface PositiveControl {
   id: string;
@@ -330,7 +333,7 @@ export interface PositiveControl {
   expected: string;
   outcome: CheckOutcome;
   explanation: string;
-  evidence: EvidenceStatus;
+  evidence: ValidationStatus;
 }
 /** SITE: 'reported' = a result exists in site-data but is not graded pass/fail there. */
 export type CheckOutcome = 'pass' | 'fail' | 'borderline' | 'not_run' | 'reported';
@@ -341,7 +344,7 @@ export interface PreregisteredCheck {
   criterion: string;
   outcome: CheckOutcome;
   detail: string;
-  evidence: EvidenceStatus;
+  evidence: ValidationStatus;
 }
 export interface Validation {
   pipeline: PipelineStage[];
@@ -394,6 +397,10 @@ export interface ReportingGapRow {
   evidence: EvidenceStatus;
   inflated: boolean;
   note: string | null;
+  /** SITE: AI-assisted sensitivity check (provisional), from metrics.provisional.reportingGapSensitivity. The frozen
+   *  share above is unchanged; this is what it would be if the extractor's error rates from the AI check applied.
+   *  null = the section is absent; `notComputed` carries the reason (filtration was not in the AI check). */
+  sensitivity: { point: number; low: number; high: number; checkedRule: [number, number] | null; checkedAi: [number, number] | null } | { notComputed: string } | null;
 }
 export interface ReportingGapView {
   headline: { field: ReportingField; text: string };

@@ -25,6 +25,7 @@
   python -m lip m5 handcheck-eval        extractor accuracy from the filled 40-study hand-check sheet
   python -m lip m5 ai-check-ingest DIR   gather the AI coders' blind codes (prompts/m5_ai_check/v1) -> data/reference/m5_ai_check_v1.json
   python -m lip m5 ai-check              AI-assisted check of the rule-based extractor (provisional; never human validation)
+  python -m lip m5 gap-sensitivity       AI-assisted sensitivity check (provisional) of the reporting gap
   python -m lip m6 hypotheses            Phase 6: rank never-faithfully-tested pairs (hypotheses worth re-testing)
   python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
   python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
@@ -207,6 +208,9 @@ def main(argv: list[str]) -> int:
         elif sub == "ai-check":
             from .m5 import ai_check
             print(json.dumps(ai_check.run(), indent=2))
+        elif sub == "gap-sensitivity":
+            from .m5 import gap_sensitivity
+            print(json.dumps(gap_sensitivity.run(), indent=2))
     elif cmd == "m6":
         sub = argv[1] if len(argv) > 1 else "rank-demo"
         if sub == "hypotheses":

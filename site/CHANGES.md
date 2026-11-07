@@ -89,6 +89,12 @@ This file lists every change I could not avoid, and every addition.
 - **Stage statuses:** the preparation model (M4) is no longer shown as validated. Only its logP descriptor is human-validated (against measured data); the model itself has only AI-assisted checks. M5 shows its AI-assisted check. M1 shows "Human validation pending", because the AI reference set is never used to score it. The artemisinin test is an AI-assisted check, since an AI wrote its criteria.
 - **Credits:** a column shows each plate's AI check (licence templates on the page, the statement "checked by AI agent on <date>; awaiting human confirmation", and any flags). The lead no longer calls all plates 19th-century (the Sturm plates are dated 1796).
 
+## Four validation statuses and the reporting-gap sensitivity (project lead, 2026-11-07)
+
+- **Four statuses:** Methods & data uses `ValidationStatus` = the three evidence statuses plus `external` ("Validated against external data": compared with an independent published dataset, such as measured logP values). The badge draws `external` with the design's solid "validated" shape and a brand border; the word tells it apart from a person's check. The logP descriptor check is `external`. A unit test guards this, and checks that no AI-assisted check is ever validated.
+- **Evidence gap:** under each row, a line labelled "AI-assisted sensitivity check (provisional)" gives the share the row would have if the extractor's error rates from the AI check applied, with its interval, plus the counts on the 40 checked studies by the extractor and by the AI coder. Filtration reads "not computed", because it was not in the AI check. The frozen bar, numbers and interval are unchanged. The table fallback has the same column.
+- **Köhler plates:** described by the series' publication span (1883–1898) instead of 1887, because no per-plate edition date could be read (see docs/IMAGE_CREDITS.md).
+
 ## Token lint
 
 `.eslintrc.json` enforces the v2 tokens over `app/`, `components/`, `features/`, `lib/`, `scripts/` and `tests/`. It bans hex, `rgb()`/`hsl()` and raw pixel values in class names and styles, and Tailwind's default palette names. One exception: `underline-offset-[6px]`, which the handoff's own Atlas screen uses for the passage spans.
