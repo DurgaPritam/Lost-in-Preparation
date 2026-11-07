@@ -9,11 +9,11 @@
     {
       "url": "/",
       "runs": 3,
-      "performance": 96,
+      "performance": 94,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2720
+      "lcpMs": 3008
     },
     {
       "url": "/atlas/",
@@ -22,7 +22,7 @@
       "accessibility": 96,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3081
+      "lcpMs": 3079
     },
     {
       "url": "/case/liquorice/",
@@ -31,25 +31,25 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3006
+      "lcpMs": 3004
     },
     {
       "url": "/credits/",
       "runs": 3,
-      "performance": 97,
+      "performance": 96,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2555
+      "lcpMs": 2707
     },
     {
       "url": "/docs/",
       "runs": 3,
-      "performance": 93,
+      "performance": 91,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3008
+      "lcpMs": 3202
     },
     {
       "url": "/evidence-gap/",
@@ -58,7 +58,16 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2855
+      "lcpMs": 2856
+    },
+    {
+      "url": "/hypotheses/",
+      "runs": 3,
+      "performance": 94,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "cls": 0,
+      "lcpMs": 2856
     },
     {
       "url": "/lab/?plant=Hyoscyamus+niger&solvent=water&heat=boiled&strained=true&acid=false",
@@ -67,7 +76,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2558
+      "lcpMs": 2552
     },
     {
       "url": "/lab/?plant=Salvia+sclarea&solvent=water&heat=boiled&strained=true&acid=false",
@@ -85,7 +94,7 @@
       "accessibility": 98,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3158
+      "lcpMs": 3155
     },
     {
       "url": "/recipes/culpeper-1652_herbal_agrimony_008_r01/",
@@ -103,8 +112,8 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2855
+      "lcpMs": 2854
     }
   ],
-  "generatedAt": "2026-11-07T12:41:21.621Z"
+  "generatedAt": "2026-11-07T14:33:48.475Z"
 }

@@ -27,8 +27,10 @@ source, the evidence for its status and the per-article table):
   4. Database records: LOTUS via Wikidata (CC0), World Flora Online (CC0),
      GBIF Backbone Taxonomy (CC BY 4.0), SangsterLogP-derived values (CC BY 4.0,
      Cirino et al. 2026, doi:10.5281/zenodo.19387552), PubChem (NCBI public data).
-  5. Botanical illustrations in site/public/plates/: public domain, each with
-     its own source, author, date and licence in docs/IMAGE_CREDITS.md.
+  5. Botanical illustrations in site/public/plates/: public domain as stated on
+     each Wikimedia Commons file page (read by an AI-assisted check; human
+     confirmation pending), each with its own source, author, date and licence
+     in docs/IMAGE_CREDITS.md.
 
 =======================================================================
 

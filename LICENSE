@@ -29,4 +29,6 @@ Third-party code keeps its own licence:
   - site/lib/engine/numpy/: ported from NumPy 2.4.6 (BSD-3-Clause; the NumPy
     licence is reproduced in site/lib/engine/numpy/zigguratTables.ts).
   - Fonts in site/public/fonts/ and design/: SIL Open Font License 1.1
-    (licence files alongside the fonts).
+    (licence files alongside the fonts). The two Fraunces files in
+    site/public/fonts/ are a modified version (optical-size axis pinned at 144
+    by site/scripts/pin-fraunces-opsz.py), distributed under the same licence.
