@@ -15,6 +15,7 @@ export const ROUTES: { path: string; ready?: string }[] = [
   { path: '/evidence-gap/' },
   { path: '/case/liquorice/' },
   { path: '/planner/' },
+  { path: '/hypotheses/' },
   { path: '/docs/' },
   { path: '/credits/' },
 ];

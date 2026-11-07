@@ -84,6 +84,9 @@ def run() -> dict:
     sheet = {(r["pmid"], int(r["preparation"])): r for r in csv.DictReader(SHEET.open())}
     per_study = Counter(p for p, _ in sheet)
     secs = _sections()
+    if secs is None:   # never write a result whose quotes were not re-verified
+        raise SystemExit(f"needs the local study texts ({TEXTS.relative_to(ROOT)}, git-ignored; rebuilt by python -m lip m5 audit "
+                         "from the literature caches): the quotes cannot be re-verified without them")
     problems, rows = [], []
     for c in codes["rows"]:
         r = sheet[(c["pmid"], c["preparation"])]

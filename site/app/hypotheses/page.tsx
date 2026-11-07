@@ -1,6 +1,9 @@
-import { Redirect } from '@/features/shared/Redirect';
+import type { Metadata } from 'next';
+import { Hypotheses } from '@/features/results/Hypotheses';
+import { getHypotheses } from '@/lib/data/site';
+import { HEURISTICS } from '@/lib/data/heuristics';
 
-export const metadata = { title: 'Moved', robots: { index: false } };
+export const metadata: Metadata = { title: 'Ranked hypotheses' };
 export default function Page() {
-  return <Redirect to="/planner/" label="the Lab Planner" />;
+  return <Hypotheses hypotheses={getHypotheses()} heuristics={HEURISTICS} />;
 }

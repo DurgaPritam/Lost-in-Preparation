@@ -46,14 +46,22 @@ run() {
 }
 
 echo "[repro] clone of $COMMIT in $REPO"
-( cd "$REPO" && "$PY" -m venv .venv && .venv/bin/pip install -q -r requirements.txt ) > "$LOG/install-python.log" 2>&1 \
-  && ROWS+=("| install Python deps (PyPI) | setup | pass | | \`logs/install-python.log\` |") \
-  || { ROWS+=("| install Python deps (PyPI) | setup | FAIL | | \`logs/install-python.log\` |"); FAIL=1; }
+( cd "$REPO" && "$PY" -m venv .venv && .venv/bin/pip install -q -r requirements.txt -r requirements-quantum.txt ) > "$LOG/install-python.log" 2>&1 \
+  && ROWS+=("| install Python deps (PyPI; requirements.txt + requirements-quantum.txt) | setup | pass | | \`logs/install-python.log\` |") \
+  || { ROWS+=("| install Python deps (PyPI; requirements.txt + requirements-quantum.txt) | setup | FAIL | | \`logs/install-python.log\` |"); FAIL=1; }
 
 # Expected to reproduce from committed files alone.
 run contract        reproduce   python -m lip contract
 run m6-hypotheses   reproduce   python -m lip m6 hypotheses
 run results         reproduce   python -m lip results
+# AI-assisted checks and Phase 8, from committed inputs. The full QAOA benchmark (lip m8 bench, ~45 min) is not re-run
+# here; its committed outputs are exported and validated instead.
+run gap-sensitivity reproduce   python -m lip m5 gap-sensitivity
+run review-priority reproduce   python -m lip m1 review-priority
+run m8-pool         reproduce   python -m lip m8 pool
+run m8-export       reproduce   python -m lip m8 export
+# Needs the git-ignored study texts to re-verify every quote; in cache-only mode it must refuse.
+run m5-ai-check     needs-download python -m lip m5 ai-check
 # Before the raw texts are downloaded these need data/interim/passages.parquet (built by ingest), so they fail loudly.
 run site-data       needs-download python -m lip site
 run pytest          needs-download python -m pytest -q -p no:cacheprovider

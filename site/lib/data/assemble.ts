@@ -243,6 +243,7 @@ export function getDocs() {
   const studies = new Set(L.loadAudit().flatMap((r) => r.studies.map((s) => s.pmid))).size;
   return {
     validation: getValidation(), sources: getSources(), audit: getAudit(), heuristics: HEURISTICS, confidences: confidences(),
+    hypothesesCount: L.loadHypotheses().length,
     quantum: (() => { const p = getPanel(); return p ? { ...quantumSummary(p), winners: p.winners, noise: p.noise, hardware: p.hardware, noiseModel: p.noiseModel } : null; })(),
     coverage: coverage(L.loadSpecies(), L.loadRecipes(), studies), modelledSpecies: L.loadProfileIndex().length,
   };

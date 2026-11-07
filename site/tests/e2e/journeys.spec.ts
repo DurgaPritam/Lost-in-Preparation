@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
 import { expect, test } from '@playwright/test';
 import { ROUTES } from './routes';
 
@@ -148,8 +150,8 @@ test('credits list every sourced plate with its licence; downloads and old addre
   for (const f of ['recipes.json', 'metrics.json', 'engine/model.json', 'plates.json']) expect((await request.get(`/data/${f}`)).ok()).toBe(true);
   await page.goto('/recipes/');
   await expect(page).toHaveURL(/\/atlas\/$/);
-  await page.goto('/hypotheses/');
-  await expect(page).toHaveURL(/\/planner\/$/);
+  await page.goto('/compare/');
+  await expect(page).toHaveURL(/\/lab\//);
 });
 
 
@@ -168,3 +170,25 @@ for (const scheme of ['light', 'dark'] as const) {
     expect(preloads.some((h) => h.includes(scheme === 'dark' ? 'instrument-serif' : 'fraunces'))).toBe(true);
   });
 }
+
+test('ranked hypotheses: reachable from Methods & data and the case study, with caveats and evidence trails', async ({ page }) => {
+  const hs = JSON.parse(readFileSync(path.resolve(__dirname, '../../../site-data/hypotheses.json'), 'utf8')) as unknown[];
+  await page.goto('/docs/');
+  await page.locator('#hypotheses').getByRole('link', { name: 'See the ranked hypotheses' }).click();
+  await expect(page).toHaveURL(/\/hypotheses\/$/);
+  await expect(page.getByRole('heading', { name: 'Ranked hypotheses worth re-testing' })).toBeVisible();
+  const items = page.locator('main > div ol > li[id], main ol > li[id]');
+  await expect(items).toHaveCount(hs.length);
+  await expect(page.getByRole('heading', { name: 'Caveats' })).toHaveCount(hs.length);
+  await page.getByText('Evidence trail').first().click();
+  await expect(page.getByText(/1 · Source/).first()).toBeVisible();
+  await page.goto('/case/liquorice/');
+  const href = await page.locator('main a[href^="/hypotheses/#"]').first().getAttribute('href');
+  expect(href).toMatch(/^\/hypotheses\/#/);
+  await page.goto(href!);
+  const id = href!.split('#')[1];
+  await expect(page.locator(`[id="${id}"]`)).toBeVisible();
+  // an old per-hypothesis address lands on its anchor
+  await page.goto(`/hypotheses/${id}/`);
+  await expect(page).toHaveURL(new RegExp(`/hypotheses/#${id}$`));
+});

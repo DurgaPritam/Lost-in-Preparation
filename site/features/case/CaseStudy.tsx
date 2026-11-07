@@ -118,6 +118,7 @@ export function CaseStudy(props: CaseStudyProps) {
         <span className="text-xs text-ink-subtle">After: {c.after.faithful} vs {c.after.modern} · rank {c.after.rank} of {c.after.rankedOf}</span>
         <div className="flex flex-wrap gap-2">{h && <EvidenceStatusBadge status={h.evidence} size="sm" />}<ToxicityBadge record={toxicity} /></div>
         {h && <ul className="m-0 flex flex-col gap-1 pl-5 text-sm text-ink-muted">{h.caveats.map((x) => <li key={x}>{x}</li>)}</ul>}
+        {h && <Link href={`/hypotheses/#${h.id}`} className="w-max text-sm text-brand underline">This hypothesis among the ranked hypotheses (rank {h.rank} of {h.rankedOf})</Link>}
       </div>
     );
   }

@@ -64,16 +64,6 @@
       "permanent": true
     },
     {
-      "source": "/hypotheses/",
-      "destination": "/planner/",
-      "permanent": true
-    },
-    {
-      "source": "/hypotheses/:id/",
-      "destination": "/planner/",
-      "permanent": true
-    },
-    {
       "source": "/methods/",
       "destination": "/docs/",
       "permanent": true

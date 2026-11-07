@@ -14,6 +14,7 @@
         "http://localhost:4517/evidence-gap/",
         "http://localhost:4517/case/liquorice/",
         "http://localhost:4517/planner/",
+        "http://localhost:4517/hypotheses/",
         "http://localhost:4517/docs/",
         "http://localhost:4517/credits/"
       ],

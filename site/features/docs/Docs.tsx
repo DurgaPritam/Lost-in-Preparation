@@ -29,7 +29,7 @@ import { UnknownValue } from '@/components/honesty/UnknownValue';
  * An outcome recorded but not graded pass/fail reads "Outcome not graded".
  */
 const TOC = [
-  ['overview', 'Overview'], ['pipeline', 'Pipeline'], ['metrics', 'How accurate each step is'], ['findings', 'Honest findings'], ['quantum', 'Where quantum helps'],
+  ['overview', 'Overview'], ['pipeline', 'Pipeline'], ['metrics', 'How accurate each step is'], ['findings', 'Honest findings'], ['hypotheses', 'Ranked hypotheses'], ['quantum', 'Where quantum helps'],
   ['preregistered', 'Pre-registered checks'], ['heuristics', 'Heuristics'], ['studies', 'Audited studies'], ['limitations', 'Limitations'],
   ['sources', 'Sources & licences'], ['downloads', 'Downloads'],
 ] as const;
@@ -135,6 +135,8 @@ interface MetricLike { status: string; value?: number | null; low?: number | nul
 export interface DocsProps {
   validation: Validation; sources: SourcesFile; heuristics: Heuristic[]; confidences: Record<SourceWork, SourceConfidence>;
   coverage: Coverage; modelledSpecies: number;
+  /** SITE: how many M6 hypotheses the results page lists. */
+  hypothesesCount: number;
   /** SITE: Phase 8 summary from site-data/lab_panel.json (null when absent). */
   quantum: {
     qaoaAr: [number, number] | null; randomAr: [number, number] | null; sizes: number[];
@@ -153,7 +155,7 @@ function Share({ m, what }: { m: MetricLike | null | undefined; what: string }) 
   return <span className="num font-mono">{pct(m.value)} <span className="text-ink-muted">({Math.round(m.value * m.n)} of {m.n} {what}; 95% interval {ciText(m.low, m.high)})</span></span>;
 }
 
-export function Docs({ validation: v, sources, heuristics, confidences, coverage, modelledSpecies, audit, quantum }: DocsProps) {
+export function Docs({ validation: v, sources, heuristics, confidences, coverage, modelledSpecies, audit, quantum, hypothesesCount }: DocsProps) {
   const [active, setActive] = useState<string>('overview');
   const [tab, setTab] = useState('v2');
   useEffect(() => {
@@ -270,6 +272,11 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
                 <p className="m-0 break-words text-ink">{pc.explanation}</p>
               </article>
             ))}
+          </Section>
+
+          <Section id="hypotheses" title="Ranked hypotheses (M6)" lead="The plant–use pairs no retrieved study tested in the historical preparation, ranked on predicted profile gaps that hold across the uncertainty range.">
+            <p className="m-0 max-w-prose text-ink-muted">{hypothesesCount} ranked hypotheses, each with its caveats, toxicity entry and evidence trail. Ones with toxicity reported are shown for analysis only.</p>
+            <Link href="/hypotheses/" className="w-max text-brand underline">See the ranked hypotheses</Link>
           </Section>
 
           <Section id="quantum" title="Where quantum helps, and where it doesn’t" lead="Two places in this project could use quantum methods. In both, a classical method did better at our scale.">
