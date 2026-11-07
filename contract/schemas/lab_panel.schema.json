@@ -251,6 +251,19 @@
           "title": "K",
           "type": "integer"
         },
+        "perSpecies": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "at most this many entries per species (v2); null = no limit (v1)",
+          "title": "Perspecies"
+        },
         "poolSize": {
           "title": "Poolsize",
           "type": "integer"
@@ -273,6 +286,14 @@
           "description": "distinct attributes covered per family (class, indication, prep)",
           "title": "Coverage",
           "type": "object"
+        },
+        "panel": {
+          "description": "P40 amendment: the full entries, so the Planner can show any panel size",
+          "items": {
+            "$ref": "#/$defs/PanelCandidate"
+          },
+          "title": "Panel",
+          "type": "array"
         }
       },
       "required": [
@@ -391,6 +412,40 @@
       "title": "PanelCandidate",
       "type": "object"
     },
+    "PanelExcluded": {
+      "additionalProperties": false,
+      "properties": {
+        "candidateId": {
+          "title": "Candidateid",
+          "type": "string"
+        },
+        "species": {
+          "title": "Species",
+          "type": "string"
+        },
+        "historicalPreparation": {
+          "title": "Historicalpreparation",
+          "type": "string"
+        },
+        "modernComparator": {
+          "title": "Moderncomparator",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidateId",
+        "species",
+        "historicalPreparation",
+        "modernComparator",
+        "reason"
+      ],
+      "title": "PanelExcluded",
+      "type": "object"
+    },
     "PanelGap": {
       "additionalProperties": false,
       "properties": {
@@ -413,6 +468,57 @@
         "p95"
       ],
       "title": "PanelGap",
+      "type": "object"
+    },
+    "PanelOriginal": {
+      "additionalProperties": false,
+      "properties": {
+        "ruleVersion": {
+          "title": "Ruleversion",
+          "type": "string"
+        },
+        "k": {
+          "title": "K",
+          "type": "integer"
+        },
+        "toxicRule": {
+          "title": "Toxicrule",
+          "type": "string"
+        },
+        "objective": {
+          "title": "Objective",
+          "type": "number"
+        },
+        "configSha256": {
+          "title": "Configsha256",
+          "type": "string"
+        },
+        "panel": {
+          "items": {
+            "$ref": "#/$defs/PanelCandidate"
+          },
+          "title": "Panel",
+          "type": "array"
+        },
+        "notes": {
+          "description": "plain notes on the v1 result, generated from its data (e.g. entries chosen on coverage alone)",
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "ruleVersion",
+        "k",
+        "toxicRule",
+        "objective",
+        "configSha256",
+        "panel",
+        "notes"
+      ],
+      "title": "PanelOriginal",
       "type": "object"
     },
     "PanelSensitivity": {
@@ -477,9 +583,30 @@
       "title": "Label",
       "type": "string"
     },
+    "ruleVersion": {
+      "description": "v2 (docs/QUBO_v2_RULE.md, pre-registered) for the displayed panel",
+      "title": "Ruleversion",
+      "type": "string"
+    },
+    "ruleDoc": {
+      "title": "Ruledoc",
+      "type": "string"
+    },
     "toxicRule": {
       "title": "Toxicrule",
       "type": "string"
+    },
+    "perSpecies": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Perspecies"
     },
     "k": {
       "title": "K",
@@ -517,6 +644,42 @@
       },
       "title": "Alternatives",
       "type": "array"
+    },
+    "perSpeciesSensitivity": {
+      "description": "v2 with at most two entries per species (ILP only), k = 4, 6, 8",
+      "items": {
+        "$ref": "#/$defs/PanelAlternative"
+      },
+      "title": "Perspeciessensitivity",
+      "type": "array"
+    },
+    "ineligible": {
+      "description": "candidates failing the v2 eligibility rule",
+      "items": {
+        "$ref": "#/$defs/PanelExcluded"
+      },
+      "title": "Ineligible",
+      "type": "array"
+    },
+    "excludedToxic": {
+      "description": "eligible candidates left out because toxicity is reported for the species",
+      "items": {
+        "$ref": "#/$defs/PanelExcluded"
+      },
+      "title": "Excludedtoxic",
+      "type": "array"
+    },
+    "original": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PanelOriginal"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "the original v1 result, shown beside v2"
     },
     "sensitivity": {
       "items": {
@@ -580,6 +743,8 @@
   "required": [
     "basis",
     "label",
+    "ruleVersion",
+    "ruleDoc",
     "toxicRule",
     "k",
     "weights",
@@ -588,6 +753,9 @@
     "poolSize",
     "panel",
     "alternatives",
+    "perSpeciesSensitivity",
+    "ineligible",
+    "excludedToxic",
     "sensitivity",
     "benchmark",
     "winnerBySize",

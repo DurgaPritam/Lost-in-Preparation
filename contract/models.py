@@ -721,7 +721,7 @@ Recipe.model_rebuild()
 
 Metrics.model_rebuild()
 
-# --- lab_panel.json (v1.9, P40 proposed): the recommended re-test panel and the Phase 8 benchmark --------------------
+# --- lab_panel.json (v1.9, P40 approved 2026-11-07; v2 amendment): the recommended re-test panel and the Phase 8 benchmark --------------------
 
 class PanelGap(_Model):
     p5: float
@@ -751,10 +751,12 @@ class PanelCandidate(_Model):
 class PanelAlternative(_Model):
     toxicRule: str = Field(description="exclude | at_most_one")
     k: int
+    perSpecies: int | None = Field(None, description="at most this many entries per species (v2); null = no limit (v1)")
     poolSize: int
     objective: float
     candidateIds: list[str]
     coverage: dict[str, int] = Field(description="distinct attributes covered per family (class, indication, prep)")
+    panel: list[PanelCandidate] = Field(default_factory=list, description="P40 amendment: the full entries, so the Planner can show any panel size")
 
 
 class PanelSensitivity(_Model):
@@ -792,10 +794,31 @@ class NoiseRow(_Model):
     meanArFeasible: float | None = None
 
 
+class PanelExcluded(_Model):  # P40 amendment (v2): a candidate left out of the displayed panel, and why
+    candidateId: str
+    species: str
+    historicalPreparation: str
+    modernComparator: str
+    reason: str
+
+
+class PanelOriginal(_Model):  # P40 amendment (v2): the original v1 result, kept visible beside v2
+    ruleVersion: str
+    k: int
+    toxicRule: str
+    objective: float
+    configSha256: str
+    panel: list[PanelCandidate]
+    notes: list[str] = Field(description="plain notes on the v1 result, generated from its data (e.g. entries chosen on coverage alone)")
+
+
 class LabPanel(_Record):  # site-data/lab_panel.json
     basis: str = Field(description="exact_optimisation_of_model_outputs: the panel is the exact optimum of a fixed objective over model predictions; hypotheses worth re-testing, never claims")
     label: str
+    ruleVersion: str = Field(description="v2 (docs/QUBO_v2_RULE.md, pre-registered) for the displayed panel")
+    ruleDoc: str
     toxicRule: str
+    perSpecies: int | None = None
     k: int
     weights: dict[str, float]
     penaltyMargin: float
@@ -803,6 +826,10 @@ class LabPanel(_Record):  # site-data/lab_panel.json
     poolSize: int
     panel: list[PanelCandidate]
     alternatives: list[PanelAlternative]
+    perSpeciesSensitivity: list[PanelAlternative] = Field(description="v2 with at most two entries per species (ILP only), k = 4, 6, 8")
+    ineligible: list[PanelExcluded] = Field(description="candidates failing the v2 eligibility rule")
+    excludedToxic: list[PanelExcluded] = Field(description="eligible candidates left out because toxicity is reported for the species")
+    original: PanelOriginal | None = Field(None, description="the original v1 result, shown beside v2")
     sensitivity: list[PanelSensitivity]
     benchmark: list[BenchmarkRow]
     winnerBySize: dict[str, str] = Field(description="n -> which method wins at that size (k = 4): the fastest classical method that returned the optimum on every instance, and QAOA's best P(optimum) against a uniform random feasible panel")
@@ -829,6 +856,6 @@ FILE_MODELS = {
     "engine.species.json": EngineSpecies,          # v1.7 (P38) site-data/engine/<speciesId>.json
     "engine.parity.json": EngineParityCase,        # v1.7 (P38) site-data/engine/parity.json
     "plates.json": PlateRecord,                    # v1.8 (P39) site-data/plates.json
-    "lab_panel.json": LabPanel,                    # v1.9 (P40, proposed) site-data/lab_panel.json
+    "lab_panel.json": LabPanel,                    # v1.9 (P40) site-data/lab_panel.json
 }
 ARRAY_FILES = {k for k in FILE_MODELS if k not in ("metrics.json", "engine.model.json", "engine.species.json", "lab_panel.json")}

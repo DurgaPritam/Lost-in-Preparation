@@ -1,0 +1,2482 @@
+{
+ "ruleVersion": "v2",
+ "weights": {
+  "alpha": 1.0,
+  "beta_class": 0.2,
+  "beta_indication": 0.2,
+  "beta_prep": 0.2,
+  "gamma": 0.5
+ },
+ "panels": {
+  "exclude:k4": {
+   "toxicRule": "exclude",
+   "k": 4,
+   "perSpecies": 1,
+   "poolSize": 15,
+   "objective": 1.427295845044054,
+   "status": "Optimal",
+   "coverage": {
+    "class": 5,
+    "indication": 13,
+    "prep": 4
+   },
+   "candidates": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771"
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D004427",
+      "D010373",
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.0903,
+      "p50": 0.1559,
+      "p95": 0.2473
+     },
+     "value": 0.3072,
+     "compoundsLikelyToDiffer": 133,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:001#r07"
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r05"
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:005#r01"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:fresh juice vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430"
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296"
+      }
+     ]
+    }
+   ]
+  },
+  "exclude:k6": {
+   "toxicRule": "exclude",
+   "k": 6,
+   "perSpecies": 1,
+   "poolSize": 15,
+   "objective": 0.8586857218625753,
+   "status": "Optimal",
+   "coverage": {
+    "class": 5,
+    "indication": 14,
+    "prep": 6
+   },
+   "candidates": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000134589|hot water infusion (tea)|modern methanol extract",
+     "speciesId": "wfo-0000134589",
+     "species": "Artemisia absinthium",
+     "historicalPreparation": "hot water infusion (tea)",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D005414",
+      "label": "Flatulence"
+     },
+     "indications": [
+      "D005414"
+     ],
+     "gap": {
+      "p5": 0.2101,
+      "p50": 0.3231,
+      "p95": 0.4751
+     },
+     "value": 0.7149,
+     "compoundsLikelyToDiffer": 110,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b27:c028:003#r06"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:32585887"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:42122882"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000134589:hot water infusion (tea) vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000134589"
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771"
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000402430|cold water infusion|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "cold water infusion",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D011041",
+      "label": "Poisoning"
+     },
+     "indications": [
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.1358,
+      "p50": 0.2191,
+      "p95": 0.3376
+     },
+     "value": 0.4621,
+     "compoundsLikelyToDiffer": 94,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r04"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:cold water infusion vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430"
+      }
+     ]
+    },
+    {
+     "position": 5,
+     "candidateId": "wfo-0001006654|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0001006654",
+     "species": "Agrimonia eupatoria",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D000038",
+      "D004427",
+      "D006073"
+     ],
+     "gap": {
+      "p5": 0.0605,
+      "p50": 0.105,
+      "p95": 0.1734
+     },
+     "value": 0.2059,
+     "compoundsLikelyToDiffer": 7,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:008#r06"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:010#r02"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:004#r02"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:006#r06"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0001006654:fresh juice vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0001006654"
+      }
+     ]
+    },
+    {
+     "position": 6,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296"
+      }
+     ]
+    }
+   ]
+  },
+  "exclude:k8": {
+   "toxicRule": "exclude",
+   "k": 8,
+   "perSpecies": 1,
+   "poolSize": 15,
+   "objective": 0.14330780722864267,
+   "status": "Optimal",
+   "coverage": {
+    "class": 5,
+    "indication": 17,
+    "prep": 6
+   },
+   "candidates": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000134589|hot water infusion (tea)|modern methanol extract",
+     "speciesId": "wfo-0000134589",
+     "species": "Artemisia absinthium",
+     "historicalPreparation": "hot water infusion (tea)",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D005414",
+      "label": "Flatulence"
+     },
+     "indications": [
+      "D005414"
+     ],
+     "gap": {
+      "p5": 0.2101,
+      "p50": 0.3231,
+      "p95": 0.4751
+     },
+     "value": 0.7149,
+     "compoundsLikelyToDiffer": 110,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b27:c028:003#r06"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:32585887"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:42122882"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000134589:hot water infusion (tea) vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000134589"
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771"
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000402430|cold water infusion|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "cold water infusion",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D011041",
+      "label": "Poisoning"
+     },
+     "indications": [
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.1358,
+      "p50": 0.2191,
+      "p95": 0.3376
+     },
+     "value": 0.4621,
+     "compoundsLikelyToDiffer": 94,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r04"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:cold water infusion vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430"
+      }
+     ]
+    },
+    {
+     "position": 5,
+     "candidateId": "wfo-0001006654|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0001006654",
+     "species": "Agrimonia eupatoria",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D000038",
+      "D004427",
+      "D006073"
+     ],
+     "gap": {
+      "p5": 0.0605,
+      "p50": 0.105,
+      "p95": 0.1734
+     },
+     "value": 0.2059,
+     "compoundsLikelyToDiffer": 7,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:008#r06"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:010#r02"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:004#r02"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:006#r06"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0001006654:fresh juice vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0001006654"
+      }
+     ]
+    },
+    {
+     "position": 6,
+     "candidateId": "wfo-0000983427|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000983427",
+     "species": "Filipendula ulmaria",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003967",
+      "label": "Diarrhea"
+     },
+     "indications": [
+      "D003085",
+      "D003967"
+     ],
+     "gap": {
+      "p5": 0.0468,
+      "p50": 0.1013,
+      "p95": 0.178
+     },
+     "value": 0.1592,
+     "compoundsLikelyToDiffer": 8,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:008#r03"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:008#r05"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:004#r05"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000983427:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000983427"
+      }
+     ]
+    },
+    {
+     "position": 7,
+     "candidateId": "wfo-0000725866|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000725866",
+     "species": "Humulus lupulus",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004231",
+      "label": "Diuresis"
+     },
+     "indications": [
+      "D004231",
+      "D006373",
+      "D008599"
+     ],
+     "gap": {
+      "p5": 0.0197,
+      "p50": 0.0319,
+      "p95": 0.0503
+     },
+     "value": 0.067,
+     "compoundsLikelyToDiffer": 118,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:hops:008#r04"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:hops:005#r04"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:34946512"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000725866:powder taken whole vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000725866"
+      }
+     ]
+    },
+    {
+     "position": 8,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296"
+      }
+     ]
+    }
+   ]
+  },
+  "exclude:k4:perSpecies2": {
+   "toxicRule": "exclude",
+   "k": 4,
+   "perSpecies": 2,
+   "poolSize": 15,
+   "objective": 1.482201951753495,
+   "status": "Optimal",
+   "coverage": {
+    "class": 5,
+    "indication": 15,
+    "prep": 3
+   },
+   "candidates": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D006073",
+      "label": "Gout"
+     },
+     "indications": [
+      "D006073",
+      "D010243",
+      "D012585"
+     ],
+     "gap": {
+      "p5": 0.2221,
+      "p50": 0.3747,
+      "p95": 0.5424
+     },
+     "value": 0.7557,
+     "compoundsLikelyToDiffer": 31,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771"
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D004427",
+      "D010373",
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.0903,
+      "p50": 0.1559,
+      "p95": 0.2473
+     },
+     "value": 0.3072,
+     "compoundsLikelyToDiffer": 133,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:001#r07"
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r05"
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:005#r01"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:fresh juice vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430"
+      }
+     ]
+    }
+   ]
+  },
+  "exclude:k6:perSpecies2": {
+   "toxicRule": "exclude",
+   "k": 6,
+   "perSpecies": 2,
+   "poolSize": 15,
+   "objective": 1.0341118250075179,
+   "status": "Optimal",
+   "coverage": {
+    "class": 5,
+    "indication": 17,
+    "prep": 4
+   },
+   "candidates": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D006073",
+      "label": "Gout"
+     },
+     "indications": [
+      "D006073",
+      "D010243",
+      "D012585"
+     ],
+     "gap": {
+      "p5": 0.2221,
+      "p50": 0.3747,
+      "p95": 0.5424
+     },
+     "value": 0.7557,
+     "compoundsLikelyToDiffer": 31,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771"
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D004427",
+      "D010373",
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.0903,
+      "p50": 0.1559,
+      "p95": 0.2473
+     },
+     "value": 0.3072,
+     "compoundsLikelyToDiffer": 133,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:001#r07"
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r05"
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:005#r01"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:fresh juice vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430"
+      }
+     ]
+    },
+    {
+     "position": 5,
+     "candidateId": "wfo-0000329771|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004415",
+      "label": "Dyspepsia"
+     },
+     "indications": [
+      "D004415"
+     ],
+     "gap": {
+      "p5": 0.0584,
+      "p50": 0.0993,
+      "p95": 0.1601
+     },
+     "value": 0.1987,
+     "compoundsLikelyToDiffer": 11,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r05"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r06"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:powder taken whole vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771"
+      }
+     ]
+    },
+    {
+     "position": 6,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296"
+      }
+     ]
+    }
+   ]
+  },
+  "exclude:k8:perSpecies2": {
+   "toxicRule": "exclude",
+   "k": 8,
+   "perSpecies": 2,
+   "poolSize": 15,
+   "objective": 0.5908936994997426,
+   "status": "Optimal",
+   "coverage": {
+    "class": 5,
+    "indication": 18,
+    "prep": 5
+   },
+   "candidates": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D006073",
+      "label": "Gout"
+     },
+     "indications": [
+      "D006073",
+      "D010243",
+      "D012585"
+     ],
+     "gap": {
+      "p5": 0.2221,
+      "p50": 0.3747,
+      "p95": 0.5424
+     },
+     "value": 0.7557,
+     "compoundsLikelyToDiffer": 31,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181"
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000134589|hot water infusion (tea)|modern methanol extract",
+     "speciesId": "wfo-0000134589",
+     "species": "Artemisia absinthium",
+     "historicalPreparation": "hot water infusion (tea)",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D005414",
+      "label": "Flatulence"
+     },
+     "indications": [
+      "D005414"
+     ],
+     "gap": {
+      "p5": 0.2101,
+      "p50": 0.3231,
+      "p95": 0.4751
+     },
+     "value": 0.7149,
+     "compoundsLikelyToDiffer": 110,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b27:c028:003#r06"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:32585887"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:42122882"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000134589:hot water infusion (tea) vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000134589"
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771"
+      }
+     ]
+    },
+    {
+     "position": 5,
+     "candidateId": "wfo-0000968296|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D014947",
+      "label": "Wounds and Injuries"
+     },
+     "indications": [
+      "D006470",
+      "D014947"
+     ],
+     "gap": {
+      "p5": 0.0916,
+      "p50": 0.1942,
+      "p95": 0.3152
+     },
+     "value": 0.3117,
+     "compoundsLikelyToDiffer": 17,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r04"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r06"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r04"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r06"
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17324258"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:fresh juice vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296"
+      }
+     ]
+    },
+    {
+     "position": 6,
+     "candidateId": "wfo-0001006654|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0001006654",
+     "species": "Agrimonia eupatoria",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D000038",
+      "D004427",
+      "D006073"
+     ],
+     "gap": {
+      "p5": 0.0605,
+      "p50": 0.105,
+      "p95": 0.1734
+     },
+     "value": 0.2059,
+     "compoundsLikelyToDiffer": 7,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:008#r06"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:010#r02"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:004#r02"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:006#r06"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0001006654:fresh juice vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0001006654"
+      }
+     ]
+    },
+    {
+     "position": 7,
+     "candidateId": "wfo-0000329771|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004415",
+      "label": "Dyspepsia"
+     },
+     "indications": [
+      "D004415"
+     ],
+     "gap": {
+      "p5": 0.0584,
+      "p50": 0.0993,
+      "p95": 0.1601
+     },
+     "value": 0.1987,
+     "compoundsLikelyToDiffer": 11,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r05"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r06"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:powder taken whole vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771"
+      }
+     ]
+    },
+    {
+     "position": 8,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07"
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07"
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract"
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "sensitivity": [
+  {
+   "weight": "alpha",
+   "factor": 0.5,
+   "value": 0.5,
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000329771|powder taken whole|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000329771|decoction in wine|modern methanol extract"
+   ]
+  },
+  {
+   "weight": "alpha",
+   "factor": 2.0,
+   "value": 2.0,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "beta_class",
+   "factor": 0.5,
+   "value": 0.1,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "beta_class",
+   "factor": 2.0,
+   "value": 0.4,
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000329771|powder taken whole|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000329771|decoction in wine|modern methanol extract"
+   ]
+  },
+  {
+   "weight": "beta_indication",
+   "factor": 0.5,
+   "value": 0.1,
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000329771|powder taken whole|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000329771|decoction in wine|modern methanol extract"
+   ]
+  },
+  {
+   "weight": "beta_indication",
+   "factor": 2.0,
+   "value": 0.4,
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000402430|fresh juice|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000402430|cold water infusion|modern methanol extract"
+   ]
+  },
+  {
+   "weight": "beta_prep",
+   "factor": 0.5,
+   "value": 0.1,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "beta_prep",
+   "factor": 2.0,
+   "value": 0.4,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "gamma",
+   "factor": 0.5,
+   "value": 0.25,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "gamma",
+   "factor": 2.0,
+   "value": 1.0,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  }
+ ],
+ "ineligible": [
+  {
+   "candidateId": "wfo-0000402430|decoction in wine|decoction in water",
+   "species": "Raphanus sativus",
+   "historicalPreparation": "decoction in wine",
+   "modernComparator": "decoction in water",
+   "reason": "0 compounds likely to differ (needs at least 1)"
+  }
+ ],
+ "excludedToxic": [
+  {
+   "candidateId": "wfo-0000755919|fresh juice|modern methanol extract",
+   "species": "Allium cepa",
+   "historicalPreparation": "fresh juice",
+   "modernComparator": "modern methanol extract",
+   "toxicity": "toxic_reported"
+  },
+  {
+   "candidateId": "wfo-0000755919|steeped in vinegar|decoction in water",
+   "species": "Allium cepa",
+   "historicalPreparation": "steeped in vinegar",
+   "modernComparator": "decoction in water",
+   "toxicity": "toxic_reported"
+  },
+  {
+   "candidateId": "wfo-0000600655|fresh juice|modern methanol extract",
+   "species": "Chelidonium majus",
+   "historicalPreparation": "fresh juice",
+   "modernComparator": "modern methanol extract",
+   "toxicity": "toxic_reported"
+  },
+  {
+   "candidateId": "wfo-0000600655|infused oil|modern methanol extract",
+   "species": "Chelidonium majus",
+   "historicalPreparation": "infused oil",
+   "modernComparator": "modern methanol extract",
+   "toxicity": "toxic_reported"
+  },
+  {
+   "candidateId": "wfo-0000600655|powder taken whole|modern methanol extract",
+   "species": "Chelidonium majus",
+   "historicalPreparation": "powder taken whole",
+   "modernComparator": "modern methanol extract",
+   "toxicity": "toxic_reported"
+  },
+  {
+   "candidateId": "wfo-0000212813|decoction in water|modern methanol extract",
+   "species": "Glycyrrhiza glabra",
+   "historicalPreparation": "decoction in water",
+   "modernComparator": "modern methanol extract",
+   "toxicity": "toxic_reported"
+  },
+  {
+   "candidateId": "wfo-0000212813|powder taken whole|modern methanol extract",
+   "species": "Glycyrrhiza glabra",
+   "historicalPreparation": "powder taken whole",
+   "modernComparator": "modern methanol extract",
+   "toxicity": "toxic_reported"
+  },
+  {
+   "candidateId": "wfo-0001021850|decoction in wine|modern methanol extract",
+   "species": "Hyoscyamus niger",
+   "historicalPreparation": "decoction in wine",
+   "modernComparator": "modern methanol extract",
+   "toxicity": "toxic_reported"
+  }
+ ],
+ "default": "exclude:k8"
+}

@@ -4,7 +4,9 @@ Phase 8 picks a small panel of re-tests for a lab: candidates where the historic
 comparator are predicted to extract different compound profiles. It is an optimisation over **model outputs**, so the
 panel is a list of hypotheses worth re-testing, never a claim that a preparation works or is safe.
 
-This file defines the problem. The numbers (pool size, optima, solver metrics) are written by scripts to
+This file defines the problem (rule v1). The displayed panel uses **rule v2**, pre-registered in
+[QUBO_v2_RULE.md](QUBO_v2_RULE.md): eligibility (positive robust gap, at least one compound likely to differ) and at
+most one entry per species, with the weights unchanged. The numbers (pool size, optima, solver metrics) are written by scripts to
 [QUANTUM_RESULTS.md](QUANTUM_RESULTS.md) and `data/interim/m8/`. Settings are in
 [config/m8_qubo.toml](../config/m8_qubo.toml); every weight there was fixed before any solver was compared.
 

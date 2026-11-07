@@ -8,10 +8,11 @@ import { ATLAS_CHIPS, plantKeyOf, recipeMatches } from '@/lib/data/selectors/atl
 import { toReportingGap } from '@/lib/data/selectors/gap';
 import { coverage } from '@/lib/data/selectors/home';
 import { choiceOf, driverOf, labQueryString, parseLabQuery, toEstimates } from '@/lib/data/selectors/lab';
-import { toLabPlan } from '@/lib/data/selectors/planner';
+import { getPanel } from '@/lib/data/assemble';
+import { labLinkFor } from '@/lib/data/selectors/labPanel';
 import { toPlate } from '@/lib/data/selectors/plates';
 import { familyOfKey, labHrefOfKey } from '@/lib/data/selectors/prepKey';
-import { getRecipeSummaries, getHypotheses } from '@/lib/data/assemble';
+import { getRecipeSummaries } from '@/lib/data/assemble';
 import { modernLabel, toHypothesis } from '@/lib/data/selectors/hypotheses';
 import { toValidation } from '@/lib/data/selectors/methods';
 import { extractedFields, illegibleSpans, nameResolution, preparationOf, recipeSlug, toRecipe } from '@/lib/data/selectors/recipes';
@@ -143,12 +144,23 @@ describe('v2 pages: evidence gap, planner, plates, atlas', () => {
       else expect(r.sensitivity && !('notComputed' in r.sensitivity) ? r.sensitivity.point : null).toBe(s.value);
     }
   });
-  it('planner: toxic-reported leads are withheld and named; nothing is invented', () => {
-    const { plan, withheld, planned } = toLabPlan(getHypotheses());
-    expect(withheld.every((h) => h.toxicity.category === 'toxic_reported')).toBe(true);
-    expect(planned.some((h) => h.toxicity.category === 'toxic_reported')).toBe(false);
-    expect(plan.items.map((i) => i.rank)).toEqual(planned.map((_, i) => i + 1));
-    for (const it of plan.items) expect([it.quantumScore, it.readout, it.effort, it.rankRange]).toEqual([null, null, null, null]);
+  it('planner: the displayed panel (v2) never plans a toxic-reported plant, lists the excluded ones, one entry per plant', () => {
+    const v = getPanel();
+    expect(v).not.toBeNull();
+    const lp = L.loadLabPanel()!;
+    expect(v!.ruleVersion).toBe('v2');
+    for (const z of v!.sizes) {
+      expect(z.entries.some((e) => e.toxicity.category === 'toxic_reported')).toBe(false);
+      expect(new Set(z.entries.map((e) => e.speciesId)).size).toBe(z.entries.length);      // at most one per plant
+      expect(z.entries.every((e) => (e.gap.low ?? 0) > 0 && e.differs >= 1)).toBe(true);   // v2 eligibility
+      expect(z.entries.map((e) => e.position)).toEqual(z.entries.map((_, i) => i + 1));
+    }
+    expect(v!.excludedToxic.length).toBe(lp.excludedToxic.length);
+    expect(v!.sizes.map((z) => z.k)).toEqual([4, 6, 8]);
+    // the original v1 result stays visible, and its coverage-only entries are flagged from the data
+    expect(v!.original!.entries.filter((e) => e.coverageOnly).map((e) => e.id)).toEqual(lp.original!.panel.filter((c) => c.compoundsLikelyToDiffer === 0).map((c) => c.candidateId));
+    expect(labLinkFor('Glycyrrhiza glabra', 'decoction in water', true)).toBeNull();   // acceptance check 5
+    expect(v!.benchmark.every((r) => r.ar == null || (r.ar >= 0 && r.ar <= 1 + 1e-9))).toBe(true);
   });
   it('plates: an image only when sourced, with licence and host; status never claims a person confirmed it', () => {
     for (const p of L.loadPlates().map(toPlate)) {

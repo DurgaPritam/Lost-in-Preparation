@@ -16,7 +16,7 @@ import { coverage } from './selectors/home';
 import { hypothesisId, toHypothesis } from './selectors/hypotheses';
 import { labHref, type LabHeat, type LabSolvent } from './selectors/lab';
 import { toValidation } from './selectors/methods';
-import { toLabPlan } from './selectors/planner';
+import { quantumSummary, toPanelView } from './selectors/labPanel';
 import { plateFor, toPlate } from './selectors/plates';
 import { groupSpecies, recipeSlug, toRecipe, toSummary } from './selectors/recipes';
 
@@ -142,8 +142,17 @@ export function getHypotheses() {
     return toHypothesis(h, { index: idx, audit: L.loadAudit(), profiles: e ? L.loadProfile(e.file) : [], rankedOf: hs.length });
   });
 }
+/** SITE: the Planner shows the re-test panel (lab_panel.json, P40 + v2), not the hypothesis list (design proposal approved 2026-11-07). */
+export function getPanel() {
+  const lp = L.loadLabPanel();
+  if (!lp) return null;
+  const idx = L.loadProfileIndex();
+  const ids = new Set(recipes().map((r) => r.id));
+  return toPanelView(lp, (speciesId) => toxicityFromIndex(idx.find((x) => x.speciesId === speciesId)),
+    (rid) => (ids.has(rid) ? `/recipes/${recipeSlug(rid)}/` : null));
+}
 export function getPlanner() {
-  return { ...toLabPlan(getHypotheses()), heuristics: HEURISTICS };
+  return { panel: getPanel(), heuristics: HEURISTICS };
 }
 
 /* ───────── Case study ───────── */
@@ -176,13 +185,13 @@ export function getCase() {
   const h = hs.find((x) => x.speciesId === c.speciesId && x.indication === c.indication.label) ?? null;
   const e = L.loadProfileIndex().find((x) => x.speciesId === c.speciesId);
   const rec = recipes().find((r) => r.id === c.primaryRecipeId) ?? null;
-  const planner = toLabPlan(hs);
+  const panel = getPanel();
   return {
     ...caseView(c, L.loadRecipes()), taxon: e?.acceptedName ?? c.speciesId, toxicity: toxicityFromIndex(e),
     plate: plateFor(plates(), e?.acceptedName), recipe: rec, recipeHref: rec ? `/recipes/${recipeSlug(rec.id)}/` : null,
     confidence: rec ? confidences()[rec.source] : null, hypothesis: h,
-    plannerRank: h ? planner.plan.items.find((i) => i.hypothesisId === h.id)?.rank ?? null : null,
-    withheldFromPlanner: h ? planner.withheld.some((x) => x.id === h.id) : false,
+    plannerRank: panel?.sizes.find((z) => z.k === panel.defaultK)?.entries.find((x) => x.speciesId === c.speciesId)?.position ?? null,
+    withheldFromPlanner: !!panel?.excludedToxic.some((x) => x.species === e?.acceptedName),
     before: figure(c.speciesId, c.before.faithful, c.before.modern),
     after: figure(c.speciesId, c.after.faithful, c.after.modern),
     toxicReported: toxicityCategory(e?.toxicityFlag) === 'toxic_reported',
@@ -234,6 +243,7 @@ export function getDocs() {
   const studies = new Set(L.loadAudit().flatMap((r) => r.studies.map((s) => s.pmid))).size;
   return {
     validation: getValidation(), sources: getSources(), audit: getAudit(), heuristics: HEURISTICS, confidences: confidences(),
+    quantum: (() => { const p = getPanel(); return p ? { ...quantumSummary(p), winners: p.winners, noise: p.noise, hardware: p.hardware, noiseModel: p.noiseModel } : null; })(),
     coverage: coverage(L.loadSpecies(), L.loadRecipes(), studies), modelledSpecies: L.loadProfileIndex().length,
   };
 }

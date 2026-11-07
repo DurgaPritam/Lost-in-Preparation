@@ -35,6 +35,7 @@ export type ContractMetric = ContractMetrics['logPError'][string];
 export type ContractSource = z.infer<typeof G.sources.schema>[number];
 export type ContractCase = z.infer<typeof G.caseStudies.schema>[number];
 export type ContractPlate = z.infer<typeof G.plates.schema>[number];
+export type ContractLabPanel = z.infer<typeof G.labPanel.schema>;
 
 export const loadSources = () => parse('sources.json', G.sources.schema);
 export const loadRecipes = () => parse('recipes.json', G.recipes.schema);
@@ -52,8 +53,7 @@ export const loadEngineSpecies = (speciesId: string) => parse(`engine/${speciesI
 export const loadEngineParity = () => parse('engine/parity.json', G.engineParity.schema);
 // v1.8 (P39): botanical plates
 export const loadPlates = () => parse('plates.json', G.plates.schema);
-// v1.9 (P40, proposed): the recommended re-test panel and the Phase 8 benchmark. Validated at build; no page reads it
-// until the Lab Planner design is approved.
+// v1.9 (P40): the recommended re-test panel and the Phase 8 benchmark (Lab Planner, Methods & data).
 export const loadLabPanel = () => (existsSync(path.join(SITE_DATA, 'lab_panel.json')) ? parse('lab_panel.json', G.labPanel.schema) : null);
 
 /** Every contract file, for the pre-build validation script and the unit tests. */

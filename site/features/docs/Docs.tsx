@@ -14,6 +14,7 @@ import { Tabs } from '@/components/base/Tabs';
 import { Taxon } from '@/components/base/Taxon';
 import { IconConcern, IconError, IconPending, IconValidated } from '@/components/icons';
 import { EvidenceStatusBadge } from '@/components/honesty/EvidenceStatusBadge';
+import Link from '@/components/base/Link';
 import { ExtractionDetectionExplainer } from '@/components/honesty/ExtractionDetectionExplainer';
 import { HeuristicMarker } from '@/components/honesty/HeuristicMarker';
 import { LikelihoodBar } from '@/components/honesty/LikelihoodBar';
@@ -28,7 +29,7 @@ import { UnknownValue } from '@/components/honesty/UnknownValue';
  * An outcome recorded but not graded pass/fail reads "Outcome not graded".
  */
 const TOC = [
-  ['overview', 'Overview'], ['pipeline', 'Pipeline'], ['metrics', 'How accurate each step is'], ['findings', 'Honest findings'],
+  ['overview', 'Overview'], ['pipeline', 'Pipeline'], ['metrics', 'How accurate each step is'], ['findings', 'Honest findings'], ['quantum', 'Where quantum helps'],
   ['preregistered', 'Pre-registered checks'], ['heuristics', 'Heuristics'], ['studies', 'Audited studies'], ['limitations', 'Limitations'],
   ['sources', 'Sources & licences'], ['downloads', 'Downloads'],
 ] as const;
@@ -134,6 +135,13 @@ interface MetricLike { status: string; value?: number | null; low?: number | nul
 export interface DocsProps {
   validation: Validation; sources: SourcesFile; heuristics: Heuristic[]; confidences: Record<SourceWork, SourceConfidence>;
   coverage: Coverage; modelledSpecies: number;
+  /** SITE: Phase 8 summary from site-data/lab_panel.json (null when absent). */
+  quantum: {
+    qaoaAr: [number, number] | null; randomAr: [number, number] | null; sizes: number[];
+    bestRatio: { n: number; solver: string; p: number | null; pOptimum: number; uniform: number }[];
+    winners: Record<string, string>; noise: { variant: string; p: number; twoQubitError: number; pOptimum: number; feasibility: number }[];
+    hardware: Record<string, string>; noiseModel: string;
+  } | null;
   audit: {
     v1: { breakdowns: AuditBreakdown[]; units: number; rows: number }; v2: { breakdowns: AuditBreakdown[]; units: number; rows: number };
     headline: MetricLike; auditV2: { label: string; overallFidelity: MetricLike; unknownUnits: number; noModernAnalogueUnits: number; eligibleStudies: number; pairsWithRecords: number; pairs: number } | null;
@@ -145,7 +153,7 @@ function Share({ m, what }: { m: MetricLike | null | undefined; what: string }) 
   return <span className="num font-mono">{pct(m.value)} <span className="text-ink-muted">({Math.round(m.value * m.n)} of {m.n} {what}; 95% interval {ciText(m.low, m.high)})</span></span>;
 }
 
-export function Docs({ validation: v, sources, heuristics, confidences, coverage, modelledSpecies, audit }: DocsProps) {
+export function Docs({ validation: v, sources, heuristics, confidences, coverage, modelledSpecies, audit, quantum }: DocsProps) {
   const [active, setActive] = useState<string>('overview');
   const [tab, setTab] = useState('v2');
   useEffect(() => {
@@ -262,6 +270,54 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
                 <p className="m-0 break-words text-ink">{pc.explanation}</p>
               </article>
             ))}
+          </Section>
+
+          <Section id="quantum" title="Where quantum helps, and where it doesn’t" lead="Two places in this project could use quantum methods. In both, a classical method did better at our scale.">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              {(() => {
+                const c = v.comparisons.find((x) => x.id === 'logp');
+                if (!c) return null;
+                return (
+                  <article className="flex flex-col gap-3 rounded-xl border border-border bg-surface p-5 shadow-1">
+                    <div className="flex flex-wrap items-center gap-2"><EvidenceStatusBadge wording="validation" status={c.evidence} size="sm" /></div>
+                    <h3 className="m-0 text-lg font-semibold text-ink">Quantum chemistry for the descriptor</h3>
+                    <p className="m-0 text-sm text-ink-muted">GFN2-xTB (semi-empirical quantum chemistry) against RDKit’s Crippen logP, both compared with measured logP values.</p>
+                    <ul className="m-0 flex list-none flex-col gap-1 p-0 text-sm">
+                      {c.methods.map((m) => <li key={m.name} className="flex flex-wrap justify-between gap-2"><span>{m.name}</span><MetricText v={m.value} /></li>)}
+                    </ul>
+                    <p className="m-0 font-semibold text-ink">{c.finding}</p>
+                    <p className="m-0 text-sm text-ink-muted">{c.decision}</p>
+                  </article>
+                );
+              })()}
+              {quantum && (
+                <article className="flex flex-col gap-3 rounded-xl border border-border bg-surface p-5 shadow-1">
+                  <div className="flex flex-wrap items-center gap-2"><EvidenceStatusBadge wording="validation" status="benchmark" size="sm" /></div>
+                  <h3 className="m-0 text-lg font-semibold text-ink">Quantum optimisation for the re-test panel</h3>
+                  <p className="m-0 text-sm text-ink-muted">QAOA with a penalty mixer and with an XY mixer (depths 1–3), simulated, against the exact solver on the same instances (n = {quantum.sizes.join(', ')}).</p>
+                  {quantum.qaoaAr && quantum.randomAr && (
+                    <p className="m-0 text-sm text-ink">Approximation ratio: exact solver 1.00; QAOA {quantum.qaoaAr[0].toFixed(2)}–{quantum.qaoaAr[1].toFixed(2)}; a random feasible panel {quantum.randomAr[0].toFixed(2)}–{quantum.randomAr[1].toFixed(2)}.</p>
+                  )}
+                  <ul className="m-0 flex list-none flex-col gap-1 p-0 text-sm">
+                    {quantum.bestRatio.map((b) => <li key={b.n}>n = {b.n}: best P(optimum) {b.pOptimum.toFixed(3)} ({b.solver.replace('qaoa-', '')} mixer, p = {b.p}) vs {b.uniform.toFixed(3)} for a uniform random panel ({(b.pOptimum / b.uniform).toFixed(2)}×)</li>)}
+                  </ul>
+                  {quantum.noise.length > 0 && (
+                    <p className="m-0 text-sm text-ink-muted">Under noise ({quantum.noiseModel}): {[...new Set(quantum.noise.map((r) => r.twoQubitError))].map((e) => `${(e * 100).toFixed(1)}% two-qubit error → best P(optimum) ${Math.max(...quantum.noise.filter((r) => r.twoQubitError === e).map((r) => r.pOptimum)).toFixed(3)}`).join('; ')}.</p>
+                  )}
+                  <p className="m-0 text-sm text-ink-muted">Hardware: {quantum.hardware.ibmQuantum}.</p>
+                  <Link href="/planner/#bench" className="w-max text-sm text-brand underline">The full benchmark on the Lab Planner</Link>
+                </article>
+              )}
+            </div>
+            <div className="flex max-w-prose flex-col gap-2 text-sm text-ink-muted">
+              <p className="m-0 font-semibold text-ink">What would have to change for quantum to help here</p>
+              <ul className="m-0 flex list-disc flex-col gap-1 pl-5">
+                <li>Problems far beyond what exact classical solvers handle; ours solve in seconds.</li>
+                <li>Ansätze that respect every constraint natively, or better parameter training than these restarts found.</li>
+                <li>Two-qubit error rates well below those in the sweep, at circuit depths of hundreds of gates.</li>
+              </ul>
+              <p className="m-0">The contribution is the formulation, the penalty-versus-XY comparison, the noise analysis and a reproducible pipeline; no quantum advantage is claimed.</p>
+            </div>
           </Section>
 
           <Section id="preregistered" title="Pre-registered checks" lead="Criteria fixed before the results were seen. Outcomes are reported as they came out, including fails.">

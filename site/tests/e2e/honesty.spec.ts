@@ -7,7 +7,11 @@ import { ROUTES } from './routes';
  *  rule covered by the unit tests; 11 and 14 are in a11y.spec.ts.) */
 const BANNED = /\b(works|safe|effective|cures?|treats|heals|recommended)\b/i;
 /** Sentences quoted from the data (the hypotheses' own caveats, which negate these words) are excluded from the copy check. */
-const QUOTED: string[] = JSON.parse(readFileSync(path.resolve(__dirname, '../../../site-data/hypotheses.json'), 'utf8')).flatMap((h: { caveats: string[] }) => h.caveats);
+const QUOTED: string[] = [
+  ...JSON.parse(readFileSync(path.resolve(__dirname, '../../../site-data/hypotheses.json'), 'utf8')).flatMap((h: { caveats: string[] }) => h.caveats),
+  // the re-test panel's own caveats (lab_panel.json), which negate the same words
+  ...((p: { panel: { caveats: string[] }[] }) => p.panel.flatMap((c) => c.caveats))(JSON.parse(readFileSync(path.resolve(__dirname, '../../../site-data/lab_panel.json'), 'utf8'))),
+];
 
 for (const r of ROUTES) {
   test(`acceptance · ${r.path}`, async ({ page }) => {
@@ -51,7 +55,7 @@ test('5: a plant with toxicity reported gets the notice and never a Lab link, a 
     await expect(page.locator('main a[href^="/lab"]')).toHaveCount(0);
   }
   await page.goto('/planner/');
-  await expect(page.getByText(/not offered for planning because toxicity is reported/)).toBeVisible();
+  await expect(page.getByText(/not offered for planning because toxicity is reported/i)).toBeVisible();
   await expect(page.locator('main ol li h3', { hasText: 'Glycyrrhiza glabra' })).toHaveCount(0);
 });
 
@@ -74,10 +78,12 @@ test('8: the Lab never shows a profile for a combination the model has no estima
   await expect(page.locator('main').getByRole('img', { name: /Predicted extraction/ })).toHaveCount(0);
 });
 
-test('9: the quantum priority is "Coming in this release", never 0', async ({ page }) => {
+test('9: the quantum benchmark is labelled as a benchmark, never a validation, and claims no advantage', async ({ page }) => {
   await page.goto('/planner/');
-  await expect(page.getByText('Coming in this release').first()).toBeVisible();
-  const dd = await page.locator('dt:has-text("Quantum priority") + dd').allInnerTexts();
-  expect(dd.length).toBeGreaterThan(0);
-  for (const t of dd) expect(t).toContain('Coming in this release');
+  await expect(page.getByRole('button', { name: 'Evidence: Benchmark against exact optimum' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Quantum benchmark' })).toBeVisible();
+  await expect(page.locator('main')).not.toContainText(/quantum advantage(?! is claimed)/i);
+  await page.goto('/docs/');
+  await expect(page.locator('#quantum').getByRole('button', { name: 'Evidence: Benchmark against exact optimum' })).toBeVisible();
+  await expect(page.locator('#quantum')).toContainText('no quantum advantage is claimed');
 });

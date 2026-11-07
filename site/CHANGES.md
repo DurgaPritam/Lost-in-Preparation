@@ -95,6 +95,20 @@ This file lists every change I could not avoid, and every addition.
 - **Evidence gap:** under each row, a line labelled "AI-assisted sensitivity check (provisional)" gives the share the row would have if the extractor's error rates from the AI check applied, with its interval, plus the counts on the 40 checked studies by the extractor and by the AI coder. Filtration reads "not computed", because it was not in the AI check. The frozen bar, numbers and interval are unchanged. The table fallback has the same column.
 - **Köhler plates:** described by the series' publication span (1883–1898) instead of 1887, because no per-plate edition date could be read (see docs/IMAGE_CREDITS.md).
 
+## Lab Planner and "Where quantum helps" (proposal approved 2026-11-07, docs/LAB_PLANNER_PROPOSAL.md)
+
+- **Lab Planner:** the "Coming in this release" state is replaced by the re-test panel from `site-data/lab_panel.json` (contract v1.9, P40 with its v2 amendment).
+  - **Which panel:** the displayed panel is rule v2 (pre-registered, docs/QUBO_v2_RULE.md). The original v1 result stays visible below it, with its notes (slot 8 entered on coverage alone).
+  - **Layout:** the design's Planner sections and components are kept: a feature card with a panel-size SegmentedControl, a coverage strip, list items with MarkHist/MarkMod, LikelihoodBar, ToxicityBadge and a HeuristicMarker for "compounds likely to differ", the evidence trail Drawer, and a ChartTable fallback.
+  - **Toxic plants:** there is no toxic toggle. Plants with toxicity reported are excluded and listed in a plain note.
+  - **Heading:** "Suggested panel", because "recommended" is on the honesty copy rule's list.
+- **Quantum benchmark (on the Planner):** an n SegmentedControl, the winner sentence for that size, bars for approximation ratio and P(optimum) with a uniform-random reference line, a ChartTable fallback, and a noise DataTable.
+  - **Bars:** token fills only. The bars are decorative (`aria-hidden`), because each value is printed as text beside its bar.
+  - **Label:** "Benchmark against exact optimum".
+- **Methods & data:** a new section, `#quantum`, "Where quantum helps, and where it doesn't". It has two cards (xTB vs Crippen logP; QAOA vs the exact solver), filled entirely from metrics.json and lab_panel.json, and a closing list.
+- **`EvidenceStatusBadge`:** a fifth, neutral validation word, `benchmark` ("Benchmark against exact optimum"), drawn with a plain border, ink-muted text and the info icon. It measures methods; it is not a validation.
+- **Case study:** "withheld from the Planner" now comes from the panel's excluded-toxic list.
+
 ## Token lint
 
 `.eslintrc.json` enforces the v2 tokens over `app/`, `components/`, `features/`, `lib/`, `scripts/` and `tests/`. It bans hex, `rgb()`/`hsl()` and raw pixel values in class names and styles, and Tailwind's default palette names. One exception: `underline-offset-[6px]`, which the handoff's own Atlas screen uses for the passage spans.

@@ -4,7 +4,7 @@ Two variants on the same instance:
   penalty  |+>^n start, X mixer, cost = the full QUBO energy E (cardinality penalty P included)
   xy       Dicke |D(n,k)> start (Bärtschi & Eidenbenz 2019, split-and-cyclic-shift), ring XY mixer
            exp(-i beta (XX+YY)/2) on (even, odd, wrap) pairs, which preserves Hamming weight; cost = -f (+ the toxic
-           penalty when at most one toxic is allowed). The cardinality penalty is constant on the weight-k subspace,
+           penalty when at most one toxic is allowed, + the species penalty under v2). The cardinality penalty is constant on the weight-k subspace,
            so it is left out.
 Bit order is Qiskit's: bit i of a basis index = qubit i = x_i. With x = (1 - z)/2 the cost is an Ising Hamiltonian
 sum_i a_i Z_i + sum_{i<j} b_ij Z_i Z_j, applied as RZ(2 gamma a_i) and RZZ(2 gamma b_ij), after dividing by its
@@ -52,7 +52,8 @@ def cost_qubo(inst: Instance, variant: str) -> np.ndarray:
     for i in range(n):
         Q[i, i] = -inst.h[i]
     for i, j in itertools.combinations(range(n), 2):
-        Q[i, j] = -inst.q[i, j] + (inst.P_tox if inst.toxic_rule == "at_most_one" and inst.toxic[i] and inst.toxic[j] else 0.0)
+        Q[i, j] = (-inst.q[i, j] + (inst.P_tox if inst.toxic_rule == "at_most_one" and inst.toxic[i] and inst.toxic[j] else 0.0)
+                   + (inst.P_sp if inst.per_species == 1 and inst.species[i] == inst.species[j] else 0.0))
     return Q
 
 

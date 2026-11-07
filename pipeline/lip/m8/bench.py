@@ -28,7 +28,7 @@ from . import qaoa as A
 from . import qubo as Q
 
 OUT = INTERIM / "m8"
-FIG = ROOT / "docs" / "figures" / "m8"
+FIGROOT = ROOT / "docs" / "figures" / "m8"
 
 
 def _versions() -> dict:
@@ -156,29 +156,46 @@ def panel_entry(c: dict, rank: int, inst: Q.Instance, vmax: float) -> dict:
                               {"kind": "species", "ref": c["speciesId"]}]}
 
 
-def panel(cands: list[dict], cfg: dict, vmax: float) -> dict:
-    """The recommended panel from the exact solver on the real pool, for both toxic rules and k = 4, 6, 8, plus the
-    weight sensitivity (each weight x0.5 and x2, others fixed) for the default configuration."""
+def panel(cands: list[dict], cfg: dict, vmax: float, version: str = "v1") -> dict:
+    """The recommended panel from the exact solver on the real pool, for k = 4, 6, 8, plus the weight sensitivity
+    (each weight x0.5 and x2, others fixed) for the default configuration.
+    v1: toxic rules exclude and at_most_one. v2 (docs/QUBO_v2_RULE.md): eligible candidates only, toxic excluded, at
+    most one per species; the same with at most two per species as a sensitivity check (ILP only)."""
     w0 = {k: cfg["objective"][k] for k in ("alpha", "beta_class", "beta_indication", "beta_prep", "gamma")}
     margin = cfg["objective"]["penalty_margin"]
-    out = {"weights": w0, "panels": {}, "sensitivity": []}
-    for rule in ("exclude", "at_most_one"):
-        pool = [c for c in cands if not (rule == "exclude" and c["toxic"])]
+    rule = cfg.get("rule")
+    out = {"ruleVersion": version, "weights": w0, "panels": {}, "sensitivity": []}
+    if rule:
+        out["ineligible"] = [{"candidateId": c["id"], "species": c["species"], "historicalPreparation": c["historical"],
+                              "modernComparator": c["modern"], "reason": Pm.eligibility(c, cfg)} for c in cands if Pm.eligibility(c, cfg)]
+        cands = [c for c in cands if not Pm.eligibility(c, cfg)]
+        out["excludedToxic"] = [{"candidateId": c["id"], "species": c["species"], "historicalPreparation": c["historical"],
+                                 "modernComparator": c["modern"], "toxicity": c["toxicity"]} for c in cands if c["toxic"]]
+        configs = [("exclude", rule["per_species"], ""), ("exclude", rule["per_species_sensitivity"], ":perSpecies2")]
+    else:
+        configs = [("exclude", None, ""), ("at_most_one", None, "")]
+    for toxic_rule, per_sp, suffix in configs:
+        pool = [c for c in cands if not (toxic_rule == "exclude" and c["toxic"])]
         for k in cfg["instances"]["ks"]:
-            inst = Q.build(pool, k, w0, vmax, rule, margin)
+            inst = Q.build(pool, k, w0, vmax, toxic_rule, margin, per_sp)
+            key = f"{toxic_rule}:k{k}{suffix}"
+            if Q.max_selectable(inst) < k:
+                out["panels"][key] = {"toxicRule": toxic_rule, "k": k, "perSpecies": per_sp, "poolSize": len(pool), "infeasible": True}
+                continue
             ex = Q.ilp(inst, "max")
             sel = [pool[i] for i in np.flatnonzero(ex["x"])]
             sel.sort(key=lambda c: -c["gapP5"])
-            out["panels"][f"{rule}:k{k}"] = {"toxicRule": rule, "k": k, "poolSize": len(pool), "objective": ex["f"], "status": ex["status"],
-                                              "coverage": Q.coverage_counts(pool, ex["x"]),
-                                              "candidates": [panel_entry(c, i + 1, inst, vmax) for i, c in enumerate(sel)]}
+            out["panels"][key] = {"toxicRule": toxic_rule, "k": k, "perSpecies": per_sp, "poolSize": len(pool), "objective": ex["f"], "status": ex["status"],
+                                  "coverage": Q.coverage_counts(pool, ex["x"]),
+                                  "candidates": [panel_entry(c, i + 1, inst, vmax) for i, c in enumerate(sel)]}
     default = f"{cfg['pool']['toxic']}:k{cfg['objective']['k']}"
     base_ids = {c["candidateId"] for c in out["panels"][default]["candidates"]}
     pool = [c for c in cands if not (cfg["pool"]["toxic"] == "exclude" and c["toxic"])]
+    per_sp = rule["per_species"] if rule else None
     for wname in w0:
         for fct in cfg["sensitivity"]["factors"]:
             w = {**w0, wname: w0[wname] * fct}
-            inst = Q.build(pool, cfg["objective"]["k"], w, vmax, cfg["pool"]["toxic"], margin)
+            inst = Q.build(pool, cfg["objective"]["k"], w, vmax, cfg["pool"]["toxic"], margin, per_sp)
             ex = Q.ilp(inst, "max")
             ids = {pool[i]["id"] for i in np.flatnonzero(ex["x"])}
             out["sensitivity"].append({"weight": wname, "factor": fct, "value": w[wname], "jaccardWithDefault": round(len(ids & base_ids) / len(ids | base_ids), 4),
@@ -191,6 +208,7 @@ def figures(bench: dict) -> list[str]:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
+    FIG = FIGROOT / bench["ruleVersion"]
     FIG.mkdir(parents=True, exist_ok=True)
     files = []
     rows = [r for r in bench["results"] if "classical" in r]
@@ -264,12 +282,15 @@ def figures(bench: dict) -> list[str]:
     return [str(f.relative_to(ROOT)) for f in files]
 
 
-def run(qaoa_on: bool = True) -> dict:
+def run(qaoa_on: bool = True, version: str = "v2") -> dict:
     from qiskit.transpiler import CouplingMap
-    cfg = Pm.config()
+    cfg = Pm.config(version)
     data = json.loads(Pm.OUT.read_text())
-    cands = data["candidates"]
-    vmax = max(c["gapP5"] for c in cands)
+    allc = data["candidates"]
+    vmax = max(c["gapP5"] for c in allc)          # normalised by the whole pool, as in v1 (weights unchanged)
+    cands = [c for c in allc if not Pm.eligibility(c, cfg)]
+    per_sp = cfg["rule"]["per_species"] if cfg.get("rule") else None
+    btox = cfg["rule"]["benchmark_toxic"] if cfg.get("rule") else "at_most_one"
     w = {k: cfg["objective"][k] for k in ("alpha", "beta_class", "beta_indication", "beta_prep", "gamma")}
     margin = cfg["objective"]["penalty_margin"]
     heavy = CouplingMap.from_heavy_hex(5)
@@ -279,13 +300,14 @@ def run(qaoa_on: bool = True) -> dict:
         for k in cfg["instances"]["ks"]:
             if k >= I["n"]:
                 continue
-            inst = Q.build(I["cands"], k, w, vmax, "at_most_one", margin)
-            nontox = int((~inst.toxic).sum())
-            if nontox + min(1, int(inst.toxic.sum())) < k:   # no selection can satisfy "at most one toxic"
-                results.append({"instance": I["name"], "n": I["n"], "k": k, "seed": I["seed"], "ids": I["ids"], "toxicRule": "at_most_one",
-                                "toxicInInstance": int(inst.toxic.sum()), "infeasible": f"only {nontox} non-toxic candidates: no {k}-panel has at most one toxic"})
+            inst = Q.build(I["cands"], k, w, vmax, btox, margin, per_sp)
+            ms = Q.max_selectable(inst)
+            if ms < k:   # no selection satisfies the toxic (and species) limits
+                results.append({"instance": I["name"], "n": I["n"], "k": k, "seed": I["seed"], "ids": I["ids"], "toxicRule": btox, "perSpecies": per_sp,
+                                "toxicInInstance": int(inst.toxic.sum()),
+                                "infeasible": f"the largest panel the limits allow has {ms} entries: no {k}-panel is feasible"})
                 continue
-            row = {"instance": I["name"], "n": I["n"], "k": k, "seed": I["seed"], "ids": I["ids"], "toxicRule": "at_most_one",
+            row = {"instance": I["name"], "n": I["n"], "k": k, "seed": I["seed"], "ids": I["ids"], "toxicRule": btox, "perSpecies": per_sp,
                    "toxicInInstance": int(inst.toxic.sum()), "P": inst.P, "P_tox": inst.P_tox, "classical": classical(inst, cfg)}
             fo, fm = row["classical"]["exact"]["f"], row["classical"]["fMin"]
             if I["n"] <= 20:
@@ -298,20 +320,22 @@ def run(qaoa_on: bool = True) -> dict:
                 rng = random.Random(cfg["instances"]["seed"])
                 vals = []
                 n_, idx = I["n"], list(range(I["n"]))
-                tox, non = [i for i in idx if inst.toxic[i]], [i for i in idx if not inst.toxic[i]]
-                while len(vals) < 20000:
+                draws = 0
+                while len(vals) < 20000 and draws < 2_000_000:   # rejection sampling = uniform over feasible panels
+                    draws += 1
                     S = rng.sample(idx, k)
-                    if sum(inst.toxic[i] for i in S) <= 1:
-                        x = np.zeros(n_); x[S] = 1
+                    x = np.zeros(n_); x[S] = 1
+                    if Q.feasible(inst, x):
                         vals.append(Q.objective(inst, x))
+                row["randomFeasibleDraws"] = draws
                 row["randomFeasibleAr"] = float(np.mean([(v - fm) / (fo - fm) for v in vals])) if fo != fm else 1.0
                 row["randomFeasibleSamples"] = len(vals)
             if qaoa_on and I["n"] in cfg["qaoa"]["sizes"] and k == cfg["qaoa"]["k"]:
                 row["qaoa"] = [qaoa_run(inst, v, p, cfg, fo, fm, f, feas, heavy) for v in ("penalty", "xy") for p in cfg["qaoa"]["depths"]]
             results.append(row)
             print(row["instance"], k, "done", round(time.perf_counter() - t0, 1), "s", flush=True)
-    bench = {"generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"), "config": cfg, "versions": _versions(),
-             "poolSize": len(cands), "vmax": vmax, "results": results,
+    bench = {"generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"), "ruleVersion": version, "config": cfg, "versions": _versions(),
+             "poolSize": len(cands), "poolSizeBeforeEligibility": len(allc), "vmax": vmax, "results": results,
              "seeds": {"instances": f"{cfg['instances']['seed']} + 1000*n + i", "anneal": cfg["classical"]["sa_seeds"],
                        "qaoa": cfg["qaoa"]["seed"], "restartInit": "qaoa.seed + 17*p + (0 penalty | 1 xy)", "shots": cfg["qaoa"]["seed"]},
              "hardware": {"ibmQuantum": "not used: no IBM Quantum account or token on this machine, and none was created",
@@ -329,14 +353,14 @@ def run(qaoa_on: bool = True) -> dict:
                 b = max(qs, key=lambda q: (q["exact"]["pOptimum"], -q["p"]))
                 best[v] = {"p": b["p"], "bestTheta": b["bestTheta"]}
             cmap = {c["id"]: c for c in cands}
-            inst = Q.build([cmap[i] for i in pick["ids"]], pick["k"], w, vmax, "at_most_one", margin)
+            inst = Q.build([cmap[i] for i in pick["ids"]], pick["k"], w, vmax, btox, margin, per_sp)
             f, feas = Q.all_objectives(inst)
             bench["noise"] = {**noise_study(inst, cfg, best, pick["classical"]["exact"]["f"], pick["classical"]["fMin"], f, feas, heavy),
                               "instanceName": pick["instance"], "k": pick["k"]}
     bench["seconds"] = time.perf_counter() - t0
     bench["figures"] = figures(bench)
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "benchmark.json").write_text(json.dumps(bench, indent=1, default=lambda o: o.tolist() if hasattr(o, "tolist") else str(o)) + "\n")
-    pn = panel(cands, cfg, vmax)
-    (OUT / "panel.json").write_text(json.dumps(pn, indent=1, ensure_ascii=False) + "\n")
+    (OUT / f"benchmark_{version}.json").write_text(json.dumps(bench, indent=1, default=lambda o: o.tolist() if hasattr(o, "tolist") else str(o)) + "\n")
+    pn = panel(allc, cfg, vmax, version)
+    (OUT / f"panel_{version}.json").write_text(json.dumps(pn, indent=1, ensure_ascii=False) + "\n")
     return {"instances": len(results), "seconds": round(bench["seconds"], 1), "figures": bench["figures"], "defaultPanel": pn["default"]}

@@ -36,10 +36,23 @@ from ..paths import INTERIM, ROOT, SITE_DATA
 
 OUT = INTERIM / "m8" / "pool.json"
 CONFIG = ROOT / "config" / "m8_qubo.toml"
+CONFIGS = {"v1": CONFIG, "v2": ROOT / "config" / "m8_qubo_v2.toml"}   # v2: docs/QUBO_v2_RULE.md (pre-registered)
 
 
-def config() -> dict:
-    return tomllib.loads(CONFIG.read_text())
+def config(version: str = "v1") -> dict:
+    return tomllib.loads(CONFIGS[version].read_text())
+
+
+def eligibility(c: dict, cfg: dict) -> str | None:
+    """v2 hard eligibility (docs/QUBO_v2_RULE.md); None = eligible, else the reason. v1 has no rule."""
+    r = cfg.get("rule")
+    if not r:
+        return None
+    if not c["gapP5"] > r["min_gap_p5"]:
+        return f"robust gap {c['gapP5']} is not positive"
+    if len(c["differs"]) < r["min_differs"]:
+        return f"{len(c['differs'])} compounds likely to differ (needs at least {r['min_differs']})"
+    return None
 
 
 def build() -> dict:

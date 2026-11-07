@@ -2,7 +2,10 @@
  "mock": false,
  "basis": "exact_optimisation_of_model_outputs",
  "label": "recommended re-test panel: exact optimum of a fixed objective over model predictions; hypotheses worth re-testing, never claims that a preparation works or is safe",
+ "ruleVersion": "v2",
+ "ruleDoc": "docs/QUBO_v2_RULE.md",
  "toxicRule": "exclude",
+ "perSpecies": 1,
  "k": 8,
  "weights": {
   "alpha": 1.0,
@@ -12,8 +15,8 @@
   "gamma": 0.5
  },
  "penaltyMargin": 1.25,
- "configSha256": "19db49d1d9fa281a5e353fdaf56788976b8913d2ad840ab43f3d709f3af0145d",
- "poolSize": 24,
+ "configSha256": "6741b5769926e4bcb2b400c1d6428559638d89b309a4e02eb8efbafda0ec08da",
+ "poolSize": 15,
  "panel": [
   {
    "position": 1,
@@ -70,68 +73,65 @@
   },
   {
    "position": 2,
-   "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
-   "speciesId": "wfo-0000933181",
-   "species": "Ajuga chamaepitys",
-   "historicalPreparation": "decoction in wine",
+   "candidateId": "wfo-0000134589|hot water infusion (tea)|modern methanol extract",
+   "speciesId": "wfo-0000134589",
+   "species": "Artemisia absinthium",
+   "historicalPreparation": "hot water infusion (tea)",
    "modernComparator": "modern methanol extract",
    "modernComparatorBasis": "default",
    "indication": {
-    "meshId": "D006073",
-    "label": "Gout"
+    "meshId": "D005414",
+    "label": "Flatulence"
    },
    "indications": [
-    "D006073",
-    "D010243",
-    "D012585"
+    "D005414"
    ],
    "gap": {
-    "p5": 0.2221,
-    "p50": 0.3747,
-    "p95": 0.5424
+    "p5": 0.2101,
+    "p50": 0.3231,
+    "p95": 0.4751
    },
-   "value": 0.7557,
-   "compoundsLikelyToDiffer": 31,
+   "value": 0.7149,
+   "compoundsLikelyToDiffer": 110,
    "compoundClasses": [
+    "alkaloid-like (heuristic)",
+    "glycoside-like (heuristic)",
+    "other (heuristic)",
     "phenolic (heuristic)",
     "terpenoid-like (heuristic)"
    ],
-   "toxicity": "no_toxicity_reported",
+   "toxicity": "concern_reported",
    "caveats": [
     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
-    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+    "attested only by Pliny (lower confidence)"
    ],
    "evidenceTrail": [
     {
      "kind": "recipe",
-     "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03",
+     "ref": "pliny-nh:b27:c028:003#r06",
      "note": null
     },
     {
-     "kind": "recipe",
-     "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04",
+     "kind": "study",
+     "ref": "pmid:32585887",
      "note": null
     },
     {
-     "kind": "recipe",
-     "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03",
-     "note": null
-    },
-    {
-     "kind": "recipe",
-     "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04",
+     "kind": "study",
+     "ref": "pmid:42122882",
      "note": null
     },
     {
      "kind": "profile",
-     "ref": "wfo-0000933181:decoction in wine vs modern methanol extract",
+     "ref": "wfo-0000134589:hot water infusion (tea) vs modern methanol extract",
      "note": null
     },
     {
      "kind": "species",
-     "ref": "wfo-0000933181",
+     "ref": "wfo-0000134589",
      "note": null
     }
    ]
@@ -210,100 +210,26 @@
   },
   {
    "position": 4,
-   "candidateId": "wfo-0000968296|fresh juice|modern methanol extract",
-   "speciesId": "wfo-0000968296",
-   "species": "Galium aparine",
-   "historicalPreparation": "fresh juice",
-   "modernComparator": "modern methanol extract",
-   "modernComparatorBasis": "default",
-   "indication": {
-    "meshId": "D014947",
-    "label": "Wounds and Injuries"
-   },
-   "indications": [
-    "D006470",
-    "D014947"
-   ],
-   "gap": {
-    "p5": 0.0916,
-    "p50": 0.1942,
-    "p95": 0.3152
-   },
-   "value": 0.3117,
-   "compoundsLikelyToDiffer": 17,
-   "compoundClasses": [
-    "glycoside-like (heuristic)",
-    "phenolic (heuristic)"
-   ],
-   "toxicity": "no_toxicity_reported",
-   "caveats": [
-    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
-    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
-    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
-    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
-   ],
-   "evidenceTrail": [
-    {
-     "kind": "recipe",
-     "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r04",
-     "note": null
-    },
-    {
-     "kind": "recipe",
-     "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r06",
-     "note": null
-    },
-    {
-     "kind": "recipe",
-     "ref": "culpeper-1850:herbal:cleavers:005#r04",
-     "note": null
-    },
-    {
-     "kind": "recipe",
-     "ref": "culpeper-1850:herbal:cleavers:005#r06",
-     "note": null
-    },
-    {
-     "kind": "study",
-     "ref": "pmid:17324258",
-     "note": null
-    },
-    {
-     "kind": "profile",
-     "ref": "wfo-0000968296:fresh juice vs modern methanol extract",
-     "note": null
-    },
-    {
-     "kind": "species",
-     "ref": "wfo-0000968296",
-     "note": null
-    }
-   ]
-  },
-  {
-   "position": 5,
-   "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+   "candidateId": "wfo-0000402430|cold water infusion|modern methanol extract",
    "speciesId": "wfo-0000402430",
    "species": "Raphanus sativus",
-   "historicalPreparation": "fresh juice",
+   "historicalPreparation": "cold water infusion",
    "modernComparator": "modern methanol extract",
    "modernComparatorBasis": "studies",
    "indication": {
-    "meshId": "D004427",
-    "label": "Ear Diseases"
+    "meshId": "D011041",
+    "label": "Poisoning"
    },
    "indications": [
-    "D004427",
-    "D010373",
     "D011041"
    ],
    "gap": {
-    "p5": 0.0903,
-    "p50": 0.1559,
-    "p95": 0.2473
+    "p5": 0.1358,
+    "p50": 0.2191,
+    "p95": 0.3376
    },
-   "value": 0.3072,
-   "compoundsLikelyToDiffer": 133,
+   "value": 0.4621,
+   "compoundsLikelyToDiffer": 94,
    "compoundClasses": [
     "alkaloid-like (heuristic)",
     "glycoside-like (heuristic)",
@@ -321,17 +247,7 @@
    "evidenceTrail": [
     {
      "kind": "recipe",
-     "ref": "pliny-nh:b20:c013:001#r07",
-     "note": null
-    },
-    {
-     "kind": "recipe",
-     "ref": "pliny-nh:b20:c013:002#r05",
-     "note": null
-    },
-    {
-     "kind": "recipe",
-     "ref": "pliny-nh:b20:c013:005#r01",
+     "ref": "pliny-nh:b20:c013:002#r04",
      "note": null
     },
     {
@@ -371,7 +287,7 @@
     },
     {
      "kind": "profile",
-     "ref": "wfo-0000402430:fresh juice vs modern methanol extract",
+     "ref": "wfo-0000402430:cold water infusion vs modern methanol extract",
      "note": null
     },
     {
@@ -382,31 +298,34 @@
    ]
   },
   {
-   "position": 6,
-   "candidateId": "wfo-0000329771|powder taken whole|modern methanol extract",
-   "speciesId": "wfo-0000329771",
-   "species": "Betonica officinalis",
-   "historicalPreparation": "powder taken whole",
+   "position": 5,
+   "candidateId": "wfo-0001006654|fresh juice|modern methanol extract",
+   "speciesId": "wfo-0001006654",
+   "species": "Agrimonia eupatoria",
+   "historicalPreparation": "fresh juice",
    "modernComparator": "modern methanol extract",
    "modernComparatorBasis": "default",
    "indication": {
-    "meshId": "D004415",
-    "label": "Dyspepsia"
+    "meshId": "D004427",
+    "label": "Ear Diseases"
    },
    "indications": [
-    "D004415"
+    "D000038",
+    "D004427",
+    "D006073"
    ],
    "gap": {
-    "p5": 0.0584,
-    "p50": 0.0993,
-    "p95": 0.1601
+    "p5": 0.0605,
+    "p50": 0.105,
+    "p95": 0.1734
    },
-   "value": 0.1987,
-   "compoundsLikelyToDiffer": 11,
+   "value": 0.2059,
+   "compoundsLikelyToDiffer": 7,
    "compoundClasses": [
-    "glycoside-like (heuristic)"
+    "glycoside-like (heuristic)",
+    "phenolic (heuristic)"
    ],
-   "toxicity": "unknown",
+   "toxicity": "no_toxicity_reported",
    "caveats": [
     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
@@ -416,28 +335,167 @@
    "evidenceTrail": [
     {
      "kind": "recipe",
-     "ref": "culpeper-1652:herbal:wood-betony:008#r05",
+     "ref": "culpeper-1652:herbal:agrimony:008#r06",
      "note": null
     },
     {
      "kind": "recipe",
-     "ref": "culpeper-1850:herbal:wood-betony:004#r06",
+     "ref": "culpeper-1652:herbal:agrimony:010#r02",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:agrimony:004#r02",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:agrimony:006#r06",
      "note": null
     },
     {
      "kind": "profile",
-     "ref": "wfo-0000329771:powder taken whole vs modern methanol extract",
+     "ref": "wfo-0001006654:fresh juice vs modern methanol extract",
      "note": null
     },
     {
      "kind": "species",
-     "ref": "wfo-0000329771",
+     "ref": "wfo-0001006654",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 6,
+   "candidateId": "wfo-0000983427|decoction in wine|modern methanol extract",
+   "speciesId": "wfo-0000983427",
+   "species": "Filipendula ulmaria",
+   "historicalPreparation": "decoction in wine",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "default",
+   "indication": {
+    "meshId": "D003967",
+    "label": "Diarrhea"
+   },
+   "indications": [
+    "D003085",
+    "D003967"
+   ],
+   "gap": {
+    "p5": 0.0468,
+    "p50": 0.1013,
+    "p95": 0.178
+   },
+   "value": 0.1592,
+   "compoundsLikelyToDiffer": 8,
+   "compoundClasses": [
+    "glycoside-like (heuristic)",
+    "other (heuristic)",
+    "phenolic (heuristic)"
+   ],
+   "toxicity": "concern_reported",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:008#r03",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:008#r05",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:queen-of-the-meadows-meadow-sweet-or-mead-sweet:004#r05",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000983427:decoction in wine vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000983427",
      "note": null
     }
    ]
   },
   {
    "position": 7,
+   "candidateId": "wfo-0000725866|powder taken whole|modern methanol extract",
+   "speciesId": "wfo-0000725866",
+   "species": "Humulus lupulus",
+   "historicalPreparation": "powder taken whole",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "default",
+   "indication": {
+    "meshId": "D004231",
+    "label": "Diuresis"
+   },
+   "indications": [
+    "D004231",
+    "D006373",
+    "D008599"
+   ],
+   "gap": {
+    "p5": 0.0197,
+    "p50": 0.0319,
+    "p95": 0.0503
+   },
+   "value": 0.067,
+   "compoundsLikelyToDiffer": 118,
+   "compoundClasses": [
+    "alkaloid-like (heuristic)",
+    "glycoside-like (heuristic)",
+    "other (heuristic)",
+    "phenolic (heuristic)",
+    "terpenoid-like (heuristic)"
+   ],
+   "toxicity": "no_toxicity_reported",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:hops:008#r04",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:hops:005#r04",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:34946512",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000725866:powder taken whole vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000725866",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 8,
    "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
    "speciesId": "wfo-0000968296",
    "species": "Galium aparine",
@@ -490,77 +548,741 @@
      "note": null
     }
    ]
-  },
-  {
-   "position": 8,
-   "candidateId": "wfo-0000402430|decoction in wine|decoction in water",
-   "speciesId": "wfo-0000402430",
-   "species": "Raphanus sativus",
-   "historicalPreparation": "decoction in wine",
-   "modernComparator": "decoction in water",
-   "modernComparatorBasis": "studies",
-   "indication": {
-    "meshId": "D006547",
-    "label": "Hernia"
-   },
-   "indications": [
-    "D006547",
-    "D014545"
-   ],
-   "gap": {
-    "p5": 0.0027,
-    "p50": 0.0135,
-    "p95": 0.0437
-   },
-   "value": 0.0092,
-   "compoundsLikelyToDiffer": 0,
-   "compoundClasses": [],
-   "toxicity": "concern_reported",
-   "caveats": [
-    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
-    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
-    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
-    "attested only by Pliny (lower confidence)"
-   ],
-   "evidenceTrail": [
-    {
-     "kind": "recipe",
-     "ref": "pliny-nh:b20:c013:001#r01",
-     "note": null
-    },
-    {
-     "kind": "recipe",
-     "ref": "pliny-nh:b20:c013:003#r03",
-     "note": null
-    },
-    {
-     "kind": "study",
-     "ref": "pmid:10624898",
-     "note": null
-    },
-    {
-     "kind": "study",
-     "ref": "pmid:19070189",
-     "note": null
-    },
-    {
-     "kind": "profile",
-     "ref": "wfo-0000402430:decoction in wine vs decoction in water",
-     "note": null
-    },
-    {
-     "kind": "species",
-     "ref": "wfo-0000402430",
-     "note": null
-    }
-   ]
   }
  ],
  "alternatives": [
   {
    "toxicRule": "exclude",
    "k": 4,
-   "poolSize": 16,
+   "perSpecies": 1,
+   "poolSize": 15,
+   "objective": 1.427296,
+   "candidateIds": [
+    "wfo-0000933181|decoction in water|modern methanol extract",
+    "wfo-0000329771|decoction in wine|modern methanol extract",
+    "wfo-0000402430|fresh juice|modern methanol extract",
+    "wfo-0000968296|powder taken whole|modern methanol extract"
+   ],
+   "coverage": {
+    "class": 5,
+    "indication": 13,
+    "prep": 4
+   },
+   "panel": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D004427",
+      "D010373",
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.0903,
+      "p50": 0.1559,
+      "p95": 0.2473
+     },
+     "value": 0.3072,
+     "compoundsLikelyToDiffer": 133,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:001#r07",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r05",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:005#r01",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:fresh juice vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296",
+       "note": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "toxicRule": "exclude",
+   "k": 6,
+   "perSpecies": 1,
+   "poolSize": 15,
+   "objective": 0.858686,
+   "candidateIds": [
+    "wfo-0000933181|decoction in water|modern methanol extract",
+    "wfo-0000134589|hot water infusion (tea)|modern methanol extract",
+    "wfo-0000329771|decoction in wine|modern methanol extract",
+    "wfo-0000402430|cold water infusion|modern methanol extract",
+    "wfo-0001006654|fresh juice|modern methanol extract",
+    "wfo-0000968296|powder taken whole|modern methanol extract"
+   ],
+   "coverage": {
+    "class": 5,
+    "indication": 14,
+    "prep": 6
+   },
+   "panel": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000134589|hot water infusion (tea)|modern methanol extract",
+     "speciesId": "wfo-0000134589",
+     "species": "Artemisia absinthium",
+     "historicalPreparation": "hot water infusion (tea)",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D005414",
+      "label": "Flatulence"
+     },
+     "indications": [
+      "D005414"
+     ],
+     "gap": {
+      "p5": 0.2101,
+      "p50": 0.3231,
+      "p95": 0.4751
+     },
+     "value": 0.7149,
+     "compoundsLikelyToDiffer": 110,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b27:c028:003#r06",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:32585887",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:42122882",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000134589:hot water infusion (tea) vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000134589",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000402430|cold water infusion|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "cold water infusion",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D011041",
+      "label": "Poisoning"
+     },
+     "indications": [
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.1358,
+      "p50": 0.2191,
+      "p95": 0.3376
+     },
+     "value": 0.4621,
+     "compoundsLikelyToDiffer": 94,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r04",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:cold water infusion vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 5,
+     "candidateId": "wfo-0001006654|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0001006654",
+     "species": "Agrimonia eupatoria",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D000038",
+      "D004427",
+      "D006073"
+     ],
+     "gap": {
+      "p5": 0.0605,
+      "p50": 0.105,
+      "p95": 0.1734
+     },
+     "value": 0.2059,
+     "compoundsLikelyToDiffer": 7,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:008#r06",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:010#r02",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:004#r02",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:006#r06",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0001006654:fresh juice vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0001006654",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 6,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296",
+       "note": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "perSpeciesSensitivity": [
+  {
+   "toxicRule": "exclude",
+   "k": 4,
+   "perSpecies": 2,
+   "poolSize": 15,
    "objective": 1.482202,
    "candidateIds": [
     "wfo-0000933181|decoction in water|modern methanol extract",
@@ -572,125 +1294,1923 @@
     "class": 5,
     "indication": 15,
     "prep": 3
-   }
+   },
+   "panel": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D006073",
+      "label": "Gout"
+     },
+     "indications": [
+      "D006073",
+      "D010243",
+      "D012585"
+     ],
+     "gap": {
+      "p5": 0.2221,
+      "p50": 0.3747,
+      "p95": 0.5424
+     },
+     "value": 0.7557,
+     "compoundsLikelyToDiffer": 31,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in wine vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D004427",
+      "D010373",
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.0903,
+      "p50": 0.1559,
+      "p95": 0.2473
+     },
+     "value": 0.3072,
+     "compoundsLikelyToDiffer": 133,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:001#r07",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r05",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:005#r01",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:fresh juice vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430",
+       "note": null
+      }
+     ]
+    }
+   ]
   },
   {
    "toxicRule": "exclude",
    "k": 6,
-   "poolSize": 16,
-   "objective": 1.092329,
+   "perSpecies": 2,
+   "poolSize": 15,
+   "objective": 1.034112,
    "candidateIds": [
     "wfo-0000933181|decoction in water|modern methanol extract",
     "wfo-0000933181|decoction in wine|modern methanol extract",
     "wfo-0000329771|decoction in wine|modern methanol extract",
     "wfo-0000402430|fresh juice|modern methanol extract",
     "wfo-0000329771|powder taken whole|modern methanol extract",
-    "wfo-0000402430|decoction in wine|decoction in water"
+    "wfo-0000968296|powder taken whole|modern methanol extract"
+   ],
+   "coverage": {
+    "class": 5,
+    "indication": 17,
+    "prep": 4
+   },
+   "panel": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D006073",
+      "label": "Gout"
+     },
+     "indications": [
+      "D006073",
+      "D010243",
+      "D012585"
+     ],
+     "gap": {
+      "p5": 0.2221,
+      "p50": 0.3747,
+      "p95": 0.5424
+     },
+     "value": 0.7557,
+     "compoundsLikelyToDiffer": 31,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in wine vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0000402430",
+     "species": "Raphanus sativus",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "studies",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D004427",
+      "D010373",
+      "D011041"
+     ],
+     "gap": {
+      "p5": 0.0903,
+      "p50": 0.1559,
+      "p95": 0.2473
+     },
+     "value": 0.3072,
+     "compoundsLikelyToDiffer": 133,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:001#r07",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:002#r05",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b20:c013:005#r01",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17685094",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17910278",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:19903381",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:25371570",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:36501112",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:38597802",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:39441290",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000402430:fresh juice vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000402430",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 5,
+     "candidateId": "wfo-0000329771|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004415",
+      "label": "Dyspepsia"
+     },
+     "indications": [
+      "D004415"
+     ],
+     "gap": {
+      "p5": 0.0584,
+      "p50": 0.0993,
+      "p95": 0.1601
+     },
+     "value": 0.1987,
+     "compoundsLikelyToDiffer": 11,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r05",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r06",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:powder taken whole vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 6,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296",
+       "note": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "toxicRule": "exclude",
+   "k": 8,
+   "perSpecies": 2,
+   "poolSize": 15,
+   "objective": 0.590894,
+   "candidateIds": [
+    "wfo-0000933181|decoction in water|modern methanol extract",
+    "wfo-0000933181|decoction in wine|modern methanol extract",
+    "wfo-0000134589|hot water infusion (tea)|modern methanol extract",
+    "wfo-0000329771|decoction in wine|modern methanol extract",
+    "wfo-0000968296|fresh juice|modern methanol extract",
+    "wfo-0001006654|fresh juice|modern methanol extract",
+    "wfo-0000329771|powder taken whole|modern methanol extract",
+    "wfo-0000968296|powder taken whole|modern methanol extract"
    ],
    "coverage": {
     "class": 5,
     "indication": 18,
-    "prep": 4
-   }
-  },
-  {
-   "toxicRule": "at_most_one",
-   "k": 4,
-   "poolSize": 24,
-   "objective": 1.570949,
-   "candidateIds": [
-    "wfo-0000933181|decoction in water|modern methanol extract",
-    "wfo-0000933181|decoction in wine|modern methanol extract",
-    "wfo-0000329771|decoction in wine|modern methanol extract",
-    "wfo-0000600655|fresh juice|modern methanol extract"
-   ],
-   "coverage": {
-    "class": 5,
-    "indication": 16,
-    "prep": 3
-   }
-  },
-  {
-   "toxicRule": "at_most_one",
-   "k": 6,
-   "poolSize": 24,
-   "objective": 1.151341,
-   "candidateIds": [
-    "wfo-0000933181|decoction in water|modern methanol extract",
-    "wfo-0000933181|decoction in wine|modern methanol extract",
-    "wfo-0000329771|decoction in wine|modern methanol extract",
-    "wfo-0000600655|fresh juice|modern methanol extract",
-    "wfo-0000329771|powder taken whole|modern methanol extract",
-    "wfo-0000402430|decoction in wine|decoction in water"
-   ],
-   "coverage": {
-    "class": 5,
-    "indication": 19,
-    "prep": 4
-   }
-  },
-  {
-   "toxicRule": "at_most_one",
-   "k": 8,
-   "poolSize": 24,
-   "objective": 0.836588,
-   "candidateIds": [
-    "wfo-0000933181|decoction in water|modern methanol extract",
-    "wfo-0000933181|decoction in wine|modern methanol extract",
-    "wfo-0000329771|decoction in wine|modern methanol extract",
-    "wfo-0000968296|fresh juice|modern methanol extract",
-    "wfo-0000329771|powder taken whole|modern methanol extract",
-    "wfo-0000968296|powder taken whole|modern methanol extract",
-    "wfo-0000755919|steeped in vinegar|decoction in water",
-    "wfo-0000402430|decoction in wine|decoction in water"
-   ],
-   "coverage": {
-    "class": 5,
-    "indication": 19,
     "prep": 5
-   }
+   },
+   "panel": [
+    {
+     "position": 1,
+     "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in water",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D007565",
+      "label": "Jaundice"
+     },
+     "indications": [
+      "D007565",
+      "D014555"
+     ],
+     "gap": {
+      "p5": 0.2339,
+      "p50": 0.3761,
+      "p95": 0.545
+     },
+     "value": 0.7958,
+     "compoundsLikelyToDiffer": 33,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b24:c020:002#r04",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in water vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000933181",
+     "species": "Ajuga chamaepitys",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D006073",
+      "label": "Gout"
+     },
+     "indications": [
+      "D006073",
+      "D010243",
+      "D012585"
+     ],
+     "gap": {
+      "p5": 0.2221,
+      "p50": 0.3747,
+      "p95": 0.5424
+     },
+     "value": 0.7557,
+     "compoundsLikelyToDiffer": 31,
+     "compoundClasses": [
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000933181:decoction in wine vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000933181",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 3,
+     "candidateId": "wfo-0000134589|hot water infusion (tea)|modern methanol extract",
+     "speciesId": "wfo-0000134589",
+     "species": "Artemisia absinthium",
+     "historicalPreparation": "hot water infusion (tea)",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D005414",
+      "label": "Flatulence"
+     },
+     "indications": [
+      "D005414"
+     ],
+     "gap": {
+      "p5": 0.2101,
+      "p50": 0.3231,
+      "p95": 0.4751
+     },
+     "value": 0.7149,
+     "compoundsLikelyToDiffer": 110,
+     "compoundClasses": [
+      "alkaloid-like (heuristic)",
+      "glycoside-like (heuristic)",
+      "other (heuristic)",
+      "phenolic (heuristic)",
+      "terpenoid-like (heuristic)"
+     ],
+     "toxicity": "concern_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+      "attested only by Pliny (lower confidence)"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "pliny-nh:b27:c028:003#r06",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:32585887",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:42122882",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000134589:hot water infusion (tea) vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000134589",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 4,
+     "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "decoction in wine",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D003085",
+      "label": "Colic"
+     },
+     "indications": [
+      "D003085",
+      "D005414",
+      "D006373",
+      "D008107",
+      "D013158",
+      "D014098",
+      "D017116"
+     ],
+     "gap": {
+      "p5": 0.1612,
+      "p50": 0.2448,
+      "p95": 0.3815
+     },
+     "value": 0.5485,
+     "compoundsLikelyToDiffer": 14,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r09",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r11",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r10",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r13",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:decoction in wine vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 5,
+     "candidateId": "wfo-0000968296|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D014947",
+      "label": "Wounds and Injuries"
+     },
+     "indications": [
+      "D006470",
+      "D014947"
+     ],
+     "gap": {
+      "p5": 0.0916,
+      "p50": 0.1942,
+      "p95": 0.3152
+     },
+     "value": 0.3117,
+     "compoundsLikelyToDiffer": 17,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r04",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r06",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r04",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r06",
+       "note": null
+      },
+      {
+       "kind": "study",
+       "ref": "pmid:17324258",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:fresh juice vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 6,
+     "candidateId": "wfo-0001006654|fresh juice|modern methanol extract",
+     "speciesId": "wfo-0001006654",
+     "species": "Agrimonia eupatoria",
+     "historicalPreparation": "fresh juice",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004427",
+      "label": "Ear Diseases"
+     },
+     "indications": [
+      "D000038",
+      "D004427",
+      "D006073"
+     ],
+     "gap": {
+      "p5": 0.0605,
+      "p50": 0.105,
+      "p95": 0.1734
+     },
+     "value": 0.2059,
+     "compoundsLikelyToDiffer": 7,
+     "compoundClasses": [
+      "glycoside-like (heuristic)",
+      "phenolic (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:008#r06",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:agrimony:010#r02",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:004#r02",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:agrimony:006#r06",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0001006654:fresh juice vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0001006654",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 7,
+     "candidateId": "wfo-0000329771|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000329771",
+     "species": "Betonica officinalis",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D004415",
+      "label": "Dyspepsia"
+     },
+     "indications": [
+      "D004415"
+     ],
+     "gap": {
+      "p5": 0.0584,
+      "p50": 0.0993,
+      "p95": 0.1601
+     },
+     "value": 0.1987,
+     "compoundsLikelyToDiffer": 11,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "unknown",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:wood-betony:008#r05",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:wood-betony:004#r06",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000329771:powder taken whole vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000329771",
+       "note": null
+      }
+     ]
+    },
+    {
+     "position": 8,
+     "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+     "speciesId": "wfo-0000968296",
+     "species": "Galium aparine",
+     "historicalPreparation": "powder taken whole",
+     "modernComparator": "modern methanol extract",
+     "modernComparatorBasis": "default",
+     "indication": {
+      "meshId": "D012883",
+      "label": "Skin Ulcer"
+     },
+     "indications": [
+      "D012883"
+     ],
+     "gap": {
+      "p5": 0.0176,
+      "p50": 0.0489,
+      "p95": 0.0948
+     },
+     "value": 0.0599,
+     "compoundsLikelyToDiffer": 5,
+     "compoundClasses": [
+      "glycoside-like (heuristic)"
+     ],
+     "toxicity": "no_toxicity_reported",
+     "caveats": [
+      "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+      "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+      "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+      "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+     ],
+     "evidenceTrail": [
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07",
+       "note": null
+      },
+      {
+       "kind": "recipe",
+       "ref": "culpeper-1850:herbal:cleavers:005#r07",
+       "note": null
+      },
+      {
+       "kind": "profile",
+       "ref": "wfo-0000968296:powder taken whole vs modern methanol extract",
+       "note": null
+      },
+      {
+       "kind": "species",
+       "ref": "wfo-0000968296",
+       "note": null
+      }
+     ]
+    }
+   ]
   }
  ],
+ "ineligible": [
+  {
+   "candidateId": "wfo-0000402430|decoction in wine|decoction in water",
+   "species": "Raphanus sativus",
+   "historicalPreparation": "decoction in wine",
+   "modernComparator": "decoction in water",
+   "reason": "0 compounds likely to differ (needs at least 1)"
+  }
+ ],
+ "excludedToxic": [
+  {
+   "candidateId": "wfo-0000755919|fresh juice|modern methanol extract",
+   "species": "Allium cepa",
+   "historicalPreparation": "fresh juice",
+   "modernComparator": "modern methanol extract",
+   "reason": "toxicity reported (toxic_reported)"
+  },
+  {
+   "candidateId": "wfo-0000755919|steeped in vinegar|decoction in water",
+   "species": "Allium cepa",
+   "historicalPreparation": "steeped in vinegar",
+   "modernComparator": "decoction in water",
+   "reason": "toxicity reported (toxic_reported)"
+  },
+  {
+   "candidateId": "wfo-0000600655|fresh juice|modern methanol extract",
+   "species": "Chelidonium majus",
+   "historicalPreparation": "fresh juice",
+   "modernComparator": "modern methanol extract",
+   "reason": "toxicity reported (toxic_reported)"
+  },
+  {
+   "candidateId": "wfo-0000600655|infused oil|modern methanol extract",
+   "species": "Chelidonium majus",
+   "historicalPreparation": "infused oil",
+   "modernComparator": "modern methanol extract",
+   "reason": "toxicity reported (toxic_reported)"
+  },
+  {
+   "candidateId": "wfo-0000600655|powder taken whole|modern methanol extract",
+   "species": "Chelidonium majus",
+   "historicalPreparation": "powder taken whole",
+   "modernComparator": "modern methanol extract",
+   "reason": "toxicity reported (toxic_reported)"
+  },
+  {
+   "candidateId": "wfo-0000212813|decoction in water|modern methanol extract",
+   "species": "Glycyrrhiza glabra",
+   "historicalPreparation": "decoction in water",
+   "modernComparator": "modern methanol extract",
+   "reason": "toxicity reported (toxic_reported)"
+  },
+  {
+   "candidateId": "wfo-0000212813|powder taken whole|modern methanol extract",
+   "species": "Glycyrrhiza glabra",
+   "historicalPreparation": "powder taken whole",
+   "modernComparator": "modern methanol extract",
+   "reason": "toxicity reported (toxic_reported)"
+  },
+  {
+   "candidateId": "wfo-0001021850|decoction in wine|modern methanol extract",
+   "species": "Hyoscyamus niger",
+   "historicalPreparation": "decoction in wine",
+   "modernComparator": "modern methanol extract",
+   "reason": "toxicity reported (toxic_reported)"
+  }
+ ],
+ "original": {
+  "ruleVersion": "v1",
+  "k": 8,
+  "toxicRule": "exclude",
+  "objective": 0.744768,
+  "configSha256": "19db49d1d9fa281a5e353fdaf56788976b8913d2ad840ab43f3d709f3af0145d",
+  "panel": [
+   {
+    "position": 1,
+    "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+    "speciesId": "wfo-0000933181",
+    "species": "Ajuga chamaepitys",
+    "historicalPreparation": "decoction in water",
+    "modernComparator": "modern methanol extract",
+    "modernComparatorBasis": "default",
+    "indication": {
+     "meshId": "D007565",
+     "label": "Jaundice"
+    },
+    "indications": [
+     "D007565",
+     "D014555"
+    ],
+    "gap": {
+     "p5": 0.2339,
+     "p50": 0.3761,
+     "p95": 0.545
+    },
+    "value": 0.7958,
+    "compoundsLikelyToDiffer": 33,
+    "compoundClasses": [
+     "phenolic (heuristic)",
+     "terpenoid-like (heuristic)"
+    ],
+    "toxicity": "no_toxicity_reported",
+    "caveats": [
+     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+     "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+     "attested only by Pliny (lower confidence)"
+    ],
+    "evidenceTrail": [
+     {
+      "kind": "recipe",
+      "ref": "pliny-nh:b24:c020:002#r04",
+      "note": null
+     },
+     {
+      "kind": "profile",
+      "ref": "wfo-0000933181:decoction in water vs modern methanol extract",
+      "note": null
+     },
+     {
+      "kind": "species",
+      "ref": "wfo-0000933181",
+      "note": null
+     }
+    ]
+   },
+   {
+    "position": 2,
+    "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
+    "speciesId": "wfo-0000933181",
+    "species": "Ajuga chamaepitys",
+    "historicalPreparation": "decoction in wine",
+    "modernComparator": "modern methanol extract",
+    "modernComparatorBasis": "default",
+    "indication": {
+     "meshId": "D006073",
+     "label": "Gout"
+    },
+    "indications": [
+     "D006073",
+     "D010243",
+     "D012585"
+    ],
+    "gap": {
+     "p5": 0.2221,
+     "p50": 0.3747,
+     "p95": 0.5424
+    },
+    "value": 0.7557,
+    "compoundsLikelyToDiffer": 31,
+    "compoundClasses": [
+     "phenolic (heuristic)",
+     "terpenoid-like (heuristic)"
+    ],
+    "toxicity": "no_toxicity_reported",
+    "caveats": [
+     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+     "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+    ],
+    "evidenceTrail": [
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04",
+      "note": null
+     },
+     {
+      "kind": "profile",
+      "ref": "wfo-0000933181:decoction in wine vs modern methanol extract",
+      "note": null
+     },
+     {
+      "kind": "species",
+      "ref": "wfo-0000933181",
+      "note": null
+     }
+    ]
+   },
+   {
+    "position": 3,
+    "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+    "speciesId": "wfo-0000329771",
+    "species": "Betonica officinalis",
+    "historicalPreparation": "decoction in wine",
+    "modernComparator": "modern methanol extract",
+    "modernComparatorBasis": "default",
+    "indication": {
+     "meshId": "D003085",
+     "label": "Colic"
+    },
+    "indications": [
+     "D003085",
+     "D005414",
+     "D006373",
+     "D008107",
+     "D013158",
+     "D014098",
+     "D017116"
+    ],
+    "gap": {
+     "p5": 0.1612,
+     "p50": 0.2448,
+     "p95": 0.3815
+    },
+    "value": 0.5485,
+    "compoundsLikelyToDiffer": 14,
+    "compoundClasses": [
+     "glycoside-like (heuristic)",
+     "phenolic (heuristic)"
+    ],
+    "toxicity": "unknown",
+    "caveats": [
+     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+     "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+    ],
+    "evidenceTrail": [
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1652:herbal:wood-betony:008#r09",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1652:herbal:wood-betony:008#r11",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1850:herbal:wood-betony:004#r10",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1850:herbal:wood-betony:004#r13",
+      "note": null
+     },
+     {
+      "kind": "profile",
+      "ref": "wfo-0000329771:decoction in wine vs modern methanol extract",
+      "note": null
+     },
+     {
+      "kind": "species",
+      "ref": "wfo-0000329771",
+      "note": null
+     }
+    ]
+   },
+   {
+    "position": 4,
+    "candidateId": "wfo-0000968296|fresh juice|modern methanol extract",
+    "speciesId": "wfo-0000968296",
+    "species": "Galium aparine",
+    "historicalPreparation": "fresh juice",
+    "modernComparator": "modern methanol extract",
+    "modernComparatorBasis": "default",
+    "indication": {
+     "meshId": "D014947",
+     "label": "Wounds and Injuries"
+    },
+    "indications": [
+     "D006470",
+     "D014947"
+    ],
+    "gap": {
+     "p5": 0.0916,
+     "p50": 0.1942,
+     "p95": 0.3152
+    },
+    "value": 0.3117,
+    "compoundsLikelyToDiffer": 17,
+    "compoundClasses": [
+     "glycoside-like (heuristic)",
+     "phenolic (heuristic)"
+    ],
+    "toxicity": "no_toxicity_reported",
+    "caveats": [
+     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+     "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+    ],
+    "evidenceTrail": [
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r04",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r06",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1850:herbal:cleavers:005#r04",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1850:herbal:cleavers:005#r06",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:17324258",
+      "note": null
+     },
+     {
+      "kind": "profile",
+      "ref": "wfo-0000968296:fresh juice vs modern methanol extract",
+      "note": null
+     },
+     {
+      "kind": "species",
+      "ref": "wfo-0000968296",
+      "note": null
+     }
+    ]
+   },
+   {
+    "position": 5,
+    "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+    "speciesId": "wfo-0000402430",
+    "species": "Raphanus sativus",
+    "historicalPreparation": "fresh juice",
+    "modernComparator": "modern methanol extract",
+    "modernComparatorBasis": "studies",
+    "indication": {
+     "meshId": "D004427",
+     "label": "Ear Diseases"
+    },
+    "indications": [
+     "D004427",
+     "D010373",
+     "D011041"
+    ],
+    "gap": {
+     "p5": 0.0903,
+     "p50": 0.1559,
+     "p95": 0.2473
+    },
+    "value": 0.3072,
+    "compoundsLikelyToDiffer": 133,
+    "compoundClasses": [
+     "alkaloid-like (heuristic)",
+     "glycoside-like (heuristic)",
+     "other (heuristic)",
+     "phenolic (heuristic)",
+     "terpenoid-like (heuristic)"
+    ],
+    "toxicity": "concern_reported",
+    "caveats": [
+     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+     "attested only by Pliny (lower confidence)"
+    ],
+    "evidenceTrail": [
+     {
+      "kind": "recipe",
+      "ref": "pliny-nh:b20:c013:001#r07",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "pliny-nh:b20:c013:002#r05",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "pliny-nh:b20:c013:005#r01",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:17685094",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:17910278",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:19903381",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:25371570",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:36501112",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:38597802",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:39441290",
+      "note": null
+     },
+     {
+      "kind": "profile",
+      "ref": "wfo-0000402430:fresh juice vs modern methanol extract",
+      "note": null
+     },
+     {
+      "kind": "species",
+      "ref": "wfo-0000402430",
+      "note": null
+     }
+    ]
+   },
+   {
+    "position": 6,
+    "candidateId": "wfo-0000329771|powder taken whole|modern methanol extract",
+    "speciesId": "wfo-0000329771",
+    "species": "Betonica officinalis",
+    "historicalPreparation": "powder taken whole",
+    "modernComparator": "modern methanol extract",
+    "modernComparatorBasis": "default",
+    "indication": {
+     "meshId": "D004415",
+     "label": "Dyspepsia"
+    },
+    "indications": [
+     "D004415"
+    ],
+    "gap": {
+     "p5": 0.0584,
+     "p50": 0.0993,
+     "p95": 0.1601
+    },
+    "value": 0.1987,
+    "compoundsLikelyToDiffer": 11,
+    "compoundClasses": [
+     "glycoside-like (heuristic)"
+    ],
+    "toxicity": "unknown",
+    "caveats": [
+     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+     "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+    ],
+    "evidenceTrail": [
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1652:herbal:wood-betony:008#r05",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1850:herbal:wood-betony:004#r06",
+      "note": null
+     },
+     {
+      "kind": "profile",
+      "ref": "wfo-0000329771:powder taken whole vs modern methanol extract",
+      "note": null
+     },
+     {
+      "kind": "species",
+      "ref": "wfo-0000329771",
+      "note": null
+     }
+    ]
+   },
+   {
+    "position": 7,
+    "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+    "speciesId": "wfo-0000968296",
+    "species": "Galium aparine",
+    "historicalPreparation": "powder taken whole",
+    "modernComparator": "modern methanol extract",
+    "modernComparatorBasis": "default",
+    "indication": {
+     "meshId": "D012883",
+     "label": "Skin Ulcer"
+    },
+    "indications": [
+     "D012883"
+    ],
+    "gap": {
+     "p5": 0.0176,
+     "p50": 0.0489,
+     "p95": 0.0948
+    },
+    "value": 0.0599,
+    "compoundsLikelyToDiffer": 5,
+    "compoundClasses": [
+     "glycoside-like (heuristic)"
+    ],
+    "toxicity": "no_toxicity_reported",
+    "caveats": [
+     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+     "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+    ],
+    "evidenceTrail": [
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "culpeper-1850:herbal:cleavers:005#r07",
+      "note": null
+     },
+     {
+      "kind": "profile",
+      "ref": "wfo-0000968296:powder taken whole vs modern methanol extract",
+      "note": null
+     },
+     {
+      "kind": "species",
+      "ref": "wfo-0000968296",
+      "note": null
+     }
+    ]
+   },
+   {
+    "position": 8,
+    "candidateId": "wfo-0000402430|decoction in wine|decoction in water",
+    "speciesId": "wfo-0000402430",
+    "species": "Raphanus sativus",
+    "historicalPreparation": "decoction in wine",
+    "modernComparator": "decoction in water",
+    "modernComparatorBasis": "studies",
+    "indication": {
+     "meshId": "D006547",
+     "label": "Hernia"
+    },
+    "indications": [
+     "D006547",
+     "D014545"
+    ],
+    "gap": {
+     "p5": 0.0027,
+     "p50": 0.0135,
+     "p95": 0.0437
+    },
+    "value": 0.0092,
+    "compoundsLikelyToDiffer": 0,
+    "compoundClasses": [],
+    "toxicity": "concern_reported",
+    "caveats": [
+     "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+     "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+     "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+     "attested only by Pliny (lower confidence)"
+    ],
+    "evidenceTrail": [
+     {
+      "kind": "recipe",
+      "ref": "pliny-nh:b20:c013:001#r01",
+      "note": null
+     },
+     {
+      "kind": "recipe",
+      "ref": "pliny-nh:b20:c013:003#r03",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:10624898",
+      "note": null
+     },
+     {
+      "kind": "study",
+      "ref": "pmid:19070189",
+      "note": null
+     },
+     {
+      "kind": "profile",
+      "ref": "wfo-0000402430:decoction in wine vs decoction in water",
+      "note": null
+     },
+     {
+      "kind": "species",
+      "ref": "wfo-0000402430",
+      "note": null
+     }
+    ]
+   }
+  ],
+  "notes": [
+   "Slot 8 (Raphanus sativus, decoction in wine vs decoction in water) was selected on coverage, not value: robust gap 0.003 and no compound likely to differ.",
+   "Several entries share a species: Ajuga chamaepitys, Betonica officinalis, Galium aparine, Raphanus sativus."
+  ]
+ },
  "sensitivity": [
   {
    "weight": "alpha",
    "factor": 0.5,
    "value": 0.5,
-   "jaccardWithDefault": 1.0,
-   "added": [],
-   "removed": []
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000329771|powder taken whole|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000329771|decoction in wine|modern methanol extract"
+   ]
   },
   {
    "weight": "alpha",
    "factor": 2.0,
    "value": 2.0,
-   "jaccardWithDefault": 0.7778,
-   "added": [
-    "wfo-0000134589|hot water infusion (tea)|modern methanol extract"
-   ],
-   "removed": [
-    "wfo-0000402430|fresh juice|modern methanol extract"
-   ]
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
   },
   {
    "weight": "beta_class",
    "factor": 0.5,
    "value": 0.1,
-   "jaccardWithDefault": 0.7778,
-   "added": [
-    "wfo-0000134589|hot water infusion (tea)|modern methanol extract"
-   ],
-   "removed": [
-    "wfo-0000968296|powder taken whole|modern methanol extract"
-   ]
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
   },
   {
    "weight": "beta_class",
    "factor": 2.0,
    "value": 0.4,
-   "jaccardWithDefault": 1.0,
-   "added": [],
-   "removed": []
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000329771|powder taken whole|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000329771|decoction in wine|modern methanol extract"
+   ]
   },
   {
    "weight": "beta_indication",
@@ -698,19 +3218,23 @@
    "value": 0.1,
    "jaccardWithDefault": 0.7778,
    "added": [
-    "wfo-0000134589|hot water infusion (tea)|modern methanol extract"
+    "wfo-0000329771|powder taken whole|modern methanol extract"
    ],
    "removed": [
-    "wfo-0000402430|fresh juice|modern methanol extract"
+    "wfo-0000329771|decoction in wine|modern methanol extract"
    ]
   },
   {
    "weight": "beta_indication",
    "factor": 2.0,
    "value": 0.4,
-   "jaccardWithDefault": 1.0,
-   "added": [],
-   "removed": []
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000402430|fresh juice|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000402430|cold water infusion|modern methanol extract"
+   ]
   },
   {
    "weight": "beta_prep",
@@ -724,13 +3248,9 @@
    "weight": "beta_prep",
    "factor": 2.0,
    "value": 0.4,
-   "jaccardWithDefault": 0.7778,
-   "added": [
-    "wfo-0000134589|hot water infusion (tea)|modern methanol extract"
-   ],
-   "removed": [
-    "wfo-0000402430|fresh juice|modern methanol extract"
-   ]
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
   },
   {
    "weight": "gamma",
@@ -759,7 +3279,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 0.10064091665359835,
+   "meanSeconds": 0.0760031386744231,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -770,10 +3290,10 @@
    "solver": "greedy",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.9433711196300768,
+   "meanApproximationRatio": 0.9591888989305146,
    "pOptimum": 0.6666666666666666,
    "feasibility": null,
-   "meanSeconds": 0.00009961092534164588,
+   "meanSeconds": 0.00023198632212976614,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -787,7 +3307,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.1210565388513108,
+   "meanSeconds": 0.16816740535820526,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -798,7 +3318,7 @@
    "solver": "random",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.521434400550954,
+   "meanApproximationRatio": 0.518393492172544,
    "pOptimum": 0.0787878787878788,
    "feasibility": null,
    "meanSeconds": null,
@@ -812,10 +3332,10 @@
    "solver": "qaoa-penalty",
    "p": 1,
    "instances": 3,
-   "meanApproximationRatio": 0.5435472737572186,
-   "pOptimum": 0.010284048417066927,
-   "feasibility": 0.34556101898547836,
-   "meanSeconds": 0.8145202086307108,
+   "meanApproximationRatio": 0.5346764755791903,
+   "pOptimum": 0.009987186825710702,
+   "feasibility": 0.3323112191504512,
+   "meanSeconds": 0.543474194748948,
    "twoQubitGatesAllToAll": 56,
    "twoQubitGatesHeavyHex": 117,
    "depthAllToAll": 48
@@ -826,10 +3346,10 @@
    "solver": "qaoa-penalty",
    "p": 2,
    "instances": 3,
-   "meanApproximationRatio": 0.49424291076576127,
-   "pOptimum": 0.008956785487133722,
-   "feasibility": 0.512152014556758,
-   "meanSeconds": 8.33209079123723,
+   "meanApproximationRatio": 0.5149149358554104,
+   "pOptimum": 0.012491796709228786,
+   "feasibility": 0.5388327932446986,
+   "meanSeconds": 3.195213027919332,
    "twoQubitGatesAllToAll": 112,
    "twoQubitGatesHeavyHex": 232,
    "depthAllToAll": 78
@@ -840,10 +3360,10 @@
    "solver": "qaoa-penalty",
    "p": 3,
    "instances": 3,
-   "meanApproximationRatio": 0.5361408018645467,
-   "pOptimum": 0.027771171583418994,
-   "feasibility": 0.5058691288205103,
-   "meanSeconds": 9.207901236290732,
+   "meanApproximationRatio": 0.5391506236170455,
+   "pOptimum": 0.024950232856604682,
+   "feasibility": 0.5357842962774094,
+   "meanSeconds": 4.738644430413842,
    "twoQubitGatesAllToAll": 168,
    "twoQubitGatesHeavyHex": 372,
    "depthAllToAll": 108
@@ -854,13 +3374,13 @@
    "solver": "qaoa-xy",
    "p": 1,
    "instances": 3,
-   "meanApproximationRatio": 0.5700346869366157,
-   "pOptimum": 0.0757092039315514,
-   "feasibility": 0.7796086362817992,
-   "meanSeconds": 1.9224789307142298,
-   "twoQubitGatesAllToAll": 260,
-   "twoQubitGatesHeavyHex": 465,
-   "depthAllToAll": 508
+   "meanApproximationRatio": 0.5374028653630774,
+   "pOptimum": 0.06700835572530793,
+   "feasibility": 0.8078719290779484,
+   "meanSeconds": 1.0806106387171894,
+   "twoQubitGatesAllToAll": 264,
+   "twoQubitGatesHeavyHex": 473,
+   "depthAllToAll": 510
   },
   {
    "n": 8,
@@ -868,13 +3388,13 @@
    "solver": "qaoa-xy",
    "p": 2,
    "instances": 3,
-   "meanApproximationRatio": 0.611063201932406,
-   "pOptimum": 0.12436561044430207,
-   "feasibility": 0.8382666307585147,
-   "meanSeconds": 13.990039569248134,
-   "twoQubitGatesAllToAll": 342,
-   "twoQubitGatesHeavyHex": 648,
-   "depthAllToAll": 567
+   "meanApproximationRatio": 0.5579048385080186,
+   "pOptimum": 0.10518667228074573,
+   "feasibility": 0.8561165252981479,
+   "meanSeconds": 6.632704860996455,
+   "twoQubitGatesAllToAll": 350,
+   "twoQubitGatesHeavyHex": 656,
+   "depthAllToAll": 571
   },
   {
    "n": 8,
@@ -882,13 +3402,13 @@
    "solver": "qaoa-xy",
    "p": 3,
    "instances": 3,
-   "meanApproximationRatio": 0.5784148180696423,
-   "pOptimum": 0.1221420157737468,
-   "feasibility": 0.8597166636792107,
-   "meanSeconds": 24.40140595830356,
-   "twoQubitGatesAllToAll": 424,
-   "twoQubitGatesHeavyHex": 812,
-   "depthAllToAll": 626
+   "meanApproximationRatio": 0.6360164576272342,
+   "pOptimum": 0.04986760443804284,
+   "feasibility": 0.7286985875842916,
+   "meanSeconds": 9.66668723570183,
+   "twoQubitGatesAllToAll": 436,
+   "twoQubitGatesHeavyHex": 836,
+   "depthAllToAll": 632
   },
   {
    "n": 8,
@@ -899,7 +3419,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 0.09574749995954335,
+   "meanSeconds": 0.06344493746291846,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -913,7 +3433,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.00017762451898306608,
+   "meanSeconds": 0.0003911465173587203,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -927,7 +3447,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.19364531624596565,
+   "meanSeconds": 0.14959703320637346,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -938,7 +3458,7 @@
    "solver": "random",
    "p": null,
    "instances": 2,
-   "meanApproximationRatio": 0.5273362261888239,
+   "meanApproximationRatio": 0.5414846016418315,
    "pOptimum": 0.07692307692307693,
    "feasibility": null,
    "meanSeconds": null,
@@ -955,7 +3475,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 0.5383518054150045,
+   "meanSeconds": 0.11586266670686503,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -966,10 +3486,10 @@
    "solver": "greedy",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.9932479179995074,
-   "pOptimum": 0.6666666666666666,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.00016780570149421692,
+   "meanSeconds": 0.00038929198247690994,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -983,7 +3503,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.27679393608123065,
+   "meanSeconds": 0.252567461055393,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -994,8 +3514,8 @@
    "solver": "random",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.5431566178352272,
-   "pOptimum": 0.0038548752834467125,
+   "meanApproximationRatio": 0.46148946634494736,
+   "pOptimum": 0.00735314068647402,
    "feasibility": null,
    "meanSeconds": null,
    "twoQubitGatesAllToAll": null,
@@ -1008,10 +3528,10 @@
    "solver": "qaoa-penalty",
    "p": 1,
    "instances": 3,
-   "meanApproximationRatio": 0.5448364112142327,
-   "pOptimum": 0.001065411356354942,
-   "feasibility": 0.27369728183928455,
-   "meanSeconds": 3.978035611255715,
+   "meanApproximationRatio": 0.4632261351469546,
+   "pOptimum": 0.001254664953011378,
+   "feasibility": 0.17550767046765178,
+   "meanSeconds": 2.3406859999522567,
    "twoQubitGatesAllToAll": 132,
    "twoQubitGatesHeavyHex": 293,
    "depthAllToAll": 72
@@ -1022,10 +3542,10 @@
    "solver": "qaoa-penalty",
    "p": 2,
    "instances": 3,
-   "meanApproximationRatio": 0.5436864677388122,
-   "pOptimum": 0.001584194149626326,
-   "feasibility": 0.42805647069055713,
-   "meanSeconds": 13.105577597316975,
+   "meanApproximationRatio": 0.46584739833712013,
+   "pOptimum": 0.001799888069269101,
+   "feasibility": 0.250923610106114,
+   "meanSeconds": 6.864309055963531,
    "twoQubitGatesAllToAll": 264,
    "twoQubitGatesHeavyHex": 580,
    "depthAllToAll": 114
@@ -1036,10 +3556,10 @@
    "solver": "qaoa-penalty",
    "p": 3,
    "instances": 3,
-   "meanApproximationRatio": 0.5442062076457468,
-   "pOptimum": 0.0018720551942988772,
-   "feasibility": 0.4519767762628499,
-   "meanSeconds": 24.883136875306565,
+   "meanApproximationRatio": 0.46673946513863857,
+   "pOptimum": 0.002952628933472251,
+   "feasibility": 0.30605913955808245,
+   "meanSeconds": 12.99498630540135,
    "twoQubitGatesAllToAll": 396,
    "twoQubitGatesHeavyHex": 886,
    "depthAllToAll": 156
@@ -1050,13 +3570,13 @@
    "solver": "qaoa-xy",
    "p": 1,
    "instances": 3,
-   "meanApproximationRatio": 0.5523225647380484,
-   "pOptimum": 0.0024696425472393725,
-   "feasibility": 0.85478946421591,
-   "meanSeconds": 10.528212972295782,
-   "twoQubitGatesAllToAll": 481,
-   "twoQubitGatesHeavyHex": 946,
-   "depthAllToAll": 862
+   "meanApproximationRatio": 0.47544832538992693,
+   "pOptimum": 0.007727837451517985,
+   "feasibility": 0.617765350544779,
+   "meanSeconds": 5.1837926526398705,
+   "twoQubitGatesAllToAll": 491,
+   "twoQubitGatesHeavyHex": 965,
+   "depthAllToAll": 864
   },
   {
    "n": 12,
@@ -1064,13 +3584,13 @@
    "solver": "qaoa-xy",
    "p": 2,
    "instances": 3,
-   "meanApproximationRatio": 0.5633243075028689,
-   "pOptimum": 0.002685358534419317,
-   "feasibility": 0.91932746355869,
-   "meanSeconds": 35.93670611091269,
-   "twoQubitGatesAllToAll": 647,
-   "twoQubitGatesHeavyHex": 1328,
-   "depthAllToAll": 947
+   "meanApproximationRatio": 0.48203943435879393,
+   "pOptimum": 0.01059754731974547,
+   "feasibility": 0.761122958824973,
+   "meanSeconds": 17.898284472369898,
+   "twoQubitGatesAllToAll": 669,
+   "twoQubitGatesHeavyHex": 1348,
+   "depthAllToAll": 951
   },
   {
    "n": 12,
@@ -1078,24 +3598,24 @@
    "solver": "qaoa-xy",
    "p": 3,
    "instances": 3,
-   "meanApproximationRatio": 0.5652129310973928,
-   "pOptimum": 0.00246157570338302,
-   "feasibility": 0.868253957105036,
-   "meanSeconds": 48.33729926364807,
-   "twoQubitGatesAllToAll": 814,
-   "twoQubitGatesHeavyHex": 1727,
-   "depthAllToAll": 1032
+   "meanApproximationRatio": 0.4650983251993572,
+   "pOptimum": 0.006072846018578274,
+   "feasibility": 0.6652335227738599,
+   "meanSeconds": 25.7950068746383,
+   "twoQubitGatesAllToAll": 846,
+   "twoQubitGatesHeavyHex": 1749,
+   "depthAllToAll": 1038
   },
   {
    "n": 12,
    "k": 6,
    "solver": "exact",
    "p": null,
-   "instances": 3,
+   "instances": 2,
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 0.9845184995792806,
+   "meanSeconds": 0.11454474995844066,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1105,11 +3625,11 @@
    "k": 6,
    "solver": "greedy",
    "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.9962976297459732,
-   "pOptimum": 0.6666666666666666,
+   "instances": 2,
+   "meanApproximationRatio": 0.8824604569617502,
+   "pOptimum": 0.5,
    "feasibility": null,
-   "meanSeconds": 0.00021799964209397635,
+   "meanSeconds": 0.000534791499376297,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1119,11 +3639,11 @@
    "k": 6,
    "solver": "anneal",
    "p": null,
-   "instances": 3,
+   "instances": 2,
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.20216640303842723,
+   "meanSeconds": 0.19556777512189,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1133,65 +3653,9 @@
    "k": 6,
    "solver": "random",
    "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.5742558140230446,
-   "pOptimum": 0.005621693121693121,
-   "feasibility": null,
-   "meanSeconds": null,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 12,
-   "k": 8,
-   "solver": "exact",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 1.0,
-   "pOptimum": null,
-   "feasibility": null,
-   "meanSeconds": 0.05223745829425752,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 12,
-   "k": 8,
-   "solver": "greedy",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.8255052854779404,
-   "pOptimum": 0.0,
-   "feasibility": null,
-   "meanSeconds": 0.00024518067948520184,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 12,
-   "k": 8,
-   "solver": "anneal",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 1.0,
-   "pOptimum": 1.0,
-   "feasibility": null,
-   "meanSeconds": 0.19607152221724392,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 12,
-   "k": 8,
-   "solver": "random",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.5763779705064612,
-   "pOptimum": 0.08686868686868687,
+   "instances": 2,
+   "meanApproximationRatio": 0.5424738859882459,
+   "pOptimum": 0.049129353233830844,
    "feasibility": null,
    "meanSeconds": null,
    "twoQubitGatesAllToAll": null,
@@ -1207,7 +3671,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 0.9338695413898677,
+   "meanSeconds": 0.6892411386749396,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1218,10 +3682,10 @@
    "solver": "greedy",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.9915965393108283,
-   "pOptimum": 0.6666666666666666,
+   "meanApproximationRatio": 0.9892973914996478,
+   "pOptimum": 0.3333333333333333,
    "feasibility": null,
-   "meanSeconds": 0.00026368023827672005,
+   "meanSeconds": 0.0008078753016889095,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1235,7 +3699,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.3092452640334765,
+   "meanSeconds": 0.6066976972234746,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1246,8 +3710,8 @@
    "solver": "random",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.5557448949490772,
-   "pOptimum": 0.0008432714239165851,
+   "meanApproximationRatio": 0.4816398798402217,
+   "pOptimum": 0.001300586502573714,
    "feasibility": null,
    "meanSeconds": null,
    "twoQubitGatesAllToAll": null,
@@ -1260,10 +3724,10 @@
    "solver": "qaoa-penalty",
    "p": 1,
    "instances": 3,
-   "meanApproximationRatio": 0.5570904255190717,
-   "pOptimum": 0.00023707117022477725,
-   "feasibility": 0.2849858854122303,
-   "meanSeconds": 21.41493562508064,
+   "meanApproximationRatio": 0.4824666237623818,
+   "pOptimum": 0.000264190341079816,
+   "feasibility": 0.20959957113188898,
+   "meanSeconds": 17.57853590270194,
    "twoQubitGatesAllToAll": 240,
    "twoQubitGatesHeavyHex": 545,
    "depthAllToAll": 96
@@ -1274,10 +3738,10 @@
    "solver": "qaoa-penalty",
    "p": 2,
    "instances": 3,
-   "meanApproximationRatio": 0.5577786820887324,
-   "pOptimum": 0.00029184175881534247,
-   "feasibility": 0.3928216125788943,
-   "meanSeconds": 88.41438063940343,
+   "meanApproximationRatio": 0.48554595336364254,
+   "pOptimum": 0.0003759025435659431,
+   "feasibility": 0.28498621078510994,
+   "meanSeconds": 62.617605569617204,
    "twoQubitGatesAllToAll": 480,
    "twoQubitGatesHeavyHex": 1026,
    "depthAllToAll": 150
@@ -1288,10 +3752,10 @@
    "solver": "qaoa-penalty",
    "p": 3,
    "instances": 3,
-   "meanApproximationRatio": 0.5583774069007598,
-   "pOptimum": 0.0003478068978672811,
-   "feasibility": 0.4536044379702231,
-   "meanSeconds": 163.967387278021,
+   "meanApproximationRatio": 0.4817775485854125,
+   "pOptimum": 0.00044393774939523715,
+   "feasibility": 0.32552074817525795,
+   "meanSeconds": 114.55286187469028,
    "twoQubitGatesAllToAll": 720,
    "twoQubitGatesHeavyHex": 1581,
    "depthAllToAll": 204
@@ -1302,13 +3766,13 @@
    "solver": "qaoa-xy",
    "p": 1,
    "instances": 3,
-   "meanApproximationRatio": 0.5546278797358661,
-   "pOptimum": 0.0008735551937908078,
-   "feasibility": 0.9384578407248156,
-   "meanSeconds": 41.841231958319746,
-   "twoQubitGatesAllToAll": 723,
-   "twoQubitGatesHeavyHex": 1497,
-   "depthAllToAll": 1214
+   "meanApproximationRatio": 0.4829118039173615,
+   "pOptimum": 0.0007348866786093056,
+   "feasibility": 0.7612738445480218,
+   "meanSeconds": 61.968556916962065,
+   "twoQubitGatesAllToAll": 747,
+   "twoQubitGatesHeavyHex": 1549,
+   "depthAllToAll": 1215
   },
   {
    "n": 16,
@@ -1316,13 +3780,13 @@
    "solver": "qaoa-xy",
    "p": 2,
    "instances": 3,
-   "meanApproximationRatio": 0.5559853666683066,
-   "pOptimum": 0.0009842589039734517,
-   "feasibility": 0.9684890119526756,
-   "meanSeconds": 189.41422648572674,
-   "twoQubitGatesAllToAll": 997,
-   "twoQubitGatesHeavyHex": 2240,
-   "depthAllToAll": 1323
+   "meanApproximationRatio": 0.48327256794925666,
+   "pOptimum": 0.0007793428365169397,
+   "feasibility": 0.8882187343220406,
+   "meanSeconds": 312.95099734701216,
+   "twoQubitGatesAllToAll": 1043,
+   "twoQubitGatesHeavyHex": 2305,
+   "depthAllToAll": 1325
   },
   {
    "n": 16,
@@ -1330,13 +3794,13 @@
    "solver": "qaoa-xy",
    "p": 3,
    "instances": 3,
-   "meanApproximationRatio": 0.5530190973320109,
-   "pOptimum": 0.0012225679121828212,
-   "feasibility": 0.9577416184156817,
-   "meanSeconds": 234.55869505538917,
-   "twoQubitGatesAllToAll": 1270,
-   "twoQubitGatesHeavyHex": 2852,
-   "depthAllToAll": 1432
+   "meanApproximationRatio": 0.4718458063714146,
+   "pOptimum": 0.0003913428479060488,
+   "feasibility": 0.771299497049375,
+   "meanSeconds": 180.44022120807008,
+   "twoQubitGatesAllToAll": 1340,
+   "twoQubitGatesHeavyHex": 2881,
+   "depthAllToAll": 1435
   },
   {
    "n": 16,
@@ -1347,7 +3811,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 2.504357514049237,
+   "meanSeconds": 2.780450430310642,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1358,66 +3822,66 @@
    "solver": "greedy",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.9967805917881368,
-   "pOptimum": 0.6666666666666666,
-   "feasibility": null,
-   "meanSeconds": 0.0003378886419037978,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 16,
-   "k": 6,
-   "solver": "anneal",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 1.0,
-   "pOptimum": 1.0,
-   "feasibility": null,
-   "meanSeconds": 0.28048036114002267,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 16,
-   "k": 6,
-   "solver": "random",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.5811189861567023,
-   "pOptimum": 0.00035649288206329906,
-   "feasibility": null,
-   "meanSeconds": null,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 16,
-   "k": 8,
-   "solver": "exact",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 1.0,
-   "pOptimum": null,
-   "feasibility": null,
-   "meanSeconds": 0.6454190280443678,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 16,
-   "k": 8,
-   "solver": "greedy",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.9672782051267158,
+   "meanApproximationRatio": 0.98534827851772,
    "pOptimum": 0.3333333333333333,
    "feasibility": null,
-   "meanSeconds": 0.0004016526509076357,
+   "meanSeconds": 0.0014969859427462022,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 6,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.6243704944228132,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 6,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5639097018567788,
+   "pOptimum": 0.0014911382655861966,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 8,
+   "solver": "exact",
+   "p": null,
+   "instances": 2,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.3826001869747415,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 8,
+   "solver": "greedy",
+   "p": null,
+   "instances": 2,
+   "meanApproximationRatio": 0.8392731321346683,
+   "pOptimum": 0.0,
+   "feasibility": null,
+   "meanSeconds": 0.001408541458658874,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1427,11 +3891,11 @@
    "k": 8,
    "solver": "anneal",
    "p": null,
-   "instances": 3,
+   "instances": 2,
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.2710020498527835,
+   "meanSeconds": 0.3959765457548201,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1441,9 +3905,9 @@
    "k": 8,
    "solver": "random",
    "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.5754920024812153,
-   "pOptimum": 0.0006177300294947354,
+   "instances": 2,
+   "meanApproximationRatio": 0.5189174128431986,
+   "pOptimum": 0.015138888888888887,
    "feasibility": null,
    "meanSeconds": null,
    "twoQubitGatesAllToAll": null,
@@ -1459,7 +3923,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 1.2545336526818573,
+   "meanSeconds": 1.4684510139438014,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1470,10 +3934,10 @@
    "solver": "greedy",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.9955928679800253,
+   "meanApproximationRatio": 0.9950709209623151,
    "pOptimum": 0.6666666666666666,
    "feasibility": null,
-   "meanSeconds": 0.00035862531512975693,
+   "meanSeconds": 0.0015018472913652658,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1487,7 +3951,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.5532401444235195,
+   "meanSeconds": 0.6555505806890627,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1498,8 +3962,8 @@
    "solver": "random",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.5368041551762479,
-   "pOptimum": 0.00036805299963194705,
+   "meanApproximationRatio": 0.5121319056874785,
+   "pOptimum": 0.0005207506118873484,
    "feasibility": null,
    "meanSeconds": null,
    "twoQubitGatesAllToAll": null,
@@ -1515,7 +3979,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 2.176328486064449,
+   "meanSeconds": 1.8788797086259972,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1526,66 +3990,66 @@
    "solver": "greedy",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.9719971968126896,
-   "pOptimum": 0.3333333333333333,
-   "feasibility": null,
-   "meanSeconds": 0.0004685833118855953,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 20,
-   "k": 6,
-   "solver": "anneal",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 1.0,
-   "pOptimum": 1.0,
-   "feasibility": null,
-   "meanSeconds": 0.3537682584331681,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 20,
-   "k": 6,
-   "solver": "random",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.5893658080672642,
-   "pOptimum": 0.00009324009324009324,
-   "feasibility": null,
-   "meanSeconds": null,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 20,
-   "k": 8,
-   "solver": "exact",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 1.0,
-   "pOptimum": null,
-   "feasibility": null,
-   "meanSeconds": 1.0710748886534323,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 20,
-   "k": 8,
-   "solver": "greedy",
-   "p": null,
-   "instances": 3,
-   "meanApproximationRatio": 0.9697918547759112,
+   "meanApproximationRatio": 0.9313701014878091,
    "pOptimum": 0.0,
    "feasibility": null,
-   "meanSeconds": 0.0005741249769926071,
+   "meanSeconds": 0.0013755693410833676,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 6,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.5332424054853618,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 6,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5809274103482367,
+   "pOptimum": 0.0003026729095789931,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 8,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.8408526943530887,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 8,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.7126350253983289,
+   "pOptimum": 0.0,
+   "feasibility": null,
+   "meanSeconds": 0.0015001667197793722,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1599,7 +4063,7 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.333378019478793,
+   "meanSeconds": 0.44520393889397386,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
@@ -1610,8 +4074,8 @@
    "solver": "random",
    "p": null,
    "instances": 3,
-   "meanApproximationRatio": 0.5918567478962163,
-   "pOptimum": 0.00007519362358072035,
+   "meanApproximationRatio": 0.5332421418175765,
+   "pOptimum": 0.0019184697150050924,
    "feasibility": null,
    "meanSeconds": null,
    "twoQubitGatesAllToAll": null,
@@ -1619,7 +4083,7 @@
    "depthAllToAll": null
   },
   {
-   "n": 24,
+   "n": 23,
    "k": 4,
    "solver": "exact",
    "p": null,
@@ -1627,27 +4091,27 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 2.1230415410827845,
+   "meanSeconds": 0.9732354581356049,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
   },
   {
-   "n": 24,
+   "n": 23,
    "k": 4,
    "solver": "greedy",
    "p": null,
    "instances": 1,
-   "meanApproximationRatio": 0.9879418456370049,
-   "pOptimum": 0.0,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.00044458312913775444,
+   "meanSeconds": 0.0014278751332312822,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
   },
   {
-   "n": 24,
+   "n": 23,
    "k": 4,
    "solver": "anneal",
    "p": null,
@@ -1655,74 +4119,18 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.43256097501143814,
+   "meanSeconds": 0.9860006583388895,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
   },
   {
-   "n": 24,
+   "n": 23,
    "k": 4,
    "solver": "random",
    "p": null,
    "instances": 1,
-   "meanApproximationRatio": 0.5396122460609842,
-   "pOptimum": null,
-   "feasibility": null,
-   "meanSeconds": null,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 24,
-   "k": 6,
-   "solver": "exact",
-   "p": null,
-   "instances": 1,
-   "meanApproximationRatio": 1.0,
-   "pOptimum": null,
-   "feasibility": null,
-   "meanSeconds": 2.560133459046483,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 24,
-   "k": 6,
-   "solver": "greedy",
-   "p": null,
-   "instances": 1,
-   "meanApproximationRatio": 0.9934926562364862,
-   "pOptimum": 0.0,
-   "feasibility": null,
-   "meanSeconds": 0.0005748330149799585,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 24,
-   "k": 6,
-   "solver": "anneal",
-   "p": null,
-   "instances": 1,
-   "meanApproximationRatio": 1.0,
-   "pOptimum": 1.0,
-   "feasibility": null,
-   "meanSeconds": 0.4345837918110192,
-   "twoQubitGatesAllToAll": null,
-   "twoQubitGatesHeavyHex": null,
-   "depthAllToAll": null
-  },
-  {
-   "n": 24,
-   "k": 6,
-   "solver": "random",
-   "p": null,
-   "instances": 1,
-   "meanApproximationRatio": 0.6254284144826332,
+   "meanApproximationRatio": 0.5075677870320294,
    "pOptimum": null,
    "feasibility": null,
    "meanSeconds": null,
@@ -1731,7 +4139,63 @@
    "depthAllToAll": null
   },
   {
-   "n": 24,
+   "n": 23,
+   "k": 6,
+   "solver": "exact",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 1.739560917019844,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 23,
+   "k": 6,
+   "solver": "greedy",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 0.8809870209663105,
+   "pOptimum": 0.0,
+   "feasibility": null,
+   "meanSeconds": 0.002125791972503066,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 23,
+   "k": 6,
+   "solver": "anneal",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.9378844999708236,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 23,
+   "k": 6,
+   "solver": "random",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 0.5686968991717535,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 23,
    "k": 8,
    "solver": "exact",
    "p": null,
@@ -1739,27 +4203,27 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": null,
    "feasibility": null,
-   "meanSeconds": 3.7056397499982268,
+   "meanSeconds": 1.7012175000272691,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
   },
   {
-   "n": 24,
+   "n": 23,
    "k": 8,
    "solver": "greedy",
    "p": null,
    "instances": 1,
-   "meanApproximationRatio": 0.9817625821872605,
+   "meanApproximationRatio": 0.6398470752627283,
    "pOptimum": 0.0,
    "feasibility": null,
-   "meanSeconds": 0.0010390840470790863,
+   "meanSeconds": 0.0017629580106586218,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
   },
   {
-   "n": 24,
+   "n": 23,
    "k": 8,
    "solver": "anneal",
    "p": null,
@@ -1767,18 +4231,18 @@
    "meanApproximationRatio": 1.0,
    "pOptimum": 1.0,
    "feasibility": null,
-   "meanSeconds": 0.5182578499894589,
+   "meanSeconds": 0.48663743352517486,
    "twoQubitGatesAllToAll": null,
    "twoQubitGatesHeavyHex": null,
    "depthAllToAll": null
   },
   {
-   "n": 24,
+   "n": 23,
    "k": 8,
    "solver": "random",
    "p": null,
    "instances": 1,
-   "meanApproximationRatio": 0.5958511025439857,
+   "meanApproximationRatio": 0.537768601958437,
    "pOptimum": null,
    "feasibility": null,
    "meanSeconds": null,
@@ -1788,11 +4252,11 @@
   }
  ],
  "winnerBySize": {
-  "8": "exact ILP (0.101 s mean) is the fastest to return the optimum on every instance; also optimal every time: simulated annealing; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.124 (xy mixer, p = 2) vs 0.079 for a uniform random feasible panel, i.e. 1.58× uniform",
-  "12": "simulated annealing (0.277 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.003 (xy mixer, p = 2) vs 0.004 for a uniform random feasible panel, i.e. 0.70× uniform",
-  "16": "simulated annealing (0.309 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.001 (xy mixer, p = 3) vs 0.001 for a uniform random feasible panel, i.e. 1.45× uniform",
-  "20": "simulated annealing (0.553 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality",
-  "24": "simulated annealing (0.433 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality"
+  "8": "exact ILP (0.076 s mean) is the fastest to return the optimum on every instance; also optimal every time: simulated annealing; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.105 (xy mixer, p = 2) vs 0.079 for a uniform random feasible panel, i.e. 1.34× uniform",
+  "12": "greedy (0.000389 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP, simulated annealing; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.011 (xy mixer, p = 2) vs 0.007 for a uniform random feasible panel, i.e. 1.44× uniform",
+  "16": "simulated annealing (0.607 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.001 (xy mixer, p = 2) vs 0.001 for a uniform random feasible panel, i.e. 0.60× uniform",
+  "20": "simulated annealing (0.656 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality",
+  "23": "greedy (0.00143 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP, simulated annealing; only the ILP proves optimality"
  },
  "noise": [
   {
@@ -1801,9 +4265,9 @@
    "twoQubitError": 0.0,
    "oneQubitError": 0.0,
    "readoutError": 0.0,
-   "pOptimum": 0.055419921875,
-   "feasibility": 0.271484375,
-   "meanArFeasible": 0.6398066388739655
+   "pOptimum": 0.046630859375,
+   "feasibility": 0.19189453125,
+   "meanArFeasible": 0.6680456716632002
   },
   {
    "variant": "penalty",
@@ -1811,9 +4275,9 @@
    "twoQubitError": 0.001,
    "oneQubitError": 0.0001,
    "readoutError": 0.02,
-   "pOptimum": 0.0390625,
-   "feasibility": 0.193359375,
-   "meanArFeasible": 0.6334323716667292
+   "pOptimum": 0.03271484375,
+   "feasibility": 0.132568359375,
+   "meanArFeasible": 0.6687473978947095
   },
   {
    "variant": "penalty",
@@ -1821,9 +4285,9 @@
    "twoQubitError": 0.005,
    "oneQubitError": 0.0005,
    "readoutError": 0.02,
-   "pOptimum": 0.01904296875,
-   "feasibility": 0.09033203125,
-   "meanArFeasible": 0.6279215560499478
+   "pOptimum": 0.016357421875,
+   "feasibility": 0.076904296875,
+   "meanArFeasible": 0.62361398983441
   },
   {
    "variant": "penalty",
@@ -1831,9 +4295,9 @@
    "twoQubitError": 0.01,
    "oneQubitError": 0.001,
    "readoutError": 0.02,
-   "pOptimum": 0.00927734375,
-   "feasibility": 0.046630859375,
-   "meanArFeasible": 0.6469960125739997
+   "pOptimum": 0.008544921875,
+   "feasibility": 0.03515625,
+   "meanArFeasible": 0.6186288718830117
   },
   {
    "variant": "penalty",
@@ -1841,59 +4305,59 @@
    "twoQubitError": 0.02,
    "oneQubitError": 0.002,
    "readoutError": 0.02,
-   "pOptimum": 0.00439453125,
-   "feasibility": 0.02294921875,
-   "meanArFeasible": 0.6447611070102421
+   "pOptimum": 0.006591796875,
+   "feasibility": 0.026123046875,
+   "meanArFeasible": 0.670531969396389
   },
   {
    "variant": "xy",
-   "p": 3,
+   "p": 2,
    "twoQubitError": 0.0,
    "oneQubitError": 0.0,
    "readoutError": 0.0,
-   "pOptimum": 0.237548828125,
-   "feasibility": 0.6162109375,
-   "meanArFeasible": 0.6094281457640656
+   "pOptimum": 0.1865234375,
+   "feasibility": 0.593017578125,
+   "meanArFeasible": 0.5969022107682982
   },
   {
    "variant": "xy",
-   "p": 3,
+   "p": 2,
    "twoQubitError": 0.001,
    "oneQubitError": 0.0001,
    "readoutError": 0.02,
-   "pOptimum": 0.103759765625,
-   "feasibility": 0.286376953125,
-   "meanArFeasible": 0.5872399712542526
+   "pOptimum": 0.098876953125,
+   "feasibility": 0.311279296875,
+   "meanArFeasible": 0.6066041495604941
   },
   {
    "variant": "xy",
-   "p": 3,
+   "p": 2,
    "twoQubitError": 0.005,
    "oneQubitError": 0.0005,
    "readoutError": 0.02,
-   "pOptimum": 0.011962890625,
-   "feasibility": 0.046875,
-   "meanArFeasible": 0.5993706490965354
+   "pOptimum": 0.01953125,
+   "feasibility": 0.064208984375,
+   "meanArFeasible": 0.6240893435312475
   },
   {
    "variant": "xy",
-   "p": 3,
+   "p": 2,
    "twoQubitError": 0.01,
    "oneQubitError": 0.001,
    "readoutError": 0.02,
-   "pOptimum": 0.00634765625,
-   "feasibility": 0.025146484375,
-   "meanArFeasible": 0.6308288608135076
+   "pOptimum": 0.005615234375,
+   "feasibility": 0.028076171875,
+   "meanArFeasible": 0.5401522621305468
   },
   {
    "variant": "xy",
-   "p": 3,
+   "p": 2,
    "twoQubitError": 0.02,
    "oneQubitError": 0.002,
    "readoutError": 0.02,
-   "pOptimum": 0.005126953125,
-   "feasibility": 0.020751953125,
-   "meanArFeasible": 0.6289523661016325
+   "pOptimum": 0.003173828125,
+   "feasibility": 0.019287109375,
+   "meanArFeasible": 0.6616952848890845
   }
  ],
  "noiseModel": "parametric depolarising noise (Qiskit Aer) on a heavy-hex coupling map; not a device calibration",
@@ -1917,5 +4381,5 @@
   "restartInit": "qaoa.seed + 17*p + (0 penalty | 1 xy)",
   "shots": "20261107"
  },
- "generatedAt": "2026-11-07T11:01:42+00:00"
+ "generatedAt": "2026-11-07T12:31:38+00:00"
 }

@@ -1,7 +1,7 @@
 import type { EvidenceStatus, ValidationStatus } from '@/lib/types';
 import { cx } from '@/lib/data/format';
 import { Tooltip } from '../base/Tooltip';
-import { IconPending, IconProvisional, IconValidated } from '../icons';
+import { IconInfo, IconPending, IconProvisional, IconValidated } from '../icons';
 
 /**
  * Honesty 1 — evidence status, as a compact pill.
@@ -24,12 +24,15 @@ const VALIDATION_WORDING: Record<ValidationStatus, { label: string; explain: str
   external: { label: 'Validated against external data', explain: 'Compared with an independent, published dataset (for example measured experimental values). No AI-made reference is involved.' },
   provisional: { label: 'AI-assisted check (provisional)', explain: 'Checked by an AI, or against a reference an AI made. Useful for finding problems; never a validation.' },
   pending: { label: 'Human validation pending', explain: 'No independent check yet. No claim is made either way.' },
+  benchmark: { label: 'Benchmark against exact optimum', explain: 'A computed comparison of methods against the exact optimum of the same problem. It measures the methods, not the panel; not a validation.' },
 };
 
 export function EvidenceStatusBadge({ status, detail, size = 'md', wording = 'evidence' }: { status: ValidationStatus; detail?: string; size?: 'sm' | 'md'; wording?: 'evidence' | 'validation' }) {
   // 'external' keeps the design's solid "validated" shape; the word (and brand border) tells it apart from a person's check.
-  const base = status === 'external' ? { ...SPEC.validated, cls: 'border-brand text-brand' } : SPEC[status];
-  const s = wording === 'validation' || status === 'external' ? { ...base, ...VALIDATION_WORDING[status] } : base;
+  // 'benchmark' is neutral: a plain border, ink-muted text and the info icon (project lead, 2026-11-07).
+  const base = status === 'external' ? { ...SPEC.validated, cls: 'border-brand text-brand' }
+    : status === 'benchmark' ? { ...SPEC.pending, cls: 'border-border-strong bg-surface text-ink-muted', Icon: IconInfo } : SPEC[status];
+  const s = wording === 'validation' || status === 'external' || status === 'benchmark' ? { ...base, ...VALIDATION_WORDING[status] } : base;
   return (
     <Tooltip content={<span className="flex flex-col gap-1"><span className="font-semibold">{s.label}</span><span className="text-ink-muted">{s.explain}</span>{detail && <span className="text-ink-subtle">{detail}</span>}</span>}>
       <button

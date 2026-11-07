@@ -9,7 +9,8 @@
 export type EvidenceStatus = 'validated' | 'provisional' | 'pending';
 /** SITE: Methods & data uses four statuses (project lead, 2026-11-07): 'external' = validated against external data
  *  (an independent, published dataset such as measured values), distinct from a person's check ('validated'). */
-export type ValidationStatus = EvidenceStatus | 'external';
+export type ValidationStatus = EvidenceStatus | 'external' | 'benchmark';
+/** SITE: 'benchmark' = a computed benchmark against the exact optimum (project lead, 2026-11-07); neutral, not a validation. */
 
 /** 2. Source confidence */
 /** SITE: the real corpus has a third source, Culpeper's 1850 Complete Herbal (never merged with 1652 or Pliny). */
@@ -437,27 +438,56 @@ export interface Plate {
   image: PlateImage | null;
 }
 
-/** Lab Planner (placeholder until the quantum feature ships). SITE: derived from hypotheses.json; rankRange is null
- *  because the ranking records no rank interval, and readout/effort are not decided anywhere in the data. */
-export interface LabPlanItem {
-  id: string;
-  hypothesisId: string;
-  title: string;
-  compares: [string, string];
-  readout: string | null;
-  effort: 'low' | 'medium' | 'high' | null;
-  rank: number;
-  rankRange: [number, number] | null;
-  quantumScore: LikelihoodRange | null;
-}
-export interface LabPlanFile {
-  feature: { name: string; status: 'coming_soon' | 'available'; release: string | null; description: string };
-  items: LabPlanItem[];
-}
 
 /** contract: coverage.json — Home counts. */
 export interface Coverage {
   nameResolutions: Record<EvidenceStatus, number>;
   recipes: number;
   studies: number;
+}
+
+/** SITE: the Lab Planner's re-test panel (site-data/lab_panel.json, contract v1.9 P40 + v2 amendment). */
+export interface PanelEntryView {
+  position: number;
+  id: string;
+  speciesId: string;
+  species: string;
+  historical: string;
+  modern: string;
+  modernIsDefault: boolean;
+  indication: string;
+  gap: LikelihoodRange;
+  differs: number;
+  classes: string[];
+  toxicity: ToxicityRecord;
+  caveats: string[];
+  trail: { label: string; kind: string; href: string | null }[];
+  /** v1 only: chosen on coverage alone (no compound likely to differ). */
+  coverageOnly: boolean;
+  labHref: string | null;
+}
+export interface PanelSizeView { k: number; entries: PanelEntryView[]; objective: number | null; coverage: { class: number; indication: number; prep: number } }
+export interface BenchmarkRowView {
+  n: number; solver: string; p: number | null; instances: number; ar: number | null; pOptimum: number | null; feasibility: number | null;
+  seconds: number | null; cxAllToAll: number | null; cxHeavyHex: number | null; depth: number | null;
+}
+export interface PanelView {
+  ruleVersion: string;
+  ruleDoc: string;
+  perSpecies: number | null;
+  defaultK: number;
+  poolSize: number;
+  weights: Record<string, number>;
+  sizes: PanelSizeView[];
+  perSpeciesTwo: PanelSizeView[];
+  original: { k: number; objective: number; entries: PanelEntryView[]; notes: string[] } | null;
+  excludedToxic: { species: string; label: string }[];
+  ineligible: { label: string; reason: string }[];
+  sensitivity: { weight: string; factor: number; jaccard: number; added: string[]; removed: string[] }[];
+  benchmark: BenchmarkRowView[];
+  benchmarkSizes: number[];
+  winners: Record<string, string>;
+  noise: { variant: string; p: number; twoQubitError: number; pOptimum: number; feasibility: number; ar: number | null }[];
+  noiseModel: string;
+  hardware: Record<string, string>;
 }

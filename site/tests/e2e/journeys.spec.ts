@@ -88,8 +88,49 @@ test('planner: the evidence trail opens in a dialog that returns focus', async (
   const open = page.getByRole('button', { name: 'Evidence trail' }).first();
   await open.click();
   await expect(page.getByRole('dialog')).toBeVisible();
+  await expect(page.getByRole('dialog')).toContainText('hypothesis worth re-testing');
   await page.keyboard.press('Escape');
   await expect(open).toBeFocused();
+});
+
+test('planner: panel size switches the list; one entry per plant; toxic plants listed as excluded, never planned', async ({ page }) => {
+  await page.goto('/planner/');
+  const list = page.locator('section[aria-labelledby="panel"] ol > li');
+  await expect(list).toHaveCount(8);
+  await page.getByRole('radio', { name: '4', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Suggested panel (4)' })).toBeVisible();
+  await expect(list).toHaveCount(4);
+  const plants = (await list.locator('h3').allInnerTexts()).map((t) => t.split(':')[0].trim());
+  expect(new Set(plants).size).toBe(plants.length);
+  await expect(page.getByText(/not offered for planning because toxicity is reported/i)).toBeVisible();
+  for (const toxic of ['Glycyrrhiza glabra', 'Hyoscyamus niger']) await expect(list.filter({ hasText: toxic })).toHaveCount(0);
+});
+
+test('planner: the original v1 result stays visible with its slot-8 note', async ({ page }) => {
+  await page.goto('/planner/');
+  await expect(page.getByRole('heading', { name: 'The original result (rule v1)' })).toBeVisible();
+  await expect(page.locator('section[aria-labelledby="original"]').getByText(/selected on coverage, not value/)).toBeVisible();
+});
+
+test('planner: the benchmark switches size, states the winner, and has a table fallback', async ({ page }) => {
+  await page.goto('/planner/');
+  const bench = page.locator('section[aria-labelledby="bench"]');
+  await bench.getByRole('radio', { name: '16', exact: true }).click();
+  await expect(bench.getByText(/Which method wins at n = 16:/)).toBeVisible();
+  await expect(bench.getByText(/only the ILP proves optimality/)).toBeVisible();
+  await bench.getByText('View as table').click();
+  await expect(bench.getByRole('table').first()).toContainText('QAOA, XY mixer');
+  await page.getByRole('link', { name: 'How the panel was chosen' }).click();
+  await expect(page.locator('#how')).toBeVisible();
+});
+
+test('methods: "Where quantum helps" is in the table of contents and shows both results', async ({ page }) => {
+  await page.goto('/docs/');
+  await page.getByRole('navigation', { name: 'On this page' }).getByRole('link', { name: 'Where quantum helps' }).click();
+  const q = page.locator('#quantum');
+  await expect(q.getByRole('heading', { name: 'Quantum chemistry for the descriptor' })).toBeVisible();
+  await expect(q.getByRole('heading', { name: 'Quantum optimisation for the re-test panel' })).toBeVisible();
+  await expect(q.getByRole('button', { name: 'Evidence: Validated against external data' })).toBeVisible();
 });
 
 test('docs: table of contents jumps, and audited studies load per version', async ({ page }) => {

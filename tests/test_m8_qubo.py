@@ -18,7 +18,7 @@ def _pool(n=7, seed=0):
     rng = np.random.default_rng(seed)
     out = []
     for i in range(n):
-        out.append({"id": f"c{i}", "gapP5": float(rng.uniform(0.01, 0.3)), "toxic": bool(i % 3 == 0),
+        out.append({"id": f"c{i}", "speciesId": f"s{i // 2}", "gapP5": float(rng.uniform(0.01, 0.3)), "toxic": bool(i % 3 == 0),
                     "classes": sorted(rng.choice(["a", "b", "c", "d"], rng.integers(1, 4), replace=False).tolist()),
                     "indications": sorted(rng.choice(["m1", "m2", "m3", "m4", "m5"], rng.integers(1, 3), replace=False).tolist()),
                     "historical": str(rng.choice(["decoction", "juice", "wine"])),
@@ -120,3 +120,30 @@ def test_ising_reproduces_the_qubo_up_to_a_constant():
         z = 1 - 2 * ((np.arange(2 ** n)[:, None] >> np.arange(n)) & 1)
         H = z @ a + np.einsum("bi,ij,bj->b", z, b, z)
         assert np.allclose(E - H, (E - H)[0], atol=1e-9)
+
+
+def test_v2_species_limit_in_qubo_ilp_and_feasibility():
+    """docs/QUBO_v2_RULE.md: at most one entry per species (QUBO penalty P_sp) and at most two (ILP only)."""
+    c = _pool(8)
+    vmax = max(x["gapP5"] for x in c)
+    inst = Q.build(c, 3, W, vmax, "at_most_one", per_species=1)
+    n = len(c)
+    Qm, const = Q.qubo_matrix(inst)
+    E = []
+    for bits in itertools.product([0, 1], repeat=n):
+        x = np.array(bits, float)
+        assert float(x @ Qm @ x + const) == pytest.approx(Q.energy(inst, x), abs=1e-9)
+        E.append((Q.energy(inst, x), bits))
+    best = np.array(min(E)[1])
+    assert Q.feasible(inst, best)
+    sp = [x["speciesId"] for x in c]
+    assert all(sum(best[i] for i in range(n) if sp[i] == s) <= 1 for s in set(sp))
+    ex = Q.ilp(inst)
+    assert -min(E)[0] == pytest.approx(ex["f"], abs=1e-9)
+    f, feas = Q.all_objectives(inst)
+    tox = [i for i in range(n) if c[i]["toxic"]]
+    expected = sum(1 for S in itertools.combinations(range(n), 3)
+                   if sum(i in tox for i in S) <= 1 and all(sum(sp[i] == s for i in S) <= 1 for s in set(sp)))
+    assert int(feas.sum()) == expected
+    two = Q.ilp(Q.build(c, 3, W, vmax, "at_most_one", per_species=2))
+    assert two["f"] >= ex["f"] - 1e-12                     # relaxing the limit can only help the objective

@@ -1,7 +1,11 @@
 # Proposal: the Lab Planner panel and "Where quantum helps, and where it doesn't"
 
-**Status: proposal, not built.** It awaits the project lead's approval. The data is ready in `site-data/lab_panel.json`
-(contract v1.9, P40, proposed); the site validates the file at build time but no page reads it yet. Every number on
+**Status: approved by the project lead on 2026-11-07 and built, with these changes:**
+- the displayed panel is rule v2 (docs/QUBO_v2_RULE.md), with the v1 result kept visible;
+- there is no toxic toggle; excluded plants with toxicity reported are listed in a note;
+- the QAOA benchmark carries the neutral label "Benchmark against exact optimum".
+
+See site/CHANGES.md. The data is in `site-data/lab_panel.json` (contract v1.9, P40 with its v2 amendment). Every number on
 these screens would come from that file, or from `metrics.json` for the logP comparison. The wireframes below show the
 layout only; the placeholders in angle brackets are filled from data.
 

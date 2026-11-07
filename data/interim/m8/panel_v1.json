@@ -2510,5 +2510,6 @@
    "removed": []
   }
  ],
- "default": "exclude:k8"
+ "default": "exclude:k8",
+ "ruleVersion": "v1"
 }
