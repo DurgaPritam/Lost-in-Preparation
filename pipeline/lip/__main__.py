@@ -26,6 +26,9 @@
   python -m lip m5 ai-check-ingest DIR   gather the AI coders' blind codes (prompts/m5_ai_check/v1) -> data/reference/m5_ai_check_v1.json
   python -m lip m5 ai-check              AI-assisted check of the rule-based extractor (provisional; never human validation)
   python -m lip m5 gap-sensitivity       AI-assisted sensitivity check (provisional) of the reporting gap
+  python -m lip m8 pool                  Phase 8 candidate pool (species, historical preparation, modern comparator)
+  python -m lip m8 bench [--no-qaoa]     Phase 8 benchmark: exact ILP, greedy, annealing, QAOA (penalty, XY); panel; figures
+  python -m lip m8 export                site-data/lab_panel.json (contract P40) and docs/QUANTUM_RESULTS.md
   python -m lip m6 hypotheses            Phase 6: rank never-faithfully-tested pairs (hypotheses worth re-testing)
   python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
   python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
@@ -211,6 +214,17 @@ def main(argv: list[str]) -> int:
         elif sub == "gap-sensitivity":
             from .m5 import gap_sensitivity
             print(json.dumps(gap_sensitivity.run(), indent=2))
+    elif cmd == "m8":
+        sub = argv[1] if len(argv) > 1 else "bench"
+        if sub == "pool":
+            from .m8 import pool
+            print(json.dumps(pool.build(), indent=2))
+        elif sub == "bench":
+            from .m8 import bench
+            print(json.dumps(bench.run(qaoa_on="--no-qaoa" not in argv), indent=2))
+        elif sub == "export":
+            from .m8 import export
+            print(json.dumps(export.run(), indent=2, ensure_ascii=False))
     elif cmd == "m6":
         sub = argv[1] if len(argv) > 1 else "rank-demo"
         if sub == "hypotheses":

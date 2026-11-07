@@ -19,7 +19,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-CONTRACT_VERSION = "1.8"
+CONTRACT_VERSION = "1.9"
 UNKNOWN = "unknown"
 
 
@@ -721,6 +721,99 @@ Recipe.model_rebuild()
 
 Metrics.model_rebuild()
 
+# --- lab_panel.json (v1.9, P40 proposed): the recommended re-test panel and the Phase 8 benchmark --------------------
+
+class PanelGap(_Model):
+    p5: float
+    p50: float
+    p95: float
+
+
+class PanelCandidate(_Model):
+    position: int
+    candidateId: str = Field(description="<speciesId>|<historical preparation>|<modern comparator>")
+    speciesId: str
+    species: str
+    historicalPreparation: str = Field(description="M4 preparation label (heuristic map from the recipe fields)")
+    modernComparator: str
+    modernComparatorBasis: str = Field(description="studies (most frequent among the pairs' studies) | default (most frequent across all coded studies)")
+    indication: MeshTerm
+    indications: list[str] = Field(description="every MeSH id attested for the candidate's recipes")
+    gap: PanelGap = Field(description="profile gap (1 - cosine similarity) percentiles over coupled Monte Carlo draws (M6)")
+    value: float = Field(description="gap.p5 / the largest gap.p5 in the pool")
+    compoundsLikelyToDiffer: int
+    compoundClasses: list[str]
+    toxicity: str
+    caveats: list[str]
+    evidenceTrail: list[EvidenceItem]
+
+
+class PanelAlternative(_Model):
+    toxicRule: str = Field(description="exclude | at_most_one")
+    k: int
+    poolSize: int
+    objective: float
+    candidateIds: list[str]
+    coverage: dict[str, int] = Field(description="distinct attributes covered per family (class, indication, prep)")
+
+
+class PanelSensitivity(_Model):
+    weight: str
+    factor: float
+    value: float
+    jaccardWithDefault: float
+    added: list[str]
+    removed: list[str]
+
+
+class BenchmarkRow(_Model):
+    n: int
+    k: int
+    solver: str = Field(description="exact | greedy | anneal | random | qaoa-penalty | qaoa-xy")
+    p: int | None = Field(None, description="QAOA depth")
+    instances: int
+    meanApproximationRatio: float | None = Field(None, description="classical: of the returned panel; QAOA: expected over the feasible probability mass")
+    pOptimum: float | None = Field(None, description="mean probability of sampling an optimal panel (QAOA, exact statevector)")
+    feasibility: float | None = Field(None, description="mean probability of exactly k selected and the toxic rule met (QAOA)")
+    meanSeconds: float | None = None
+    twoQubitGatesAllToAll: int | None = None
+    twoQubitGatesHeavyHex: int | None = None
+    depthAllToAll: int | None = None
+
+
+class NoiseRow(_Model):
+    variant: str
+    p: int
+    twoQubitError: float
+    oneQubitError: float
+    readoutError: float
+    pOptimum: float
+    feasibility: float
+    meanArFeasible: float | None = None
+
+
+class LabPanel(_Record):  # site-data/lab_panel.json
+    basis: str = Field(description="exact_optimisation_of_model_outputs: the panel is the exact optimum of a fixed objective over model predictions; hypotheses worth re-testing, never claims")
+    label: str
+    toxicRule: str
+    k: int
+    weights: dict[str, float]
+    penaltyMargin: float
+    configSha256: str
+    poolSize: int
+    panel: list[PanelCandidate]
+    alternatives: list[PanelAlternative]
+    sensitivity: list[PanelSensitivity]
+    benchmark: list[BenchmarkRow]
+    winnerBySize: dict[str, str] = Field(description="n -> which method wins at that size (k = 4): the fastest classical method that returned the optimum on every instance, and QAOA's best P(optimum) against a uniform random feasible panel")
+    noise: list[NoiseRow]
+    noiseModel: str
+    hardware: dict[str, str]
+    versions: dict[str, str]
+    seeds: dict[str, str]
+    generatedAt: str
+
+
 FILE_MODELS = {
     "sources.json": Source,
     "recipes.json": Recipe,
@@ -736,5 +829,6 @@ FILE_MODELS = {
     "engine.species.json": EngineSpecies,          # v1.7 (P38) site-data/engine/<speciesId>.json
     "engine.parity.json": EngineParityCase,        # v1.7 (P38) site-data/engine/parity.json
     "plates.json": PlateRecord,                    # v1.8 (P39) site-data/plates.json
+    "lab_panel.json": LabPanel,                    # v1.9 (P40, proposed) site-data/lab_panel.json
 }
-ARRAY_FILES = {k for k in FILE_MODELS if k not in ("metrics.json", "engine.model.json", "engine.species.json")}
+ARRAY_FILES = {k for k in FILE_MODELS if k not in ("metrics.json", "engine.model.json", "engine.species.json", "lab_panel.json")}

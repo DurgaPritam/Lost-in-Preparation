@@ -1,0 +1,1921 @@
+{
+ "mock": false,
+ "basis": "exact_optimisation_of_model_outputs",
+ "label": "recommended re-test panel: exact optimum of a fixed objective over model predictions; hypotheses worth re-testing, never claims that a preparation works or is safe",
+ "toxicRule": "exclude",
+ "k": 8,
+ "weights": {
+  "alpha": 1.0,
+  "beta_class": 0.2,
+  "beta_indication": 0.2,
+  "beta_prep": 0.2,
+  "gamma": 0.5
+ },
+ "penaltyMargin": 1.25,
+ "configSha256": "19db49d1d9fa281a5e353fdaf56788976b8913d2ad840ab43f3d709f3af0145d",
+ "poolSize": 24,
+ "panel": [
+  {
+   "position": 1,
+   "candidateId": "wfo-0000933181|decoction in water|modern methanol extract",
+   "speciesId": "wfo-0000933181",
+   "species": "Ajuga chamaepitys",
+   "historicalPreparation": "decoction in water",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "default",
+   "indication": {
+    "meshId": "D007565",
+    "label": "Jaundice"
+   },
+   "indications": [
+    "D007565",
+    "D014555"
+   ],
+   "gap": {
+    "p5": 0.2339,
+    "p50": 0.3761,
+    "p95": 0.545
+   },
+   "value": 0.7958,
+   "compoundsLikelyToDiffer": 33,
+   "compoundClasses": [
+    "phenolic (heuristic)",
+    "terpenoid-like (heuristic)"
+   ],
+   "toxicity": "no_toxicity_reported",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies",
+    "attested only by Pliny (lower confidence)"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "pliny-nh:b24:c020:002#r04",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000933181:decoction in water vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000933181",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "candidateId": "wfo-0000933181|decoction in wine|modern methanol extract",
+   "speciesId": "wfo-0000933181",
+   "species": "Ajuga chamaepitys",
+   "historicalPreparation": "decoction in wine",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "default",
+   "indication": {
+    "meshId": "D006073",
+    "label": "Gout"
+   },
+   "indications": [
+    "D006073",
+    "D010243",
+    "D012585"
+   ],
+   "gap": {
+    "p5": 0.2221,
+    "p50": 0.3747,
+    "p95": 0.5424
+   },
+   "value": 0.7557,
+   "compoundsLikelyToDiffer": 31,
+   "compoundClasses": [
+    "phenolic (heuristic)",
+    "terpenoid-like (heuristic)"
+   ],
+   "toxicity": "no_toxicity_reported",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r03",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:ground-pine-or-chamepitys:008#r04",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r03",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:ground-pine-or-chamepitys:004#r04",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000933181:decoction in wine vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000933181",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 3,
+   "candidateId": "wfo-0000329771|decoction in wine|modern methanol extract",
+   "speciesId": "wfo-0000329771",
+   "species": "Betonica officinalis",
+   "historicalPreparation": "decoction in wine",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "default",
+   "indication": {
+    "meshId": "D003085",
+    "label": "Colic"
+   },
+   "indications": [
+    "D003085",
+    "D005414",
+    "D006373",
+    "D008107",
+    "D013158",
+    "D014098",
+    "D017116"
+   ],
+   "gap": {
+    "p5": 0.1612,
+    "p50": 0.2448,
+    "p95": 0.3815
+   },
+   "value": 0.5485,
+   "compoundsLikelyToDiffer": 14,
+   "compoundClasses": [
+    "glycoside-like (heuristic)",
+    "phenolic (heuristic)"
+   ],
+   "toxicity": "unknown",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:wood-betony:008#r09",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:wood-betony:008#r11",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:wood-betony:004#r10",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:wood-betony:004#r13",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000329771:decoction in wine vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000329771",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 4,
+   "candidateId": "wfo-0000968296|fresh juice|modern methanol extract",
+   "speciesId": "wfo-0000968296",
+   "species": "Galium aparine",
+   "historicalPreparation": "fresh juice",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "default",
+   "indication": {
+    "meshId": "D014947",
+    "label": "Wounds and Injuries"
+   },
+   "indications": [
+    "D006470",
+    "D014947"
+   ],
+   "gap": {
+    "p5": 0.0916,
+    "p50": 0.1942,
+    "p95": 0.3152
+   },
+   "value": 0.3117,
+   "compoundsLikelyToDiffer": 17,
+   "compoundClasses": [
+    "glycoside-like (heuristic)",
+    "phenolic (heuristic)"
+   ],
+   "toxicity": "no_toxicity_reported",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r04",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r06",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:cleavers:005#r04",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:cleavers:005#r06",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:17324258",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000968296:fresh juice vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000968296",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 5,
+   "candidateId": "wfo-0000402430|fresh juice|modern methanol extract",
+   "speciesId": "wfo-0000402430",
+   "species": "Raphanus sativus",
+   "historicalPreparation": "fresh juice",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "studies",
+   "indication": {
+    "meshId": "D004427",
+    "label": "Ear Diseases"
+   },
+   "indications": [
+    "D004427",
+    "D010373",
+    "D011041"
+   ],
+   "gap": {
+    "p5": 0.0903,
+    "p50": 0.1559,
+    "p95": 0.2473
+   },
+   "value": 0.3072,
+   "compoundsLikelyToDiffer": 133,
+   "compoundClasses": [
+    "alkaloid-like (heuristic)",
+    "glycoside-like (heuristic)",
+    "other (heuristic)",
+    "phenolic (heuristic)",
+    "terpenoid-like (heuristic)"
+   ],
+   "toxicity": "concern_reported",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "attested only by Pliny (lower confidence)"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "pliny-nh:b20:c013:001#r07",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "pliny-nh:b20:c013:002#r05",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "pliny-nh:b20:c013:005#r01",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:17685094",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:17910278",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:19903381",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:25371570",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:36501112",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:38597802",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:39441290",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000402430:fresh juice vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000402430",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 6,
+   "candidateId": "wfo-0000329771|powder taken whole|modern methanol extract",
+   "speciesId": "wfo-0000329771",
+   "species": "Betonica officinalis",
+   "historicalPreparation": "powder taken whole",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "default",
+   "indication": {
+    "meshId": "D004415",
+    "label": "Dyspepsia"
+   },
+   "indications": [
+    "D004415"
+   ],
+   "gap": {
+    "p5": 0.0584,
+    "p50": 0.0993,
+    "p95": 0.1601
+   },
+   "value": 0.1987,
+   "compoundsLikelyToDiffer": 11,
+   "compoundClasses": [
+    "glycoside-like (heuristic)"
+   ],
+   "toxicity": "unknown",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:wood-betony:008#r05",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:wood-betony:004#r06",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000329771:powder taken whole vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000329771",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 7,
+   "candidateId": "wfo-0000968296|powder taken whole|modern methanol extract",
+   "speciesId": "wfo-0000968296",
+   "species": "Galium aparine",
+   "historicalPreparation": "powder taken whole",
+   "modernComparator": "modern methanol extract",
+   "modernComparatorBasis": "default",
+   "indication": {
+    "meshId": "D012883",
+    "label": "Skin Ulcer"
+   },
+   "indications": [
+    "D012883"
+   ],
+   "gap": {
+    "p5": 0.0176,
+    "p50": 0.0489,
+    "p95": 0.0948
+   },
+   "value": 0.0599,
+   "compoundsLikelyToDiffer": 5,
+   "compoundClasses": [
+    "glycoside-like (heuristic)"
+   ],
+   "toxicity": "no_toxicity_reported",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "no retrieved study used a modelled modern preparation for these pairs; comparator is the most frequent modern preparation across all coded studies"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1652:herbal:cleavers-or-goosgrass:008#r07",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "culpeper-1850:herbal:cleavers:005#r07",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000968296:powder taken whole vs modern methanol extract",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000968296",
+     "note": null
+    }
+   ]
+  },
+  {
+   "position": 8,
+   "candidateId": "wfo-0000402430|decoction in wine|decoction in water",
+   "speciesId": "wfo-0000402430",
+   "species": "Raphanus sativus",
+   "historicalPreparation": "decoction in wine",
+   "modernComparator": "decoction in water",
+   "modernComparatorBasis": "studies",
+   "indication": {
+    "meshId": "D006547",
+    "label": "Hernia"
+   },
+   "indications": [
+    "D006547",
+    "D014545"
+   ],
+   "gap": {
+    "p5": 0.0027,
+    "p50": 0.0135,
+    "p95": 0.0437
+   },
+   "value": 0.0092,
+   "compoundsLikelyToDiffer": 0,
+   "compoundClasses": [],
+   "toxicity": "concern_reported",
+   "caveats": [
+    "hypothesis worth re-testing, not a claim that the preparation works or is safe",
+    "profile gap from predicted compound likelihoods (model), equal weights: LOTUS has no abundance data",
+    "historical indication mapped to MeSH by a heuristic lexicon; the historical term is not a modern diagnosis",
+    "attested only by Pliny (lower confidence)"
+   ],
+   "evidenceTrail": [
+    {
+     "kind": "recipe",
+     "ref": "pliny-nh:b20:c013:001#r01",
+     "note": null
+    },
+    {
+     "kind": "recipe",
+     "ref": "pliny-nh:b20:c013:003#r03",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:10624898",
+     "note": null
+    },
+    {
+     "kind": "study",
+     "ref": "pmid:19070189",
+     "note": null
+    },
+    {
+     "kind": "profile",
+     "ref": "wfo-0000402430:decoction in wine vs decoction in water",
+     "note": null
+    },
+    {
+     "kind": "species",
+     "ref": "wfo-0000402430",
+     "note": null
+    }
+   ]
+  }
+ ],
+ "alternatives": [
+  {
+   "toxicRule": "exclude",
+   "k": 4,
+   "poolSize": 16,
+   "objective": 1.482202,
+   "candidateIds": [
+    "wfo-0000933181|decoction in water|modern methanol extract",
+    "wfo-0000933181|decoction in wine|modern methanol extract",
+    "wfo-0000329771|decoction in wine|modern methanol extract",
+    "wfo-0000402430|fresh juice|modern methanol extract"
+   ],
+   "coverage": {
+    "class": 5,
+    "indication": 15,
+    "prep": 3
+   }
+  },
+  {
+   "toxicRule": "exclude",
+   "k": 6,
+   "poolSize": 16,
+   "objective": 1.092329,
+   "candidateIds": [
+    "wfo-0000933181|decoction in water|modern methanol extract",
+    "wfo-0000933181|decoction in wine|modern methanol extract",
+    "wfo-0000329771|decoction in wine|modern methanol extract",
+    "wfo-0000402430|fresh juice|modern methanol extract",
+    "wfo-0000329771|powder taken whole|modern methanol extract",
+    "wfo-0000402430|decoction in wine|decoction in water"
+   ],
+   "coverage": {
+    "class": 5,
+    "indication": 18,
+    "prep": 4
+   }
+  },
+  {
+   "toxicRule": "at_most_one",
+   "k": 4,
+   "poolSize": 24,
+   "objective": 1.570949,
+   "candidateIds": [
+    "wfo-0000933181|decoction in water|modern methanol extract",
+    "wfo-0000933181|decoction in wine|modern methanol extract",
+    "wfo-0000329771|decoction in wine|modern methanol extract",
+    "wfo-0000600655|fresh juice|modern methanol extract"
+   ],
+   "coverage": {
+    "class": 5,
+    "indication": 16,
+    "prep": 3
+   }
+  },
+  {
+   "toxicRule": "at_most_one",
+   "k": 6,
+   "poolSize": 24,
+   "objective": 1.151341,
+   "candidateIds": [
+    "wfo-0000933181|decoction in water|modern methanol extract",
+    "wfo-0000933181|decoction in wine|modern methanol extract",
+    "wfo-0000329771|decoction in wine|modern methanol extract",
+    "wfo-0000600655|fresh juice|modern methanol extract",
+    "wfo-0000329771|powder taken whole|modern methanol extract",
+    "wfo-0000402430|decoction in wine|decoction in water"
+   ],
+   "coverage": {
+    "class": 5,
+    "indication": 19,
+    "prep": 4
+   }
+  },
+  {
+   "toxicRule": "at_most_one",
+   "k": 8,
+   "poolSize": 24,
+   "objective": 0.836588,
+   "candidateIds": [
+    "wfo-0000933181|decoction in water|modern methanol extract",
+    "wfo-0000933181|decoction in wine|modern methanol extract",
+    "wfo-0000329771|decoction in wine|modern methanol extract",
+    "wfo-0000968296|fresh juice|modern methanol extract",
+    "wfo-0000329771|powder taken whole|modern methanol extract",
+    "wfo-0000968296|powder taken whole|modern methanol extract",
+    "wfo-0000755919|steeped in vinegar|decoction in water",
+    "wfo-0000402430|decoction in wine|decoction in water"
+   ],
+   "coverage": {
+    "class": 5,
+    "indication": 19,
+    "prep": 5
+   }
+  }
+ ],
+ "sensitivity": [
+  {
+   "weight": "alpha",
+   "factor": 0.5,
+   "value": 0.5,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "alpha",
+   "factor": 2.0,
+   "value": 2.0,
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000134589|hot water infusion (tea)|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000402430|fresh juice|modern methanol extract"
+   ]
+  },
+  {
+   "weight": "beta_class",
+   "factor": 0.5,
+   "value": 0.1,
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000134589|hot water infusion (tea)|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000968296|powder taken whole|modern methanol extract"
+   ]
+  },
+  {
+   "weight": "beta_class",
+   "factor": 2.0,
+   "value": 0.4,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "beta_indication",
+   "factor": 0.5,
+   "value": 0.1,
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000134589|hot water infusion (tea)|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000402430|fresh juice|modern methanol extract"
+   ]
+  },
+  {
+   "weight": "beta_indication",
+   "factor": 2.0,
+   "value": 0.4,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "beta_prep",
+   "factor": 0.5,
+   "value": 0.1,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "beta_prep",
+   "factor": 2.0,
+   "value": 0.4,
+   "jaccardWithDefault": 0.7778,
+   "added": [
+    "wfo-0000134589|hot water infusion (tea)|modern methanol extract"
+   ],
+   "removed": [
+    "wfo-0000402430|fresh juice|modern methanol extract"
+   ]
+  },
+  {
+   "weight": "gamma",
+   "factor": 0.5,
+   "value": 0.25,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  },
+  {
+   "weight": "gamma",
+   "factor": 2.0,
+   "value": 1.0,
+   "jaccardWithDefault": 1.0,
+   "added": [],
+   "removed": []
+  }
+ ],
+ "benchmark": [
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.10064091665359835,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9433711196300768,
+   "pOptimum": 0.6666666666666666,
+   "feasibility": null,
+   "meanSeconds": 0.00009961092534164588,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.1210565388513108,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.521434400550954,
+   "pOptimum": 0.0787878787878788,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 1,
+   "instances": 3,
+   "meanApproximationRatio": 0.5435472737572186,
+   "pOptimum": 0.010284048417066927,
+   "feasibility": 0.34556101898547836,
+   "meanSeconds": 0.8145202086307108,
+   "twoQubitGatesAllToAll": 56,
+   "twoQubitGatesHeavyHex": 117,
+   "depthAllToAll": 48
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 2,
+   "instances": 3,
+   "meanApproximationRatio": 0.49424291076576127,
+   "pOptimum": 0.008956785487133722,
+   "feasibility": 0.512152014556758,
+   "meanSeconds": 8.33209079123723,
+   "twoQubitGatesAllToAll": 112,
+   "twoQubitGatesHeavyHex": 232,
+   "depthAllToAll": 78
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 3,
+   "instances": 3,
+   "meanApproximationRatio": 0.5361408018645467,
+   "pOptimum": 0.027771171583418994,
+   "feasibility": 0.5058691288205103,
+   "meanSeconds": 9.207901236290732,
+   "twoQubitGatesAllToAll": 168,
+   "twoQubitGatesHeavyHex": 372,
+   "depthAllToAll": 108
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 1,
+   "instances": 3,
+   "meanApproximationRatio": 0.5700346869366157,
+   "pOptimum": 0.0757092039315514,
+   "feasibility": 0.7796086362817992,
+   "meanSeconds": 1.9224789307142298,
+   "twoQubitGatesAllToAll": 260,
+   "twoQubitGatesHeavyHex": 465,
+   "depthAllToAll": 508
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 2,
+   "instances": 3,
+   "meanApproximationRatio": 0.611063201932406,
+   "pOptimum": 0.12436561044430207,
+   "feasibility": 0.8382666307585147,
+   "meanSeconds": 13.990039569248134,
+   "twoQubitGatesAllToAll": 342,
+   "twoQubitGatesHeavyHex": 648,
+   "depthAllToAll": 567
+  },
+  {
+   "n": 8,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 3,
+   "instances": 3,
+   "meanApproximationRatio": 0.5784148180696423,
+   "pOptimum": 0.1221420157737468,
+   "feasibility": 0.8597166636792107,
+   "meanSeconds": 24.40140595830356,
+   "twoQubitGatesAllToAll": 424,
+   "twoQubitGatesHeavyHex": 812,
+   "depthAllToAll": 626
+  },
+  {
+   "n": 8,
+   "k": 6,
+   "solver": "exact",
+   "p": null,
+   "instances": 2,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.09574749995954335,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 8,
+   "k": 6,
+   "solver": "greedy",
+   "p": null,
+   "instances": 2,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.00017762451898306608,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 8,
+   "k": 6,
+   "solver": "anneal",
+   "p": null,
+   "instances": 2,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.19364531624596565,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 8,
+   "k": 6,
+   "solver": "random",
+   "p": null,
+   "instances": 2,
+   "meanApproximationRatio": 0.5273362261888239,
+   "pOptimum": 0.07692307692307693,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.5383518054150045,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9932479179995074,
+   "pOptimum": 0.6666666666666666,
+   "feasibility": null,
+   "meanSeconds": 0.00016780570149421692,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.27679393608123065,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5431566178352272,
+   "pOptimum": 0.0038548752834467125,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 1,
+   "instances": 3,
+   "meanApproximationRatio": 0.5448364112142327,
+   "pOptimum": 0.001065411356354942,
+   "feasibility": 0.27369728183928455,
+   "meanSeconds": 3.978035611255715,
+   "twoQubitGatesAllToAll": 132,
+   "twoQubitGatesHeavyHex": 293,
+   "depthAllToAll": 72
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 2,
+   "instances": 3,
+   "meanApproximationRatio": 0.5436864677388122,
+   "pOptimum": 0.001584194149626326,
+   "feasibility": 0.42805647069055713,
+   "meanSeconds": 13.105577597316975,
+   "twoQubitGatesAllToAll": 264,
+   "twoQubitGatesHeavyHex": 580,
+   "depthAllToAll": 114
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 3,
+   "instances": 3,
+   "meanApproximationRatio": 0.5442062076457468,
+   "pOptimum": 0.0018720551942988772,
+   "feasibility": 0.4519767762628499,
+   "meanSeconds": 24.883136875306565,
+   "twoQubitGatesAllToAll": 396,
+   "twoQubitGatesHeavyHex": 886,
+   "depthAllToAll": 156
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 1,
+   "instances": 3,
+   "meanApproximationRatio": 0.5523225647380484,
+   "pOptimum": 0.0024696425472393725,
+   "feasibility": 0.85478946421591,
+   "meanSeconds": 10.528212972295782,
+   "twoQubitGatesAllToAll": 481,
+   "twoQubitGatesHeavyHex": 946,
+   "depthAllToAll": 862
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 2,
+   "instances": 3,
+   "meanApproximationRatio": 0.5633243075028689,
+   "pOptimum": 0.002685358534419317,
+   "feasibility": 0.91932746355869,
+   "meanSeconds": 35.93670611091269,
+   "twoQubitGatesAllToAll": 647,
+   "twoQubitGatesHeavyHex": 1328,
+   "depthAllToAll": 947
+  },
+  {
+   "n": 12,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 3,
+   "instances": 3,
+   "meanApproximationRatio": 0.5652129310973928,
+   "pOptimum": 0.00246157570338302,
+   "feasibility": 0.868253957105036,
+   "meanSeconds": 48.33729926364807,
+   "twoQubitGatesAllToAll": 814,
+   "twoQubitGatesHeavyHex": 1727,
+   "depthAllToAll": 1032
+  },
+  {
+   "n": 12,
+   "k": 6,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.9845184995792806,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 6,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9962976297459732,
+   "pOptimum": 0.6666666666666666,
+   "feasibility": null,
+   "meanSeconds": 0.00021799964209397635,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 6,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.20216640303842723,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 6,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5742558140230446,
+   "pOptimum": 0.005621693121693121,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 8,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.05223745829425752,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 8,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.8255052854779404,
+   "pOptimum": 0.0,
+   "feasibility": null,
+   "meanSeconds": 0.00024518067948520184,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 8,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.19607152221724392,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 12,
+   "k": 8,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5763779705064612,
+   "pOptimum": 0.08686868686868687,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.9338695413898677,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9915965393108283,
+   "pOptimum": 0.6666666666666666,
+   "feasibility": null,
+   "meanSeconds": 0.00026368023827672005,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.3092452640334765,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5557448949490772,
+   "pOptimum": 0.0008432714239165851,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 1,
+   "instances": 3,
+   "meanApproximationRatio": 0.5570904255190717,
+   "pOptimum": 0.00023707117022477725,
+   "feasibility": 0.2849858854122303,
+   "meanSeconds": 21.41493562508064,
+   "twoQubitGatesAllToAll": 240,
+   "twoQubitGatesHeavyHex": 545,
+   "depthAllToAll": 96
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 2,
+   "instances": 3,
+   "meanApproximationRatio": 0.5577786820887324,
+   "pOptimum": 0.00029184175881534247,
+   "feasibility": 0.3928216125788943,
+   "meanSeconds": 88.41438063940343,
+   "twoQubitGatesAllToAll": 480,
+   "twoQubitGatesHeavyHex": 1026,
+   "depthAllToAll": 150
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "qaoa-penalty",
+   "p": 3,
+   "instances": 3,
+   "meanApproximationRatio": 0.5583774069007598,
+   "pOptimum": 0.0003478068978672811,
+   "feasibility": 0.4536044379702231,
+   "meanSeconds": 163.967387278021,
+   "twoQubitGatesAllToAll": 720,
+   "twoQubitGatesHeavyHex": 1581,
+   "depthAllToAll": 204
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 1,
+   "instances": 3,
+   "meanApproximationRatio": 0.5546278797358661,
+   "pOptimum": 0.0008735551937908078,
+   "feasibility": 0.9384578407248156,
+   "meanSeconds": 41.841231958319746,
+   "twoQubitGatesAllToAll": 723,
+   "twoQubitGatesHeavyHex": 1497,
+   "depthAllToAll": 1214
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 2,
+   "instances": 3,
+   "meanApproximationRatio": 0.5559853666683066,
+   "pOptimum": 0.0009842589039734517,
+   "feasibility": 0.9684890119526756,
+   "meanSeconds": 189.41422648572674,
+   "twoQubitGatesAllToAll": 997,
+   "twoQubitGatesHeavyHex": 2240,
+   "depthAllToAll": 1323
+  },
+  {
+   "n": 16,
+   "k": 4,
+   "solver": "qaoa-xy",
+   "p": 3,
+   "instances": 3,
+   "meanApproximationRatio": 0.5530190973320109,
+   "pOptimum": 0.0012225679121828212,
+   "feasibility": 0.9577416184156817,
+   "meanSeconds": 234.55869505538917,
+   "twoQubitGatesAllToAll": 1270,
+   "twoQubitGatesHeavyHex": 2852,
+   "depthAllToAll": 1432
+  },
+  {
+   "n": 16,
+   "k": 6,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 2.504357514049237,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 6,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9967805917881368,
+   "pOptimum": 0.6666666666666666,
+   "feasibility": null,
+   "meanSeconds": 0.0003378886419037978,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 6,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.28048036114002267,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 6,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5811189861567023,
+   "pOptimum": 0.00035649288206329906,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 8,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 0.6454190280443678,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 8,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9672782051267158,
+   "pOptimum": 0.3333333333333333,
+   "feasibility": null,
+   "meanSeconds": 0.0004016526509076357,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 8,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.2710020498527835,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 16,
+   "k": 8,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5754920024812153,
+   "pOptimum": 0.0006177300294947354,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 4,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 1.2545336526818573,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 4,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9955928679800253,
+   "pOptimum": 0.6666666666666666,
+   "feasibility": null,
+   "meanSeconds": 0.00035862531512975693,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 4,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.5532401444235195,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 4,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5368041551762479,
+   "pOptimum": 0.00036805299963194705,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 6,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 2.176328486064449,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 6,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9719971968126896,
+   "pOptimum": 0.3333333333333333,
+   "feasibility": null,
+   "meanSeconds": 0.0004685833118855953,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 6,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.3537682584331681,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 6,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5893658080672642,
+   "pOptimum": 0.00009324009324009324,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 8,
+   "solver": "exact",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 1.0710748886534323,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 8,
+   "solver": "greedy",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.9697918547759112,
+   "pOptimum": 0.0,
+   "feasibility": null,
+   "meanSeconds": 0.0005741249769926071,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 8,
+   "solver": "anneal",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.333378019478793,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 20,
+   "k": 8,
+   "solver": "random",
+   "p": null,
+   "instances": 3,
+   "meanApproximationRatio": 0.5918567478962163,
+   "pOptimum": 0.00007519362358072035,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 4,
+   "solver": "exact",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 2.1230415410827845,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 4,
+   "solver": "greedy",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 0.9879418456370049,
+   "pOptimum": 0.0,
+   "feasibility": null,
+   "meanSeconds": 0.00044458312913775444,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 4,
+   "solver": "anneal",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.43256097501143814,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 4,
+   "solver": "random",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 0.5396122460609842,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 6,
+   "solver": "exact",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 2.560133459046483,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 6,
+   "solver": "greedy",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 0.9934926562364862,
+   "pOptimum": 0.0,
+   "feasibility": null,
+   "meanSeconds": 0.0005748330149799585,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 6,
+   "solver": "anneal",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.4345837918110192,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 6,
+   "solver": "random",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 0.6254284144826332,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 8,
+   "solver": "exact",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": 3.7056397499982268,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 8,
+   "solver": "greedy",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 0.9817625821872605,
+   "pOptimum": 0.0,
+   "feasibility": null,
+   "meanSeconds": 0.0010390840470790863,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 8,
+   "solver": "anneal",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 1.0,
+   "pOptimum": 1.0,
+   "feasibility": null,
+   "meanSeconds": 0.5182578499894589,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  },
+  {
+   "n": 24,
+   "k": 8,
+   "solver": "random",
+   "p": null,
+   "instances": 1,
+   "meanApproximationRatio": 0.5958511025439857,
+   "pOptimum": null,
+   "feasibility": null,
+   "meanSeconds": null,
+   "twoQubitGatesAllToAll": null,
+   "twoQubitGatesHeavyHex": null,
+   "depthAllToAll": null
+  }
+ ],
+ "winnerBySize": {
+  "8": "exact ILP (0.101 s mean) is the fastest to return the optimum on every instance; also optimal every time: simulated annealing; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.124 (xy mixer, p = 2) vs 0.079 for a uniform random feasible panel, i.e. 1.58× uniform",
+  "12": "simulated annealing (0.277 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.003 (xy mixer, p = 2) vs 0.004 for a uniform random feasible panel, i.e. 0.70× uniform",
+  "16": "simulated annealing (0.309 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality. QAOA (simulated): best mean P(optimum) 0.001 (xy mixer, p = 3) vs 0.001 for a uniform random feasible panel, i.e. 1.45× uniform",
+  "20": "simulated annealing (0.553 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality",
+  "24": "simulated annealing (0.433 s mean) is the fastest to return the optimum on every instance; also optimal every time: exact ILP; only the ILP proves optimality"
+ },
+ "noise": [
+  {
+   "variant": "penalty",
+   "p": 3,
+   "twoQubitError": 0.0,
+   "oneQubitError": 0.0,
+   "readoutError": 0.0,
+   "pOptimum": 0.055419921875,
+   "feasibility": 0.271484375,
+   "meanArFeasible": 0.6398066388739655
+  },
+  {
+   "variant": "penalty",
+   "p": 3,
+   "twoQubitError": 0.001,
+   "oneQubitError": 0.0001,
+   "readoutError": 0.02,
+   "pOptimum": 0.0390625,
+   "feasibility": 0.193359375,
+   "meanArFeasible": 0.6334323716667292
+  },
+  {
+   "variant": "penalty",
+   "p": 3,
+   "twoQubitError": 0.005,
+   "oneQubitError": 0.0005,
+   "readoutError": 0.02,
+   "pOptimum": 0.01904296875,
+   "feasibility": 0.09033203125,
+   "meanArFeasible": 0.6279215560499478
+  },
+  {
+   "variant": "penalty",
+   "p": 3,
+   "twoQubitError": 0.01,
+   "oneQubitError": 0.001,
+   "readoutError": 0.02,
+   "pOptimum": 0.00927734375,
+   "feasibility": 0.046630859375,
+   "meanArFeasible": 0.6469960125739997
+  },
+  {
+   "variant": "penalty",
+   "p": 3,
+   "twoQubitError": 0.02,
+   "oneQubitError": 0.002,
+   "readoutError": 0.02,
+   "pOptimum": 0.00439453125,
+   "feasibility": 0.02294921875,
+   "meanArFeasible": 0.6447611070102421
+  },
+  {
+   "variant": "xy",
+   "p": 3,
+   "twoQubitError": 0.0,
+   "oneQubitError": 0.0,
+   "readoutError": 0.0,
+   "pOptimum": 0.237548828125,
+   "feasibility": 0.6162109375,
+   "meanArFeasible": 0.6094281457640656
+  },
+  {
+   "variant": "xy",
+   "p": 3,
+   "twoQubitError": 0.001,
+   "oneQubitError": 0.0001,
+   "readoutError": 0.02,
+   "pOptimum": 0.103759765625,
+   "feasibility": 0.286376953125,
+   "meanArFeasible": 0.5872399712542526
+  },
+  {
+   "variant": "xy",
+   "p": 3,
+   "twoQubitError": 0.005,
+   "oneQubitError": 0.0005,
+   "readoutError": 0.02,
+   "pOptimum": 0.011962890625,
+   "feasibility": 0.046875,
+   "meanArFeasible": 0.5993706490965354
+  },
+  {
+   "variant": "xy",
+   "p": 3,
+   "twoQubitError": 0.01,
+   "oneQubitError": 0.001,
+   "readoutError": 0.02,
+   "pOptimum": 0.00634765625,
+   "feasibility": 0.025146484375,
+   "meanArFeasible": 0.6308288608135076
+  },
+  {
+   "variant": "xy",
+   "p": 3,
+   "twoQubitError": 0.02,
+   "oneQubitError": 0.002,
+   "readoutError": 0.02,
+   "pOptimum": 0.005126953125,
+   "feasibility": 0.020751953125,
+   "meanArFeasible": 0.6289523661016325
+  }
+ ],
+ "noiseModel": "parametric depolarising noise (Qiskit Aer) on a heavy-hex coupling map; not a device calibration",
+ "hardware": {
+  "ibmQuantum": "not used: no IBM Quantum account or token on this machine, and none was created",
+  "ionqQollab": "not used: needs the project lead's own account",
+  "substitute": "parametric noise-model simulation (Qiskit Aer)"
+ },
+ "versions": {
+  "python": "3.11.14",
+  "qiskit": "2.6.2",
+  "qiskit-aer": "0.18.2",
+  "pulp": "3.3.2",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1"
+ },
+ "seeds": {
+  "instances": "20261107 + 1000*n + i",
+  "anneal": "[1, 2, 3, 4, 5]",
+  "qaoa": "20261107",
+  "restartInit": "qaoa.seed + 17*p + (0 penalty | 1 xy)",
+  "shots": "20261107"
+ },
+ "generatedAt": "2026-11-07T11:01:42+00:00"
+}

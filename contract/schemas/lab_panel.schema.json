@@ -1,0 +1,602 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lost-in-preparation/contract/1.9/lab_panel.json",
+  "title": "LabPanel",
+  "$defs": {
+    "BenchmarkRow": {
+      "additionalProperties": false,
+      "properties": {
+        "n": {
+          "title": "N",
+          "type": "integer"
+        },
+        "k": {
+          "title": "K",
+          "type": "integer"
+        },
+        "solver": {
+          "description": "exact | greedy | anneal | random | qaoa-penalty | qaoa-xy",
+          "title": "Solver",
+          "type": "string"
+        },
+        "p": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "QAOA depth",
+          "title": "P"
+        },
+        "instances": {
+          "title": "Instances",
+          "type": "integer"
+        },
+        "meanApproximationRatio": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "classical: of the returned panel; QAOA: expected over the feasible probability mass",
+          "title": "Meanapproximationratio"
+        },
+        "pOptimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "mean probability of sampling an optimal panel (QAOA, exact statevector)",
+          "title": "Poptimum"
+        },
+        "feasibility": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "mean probability of exactly k selected and the toxic rule met (QAOA)",
+          "title": "Feasibility"
+        },
+        "meanSeconds": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Meanseconds"
+        },
+        "twoQubitGatesAllToAll": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Twoqubitgatesalltoall"
+        },
+        "twoQubitGatesHeavyHex": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Twoqubitgatesheavyhex"
+        },
+        "depthAllToAll": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Depthalltoall"
+        }
+      },
+      "required": [
+        "n",
+        "k",
+        "solver",
+        "instances"
+      ],
+      "title": "BenchmarkRow",
+      "type": "object"
+    },
+    "EvidenceItem": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "ref": {
+          "title": "Ref",
+          "type": "string"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "kind",
+        "ref"
+      ],
+      "title": "EvidenceItem",
+      "type": "object"
+    },
+    "MeshTerm": {
+      "additionalProperties": false,
+      "properties": {
+        "meshId": {
+          "title": "Meshid",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "meshId",
+        "label"
+      ],
+      "title": "MeshTerm",
+      "type": "object"
+    },
+    "NoiseRow": {
+      "additionalProperties": false,
+      "properties": {
+        "variant": {
+          "title": "Variant",
+          "type": "string"
+        },
+        "p": {
+          "title": "P",
+          "type": "integer"
+        },
+        "twoQubitError": {
+          "title": "Twoqubiterror",
+          "type": "number"
+        },
+        "oneQubitError": {
+          "title": "Onequbiterror",
+          "type": "number"
+        },
+        "readoutError": {
+          "title": "Readouterror",
+          "type": "number"
+        },
+        "pOptimum": {
+          "title": "Poptimum",
+          "type": "number"
+        },
+        "feasibility": {
+          "title": "Feasibility",
+          "type": "number"
+        },
+        "meanArFeasible": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Meanarfeasible"
+        }
+      },
+      "required": [
+        "variant",
+        "p",
+        "twoQubitError",
+        "oneQubitError",
+        "readoutError",
+        "pOptimum",
+        "feasibility"
+      ],
+      "title": "NoiseRow",
+      "type": "object"
+    },
+    "PanelAlternative": {
+      "additionalProperties": false,
+      "properties": {
+        "toxicRule": {
+          "description": "exclude | at_most_one",
+          "title": "Toxicrule",
+          "type": "string"
+        },
+        "k": {
+          "title": "K",
+          "type": "integer"
+        },
+        "poolSize": {
+          "title": "Poolsize",
+          "type": "integer"
+        },
+        "objective": {
+          "title": "Objective",
+          "type": "number"
+        },
+        "candidateIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Candidateids",
+          "type": "array"
+        },
+        "coverage": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "description": "distinct attributes covered per family (class, indication, prep)",
+          "title": "Coverage",
+          "type": "object"
+        }
+      },
+      "required": [
+        "toxicRule",
+        "k",
+        "poolSize",
+        "objective",
+        "candidateIds",
+        "coverage"
+      ],
+      "title": "PanelAlternative",
+      "type": "object"
+    },
+    "PanelCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        },
+        "candidateId": {
+          "description": "<speciesId>|<historical preparation>|<modern comparator>",
+          "title": "Candidateid",
+          "type": "string"
+        },
+        "speciesId": {
+          "title": "Speciesid",
+          "type": "string"
+        },
+        "species": {
+          "title": "Species",
+          "type": "string"
+        },
+        "historicalPreparation": {
+          "description": "M4 preparation label (heuristic map from the recipe fields)",
+          "title": "Historicalpreparation",
+          "type": "string"
+        },
+        "modernComparator": {
+          "title": "Moderncomparator",
+          "type": "string"
+        },
+        "modernComparatorBasis": {
+          "description": "studies (most frequent among the pairs' studies) | default (most frequent across all coded studies)",
+          "title": "Moderncomparatorbasis",
+          "type": "string"
+        },
+        "indication": {
+          "$ref": "#/$defs/MeshTerm"
+        },
+        "indications": {
+          "description": "every MeSH id attested for the candidate's recipes",
+          "items": {
+            "type": "string"
+          },
+          "title": "Indications",
+          "type": "array"
+        },
+        "gap": {
+          "$ref": "#/$defs/PanelGap",
+          "description": "profile gap (1 - cosine similarity) percentiles over coupled Monte Carlo draws (M6)"
+        },
+        "value": {
+          "description": "gap.p5 / the largest gap.p5 in the pool",
+          "title": "Value",
+          "type": "number"
+        },
+        "compoundsLikelyToDiffer": {
+          "title": "Compoundslikelytodiffer",
+          "type": "integer"
+        },
+        "compoundClasses": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Compoundclasses",
+          "type": "array"
+        },
+        "toxicity": {
+          "title": "Toxicity",
+          "type": "string"
+        },
+        "caveats": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Caveats",
+          "type": "array"
+        },
+        "evidenceTrail": {
+          "items": {
+            "$ref": "#/$defs/EvidenceItem"
+          },
+          "title": "Evidencetrail",
+          "type": "array"
+        }
+      },
+      "required": [
+        "position",
+        "candidateId",
+        "speciesId",
+        "species",
+        "historicalPreparation",
+        "modernComparator",
+        "modernComparatorBasis",
+        "indication",
+        "indications",
+        "gap",
+        "value",
+        "compoundsLikelyToDiffer",
+        "compoundClasses",
+        "toxicity",
+        "caveats",
+        "evidenceTrail"
+      ],
+      "title": "PanelCandidate",
+      "type": "object"
+    },
+    "PanelGap": {
+      "additionalProperties": false,
+      "properties": {
+        "p5": {
+          "title": "P5",
+          "type": "number"
+        },
+        "p50": {
+          "title": "P50",
+          "type": "number"
+        },
+        "p95": {
+          "title": "P95",
+          "type": "number"
+        }
+      },
+      "required": [
+        "p5",
+        "p50",
+        "p95"
+      ],
+      "title": "PanelGap",
+      "type": "object"
+    },
+    "PanelSensitivity": {
+      "additionalProperties": false,
+      "properties": {
+        "weight": {
+          "title": "Weight",
+          "type": "string"
+        },
+        "factor": {
+          "title": "Factor",
+          "type": "number"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "jaccardWithDefault": {
+          "title": "Jaccardwithdefault",
+          "type": "number"
+        },
+        "added": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Added",
+          "type": "array"
+        },
+        "removed": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Removed",
+          "type": "array"
+        }
+      },
+      "required": [
+        "weight",
+        "factor",
+        "value",
+        "jaccardWithDefault",
+        "added",
+        "removed"
+      ],
+      "title": "PanelSensitivity",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "mock": {
+      "default": false,
+      "title": "Mock",
+      "type": "boolean"
+    },
+    "basis": {
+      "description": "exact_optimisation_of_model_outputs: the panel is the exact optimum of a fixed objective over model predictions; hypotheses worth re-testing, never claims",
+      "title": "Basis",
+      "type": "string"
+    },
+    "label": {
+      "title": "Label",
+      "type": "string"
+    },
+    "toxicRule": {
+      "title": "Toxicrule",
+      "type": "string"
+    },
+    "k": {
+      "title": "K",
+      "type": "integer"
+    },
+    "weights": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Weights",
+      "type": "object"
+    },
+    "penaltyMargin": {
+      "title": "Penaltymargin",
+      "type": "number"
+    },
+    "configSha256": {
+      "title": "Configsha256",
+      "type": "string"
+    },
+    "poolSize": {
+      "title": "Poolsize",
+      "type": "integer"
+    },
+    "panel": {
+      "items": {
+        "$ref": "#/$defs/PanelCandidate"
+      },
+      "title": "Panel",
+      "type": "array"
+    },
+    "alternatives": {
+      "items": {
+        "$ref": "#/$defs/PanelAlternative"
+      },
+      "title": "Alternatives",
+      "type": "array"
+    },
+    "sensitivity": {
+      "items": {
+        "$ref": "#/$defs/PanelSensitivity"
+      },
+      "title": "Sensitivity",
+      "type": "array"
+    },
+    "benchmark": {
+      "items": {
+        "$ref": "#/$defs/BenchmarkRow"
+      },
+      "title": "Benchmark",
+      "type": "array"
+    },
+    "winnerBySize": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "n -> which method wins at that size (k = 4): the fastest classical method that returned the optimum on every instance, and QAOA's best P(optimum) against a uniform random feasible panel",
+      "title": "Winnerbysize",
+      "type": "object"
+    },
+    "noise": {
+      "items": {
+        "$ref": "#/$defs/NoiseRow"
+      },
+      "title": "Noise",
+      "type": "array"
+    },
+    "noiseModel": {
+      "title": "Noisemodel",
+      "type": "string"
+    },
+    "hardware": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Hardware",
+      "type": "object"
+    },
+    "versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Versions",
+      "type": "object"
+    },
+    "seeds": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Seeds",
+      "type": "object"
+    },
+    "generatedAt": {
+      "title": "Generatedat",
+      "type": "string"
+    }
+  },
+  "required": [
+    "basis",
+    "label",
+    "toxicRule",
+    "k",
+    "weights",
+    "penaltyMargin",
+    "configSha256",
+    "poolSize",
+    "panel",
+    "alternatives",
+    "sensitivity",
+    "benchmark",
+    "winnerBySize",
+    "noise",
+    "noiseModel",
+    "hardware",
+    "versions",
+    "seeds",
+    "generatedAt"
+  ],
+  "type": "object"
+}

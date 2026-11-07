@@ -24,6 +24,7 @@ Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
 | M4 Preparation | Likelihood that each compound reaches each preparation; solvent, heat, filtration and acidity as separate factors with Monte Carlo ranges; RDKit vs GFN2-xTB validated against experiment; artemisinin known case | done |
 | **M5 Audit** (reporting gap is the headline) | How modern studies prepared each Phase 5 plant for each historical use (solvent, temperature and filtration, separately) vs how the recipes made it; rule-based coding with a versioned lexicon, protocol fixed before retrieval ([docs/AUDIT_PROTOCOL_v1.md](docs/AUDIT_PROTOCOL_v1.md)) | done and frozen (v1 and v2); coding accuracy: human hand-check pending; an AI-assisted check (provisional) is in RESULTS |
 | M6 Ranking | Hypotheses worth re-testing: pairs never tested faithfully, ranked only on profile gaps that hold across the uncertainty range | done (`site-data/hypotheses.json`) |
+| Phase 8 Panel | Re-test panel chosen by exact optimisation of the model's predictions (robust gap + coverage − redundancy, [docs/QUBO.md](docs/QUBO.md)), with a benchmark of greedy, simulated annealing and QAOA (penalty and XY mixers, simulated, with a noise sweep) against the exact optimum ([docs/QUANTUM_RESULTS.md](docs/QUANTUM_RESULTS.md)). No quantum advantage is claimed. | done (`site-data/lab_panel.json`, contract P40 proposed); site design awaiting approval ([docs/LAB_PLANNER_PROPOSAL.md](docs/LAB_PLANNER_PROPOSAL.md)) |
 
 **Scope:** only **single-plant recipes** enter the core analysis (M4–M6) and the headline numbers. Compound recipes, with two or more ingredients besides the vehicle, are extracted and stored in `recipes.json` with `excludedFromHeadline: true`. They are left out because a mixture's chemistry can't be attributed to one plant.
 
@@ -137,6 +138,7 @@ METHODS.md         how every dataset is produced
 
 ```bash
 python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt   # exact versions (Python 3.11)
+.venv/bin/pip install -r requirements-quantum.txt                       # Phase 8 only (Qiskit, Aer, PuLP, matplotlib)
 export PYTHONPATH=pipeline:.
 .venv/bin/python -m lip fetch --verify # raw texts (not committed); checksums pinned in data/raw/manifest.json
 .venv/bin/python -m lip ingest         # passages + crosswalk

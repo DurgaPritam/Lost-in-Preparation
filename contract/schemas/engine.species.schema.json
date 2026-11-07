@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "lost-in-preparation/contract/1.8/engine.species.json",
+  "$id": "lost-in-preparation/contract/1.9/engine.species.json",
   "title": "EngineSpecies",
   "$defs": {
     "EngineCompound": {

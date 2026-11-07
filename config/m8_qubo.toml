@@ -1,0 +1,53 @@
+# Phase 8: choosing a lab re-test panel by quadratic binary optimisation (docs/QUBO.md).
+# Every weight below was FIXED on 2026-11-07, before any solver was compared; the sensitivity analysis varies them
+# afterwards and reports how the exact panel changes. Changing a value here is a new configuration, not a tune.
+
+[pool]
+# Candidates: (species, historical preparation, modern comparator) for the approved headline species, kept only
+# when the M6 robust gap is usable (m6/ranking.py: >= 5 compounds with a 5th-95th range narrower than 0.8).
+toxic = "exclude"          # "exclude" | "at_most_one": toxic_reported species for the recommended panel
+differ_delta = 0.10        # HEURISTIC: a compound "likely differs" when the 5th-95th range of the coupled difference
+                           # (historical - modern draw) excludes 0 and its median magnitude is >= this
+
+[objective]
+k = 8                      # panel size (also run: 4 and 6)
+alpha = 1.0                # robust value: sum of normalised 5th-percentile gaps, / k
+beta_class = 0.2           # coverage of compound classes (among compounds likely to differ), / k
+beta_indication = 0.2      # coverage of indications (MeSH), / k
+beta_prep = 0.2            # coverage of historical preparation types, / k
+gamma = 0.5                # redundancy: Jaccard overlap of the likely-differing compound sets, / (k(k-1)/2)
+# The cardinality penalty P and the toxic penalty are derived from these (docs/QUBO.md, "Penalty"), never tuned.
+penalty_margin = 1.25      # P = margin * (largest total |coefficient| touching one variable)
+
+[sensitivity]
+factors = [0.5, 2.0]       # each weight multiplied by each factor in turn, the others fixed
+
+[instances]
+sizes = [8, 12, 16, 20, 24]
+per_size = 3               # sampled instances per size
+seed = 20261107            # instance sampling: seed + 1000 * n + i
+ks = [4, 6, 8]             # panel sizes tested (only k < n)
+
+[classical]
+sa_seeds = [1, 2, 3, 4, 5]
+sa_sweeps = 2000           # swap moves per run = sa_sweeps * n
+sa_t0 = 0.5
+sa_t1 = 0.001
+
+[qaoa]
+depths = [1, 2, 3]
+sizes = [8, 12, 16]        # statevector simulation; larger n is beyond a laptop's statevector QAOA budget here
+k = 4                      # QAOA panel size on the benchmark instances
+restarts = 8
+optimizer = "COBYLA"
+maxiter = 300
+seed = 20261107
+shots = 4096
+mixer_xy = "ring"          # XY mixer on a ring of qubit pairs (even/odd layers), Hamming-weight preserving
+
+[noise]
+# Parametric depolarising noise on a heavy-hex coupling map (Qiskit core), NOT a device calibration.
+two_qubit_errors = [0.0, 0.001, 0.005, 0.01, 0.02]
+one_qubit_ratio = 0.1      # 1-qubit depolarising error = ratio * 2-qubit error
+readout_error = 0.02
+shots = 4096

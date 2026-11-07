@@ -1,0 +1,18 @@
+# Phase 8 (quantum optimisation of the re-test panel). Install AFTER requirements.txt:
+#   pip install -r requirements.txt -r requirements-quantum.txt
+# Direct dependencies: qiskit qiskit-aer pulp matplotlib; the rest are their dependencies, pinned as installed on
+# 2026-11-07 (Python 3.11). No IBM runtime package: no hardware account is used, and noise is simulated with Aer.
+contourpy==1.3.3
+cycler==0.12.1
+dill==0.4.1
+fonttools==4.68.0
+kiwisolver==1.5.1
+matplotlib==3.11.2
+psutil==7.2.2
+pulp==3.3.2
+pyparsing==3.3.3
+qiskit==2.6.2
+qiskit-aer==0.18.2
+rustworkx==0.18.1
+six==1.17.0
+stevedore==5.9.1

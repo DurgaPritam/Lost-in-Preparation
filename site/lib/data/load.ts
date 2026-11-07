@@ -3,7 +3,7 @@
  * Every file is parsed with the Zod schema generated from the contract JSON Schema; any mismatch throws, which fails
  * `next build` (and scripts/prepare-data.ts runs the same checks before the build starts).
  */
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { z } from 'zod';
 import * as G from './generated';
@@ -52,6 +52,9 @@ export const loadEngineSpecies = (speciesId: string) => parse(`engine/${speciesI
 export const loadEngineParity = () => parse('engine/parity.json', G.engineParity.schema);
 // v1.8 (P39): botanical plates
 export const loadPlates = () => parse('plates.json', G.plates.schema);
+// v1.9 (P40, proposed): the recommended re-test panel and the Phase 8 benchmark. Validated at build; no page reads it
+// until the Lab Planner design is approved.
+export const loadLabPanel = () => (existsSync(path.join(SITE_DATA, 'lab_panel.json')) ? parse('lab_panel.json', G.labPanel.schema) : null);
 
 /** Every contract file, for the pre-build validation script and the unit tests. */
 export function validateAll(): Record<string, number> {
@@ -65,5 +68,7 @@ export function validateAll(): Record<string, number> {
   for (const e of loadProfileIndex()) out[`engine/${e.speciesId}.json`] = loadEngineSpecies(e.speciesId).compounds.length;
   out['engine/parity.json'] = loadEngineParity().length;
   out['plates.json'] = loadPlates().length;
+  const lp = loadLabPanel();
+  if (lp) out['lab_panel.json'] = lp.panel.length;
   return out;
 }
