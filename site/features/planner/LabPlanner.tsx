@@ -160,7 +160,7 @@ export function LabPlanner({ panel, heuristics }: { panel: PanelView | null; heu
           </p>
         )}
         {panel.ineligible.length > 0 && <p className="m-0 text-sm text-ink-muted">Not eligible under rule {panel.ruleVersion}: {panel.ineligible.map((x) => `${x.label} (${x.reason})`).join('; ')}.</p>}
-        <a href="#how" className="w-max text-sm text-brand underline">How the panel was chosen</a>
+        <a href="#how" className="self-start max-w-full text-sm text-brand underline">How the panel was chosen</a>
       </section>
 
       <section aria-labelledby="panel" className="flex flex-col gap-4">

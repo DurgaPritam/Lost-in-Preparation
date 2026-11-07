@@ -276,7 +276,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
 
           <Section id="hypotheses" title="Ranked hypotheses (M6)" lead="The plant–use pairs no retrieved study tested in the historical preparation, ranked on predicted profile gaps that hold across the uncertainty range.">
             <p className="m-0 max-w-prose text-ink-muted">{hypothesesCount} ranked hypotheses, each with its caveats, toxicity entry and evidence trail. Ones with toxicity reported are shown for analysis only.</p>
-            <Link href="/hypotheses/" className="w-max text-brand underline">See the ranked hypotheses</Link>
+            <Link href="/hypotheses/" className="self-start max-w-full text-brand underline">See the ranked hypotheses</Link>
           </Section>
 
           <Section id="quantum" title="Where quantum helps, and where it doesn’t" lead="Two places in this project could use quantum methods. In both, a classical method did better at our scale.">
@@ -312,7 +312,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
                     <p className="m-0 text-sm text-ink-muted">Under noise ({quantum.noiseModel}): {[...new Set(quantum.noise.map((r) => r.twoQubitError))].map((e) => `${(e * 100).toFixed(1)}% two-qubit error → best P(optimum) ${Math.max(...quantum.noise.filter((r) => r.twoQubitError === e).map((r) => r.pOptimum)).toFixed(3)}`).join('; ')}.</p>
                   )}
                   <p className="m-0 text-sm text-ink-muted">Hardware: {quantum.hardware.ibmQuantum}.</p>
-                  <Link href="/planner/#bench" className="w-max text-sm text-brand underline">The full benchmark on the Lab Planner</Link>
+                  <Link href="/planner/#bench" className="self-start max-w-full text-sm text-brand underline">The full benchmark on the Lab Planner</Link>
                 </article>
               )}
             </div>

@@ -41,7 +41,7 @@ function Trail({ h, heuristics }: { h: Hypothesis; heuristics: Heuristic[] }) {
 export function Hypotheses({ hypotheses, heuristics }: { hypotheses: Hypothesis[]; heuristics: Heuristic[] }) {
   return (
     <SiteShell current="docs">
-      <Link href="/docs/#findings" className="w-max text-sm text-brand underline">← Methods &amp; data</Link>
+      <Link href="/docs/#findings" className="self-start max-w-full text-sm text-brand underline">← Methods &amp; data</Link>
       <PageHeader eyebrow="Results · M6 ranking" title="Ranked hypotheses worth re-testing"
         lead="Plant–use pairs that no retrieved modern study tested in the historical preparation, ranked only on predicted profile gaps that hold across the uncertainty range. Each is a hypothesis worth re-testing, not a finding about any remedy." />
       {hypotheses.length === 0 ? <UnknownValue label="No ranked hypotheses in the data" /> : (
