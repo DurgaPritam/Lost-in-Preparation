@@ -117,6 +117,17 @@ Only short quotations (one sentence each) from openly licensed articles are stor
 | PMC9218236 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY-NC-ND 4.0 |
 | PMC9504179 | pre-registered v3 (paired tables; numeric values only, no text quoted) | CC BY 4.0 |
 
+## AI-assisted check of the extractor (quotes)
+
+`data/reference/m5_ai_check_v1.json` records, for each value the AI coder read from the 40 hand-check studies, the
+evidence it read:
+- **Openly licensed (CC) articles:** a short verbatim quote, attributed by PMID.
+- **Abstracts and articles with no stated licence:** no quote text. The record keeps the quote's position in the cached
+  study text and its SHA-256. `lip m5 ai-check` re-verifies both forms against the git-ignored texts in
+  `data/cache/m5_handcheck/`.
+- **History:** this policy was applied on 2026-11-07. Earlier commits of the file (from `ccb6fe4`) hold those quotes
+  as short verbatim text. That is reported in the Phase 9 checklist for the project lead's decision.
+
 ## Audit methods snippets (Phase 5)
 
 The site's Audit drawer, and `site-data/audit.json`, show one methods snippet per coded study:

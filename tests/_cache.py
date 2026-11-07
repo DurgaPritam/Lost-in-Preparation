@@ -38,3 +38,12 @@ def require_tiktoken(encoding: str = "o200k_base") -> None:
     if not (Path(base) / hashlib.sha1(url.encode()).hexdigest()).exists():
         pytest.skip(f"needs tiktoken's cached {encoding} file in {base}, which is missing; fetch it with: "
                     f"python -c \"import tiktoken; tiktoken.get_encoding('{encoding}')\"")
+
+
+def require_dir(rel: str, what: str, command: str) -> None:
+    """Skip when a git-ignored cache directory is missing or empty: for code that tolerates cache misses quietly
+    (for example by leaving a compound unresolved) instead of raising."""
+    from lip.paths import ROOT
+    d = ROOT / rel
+    if not d.is_dir() or not any(d.iterdir()):
+        pytest.skip(f"needs the git-ignored cache {what} ({rel}), which is missing or empty; fetch it with: {command}")

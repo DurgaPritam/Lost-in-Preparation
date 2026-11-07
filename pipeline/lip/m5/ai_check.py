@@ -43,6 +43,14 @@ ALLOWED = {"solvent": {e.value for e in C.ModernSolvent}, "heat": {e.value for e
            "part": {e.value for e in C.Part}, "freshOrDried": {e.value for e in C.FreshOrDried}}
 
 
+QUOTE_POLICY = ("quotes are committed verbatim only from openly licensed (CC) articles; for abstracts and articles with no "
+                "stated licence the record keeps the quote's position in the cached text and its SHA-256 (docs/DATA_LICENCES.md)")
+
+
+def quotable(licence: str) -> bool:
+    return licence.strip().lower().startswith("cc ")
+
+
 def ingest(src_dir: str, model: str = "claude-opus-5-5") -> dict:
     rows = []
     for f in sorted(Path(src_dir).glob("batch*_out.json")):
@@ -53,15 +61,33 @@ def ingest(src_dir: str, model: str = "claude-opus-5-5") -> dict:
     missing = [k for k in want if k not in got]
     if missing:
         raise SystemExit(f"AI codes missing for {len(missing)} rows: {missing[:5]}")
+    secs = _sections()
+    if secs is None:
+        raise SystemExit("needs the local study texts to locate the quotes (data/cache/m5_handcheck/)")
+    lic = {(r["pmid"], int(r["preparation"])): r["licence"] for r in sheet}
+    rows_out = []
+    for p, i in want:
+        g = got[(p, i)]
+        row = {"pmid": p, "preparation": i, "note": g.get("note", "")}
+        for f in ("solvent", "heat", "part", "freshOrDried"):
+            row[f] = g[f]
+            q = (g.get(f"{f}_quote") or "").strip()
+            if q and not quotable(lic[(p, i)]):
+                at = secs[p].find(q)
+                if at < 0:
+                    raise SystemExit(f"{p}#{i} {f}: quote not found verbatim")
+                row[f"{f}_quote"] = ""
+                row[f"{f}_ref"] = {"start": at, "end": at + len(q), "sha256": hashlib.sha256(q.encode()).hexdigest()}
+            else:
+                row[f"{f}_quote"] = q
+        rows_out.append(row)
     out = {
-        "basis": BASIS, "label": LABEL,
+        "basis": BASIS, "label": LABEL, "quotePolicy": QUOTE_POLICY,
         "provenance": {"model": model, "tool": "Claude Code agents (3 batches)", "prompt": str(PROMPT.relative_to(ROOT)),
                        "promptVersion": "v1", "promptSha256": hashlib.sha256(PROMPT.read_bytes()).hexdigest(),
                        "blind": "coders saw only the study texts and, for multi-preparation studies, the extractor's solvent wording as a row label",
                        "codedOn": date.today().isoformat()},
-        "rows": [{"pmid": p, "preparation": i, **{k: got[(p, i)].get(k, "") for k in
-                  ("solvent", "solvent_quote", "heat", "heat_quote", "part", "part_quote", "freshOrDried", "freshOrDried_quote", "note")}}
-                 for p, i in want],
+        "rows": rows_out,
     }
     CODES.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
     return {"rows": len(out["rows"]), "out": str(CODES.relative_to(ROOT))}
@@ -85,19 +111,22 @@ def run() -> dict:
     per_study = Counter(p for p, _ in sheet)
     secs = _sections()
     if secs is None:   # never write a result whose quotes were not re-verified
+        mode = " (LIP_CACHE_ONLY=1: the literature caches cannot be downloaded)" if __import__("os").environ.get("LIP_CACHE_ONLY") else ""
         raise SystemExit(f"needs the local study texts ({TEXTS.relative_to(ROOT)}, git-ignored; rebuilt by python -m lip m5 audit "
-                         "from the literature caches): the quotes cannot be re-verified without them")
+                         f"from the literature caches): the quotes cannot be re-verified without them{mode}")
     problems, rows = [], []
     for c in codes["rows"]:
         r = sheet[(c["pmid"], c["preparation"])]
         for f in FIELDS:
-            v, q = c[f], (c.get(f"{f}_quote") or "").strip()
+            v, q, ref = c[f], (c.get(f"{f}_quote") or "").strip(), c.get(f"{f}_ref")
             if v not in ALLOWED[f]:
                 problems.append(f"{c['pmid']}#{c['preparation']} {f}: value {v!r} not allowed")
-            if v != "unknown" and not q:
+            if v != "unknown" and not q and not ref:
                 problems.append(f"{c['pmid']}#{c['preparation']} {f}: value without a quote")
-            if q and secs is not None and q not in secs.get(c["pmid"], ""):
+            if q and q not in secs.get(c["pmid"], ""):
                 problems.append(f"{c['pmid']}#{c['preparation']} {f}: quote not found verbatim")
+            if ref and hashlib.sha256(secs.get(c["pmid"], "")[ref["start"]:ref["end"]].encode()).hexdigest() != ref["sha256"]:
+                problems.append(f"{c['pmid']}#{c['preparation']} {f}: referenced quote does not match its SHA-256")
         rows.append({"pmid": c["pmid"], "preparation": c["preparation"], "evidenceSource": r["evidenceSource"],
                      "multi": per_study[c["pmid"]] > 1, **{f"ai_{f}": c[f] for f in FIELDS}, **{f"rule_{f}": r[f"rule_{f}"] for f in FIELDS}})
     if problems:

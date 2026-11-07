@@ -48,7 +48,8 @@ def test_table_reading_pairs_only_same_material():
 
 
 def test_double_ratio_sign_and_rules():
-    from _cache import needs_cache
+    from _cache import needs_cache, require_dir
+    require_dir("data/cache/pubchem", "PubChem compound structures", "python -m lip m4 run")  # misses are tolerated quietly
     t = P.read_table(H.fromstring(TABLE), MATCH)
     with needs_cache("data/cache/pubchem (compound structures)", "python -m lip m4 run"):
         rows, st = P.score_table(t, P.Model(M.load_config()), NO_LOTUS, {"pmcid": "X", "plant": "T"})
