@@ -176,6 +176,18 @@
           }
         ],
         "default": null
+      },
+      "aiCheck": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/PlateAiCheck"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "v1.8 P39 amendment: AI-assisted licence check (provisional); status stays 'sourced' until a person confirms"
       }
     },
     "required": [
@@ -188,6 +200,91 @@
     "type": "object"
   },
   "$defs": {
+    "PlateAiCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "basis": {
+          "description": "ai_assisted_check",
+          "title": "Basis",
+          "type": "string"
+        },
+        "statement": {
+          "description": "'checked by AI agent on <date>; awaiting human confirmation'",
+          "title": "Statement",
+          "type": "string"
+        },
+        "checkedOn": {
+          "title": "Checkedon",
+          "type": "string"
+        },
+        "checkedBy": {
+          "title": "Checkedby",
+          "type": "string"
+        },
+        "pageRevisionId": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pagerevisionid"
+        },
+        "licenceTemplates": {
+          "description": "licence templates as written on the page",
+          "items": {
+            "type": "string"
+          },
+          "title": "Licencetemplates",
+          "type": "array"
+        },
+        "publication": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "the page's Source field and plate-series categories, as written",
+          "title": "Publication"
+        },
+        "publicationDate": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "the page's Date field, as written (may be an upload date)",
+          "title": "Publicationdate"
+        },
+        "flags": {
+          "description": "mechanical observations for the human reviewer",
+          "items": {
+            "type": "string"
+          },
+          "title": "Flags",
+          "type": "array"
+        }
+      },
+      "required": [
+        "basis",
+        "statement",
+        "checkedOn",
+        "checkedBy"
+      ],
+      "title": "PlateAiCheck",
+      "type": "object"
+    },
     "PlateImage": {
       "additionalProperties": false,
       "properties": {

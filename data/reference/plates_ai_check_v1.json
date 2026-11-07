@@ -1,0 +1,367 @@
+{
+ "basis": "ai_assisted_check",
+ "label": "AI-assisted check of the plate licences (provisional)",
+ "method": "Commons API: current wikitext, revision id and categories of each file page; fields copied as written.",
+ "checkedOn": "2026-11-07",
+ "plates": [
+  {
+   "speciesId": "wfo-0000134589",
+   "taxon": "Artemisia absinthium",
+   "fileTitle": "File:Artemisia absinthium - Köhler–s Medizinal-Pflanzen-164.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-164.jpg",
+   "pageRevisionId": 1139943213,
+   "pageRevisionTimestamp": "2026-01-01T10:32:09Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000788844",
+   "taxon": "Crocus sativus",
+   "fileTitle": "File:Crocus sativus - Köhler–s Medizinal-Pflanzen-194.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Crocus_sativus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-194.jpg",
+   "pageRevisionId": 1209008643,
+   "pageRevisionTimestamp": "2026-05-05T18:00:52Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000460581",
+   "taxon": "Ranunculus ficaria",
+   "fileTitle": "File:Ranunculus ficaria Sturm59.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Ranunculus_ficaria_Sturm59.jpg",
+   "pageRevisionId": 1190791321,
+   "pageRevisionTimestamp": "2026-04-03T11:56:42Z",
+   "licenceTemplates": [
+    "PD-old-100"
+   ],
+   "permissionField": null,
+   "sourceField": "http://www.biolib.de",
+   "seriesCategories": [
+    "Deutschlands Flora in Abbildungen (1796)"
+   ],
+   "dateField": "1796",
+   "authorField": "Johann Georg Sturm (Painter: Jacob Sturm)",
+   "flags": [
+    "the Source field names only a website, not the printed work"
+   ],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000212813",
+   "taxon": "Glycyrrhiza glabra",
+   "fileTitle": "File:Glycyrrhiza glabra - Köhler–s Medizinal-Pflanzen-207.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Glycyrrhiza_glabra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-207.jpg",
+   "pageRevisionId": 1010662008,
+   "pageRevisionTimestamp": "2025-03-17T02:13:00Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000968296",
+   "taxon": "Galium aparine",
+   "fileTitle": "File:Illustration Galium aparine0.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Galium_aparine0.jpg",
+   "pageRevisionId": 671472659,
+   "pageRevisionTimestamp": "2022-07-05T06:30:57Z",
+   "licenceTemplates": [
+    "PD-scan|PD-old-auto-expired|deathyear=1925"
+   ],
+   "permissionField": null,
+   "sourceField": "www.biolib.de",
+   "seriesCategories": [
+    "Thomé, Flora von Deutschland"
+   ],
+   "dateField": "2008-11-7 01:44 (UTC)",
+   "authorField": "Prof. Dr. Thomé",
+   "flags": [
+    "the Date field gives a modern date (likely the scan or upload date, not the plate's)",
+    "the Source field names only a website, not the printed work",
+    "plates of this series state different author death years (1887, 1925); this page states 1925"
+   ],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000600655",
+   "taxon": "Chelidonium majus",
+   "fileTitle": "File:Chelidonium majus - Köhler–s Medizinal-Pflanzen-033.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Chelidonium_majus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-033.jpg",
+   "pageRevisionId": 1121627362,
+   "pageRevisionTimestamp": "2025-11-26T08:16:13Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen/Thumbsize"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0001021850",
+   "taxon": "Hyoscyamus niger",
+   "fileTitle": "File:Hyoscyamus niger - Köhler–s Medizinal-Pflanzen-073.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Hyoscyamus_niger_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-073.jpg",
+   "pageRevisionId": 1016548370,
+   "pageRevisionTimestamp": "2025-04-02T18:16:16Z",
+   "licenceTemplates": [
+    "PD-old-80-expired"
+   ],
+   "permissionField": "{{PD-old-80-expired}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen (http://www.illustratedgarden.org/mobot/rarebooks/page.asp?relation=QK99A1K6318831914B1&identifier=0254)",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0001006654",
+   "taxon": "Agrimonia eupatoria",
+   "fileTitle": "File:Illustration Agrimonia eupatoria0.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Agrimonia_eupatoria0.jpg",
+   "pageRevisionId": 1223585396,
+   "pageRevisionTimestamp": "2026-05-31T17:24:40Z",
+   "licenceTemplates": [
+    "PD-scan|PD-old-auto-1923|deathyear=1887"
+   ],
+   "permissionField": null,
+   "sourceField": null,
+   "seriesCategories": [
+    "Thomé, Flora von Deutschland (original)"
+   ],
+   "dateField": null,
+   "authorField": null,
+   "flags": [
+    "no Date field",
+    "no Author field",
+    "plates of this series state different author death years (1887, 1925); this page states 1887"
+   ],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000302258",
+   "taxon": "Salvia sclarea",
+   "fileTitle": "File:Salvia sclarea Sturm50.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Salvia_sclarea_Sturm50.jpg",
+   "pageRevisionId": 1190792204,
+   "pageRevisionTimestamp": "2026-04-03T12:00:00Z",
+   "licenceTemplates": [
+    "PD-old-100"
+   ],
+   "permissionField": null,
+   "sourceField": "Fig. from book Deutschlands Flora in Abbildungen at http://www.biolib.de",
+   "seriesCategories": [
+    "Deutschlands Flora in Abbildungen (asterids)"
+   ],
+   "dateField": "1796",
+   "authorField": "Johann Georg Sturm (Painter: Jacob Sturm)",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000480963",
+   "taxon": "Papaver somniferum",
+   "fileTitle": "File:Papaver somniferum - Köhler–s Medizinal-Pflanzen-102.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Papaver_somniferum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-102.jpg",
+   "pageRevisionId": 1208783001,
+   "pageRevisionTimestamp": "2026-05-05T09:04:37Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000725866",
+   "taxon": "Humulus lupulus",
+   "fileTitle": "File:Humulus lupulus - Köhler–s Medizinal-Pflanzen-072.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Humulus_lupulus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-072.jpg",
+   "pageRevisionId": 1259830431,
+   "pageRevisionTimestamp": "2026-08-11T17:08:58Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000621274",
+   "taxon": "Coriandrum sativum",
+   "fileTitle": "File:Coriandrum sativum - Köhler–s Medizinal-Pflanzen-193.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg",
+   "pageRevisionId": 1103267605,
+   "pageRevisionTimestamp": "2025-10-22T00:21:27Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Köhler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000588460",
+   "taxon": "Carum carvi",
+   "fileTitle": "File:Carum carvi - Köhler–s Medizinal-Pflanzen-172.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Carum_carvi_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-172.jpg",
+   "pageRevisionId": 1115923233,
+   "pageRevisionTimestamp": "2025-11-15T07:30:04Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000607845",
+   "taxon": "Citrullus colocynthis",
+   "fileTitle": "File:Citrullus colocynthis - Köhler–s Medizinal-Pflanzen-040.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Citrullus_colocynthis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-040.jpg",
+   "pageRevisionId": 1119304414,
+   "pageRevisionTimestamp": "2025-11-21T09:40:57Z",
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "permissionField": "{{PD-old}}",
+   "sourceField": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm)",
+   "seriesCategories": [
+    "Köhlers Medizinal-Pflanzen"
+   ],
+   "dateField": "1897",
+   "authorField": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "flags": [],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  },
+  {
+   "speciesId": "wfo-0000983427",
+   "taxon": "Filipendula ulmaria",
+   "fileTitle": "File:Illustration Filipendula ulmaria0.jpg",
+   "fileUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Filipendula_ulmaria0.jpg",
+   "pageRevisionId": 1011235418,
+   "pageRevisionTimestamp": "2025-03-18T14:26:26Z",
+   "licenceTemplates": [
+    "PD-scan|PD-old-auto-1923|deathyear=1925"
+   ],
+   "permissionField": null,
+   "sourceField": null,
+   "seriesCategories": [
+    "Thomé, Flora von Deutschland"
+   ],
+   "dateField": null,
+   "authorField": null,
+   "flags": [
+    "no Date field",
+    "no Author field",
+    "plates of this series state different author death years (1887, 1925); this page states 1925"
+   ],
+   "basis": "ai_assisted_check",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "checkedOn": "2026-11-07",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation"
+  }
+ ]
+}

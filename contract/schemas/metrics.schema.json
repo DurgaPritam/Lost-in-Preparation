@@ -340,7 +340,7 @@
       "additionalProperties": false,
       "properties": {
         "basis": {
-          "description": "silver_ai_reference | ai_drafted_unverified | ai_curated_literature_reference",
+          "description": "silver_ai_reference | ai_drafted_unverified | ai_curated_literature_reference | ai_assisted_check",
           "title": "Basis",
           "type": "string"
         },

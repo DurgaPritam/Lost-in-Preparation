@@ -194,6 +194,18 @@ describe('hypotheses, home, methods, case study', () => {
     for (const m of v.metrics) if (m.value.low == null || m.value.high == null) expect(m.value.low == null && m.value.high == null).toBe(true);
     expect(v.comparisons[0].methods).toHaveLength(2);
   });
+  it('AI-assisted checks never appear as validated (validation wording, 2026-11-07)', () => {
+    const v = toValidation(metrics);
+    const prov = v.metrics.filter((m) => m.id.startsWith('prov-'));
+    expect(prov.length).toBeGreaterThan(0);
+    for (const m of prov) expect(m.evidence === 'provisional' || m.evidence === 'pending').toBe(true);
+    // a stage is human-validated only when its human reference has been computed
+    const stage = (id: string) => v.pipeline.find((p) => p.id === id)!.validation;
+    expect(stage('m4')).not.toBe('validated');
+    if (metrics.extraction.overall?.part?.f1?.status !== 'computed') expect(stage('m1')).not.toBe('validated');
+    if (metrics.nameResolution.top1?.status !== 'computed') expect(stage('m2')).not.toBe('validated');
+    if (metrics.provisional.m5ExtractorAiCheck) expect(stage('m5')).toBe('provisional');
+  });
   it('case study lists every logged correction of its recipes', () => {
     const c = L.loadCaseStudies()[0];
     const cv = caseView(c, recipes);

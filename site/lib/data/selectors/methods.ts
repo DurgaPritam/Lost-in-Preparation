@@ -8,8 +8,6 @@ export const metricValue = (m: ContractMetric | null | undefined, unit: string):
   high: m && m.status === 'computed' ? m.high ?? null : null,
   unit,
 });
-const ev = (m: ContractMetric | null | undefined, whenComputed: EvidenceStatus): EvidenceStatus =>
-  m && m.status === 'computed' ? whenComputed : 'pending';
 
 export function outcomeOf(result: string | null | undefined): CheckOutcome {
   const r = (result ?? '').toLowerCase();
@@ -19,6 +17,13 @@ export function outcomeOf(result: string | null | undefined): CheckOutcome {
   return 'not_run';
 }
 
+/** SITE: the stage each AI-assisted section checks (validation wording, 2026-11-07). The logP descriptor is human-validated
+ *  against measured data, but the preparation model itself has only AI-assisted checks, so M4 is not shown as validated. */
+const PROV_STAGE: Record<string, string> = {
+  nameResolutionVsDraft: 'M2', m5ExtractorAiCheck: 'M5', extractionVsSilver: 'M1',
+  prepModelVsLiterature_exploratory: 'M4', prepModelVsLiterature_preregistered: 'M4', prepModelVsLiterature_preregistered_v2: 'M4', prepModelVsLiterature_preregistered_v3: 'M4',
+};
+
 export function toValidation(m: ContractMetrics): Validation {
   const x = m.extraction.overall?.part?.f1 ?? null;
   const top1 = m.nameResolution.top1 ?? null;
@@ -26,11 +31,11 @@ export function toValidation(m: ContractMetrics): Validation {
   const xt = m.logPError.xtb ?? null;
   const pipeline: PipelineStage[] = [
     { id: 'ingest', name: 'Ingest', does: 'Culpeper 1652, Culpeper 1850 and Pliny (Bostock & Riley) into located passages.', tool: 'TEI and Project Gutenberg parsers', validation: 'pending' },
-    { id: 'm1', name: 'Recipes (M1)', does: 'Structured recipes, every field backed by a verbatim quote; failures rejected, never repaired.', tool: m.extraction.run ? `${m.extraction.run.provider} · ${m.extraction.run.model}` : null, validation: x && x.status === 'computed' ? 'validated' : 'provisional' },
-    { id: 'm2', name: 'Names (M2)', does: 'Historical name → accepted species (WFO), with candidates, confidence and disputed flags.', tool: 'GBIF + WFO, heuristic weights', validation: ev(top1, 'validated') },
+    { id: 'm1', name: 'Recipes (M1)', does: 'Structured recipes, every field backed by a verbatim quote; failures rejected, never repaired.', tool: m.extraction.run ? `${m.extraction.run.provider} · ${m.extraction.run.model}` : null, validation: x && x.status === 'computed' ? 'validated' : 'pending' },
+    { id: 'm2', name: 'Names (M2)', does: 'Historical name → accepted species (WFO), with candidates, confidence and disputed flags.', tool: 'GBIF + WFO, heuristic weights', validation: top1 && top1.status === 'computed' ? 'validated' : m.provisional.nameResolutionVsDraft ? 'provisional' : 'pending' },
     { id: 'm3', name: 'Compounds (M3)', does: 'Known compounds per species (LOTUS via Wikidata), standardised with RDKit.', tool: 'LOTUS · RDKit', validation: 'pending' },
-    { id: 'm4', name: 'Preparation model (M4)', does: 'Predicted extraction per compound and preparation, with ranges; solvent, heat, filtration and acidity separate.', tool: 'RDKit Crippen logP; GFN2-xTB compared', validation: ev(rd, 'validated') },
-    { id: 'm5', name: 'Audit (M5)', does: 'How modern studies prepared each plant, coded with a versioned keyword lexicon; unstated = unknown.', tool: 'Rule-based extractor (no LLM)', validation: 'pending' },
+    { id: 'm4', name: 'Preparation model (M4)', does: 'Predicted extraction per compound and preparation, with ranges; solvent, heat, filtration and acidity separate.', tool: 'RDKit Crippen logP; GFN2-xTB compared', validation: 'provisional' },
+    { id: 'm5', name: 'Audit (M5)', does: 'How modern studies prepared each plant, coded with a versioned keyword lexicon; unstated = unknown.', tool: 'Rule-based extractor (no LLM)', validation: m.provisional.m5ExtractorAiCheck ? 'provisional' : 'pending' },
     { id: 'm6', name: 'Ranking (M6)', does: 'Hypotheses ranked only on profile gaps that hold across the uncertainty range.', tool: 'Coupled Monte Carlo draws', validation: 'pending' },
   ];
   const metrics: Metric[] = [];
@@ -45,7 +50,7 @@ export function toValidation(m: ContractMetrics): Validation {
   push('m4-xtb', 'M4', 'logP error, GFN2-xTB (MAE vs experiment)', xt, 'logP units', 'validated');
   push('m5-v1', 'M5', 'Audit v1: share of studies faithful (as pre-registered)', m.headlineMatchRate, 'share, 0–1', 'pending');
   if (m.auditV2) push('m5-v2', 'M5', 'Audit v2: share of studies faithful (re-analysis)', m.auditV2.overallFidelity, 'share, 0–1', 'pending');
-  for (const [key, sec] of Object.entries(m.provisional)) for (const [mk, mv] of Object.entries(sec.metrics)) push(`prov-${key}-${mk}`, 'AI reference', `${sec.label} · ${mk}`, mv, 'share, 0–1', 'provisional');
+  for (const [key, sec] of Object.entries(m.provisional)) for (const [mk, mv] of Object.entries(sec.metrics)) push(`prov-${key}-${mk}`, PROV_STAGE[key] ?? 'AI-assisted check', `${sec.label} · ${mk}`, mv, 'share, 0–1', 'provisional');
 
   const comparisons: MethodComparison[] = rd && xt ? [{
     id: 'logp', question: 'Does GFN2-xTB predict logP better than RDKit’s Crippen method?', direction: 'lower_better',
@@ -58,10 +63,10 @@ export function toValidation(m: ContractMetrics): Validation {
   const positiveControls: PositiveControl[] = [{
     id: 'artemisinin', preregisteredId: 'pr-artemisinin', taxon: 'Artemisia annua', compound: 'Artemisinin', expected: 'Low in cold water, high in a low-temperature nonpolar extract (pre-registered thresholds in the explanation).',
     outcome: art.status === 'computed' ? outcomeOf(art.result) : 'not_run', explanation: art.explanation ?? 'No explanation recorded.',
-    evidence: 'pending',
+    evidence: art.status === 'computed' ? 'provisional' : 'pending',
   }];
   const preregistered: PreregisteredCheck[] = [
-    { id: 'pr-artemisinin', registeredOn: null, criterion: 'Artemisinin known-case test', outcome: art.status === 'computed' ? outcomeOf(art.result) : 'not_run', detail: art.result ?? 'Not run', evidence: 'pending' },
+    { id: 'pr-artemisinin', registeredOn: null, criterion: 'Artemisinin known-case test', outcome: art.status === 'computed' ? outcomeOf(art.result) : 'not_run', detail: art.result ?? 'Not run', evidence: art.status === 'computed' ? 'provisional' : 'pending' },
     ...Object.entries(m.provisional).filter(([k]) => k.startsWith('prepModelVsLiterature_preregistered')).map(([k, sec]): PreregisteredCheck => {
       const first = Object.entries(sec.metrics)[0];
       return { id: `pr-${k}`, registeredOn: null, criterion: sec.label, outcome: 'reported',
@@ -74,7 +79,7 @@ export function toValidation(m: ContractMetrics): Validation {
     'One descriptor: the aqueous prediction rests on Crippen logP alone; solubility, melting point, dose and contact time are not modelled.',
     'Heuristic factors (heat, volatility, filtration carry-over, acidity) have assumed ranges and are not fitted to data.',
     'The recipe extraction was written by an AI in a Claude Code session; the human gold annotation is not done yet.',
-    'The audit coding is a keyword heuristic; abstracts often omit preparation details, so many studies stay unknown.',
+    'The audit coding is a keyword heuristic; abstracts often omit preparation details, so many studies stay unknown. Its accuracy has only an AI-assisted check (provisional); the human hand-check is pending.',
     'Pliny is lower confidence than Culpeper: a 19th-century translation of a 1st-century text, with far more disputed names.',
     'LOTUS records compounds per organism, not per plant part, so a recipe’s part cannot be matched to the part analysed.',
   ];

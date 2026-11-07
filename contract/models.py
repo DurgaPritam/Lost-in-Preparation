@@ -478,6 +478,18 @@ class PlateImage(_Model):
     height: int
 
 
+class PlateAiCheck(_Model):  # v1.8 (P39 amendment): an AI agent's reading of the Commons page; never human confirmation
+    basis: str = Field(description="ai_assisted_check")
+    statement: str = Field(description="'checked by AI agent on <date>; awaiting human confirmation'")
+    checkedOn: str
+    checkedBy: str
+    pageRevisionId: int | None = None
+    licenceTemplates: list[str] = Field(default_factory=list, description="licence templates as written on the page")
+    publication: str | None = Field(None, description="the page's Source field and plate-series categories, as written")
+    publicationDate: str | None = Field(None, description="the page's Date field, as written (may be an upload date)")
+    flags: list[str] = Field(default_factory=list, description="mechanical observations for the human reviewer")
+
+
 class PlateRecord(_Record):  # site-data/plates.json
     speciesId: str
     taxon: str
@@ -495,6 +507,7 @@ class PlateRecord(_Record):  # site-data/plates.json
     sha256: str | None = None
     retrievedAt: str | None = None
     image: PlateImage | None = None
+    aiCheck: PlateAiCheck | None = Field(None, description="v1.8 P39 amendment: AI-assisted licence check (provisional); status stays 'sourced' until a person confirms")
 
 
 # --- audit.json ---------------------------------------------------------------------------
@@ -634,7 +647,7 @@ class CheckResult(_Model):
 
 
 class ProvisionalSection(_Model):  # v1.2 (P31): never human-validated
-    basis: str = Field(description="silver_ai_reference | ai_drafted_unverified | ai_curated_literature_reference")
+    basis: str = Field(description="silver_ai_reference | ai_drafted_unverified | ai_curated_literature_reference | ai_assisted_check")
     label: str
     extraction: ExtractionMetrics | None = None
     metrics: dict[str, Metric] = {}

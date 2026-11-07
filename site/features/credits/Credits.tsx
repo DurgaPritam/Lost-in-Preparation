@@ -5,6 +5,7 @@ import { SiteShell, PageHeader } from '@/components/layout/SiteShell';
 import { DataTable } from '@/components/base/DataTable';
 import { PlateSlot } from '@/components/base/PlateSlot';
 import { Taxon } from '@/components/base/Taxon';
+import { EvidenceStatusBadge } from '@/components/honesty/EvidenceStatusBadge';
 import { UnknownValue } from '@/components/honesty/UnknownValue';
 import { toPlate } from '@/lib/data/selectors/plates';
 
@@ -23,7 +24,7 @@ export function Credits({ plates }: { plates: ContractPlate[] }) {
   const none = plates.filter((p) => !p.image);
   return (
     <SiteShell current="credits">
-      <PageHeader eyebrow="Credits" title="Images, type and code" lead="Every botanical plate is a public-domain 19th-century plate from Wikimedia Commons, downloaded once and served from this site. Author, date and licence are as Commons states them; each licence still awaits a person’s confirmation." />
+      <PageHeader eyebrow="Credits" title="Images, type and code" lead="Every botanical plate is an 18th- or 19th-century plate whose Wikimedia Commons page states a public-domain licence, downloaded once and served from this site. Author, date and licence are as Commons states them. An AI agent has read each page (provisional); each licence still awaits a person’s confirmation." />
       <section aria-labelledby="plates" className="flex flex-col gap-4">
         <h2 id="plates" className="m-0 font-display text-2xl text-ink">Botanical plates</h2>
         <DataTable
@@ -37,6 +38,14 @@ export function Credits({ plates }: { plates: ContractPlate[] }) {
             { key: 'author', header: 'Author (as on Commons)', render: (p) => p.author ?? <UnknownValue variant="cell" label="Not stated" /> },
             { key: 'date', header: 'Date field on Commons', render: (p) => p.date ?? <UnknownValue variant="cell" label="Not stated" /> },
             { key: 'licence', header: 'Licence (as on Commons)', render: (p) => <span className="flex flex-col gap-0.5"><span>{p.licence}</span><span className="text-xs italic text-ink-subtle">licence to confirm</span></span> },
+            { key: 'aicheck', header: 'AI check of the Commons page', render: (p) => (p.aiCheck ? (
+              <span className="flex flex-col gap-1">
+                <span><EvidenceStatusBadge wording="validation" status="provisional" size="sm" detail={p.aiCheck.statement} /></span>
+                <span className="font-mono text-xs">{p.aiCheck.licenceTemplates.length ? p.aiCheck.licenceTemplates.map((t) => `{{${t}}}`).join(', ') : 'no licence template found'}</span>
+                <span className="text-xs text-ink-subtle">{p.aiCheck.statement}</span>
+                {p.aiCheck.flags.map((f) => <span key={f} className="text-xs text-ink-muted">⚑ {f}</span>)}
+              </span>
+            ) : <UnknownValue variant="cell" label="Not checked" />) },
             { key: 'file', header: 'Commons file', render: (p) => (p.fileUrl ? <a href={p.fileUrl} className="break-all text-brand underline">{decodeURIComponent(p.fileUrl.split('/').pop() ?? '')}</a> : <UnknownValue variant="cell" />) },
           ]}
         />

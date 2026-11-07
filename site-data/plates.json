@@ -22,6 +22,19 @@
    "src": "/plates/artemisia-absinthium-960.webp",
    "width": 960,
    "height": 1194
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1139943213,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -47,6 +60,19 @@
    "src": "/plates/crocus-sativus-444.webp",
    "width": 444,
    "height": 596
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1209008643,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -66,7 +92,8 @@
   "matchedName": null,
   "sha256": null,
   "retrievedAt": null,
-  "image": null
+  "image": null,
+  "aiCheck": null
  },
  {
   "mock": false,
@@ -91,6 +118,21 @@
    "src": "/plates/ranunculus-ficaria-686.webp",
    "width": 686,
    "height": 1006
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1190791321,
+   "licenceTemplates": [
+    "PD-old-100"
+   ],
+   "publication": "http://www.biolib.de; categories: Deutschlands Flora in Abbildungen (1796)",
+   "publicationDate": "1796",
+   "flags": [
+    "the Source field names only a website, not the printed work"
+   ]
   }
  },
  {
@@ -116,6 +158,19 @@
    "src": "/plates/glycyrrhiza-glabra-480.webp",
    "width": 480,
    "height": 589
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1010662008,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -141,6 +196,23 @@
    "src": "/plates/galium-aparine-960.webp",
    "width": 960,
    "height": 1611
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 671472659,
+   "licenceTemplates": [
+    "PD-scan|PD-old-auto-expired|deathyear=1925"
+   ],
+   "publication": "www.biolib.de; categories: Thomé, Flora von Deutschland",
+   "publicationDate": "2008-11-7 01:44 (UTC)",
+   "flags": [
+    "the Date field gives a modern date (likely the scan or upload date, not the plate's)",
+    "the Source field names only a website, not the printed work",
+    "plates of this series state different author death years (1887, 1925); this page states 1925"
+   ]
   }
  },
  {
@@ -166,6 +238,19 @@
    "src": "/plates/chelidonium-majus-480.webp",
    "width": 480,
    "height": 587
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1121627362,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen/Thumbsize",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -191,6 +276,19 @@
    "src": "/plates/hyoscyamus-niger-480.webp",
    "width": 480,
    "height": 586
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1016548370,
+   "licenceTemplates": [
+    "PD-old-80-expired"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -210,7 +308,8 @@
   "matchedName": null,
   "sha256": null,
   "retrievedAt": null,
-  "image": null
+  "image": null,
+  "aiCheck": null
  },
  {
   "mock": false,
@@ -235,6 +334,23 @@
    "src": "/plates/agrimonia-eupatoria-960.webp",
    "width": 960,
    "height": 1580
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1223585396,
+   "licenceTemplates": [
+    "PD-scan|PD-old-auto-1923|deathyear=1887"
+   ],
+   "publication": "categories: Thomé, Flora von Deutschland (original)",
+   "publicationDate": null,
+   "flags": [
+    "no Date field",
+    "no Author field",
+    "plates of this series state different author death years (1887, 1925); this page states 1887"
+   ]
   }
  },
  {
@@ -260,6 +376,19 @@
    "src": "/plates/salvia-sclarea-801.webp",
    "width": 801,
    "height": 1200
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1190792204,
+   "licenceTemplates": [
+    "PD-old-100"
+   ],
+   "publication": "Fig. from book Deutschlands Flora in Abbildungen at http://www.biolib.de; categories: Deutschlands Flora in Abbildungen (asterids)",
+   "publicationDate": "1796",
+   "flags": []
   }
  },
  {
@@ -285,6 +414,19 @@
    "src": "/plates/papaver-somniferum-465.webp",
    "width": 465,
    "height": 592
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1208783001,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -310,6 +452,19 @@
    "src": "/plates/humulus-lupulus-480.webp",
    "width": 480,
    "height": 568
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1259830431,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -329,7 +484,8 @@
   "matchedName": null,
   "sha256": null,
   "retrievedAt": null,
-  "image": null
+  "image": null,
+  "aiCheck": null
  },
  {
   "mock": false,
@@ -354,6 +510,19 @@
    "src": "/plates/coriandrum-sativum-470.webp",
    "width": 470,
    "height": 592
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1103267605,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Köhler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -379,6 +548,19 @@
    "src": "/plates/carum-carvi-480.webp",
    "width": 480,
    "height": 572
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1115923233,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -404,6 +586,19 @@
    "src": "/plates/citrullus-colocynthis-448.webp",
    "width": 448,
    "height": 597
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1119304414,
+   "licenceTemplates": [
+    "PD-old"
+   ],
+   "publication": "List of Koehler Images (http://pharm1.pharmazie.uni-greifswald.de/allgemei/koehler/koeh-eng.htm); categories: Köhlers Medizinal-Pflanzen",
+   "publicationDate": "1897",
+   "flags": []
   }
  },
  {
@@ -429,6 +624,23 @@
    "src": "/plates/filipendula-ulmaria-960.webp",
    "width": 960,
    "height": 1577
+  },
+  "aiCheck": {
+   "basis": "ai_assisted_check",
+   "statement": "checked by AI agent on 2026-11-07; awaiting human confirmation",
+   "checkedOn": "2026-11-07",
+   "checkedBy": "AI agent (Claude, claude-opus-5-5, in Claude Code), using pipeline/lip/plates_check.py",
+   "pageRevisionId": 1011235418,
+   "licenceTemplates": [
+    "PD-scan|PD-old-auto-1923|deathyear=1925"
+   ],
+   "publication": "categories: Thomé, Flora von Deutschland",
+   "publicationDate": null,
+   "flags": [
+    "no Date field",
+    "no Author field",
+    "plates of this series state different author death years (1887, 1925); this page states 1925"
+   ]
   }
  },
  {
@@ -448,6 +660,7 @@
   "matchedName": null,
   "sha256": null,
   "retrievedAt": null,
-  "image": null
+  "image": null,
+  "aiCheck": null
  }
 ]

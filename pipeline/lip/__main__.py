@@ -21,12 +21,16 @@
   python -m lip m5 pairs                 Phase 5 species–indication pairs from the M1 session extraction
   python -m lip m5 audit                 Phase 5 audit (docs/AUDIT_PROTOCOL_v1.md): retrieval, rule-based coding, matching
   python -m lip m5 audit-v2              Phase 5 audit v2 (docs/AUDIT_PROTOCOL_v2.md): pre-registered re-analysis
+  python -m lip m1 review-priority       10 passages a human reviewer should check first (AI-assisted, not an evaluation)
   python -m lip m5 handcheck-eval        extractor accuracy from the filled 40-study hand-check sheet
+  python -m lip m5 ai-check-ingest DIR   gather the AI coders' blind codes (prompts/m5_ai_check/v1) -> data/reference/m5_ai_check_v1.json
+  python -m lip m5 ai-check              AI-assisted check of the rule-based extractor (provisional; never human validation)
   python -m lip m6 hypotheses            Phase 6: rank never-faithfully-tested pairs (hypotheses worth re-testing)
   python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
   python -m lip m4 run                   artemisinin check, literature check, profiles -> site-data/profiles.json
   python -m lip m4 engine-export         Preparation Lab inputs -> site-data/engine/ (self-checked against the profiles)
   python -m lip plates                   public-domain botanical plates from Wikimedia Commons -> site-data/plates.json, docs/IMAGE_CREDITS.md
+  python -m lip plates-check             AI-assisted reading of each plate's Commons page (provisional) -> data/reference/plates_ai_check_v1.json
   python -m lip site                     write recipes/species, prune stale profiles, validate site-data/, docs/SITE_DATA_STATUS.md
   python -m lip results                  RESULTS.md from pipeline outputs (validated vs provisional, labelled)
 """
@@ -47,7 +51,7 @@ def _has_credentials() -> bool:
 
 def m1(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(prog="lip m1")
-    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver", "prompt-tokens", "session-ingest", "session-show", "reannotation-subset"])
+    ap.add_argument("cmd", choices=["sample", "extract", "eval", "errors", "silver", "prompt-tokens", "session-ingest", "session-show", "reannotation-subset", "review-priority"])
     ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--scope", choices=["sample", "all", "approved"], default="sample")
     ap.add_argument("--limit", type=int)
@@ -92,6 +96,9 @@ def m1(argv: list[str]) -> int:
         from .m1 import evaluate
         m = evaluate.evaluate(a.reference)
         print(m.model_dump_json(indent=2)[:4000])
+    elif a.cmd == "review-priority":
+        from .m1 import review_priority
+        print(json.dumps(review_priority.run(), indent=2))
     elif a.cmd == "reannotation-subset":
         from .m1 import sample
         print(json.dumps(sample.write_reannotation_subset(), indent=2))
@@ -154,6 +161,9 @@ def main(argv: list[str]) -> int:
     elif cmd == "plates":
         from . import plates
         print(json.dumps(plates.run(), indent=2, ensure_ascii=False))
+    elif cmd == "plates-check":
+        from . import plates_check
+        print(json.dumps(plates_check.run(), indent=2, ensure_ascii=False))
     elif cmd == "site":
         from . import site_export
         print(json.dumps(site_export.run(), indent=2))
@@ -191,6 +201,12 @@ def main(argv: list[str]) -> int:
         elif sub == "handcheck-eval":
             from .m5 import audit
             print(json.dumps(audit.handcheck_eval(), indent=2))
+        elif sub == "ai-check-ingest":
+            from .m5 import ai_check
+            print(json.dumps(ai_check.ingest(argv[2]), indent=2))
+        elif sub == "ai-check":
+            from .m5 import ai_check
+            print(json.dumps(ai_check.run(), indent=2))
     elif cmd == "m6":
         sub = argv[1] if len(argv) > 1 else "rank-demo"
         if sub == "hypotheses":

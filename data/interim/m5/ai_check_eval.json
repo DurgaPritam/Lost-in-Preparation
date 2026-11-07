@@ -1,0 +1,417 @@
+{
+ "basis": "ai_assisted_check",
+ "label": "AI-assisted check of the rule-based extractor (provisional)",
+ "provenance": {
+  "model": "claude-opus-5-5",
+  "tool": "Claude Code agents (3 batches)",
+  "prompt": "prompts/m5_ai_check/v1/prompt.md",
+  "promptVersion": "v1",
+  "promptSha256": "71f1b0f225100c89333319eaba7e082bc8a6f2af2c67ecbfaff336cbf35c9b0f",
+  "blind": "coders saw only the study texts and, for multi-preparation studies, the extractor's solvent wording as a row label",
+  "codedOn": "2026-11-07"
+ },
+ "quotesVerified": true,
+ "rows": 47,
+ "studies": 40,
+ "agreementDefinition": "same code (unknown = unknown counts as agreement); Wilson 95% interval over rows",
+ "caveats": [
+  "An AI checking a rule system, not a human reading: the AI coder may share the extractor's blind spots or add its own.",
+  "Rows are not independent: 3 studies contribute 10 of the rows, so the intervals are optimistic.",
+  "On multi-preparation rows the row label shows the extractor's solvent wording, so solvent is not blind there (solvent agreement is also reported on the single-preparation rows)."
+ ],
+ "fields": {
+  "solvent": {
+   "agreement": {
+    "k": 37,
+    "n": 47,
+    "value": 0.7872,
+    "low": 0.651,
+    "high": 0.8801
+   },
+   "bySource": {
+    "abstract": {
+     "k": 18,
+     "n": 21,
+     "value": 0.8571,
+     "low": 0.6536,
+     "high": 0.9502
+    },
+    "pmc_fulltext": {
+     "k": 19,
+     "n": 26,
+     "value": 0.7308,
+     "low": 0.5392,
+     "high": 0.863
+    }
+   },
+   "agreementWhereBothStated": {
+    "k": 21,
+    "n": 24,
+    "value": 0.875,
+    "low": 0.69,
+    "high": 0.9566
+   },
+   "breakdown": {
+    "bothUnknown": 16,
+    "bothStatedSame": 21,
+    "ruleUnknownAiStated": 4,
+    "ruleStatedAiUnknown": 3,
+    "bothStatedDifferent": 3
+   },
+   "disagreements": [
+    {
+     "pmid": "22958433",
+     "preparation": 1,
+     "rule": "ethanol",
+     "ai": "hydroethanolic"
+    },
+    {
+     "pmid": "22958433",
+     "preparation": 3,
+     "rule": "methanol",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "27825341",
+     "preparation": 1,
+     "rule": "other",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "31660146",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "water"
+    },
+    {
+     "pmid": "33801280",
+     "preparation": 1,
+     "rule": "ethanol",
+     "ai": "co2"
+    },
+    {
+     "pmid": "37630394",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "hydroethanolic"
+    },
+    {
+     "pmid": "41471730",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "other"
+    },
+    {
+     "pmid": "22711544",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "water"
+    },
+    {
+     "pmid": "26380428",
+     "preparation": 1,
+     "rule": "water",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "36870516",
+     "preparation": 2,
+     "rule": "ethanol",
+     "ai": "hydroethanolic"
+    }
+   ],
+   "agreementSinglePreparationRows": {
+    "k": 30,
+    "n": 37,
+    "value": 0.8108,
+    "low": 0.6579,
+    "high": 0.9052
+   }
+  },
+  "heat": {
+   "agreement": {
+    "k": 37,
+    "n": 47,
+    "value": 0.7872,
+    "low": 0.651,
+    "high": 0.8801
+   },
+   "bySource": {
+    "abstract": {
+     "k": 21,
+     "n": 21,
+     "value": 1.0,
+     "low": 0.8454,
+     "high": 1.0
+    },
+    "pmc_fulltext": {
+     "k": 16,
+     "n": 26,
+     "value": 0.6154,
+     "low": 0.4253,
+     "high": 0.7757
+    }
+   },
+   "agreementWhereBothStated": {
+    "k": 9,
+    "n": 10,
+    "value": 0.9,
+    "low": 0.5958,
+    "high": 0.9821
+   },
+   "breakdown": {
+    "bothUnknown": 28,
+    "bothStatedSame": 9,
+    "ruleUnknownAiStated": 7,
+    "ruleStatedAiUnknown": 2,
+    "bothStatedDifferent": 1
+   },
+   "disagreements": [
+    {
+     "pmid": "22958433",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "cold"
+    },
+    {
+     "pmid": "23382823",
+     "preparation": 1,
+     "rule": "warm",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "27825341",
+     "preparation": 1,
+     "rule": "warm",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "28165501",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "boiled"
+    },
+    {
+     "pmid": "31660146",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "boiled"
+    },
+    {
+     "pmid": "37630394",
+     "preparation": 1,
+     "rule": "warm",
+     "ai": "cold"
+    },
+    {
+     "pmid": "38139137",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "cold"
+    },
+    {
+     "pmid": "38139137",
+     "preparation": 3,
+     "rule": "unknown",
+     "ai": "cold"
+    },
+    {
+     "pmid": "38139137",
+     "preparation": 4,
+     "rule": "unknown",
+     "ai": "cold"
+    },
+    {
+     "pmid": "38139137",
+     "preparation": 5,
+     "rule": "unknown",
+     "ai": "cold"
+    }
+   ]
+  },
+  "part": {
+   "agreement": {
+    "k": 33,
+    "n": 47,
+    "value": 0.7021,
+    "low": 0.5602,
+    "high": 0.8135
+   },
+   "bySource": {
+    "abstract": {
+     "k": 17,
+     "n": 21,
+     "value": 0.8095,
+     "low": 0.6,
+     "high": 0.9233
+    },
+    "pmc_fulltext": {
+     "k": 16,
+     "n": 26,
+     "value": 0.6154,
+     "low": 0.4253,
+     "high": 0.7757
+    }
+   },
+   "agreementWhereBothStated": {
+    "k": 16,
+    "n": 16,
+    "value": 1.0,
+    "low": 0.8064,
+    "high": 1.0
+   },
+   "breakdown": {
+    "bothUnknown": 17,
+    "bothStatedSame": 16,
+    "ruleUnknownAiStated": 10,
+    "ruleStatedAiUnknown": 4,
+    "bothStatedDifferent": 0
+   },
+   "disagreements": [
+    {
+     "pmid": "22958433",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "other"
+    },
+    {
+     "pmid": "22958433",
+     "preparation": 2,
+     "rule": "unknown",
+     "ai": "other"
+    },
+    {
+     "pmid": "23382823",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "other"
+    },
+    {
+     "pmid": "25050284",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "other"
+    },
+    {
+     "pmid": "27825341",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "other"
+    },
+    {
+     "pmid": "28480425",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "fruit"
+    },
+    {
+     "pmid": "33801280",
+     "preparation": 1,
+     "rule": "resin",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "38146392",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "other"
+    },
+    {
+     "pmid": "40887103",
+     "preparation": 1,
+     "rule": "bark",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "42856842",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "other"
+    },
+    {
+     "pmid": "16041735",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "aerial_parts"
+    },
+    {
+     "pmid": "22711544",
+     "preparation": 1,
+     "rule": "bark",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "26380428",
+     "preparation": 1,
+     "rule": "root",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "36870516",
+     "preparation": 2,
+     "rule": "unknown",
+     "ai": "root"
+    }
+   ]
+  },
+  "freshOrDried": {
+   "agreement": {
+    "k": 44,
+    "n": 47,
+    "value": 0.9362,
+    "low": 0.8284,
+    "high": 0.9781
+   },
+   "bySource": {
+    "abstract": {
+     "k": 20,
+     "n": 21,
+     "value": 0.9524,
+     "low": 0.7733,
+     "high": 0.9915
+    },
+    "pmc_fulltext": {
+     "k": 24,
+     "n": 26,
+     "value": 0.9231,
+     "low": 0.7586,
+     "high": 0.9786
+    }
+   },
+   "agreementWhereBothStated": {
+    "k": 15,
+    "n": 15,
+    "value": 1.0,
+    "low": 0.7961,
+    "high": 1.0
+   },
+   "breakdown": {
+    "bothUnknown": 29,
+    "bothStatedSame": 15,
+    "ruleUnknownAiStated": 1,
+    "ruleStatedAiUnknown": 2,
+    "bothStatedDifferent": 0
+   },
+   "disagreements": [
+    {
+     "pmid": "22958433",
+     "preparation": 3,
+     "rule": "dried",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "31660146",
+     "preparation": 1,
+     "rule": "dried",
+     "ai": "unknown"
+    },
+    {
+     "pmid": "26625755",
+     "preparation": 1,
+     "rule": "unknown",
+     "ai": "fresh"
+    }
+   ]
+  }
+ }
+}

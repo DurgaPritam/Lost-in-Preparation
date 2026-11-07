@@ -1,6 +1,6 @@
 {
  "contractVersion": "1.7",
- "generatedAt": "2026-11-06T10:58:14+00:00",
+ "generatedAt": "2026-11-07T07:39:52+00:00",
  "pipelineVersion": "0.1.0",
  "mock": false,
  "extraction": {
@@ -4130,6 +4130,49 @@
      "n": 15,
      "sourceFile": "data/interim/m4/literature_prereg_v3.json",
      "note": "descriptive; 5/15 scored pairs agree; pairs within an article are not independent"
+    }
+   }
+  },
+  "m5ExtractorAiCheck": {
+   "basis": "ai_assisted_check",
+   "label": "AI-assisted check of the rule-based extractor (provisional)",
+   "extraction": null,
+   "metrics": {
+    "solvent agreement": {
+     "status": "computed",
+     "value": 0.7872,
+     "low": 0.651,
+     "high": 0.8801,
+     "n": 47,
+     "sourceFile": "data/interim/m5/ai_check_eval.json",
+     "note": "37/47 rows agree; AI coder vs rule-based extractor; not human validation"
+    },
+    "heat agreement": {
+     "status": "computed",
+     "value": 0.7872,
+     "low": 0.651,
+     "high": 0.8801,
+     "n": 47,
+     "sourceFile": "data/interim/m5/ai_check_eval.json",
+     "note": "37/47 rows agree; AI coder vs rule-based extractor; not human validation"
+    },
+    "part agreement": {
+     "status": "computed",
+     "value": 0.7021,
+     "low": 0.5602,
+     "high": 0.8135,
+     "n": 47,
+     "sourceFile": "data/interim/m5/ai_check_eval.json",
+     "note": "33/47 rows agree; AI coder vs rule-based extractor; not human validation"
+    },
+    "freshOrDried agreement": {
+     "status": "computed",
+     "value": 0.9362,
+     "low": 0.8284,
+     "high": 0.9781,
+     "n": 47,
+     "sourceFile": "data/interim/m5/ai_check_eval.json",
+     "note": "44/47 rows agree; AI coder vs rule-based extractor; not human validation"
     }
    }
   }

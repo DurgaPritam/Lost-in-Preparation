@@ -63,30 +63,59 @@ def _m1_run_rows() -> list[tuple[str, str, str]]:
     return out
 
 
+HV, AI, PEND = "**human-validated**", "*AI-assisted check (provisional)*", "human validation pending"
+
+
+def _ai_check_rows() -> list[tuple[str, str, str]]:
+    """The three AI-assisted checks (basis ai_assisted_check): never human validation."""
+    rows = []
+    e = _j("data/interim/m5/ai_check_eval.json")
+    if e:
+        f = e["fields"]
+        rows.append(("M5 rule-based extractor vs an AI coder (40 studies, 47 preparations)",
+                     f"{AI} — agreement: solvent {_ci(f['solvent']['agreement'])}, heat {_ci(f['heat']['agreement'])}, "
+                     f"part {_ci(f['part']['agreement'])}, fresh/dried {_ci(f['freshOrDried']['agreement'])}. An AI checking a rule system; "
+                     "not a human reading", "`data/interim/m5/ai_check_eval.json`"))
+    pc = _j("data/reference/plates_ai_check_v1.json")
+    if pc:
+        n, fl = len(pc["plates"]), sum(1 for x in pc["plates"] if x["flags"])
+        rows.append((f"Botanical plate licences ({n} Commons pages)",
+                     f"{AI} — an AI agent read each page on {pc['checkedOn']} and recorded its licence tag, source and date; "
+                     f"{fl} pages flagged for a person to look at; awaiting human confirmation", "`data/reference/plates_ai_check_v1.json`"))
+    if (ROOT / "data/reference/m1_review_priority_v1.csv").exists():
+        rows.append(("M1 review priority: 10 passages most likely to hold extraction errors",
+                     f"{AI} — not an evaluation; tells a human reviewer where to start", "`data/reference/m1_review_priority_v1.csv`"))
+    return rows
+
+
 def validation_status(m: C.Metrics) -> list[str]:
     gold_ext = m.extraction.overall.get("part")
+    art = m.artemisininCheck.result or "not run"
     rows = [
-        ("Text ingestion and segmentation (passage coverage, IDs, chapter counts vs printed contents)", "**validated** — automated tests against the source files", "`tests/`"),
-        ("logP descriptor: RDKit vs GFN2-xTB vs experiment", "**validated** — experimental reference (SangsterLogP, CC BY 4.0)", "`data/interim/m4/logp_validation.json`"),
-        ("Artemisinin known-case test", f"**{m.artemisininCheck.result or 'not run'}** against pre-registered criteria (5th–95th range crosses the cold-water threshold)" if (m.artemisininCheck.result or '').startswith('borderline') else f"**{m.artemisininCheck.result or 'not run'}** against pre-registered criteria", "`data/interim/m4/artemisinin_check.json`"),
-        *_m1_run_rows(),
-        ("M1 extraction accuracy vs human gold set (single annotator)", "pending — human annotation not yet done" if not gold_ext or gold_ext.f1.status != "computed" else "**human-validated** (single annotator)", "`data/gold/annotations/`"),
-        ("Annotator self-consistency (15-passage re-annotation, Cohen's kappa)", "pending — re-annotation not yet done" if (m.interAnnotatorAgreement.get("heat") is None or m.interAnnotatorAgreement["heat"].status != "computed") else "computed (see metrics.json)", "`data/gold/reannotation_subset_v1.json`"),
-        ("M1 extraction vs AI reference (silver)", "**not used** — circular: the same AI (Claude) wrote the silver set and the session extraction", "`data/silver/silver_v1.json`"),
-        ("M2 name resolution vs scholarly identifications", "pending — needs human-verified identifications" if m.nameResolution["top1"].status != "computed" else "**human-validated**", "`data/gold/name_identifications.csv`"),
-        ("M2 name resolution vs AI-drafted identifications", "*provisional* — AI-drafted from quoted sources, unverified", "`data/gold/name_identifications.csv` (draft* columns)"),
-        ("Preparation model vs published reports — exploratory set", "*provisional, exploratory* — 9 rows selected after model build", "`data/reference/prep_literature_v1.csv`"),
-        ("Preparation model vs published reports — pre-registered v1 (mostly essential oils)", "*provisional* — rule pre-registered (docs/PREREGISTRATION.md), AI-written rule and code", "`data/reference/prep_literature_prereg_v1.csv`"),
-        ("Preparation model vs published reports — pre-registered v2 (water preparations)", "*provisional* — rule pre-registered (docs/PREREGISTRATION_v2.md), AI-written rule and code; low-row quota not met", "`data/reference/prep_literature_prereg_v2.csv`"),
-        ("Preparation model vs published reports — pre-registered v3 (paired, within plant)", "*provisional, inconclusive* — too few articles (n in RESULTS); rule pre-registered (docs/PREREGISTRATION_v3.md, one amendment before collection), AI-written rule and code", "`data/reference/prep_literature_prereg_v3_pairs.csv`"),
-        ("Genus-signal audit (name resolution)", "*provisional* — AI-reviewed false friends with dictionary quotes, awaiting human review", "`docs/GENUS_SIGNAL_AUDIT.md`"),
-        (f"Study-set toxicity entries ({_n_proposed()} species)", "*provisional* — AI-drafted from cited EMA / PMC sources, awaiting human review", "`data/reference/toxicity_curated.csv`"),
-        (f"Study set ({_n_proposed()} proposed)", _review_status(), "`docs/STUDY_SET_PROPOSAL.md`"),
+        ("Text ingestion and segmentation (passage coverage, IDs, chapter counts vs printed contents)", f"{PEND} — automated tests pass against the source files", "`tests/`"),
+        ("logP descriptor: RDKit vs GFN2-xTB vs experiment", f"{HV} — against measured experimental values (SangsterLogP, CC BY 4.0), not an AI reference", "`data/interim/m4/logp_validation.json`"),
+        ("Artemisinin known-case test", f"{AI} — result **{art}** against pre-registered criteria that an AI wrote from the literature", "`data/interim/m4/artemisinin_check.json`"),
+        *[(a, f"{PEND} — extraction run complete: {b.removeprefix('done — ')}", c) for a, b, c in _m1_run_rows()],
+        ("M1 extraction accuracy vs human gold set", f"{PEND} — human annotation not yet done" if not gold_ext or gold_ext.f1.status != "computed" else f"{HV} (single annotator)", "`data/gold/annotations/`"),
+        ("Annotator self-consistency (15-passage re-annotation, Cohen's kappa)", f"{PEND} — re-annotation not yet done" if (m.interAnnotatorAgreement.get("heat") is None or m.interAnnotatorAgreement["heat"].status != "computed") else f"{HV} (computed, see metrics.json)", "`data/gold/reannotation_subset_v1.json`"),
+        ("M1 extraction vs the AI reference set (silver)", f"{PEND} — the comparison is not made: the same AI (Claude) wrote the silver set and the extraction, so it would be circular", "`data/silver/silver_v1.json`"),
+        ("M2 name resolution vs scholarly identifications", f"{PEND} — needs identifications checked by a person" if m.nameResolution["top1"].status != "computed" else HV, "`data/gold/name_identifications.csv`"),
+        ("M2 name resolution vs AI-drafted identifications", f"{AI} — drafted by an AI from quoted sources, unverified", "`data/gold/name_identifications.csv` (draft* columns)"),
+        ("Preparation model vs published reports — exploratory set", f"{AI} — exploratory; 9 rows an AI selected after the model was built", "`data/reference/prep_literature_v1.csv`"),
+        ("Preparation model vs published reports — pre-registered v1 (mostly essential oils)", f"{AI} — rule pre-registered (docs/PREREGISTRATION.md); rule and code written by an AI", "`data/reference/prep_literature_prereg_v1.csv`"),
+        ("Preparation model vs published reports — pre-registered v2 (water preparations)", f"{AI} — rule pre-registered (docs/PREREGISTRATION_v2.md); rule and code written by an AI; low-row quota not met", "`data/reference/prep_literature_prereg_v2.csv`"),
+        ("Preparation model vs published reports — pre-registered v3 (paired, within plant)", f"{AI} — inconclusive, too few articles (n in RESULTS); rule pre-registered (docs/PREREGISTRATION_v3.md, one amendment before collection); rule and code written by an AI", "`data/reference/prep_literature_prereg_v3_pairs.csv`"),
+        ("Genus-signal audit (name resolution)", f"{AI} — an AI reviewed false friends with dictionary quotes; awaiting human review", "`docs/GENUS_SIGNAL_AUDIT.md`"),
+        (f"Study-set toxicity entries ({_n_proposed()} species)", f"{AI} — drafted by an AI from cited EMA / PMC sources; awaiting human review", "`data/reference/toxicity_curated.csv`"),
+        (f"Study set ({_n_proposed()} proposed)", _review_status().replace("**human-reviewed**", f"{HV} (reviewed by the project lead)").replace("pending — human approval", PEND), "`docs/STUDY_SET_PROPOSAL.md`"),
         *_audit_rows(),
+        *_ai_check_rows(),
     ]
     out = ["## Validation status", "", "| Result | Status | Evidence |", "|---|---|---|"]
     out += [f"| {a} | {b} | {c} |" for a, b, c in rows]
-    out += ["", "**validated** = checked against an independent, non-AI reference. *provisional* = compared with a reference made by an AI; useful for development, never presented as validation. pending = waiting on human work."]
+    out += ["", "Every row has one of three statuses. **human-validated**: checked by people, or against measured data that people produced, "
+            "with no AI-made reference involved. *AI-assisted check (provisional)*: checked by an AI or against a reference an AI made; useful "
+            "for finding problems, never a validation. human validation pending: no independent check yet."]
     return out
 
 
@@ -420,31 +449,32 @@ def _pct(x: dict) -> str:
 def _audit_rows() -> list[tuple[str, str, str]]:
     a, h = _j("data/interim/m5/audit_summary.json"), _j("data/interim/m6/hypotheses_summary.json")
     hc = _j("data/interim/m5/handcheck_eval.json")
+    acc = "extractor accuracy: human hand-check pending (an AI-assisted check exists, see below)"
     rows = []
     g = _j("data/interim/m5/reporting_gap.json")
     if g:
         pr = g["sets"]["prepared"]["all"]
         rows.append(("**Headline: reporting gap** (descriptive) — share of studies that prepared the plant stating heat / fresh or dried / filtration",
-                     f"computed: {_ci(pr['heat'])} / {_ci(pr['freshOrDried'])} / {_ci(pr['filtration'])}; coded by the rule-based extractor, "
-                     "*accuracy pending the 40-study hand-check*", "`data/interim/m5/reporting_gap.json`"))
+                     f"{PEND} — computed: {_ci(pr['heat'])} / {_ci(pr['freshOrDried'])} / {_ci(pr['filtration'])}; coded by the rule-based extractor; {acc}",
+                     "`data/interim/m5/reporting_gap.json`"))
     if a:
         rows.append(("Modern-methods audit (M5) **v1**: share of modern studies with no historical-preparation match",
-                     f"computed as pre-registered (`{a['extractor']}`): {_pct(a['headline'])}. **Design flaw:** v1's solvent rule makes "
+                     f"{PEND} — computed as pre-registered (`{a['extractor']}`): {_pct(a['headline'])}. **Design flaw:** v1's solvent rule makes "
                      "every non-water recipe unmatchable, so this mostly reflects the protocol", "`data/interim/m5/audit_summary.json`"))
         a2 = _j("data/interim/m5/v2/audit_summary.json")
         if a2:
             rows.append(("**Modern-methods audit (M5) v2: pre-registered re-analysis after v1's design flaw** — overall fidelity (share faithful)",
-                         f"{_rt(a2['overallFidelity'])}; per-variable rates in RESULTS; *extractor accuracy pending the 40-study hand-check*",
+                         f"{PEND} — {_rt(a2['overallFidelity'])}; per-variable rates in RESULTS; {acc}",
                          "`data/interim/m5/v2/audit_summary.json`"))
         rows.append(("M5 extractor accuracy vs human hand-check (40 studies)",
-                     "pending — hand-check sheet not yet filled" if not hc else "computed (see RESULTS)", "`data/reference/m5_handcheck_v1.csv`"))
+                     f"{PEND} — hand-check sheet not yet filled" if not hc else f"{HV} (see RESULTS)", "`data/reference/m5_handcheck_v1.csv`"))
     else:
-        rows.append(("**Modern-methods audit (M5): the planned headline result**", "not started", "—"))
+        rows.append(("**Modern-methods audit (M5): the planned headline result**", f"{PEND} — not started", "—"))
     if h:
-        rows.append(("Hypothesis ranking (M6)", f"{h['ranked']} hypotheses worth re-testing ranked from {h['candidates']} never-faithfully-tested "
+        rows.append(("Hypothesis ranking (M6)", f"{PEND} — {h['ranked']} hypotheses worth re-testing ranked from {h['candidates']} never-faithfully-tested "
                      f"pairs (robust rule); depends on the unvalidated preparation model and the unchecked audit coding", "`site-data/hypotheses.json`"))
     else:
-        rows.append(("Hypothesis ranking (M6)", "rule implemented and stability-tested on model-only candidate pairs (not hypotheses)",
+        rows.append(("Hypothesis ranking (M6)", f"{PEND} — rule implemented and stability-tested on model-only candidate pairs (not hypotheses)",
                      "`data/interim/m6/ranking_stability.json`"))
     return rows
 
@@ -505,6 +535,27 @@ def audit_v2_section() -> list[str]:
                 L.append(f"| {tag} | {int(x.rank)} | *{x.acceptedName}* | {x.mesh} | {x.faithful} vs {x.modern} | {x.gapP5:.2f} / {x.gapP50:.2f} / {x.gapP95:.2f} |")
         L += ["", f"v2 candidates {h2['candidates']}, ranked {h2['ranked']}; skipped: " + ", ".join(f"{k} {v}" for k, v in h2["skipped"].items()) + ". "
               "Every row is a hypothesis worth re-testing, not a claim that a preparation works or is safe."]
+    return L
+
+
+def ai_check_section() -> list[str]:
+    e = _j("data/interim/m5/ai_check_eval.json")
+    if not e:
+        return []
+    names = {"solvent": "Solvent", "heat": "Heat", "part": "Part", "freshOrDried": "Fresh or dried"}
+    L = ["", "## AI-assisted check of the rule-based extractor (provisional)", "",
+         f"An AI coder ({e['provenance']['model']}, prompt `{e['provenance']['prompt']}` {e['provenance']['promptVersion']}) read the {e['studies']} "
+         f"hand-check studies ({e['rows']} extracted preparations) blind to the extractor's output and coded each field with an exact quote; "
+         f"every quote was checked verbatim against the study text. **This is an AI checking a rule system, not a human hand-check**; the human "
+         "sheet (`data/reference/m5_handcheck_v1.csv`) stays empty for people. Agreement means the same code (unknown = unknown counts).", "",
+         "| Field | Agreement (95% CI) | Where both stated a value | Extractor unknown, AI stated | Extractor stated, AI unknown | Both stated, different |",
+         "|---|---|---|---|---|---|"]
+    for k, v in e["fields"].items():
+        b, w = v["breakdown"], v["agreementWhereBothStated"]
+        L.append(f"| {names[k]} | {_ci(v['agreement'])} | {w['k']}/{w['n']} | {b['ruleUnknownAiStated']} | {b['ruleStatedAiUnknown']} | {b['bothStatedDifferent']} |")
+    s1 = e["fields"]["solvent"]["agreementSinglePreparationRows"]
+    L += ["", f"Solvent on the single-preparation rows only (the coder did not see the extractor's solvent wording there): {_ci(s1)}.", ""]
+    L += [f"- {c}" for c in e["caveats"]]
     return L
 
 
@@ -779,9 +830,10 @@ def build() -> str:
           f"`site-data/profiles/` holds the {len(_j('site-data/profiles/index.json') or [])} species in the current headline set (one file per species, `index.json`). "
           "These are model estimates of what a preparation would carry, not measurements."]
 
-    L += ["", "## Provisional results (AI-made references — not human-validated)", "",
-          "> The numbers in this section compare the pipeline with references **produced by an AI** (labels, drafted identifications, a curated literature table). "
-          "They are for development only and must not be read as validation.", ""]
+    L += ai_check_section()
+    L += ["", "## AI-assisted checks (provisional): not human validation", "",
+          "> The numbers in this section compare the pipeline with references **produced by an AI** (labels, drafted identifications, a curated "
+          "literature table, an AI coder's reading of the audited studies). They help find problems and must not be read as validation.", ""]
     for key, sec in m.provisional.items():
         L.append(f"**{key}** — basis `{sec.basis}` — {sec.label}")
         if sec.extraction is not None:

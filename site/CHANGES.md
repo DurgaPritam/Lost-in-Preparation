@@ -83,6 +83,12 @@ This file lists every change I could not avoid, and every addition.
 - **Scroll regions:** wide tables are focusable regions with labels (axe `scrollable-region-focusable`).
 - **Wrapping:** long compound names wrap (`break-words`, `min-w-0`), so no page scrolls sideways at 390 px.
 
+## Validation wording (project lead, 2026-11-07)
+
+- **Badge wording:** `EvidenceStatusBadge` takes an optional `wording="validation"`. Methods & data uses it, so each validation item reads "Human-validated", "AI-assisted check (provisional)" or "Human validation pending". The shape, border and colour are the design's; only the word and explanation change. Elsewhere (a recipe's fields, for example) "Provisional" still means "made by an AI, not yet checked", so the default wording stays there.
+- **Stage statuses:** the preparation model (M4) is no longer shown as validated. Only its logP descriptor is human-validated (against measured data); the model itself has only AI-assisted checks. M5 shows its AI-assisted check. M1 shows "Human validation pending", because the AI reference set is never used to score it. The artemisinin test is an AI-assisted check, since an AI wrote its criteria.
+- **Credits:** a column shows each plate's AI check (licence templates on the page, the statement "checked by AI agent on <date>; awaiting human confirmation", and any flags). The lead no longer calls all plates 19th-century (the Sturm plates are dated 1796).
+
 ## Token lint
 
 `.eslintrc.json` enforces the v2 tokens over `app/`, `components/`, `features/`, `lib/`, `scripts/` and `tests/`. It bans hex, `rgb()`/`hsl()` and raw pixel values in class names and styles, and Tailwind's default palette names. One exception: `underline-offset-[6px]`, which the handoff's own Atlas screen uses for the passage spans.

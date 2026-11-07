@@ -1,0 +1,762 @@
+{
+ "basis": "ai_assisted_check",
+ "label": "AI-assisted check of the rule-based extractor (provisional)",
+ "quotePolicy": "quotes are committed verbatim only from openly licensed (CC) articles; for abstracts and articles with no stated licence the record keeps the quote's position in the cached text and its SHA-256 (docs/DATA_LICENCES.md)",
+ "provenance": {
+  "model": "claude-opus-5-5",
+  "tool": "Claude Code agents (3 batches)",
+  "prompt": "prompts/m5_ai_check/v1/prompt.md",
+  "promptVersion": "v1",
+  "promptSha256": "71f1b0f225100c89333319eaba7e082bc8a6f2af2c67ecbfaff336cbf35c9b0f",
+  "blind": "coders saw only the study texts and, for multi-preparation studies, the extractor's solvent wording as a row label",
+  "codedOn": "2026-11-07"
+ },
+ "rows": [
+  {
+   "pmid": "17324258",
+   "preparation": 1,
+   "note": "Interview/literature survey of ethnoveterinary remedies; the text describes no preparation of plant material.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "22958433",
+   "preparation": 1,
+   "note": "Label 'ethanolic' refers to the same 70/30 ethanol/water extract ('each ethanolic plant extract'). Two plants extracted separately: A. montana flowers (flower) and A. absinthium aerial parts (aerial_parts); the row does not say which plant.",
+   "solvent": "hydroethanolic",
+   "solvent_quote": "ethanol/water (70/30, v/v)",
+   "heat": "cold",
+   "heat_quote": "at room temperature, for 8 h",
+   "part": "other",
+   "part_quote": "flowers of A. montana L. and aerial parts of A. absinthium L.",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "Dried materials (75 g) were extracted"
+  },
+  {
+   "pmid": "22958433",
+   "preparation": 2,
+   "note": "Two plants extracted separately: A. montana flowers (flower) and A. absinthium aerial parts (aerial_parts); the row does not say which plant.",
+   "solvent": "hydroethanolic",
+   "solvent_quote": "ethanol/water (70/30, v/v)",
+   "heat": "cold",
+   "heat_quote": "at room temperature, for 8 h",
+   "part": "other",
+   "part_quote": "flowers of A. montana L. and aerial parts of A. absinthium L.",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "Dried materials (75 g) were extracted"
+  },
+  {
+   "pmid": "22958433",
+   "preparation": 3,
+   "note": "Methanol appears only as an analytical solvent (HPLC stock of the dry extract, assay reagent, cell fixation), not as a plant-material extraction solvent; the only plant extraction is ethanol/water 70/30 at room temperature. This row does not correspond to a plant-material preparation.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "23382823",
+   "preparation": 1,
+   "note": "Tissues extracted are immature capsule, leaf and straw (several parts). Overnight methanol soak has no stated temperature. A second extraction (acidified methanol, 2% HCl, hot percolation at 50 °C, sanguinarine) would be warm.",
+   "solvent": "methanol",
+   "solvent_quote": "soaked overnight in 4 ml methanol",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "other",
+   "part_quote": "wounded capsule, leaf and straw",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "were dried and ground to fine powder"
+  },
+  {
+   "pmid": "24175050",
+   "preparation": 1,
+   "note": "Part is stigma (a floral organ); could be classed as flower.",
+   "solvent": "hydroethanolic",
+   "solvent_quote": "50 ml ethanol 70%",
+   "heat": "cold",
+   "heat_quote": "for 72 hr at room temperature",
+   "part": "other",
+   "part_quote": "chopped C. sativus stigma",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "its stigma were dried at room temperature"
+  },
+  {
+   "pmid": "24701146",
+   "preparation": 1,
+   "note": "Safranal purchased from Sigma; no preparation of plant material is described.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "25050284",
+   "preparation": 1,
+   "note": "Part wording 'petal stigma' is unclear (stigma, possibly with petals; could be classed as flower). Alcohol identity not named beyond 'hydroalcoholic'/'aqueous-alcoholic'. 'Ground' does not state dried.",
+   "solvent": "hydroethanolic",
+   "solvent_quote": "70% aqueous-alcoholic solution",
+   "heat": "boiled",
+   "heat_quote": "in a Soxhlet extractor for 14 h",
+   "part": "other",
+   "part_quote": "ground petal stigma",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "27825341",
+   "preparation": 1,
+   "note": "Sixteen essential oils, mostly purchased; no extraction method, solvent or heat stated. Parts differ by oil (fruits, flowers, seeds, barks, resin, leaves, leaves and stems); the row's plant is not identified, so part is listed as other.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "other",
+   "part_quote": "Elettaria cardamomum seeds; Cinnamomum camphora , Myroxylon peruiferum and Bulnesia sarmientoi barks",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "28165501",
+   "preparation": 1,
+   "note": "DJ and GC herbs decocted together (mixtures) after a 30 min soak in water at 25 °C; plant part and fresh/dried state not stated.",
+   "solvent": "water",
+   "solvent_quote": "decoction with ten times of distilled water for 2 h",
+   "heat": "boiled",
+   "heat_quote": "followed by the decoction with ten times of distilled water",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "28480425",
+   "preparation": 1,
+   "note": "Pods (fruit) were bought fresh but air-dried before extraction. Ethanol water share not stated; 'Absolute Ethanol' listed under chemicals.",
+   "solvent": "ethanol",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 1299,
+    "end": 1335,
+    "sha256": "a4fe1b259497031c138d10967a59944a30170496e9c0116451f0e97a5aaf5b6f"
+   },
+   "heat": "boiled",
+   "heat_quote": "",
+   "heat_ref": {
+    "start": 1337,
+    "end": 1360,
+    "sha256": "e49e8193db83f2ae730e6f2cd949e332f68803c616d745e6fba9645f05688392"
+   },
+   "part": "fruit",
+   "part_quote": "",
+   "part_ref": {
+    "start": 847,
+    "end": 865,
+    "sha256": "c11849c1f8341c942a2a4042ba1539a8b3ccc3dc7e830eea0083e92d2103de9f"
+   },
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "",
+   "freshOrDried_ref": {
+    "start": 1155,
+    "end": 1187,
+    "sha256": "a38765734a99b5737b6228af54c41439933f7c68416092cbaec08a76d2ceffaf"
+   }
+  },
+  {
+   "pmid": "31660146",
+   "preparation": 1,
+   "note": "Not a solvent extraction: ground black radish suspended in water, autoclaved (121 °C), fermented with L. plantarum at 37 °C, heated at 95 °C, freeze-dried. Part not stated ('black radish'); fresh/dried not stated.",
+   "solvent": "water",
+   "solvent_quote": "mixed with distilled water (1:1)",
+   "heat": "boiled",
+   "heat_quote": "the suspension was autoclaved for 15 min at 121°C",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "32628613",
+   "preparation": 1,
+   "note": "No extraction described: capsules of dried saffron stigma with starch filler. Part is stigma (a flower part), coded other.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "other",
+   "part_quote": "dried C sativus L stigma",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "50 mg of dried C sativus L stigma"
+  },
+  {
+   "pmid": "33801280",
+   "preparation": 1,
+   "note": "Main extracts (HL, HP, CA) are total CO2 extracts at 40-45 °C; other screened plants used high-pressure ethanol at 80 °C (also warm); Commiphora used CO2 with ethanol co-solvent from gum resin. Plant parts not stated for the main extracts.",
+   "solvent": "co2",
+   "solvent_quote": "so-called total CO 2 extracts",
+   "heat": "warm",
+   "heat_quote": "HL and CA were extracted at 280 bar/45 °C",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "The dried botanicals were gently milled"
+  },
+  {
+   "pmid": "37630394",
+   "preparation": 1,
+   "note": "Ultrasound-assisted extraction at stated 30 °C.",
+   "solvent": "hydroethanolic",
+   "solvent_quote": "500 mL of 50% ethanol in water",
+   "heat": "cold",
+   "heat_quote": "treated with 40 kHz for 1 h at 30 °C",
+   "part": "root",
+   "part_quote": "The dried roots were ground into ~1 mm pieces",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "The dried roots were ground"
+  },
+  {
+   "pmid": "38139137",
+   "preparation": 1,
+   "note": "",
+   "solvent": "hydroethanolic",
+   "solvent_quote": "extracted with 70% aqueous EtOH",
+   "heat": "cold",
+   "heat_quote": "extracted with 70% aqueous EtOH at room temperature (25 °C)",
+   "part": "aerial_parts",
+   "part_quote": "The dried aerial parts of A. coreana were ground",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "The dried aerial parts of A. coreana were ground"
+  },
+  {
+   "pmid": "38139137",
+   "preparation": 2,
+   "note": "Room temperature is grammatically attached to the filtration in the same sentence; no heat stated for the 4 h extraction.",
+   "solvent": "ethanol",
+   "solvent_quote": "95% ethanol extract",
+   "heat": "cold",
+   "heat_quote": "for 4 h and filtered at room temperature",
+   "part": "aerial_parts",
+   "part_quote": "The dried aerial parts of A. coreana were ground",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "The dried aerial parts of A. coreana were ground"
+  },
+  {
+   "pmid": "38139137",
+   "preparation": 3,
+   "note": "Hexane fraction from liquid-liquid partition of the room-temperature 70% EtOH extract; partition temperature itself not stated.",
+   "solvent": "hexane",
+   "solvent_quote": "sequentially partitioned using hexane, chloroform, and water",
+   "heat": "cold",
+   "heat_quote": "extracted with 70% aqueous EtOH at room temperature (25 °C)",
+   "part": "aerial_parts",
+   "part_quote": "The dried aerial parts of A. coreana were ground",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "The dried aerial parts of A. coreana were ground"
+  },
+  {
+   "pmid": "38139137",
+   "preparation": 4,
+   "note": "Chloroform fraction from partition of the room-temperature 70% EtOH extract; partition temperature itself not stated.",
+   "solvent": "chloroform",
+   "solvent_quote": "sequentially partitioned using hexane, chloroform, and water",
+   "heat": "cold",
+   "heat_quote": "extracted with 70% aqueous EtOH at room temperature (25 °C)",
+   "part": "aerial_parts",
+   "part_quote": "The dried aerial parts of A. coreana were ground",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "The dried aerial parts of A. coreana were ground"
+  },
+  {
+   "pmid": "38139137",
+   "preparation": 5,
+   "note": "EtOAc fraction is named only in Results; Methods partition lists hexane, chloroform and water only. Partition temperature not stated.",
+   "solvent": "ethyl_acetate",
+   "solvent_quote": "ethyl acetate (EtOAc)",
+   "heat": "cold",
+   "heat_quote": "extracted with 70% aqueous EtOH at room temperature (25 °C)",
+   "part": "aerial_parts",
+   "part_quote": "The dried aerial parts of A. coreana were ground",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "The dried aerial parts of A. coreana were ground"
+  },
+  {
+   "pmid": "38146392",
+   "preparation": 1,
+   "note": "Main solvent extraction is the Allium cepa bulb (part = bulb, coded other) ethanol maceration, temperature not stated. Other materials: fresh Aloe vera leaf gel slurry and purchased Eucalyptus oil (hydro distillation).",
+   "solvent": "ethanol",
+   "solvent_quote": "soaked in 4 L of ethanol for 168 hours",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "other",
+   "part_quote": "About 165 bulbs of Allium cepa were peeled",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "air-dried at 26 ± 1°C"
+  },
+  {
+   "pmid": "40077679",
+   "preparation": 1,
+   "note": "No preparation of plant material described; commercial standardized Scutellaria and saffron extracts in capsules.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "40887103",
+   "preparation": 1,
+   "note": "No preparation of plant material described; purchased pure glycyrrhizin used.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "41088384",
+   "preparation": 1,
+   "note": "Text contains no preparation information (case report, only data-availability statement retrieved).",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "41471730",
+   "preparation": 1,
+   "note": "Main extract is NADES (sorbitol:lactic acid with water), coded other; comparison extracts with water and 50% EtOH under the same conditions.",
+   "solvent": "other",
+   "solvent_quote": "1 g of roots with 25 mL of NADES",
+   "heat": "warm",
+   "heat_quote": "at 40 °C for 30 min",
+   "part": "root",
+   "part_quote": "The roots of G glabra L. were provided",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "42856842",
+   "preparation": 1,
+   "note": "No extraction: dried plant powders fed. Several parts/plants: pumpkin pulp and peel, pumpkin seeds, and A. absinthium aerial parts; drying at 40-50 °C is not an extraction step.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "other",
+   "part_quote": "dried Cucurbita maxima pulp and peel, pumpkin seed meal",
+   "freshOrDried": "dried",
+   "freshOrDried_quote": "dried A. absinthium (1.0%)"
+  },
+  {
+   "pmid": "10624877",
+   "preparation": 1,
+   "note": "Ethnobotanical survey; no preparation of plant material stated.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "10624898",
+   "preparation": 1,
+   "note": "",
+   "solvent": "water",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 274,
+    "end": 305,
+    "sha256": "493caa33c5e1e01a2f562055ce885cf46e8e7c3a7b27be99d7092bd50777e476"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "bark",
+   "part_quote": "",
+   "part_ref": {
+    "start": 278,
+    "end": 325,
+    "sha256": "a5cec1fa9a3305f335a0844fae634e6e0ab3f517b4d189e3b4c910817e1edfe4"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "16041735",
+   "preparation": 1,
+   "note": "Extracts made at 37-60 C (all warm); 60 C extract most active.",
+   "solvent": "water",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 369,
+    "end": 421,
+    "sha256": "c60cea7e59ace8c8b8a0d83e7402218a37aec0c663c8612a3fd91ab4b36d44d1"
+   },
+   "heat": "warm",
+   "heat_quote": "",
+   "heat_ref": {
+    "start": 563,
+    "end": 652,
+    "sha256": "4f04e73ecb1ba733d735168d78d8c19635de3784cd4d8de2165338c683565833"
+   },
+   "part": "aerial_parts",
+   "part_quote": "",
+   "part_ref": {
+    "start": 409,
+    "end": 440,
+    "sha256": "230db559e6d1aa18e4ce8d4b7f3997c2502fbb8e712c0c99676df1d5613465bf"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "17685094",
+   "preparation": 1,
+   "note": "",
+   "solvent": "methanol",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 338,
+    "end": 383,
+    "sha256": "5edf45a855379188155eeb12336f7ac2cc509eb50bb0d80b84296249b39c0662"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "root",
+   "part_quote": "",
+   "part_ref": {
+    "start": 38,
+    "end": 67,
+    "sha256": "1d440d89bae4824eaa43b75034d73d75ca51e85f7d7c827fad807061017761e7"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "20645759",
+   "preparation": 1,
+   "note": "Plant part not stated (caraway named only).",
+   "solvent": "ethanol",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 411,
+    "end": 452,
+    "sha256": "8d96389396a2220a1ab810ed16f6f507dd07b7c7ed929faee9ed2a74a931a30f"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "22311047",
+   "preparation": 1,
+   "note": "Solvent of crude extracts not stated.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "aerial_parts",
+   "part_quote": "",
+   "part_ref": {
+    "start": 658,
+    "end": 716,
+    "sha256": "f78b9c4a1c76b69770289e8b298906d163227e73ce3b50513667416564516499"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "22711544",
+   "preparation": 1,
+   "note": "Three herbs (chamomile, meadowsweet, willow bark) extracted; only willow bark part is named, so part for the single row is left unknown.",
+   "solvent": "water",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 835,
+    "end": 858,
+    "sha256": "0532373d0d5c9b117566e293391fa1eecec37bd2b2ed5d844733706ef641f40f"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "26380428",
+   "preparation": 1,
+   "note": "Case report of licorice candy consumption; no study preparation of plant material stated (root mentioned only as general background on natural licorice).",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "26625755",
+   "preparation": 1,
+   "note": "Whole fresh onion eaten as food; no extraction solvent; part (bulb) not stated in words.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "fresh",
+   "freshOrDried_quote": "",
+   "freshOrDried_ref": {
+    "start": 730,
+    "end": 759,
+    "sha256": "c24cf6320522ffbe43c4e6f972cecdf3f7963c3c9dab551ef051b61b314f7009"
+   }
+  },
+  {
+   "pmid": "26721217",
+   "preparation": 1,
+   "note": "",
+   "solvent": "water",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 843,
+    "end": 871,
+    "sha256": "f344be87dec34cd343443835c7e506d3d46814d41a59c310c1919115d89fd946"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "seed",
+   "part_quote": "",
+   "part_ref": {
+    "start": 843,
+    "end": 865,
+    "sha256": "1ae849df845a8cf2aa603f4056b54d1b57838334ce68a52e1c803b367ba5f5ff"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "29138867",
+   "preparation": 1,
+   "note": "Pure compound (xanthohumol) study; no preparation of plant material stated.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "29236674",
+   "preparation": 1,
+   "note": "",
+   "solvent": "ethanol",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 547,
+    "end": 595,
+    "sha256": "16c628f61453f361b6c8c3b7d4f94b88f748a81a297ad1161d1f3468c3fd123d"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "fruit",
+   "part_quote": "",
+   "part_ref": {
+    "start": 547,
+    "end": 570,
+    "sha256": "d71c776c8cdd069e98811269837858f2a5c2331fa2c3c4aa73f5fc9f35779cf2"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "33461021",
+   "preparation": 1,
+   "note": "Synthetic silver complex study; Allium cepa only as genotoxicity test model; no plant preparation stated.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "33860587",
+   "preparation": 1,
+   "note": "Hyoscyamus niger part not stated.",
+   "solvent": "methanol",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 1097,
+    "end": 1125,
+    "sha256": "abe501aeed9f22fb62534f0942b28dcea32717272d5de1a6bac6e6a839f6579f"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "34275806",
+   "preparation": 1,
+   "note": "Decoction taken as water and boiling; five plants, parts not stated.",
+   "solvent": "water",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 388,
+    "end": 434,
+    "sha256": "062117fc65f933f50efe8de2b5ef9cbe539bee48d059768d563650a98a7272cb"
+   },
+   "heat": "boiled",
+   "heat_quote": "",
+   "heat_ref": {
+    "start": 388,
+    "end": 434,
+    "sha256": "062117fc65f933f50efe8de2b5ef9cbe539bee48d059768d563650a98a7272cb"
+   },
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "35354111",
+   "preparation": 1,
+   "note": "Pure compound (glycyrrhizin) study; no preparation of plant material stated.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "36870516",
+   "preparation": 1,
+   "note": "",
+   "solvent": "hydroethanolic",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 801,
+    "end": 840,
+    "sha256": "0648c54808bb85a2cb307458bf292e76ea9563fd45da596773c8fc67ea92b925"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "root",
+   "part_quote": "",
+   "part_ref": {
+    "start": 801,
+    "end": 840,
+    "sha256": "0648c54808bb85a2cb307458bf292e76ea9563fd45da596773c8fc67ea92b925"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "36870516",
+   "preparation": 2,
+   "note": "The 'ethanol' wording describes the same hydroalcoholic extract as preparation 1; ethanol share not stated.",
+   "solvent": "hydroethanolic",
+   "solvent_quote": "",
+   "solvent_ref": {
+    "start": 910,
+    "end": 980,
+    "sha256": "fed27219171bad5ed9b6268753f4093d3f773715f4e55ca8c4060c9db2e542df"
+   },
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "root",
+   "part_quote": "",
+   "part_ref": {
+    "start": 1419,
+    "end": 1455,
+    "sha256": "8aa77714463536fb8c18e19e22a2242d796902649e0af69fe11f993237db8c36"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "39236778",
+   "preparation": 1,
+   "note": "Crocus sativus extract; solvent, heat, part and state not stated.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "41038149",
+   "preparation": 1,
+   "note": "Pure compound (glycyrrhetinic acid) study; no preparation of plant material stated.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "unknown",
+   "part_quote": "",
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  },
+  {
+   "pmid": "41876142",
+   "preparation": 1,
+   "note": "Solvent not stated.",
+   "solvent": "unknown",
+   "solvent_quote": "",
+   "heat": "unknown",
+   "heat_quote": "",
+   "part": "seed",
+   "part_quote": "",
+   "part_ref": {
+    "start": 760,
+    "end": 785,
+    "sha256": "96b678524155af0d9474bf4c25dcec3d52fc637a7c0bc7dd393e6adfa53c64a7"
+   },
+   "freshOrDried": "unknown",
+   "freshOrDried_quote": ""
+  }
+ ]
+}

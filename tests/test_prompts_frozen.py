@@ -27,6 +27,8 @@ PINNED = {
     "prompts/m1_extract/v3/system.md": "1a9a03f667e6190f0ef321f469b2a760927662d1e90c00772335a1b0c68102b9",
     "prompts/m5_methods/v1/retry.md": "41d2916afa60f60dcf02b154ba943790fafa19c79a83c73d97aff09ab73ac69b",
     "prompts/m5_methods/v1/system.md": "fac7eb5097f8d368258bb4e9f426b666cb3df6cf3455b4f8d510b01f1d9bc46e",
+    # used 2026-11-07 for the AI-assisted check of the rule-based extractor (basis ai_assisted_check)
+    "prompts/m5_ai_check/v1/prompt.md": "71f1b0f225100c89333319eaba7e082bc8a6f2af2c67ecbfaff336cbf35c9b0f",
 }
 # promptVersion recorded in provenance: v1/v2 in the committed Groq caches, v3 on all approved M1 records.
 RECORDED = {"v1": "m1_extract/v1:8aadfda9ef", "v2": "m1_extract/v2:36e5019562", "v3": "m1_extract/v3:13ca4093ec"}

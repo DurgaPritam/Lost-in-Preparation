@@ -200,13 +200,13 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
             <ExtractionDetectionExplainer variant="panel" />
           </Section>
 
-          <Section id="pipeline" title="Pipeline" lead="Each step has its own evidence status. A step is validated only when it has been checked against an independent reference.">
+          <Section id="pipeline" title="Pipeline" lead="Each step shows one of three statuses: human-validated, AI-assisted check (provisional), or human validation pending. AI-assisted checks help find problems; they are never a validation.">
             <ol className="m-0 flex list-none flex-col gap-0 p-0">
               {v.pipeline.map((p, i) => (
                 <li key={p.id} className="grid grid-cols-[2rem_1fr] gap-3 border-l border-border-strong pb-5 pl-0 last:pb-0">
                   <span className="num -ml-3 flex h-6 w-6 items-center justify-center rounded-full border border-border-strong bg-paper font-mono text-xs text-ink">{i + 1}</span>
                   <span className="flex min-w-0 flex-col gap-1">
-                    <span className="flex flex-wrap items-center gap-2"><span className="font-semibold text-ink">{p.name}</span><EvidenceStatusBadge status={p.validation} size="sm" />{p.tool && <span className="font-mono text-xs text-ink-subtle">{p.tool}</span>}</span>
+                    <span className="flex flex-wrap items-center gap-2"><span className="font-semibold text-ink">{p.name}</span><EvidenceStatusBadge wording="validation" status={p.validation} size="sm" />{p.tool && <span className="font-mono text-xs text-ink-subtle">{p.tool}</span>}</span>
                     <span className="text-sm text-ink-muted">{p.does}</span>
                   </span>
                 </li>
@@ -224,7 +224,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
                 { key: 'name', header: 'Measure', render: (m) => <span className="flex flex-col gap-0.5">{m.name}{m.note && <span className="text-xs text-ink-subtle">{m.note}</span>}</span> },
                 { key: 'value', header: 'Value', render: (m) => <MetricText v={m.value} /> },
                 { key: 'n', header: 'n', numeric: true, render: (m) => (m.n == null ? <UnknownValue variant="cell" /> : m.n), sortValue: (m) => m.n },
-                { key: 'ev', header: 'Status', render: (m) => <EvidenceStatusBadge status={m.evidence} size="sm" /> },
+                { key: 'ev', header: 'Status', render: (m) => <EvidenceStatusBadge wording="validation" status={m.evidence} size="sm" /> },
               ]}
             />
           </Section>
@@ -234,7 +234,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
               const pre = v.preregistered.find((p) => p.id === c.preregisteredId);
               return (
                 <article key={c.id} className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-5 shadow-1 md:p-6">
-                  <div className="flex flex-wrap items-center gap-2">{pre && <OutcomeMarker outcome={pre.outcome} />}{pre && <span className="font-mono text-xs text-ink-subtle">pre-registered check {pre.id.toUpperCase()}</span>}<EvidenceStatusBadge status={c.evidence} size="sm" /></div>
+                  <div className="flex flex-wrap items-center gap-2">{pre && <OutcomeMarker outcome={pre.outcome} />}{pre && <span className="font-mono text-xs text-ink-subtle">pre-registered check {pre.id.toUpperCase()}</span>}<EvidenceStatusBadge wording="validation" status={c.evidence} size="sm" /></div>
                   <h3 className="m-0 text-lg font-semibold text-ink">{c.question}</h3>
                   <ul className="m-0 flex list-none flex-col gap-3 p-0">
                     {c.methods.map((m) => (
@@ -255,7 +255,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
             })}
             {v.positiveControls.map((pc) => (
               <article key={pc.id} className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-5 shadow-1 md:p-6">
-                <div className="flex flex-wrap items-center gap-2"><OutcomeMarker outcome={pc.outcome} /><span className="font-mono text-xs text-ink-subtle">positive control{pc.preregisteredId ? ` · pre-registered check ${pc.preregisteredId.toUpperCase()}` : ''}</span><EvidenceStatusBadge status={pc.evidence} size="sm" /></div>
+                <div className="flex flex-wrap items-center gap-2"><OutcomeMarker outcome={pc.outcome} /><span className="font-mono text-xs text-ink-subtle">positive control{pc.preregisteredId ? ` · pre-registered check ${pc.preregisteredId.toUpperCase()}` : ''}</span><EvidenceStatusBadge wording="validation" status={pc.evidence} size="sm" /></div>
                 <h3 className="m-0 text-lg font-semibold text-ink">{pc.compound} in <Taxon name={pc.taxon} /></h3>
                 <p className="m-0 text-sm text-ink-muted">Expected: {pc.expected}</p>
                 {pc.a && pc.b && <LikelihoodBar range={pc.a.likelihood} compare={pc.b.likelihood} compareLabel={pc.b.label} label={`${pc.compound}, ${pc.a.label}`} />}
@@ -269,7 +269,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
               {v.preregistered.map((p) => (
                 <li key={p.id} className="grid grid-cols-1 gap-2 rounded-lg border border-border bg-surface p-4 md:grid-cols-12 md:gap-4">
                   <span className="flex flex-wrap items-center gap-2 md:col-span-3 md:flex-col md:items-start"><span className="font-mono text-xs text-ink-subtle">{p.id.toUpperCase()} · {p.registeredOn ?? 'date unknown'}</span><OutcomeMarker outcome={p.outcome} /></span>
-                  <span className="flex min-w-0 flex-col gap-1 md:col-span-9"><span className="text-ink">{p.criterion}</span><span className="flex flex-wrap items-center gap-2 break-words text-sm text-ink-muted">{p.detail}<EvidenceStatusBadge status={p.evidence} size="sm" /></span></span>
+                  <span className="flex min-w-0 flex-col gap-1 md:col-span-9"><span className="text-ink">{p.criterion}</span><span className="flex flex-wrap items-center gap-2 break-words text-sm text-ink-muted">{p.detail}<EvidenceStatusBadge wording="validation" status={p.evidence} size="sm" /></span></span>
                 </li>
               ))}
             </ol>
@@ -310,7 +310,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
             <ul className="m-0 flex flex-col gap-2 pl-5 text-ink">{v.limitations.map((l) => <li key={l}>{l}</li>)}</ul>
           </Section>
 
-          <Section id="sources" title="Sources & licences" lead="Each licence carries its own status: validated only once a person has read the terms.">
+          <Section id="sources" title="Sources & licences" lead="Each licence carries its own status: human-validated only once a person has read the terms.">
             <DataTable
               caption="Sources and licences"
               rows={sources.sources}
@@ -319,13 +319,13 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
                 { key: 'title', header: 'Source', render: (s) => <span className="flex flex-col gap-0.5"><span className="font-medium">{s.url ? <a href={s.url} className="text-brand underline">{s.title}</a> : s.title}</span>{s.note && <span className="text-xs text-ink-subtle">{s.note}</span>}</span> },
                 { key: 'role', header: 'Role', render: (s) => s.role, sortValue: (s) => s.role },
                 { key: 'edition', header: 'Edition · year', render: (s) => (s.edition || s.year ? [s.edition, s.year].filter(Boolean).join(' · ') : <UnknownValue variant="cell" label="Not recorded" />) },
-                { key: 'licence', header: 'Licence', render: (s) => <span className="inline-flex flex-wrap items-center gap-1.5">{s.licence ?? <UnknownValue variant="cell" label="To confirm" />}<EvidenceStatusBadge status={s.licenceEvidence} size="sm" /></span> },
+                { key: 'licence', header: 'Licence', render: (s) => <span className="inline-flex flex-wrap items-center gap-1.5">{s.licence ?? <UnknownValue variant="cell" label="To confirm" />}<EvidenceStatusBadge wording="validation" status={s.licenceEvidence} size="sm" /></span> },
               ]}
             />
             <p className="m-0 text-sm text-ink-subtle">Code: MIT. The project’s derived data: CC BY 4.0, with the exceptions in LICENSE-DATA (Culpeper 1652 CC0; the Gutenberg passages public domain in the USA; short third-party quotes keep their own licences). Illustrations: 19th-century public-domain plates from Wikimedia Commons, listed with author, date and licence on the <a href="/credits/" className="underline">credits page</a>.</p>
           </Section>
 
-          <Section id="downloads" title="Downloads" lead="The same files that drive every screen, validated against the data contract at build time.">
+          <Section id="downloads" title="Downloads" lead="The same files that drive every screen, checked against the data contract at build time.">
             <ul className="m-0 grid list-none grid-cols-1 gap-3 p-0 md:grid-cols-2">
               {sources.downloads.map((d) => (
                 <li key={d.file} className="flex min-w-0 flex-col gap-1 rounded-lg border border-border bg-surface p-4">

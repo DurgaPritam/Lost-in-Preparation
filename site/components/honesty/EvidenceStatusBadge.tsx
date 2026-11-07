@@ -17,8 +17,16 @@ const SPEC: Record<EvidenceStatus, { label: string; explain: string; cls: string
   pending: { label: 'Pending', explain: 'Not yet assessed. No claim is made either way.', cls: 'border-dotted border-unk-fg bg-unk-bg text-unk-fg', Icon: IconPending },
 };
 
-export function EvidenceStatusBadge({ status, detail, size = 'md' }: { status: EvidenceStatus; detail?: string; size?: 'sm' | 'md' }) {
-  const s = SPEC[status];
+/** SITE: validation wording for Methods & data, so each validation item reads one of three plain statuses (project lead,
+ *  2026-11-07). Shape, border and colour are the design's; only the word and explanation change. */
+const VALIDATION_WORDING: Record<EvidenceStatus, { label: string; explain: string }> = {
+  validated: { label: 'Human-validated', explain: 'Checked by people, or against measured data that people produced. No AI-made reference is involved.' },
+  provisional: { label: 'AI-assisted check (provisional)', explain: 'Checked by an AI, or against a reference an AI made. Useful for finding problems; never a validation.' },
+  pending: { label: 'Human validation pending', explain: 'No independent check yet. No claim is made either way.' },
+};
+
+export function EvidenceStatusBadge({ status, detail, size = 'md', wording = 'evidence' }: { status: EvidenceStatus; detail?: string; size?: 'sm' | 'md'; wording?: 'evidence' | 'validation' }) {
+  const s = wording === 'validation' ? { ...SPEC[status], ...VALIDATION_WORDING[status] } : SPEC[status];
   return (
     <Tooltip content={<span className="flex flex-col gap-1"><span className="font-semibold">{s.label}</span><span className="text-ink-muted">{s.explain}</span>{detail && <span className="text-ink-subtle">{detail}</span>}</span>}>
       <button
