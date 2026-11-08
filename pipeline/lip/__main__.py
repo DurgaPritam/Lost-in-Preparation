@@ -28,6 +28,7 @@
   python -m lip m5 gap-sensitivity       AI-assisted sensitivity check (provisional) of the reporting gap
   python -m lip m8 pool                  Phase 8 candidate pool (species, historical preparation, modern comparator)
   python -m lip m8 bench [--no-qaoa] [--v1]  Phase 8 benchmark (default: panel v2, docs/QUBO_v2_RULE.md): ILP, greedy, annealing, QAOA; panel; figures
+  python -m lip m8 qaoa-v3               QAOA v3 (docs/QAOA_v3_RULE.md): rescaled cost, INTERP to p = 5, CVaR; on the v2 instances -> qaoa_v3.json
   python -m lip m8 export                site-data/lab_panel.json (contract P40) and docs/QUANTUM_RESULTS.md
   python -m lip m6 hypotheses            Phase 6: rank never-faithfully-tested pairs (hypotheses worth re-testing)
   python -m lip m6 rank-demo             robust ranking rule on model-only candidate pairs + stability test (not hypotheses)
@@ -226,6 +227,9 @@ def main(argv: list[str]) -> int:
         elif sub == "bench":
             from .m8 import bench
             print(json.dumps(bench.run(qaoa_on="--no-qaoa" not in argv, version="v1" if "--v1" in argv else "v2"), indent=2))
+        elif sub == "qaoa-v3":
+            from .m8 import qaoa_v3
+            print(json.dumps(qaoa_v3.run(), indent=2))
         elif sub == "export":
             from .m8 import export
             print(json.dumps(export.run(), indent=2, ensure_ascii=False))

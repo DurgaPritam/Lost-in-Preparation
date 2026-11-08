@@ -147,3 +147,16 @@ def test_v2_species_limit_in_qubo_ilp_and_feasibility():
     assert int(feas.sum()) == expected
     two = Q.ilp(Q.build(c, 3, W, vmax, "at_most_one", per_species=2))
     assert two["f"] >= ex["f"] - 1e-12                     # relaxing the limit can only help the objective
+
+
+def test_v3_options_leave_v2_unchanged_and_interp_matches_zhou():
+    from lip.m8 import qaoa as A
+    inst = _inst()[0]
+    a, b = A.ising(A.cost_qubo(inst, "xy"))
+    assert A.circuit(inst, "xy", 1)[3] == max(abs(a).max(), abs(b).max())          # v2 default: largest coefficient
+    assert A.circuit(inst, "xy", 1, "spread")[3] == A.spread_scale(inst, "xy") > 0  # v3 only when asked
+    assert A.interp([0.1, 0.2, 0.3, 1.0, 2.0, 3.0], 4).round(6).tolist() == [0.1, 0.166667, 0.233333, 0.3, 1.0, 1.666667, 2.333333, 3.0]
+    assert A.interp([0.5, 0.3], 2).tolist() == [0.5, 0.5, 0.3, 0.3]
+    import numpy as np
+    assert A.cvar_of(np.array([0.05, 0.95]), np.array([1.0, 3.0]), 0.1) == 2.0
+    assert A.cvar_of(np.array([0.5, 0.5]), np.array([1.0, 3.0]), 1.0) == 2.0

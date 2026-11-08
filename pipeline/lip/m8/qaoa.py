@@ -63,6 +63,30 @@ def energies(Q: np.ndarray, n: int) -> np.ndarray:
     return np.einsum("bi,ij,bj->b", X, np.triu(Q, 1), X, optimize=True) + X @ np.diag(Q)
 
 
+def cvar_of(pr: np.ndarray, E: np.ndarray, alpha: float) -> float:
+    """CVaR_alpha (Barkoutsos et al. 2020): mean energy over the lowest-energy alpha share of the distribution."""
+    o = np.argsort(E, kind="stable")
+    p = pr[o]
+    cp = np.cumsum(p)
+    j = int(np.searchsorted(cp, alpha))
+    w = p.copy()
+    w[j + 1:] = 0.0
+    w[j] = alpha - (cp[j - 1] if j > 0 else 0.0)
+    return float(w @ E[o] / alpha)
+
+
+def interp(prev: list[float], p: int) -> np.ndarray:
+    """INTERP (Zhou et al., PRX 10, 021067, 2020): depth p-1 parameters (gammas then betas) -> a depth-p start."""
+    q = p - 1
+    g, b = np.asarray(prev[:q]), np.asarray(prev[q:])
+
+    def up(v):
+        v = np.concatenate([[0.0], v, [0.0]])
+        # [x^p]_i = (i-1)/q [x^q]_{i-1} + (q-i+1)/q [x^q]_i, i = 1..p, with [x^q]_0 = [x^q]_{q+1} = 0
+        return np.array([((i - 1) / q) * v[i - 1] + ((q - i + 1) / q) * v[i] for i in range(1, p + 1)])
+    return np.concatenate([up(g), up(b)])
+
+
 def _scs(n: int, k: int) -> QuantumCircuit:
     c = QuantumCircuit(n)
     c.cx(n - 2, n - 1)
@@ -100,10 +124,22 @@ def xy_mixer(c: QuantumCircuit, beta, n: int) -> None:
             c.ryy(beta, i, j)
 
 
-def circuit(inst: Instance, variant: str, p: int) -> tuple[QuantumCircuit, ParameterVector, ParameterVector, float]:
+def spread_scale(inst: Instance, variant: str) -> float:
+    """v3 (docs/QAOA_v3_RULE.md), HEURISTIC: 2 * sd(E) / sqrt(n), sd over the states the ansatz explores (weight k for
+    xy, all states for penalty), so the objective, not a constraint penalty, sets the gamma scale."""
+    n = len(inst.h)
+    E = energies(cost_qubo(inst, variant), n)
+    if variant != "penalty":
+        hw = np.array([bin(i).count("1") for i in range(2 ** n)])
+        E = E[hw == inst.k]
+    return max(float(2 * E.std() / np.sqrt(n)), 1e-12)
+
+
+def circuit(inst: Instance, variant: str, p: int, scale_mode: str = "maxcoef") -> tuple[QuantumCircuit, ParameterVector, ParameterVector, float]:
+    """scale_mode "maxcoef" (v1/v2: largest |coefficient|) or "spread" (v3)."""
     n = len(inst.h)
     a, b = ising(cost_qubo(inst, variant))
-    scale = max(np.max(np.abs(a)), np.max(np.abs(b)), 1e-12)
+    scale = max(np.max(np.abs(a)), np.max(np.abs(b)), 1e-12) if scale_mode == "maxcoef" else spread_scale(inst, variant)
     a, b = a / scale, b / scale
     g, be = ParameterVector("gamma", p), ParameterVector("beta", p)
     c = QuantumCircuit(n)
@@ -135,10 +171,10 @@ def metrics_of(c: QuantumCircuit, coupling=None, seed: int = 0) -> dict:
 class Runner:
     """Exact expectations with Aer statevector for a parameterised QAOA circuit."""
 
-    def __init__(self, inst: Instance, variant: str, p: int, seed: int):
-        self.inst, self.variant, self.p, self.seed = inst, variant, p, seed
+    def __init__(self, inst: Instance, variant: str, p: int, seed: int, scale_mode: str = "maxcoef", cvar: float = 1.0):
+        self.inst, self.variant, self.p, self.seed, self.cvar = inst, variant, p, seed, cvar
         self.n = len(inst.h)
-        self.c, self.g, self.b, self.scale = circuit(inst, variant, p)
+        self.c, self.g, self.b, self.scale = circuit(inst, variant, p, scale_mode)
         self.sim = AerSimulator(method="statevector", seed_simulator=seed)
         sv = self.c.copy()
         sv.save_statevector()
@@ -153,14 +189,20 @@ class Runner:
         return np.abs(np.asarray(res.get_statevector())) ** 2
 
     def expect(self, theta) -> float:
-        return float(self.probs(theta) @ self.E)
+        """Expected energy, or (cvar < 1, v3) the CVaR: mean energy of the lowest-energy cvar share of the distribution."""
+        pr = self.probs(theta)
+        if self.cvar >= 1:
+            return float(pr @ self.E)
+        return cvar_of(pr, self.E, self.cvar)
 
-    def optimise(self, restarts: int, maxiter: int, seed: int) -> dict:
+    def optimise(self, restarts: int, maxiter: int, seed: int, starts: list | None = None, gamma_max: float = np.pi) -> dict:
+        """`starts` (v3: the INTERP start) are tried first; the remaining restarts are random."""
         rng = np.random.default_rng(seed)
         runs = []
         t = time.perf_counter()
+        given = [np.asarray(x, dtype=float) for x in (starts or [])]
         for r in range(restarts):
-            x0 = np.concatenate([rng.uniform(0, np.pi, self.p), rng.uniform(0, np.pi / 2, self.p)])
+            x0 = given[r] if r < len(given) else np.concatenate([rng.uniform(0, gamma_max, self.p), rng.uniform(0, np.pi / 2, self.p)])
             res = minimize(self.expect, x0, method="COBYLA", options={"maxiter": maxiter, "rhobeg": 0.3})
             runs.append({"restart": r, "x0": x0.round(6).tolist(), "theta": np.asarray(res.x).round(6).tolist(),
                          "expectation": float(res.fun), "nfev": int(res.nfev)})
