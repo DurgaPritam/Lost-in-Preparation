@@ -8,7 +8,7 @@ In the 1970s, Tu Youyou's team kept failing to get antimalarial activity from sw
 
 The headline result is a **reporting gap**. Modern studies of these plants rarely state how the plant was prepared (heat, fresh or dried, filtration), and very few compare two preparations of the same material. That makes it hard to tell whether a remedy was ever tested the way it was made (descriptive findings with n and 95% CIs, below). The audit of fidelity to the historical preparation is supporting detail, with small n. The preparation model behind the hypotheses is a **transparent hypothesis generator**. It is best supported for essential-oil compounds and unvalidated for aqueous preparations, and its ranges are wide once descriptor error is included (see *What the results support* below).
 
-Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining).
+Built for EthnoHack 2026, Track 1 (Traditional Knowledge Mining). **Live site: https://lost-in-preparation.vercel.app**
 
 [Results](RESULTS.md) · [Methods](METHODS.md) · [Data licences](docs/DATA_LICENCES.md) · [Annotator quickstart](docs/ANNOTATOR_QUICKSTART.md) · [Study-set proposal](docs/STUDY_SET_PROPOSAL.md)
 

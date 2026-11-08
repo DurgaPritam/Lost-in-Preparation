@@ -1,6 +1,21 @@
 # Deploying to Vercel (free Hobby plan)
 
-The site has not been deployed yet. It is a static export: Vercel runs the build and then serves `site/out/`. No server functions, environment variables or secrets are used.
+**Live:** https://lost-in-preparation.vercel.app (Vercel project `soujanya-chattis-projects/lost-in-preparation`, deployed 2026-11-08 from a local build).
+
+## Redeploying (how it is deployed now)
+
+The project is not connected to GitHub, so a push does not redeploy. To publish the current checkout, from `site/` with the Vercel CLI logged in to that account:
+
+```bash
+vercel build --prod             # runs npm run build locally (it reads ../site-data and ../contract, which an upload of site/ alone would lack)
+vercel deploy --prebuilt --prod # uploads .vercel/output and points https://lost-in-preparation.vercel.app at it
+```
+
+To switch to automatic deploys on push instead, follow the one-time setup below (Root Directory `site`, files outside it included).
+
+## About the build
+
+It is a static export: Vercel runs the build and then serves `site/out/`. No server functions, environment variables or secrets are used.
 
 ## One-time setup (you)
 

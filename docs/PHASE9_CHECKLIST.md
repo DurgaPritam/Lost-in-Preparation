@@ -105,7 +105,7 @@ The checklist was re-run after the v2 site, Phase 8 and the AI-assisted checks.
 | 7 | "Data and licences" section | **done** (2026-11-07). Previously needed wording: "All texts are public domain or CC0" should say: Gutenberg texts are public domain in the USA only, and short third-party quotes keep their own licences (see `docs/DATA_LICENCES.md`). |
 | 8 | Reproduce section uses pinned versions | **done** (2026-11-07). Previously: It installs unpinned packages; it should use `pip install -r requirements.txt`, Python 3.11. |
 | 9 | Reproducibility test and cache-only mode documented | **done** (2026-11-07). Previously to add: `LIP_CACHE_ONLY=1`, `scripts/repro_fresh_clone.sh`, and what needs a download. |
-| 10 | Website section, CI badge and live URL | Section done; the CI badge and the live URL are pending deployment. |
+| 10 | Website section, CI badge and live URL | Section done; live URL in the README (https://lost-in-preparation.vercel.app, deployed 2026-11-08); the CI badge is pending. |
 | 11 | Stage table statuses up to date | **done** (2026-11-07). Previously: The "Study set" row says "awaiting approval", but the study set has re-review decisions recorded; the reasons for species 17–27 are still awaited. |
 | 12 | How to cite (`CITATION.cff`) | **done** (2026-11-08), with author placeholders for the team to fill in. |
 | 13 | Hackathon track, team and contact | Track stated; "Team and contact" section added with placeholders ([names], [emails or GitHub handles], [university]). |

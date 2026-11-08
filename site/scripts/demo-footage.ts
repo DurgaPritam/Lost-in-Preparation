@@ -1,8 +1,9 @@
 /**
  * Pitch-video footage: five clean 1920x1080 screen recordings (light theme) of the built site. Needs `npm run serve`.
  *   OUT=~/Desktop/LiP_demo_footage npx tsx scripts/demo-footage.ts
+ *   ONLY=impact … records one clip; BASE_URL=https://lost-in-preparation.vercel.app records from the live site.
  * Headless Playwright video draws no cursor, so there is no cursor jitter; scrolling is eased (requestAnimationFrame)
- * and every pause is fixed, so pacing is steady and repeatable. Output: <OUT>/<n>-<name>.webm (VP8, as Playwright
+ * and every pause is fixed, so pacing is steady and repeatable. Output: <OUT>/<n>-<name>.webm (six clips) (VP8, as Playwright
  * records it). The first ~0.5 s of each clip is the page settling; trim it in the editor if needed.
  */
 import { chromium, type Page } from '@playwright/test';
@@ -86,6 +87,16 @@ const CLIPS: { name: string; url: string; shot: string; run: (p: Page) => Promis
       for (const n of ['12', '16', '8']) { await bench.getByRole('radio', { name: n, exact: true }).click(); await p.waitForTimeout(3000); }
     },
   },
+  {
+    name: 'impact', url: '/impact/', shot: 'Impact & ethics: who can use the outputs, the proposed preparation reporting checklist, the terms for traditional knowledge, and the plan beyond the hackathon.',
+    run: async (p) => {
+      await p.waitForTimeout(3500);
+      await glide(p, await top(p, '#who'), 2500); await p.waitForTimeout(4500);
+      await glide(p, await top(p, '#checklist'), 3000); await p.waitForTimeout(5000);
+      await glide(p, await top(p, '#ethics'), 3000); await p.waitForTimeout(5000);
+      await glide(p, await top(p, '#scale'), 3000); await p.waitForTimeout(4000);
+    },
+  },
 ];
 
 (async () => {
@@ -94,6 +105,7 @@ const CLIPS: { name: string; url: string; shot: string; run: (p: Page) => Promis
   const browser = await chromium.launch();
   const lines: string[] = [];
   for (const [i, c] of CLIPS.entries()) {
+    if (process.env.ONLY && process.env.ONLY !== c.name) continue;
     rmSync(tmp, { recursive: true, force: true });
     const ctx = await browser.newContext({ viewport: SIZE, deviceScaleFactor: 1, colorScheme: 'light', recordVideo: { dir: tmp, size: SIZE } });
     const page = await ctx.newPage();
