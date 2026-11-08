@@ -46,7 +46,7 @@ export function ThemeToggle() {
 
 export interface SiteShellProps {
   /** SITE: 'credits' (the image-credits page) is not in the navigation. */
-  current: Route['id'] | 'credits';
+  current: Route['id'] | 'credits' | 'impact';
   children: ReactNode;
   /** Full-bleed pages (landing, case study) manage their own width. */
   bleed?: boolean;
@@ -108,6 +108,7 @@ export function SiteShell({ current, children, bleed }: SiteShellProps) {
           <span>A research tool that generates hypotheses for re-testing. No medical claims; no guidance on preparing or taking any plant.</span>
           {/* SITE: a Credits link (botanical plates, fonts, code) beside Methods & data. */}
           <span className="flex flex-wrap gap-x-4 gap-y-1">
+            <Link href="/impact/" className="text-ink-muted underline underline-offset-4">Impact &amp; ethics</Link>
             <Link href="/docs/" className="text-ink-muted underline underline-offset-4">Methods &amp; data</Link>
             <Link href="/credits/" className="text-ink-muted underline underline-offset-4">Credits</Link>
           </span>

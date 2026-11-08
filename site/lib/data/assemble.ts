@@ -257,3 +257,15 @@ export function getCredits() {
 
 export type { CompoundEstimate };
 export { hypothesisId };
+
+/* ───────── Impact & ethics (SITE addition) ───────── */
+
+export function getImpact() {
+  const gap = toReportingGap(L.loadMetrics());
+  return {
+    rows: gap.rows,
+    compared: gap.extra.find((e) => e.label.startsWith('Compared two preparations')) ?? null,
+    recipes: L.loadRecipes().length,
+    hypotheses: L.loadHypotheses().length,
+  };
+}

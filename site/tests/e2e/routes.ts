@@ -18,4 +18,5 @@ export const ROUTES: { path: string; ready?: string }[] = [
   { path: '/hypotheses/' },
   { path: '/docs/' },
   { path: '/credits/' },
+  { path: '/impact/' },
 ];
