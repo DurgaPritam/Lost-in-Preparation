@@ -24,7 +24,7 @@ export function Credits({ plates }: { plates: ContractPlate[] }) {
   const none = plates.filter((p) => !p.image);
   return (
     <SiteShell current="credits">
-      <PageHeader eyebrow="Credits" title="Images, type and code" lead="Every botanical plate is an 18th- or 19th-century plate whose Wikimedia Commons page states a public-domain licence, downloaded once and served from this site. Author, date and licence are as Commons states them. Each page’s licence template has been read and checked against the author’s death year (provisional); each licence still awaits a person’s confirmation." />
+      <PageHeader eyebrow="Credits" title="Images, type and code" lead="Every botanical plate is an 18th- or 19th-century plate whose Wikimedia Commons page states a public-domain licence, downloaded once and served from this site. Author, date and licence are as Commons states them. Each page’s licence template has been read and checked against the author’s death year (provisional); each licence is not yet independently confirmed." />
       <section aria-labelledby="plates" className="flex flex-col gap-4">
         <h2 id="plates" className="m-0 font-display text-2xl text-ink">Botanical plates</h2>
         <DataTable
@@ -40,9 +40,9 @@ export function Credits({ plates }: { plates: ContractPlate[] }) {
             { key: 'licence', header: 'Licence (as on Commons)', render: (p) => <span className="flex flex-col gap-0.5"><span>{p.licence}</span><span className="text-xs italic text-ink-subtle">licence to confirm</span></span> },
             { key: 'aicheck', header: 'Check of the Commons page', render: (p) => (p.aiCheck ? (
               <span className="flex flex-col gap-1">
-                <span><EvidenceStatusBadge wording="validation" status="provisional" size="sm" detail={`Read on ${p.aiCheck.checkedOn}; awaiting a person’s confirmation.`} /></span>
+                <span><EvidenceStatusBadge wording="validation" status="provisional" size="sm" detail={`Read on ${p.aiCheck.checkedOn}; not yet independently confirmed.`} /></span>
                 <span className="font-mono text-xs">{p.aiCheck.licenceTemplates.length ? p.aiCheck.licenceTemplates.map((t) => `{{${t}}}`).join(', ') : 'no licence template found'}</span>
-                <span className="text-xs text-ink-subtle">read on {p.aiCheck.checkedOn}; awaiting a person’s confirmation</span>
+                <span className="text-xs text-ink-subtle">read on {p.aiCheck.checkedOn}; not yet independently confirmed</span>
                 {p.aiCheck.flags.map((f) => <span key={f} className="text-xs text-ink-muted">⚑ {f}</span>)}
               </span>
             ) : <UnknownValue variant="cell" label="Not checked" />) },

@@ -42,9 +42,9 @@ export function toValidation(m: ContractMetrics): Validation {
   const metrics: Metric[] = [];
   const push = (id: string, stage: string, name: string, mm: ContractMetric | null | undefined, unit: string, evidence: ValidationStatus, note?: string) =>
     metrics.push({ id, stage, name, value: metricValue(mm, unit), n: mm?.n ?? null, evidence: mm && mm.status === 'computed' ? evidence : 'pending', note: neutralWording(note ?? mm?.note ?? undefined) });
-  push('m1-f1', 'M1', 'Extraction F1 (part) vs human gold', x, 'F1, 0–1', 'validated');
+  push('m1-f1', 'M1', 'Extraction F1 (part) vs an independent reference', x, 'F1, 0–1', 'validated');
   push('m1-rej', 'M1', 'Recipes rejected by the verbatim check', m.extraction.spanRejectionRate, 'share, 0–1', 'provisional');
-  push('m1-kappa', 'M1', 'Annotator agreement (heat)', m.interAnnotatorAgreement.heat, 'Cohen κ', 'validated');
+  push('m1-kappa', 'M1', 'Re-annotation agreement (heat)', m.interAnnotatorAgreement.heat, 'Cohen κ', 'validated');
   push('m2-top1', 'M2', 'Top-1 vs scholarly identifications', top1, 'share, 0–1', 'validated');
   for (const [k, v] of Object.entries(m.nameResolution)) if (k.startsWith('disputedShare')) push(`m2-${k}`, 'M2', `Resolved names disputed${k.includes(':') ? ` · ${k.split(':')[1]}` : ' · all sources'}`, v, 'share, 0–1', 'pending');
   push('m4-rdkit', 'M4', 'logP error, RDKit Crippen (MAE vs experiment)', rd, 'logP units', 'external');
@@ -79,7 +79,7 @@ export function toValidation(m: ContractMetrics): Validation {
     'Extraction is not detection: the model predicts extracted fractions, while studies record detection, which also depends on plant content and detection limits.',
     'One descriptor: the aqueous prediction rests on Crippen logP alone; solubility, melting point, dose and contact time are not modelled.',
     'Heuristic factors (heat, volatility, filtration carry-over, acidity) have assumed ranges and are not fitted to data.',
-    'The recipe extraction is provisional: its accuracy against a human gold annotation is not yet measured.',
+    'The recipe extraction is provisional: its accuracy against an independent reference annotation is not yet measured.',
     'The audit coding is a keyword heuristic; abstracts often omit preparation details, so many studies stay unknown. Its accuracy has only a provisional check; a human hand-check is not yet done.',
     'Pliny is lower confidence than Culpeper: a 19th-century translation of a 1st-century text, with far more disputed names.',
     'LOTUS records compounds per organism, not per plant part, so a recipe’s part cannot be matched to the part analysed.',

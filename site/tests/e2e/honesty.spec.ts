@@ -88,10 +88,10 @@ test('9: the quantum benchmark is labelled as a benchmark, never a validation, a
   await expect(page.locator('#quantum')).toContainText('no quantum advantage is claimed');
 });
 
-/** SITE (project lead, 2026-11-08): the website names no AI tool or model anywhere; it states only the status
+/** SITE (project lead, 2026-11-08): the website names no AI tool or model and says nothing about who checked what; it states only the status
  *  (provisional, not independently validated). The repository keeps the full method record. Checked on the rendered
  *  copy: text (closed tooltips included, scripts excluded), aria-labels, titles, alt text and page metadata. */
-const PROVENANCE = /\bAI\b|\bAI-|Claude|\bLLMs?\b|Groq|Llama|Anthropic|language model/i;
+const PROVENANCE = /\bAI\b|\bAI-|Claude|\bLLMs?\b|Groq|Llama|Anthropic|language model|human[- ]validat|human gold|annotator|project lead|a person’s|person has checked/i;
 const copyOf = (page: import('@playwright/test').Page) => page.evaluate(() => {
   const b = document.body.cloneNode(true) as HTMLElement;
   b.querySelectorAll('script,style,noscript,template').forEach((e) => e.remove());
@@ -136,7 +136,7 @@ test('unchecked items are never shown as validated', async ({ page }) => {
   const stages = page.locator('#pipeline li');
   for (const name of ['Recipes (M1)', 'Preparation model (M4)', 'Audit (M5)', 'Ranking (M6)']) {
     const li = stages.filter({ hasText: name });
-    await expect(li.getByRole('button', { name: /^Evidence: (Human-validated|Validated)$/ })).toHaveCount(0);
+    await expect(li.getByRole('button', { name: /^Evidence: (Independently validated|Validated)$/ })).toHaveCount(0);
   }
   await page.goto('/credits/');
   await expect(page.locator('main')).not.toContainText(/licence confirmed/i);

@@ -18,6 +18,13 @@ const RULES: [RegExp, string][] = [
   [/by the same AI that built the model/gi, 'by the same process that built the model'],
   [/written by the same AI \([^)]*\)/gi, 'written by the same process'],
   [/:ai(?=:)/gi, ':second-coder'],   // metric keys such as checked40:ai:solvent
+  [/not human-(?:validated|verified|curated)/gi, 'not independently validated'],
+  [/human[- ]validation/gi, 'independent validation'],
+  [/\bhuman gold(?: set| annotation)?/gi, 'independent reference annotation'],
+  [/,? or two annotator files,?/gi, ','],
+  [/awaiting (?:a person’s|human) confirmation/gi, 'not yet independently confirmed'],
+  [/no person has checked it/gi, 'not independently checked'],
+  [/needs one annotator file plus its re-annotation, in data\/gold\/annotations\/ \(found 0\)/gi, 'not yet measured'],
 ];
 
 export function neutralWording(s: string): string;
@@ -30,4 +37,4 @@ export function neutralWording(s: string | null | undefined): string | undefined
 }
 
 /** Words that must never appear in rendered pages (checked by tests/e2e/honesty.spec.ts). */
-export const PROVENANCE_WORDS = /\bAI\b|\bAI-|Claude|\bLLMs?\b|Groq|Llama|Anthropic|language model/i;
+export const PROVENANCE_WORDS = /\bAI\b|\bAI-|Claude|\bLLMs?\b|Groq|Llama|Anthropic|language model|human[- ]validat|human gold|annotator|project lead|a person’s|person has checked/i;

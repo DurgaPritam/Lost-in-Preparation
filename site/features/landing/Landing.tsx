@@ -148,7 +148,7 @@ export function Landing({ demo, gap, confidences, pathPlates, caseTitle, model }
               </li>
             ))}
           </ul>
-          <p className="m-0 text-xs text-ink-subtle">Illustrations: 19th-century botanical plates, public domain, from Wikimedia Commons; licences read from Commons and awaiting a person’s confirmation. <Link href="/credits/" className="underline underline-offset-2">Image credits</Link>.</p>
+          <p className="m-0 text-xs text-ink-subtle">Illustrations: 19th-century botanical plates, public domain, from Wikimedia Commons; licences read from Commons; not yet independently confirmed. <Link href="/credits/" className="underline underline-offset-2">Image credits</Link>.</p>
         </div>
       </section>
 

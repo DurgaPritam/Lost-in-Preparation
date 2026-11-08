@@ -249,7 +249,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
             <ExtractionDetectionExplainer variant="panel" />
           </Section>
 
-          <Section id="pipeline" title="Pipeline" lead="Each step shows one of four statuses: human-validated, validated against external data, provisional (not independently validated), or human validation pending. Provisional checks help find problems; they are never a validation.">
+          <Section id="pipeline" title="Pipeline" lead="Each step shows one of four statuses: independently validated, validated against external data, provisional, or not yet independently validated. Provisional checks help find problems; they are never a validation.">
             <ol className="m-0 flex list-none flex-col gap-0 p-0">
               {v.pipeline.map((p, i) => (
                 <li key={p.id} className="grid grid-cols-[2rem_1fr] gap-3 border-l border-border-strong pb-5 pl-0 last:pb-0">
@@ -402,7 +402,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
             <ul className="m-0 flex flex-col gap-2 pl-5 text-ink">{v.limitations.map((l) => <li key={l}>{l}</li>)}</ul>
           </Section>
 
-          <Section id="sources" title="Sources & licences" lead="Each licence carries its own status: human-validated only once a person has read the terms.">
+          <Section id="sources" title="Sources & licences" lead="Each licence carries its own status: validated only once its terms have been independently read.">
             <DataTable
               caption="Sources and licences"
               rows={sources.sources}

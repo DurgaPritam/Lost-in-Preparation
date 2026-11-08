@@ -9,20 +9,20 @@
     {
       "url": "/",
       "runs": 3,
-      "performance": 94,
+      "performance": 93,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3008
+      "lcpMs": 3051
     },
     {
       "url": "/atlas/",
       "runs": 3,
-      "performance": 93,
+      "performance": 92,
       "accessibility": 96,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3080
+      "lcpMs": 3133
     },
     {
       "url": "/case/liquorice/",
@@ -31,25 +31,25 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3008
+      "lcpMs": 3057
     },
     {
       "url": "/credits/",
       "runs": 3,
-      "performance": 97,
+      "performance": 96,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2555
+      "lcpMs": 2605
     },
     {
       "url": "/docs/",
       "runs": 3,
-      "performance": 92,
+      "performance": 93,
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3157
+      "lcpMs": 3047
     },
     {
       "url": "/evidence-gap/",
@@ -58,7 +58,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2855
+      "lcpMs": 2898
     },
     {
       "url": "/hypotheses/",
@@ -67,7 +67,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2856
+      "lcpMs": 2912
     },
     {
       "url": "/lab/?plant=Hyoscyamus+niger&solvent=water&heat=boiled&strained=true&acid=false",
@@ -76,7 +76,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2552
+      "lcpMs": 2600
     },
     {
       "url": "/lab/?plant=Salvia+sclarea&solvent=water&heat=boiled&strained=true&acid=false",
@@ -85,16 +85,16 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2629
+      "lcpMs": 2599
     },
     {
       "url": "/planner/",
       "runs": 3,
-      "performance": 92,
+      "performance": 91,
       "accessibility": 98,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 3157
+      "lcpMs": 3206
     },
     {
       "url": "/recipes/culpeper-1652_herbal_agrimony_008_r01/",
@@ -103,7 +103,7 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2855
+      "lcpMs": 2857
     },
     {
       "url": "/recipes/pliny-nh_b20_c099_002_r00/",
@@ -112,8 +112,8 @@
       "accessibility": 100,
       "bestPractices": 100,
       "cls": 0,
-      "lcpMs": 2856
+      "lcpMs": 2907
     }
   ],
-  "generatedAt": "2026-11-07T20:02:56.163Z"
+  "generatedAt": "2026-11-08T05:32:45.389Z"
 }

@@ -171,8 +171,8 @@ export function CaseStudy(props: CaseStudyProps) {
           <ChartTable
             label={`The ${corrections.length} logged corrections (table)`}
             caption="Field corrections, as logged in config/m1_corrections.csv"
-            headers={['Recipe', 'Field', 'From', 'To', 'Requested by']}
-            rows={corrections.map((x) => [<Link key={x.recipeId} href={x.href} className="font-mono text-xs underline">{x.recipeId}</Link>, x.field, x.from, x.to, x.requestedBy])}
+            headers={['Recipe', 'Field', 'From', 'To', 'Logged']}
+            rows={corrections.map((x) => [<Link key={x.recipeId} href={x.href} className="font-mono text-xs underline">{x.recipeId}</Link>, x.field, x.from, x.to, x.date])}
           />
           <ToxicityNotice record={toxicity} />
           <div className="flex flex-wrap gap-3">

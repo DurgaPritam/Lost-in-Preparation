@@ -52,7 +52,7 @@ function Entry({ e, likely, onTrail }: { e: PanelEntryView; likely: Heuristic | 
         <div><dt className="eyebrow text-ink-subtle">Compounds likely to differ</dt><dd className="m-0 flex flex-wrap items-center gap-2"><span className="num font-mono">{e.differs}</span>{likely && <HeuristicMarker heuristic={likely} />}</dd></div>
         <div><dt className="eyebrow text-ink-subtle">Compound classes</dt><dd className="m-0">{e.classes.map((c) => c.replace(' (heuristic)', '')).join(', ') || '—'}</dd></div>
         <div><dt className="eyebrow text-ink-subtle">For</dt><dd className="m-0">{e.indication}</dd></div>
-        <div><dt className="eyebrow text-ink-subtle">Status</dt><dd className="m-0 flex flex-wrap items-center gap-2"><EvidenceStatusBadge wording="validation" status="pending" size="sm" detail="A model-based hypothesis worth re-testing; no person has checked it." /><ToxicityBadge record={e.toxicity} withSources={false} /></dd></div>
+        <div><dt className="eyebrow text-ink-subtle">Status</dt><dd className="m-0 flex flex-wrap items-center gap-2"><EvidenceStatusBadge wording="validation" status="pending" size="sm" detail="A model-based hypothesis worth re-testing; not independently checked." /><ToxicityBadge record={e.toxicity} withSources={false} /></dd></div>
       </dl>
       <div className="flex flex-wrap items-center gap-3 md:col-span-12">
         <Button size="sm" onClick={() => onTrail(e)}>Evidence trail</Button>

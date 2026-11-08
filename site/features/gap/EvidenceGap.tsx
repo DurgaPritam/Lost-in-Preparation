@@ -33,7 +33,7 @@ function sensText(r: ReportingGapRow): string {
 function Sensitivity({ r }: { r: ReportingGapRow }) {
   return (
     <p className="m-0 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-ink-muted md:col-span-12">
-      <EvidenceStatusBadge wording="validation" status="provisional" size="sm" detail="A second coder's reading of 40 studies stands in for the truth; that reading is itself unverified. Not human validation." />
+      <EvidenceStatusBadge wording="validation" status="provisional" size="sm" detail="A second coder's reading of 40 studies stands in for the truth; that reading is itself unverified. Not a validation." />
       <span><span className="font-semibold text-ink">{SENSITIVITY_LABEL}:</span> {sensText(r)}</span>
     </p>
   );
