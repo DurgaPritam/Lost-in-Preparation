@@ -120,8 +120,9 @@ def report(res: dict) -> list[str]:
     for r in R:
         for q in r["v3"]:
             e = q["exact"]
+            ar = "—" if e["expectedArFeasible"] is None else f"{e['expectedArFeasible']:.3f}"
             L.append(f"| {r['instance']} | {r['uniformPOptimum']:.4f} | {q['variant']} | {q['p']} | {e['pOptimum']:.4f} | {e['pOptimum'] / r['uniformPOptimum']:.1f}× | "
-                     f"{e['feasibility']:.3f} | {'—' if e['expectedArFeasible'] is None else f'{e['expectedArFeasible']:.3f}'} | {q['seconds']:.1f} | {q['circuit']['heavyHex']['twoQubit']} |")
+                     f"{e['feasibility']:.3f} | {ar} | {q['seconds']:.1f} | {q['circuit']['heavyHex']['twoQubit']} |")
     L += ["", "## Classical methods on the same instances (from benchmark_v2.json)", "",
           "| Instance | Exact ILP seconds | Greedy optimal | Annealing success | Annealing mean seconds |", "|---|---|---|---|---|"]
     for r in R:
