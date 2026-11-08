@@ -8,13 +8,13 @@ import { IconInfo, IconPending, IconProvisional, IconValidated } from '../icons'
  * Shape + border style + word carry the meaning; colour is redundant.
  *   Validated   filled disc ✓, solid ink border
  *   Provisional half disc, DASHED border (not independently validated)
- *   Pending     dashed ring, DOTTED border, unknown grey
+ *   Unverified  dashed ring, DOTTED border, unknown grey
  * v2: Provisional is neutral (prov-*) — it no longer shares the modern-lab hue.
  */
 const SPEC: Record<EvidenceStatus, { label: string; explain: string; cls: string; Icon: typeof IconValidated }> = {
   validated: { label: 'Validated', explain: 'Checked against an independent reference.', cls: 'border-ink text-ink', Icon: IconValidated },
   provisional: { label: 'Provisional', explain: 'Not independently validated. Read it as a lead, not a finding.', cls: 'border-dashed border-prov-fg bg-prov-bg text-prov-fg', Icon: IconProvisional },
-  pending: { label: 'Pending', explain: 'Not yet assessed. No claim is made either way.', cls: 'border-dotted border-unk-fg bg-unk-bg text-unk-fg', Icon: IconPending },
+  pending: { label: 'Unverified', explain: 'Produced by a rule or model and not checked against an independent reference. Read it as an estimate; no claim is made either way.', cls: 'border-dotted border-unk-fg bg-unk-bg text-unk-fg', Icon: IconPending },
 };
 
 /** SITE: validation wording for Methods & data, so each validation item reads one of three plain statuses (project lead,
@@ -23,7 +23,7 @@ const VALIDATION_WORDING: Record<ValidationStatus, { label: string; explain: str
   validated: { label: 'Independently validated', explain: 'Checked against an independent reference.' },
   external: { label: 'Validated against external data', explain: 'Compared with an independent, published dataset (for example measured experimental values). No provisional reference is involved.' },
   provisional: { label: 'Provisional: not independently validated', explain: 'Checked only by an automated or unverified check. Useful for finding problems; never a validation.' },
-  pending: { label: 'Not yet independently validated', explain: 'No independent check yet. No claim is made either way.' },
+  pending: { label: 'Not independently validated', explain: 'Produced by a rule or model; no independent check. No claim is made either way.' },
   benchmark: { label: 'Benchmark against exact optimum', explain: 'A computed comparison of methods against the exact optimum of the same problem. It measures the methods, not the panel; not a validation.' },
 };
 

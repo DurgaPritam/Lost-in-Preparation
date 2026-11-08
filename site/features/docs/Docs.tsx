@@ -61,7 +61,7 @@ function OutcomeMarker({ outcome }: { outcome: CheckOutcome }) {
 
 function Stated<T>({ f, show }: { f: StatedField<T>; show?: (v: T) => string }) {
   if (f.value == null) return <UnknownValue label="Not stated" variant="cell" />;
-  return <span className="inline-flex flex-wrap items-center gap-1.5">{show ? show(f.value) : String(f.value).replace(/_/g, ' ')}<EvidenceStatusBadge status={f.evidence} size="sm" detail="Coded by the rule-based extractor; hand-check pending." /></span>;
+  return <span className="inline-flex flex-wrap items-center gap-1.5">{show ? show(f.value) : String(f.value).replace(/_/g, ' ')}<EvidenceStatusBadge status={f.evidence} size="sm" detail="Coded by the rule-based extractor (heuristic); not independently validated." /></span>;
 }
 function MatchChip({ aspect, state }: { aspect: string; state: MatchState }) {
   const t = state === 'matches' ? 'same as recipe' : state === 'differs' ? 'different' : state === 'no_analogue' ? 'no modern analogue' : 'not stated';
@@ -249,7 +249,7 @@ export function Docs({ validation: v, sources, heuristics, confidences, coverage
             <ExtractionDetectionExplainer variant="panel" />
           </Section>
 
-          <Section id="pipeline" title="Pipeline" lead="Each step shows one of four statuses: independently validated, validated against external data, provisional, or not yet independently validated. Provisional checks help find problems; they are never a validation.">
+          <Section id="pipeline" title="Pipeline" lead="Each step shows one of four statuses: independently validated, validated against external data, provisional, or not independently validated. Provisional checks help find problems; they are never a validation.">
             <ol className="m-0 flex list-none flex-col gap-0 p-0">
               {v.pipeline.map((p, i) => (
                 <li key={p.id} className="grid grid-cols-[2rem_1fr] gap-3 border-l border-border-strong pb-5 pl-0 last:pb-0">

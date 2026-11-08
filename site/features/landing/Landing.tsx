@@ -160,7 +160,7 @@ export function Landing({ demo, gap, confidences, pathPlates, caseTitle, model }
             <>
               <p className="m-0 font-display text-4xl text-ink">{head.stated} <span className="text-ink-muted">of</span> {head.n}</p>
               <p className="m-0 text-md text-ink-muted">modern studies that prepared the plant say whether it was fresh or dried ({pct(head.stated / head.n)}; 95% interval {head.ci ? `${pct(head.ci[0])}–${pct(head.ci[1])}` : 'not computed'}).</p>
-              <div className="flex flex-wrap items-center gap-2"><EvidenceStatusBadge status={head.evidence} size="sm" detail="“Stated” means the rule-based extractor coded a value; its accuracy awaits the 40-study hand-check." /></div>
+              <div className="flex flex-wrap items-center gap-2"><EvidenceStatusBadge status={head.evidence} size="sm" detail="“Stated” means the rule-based extractor coded a value. Its accuracy is checked only against a second coding of a study sample, so the share is provisional." /></div>
             </>
           ) : <UnknownValue label="Not computed" />}
           <LinkButton href="/evidence-gap/" className="w-max">See every detail →</LinkButton>

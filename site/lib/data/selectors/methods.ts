@@ -80,7 +80,7 @@ export function toValidation(m: ContractMetrics): Validation {
     'One descriptor: the aqueous prediction rests on Crippen logP alone; solubility, melting point, dose and contact time are not modelled.',
     'Heuristic factors (heat, volatility, filtration carry-over, acidity) have assumed ranges and are not fitted to data.',
     'The recipe extraction is provisional: its accuracy against an independent reference annotation is not yet measured.',
-    'The audit coding is a keyword heuristic; abstracts often omit preparation details, so many studies stay unknown. Its accuracy has only a provisional check; a human hand-check is not yet done.',
+    'The audit coding is a keyword heuristic; abstracts often omit preparation details, so many studies stay unknown. Its accuracy has only a provisional check against a second coding of a study sample.',
     'Pliny is lower confidence than Culpeper: a 19th-century translation of a 1st-century text, with far more disputed names.',
     'LOTUS records compounds per organism, not per plant part, so a recipe’s part cannot be matched to the part analysed.',
   ];

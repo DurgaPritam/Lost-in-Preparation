@@ -16,8 +16,9 @@ const FIELDS: [ReportingField, string, string][] = [
   ['part', 'Plant part', 'part'],
   ['solvent', 'Solvent', 'solvent'],
 ];
-/** "Stated" means the rule-based extractor coded a value: a heuristic whose accuracy awaits the 40-study hand-check. */
-const EVIDENCE: EvidenceStatus = 'pending';
+/** "Stated" means the rule-based extractor coded a value: a heuristic, checked so far only against a second coding of a
+ *  study sample (provisional), as the Audit (M5) stage in Methods & data. */
+const EVIDENCE: EvidenceStatus = 'provisional';
 
 type Sens = Record<string, ContractMetric> | null;
 const kn = (x: ContractMetric | undefined): [number, number] | null =>
@@ -61,7 +62,7 @@ export function toReportingGap(m: ContractMetrics): ReportingGapView {
   const head = rows.find((r) => r.field === 'freshOrDried');
   return {
     headline: { field: 'freshOrDried', text: head ? `${head.stated} / ${head.n} studies state whether the plant was fresh or dried` : 'How often studies state how they prepared the plant' },
-    method: `Prepared set: the ${rows[0]?.n ?? 'unknown number of'} studies that prepared the plant material (audit v2 eligibility). "Stated" means the rule-based extractor coded a value (heuristic; hand-check pending). 95% Wilson intervals. Descriptive findings, not hypothesis tests. Source: data/interim/m5/reporting_gap.json.`,
+    method: `Prepared set: the ${rows[0]?.n ?? 'unknown number of'} studies that prepared the plant material (audit v2 eligibility). "Stated" means the rule-based extractor coded a value (heuristic; checked only against a second coding of a study sample). 95% Wilson intervals. Descriptive findings, not hypothesis tests. Source: data/interim/m5/reporting_gap.json.`,
     rows, none, extra,
   };
 }

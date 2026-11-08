@@ -49,7 +49,7 @@ export function toHypothesis(h: ContractHypothesis, ctx: { index: ContractProfil
         return href ? [{ label: 'Open the faithful preparation in the Lab', href }] : [];
       })() },
     { id: 'audit', stage: 'audit', title: 'No retrieved study prepared it faithfully',
-      detail: `${studies.length} retrieved stud${studies.length === 1 ? 'y' : 'ies'} listed; coded by the rule-based extractor (hand-check pending).`,
+      detail: `${studies.length} retrieved stud${studies.length === 1 ? 'y' : 'ies'} listed; coded by the rule-based extractor (heuristic; not independently validated).`,
       evidence: 'pending', refs: studies.map((p) => ({ label: `PMID ${p}`, href: `https://pubmed.ncbi.nlm.nih.gov/${p}/` })) },
     { id: 'toxicity', stage: 'toxicity', title: 'Toxicity entry', detail: neutralWording(h.toxicityNote) ?? 'No curated toxicity entry. Unknown is not evidence of safety.',
       evidence: 'provisional' },

@@ -117,7 +117,7 @@ export function EvidenceGap({ gap, audit }: { gap: ReportingGapView; audit: Audi
           ) : <UnknownValue label="Not computed" />}
         </div>
         <div className="flex flex-wrap items-center gap-2 md:col-span-5 md:justify-end">
-          {head && <EvidenceStatusBadge status={head.evidence} detail="“Stated” = coded by the rule-based extractor; its accuracy awaits the 40-study hand-check." />}
+          {head && <EvidenceStatusBadge status={head.evidence} detail="“Stated” = coded by the rule-based extractor. Its accuracy is checked only against a second coding of a study sample, so the share is provisional." />}
           <span className="font-mono text-xs text-ink-subtle">descriptive · not a hypothesis test</span>
         </div>
       </section>
