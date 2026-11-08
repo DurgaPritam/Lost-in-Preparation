@@ -1,49 +1,39 @@
-# Demo video script (about 3:00)
+# Demo video script, v2 (about 3:05): the whole site, with the quantum work
 
-For the EthnoHack 2026 Devpost video. It is written to be read aloud at a calm pace (about 140 words a minute), and every number in it comes from `README.md` / `RESULTS.md`.
+For the EthnoHack 2026 Devpost video. Read it at a calm, steady pace (about 145 words a minute). Every number comes from `README.md`, `RESULTS.md`, `docs/QUANTUM_RESULTS.md` or `docs/QAOA_v3_RESULTS.md`.
 
 - **Live site:** https://lost-in-preparation.vercel.app
-- **Slides:** the pitch deck (Lost in Preparation — EthnoHack 2026 pitch); only the cover and the closing slide are used in the video.
-- **Footage:** six clips in `~/Desktop/LiP_demo_footage/` (1920×1080, no cursor, steady scrolling). To re-record them:
-  ```bash
-  cd site
-  BASE_URL=https://lost-in-preparation.vercel.app OUT=~/Desktop/LiP_demo_footage npx tsx scripts/demo-footage.ts
-  # one clip only: add ONLY=impact (or landing, lab, evidence-gap, case-liquorice, lab-planner)
-  ```
+- **Footage (already recorded, no screen recording needed):** eight clips in `~/Desktop/LiP_demo_footage_v2/`. To re-record: `cd site && BASE_URL=https://lost-in-preparation.vercel.app OUT=~/Desktop/LiP_demo_footage_v2 npx tsx scripts/demo-footage.ts` (add `ONLY=atlas,lab` for some clips).
+- **Stills:** the deck's cover, quantum and closing slides.
 
-## Two ways to make it
+## What to record
 
-**A. Narration over the recorded clips (recommended; cleanest result).**
-1. Record your voice reading the "Say" column, one shot at a time (QuickTime → File → New Audio Recording, or your phone in a quiet room). Re-record any shot you stumble on; no need to do it in one take.
-2. In iMovie (or CapCut, or DaVinci Resolve), put the clips on the timeline in the order below, then each voice recording under its shot.
-3. Trim the first 0.5 s of each clip (the page settling), and trim or speed up each clip (up to 1.25×) to fit its voice line. Cut rather than rush the voice.
-4. For shots 1 and 9, screenshot the deck's cover and closing slides (present mode, full screen) and use them as stills.
-5. Export 1080p and upload to YouTube (unlisted is fine) or Vimeo; paste the link in Devpost.
+Record **11 voice files**, one per shot, and save them in **`~/Desktop/LiP_voice_v2/`** named `01.m4a` … `11.m4a`. Leave about a second of silence at the start and end of each; the edit trims it. Re-record any line you stumble on.
 
-**B. One live screen recording.**
-Press ⌘⇧5, choose "Record Entire Screen", turn on the microphone in Options, and follow the "Show" column on the live site in a full-screen browser window at 100% zoom with the light (Herbarium) theme. Rehearse twice first. Close other tabs, and turn on Do Not Disturb.
+## The script
 
-## Shot list
+| # | Name | On screen | Say |
+|---|---|---|---|
+| 01 | Hook | Deck cover slide | "In the 1970s, a fourth-century recipe led Tu Youyou to artemisinin, and a Nobel Prize. The plant had always been right. The preparation had been wrong. This is Lost in Preparation." |
+| 02 | Landing | Landing page: the mini-demo switches cold water to a decoction, then overlays the modern lab method | "Historical remedies were recipes, not just plants. Our model predicts what each preparation extracts. Switch cold water to a decoction and the compound profile changes; overlay the modern lab method and it changes again." |
+| 03 | Recipe Atlas | Search “wormwood”, then a liquorice recipe page with the original 1652 passage and the extracted fields | "The Recipe Atlas holds 631 recipes from Culpeper's herbals and Pliny. Every field, the plant, the solvent, the heat, the straining, is backed by a verbatim quote from the source, and every historical name is resolved to an accepted species." |
+| 04 | Preparation Lab | Clary sage: cold water, boiled, wine, oil; unstrained; the modern-method overlay | "The Preparation Lab runs our model live in the browser: solvent, heat, straining and acidity as separate factors, every compound with a Monte Carlo uncertainty range. The browser engine reproduces our Python model exactly, and every setting is a shareable link." |
+| 05 | Evidence gap | The evidence gap rows, re-sorted, then “did it match the recipe?” | "Then we audited modern studies, under a protocol fixed in advance. The headline is a reporting gap: of 43 studies that prepared the plant, 26% stated the heat, 16% fresh or dried, 12% the filtration, and none stated all five. So most negative results can't tell us whether a remedy was ever tested the way it was made." |
+| 06 | Case study and hypotheses | Liquorice case study, then the ranked hypotheses | "We publish our corrections: a logged extraction error changed our top hypothesis, liquorice, and became this case study. The output is a ranked list of hypotheses worth re-testing." |
+| 07 | Quantum chemistry | Methods & data: the pipeline, then “Where quantum helps” | "Quantum methods enter twice. First, quantum chemistry: we computed how each compound partitions between oil and water with GFN2-xTB, and tested it against 150 measured values. The classical descriptor was more accurate, so the model uses it, and we say so." |
+| 08 | Quantum optimisation | Lab Planner: panel sizes, the suggested panel, its stability, “How the panel was chosen”, then the quantum benchmark at 8, 12 and 16 candidates, and the noise table | "Second, quantum optimisation. Choosing which experiments a lab should run is a constrained selection problem: large robust gaps, broad coverage, little redundancy, and no toxic plants. We wrote it as a QUBO, the native input of quantum optimisers, and solved it exactly for the panel you see. Then we benchmarked QAOA against that exact optimum, with a penalty mixer and with an XY mixer that keeps the panel size fixed by construction. We report the approximation ratio, the chance of sampling the optimum, two-qubit gate counts on IBM's heavy-hex layout, and how fast the signal fades under noise." |
+| 09 | Quantum result | Deck quantum slide | "The result: on eight to twelve candidates, QAOA beats random guessing, and our pre-registered version three lifts that to about five times random. But classical annealing finds the optimum every time, and noise erases the signal quickly. So we claim no quantum advantage at this scale; the benchmark is ready for when hardware can run deeper circuits." |
+| 10 | Impact and ethics | Impact & ethics page: audiences, the reporting checklist, the terms for traditional knowledge, the next steps | "It's built for natural-product labs, for journals, through a five-item preparation reporting checklist, and for public health. We used only public-domain texts; living traditions would take part on their own terms, under the CARE principles and Nagoya benefit-sharing." |
+| 11 | Close | Deck closing slide | "Lost in Preparation. The plant may be right; the preparation may be wrong." |
 
-| # | Time | Show | Do | Say |
-|---|---|---|---|---|
-| 1 | 0:00–0:12 | Deck cover slide | Hold | "In the 1970s, Tu Youyou's team couldn't get antimalarial activity from sweet wormwood, until a fourth-century text pointed them away from heat. The result was artemisinin, and a Nobel Prize." |
-| 2 | 0:12–0:35 | Clip 1 · landing (`/`) | Mini-demo switches cold water → decoction, then the modern-method overlay | "The plant was right. The preparation was wrong. A historical remedy is a recipe: a solvent, heat, a plant part, fresh or dried, strained or not. Lost in Preparation reads those recipes from Culpeper and Pliny, and asks whether modern science ever tested them the way they were made." |
-| 3 | 0:35–1:00 | Clip 2 · Preparation Lab | Clary sage: cold water → boiled → wine → oil → vinegar, then unstrained, then the modern method | "The Preparation Lab models what each preparation extracts, live in your browser. Every compound has an uncertainty range, and the browser engine reproduces our Python model exactly: the build fails if it doesn't. Every setting is a shareable link." |
-| 4 | 1:00–1:35 | Clip 3 · Evidence gap | Scroll to the rows, re-sort them | "Then we audited the modern literature, under a protocol fixed before we retrieved a single study. The headline is a reporting gap. Of 43 studies that prepared the plant, only 26% said whether they used heat, 16% whether it was fresh or dried, 12% whether they strained it, and none stated all five. Only about 2% compared two preparations at all. So when a study finds nothing, you usually can't tell whether the remedy was ever tested the way it was made." |
-| 5 | 1:35–1:55 | Clip 4 · Liquorice case study | Slow scroll | "We publish our mistakes. An extraction error affected liquorice; we logged the correction, our top hypothesis changed, and it became this case study. Every recipe field traces to a verbatim quote, and every result says how far it has been checked." |
-| 6 | 1:55–2:20 | Clip 5 · Lab Planner | Panel size 8 → 4 → 6 → 8, then the benchmark | "The output is a short list of experiments a lab could run: plants never tested the way they were made, chosen by exact optimisation, with toxic species excluded. We benchmarked simulated quantum solvers against the exact answer, and claim no quantum advantage." |
-| 7 | 2:20–2:45 | Clip 6 · Impact & ethics | Scroll: audiences → checklist → ethics → next steps | "It's for natural-product labs, for journals, through a five-item preparation reporting checklist, and for public health, because people take teas and decoctions, not lab extracts. We used only public-domain texts. Work with living traditions would follow the CARE principles and Nagoya benefit-sharing, on the community's terms." |
-| 8 | 2:45–2:55 | Clip 2 or 1, last seconds (or the Lab, paused) | Hold | "Next: independent checks of our extraction, a partner lab to run the panel, and more traditions, with their own scholars." |
-| 9 | 2:55–3:05 | Deck closing slide | Hold | "Lost in Preparation. The plant may be right; the preparation may be wrong." |
+## Delivery notes
 
-## Words to avoid in the narration
-
-Never say a remedy "works", "is safe", "is effective", "cures" or "treats" anything. The outputs are **hypotheses worth re-testing**. If you ad-lib, say "predicted" for the model and "stated" for the audit.
+- Say "Q-A-O-A" letter by letter or "kwah-oh-ah"; pick one and keep it. "QUBO" is "KYOO-boh". "GFN2-xTB" is "G-F-N-two, x-T-B".
+- Slow down on the numbers in shots 05 and 09; they are the two moments judges remember.
+- Never say a remedy "works", "is safe", "is effective", "cures" or "treats". Never say "quantum advantage" without "no" in front of it.
 
 ## Checklist before uploading
 
-- [ ] Under 3 minutes (check the Devpost rules for the exact limit).
-- [ ] Voice is clearly louder than any background; no music over speech.
-- [ ] The live URL is visible at least once (the browser address bar in option B, or the closing slide).
-- [ ] Team names on the closing slide.
+- [ ] Under the Devpost time limit (this script runs about 3:05).
+- [ ] The repository is public (the closing slide shows its link).
+- [ ] Upload to YouTube (unlisted is fine) or Vimeo, and paste the link into Devpost.
